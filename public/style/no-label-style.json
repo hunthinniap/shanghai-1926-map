@@ -1,0 +1,129 @@
+{
+  "version": 8,
+  "name": "Shanghai 1928 — no modern labels",
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet",
+      "attribution": "<a href=\"https://openfreemap.org\">OpenFreeMap</a> · <a href=\"https://www.openstreetmap.org/copyright\">© OpenStreetMap contributors</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": { "background-color": "#e8dfc8" }
+    },
+    {
+      "id": "landcover-wood",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": ["in", "class", "wood", "grass", "farmland"],
+      "paint": { "fill-color": "#cfd3ad", "fill-opacity": 0.5 }
+    },
+    {
+      "id": "landuse",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "landuse",
+      "filter": ["in", "class", "residential", "commercial", "industrial", "cemetery", "hospital", "school", "park"],
+      "paint": {
+        "fill-color": [
+          "match", ["get", "class"],
+          "park", "#c9d2ad",
+          "cemetery", "#d1d4b7",
+          "hospital", "#ded0bc",
+          "school", "#ddd5bd",
+          "commercial", "#ddcfb9",
+          "industrial", "#d3c8b5",
+          "#e2d7c0"
+        ],
+        "fill-opacity": 0.52
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "paint": { "fill-color": "#afc6c2", "fill-opacity": 0.9 }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "paint": { "line-color": "#9fbab8", "line-width": 1 }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "minzoom": 13,
+      "paint": { "fill-color": "#c9bda8", "fill-opacity": 0.52, "fill-outline-color": "#b6a78f" }
+    },
+    {
+      "id": "road-path",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "path", "track", "service"],
+      "minzoom": 13,
+      "paint": { "line-color": "#b9ad99", "line-width": 0.7, "line-opacity": 0.54 }
+    },
+    {
+      "id": "road-minor",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "minor", "tertiary"],
+      "paint": {
+        "line-color": "#a99d8b",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.35, 14, 1.15, 17, 2.2],
+        "line-opacity": 0.62
+      }
+    },
+    {
+      "id": "road-major-casing",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "secondary", "primary", "trunk", "motorway"],
+      "paint": {
+        "line-color": "#e8dfc8",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 9, 1.2, 14, 4.2, 17, 7.2]
+      }
+    },
+    {
+      "id": "road-major",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "secondary", "primary", "trunk", "motorway"],
+      "paint": {
+        "line-color": "#9d907d",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.65, 14, 2.2, 17, 4],
+        "line-opacity": 0.66
+      }
+    },
+    {
+      "id": "rail",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["==", "class", "rail"],
+      "paint": { "line-color": "#887b6e", "line-width": 1, "line-dasharray": [2, 2], "line-opacity": 0.62 }
+    },
+    {
+      "id": "boundary",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "filter": ["<=", "admin_level", 4],
+      "paint": { "line-color": "#827564", "line-width": 0.6, "line-opacity": 0.35 }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "shanghai-1928-map",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "data:build": "node scripts/build-historical-data.mjs && npm run data:align",
+    "data:align": "node scripts/align-roads-to-osm.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "build": "npm run validate:data && tsc --noEmit -p tsconfig.app.json && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "maplibre-gl": "^5.12.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/adm-zip": "^0.5.7",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "adm-zip": "^0.6.0",
+    "jsdom": "^25.0.1",
+    "proj4": "^2.15.0",
+    "shapefile": "^0.6.6",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^3.2.6"
+  }
+}
