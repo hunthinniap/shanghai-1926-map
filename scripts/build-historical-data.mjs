@@ -404,7 +404,7 @@ function makeParks(rawFeatures) {
     let modernNameZh = field(properties, 'CURRENT_NA', 'CHINESE')
     const searchable = `${historicalName} ${modernNameZh}`.toLowerCase()
     if (/fuxing|fu xing|復興|复兴|french park/.test(searchable)) {
-      historicalName = 'French Park'
+      historicalName = 'Parc français'
       modernNameZh = '复兴公园'
     }
     if (!historicalName || !modernNameZh) return
@@ -494,7 +494,7 @@ function ensureAcceptanceExamples(features) {
     }
 
     if (properties.kind === 'landmark') {
-      if (properties.historicalName === 'French Park' && properties.modernNameZh === '复兴公园') {
+      if (properties.historicalName === 'Parc français' && properties.modernNameZh === '复兴公园') {
         if (hasFrenchPark) return []
         hasFrenchPark = true
         return [{
@@ -503,12 +503,12 @@ function ensureAcceptanceExamples(features) {
             ...properties,
             id: 'landmark-french-park',
             featureGroupId: 'landmark-french-park',
-            historicalName: 'French Park',
+            historicalName: 'Parc français',
             modernNameZh: '复兴公园',
             modernNameEn: 'Fuxing Park',
-            aliases: ['法國公園', '法国公园', 'Koukaza Park', 'Parc français'],
+            aliases: ['French Park', '法國公園', '法国公园', 'Koukaza Park', 'Parc de Koukaza'],
             jurisdiction: 'french-concession',
-            language: 'en',
+            language: 'fr',
             labelYear: 1909,
             sourceIds: ['stanford-map-1928', 'vs-parks'],
           },
@@ -581,12 +581,12 @@ function ensureAcceptanceExamples(features) {
         id: 'landmark-french-park',
         featureGroupId: 'landmark-french-park',
         kind: 'landmark',
-        historicalName: 'French Park',
+        historicalName: 'Parc français',
         modernNameZh: '复兴公园',
         modernNameEn: 'Fuxing Park',
-        aliases: ['法國公園', '法国公园', 'Parc français'],
+        aliases: ['French Park', '法國公園', '法国公园', 'Koukaza Park', 'Parc de Koukaza'],
         jurisdiction: 'french-concession',
-        language: 'en',
+        language: 'fr',
         labelYear: 1909,
         sourceIds: ['stanford-map-1928', 'vs-parks'],
         category: '公园',

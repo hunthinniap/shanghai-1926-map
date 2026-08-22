@@ -39,5 +39,11 @@ describe('Republican-era metro station inference', () => {
     expect(labels.get('静安寺')?.historicalName).toBe('Bubbling Well Temple')
     expect(labels.get('徐家汇')?.historicalName).toBe('Zikawei')
   })
-})
 
+  it('uses distinct historical references for nearby modern stations', () => {
+    const labels = buildMetroStationLabelIndex(collection)
+    expect(labels.get('南京西路')?.historicalName).toBe('Love Lane')
+    expect(labels.get('上海体育馆')?.historicalName).toBe('Chungsan Road')
+    expect(labels.get('上海体育场')?.historicalName).toBe('Ziatu Road')
+  })
+})

@@ -1,4 +1,4 @@
-import { BookOpen, MapPin, MapPinOff, RotateCcw, TrainFront } from 'lucide-react'
+import { BookOpen, Building2, MapPin, MapPinOff, RotateCcw, TrainFront } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { DetailsPanel } from './components/DetailsPanel'
 import { MapView } from './components/MapView'
@@ -8,7 +8,8 @@ import { SourcesPanel } from './components/SourcesPanel'
 import { assetUrl } from './lib/assets'
 import type { MetroStationSelection } from './lib/metroLabels'
 import { makeSearchRecords } from './lib/search'
-import type { AppData, HistoricalFeature } from './types'
+import { mergeCuratedParkFeatures } from './lib/parkLabels'
+import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
 function App() {
   const [data, setData] = useState<AppData>()
@@ -16,8 +17,10 @@ function App() {
   const [mapError, setMapError] = useState<string>()
   const [selectedGroupId, setSelectedGroupId] = useState<string>()
   const [sourcesOpen, setSourcesOpen] = useState(false)
-  const [landmarksVisible, setLandmarksVisible] = useState(true)
-  const [subwayVisible, setSubwayVisible] = useState(true)
+  const [landmarksVisible, setLandmarksVisible] = useState(false)
+  const [buildingsVisible, setBuildingsVisible] = useState(false)
+  const [subwayVisible, setSubwayVisible] = useState(false)
+  const [highlightedJurisdiction, setHighlightedJurisdiction] = useState<HighlightedJurisdiction>()
   const [selectedMetroStation, setSelectedMetroStation] = useState<MetroStationSelection>()
   const [mapKey, setMapKey] = useState(0)
 
@@ -26,6 +29,10 @@ function App() {
     Promise.all([
       fetch(assetUrl('data/historical-features.geojson')).then((response) => {
         if (!response.ok) throw new Error('历史地名数据加载失败')
+        return response.json()
+      }),
+      fetch(assetUrl('data/curated-parks.geojson')).then((response) => {
+        if (!response.ok) throw new Error('现存公园历史名称数据加载失败')
         return response.json()
       }),
       fetch(assetUrl('data/jurisdictions.geojson')).then((response) => {
@@ -37,8 +44,14 @@ function App() {
         return response.json()
       }),
     ])
-      .then(([features, jurisdictions, sources]) => {
-        if (!cancelled) setData({ features, jurisdictions, sources })
+      .then(([features, curatedParks, jurisdictions, sources]) => {
+        if (!cancelled) {
+          setData({
+            features: mergeCuratedParkFeatures(features, curatedParks),
+            jurisdictions,
+            sources,
+          })
+        }
       })
       .catch((error: Error) => {
         if (!cancelled) setLoadError(error.message)
@@ -54,6 +67,7 @@ function App() {
         setSelectedGroupId(undefined)
         setSelectedMetroStation(undefined)
         setSourcesOpen(false)
+        setHighlightedJurisdiction(undefined)
       }
     }
     window.addEventListener('keydown', closeOnEscape)
@@ -89,6 +103,9 @@ function App() {
   const selectMetroStation = useCallback((station: MetroStationSelection) => {
     setSelectedGroupId(undefined)
     setSelectedMetroStation(station)
+  }, [])
+  const toggleJurisdiction = useCallback((jurisdiction: HighlightedJurisdiction) => {
+    setHighlightedJurisdiction((selected) => selected === jurisdiction ? undefined : jurisdiction)
   }, [])
 
   if (loadError) {
@@ -129,6 +146,15 @@ function App() {
         <div className="topbar-actions">
           <button
             type="button"
+            className="building-toggle-button"
+            aria-pressed={buildingsVisible}
+            onClick={() => setBuildingsVisible((visible) => !visible)}
+          >
+            <Building2 size={16} aria-hidden="true" />
+            <span>{buildingsVisible ? '隐藏建筑' : '显示建筑'}</span>
+          </button>
+          <button
+            type="button"
             className="landmark-toggle-button"
             aria-pressed={landmarksVisible}
             onClick={() => setLandmarksVisible((visible) => !visible)}
@@ -162,8 +188,10 @@ function App() {
           key={mapKey}
           features={data.features}
           jurisdictions={data.jurisdictions}
+          buildingsVisible={buildingsVisible}
           landmarksVisible={landmarksVisible}
           subwayVisible={subwayVisible}
+          highlightedJurisdiction={highlightedJurisdiction}
           selectedGroupId={selectedGroupId}
           selectedMetroStation={selectedMetroStation}
           onSelect={selectHistoricalFeature}
@@ -181,9 +209,27 @@ function App() {
         </div>
 
         <div className="map-legend" aria-label="历史辖区图例">
-          <span><i className="legend-french" />法租界</span>
-          <span><i className="legend-international" />公共租界</span>
-          <span><i className="legend-chinese" />华界</span>
+          <button
+            type="button"
+            aria-pressed={highlightedJurisdiction === 'french-concession'}
+            onClick={() => toggleJurisdiction('french-concession')}
+          >
+            <i className="legend-french" aria-hidden="true" />French Quarter
+          </button>
+          <button
+            type="button"
+            aria-pressed={highlightedJurisdiction === 'international-settlement'}
+            onClick={() => toggleJurisdiction('international-settlement')}
+          >
+            <i className="legend-international" aria-hidden="true" />Commerce District
+          </button>
+          <button
+            type="button"
+            aria-pressed={highlightedJurisdiction === 'old-city'}
+            onClick={() => toggleJurisdiction('old-city')}
+          >
+            <i className="legend-chinese" aria-hidden="true" />Old City
+          </button>
         </div>
 
         {mapError && (

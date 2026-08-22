@@ -7,7 +7,11 @@ import maplibregl, {
   type MapLayerMouseEvent,
 } from 'maplibre-gl'
 import type { FeatureCollection, Geometry, Position } from 'geojson'
-import type { HistoricalFeature, HistoricalFeatureCollection } from '../types'
+import type {
+  HighlightedJurisdiction,
+  HistoricalFeature,
+  HistoricalFeatureCollection,
+} from '../types'
 import { assetUrl } from '../lib/assets'
 import {
   buildMetroStationLabelIndex,
@@ -19,12 +23,15 @@ import {
   roadModernNameForGroup,
   type RoadLabelEntry,
 } from '../lib/roadLabels'
+import { buildParkLabelIndex, type ParkLabelEntry } from '../lib/parkLabels'
 
 interface MapViewProps {
   features: HistoricalFeatureCollection
   jurisdictions: FeatureCollection
+  buildingsVisible: boolean
   landmarksVisible: boolean
   subwayVisible: boolean
+  highlightedJurisdiction?: HighlightedJurisdiction
   selectedGroupId?: string
   selectedMetroStation?: MetroStationSelection
   onSelect: (groupId: string) => void
@@ -39,6 +46,10 @@ const interactiveLayers = [
   'historical-landmark-point',
   'historical-landmark-area',
   'historical-landmark-label',
+  'historical-park-hit',
+  'historical-park-label',
+  'historical-park-curated-hit',
+  'historical-park-curated-label',
   'historical-subway-station-hit',
   'historical-subway-station',
   'historical-subway-station-label',
@@ -73,6 +84,15 @@ const baseTransitLayers = [
   'bridge_transit_rail_hatching',
 ]
 
+const buildingLayers = ['building']
+
+function setBuildingVisibility(map: Map, visible: boolean) {
+  const visibility = visible ? 'visible' : 'none'
+  buildingLayers.forEach((layerId) => {
+    if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visibility)
+  })
+}
+
 function setLandmarkVisibility(map: Map, visible: boolean) {
   const visibility = visible ? 'visible' : 'none'
   landmarkLayers.forEach((layerId) => {
@@ -102,6 +122,19 @@ function setSelectedRoad(map: Map, modernName?: string) {
   selectedRoadLayers.forEach((layerId) => {
     if (map.getLayer(layerId)) map.setFilter(layerId, filter)
   })
+}
+
+function highlightedJurisdictionFilter(
+  jurisdiction?: HighlightedJurisdiction,
+): maplibregl.FilterSpecification {
+  return ['==', ['get', 'jurisdiction'], jurisdiction ?? '__no_highlighted_jurisdiction__']
+}
+
+function setHighlightedJurisdiction(map: Map, jurisdiction?: HighlightedJurisdiction) {
+  const filter = highlightedJurisdictionFilter(jurisdiction)
+  for (const layerId of ['highlighted-jurisdiction-fill', 'highlighted-jurisdiction-outline']) {
+    if (map.getLayer(layerId)) map.setFilter(layerId, filter)
+  }
 }
 
 function walkCoordinates(value: unknown, bounds: LngLatBounds) {
@@ -172,6 +205,19 @@ function metroValueExpression(
   ] as unknown as maplibregl.ExpressionSpecification
 }
 
+function parkValueExpression(
+  entries: ReadonlyMap<string, ParkLabelEntry>,
+  parkName: maplibregl.ExpressionSpecification,
+  value: (entry: ParkLabelEntry) => string,
+): maplibregl.ExpressionSpecification {
+  return [
+    'match',
+    parkName,
+    ...[...entries.entries()].flatMap(([modernName, entry]) => [modernName, value(entry)]),
+    '',
+  ] as unknown as maplibregl.ExpressionSpecification
+}
+
 function matchingRoadName(
   properties: Record<string, unknown> | null | undefined,
   labels: ReadonlyMap<string, RoadLabelEntry>,
@@ -196,12 +242,25 @@ function matchingMetroStationName(
   return undefined
 }
 
+function matchingParkName(
+  properties: Record<string, unknown> | null | undefined,
+  labels: ReadonlyMap<string, ParkLabelEntry>,
+) {
+  if (!properties) return undefined
+  for (const property of ['name:nonlatin', 'name:zh-Hans', 'name:zh', 'name', 'name:latin', 'name:en']) {
+    const value = properties[property]
+    if (typeof value === 'string' && labels.has(value.trim())) return value.trim()
+  }
+  return undefined
+}
+
 function addHistoricalLayers(
   map: Map,
   features: HistoricalFeatureCollection,
   jurisdictions: FeatureCollection,
   roadLabels: ReadonlyMap<string, RoadLabelEntry>,
   metroStationLabels: ReadonlyMap<string, MetroStationLabelEntry>,
+  parkLabels: ReadonlyMap<string, ParkLabelEntry>,
 ) {
   const allEntries = [...roadLabels.values()]
   const labelEntries = allEntries.filter((entry) => !entry.inferred)
@@ -235,6 +294,17 @@ function addHistoricalLayers(
     ['match', ['get', 'class'], ['transit', 'rail'], true, false],
     ['match', ['get', 'subclass'], ['subway', 'light_rail'], true, false],
   ]
+  const currentParkName = roadNameExpression([...parkLabels.keys()])
+  const historicalParkName = parkValueExpression(
+    parkLabels,
+    currentParkName,
+    (entry) => entry.historicalName,
+  )
+  const historicalParkFilter: maplibregl.FilterSpecification = [
+    'all',
+    ['match', ['get', 'class'], ['park', 'garden'], true, false],
+    ['!=', currentParkName, ''],
+  ]
 
   baseTransitLayers.forEach((layerId) => {
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', 'none')
@@ -254,13 +324,60 @@ function addHistoricalLayers(
           '#caa58e',
           'international-settlement',
           '#8da8a5',
+          'old-city',
           '#c4b38c',
+          'rgba(0,0,0,0)',
         ],
         'fill-opacity': 0.12,
       },
     },
     map.getLayer('building') ? 'building' : undefined,
   )
+  map.addLayer(
+    {
+      id: 'highlighted-jurisdiction-fill',
+      type: 'fill',
+      source: 'jurisdictions',
+      filter: highlightedJurisdictionFilter(),
+      paint: {
+        'fill-color': [
+          'match',
+          ['get', 'jurisdiction'],
+          'french-concession',
+          '#b47768',
+          'international-settlement',
+          '#6f9695',
+          'old-city',
+          '#a9925c',
+          'rgba(0,0,0,0)',
+        ],
+        'fill-opacity': 0.3,
+      },
+    },
+    map.getLayer('building') ? 'building' : undefined,
+  )
+  map.addLayer({
+    id: 'highlighted-jurisdiction-outline',
+    type: 'line',
+    source: 'jurisdictions',
+    filter: highlightedJurisdictionFilter(),
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: {
+      'line-color': [
+        'match',
+        ['get', 'jurisdiction'],
+        'french-concession',
+        '#8e5148',
+        'international-settlement',
+        '#436f70',
+        'old-city',
+        '#7f6a3f',
+        '#57483c',
+      ],
+      'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 1.5, 16, 3.2],
+      'line-opacity': 0.95,
+    },
+  })
   map.addSource('historical-features', { type: 'geojson', data: features, promoteId: 'id' })
   map.addSource('metro-lines', { type: 'geojson', data: assetUrl('data/metro-lines.geojson') })
   map.addSource('metro-stations', { type: 'geojson', data: assetUrl('data/metro-stations.geojson') })
@@ -472,10 +589,88 @@ function addHistoricalLayers(
   })
 
   map.addLayer({
+    id: 'historical-park-hit',
+    type: 'circle',
+    source: 'openmaptiles',
+    'source-layer': 'poi',
+    minzoom: 11.2,
+    filter: historicalParkFilter,
+    paint: {
+      'circle-radius': 18,
+      'circle-color': '#000000',
+      'circle-opacity': 0.01,
+    },
+  })
+  map.addLayer({
+    id: 'historical-park-label',
+    type: 'symbol',
+    source: 'openmaptiles',
+    'source-layer': 'poi',
+    minzoom: 11.2,
+    filter: historicalParkFilter,
+    layout: {
+      'text-field': historicalParkName,
+      'text-font': ['Noto Sans Regular'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 11.2, 11.5, 16, 14],
+      'text-letter-spacing': 0.03,
+      'text-padding': 7,
+      'text-max-width': 13,
+      'text-allow-overlap': true,
+      'text-ignore-placement': true,
+    },
+    paint: {
+      'text-color': '#3f593f',
+      'text-halo-color': '#f2ead6',
+      'text-halo-width': 1.7,
+      'text-halo-blur': 0.5,
+    },
+  })
+  map.addLayer({
+    id: 'historical-park-curated-hit',
+    type: 'circle',
+    source: 'historical-features',
+    minzoom: 11.2,
+    filter: ['==', ['get', 'labelFromFeature'], true],
+    paint: {
+      'circle-radius': 18,
+      'circle-color': '#000000',
+      'circle-opacity': 0.01,
+    },
+  })
+  map.addLayer({
+    id: 'historical-park-curated-label',
+    type: 'symbol',
+    source: 'historical-features',
+    minzoom: 11.2,
+    filter: ['==', ['get', 'labelFromFeature'], true],
+    layout: {
+      'text-field': ['get', 'historicalName'],
+      'text-font': ['Noto Sans Regular'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 11.2, 11.5, 16, 14],
+      'text-letter-spacing': 0.03,
+      'text-padding': 7,
+      'text-max-width': 13,
+      'text-allow-overlap': true,
+      'text-ignore-placement': true,
+    },
+    paint: {
+      'text-color': '#3f593f',
+      'text-halo-color': '#f2ead6',
+      'text-halo-width': 1.7,
+      'text-halo-blur': 0.5,
+    },
+  })
+
+  map.addLayer({
     id: 'historical-landmark-area',
     type: 'fill',
     source: 'historical-features',
-    filter: ['all', ['==', ['get', 'kind'], 'landmark'], ['==', ['geometry-type'], 'Polygon']],
+    filter: [
+      'all',
+      ['==', ['get', 'kind'], 'landmark'],
+      ['!=', ['get', 'category'], '现存公园'],
+      ['==', ['geometry-type'], 'Polygon'],
+    ],
     paint: { 'fill-color': '#7d4f45', 'fill-opacity': 0.17, 'fill-outline-color': '#7d4f45' },
   })
   map.addLayer({
@@ -483,7 +678,12 @@ function addHistoricalLayers(
     type: 'circle',
     source: 'historical-features',
     minzoom: 12.4,
-    filter: ['all', ['==', ['get', 'kind'], 'landmark'], ['==', ['geometry-type'], 'Point']],
+    filter: [
+      'all',
+      ['==', ['get', 'kind'], 'landmark'],
+      ['!=', ['get', 'category'], '现存公园'],
+      ['==', ['geometry-type'], 'Point'],
+    ],
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 3, 17, 5],
       'circle-color': '#7d4f45',
@@ -496,7 +696,11 @@ function addHistoricalLayers(
     type: 'symbol',
     source: 'historical-features',
     minzoom: 12.7,
-    filter: ['==', ['get', 'kind'], 'landmark'],
+    filter: [
+      'all',
+      ['==', ['get', 'kind'], 'landmark'],
+      ['!=', ['get', 'category'], '现存公园'],
+    ],
     layout: {
       'text-field': ['get', 'historicalName'],
       'text-font': ['Noto Sans Regular'],
@@ -541,8 +745,10 @@ function addHistoricalLayers(
 export function MapView({
   features,
   jurisdictions,
+  buildingsVisible,
   landmarksVisible,
   subwayVisible,
+  highlightedJurisdiction,
   selectedGroupId,
   selectedMetroStation,
   onSelect,
@@ -553,16 +759,21 @@ export function MapView({
   const mapRef = useRef<Map | null>(null)
   const onSelectRef = useRef(onSelect)
   const onSelectMetroRef = useRef(onSelectMetro)
+  const buildingsVisibleRef = useRef(buildingsVisible)
   const landmarksVisibleRef = useRef(landmarksVisible)
   const subwayVisibleRef = useRef(subwayVisible)
+  const highlightedJurisdictionRef = useRef(highlightedJurisdiction)
   const selectedGroupIdRef = useRef(selectedGroupId)
   onSelectRef.current = onSelect
   onSelectMetroRef.current = onSelectMetro
+  buildingsVisibleRef.current = buildingsVisible
   landmarksVisibleRef.current = landmarksVisible
   subwayVisibleRef.current = subwayVisible
+  highlightedJurisdictionRef.current = highlightedJurisdiction
   selectedGroupIdRef.current = selectedGroupId
   const roadLabels = buildRoadLabelIndex(features)
   const metroStationLabels = buildMetroStationLabelIndex(features)
+  const parkLabels = buildParkLabelIndex()
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return
@@ -609,6 +820,19 @@ export function MapView({
         return
       }
 
+      const parkHit = hits.find((feature) => feature.layer.id.startsWith('historical-park'))
+      if (parkHit) {
+        const directGroupId = parkHit.properties?.featureGroupId
+        if (directGroupId) {
+          onSelectRef.current(String(directGroupId))
+          return
+        }
+        const modernName = matchingParkName(parkHit.properties, parkLabels)
+        const groupId = modernName ? parkLabels.get(modernName)?.featureGroupId : undefined
+        if (groupId) onSelectRef.current(groupId)
+        return
+      }
+
       const hit = hits[0]
       if (hit?.layer.id.startsWith('historical-road')) {
         const modernName = matchingRoadName(hit.properties, roadLabels)
@@ -621,9 +845,11 @@ export function MapView({
     }
 
     map.on('style.load', () => {
-      addHistoricalLayers(map, features, jurisdictions, roadLabels, metroStationLabels)
+      addHistoricalLayers(map, features, jurisdictions, roadLabels, metroStationLabels, parkLabels)
+      setBuildingVisibility(map, buildingsVisibleRef.current)
       setLandmarkVisibility(map, landmarksVisibleRef.current)
       setSubwayVisibility(map, subwayVisibleRef.current)
+      setHighlightedJurisdiction(map, highlightedJurisdictionRef.current)
       setSelectedRoad(map, roadModernNameForGroup(features, selectedGroupIdRef.current))
       map.on('click', interactiveLayers, handleClick)
       map.on('mouseenter', interactiveLayers, () => {
@@ -652,15 +878,27 @@ export function MapView({
 
   useEffect(() => {
     const map = mapRef.current
-    if (!map?.isStyleLoaded()) return
+    if (!map) return
+    setBuildingVisibility(map, buildingsVisible)
+  }, [buildingsVisible])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
     setLandmarkVisibility(map, landmarksVisible)
   }, [landmarksVisible])
 
   useEffect(() => {
     const map = mapRef.current
-    if (!map?.isStyleLoaded()) return
+    if (!map) return
     setSubwayVisibility(map, subwayVisible)
   }, [subwayVisible])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    setHighlightedJurisdiction(map, highlightedJurisdiction)
+  }, [highlightedJurisdiction])
 
   useEffect(() => {
     const map = mapRef.current
@@ -700,5 +938,12 @@ export function MapView({
     })
   }, [selectedMetroStation])
 
-  return <div ref={containerRef} className="map-canvas" aria-label="上海历史路名交互地图" />
+  return (
+    <div
+      ref={containerRef}
+      className="map-canvas"
+      aria-label="上海历史路名交互地图"
+      data-highlighted-jurisdiction={highlightedJurisdiction ?? 'none'}
+    />
+  )
 }

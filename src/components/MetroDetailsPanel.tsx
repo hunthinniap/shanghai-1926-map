@@ -43,9 +43,6 @@ export function MetroDetailsPanel({ station, onClose }: MetroDetailsPanelProps) 
         </div>
       </dl>
 
-      <p className="details-note">
-        该名称不是历史上真实运营过的站名；线路与站点采用现代上海地铁作为空间参照。
-      </p>
     </aside>
   )
 }

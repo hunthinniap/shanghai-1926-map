@@ -31,9 +31,14 @@ const inferredRoadLabels: RoadLabelEntry[] = [
   { modernName: 'North-South Elevated Road', historicalName: 'Dubail Expressway', priority: 1, inferred: true },
 ]
 
-const labelOverrides = new Map([
-  ['南昌路', 'Route Vallon / Route Dolfus'],
-  ['嘉善路', 'Route Gaston Kahn'],
+const labelOverrides = new Map<string, { historicalName: string; featureGroupId?: string }>([
+  ['南昌路', { historicalName: 'Route Vallon / Route Dolfus' }],
+  ['嘉善路', { historicalName: 'Route Gaston Kahn' }],
+  ['人民路', { historicalName: 'Min Kueq Lu', featureGroupId: 'road-old-city-人民路' }],
+  ['中华路', { historicalName: 'Tzon Wa Lu', featureGroupId: 'road-old-city-中华路' }],
+  ['复兴东路', { historicalName: 'Dzo Ka Lu', featureGroupId: 'road-old-city-复兴东路' }],
+  ['方浜中路', { historicalName: 'Faon Pan Lu', featureGroupId: 'road-old-city-方浜中路' }],
+  ['河南南路', { historicalName: 'Ae He Lu', featureGroupId: 'road-old-city-河南南路' }],
 ])
 
 export function buildRoadLabelIndex(collection: HistoricalFeatureCollection) {
@@ -44,6 +49,7 @@ export function buildRoadLabelIndex(collection: HistoricalFeatureCollection) {
 
   collection.features.forEach((feature) => {
     if (feature.properties.kind !== 'road') return
+    if (feature.properties.labelOnMap === false) return
     const modernName = feature.properties.modernNameZh.trim()
     if (!modernName) return
     const groups = groupsByModernName.get(modernName) ?? new Map()
@@ -64,11 +70,12 @@ export function buildRoadLabelIndex(collection: HistoricalFeatureCollection) {
       ([, left], [, right]) => right.featureCount - left.featureCount || left.priority - right.priority,
     )
     const [featureGroupId, selected] = ranked[0]
+    const override = labelOverrides.get(modernName)
     const entry: RoadLabelEntry = {
       modernName,
-      historicalName: labelOverrides.get(modernName) ?? selected.historicalName,
+      historicalName: override?.historicalName ?? selected.historicalName,
       priority: selected.priority,
-      featureGroupId,
+      featureGroupId: override?.featureGroupId ?? featureGroupId,
     }
     labels.set(modernName, entry)
     if (selected.modernNameEn) labels.set(selected.modernNameEn, { ...entry, modernName: selected.modernNameEn })

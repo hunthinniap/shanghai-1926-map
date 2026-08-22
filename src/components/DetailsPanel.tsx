@@ -3,9 +3,29 @@ import { getRoadEponym } from '../data/roadEponyms'
 import type { HistoricalFeature, SourceRecord } from '../types'
 
 const jurisdictionNames = {
-  'french-concession': '法租界',
-  'international-settlement': '公共租界',
-  'chinese-administered': '华界',
+  'french-concession': 'French Quarter',
+  'international-settlement': 'Commerce District',
+  'old-city': 'Old City',
+  'chinese-administered': 'Chinese-administered Area',
+} as const
+
+const historicalUseNames = {
+  park: '公共公园',
+  garden: '园林 / 私家花园',
+  cemetery: '墓园',
+  racecourse: '跑马场',
+  industrial: '工业设施',
+  military: '军事设施',
+  recreation: '体育 / 娱乐设施',
+  school: '学校用地',
+  aerodrome: '机场 / 跑道',
+} as const
+
+const namingBasisNames = {
+  translated: '历史中文名的英文转写 / 翻译',
+  'proposed-road': '借相邻民国道路名拟定',
+  'proposed-district': '借民国时期片区名拟定',
+  'proposed-site': '借原址历史名称拟定',
 } as const
 
 interface DetailsPanelProps {
@@ -55,9 +75,31 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
           <dt>名称年代</dt>
           <dd>{details.labelYear === 1928 ? '1928 年' : `${details.labelYear} 年资料`}</dd>
         </div>
+        {details.historicalUse && (
+          <div>
+            <dt>民国时期用途</dt>
+            <dd>{historicalUseNames[details.historicalUse]}</dd>
+          </div>
+        )}
+        {details.namingBasis && (
+          <div>
+            <dt>命名依据</dt>
+            <dd>{namingBasisNames[details.namingBasis]}</dd>
+          </div>
+        )}
         <div>
           <dt>地图语言</dt>
-          <dd>{details.language === 'fr' ? '法语原名' : details.language === 'en' ? '英文原名' : '当时中文名'}</dd>
+          <dd>{details.namingBasis?.startsWith('proposed-')
+            ? details.language === 'fr' ? '法语拟名' : '英文拟名'
+            : details.namingBasis === 'translated'
+              ? '英文转写'
+              : details.language === 'fr'
+                ? '法语原名'
+                : details.language === 'en'
+                  ? '英文原名'
+                  : details.language === 'wuu'
+                    ? '老派沪语拼音（无声调）'
+                    : '当时中文名'}</dd>
         </div>
       </dl>
 
