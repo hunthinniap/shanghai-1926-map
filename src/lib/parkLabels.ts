@@ -1,4 +1,4 @@
-import type { HistoricalFeatureCollection } from '../types'
+import type { HistoricalFeature, HistoricalFeatureCollection, HistoricalRecord } from '../types'
 
 export interface ParkLabelEntry {
   modernNames: string[]
@@ -158,13 +158,74 @@ export function mergeCuratedParkFeatures(
   const replacedGroups = new Set(
     currentParkLabels.flatMap((entry) => entry.legacyGroupIds ?? []),
   )
+  const entryByCuratedGroup = new Map(
+    currentParkLabels.map((entry) => [entry.featureGroupId, entry]),
+  )
+
+  const mergeRecords = (records: HistoricalRecord[]) => [...new Map(
+    records.map((record) => [
+      `${record.name}|${record.startYear ?? ''}|${record.endYear ?? ''}|${record.sourceRecordIds?.join(',') ?? ''}`,
+      record,
+    ]),
+  ).values()]
+
+  const mergeLegacyProperties = (feature: HistoricalFeature): HistoricalFeature => {
+    const entry = entryByCuratedGroup.get(feature.properties.featureGroupId)
+    if (!entry?.legacyGroupIds?.length) return feature
+    const legacyFeatures = historical.features.filter((candidate) =>
+      entry.legacyGroupIds?.includes(candidate.properties.featureGroupId))
+    if (!legacyFeatures.length) return feature
+
+    const sourceRecordIds = [...new Set([
+      ...(feature.properties.sourceRecordIds ?? []),
+      ...legacyFeatures.flatMap((legacy) => legacy.properties.sourceRecordIds ?? []),
+    ])]
+    const historicalRecords = mergeRecords([
+      ...(feature.properties.historicalRecords ?? []),
+      ...legacyFeatures.flatMap((legacy) => legacy.properties.historicalRecords ?? []),
+    ])
+    const aliases = [...new Set([
+      ...(feature.properties.aliases ?? []),
+      ...legacyFeatures.flatMap((legacy) => [
+        legacy.properties.historicalName,
+        legacy.properties.modernNameZh,
+        ...(legacy.properties.aliases ?? []),
+      ]),
+    ].filter(Boolean))]
+    const sourceUrls = Object.assign(
+      {},
+      ...legacyFeatures.map((legacy) => legacy.properties.sourceUrls ?? {}),
+      feature.properties.sourceUrls ?? {},
+    )
+
+    return {
+      ...feature,
+      properties: {
+        ...feature.properties,
+        sourceIds: [...new Set([
+          ...feature.properties.sourceIds,
+          ...legacyFeatures.flatMap((legacy) => legacy.properties.sourceIds),
+        ])],
+        sourceRecordIds: sourceRecordIds.length ? sourceRecordIds : undefined,
+        historicalRecords: historicalRecords.length ? historicalRecords : undefined,
+        aliases: aliases.length ? aliases : undefined,
+        sourceUrls: Object.keys(sourceUrls).length ? sourceUrls : undefined,
+        legacyFeatureGroupIds: [...new Set([
+          ...(feature.properties.legacyFeatureGroupIds ?? []),
+          ...entry.legacyGroupIds,
+          ...legacyFeatures.flatMap((legacy) => legacy.properties.legacyFeatureGroupIds ?? []),
+        ])],
+      },
+    }
+  }
+
   return {
     ...historical,
     features: [
       ...historical.features.filter(
         (feature) => !replacedGroups.has(feature.properties.featureGroupId),
       ),
-      ...curated.features,
+      ...curated.features.map(mergeLegacyProperties),
     ],
   }
 }

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(projectRoot, 'public', 'data', 'historical-features.geojson')
+const previousBuildDataPath = path.join(projectRoot, 'dist', 'data', 'historical-features.geojson')
 const overpassUrl = process.env.OVERPASS_URL ?? 'https://overpass-api.de/api/interpreter'
 const proximityMetres = 120
 const metresPerDegree = 111_320
@@ -85,6 +86,27 @@ function roadNames(tags = {}) {
   return [...new Set([tags.name, tags['name:zh'], tags.official_name].filter(Boolean).map((name) => name.trim()))]
 }
 
+async function loadPreviousAlignedWays(requestedNames) {
+  try {
+    const previous = JSON.parse(await fs.readFile(previousBuildDataPath, 'utf8'))
+    const names = new Set(requestedNames)
+    return (previous.features ?? []).flatMap((feature, index) => {
+      const properties = feature.properties ?? {}
+      if (properties.kind !== 'road' || !String(properties.id ?? '').startsWith('osm-') ||
+        !names.has(properties.modernNameZh)) return []
+      return linesFromGeometry(feature.geometry).map((coordinates, lineIndex) => ({
+        type: 'way',
+        id: `previous-${index}-${lineIndex}`,
+        tags: { highway: 'road', name: properties.modernNameZh },
+        geometry: coordinates.map(([lon, lat]) => ({ lon, lat })),
+      }))
+    })
+  } catch (error) {
+    if (error?.code !== 'ENOENT') console.warn(`Ignoring previous road geometry: ${error.message}`)
+    return []
+  }
+}
+
 async function downloadNamedRoads(names) {
   const batches = []
   for (let index = 0; index < names.length; index += 10) batches.push(names.slice(index, index + 10))
@@ -140,7 +162,20 @@ const requestedNames = process.env.OSM_ROAD_NAMES
   ?.split(',')
   .map((name) => name.trim())
   .filter(Boolean)
-const osmWays = await downloadNamedRoads(requestedNames?.length ? requestedNames : [...groupsByModernName.keys()])
+const namesToAlign = requestedNames?.length ? requestedNames : [...groupsByModernName.keys()]
+const previousWays = await loadPreviousAlignedWays(namesToAlign)
+const previousNames = new Set(previousWays.flatMap((way) => roadNames(way.tags)))
+const missingNames = namesToAlign.filter((name) => !previousNames.has(name))
+let downloadedWays = []
+if (missingNames.length && process.env.OSM_OFFLINE !== '1') {
+  try {
+    downloadedWays = await downloadNamedRoads(missingNames)
+  } catch (error) {
+    if (!previousWays.length) throw error
+    console.warn(`${error.message}; continuing with ${previousNames.size} names cached in the previous production build.`)
+  }
+}
+const osmWays = [...previousWays, ...downloadedWays]
 const waysByName = new Map()
 
 osmWays.forEach((way) => {

@@ -84,9 +84,20 @@ describe('current park historical labels', () => {
   })
 
   it('replaces drift-prone legacy park geometry with curated current park points', () => {
+    const legacyFrenchPark = point('legacy', 'landmark-french-park')
+    legacyFrenchPark.properties.sourceIds = ['source', 'vs-buildings']
+    legacyFrenchPark.properties.sourceRecordIds = [77]
+    legacyFrenchPark.properties.sourceUrls = {
+      'vs-buildings': 'https://www.virtualshanghai.net/数据/建筑?ID=77',
+    }
+    legacyFrenchPark.properties.historicalRecords = [{
+      name: 'Koukaza Park',
+      sourceRecordIds: [77],
+      sourceUrls: ['https://www.virtualshanghai.net/数据/建筑?ID=77'],
+    }]
     const historical: HistoricalFeatureCollection = {
       type: 'FeatureCollection',
-      features: [point('legacy', 'landmark-french-park'), point('road', 'unrelated')],
+      features: [legacyFrenchPark, point('road', 'unrelated')],
     }
     const curated: HistoricalFeatureCollection = {
       type: 'FeatureCollection',
@@ -97,5 +108,9 @@ describe('current park historical labels', () => {
       'road',
       'park-french-park',
     ])
+    const frenchPark = merged.features.find((feature) => feature.properties.id === 'park-french-park')
+    expect(frenchPark?.properties.sourceRecordIds).toEqual([77])
+    expect(frenchPark?.properties.historicalRecords?.[0].name).toBe('Koukaza Park')
+    expect(frenchPark?.properties.sourceUrls?.['vs-buildings']).toContain('ID=77')
   })
 })

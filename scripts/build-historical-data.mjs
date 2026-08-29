@@ -4,10 +4,15 @@ import { fileURLToPath } from 'node:url'
 import AdmZip from 'adm-zip'
 import proj4 from 'proj4'
 import * as shapefile from 'shapefile'
+import { clusterBuildingRecords } from './lib/cluster-buildings.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const cacheRoot = path.join(projectRoot, '.cache', 'historical-source')
 const outputRoot = path.join(projectRoot, 'public', 'data')
+const liveBuildingsPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-buildings-live.json')
+const buildingSiteOverridesPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-site-overrides.json')
+const supplementalSourcesPath = path.join(projectRoot, 'scripts', 'data', 'historical-supplemental-sources.json')
+const buildingClusterAuditPath = path.join(outputRoot, 'virtual-shanghai-building-clusters.json')
 const shanghaiBounds = [121.36, 31.13, 121.59, 31.33]
 
 const downloads = [
@@ -105,6 +110,7 @@ function repairDisplayText(value) {
     .replace(/H[�]pital/g, 'Hôpital')
     .replace(/Soci[�]t[�]/g, 'Société')
     .replace(/Th[�][�]tre/g, 'Théâtre')
+    .replace(/Dauphin[�]/g, 'Dauphiné')
     .replace(/[D|d][�]amiti[�]/g, (match) => (match[0] === 'D' ? 'D’amitié' : 'd’amitié'))
 
   if (clean.includes('�')) {
@@ -355,41 +361,276 @@ function makeRoads(rawFeatures) {
   return roads
 }
 
-function makeBuildings(rawFeatures) {
+function buildingRecordProperties(record) {
+  return record?.properties ?? record ?? {}
+}
+
+function buildingRecordTypes(record) {
+  if (Array.isArray(record?.types)) return record.types.map(text).filter(Boolean)
+  const properties = buildingRecordProperties(record)
+  return Array.from({ length: 11 }, (_, index) => field(properties, `TYP${String(index + 1).padStart(2, '0')}`))
+    .filter(Boolean)
+}
+
+function buildingCategoryFromTypes(types) {
+  return landmarkCategory(Object.fromEntries(types.map((value, index) => [
+    `TYP${String(index + 1).padStart(2, '0')}`,
+    value,
+  ])))
+}
+
+function isExactGenericBuildingLabel(value) {
+  return /^(Temple|School|Bank|Hospital|Church)$/i.test(text(value))
+}
+
+function virtualShanghaiBuildingUrl(recordId) {
+  return `https://www.virtualshanghai.net/数据/建筑?ID=${encodeURIComponent(recordId)}`
+}
+
+function legacyBuildingGroupId(record) {
+  const properties = buildingRecordProperties(record)
+  const historicalName = canonicalName(repairDisplayText(field(properties, 'NAME', 'historicalName', 'name', 'label')))
+  const historicalNameZh = field(properties, 'CHINESE', 'historicalNameZh', 'nameZh', 'chineseName')
+  if (!historicalName && !historicalNameZh) return ''
+  return `landmark-${slug(`${historicalName}-${historicalNameZh}`)}`
+}
+
+function buildingCoordinateToWgs84(coordinate) {
+  if (!Array.isArray(coordinate) || coordinate.length < 2) return undefined
+  const [x, y] = coordinate.map(Number)
+  if (!Number.isFinite(x) || !Number.isFinite(y)) return undefined
+  const result = Math.abs(x) <= 180 && Math.abs(y) <= 90
+    ? [x, y]
+    : proj4(utm51, wgs84, [x, y])
+  return result.map((value) => Number(value.toFixed(6)))
+}
+
+async function loadLiveBuildingRecords(fallbackFeatures) {
+  try {
+    const live = JSON.parse(await fs.readFile(liveBuildingsPath, 'utf8'))
+    if (!Array.isArray(live.records) || live.records.length !== 1803) {
+      throw new Error(`expected 1803 records, received ${live.records?.length ?? 0}`)
+    }
+    return {
+      records: live.records,
+      sourceMode: 'live-directory-snapshot',
+      sourceCount: live.records.length,
+      snapshot: {
+        fetchedAt: live.fetchedAt,
+        sourceUrl: live.sourceUrl,
+        errors: live.errors ?? [],
+        sync: live.sync,
+      },
+    }
+  } catch (error) {
+    if (process.env.ALLOW_STALE_VS_BUILDINGS !== '1') {
+      throw new Error(
+        `The 1803-record Virtual Shanghai snapshot is required. Run npm run data:sync-buildings first. ${error.message}`,
+      )
+    }
+    return {
+      records: fallbackFeatures,
+      sourceMode: 'stale-1790-shapefile-fallback',
+      sourceCount: fallbackFeatures.length,
+      snapshot: { warning: error.message },
+    }
+  }
+}
+
+async function loadBuildingSiteOverrides() {
+  const overrides = JSON.parse(await fs.readFile(buildingSiteOverridesPath, 'utf8'))
+  if (!Array.isArray(overrides)) throw new Error('Virtual Shanghai site overrides must be an array')
+  const keys = new Set()
+  for (const override of overrides) {
+    if (!Array.isArray(override.sourceRecordIds) || !override.sourceRecordIds.length ||
+      override.sourceRecordIds.some((recordId) => !Number.isInteger(recordId))) {
+      throw new Error(`Invalid site override sourceRecordIds: ${JSON.stringify(override.sourceRecordIds)}`)
+    }
+    const key = [...override.sourceRecordIds].sort((left, right) => left - right).join(',')
+    if (keys.has(key)) throw new Error(`Duplicate site override: ${key}`)
+    keys.add(key)
+  }
+  return overrides
+}
+
+function makeBuildings(rawRecords, sourceMetadata, siteOverrides = []) {
+  const clustered = clusterBuildingRecords(rawRecords)
+  const preparedById = new Map(clustered.sourceRecords.map((record) => [String(record.recordId), record]))
   const buildings = []
-  rawFeatures.forEach((raw, index) => {
-    const properties = raw.properties ?? {}
-    const start = parseYear(field(properties, 'START', 'DATE_START'))
-    const end = parseYear(field(properties, 'END', 'DATE_END'))
-    if (!start || start > 1928 || (end && end < 1928)) return
+  const omittedClusters = []
+  const appliedOverrides = new Map()
 
-    const historicalName = canonicalName(repairDisplayText(field(properties, 'NAME', 'F_NAME')))
-    const modernNameZh = field(properties, 'CHINESE', 'C_NAME')
-    if (!historicalName || !modernNameZh || !isMajorBuilding(properties, historicalName)) return
+  for (const cluster of clustered.clusters) {
+    const numericSourceRecordIds = cluster.sourceRecordIds.map(Number).filter(Number.isFinite)
+    const clusterRecordIds = new Set(numericSourceRecordIds)
+    const matchingOverrides = siteOverrides.filter((override) =>
+      override.sourceRecordIds.every((recordId) => clusterRecordIds.has(recordId)))
+    if (matchingOverrides.length > 1) {
+      throw new Error(`Multiple curated site overrides match ${cluster.clusterId}`)
+    }
+    const siteOverride = matchingOverrides[0]
+    if (siteOverride) appliedOverrides.set(cluster.clusterId, siteOverride)
+    const primary = preparedById.get(String(cluster.primaryRecordId))
+    const primarySource = primary?.sourceRecord ?? {}
+    const repairedHistoricalName = canonicalName(repairDisplayText(cluster.historicalName)) || cluster.historicalNameZh
+    const nameIsFallback = !repairedHistoricalName
+    let historicalName = repairedHistoricalName ||
+      (cluster.address ? `Unnamed site · ${cluster.address}` : `Unnamed Virtual Shanghai site #${cluster.primaryRecordId}`)
+    let historicalNameZh = cluster.historicalNameZh || (nameIsFallback ? '名称未载' : historicalName)
+    const coordinate = buildingCoordinateToWgs84(cluster.centroid ?? cluster.coordinate)
+    if (!coordinate) {
+      omittedClusters.push({
+        clusterId: cluster.clusterId,
+        sourceRecordIds: cluster.sourceRecordIds,
+        reason: 'missing-coordinate',
+      })
+      continue
+    }
 
-    const geometry = transformGeometry(raw.geometry)
-    if (!geometry || !geometryInBounds(geometry)) return
-    const category = landmarkCategory(properties)
-    const groupKey = slug(`${historicalName}-${modernNameZh}`) || `building-${index}`
+    const primaryTypes = buildingRecordTypes(primarySource)
+    let category = buildingCategoryFromTypes(primaryTypes)
+    let language = languageFor(historicalName, primaryTypes.join(' '))
+    const primaryAlias = cluster.historicalRecords.find((record) =>
+      record.sourceRecordIds.map(String).includes(String(cluster.primaryRecordId)))
+    const primaryIsGeneric = nameIsFallback ||
+      Boolean(primaryAlias?.isGeneric) ||
+      isExactGenericBuildingLabel(historicalName)
+    const hasSpecificAlias = cluster.historicalRecords.some((record) => !record.isGeneric)
+    const visibleHistoricalRecords = cluster.historicalRecords.filter((record) =>
+      !record.isGeneric || !hasSpecificAlias)
+    let historicalRecords = visibleHistoricalRecords.map((record) => {
+      const recordName = canonicalName(repairDisplayText(record.historicalName)) || record.historicalNameZh
+      const recordIds = record.sourceRecordIds.map(Number).filter(Number.isFinite)
+      const recordTypes = recordIds.flatMap((recordId) =>
+        buildingRecordTypes(preparedById.get(String(recordId))?.sourceRecord ?? {}))
+      return {
+        sourceRecordIds: recordIds,
+        name: recordName,
+        nameZh: record.historicalNameZh || undefined,
+        startYear: record.startYear || undefined,
+        endYear: record.endYear || undefined,
+        sourceUrls: recordIds.map(virtualShanghaiBuildingUrl),
+        category: buildingCategoryFromTypes(recordTypes),
+        generic: record.isGeneric,
+      }
+    }).filter((record) => record.name)
+    if (!historicalRecords.length) {
+      const recordIds = cluster.sourceRecordIds.map(Number).filter(Number.isFinite)
+      historicalRecords = [{
+        sourceRecordIds: recordIds,
+        name: historicalName,
+        nameZh: historicalNameZh,
+        sourceUrls: recordIds.map(virtualShanghaiBuildingUrl),
+        category,
+        generic: true,
+      }]
+    }
+    const knownStartYears = cluster.historicalRecords
+      .flatMap((record) => record.periods ?? [])
+      .map((period) => period.startYear)
+      .filter((year) => Number.isInteger(year) && year > 0)
+    let labelYear = knownStartYears.length ? Math.min(...knownStartYears) : 1949
+    const legacyFeatureGroupIds = [...new Set(cluster.sourceRecordIds
+      .map((recordId) => legacyBuildingGroupId(preparedById.get(String(recordId))?.sourceRecord))
+      .filter(Boolean))]
+    let aliases = [...new Set(cluster.historicalRecords.flatMap((record) => [
+      record.historicalName,
+      record.historicalNameZh,
+      ...(record.historicalNameVariants ?? []),
+      ...(record.historicalNameZhVariants ?? []),
+    ]).map(text).filter((value) => value && value !== historicalName && value !== historicalNameZh))]
+    const siteId = cluster.clusterId.replace(/^vs-building-site:/, '')
+    const featureGroupId = `landmark-vs-site-${siteId}`
+
+    if (siteOverride) {
+      historicalName = siteOverride.historicalName ?? historicalName
+      historicalNameZh = siteOverride.modernNameZh ?? historicalNameZh
+      category = siteOverride.category ?? category
+      language = siteOverride.language ?? language
+      labelYear = siteOverride.labelYear ?? labelYear
+      aliases = [...new Set([...aliases, ...(siteOverride.aliases ?? [])]
+        .map(text)
+        .filter((value) => value && value !== historicalName && value !== historicalNameZh))]
+      if (siteOverride.historicalRecords) {
+        historicalRecords = siteOverride.historicalRecords.map((record) => ({
+          ...record,
+          sourceRecordIds: record.sourceRecordIds?.map(Number).filter(Number.isFinite),
+          sourceUrls: record.sourceUrls?.map((url) => url.replace(/^http:/, 'https:')),
+        }))
+      }
+    }
+
     buildings.push({
       type: 'Feature',
-      geometry,
+      geometry: { type: 'Point', coordinates: coordinate },
       properties: {
-        id: `landmark-${groupKey}-${index}`,
-        featureGroupId: `landmark-${groupKey}`,
+        id: featureGroupId,
+        featureGroupId,
         kind: 'landmark',
         historicalName,
-        modernNameZh,
-        jurisdiction: 'international-settlement',
-        language: 'en',
-        labelYear: start,
+        modernNameZh: historicalNameZh,
+        historicalRecords: cluster.sourceRecordIds.length > 1 || siteOverride ? historicalRecords : undefined,
+        sourceRecordIds: numericSourceRecordIds,
+        legacyFeatureGroupIds,
+        clusterReason: cluster.mergeReasons.length
+          ? [...new Set(cluster.mergeReasons.map((reason) => reason.code))].join(', ')
+          : 'single-source-record',
+        aliases,
+        jurisdiction: siteOverride?.jurisdiction ?? jurisdictionFor(language),
+        language,
+        labelYear,
+        labelYearIsFallback: siteOverride?.labelYear === undefined && !knownStartYears.length,
         sourceIds: ['vs-buildings'],
+        sourceUrls: {
+          'vs-buildings': virtualShanghaiBuildingUrl(cluster.primaryRecordId),
+        },
         category,
-        priority: /municipal|consulate|station|cathedral|bund|club/i.test(historicalName) ? 1 : 3,
+        priority: primaryIsGeneric
+          ? 7
+          : /municipal|consulate|station|cathedral|bund|club/i.test(historicalName) ? 1 : 3,
+        labelOnMap: siteOverride?.labelOnMap ?? !primaryIsGeneric,
       },
     })
-  })
-  return buildings
+  }
+
+  const audit = {
+    generatedAt: new Date().toISOString(),
+    source: sourceMetadata,
+    rules: {
+      numberedAddressMaximumMetres: 250,
+      unnumberedAddressMaximumMetres: 30,
+      semanticVariantMaximumMetres: 8,
+      recordIdentityPreserved: true,
+      genericPrimaryLabelsHidden: true,
+    },
+    summary: {
+      sourceRecords: rawRecords.length,
+      siteClusters: clustered.clusters.length,
+      mappedClusters: buildings.length,
+      mappedSourceRecords: buildings.reduce((sum, feature) => sum + feature.properties.sourceRecordIds.length, 0),
+      multiRecordClusters: clustered.clusters.filter((cluster) => cluster.sourceRecordIds.length > 1).length,
+      omittedClusters: omittedClusters.length,
+      mergeReasons: clustered.mergeReasons.length,
+      curatedOverrides: appliedOverrides.size,
+    },
+    recordToCluster: clustered.recordToCluster,
+    omittedClusters,
+    clusters: clustered.clusters.map((cluster) => ({
+      clusterId: cluster.clusterId,
+      featureGroupId: `landmark-vs-site-${cluster.clusterId.replace(/^vs-building-site:/, '')}`,
+      primaryRecordId: cluster.primaryRecordId,
+      sourceRecordIds: cluster.sourceRecordIds,
+      historicalName: cluster.historicalName,
+      historicalNameZh: cluster.historicalNameZh,
+      address: cluster.address,
+      normalizedAddress: cluster.normalizedAddress,
+      centroid: cluster.centroid,
+      historicalRecords: cluster.historicalRecords,
+      mergeReasons: cluster.mergeReasons,
+      curatedOverride: appliedOverrides.get(cluster.clusterId),
+    })),
+  }
+  return { buildings, audit }
 }
 
 function makeParks(rawFeatures) {
@@ -398,21 +639,36 @@ function makeParks(rawFeatures) {
     const properties = raw.properties ?? {}
     const start = parseYear(field(properties, 'START'))
     const end = parseYear(field(properties, 'END'))
+    const parkRecordId = Number(field(properties, 'ID_PARKOBJ'))
     if (!start || start > 1928 || (end && end < 1928)) return
 
     let historicalName = canonicalName(field(properties, 'S_NAME', 'NAME'))
     let modernNameZh = field(properties, 'CURRENT_NA', 'CHINESE')
     const searchable = `${historicalName} ${modernNameZh}`.toLowerCase()
+    let category = '公园'
+    let priority = 1
+    let historicalChinese
+    let aliases
     if (/fuxing|fu xing|復興|复兴|french park/.test(searchable)) {
       historicalName = 'Parc français'
       modernNameZh = '复兴公园'
+    }
+    if (/dingxiang huayuan|丁香花[园園]/.test(searchable)) {
+      historicalName = 'Dingxiang Huayuan'
+      modernNameZh = '丁香花园'
+      historicalChinese = '丁香花園'
+      aliases = ['丁香花园', '丁香花園', 'Lilac Garden', 'Li Jingmai Residence']
+      category = '花园住宅 / 历史建筑'
+      priority = 2
     }
     if (!historicalName || !modernNameZh) return
 
     const geometry = transformGeometry(raw.geometry)
     if (!geometry || !geometryInBounds(geometry)) return
     const language = /parc|jardin/i.test(historicalName) ? 'fr' : 'en'
-    const groupKey = slug(`${historicalName}-${modernNameZh}`) || `park-${index}`
+    const groupKey = historicalName === 'Dingxiang Huayuan'
+      ? 'dingxiang-huayuan-dingxiang-huayuan'
+      : slug(`${historicalName}-${modernNameZh}`) || `park-${index}`
     parks.push({
       type: 'Feature',
       geometry,
@@ -422,12 +678,17 @@ function makeParks(rawFeatures) {
         kind: 'landmark',
         historicalName,
         modernNameZh,
+        ...(historicalChinese ? { historicalChinese } : {}),
+        ...(aliases ? { aliases } : {}),
         jurisdiction: language === 'fr' ? 'french-concession' : 'international-settlement',
         language,
         labelYear: start,
         sourceIds: ['vs-parks'],
-        category: '公园',
-        priority: 1,
+        ...(Number.isFinite(parkRecordId) && parkRecordId > 0
+          ? { sourceParkRecordIds: [parkRecordId] }
+          : {}),
+        category,
+        priority,
       },
     })
   })
@@ -438,6 +699,37 @@ function ensureAcceptanceExamples(features) {
   let hasDolfus = false
   let hasVallon = false
   let hasFrenchPark = false
+  const frenchParkBuildingRecords = []
+  const withFrenchParkBuildingRecords = (properties) => {
+    if (!frenchParkBuildingRecords.length) return properties
+    const sourceRecordIds = [...new Set(frenchParkBuildingRecords.flatMap(
+      (record) => record.sourceRecordIds ?? [],
+    ))]
+    const legacyFeatureGroupIds = [...new Set(frenchParkBuildingRecords.flatMap(
+      (record) => record.legacyFeatureGroupIds ?? [],
+    ))]
+    const buildingSourceUrl = frenchParkBuildingRecords
+      .map((record) => record.sourceUrls?.['vs-buildings'])
+      .find(Boolean)
+    return {
+      ...properties,
+      sourceIds: [...new Set([...properties.sourceIds, 'vs-buildings'])],
+      sourceRecordIds,
+      legacyFeatureGroupIds,
+      historicalRecords: [{
+        sourceRecordIds,
+        name: 'Koukaza Park',
+        nameZh: '法国公園',
+        startYear: frenchParkBuildingRecords.map((record) => record.labelYear).find(Boolean),
+        sourceUrls: frenchParkBuildingRecords.flatMap((record) =>
+          record.sourceRecordIds?.map(virtualShanghaiBuildingUrl) ?? []),
+        category: '公园',
+      }],
+      sourceUrls: buildingSourceUrl
+        ? { ...(properties.sourceUrls ?? {}), 'vs-buildings': buildingSourceUrl }
+        : properties.sourceUrls,
+    }
+  }
   const output = features.flatMap((feature) => {
     const properties = feature.properties
     const modern = `${properties.modernNameZh} ${properties.modernNameEn ?? ''}`.toLowerCase()
@@ -499,7 +791,7 @@ function ensureAcceptanceExamples(features) {
         hasFrenchPark = true
         return [{
           ...feature,
-          properties: {
+          properties: withFrenchParkBuildingRecords({
             ...properties,
             id: 'landmark-french-park',
             featureGroupId: 'landmark-french-park',
@@ -511,8 +803,13 @@ function ensureAcceptanceExamples(features) {
             language: 'fr',
             labelYear: 1909,
             sourceIds: ['stanford-map-1928', 'vs-parks'],
-          },
+          }),
         }]
+      }
+      if ((/koukaza park/.test(historical) || /法国公园|法國公園/.test(modern)) &&
+        properties.sourceIds?.includes('vs-buildings')) {
+        frenchParkBuildingRecords.push(properties)
+        return []
       }
       if (/koukaza park/.test(historical) || /法国公园|法國公園/.test(modern)) return []
     }
@@ -577,7 +874,7 @@ function ensureAcceptanceExamples(features) {
   if (!hasFrenchPark) output.push({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [121.46435, 31.21935] },
-      properties: {
+      properties: withFrenchParkBuildingRecords({
         id: 'landmark-french-park',
         featureGroupId: 'landmark-french-park',
         kind: 'landmark',
@@ -591,7 +888,7 @@ function ensureAcceptanceExamples(features) {
         sourceIds: ['stanford-map-1928', 'vs-parks'],
         category: '公园',
         priority: 1,
-      },
+      }),
     })
 
   return output
@@ -629,13 +926,27 @@ async function main() {
   )
 
   const roads = makeRoads([...loaded.geocoder, ...loaded['geocoder-ext']])
-  const buildings = makeBuildings(loaded.buildings)
+  const buildingSiteOverrides = await loadBuildingSiteOverrides()
+  const liveBuildings = await loadLiveBuildingRecords(loaded.buildings)
+  const { buildings, audit: buildingClusterAudit } = makeBuildings(
+    liveBuildings.records,
+    {
+      mode: liveBuildings.sourceMode,
+      sourceRecordCount: liveBuildings.sourceCount,
+      ...liveBuildings.snapshot,
+    },
+    buildingSiteOverrides,
+  )
   const parks = makeParks(loaded.parks)
   const features = ensureAcceptanceExamples([...roads, ...buildings, ...parks])
   const jurisdictions = makeJurisdictions(
     loaded['international-settlement'],
     loaded['french-concession'],
   )
+  const supplementalSources = JSON.parse(await fs.readFile(supplementalSourcesPath, 'utf8'))
+  const mergedSources = [...new Map(
+    [...sources, ...supplementalSources].map((source) => [source.id, source]),
+  ).values()]
 
   await Promise.all([
     fs.writeFile(
@@ -646,7 +957,8 @@ async function main() {
       path.join(outputRoot, 'jurisdictions.geojson'),
       JSON.stringify({ type: 'FeatureCollection', features: jurisdictions }),
     ),
-    fs.writeFile(path.join(outputRoot, 'sources.json'), JSON.stringify(sources, null, 2)),
+    fs.writeFile(buildingClusterAuditPath, JSON.stringify(buildingClusterAudit, null, 2)),
+    fs.writeFile(path.join(outputRoot, 'sources.json'), JSON.stringify(mergedSources, null, 2)),
   ])
 
   const roadGroups = new Set(
@@ -654,7 +966,9 @@ async function main() {
   )
   const landmarks = features.filter((feature) => feature.properties.kind === 'landmark')
   console.log(
-    `Generated ${features.length} features: ${roadGroups.size} named roads, ${landmarks.length} landmarks, ${jurisdictions.length} jurisdiction polygons.`,
+    `Generated ${features.length} features: ${roadGroups.size} named roads, ${landmarks.length} landmarks ` +
+    `from ${buildingClusterAudit.summary.sourceRecords} Virtual Shanghai building records, ` +
+    `${jurisdictions.length} jurisdiction polygons.`,
   )
 }
 

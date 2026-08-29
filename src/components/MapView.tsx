@@ -700,6 +700,7 @@ function addHistoricalLayers(
       'all',
       ['==', ['get', 'kind'], 'landmark'],
       ['!=', ['get', 'category'], '现存公园'],
+      ['!=', ['get', 'labelOnMap'], false],
     ],
     layout: {
       'text-field': ['get', 'historicalName'],

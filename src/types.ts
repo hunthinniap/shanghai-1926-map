@@ -8,6 +8,28 @@ export type Jurisdiction =
   | 'old-city'
   | 'chinese-administered'
 export type HighlightedJurisdiction = Exclude<Jurisdiction, 'chinese-administered'>
+export type CurrentUseRelationship =
+  | 'same-building'
+  | 'same-site-repurposed'
+  | 'partial-remains-on-original-site'
+  | 'site-redeveloped'
+  | 'institutional-successor-relocated'
+
+export interface CurrentUseSource {
+  title?: string
+  url: string
+}
+
+export interface HistoricalRecord {
+  sourceRecordIds?: number[]
+  name: string
+  nameZh?: string
+  startYear?: number
+  endYear?: number
+  sourceUrls?: string[]
+  category?: string
+  generic?: boolean
+}
 
 export interface HistoricalFeatureProperties {
   id: string
@@ -17,15 +39,36 @@ export interface HistoricalFeatureProperties {
   modernNameZh: string
   modernNameEn?: string
   historicalChinese?: string
+  historicalRecords?: HistoricalRecord[]
+  sourceRecordIds?: number[]
+  sourceParkRecordIds?: number[]
+  legacyFeatureGroupIds?: string[]
+  clusterReason?: string
   aliases?: string[]
   jurisdiction: Jurisdiction
   language: HistoricalLanguage
   labelYear: number
+  labelYearIsFallback?: boolean
   sourceIds: string[]
+  sourceUrls?: Record<string, string>
   category: string
   priority: number
   historicalUse?: 'park' | 'garden' | 'cemetery' | 'racecourse' | 'industrial' | 'military' | 'recreation' | 'school' | 'aerodrome'
   namingBasis?: 'translated' | 'proposed-road' | 'proposed-district' | 'proposed-site'
+  currentUse?: string
+  currentNameZh?: string
+  currentAddress?: string
+  currentUseNote?: string
+  currentUseRelationship?: CurrentUseRelationship
+  currentUseSources?: CurrentUseSource[]
+  currentUseSourceId?: string
+  currentUseSourceUri?: string
+  currentUseMatch?:
+    | 'historical-name-and-location'
+    | 'historical-name-and-list-record'
+    | 'documented-current-place'
+    | 'verified-online-research'
+  currentUseMatchDistance?: number
   labelFromFeature?: boolean
   labelOnMap?: boolean
 }

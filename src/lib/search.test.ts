@@ -43,4 +43,52 @@ describe('historical name search', () => {
     ]
     expect(searchRecords(extended, 'route vallon')[0]?.featureId).toBe('road-route-vallon-1')
   })
+
+  it('indexes a landmark by its present occupant and use', () => {
+    const landmark = {
+      ...road,
+      geometry: { type: 'Point' as const, coordinates: [121.485, 31.238] },
+      properties: {
+        ...road.properties,
+        id: 'landmark-hsbc',
+        featureGroupId: 'landmark-hsbc',
+        kind: 'landmark' as const,
+        historicalName: 'Hongkong & Shanghai Banking Corporation',
+        modernNameZh: '汇丰银行',
+        currentNameZh: '上海浦东发展银行总部',
+        currentUse: '金融办公',
+        category: '重要建筑',
+      },
+    } satisfies HistoricalFeature
+    const landmarkRecords = makeSearchRecords([landmark])
+    expect(searchRecords(landmarkRecords, '浦东发展银行')[0]?.historicalName)
+      .toBe('Hongkong & Shanghai Banking Corporation')
+    expect(searchRecords(landmarkRecords, '金融办公')[0]?.featureGroupId).toBe('landmark-hsbc')
+  })
+
+  it('indexes every important historical name inside a clustered site', () => {
+    const clusteredLandmark = {
+      ...road,
+      geometry: { type: 'Point' as const, coordinates: [121.458, 31.206] },
+      properties: {
+        ...road.properties,
+        id: 'landmark-rihui-port-mosque',
+        featureGroupId: 'landmark-rihui-port-mosque',
+        kind: 'landmark' as const,
+        historicalName: 'Rihui Port Mosque',
+        modernNameZh: '日晖港清真寺',
+        category: '宗教设施',
+        historicalRecords: [
+          { name: 'Rihui Port Mosque', nameZh: '日晖港清真寺', startYear: 1892 },
+          { name: 'Muslim Cemetery', nameZh: '清真公塋' },
+        ],
+      },
+    } satisfies HistoricalFeature
+    const clusteredRecords = makeSearchRecords([clusteredLandmark])
+
+    expect(searchRecords(clusteredRecords, 'Muslim Cemetery')[0]?.featureGroupId)
+      .toBe('landmark-rihui-port-mosque')
+    expect(searchRecords(clusteredRecords, '清真公塋')[0]?.historicalName)
+      .toBe('Rihui Port Mosque')
+  })
 })

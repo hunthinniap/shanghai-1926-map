@@ -1,0 +1,159 @@
+{
+  "reviewedAt": "2026-08-29",
+  "inputFiles": [
+    {
+      "name": "gemini-code-1787932311585.json",
+      "validJson": true
+    },
+    {
+      "name": "gemini-code-1787932306271.json",
+      "validJson": false,
+      "note": "文件开头被截断；首条只能由残文识别为 Shanghai Jewish School。"
+    }
+  ],
+  "rules": {
+    "sameSiteUseOnly": true,
+    "relocatedSuccessorMustBeExplicit": true,
+    "genericDisappearanceClaimsRejected": true,
+    "candidateTextIsNotEvidence": true
+  },
+  "candidates": [
+    {
+      "historicalName": "East Police Station (Poste de l'Est)",
+      "featureGroupIds": ["landmark-vs-site-1"],
+      "decision": "review",
+      "reason": "180 Quai de France 与今中山东二路269号原水上分局一带的地址对应可保留，但附件所称建筑已拆和商业办公用途没有逐址证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=1"
+      ]
+    },
+    {
+      "historicalName": "Hospital for Refugee Children",
+      "featureGroupIds": ["landmark-vs-site-1000"],
+      "decision": "imported-successor-only",
+      "reason": "上海市儿童医院是机构后继；医院1940年已迁离慕尔鸣路，历史点现用途仍待核。",
+      "sourceUrls": [
+        "https://www.shchildren.com.cn/contents/813/10193.html",
+        "https://news.sjtu.edu.cn/jdjy/20180414/69329.html"
+      ]
+    },
+    {
+      "historicalName": "Y.W.C.A.",
+      "featureGroupIds": ["landmark-vs-site-504"],
+      "decision": "imported",
+      "reason": "只对应113 Yuenmingyuen Road／今圆明园路133号，不扩散至另两处 YWCA 记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=504",
+        "https://www.shobserver.com/wx/detail.do?id=890526"
+      ]
+    },
+    {
+      "historicalName": "Metropolitan Ballroom / Vienna Dancing Hall",
+      "featureGroupIds": ["landmark-vs-site-1003", "landmark-vs-site-1004"],
+      "decision": "imported-separately",
+      "reason": "两者是同街坊内的相邻独立记录，不采用附件中维也纳后来改为大都会的说法；旧建筑已拆，梅龙镇广场地块更新中。",
+      "sourceUrls": [
+        "https://news.xinmin.cn/2023/05/21/32387128.html",
+        "https://www.shanghai.gov.cn/nw4411/20240326/c420a5df09e949e9b6915c02b7077928.html"
+      ]
+    },
+    {
+      "historicalName": "Aiguo Primary School and Kindergarten / Night School for English",
+      "featureGroupIds": ["landmark-vs-site-1006"],
+      "decision": "rejected",
+      "reason": "#1006、#1007 同址聚类成立，但附件只有道路改名资料，不能证明建筑已拆或地块已变为商业住宅。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=1006",
+        "https://www.virtualshanghai.net/数据/建筑?ID=1007"
+      ]
+    },
+    {
+      "historicalName": "Hongkou Maternity Hospital Dispensary",
+      "featureGroupIds": ["landmark-vs-site-100"],
+      "decision": "rejected",
+      "reason": "40-10 Route Porte de l'Ouest 位于今自忠路、旧法租界片区；不能因机构名含 Hongkou 就映射到同仁医院。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=100",
+        "https://sghexport.shobserver.com/html/toutiao/2021/07/05/477796.html"
+      ]
+    },
+    {
+      "historicalName": "Shanghai Jewish School",
+      "featureGroupIds": ["landmark-vs-site-1031"],
+      "decision": "imported-with-limits",
+      "reason": "544 Seymour Road 可对应今486/500/544号教育机构院落；没有证据断言1931年校舍单体完整保存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1031",
+        "https://www.jingan.gov.cn/govxxgk/JA0/2024-06-05/b5736290-e20b-4536-86c1-55daa3b042ef.html"
+      ]
+    },
+    {
+      "historicalName": "Pacific Garden",
+      "featureGroupIds": ["landmark-vs-site-1036"],
+      "decision": "imported-with-limits",
+      "reason": "470 Seymour Road 与今陕西北路470弄太平花园相符；伍廷芳家族建造说法存在新考据争议，未导入。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1036",
+        "https://www.jingan.gov.cn/main/2238d24f-cdbd-4192-bdc7-35d97f6597e9/c2679037-37d3-4951-8553-49fbba6091e7/静安区文物保护点名录.pdf"
+      ]
+    },
+    {
+      "historicalName": "Dagong Hospital",
+      "featureGroupIds": ["landmark-vs-site-1020"],
+      "decision": "imported-successor-only",
+      "reason": "枣庄医院是1958年迁出的机构后继，不是上海历史地块的现用途；旧址用途仍待核。",
+      "sourceUrls": [
+        "https://sdjkzzyy.com/lishiyange/"
+      ]
+    },
+    {
+      "historicalName": "SMC Primary School for Girls",
+      "featureGroupIds": ["landmark-vs-site-1016"],
+      "decision": "rejected",
+      "reason": "375 Seymour Road 的工部局女子小学不能映射为上海市第一中学；附件把工部局小学和工部局女中混为一谈。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1017",
+        "https://www.whb.cn/zhuzhan/kandian/20170918/103182.html",
+        "https://www.ccctspm.org/churchinfo/212"
+      ]
+    },
+    {
+      "historicalName": "Advanced Midwife School / Dade Hospital",
+      "featureGroupIds": ["landmark-vs-site-1034"],
+      "decision": "imported",
+      "reason": "#1034、#1035 同为293 Gordon Road；今江宁路293号为大德公寓并有办公用途，原建筑保存状态待核。",
+      "sourceUrls": [
+        "https://www.publishingmuseum.net/historical_story/52.html",
+        "https://www.jingan.gov.cn/govxxgk/JC0/2025-12-15/d0d0895e-4671-47f6-bf87-4da27a5570d1.html"
+      ]
+    },
+    {
+      "historicalName": "New Asiatic Chemical Works Shanghai",
+      "featureGroupIds": ["landmark-vs-site-1045"],
+      "decision": "imported-successor-only",
+      "reason": "企业谱系延续至上海上药新亚药业，但新闸路旧厂址现用途仍待核。",
+      "sourceUrls": [
+        "https://www.xinyapharm.com/mcompany"
+      ]
+    },
+    {
+      "historicalName": "Market (Seymour Road)",
+      "featureGroupIds": ["landmark-vs-site-1022"],
+      "decision": "imported",
+      "reason": "静安区政府明确今金鹰商场一带以前是西摩菜场；保留历史门牌和年份资料差异。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=1022",
+        "https://www.jingan.gov.cn/rmtzx/003008/003008005/20220113/73b8cf3c-9a21-4747-9461-0e64c3828fc8.html"
+      ]
+    },
+    {
+      "historicalName": "Other Generic & Unverified Sites",
+      "featureGroupIds": [],
+      "decision": "rejected",
+      "reason": "把多个互不相关地点一律判作已消失，没有逐址证据；望德堂仍见现存历史建筑名录，已直接反证该概括。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz1/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+      ]
+    }
+  ]
+}

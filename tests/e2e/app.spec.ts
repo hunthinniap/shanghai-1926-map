@@ -1,4 +1,9 @@
-import { expect, test } from '@playwright/test'
+import { expect, test, type Locator, type Page } from '@playwright/test'
+
+async function expectSearchMiss(page: Page, search: Locator, query: string) {
+  await search.fill(query)
+  await expect(page.getByRole('listbox')).toContainText('没有找到对应的历史地名')
+}
 
 test('searches by modern name and opens the historical detail', async ({ page }) => {
   await page.goto('/')
@@ -62,85 +67,68 @@ test('finds Square Paul Brunat from the current Nie Er Music Square name', async
   await expect(detail).toContainText('1924 年资料')
 })
 
-test('marks the Shaoxing Park label as a road-derived proposal', async ({ page }) => {
+test('opens the clustered Rihui Port records with their individual dates and sources', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-  await search.fill('绍兴公园')
-  await page.getByRole('option', { name: /Parc Victor Emmanuel III/ }).click()
+  await expect(page.getByLabel('地图说明')).toContainText('1803 条建筑原始记录')
+  await search.fill('日晖港清真寺')
+  await page.getByRole('option', { name: /Rihui Port Mosque & Muslim Cemetery/ }).click()
 
-  const detail = page.getByRole('complementary', { name: 'Parc Victor Emmanuel III详情' })
-  await expect(detail).toContainText('绍兴公园')
-  await expect(detail).toContainText('借相邻民国道路名拟定')
-  await expect(detail).toContainText('法语拟名')
+  const detail = page.getByRole('complementary', { name: 'Rihui Port Mosque & Muslim Cemetery详情' })
+  await expect(detail).toContainText('上海市卢湾体育中心（卢湾体育场）')
+  await expect(detail).toContainText('同址历史记录')
+  await expect(detail).toContainText('1892 年起')
+  await expect(detail).toContainText('Rihui Port Mosque')
+  await expect(detail).toContainText('Virtual Shanghai #324')
+  await expect(detail).toContainText('1864 年起')
+  await expect(detail).toContainText('Virtual Shanghai #323 / #493')
 })
 
-test('finds the approved park-style labels for the runway and Pathé sites', async ({ page }) => {
+test('does not expose the removed Shaoxing Park proposal', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-
-  await search.fill('徐汇跑道公园')
-  await page.getByRole('option', { name: /Lunghwa Park/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Lunghwa Park详情' })).toContainText('机场 / 跑道')
-
-  await search.fill('徐家汇公园')
-  await page.getByRole('option', { name: /Jardin Pathé/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Jardin Pathé详情' })).toContainText('工业设施')
+  await expectSearchMiss(page, search, '绍兴公园')
+  await expectSearchMiss(page, search, 'Parc Victor Emmanuel III')
 })
 
-test('finds the approved Avenue and Markham garden proposals', async ({ page }) => {
+test('does not expose the removed runway and Pathé park proposals', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-
-  await search.fill('静安雕塑公园')
-  await page.getByRole('option', { name: /Avenue Sculpture Garden/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Avenue Sculpture Garden详情' })).toContainText('Commerce District')
-
-  await search.fill('蝴蝶湾花园')
-  await page.getByRole('option', { name: /Markham Yard Gardens/ }).click()
-  const markhamDetail = page.getByRole('complementary', { name: 'Markham Yard Gardens详情' })
-  await expect(markhamDetail).toContainText('借原址历史名称拟定')
-  await expect(markhamDetail).toContainText('1933 年资料')
+  await expectSearchMiss(page, search, '徐汇跑道公园')
+  await expectSearchMiss(page, search, 'Lunghwa Park')
+  await expectSearchMiss(page, search, '徐家汇公园')
+  await expectSearchMiss(page, search, 'Jardin Pathé')
 })
 
-test('finds a newly audited French Concession green space', async ({ page }) => {
+test('does not expose the removed Avenue and Markham garden proposals', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-  await search.fill('淮茂绿地')
-  await page.getByRole('option', { name: /Jardins du Cercle Sportif Français/ }).click()
-
-  const detail = page.getByRole('complementary', { name: 'Jardins du Cercle Sportif Français详情' })
-  await expect(detail).toContainText('法国总会')
-  await expect(detail).toContainText('借原址历史名称拟定')
+  await expectSearchMiss(page, search, '静安雕塑公园')
+  await expectSearchMiss(page, search, 'Avenue Sculpture Garden')
+  await expectSearchMiss(page, search, '蝴蝶湾花园')
+  await expectSearchMiss(page, search, 'Markham Yard Gardens')
 })
 
-test('keeps the approved English garden names searchable while displaying French labels', async ({ page }) => {
+test('does not expose the removed French Concession green-space proposals', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-
-  await search.fill('Damei Garden')
-  await page.getByRole('option', { name: /Jardin Damei/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Jardin Damei详情' })).toContainText('东湖绿地')
-
-  await search.fill('No. 3 Route Pottier Gardens')
-  await page.getByRole('option', { name: /Jardins du 3, route Pottier/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Jardins du 3, route Pottier详情' })).toContainText('宝庆路3号花园')
+  await expectSearchMiss(page, search, '淮茂绿地')
+  await expectSearchMiss(page, search, 'Jardins du Cercle Sportif Français')
+  await expectSearchMiss(page, search, '东湖绿地')
+  await expectSearchMiss(page, search, 'Jardin Damei')
+  await expectSearchMiss(page, search, '宝庆路3号花园')
+  await expectSearchMiss(page, search, 'Jardins du 3, route Pottier')
 })
 
-test('covers the Yanzhong green-space sections shown on current maps', async ({ page }) => {
+test('does not expose the removed Yanzhong green-space proposals', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
-
-  await search.fill('辅德里公园')
-  await page.getByRole('option', { name: /Taku Road Gardens/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Taku Road Gardens详情' })).toContainText('Commerce District')
-
-  await search.fill('冬园')
-  await page.getByRole('option', { name: /Jardins de l’avenue Foch/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Jardins de l’avenue Foch详情' })).toContainText('French Quarter')
-
-  await search.fill('广场公园')
-  await page.getByRole('option', { name: /Jardins de l’avenue Édouard-VII/ }).click()
-  await expect(page.getByRole('complementary', { name: 'Jardins de l’avenue Édouard-VII详情' })).toContainText('French Quarter')
+  await expectSearchMiss(page, search, '辅德里公园')
+  await expectSearchMiss(page, search, 'Taku Road Gardens')
+  await expectSearchMiss(page, search, '冬园')
+  await expectSearchMiss(page, search, 'Jardins de l’avenue Foch')
+  await expectSearchMiss(page, search, '广场公园')
+  await expectSearchMiss(page, search, 'Jardins de l’avenue Édouard-VII')
 })
 
 test('treats Route Gaston Kahn as the full modern Jiashan Road', async ({ page }) => {

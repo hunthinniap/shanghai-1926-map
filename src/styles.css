@@ -508,6 +508,36 @@ a:focus-visible {
   margin-top: 20px;
 }
 
+.details-historical-records {
+  padding: 14px 14px 2px;
+  background: rgba(113, 70, 63, 0.055);
+  border: 1px solid rgba(113, 70, 63, 0.14);
+}
+
+.details-historical-records .details-list {
+  display: block;
+  margin-top: 7px;
+}
+
+.details-historical-records .details-list-wide {
+  padding-right: 0;
+}
+
+.details-historical-record-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 5px;
+}
+
+.details-historical-record-sources a {
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 4px;
+  padding: 3px 0;
+  border-top: 0;
+}
+
 .details-sources h3 {
   margin: 0 0 7px;
 }

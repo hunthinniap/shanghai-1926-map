@@ -94,6 +94,14 @@ function App() {
     [data],
   )
   const landmarkCount = data?.features.features.filter((feature) => feature.properties.kind === 'landmark').length ?? 0
+  const buildingRecordCount = useMemo(
+    () => data
+      ? new Set(data.features.features.flatMap(
+          (feature) => feature.properties.sourceRecordIds ?? [],
+        )).size
+      : 0,
+    [data],
+  )
 
   const handleMapError = useCallback((message?: string) => setMapError(message), [])
   const selectHistoricalFeature = useCallback((groupId: string) => {
@@ -204,6 +212,7 @@ function App() {
           <p>现代街廓 · 民国旧名</p>
           <small>
             {roadCount} 条历史道路 · {landmarkCount} 处地标
+            {buildingRecordCount ? `（${buildingRecordCount} 条建筑原始记录）` : ''}
             {subwayVisible ? ' · 地铁站名为推定' : ''}
           </small>
         </div>
