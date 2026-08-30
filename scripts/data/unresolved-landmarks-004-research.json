@@ -1,0 +1,1046 @@
+{
+  "batch": "004",
+  "researchedAt": "2026-08-30",
+  "input": "public/data/unresolved-landmarks/004.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环，只记录该历史点坐标在今天对应的位置和用途。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids for mainland-China map services and must not be written back as project geometry.",
+      "Historical road-name translation is used only to research landmark addresses. No road geometry, road name, or road record is changed by this file.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "location-only-current-use is deliberately not a resolved historical identification and must not be presented on the map as proven continuity.",
+      "Each historical record remains separate even when several records share one modern parcel; different historical dates or uses are not merged away.",
+      "The raw six-field input file is intentionally unchanged."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 15,
+      "demolished-current-use": 5,
+      "location-only-current-use": 30
+    },
+    "byResolutionStatus": {
+      "resolved": 18,
+      "probable": 2,
+      "location-only": 30
+    },
+    "mapWriteRecommendation": {
+      "yes": 18,
+      "review": 2,
+      "location-only": 30
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 408,
+      "historicalName": "Dahua Hospital",
+      "coordinates": { "wgs84": [121.445318, 31.212107], "gcj02": [121.449919, 31.210222] },
+      "modernRoadAddress": "宝庆路19号（地图反查覆盖16—19号范围）",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "复旦大学附属眼耳鼻喉科医院宝庆路院区",
+      "currentUse": "医疗机构",
+      "currentAddress": "宝庆路19号",
+      "currentUseRelationship": "same-site-institutional-successor",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海史料明确把大华医院旧址对应为今天的复旦大学附属眼耳鼻喉科医院宝庆路院区，现代医院资料也使用宝庆路19号。可确认原址医疗功能延续，但不据此断言院内每栋建筑均为大华医院原物。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_7992764",
+        "https://www.sicp.edu.cn/ewebeditor/uploadfile/2021/03/21/20210321175455808.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=408"
+      ]
+    },
+    {
+      "IDBAT": 1666,
+      "historicalName": "Dai Nippon Kohu Shakai (Greater Japan Airline Company)",
+      "coordinates": { "wgs84": [121.486584, 31.248383], "gcj02": [121.491065, 31.246412] },
+      "modernRoadAddress": "武昌路119号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "城投控股大厦地块",
+      "currentUse": "办公",
+      "currentAddress": "武昌路119号",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Seward Road可译为今武昌路，坐标反查落在城投控股大厦一带；尚无航运会社拆建史、旧新门牌沿革或建筑资料把历史公司与今天大厦直接相连。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1666",
+        "https://ditu.amap.com/service/regeo?longitude=121.491065&latitude=31.246412"
+      ]
+    },
+    {
+      "IDBAT": 1775,
+      "historicalName": "DAISY APARTMENTS",
+      "coordinates": { "wgs84": [121.433461, 31.208089], "gcj02": [121.438084, 31.206222] },
+      "modernRoadAddress": "泰安路24号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "永福第六小区地块",
+      "currentUse": "住宅",
+      "currentAddress": "泰安路24号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route Camille Lorioz可定位到今泰安路，坐标落在永福第六小区范围；尚无Daisy Apartments的中文名、门牌变更或现存建筑名录证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1775",
+        "https://ditu.amap.com/service/regeo?longitude=121.438084&latitude=31.206222"
+      ]
+    },
+    {
+      "IDBAT": 686,
+      "historicalName": "Dalu Ophtalmology Clinic",
+      "coordinates": { "wgs84": [121.473141, 31.235465], "gcj02": [121.477666, 31.233527] },
+      "modernRoadAddress": "广西北路264号、汉口路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "中福城三期地块",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "广西北路264号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史地址可定位在汉口路沿线，坐标反查落在中福城三期一带；尚未找到诊所中文名、撤并史或原建筑去向。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=686",
+        "https://ditu.amap.com/service/regeo?longitude=121.477666&latitude=31.233527"
+      ]
+    },
+    {
+      "IDBAT": 682,
+      "historicalName": "Dancing Hall",
+      "coordinates": { "wgs84": [121.471409, 31.23431], "gcj02": [121.47594, 31.232375] },
+      "modernRoadAddress": "西藏中路、汉口路口",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海来福士广场地块",
+      "currentUse": "商业综合体",
+      "currentAddress": "西藏中路268号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "记录名称过于泛化；坐标今天落在上海来福士广场地块，但没有舞厅专名、拆除时间或与现代项目的地籍连续证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=682",
+        "https://ditu.amap.com/service/regeo?longitude=121.475940&latitude=31.232375"
+      ]
+    },
+    {
+      "IDBAT": 376,
+      "historicalName": "Daoist Temple",
+      "historicalNameCorrectionZh": "善导堂",
+      "coordinates": { "wgs84": [121.448768, 31.22254], "gcj02": [121.453362, 31.220654] },
+      "modernRoadAddress": "巨鹿路709号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "善导堂旧址",
+      "currentUse": "优秀历史建筑 / 文化行政办公",
+      "currentAddress": "巨鹿路709号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "sourceDataIssue": "原数据将该建筑误标为道教寺庙；现有史料表明其为天主教圣言会善导堂。",
+      "evidence": "巨鹿路709号的地址、历史照片与优秀历史建筑资料均指向善导堂，现由文化艺术档案等机构使用。建筑本体仍在，历史宗教用途与当前办公用途可区分。",
+      "sourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_8909563",
+        "https://zh.wikipedia.org/wiki/%E5%96%84%E5%AF%BC%E5%A0%82",
+        "https://www.virtualshanghai.net/data/buildings?ID=376"
+      ]
+    },
+    {
+      "IDBAT": 982,
+      "historicalName": "Daoyi Primary School",
+      "coordinates": { "wgs84": [121.455557, 31.234626], "gcj02": [121.460134, 31.232731] },
+      "modernRoadAddress": "北京西路718号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "西王小区、国际丽都街区",
+      "currentUse": "住宅及商业",
+      "currentAddress": "北京西路718号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Avenue Road可对应今北京西路，坐标反查为住宅商业街区；未找到道一小学的校史、门牌沿革或拆建记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=982",
+        "https://ditu.amap.com/service/regeo?longitude=121.460134&latitude=31.232731"
+      ]
+    },
+    {
+      "IDBAT": 966,
+      "historicalName": "Daozhong Junior High School",
+      "coordinates": { "wgs84": [121.457897, 31.235739], "gcj02": [121.462468, 31.233839] },
+      "modernRoadAddress": "北京西路、石门二路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "静安雕塑公园及艺术中心地块",
+      "currentUse": "城市公园及公共文化空间",
+      "currentAddress": "石门二路128号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天位于静安雕塑公园范围；尚无道中中学校址边界、征收拆建或与公园地块连续关系的直接档案。",
+      "sourceUrls": [
+        "https://www.jingan.gov.cn/rmtzx/003001/20221012/741c4a9b-dce0-4f09-8db8-f88ef9b7bb66.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=966"
+      ]
+    },
+    {
+      "IDBAT": 964,
+      "historicalName": "Daozhong Junior High School for Girls",
+      "coordinates": { "wgs84": [121.458201, 31.235905], "gcj02": [121.462771, 31.234004] },
+      "modernRoadAddress": "北京西路、石门二路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "静安雕塑公园及艺术中心地块",
+      "currentUse": "城市公园及公共文化空间",
+      "currentAddress": "石门二路128号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "该记录与同组另外两所道中学校记录共享或紧邻历史地块，但作为不同历史用途保留；目前只能确认坐标落在静安雕塑公园，不能证明建筑连续。",
+      "sourceUrls": [
+        "https://whlyj.sh.gov.cn/gqfc/20220915/7212bfa4f58247d7abe2b745cbea9699.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=964"
+      ]
+    },
+    {
+      "IDBAT": 965,
+      "historicalName": "Daozhong Vocational Continuation School for Girls",
+      "coordinates": { "wgs84": [121.458099, 31.235865], "gcj02": [121.46267, 31.233965] },
+      "modernRoadAddress": "北京西路、石门二路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "静安雕塑公园及艺术中心地块",
+      "currentUse": "城市公园及公共文化空间",
+      "currentAddress": "石门二路128号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "与ID 964、966位置近似，但这是独立的历史职教记录，不作合并；目前仅确认现代坐标用途，尚无校史到公园地块的拆建链。",
+      "sourceUrls": [
+        "https://www.jingan.gov.cn/rmtzx/003001/20221012/741c4a9b-dce0-4f09-8db8-f88ef9b7bb66.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=965"
+      ]
+    },
+    {
+      "IDBAT": 1135,
+      "historicalName": "Darui Hospital",
+      "coordinates": { "wgs84": [121.440555, 31.232294], "gcj02": [121.445167, 31.230427] },
+      "modernRoadAddress": "武定路1761号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "开伦881周边街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "武定路1761号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Hart Road在此处对应今武定路一带；未查到达瑞医院的标准中文名、停办时间或旧址建筑，故只记录坐标今天的街区用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1135",
+        "https://ditu.amap.com/service/regeo?longitude=121.445167&latitude=31.230427"
+      ]
+    },
+    {
+      "IDBAT": 698,
+      "historicalName": "Dasheng Hospital",
+      "coordinates": { "wgs84": [121.473805, 31.233386], "gcj02": [121.478328, 31.231445] },
+      "modernRoadAddress": "汕头路151号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "汕头路公共文化及商业街区",
+      "currentUse": "公共文化、办公及商业",
+      "currentAddress": "汕头路151号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标可定位到汕头路、广西北路附近，邻近黄浦区图书馆；尚无大生医院的门牌沿革或建筑去向资料，不能用邻近公共设施代替历史认定。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=698",
+        "https://ditu.amap.com/service/regeo?longitude=121.478328&latitude=31.231445"
+      ]
+    },
+    {
+      "IDBAT": 60,
+      "historicalName": "Datong Hospital",
+      "coordinates": { "wgs84": [121.474779, 31.225962], "gcj02": [121.479298, 31.224015] },
+      "modernRoadAddress": "桃源路108号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "淮海晶华周边地块",
+      "currentUse": "住宅、商业及办公",
+      "currentAddress": "桃源路108号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史法文路名与复杂门牌可大致投影到桃源路一带，但未找到大同医院与当前综合地块之间的拆建或机构沿革证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=60",
+        "https://ditu.amap.com/service/regeo?longitude=121.479298&latitude=31.224015"
+      ]
+    },
+    {
+      "IDBAT": 150,
+      "historicalName": "Datong Junior High School",
+      "coordinates": { "wgs84": [121.471428, 31.218501], "gcj02": [121.475957, 31.216559] },
+      "modernRoadAddress": "复兴中路323号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "复兴中路323号街区",
+      "currentUse": "文化、办公及住宅",
+      "currentAddress": "复兴中路323号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Rue Amiral Bayle可对应今黄陂南路，点位靠近复兴中路；没有校史材料证明这所初中与大同大学或今天任何学校存在连续关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=150",
+        "https://ditu.amap.com/service/regeo?longitude=121.475957&latitude=31.216559"
+      ]
+    },
+    {
+      "IDBAT": 1461,
+      "historicalName": "Datong University",
+      "historicalNameCorrectionZh": "大同大学",
+      "coordinates": { "wgs84": [121.488836, 31.209016], "gcj02": [121.493305, 31.20702] },
+      "modernRoadAddress": "南车站路、瞿溪路一带",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市大同中学及蓬莱公园相关原校址范围",
+      "currentUse": "中学教育及城市公园",
+      "currentAddress": "南车站路353号及周边",
+      "currentUseRelationship": "historical-campus-destroyed-and-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "大同大学校史把南车站路校舍毁坏与1937年战火相连，战后仅部分恢复；原校址后来分别延续为大同中学教育用地并有部分辟为蓬莱公园。可写原址层面的毁坏与后续用途，不应把今天中学直接等同于原大学。",
+      "sourceUrls": [
+        "https://edu.eastday.com/node2/jypd/n5/20210413/u1ai38886_K20.html",
+        "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%90%8C%E5%A4%A7%E5%AD%A6_%28%E4%B8%8A%E6%B5%B7%29",
+        "https://www.virtualshanghai.net/data/buildings?ID=1461"
+      ]
+    },
+    {
+      "IDBAT": 418,
+      "historicalName": "Dauphiné Apartments",
+      "historicalNameCorrectionZh": "道斐南公寓",
+      "coordinates": { "wgs84": [121.44916, 31.206244], "gcj02": [121.453751, 31.204349] },
+      "modernRoadAddress": "建国西路394号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "建国公寓",
+      "currentUse": "优秀历史建筑 / 住宅",
+      "currentAddress": "建国西路394号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市优秀历史建筑名录直接列出“道斐南公寓—建国公寓—建国西路394号”，历史名称、现代名称、地址和建筑本体形成闭环。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=418"
+      ]
+    },
+    {
+      "IDBAT": 678,
+      "historicalName": "Dawutai Dancing Hall",
+      "historicalNameCorrectionZh": "大舞台（后为上海人民大舞台）",
+      "coordinates": { "wgs84": [121.473179, 31.236128], "gcj02": [121.477704, 31.23419] },
+      "modernRoadAddress": "九江路663号",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海人民大舞台（亚洲大厦内）",
+      "currentUse": "演艺剧场及商业办公综合体",
+      "currentAddress": "九江路663号",
+      "currentUseRelationship": "same-site-rebuilt-with-institutional-name-continuity",
+      "mapWriteRecommendation": "yes",
+      "evidence": "大舞台在同一地址历经焚毁、重建和整体改造；现剧场进入亚洲大厦体系继续运营。这里应标为原建筑已失而地点与剧场名称延续，不能标成1920年代建筑原貌保存。",
+      "sourceUrls": [
+        "https://whlyj.sh.gov.cn/jyjc/20250924/65721fbdbbf0423fa4fdec4a7c86e1c6.html",
+        "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%A4%A7%E8%88%9E%E5%8F%B0",
+        "https://www.virtualshanghai.net/data/buildings?ID=678"
+      ]
+    },
+    {
+      "IDBAT": 284,
+      "historicalName": "Daxia Junior High School",
+      "coordinates": { "wgs84": [121.4534, 31.225274], "gcj02": [121.457982, 31.223379] },
+      "modernRoadAddress": "延安中路、陕西北路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "明德里及延安中路沿线街区",
+      "currentUse": "住宅、办公及商业",
+      "currentAddress": "延安中路、陕西北路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Avenue Foch可对应今延安中路，坐标在明德里一带；未找到大夏初中的校史、迁址或原校舍拆建证据，也不能因同名而与中山北路的大夏大学校址合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=284",
+        "https://ditu.amap.com/service/regeo?longitude=121.457982&latitude=31.223379"
+      ]
+    },
+    {
+      "IDBAT": 1403,
+      "historicalName": "Daxia University",
+      "historicalNameCorrectionZh": "大夏大学",
+      "coordinates": { "wgs84": [121.40407, 31.230219], "gcj02": [121.408721, 31.228384] },
+      "modernRoadAddress": "中山北路3663号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "华东师范大学普陀校区（原大夏大学校址）",
+      "currentUse": "高等教育及校史展示",
+      "currentAddress": "中山北路3663号",
+      "currentUseRelationship": "same-site-institutional-successor-with-preserved-buildings",
+      "mapWriteRecommendation": "yes",
+      "evidence": "华东师大官方校史确认学校在大夏大学原址创办，档案资料又确认校园内仍有大夏时期建筑；因此原校址、后继大学和部分建筑保存均可核，但不推断全校建筑都来自大夏时期。",
+      "sourceUrls": [
+        "https://www.ecnu.edu.cn/info/1094/54917.htm",
+        "https://www.dag.ecnu.edu.cn/11093/list.htm",
+        "https://www.dag.ecnu.edu.cn/03/87/c11166a131975/page.htm",
+        "https://www.virtualshanghai.net/data/buildings?ID=1403"
+      ]
+    },
+    {
+      "IDBAT": 865,
+      "historicalName": "Dazhong Hospital",
+      "coordinates": { "wgs84": [121.468301, 31.237843], "gcj02": [121.472842, 31.235918] },
+      "modernRoadAddress": "长沙路791号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "新金桥广场地块",
+      "currentUse": "办公及商业",
+      "currentAddress": "长沙路791号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Burkill Road可对应今凤阳路—长沙路一带，坐标落在新金桥广场附近；医院撤并、旧门牌与现代建筑均未查明。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=865",
+        "https://ditu.amap.com/service/regeo?longitude=121.472842&latitude=31.235918"
+      ]
+    },
+    {
+      "IDBAT": 684,
+      "historicalName": "Dazhonghua Hospital",
+      "coordinates": { "wgs84": [121.471781, 31.233885], "gcj02": [121.476311, 31.23195] },
+      "modernRoadAddress": "西藏中路146号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海来福士广场南侧地块",
+      "currentUse": "商业综合体及办公",
+      "currentAddress": "西藏中路146号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史福州路门牌与坐标均指向西藏中路、福州路附近，但大中华医院的拆建史与现代来福士地块之间没有可核地籍链。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=684",
+        "https://ditu.amap.com/service/regeo?longitude=121.476311&latitude=31.231950"
+      ]
+    },
+    {
+      "IDBAT": 211,
+      "historicalName": "Dehua Primary School",
+      "coordinates": { "wgs84": [121.468226, 31.213495], "gcj02": [121.472765, 31.211559] },
+      "modernRoadAddress": "建国东路518号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海交通大学附属黄浦实验中学地块",
+      "currentUse": "中学教育",
+      "currentAddress": "建国东路518号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天落在现代中学校园一带，但尚无德华小学的校史或用地交接资料；相同教育用途本身不能证明机构或建筑连续。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=211",
+        "https://ditu.amap.com/service/regeo?longitude=121.472765&latitude=31.211559"
+      ]
+    },
+    {
+      "IDBAT": 1182,
+      "historicalName": "Delirun Bamboo Store",
+      "coordinates": { "wgs84": [121.435968, 31.237888], "gcj02": [121.44059, 31.236031] },
+      "modernRoadAddress": "胶州路163号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "胶州教师公寓地块",
+      "currentUse": "住宅",
+      "currentAddress": "胶州路163号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史店名可能是音译，缺少中文字号与工商档案；坐标今天对应教师公寓一带，只能报告现代用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1182",
+        "https://ditu.amap.com/service/regeo?longitude=121.440590&latitude=31.236031"
+      ]
+    },
+    {
+      "IDBAT": 1710,
+      "historicalName": "Deng'ai Hospital",
+      "historicalNameCorrectionZh": "澄衷医院（后澄衷肺病疗养院）",
+      "coordinates": { "wgs84": [121.497304, 31.303824], "gcj02": [121.501751, 31.301844] },
+      "modernRoadAddress": "政民路507号、武东路503号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市肺科医院（叶家花园历史建筑群）",
+      "currentUse": "专科医院及历史花园建筑",
+      "currentAddress": "政民路507号",
+      "currentUseRelationship": "same-site-institutional-successor-with-preserved-buildings",
+      "mapWriteRecommendation": "yes",
+      "sourceDataIssue": "英文Deng'ai及源数据中文“澄哀”应校正为澄衷医院/澄衷肺病疗养院。",
+      "evidence": "杨浦优秀历史建筑清单和医院资料把叶家花园、澄衷医院与上海市肺科医院明确连成同址沿革，园内仍保存花园与白楼等历史建筑。",
+      "sourceUrls": [
+        "https://www.shsfkyy.com/upload/files/2023/11/720127be61e34a8c.pdf",
+        "https://www.shyp.gov.cn/oarest9/epointtemp/xxgkfile/data/nfsshare/BigFileUpLoadStorage/oldtemp/2022-03-08/d566d95d-fc63-4ef3-95b3-986d7a748c04/%E6%9D%A8%E6%B5%A6%E5%8C%BA%E4%BC%98%E7%A7%80%E5%8E%86%E5%8F%B2%E5%BB%BA%E7%AD%91%E6%B8%85%E5%8D%95.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1710"
+      ]
+    },
+    {
+      "IDBAT": 522,
+      "historicalName": "Deutsch-Asiatische Bank",
+      "historicalNameCorrectionZh": "德华银行",
+      "coordinates": { "wgs84": [121.483737, 31.239309], "gcj02": [121.488227, 31.237343] },
+      "modernRoadAddress": "四川中路294号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "江川大楼",
+      "currentUse": "历史建筑内的办公及文化艺术空间",
+      "currentAddress": "四川中路294号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "历史地址、建筑名录及现代国资和文化使用资料均指向四川中路294号江川大楼；该楼现仍存在并被办公、文化艺术空间使用。不要与四川中路299号的东亚大楼混淆。",
+      "sourceUrls": [
+        "https://www.shanghai.gov.cn/nw17239/20260409/3e3df4dfe7734bc4befd4fc538812704.html",
+        "https://pdf.dfcfw.com/pdf/H2_AN202307251592615030_1.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=522"
+      ]
+    },
+    {
+      "IDBAT": 567,
+      "historicalName": "Development Building",
+      "historicalNameCorrectionZh": "建设大楼",
+      "coordinates": { "wgs84": [121.482373, 31.236594], "gcj02": [121.486867, 31.23463] },
+      "modernRoadAddress": "江西中路171—181号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "建设大楼",
+      "currentUse": "优秀历史建筑 / 办公及商业",
+      "currentAddress": "江西中路181号",
+      "currentUseRelationship": "same-building-renovated",
+      "mapWriteRecommendation": "yes",
+      "evidence": "优秀历史建筑名录列出建设大厦位于江西中路171—181号，近期报道记录了该楼保护修缮与再利用。原数据的171号与现代181号属于同一历史建筑地址范围。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://m.thepaper.cn/newsDetail_forward_31857272",
+        "https://thirdpage.thepaper.cn/h5/jrtt/31155355",
+        "https://www.virtualshanghai.net/data/buildings?ID=567"
+      ]
+    },
+    {
+      "IDBAT": 866,
+      "historicalName": "Dexintang",
+      "coordinates": { "wgs84": [121.468019, 31.237459], "gcj02": [121.472561, 31.235535] },
+      "modernRoadAddress": "长沙路1号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海市格致初级中学地块",
+      "currentUse": "中学教育",
+      "currentAddress": "长沙路1号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Dexintang应为中文药号的音译，但未查到标准字号或工商沿革；坐标今天落在格致初级中学一带，不能据此认定学校承接药房地块。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=866",
+        "https://ditu.amap.com/service/regeo?longitude=121.472561&latitude=31.235535"
+      ]
+    },
+    {
+      "IDBAT": 1646,
+      "historicalName": "Ding Ling's Residence",
+      "historicalNameCorrectionZh": "丁玲旧居",
+      "coordinates": { "wgs84": [121.480898, 31.251045], "gcj02": [121.485399, 31.249092] },
+      "modernRoadAddress": "输入坐标反查为昆山花园路267号附近",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "丁玲旧居",
+      "currentUse": "名人旧居 / 住宅建筑",
+      "currentAddress": "昆山花园路7号",
+      "currentUseRelationship": "identified-building-but-coordinate-mismatch",
+      "mapWriteRecommendation": "review",
+      "sourceDataIssue": "虹口官方资料把丁玲旧居定在昆山花园路7号，而输入坐标约落在267号附近；写图前必须校正几何，不能把当前输入点当作旧居。",
+      "evidence": "历史身份和现存建筑均可由虹口官方资料确认，但该批次坐标与官方地址相差显著。因此保留为有明确候选的probable记录，并禁止按原坐标自动写图。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/4ba9adcb-f752-4018-bb4f-a13db48456e9.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1646"
+      ]
+    },
+    {
+      "IDBAT": 93,
+      "historicalName": "Dinghai Guilhall",
+      "historicalNameCorrectionZh": "定海会馆（候选译名）",
+      "coordinates": { "wgs84": [121.47412, 31.222526], "gcj02": [121.478641, 31.220579] },
+      "modernRoadAddress": "济南路156号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "企业天地、湖滨路周边街区",
+      "currentUse": "办公、商业及公共空间",
+      "currentAddress": "济南路156号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Rue Bluntschli可对应今济南路，坐标位于新天地南部大型更新地块；未找到定海会馆的确切门牌、拆除时间和现代地籍对应。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=93",
+        "https://ditu.amap.com/service/regeo?longitude=121.478641&latitude=31.220579"
+      ]
+    },
+    {
+      "IDBAT": 1367,
+      "historicalName": "Diplomatic Mission Headquarters",
+      "historicalNameCorrectionZh": "出使行辕",
+      "coordinates": { "wgs84": [121.47728, 31.244935], "gcj02": [121.481792, 31.24299] },
+      "modernRoadAddress": "北苏州路470号",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海总商会旧址、上海宝格丽酒店相关地块",
+      "currentUse": "历史建筑、酒店餐饮及活动空间",
+      "currentAddress": "北苏州路470号",
+      "currentUseRelationship": "historical-site-rebuilt",
+      "mapWriteRecommendation": "yes",
+      "evidence": "1884年出使行辕位于该址，但今天看到的是1910年代以后形成的上海总商会历史建筑及修复后的酒店配套。历史地点可确认，原出使行辕建筑不应与现存总商会建筑混同。",
+      "sourceUrls": [
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=158",
+        "https://www.virtualshanghai.net/data/buildings?ID=1367"
+      ]
+    },
+    {
+      "IDBAT": 787,
+      "historicalName": "Dispatchment Office - Ministry of Communications",
+      "coordinates": { "wgs84": [121.467421, 31.245071], "gcj02": [121.471965, 31.243152] },
+      "modernRoadAddress": "七浦路213号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "静安大悦城南座地块",
+      "currentUse": "商业综合体及办公",
+      "currentAddress": "七浦路213号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Winchester Road的现代对应及原机构中文全称仍有不确定性；坐标今天落在静安大悦城南座一带，仅能报告现代商业用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=787",
+        "https://ditu.amap.com/service/regeo?longitude=121.471965&latitude=31.243152"
+      ]
+    },
+    {
+      "IDBAT": 1581,
+      "historicalName": "Dixwell Apartments",
+      "historicalNameCorrectionZh": "狄思威公寓",
+      "coordinates": { "wgs84": [121.479299, 31.264476], "gcj02": [121.483806, 31.262533] },
+      "modernRoadAddress": "四川北路1914—1932号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "溧阳大楼",
+      "currentUse": "优秀历史建筑 / 住宅",
+      "currentAddress": "四川北路1914—1932号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "虹口区官方资料直接说明狄思威公寓位于四川北路1914—1932号，今称溧阳大楼，并列为上海市优秀历史建筑。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/5c4ed168-4e04-4b5d-a25e-ea6d048d317e.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1581"
+      ]
+    },
+    {
+      "IDBAT": 628,
+      "historicalName": "Dong'an Hotel",
+      "coordinates": { "wgs84": [121.477019, 31.234622], "gcj02": [121.481531, 31.232673] },
+      "modernRoadAddress": "广东路666号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "广东路666号商业楼宇",
+      "currentUse": "商业及服务业",
+      "currentAddress": "广东路666号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Canton Road可对应今广东路，坐标反查为商业服务楼宇；东安饭店的中文名称虽可推测，仍缺停业、拆建和门牌连续资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=628",
+        "https://ditu.amap.com/service/regeo?longitude=121.481531&latitude=31.232673"
+      ]
+    },
+    {
+      "IDBAT": 1311,
+      "historicalName": "Donghai Cinema",
+      "historicalNameCorrectionZh": "东海电影院",
+      "coordinates": { "wgs84": [121.503282, 31.256577], "gcj02": [121.507704, 31.25456] },
+      "modernRoadAddress": "海门路144—152号一带",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "东海电影院原址街角绿地",
+      "currentUse": "城市公共绿地",
+      "currentAddress": "海门路、昆明路口附近",
+      "currentUseRelationship": "same-site-demolished-and-landscaped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海史料记录东海电影院被拆除并经历地块更新，后续报道明确指出原址现为街角绿地。历史电影院已不存，现代用途可落到原址层面。",
+      "sourceUrls": [
+        "https://sghexport.shobserver.com/html/toutiao/2020/10/21/282586.html",
+        "https://www.jfdaily.com/wx/detail.do?id=535716",
+        "https://www.virtualshanghai.net/data/buildings?ID=1311"
+      ]
+    },
+    {
+      "IDBAT": 1642,
+      "historicalName": "Donghe Theater",
+      "historicalNameCorrectionZh": "东和馆（后解放剧场）",
+      "coordinates": { "wgs84": [121.481745, 31.251986], "gcj02": [121.486243, 31.250031] },
+      "modernRoadAddress": "乍浦路341号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "解放剧场旧址建筑",
+      "currentUse": "经大幅改建的商业餐饮空间",
+      "currentAddress": "乍浦路341号",
+      "currentUseRelationship": "probable-same-building-heavily-altered",
+      "mapWriteRecommendation": "review",
+      "evidence": "资料把东和馆、解放剧场和乍浦路341号连续相连，并记载剧场后来改作美食广场；但缺少2026年权威现状和构件级保存说明，故可确认旧址与建筑候选，不宜写成完整原貌保存。",
+      "sourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_6712041",
+        "https://www.nfaj.go.jp/onlineservice/digital-gallery/nfaj-digital-gallery-no-33/",
+        "https://www.virtualshanghai.net/data/buildings?ID=1642"
+      ]
+    },
+    {
+      "IDBAT": 143,
+      "historicalName": "Dongnan (Tung Nan) Hospital",
+      "historicalNameCorrectionZh": "东南医院",
+      "coordinates": { "wgs84": [121.469074, 31.216489], "gcj02": [121.473611, 31.214553] },
+      "modernRoadAddress": "合肥路488号、淡水路338号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "淮海中路街道社区卫生服务中心地块",
+      "currentUse": "社区医疗",
+      "currentAddress": "淡水路285号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "东南医院的历史可与东南医学院体系关联，坐标今天也仍为医疗用途；但尚无旧新门牌、校舍或医院资产交接材料证明同址连续。",
+      "sourceUrls": [
+        "https://dag.ahmu.edu.cn/2022/1129/c6795a129911/page.htm",
+        "https://www.virtualshanghai.net/data/buildings?ID=143",
+        "https://ditu.amap.com/service/regeo?longitude=121.473611&latitude=31.214553"
+      ]
+    },
+    {
+      "IDBAT": 144,
+      "historicalName": "Dongnan Professional School",
+      "historicalNameCorrectionZh": "东南医学院附属专业学校（候选）",
+      "coordinates": { "wgs84": [121.469016, 31.216318], "gcj02": [121.473553, 31.214382] },
+      "modernRoadAddress": "合肥路488号、淡水路338号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "淮海中路街道社区卫生服务中心地块",
+      "currentUse": "社区医疗",
+      "currentAddress": "淡水路285号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "记录与ID 143位置相近但历史功能不同，故仍作为独立记录；东南医学院迁皖史可核，当前地块的机构和建筑连续性不可核。",
+      "sourceUrls": [
+        "https://dag.ahmu.edu.cn/2022/1129/c6795a129911/page.htm",
+        "https://www.virtualshanghai.net/data/buildings?ID=144",
+        "https://ditu.amap.com/service/regeo?longitude=121.473553&latitude=31.214382"
+      ]
+    },
+    {
+      "IDBAT": 327,
+      "historicalName": "Dongpu Junior High School",
+      "coordinates": { "wgs84": [121.455416, 31.209043], "gcj02": [121.459992, 31.207136] },
+      "modernRoadAddress": "嘉善路282号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "嘉御庭地块",
+      "currentUse": "住宅及商业",
+      "currentAddress": "嘉善路282号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route Raymond Tenant de la Tour可定位到今嘉善路，坐标在现代住宅项目；没有东浦初中校史或原校舍拆建资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=327",
+        "https://ditu.amap.com/service/regeo?longitude=121.459992&latitude=31.207136"
+      ]
+    },
+    {
+      "IDBAT": 882,
+      "historicalName": "Dongxing Hospital",
+      "coordinates": { "wgs84": [121.462843, 31.234872], "gcj02": [121.4674, 31.23296] },
+      "modernRoadAddress": "凤阳路413号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海长征医院急诊地块",
+      "currentUse": "医疗机构",
+      "currentAddress": "凤阳路415号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天仍为医院用地，但没有东兴医院与长征医院之间的机构并入、门牌沿革或建筑连续证据；医疗用途相同不等于同一医院。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=882",
+        "https://ditu.amap.com/service/regeo?longitude=121.467400&latitude=31.232960"
+      ]
+    },
+    {
+      "IDBAT": 1221,
+      "historicalName": "Door of Hope",
+      "historicalNameCorrectionZh": "济良所",
+      "coordinates": { "wgs84": [121.437004, 31.245846], "gcj02": [121.441625, 31.243991] },
+      "modernRoadAddress": "长寿路170号（地图后门入口亦可能显示普陀路19号）",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "长寿街道社区卫生服务中心",
+      "currentUse": "社区医疗；历史建筑再利用",
+      "currentAddress": "长寿路170号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "史料确认济良所1930年代迁至今长寿路170号，后续长期转作妇幼和社区医疗；普陀官方现址仍为长寿街道社区卫生服务中心，相关报道显示潘氏住宅历史建筑继续使用。",
+      "sourceUrls": [
+        "https://xmwb.xinmin.cn/html/2015-10/11/content_27_1.htm",
+        "https://www.shpt.gov.cn/csjd-jiedaozhen/wenti-csjd/20240905/952611.html",
+        "https://www.shobserver.cn/wx/detail.do?id=94160",
+        "https://www.virtualshanghai.net/data/buildings?ID=1221"
+      ]
+    },
+    {
+      "IDBAT": 361,
+      "historicalName": "Doumer Theater",
+      "historicalNameCorrectionZh": "杜美大戏院（后东湖电影院）",
+      "coordinates": { "wgs84": [121.449021, 31.217871], "gcj02": [121.453614, 31.215982] },
+      "modernRoadAddress": "东湖路9号",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "东湖大厦",
+      "currentUse": "办公、商业及餐饮",
+      "currentAddress": "东湖路9号",
+      "currentUseRelationship": "same-site-demolished-and-rebuilt",
+      "mapWriteRecommendation": "yes",
+      "evidence": "史料明确记录杜美大戏院后改名东湖电影院，1994年拆除并建设东湖大厦；今天地块仍为东湖大厦及其办公商业空间。",
+      "sourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_10585679",
+        "https://m.thepaper.cn/newsDetail_forward_29517469",
+        "https://www.virtualshanghai.net/data/buildings?ID=361"
+      ]
+    },
+    {
+      "IDBAT": 218,
+      "historicalName": "Dubail Apartments",
+      "historicalNameCorrectionZh": "吕班公寓",
+      "coordinates": { "wgs84": [121.466296, 31.217293], "gcj02": [121.470841, 31.215364] },
+      "modernRoadAddress": "重庆南路185号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "重庆公寓",
+      "currentUse": "优秀历史建筑 / 住宅",
+      "currentAddress": "重庆南路185号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市优秀历史建筑名录直接列出“吕班公寓—重庆公寓—重庆南路185号”；原数据181号应按现代官方门牌校正，不是另一处建筑。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://fgj.sh.gov.cn/yxlsjzjk/20240201/680e399bdfd8406a8c3fc734071bf847.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=218"
+      ]
+    },
+    {
+      "IDBAT": 1742,
+      "historicalName": "DUFOUR APARTMENTS",
+      "historicalNameCorrectionZh": "巨福公寓（安康公寓）",
+      "coordinates": { "wgs84": [121.443963, 31.205434], "gcj02": [121.448566, 31.203549] },
+      "modernRoadAddress": "乌鲁木齐南路176号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "乌鲁木齐公寓（安康公寓）",
+      "currentUse": "优秀历史建筑 / 住宅",
+      "currentAddress": "乌鲁木齐南路176号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海优秀历史建筑资料把巨福公寓、安康公寓和现乌鲁木齐公寓对应到乌鲁木齐南路176号，建筑与门牌均可闭环。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz1/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://findingoldshanghai.wordpress.com/2017/04/18/dufour-apartments-1935/",
+        "https://www.virtualshanghai.net/data/buildings?ID=1742"
+      ]
+    },
+    {
+      "IDBAT": 44,
+      "historicalName": "Dunbei Primary School",
+      "coordinates": { "wgs84": [121.477815, 31.223959], "gcj02": [121.482324, 31.222002] },
+      "modernRoadAddress": "会稽路369号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "慎余里更新地块",
+      "currentUse": "历史里弄保护更新、住宅及商业",
+      "currentAddress": "会稽路、人民路口一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Rue Millot可定位到今会稽路一带，坐标今天位于慎余里更新区域；未找到敦北小学的校史和原校舍边界，不能把整个历史里弄视作学校遗存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=44",
+        "https://ditu.amap.com/service/regeo?longitude=121.482324&latitude=31.222002"
+      ]
+    },
+    {
+      "IDBAT": 995,
+      "historicalName": "Dung Dai Medical College",
+      "historicalNameCorrectionZh": "同德医学院",
+      "coordinates": { "wgs84": [121.457394, 31.226948], "gcj02": [121.461966, 31.225045] },
+      "modernRoadAddress": "石门一路67弄1号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市中医医院石门一路门诊部",
+      "currentUse": "医疗门诊；历史校舍改造利用",
+      "currentAddress": "石门一路67弄1号",
+      "currentUseRelationship": "same-building-heavily-altered-and-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海交大医学院档案确认同德医学院沿革，建筑调查资料指出原楼仍在并为上海市中医医院门诊部使用，但内部与平面布局已有较大改动。",
+      "sourceUrls": [
+        "https://www.shsmu.edu.cn/dag/info/1047/1249.htm",
+        "https://www.shyueyanghospital.com/Sites_OldFiles/file/70c22896dda30350725d819f745eafab/%E5%B2%B3%E9%98%B3144%E6%8B%BC%E7%89%88.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=995"
+      ]
+    },
+    {
+      "IDBAT": 152,
+      "historicalName": "Dunren Junior High School for Girls",
+      "coordinates": { "wgs84": [121.469926, 31.218415], "gcj02": [121.47446, 31.216477] },
+      "modernRoadAddress": "复兴中路334号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "新天地站及周边街区",
+      "currentUse": "轨道交通、商业及住宅",
+      "currentAddress": "复兴中路、马当路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route Lafayette可对应今复兴中路，坐标处今天为轨道交通和新天地街区；未找到敦仁女中校史、门牌或拆建记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=152",
+        "https://ditu.amap.com/service/regeo?longitude=121.474460&latitude=31.216477"
+      ]
+    },
+    {
+      "IDBAT": 1,
+      "historicalName": "East Police Station (Poste de l'Est)",
+      "historicalNameCorrectionZh": "小东门捕房（候选）",
+      "coordinates": { "wgs84": [121.495451, 31.228012], "gcj02": [121.499898, 31.226006] },
+      "modernRoadAddress": "输入坐标反查为外马路94号、中山东二路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "十六铺滨江商业及酒店街区",
+      "currentUse": "滨江公共空间、酒店及商业",
+      "currentAddress": "外马路94号附近",
+      "currentUseRelationship": "coordinate-only-with-source-mismatch",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "常见史料把小东门捕房对应到今中山东二路269号，而输入坐标更偏向外马路94号附近；在地籍核对前不可把两者强行合并。",
+      "evidence": "历史机构名称有较强候选，但原地址、常见现代地址与输入坐标不一致；本条只能按输入点报告今天的滨江用途，不能宣称已定位捕房原址。",
+      "sourceUrls": [
+        "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E6%B3%95%E7%A7%9F%E7%95%8C%E5%B7%A1%E6%8D%95%E6%88%BF",
+        "https://www.virtualshanghai.net/data/buildings?ID=1",
+        "https://ditu.amap.com/service/regeo?longitude=121.499898&latitude=31.226006"
+      ]
+    },
+    {
+      "IDBAT": 1663,
+      "historicalName": "Eboshi Hotel (Japanese)",
+      "coordinates": { "wgs84": [121.483714, 31.250002], "gcj02": [121.488205, 31.24804] },
+      "modernRoadAddress": "塘沽路287号附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "外滩豪景苑地块",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "塘沽路287号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Boone Road可对应今塘沽路，但未找到日文旅馆原名、营业史或拆建资料；坐标今天对应住宅小区一带。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1663",
+        "https://ditu.amap.com/service/regeo?longitude=121.488205&latitude=31.248040"
+      ]
+    },
+    {
+      "IDBAT": 243,
+      "historicalName": "Ecole Franco-Annamite (Franco-Annamite School)",
+      "historicalNameCorrectionZh": "法越学校（暂译）",
+      "coordinates": { "wgs84": [121.464835, 31.213082], "gcj02": [121.469384, 31.211155] },
+      "modernRoadAddress": "衍庆路70号、思南路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海交通大学医学院西区地块",
+      "currentUse": "医学高等教育及医疗科研",
+      "currentAddress": "重庆南路280号校区西侧",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史学校可在法文资料目录中确认，坐标今天位于上海交大医学院西区一带；尚无门牌演变或校舍移交资料证明两所学校存在建筑或机构连续。",
+      "sourceUrls": [
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School",
+        "https://www.virtualshanghai.net/data/buildings?ID=243",
+        "https://ditu.amap.com/service/regeo?longitude=121.469384&latitude=31.211155"
+      ]
+    },
+    {
+      "IDBAT": 397,
+      "historicalName": "Ecole Municipale Française-Ecole Rémy (French Municipal School)",
+      "historicalNameCorrectionZh": "法公董局立西童女校（雷米学校）",
+      "coordinates": { "wgs84": [121.450421, 31.212243], "gcj02": [121.45501, 31.210348] },
+      "modernRoadAddress": "永康路200号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市第二中学",
+      "currentUse": "中学教育；历史校舍持续使用",
+      "currentAddress": "永康路200号",
+      "currentUseRelationship": "same-building-repurposed-with-educational-continuity",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海史料确认1933年建成的雷米学校位于永康路200号，1947年后为务本女中，今天由上海市第二中学使用；建筑本体和教育用途均延续。",
+      "sourceUrls": [
+        "https://sghexport.shobserver.com/html/baijiahao/2023/11/11/1175036.html",
+        "https://m.thepaper.cn/newsDetail_forward_24453921",
+        "https://www.virtualshanghai.net/data/buildings?ID=397"
+      ]
+    }
+  ]
+}

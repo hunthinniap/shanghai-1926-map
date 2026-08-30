@@ -1,0 +1,1050 @@
+{
+  "batch": "006",
+  "researchedAt": "2026-08-30",
+  "input": "public/data/unresolved-landmarks/006.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环，只记录该历史点坐标在今天对应的位置和用途。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids for mainland-China map services and must not be written back as project geometry.",
+      "Historical road-name translation is used only to research landmark addresses. No road geometry, road name, or road record is changed by this file.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "location-only-current-use is deliberately not a resolved historical identification and must not be presented on the map as proven continuity.",
+      "Each historical record remains separate even when several records share one modern parcel; different historical dates or uses are not merged away.",
+      "The raw six-field input file is intentionally unchanged."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 13,
+      "demolished-current-use": 3,
+      "location-only-current-use": 34
+    },
+    "byResolutionStatus": {
+      "resolved": 14,
+      "probable": 2,
+      "location-only": 34
+    },
+    "mapWriteRecommendation": {
+      "yes": 14,
+      "review": 2,
+      "location-only": 34
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 1760,
+      "historicalName": "GOLD DRAGON APARTMENTS",
+      "coordinates": { "wgs84": [121.456452, 31.22486], "gcj02": [121.461026, 31.222958] },
+      "modernRoadAddress": "巨鹿路234号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "凯德·茂名公馆地块",
+      "currentUse": "住宅、商业及酒店式服务",
+      "currentAddress": "巨鹿路、茂名南路交会处一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天落在巨鹿路234号及凯德·茂名公馆一带，但尚未找到Gold Dragon Apartments的中文名、门牌沿革或原建筑保存记录，不能据附近现代项目反推为同一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1760",
+        "https://ditu.amap.com/service/regeo?longitude=121.461026&latitude=31.222958"
+      ]
+    },
+    {
+      "IDBAT": 286,
+      "historicalName": "Golden Gate Theater",
+      "historicalNameCorrectionZh": "金门大戏院（后为延安电影院、中福会儿童艺术剧场）",
+      "coordinates": { "wgs84": [121.452588, 31.225478], "gcj02": [121.457173, 31.223585] },
+      "modernRoadAddress": "延安中路555号旧址",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "延安中路道路及高架沿线地块",
+      "currentUse": "城市道路、高架及沿线公共空间",
+      "currentAddress": "延安中路、陕西南路交会处附近",
+      "currentUseRelationship": "demolished-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "戏院沿革资料将Golden Gate Theater对应为金门大戏院，后改延安电影院并由中福会儿童艺术剧场使用；资料明确记载其在1996年为延安路高架工程拆除，坐标今天落在延安中路道路与高架沿线。",
+      "sourceUrls": [
+        "https://yueju.net/api/shows_details?id=572",
+        "https://m.thepaper.cn/newsDetail_forward_6286895",
+        "https://m.thepaper.cn/newsDetail_forward_7098703",
+        "https://www.virtualshanghai.net/data/buildings?ID=286"
+      ]
+    },
+    {
+      "IDBAT": 1609,
+      "historicalName": "Gongdao Bookstore",
+      "historicalNameCorrectionZh": "公道书店",
+      "coordinates": { "wgs84": [121.478671, 31.253592], "gcj02": [121.48318, 31.251646] },
+      "modernRoadAddress": "武进路、四川北路口附近（旧哈斯克尔路1号）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "今潮8弄海派文化中心街区",
+      "currentUse": "历史风貌商业、文化展示及公共空间",
+      "currentAddress": "武进路502号一带",
+      "currentUseRelationship": "same-area-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史名称和旧路址可把公道书店定位到武进路、四川北路一带，坐标今天落在今潮8弄街区；尚无门牌链、地籍图或建筑档案证明书店房屋就是现存街区中的某栋建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1609",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Store",
+        "https://ditu.amap.com/service/regeo?longitude=121.483180&latitude=31.251646"
+      ]
+    },
+    {
+      "IDBAT": 1323,
+      "historicalName": "Gonghexiang Wharf",
+      "coordinates": { "wgs84": [121.496263, 31.250428], "gcj02": [121.500709, 31.248429] },
+      "modernRoadAddress": "东大名路、新建路隧道浦西出口一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "青山实业大楼及道路地块",
+      "currentUse": "办公、道路及隧道交通设施",
+      "currentAddress": "东大名路690号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天对应东大名路、新建路隧道一带，但未找到共和祥码头的岸线范围、停用或拆除记录，不能以现代办公楼或隧道出口代替历史码头实体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1323",
+        "https://ditu.amap.com/service/regeo?longitude=121.500709&latitude=31.248429"
+      ]
+    },
+    {
+      "IDBAT": 1439,
+      "historicalName": "Gongping Funeral Parlor",
+      "coordinates": { "wgs84": [121.412847, 31.211629], "gcj02": [121.417494, 31.209782] },
+      "modernRoadAddress": "凯旋路815号、延安西路地铁站附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "延安西路地铁站周边街区",
+      "currentUse": "轨道交通、道路及商业住宅",
+      "currentAddress": "凯旋路、延安西路交会处一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标可定位到今天延安西路地铁站周边，但没有查到Gongping Funeral Parlor的可靠中文名、停业年代、地块边界或后续拆建记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1439",
+        "https://ditu.amap.com/service/regeo?longitude=121.417494&latitude=31.209782"
+      ]
+    },
+    {
+      "IDBAT": 30,
+      "historicalName": "Gongwutai Cinema",
+      "historicalNameCorrectionZh": "荣记共舞台（今上海共舞台）",
+      "coordinates": { "wgs84": [121.474605, 31.230631], "gcj02": [121.479125, 31.228686] },
+      "modernRoadAddress": "延安东路433号一带",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海共舞台",
+      "currentUse": "演出剧场",
+      "currentAddress": "延安东路433号",
+      "currentUseRelationship": "same-building-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "历史记录的433-B Avenue Edward VII与今延安东路433号吻合，荣记共舞台名称沿革可与今天的上海共舞台相接；政府采购资料证明该剧场当前仍承担营业性演出功能。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=30",
+        "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/7ad80542-97f5-4f4c-8e5e-ec272672e41a.pdf"
+      ]
+    },
+    {
+      "IDBAT": 489,
+      "historicalName": "Good Shepherd Convent Home of Refuge",
+      "historicalNameCorrectionZh": "徐家汇善牧院",
+      "coordinates": { "wgs84": [121.433519, 31.198469], "gcj02": [121.438141, 31.196597] },
+      "modernRoadAddress": "衡山路910号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中国福利会国际和平妇幼保健院",
+      "currentUse": "妇幼专科医院",
+      "currentAddress": "衡山路910号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "社会科学院资料确认善牧院在衡山路910号及其1955年关闭；院史资料记载国际和平妇幼保健院1956年迁入该址。可以确认同一院址的功能替换，但现有证据不足以声称善牧院每一栋建筑都保存至今。",
+      "sourceUrls": [
+        "https://wxs.sass.org.cn/2023/0526/c6911a543063/page.htm",
+        "https://ep.shxwcb.com/2023/08/01/20230801-08-1_20230731235536.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=489"
+      ]
+    },
+    {
+      "IDBAT": 1008,
+      "historicalName": "Grand Danois",
+      "coordinates": { "wgs84": [121.453052, 31.231251], "gcj02": [121.457636, 31.22936] },
+      "modernRoadAddress": "南京西路、南汇路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海少年儿童图书馆南西馆周边街区",
+      "currentUse": "公共文化、商业及住宅",
+      "currentAddress": "南京西路962号、南汇路口附近",
+      "currentUseRelationship": "coordinate-only-with-undefined-source",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "原记录FUNCTION为Undefined，Grand Danois也可能是未规范化的商号、译名或录入项，不能按字面翻译成现代专名。",
+      "evidence": "坐标今天落在南京西路、南汇路口一带，但没有找到可把Grand Danois与某一历史机构或现存建筑闭环的资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1008",
+        "https://ditu.amap.com/service/regeo?longitude=121.457636&latitude=31.229360"
+      ]
+    },
+    {
+      "IDBAT": 876,
+      "historicalName": "Grand Theater",
+      "historicalNameCorrectionZh": "大光明影戏院（今大光明电影院）",
+      "coordinates": { "wgs84": [121.465836, 31.235426], "gcj02": [121.470384, 31.233507] },
+      "modernRoadAddress": "南京西路216号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "大光明电影院",
+      "currentUse": "电影院、电影文化展示及历史建筑",
+      "currentAddress": "南京西路216号",
+      "currentUseRelationship": "same-building-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市政府资料明确大光明电影院的南京西路216号地址、建筑保护修缮与持续放映功能；英文Grand Theater、历史门牌、坐标和中文院名相互吻合。",
+      "sourceUrls": [
+        "https://www.shanghai.gov.cn/nw4411/20250608/45b1d2bd08af47ce98e0e76122ce2b4b.html",
+        "https://www.shanghai.gov.cn/nw4411/20240909/676e24094de741e088e4e7dac38f9259.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=876"
+      ]
+    },
+    {
+      "IDBAT": 706,
+      "historicalName": "Great China Hotel",
+      "historicalNameCorrectionZh": "大中华饭店",
+      "coordinates": { "wgs84": [121.472025, 31.233581], "gcj02": [121.476554, 31.231645] },
+      "modernRoadAddress": "西藏中路200号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "大中华大楼",
+      "currentUse": "住宅、沿街商业及办公；区级文物保护点",
+      "currentAddress": "西藏中路200号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "官方规划文保资料把西藏中路200号列作大中华饭店旧址；建筑保存并称大中华大楼，今天为住宅、商业和办公混合使用，已不再作为饭店经营。",
+      "sourceUrls": [
+        "https://www.shhuangpu.gov.cn/main/2329e706-7b58-4ba5-bf1a-4b4b269e3e37/0478709d-1a8b-438e-b878-7373fd989d56/215D774835454A5C92D1CBBFD35B3817_%E5%85%AC%E7%A4%BA_1.pdf",
+        "https://m.thepaper.cn/newsDetail_forward_18381448",
+        "https://static.zhoudaosh.com/files/cnews/2023/20230520/60A71AFE6C3B529D2F3DBBE62449F5B5692904790289934F6F54BB9E9AE891C7/35.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=706"
+      ]
+    },
+    {
+      "IDBAT": 666,
+      "historicalName": "Great Eastern Dispensary",
+      "historicalNameCorrectionZh": "中法大药房股份有限公司总行",
+      "coordinates": { "wgs84": [121.469516, 31.239801], "gcj02": [121.474053, 31.237874] },
+      "modernRoadAddress": "北京东路851号旧址、今北京东路与芝罘路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "六合大厦周边街区",
+      "currentUse": "办公、商业及住宅",
+      "currentAddress": "北京东路、芝罘路交会处附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史广告可确认Great Eastern Dispensary对应中法大药房及北京路851号总行，但没有找到原店房拆建时间或与今天六合大厦建筑的连续关系，只能记录坐标现状。",
+      "sourceUrls": [
+        "https://zjdy.zjdafw.gov.cn/old/file/X031/194610/10/X031-194610-10.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=666",
+        "https://ditu.amap.com/service/regeo?longitude=121.474053&latitude=31.237874"
+      ]
+    },
+    {
+      "IDBAT": 1234,
+      "historicalName": "Great Eastern Dispensary Factory",
+      "historicalNameCorrectionZh": "中法大药房制药厂",
+      "coordinates": { "wgs84": [121.419197, 31.213049], "gcj02": [121.423839, 31.211199] },
+      "modernRoadAddress": "定西路、昭化路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "宁电投大厦及周边街区",
+      "currentUse": "办公、商业及住宅",
+      "currentAddress": "昭化路、定西路交会处附近",
+      "currentUseRelationship": "coordinate-only-with-address-uncertainty",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "原门牌写作“?? GREAT WESTERN ROAD”；历史广告所见大西路门牌与该点坐标尚未完成地籍校核。",
+      "evidence": "中法大药房史料可证明该公司设有制药厂，但原记录缺门牌，坐标与广告地址之间仍有疑问；现代办公楼只能作为坐标现状，不能视为厂址后继。",
+      "sourceUrls": [
+        "https://zjdy.zjdafw.gov.cn/old/file/X031/194610/10/X031-194610-10.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1234",
+        "https://ditu.amap.com/service/regeo?longitude=121.423839&latitude=31.211199"
+      ]
+    },
+    {
+      "IDBAT": 29,
+      "historicalName": "Great World",
+      "historicalNameCorrectionZh": "大世界",
+      "coordinates": { "wgs84": [121.474503, 31.230344], "gcj02": [121.479023, 31.2284] },
+      "modernRoadAddress": "西藏南路1号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海大世界",
+      "currentUse": "非物质文化遗产展示、演出及公共文化空间",
+      "currentAddress": "西藏南路1号",
+      "currentUseRelationship": "same-building-cultural-use-continuity",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海官方城市漫步资料将Great World直接对应为上海大世界，并确认西藏南路1号地址、历史建筑和当前文化演出用途。",
+      "sourceUrls": [
+        "https://japanese.shanghai.gov.cn/ja-CityWalk/20251120/e20bfddfbe1e40d4bb148f6640d70c88.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=29"
+      ]
+    },
+    {
+      "IDBAT": 392,
+      "historicalName": "Gresham Apartments",
+      "historicalNameCorrectionZh": "格莱勋公寓（又称光明公寓）",
+      "coordinates": { "wgs84": [121.447567, 31.21646], "gcj02": [121.452163, 31.214573] },
+      "modernRoadAddress": "淮海中路1222—1238号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "格莱勋公寓（光明公寓）",
+      "currentUse": "住宅、沿街商业及优秀历史建筑",
+      "currentAddress": "淮海中路1222—1238号",
+      "currentUseRelationship": "same-building-same-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "徐汇区官方优秀历史建筑资料直接记录格莱勋公寓的英文名Gresham Apartments、淮海中路门牌和现存住宅建筑，名称、地址和用途均闭环。",
+      "sourceUrls": [
+        "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "https://www.virtualshanghai.net/data/buildings?ID=392"
+      ]
+    },
+    {
+      "IDBAT": 291,
+      "historicalName": "Grosvenor House",
+      "historicalNameCorrectionZh": "峻岭公寓（今锦江饭店贵宾楼）",
+      "coordinates": { "wgs84": [121.456986, 31.221377], "gcj02": [121.461559, 31.219473] },
+      "modernRoadAddress": "茂名南路59号锦江饭店内",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "锦江饭店贵宾楼（峻岭公寓）",
+      "currentUse": "酒店及优秀历史建筑",
+      "currentAddress": "茂名南路59号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海国资资料把Grosvenor House对应为峻岭公寓并说明其纳入锦江饭店；锦江饭店当前仍把贵宾楼作为酒店建筑运营。",
+      "sourceUrls": [
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20231124/b15d2cc62acf40e1856f52a7277b28bf.html",
+        "https://www.radissonhotels.com/en-us/hotels/jin-jiang-hotel-shanghai",
+        "https://www.virtualshanghai.net/data/buildings?ID=291"
+      ]
+    },
+    {
+      "IDBAT": 258,
+      "historicalName": "Guangdong Guild",
+      "historicalNameCorrectionZh": "广东旅沪同乡会",
+      "coordinates": { "wgs84": [121.46028, 31.21897], "gcj02": [121.464843, 31.217057] },
+      "modernRoadAddress": "皋兰路、瑞金二路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "瑞金二路69弄住宅街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "瑞金二路69弄、皋兰路口附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "档案资料可确认广东旅沪同乡会这一机构，历史门牌和坐标也能落到皋兰路一带；尚未找到原会所建筑的拆建或保存证据，现代住宅只能作为位置现状。",
+      "sourceUrls": [
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74644.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=258",
+        "https://ditu.amap.com/service/regeo?longitude=121.464843&latitude=31.217057"
+      ]
+    },
+    {
+      "IDBAT": 1018,
+      "historicalName": "Guangdong Kindergarten, Primary and Junior High School",
+      "coordinates": { "wgs84": [121.449291, 31.231666], "gcj02": [121.453884, 31.229782] },
+      "modernRoadAddress": "北京西路1117号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "北京西路1110弄住宅街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "北京西路1110弄、1123号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标和旧Avenue Road门牌可定位到北京西路1110弄一带，但没有找到学校正式中文名、停办沿革或校舍与现有住宅的关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1018",
+        "https://ditu.amap.com/service/regeo?longitude=121.453884&latitude=31.229782"
+      ]
+    },
+    {
+      "IDBAT": 1593,
+      "historicalName": "Guangdong Qinxinhui",
+      "coordinates": { "wgs84": [121.476429, 31.259131], "gcj02": [121.480946, 31.257194] },
+      "modernRoadAddress": "川公路、宝源路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "和平坊住宅街区",
+      "currentUse": "住宅及社区配套",
+      "currentAddress": "川公路、宝源路交会处一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "Qinxinhui的原中文专名尚未核定，不能仅按拼音猜作某一广东社团。",
+      "evidence": "坐标今天落在和平坊一带，但尚无可靠中文机构名、历史门牌链或建筑存废资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1593",
+        "https://ditu.amap.com/service/regeo?longitude=121.480946&latitude=31.257194"
+      ]
+    },
+    {
+      "IDBAT": 792,
+      "historicalName": "Guangfu Hospital",
+      "coordinates": { "wgs84": [121.472462, 31.231258], "gcj02": [121.476989, 31.229319] },
+      "modernRoadAddress": "西藏中路、武胜路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "人民广场治安派出所周边地块",
+      "currentUse": "公共管理、道路及公共空间",
+      "currentAddress": "武胜路14号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史点坐标今天落在武胜路、西藏中路一带，但未找到广福医院的完整中文院名、迁撤年代或原院址边界，不能把现有公共机构视为医院后继。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=792",
+        "https://ditu.amap.com/service/regeo?longitude=121.476989&latitude=31.229319"
+      ]
+    },
+    {
+      "IDBAT": 994,
+      "historicalName": "Guangfu Primary and Junior High School",
+      "coordinates": { "wgs84": [121.456091, 31.226375], "gcj02": [121.460666, 31.224475] },
+      "modernRoadAddress": "茂名北路259号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "康乐村住宅街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "茂名北路259号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "旧Moulmein Road可对应今茂名路，坐标落在康乐村附近；尚无学校正式中文名、校舍范围和存废证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=994",
+        "https://ditu.amap.com/service/regeo?longitude=121.460666&latitude=31.224475"
+      ]
+    },
+    {
+      "IDBAT": 1241,
+      "historicalName": "Guangfujiang Temple (Buddhist)",
+      "coordinates": { "wgs84": [121.484148, 31.227284], "gcj02": [121.488636, 31.225311] },
+      "modernRoadAddress": "河南南路、紫华路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "豫园派出所及周边街区",
+      "currentUse": "公共管理、住宅及道路",
+      "currentAddress": "紫华路75号附近",
+      "currentUseRelationship": "coordinate-only-with-address-uncertainty",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "原地址仅写作“? FONGPANG (CENTRAL)”，门牌不完整，英文寺名的中文写法也未核定。",
+      "evidence": "坐标可给出现代位置，但不完整旧址和未核定寺名不足以判断寺院边界、拆除年代或后续地块用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1241",
+        "https://ditu.amap.com/service/regeo?longitude=121.488636&latitude=31.225311"
+      ]
+    },
+    {
+      "IDBAT": 1048,
+      "historicalName": "Guanggong Primary School",
+      "coordinates": { "wgs84": [121.445807, 31.234737], "gcj02": [121.450409, 31.232862] },
+      "modernRoadAddress": "陕西北路、武定路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "众乐新村住宅街区",
+      "currentUse": "住宅、沿街商业及社区设施",
+      "currentAddress": "陕西北路555号、武定路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Seymour Road可对应陕西北路，坐标落在众乐新村一带；没有找到该校正式中文名、迁撤沿革或校舍遗存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1048",
+        "https://ditu.amap.com/service/regeo?longitude=121.450409&latitude=31.232862"
+      ]
+    },
+    {
+      "IDBAT": 262,
+      "historicalName": "Guanghua Ophtalmology Clinic",
+      "historicalNameCorrectionZh": "光华眼科医院",
+      "coordinates": { "wgs84": [121.460508, 31.220019], "gcj02": [121.465071, 31.218106] },
+      "modernRoadAddress": "南昌路218号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市气功研究所医疗门诊部",
+      "currentUse": "中医气功医疗、科研及历史建筑",
+      "currentAddress": "南昌路218号",
+      "currentUseRelationship": "same-building-medical-successor",
+      "mapWriteRecommendation": "yes",
+      "evidence": "气功研究所官方沿革明确南昌路218号红砖建筑原为光华眼科医院，1949年后先后由中医文献馆等单位使用，1999年起由气功研究所使用；原楼保存，医疗属性也有延续。",
+      "sourceUrls": [
+        "https://www.shqigong.com/web/dangjiannewsshow32-1531.html",
+        "https://www.shqigong.com/web/yiliao18.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=262"
+      ]
+    },
+    {
+      "IDBAT": 820,
+      "historicalName": "Guanghua Theater",
+      "coordinates": { "wgs84": [121.464055, 31.226516], "gcj02": [121.468608, 31.224597] },
+      "modernRoadAddress": "成都北路、延安中路高架交会处附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "成都北路道路及延安高架地块",
+      "currentUse": "城市道路、高架交通及公共空间",
+      "currentAddress": "成都北路9号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天落在延安高架、成都北路交会处，但没有查到光华剧场的可靠中文院史或明确拆除记录，不能仅凭现代高架环境判定具体拆建关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=820",
+        "https://ditu.amap.com/service/regeo?longitude=121.468608&latitude=31.224597"
+      ]
+    },
+    {
+      "IDBAT": 825,
+      "historicalName": "Guangjiao Temple",
+      "coordinates": { "wgs84": [121.462543, 31.227114], "gcj02": [121.4671, 31.2252] },
+      "modernRoadAddress": "成都北路391号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "辅德里公园",
+      "currentUse": "城市公园及社区公共空间",
+      "currentAddress": "成都北路、威海路交会处附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史点坐标今天对应辅德里公园一带，但尚无广教寺中文名校核、寺界、拆除记录或公园建设沿革可把两者直接相连。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=825",
+        "https://ditu.amap.com/service/regeo?longitude=121.467100&latitude=31.225200"
+      ]
+    },
+    {
+      "IDBAT": 991,
+      "historicalName": "Guangming Primary School and Kindergarten",
+      "coordinates": { "wgs84": [121.455626, 31.229936], "gcj02": [121.460203, 31.228038] },
+      "modernRoadAddress": "威海路、泰兴路一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "张园西区周边街区",
+      "currentUse": "历史风貌商业、住宅及公共空间",
+      "currentAddress": "泰兴路240号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标可落到张园西区一带，但没有找到光明小学幼稚园的校史、精确校舍范围或与现存石库门建筑的连续证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=991",
+        "https://ditu.amap.com/service/regeo?longitude=121.460203&latitude=31.228038"
+      ]
+    },
+    {
+      "IDBAT": 896,
+      "historicalName": "Guangrentang",
+      "coordinates": { "wgs84": [121.461846, 31.235695], "gcj02": [121.466406, 31.233786] },
+      "modernRoadAddress": "成都北路609号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "中华保险华盛大厦地块",
+      "currentUse": "商务办公及沿街商业",
+      "currentAddress": "成都北路609号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "原记录仅提供广仁堂拼音名、门牌和慈善机构类别；尚无机构沿革或原建筑资料，现代办公楼只表示坐标现状。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=896",
+        "https://ditu.amap.com/service/regeo?longitude=121.466406&latitude=31.233786"
+      ]
+    },
+    {
+      "IDBAT": 778,
+      "historicalName": "Guangshi Primary School No. 2",
+      "coordinates": { "wgs84": [121.470428, 31.247377], "gcj02": [121.474963, 31.245451] },
+      "modernRoadAddress": "浙江北路、海宁路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "浙江北路191号周边街区",
+      "currentUse": "办公、商业及住宅",
+      "currentAddress": "浙江北路191号、海宁路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "North Chekiang Road可对应浙江北路，但未查到广师第二小学的校史、校舍门牌链或建筑存废记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=778",
+        "https://ditu.amap.com/service/regeo?longitude=121.474963&latitude=31.245451"
+      ]
+    },
+    {
+      "IDBAT": 1602,
+      "historicalName": "Guangwutai",
+      "historicalNameCorrectionZh": "广舞台（待与同名剧场区分）",
+      "coordinates": { "wgs84": [121.476613, 31.257169], "gcj02": [121.481129, 31.255231] },
+      "modernRoadAddress": "新广路243号旧址一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "四川北路街道社区服务街区",
+      "currentUse": "社区服务、住宅及商业",
+      "currentAddress": "新广路273号附近",
+      "currentUseRelationship": "coordinate-only-with-homonym-risk",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "虹口另有四川北路1552号群众影剧场前身“广舞台”；本记录地址为新广路243号，可能是另一处场所，不能合并。",
+      "evidence": "官方资料显示虹口存在多个名称相近的剧场沿革，并提到新广路一带戏院在战事中受损；现阶段不足以把本点与群众影剧场或任何现存建筑认作同一实体。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/xwzx/002006/20201106/ccdac01f-1902-49d9-86e2-15405455e512.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1602",
+        "https://ditu.amap.com/service/regeo?longitude=121.481129&latitude=31.255231"
+      ]
+    },
+    {
+      "IDBAT": 1680,
+      "historicalName": "Guangxue Dalou",
+      "historicalNameCorrectionZh": "广学大楼",
+      "coordinates": { "wgs84": [121.482875, 31.244971], "gcj02": [121.487368, 31.24301] },
+      "modernRoadAddress": "虎丘路128号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "广学大楼",
+      "currentUse": "历史建筑、办公及商业更新空间",
+      "currentAddress": "虎丘路128号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市优秀历史建筑名录把虎丘路128号列为广学大楼；近期城市更新报道也确认大楼保存并投入办公、商业等活化使用。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "https://www.shobserver.com/sgh/detail?id=1482679",
+        "https://www.virtualshanghai.net/data/buildings?ID=1680"
+      ]
+    },
+    {
+      "IDBAT": 229,
+      "historicalName": "Guangxue Primary School",
+      "coordinates": { "wgs84": [121.465714, 31.209084], "gcj02": [121.47026, 31.207153] },
+      "modernRoadAddress": "徐家汇路、泰康路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "富源公寓周边街区",
+      "currentUse": "住宅、办公及沿街商业",
+      "currentAddress": "徐家汇路528号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route de Zikawei可对应徐家汇路，坐标落到泰康路口附近；尚无广学小学正式校史、门牌沿革或校舍存废资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=229",
+        "https://ditu.amap.com/service/regeo?longitude=121.470260&latitude=31.207153"
+      ]
+    },
+    {
+      "IDBAT": 1570,
+      "historicalName": "Guangyu Temple",
+      "coordinates": { "wgs84": [121.417951, 31.208548], "gcj02": [121.422594, 31.206697] },
+      "modernRoadAddress": "法华镇路380号至681弄一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "法华镇路住宅街区",
+      "currentUse": "住宅、教育及沿街商业",
+      "currentAddress": "法华镇路380号、681弄一带",
+      "currentUseRelationship": "coordinate-only-with-name-uncertainty",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "原英文写作Guangyu Temple，但可能来自“广誉堂”等非寺院专名的误译；中文实体未核定。",
+      "evidence": "坐标可以落到法华镇路街区，但名称、宗教属性和旧门牌均存在疑问，不能判断是否有建筑遗存或现代后继。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1570",
+        "https://ditu.amap.com/service/regeo?longitude=121.422594&latitude=31.206697"
+      ]
+    },
+    {
+      "IDBAT": 1588,
+      "historicalName": "Guangzhao Gongxue",
+      "historicalNameCorrectionZh": "广肇公学",
+      "coordinates": { "wgs84": [121.479711, 31.259817], "gcj02": [121.484217, 31.257871] },
+      "modernRoadAddress": "东宝兴路123号旧址一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "精武大厦周边街区",
+      "currentUse": "商务办公、住宅及商业",
+      "currentAddress": "东宝兴路79号至123号一带",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "广肇公学中文名与旧址可初步确认，但没有找到校舍拆除、改建或与今日精武大厦地块之间的地籍连续证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1588",
+        "https://ditu.amap.com/service/regeo?longitude=121.484217&latitude=31.257871"
+      ]
+    },
+    {
+      "IDBAT": 1458,
+      "historicalName": "Guangzhao Guild",
+      "historicalNameCorrectionZh": "广肇会馆",
+      "coordinates": { "wgs84": [121.482728, 31.213344], "gcj02": [121.487219, 31.211368] },
+      "modernRoadAddress": "陆家浜路1100号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "PLAYNE新邻及周边街区",
+      "currentUse": "商业、办公及社区服务",
+      "currentAddress": "陆家浜路1100号附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "广肇会馆中文机构名可以确认，历史点也落在陆家浜路1100号一带；尚无会馆建筑存废、地籍重组或现代项目承接关系的可靠资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1458",
+        "https://ditu.amap.com/service/regeo?longitude=121.487219&latitude=31.211368"
+      ]
+    },
+    {
+      "IDBAT": 1572,
+      "historicalName": "Guanyin Temple",
+      "historicalNameCorrectionZh": "法华观音禅寺旧址",
+      "coordinates": { "wgs84": [121.415291, 31.207345], "gcj02": [121.419936, 31.205495] },
+      "modernRoadAddress": "新华路650号一带",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "知音小区（原上海第四化纤厂地块）",
+      "currentUse": "住宅及社区配套",
+      "currentAddress": "新华路650—668号一带",
+      "currentUseRelationship": "demolished-industrialized-then-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "长宁地方史把法华观音禅寺旧址定位在新华路650号，并记载该处后来成为上海第四化纤厂，1980年代仍发现寺院遗物；坐标今天对应知音小区。寺院不再存在的链条较清楚，但寺界与今天住宅地块边界仍需地籍复核后再写入。",
+      "sourceUrls": [
+        "https://www.shcn.gov.cn/col6991/20260527/1309976.html",
+        "https://www.sohu.com/a/129411485_534720",
+        "https://www.virtualshanghai.net/data/buildings?ID=1572",
+        "https://ditu.amap.com/service/regeo?longitude=121.419936&latitude=31.205495"
+      ]
+    },
+    {
+      "IDBAT": 374,
+      "historicalName": "Gubo Primary School",
+      "coordinates": { "wgs84": [121.446689, 31.221261], "gcj02": [121.451287, 31.219378] },
+      "modernRoadAddress": "富民路177号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "富民新村住宅街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "富民路177号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route Amiral Courbet可对应富民路，坐标落到富民新村附近；没有找到Gubo小学的中文校名、校史或校舍存废记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=374",
+        "https://ditu.amap.com/service/regeo?longitude=121.451287&latitude=31.219378"
+      ]
+    },
+    {
+      "IDBAT": 956,
+      "historicalName": "Gugongyang'an - Taipingsi Temple",
+      "historicalNameCorrectionZh": "古供养庵—太平寺",
+      "coordinates": { "wgs84": [121.45942, 31.239337], "gcj02": [121.463987, 31.237436] },
+      "modernRoadAddress": "成都北路863—865号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "成都北路854号周边街区",
+      "currentUse": "历史展示、办公、住宅及道路",
+      "currentAddress": "成都北路854—865号附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "街区史料可确认太平寺在成都北路865号附近并在1949年后停止宗教活动，但尚无寺院拆除时间、建筑边界或现存遗构证明；周边今天用途不能反推为寺址后继。",
+      "sourceUrls": [
+        "https://www.sohu.com/a/237197487_804162",
+        "https://www.virtualshanghai.net/data/buildings?ID=956",
+        "https://ditu.amap.com/service/regeo?longitude=121.463987&latitude=31.237436"
+      ]
+    },
+    {
+      "IDBAT": 63,
+      "historicalName": "Guo'en Buddhist Temple",
+      "coordinates": { "wgs84": [121.473561, 31.225336], "gcj02": [121.478084, 31.223392] },
+      "modernRoadAddress": "普安路171号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "上海中医药大学附属曙光医院西院",
+      "currentUse": "综合性中医医院",
+      "currentAddress": "普安路185号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "坐标今天落在曙光医院西院一带，但没有查到国恩寺的准确寺界、拆除年代或医院建设与寺址的直接沿革，不能写成同址机构后继。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=63",
+        "https://ditu.amap.com/service/regeo?longitude=121.478084&latitude=31.223392"
+      ]
+    },
+    {
+      "IDBAT": 1354,
+      "historicalName": "Guoguang Film Company",
+      "historicalNameCorrectionZh": "国光影片公司",
+      "coordinates": { "wgs84": [121.473325, 31.259818], "gcj02": [121.477852, 31.25789] },
+      "modernRoadAddress": "宝山路499号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "宝山路499弄住宅街区",
+      "currentUse": "住宅及沿街商业",
+      "currentAddress": "宝山路499弄附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "公司中文名和宝山路门牌可以初步对应，但影片公司可能仅租用办公或摄影空间；没有找到原房屋边界和后续拆建记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1354",
+        "https://ditu.amap.com/service/regeo?longitude=121.477852&latitude=31.257890"
+      ]
+    },
+    {
+      "IDBAT": 1199,
+      "historicalName": "Guohua Junior High School",
+      "coordinates": { "wgs84": [121.438689, 31.245381], "gcj02": [121.443306, 31.243523] },
+      "modernRoadAddress": "长寿路1165号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "圣天地商务楼周边街区",
+      "currentUse": "商务办公、商业及住宅",
+      "currentAddress": "长寿路1165号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Gordon Road可对应今长寿路西段，坐标落在圣天地商务楼一带；未找到国华初中的校史、校舍范围或拆建沿革。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1199",
+        "https://ditu.amap.com/service/regeo?longitude=121.443306&latitude=31.243523"
+      ]
+    },
+    {
+      "IDBAT": 860,
+      "historicalName": "Guotai Dancing Hall",
+      "historicalNameCorrectionZh": "国泰舞厅",
+      "coordinates": { "wgs84": [121.469213, 31.237132], "gcj02": [121.473751, 31.235205] },
+      "modernRoadAddress": "西藏中路451号旧址一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "medium",
+      "currentNameZh": "新世界城周边商业街区",
+      "currentUse": "大型商业、办公及城市道路",
+      "currentAddress": "西藏中路、凤阳路交会处附近",
+      "currentUseRelationship": "same-address-later-use-unproven",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "历史记录可把国泰舞厅定位到西藏中路451号一带，但没有找到舞厅所在建筑的拆建时间或其地块如何并入现有商业区的证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=860",
+        "https://ditu.amap.com/service/regeo?longitude=121.473751&latitude=31.235205"
+      ]
+    },
+    {
+      "IDBAT": 1490,
+      "historicalName": "Haichao Temple",
+      "historicalNameCorrectionZh": "海潮寺（中文名待进一步核定）",
+      "coordinates": { "wgs84": [121.495467, 31.2145], "gcj02": [121.499913, 31.212487] },
+      "modernRoadAddress": "多稼路118号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "金南新苑住宅街区",
+      "currentUse": "住宅及社区配套",
+      "currentAddress": "多稼路118号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "旧Liuyusi Jie的精确对应及寺名均待核，坐标今天落在金南新苑；尚无寺院拆建或地块沿革证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1490",
+        "https://ditu.amap.com/service/regeo?longitude=121.499913&latitude=31.212487"
+      ]
+    },
+    {
+      "IDBAT": 1731,
+      "historicalName": "HAIG APARTMENTS",
+      "coordinates": { "wgs84": [121.439432, 31.218962], "gcj02": [121.444046, 31.21709] },
+      "modernRoadAddress": "华山路343号、351弄一带",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "海园小区历史建筑群",
+      "currentUse": "住宅及上海市优秀历史建筑",
+      "currentAddress": "华山路343号、351弄等",
+      "currentUseRelationship": "same-address-surviving-complex-unproven",
+      "mapWriteRecommendation": "review",
+      "sourceDataIssue": "343 Avenue Haig可准确换算为华山路343号，但目前资料只确认该门牌属于海园小区历史建筑群，没有直接把英文Haig Apartments与其中具体楼栋相连。",
+      "evidence": "旧路名和门牌与华山路343号吻合，优秀历史建筑名单也确认海园小区建筑群保存；在找到历史图纸、英文广告或门牌档案前，应保留为高可能而非确定同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1731",
+        "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BC%98%E7%A7%80%E5%8E%86%E5%8F%B2%E5%BB%BA%E7%AD%91",
+        "https://ditu.amap.com/service/regeo?longitude=121.444046&latitude=31.217090"
+      ]
+    },
+    {
+      "IDBAT": 329,
+      "historicalName": "Haiguang Primary School",
+      "coordinates": { "wgs84": [121.453726, 31.208321], "gcj02": [121.458306, 31.206418] },
+      "modernRoadAddress": "襄阳南路425号旧址一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "襄阳南路444弄周边街区",
+      "currentUse": "住宅、商业及道路",
+      "currentAddress": "襄阳南路444弄附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route Raymond Tenant de la Tour可对应襄阳南路，但未找到海光小学的可靠中文校史、校舍界址或现存建筑证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=329",
+        "https://ditu.amap.com/service/regeo?longitude=121.458306&latitude=31.206418"
+      ]
+    },
+    {
+      "IDBAT": 1614,
+      "historicalName": "Haiguang Theater",
+      "historicalNameCorrectionZh": "海光剧院（前身维多利亚大戏院、新中央大戏院）",
+      "coordinates": { "wgs84": [121.480194, 31.252323], "gcj02": [121.484697, 31.250373] },
+      "modernRoadAddress": "海宁路410号旧址",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "海宁绿地",
+      "currentUse": "城市绿地及公共开放空间",
+      "currentAddress": "海宁路、四川北路交会处附近",
+      "currentUseRelationship": "demolished-park",
+      "mapWriteRecommendation": "yes",
+      "evidence": "虹口区图书馆地方资料串联维多利亚、新中央与海光剧院，并明确记载危楼于1950年拆除、原址改建海宁公园；坐标今天对应海宁绿地。",
+      "sourceUrls": [
+        "https://www.hqlib.cn/Web/detail.aspx?ID=6920d493&classID=395&className=",
+        "https://www.amap.com/place/B00155MWRQ",
+        "https://www.virtualshanghai.net/data/buildings?ID=1614"
+      ]
+    },
+    {
+      "IDBAT": 1453,
+      "historicalName": "Haihui Temple (Buddhist)",
+      "historicalNameCorrectionZh": "海会寺",
+      "coordinates": { "wgs84": [121.476056, 31.209727], "gcj02": [121.48057, 31.207769] },
+      "modernRoadAddress": "丽园路565—567号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "海会寺旧址",
+      "currentUse": "区级文物保护点及历史建筑，暂不对外开放",
+      "currentAddress": "丽园路565号",
+      "currentUseRelationship": "same-site-partial-survival-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "黄浦区文物保护点名录和市文旅资料确认丽园路565号海会寺旧址，现存1940年代山门、佛殿及附属建筑；寺院完整格局已改变，但原址仍有明确建筑遗存。",
+      "sourceUrls": [
+        "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf",
+        "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-haihui-temple-300032/",
+        "https://www.virtualshanghai.net/data/buildings?ID=1453"
+      ]
+    },
+    {
+      "IDBAT": 1228,
+      "historicalName": "Haihuisi Temple",
+      "historicalNameCorrectionZh": "海会寺（与丽园路海会寺是否同名异址待核）",
+      "coordinates": { "wgs84": [121.435245, 31.244865], "gcj02": [121.439869, 31.243012] },
+      "modernRoadAddress": "长寿路13号一带",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "长寿健康主题公园及周边街区",
+      "currentUse": "城市公园、公共开放空间及住宅",
+      "currentAddress": "长寿路13号附近",
+      "currentUseRelationship": "coordinate-only-with-homonym-risk",
+      "mapWriteRecommendation": "location-only",
+      "sourceDataIssue": "本记录Ferry Road 1340与丽园路567号海会寺不是同一坐标，不能因为中文同名而合并。",
+      "evidence": "坐标今天落到长寿健康主题公园一带，但尚无本处海会寺的寺界、拆除记录或与公园建设的连续资料；必须与ID 1453分开保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1228",
+        "https://ditu.amap.com/service/regeo?longitude=121.439869&latitude=31.243012"
+      ]
+    },
+    {
+      "IDBAT": 719,
+      "historicalName": "Haining Road Police Station",
+      "historicalNameCorrectionZh": "西虹口捕房（汇司捕房）",
+      "coordinates": { "wgs84": [121.472984, 31.24916], "gcj02": [121.477511, 31.247228] },
+      "modernRoadAddress": "海宁路830号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市塘沽学校海宁路校舍（西虹口捕房旧址）",
+      "currentUse": "学校教育及区级文物保护点",
+      "currentAddress": "海宁路830号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "静安区文物保护点名录和苏州河风貌保护方案确认海宁路830号西虹口捕房旧址建筑保存；现址资料显示由塘沽学校使用，历史警务用途已经转为教育用途。",
+      "sourceUrls": [
+        "https://www.jingan.gov.cn/main/7d7be65c-3921-4bad-9066-6fb0a41d5c02/cdc51e9f-2986-4e3d-b37e-ec126d4fffec/%E9%9D%99%E5%AE%89%E5%8C%BA%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%90%8D%E5%BD%95.pdf",
+        "https://www.jingan.gov.cn/main/472a333b-c647-43cc-829b-0657b2159381/bc9443c8-25aa-4999-b2f8-24106ab57cec/%E8%8B%8F%E5%B7%9E%E6%B2%B3%E4%B8%A4%E5%B2%B8%E9%9B%86%E8%81%9A%E5%B8%A6%E5%8E%86%E5%8F%B2%E9%A3%8E%E8%B2%8C%E4%BF%9D%E6%8A%A4%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6%EF%BC%88%E5%AE%9A%E7%A8%BF%EF%BC%89.pdf",
+        "https://www.021school.cn/schools?grade=5&page=14",
+        "https://www.virtualshanghai.net/data/buildings?ID=719"
+      ]
+    },
+    {
+      "IDBAT": 215,
+      "historicalName": "Haixing Primary School",
+      "coordinates": { "wgs84": [121.466538, 31.216082], "gcj02": [121.471082, 31.214152] },
+      "modernRoadAddress": "重庆南路207号、合肥路口附近",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "location-only",
+      "confidence": "low",
+      "currentNameZh": "万宜坊住宅街区",
+      "currentUse": "住宅、商业及社区设施",
+      "currentAddress": "重庆南路207号、合肥路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "location-only",
+      "evidence": "Route du Pere Froc可对应重庆南路，坐标落在万宜坊一带；没有找到海星小学的校史、校舍界址或与现有里弄建筑的连续关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=215",
+        "https://ditu.amap.com/service/regeo?longitude=121.471082&latitude=31.214152"
+      ]
+    },
+    {
+      "IDBAT": 547,
+      "historicalName": "Hamilton House",
+      "historicalNameCorrectionZh": "汉弥登大楼（今福州大楼）",
+      "coordinates": { "wgs84": [121.482936, 31.236832], "gcj02": [121.487429, 31.234867] },
+      "modernRoadAddress": "江西中路170号",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "福州大楼（汉弥登大楼）",
+      "currentUse": "办公、商业及优秀历史建筑",
+      "currentAddress": "江西中路170号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市优秀历史建筑名录确认江西中路170号福州大楼即汉弥登大楼，建筑保存；今天主要承担办公和沿街商业用途。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=547"
+      ]
+    }
+  ]
+}

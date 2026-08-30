@@ -10,6 +10,7 @@ export type Jurisdiction =
 export type HighlightedJurisdiction = Exclude<Jurisdiction, 'chinese-administered'>
 export type CurrentUseRelationship =
   | 'same-building'
+  | 'same-site-continuing-use'
   | 'same-site-repurposed'
   | 'partial-remains-on-original-site'
   | 'site-redeveloped'

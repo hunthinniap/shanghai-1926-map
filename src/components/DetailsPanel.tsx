@@ -30,6 +30,7 @@ const namingBasisNames = {
 
 const currentUseRelationshipNames = {
   'same-building': '原建筑延续使用',
+  'same-site-continuing-use': '原址与主体功能延续',
   'same-site-repurposed': '原址用途已变',
   'partial-remains-on-original-site': '原址仅存局部遗迹',
   'site-redeveloped': '原址已拆除或重新开发',

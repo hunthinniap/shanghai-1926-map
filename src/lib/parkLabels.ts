@@ -24,6 +24,7 @@ export const currentParkLabels: ParkLabelEntry[] = [
     historicalName: 'Parc Edan',
     featureGroupId: 'park-edan-park',
     legacyGroupIds: [
+      'landmark-vs-site-485',
       'landmark-edan-park-petain-park-公園',
       'landmark-edan-petain-park-hengshan-gongyuan',
     ],

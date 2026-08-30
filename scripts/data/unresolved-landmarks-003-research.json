@@ -1,0 +1,693 @@
+{
+  "batch": "003",
+  "researchedAt": "2026-08-29",
+  "input": "public/data/unresolved-landmarks/003.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids for mainland-China map services and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "resolved requires documented building, institution, or parcel continuity; probable retains a useful candidate with a cadastral, address, or current-occupancy gap.",
+      "Records 1684 and 1686 expose a source-data conflation: the German consulate maps to present Huangpu Road 60, while the Japanese consulate maps to present Huangpu Road 106 and should not share one site cluster.",
+      "The raw six-field input file is intentionally unchanged."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "resolved": 12,
+    "probable": 8,
+    "historyOnly": 2,
+    "unresolved": 28
+  },
+  "records": [
+    {
+      "IDBAT": 976,
+      "historicalName": "Chinese Red Cross",
+      "coordinates": { "wgs84": [121.454458, 31.236945], "gcj02": [121.459038, 31.235053] },
+      "modernRoadAddress": "新闸路856号",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "史料可确认中国红十字会曾在新闸路856号活动，但尚无门牌沿革或建筑资料证明今天同号商业场所继承原建筑或原地块边界。",
+      "sourceUrls": [
+        "https://news.sina.cn/sa/2011-12-03/detail-ikftssap4279440.d.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=976"
+      ]
+    },
+    {
+      "IDBAT": 165,
+      "historicalName": "Chinese Taoist Association",
+      "coordinates": { "wgs84": [121.466184, 31.22144], "gcj02": [121.47073, 31.219513] },
+      "modernRoadAddress": "南昌路34号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Route Dollfus可对应今南昌路，但缺少道教会旧址门牌沿革、地籍和现存建筑证据。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=165"]
+    },
+    {
+      "IDBAT": 859,
+      "historicalName": "Chinese Women's Temperance Association",
+      "coordinates": { "wgs84": [121.457842, 31.232469], "gcj02": [121.462413, 31.230567] },
+      "modernRoadAddress": "吴江路80号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Love Lane可对应今吴江路；该记录与同一聚类中的学校、剧院别名关系复杂，尚无资料将妇女节制会绑定到现存单体。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=859"]
+    },
+    {
+      "IDBAT": 1266,
+      "historicalName": "Chinese Ymca Sports Ground",
+      "coordinates": { "wgs84": [121.484193, 31.270602], "gcj02": [121.488684, 31.268648] },
+      "modernRoadAddress": "欧阳路289号",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "紫荆花园（青年会体育场旧址候选地块）",
+      "currentUse": "住宅小区",
+      "currentAddress": "欧阳路289号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "虹口官方史料确认欧阳路一带曾有中华基督教青年会体育场，现代官方文件确认289号为紫荆花园；体育场、日侨女校、光华大学与现代小区之间的精确地籍链仍待档案图验证。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/xwzx/002005/20210527/bbd6b8bd-ec1e-4b3f-9854-2538bae42bb9.html",
+        "https://www.shanghai.gov.cn/cmsres/d2/d2d0dcc6cfc44b75bcdc3af36cdceac7/428a918968d60c71bd0e852abe6a77fd.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1266"
+      ]
+    },
+    {
+      "IDBAT": 888,
+      "historicalName": "Chishan Hospital",
+      "coordinates": { "wgs84": [121.459579, 31.233269], "gcj02": [121.464145, 31.231364] },
+      "modernRoadAddress": "南京西路646弄11号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Bubbling Well Road可对应今南京西路，但医院中文名、旧弄号沿革与现代地块均未形成证据闭环。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=888"]
+    },
+    {
+      "IDBAT": 1263,
+      "historicalName": "Chizhi University",
+      "coordinates": { "wgs84": [121.477452, 31.277932], "gcj02": [121.481967, 31.276] },
+      "modernRoadAddress": "大连西路550号（原数据560号）",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海外国语大学虹口校区（原持志大学校址）",
+      "currentUse": "高等教育",
+      "currentAddress": "大连西路550号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "原名应校正为持志大学。上海外国语大学官方校史和校区资料确认学校1949年创办后使用原持志大学校舍，现仍为虹口校区；不据此断言每栋旧楼均保存。",
+      "sourceUrls": [
+        "https://www.shisu.edu.cn/campus-life/our-campuses/",
+        "https://info.shisu.edu.cn/13/f7/c15a5111/page.psp",
+        "https://www.virtualshanghai.net/data/buildings?ID=1263"
+      ]
+    },
+    {
+      "IDBAT": 881,
+      "historicalName": "Chizhuang Temple",
+      "coordinates": { "wgs84": [121.462088, 31.23445], "gcj02": [121.466647, 31.232539] },
+      "modernRoadAddress": "成都北路524弄3号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Chengtu Road可对应今成都北路，但寺名音译、旧弄号和现址用途均未获得独立资料确认。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=881"]
+    },
+    {
+      "IDBAT": 665,
+      "historicalName": "Chongbei Primary School",
+      "coordinates": { "wgs84": [121.46932, 31.239042], "gcj02": [121.473857, 31.237115] },
+      "modernRoadAddress": "牯岭路127弄10号候选范围",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "数据所记Lloyd Road的现代对应及点位存在偏差，学校中文校名、门牌和后继机构均未核实。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=665"]
+    },
+    {
+      "IDBAT": 967,
+      "historicalName": "Chongde School for Girls",
+      "coordinates": { "wgs84": [121.457376, 31.235443], "gcj02": [121.461949, 31.233544] },
+      "modernRoadAddress": "北京西路616号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Avenue Road可对应今北京西路，但崇德女校与现代门牌、建筑或教育机构之间尚无连续证据。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=967"]
+    },
+    {
+      "IDBAT": 1264,
+      "historicalName": "Chongguang Temple",
+      "coordinates": { "wgs84": [121.476385, 31.27605], "gcj02": [121.480903, 31.27412] },
+      "modernRoadAddress": "东体育会路77号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "道路和门牌可投影到东体育会路一带，但寺庙中文名、拆建史和当前地块用途未查明。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1264"]
+    },
+    {
+      "IDBAT": 1172,
+      "historicalName": "Chonghua Primary School",
+      "coordinates": { "wgs84": [121.437422, 31.234262], "gcj02": [121.442041, 31.232401] },
+      "modernRoadAddress": "康定路758弄16号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Connaught Road可对应今康定路，但学校与现代地块之间没有校史或门牌沿革资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1172"]
+    },
+    {
+      "IDBAT": 689,
+      "historicalName": "Chongshan Hospital",
+      "coordinates": { "wgs84": [121.472181, 31.234033], "gcj02": [121.47671, 31.232096] },
+      "modernRoadAddress": "福州路720号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "道路门牌可定位至福州路，但医院中文名称、撤并史和现代建筑均未获得可靠资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=689"]
+    },
+    {
+      "IDBAT": 154,
+      "historicalName": "Chongshi Primary School",
+      "coordinates": { "wgs84": [121.470477, 31.221234], "gcj02": [121.47501, 31.219296] },
+      "modernRoadAddress": "黄陂南路430弄7号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Rue Amiral Bayle可对应今黄陂南路，但崇实小学的后继关系及原址保存情况未查明。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=154"]
+    },
+    {
+      "IDBAT": 503,
+      "historicalName": "Christian Literature Building",
+      "coordinates": { "wgs84": [121.482753, 31.245101], "gcj02": [121.487247, 31.24314] },
+      "modernRoadAddress": "虎丘路128号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "广学大楼",
+      "currentUse": "优秀历史建筑 / 展览与文化活动空间",
+      "currentAddress": "虎丘路128号",
+      "currentUseRelationship": "same-building",
+      "evidence": "上海优秀历史建筑资料直接列出虎丘路128号广学大楼；近年的市级文化报道确认楼内举办建筑展览，建筑本体与文化用途均可核。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "https://www.shanghai.gov.cn/nw4411/20241010/c74051d489284526ab031ea450de5668.html",
+        "https://whlyj.sh.gov.cn/wbzx/20211217/beb016da4f504e848ef16e86250d2c95.html"
+      ]
+    },
+    {
+      "IDBAT": 1353,
+      "historicalName": "Chuangzaoshe Publishing House",
+      "coordinates": { "wgs84": [121.471634, 31.256238], "gcj02": [121.476166, 31.254313] },
+      "modernRoadAddress": "宝山路300号附近",
+      "resolutionStatus": "history-only",
+      "confidence": "medium",
+      "evidence": "虹口区史料确认创造社出版部早期位于宝山路三德里A11，1928年迁往四川北路；原数据的宝山路300号可能是门牌或出版物地址，尚不能绑定现代地块。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240826/a6ed739a-30cf-4171-8a31-fbf967e8781d.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1353"
+      ]
+    },
+    {
+      "IDBAT": 42,
+      "historicalName": "Chunzai Hospital",
+      "coordinates": { "wgs84": [121.476603, 31.228253], "gcj02": [121.481116, 31.226302] },
+      "modernRoadAddress": "淮海东路66号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Rue de Ningpo在此数据语境下可定位到今淮海东路一带，但医院名称、旧门牌和现址均无独立证据。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=42"]
+    },
+    {
+      "IDBAT": 1669,
+      "historicalName": "Chuo Hotel (Japanese)",
+      "coordinates": { "wgs84": [121.481813, 31.248753], "gcj02": [121.48631, 31.246796] },
+      "modernRoadAddress": "武昌路411号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Wochang Road可对应今武昌路，但日文旅馆原名、门牌迁移和当前建筑尚未查清。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1669"]
+    },
+    {
+      "IDBAT": 289,
+      "historicalName": "Church of Christ King",
+      "coordinates": { "wgs84": [121.457769, 31.222636], "gcj02": [121.46234, 31.22073] },
+      "modernRoadAddress": "长乐路235号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Route Bourgeat可对应今长乐路，但基督君王堂的建筑沿革与当前用地未找到可交叉验证的资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=289"]
+    },
+    {
+      "IDBAT": 432,
+      "historicalName": "Church of Our Saviour (New Site)",
+      "coordinates": { "wgs84": [121.44314, 31.214808], "gcj02": [121.447746, 31.212929] },
+      "modernRoadAddress": "五原路71号（历史目录作77号）",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "救主堂旧址（原址）",
+      "currentUse": "原教堂已拆；原址后曾作神学教育用途，现状待现场核验",
+      "currentAddress": "五原路71号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "史料可校正新址为五原路71号并确认救主堂1989年拆除，原址后建华东神学院；缺少2026年权威现状资料，故不把后继用途写成确定当前用途。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_8997477",
+        "https://zh.wikipedia.org/wiki/%E6%95%91%E4%B8%BB%E5%A0%82_%28%E4%B8%8A%E6%B5%B7%29",
+        "https://www.virtualshanghai.net/data/buildings?ID=432"
+      ]
+    },
+    {
+      "IDBAT": 1122,
+      "historicalName": "Church Yard",
+      "coordinates": { "wgs84": [121.436896, 31.227606], "gcj02": [121.441515, 31.225743] },
+      "modernRoadAddress": "万航渡路16号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Jessfield Road可对应今万航渡路，但记录名过于泛化，无法确定所属教堂、墓园或现代地块。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1122"]
+    },
+    {
+      "IDBAT": 409,
+      "historicalName": "Clement's Apartments",
+      "coordinates": { "wgs84": [121.44691, 31.212506], "gcj02": [121.451507, 31.210619] },
+      "modernRoadAddress": "复兴中路1363弄",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "克莱门公寓",
+      "currentUse": "住宅 / 局部艺术画廊",
+      "currentAddress": "复兴中路1363弄",
+      "currentUseRelationship": "same-building",
+      "evidence": "上海优秀历史建筑名录直接列出复兴中路1363弄克莱门公寓；市文旅资料显示弄内3号108室现有艺术画廊，主体仍以住宅为主。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://whlyj.sh.gov.cn/yshd/20240807/ca78581dcc9c41729c6246c9b2a2caf7.html"
+      ]
+    },
+    {
+      "IDBAT": 1134,
+      "historicalName": "Clinic for Children",
+      "coordinates": { "wgs84": [121.438791, 31.233143], "gcj02": [121.443407, 31.231279] },
+      "modernRoadAddress": "康定路733弄41号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Connaught Road可对应今康定路，但儿童诊所缺少专名、机构沿革和现代门牌资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1134"]
+    },
+    {
+      "IDBAT": 1196,
+      "historicalName": "Clock Tower",
+      "coordinates": { "wgs84": [121.434942, 31.244014], "gcj02": [121.439566, 31.242161] },
+      "modernRoadAddress": "西康路、长寿路路口",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "沪西大自鸣钟旧址",
+      "currentUse": "城市道路交叉口；钟塔已拆除",
+      "currentAddress": "西康路、长寿路路口",
+      "currentUseRelationship": "demolished-landmark",
+      "evidence": "普陀区官方资料确认川村纪念时计塔即沪西大自鸣钟，位于西康路、长寿路口，1958年因拓宽道路拆除。",
+      "sourceUrls": [
+        "https://www.shpt.gov.cn/csjd-jiedaozhen/gzwy-csjd/20220211/832292.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1196"
+      ]
+    },
+    {
+      "IDBAT": 1643,
+      "historicalName": "Club of the Japanese Marine",
+      "coordinates": { "wgs84": [121.485182, 31.253901], "gcj02": [121.489668, 31.251937] },
+      "modernRoadAddress": "峨眉路400号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Omei Road可对应今峨眉路，但机构准确名称、旧建筑和当前使用单位均未核实。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1643"]
+    },
+    {
+      "IDBAT": 187,
+      "historicalName": "Collège Municipal Français (French Municipal Junior High School)",
+      "coordinates": { "wgs84": [121.4641, 31.220788], "gcj02": [121.468652, 31.218866] },
+      "modernRoadAddress": "南昌路47号（历史目录作11号）",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海科学会堂1号楼",
+      "currentUse": "科学文化活动与会议",
+      "currentAddress": "南昌路47号",
+      "currentUseRelationship": "same-building",
+      "evidence": "市级建筑资料确认南昌路47号科学会堂原为法童公学校舍，科技系统史料进一步串联了法国总会、法国学校和科学会堂的建筑沿革。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://stcsm.sh.gov.cn/xwzx/kjzl/20210524/b3f0f7464f9347f49b84c81400d2def1.html"
+      ]
+    },
+    {
+      "IDBAT": 383,
+      "historicalName": "Collège Saint François Xavier (Saint Francis Xavier School for Chinese)",
+      "coordinates": { "wgs84": [121.442941, 31.221727], "gcj02": [121.447548, 31.219851] },
+      "modernRoadAddress": "延安中路1157弄40号历史门牌范围",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "延安饭店（原圣芳济中学校址范围）",
+      "currentUse": "酒店",
+      "currentAddress": "延安中路1111号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "校史资料确认圣芳济中学位于福煦路1157弄40号，另有建筑史资料将原校址与延安饭店建设地块衔接；缺少正式地籍图，故暂列高概率。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_24453921",
+        "https://wasserbogen.net/report-of-yanan-hotel/",
+        "https://www.virtualshanghai.net/data/buildings?ID=383"
+      ]
+    },
+    {
+      "IDBAT": 842,
+      "historicalName": "Collège Saint François (Saint Francis Junior High School)",
+      "coordinates": { "wgs84": [121.463515, 31.232292], "gcj02": [121.46807, 31.230377] },
+      "modernRoadAddress": "江阴路471弄88号历史门牌范围",
+      "resolutionStatus": "history-only",
+      "confidence": "high",
+      "currentUseRelationship": "institution-relocated",
+      "evidence": "校史资料确认1937至1939年圣芳济中学曾临时迁入江阴路471弄88号，随后迁回福煦路；该记录应理解为同一学校的战时临时校址，现代地块用途仍未查明。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_24453921",
+        "https://www.virtualshanghai.net/data/buildings?ID=842"
+      ]
+    },
+    {
+      "IDBAT": 360,
+      "historicalName": "Collège Sainte Jeanne D'Arc (Saint Joan of Arc Junior High School)",
+      "coordinates": { "wgs84": [121.450459, 31.218392], "gcj02": [121.455048, 31.2165] },
+      "modernRoadAddress": "东湖路18号历史地块",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "嘉华中心、嘉丽苑（若翰纳公学旧址地块）",
+      "currentUse": "办公、商业与住宅综合体",
+      "currentAddress": "淮海中路1010号、东湖路18号一带",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "城市史资料直接将东湖路18号若翰纳公学校址与后建的嘉华中心、嘉丽苑对应，原校舍已不存；仍需地籍图确认历史校园边界。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_7147143",
+        "https://www.virtualshanghai.net/data/buildings?ID=360"
+      ]
+    },
+    {
+      "IDBAT": 1575,
+      "historicalName": "Columbia Country Club",
+      "coordinates": { "wgs84": [121.422211, 31.211101], "gcj02": [121.42685, 31.209248] },
+      "modernRoadAddress": "延安西路1262号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上生·新所 / 哥伦比亚乡村俱乐部旧址",
+      "currentUse": "文化商业园区；原俱乐部建筑现为茑屋书店",
+      "currentAddress": "延安西路1262号",
+      "currentUseRelationship": "same-building-and-site",
+      "evidence": "市政府、文旅和规划资料均确认上生·新所由哥伦比亚乡村俱乐部等历史建筑更新而来；2025年官方报道明确原俱乐部建筑现作茑屋书店。",
+      "sourceUrls": [
+        "https://www.shanghai.gov.cn/nw15343/20260821/cf59e7e3d7ae4858b870c47ac2e757ce.html",
+        "https://whlyj.sh.gov.cn/gqfc/20250604/1e4f4ee1fb3943c29394d482a8d605c7.html",
+        "https://ghzyj.sh.gov.cn/cn/20230111/dd4065f7bf46488aa38efd20154b4159.html"
+      ]
+    },
+    {
+      "IDBAT": 1363,
+      "historicalName": "Commercial Press (Shangwu) Press No. 5",
+      "coordinates": { "wgs84": [121.467485, 31.259965], "gcj02": [121.47203, 31.258053] },
+      "modernRoadAddress": "天通庵路190号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "商务印书馆第五印刷所旧址",
+      "currentUse": "区级文物保护单位 / 展陈与公共文化空间建设中",
+      "currentAddress": "天通庵路190号",
+      "currentUseRelationship": "same-building",
+      "evidence": "静安区官方名录和更新资料确认旧址建筑保存、列为区级文保单位，并正推进展陈、研学和公共文化功能。",
+      "sourceUrls": [
+        "https://www.jingan.gov.cn/govxxgk/JA0/2017-12-20/b20cb1e0-b7e5-4423-ba0f-dc9a2ad657b3.html",
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-07-16/33b1ef95-d58d-4d11-b120-3cb151ad21cc.html",
+        "https://www.jingan.gov.cn/govxxgk/JB7/2024-06-17/8df5e8ad-526f-44f0-b314-4a642a0eedb6.html"
+      ]
+    },
+    {
+      "IDBAT": 803,
+      "historicalName": "Committee for Refugee Relief",
+      "coordinates": { "wgs84": [121.472545, 31.230138], "gcj02": [121.477071, 31.228199] },
+      "modernRoadAddress": "龙门路16号历史门牌范围",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "点位处于龙门路、武胜路、延安东路多次改造区域；机构全名、旧门牌和现代地块均未查明。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=803"]
+    },
+    {
+      "IDBAT": 6,
+      "historicalName": "Consulate General of France",
+      "coordinates": { "wgs84": [121.487407, 31.233863], "gcj02": [121.491884, 31.231883] },
+      "modernRoadAddress": "金陵东路2号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "光明大厦 / 上海市文物交流中心",
+      "currentUse": "办公；文物交流与展览机构",
+      "currentAddress": "金陵东路2号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "地方史料确认法国领事馆旧楼1987年拆除，原址后建光明大厦；市文旅局现列上海市文物交流中心办公地址为该楼5层。",
+      "sourceUrls": [
+        "https://k.sina.com.cn/article_5044281310_12ca99fde020019v0z.html",
+        "https://whlyj.sh.gov.cn/zsdw/20200927/34d1392117604091b260bdb05070547b.html",
+        "https://english.shanghai.gov.cn/en-Accounting/20260410/db5626cd228a466987bec9169d26c0cd.html"
+      ]
+    },
+    {
+      "IDBAT": 847,
+      "historicalName": "Consulate General of Italy",
+      "coordinates": { "wgs84": [121.461764, 31.232257], "gcj02": [121.466324, 31.230346] },
+      "modernRoadAddress": "成都北路369号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Chengtu Road可对应今成都北路，但意大利总领事馆的旧门牌迁移、建筑保存和现使用单位未形成证据链。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=847"]
+    },
+    {
+      "IDBAT": 429,
+      "historicalName": "Consulate General of Portugal",
+      "coordinates": { "wgs84": [121.443364, 31.21034], "gcj02": [121.447969, 31.208458] },
+      "modernRoadAddress": "东平路15号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Route Francis Garnier可对应今东平路，但葡萄牙总领事馆是否为同号现存花园住宅、当前用途为何，尚无权威资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=429"]
+    },
+    {
+      "IDBAT": 440,
+      "historicalName": "Consulate General of Russia (Soviet Union)",
+      "coordinates": { "wgs84": [121.4407, 31.218947], "gcj02": [121.445311, 31.217074] },
+      "modernRoadAddress": "常熟路100弄10号历史门牌范围",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Route de Say-Zoong为今常熟路，但数据点更接近华山路，地址和坐标互有张力，不能据邻近建筑推定领事馆旧址。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=440"]
+    },
+    {
+      "IDBAT": 1684,
+      "historicalName": "Consulate of Germany",
+      "coordinates": { "wgs84": [121.486629, 31.245809], "gcj02": [121.491109, 31.243837] },
+      "modernRoadAddress": "黄浦路60号",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "德国领事馆旧址地块",
+      "currentUse": "建筑及当前使用单位待核",
+      "currentAddress": "黄浦路60号",
+      "currentUseRelationship": "historical-site-only",
+      "evidence": "上海档案资料整理确认德国领事馆旧址门牌对应今黄浦路60号；尚无足够资料确认现存建筑是否为原领馆及其2026年用途。",
+      "sourceUrls": [
+        "https://www.cnr.cn/shanghai/tt/20180923/t20180923_524368293.shtml",
+        "https://www.virtualshanghai.net/data/buildings?ID=1684"
+      ]
+    },
+    {
+      "IDBAT": 1686,
+      "historicalName": "Consulate of Japan",
+      "coordinates": { "wgs84": [121.487893, 31.246035], "gcj02": [121.492369, 31.244059] },
+      "modernRoadAddress": "黄浦路106号（原数据误作60号）",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "日本领事馆旧址（黄浦路106号红楼、灰楼）",
+      "currentUse": "优秀历史建筑；当前具体商务或酒店用途待核",
+      "currentAddress": "黄浦路106号",
+      "currentUseRelationship": "same-building-probable",
+      "evidence": "档案资料和优秀历史建筑名录均将日本领事馆对应黄浦路106号，而非原数据的60号；名录确认红楼、灰楼保存，但现使用单位资料可能已过时，故保留为高概率。",
+      "sourceUrls": [
+        "https://www.cnr.cn/shanghai/tt/20180923/t20180923_524368293.shtml",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1686"
+      ]
+    },
+    {
+      "IDBAT": 362,
+      "historicalName": "Consulate of Spain",
+      "coordinates": { "wgs84": [121.44955, 31.216964], "gcj02": [121.454142, 31.215073] },
+      "modernRoadAddress": "淮海中路1154号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Avenue Joffre可对应今淮海中路，但西班牙领事馆的门牌沿革、建筑和现用途尚无可靠交叉资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=362"]
+    },
+    {
+      "IDBAT": 534,
+      "historicalName": "Continental Bank Building",
+      "coordinates": { "wgs84": [121.483038, 31.239061], "gcj02": [121.48753, 31.237096] },
+      "modernRoadAddress": "九江路111号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "大陆银行大楼 / 上投大厦",
+      "currentUse": "金融与办公；上海国际信托办公地址",
+      "currentAddress": "九江路111号",
+      "currentUseRelationship": "same-building",
+      "evidence": "上海优秀历史建筑名录确认九江路111号大陆银行大楼；上海国际信托官网及最新年报使用同址上投大厦作为办公地址。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://win.shanghaitrust.com/",
+        "https://paper.cnstock.com/html/2026-04/29/content_2208935.htm"
+      ]
+    },
+    {
+      "IDBAT": 804,
+      "historicalName": "Continental Hotel",
+      "coordinates": { "wgs84": [121.47281, 31.231379], "gcj02": [121.477336, 31.22944] },
+      "modernRoadAddress": "西藏中路69号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Yuyaching Road可对应今西藏中路，但大陆饭店的中文名、拆建史及现代地块尚未确认。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=804"]
+    },
+    {
+      "IDBAT": 1551,
+      "historicalName": "Convent",
+      "coordinates": { "wgs84": [121.431154, 31.190381], "gcj02": [121.43578, 31.188508] },
+      "modernRoadAddress": "南丹路40号",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "徐家汇大修道院旧址 / 徐汇区汇展示厅",
+      "currentUse": "政府办公与公共文化展示",
+      "currentAddress": "南丹路40号",
+      "currentUseRelationship": "same-building",
+      "evidence": "官方文化遗产资料将大修道院列入徐家汇天主教历史建筑群；政务报道确认南丹路40号原修道院位于区政府大院内，底层设徐汇区汇展示厅。",
+      "sourceUrls": [
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_4428923"
+      ]
+    },
+    {
+      "IDBAT": 1198,
+      "historicalName": "Copper Company",
+      "coordinates": { "wgs84": [121.434506, 31.241186], "gcj02": [121.43913, 31.239333] },
+      "modernRoadAddress": "常德路1200号历史门牌附近；坐标更接近新会路",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Hart Road可对应今常德路，但地址与坐标存在偏差，且公司名称过于泛化，无法锁定现代地块。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1198"]
+    },
+    {
+      "IDBAT": 1095,
+      "historicalName": "Cosmopolitan Apartments",
+      "coordinates": { "wgs84": [121.450082, 31.22809], "gcj02": [121.454673, 31.226204] },
+      "modernRoadAddress": "陕西北路175弄 / 南京西路1213弄",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "华业公寓",
+      "currentUse": "住宅",
+      "currentAddress": "陕西北路175弄",
+      "currentUseRelationship": "same-building",
+      "evidence": "上海官方旅游资料确认Cosmopolitan Apartments即华业公寓，位于陕西北路175弄，装饰艺术派公寓建筑仍作住宅使用。",
+      "sourceUrls": [
+        "https://www.meet-in-shanghai.net/en/news/spanishstyle-art-deco-building-still-projects-grandeur-of-old-shanghai-671774/",
+        "https://www.virtualshanghai.net/data/buildings?ID=1095"
+      ]
+    },
+    {
+      "IDBAT": 147,
+      "historicalName": "Cotton Cloth Guild",
+      "coordinates": { "wgs84": [121.470718, 31.216935], "gcj02": [121.47525, 31.214994] },
+      "modernRoadAddress": "合肥路406号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Route du Père Froc可对应今合肥路，但棉布公所中文专名、会馆沿革和现址用途未查明。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=147"]
+    },
+    {
+      "IDBAT": 1217,
+      "historicalName": "Cotton Textile Factory (Japanese)",
+      "coordinates": { "wgs84": [121.436953, 31.250209], "gcj02": [121.441574, 31.248356] },
+      "modernRoadAddress": "宜昌路13号历史门牌范围",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "普陀官方资料确认宜昌路、西康路一带曾有日资内外棉工厂，但原记录地址和工厂编号无法与该资料精确匹配，不能贸然绑定某处工业遗产。",
+      "sourceUrls": [
+        "https://www.shpt.gov.cn/xfdt-bmshsjpz/20230919/915025.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1217"
+      ]
+    },
+    {
+      "IDBAT": 845,
+      "historicalName": "Country Club",
+      "coordinates": { "wgs84": [121.460769, 31.232317], "gcj02": [121.465332, 31.230409] },
+      "modernRoadAddress": "南京西路651号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "Bubbling Well Road可对应今南京西路，但记录名过于泛化，尚不能确认所属俱乐部及现代建筑。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=845"]
+    },
+    {
+      "IDBAT": 1259,
+      "historicalName": "County Magistrate",
+      "coordinates": { "wgs84": [121.489129, 31.225368], "gcj02": [121.493599, 31.223379] },
+      "modernRoadAddress": "学院路、光启路北段历史县署范围",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海县署旧址范围 / 老城厢231B、231C更新地块",
+      "currentUse": "历史风貌保护更新；规划住宅和社区公共设施，现场建设状态待核",
+      "currentAddress": "学院路、光启路一带",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "城市史资料将上海县署定位在今光启路北段、原县前街即学院路附近；规划部门资料显示该范围进入老城厢231地块更新，但边界对应仍需历史地籍叠图。",
+      "sourceUrls": [
+        "https://export.shobserver.com/baijiahao/html/923701.html",
+        "https://biz.ghzyj.sh.gov.cn/shtdsc/wz/scxx/27733.jhtml",
+        "https://biz.ghzyj.sh.gov.cn/shtdsc/wz/qtgg/27795.jhtml",
+        "https://www.virtualshanghai.net/data/buildings?ID=1259"
+      ]
+    },
+    {
+      "IDBAT": 72,
+      "historicalName": "Crystal Theater",
+      "coordinates": { "wgs84": [121.47485, 31.228214], "gcj02": [121.479369, 31.226268] },
+      "modernRoadAddress": "金陵中路1号历史地块",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "兰生大厦（原黄金大戏院 / 大众剧场地块）",
+      "currentUse": "办公商业大楼",
+      "currentAddress": "淮海中路2-8号、金陵中路1号一带",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "上海民政史料将金陵中路1号对应为黄金大戏院、后称大众剧场，而非Crystal Theater；原剧场拆除后地块建设兰生大厦。因历史名称冲突，暂列高概率并要求校正源记录。",
+      "sourceUrls": [
+        "https://mzj.sh.gov.cn/lnb-wsws/20241128/e2366fcca7bc4c128c8d707237d15918.html",
+        "https://www.sohu.com/a/833698463_121286085",
+        "https://www.virtualshanghai.net/data/buildings?ID=72"
+      ]
+    },
+    {
+      "IDBAT": 1564,
+      "historicalName": "Cuizhu Temple (Buddhist)",
+      "coordinates": { "wgs84": [121.429039, 31.204704], "gcj02": [121.433669, 31.202841] },
+      "modernRoadAddress": "法华镇路65号附近",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "evidence": "道路门牌可定位到法华镇路，但翠竹寺的拆建史、宗教登记与当前地块用途未找到可靠资料。",
+      "sourceUrls": ["https://www.virtualshanghai.net/data/buildings?ID=1564"]
+    },
+    {
+      "IDBAT": 455,
+      "historicalName": "Culty Dairy Company",
+      "coordinates": { "wgs84": [121.439749, 31.209476], "gcj02": [121.444361, 31.2076] },
+      "modernRoadAddress": "淮海中路1555号（历史门牌1567/1569号）",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海图书馆淮海路馆",
+      "currentUse": "公共图书馆与信息研究机构",
+      "currentAddress": "淮海中路1555号",
+      "currentUseRelationship": "same-site-repurposed",
+      "evidence": "地方史报道串联了可的牛奶公司、上海第二乳品厂与1993年兴建上海图书馆的地块沿革；上海图书馆官网确认淮海路馆现址为1555号，原乳业建筑不存。",
+      "sourceUrls": [
+        "https://wap.xinmin.cn/content/31759494.html",
+        "https://www.library.sh.cn/guide/libraryLocation?openid=oG_RsuEJn4DAz9yDlrdJrlCzbO3w",
+        "https://whlyj.sh.gov.cn/bmxx/20230420/3ecda4189c0d48e2ab421a517c96a416.html"
+      ]
+    }
+  ]
+}

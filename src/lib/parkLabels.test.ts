@@ -35,6 +35,11 @@ describe('current park historical labels', () => {
     expect(index.get('上海中山公园')?.historicalName).toBe('Jessfield Park')
   })
 
+  it('folds the Virtual Shanghai Pétain Park point into the curated Hengshan Park feature', () => {
+    expect(buildParkLabelIndex().get('衡山公园')?.legacyGroupIds)
+      .toContain('landmark-vs-site-485')
+  })
+
   it('maps Nie Er Music Square to Square Paul Brunat', () => {
     const index = buildParkLabelIndex()
     expect(index.get('聂耳音乐广场')?.historicalName).toBe('Square Paul Brunat')
