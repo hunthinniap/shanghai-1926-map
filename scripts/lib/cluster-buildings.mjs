@@ -212,6 +212,10 @@ function stableId(value) {
   return /^\d+$/.test(valueText) ? valueText.padStart(12, '0') : valueText
 }
 
+function recordPairKey(leftRecordId, rightRecordId) {
+  return [stableId(leftRecordId), stableId(rightRecordId)].sort().join('|')
+}
+
 function recordTypes(record) {
   const directTypes = record?.types ?? record?.properties?.types
   if (Array.isArray(directTypes)) return directTypes.map(text).filter(Boolean)
@@ -390,6 +394,16 @@ export function clusterBuildingRecords(sourceRecords, options = {}) {
     semanticMetres: options.semanticMetres ?? 8,
   }
   const prepared = sourceRecords.map(prepareRecord)
+  const separatedPairKeys = new Set((options.separateSourceRecordPairs ?? []).map((pair) => {
+    if (!Array.isArray(pair) || pair.length !== 2 || new Set(pair.map(text)).size !== 2 ||
+      pair.some((recordId) => recordId === null || recordId === undefined)) {
+      throw new TypeError('separateSourceRecordPairs entries must contain exactly two record IDs')
+    }
+    return recordPairKey(pair[0], pair[1])
+  }))
+  const pairReason = (left, right) => separatedPairKeys.has(recordPairKey(left.recordId, right.recordId))
+    ? null
+    : candidateReason(left, right, limits)
   const ids = new Set()
   for (const record of prepared) {
     const key = text(record.recordId)
@@ -400,7 +414,7 @@ export function clusterBuildingRecords(sourceRecords, options = {}) {
   const candidates = []
   for (let left = 0; left < prepared.length; left += 1) {
     for (let right = left + 1; right < prepared.length; right += 1) {
-      const reason = candidateReason(prepared[left], prepared[right], limits)
+      const reason = pairReason(prepared[left], prepared[right])
       if (reason) candidates.push({ left, right, ...reason })
     }
   }
@@ -427,7 +441,7 @@ export function clusterBuildingRecords(sourceRecords, options = {}) {
     const crossReasons = []
     for (const leftIndex of groups[leftGroup]) {
       for (const rightIndex of groups[rightGroup]) {
-        const reason = candidateReason(prepared[leftIndex], prepared[rightIndex], limits)
+        const reason = pairReason(prepared[leftIndex], prepared[rightIndex])
         if (!reason) {
           crossReasons.length = 0
           break

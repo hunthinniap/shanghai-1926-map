@@ -156,4 +156,38 @@ describe('clusterBuildingRecords', () => {
     ])
     assert.equal(result.clusters.length, 4)
   })
+
+  it('honours a curated separation for distinct facilities sharing one campus address', () => {
+    const records = [
+      building({
+        id: 241,
+        name: "Aurora University Chapel (Saint Peter's Church)",
+        address: '280 AVENUE DUBAIL',
+        x: 353793.0008,
+        y: 3454461.0945,
+      }),
+      building({
+        id: 242,
+        name: 'Aurora University - Sports Field',
+        address: '280 AVENUE DUBAIL',
+        x: 353804.0254,
+        y: 3454404.396,
+      }),
+      building({
+        id: 999,
+        name: 'Aurora University Laboratory',
+        address: '280 AVENUE DUBAIL',
+        x: 353798,
+        y: 3454432,
+      }),
+    ]
+
+    assert.equal(clusterBuildingRecords(records).clusters.length, 1)
+    const separated = clusterBuildingRecords(records, { separateSourceRecordPairs: [[241, 242]] })
+    assert.equal(separated.clusters.length, 2)
+    assert.notEqual(separated.recordToCluster['241'], separated.recordToCluster['242'])
+    assert.equal(separated.mergeReasons.some((reason) =>
+      new Set([reason.leftRecordId, reason.rightRecordId]).has(241) &&
+      new Set([reason.leftRecordId, reason.rightRecordId]).has(242)), false)
+  })
 })

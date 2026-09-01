@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T07:40:46.653Z",
+  "generatedAt": "2026-09-01T11:50:17.163Z",
   "source": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding",
   "rules": {
     "method": "Shanghai Library full-text historical-name match plus coordinate check",
@@ -9,15 +9,15 @@
     "duplicateSourceMatchesAccepted": false
   },
   "summary": {
-    "landmarkGroups": 1669,
-    "matchedFromLibrary": 61,
+    "landmarkGroups": 1670,
+    "matchedFromLibrary": 62,
     "matchedFromWikipedia": 15,
-    "matchedFromResearch": 116,
+    "matchedFromResearch": 145,
     "matchedFromCurrentPlaceName": 22,
     "needsReviewPartialName": 22,
-    "needsReviewDuplicateSource": 2,
-    "notFound": 1155,
-    "genericName": 276
+    "needsReviewDuplicateSource": 0,
+    "notFound": 1139,
+    "genericName": 265
   },
   "records": [
     {
@@ -1100,14 +1100,8 @@
         "育英英文夜校",
         "关帝庙"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "关帝庙",
-        "currentAddress": "西市街54号",
-        "distanceMetres": 32443,
-        "query": "关帝庙"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1099",
@@ -3215,11 +3209,31 @@
       "historicalName": "Baoxing Coffin Repository",
       "mappedName": "寳興殯儀舘",
       "category": "重要建筑",
-      "queries": [
-        "寳兴殡仪馆"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "殡仪服务机构",
+        "currentNameZh": "上海市宝兴殡仪馆",
+        "currentAddress": "西宝兴路833号",
+        "currentUseNote": "历史中文字段为宝兴殡仪馆，转换点位距现宝兴殡仪馆很近；政府资料确认现机构地址为西宝兴路833号。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海市政府部门资料：上海市宝兴殡仪馆",
+            "url": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html"
+          },
+          {
+            "title": "维基百科：上海市宝兴殡仪馆",
+            "url": "https://zh.wikipedia.org/wiki/上海市宝兴殡仪馆"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史中文字段为宝兴殡仪馆，转换点位距现宝兴殡仪馆很近；政府资料确认现机构地址为西宝兴路833号。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1274"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1275",
@@ -4928,11 +4942,27 @@
       "historicalName": "Baocheng Cotton Mill",
       "mappedName": "寶成纱廠",
       "category": "重要建筑",
-      "queries": [
-        "宝成纱厂"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅小区；厂区另有部分仓库改造为创享塔园区",
+        "currentNameZh": "上海苏堤春晓名苑（宝成纱厂 / 上棉七厂原址）",
+        "currentAddress": "长寿路、叶家宅路一带",
+        "currentUseNote": "普陀区政府资料明确说明上棉七厂原址兴建苏堤春晓名苑，并指出叶家宅路100号留存仓库活化为创享塔。历史记录点对应住宅改建部分，不能把整个旧厂都标成单一现建筑。",
+        "currentUseRelationship": "partial-remains-on-original-site",
+        "currentUseSources": [
+          {
+            "title": "普陀区人民政府：上棉七厂原址、苏堤春晓与创享塔",
+            "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "普陀区政府资料明确说明上棉七厂原址兴建苏堤春晓名苑，并指出叶家宅路100号留存仓库活化为创享塔。历史记录点对应住宅改建部分，不能把整个旧厂都标成单一现建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1418"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1419",
@@ -5696,14 +5726,8 @@
       "queries": [
         "关帝庙"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "关帝庙",
-        "currentAddress": "西市街54号",
-        "distanceMetres": 28748,
-        "query": "关帝庙"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1479",
@@ -6078,11 +6102,31 @@
       "historicalName": "Customs",
       "mappedName": "江海大関",
       "category": "重要建筑",
-      "queries": [
-        "江海大関"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅",
+        "currentNameZh": "江海南关办公楼",
+        "currentAddress": "上海市黄浦区外马路348号",
+        "currentUseNote": "Virtual Shanghai 的泛称 Customs 对应外马路348号江海南关办公楼；1922年建筑保存至今，官方优秀历史建筑名录登记现用途为住宅。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：江海南关办公楼（外马路348号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          },
+          {
+            "title": "澎湃新闻：江海南关办公楼沿革",
+            "url": "https://m.thepaper.cn/baijiahao_6306630"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史功能、精确门牌、建筑专名和现用途由官方名录直接闭环。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1502"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1503",
@@ -8172,11 +8216,27 @@
       "historicalName": "Banzaikan Hotel (Japanese)",
       "mappedName": "萬歲館",
       "category": "重要建筑",
-      "queries": [
-        "万岁馆"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅及优秀历史建筑",
+        "currentNameZh": "闵行大楼（角田公寓）",
+        "currentAddress": "闵行路181号",
+        "currentUseNote": "虹口区政府资料明确记载闵行路181号角田公寓曾由日侨旅馆万岁馆使用。万岁馆创办年份与其迁入现楼年份并不相同，成果不把1904误作现楼建成年代。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "虹口区人民政府：闵行大楼（角田公寓）",
+            "url": "https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "虹口区政府资料明确记载闵行路181号角田公寓曾由日侨旅馆万岁馆使用。万岁馆创办年份与其迁入现楼年份并不相同，成果不把1904误作现楼建成年代。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1665"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1666",
@@ -8309,11 +8369,31 @@
       "historicalName": "General Hospital",
       "mappedName": "上海公濟醫院",
       "category": "重要建筑",
-      "queries": [
-        "上海公济医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "酒店 / 商业综合体中的保护建筑",
+        "currentNameZh": "公济医院旧楼东部（北外滩苏宁广场）",
+        "currentAddress": "北苏州路190号、天潼路365号",
+        "currentUseNote": "General Hospital 即1877年迁入北苏州路190号的上海公济医院。院区后经整体开发，目前仅旧楼东部作为保护建筑保留在北外滩苏宁广场／苏宁宝丽嘉酒店范围内。",
+        "currentUseRelationship": "partial-remains-on-original-site",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：公济医院／北外滩苏宁广场（苏宁宝丽嘉酒店）",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          },
+          {
+            "title": "虹口区人民政府：上海公济医院沿革",
+            "url": "https://www.shhk.gov.cn/xwzx/002008/002008040/20230112/191e163f-bdad-49ec-a55a-02c03a28926c.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "官方优秀历史建筑名录和虹口区史料共同确认历史医院、原址、局部遗存与当代综合体。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1675"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1676",
@@ -8447,7 +8527,29 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "国家级证券行业博物馆",
+        "currentNameZh": "中国证券博物馆（原礼查饭店 / 浦江饭店）",
+        "currentAddress": "黄浦路15号",
+        "currentUseNote": "中国证券博物馆官网明确说明其馆址前身为礼查饭店、浦江饭店；历史记录的17号与现门牌15号属于门牌变更。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "中国证券博物馆官网",
+            "url": "https://csm.sse.com.cn/"
+          },
+          {
+            "title": "虹口区人民政府：中国证券博物馆",
+            "url": "https://www.shhk.gov.cn/qyfwy/030002/030002002/030002002005/20230702/ec4abcc1-56f5-4855-9869-14c2bb7204df.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://csm.sse.com.cn/",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "中国证券博物馆官网明确说明其馆址前身为礼查饭店、浦江饭店；历史记录的17号与现门牌15号属于门牌变更。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1687"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1688",
@@ -8960,7 +9062,29 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "公共开放空间与文化商业街区广场",
+        "currentNameZh": "阿哈龙广场（日落广场，阿哈龙会堂旧址）",
+        "currentAddress": "虎丘路42号旧址、洛克·外滩源内",
+        "currentUseNote": "阿哈龙会堂于1985年拆除，后建文汇报大楼也已拆除；原址现结合外滩源更新为阿哈龙广场，亦称日落广场。历史记录的50号与现址资料42号属于门牌差异。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "维基百科：阿哈龙会堂",
+            "url": "https://zh.wikipedia.org/wiki/阿哈龙会堂"
+          },
+          {
+            "title": "中国日报：外滩源阿哈龙广场",
+            "url": "https://sh.chinadaily.com.cn/a/202309/14/WS6502c613a310936092f21cbe.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://zh.wikipedia.org/wiki/阿哈龙会堂",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "阿哈龙会堂于1985年拆除，后建文汇报大楼也已拆除；原址现结合外滩源更新为阿哈龙广场，亦称日落广场。历史记录的50号与现址资料42号属于门牌差异。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1729"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-173",
@@ -9025,7 +9149,37 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅",
+        "currentNameZh": "襄阳公寓（Belmont Apartments）",
+        "currentAddress": "襄阳南路240—254号（资料所载门牌存在差异）",
+        "currentUseNote": "Shanghai Art Deco Buildings Database 明确说明其只收录已知仍存建筑，并将 Belmont Apartments 列于襄阳南路240号；Historic Shanghai 的建筑师资料同样记录240号，Global Times 对 Historic Shanghai 实地导览的报道则记为254号。上海市优秀历史建筑名录把襄阳南路254号列为襄阳公寓。由历史英文名、建筑年代、街道与仍存状态可确认同一建筑，但240/254的门牌差异仍需在成果中保留，不能把“小黑石公寓”这一非官方俗称并入。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第五批优秀历史建筑（襄阳公寓）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          },
+          {
+            "title": "Shanghai Art Deco Buildings Database：Belmont Apartments 仍存建筑、建筑师与240号门牌",
+            "url": "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/"
+          },
+          {
+            "title": "Building Russian Shanghai：Belmont Apartments / 襄阳南路240号",
+            "url": "https://sites.google.com/view/russianshanghai/architects/a-l/wm-a-kirk"
+          },
+          {
+            "title": "Global Times：Historic Shanghai 导览所记 Belmont Apartments / 254号",
+            "url": "https://www.globaltimes.cn/content/903413.shtml"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Shanghai Art Deco Buildings Database 明确说明其只收录已知仍存建筑，并将 Belmont Apartments 列于襄阳南路240号；Historic Shanghai 的建筑师资料同样记录240号，Global Times 对 Historic Shanghai 实地导览的报道则记为254号。上海市优秀历史建筑名录把襄阳南路254号列为襄阳公寓。由历史英文名、建筑年代、街道与仍存状态可确认同一建筑，但240/254的门牌差异仍需在成果中保留，不能把“小黑石公寓”这一非官方俗称并入。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1735"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1736",
@@ -9515,7 +9669,29 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅及底层商业",
+        "currentNameZh": "培文公寓（培恩公寓）",
+        "currentAddress": "淮海中路449—479号",
+        "currentUseNote": "Béarn Apartments 的中文译名常见培恩公寓，现亦称培文公寓；历史门牌453/469包含在现449—479号建筑范围内。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "维基百科：培恩公寓",
+            "url": "https://zh.wikipedia.org/wiki/培恩公寓"
+          },
+          {
+            "title": "Shanghai Art Deco Buildings Database：Béarn Apartments 仍存建筑与现代门牌",
+            "url": "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://zh.wikipedia.org/wiki/培恩公寓",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Béarn Apartments 的中文译名常见培恩公寓，现亦称培文公寓；历史门牌453/469包含在现449—479号建筑范围内。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1785"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1786",
@@ -10037,12 +10213,31 @@
       "historicalName": "Aurora Museum",
       "mappedName": "震旦博物館",
       "category": "重要建筑",
-      "queries": [
-        "震旦博物馆",
-        "博物院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "科研机构房产；部分楼层用于院属单位调剂",
+        "currentNameZh": "中国科学院上海免疫与感染研究所重庆南路房产（原震旦大学博物馆）",
+        "currentAddress": "重庆南路225号2号楼",
+        "currentUseNote": "上海市优秀历史建筑名录直接把震旦大学博物馆旧址与重庆南路225号现存建筑对应。旧资料所称“昆虫研究所”已不是可靠的当前用途；中国科学院上海分院2024年公示确认重庆南路225号2号楼现由中国科学院上海免疫与感染研究所管理，并将3—4层列入院内房屋调剂。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第二批优秀历史建筑",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+          },
+          {
+            "title": "中国科学院上海分院：重庆南路225号2号楼房屋调剂公示（2024）",
+            "url": "https://www.shb.cas.cn/tzgg2024/202412/P020241202582329353390.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "上海市优秀历史建筑名录直接把震旦大学博物馆旧址与重庆南路225号现存建筑对应。旧资料所称“昆虫研究所”已不是可靠的当前用途；中国科学院上海分院2024年公示确认重庆南路225号2号楼现由中国科学院上海免疫与感染研究所管理，并将3—4层列入院内房屋调剂。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-216"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-217",
@@ -10331,17 +10526,69 @@
       "historicalName": "Aurora University Chapel (Saint Peter's Church)",
       "mappedName": "天主教堂",
       "category": "重要建筑",
-      "queries": [
-        "天主教堂",
-        "震旦大学运动场"
-      ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "徐家汇天主堂",
-        "currentAddress": "徐汇区浦西路158号",
-        "distanceMetres": 2835,
-        "query": "天主教堂"
+      "queries": [],
+      "searchResultCount": 0,
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "天主教堂",
+        "currentNameZh": "上海圣伯多禄堂",
+        "currentAddress": "重庆南路270号",
+        "currentUseNote": "震旦大学内的原圣伯多禄堂在城市建设中拆除，现教堂在原址附近重建；属于宗教场所延续，不是原建筑原样保留。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "天主教上海教区：圣伯多禄堂",
+            "url": "https://www.catholicsh.org/NewListIn.aspx?InfoCategoryID=17&InfosID=13549"
+          },
+          {
+            "title": "维基百科：上海圣伯多禄堂",
+            "url": "https://zh.wikipedia.org/wiki/上海圣伯多禄堂"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.catholicsh.org/NewListIn.aspx?InfoCategoryID=17&InfosID=13549",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "震旦大学内的原圣伯多禄堂在城市建设中拆除，现教堂在原址附近重建；属于宗教场所延续，不是原建筑原样保留。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-241"
+      }
+    },
+    {
+      "featureGroupId": "landmark-vs-site-242",
+      "historicalName": "Aurora University - Sports Field",
+      "mappedName": "震旦大學運動場",
+      "category": "重要建筑",
+      "queries": [],
+      "searchResultCount": 0,
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "高校田径、足球运动场",
+        "currentNameZh": "上海交通大学医学院西院足球场",
+        "currentAddress": "上海市黄浦区重庆南路280号上海交通大学医学院黄浦校区西院",
+        "currentUseNote": "1928年震旦大学校园平面图把运动场画在今西院同一位置；上海交通大学医学院近年的校内比赛与场地资料继续把重庆南路280号西院运动场用于田径、足球活动。转换后的历史点直接落在现足球场内，校园、门牌和运动用途均连续。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "澎湃新闻：1928年震旦大学校园平面图与校址沿革",
+            "url": "https://www.thepaper.cn/newsDetail_forward_20760150"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场校内比赛",
+            "url": "https://www.shsmu.edu.cn/news/info/1003/28581.htm"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场场地记录",
+            "url": "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm"
+          },
+          {
+            "title": "上海交通大学医学院：黄浦校区西院通知（重庆南路280号）",
+            "url": "https://www.shsmu.edu.cn/news/info/1023/29923.htm"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.thepaper.cn/newsDetail_forward_20760150",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "1928年震旦大学校园平面图把运动场画在今西院同一位置；上海交通大学医学院近年的校内比赛与场地资料继续把重庆南路280号西院运动场用于田径、足球活动。转换后的历史点直接落在现足球场内，校园、门牌和运动用途均连续。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-242"
       }
     },
     {
@@ -10598,11 +10845,31 @@
       "historicalName": "Aurora College for Women",
       "mappedName": "震旦女子文理學院",
       "category": "重要建筑",
-      "queries": [
-        "震旦女子文理学院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "中学教育与社会科学研究",
+        "currentNameZh": "向明中学 / 上海社会科学院（原震旦女子文理学院校址）",
+        "currentAddress": "长乐路、淮海中路622弄一带",
+        "currentUseNote": "资料将震旦女子文理学院校址的后续使用明确关联到向明中学及上海社会科学院。原校园范围较大，不能把记录点解释为单一建筑。",
+        "currentUseRelationship": "same-site-repurposed",
+        "currentUseSources": [
+          {
+            "title": "维基百科：震旦女子文理学院",
+            "url": "https://zh.wikipedia.org/wiki/震旦女子文理学院"
+          },
+          {
+            "title": "澎湃新闻：震旦女子文理学院历史建筑",
+            "url": "https://www.thepaper.cn/newsDetail_forward_28620195"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://zh.wikipedia.org/wiki/震旦女子文理学院",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "资料将震旦女子文理学院校址的后续使用明确关联到向明中学及上海社会科学院。原校园范围较大，不能把记录点解释为单一建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-263"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-264",
@@ -11100,7 +11367,37 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅及底层商业",
+        "currentNameZh": "南昌大楼（环龙公寓）",
+        "currentAddress": "南昌路294—316号、茂名南路143—151号",
+        "currentUseNote": "Astrid Apartments 可与现南昌大楼对应；上海市政府资料同时记载其别名环龙公寓，坐标与建筑轮廓吻合。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市人民政府：南昌大楼（环龙公寓）",
+            "url": "https://www.shanghai.gov.cn/nw4411/20240325/64a87967e95640629ca02d07b6c3bcf0.html"
+          },
+          {
+            "title": "维基百科：南昌大楼",
+            "url": "https://zh.wikipedia.org/wiki/南昌大楼"
+          },
+          {
+            "title": "Shanghai Art Deco Buildings Database：Astrid Apartments 仍存建筑与现代门牌",
+            "url": "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/"
+          },
+          {
+            "title": "搜狐：上海老公寓中英文名（南昌大楼 / Astrid Apartment）",
+            "url": "https://www.sohu.com/a/324031658_649794"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shanghai.gov.cn/nw4411/20240325/64a87967e95640629ca02d07b6c3bcf0.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Astrid Apartments 可与现南昌大楼对应；上海市政府资料同时记载其别名环龙公寓，坐标与建筑轮廓吻合。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-300"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-301",
@@ -11659,11 +11956,35 @@
       "historicalName": "Auditorium (Sports Hall)",
       "mappedName": "回力球場",
       "category": "重要建筑",
-      "queries": [
-        "回力球场"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "百货商业",
+        "currentNameZh": "巴黎春天淮海店（回力球场 / 中央运动场旧址）",
+        "currentAddress": "淮海中路、陕西南路口",
+        "currentUseNote": "Auditorium 即上海回力球场，又称中央运动场。球场后改上海市立体育馆、卢湾体育馆，1992年拆除易地另建；原址现为巴黎春天淮海店。原记录旧门牌301与资料中的现门牌陕西南路139号属于门牌体系变更。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "第一财经：回力球场、上海市立体育馆与现巴黎春天淮海店",
+            "url": "https://www.yicai.com/news/100956850.html"
+          },
+          {
+            "title": "塞万提斯学院文化中心：上海回力球场（Auditorium）",
+            "url": "https://cvc.cervantes.es/literatura/sueno_china/seccion_02_08.htm"
+          },
+          {
+            "title": "上观新闻：回力球场沿革",
+            "url": "https://web.shobserver.com/sgh/detail?id=1399138"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.yicai.com/news/100956850.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Auditorium 即上海回力球场，又称中央运动场。球场后改上海市立体育馆、卢湾体育馆，1992年拆除易地另建；原址现为巴黎春天淮海店。原记录旧门牌301与资料中的现门牌陕西南路139号属于门牌体系变更。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-344"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-345",
@@ -12213,7 +12534,29 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅公寓",
+        "currentNameZh": "盖司康公寓（淮海公寓）",
+        "currentAddress": "上海市徐汇区淮海中路1202号",
+        "currentUseNote": "盖司康公寓主楼保存并继续作住宅使用；此记录只对应淮海中路1202号主楼，不扩展到1204—1218号沿街辅楼。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "徐汇区人民政府：盖司康公寓（淮海公寓）地址信息",
+            "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1"
+          },
+          {
+            "title": "上海市房屋管理局：盖司康公寓／淮海公寓",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "区政府文物信息和市房管名录均直接对应历史名、今名、门牌与住宅用途。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-391"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-392",
@@ -12435,7 +12778,33 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "音乐沙龙、小型演出、国际音乐教育及公共文化空间",
+        "currentNameZh": "上海城市音乐会客厅（天赐大宅）",
+        "currentAddress": "淮海中路1209号，上海音乐学院校园内",
+        "currentUseNote": "Adeodata Hall 是拉丁文原名，中文名“天赐大宅”。该建筑1912年建成，为爱德华·爱滋拉私宅，后纳入上海音乐学院；修缮后作为上海城市音乐会客厅开放。Virtual Shanghai 将其归入 park，实际应以建筑住宅/文化空间理解。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海音乐学院：淮海中路1209号音乐会客厅",
+            "url": "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm"
+          },
+          {
+            "title": "澎湃新闻：天赐大宅（Adeodata Hall）与城市音乐会客厅",
+            "url": "https://m.thepaper.cn/detail/25791531"
+          },
+          {
+            "title": "上海城市记忆：Adeodata Hall 原名与沿革",
+            "url": "https://www.thepaper.cn/newsDetail_forward_32654894"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Adeodata Hall 是拉丁文原名，中文名“天赐大宅”。该建筑1912年建成，为爱德华·爱滋拉私宅，后纳入上海音乐学院；修缮后作为上海城市音乐会客厅开放。Virtual Shanghai 将其归入 park，实际应以建筑住宅/文化空间理解。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-407"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-408",
@@ -13305,7 +13674,25 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "艺术展览、文化活动与公共文化空间",
+        "currentNameZh": "衡复艺术中心",
+        "currentAddress": "乌鲁木齐南路178号1号楼",
+        "currentUseNote": "徐汇区政府报送资料明确说明衡复艺术中心建筑原为共济会旧址，地址与历史记录一致。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海国际人才网（徐汇区政府报送）：衡复艺术中心",
+            "url": "https://www.sh-italent.cn/Article/201903/201903290013.shtml"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.sh-italent.cn/Article/201903/201903290013.shtml",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "徐汇区政府报送资料明确说明衡复艺术中心建筑原为共济会旧址，地址与历史记录一致。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-461"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-462",
@@ -13990,11 +14377,27 @@
       "historicalName": "Banque de L'indochine",
       "mappedName": "印度支那銀行",
       "category": "重要建筑",
-      "queries": [
-        "印度支那银行"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "银行办公与营业",
+        "currentNameZh": "中国光大银行上海分行（东方汇理银行大楼）",
+        "currentAddress": "中山东一路29号",
+        "currentUseNote": "上海市第一批优秀历史建筑名录直接把东方汇理银行与现光大银行、中山东一路29号对应。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第一批优秀历史建筑（东方汇理银行）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "上海市第一批优秀历史建筑名录直接把东方汇理银行与现光大银行、中山东一路29号对应。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-508"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-509",
@@ -14437,33 +14840,57 @@
       "historicalName": "Bank of Chosen",
       "mappedName": "朝鮮銀行",
       "category": "重要建筑",
-      "queries": [
-        "朝鲜银行"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "办公楼",
+        "currentNameZh": "原朝鲜银行大楼",
+        "currentAddress": "四川中路330号",
+        "currentUseNote": "上海市第五批优秀历史建筑名录直接列出 Bank of Chosen / 上海市直接税局，现用途为办公楼，地址四川中路330号。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第五批优秀历史建筑（四川中路330号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "上海市第五批优秀历史建筑名录直接列出 Bank of Chosen / 上海市直接税局，现用途为办公楼，地址四川中路330号。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-537"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-538",
       "historicalName": "Bank of Communications",
       "mappedName": "交通銀行",
       "category": "重要建筑",
-      "queries": [
-        "交通银行"
-      ],
-      "searchResultCount": 2,
-      "status": "needs-review-duplicate-source",
-      "reviewCandidate": {
-        "currentNameZh": "交通银行",
-        "currentAddress": "黄浦区江西中路200号",
-        "distanceMetres": 862,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/mfni46661m75t0h6",
-        "query": "交通银行",
-        "evidence": "exact-current-or-alternate-name",
-        "duplicateOwners": [
-          "landmark-vs-site-538",
-          "landmark-vs-site-539"
-        ]
+      "queries": [],
+      "searchResultCount": 0,
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "上海市总工会办公",
+        "currentNameZh": "上海市总工会大楼（交通银行大楼）",
+        "currentAddress": "中山东一路14号",
+        "currentUseNote": "现存交通银行大楼1948年竣工，晚于 Virtual Shanghai 记录的1940年，因此应理解为同一机构/地块的后建大楼，不能把1940年记录直接当作现建筑建成年代。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第二批优秀历史建筑（交通银行 / 上海市总工会）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+          },
+          {
+            "title": "OpenStreetMap：上海市总工会",
+            "url": "https://www.openstreetmap.org/way/178405872"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "现存交通银行大楼1948年竣工，晚于 Virtual Shanghai 记录的1940年，因此应理解为同一机构/地块的后建大楼，不能把1940年记录直接当作现建筑建成年代。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-538"
       }
     },
     {
@@ -14475,18 +14902,15 @@
         "金城银行"
       ],
       "searchResultCount": 2,
-      "status": "needs-review-duplicate-source",
-      "reviewCandidate": {
+      "status": "matched",
+      "accepted": {
         "currentNameZh": "交通银行",
         "currentAddress": "黄浦区江西中路200号",
+        "currentUse": "金融办公",
         "distanceMetres": 1147,
         "sourceUri": "http://data.library.sh.cn/entity/architecture/mfni46661m75t0h6",
         "query": "金城银行",
-        "evidence": "exact-current-or-alternate-name",
-        "duplicateOwners": [
-          "landmark-vs-site-538",
-          "landmark-vs-site-539"
-        ]
+        "evidence": "exact-current-or-alternate-name"
       }
     },
     {
@@ -14538,7 +14962,33 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "金融机构 / 办公",
+        "currentNameZh": "中南大楼",
+        "currentAddress": "上海市黄浦区汉口路110号",
+        "currentUseNote": "上海市房屋管理局把汉口路110号现存建筑直接列为原中南银行的中南大楼；2022年修缮后继续用作金融机构和办公空间，国家绿色发展基金现登记在该地址。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "国家绿色发展基金：办公地址为汉口路110号",
+            "url": "https://www.ngd-fund.com/about"
+          },
+          {
+            "title": "上海市房屋管理局：中南大楼／中南银行（汉口路110号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+          },
+          {
+            "title": "上海市房屋管理局：中南大楼修缮资料",
+            "url": "https://m.thepaper.cn/newsDetail_forward_26390998"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.ngd-fund.com/about",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史名称、现代建筑名、门牌和现办公机构地址形成同一建筑闭环。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-542"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-543",
@@ -14696,7 +15146,33 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "办公 / 艺术画廊",
+        "currentNameZh": "企业大楼（亦称创业大楼）",
+        "currentAddress": "上海市黄浦区四川中路33号",
+        "currentUseNote": "1936工商名录把 China Development Bank 列在四川路33号；该门牌的企业大楼保存至今，现为多单位办公并设有多家艺术画廊。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上观新闻：四川中路33号原中国企业银行大楼及现有画廊",
+            "url": "https://www.shobserver.cn/sgh/detail?id=1743713"
+          },
+          {
+            "title": "上海市房屋管理局：企业大楼（四川中路33号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+          },
+          {
+            "title": "1936 Directory & Chronicle：China Development Bank, 33 Szechuen Road",
+            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shobserver.cn/sgh/detail?id=1743713",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史工商名录、优秀历史建筑名录和当代场馆地址均指向四川中路33号同一大楼。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-553"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-554",
@@ -14754,7 +15230,29 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "艺术展览与文化商业空间",
+        "currentNameZh": "亚细亚大楼（久事国际艺术中心 / 东一美术馆）",
+        "currentAddress": "中山东一路1号",
+        "currentUseNote": "外滩1号亚细亚大楼即历史亚细亚火油公司办公楼。建筑保留，现作为久事国际艺术中心体系内的艺术空间使用。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第一批优秀历史建筑（中山东一路1号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+          },
+          {
+            "title": "上海市人民政府：外滩艺术空间资料",
+            "url": "https://www.shanghai.gov.cn/cmsres/7a/7acdfcf1e97340eaa51d11e205b44482/04a890ed80dc86d0eae372da5bf0b6bf.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "外滩1号亚细亚大楼即历史亚细亚火油公司办公楼。建筑保留，现作为久事国际艺术中心体系内的艺术空间使用。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-559"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-56",
@@ -14894,11 +15392,35 @@
       "historicalName": "American Club",
       "mappedName": "美國總會",
       "category": "重要建筑",
-      "queries": [
-        "美国总会"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "优秀历史建筑；现使用单位待核",
+        "currentNameZh": "美国花旗总会旧址",
+        "currentAddress": "福州路209号",
+        "currentUseNote": "人民网上海频道直接将福州路209号识别为原花旗总会。上海金融法院曾于2018年至2025年在此办公，但法院已公告迁往浦东，不能继续把“金融法院”写成当前用途。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第二批优秀历史建筑（福州路209号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+          },
+          {
+            "title": "人民网：上海金融法院（原花旗总会）",
+            "url": "https://sh.people.com.cn/n2/2025/0910/c134768-41347616.html"
+          },
+          {
+            "title": "上海金融法院办公地址变更公告",
+            "url": "https://m.thepaper.cn/newsDetail_forward_31104489"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "人民网上海频道直接将福州路209号识别为原花旗总会。上海金融法院曾于2018年至2025年在此办公，但法院已公告迁往浦东，不能继续把“金融法院”写成当前用途。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-569"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-57",
@@ -14977,17 +15499,34 @@
       "historicalName": "Consulate of the United States",
       "mappedName": "美國領事館",
       "category": "重要建筑",
-      "queries": [
-        "美国领事馆",
-        "中国通商银行大楼"
-      ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "美国领事馆",
-        "currentAddress": "淮海中路1469号",
-        "distanceMetres": 3587,
-        "query": "美国领事馆"
+      "queries": [],
+      "searchResultCount": 0,
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "综合办公楼",
+        "currentNameZh": "建设大楼（建设大厦）",
+        "currentAddress": "上海市黄浦区江西中路181号",
+        "currentUseNote": "中国通商银行兴建该楼，竣工前转售并定名建设大楼；美国总领事署后来曾租用楼层。两个 Virtual Shanghai 记录是同一栋楼的不同时段和使用单位，现代地点只保留一个，历史卡片继续展示两段记录。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "华建集团：原中国通商银行新厦、现建设大楼",
+            "url": "https://m.thepaper.cn/baijiahao_31155355"
+          },
+          {
+            "title": "上海城建档案：江西中路181号建设大楼沿革",
+            "url": "https://m.thepaper.cn/newsDetail_forward_31857272"
+          },
+          {
+            "title": "上海市房屋管理局：建设大厦（江西中路171—181号）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://m.thepaper.cn/baijiahao_31155355",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "2025年修缮与城建档案资料直接闭环中国通商银行新厦、美国总领事署、建设大楼及江西中路181号。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-575"
       }
     },
     {
@@ -16033,11 +16572,35 @@
       "historicalName": "Gengxin Dancing Hall",
       "mappedName": "更新舞臺",
       "category": "重要建筑",
-      "queries": [
-        "更新舞台"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "剧院 / 演出场所",
+        "currentNameZh": "中国大戏院",
+        "currentAddress": "上海市黄浦区牛庄路704号",
+        "currentUseNote": "该址1934年更名更新舞台、1944年定名中国大戏院，现仍是剧院。建筑经历1992年翻建和2016—2018年大修，因此标为原址与演艺功能延续，不表述为原建筑完整未改。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海市文化和旅游局：上海中国大戏院（牛庄路704号）",
+            "url": "https://whlyj.sh.gov.cn/jyjc/20250924/65721fbdbbf0423fa4fdec4a7c86e1c6.html"
+          },
+          {
+            "title": "人民网：更新舞台至中国大戏院的沿革",
+            "url": "https://sh.people.com.cn/n2/2022/1201/c350122-40216707.html"
+          },
+          {
+            "title": "上海市房屋管理局：三星大舞台／中国大戏院",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://whlyj.sh.gov.cn/jyjc/20250924/65721fbdbbf0423fa4fdec4a7c86e1c6.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "官方剧场名录与沿革资料共同确认牛庄路704号、名称变化和持续演艺用途。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-658"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-659",
@@ -17258,11 +17821,31 @@
       "historicalName": "Astor Theater",
       "mappedName": "滬光大戲院",
       "category": "重要建筑",
-      "queries": [
-        "沪光大戏院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "电影院已拆；现为延安路高架及道路相关用地",
+        "currentNameZh": "沪光电影院旧址",
+        "currentAddress": "延安东路725号（部分资料记755号）",
+        "currentUseNote": "沪光大戏院1939年开业，1996年因延安路高架建设拆除。725与755两个门牌版本均见于公开资料，成果中保留这一差异。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "上观新闻：沪光电影院与延安路高架",
+            "url": "https://www.shobserver.com/sgh/detail?id=948071"
+          },
+          {
+            "title": "上海市民政局：沪光电影院史料",
+            "url": "https://mzj.sh.gov.cn/lnb-wsws/20241128/e2366fcca7bc4c128c8d707237d15918.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shobserver.com/sgh/detail?id=948071",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "沪光大戏院1939年开业，1996年因延安路高架建设拆除。725与755两个门牌版本均见于公开资料，成果中保留这一差异。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-75"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-750",
@@ -17979,14 +18562,8 @@
       "queries": [
         "关帝庙"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "关帝庙",
-        "currentAddress": "西市街54号",
-        "distanceMetres": 30163,
-        "query": "关帝庙"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-811",
@@ -18759,11 +19336,35 @@
       "historicalName": "China United Apartments",
       "mappedName": "華安大廈",
       "category": "重要建筑",
-      "queries": [
-        "华安大厦"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "酒店",
+        "currentNameZh": "华安大楼（上海金门大酒店）",
+        "currentAddress": "南京西路104号（酒店营业门牌108号）",
+        "currentUseNote": "China United Apartments 对应今华安大楼；保护建筑门牌为南京西路104号，现由上海金门大酒店使用，酒店营业资料常写108号。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：华安人寿保险公司／金门大酒店",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+          },
+          {
+            "title": "上海文旅推广网：上海金门大酒店",
+            "url": "https://www.meet-in-shanghai.net/cn/star-hotel/golden-gate-hotel-shanghai-813955/"
+          },
+          {
+            "title": "Bristol Historical Photographs：China United Apartments（今 Pacific Hotel）",
+            "url": "https://hpcbristol.net/visual/Ep01-198"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史照片目录、官方保护名录与现酒店资料共同确认同一建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-874"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-875",

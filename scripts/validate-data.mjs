@@ -11,6 +11,7 @@ const landmarkCurrentUseAuditPath = path.join(projectRoot, 'public', 'data', 'la
 const unresolvedLandmarksDirectory = path.join(projectRoot, 'public', 'data', 'unresolved-landmarks')
 const landmarkCurrentUseOverridesPath = path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-overrides.json')
 const buildingClusterAuditPath = path.join(projectRoot, 'public', 'data', 'virtual-shanghai-building-clusters.json')
+const buildingSiteSeparationsPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-site-separations.json')
 const jurisdictionsPath = path.join(projectRoot, 'public', 'data', 'jurisdictions.geojson')
 const metroPath = path.join(projectRoot, 'public', 'data', 'metro-lines.geojson')
 const metroStationsPath = path.join(projectRoot, 'public', 'data', 'metro-stations.geojson')
@@ -29,6 +30,7 @@ const unresolvedLandmarkChunks = await Promise.all(unresolvedLandmarkFilenames.m
 const unresolvedRecords = unresolvedLandmarkChunks.flat()
 const landmarkCurrentUseOverrides = JSON.parse(await fs.readFile(landmarkCurrentUseOverridesPath, 'utf8'))
 const buildingClusterAudit = JSON.parse(await fs.readFile(buildingClusterAuditPath, 'utf8'))
+const buildingSiteSeparations = JSON.parse(await fs.readFile(buildingSiteSeparationsPath, 'utf8'))
 const jurisdictions = JSON.parse(await fs.readFile(jurisdictionsPath, 'utf8'))
 const collection = {
   type: 'FeatureCollection',
@@ -40,6 +42,29 @@ const style = JSON.parse(await fs.readFile(stylePath, 'utf8'))
 const errors = []
 const ids = new Set()
 const sourceIds = new Set(sources.map((source) => source.id))
+
+for (const separation of buildingSiteSeparations) {
+  const [leftRecordId, rightRecordId] = separation.sourceRecordIds ?? []
+  if (!Number.isInteger(leftRecordId) || !Number.isInteger(rightRecordId)) {
+    errors.push(`Invalid curated building-site separation: ${JSON.stringify(separation)}`)
+    continue
+  }
+  const leftCluster = buildingClusterAudit.recordToCluster?.[String(leftRecordId)]
+  const rightCluster = buildingClusterAudit.recordToCluster?.[String(rightRecordId)]
+  if (!leftCluster || !rightCluster || leftCluster === rightCluster) {
+    errors.push(`Building records #${leftRecordId} and #${rightRecordId} were not kept in separate clusters`)
+  }
+  const leftFeatures = historicalCollection.features.filter(
+    (feature) => feature.properties?.sourceRecordIds?.includes(leftRecordId),
+  )
+  const rightFeatures = historicalCollection.features.filter(
+    (feature) => feature.properties?.sourceRecordIds?.includes(rightRecordId),
+  )
+  if (leftFeatures.length !== 1 || rightFeatures.length !== 1 ||
+    leftFeatures[0]?.properties?.featureGroupId === rightFeatures[0]?.properties?.featureGroupId) {
+    errors.push(`Building records #${leftRecordId} and #${rightRecordId} do not resolve to distinct map features`)
+  }
+}
 
 function featureHistoricalNames(feature) {
   return new Set([

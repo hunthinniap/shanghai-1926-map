@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T23:52:26.328Z",
+  "generatedAt": "2026-08-30T15:46:21.876Z",
   "source": {
     "mode": "live-directory-snapshot",
     "sourceRecordCount": 1803,
@@ -19,17 +19,28 @@
     "unnumberedAddressMaximumMetres": 30,
     "semanticVariantMaximumMetres": 8,
     "recordIdentityPreserved": true,
-    "genericPrimaryLabelsHidden": true
+    "genericPrimaryLabelsHidden": true,
+    "curatedSiteSeparations": 1,
+    "siteSeparations": [
+      {
+        "sourceRecordIds": [
+          241,
+          242
+        ],
+        "reason": "The Aurora University chapel and sports field are distinct campus facilities despite sharing the historical street address 280 Avenue Dubail."
+      }
+    ]
   },
   "summary": {
     "sourceRecords": 1803,
-    "siteClusters": 1646,
-    "mappedClusters": 1646,
+    "siteClusters": 1647,
+    "mappedClusters": 1647,
     "mappedSourceRecords": 1803,
-    "multiRecordClusters": 126,
+    "multiRecordClusters": 125,
     "omittedClusters": 0,
-    "mergeReasons": 195,
-    "curatedOverrides": 11
+    "mergeReasons": 194,
+    "curatedOverrides": 13,
+    "curatedSeparations": 1
   },
   "recordToCluster": {
     "1": "vs-building-site:1",
@@ -273,7 +284,7 @@
     "239": "vs-building-site:239",
     "240": "vs-building-site:240",
     "241": "vs-building-site:241",
-    "242": "vs-building-site:241",
+    "242": "vs-building-site:242",
     "243": "vs-building-site:243",
     "244": "vs-building-site:244",
     "245": "vs-building-site:245",
@@ -43044,16 +43055,15 @@
       "featureGroupId": "landmark-vs-site-241",
       "primaryRecordId": 241,
       "sourceRecordIds": [
-        241,
-        242
+        241
       ],
       "historicalName": "Aurora University Chapel (Saint Peter's Church)",
       "historicalNameZh": "天主教堂",
       "address": "280 AVENUE DUBAIL",
       "normalizedAddress": "AVENUE DUBAIL|280",
       "centroid": [
-        353798.5131,
-        3454432.74525
+        353793.0008,
+        3454461.0945
       ],
       "historicalRecords": [
         {
@@ -43081,7 +43091,32 @@
           ],
           "isGeneric": false,
           "specificityScore": 107
-        },
+        }
+      ],
+      "mergeReasons": [],
+      "curatedOverride": {
+        "sourceRecordIds": [
+          241
+        ],
+        "jurisdiction": "french-concession"
+      }
+    },
+    {
+      "clusterId": "vs-building-site:242",
+      "featureGroupId": "landmark-vs-site-242",
+      "primaryRecordId": 242,
+      "sourceRecordIds": [
+        242
+      ],
+      "historicalName": "Aurora University - Sports Field",
+      "historicalNameZh": "震旦大學運動場",
+      "address": "280 AVENUE DUBAIL",
+      "normalizedAddress": "AVENUE DUBAIL|280",
+      "centroid": [
+        353804.0254,
+        3454404.396
+      ],
+      "historicalRecords": [
         {
           "historicalName": "Aurora University - Sports Field",
           "historicalNameZh": "震旦大學運動場",
@@ -43109,17 +43144,13 @@
           "specificityScore": 69
         }
       ],
-      "mergeReasons": [
-        {
-          "leftRecordId": 241,
-          "rightRecordId": 242,
-          "code": "same-numbered-address-within-radius",
-          "distanceMetres": 57.76,
-          "thresholdMetres": 250,
-          "normalizedAddress": "AVENUE DUBAIL|280",
-          "clusterId": "vs-building-site:241"
-        }
-      ]
+      "mergeReasons": [],
+      "curatedOverride": {
+        "sourceRecordIds": [
+          242
+        ],
+        "jurisdiction": "french-concession"
+      }
     },
     {
       "clusterId": "vs-building-site:243",

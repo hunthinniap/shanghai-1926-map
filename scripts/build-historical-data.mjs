@@ -11,6 +11,7 @@ const cacheRoot = path.join(projectRoot, '.cache', 'historical-source')
 const outputRoot = path.join(projectRoot, 'public', 'data')
 const liveBuildingsPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-buildings-live.json')
 const buildingSiteOverridesPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-site-overrides.json')
+const buildingSiteSeparationsPath = path.join(projectRoot, 'scripts', 'data', 'virtual-shanghai-site-separations.json')
 const supplementalSourcesPath = path.join(projectRoot, 'scripts', 'data', 'historical-supplemental-sources.json')
 const buildingClusterAuditPath = path.join(outputRoot, 'virtual-shanghai-building-clusters.json')
 const shanghaiBounds = [121.36, 31.13, 121.59, 31.33]
@@ -453,8 +454,27 @@ async function loadBuildingSiteOverrides() {
   return overrides
 }
 
-function makeBuildings(rawRecords, sourceMetadata, siteOverrides = []) {
-  const clustered = clusterBuildingRecords(rawRecords)
+async function loadBuildingSiteSeparations() {
+  const separations = JSON.parse(await fs.readFile(buildingSiteSeparationsPath, 'utf8'))
+  if (!Array.isArray(separations)) throw new Error('Virtual Shanghai site separations must be an array')
+  const keys = new Set()
+  for (const separation of separations) {
+    if (!Array.isArray(separation.sourceRecordIds) || separation.sourceRecordIds.length !== 2 ||
+      new Set(separation.sourceRecordIds).size !== 2 ||
+      separation.sourceRecordIds.some((recordId) => !Number.isInteger(recordId))) {
+      throw new Error(`Invalid site separation sourceRecordIds: ${JSON.stringify(separation.sourceRecordIds)}`)
+    }
+    const key = [...separation.sourceRecordIds].sort((left, right) => left - right).join(',')
+    if (keys.has(key)) throw new Error(`Duplicate site separation: ${key}`)
+    keys.add(key)
+  }
+  return separations
+}
+
+function makeBuildings(rawRecords, sourceMetadata, siteOverrides = [], siteSeparations = []) {
+  const clustered = clusterBuildingRecords(rawRecords, {
+    separateSourceRecordPairs: siteSeparations.map((separation) => separation.sourceRecordIds),
+  })
   const preparedById = new Map(clustered.sourceRecords.map((record) => [String(record.recordId), record]))
   const buildings = []
   const omittedClusters = []
@@ -602,6 +622,8 @@ function makeBuildings(rawRecords, sourceMetadata, siteOverrides = []) {
       semanticVariantMaximumMetres: 8,
       recordIdentityPreserved: true,
       genericPrimaryLabelsHidden: true,
+      curatedSiteSeparations: siteSeparations.length,
+      siteSeparations,
     },
     summary: {
       sourceRecords: rawRecords.length,
@@ -612,6 +634,7 @@ function makeBuildings(rawRecords, sourceMetadata, siteOverrides = []) {
       omittedClusters: omittedClusters.length,
       mergeReasons: clustered.mergeReasons.length,
       curatedOverrides: appliedOverrides.size,
+      curatedSeparations: siteSeparations.length,
     },
     recordToCluster: clustered.recordToCluster,
     omittedClusters,
@@ -926,7 +949,10 @@ async function main() {
   )
 
   const roads = makeRoads([...loaded.geocoder, ...loaded['geocoder-ext']])
-  const buildingSiteOverrides = await loadBuildingSiteOverrides()
+  const [buildingSiteOverrides, buildingSiteSeparations] = await Promise.all([
+    loadBuildingSiteOverrides(),
+    loadBuildingSiteSeparations(),
+  ])
   const liveBuildings = await loadLiveBuildingRecords(loaded.buildings)
   const { buildings, audit: buildingClusterAudit } = makeBuildings(
     liveBuildings.records,
@@ -936,6 +962,7 @@ async function main() {
       ...liveBuildings.snapshot,
     },
     buildingSiteOverrides,
+    buildingSiteSeparations,
   )
   const parks = makeParks(loaded.parks)
   const features = ensureAcceptanceExamples([...roads, ...buildings, ...parks])
