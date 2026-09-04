@@ -33,6 +33,7 @@ const sourceDataIssues = new Map([
   [1033, '原地址与坐标落点之间存在明显冲突。'],
   [465, '英文名称为 Temple，但原 FUNCTION 指向小学，来源字段互相冲突。'],
   [1189, '英文名称为 Base Ball Ground，历史中文字段却写“美军靶子场”，用途字段互相冲突。'],
+  [4134, '原始坐标已经是WGS84经纬度，但其落点与华山路670号历史地址明显不符；保留原坐标并禁止据此自动落位。'],
 ])
 const explicitlyApprovedMapWriteIds = new Set([569])
 
@@ -84,7 +85,7 @@ const roadNames = new Map([
   ['SINGAPORE ROAD', '余姚路'],
   ['ROUTE LORTON', '襄阳北路'],
   ['SINZA ROAD', '新闸路'],
-  ['ROUTE AMIRAL COURBET', '古城路'],
+  ['ROUTE AMIRAL COURBET', '富民路'],
   ['CANTON ROAD', '广东路'],
   ['TATUNG ROAD', '大田路'],
   ['RUE DE NINGPO', '淮海东路'],

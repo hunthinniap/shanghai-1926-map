@@ -1,0 +1,1562 @@
+{
+  "batch": "007",
+  "researchedAt": "2026-09-04",
+  "input": "research/unresolved-landmarks/007-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/007-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 19,
+      "demolished-current-use": 6,
+      "location-only-current-use": 25
+    },
+    "byResolutionStatus": {
+      "resolved": 25,
+      "probable": 11,
+      "unresolved": 14
+    },
+    "mapWriteRecommendation": {
+      "yes": 25,
+      "review": 11,
+      "no": 14
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 556,
+      "historicalName": "China Banking Corporation",
+      "historicalNameCorrectionZh": "銀行",
+      "coordinates": {
+        "wgs84": [
+          121.483815,
+          31.2371
+        ],
+        "gcj02": [
+          121.488305,
+          31.235132
+        ]
+      },
+      "modernRoadAddress": "89 福州路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "申达大楼",
+      "currentUse": "上海电气控股集团办公",
+      "currentAddress": "上海市黄浦区福州路89号、四川中路149号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "China Banking Corporation 是菲律宾 Chinabank 的上海分行，中文名中兴银行；福州路89号与四川中路149号是街角建筑的双门牌。该楼现名申达大楼，近年仍由上海电气控股集团办公使用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=556",
+        "https://www.chinabank.ph/our-centennial-story",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-10-19/601727_20241019_AH7B.pdf"
+      ]
+    },
+    {
+      "IDBAT": 553,
+      "historicalName": "China Development Bank",
+      "historicalNameCorrectionZh": "銀行",
+      "historicalStartYear": 1931,
+      "coordinates": {
+        "wgs84": [
+          121.484714,
+          31.235076
+        ],
+        "gcj02": [
+          121.4892,
+          31.233105
+        ]
+      },
+      "modernRoadAddress": "33 四川中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "企业大楼（亦称创业大楼）",
+      "currentUse": "办公 / 艺术画廊",
+      "currentAddress": "上海市黄浦区四川中路33号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "1936工商名录把 China Development Bank 列在四川路33号；该门牌的企业大楼保存至今，现为多单位办公并设艺术画廊。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=553",
+        "https://www.shobserver.cn/sgh/detail?id=1743713",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+      ]
+    },
+    {
+      "IDBAT": 5,
+      "historicalName": "China Navigation Company",
+      "historicalStartYear": 1906,
+      "coordinates": {
+        "wgs84": [
+          121.489323,
+          31.232667
+        ],
+        "gcj02": [
+          121.493793,
+          31.230681
+        ]
+      },
+      "modernRoadAddress": "23 中山东二路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "外滩22号（丰华大楼、太古洋行旧址）",
+      "currentUse": "优秀历史建筑；现设香港大学上海总部，并兼有商业、餐饮及文化活动空间",
+      "currentAddress": "上海市黄浦区中山东二路22号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "23 Quai de France 对应今中山东二路22号。上海市优秀历史建筑名录明确将太古洋行、丰华大楼及该地址对应；1906年建筑保存并修缮利用，历史门牌与现代门牌不同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=5",
+        "https://www.virtualshanghai.net/Data/Buildings?ID=5",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://sh.people.com.cn/n2/2022/1031/c138654-40175289.html",
+        "https://www.shanghai.gov.cn/nw4411/20260301/281bfcc6dc5f482699db54be790c161c.html"
+      ]
+    },
+    {
+      "IDBAT": 542,
+      "historicalName": "China Southern Bank",
+      "historicalStartYear": 1917,
+      "coordinates": {
+        "wgs84": [
+          121.483151,
+          31.238764
+        ],
+        "gcj02": [
+          121.487643,
+          31.236799
+        ]
+      },
+      "modernRoadAddress": "110 汉口路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中南大楼",
+      "currentUse": "金融机构 / 办公",
+      "currentAddress": "上海市黄浦区汉口路110号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "官方名录把汉口路110号现存建筑直接列为原中南银行的中南大楼；修缮后继续作为金融机构和办公空间使用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=542",
+        "https://www.ngd-fund.com/about",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ]
+    },
+    {
+      "IDBAT": 874,
+      "historicalName": "China United Apartments",
+      "historicalNameCorrectionZh": "華安大廈",
+      "historicalStartYear": 1926,
+      "coordinates": {
+        "wgs84": [
+          121.467665,
+          31.236203
+        ],
+        "gcj02": [
+          121.472208,
+          31.234279
+        ]
+      },
+      "modernRoadAddress": "104 南京西路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "华安大楼（上海金门大酒店）",
+      "currentUse": "酒店",
+      "currentAddress": "上海市黄浦区南京西路104号（酒店营业门牌108号）",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "China United Apartments 对应今华安大楼；保护建筑门牌为南京西路104号，现由上海金门大酒店使用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=874",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.meet-in-shanghai.net/cn/star-hotel/golden-gate-hotel-shanghai-813955/",
+        "https://hpcbristol.net/visual/Ep01-198"
+      ]
+    },
+    {
+      "IDBAT": 892,
+      "historicalName": "Chinese Anglican Church",
+      "historicalNameCorrectionZh": "中華聖公會",
+      "coordinates": {
+        "wgs84": [
+          121.462583,
+          31.236809
+        ],
+        "gcj02": [
+          121.467141,
+          31.234898
+        ]
+      },
+      "modernRoadAddress": "357 北京西路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "华盛大公馆（圣彼得堂原址）",
+      "currentUse": "住宅小区",
+      "currentAddress": "上海市黄浦区北京西路355弄1—2号，原北京西路351号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Avenue Road 即今北京西路。Chinese Anglican Church 对应圣公会圣彼得堂；教会史料明确其位于北京西路成都路口，旧址原门牌351号，1994年拆除后开发为华盛大厦。当前地图门牌名称为华盛大公馆，位于北京西路355弄，与转换坐标吻合。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=892",
+        "https://www.ccctspm.org/cppccinfo/14676",
+        "https://zh.wikipedia.org/wiki/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%82_%28%E4%B8%8A%E6%B5%B7%29",
+        "https://www.amap.com/place/B00155L3JQ"
+      ]
+    },
+    {
+      "IDBAT": 575,
+      "historicalName": "Chinese Commercial Bank",
+      "historicalNameCorrectionZh": "中国通商銀行大楼",
+      "historicalStartYear": 1936,
+      "coordinates": {
+        "wgs84": [
+          121.482308,
+          31.236716
+        ],
+        "gcj02": [
+          121.486803,
+          31.234752
+        ]
+      },
+      "modernRoadAddress": "181 江西中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "建设大楼（建设大厦）",
+      "currentUse": "综合办公楼",
+      "currentAddress": "上海市黄浦区江西中路181号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "中国通商银行兴建该楼，竣工前转售并定名建设大楼；美国总领事署后来曾租用楼层。现址建筑保存并继续作综合办公。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=575",
+        "https://m.thepaper.cn/baijiahao_31155355",
+        "https://m.thepaper.cn/newsDetail_forward_31857272",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ]
+    },
+    {
+      "IDBAT": 843,
+      "historicalName": "Chinese Maritime Customs Club",
+      "historicalNameCorrectionZh": "海関倶楽部",
+      "coordinates": {
+        "wgs84": [
+          121.462888,
+          31.232236
+        ],
+        "gcj02": [
+          121.467445,
+          31.230323
+        ]
+      },
+      "modernRoadAddress": "479-10 南京西路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "同益里10号（上海血液生物医药有限责任公司注册地址）",
+      "currentUse": "生物医药企业注册地址／原献血站；所在同益里现为住宅社区",
+      "currentAddress": "上海市黄浦区南京西路479弄10号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "静安寺路479弄10号可精确换算为今南京西路479弄10号；静安区图书馆资料明确此处为江海关同益里俱乐部，后改献血站。上海市科委名录仍把上海血液生物医药有限责任公司登记在同一门牌。现存建筑是否完全保留1930年代原构件无足够证据，因此不标为同一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=843",
+        "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135",
+        "https://stcsm.sh.gov.cn/cmsres/1b/1bfa5c059a95468d88f64e6b47e1d790/36664caaf6d3584ef48caced4e279920.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1181,
+      "historicalName": "Chinese Military Barracks (Lonely Army)",
+      "historicalNameCorrectionZh": "孤軍宿舎",
+      "coordinates": {
+        "wgs84": [
+          121.433266,
+          31.236705
+        ],
+        "gcj02": [
+          121.437892,
+          31.234851
+        ]
+      },
+      "modernRoadAddress": "?? 余姚路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "晋元里（孤军营旧址）",
+      "currentUse": "住宅小区／抗战纪念旧址",
+      "currentAddress": "上海市静安区余姚路321弄",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "静安区政府明确星加坡路即今余姚路，孤军营在今余姚路321弄。原营为荒地上的临时棚屋；1984年起旧房拆除并改建新工房，命名晋元里，因此不是原建筑延续。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1181",
+        "https://www.jingan.gov.cn/jagl/006001/006001006/006001006003/20150119/6585b6fc-a444-4c14-9978-d47812102bb2.html",
+        "https://www.ccphistory.org.cn/shds/ssjc/content/e04af225-7354-4665-b48a-8e710eb56d5a.html",
+        "https://www.jfdaily.com/wx/detail.do?id=555119"
+      ]
+    },
+    {
+      "IDBAT": 1486,
+      "historicalName": "Chinese Military Garrison",
+      "historicalNameCorrectionZh": "滬軍營",
+      "historicalStartYear": 1880,
+      "coordinates": {
+        "wgs84": [
+          121.493373,
+          31.209752
+        ],
+        "gcj02": [
+          121.497826,
+          31.207743
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "南浦大桥（沪军营路）公交枢纽",
+      "currentUse": "公交枢纽／内环高架桥下交通用地",
+      "currentAddress": "上海市黄浦区中山南路南浦大桥西侧（原国货路东、沪军营路北三角地）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市民政局据《上海掌故辞典》定位沪军营于今国货路东、沪军营路北三角地，并说明世博动迁后此处成为南浦大桥（沪军营路）公交枢纽；CHUNSAN ROAD应为CHUNGSHAN ROAD（中山路）的异拼或讹录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1486",
+        "https://mzj.sh.gov.cn/lnb-wsws/20220708/0ecb2c674afd4b099956508ce05ac08d.html",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1486"
+      ]
+    },
+    {
+      "IDBAT": 1362,
+      "historicalName": "Chinese Public General Hospital",
+      "historicalNameCorrectionZh": "中國公立總醫院",
+      "historicalStartYear": 1914,
+      "coordinates": {
+        "wgs84": [
+          121.467013,
+          31.261257
+        ],
+        "gcj02": [
+          121.47156,
+          31.259346
+        ]
+      },
+      "modernRoadAddress": "191 天通庵路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市中医医院芷江中路院区",
+      "currentUse": "三级甲等综合性中医医院",
+      "currentAddress": "上海市静安区芷江中路274号（南门：天通庵路191号）",
+      "currentUseRelationship": "same-site-rebuilt",
+      "mapWriteRecommendation": "yes",
+      "evidence": "历史记录的191 TIANTONG'AN精确对应今天通庵路191号；上海党史网确认中国公立医院在横浜路补萝居花园创办、1937年被毁。现门牌为上海市中医医院芷江中路院区南门，上海中医药大学官方资料确认其为三级甲等综合性中医医院。原医院已毁，故不标为同一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1362",
+        "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
+        "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1502,
+      "historicalName": "Customs",
+      "historicalNameCorrectionZh": "江海大関",
+      "historicalStartYear": 1901,
+      "coordinates": {
+        "wgs84": [
+          121.500272,
+          31.223547
+        ],
+        "gcj02": [
+          121.504702,
+          31.221524
+        ]
+      },
+      "modernRoadAddress": "348 外马路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "江海南关办公楼",
+      "currentUse": "住宅",
+      "currentAddress": "上海市黄浦区外马路348号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai 的泛称 Customs 对应外马路348号江海南关办公楼；1922年建筑保存至今，官方优秀历史建筑名录登记现用途为住宅。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1502",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://m.thepaper.cn/baijiahao_6306630"
+      ]
+    },
+    {
+      "IDBAT": 290,
+      "historicalName": "Dachay Marstors",
+      "historicalStartYear": 1929,
+      "coordinates": {
+        "wgs84": [
+          121.455818,
+          31.222569
+        ],
+        "gcj02": [
+          121.460394,
+          31.220668
+        ]
+      },
+      "modernRoadAddress": "265 长乐路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "锦江饭店北楼（原华懋公寓）",
+      "currentUse": "锦江饭店客房及国宾接待设施",
+      "currentAddress": "上海市黄浦区长乐路109号；主入口茂名南路59号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai 的 Dachay Marstors 是转录/OCR错误；同址记录及官方文保资料确认其为 Cathay Mansions／华懋公寓，现为锦江饭店北楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=290",
+        "https://www.virtualshanghai.net/data/buildings?ID=1780",
+        "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ]
+    },
+    {
+      "IDBAT": 1375,
+      "historicalName": "Dafeng Cotton Mill",
+      "historicalNameCorrectionZh": "大豐紡織廠",
+      "historicalStartYear": 1920,
+      "coordinates": {
+        "wgs84": [
+          121.439718,
+          31.252341
+        ],
+        "gcj02": [
+          121.444334,
+          31.250485
+        ]
+      },
+      "modernRoadAddress": "321 潘家湾路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中远两湾城",
+      "currentUse": "大型住宅社区",
+      "currentAddress": "上海市普陀区中潭路100弄",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "普陀区官方地名资料直接把大丰纺织公司旧地名对应到中远两湾城内；厂房已拆并改建住宅，不能表述为工业建筑现存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1375",
+        "https://shpt.gov.cn/hudong/wisdom/intelligence/label?tag=%E7%BD%A2%E5%B7%A5",
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html"
+      ]
+    },
+    {
+      "IDBAT": 1020,
+      "historicalName": "Dagong Hospital",
+      "historicalNameCorrectionZh": "大公醫院",
+      "coordinates": {
+        "wgs84": [
+          121.45128,
+          31.230375
+        ],
+        "gcj02": [
+          121.455868,
+          31.228487
+        ]
+      },
+      "modernRoadAddress": "南京西路 / 江宁路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海中信泰富广场",
+      "currentUse": "购物中心 / 办公楼",
+      "currentAddress": "上海市静安区南京西路1168号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "地块沿革资料明确由大公医院、卫生学校等用途演变，并于2000年建成中信泰富广场；当前官方资料确认商场和办公用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1020",
+        "https://www.sohu.com/a/409813149_556717",
+        "https://ebuy.citic.com/cms/default/webfile/1ywgg6/20260423/1231898586246021120.html",
+        "https://www.shanghai.gov.cn/nw17239/20260812/715a1fd0fb474e969c42841a4964be0f.html"
+      ]
+    },
+    {
+      "IDBAT": 28,
+      "historicalName": "Dah Woo Hotel",
+      "coordinates": {
+        "wgs84": [
+          121.476731,
+          31.231598
+        ],
+        "gcj02": [
+          121.481244,
+          31.229648
+        ]
+      },
+      "modernRoadAddress": "345 延安东路 ROAD",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "大沪饭店（现作汉庭酒店）",
+      "currentUse": "酒店住宿",
+      "currentAddress": "上海市黄浦区延安东路343号",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Dah Woo 对应大沪饭店，不是大华饭店。历史名录给出爱多亚路341弄5号，官方监管名录把上海大沪饭店有限公司／汉庭连锁酒店大沪饭店列在延安东路343号；按同址酒店用途延续处理。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=28",
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf",
+        "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1334,
+      "historicalName": "Gaol for Foreigners",
+      "historicalNameCorrectionZh": "外人監獄 (西牢)",
+      "historicalStartYear": 1868,
+      "coordinates": {
+        "wgs84": [
+          121.4705,
+          31.242827
+        ],
+        "gcj02": [
+          121.475034,
+          31.240899
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "西牢旧址",
+      "currentUse": "上海市排水管理事务中心用地 / 城市更新地块；保留少量监狱建筑遗存",
+      "currentAddress": "上海市黄浦区厦门路180号、南苏州路935号",
+      "currentUseRelationship": "site-redeveloped-partially-preserved",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Gaol for Foreigners 即厦门路西牢。外籍囚犯1935年迁出后地块转交工部局工务处；现由上海市排水管理事务中心使用，原监狱建筑仍残留一小部分，已列文物保护点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1334",
+        "https://www.thepaper.cn/newsDetail_forward_13131020",
+        "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf"
+      ]
+    },
+    {
+      "IDBAT": 655,
+      "historicalName": "Gas Works Company",
+      "historicalStartYear": 1905,
+      "coordinates": {
+        "wgs84": [
+          121.46839,
+          31.2412
+        ],
+        "gcj02": [
+          121.472931,
+          31.239277
+        ]
+      },
+      "modernRoadAddress": "706 西藏中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海燃气有限公司（美华大楼）",
+      "currentUse": "燃气企业及燃气行业机构办公",
+      "currentAddress": "上海市黄浦区西藏中路656号（历史门牌706号地块）",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原“大英自来火房”及上海煤气公司地块位于西藏中路、厦门路口；地方志研究明确该地今天仍为上海燃气办公场所。1905年旧办公楼已鉴定为危房并拆除，故是原址与机构用途延续，不是原建筑保存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=655",
+        "https://www.thepaper.cn/newsDetail_forward_13131020",
+        "https://ciac.zjw.sh.gov.cn/JGBQyWsbsNewWeb/QyWSGSGg/QyFrame.aspx?sbid=XI3G04rWO3A%3D",
+        "https://www.thepaper.cn/newsDetail_forward_17420247"
+      ]
+    },
+    {
+      "IDBAT": 391,
+      "historicalName": "Gascogne Apartments",
+      "historicalStartYear": 1935,
+      "coordinates": {
+        "wgs84": [
+          121.44806,
+          31.216687
+        ],
+        "gcj02": [
+          121.452655,
+          31.214799
+        ]
+      },
+      "modernRoadAddress": "1202 淮海中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "盖司康公寓（淮海公寓）",
+      "currentUse": "住宅公寓",
+      "currentAddress": "上海市徐汇区淮海中路1202号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "盖司康公寓主楼保存并继续作住宅使用；本记录只对应淮海中路1202号主楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=391",
+        "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ]
+    },
+    {
+      "IDBAT": 388,
+      "historicalName": "Geluo Hospital",
+      "historicalNameCorrectionZh": "格羅療養院",
+      "coordinates": {
+        "wgs84": [
+          121.446051,
+          31.218005
+        ],
+        "gcj02": [
+          121.450651,
+          31.216122
+        ]
+      },
+      "modernRoadAddress": "64 延庆路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "原剑桥医院（格罗疗养院旧址）",
+      "currentUse": "住宅",
+      "currentAddress": "上海市徐汇区延庆路18弄10号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海文旅资料确认延庆路18弄10号先后作为格罗疗养院、剑桥医院，现为住宅，并列入第五批优秀历史建筑；同址和现用途已闭环。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=388",
+        "https://www.meet-in-shanghai.net/cn/guide/take-advantage-of-the-spring-day-and-have-a-romantic-citywalk-under-the-plane-tree-902096/",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ]
+    },
+    {
+      "IDBAT": 525,
+      "historicalName": "General Bank of China",
+      "historicalStartYear": 1901,
+      "coordinates": {
+        "wgs84": [
+          121.484197,
+          31.238901
+        ],
+        "gcj02": [
+          121.488685,
+          31.236933
+        ]
+      },
+      "modernRoadAddress": "50 汉口路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中国银行（上海）文博馆（大清银行旧址）",
+      "currentUse": "金融史展馆 / 中国银行办公物业",
+      "currentAddress": "上海市黄浦区汉口路50号（四川中路268—270号）",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai 的 General Bank of China 应纠正为 Bank of China／中國銀行。中国银行1912年在汉口路3号（后改50号）成立，1936工商名录仍列该门牌；现存大清银行旧楼由中国银行作为文博馆及办公物业使用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=525",
+        "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+        "https://wap.boc.cn/bif/bi1/202211/t20221129_22161500.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ]
+    },
+    {
+      "IDBAT": 1285,
+      "historicalName": "General Headquarter of the Japanese Army",
+      "historicalNameCorrectionZh": "日本陸戰隊本部",
+      "coordinates": {
+        "wgs84": [
+          121.476749,
+          31.267743
+        ],
+        "gcj02": [
+          121.481265,
+          31.265809
+        ]
+      },
+      "modernRoadAddress": "1 东江湾路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "日本海军特别陆战队司令部旧址",
+      "currentUse": "中国人民解放军驻地 / 军事设施",
+      "currentAddress": "上海市虹口区四川北路2121号（原东江湾路1号）",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原记录英文误称 Japanese Army，实际是日本海军特别陆战队司令部。1924年原楼在1932年战事中被毁，现存堡垒式建筑于1933年在原址建成；现仍为解放军重要军事基地，因此按同址军事用途延续处理，不称1924原楼原样保存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1285",
+        "https://mzj.sh.gov.cn/lnb-wsws/20220228/be5fc5a69c264683bed4d05447adc92f.html",
+        "https://www.shhk.gov.cn/xwzx/002004/20190826/eb1c2f45-f642-4218-af30-3327b4777473.html"
+      ]
+    },
+    {
+      "IDBAT": 1624,
+      "historicalName": "General Headquarters of the Japanese Army",
+      "historicalNameCorrectionZh": "陸戰隊租界部隊本部",
+      "coordinates": {
+        "wgs84": [
+          121.482103,
+          31.255244
+        ],
+        "gcj02": [
+          121.4866,
+          31.253289
+        ]
+      },
+      "modernRoadAddress": "10 海南路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "虹口SOHO（海南路10号地块）",
+      "currentUse": "办公 / 商业",
+      "currentAddress": "上海市虹口区海南路10号地块（现乍浦路512号一带）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai 记录的是海南路10号被日军占用时期的总部用途；该址后来为国民党空军供应司令部驻地，原建筑已拆。虹口区政府确认海南路10号地块于2015年建成虹口SOHO。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1624",
+        "https://www.shanghai.gov.cn/nw4411/20240526/dd28dbd0bb1240b2be0cb4d3507c43d2.html",
+        "https://www.shhk.gov.cn/xwzx/002003/20150911/2b707dd9-3b7f-4dcd-bf18-c1934df8ffc5.html",
+        "https://www.sohochina.com/project3q.aspx?projectid=42"
+      ]
+    },
+    {
+      "IDBAT": 1675,
+      "historicalName": "General Hospital",
+      "historicalNameCorrectionZh": "上海公濟醫院",
+      "historicalStartYear": 1877,
+      "coordinates": {
+        "wgs84": [
+          121.481949,
+          31.247039
+        ],
+        "gcj02": [
+          121.486446,
+          31.245081
+        ]
+      },
+      "modernRoadAddress": "190 北苏州路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "公济医院旧楼东部（北外滩苏宁广场）",
+      "currentUse": "酒店 / 商业综合体中的保护建筑",
+      "currentAddress": "上海市虹口区北苏州路190号、天潼路365号",
+      "currentUseRelationship": "site-redeveloped-partially-preserved",
+      "mapWriteRecommendation": "yes",
+      "evidence": "General Hospital 即上海公济医院。院区整体开发后，仅旧楼东部作为保护建筑保留在北外滩苏宁广场与苏宁宝丽嘉酒店范围内。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1675",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20230112/191e163f-bdad-49ec-a55a-02c03a28926c.html"
+      ]
+    },
+    {
+      "IDBAT": 658,
+      "historicalName": "Gengxin Dancing Hall",
+      "historicalNameCorrectionZh": "更新舞臺",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.471678,
+          31.239768
+        ],
+        "gcj02": [
+          121.476208,
+          31.237835
+        ]
+      },
+      "modernRoadAddress": "704 牛庄路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中国大戏院",
+      "currentUse": "剧院 / 演出场所",
+      "currentAddress": "上海市黄浦区牛庄路704号",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "该址1934年更名更新舞台、1944年定名中国大戏院，现仍为剧院；建筑经过翻建和大修，因此按原址与演艺功能延续处理。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=658",
+        "https://whlyj.sh.gov.cn/jyjc/20250924/65721fbdbbf0423fa4fdec4a7c86e1c6.html",
+        "https://sh.people.com.cn/n2/2022/1201/c350122-40216707.html"
+      ]
+    },
+    {
+      "IDBAT": 1071,
+      "historicalName": "Children's Playground (SMC)",
+      "coordinates": {
+        "wgs84": [
+          121.44644,
+          31.229147
+        ],
+        "gcj02": [
+          121.45104,
+          31.227268
+        ]
+      },
+      "modernRoadAddress": "169 南阳路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海商城（Shanghai Centre）",
+      "currentUse": "商业综合体，包含酒店、服务式公寓、办公、零售及剧院",
+      "currentAddress": "上海市静安区南京西路1376号（南阳路、西康路一侧）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "1944年地图明确标有南阳路儿童游戏场；转换坐标约121.446440, 31.229147，落在上海商城北缘、南阳路一侧。上海商城官方资料和上海市政府资料确认现址及综合用途，但尚未找到地籍沿革材料直接证明原南阳路169号游戏场的完整地块全部并入上海商城，因此保留likely。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1071",
+        "https://m.thepaper.cn/baijiahao_5552077",
+        "https://www.shanghaicentre.com/site_english/hp_location.aspx",
+        "https://www.shanghai.gov.cn/cmsres/f9/f9a8897166f64c1aa78f95efca29c88d/988d6c6f763c9d85215f6484c49c7b20.pdf"
+      ]
+    },
+    {
+      "IDBAT": 4134,
+      "historicalName": "China Funeral Directors",
+      "historicalNameCorrectionZh": "中國殯儀館",
+      "coordinates": {
+        "wgs84": [
+          121.433319,
+          31.210861
+        ],
+        "gcj02": [
+          121.437943,
+          31.208995
+        ]
+      },
+      "modernRoadAddress": "670 华山路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海戏剧学院实验剧院（华山路校区）",
+      "currentUse": "高校教学及公共演出剧场",
+      "currentAddress": "上海市静安区华山路630号校区内（旧对外地址曾使用华山路670号；剧院更新节点现记华山路678号）",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "review",
+      "sourceDataIssue": "原始坐标已经是WGS84经纬度，但其落点与华山路670号历史地址明显不符；保留原坐标并禁止据此自动落位。",
+      "evidence": "Virtual Shanghai记中国殡仪馆为670 Avenue Haig；上海市民政局确认中国殡仪馆设于华山路，2009年《中国日报》明确把华山路670号标为上戏剧场。当前官方资料将实验剧院列入华山路630号校区，并将678号作为剧院改扩建节点。地址链较强，但未找到产权档案证明原殡仪馆建筑本体保留；且输入中的WGS84点121.433319, 31.210861落在湖南路街道，与华山路校区不符，因此仅标likely并按同址改用处理。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=4134",
+        "https://mzj.sh.gov.cn/MZ_BZ105_0-2-85/20200515/MZ_BZ105_554.html",
+        "https://www.chinadaily.com.cn/cndy/2009-12/05/content_9123097.htm",
+        "https://zt.sta.edu.cn/e8/26/c4563a124966/page.htm",
+        "https://www.jingan.gov.cn/rmtzx/003008/003008003/20240122/3570d1f4-a9b5-4bb9-8c67-9f6de4fa8a35.html"
+      ]
+    },
+    {
+      "IDBAT": 1322,
+      "historicalName": "China Merchants North Warehouse Wharf",
+      "historicalNameCorrectionZh": "招商局北棧碼頭",
+      "historicalStartYear": 1874,
+      "coordinates": {
+        "wgs84": [
+          121.499992,
+          31.251183
+        ],
+        "gcj02": [
+          121.504425,
+          31.249174
+        ]
+      },
+      "modernRoadAddress": "?? 高阳路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海港国际客运中心（原公平路码头一带）",
+      "currentUse": "国际客运及邮轮码头、滨江公共空间和商业综合体",
+      "currentAddress": "上海市虹口区东大名路500号，公平路以西沿江",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Chaofoong Road 即今高阳路。招商局北栈后来称公平路码头、招一码头；史料所述范围为东临公平路、西至小港码头、北接东大名路。转换坐标落入现北外滩国际客运中心地块，但旧岸线及仓栈边界已经重构，因此不认定为原建筑存续。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1322",
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1322",
+        "https://www.shobserver.cn/wx/detail.do?id=129194",
+        "https://www.shhk.gov.cn/qyfwy/030006/20221119/e415c0f2-eff7-4871-86d0-a78a3ed98a6c.html",
+        "https://www.meet-in-shanghai.net/tc/traffic/international-ferry-terminal-554244/"
+      ]
+    },
+    {
+      "IDBAT": 1537,
+      "historicalName": "Chinese 1932 War Memorial",
+      "historicalNameCorrectionZh": "陣亡將士紀念塔",
+      "historicalStartYear": 1932,
+      "historicalEndYear": 1966,
+      "coordinates": {
+        "wgs84": [
+          121.448466,
+          31.183337
+        ],
+        "gcj02": [
+          121.453057,
+          31.181432
+        ]
+      },
+      "modernRoadAddress": "1068 宛平南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "国民革命军陆军第五师阵亡将士纪念塔原址",
+      "currentUse": "住宅 / 街角绿地",
+      "currentAddress": "上海市徐汇区宛平南路1068号、龙华路口南侧",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "原记录误称一·二八战争纪念物，实际是1932年建成的国民革命军陆军第五师阵亡将士纪念塔；1966年被毁，现址已建住宅，路口留有绿地。精确现代地籍尚缺官方资料，暂不自动写回现用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1537",
+        "https://zh.wikipedia.org/wiki/%E5%A5%9A%E7%A6%8F%E6%B3%89",
+        "https://www.sohu.com/a/519531560_121124630"
+      ]
+    },
+    {
+      "IDBAT": 984,
+      "historicalName": "Chinese Blue Cross",
+      "historicalNameCorrectionZh": "中國玄義壇十字會",
+      "coordinates": {
+        "wgs84": [
+          121.456062,
+          31.234942
+        ],
+        "gcj02": [
+          121.460638,
+          31.233046
+        ]
+      },
+      "modernRoadAddress": "696 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "第五次全国劳动大会会址遗址（同门牌地段，关联待核）",
+      "currentUse": "革命遗址纪念设施；静安区文物保护单位",
+      "currentAddress": "上海市静安区北京西路690—696号",
+      "currentUseRelationship": "historical-address-equivalent",
+      "mapWriteRecommendation": "review",
+      "evidence": "Avenue Road 即今北京西路，转换坐标与官方公布的北京西路690—696号遗址范围吻合，原建筑已不存。Virtual Shanghai 记录的英文名 Chinese Blue Cross 与中文名“中國玄義壇十字會”存在名称矛盾，故只能确认现代遗址与历史记录落在同一地址区段，不能断言两者曾使用同一栋建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=984",
+        "https://www.virtualshanghai.net/Data/Buildings?ID=984",
+        "https://www.jingan.gov.cn/BigFileUpLoadStorage/temp/2022-12-06/d8921d79-8a76-4e04-bd41-1e12c199dd3d/%E9%9D%99%E5%BA%9C%E5%8F%91%5B2021%5D6%E5%8F%B7.pdf",
+        "https://www.jingan.gov.cn/BigFileUpLoadStorage/temp/2023-03-16/6cc6243e-459e-4c44-820a-63da86722c69/%E9%9D%99%E5%BA%9C%E7%9D%A3%E5%A4%8D%5B2022%5D6%E5%8F%B7.pdf",
+        "https://shhongse.fudan.edu.cn/info/1022/1561.htm"
+      ]
+    },
+    {
+      "IDBAT": 375,
+      "historicalName": "Cunde Primary and Junior High School",
+      "historicalNameCorrectionZh": "存徳小學・中學",
+      "coordinates": {
+        "wgs84": [
+          121.446239,
+          31.221608
+        ],
+        "gcj02": [
+          121.450838,
+          31.219726
+        ]
+      },
+      "modernRoadAddress": "149 富民路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": null,
+      "currentUse": "未查明；1974—2006年曾作南京西路街道图书馆",
+      "currentAddress": "上海市静安区富民路149号旧址（历史古拔路149号）",
+      "currentUseRelationship": "same-numbered-site-current-use-unresolved",
+      "mapWriteRecommendation": "review",
+      "evidence": "上交大校友回忆确认存德小学位于古拔路。Route Amiral Courbet 是古拔路、今富民路；官方馆史证明富民路149号后来曾作街道图书馆，但未找到2026年现用途，也不能证明原校舍存续。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=375",
+        "https://oce.sjtu.edu.cn/xz_sy/9239.html",
+        "https://www.shjinganlib.net/CommunityLibraryList.aspx?ColumnNameEn=COMMUNITY&id=101"
+      ]
+    },
+    {
+      "IDBAT": 1138,
+      "historicalName": "Customs Library",
+      "historicalNameCorrectionZh": "海關圖書館",
+      "historicalStartYear": 1935,
+      "coordinates": {
+        "wgs84": [
+          121.439767,
+          31.230722
+        ],
+        "gcj02": [
+          121.444381,
+          31.228856
+        ]
+      },
+      "modernRoadAddress": "1714 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "静安区图书馆（新闸路馆·海关楼）",
+      "currentUse": "公共图书馆 / 海关历史主题阅读与展陈空间",
+      "currentAddress": "上海市静安区新闸路1702—1708号",
+      "currentUseRelationship": "institutional-successor-adjacent-building",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai 记1714号，可能对应1930迁入、1931开放的早期馆舍；现存文保建筑是1936年建的新闸路1708号海关图书馆。机构和邻址可连贯，但不能称为同一栋建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1138",
+        "https://www.jalib.net/ReaderSynopsis.aspx?ColumnNameEn=Introduction",
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html",
+        "https://finance.sina.com.cn/jjxw/2024-04-23/doc-inasvrzr1919717.shtml"
+      ]
+    },
+    {
+      "IDBAT": 1585,
+      "historicalName": "Fumin Hospital",
+      "historicalNameCorrectionZh": "福民醫院",
+      "historicalStartYear": 1924,
+      "coordinates": {
+        "wgs84": [
+          121.479405,
+          31.263349
+        ],
+        "gcj02": [
+          121.483912,
+          31.261406
+        ]
+      },
+      "modernRoadAddress": "1878 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "福民医院旧址（原上海市第四人民医院旧址）",
+      "currentUse": "2026年现用途未获权威确认",
+      "currentAddress": "上海市虹口区四川北路1878号",
+      "currentUseRelationship": "same-historic-site-current-use-unresolved",
+      "mapWriteRecommendation": "review",
+      "evidence": "福民医院后来演变为上海市第四人民医院；四院迁出后江湾医院曾于2020年临时迁入，但江湾医院已于2025年整体搬回场中路22号。旧页面中的江湾医院用途已经过时，暂不写成现用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1585",
+        "https://www.shobserver.cn/wx/detail.do?id=861400",
+        "https://www.shhk.gov.cn/xwzx/002014/20250507/32efd845-2276-4a5f-a2d1-afb5002e42a5.html"
+      ]
+    },
+    {
+      "IDBAT": 597,
+      "historicalName": "Gallia Building",
+      "coordinates": {
+        "wgs84": [
+          121.481536,
+          31.245077
+        ],
+        "gcj02": [
+          121.486034,
+          31.243119
+        ]
+      },
+      "modernRoadAddress": "660 四川中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "佳利商务楼（待复核）",
+      "currentUse": "办公 / 商业",
+      "currentAddress": "上海市黄浦区四川中路660号一带",
+      "currentUseRelationship": "probable-same-address-building",
+      "mapWriteRecommendation": "review",
+      "evidence": "1935工商名录把 Gallia Building 列在四川路668号，而 Virtual Shanghai 记660号；现代地图可检到四川中路660号佳利商务楼，但尚缺建筑沿革资料把两个历史门牌和现楼直接闭环，暂不自动写回。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=597",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1935part013.html",
+        "https://artpro.com/gallery/ekcKDuV4T5gfv"
+      ]
+    },
+    {
+      "IDBAT": 394,
+      "historicalName": "Gaolang Hospital",
+      "historicalNameCorrectionZh": "高朗醫院",
+      "coordinates": {
+        "wgs84": [
+          121.445938,
+          31.215962
+        ],
+        "gcj02": [
+          121.450538,
+          31.214078
+        ]
+      },
+      "modernRoadAddress": "175 华亭路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "高郎博士诊所旧址（待复核）",
+      "currentUse": "商业用房",
+      "currentAddress": "上海市徐汇区华亭路85号（历史门牌175号）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "1947年电话簿把 Calame’s Hospital 列在华亭路175号，现门牌为85号。实地史料称外表已改动、老楼与新楼并存并作商业用途；尚缺官方名录直接确认原建筑边界。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=394",
+        "https://www.thepaper.cn/newsDetail_forward_8419460"
+      ]
+    },
+    {
+      "IDBAT": 554,
+      "historicalName": "General Electric Company of China",
+      "coordinates": {
+        "wgs84": [
+          121.484603,
+          31.235385
+        ],
+        "gcj02": [
+          121.48909,
+          31.233414
+        ]
+      },
+      "modernRoadAddress": "49 四川中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "经租大楼（待复核）",
+      "currentUse": "办公 / 商业",
+      "currentAddress": "上海市黄浦区四川中路49—63号",
+      "currentUseRelationship": "probable-same-building",
+      "mapWriteRecommendation": "review",
+      "evidence": "四川中路49—63号经租大楼被多项建筑史资料记为1936年建成、曾由通用电气公司使用，现代地图仍有四川中路49号办公楼；尚缺官方保护名录或产权资料确认现楼边界与当前统一专名。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=554",
+        "https://www.jfdaily.com/sgh/detail?id=914953",
+        "https://blog.sina.com.cn/s/blog_8001328c010305u4.html"
+      ]
+    },
+    {
+      "IDBAT": 768,
+      "historicalName": "Chengji Primary School",
+      "historicalNameCorrectionZh": "私立成基小學",
+      "coordinates": {
+        "wgs84": [
+          121.471387,
+          31.247209
+        ],
+        "gcj02": [
+          121.475919,
+          31.245281
+        ]
+      },
+      "modernRoadAddress": "1007-4 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "塘沽路1007-4号旧址一带（现代门牌未核定）",
+      "currentUseRelationship": "historical-address-unresolved",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai 可确认私立成基小学及1007-4 Boone Road。UTM 51N 转换后约为121.471387, 31.247209，仅能落到今塘沽路，尚无资料证明具体门牌、建筑存废或现用途；不可误认成附近的闸北第一中心小学。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=768",
+        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=31.247209&lon=121.471387&zoom=18&addressdetails=1"
+      ]
+    },
+    {
+      "IDBAT": 939,
+      "historicalName": "Chengzhi Primary School",
+      "historicalNameCorrectionZh": "成志小學",
+      "coordinates": {
+        "wgs84": [
+          121.460297,
+          31.2398
+        ],
+        "gcj02": [
+          121.464862,
+          31.237896
+        ]
+      },
+      "modernRoadAddress": "852-15 成都北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "成都北路852-15号旧址一带（近新闸路；现代门牌未核定）",
+      "currentUseRelationship": "historical-address-unresolved",
+      "mapWriteRecommendation": "no",
+      "evidence": "转换坐标约为121.460297, 31.239800，确在今成都北路近新闸路。但同期《上海暨全国学校调查录》把近乎同一地址记为“大成小学，新闸路成都路口852弄”，与Virtual Shanghai的“成志小学”发生校名冲突，可能是转录误差、异期更名或同弄不同学校，目前无法裁断。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=939",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/NLC416-10jh006837-53329_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=31.239800&lon=121.460297&zoom=18&addressdetails=1"
+      ]
+    },
+    {
+      "IDBAT": 460,
+      "historicalName": "Chenjingmiao Temple",
+      "historicalNameCorrectionZh": "沉涇廟",
+      "coordinates": {
+        "wgs84": [
+          121.443166,
+          31.201178
+        ],
+        "gcj02": [
+          121.44777,
+          31.199292
+        ]
+      },
+      "modernRoadAddress": "993 徐家汇路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "原Route de Zikawei 993号一带（今肇嘉浜路沿线；现代门牌未核定）",
+      "currentUseRelationship": "historical-address-unresolved",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai原汉字为“沉涇廟”；同址ID 459另记一所“小学校”，说明庙与学校可能共用院落。未找到独立资料闭环其现代专名和用途。转换点约121.443166, 31.201178，与现代肇嘉浜路门牌关系存在偏差，不能据坐标强行落位，也不能与沉香阁、三泾庙或乌泥泾庙混同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=460",
+        "https://www.virtualshanghai.net/data/buildings?ID=459"
+      ]
+    },
+    {
+      "IDBAT": 1407,
+      "historicalName": "China General Edison Company",
+      "historicalStartYear": 1918,
+      "coordinates": {
+        "wgs84": [
+          121.422906,
+          31.235825
+        ],
+        "gcj02": [
+          121.427546,
+          31.233983
+        ]
+      },
+      "modernRoadAddress": "140 长寿路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "约今长寿路—武宁路交会处一带（原劳勃生路140号；现代门牌未核定）",
+      "currentUseRelationship": "historical-address-unresolved",
+      "mapWriteRecommendation": "no",
+      "evidence": "Robison Road可确定为今长寿路，公司中文旧称包括“安迪生中国电料公司”“奇异安迪生电器公司”。转换坐标约121.422906, 31.235825，位于长寿路、武宁路附近，但无法闭环到现代宗地或建筑。1949年美国外交档案又把该公司工厂记在1012 Changchow Road，说明企业曾迁址或另有厂区，不能把现坐标附近住宅、商务楼或上海印钞厂直接认定为其旧址后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1407",
+        "https://www.virtualshanghai.net/%E6%96%87%E6%9C%AC/%E9%99%84%E5%BD%95?ID=10",
+        "https://www.cambridge.org/core/journals/enterprise-and-society/article/electric-pioneers-nationalist-lobbying-technology-transfer-and-the-origins-of-the-chinese-electric-lamp-industry-19211937/8F6268D702F9167B5EA410A31DB3F030",
+        "https://history.state.gov/historicaldocuments/frus1949v09/d1285"
+      ]
+    },
+    {
+      "IDBAT": 1361,
+      "historicalName": "Chinese Cinema and Film Bureau",
+      "historicalNameCorrectionZh": "中華電影攝影所",
+      "coordinates": {
+        "wgs84": [
+          121.469799,
+          31.262114
+        ],
+        "gcj02": [
+          121.474337,
+          31.260196
+        ]
+      },
+      "modernRoadAddress": "517 宝通路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市静安区宝通路517号一带，宝通路与中华新路附近",
+      "currentUseRelationship": "site-unresolved",
+      "mapWriteRecommendation": "no",
+      "evidence": "历史与现代路名均为宝通路，转换坐标落在局东村附近，但未找到可独立核验的现存专名、门牌建筑或当前用途。不能与宝通路449号等其他电影机构混同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1361",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1361",
+        "https://m.thepaper.cn/newsDetail_forward_6074208"
+      ]
+    },
+    {
+      "IDBAT": 370,
+      "historicalName": "Cunde Primary School",
+      "historicalNameCorrectionZh": "存徳小學",
+      "coordinates": {
+        "wgs84": [
+          121.449237,
+          31.221467
+        ],
+        "gcj02": [
+          121.453829,
+          31.219579
+        ]
+      },
+      "modernRoadAddress": "42 襄阳北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市徐汇区襄阳北路42号旧址（历史劳尔登路42号）",
+      "currentUseRelationship": "historical-address-equivalent",
+      "mapWriteRecommendation": "no",
+      "evidence": "Route Lorton 即今襄阳北路，但未找到存德小学此分址的校史、现代机构承继或门牌现用途；不能和古拔路149号记录强行合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=370"
+      ]
+    },
+    {
+      "IDBAT": 4,
+      "historicalName": "Customs Examination Shed",
+      "coordinates": {
+        "wgs84": [
+          121.48944,
+          31.232582
+        ],
+        "gcj02": [
+          121.493909,
+          31.230596
+        ]
+      },
+      "modernRoadAddress": "24 中山东二路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "今黄浦区中山东二路北段、原法兰西外滩24号一带",
+      "currentUseRelationship": "historic-working-wharf-site",
+      "mapWriteRecommendation": "no",
+      "evidence": "1931年法兰西外滩图可确认海关验货棚与办公室，但该滨水段历经整体更新，尚不能把坐标锁定到一个现存建筑或现代专名。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=4",
+        "https://kanagawa-u.repo.nii.ac.jp/record/2000525/files/03%20%E7%A7%9F%E7%95%8C%E3%83%BB%E5%B1%85%E7%95%99%E5%9C%B0%E7%8F%AD%E3%80%80%E7%AC%AC84%E5%9B%9E%E7%A0%94%E7%A9%B6%E4%BC%9A%E3%80%80%E8%BF%91%E4%BB%A3%E4%B8%8A%E6%B5%B7%E6%B8%AF%E3%81%AE%E7%99%BA%E5%B1%95%E3%81%A8%E9%BB%84%E6%B5%A6%E6%B1%9F%E3%81%AE%E8%88%AA%E8%B7%AF%E6%95%B4%E5%82%99.pdf"
+      ]
+    },
+    {
+      "IDBAT": 702,
+      "historicalName": "Dachuan Hospital",
+      "historicalNameCorrectionZh": "大川醫院",
+      "coordinates": {
+        "wgs84": [
+          121.475052,
+          31.233694
+        ],
+        "gcj02": [
+          121.479571,
+          31.23175
+        ]
+      },
+      "modernRoadAddress": "608 广东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市黄浦区广东路608号旧址",
+      "currentUseRelationship": "historical-address-equivalent",
+      "mapWriteRecommendation": "no",
+      "evidence": "现代道路与门牌可对应，但未找到大川医院的建筑存续、机构承继或文保登记；零散商业名录不能证明整址的当前用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=702"
+      ]
+    },
+    {
+      "IDBAT": 1079,
+      "historicalName": "Dahai Junior High School",
+      "historicalNameCorrectionZh": "大海中學",
+      "coordinates": {
+        "wgs84": [
+          121.4452,
+          31.227362
+        ],
+        "gcj02": [
+          121.449802,
+          31.225485
+        ]
+      },
+      "modernRoadAddress": "1456 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市静安区南京西路1456号旧址",
+      "currentUseRelationship": "historical-site-likely-redeveloped",
+      "mapWriteRecommendation": "no",
+      "evidence": "同门牌且坐标近重合的 Virtual Shanghai #1078 是中国学校，可能为同一院落或分校，但没有资料证明大海初中的校史承继、原建筑存续或当前地块用途，不能强行合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1079",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1078"
+      ]
+    },
+    {
+      "IDBAT": 77,
+      "historicalName": "Dahua Dancing Hall",
+      "historicalNameCorrectionZh": "大華舞廳",
+      "coordinates": {
+        "wgs84": [
+          121.468974,
+          31.227804
+        ],
+        "gcj02": [
+          121.473512,
+          31.225873
+        ]
+      },
+      "modernRoadAddress": "743 延安东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "今延安中路741—743号一带旧址",
+      "currentUseRelationship": "historical-site-likely-redeveloped",
+      "mapWriteRecommendation": "no",
+      "evidence": "二手史料可识别为大华歌舞厅／Ambassador Cafe，但该处与后来迁马当路的“老大华／维纳斯”并非一址；未找到足够门牌连续性或现址专名证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=77",
+        "https://www.sohu.com/a/837052495_121123854"
+      ]
+    },
+    {
+      "IDBAT": 908,
+      "historicalName": "Fuguang Primary and Junior High School",
+      "historicalNameCorrectionZh": "夏光中小學",
+      "coordinates": {
+        "wgs84": [
+          121.459053,
+          31.235507
+        ],
+        "gcj02": [
+          121.463621,
+          31.233604
+        ]
+      },
+      "modernRoadAddress": "167 大田路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市静安区大田路167号旧址",
+      "currentUseRelationship": "institution-merged-and-relocated",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文名是夏光中小学。1956年该校与正中中学并入上海市第六十二中学并迁至重庆北路270号，但没有资料证明大田路167号原校舍的现用途；机构承继不能回写为原址现用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=908",
+        "https://www.thepaper.cn/newsDetail_forward_9516617"
+      ]
+    },
+    {
+      "IDBAT": 1065,
+      "historicalName": "Fuyintang",
+      "historicalNameCorrectionZh": "福音堂",
+      "coordinates": {
+        "wgs84": [
+          121.443431,
+          31.232245
+        ],
+        "gcj02": [
+          121.448038,
+          31.230373
+        ]
+      },
+      "modernRoadAddress": "1517 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市静安区新闸路1517号旧址",
+      "currentUseRelationship": "historical-address-equivalent",
+      "mapWriteRecommendation": "no",
+      "evidence": "回忆材料将该处描述为中华内地会旁的临时福音堂，但缺少教会档案、文保资料及当前门牌用途；不能误认作其他同名福音堂。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1065",
+        "https://www.jianazhiye.com/ziliao/2025/639%E5%9C%A3%E5%85%89%E6%8C%87%E5%BC%95%E2%80%94%E2%80%94%E5%B0%B9%E4%BB%BB%E5%85%88%E8%92%99%E6%81%A9%E4%B8%89%E5%8D%81%E5%B9%B4%E7%9A%84%E8%A7%81%E8%AF%81/18432.html"
+      ]
+    },
+    {
+      "IDBAT": 41,
+      "historicalName": "Fuzi Hospital Dispensary",
+      "historicalNameCorrectionZh": "父子醫院門診部",
+      "coordinates": {
+        "wgs84": [
+          121.476689,
+          31.228296
+        ],
+        "gcj02": [
+          121.481202,
+          31.226345
+        ]
+      },
+      "modernRoadAddress": "64 淮海东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市黄浦区淮海东路64号旧址",
+      "currentUseRelationship": "historical-address-equivalent",
+      "mapWriteRecommendation": "no",
+      "evidence": "Rue de Ningpo 可映射为今淮海东路，但除 Virtual Shanghai 外未找到“父子医院门诊部”的独立史料、机构承继、文保登记或该门牌现用途；名称也可能存在转写问题。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=41"
+      ]
+    },
+    {
+      "IDBAT": 743,
+      "historicalName": "Gaoming Temple",
+      "historicalNameCorrectionZh": "高明寺",
+      "coordinates": {
+        "wgs84": [
+          121.47463,
+          31.247646
+        ],
+        "gcj02": [
+          121.479151,
+          31.245709
+        ]
+      },
+      "modernRoadAddress": "312-4 七浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "上海市静安区七浦路近山西北路、历史门牌312-4号一带",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "no",
+      "evidence": "居民回忆可确认高明寺位于七浦路近山西北路，并称1966年已拆除且没有遗迹；但未找到能把312-4号精确落到某一现商场或门牌的权威资料，因此不臆定现用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=743",
+        "https://www.ivy436.com/nd.jsp?id=773"
+      ]
+    }
+  ]
+}

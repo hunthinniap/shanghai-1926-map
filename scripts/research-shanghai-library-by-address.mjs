@@ -37,7 +37,7 @@ const manualRoadMappings = new Map(Object.entries({
   'PANJIAWAN': '潘家湾路',
   'JIANGWAN': '东江湾路',
   'EDWARD VII': '延安东路',
-  'ROUTE AMIRAL COURBET': '古城路',
+  'ROUTE AMIRAL COURBET': '富民路',
 }))
 
 function normalizeRoadName(value) {

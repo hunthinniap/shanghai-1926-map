@@ -237,7 +237,7 @@ async function mapWithConcurrency(items, concurrency, callback) {
 }
 
 async function fetchApiKey() {
-  const response = await fetch(sourceScript)
+  const response = await fetch(sourceScript, { signal: AbortSignal.timeout(15_000) })
   if (!response.ok) throw new Error(`Shanghai Library page script failed: ${response.status}`)
   const script = await response.text()
   const apiKey = script.match(/key\s*:\s*["']([a-f0-9]{32,})["']/i)?.[1]
@@ -253,7 +253,7 @@ async function queryBuildings(query, apiKey) {
     pageth: '1',
     iflimit: '1',
   })}`
-  const response = await fetch(url)
+  const response = await fetch(url, { signal: AbortSignal.timeout(15_000) })
   if (!response.ok) throw new Error(`Shanghai Library query failed for ${query}: ${response.status}`)
   const result = await response.json()
   return result.data ?? []
@@ -261,7 +261,7 @@ async function queryBuildings(query, apiKey) {
 
 async function fetchBuildingDetail(uri, apiKey) {
   const url = `${detailBase}?${new URLSearchParams({ uri, key: apiKey })}`
-  const response = await fetch(url)
+  const response = await fetch(url, { signal: AbortSignal.timeout(15_000) })
   if (!response.ok) throw new Error(`Shanghai Library detail failed for ${uri}: ${response.status}`)
   let result = await response.json()
   if (typeof result === 'string') result = JSON.parse(result)
@@ -325,13 +325,40 @@ function representativeFeatures(collections) {
   return [...byGroup.values()]
 }
 
-const [historical, curatedParks, sources, researchOverrides, apiKey] = await Promise.all([
+const [historical, curatedParks, sources, researchOverrides, previousAudit] = await Promise.all([
   fs.readFile(historicalPath, 'utf8').then(JSON.parse),
   fs.readFile(curatedParksPath, 'utf8').then(JSON.parse),
   fs.readFile(sourcesPath, 'utf8').then(JSON.parse),
   fs.readFile(researchOverridesPath, 'utf8').then(JSON.parse),
-  fetchApiKey(),
+  fs.readFile(auditPath, 'utf8').then(JSON.parse).catch((error) => {
+    if (error.code === 'ENOENT') return null
+    throw error
+  }),
 ])
+
+const networkFailures = []
+let apiKey
+try {
+  apiKey = await fetchApiKey()
+} catch (error) {
+  networkFailures.push({ stage: 'api-key', message: error.message })
+}
+let libraryNetworkUnavailable = !apiKey
+
+const cachedLibraryMatches = new Map((previousAudit?.records ?? [])
+  .filter((record) => ['matched', 'matched-library-cache'].includes(record.status))
+  .filter((record) => record.accepted?.currentNameZh && record.accepted?.sourceUri)
+  .map((record) => [record.featureGroupId, {
+    currentUse: record.accepted.currentUse,
+    currentNameZh: record.accepted.currentNameZh,
+    currentAddress: record.accepted.currentAddress,
+    currentUseSourceId: sourceId,
+    currentUseSourceUri: record.accepted.sourceUri,
+    currentUseMatch: 'historical-name-and-location',
+    currentUseMatchDistance: record.accepted.distanceMetres,
+    query: record.accepted.query,
+    evidence: record.accepted.evidence,
+  }]))
 
 const researchRecords = new Map()
 for (const match of researchOverrides) {
@@ -426,10 +453,18 @@ const queryJobs = landmarks
   query,
 })))
 const uniqueQueries = [...new Set(queryJobs.map((job) => job.query))]
-const queryResults = await mapWithConcurrency(uniqueQueries, 8, async (query) => [
-  query,
-  await queryBuildings(query, apiKey),
-])
+const queryResults = apiKey
+  ? await mapWithConcurrency(uniqueQueries, 8, async (query) => {
+    if (libraryNetworkUnavailable) return [query, []]
+    try {
+      return [query, await queryBuildings(query, apiKey)]
+    } catch (error) {
+      libraryNetworkUnavailable = true
+      networkFailures.push({ stage: 'query', query, message: error.message })
+      return [query, []]
+    }
+  })
+  : []
 const resultsByQuery = new Map(queryResults)
 
 const preliminaryRecords = landmarks.map((feature) => {
@@ -454,10 +489,18 @@ const preliminaryRecords = landmarks.map((feature) => {
 const candidateUris = [...new Set(preliminaryRecords.flatMap(({ candidates }) => candidates
   .filter((candidate) => candidate.distanceMetres <= maxAcceptedDistanceMetres)
   .map((candidate) => candidate.record.uri)))]
-const detailResults = await mapWithConcurrency(candidateUris, 8, async (uri) => [
-  uri,
-  await fetchBuildingDetail(uri, apiKey),
-])
+const detailResults = apiKey
+  ? await mapWithConcurrency(candidateUris, 8, async (uri) => {
+    if (libraryNetworkUnavailable) return [uri, undefined]
+    try {
+      return [uri, await fetchBuildingDetail(uri, apiKey)]
+    } catch (error) {
+      libraryNetworkUnavailable = true
+      networkFailures.push({ stage: 'detail', uri, message: error.message })
+      return [uri, undefined]
+    }
+  })
+  : []
 const detailsByUri = new Map(detailResults)
 
 const evaluatedRecords = preliminaryRecords.map(({ feature, queries, candidates }) => {
@@ -498,6 +541,9 @@ const auditRecords = evaluatedRecords.map(({ feature, queries, candidates, suppo
   const researchResolution = matchedByCurrentOrLegacyGroup(researchMatches, feature.properties)
   const wikipediaMatch = wikipediaResolution?.value
   const researchMatch = researchResolution?.value
+  const cachedLibraryMatch = networkFailures.length
+    ? cachedLibraryMatches.get(feature.properties.featureGroupId)
+    : undefined
   if (researchMatch) {
     matches.set(feature.properties.featureGroupId, researchMatch)
   } else if (wikipediaMatch) {
@@ -515,6 +561,8 @@ const auditRecords = evaluatedRecords.map(({ feature, queries, candidates, suppo
       currentUseMatch: 'historical-name-and-location',
       currentUseMatchDistance: Math.round(accepted.distanceMetres),
     })
+  } else if (cachedLibraryMatch) {
+    matches.set(feature.properties.featureGroupId, cachedLibraryMatch)
   }
 
   const status = researchMatch
@@ -525,6 +573,8 @@ const auditRecords = evaluatedRecords.map(({ feature, queries, candidates, suppo
         ? 'current-place-name'
         : accepted
           ? 'matched'
+          : cachedLibraryMatch
+            ? 'matched-library-cache'
           : duplicateSource
             ? 'needs-review-duplicate-source'
             : partial
@@ -554,7 +604,15 @@ const auditRecords = evaluatedRecords.map(({ feature, queries, candidates, suppo
       sourceUri: accepted.record.uri,
       query: accepted.query,
       evidence: accepted.evidence,
-    } : wikipediaMatch ?? documentedCurrentPlace),
+    } : wikipediaMatch ?? documentedCurrentPlace ?? (cachedLibraryMatch ? {
+      currentNameZh: cachedLibraryMatch.currentNameZh,
+      currentAddress: cachedLibraryMatch.currentAddress,
+      currentUse: cachedLibraryMatch.currentUse,
+      distanceMetres: cachedLibraryMatch.currentUseMatchDistance,
+      sourceUri: cachedLibraryMatch.currentUseSourceUri,
+      query: cachedLibraryMatch.query,
+      evidence: cachedLibraryMatch.evidence,
+    } : undefined)),
     reviewCandidate: !accepted && (supported ?? partial) ? {
       currentNameZh: ((supported ?? partial).detail ?? (supported ?? partial).record).nameS,
       currentAddress: ((supported ?? partial).detail ?? (supported ?? partial).record).address,
@@ -620,6 +678,7 @@ const audit = {
   summary: {
     landmarkGroups: landmarks.length,
     matchedFromLibrary: auditRecords.filter((record) => record.status === 'matched').length,
+    matchedFromLibraryCache: auditRecords.filter((record) => record.status === 'matched-library-cache').length,
     matchedFromWikipedia: auditRecords.filter((record) => record.status === 'matched-wikipedia').length,
     matchedFromResearch: auditRecords.filter((record) => record.status === 'matched-research').length,
     matchedFromCurrentPlaceName: auditRecords.filter((record) => record.status === 'current-place-name').length,
@@ -627,7 +686,9 @@ const audit = {
     needsReviewDuplicateSource: auditRecords.filter((record) => record.status === 'needs-review-duplicate-source').length,
     notFound: auditRecords.filter((record) => record.status === 'not-found').length,
     genericName: auditRecords.filter((record) => record.status === 'generic-name').length,
+    networkFailures: networkFailures.length,
   },
+  networkFailures,
   records: auditRecords,
 }
 
@@ -640,8 +701,12 @@ await Promise.all([
 
 console.log(
   `Matched ${audit.summary.matchedFromLibrary} landmark groups from Shanghai Library and ` +
+    `${audit.summary.matchedFromLibraryCache} from its last verified local cache; ` +
     `${audit.summary.matchedFromWikipedia} from Wikipedia's protected-building list; ` +
     `${audit.summary.matchedFromResearch} from verified per-place web research; ` +
     `${audit.summary.matchedFromCurrentPlaceName} current parks from their documented present names; ` +
     `${audit.summary.notFound} named groups were not found and ${audit.summary.genericName} only had generic names.`,
 )
+if (networkFailures.length) {
+  console.warn(`Shanghai Library had ${networkFailures.length} network failure(s); cached verified matches were retained.`)
+}

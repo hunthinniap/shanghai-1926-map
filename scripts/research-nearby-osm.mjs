@@ -18,14 +18,25 @@ try {
   if (error.code !== 'ENOENT') throw error
   records = JSON.parse(await fs.readFile(liveInputPath, 'utf8'))
 }
+function sourceCoordinatesToWgs84(record) {
+  if (Math.abs(record.XC) <= 180 && Math.abs(record.YC) <= 90) {
+    return {
+      longitude: Number(record.XC.toFixed(6)),
+      latitude: Number(record.YC.toFixed(6)),
+    }
+  }
+  return utm51nToWgs84(record.XC, record.YC)
+}
+
 const prepared = records.map((record) => ({
   record,
-  wgs84: utm51nToWgs84(record.XC, record.YC),
+  wgs84: sourceCoordinatesToWgs84(record),
 }))
 
 const overpassEndpoints = [
   'https://overpass-api.de/api/interpreter',
   'https://overpass.kumi.systems/api/interpreter',
+  'https://overpass.private.coffee/api/interpreter',
 ]
 
 async function fetchNearbyElements(batch) {
@@ -56,8 +67,18 @@ async function fetchNearbyElements(batch) {
 }
 
 const elements = []
+const batchFailures = []
 for (let index = 0; index < prepared.length; index += 10) {
-  elements.push(...await fetchNearbyElements(prepared.slice(index, index + 10)))
+  const batch = prepared.slice(index, index + 10)
+  try {
+    elements.push(...await fetchNearbyElements(batch))
+  } catch (error) {
+    batchFailures.push({
+      startIndex: index,
+      endIndex: index + batch.length,
+      message: error.message,
+    })
+  }
 }
 const uniqueElements = [...new Map(elements.map((element) => [`${element.type}:${element.id}`, element])).values()]
 
@@ -79,9 +100,12 @@ function elementPoint(element) {
     : undefined
 }
 
-const output = prepared.map(({ record, wgs84 }) => ({
+const output = prepared.map(({ record, wgs84 }, index) => ({
   IDBAT: record.IDBAT,
   wgs84,
+  lookupError: batchFailures.find(
+    (failure) => index >= failure.startIndex && index < failure.endIndex,
+  )?.message ?? null,
   nearby: uniqueElements
     .map((element) => {
       const point = elementPoint(element)
@@ -112,3 +136,6 @@ const output = prepared.map(({ record, wgs84 }) => ({
 await fs.mkdir(outputDirectory, { recursive: true })
 await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, 'utf8')
 console.log(`Saved nearby OpenStreetMap clues for ${output.length} records to ${path.relative(projectRoot, outputPath)}.`)
+if (batchFailures.length) {
+  console.warn(`Overpass lookup failed for ${batchFailures.length} batch(es); partial results were preserved.`)
+}

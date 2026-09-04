@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T11:50:17.163Z",
+  "generatedAt": "2026-09-03T11:18:04.724Z",
   "source": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding",
   "rules": {
     "method": "Shanghai Library full-text historical-name match plus coordinate check",
@@ -10,15 +10,24 @@
   },
   "summary": {
     "landmarkGroups": 1670,
-    "matchedFromLibrary": 62,
+    "matchedFromLibrary": 0,
+    "matchedFromLibraryCache": 62,
     "matchedFromWikipedia": 15,
-    "matchedFromResearch": 145,
+    "matchedFromResearch": 162,
     "matchedFromCurrentPlaceName": 22,
-    "needsReviewPartialName": 22,
+    "needsReviewPartialName": 0,
     "needsReviewDuplicateSource": 0,
-    "notFound": 1139,
-    "genericName": 265
+    "notFound": 1150,
+    "genericName": 259,
+    "networkFailures": 1
   },
+  "networkFailures": [
+    {
+      "stage": "query",
+      "query": "育英英文夜校",
+      "message": "fetch failed"
+    }
+  ],
   "records": [
     {
       "featureGroupId": "landmark-vs-site-1",
@@ -692,14 +701,8 @@
       "queries": [
         "兵营"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "纺三小区",
-        "currentAddress": "许昌路230弄（杨树浦路口）",
-        "distanceMetres": 9032,
-        "query": "兵营"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1058",
@@ -740,16 +743,8 @@
       "queries": [
         "内地会"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "基督教内地会",
-        "currentAddress": "新闸路1519号（北门）、北京西路1400弄24号",
-        "distanceMetres": 1180,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/r0icokz4p8poge11",
-        "query": "内地会",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1063",
@@ -770,14 +765,8 @@
       "queries": [
         "兵营"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "纺三小区",
-        "currentAddress": "许昌路230弄（杨树浦路口）",
-        "distanceMetres": 8731,
-        "query": "兵营"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1065",
@@ -919,14 +908,8 @@
       "queries": [
         "上海电车公司"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "英商上海电车公司大楼",
-        "currentAddress": "南苏州路185号",
-        "distanceMetres": 5379,
-        "query": "上海电车公司"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1084",
@@ -936,14 +919,8 @@
       "queries": [
         "女子中学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "市三女中",
-        "currentAddress": "江苏路155号",
-        "distanceMetres": 1017,
-        "query": "女子中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1085",
@@ -1256,14 +1233,8 @@
       "queries": [
         "基督教堂"
       ],
-      "searchResultCount": 3,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "国际礼拜堂",
-        "currentAddress": "徐汇区衡山路58号",
-        "distanceMetres": 2333,
-        "query": "基督教堂"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1110",
@@ -1470,14 +1441,8 @@
       "queries": [
         "花园"
       ],
-      "searchResultCount": 10,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "花园住宅群",
-        "currentAddress": "愚园路865弄2-36号",
-        "distanceMetres": 741,
-        "query": "花园"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1129",
@@ -1840,14 +1805,8 @@
       "queries": [
         "花园"
       ],
-      "searchResultCount": 10,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "花园住宅",
-        "currentAddress": "愚园路541弄2号",
-        "distanceMetres": 1394,
-        "query": "花园"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1163",
@@ -1912,8 +1871,8 @@
       "queries": [
         "戈登路巡捕房"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海商业会计学校静安分校",
         "currentAddress": "江宁路511号",
@@ -2076,14 +2035,38 @@
     },
     {
       "featureGroupId": "landmark-vs-site-1181",
-      "historicalName": "Chinese Military Barracks (Lonely Army)",
-      "mappedName": "孤軍宿舎",
-      "category": "重要建筑",
-      "queries": [
-        "孤军宿舎"
-      ],
+      "historicalName": "孤軍營",
+      "mappedName": "孤軍營",
+      "category": "军事设施 / 临时营地",
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅小区／抗战纪念旧址",
+        "currentNameZh": "晋元里（孤军营旧址）",
+        "currentAddress": "上海市静安区余姚路321弄",
+        "currentUseNote": "静安区政府明确星加坡路即今余姚路，孤军营在今余姚路321弄。原营为荒地上的临时棚屋；1984年起旧房拆除并改建新工房，命名晋元里，因此不是原建筑延续。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "静安区政府：“孤军营”旧址",
+            "url": "https://www.jingan.gov.cn/jagl/006001/006001006/006001006003/20150119/6585b6fc-a444-4c14-9978-d47812102bb2.html"
+          },
+          {
+            "title": "上海党史网：100年前的上海小孩，是这么被爱着",
+            "url": "https://www.ccphistory.org.cn/shds/ssjc/content/e04af225-7354-4665-b48a-8e710eb56d5a.html"
+          },
+          {
+            "title": "解放日报·上观：槟榔路、星加坡路、东京路、马崎路",
+            "url": "https://www.jfdaily.com/wx/detail.do?id=555119"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.jingan.gov.cn/jagl/006001/006001006/006001006003/20150119/6585b6fc-a444-4c14-9978-d47812102bb2.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "静安区政府明确星加坡路即今余姚路，孤军营在今余姚路321弄。原营为荒地上的临时棚屋；1984年起旧房拆除并改建新工房，命名晋元里，因此不是原建筑延续。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1181"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1182",
@@ -2350,8 +2333,8 @@
       "queries": [
         "玉佛寺"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "玉佛寺",
         "currentAddress": "安远路170号",
@@ -2481,16 +2464,8 @@
       "queries": [
         "面粉厂"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "上海面粉有限公司",
-        "currentAddress": "莫干山路120号",
-        "distanceMetres": 1076,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/slnkvmk4gn7do0rr",
-        "query": "面粉厂",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1215",
@@ -2617,14 +2592,8 @@
       "queries": [
         "上海中学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海中学大礼堂",
-        "currentAddress": "上中路400号(门牌遗失)另：百色路989号（北门，学生出入门）",
-        "distanceMetres": 10788,
-        "query": "上海中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1226",
@@ -2743,8 +2712,8 @@
       "queries": [
         "太古洋行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "丰华大楼/上海工业发展基金会",
         "currentAddress": "中山东二路22号",
@@ -3357,14 +3326,34 @@
     },
     {
       "featureGroupId": "landmark-vs-site-1285",
-      "historicalName": "General Headquarter of the Japanese Army",
-      "mappedName": "日本陸戰隊本部",
-      "category": "重要建筑",
-      "queries": [
-        "日本陆战队本部"
-      ],
+      "historicalName": "Japanese Naval Special Landing Forces Headquarters",
+      "mappedName": "日本海軍特別陸戰隊司令部",
+      "category": "军事设施 / 司令部",
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "中国人民解放军驻地 / 军事设施",
+        "currentNameZh": "日本海军特别陆战队司令部旧址",
+        "currentAddress": "上海市虹口区四川北路2121号（原东江湾路1号）",
+        "currentUseNote": "原记录英文误称 Japanese Army，实际是日本海军特别陆战队司令部。1924年原楼在1932年战事中被毁，现存堡垒式建筑于1933年在原址建成；现仍为解放军重要军事基地，因此按同址军事用途延续处理，不称1924原楼原样保存。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海市民政局：日本海军特别陆战队司令部沿革与门牌",
+            "url": "https://mzj.sh.gov.cn/lnb-wsws/20220228/be5fc5a69c264683bed4d05447adc92f.html"
+          },
+          {
+            "title": "虹口区人民政府：旧址现为解放军重要军事基地",
+            "url": "https://www.shhk.gov.cn/xwzx/002004/20190826/eb1c2f45-f642-4218-af30-3327b4777473.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://mzj.sh.gov.cn/lnb-wsws/20220228/be5fc5a69c264683bed4d05447adc92f.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "原记录英文误称 Japanese Army，实际是日本海军特别陆战队司令部。1924年原楼在1932年战事中被毁，现存堡垒式建筑于1933年在原址建成；现仍为解放军重要军事基地，因此按同址军事用途延续处理，不称1924原楼原样保存。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1285"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1286",
@@ -3483,8 +3472,8 @@
         "耶松船厂",
         "顺泰码头"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海远洋运输公司",
         "currentAddress": "东大名路378号",
@@ -3597,16 +3586,8 @@
       "queries": [
         "电力公司"
       ],
-      "searchResultCount": 4,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "上海市电力公司(北部）/上海市建筑材料供应总公司/上海航空铸锻公司",
-        "currentAddress": "北京东路239，255号",
-        "distanceMetres": 899,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/mg46lfeorlozzqml",
-        "query": "电力公司",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1303",
@@ -4015,8 +3996,8 @@
       "queries": [
         "四行仓库"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "春申江家具城等",
         "currentAddress": "光复路21号",
@@ -4272,11 +4253,35 @@
       "historicalName": "Chinese Public General Hospital",
       "mappedName": "中國公立總醫院",
       "category": "重要建筑",
-      "queries": [
-        "中国公立总医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "三级甲等综合性中医医院",
+        "currentNameZh": "上海市中医医院芷江中路院区",
+        "currentAddress": "上海市静安区芷江中路274号（南门：天通庵路191号）",
+        "currentUseNote": "历史记录的191 TIANTONG'AN精确对应今天通庵路191号；上海党史网确认中国公立医院在横浜路补萝居花园创办、1937年被毁。现门牌为上海市中医医院芷江中路院区南门，上海中医药大学官方资料确认其为三级甲等综合性中医医院。原医院已毁，故不标为同一建筑。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海党史网：历史上的上海时疫医院",
+            "url": "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html"
+          },
+          {
+            "title": "上海中医药大学：市中医医院",
+            "url": "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm"
+          },
+          {
+            "title": "上海市政府采购文件：上海市中医医院沿街绿地（天通庵路191号）",
+            "url": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史记录的191 TIANTONG'AN精确对应今天通庵路191号；上海党史网确认中国公立医院在横浜路补萝居花园创办、1937年被毁。现门牌为上海市中医医院芷江中路院区南门，上海中医药大学官方资料确认其为三级甲等综合性中医医院。原医院已毁，故不标为同一建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1362"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1363",
@@ -4417,8 +4422,8 @@
       "queries": [
         "福新面粉厂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海面粉有限公司",
         "currentAddress": "莫干山路120号",
@@ -4456,11 +4461,31 @@
       "historicalName": "Dafeng Cotton Mill",
       "mappedName": "大豐紡織廠",
       "category": "重要建筑",
-      "queries": [
-        "大丰纺织厂"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "大型住宅社区",
+        "currentNameZh": "中远两湾城",
+        "currentAddress": "上海市普陀区中潭路100弄",
+        "currentUseNote": "普陀区官方地名资料直接把大丰纺织公司旧地名对应到中远两湾城内；厂房已拆并改建住宅，不能表述为工业建筑现存。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "上海普陀官方地名点：大丰纺织公司旧址与中远两湾城",
+            "url": "https://shpt.gov.cn/hudong/wisdom/intelligence/label?tag=%E7%BD%A2%E5%B7%A5"
+          },
+          {
+            "title": "上海市档案馆：大丰纺织厂档案",
+            "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://shpt.gov.cn/hudong/wisdom/intelligence/label?tag=%E7%BD%A2%E5%B7%A5",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "普陀区官方地名资料直接把大丰纺织公司旧地名对应到中远两湾城内；厂房已拆并改建住宅，不能表述为工业建筑现存。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1375"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1376",
@@ -4559,14 +4584,8 @@
       "queries": [
         "基督教女青年会"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "市政工程设计研究院",
-        "currentAddress": "圆明园路133号",
-        "distanceMetres": 4716,
-        "query": "基督教女青年会"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1389",
@@ -4759,8 +4778,8 @@
       "queries": [
         "圣约翰大学"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "华东政法大学",
         "currentAddress": "万航渡路1575号",
@@ -4854,14 +4873,8 @@
       "queries": [
         "天主堂"
       ],
-      "searchResultCount": 5,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "徐家汇天主堂",
-        "currentAddress": "徐汇区浦西路158号",
-        "distanceMetres": 4124,
-        "query": "天主堂"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1412",
@@ -5097,8 +5110,8 @@
         "中西女中",
         "中西第一小学"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "市三女中",
         "currentAddress": "江苏路155号",
@@ -5271,8 +5284,8 @@
       "queries": [
         "圣玛利亚女中"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "东华大学长宁路分校",
         "currentAddress": "长宁路1187号",
@@ -5737,8 +5750,8 @@
       "queries": [
         "小桃园清真寺"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "小桃园清真寺",
         "currentAddress": "小桃园街52号",
@@ -5806,8 +5819,8 @@
       "queries": [
         "南市发电厂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "南市发电厂",
         "currentAddress": "花园港路200号",
@@ -5854,11 +5867,27 @@
       "historicalName": "Chinese Military Garrison",
       "mappedName": "滬軍營",
       "category": "重要建筑",
-      "queries": [
-        "沪军营"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "公交枢纽／内环高架桥下交通用地",
+        "currentNameZh": "南浦大桥（沪军营路）公交枢纽",
+        "currentAddress": "上海市黄浦区中山南路南浦大桥西侧（原国货路东、沪军营路北三角地）",
+        "currentUseNote": "上海市民政局据《上海掌故辞典》定位沪军营于今国货路东、沪军营路北三角地，并说明世博动迁后此处成为南浦大桥（沪军营路）公交枢纽；CHUNSAN ROAD应为CHUNGSHAN ROAD（中山路）的异拼或讹录。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "上海市民政局：沪军营路的遗址段",
+            "url": "https://mzj.sh.gov.cn/lnb-wsws/20220708/0ecb2c674afd4b099956508ce05ac08d.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://mzj.sh.gov.cn/lnb-wsws/20220708/0ecb2c674afd4b099956508ce05ac08d.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "上海市民政局据《上海掌故辞典》定位沪军营于今国货路东、沪军营路北三角地，并说明世博动迁后此处成为南浦大桥（沪军营路）公交枢纽；CHUNSAN ROAD应为CHUNGSHAN ROAD（中山路）的异拼或讹录。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1486"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1487",
@@ -5912,8 +5941,8 @@
       "queries": [
         "清心堂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "清心堂",
         "currentAddress": "大昌街30号",
@@ -6235,14 +6264,8 @@
       "queries": [
         "丽园"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "美丽园",
-        "currentAddress": "延安西路379弄",
-        "distanceMetres": 2648,
-        "query": "丽园"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1514",
@@ -6281,14 +6304,8 @@
       "queries": [
         "上海市政府"
       ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "蒲园",
-        "currentAddress": "长乐路570弄",
-        "distanceMetres": 2957,
-        "query": "上海市政府"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1519",
@@ -6327,8 +6344,8 @@
       "queries": [
         "丽波花园"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海体育科学研究所",
         "currentAddress": "吴兴路87号",
@@ -6475,8 +6492,8 @@
       "queries": [
         "焉息堂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "焉息堂",
         "currentAddress": "哈密路1115号6号门",
@@ -6540,11 +6557,12 @@
     },
     {
       "featureGroupId": "landmark-vs-site-1537",
-      "historicalName": "Chinese 1932 War Memorial",
-      "mappedName": "陣亡將士紀念塔",
-      "category": "重要建筑",
+      "historicalName": "National Revolutionary Army 5th Division Memorial Tower",
+      "mappedName": "國民革命軍陸軍第五師陣亡將士紀念塔",
+      "category": "纪念设施 / 阵亡将士纪念塔",
       "queries": [
-        "阵亡将士纪念塔"
+        "国民革命军陆军第五师阵亡将士纪念塔",
+        "第五师阵亡将士纪念塔"
       ],
       "searchResultCount": 0,
       "status": "not-found"
@@ -6590,14 +6608,8 @@
       "queries": [
         "机场"
       ],
-      "searchResultCount": 3,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "中国民用航空华东管理局龙华航空站",
-        "currentAddress": "龙华西路1号",
-        "distanceMetres": 1331,
-        "query": "机场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1541",
@@ -6638,14 +6650,8 @@
       "queries": [
         "监狱"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "提蓝桥监狱",
-        "currentAddress": "长阳路147号",
-        "distanceMetres": 13512,
-        "query": "监狱"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1545",
@@ -6756,16 +6762,8 @@
       "queries": [
         "气象台"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "上海气象局气象台",
-        "currentAddress": "蒲西路166号",
-        "distanceMetres": 1324,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/s711fe2cdv854l5h",
-        "query": "气象台",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1553",
@@ -6786,14 +6784,8 @@
       "queries": [
         "电影公司"
       ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海电影公司、上海美术电影制片厂",
-        "currentAddress": "万航渡路618号",
-        "distanceMetres": 5052,
-        "query": "电影公司"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1556",
@@ -6868,8 +6860,8 @@
       "queries": [
         "中央银行俱乐部"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "空军455医院内",
         "currentAddress": "淮海西路338号",
@@ -6899,16 +6891,8 @@
       "queries": [
         "复旦公学"
       ],
-      "searchResultCount": 2,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "复旦中学李鸿章祠堂",
-        "currentAddress": "华山路1626号",
-        "distanceMetres": 1242,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/mna518fiaqb4dwnk",
-        "query": "复旦公学",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1566",
@@ -7006,14 +6990,8 @@
       "queries": [
         "正始中学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "荣康别墅",
-        "currentAddress": "常熟路102-120号",
-        "distanceMetres": 3608,
-        "query": "正始中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1574",
@@ -7296,14 +7274,8 @@
       "queries": [
         "水塔"
       ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海眼耳鼻喉科医院",
-        "currentAddress": "汾阳路83号10号楼",
-        "distanceMetres": 5438,
-        "query": "水塔"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1596",
@@ -7345,8 +7317,8 @@
       "queries": [
         "广东大戏院"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "群众剧院",
         "currentAddress": "四川北路1552号",
@@ -7450,16 +7422,8 @@
       "queries": [
         "上海大戏院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "大上海电影院",
-        "currentAddress": "黄浦区西藏中路520号",
-        "distanceMetres": 1501,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/m2u4o5l550wiofme",
-        "query": "上海大戏院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1607",
@@ -7575,8 +7539,8 @@
         "新申报",
         "西本愿寺"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "圣多利北海渔村大酒店",
         "currentAddress": "乍浦路455号",
@@ -7669,11 +7633,35 @@
       "historicalName": "General Headquarters of the Japanese Army",
       "mappedName": "陸戰隊租界部隊本部",
       "category": "重要建筑",
-      "queries": [
-        "陆战队租界部队本部"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "办公 / 商业",
+        "currentNameZh": "虹口SOHO（海南路10号地块）",
+        "currentAddress": "上海市虹口区海南路10号地块（现乍浦路512号一带）",
+        "currentUseNote": "Virtual Shanghai 记录的是海南路10号被日军占用时期的总部用途；该址后来为国民党空军供应司令部驻地，原建筑已拆。虹口区政府确认海南路10号地块于2015年建成虹口SOHO。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "上海市政府：海南路10号原空军供应司令部驻地",
+            "url": "https://www.shanghai.gov.cn/nw4411/20240526/dd28dbd0bb1240b2be0cb4d3507c43d2.html"
+          },
+          {
+            "title": "虹口区人民政府：海南路10号地块虹口SOHO竣工",
+            "url": "https://www.shhk.gov.cn/xwzx/002003/20150911/2b707dd9-3b7f-4dcd-bf18-c1934df8ffc5.html"
+          },
+          {
+            "title": "SOHO中国：虹口SOHO现址与办公用途",
+            "url": "https://www.sohochina.com/project3q.aspx?projectid=42"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.shanghai.gov.cn/nw4411/20240526/dd28dbd0bb1240b2be0cb4d3507c43d2.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Virtual Shanghai 记录的是海南路10号被日军占用时期的总部用途；该址后来为国民党空军供应司令部驻地，原建筑已拆。虹口区政府确认海南路10号地块于2015年建成虹口SOHO。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-1624"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1625",
@@ -7727,8 +7715,8 @@
       "queries": [
         "上海银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海银行",
         "currentAddress": "福州路106号",
@@ -7987,8 +7975,8 @@
       "queries": [
         "虹口大楼"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "虹口大楼",
         "currentAddress": "海宁路449号",
@@ -8007,8 +7995,8 @@
       "queries": [
         "景林堂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "景灵堂",
         "currentAddress": "昆山路135号",
@@ -8049,14 +8037,8 @@
       "queries": [
         "内地会"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "基督教内地会",
-        "currentAddress": "新闸路1519号（北门）、北京西路1400弄24号",
-        "distanceMetres": 3258,
-        "query": "内地会"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1651",
@@ -8310,8 +8292,8 @@
       "queries": [
         "新亚大酒店"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "新亚大酒店",
         "currentAddress": "天潼路422号",
@@ -8341,8 +8323,8 @@
       "queries": [
         "上海邮政总局"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海市邮电管理局",
         "currentAddress": "虹口区北苏州路276号",
@@ -8511,14 +8493,8 @@
         "美国领事馆",
         "德国领事馆"
       ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "美国领事馆",
-        "currentAddress": "淮海中路1469号",
-        "distanceMetres": 4630,
-        "query": "美国领事馆"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1687",
@@ -8559,8 +8535,8 @@
       "queries": [
         "金山大楼"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "金山大楼",
         "currentAddress": "大名路60号（金山路43号）",
@@ -8579,8 +8555,8 @@
       "queries": [
         "上海大厦"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海大厦",
         "currentAddress": "虹口区北苏州路2号",
@@ -8785,14 +8761,8 @@
       "queries": [
         "清真寺"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "小桃园清真寺",
-        "currentAddress": "小桃园街52号",
-        "distanceMetres": 3473,
-        "query": "清真寺"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1705",
@@ -8802,16 +8772,8 @@
       "queries": [
         "同济大学"
       ],
-      "searchResultCount": 10,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "同济大学大礼堂",
-        "currentAddress": "四平路1240号（同济大学内）",
-        "distanceMetres": 1058,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/ab6da8mun0eyiopn",
-        "query": "同济大学",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1706",
@@ -8854,8 +8816,8 @@
       "queries": [
         "上海市体育场"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "江湾体育场",
         "currentAddress": "杨浦区国和路240号",
@@ -8896,8 +8858,8 @@
       "queries": [
         "叶家花园"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "肺科医院(白楼)",
         "currentAddress": "政民路511号",
@@ -8916,16 +8878,8 @@
       "queries": [
         "复旦大学"
       ],
-      "searchResultCount": 6,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "复旦大学经济学院",
-        "currentAddress": "邯郸路222号（复旦大学内）",
-        "distanceMetres": 750,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/w8xzlmz52oc0c0f4",
-        "query": "复旦大学",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-1713",
@@ -9710,8 +9664,8 @@
       "queries": [
         "华东医院"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "华东医院",
         "currentAddress": "静安区延安西路17号",
@@ -9953,14 +9907,8 @@
       "queries": [
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 11773,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-197",
@@ -10102,8 +10050,8 @@
       "queries": [
         "震旦大学"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海第二医科大学",
         "currentAddress": "重庆南路227号",
@@ -10122,8 +10070,8 @@
       "queries": [
         "中汇银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "中汇大厦",
         "currentAddress": "河南南路16号",
@@ -10345,14 +10293,8 @@
       "queries": [
         "工部局"
       ],
-      "searchResultCount": 6,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "市政工程局等单位",
-        "currentAddress": "黄浦区汉口略193号",
-        "distanceMetres": 3280,
-        "query": "工部局"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-225",
@@ -10642,8 +10584,8 @@
       "queries": [
         "广慈医院"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "瑞金医院8号楼",
         "currentAddress": "瑞金二路197号",
@@ -10795,14 +10737,8 @@
       "queries": [
         "女子中学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "市三女中",
-        "currentAddress": "江苏路155号",
-        "distanceMetres": 2736,
-        "query": "女子中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-261",
@@ -10966,14 +10902,8 @@
       "queries": [
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 11471,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-273",
@@ -11045,11 +10975,33 @@
     {
       "featureGroupId": "landmark-vs-site-28",
       "historicalName": "Dah Woo Hotel",
-      "mappedName": "Dah Woo Hotel",
-      "category": "重要建筑",
+      "mappedName": "大滬飯店",
+      "category": "旅馆 / 饭店",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "酒店住宿",
+        "currentNameZh": "大沪饭店（现作汉庭酒店）",
+        "currentAddress": "上海市黄浦区延安东路343号",
+        "currentUseNote": "Dah Woo 对应大沪饭店，不是大华饭店。历史名录给出爱多亚路341弄5号，官方监管名录把上海大沪饭店有限公司／汉庭连锁酒店大沪饭店列在延安东路343号；按同址酒店用途延续处理。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "《上海万业录》：大沪饭店",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf"
+          },
+          {
+            "title": "黄浦区2024固定污染源监管名单：大沪饭店",
+            "url": "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Dah Woo 对应大沪饭店，不是大华饭店。历史名录给出爱多亚路341弄5号，官方监管名录把上海大沪饭店有限公司／汉庭连锁酒店大沪饭店列在延安东路343号；按同址酒店用途延续处理。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-28"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-280",
@@ -11193,12 +11145,34 @@
     },
     {
       "featureGroupId": "landmark-vs-site-290",
-      "historicalName": "Dachay Marstors",
-      "mappedName": "Dachay Marstors",
-      "category": "重要建筑",
+      "historicalName": "Cathay Mansions",
+      "mappedName": "華懋公寓",
+      "category": "住宅 / 酒店式公寓",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "锦江饭店客房及国宾接待设施",
+        "currentNameZh": "锦江饭店北楼（原华懋公寓）",
+        "currentAddress": "上海市黄浦区长乐路109号；主入口茂名南路59号",
+        "currentUseNote": "Virtual Shanghai 的 Dachay Marstors 是转录/OCR错误；同址记录及官方文保资料确认其为 Cathay Mansions／华懋公寓，现为锦江饭店北楼。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海文旅：华懋公寓／锦江饭店北楼",
+            "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/"
+          },
+          {
+            "title": "上海市房屋管理局优秀历史建筑名录",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Virtual Shanghai 的 Dachay Marstors 是转录/OCR错误；同址记录及官方文保资料确认其为 Cathay Mansions／华懋公寓，现为锦江饭店北楼。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-290"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-291",
@@ -11235,8 +11209,8 @@
       "queries": [
         "法国俱乐部"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "花园饭店",
         "currentAddress": "茂名南路58号",
@@ -11597,8 +11571,8 @@
       "queries": [
         "步高里"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "步高里",
         "currentAddress": "黄浦区陕西南路287号",
@@ -11942,14 +11916,8 @@
         "中法大学药学専修科",
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 12832,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-344",
@@ -12107,14 +12075,8 @@
       "queries": [
         "虹桥疗养院"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海血液中心",
-        "currentAddress": "伊犁路2号",
-        "distanceMetres": 4136,
-        "query": "虹桥疗养院"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-356",
@@ -12481,11 +12443,31 @@
       "historicalName": "Geluo Hospital",
       "mappedName": "格羅療養院",
       "category": "重要建筑",
-      "queries": [
-        "格罗疗养院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅",
+        "currentNameZh": "原剑桥医院（格罗疗养院旧址）",
+        "currentAddress": "上海市徐汇区延庆路18弄10号",
+        "currentUseNote": "上海文旅资料确认延庆路18弄10号先后作为格罗疗养院、剑桥医院，现为住宅，并列入第五批优秀历史建筑；同址和现用途已闭环。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海文旅推广网：原剑桥医院、格罗疗养院与现住宅",
+            "url": "https://www.meet-in-shanghai.net/cn/guide/take-advantage-of-the-spring-day-and-have-a-romantic-citywalk-under-the-plane-tree-902096/"
+          },
+          {
+            "title": "上海市房屋管理局：延庆路18弄10号优秀历史建筑",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.meet-in-shanghai.net/cn/guide/take-advantage-of-the-spring-day-and-have-a-romantic-citywalk-under-the-plane-tree-902096/",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "上海文旅资料确认延庆路18弄10号先后作为格罗疗养院、剑桥医院，现为住宅，并列入第五批优秀历史建筑；同址和现用途已闭环。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-388"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-389",
@@ -12506,8 +12488,8 @@
       "queries": [
         "中法学堂"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "光明中学",
         "currentAddress": "淮海东路70号",
@@ -12680,14 +12662,8 @@
       "queries": [
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 13128,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-401",
@@ -12751,14 +12727,8 @@
       "queries": [
         "足球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 13209,
-        "query": "足球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-406",
@@ -12914,8 +12884,8 @@
       "queries": [
         "南洋兄弟烟草公司"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "高阳大楼",
         "currentAddress": "东大名路817号",
@@ -12986,8 +12956,8 @@
       "queries": [
         "培福里"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "培福里",
         "currentAddress": "陕西南路186弄",
@@ -13037,14 +13007,8 @@
       "queries": [
         "水塔"
       ],
-      "searchResultCount": 2,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "704所家属楼及水塔",
-        "currentAddress": "衡山路10号",
-        "distanceMetres": 597,
-        "query": "水塔"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-4154",
@@ -13140,16 +13104,8 @@
       "queries": [
         "妇孺医院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "长宁区妇产科医院",
-        "currentAddress": "延安西路934号",
-        "distanceMetres": 2101,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/aaoi6smu245fq3f6",
-        "query": "妇孺医院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-422",
@@ -13192,8 +13148,8 @@
       "queries": [
         "建业里"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "建业里",
         "currentAddress": "建国西路440、456、496弄",
@@ -13347,14 +13303,8 @@
       "queries": [
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 13221,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-438",
@@ -13610,8 +13560,8 @@
       "queries": [
         "上海新村"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海新村",
         "currentAddress": "淮海中路1487弄1-56号",
@@ -13775,14 +13725,8 @@
       "queries": [
         "救火会"
       ],
-      "searchResultCount": 3,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海消防技术工程公司",
-        "currentAddress": "宜昌路216号",
-        "distanceMetres": 5590,
-        "query": "救火会"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-47",
@@ -13803,14 +13747,8 @@
       "queries": [
         "救火会"
       ],
-      "searchResultCount": 3,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海消防技术工程公司",
-        "currentAddress": "宜昌路216号",
-        "distanceMetres": 5646,
-        "query": "救火会"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-471",
@@ -13820,8 +13758,8 @@
       "queries": [
         "华盛顿公寓"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "西湖公寓",
         "currentAddress": "衡山路303号",
@@ -13840,8 +13778,8 @@
       "queries": [
         "集雅公寓"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "集雅公寓",
         "currentAddress": "衡山路311-331号",
@@ -13878,14 +13816,8 @@
       "queries": [
         "女子中学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "市三女中",
-        "currentAddress": "江苏路155号",
-        "distanceMetres": 2213,
-        "query": "女子中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-476",
@@ -13926,14 +13858,8 @@
       "queries": [
         "球场"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "江湾体育场",
-        "currentAddress": "杨浦区国和路240号",
-        "distanceMetres": 14348,
-        "query": "球场"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-48",
@@ -14155,16 +14081,8 @@
         "徐汇女中学",
         "圣母院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "上海教区圣母献堂会",
-        "currentAddress": "漕溪北路45号",
-        "distanceMetres": 1252,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/wxfx4nbey48qqi5m",
-        "query": "圣母院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-498",
@@ -14217,11 +14135,37 @@
     {
       "featureGroupId": "landmark-vs-site-5",
       "historicalName": "China Navigation Company",
-      "mappedName": "China Navigation Company",
-      "category": "重要建筑",
+      "mappedName": "太古輪船公司",
+      "category": "航运企业 / 办公楼",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "优秀历史建筑；现设香港大学上海总部，并兼有商业、餐饮及文化活动空间",
+        "currentNameZh": "外滩22号（丰华大楼、太古洋行旧址）",
+        "currentAddress": "上海市黄浦区中山东二路22号",
+        "currentUseNote": "23 Quai de France 对应今中山东二路22号。上海市优秀历史建筑名录明确将太古洋行、丰华大楼及该地址对应；1906年建筑保存并修缮利用，历史门牌与现代门牌不同。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第四批优秀历史建筑名单",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+          },
+          {
+            "title": "人民网上海：外滩22号完成保护性修缮",
+            "url": "https://sh.people.com.cn/n2/2022/1031/c138654-40175289.html"
+          },
+          {
+            "title": "上海市政府：香港大学上海总部在外滩22号揭牌",
+            "url": "https://www.shanghai.gov.cn/nw4411/20260301/281bfcc6dc5f482699db54be790c161c.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "23 Quai de France 对应今中山东二路22号。上海市优秀历史建筑名录明确将太古洋行、丰华大楼及该地址对应；1906年建筑保存并修缮利用，历史门牌与现代门牌不同。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-5"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-50",
@@ -14262,8 +14206,8 @@
       "queries": [
         "英国领事馆"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "市机关事务管理局",
         "currentAddress": "中山东一路33号",
@@ -14429,8 +14373,8 @@
       "queries": [
         "外白渡桥"
       ],
-      "searchResultCount": 3,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "外白渡桥",
         "currentAddress": "中山东一路",
@@ -14470,8 +14414,8 @@
       "queries": [
         "仁记洋行"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海海运服务有限公司等",
         "currentAddress": "滇池路100号",
@@ -14569,8 +14513,8 @@
       "queries": [
         "江海关"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海海关",
         "currentAddress": "黄浦区中山东一路13号",
@@ -14589,8 +14533,8 @@
       "queries": [
         "中央银行"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "工商银行上海分行",
         "currentAddress": "中山东一路24号",
@@ -14632,12 +14576,42 @@
     },
     {
       "featureGroupId": "landmark-vs-site-525",
-      "historicalName": "General Bank of China",
-      "mappedName": "General Bank of China",
-      "category": "重要建筑",
+      "historicalName": "Bank of China",
+      "mappedName": "中國銀行",
+      "category": "金融机构 / 银行",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "金融史展馆 / 中国银行办公物业",
+        "currentNameZh": "中国银行（上海）文博馆（大清银行旧址）",
+        "currentAddress": "上海市黄浦区汉口路50号（四川中路268—270号）",
+        "currentUseNote": "Virtual Shanghai 的 General Bank of China 应纠正为 Bank of China／中國銀行。中国银行1912年在汉口路3号（后改50号）成立，1936工商名录仍列该门牌；现存大清银行旧楼由中国银行作为文博馆及办公物业使用。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "中国银行官方行史：汉口路3号（后50号）成立",
+            "url": "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html"
+          },
+          {
+            "title": "1936 Directory & Chronicle：Bank of China, 50 Hankow Road",
+            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+          },
+          {
+            "title": "中国银行：汉口路50号中国银行博物馆",
+            "url": "https://wap.boc.cn/bif/bi1/202211/t20221129_22161500.html"
+          },
+          {
+            "title": "上海市房屋管理局：大清银行旧址",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Virtual Shanghai 的 General Bank of China 应纠正为 Bank of China／中國銀行。中国银行1912年在汉口路3号（后改50号）成立，1936工商名录仍列该门牌；现存大清银行旧楼由中国银行作为文博馆及办公物业使用。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-525"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-526",
@@ -14704,16 +14678,8 @@
       "queries": [
         "字林西报"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "友邦大厦",
-        "currentAddress": "中山东一路17号",
-        "distanceMetres": 1157,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/8iaihkx025hcsuig",
-        "query": "字林西报",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-53",
@@ -14734,8 +14700,8 @@
       "queries": [
         "台湾银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "招商银行上海分行",
         "currentAddress": "中山东一路16号",
@@ -14774,8 +14740,8 @@
       "queries": [
         "东亚银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "东亚银行",
         "currentAddress": "四川中路299号",
@@ -14901,8 +14867,8 @@
       "queries": [
         "金城银行"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "交通银行",
         "currentAddress": "黄浦区江西中路200号",
@@ -14943,8 +14909,8 @@
       "queries": [
         "三井银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "建设银行分行等",
         "currentAddress": "九江路50号",
@@ -15037,8 +15003,8 @@
       "queries": [
         "上海总会"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "东风饭店",
         "currentAddress": "黄浦区中山东一路2号",
@@ -15118,8 +15084,8 @@
       "queries": [
         "有利银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海佳通房产发展有限公司",
         "currentAddress": "中山东一路4号",
@@ -15195,13 +15161,41 @@
     {
       "featureGroupId": "landmark-vs-site-556",
       "historicalName": "China Banking Corporation",
-      "mappedName": "銀行",
-      "category": "重要建筑",
-      "queries": [
-        "上海时报"
-      ],
+      "mappedName": "中興銀行",
+      "category": "金融机构 / 银行及报社办公楼",
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "上海电气控股集团办公",
+        "currentNameZh": "申达大楼",
+        "currentAddress": "上海市黄浦区福州路89号、四川中路149号",
+        "currentUseNote": "China Banking Corporation 是菲律宾 Chinabank 的上海分行，中文名中兴银行；福州路89号与四川中路149号是街角建筑的双门牌。该楼现名申达大楼，近年仍由上海电气控股集团办公使用。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "Chinabank 官方百年史：1929年设上海分行",
+            "url": "https://www.chinabank.ph/our-centennial-story"
+          },
+          {
+            "title": "1936 Directory & Chronicle：China Banking Corporation",
+            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+          },
+          {
+            "title": "上海市房屋管理局：中兴银行／申达大楼",
+            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+          },
+          {
+            "title": "上海电气控股集团：四川中路149号办公地址",
+            "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-10-19/601727_20241019_AH7B.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.chinabank.ph/our-centennial-story",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "China Banking Corporation 是菲律宾 Chinabank 的上海分行，中文名中兴银行；福州路89号与四川中路149号是街角建筑的双门牌。该楼现名申达大楼，近年仍由上海电气控股集团办公使用。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-556"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-557",
@@ -15273,8 +15267,8 @@
       "queries": [
         "中国通商银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "长江航运公司",
         "currentAddress": "中山东一路6号",
@@ -15293,16 +15287,8 @@
       "queries": [
         "申达大楼"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "申达大楼/上海市机电设计研究院",
-        "currentAddress": "福州路89号",
-        "distanceMetres": 1173,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/h4p7qsf3ck4wyrrb",
-        "query": "申达大楼",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-563",
@@ -15345,8 +15331,8 @@
       "queries": [
         "华商纱布交易所"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海市自然博物馆",
         "currentAddress": "延安东路260号",
@@ -15474,14 +15460,8 @@
       "queries": [
         "中华书局"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海中华印刷有限公司",
-        "currentAddress": "澳门路477号",
-        "distanceMetres": 3682,
-        "query": "中华书局"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-574",
@@ -15537,8 +15517,8 @@
       "queries": [
         "公共租界工部局"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "市政工程局等单位",
         "currentAddress": "黄浦区汉口略193号",
@@ -15607,16 +15587,8 @@
       "queries": [
         "同仁医院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "曾为黄浦区人民政府大楼",
-        "currentAddress": "九江路219号",
-        "distanceMetres": 1164,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/wmzcki131cpf1x7g",
-        "query": "同仁医院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-582",
@@ -15686,8 +15658,8 @@
       "queries": [
         "广东银行"
       ],
-      "searchResultCount": 2,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "广东银行",
         "currentAddress": "宁波路52号",
@@ -15787,12 +15759,38 @@
     },
     {
       "featureGroupId": "landmark-vs-site-598",
-      "historicalName": "Alcar Building",
-      "mappedName": "Alcar Building",
-      "category": "重要建筑",
+      "historicalName": "Algar Building",
+      "mappedName": "愛爾格大樓",
+      "category": "商业设施 / 办公楼",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "办公物业 / 企业办公及沿街商业",
+        "currentNameZh": "大丰大楼",
+        "currentAddress": "上海市黄浦区香港路60号",
+        "currentUseNote": "Virtual Shanghai 的 Alcar Building 是转录错误；1936工商名录直接记载 Algar Building 位于香港路60号。该1926年建筑后来因大丰保险公司入驻而称大丰大楼，现仍作办公物业并设沿街商业。",
+        "currentUseRelationship": "same-building",
+        "currentUseSources": [
+          {
+            "title": "1936 Directory & Chronicle：Algar Building, 60 Hongkong Road",
+            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+          },
+          {
+            "title": "澎湃新闻：香港路60号大丰大楼沿革",
+            "url": "https://www.thepaper.cn/newsDetail_forward_1497458"
+          },
+          {
+            "title": "黄浦区政府采购沿街商户表：香港路60号现有沿街商业",
+            "url": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/7e66a241-362e-45da-8236-6548c9849c8e.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.thepaper.cn/newsDetail_forward_1497458",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "历史工商名录的楼名和门牌、现代建筑沿革及当前门牌用途共同闭环同一建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-598"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-599",
@@ -15853,16 +15851,8 @@
       "queries": [
         "上海电车公司"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "英商上海电车公司大楼",
-        "currentAddress": "南苏州路185号",
-        "distanceMetres": 1167,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/le8op1i7xgic3ny4",
-        "query": "上海电车公司",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-601",
@@ -15898,14 +15888,8 @@
       "queries": [
         "四明银行"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "新式里弄",
-        "currentAddress": "衡山路300弄1-22号",
-        "distanceMetres": 4634,
-        "query": "四明银行"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-604",
@@ -15948,8 +15932,8 @@
       "queries": [
         "恒利银行"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "永利大楼",
         "currentAddress": "河南中路495、503号，天津路100号",
@@ -15968,16 +15952,8 @@
       "queries": [
         "国华银行"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "国华大楼",
-        "currentAddress": "北京东路342号",
-        "distanceMetres": 1172,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/0rallr2qtgvn046k",
-        "query": "国华银行",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-609",
@@ -15987,8 +15963,8 @@
       "queries": [
         "南京饭店"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "南京饭店",
         "currentAddress": "山西南路182-200号，天津路191号-211弄",
@@ -16104,8 +16080,8 @@
       "queries": [
         "仁济医院"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "仁济医院",
         "currentAddress": "山东中路145号",
@@ -16478,12 +16454,31 @@
       "historicalName": "SMC - Public Works Departement - Depot No. 2",
       "mappedName": "交通第二棧房",
       "category": "重要建筑",
-      "queries": [
-        "交通第二栈房",
-        "外人监狱 西牢"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "上海市排水管理事务中心用地 / 城市更新地块；保留少量监狱建筑遗存",
+        "currentNameZh": "西牢旧址",
+        "currentAddress": "上海市黄浦区厦门路180号、南苏州路935号",
+        "currentUseNote": "Gaol for Foreigners 即厦门路西牢。外籍囚犯1935年迁出后地块转交工部局工务处；现由上海市排水管理事务中心使用，原监狱建筑仍残留一小部分，已列文物保护点。",
+        "currentUseRelationship": "partial-remains-on-original-site",
+        "currentUseSources": [
+          {
+            "title": "上海地方志研究：厦门路西牢现状与少量遗存",
+            "url": "https://www.thepaper.cn/newsDetail_forward_13131020"
+          },
+          {
+            "title": "黄浦区第二批文物保护点名单",
+            "url": "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.thepaper.cn/newsDetail_forward_13131020",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Gaol for Foreigners 即厦门路西牢。外籍囚犯1935年迁出后地块转交工部局工务处；现由上海市排水管理事务中心使用，原监狱建筑仍残留一小部分，已列文物保护点。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-649"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-65",
@@ -16534,7 +16529,33 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "燃气企业及燃气行业机构办公",
+        "currentNameZh": "上海燃气有限公司（美华大楼）",
+        "currentAddress": "上海市黄浦区西藏中路656号（历史门牌706号地块）",
+        "currentUseNote": "原“大英自来火房”及上海煤气公司地块位于西藏中路、厦门路口；地方志研究明确该地今天仍为上海燃气办公场所。1905年旧办公楼已鉴定为危房并拆除，故是原址与机构用途延续，不是原建筑保存。",
+        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSources": [
+          {
+            "title": "上海地方志研究：原煤气厂所在地仍为上海燃气办公场所",
+            "url": "https://www.thepaper.cn/newsDetail_forward_13131020"
+          },
+          {
+            "title": "上海住建系统企业信息：上海燃气市北销售有限公司注册地址",
+            "url": "https://ciac.zjw.sh.gov.cn/JGBQyWsbsNewWeb/QyWSGSGg/QyFrame.aspx?sbid=XI3G04rWO3A%3D"
+          },
+          {
+            "title": "上海门牌研究：1905年煤气公司办公楼拆除记录",
+            "url": "https://www.thepaper.cn/newsDetail_forward_17420247"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.thepaper.cn/newsDetail_forward_13131020",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "原“大英自来火房”及上海煤气公司地块位于西藏中路、厦门路口；地方志研究明确该地今天仍为上海燃气办公场所。1905年旧办公楼已鉴定为危房并拆除，故是原址与机构用途延续，不是原建筑保存。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-653"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-654",
@@ -16785,8 +16806,8 @@
       "queries": [
         "大新公司"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海市第一百货商店",
         "currentAddress": "黄浦区南京东路330号",
@@ -16805,8 +16826,8 @@
       "queries": [
         "先施公司"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海时装公司、东亚饭店",
         "currentAddress": "黄浦区南京东路690号",
@@ -16825,8 +16846,8 @@
       "queries": [
         "新新公司"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "上海第一食品商店",
         "currentAddress": "黄浦区南京东路720号",
@@ -16845,16 +16866,8 @@
       "queries": [
         "大舞台"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "中国剧场",
-        "currentAddress": "牛庄路700号-714号",
-        "distanceMetres": 1267,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/v00aoj5b1da6otnk",
-        "query": "大舞台",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-679",
@@ -16884,8 +16897,8 @@
       "queries": [
         "扬子饭店"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "扬子饭店(曾用名：申江饭店)",
         "currentAddress": "汉口路740号(云南路转角)",
@@ -16904,16 +16917,8 @@
       "queries": [
         "永安公司"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "华联商厦、华侨商店",
-        "currentAddress": "黄浦区南京东路620--635",
-        "distanceMetres": 1227,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/7ptpxdw3x8jz0whl",
-        "query": "永安公司",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-682",
@@ -17151,16 +17156,8 @@
       "queries": [
         "中国银行"
       ],
-      "searchResultCount": 4,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "吴江大楼",
-        "currentAddress": "南京西路801号",
-        "distanceMetres": 1175,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/g2z7ugoebxlg42ez",
-        "query": "中国银行",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-700",
@@ -17380,8 +17377,8 @@
       "queries": [
         "东方饭店"
       ],
-      "searchResultCount": 1,
-      "status": "matched",
+      "searchResultCount": 0,
+      "status": "matched-library-cache",
       "accepted": {
         "currentNameZh": "市工人文化宫",
         "currentAddress": "西藏中路120号",
@@ -18637,16 +18634,8 @@
       "queries": [
         "眼科医院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "市眼科医院",
-        "currentAddress": "陕西北路805号",
-        "distanceMetres": 1886,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/xc2jvcaejy7ss5zz",
-        "query": "眼科医院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-818",
@@ -18936,14 +18925,8 @@
       "queries": [
         "花园"
       ],
-      "searchResultCount": 10,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "花园别墅",
-        "currentAddress": "南昌路136弄、138-146号",
-        "distanceMetres": 1211,
-        "query": "花园"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-842",
@@ -18959,13 +18942,33 @@
     {
       "featureGroupId": "landmark-vs-site-843",
       "historicalName": "Chinese Maritime Customs Club",
-      "mappedName": "海関倶楽部",
-      "category": "重要建筑",
-      "queries": [
-        "海関倶楽部"
-      ],
+      "mappedName": "江海關同益里俱樂部",
+      "category": "休闲设施 / 海关俱乐部",
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "生物医药企业注册地址／原献血站；所在同益里现为住宅社区",
+        "currentNameZh": "同益里10号（上海血液生物医药有限责任公司注册地址）",
+        "currentAddress": "上海市黄浦区南京西路479弄10号",
+        "currentUseNote": "静安寺路479弄10号可精确换算为今南京西路479弄10号；静安区图书馆资料明确此处为江海关同益里俱乐部，后改献血站。上海市科委名录仍把上海血液生物医药有限责任公司登记在同一门牌。现存建筑是否完全保留1930年代原构件无足够证据，因此不标为同一建筑。",
+        "currentUseRelationship": "same-site-repurposed",
+        "currentUseSources": [
+          {
+            "title": "静安区图书馆：百年江海关与邮政",
+            "url": "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135"
+          },
+          {
+            "title": "上海市科学技术委员会名录（南京西路479弄10号）",
+            "url": "https://stcsm.sh.gov.cn/cmsres/1b/1bfa5c059a95468d88f64e6b47e1d790/36664caaf6d3584ef48caced4e279920.pdf"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "静安寺路479弄10号可精确换算为今南京西路479弄10号；静安区图书馆资料明确此处为江海关同益里俱乐部，后改献血站。上海市科委名录仍把上海血液生物医药有限责任公司登记在同一门牌。现存建筑是否完全保留1930年代原构件无足够证据，因此不标为同一建筑。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-843"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-844",
@@ -19008,14 +19011,8 @@
       "queries": [
         "意大利领事馆"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "意大利领事馆",
-        "currentAddress": "武夷路127号",
-        "distanceMetres": 2876,
-        "query": "意大利领事馆"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-848",
@@ -19034,14 +19031,8 @@
       "queries": [
         "花园"
       ],
-      "searchResultCount": 10,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "花园别墅",
-        "currentAddress": "南昌路136弄、138-146号",
-        "distanceMetres": 1465,
-        "query": "花园"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-85",
@@ -19440,14 +19431,8 @@
         "上海中学",
         "健行大学"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海中学大礼堂",
-        "currentAddress": "上中路400号(门牌遗失)另：百色路989号（北门，学生出入门）",
-        "distanceMetres": 9622,
-        "query": "上海中学"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-88",
@@ -19468,16 +19453,8 @@
       "queries": [
         "宝隆医院"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "长征医院（原宝隆医院旧址）",
-        "currentAddress": "凤阳路450号",
-        "distanceMetres": 1120,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/6sguhbn7y0ipd5fn",
-        "query": "宝隆医院",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-881",
@@ -19602,25 +19579,43 @@
       "queries": [
         "救火会"
       ],
-      "searchResultCount": 3,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海消防技术工程公司",
-        "currentAddress": "宜昌路216号",
-        "distanceMetres": 2621,
-        "query": "救火会"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-892",
-      "historicalName": "Chinese Anglican Church",
-      "mappedName": "中華聖公會",
-      "category": "重要建筑",
-      "queries": [
-        "中华圣公会"
-      ],
+      "historicalName": "St. Peter's Church",
+      "mappedName": "聖彼得堂",
+      "category": "宗教设施 / 圣公会教堂",
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "matched-research",
+      "accepted": {
+        "currentUse": "住宅小区",
+        "currentNameZh": "华盛大公馆（圣彼得堂原址）",
+        "currentAddress": "上海市黄浦区北京西路355弄1—2号，原北京西路351号",
+        "currentUseNote": "Avenue Road 即今北京西路。Chinese Anglican Church 对应圣公会圣彼得堂；教会史料明确其位于北京西路成都路口，旧址原门牌351号，1994年拆除后开发为华盛大厦。当前地图门牌名称为华盛大公馆，位于北京西路355弄，与转换坐标吻合。",
+        "currentUseRelationship": "site-redeveloped",
+        "currentUseSources": [
+          {
+            "title": "中国基督教网：追忆上海圣彼得堂",
+            "url": "https://www.ccctspm.org/cppccinfo/14676"
+          },
+          {
+            "title": "维基百科：圣彼得堂（上海）",
+            "url": "https://zh.wikipedia.org/wiki/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%82_%28%E4%B8%8A%E6%B5%B7%29"
+          },
+          {
+            "title": "高德地图：华盛大公馆",
+            "url": "https://www.amap.com/place/B00155L3JQ"
+          }
+        ],
+        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentUseSourceUri": "https://www.ccctspm.org/cppccinfo/14676",
+        "currentUseMatch": "verified-online-research",
+        "evidence": "Avenue Road 即今北京西路。Chinese Anglican Church 对应圣公会圣彼得堂；教会史料明确其位于北京西路成都路口，旧址原门牌351号，1994年拆除后开发为华盛大厦。当前地图门牌名称为华盛大公馆，位于北京西路355弄，与转换坐标吻合。",
+        "matchedLegacyFeatureGroupId": "landmark-vs-site-892"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-893",
@@ -20502,14 +20497,8 @@
       "queries": [
         "电报局"
       ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海中区电报局中华路分局",
-        "currentAddress": "中华路734号",
-        "distanceMetres": 5095,
-        "query": "电报局"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-973",
@@ -20552,16 +20541,8 @@
       "queries": [
         "中国红十字会"
       ],
-      "searchResultCount": 1,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "华山医院5号楼",
-        "currentAddress": "乌鲁木齐中路12号",
-        "distanceMetres": 1630,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/ycw3533fpu0xv6gj",
-        "query": "中国红十字会",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-977",
@@ -20770,16 +20751,8 @@
       "queries": [
         "中国银行"
       ],
-      "searchResultCount": 4,
-      "status": "needs-review-partial-name",
-      "reviewCandidate": {
-        "currentNameZh": "吴江大楼",
-        "currentAddress": "南京西路801号",
-        "distanceMetres": 1179,
-        "sourceUri": "http://data.library.sh.cn/entity/architecture/g2z7ugoebxlg42ez",
-        "query": "中国银行",
-        "evidence": "partial-current-or-alternate-name"
-      }
+      "searchResultCount": 0,
+      "status": "not-found"
     },
     {
       "featureGroupId": "landmark-vs-site-994",

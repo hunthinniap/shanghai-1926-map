@@ -374,7 +374,8 @@ if (landmarkCurrentUseAudit.rules?.partialNameMatchesAccepted !== false) {
 if (landmarkCurrentUseAudit.rules?.duplicateSourceMatchesAccepted !== false) {
   errors.push('Landmark current-use audit allows one library record to be assigned to multiple landmarks')
 }
-const acceptedLibraryRecords = landmarkCurrentUseAudit.records?.filter((record) => record.status === 'matched') ?? []
+const acceptedLibraryRecords = landmarkCurrentUseAudit.records?.filter((record) =>
+  ['matched', 'matched-library-cache'].includes(record.status)) ?? []
 if (acceptedLibraryRecords.some((record) => record.accepted?.evidence === 'partial-current-or-alternate-name')) {
   errors.push('Landmark current-use audit accepted a partial-name Shanghai Library match')
 }
@@ -392,13 +393,14 @@ for (const [uri, owners] of acceptedLibraryUriOwners) {
   }
 }
 const auditedStatusTotal = Object.entries(landmarkCurrentUseAudit.summary ?? {})
-  .filter(([key]) => key !== 'landmarkGroups')
+  .filter(([key]) => !['landmarkGroups', 'networkFailures'].includes(key))
   .reduce((total, [, count]) => total + (Number(count) || 0), 0)
 if (auditedStatusTotal !== landmarkCurrentUseAudit.summary?.landmarkGroups ||
   landmarkCurrentUseAudit.records?.length !== landmarkCurrentUseAudit.summary?.landmarkGroups) {
   errors.push('Landmark current-use audit status totals do not equal the landmark-group count')
 }
-if ((landmarkCurrentUseAudit.summary?.matchedFromLibrary ?? 0) < 25) {
+if ((landmarkCurrentUseAudit.summary?.matchedFromLibrary ?? 0) +
+  (landmarkCurrentUseAudit.summary?.matchedFromLibraryCache ?? 0) < 25) {
   errors.push('Landmark current-use audit has too few Shanghai Library matches')
 }
 if ((landmarkCurrentUseAudit.summary?.matchedFromWikipedia ?? 0) < 12) {
