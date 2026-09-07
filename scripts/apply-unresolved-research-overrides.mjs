@@ -42,6 +42,7 @@ const [results, workflow, historical, overrides] = await Promise.all([
 ])
 
 const workflowById = new Map(workflow.records.map((record) => [record.IDBAT, record]))
+const resultById = new Map(results.records.map((record) => [record.IDBAT, record]))
 const landmarks = historical.features.filter((feature) => feature.properties?.kind === 'landmark')
 const featureBySourceRecordId = new Map()
 for (const feature of landmarks) {
@@ -95,10 +96,16 @@ for (const record of results.records) {
   )
   if (!researchSources.length) throw new Error(`Verified record #${record.IDBAT} lacks a research source`)
 
+  const approvedGroupRecords = (properties.sourceRecordIds ?? [])
+    .map((sourceRecordId) => resultById.get(sourceRecordId))
+    .filter((groupedRecord) => groupedRecord &&
+      workflowById.get(groupedRecord.IDBAT)?.mapWriteRecommendation === 'yes')
+  const guardedRecords = approvedGroupRecords.length ? approvedGroupRecords : [record]
+
   overrides.push({
     featureGroupId: properties.featureGroupId,
-    sourceRecordIds: [record.IDBAT],
-    expectedHistoricalNames: [record.NAME],
+    sourceRecordIds: guardedRecords.map((groupedRecord) => groupedRecord.IDBAT),
+    expectedHistoricalNames: [...new Set(guardedRecords.map((groupedRecord) => groupedRecord.NAME))],
     currentUseRelationship,
     currentUse: record.currentUse,
     currentNameZh: record.currentNameZh,

@@ -1,6 +1,26 @@
 # 上海历史地点现用途调查交接
 
-更新时间：2026-08-30（Asia/Shanghai）
+更新时间：2026-09-07（Asia/Taipei）
+
+## 最新进度（优先于下方 2026-08-30 存档）
+
+- 本次提交基线为 `9dccb79 feat: research landmark sites through batch 007`，远程为 `origin/main`。
+- 007 已完成：50 条，25 verified、11 likely、14 unresolved；获准项已回填。
+- 008 已完成并复核：50 条，27 verified、17 likely、6 unresolved；27 条获准记录写入 26 个地点组（1149/1381 是同组两条记录）。来源、旧址差异和现用途说明保存在 `research/unresolved-landmarks/008-results.json`；稳定原始六字段在 `008-input.json`。
+- 008 的 26 个新增 override 代表 ID：652、544、264、363、1304、1092、480、1359、1692、1668、1431、1659、1661、1301、1641、612、356、1558、1530、355、1244、1381、1061、1043、1637、1269。
+- 同组获准记录的 override 现在保存全部已核实 `sourceRecordIds` 和原名 guard，避免遗漏 1149/1381 等同址记录。
+- #264 泛名已明确为 Qixiu Girls' School（启秀女子中学）；#421 已明确为 Margaret Williamson Hospital (wartime branch)，但徐家汇路临时院址的今日具体宗地用途仍待核，未写入现用途 override。
+- #1142 不再推测为宜德堂，降为 unresolved；#612 只确认虹庙建筑身份及保护更新，当前开放情况未核实；#1301 的旧门牌 375 来自 VS，官方沿革与现门牌分别作为佐证。
+- 当前 override 188 个；现用途审计：图书馆 62、Wikipedia 15、逐地点研究 188、现存公园 22、部分名称待审 21、具名未找到 1108、泛名 254。未查明导出为 1515 条、31 个文件。
+- 009 的稳定原始快照已保存为 `research/unresolved-landmarks/009-input.json`（50 条）；三组研究正在继续，未完成前不要编译成整批已完成结果。实时 unresolved 文件编号会漂移，始终以快照 IDBAT 为准。
+- 当前生成数据为 5507 个历史要素、23 个现存公园对照、167 个地铁线路段、310 个地铁站。历史道路保持 `9dccb79` 中的 3832 条不变。
+- 上次误运行全量生成产生了道路 ID 改写和 10 条重复道路；已在验证所有道路名称、属性与几何均无实质差异后恢复已提交道路数组。还原前备份在忽略目录 `.cache/historical-before-road-id-normalization.geojson`。后续仅用 `data:current-use` 和 `data:unresolved`，不要为地标研究运行 `data:build`。
+- 2026-09-07 检查：`npm test` 52 项 Vitest + 12 项 Node 全通过；`npm run build`（含数据校验及 TypeScript）通过。008 上次完整桌面/移动端 Playwright 为 40/40 通过；此次道路编号还原后未重复浏览器测试。
+- 普通 GitHub 连接失败时，上次成功的推送命令为 `git -c http.sslBackend=schannel -c http.curloptResolve=github.com:443:140.82.112.4 push origin main`；仅在正常推送失败时使用，禁止 force push。
+
+## 2026-08-30 交接存档
+
+以下计数、分支基线和“下一步”反映当时状态，最新状态以上方为准。
 
 ## 项目目标
 
