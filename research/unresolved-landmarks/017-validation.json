@@ -1,0 +1,112 @@
+{
+  "batch": "017",
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "567e566",
+  "note": "Three batches were researched in parallel and applied together. All validation counts refer to the common baseline and combined final map, not sequential per-batch map snapshots. Pending batch015 remains untouched.",
+  "research": {
+    "recordCount": 50,
+    "originalSixFieldsUnchanged": true,
+    "uniqueIds": true,
+    "previousResearchIdsExcluded": 700,
+    "pending015IdsExcluded": 50,
+    "verificationSummary": {
+      "verified": 12,
+      "likely": 16,
+      "unresolved": 22
+    },
+    "classificationSummary": {
+      "total": 50,
+      "byOutcomeCategory": {
+        "survives-with-history": 10,
+        "demolished-current-use": 2,
+        "location-only-current-use": 38
+      },
+      "byResolutionStatus": {
+        "resolved": 12,
+        "probable": 16,
+        "unresolved": 22
+      },
+      "mapWriteRecommendation": {
+        "yes": 6,
+        "review": 22,
+        "no": 22
+      }
+    }
+  },
+  "map": {
+    "changedFeatureGroupIds": [
+      "landmark-vs-site-512",
+      "landmark-vs-site-396",
+      "landmark-vs-site-587",
+      "landmark-vs-site-1349",
+      "landmark-vs-site-1265",
+      "landmark-vs-site-585"
+    ],
+    "coveredSourceRecordIds": [
+      396,
+      512,
+      585,
+      587,
+      1265,
+      1349
+    ],
+    "allBatchGroupsReviewed": 48,
+    "fullGroupIdGuards": true
+  },
+  "auxiliary": {
+    "batch": "017",
+    "library": {
+      "queriedRecords": 40,
+      "queryCount": 44,
+      "candidates": 5
+    },
+    "osm": {
+      "method": "Public OSM map API, named nodes and ways, geometry distances/closed-way containment are supporting spatial clues; relations excluded",
+      "queried": 50,
+      "successful": 50,
+      "failed": 0
+    }
+  },
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "vitest": 52,
+      "node": 12
+    },
+    "build": {
+      "status": "passed",
+      "includes": [
+        "validate:data",
+        "TypeScript",
+        "Vite"
+      ],
+      "note": "Existing bundle-size advisory remains."
+    },
+    "playwright": {
+      "status": "passed",
+      "passed": 40,
+      "failed": 0,
+      "projects": [
+        "desktop",
+        "mobile"
+      ],
+      "command": "npm run test:e2e -- --config=.cache/playwright-011.config.ts --workers=4",
+      "configurationNote": "Original test suite and projects, using temporary ignored configuration for free port 4183; the existing listener on default port 4173 is preserved."
+    },
+    "logs": [
+      {
+        "name": "unit",
+        "logPath": "/private/tmp/shanghai-018-unit.log"
+      },
+      {
+        "name": "build",
+        "logPath": "/private/tmp/shanghai-018-build.log"
+      },
+      {
+        "name": "playwright",
+        "logPath": "/private/tmp/shanghai-018-playwright.log"
+      }
+    ],
+    "scope": "Combined final state after all three batches"
+  }
+}

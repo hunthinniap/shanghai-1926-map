@@ -1,0 +1,21 @@
+{
+  "attemptedAt": "2026-09-08",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "method": "GET; named nodes/ways around first 10 original WGS84 points; center tags",
+  "queriedIds": [
+    788,
+    806,
+    838,
+    297,
+    474,
+    1368,
+    253,
+    277,
+    275,
+    740
+  ],
+  "query": "[out:json][timeout:25];(nw(around:100,31.232555,121.469036)[name];nw(around:100,31.228928,121.470332)[name];nw(around:100,31.231367,121.465499)[name];nw(around:100,31.217732,121.457224)[name];nw(around:100,31.207312,121.435826)[name];nw(around:100,31.243996,121.478174)[name];nw(around:100,31.218257,121.461456)[name];nw(around:100,31.224784,121.456662)[name];nw(around:100,31.224125,121.459853)[name];nw(around:100,31.248574,121.474664)[name];);out center tags;",
+  "status": "failed",
+  "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+  "interpretation": "Request failed; this is not evidence of POI absence. Subsequent public OSM map API queries are recorded separately in 016-osm-nearby.json."
+}

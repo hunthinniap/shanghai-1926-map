@@ -1,0 +1,1342 @@
+{
+  "batch": "016",
+  "part": "b",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/016-input.json",
+  "scope": "稳定输入 slice(17, 34)；本批50条均来自016固定快照，不挪用015。每条均实际联网查询，先审原名、中文名、年代与同组全员。查询返回摘要与可访问正文分别作为线索，限制见逐条记录。OSM仅为空间辅助，WGS84由各条原UTM独立转换，未采用聚合点或图书馆偏移坐标。",
+  "records": [
+    {
+      "IDBAT": 1352,
+      "queries": [
+        "\"仁善女\" \"宝山\"",
+        "\"仁善女学\" 上海 宝山路",
+        "\"仁善\" \"女學校\" 上海"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "原记录学校存续1893—1932，中文繁简和宝山路226组合检索仅返回原数据库及其同源转录。未证实是否毁于1932战火、复办或迁址。OSM原点虽在复地新都国际院地内，没有旧学校范围证据，不能直接写拆后住宅；待核。 原UTM独立转换WGS84为121.471223, 31.255649。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1352",
+        "https://www.openstreetmap.org/way/1434352018"
+      ],
+      "originalInput": {
+        "IDBAT": 1352,
+        "NAME": "Renshan Catholic School for Girls",
+        "F_ADDRESS": "226 BAOSHAN ROAD",
+        "FUNCTION": "Educational facility / School / Private / Religious / Catholic",
+        "XC": 354436.457,
+        "YC": 3458942.5823
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1352,
+        "clusterId": "vs-building-site:1352",
+        "members": [
+          {
+            "id": 1352,
+            "name": "Renshan Catholic School for Girls",
+            "nameZh": "天主堂 仁善女學校",
+            "address": "226 BAOSHAN ROAD",
+            "startYear": 1893,
+            "endYear": 1932,
+            "x": 354436.457,
+            "y": 3458942.5823
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.471223,
+        "latitude": 31.255649
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4705730,31.2550490,121.4718730,31.2562490",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "复地新都国际",
+            "osmId": 1434352018,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/1434352018"
+          },
+          {
+            "name": "鸿兴路",
+            "osmId": 1064757422,
+            "osmType": "way",
+            "distanceMetres": 65,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1064757422"
+          },
+          {
+            "name": "鸿兴路",
+            "osmId": 1075505403,
+            "osmType": "way",
+            "distanceMetres": 65,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1075505403"
+          }
+        ]
+      },
+      "limitations": "原记录学校存续1893—1932，中文繁简和宝山路226组合检索仅返回原数据库及其同源转录。未证实是否毁于1932战火、复办或迁址。OSM原点虽在复地新都国际院地内，没有旧学校范围证据，不能直接写拆后住宅；待核。 原UTM独立转换WGS84为121.471223, 31.255649。"
+    },
+    {
+      "IDBAT": 26,
+      "queries": [
+        "\"仁义善会\" \"66\" 上海",
+        "\"仁义善会\" 上海 浙江南路"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "上海档案馆团体指南列上海市仁义善会，支持机构存在，但未给本条66号的后续地块。Rue Hue据本地历史道路资料对应浙江南路，不能误写永寿路。同组#27中国救济妇孺总会在017调查，双方均未取得两组织分期或同楼证据；与017研究员核对后整组保持待核，不由相距数米推断共有现用途。 原UTM独立转换WGS84为121.477524, 31.23071。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=26",
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74644.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=27",
+        "https://www.openstreetmap.org/way/39921025"
+      ],
+      "originalInput": {
+        "IDBAT": 26,
+        "NAME": "Renyi Charity Organization",
+        "F_ADDRESS": "66 RUE HUE",
+        "FUNCTION": "Community facility / Benevolent association / Secular",
+        "XC": 354998.3618,
+        "YC": 3456169.8667
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 26,
+        "clusterId": "vs-building-site:26",
+        "members": [
+          {
+            "id": 26,
+            "name": "Renyi Charity Organization",
+            "nameZh": "仁義善會",
+            "address": "66 RUE HUE",
+            "startYear": null,
+            "endYear": null,
+            "x": 354998.3618,
+            "y": 3456169.8667
+          },
+          {
+            "id": 27,
+            "name": "Shanghai Anti-Kidnapping Society",
+            "nameZh": "中国救濟婦孺總會",
+            "address": "66 RUE HUE",
+            "startYear": null,
+            "endYear": null,
+            "x": 354991.8311,
+            "y": 3456165.6375
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.477524,
+        "latitude": 31.23071
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4768740,31.2301100,121.4781740,31.2313100",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "宁海东路",
+            "osmId": 39921025,
+            "osmType": "way",
+            "distanceMetres": 25,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/39921025"
+          },
+          {
+            "name": "永寿路",
+            "osmId": 39920505,
+            "osmType": "way",
+            "distanceMetres": 35,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/39920505"
+          },
+          {
+            "name": "浙江南路",
+            "osmId": 24621218,
+            "osmType": "way",
+            "distanceMetres": 48,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/24621218"
+          }
+        ]
+      },
+      "limitations": "上海档案馆团体指南列上海市仁义善会，支持机构存在，但未给本条66号的后续地块。Rue Hue据本地历史道路资料对应浙江南路，不能误写永寿路。同组#27中国救济妇孺总会在017调查，双方均未取得两组织分期或同楼证据；与017研究员核对后整组保持待核，不由相距数米推断共有现用途。 原UTM独立转换WGS84为121.477524, 31.23071。"
+    },
+    {
+      "IDBAT": 1103,
+      "queries": [
+        "嘉道理爵士公馆 1783 南京西路 2026 少年宫",
+        "site.cwicc.org 中国福利会少年宫 延安西路64 2026"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "房管局第一批名录1B005直接对应嘉道理爵士住宅与市少年宫延安西路64号。原1924年住宅与修缮报道所述现大理石大厦一致；少年宫官网2025年12月活动明确在大理石大厦少年厅，上观2026六一活动亦列该院。原点位于院区way448178923内，距带Kadoorie Palace别名及1924标签的现主楼way448178917约16米，相容于住宅花园院地。原静安寺路1783号与今南京西路1799号/延安64号是不同历史门牌及入口记载，不宣称取得逐号重编公告，不将院内所有附楼都说成1924原楼。 原UTM独立转换WGS84为121.438547, 31.223169。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1103",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.cwicp.cn/parent.html",
+        "https://www.why.com.cn/wx/article/2022/09/21/16637561931120111321.html",
+        "https://www.jfdaily.com/sgh/detail?id=1757470",
+        "https://www.openstreetmap.org/way/448178917",
+        "https://www.openstreetmap.org/way/448178923"
+      ],
+      "originalInput": {
+        "IDBAT": 1103,
+        "NAME": "Residence of Elly Kadoorie",
+        "F_ADDRESS": "1783 BUBBLING WELL ROAD",
+        "FUNCTION": "Residential site / Villa",
+        "XC": 351273.9366,
+        "YC": 3455385.7762
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1103,
+        "clusterId": "vs-building-site:1103",
+        "members": [
+          {
+            "id": 1103,
+            "name": "Residence of Elly Kadoorie",
+            "nameZh": null,
+            "address": "1783 BUBBLING WELL ROAD",
+            "startYear": 1924,
+            "endYear": null,
+            "x": 351273.9366,
+            "y": 3455385.7762
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.438547,
+        "latitude": 31.223169
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4378970,31.2225690,121.4391970,31.2237690",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "中国福利会少年宫",
+            "osmId": 448178923,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/448178923"
+          },
+          {
+            "name": "中国福利会少年宫",
+            "osmId": 448178917,
+            "osmType": "way",
+            "distanceMetres": 16,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/448178917"
+          },
+          {
+            "name": "乌鲁木齐北路",
+            "osmId": 769230224,
+            "osmType": "way",
+            "distanceMetres": 17,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/769230224"
+          }
+        ]
+      },
+      "limitations": "房管局第一批名录1B005直接对应嘉道理爵士住宅与市少年宫延安西路64号。原1924年住宅与修缮报道所述现大理石大厦一致；少年宫官网2025年12月活动明确在大理石大厦少年厅，上观2026六一活动亦列该院。原点位于院区way448178923内，距带Kadoorie Palace别名及1924标签的现主楼way448178917约16米，相容于住宅花园院地。原静安寺路1783号与今南京西路1799号/延安64号是不同历史门牌及入口记载，不宣称取得逐号重编公告，不将院内所有附楼都说成1924原楼。 原UTM独立转换WGS84为121.438547, 31.223169。"
+    },
+    {
+      "IDBAT": 661,
+      "queries": [
+        "丽都大戏院 贵州路239 拆除",
+        "\"贵州路239号\" 丽都 商场"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "史料线索明确1926年北京大戏院、1934年拆建为丽都大戏院，后改贵州影剧场、1988年改商场，不能把1926首楼视作后来的重建楼。原点距北京东路仅2米而贵州路约53米，旧239号与现街角边界不清；缺近期官方商场/建筑用途证据，verified仅为历史身份已识别，待核保留review。 原UTM独立转换WGS84为121.470411, 31.239998。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=661",
+        "https://zh.wikipedia.org/wiki/麗都大戲院",
+        "https://blog.sina.com.cn/s/blog_5d1bdf480102v301.html",
+        "https://www.openstreetmap.org/way/484298629"
+      ],
+      "originalInput": {
+        "IDBAT": 661,
+        "NAME": "Rialto Theater",
+        "F_ADDRESS": "239 KWEICHOW ROAD",
+        "FUNCTION": "Recreational facility / Performance site / Theater",
+        "XC": 354335.0991,
+        "YC": 3457208.7752
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 661,
+        "clusterId": "vs-building-site:661",
+        "members": [
+          {
+            "id": 661,
+            "name": "Rialto Theater",
+            "nameZh": "麗都大戯院",
+            "address": "239 KWEICHOW ROAD",
+            "startYear": 1926,
+            "endYear": null,
+            "x": 354335.0991,
+            "y": 3457208.7752
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.470411,
+        "latitude": 31.239998
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4697610,31.2393980,121.4710610,31.2405980",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "北京东路",
+            "osmId": 484298629,
+            "osmType": "way",
+            "distanceMetres": 2,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/484298629"
+          },
+          {
+            "name": "贵州路社区",
+            "osmId": 11591929652,
+            "osmType": "node",
+            "distanceMetres": 45,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/11591929652"
+          },
+          {
+            "name": "贵州路",
+            "osmId": 73898394,
+            "osmType": "way",
+            "distanceMetres": 53,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/73898394"
+          }
+        ]
+      },
+      "limitations": "史料线索明确1926年北京大戏院、1934年拆建为丽都大戏院，后改贵州影剧场、1988年改商场，不能把1926首楼视作后来的重建楼。原点距北京东路仅2米而贵州路约53米，旧239号与现街角边界不清；缺近期官方商场/建筑用途证据，verified仅为历史身份已识别，待核保留review。 原UTM独立转换WGS84为121.470411, 31.239998。"
+    },
+    {
+      "IDBAT": 1753,
+      "queries": [
+        "\"RICHMOND APARTMENTS\" Shanghai 1978",
+        "\"Richmond\" \"1978\" Shanghai apartment",
+        "\"淮海中路1978\" 公寓"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "英文全名、1978 Avenue Joffre及今淮海中路1978多轮检索未见独立旧今对应；同源数据库转录不算外部证据。原点距淮海中路约43米，周边多幢近代公寓；不能因同路邻近就套用武康大楼或登云公寓，待核。 原UTM独立转换WGS84为121.431756, 31.205325。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1753",
+        "https://www.openstreetmap.org/way/85711357"
+      ],
+      "originalInput": {
+        "IDBAT": 1753,
+        "NAME": "RICHMOND APARTMENTS",
+        "F_ADDRESS": "1978 AVENUE JOFFRE",
+        "FUNCTION": "Residential site",
+        "XC": 350598.9152,
+        "YC": 3453416.927
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1753,
+        "clusterId": "vs-building-site:1753",
+        "members": [
+          {
+            "id": 1753,
+            "name": "RICHMOND APARTMENTS",
+            "nameZh": null,
+            "address": "1978 AVENUE JOFFRE",
+            "startYear": null,
+            "endYear": null,
+            "x": 350598.9152,
+            "y": 3453416.927
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.431756,
+        "latitude": 31.205325
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4311060,31.2047250,121.4324060,31.2059250",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "淮海中路",
+            "osmId": 85711357,
+            "osmType": "way",
+            "distanceMetres": 43,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/85711357"
+          },
+          {
+            "name": "淮海中路",
+            "osmId": 1235082260,
+            "osmType": "way",
+            "distanceMetres": 43,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1235082260"
+          },
+          {
+            "name": "淮海中路武康路",
+            "osmId": 9806194296,
+            "osmType": "node",
+            "distanceMetres": 43,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9806194296"
+          }
+        ]
+      },
+      "limitations": "英文全名、1978 Avenue Joffre及今淮海中路1978多轮检索未见独立旧今对应；同源数据库转录不算外部证据。原点距淮海中路约43米，周边多幢近代公寓；不能因同路邻近就套用武康大楼或登云公寓，待核。 原UTM独立转换WGS84为121.431756, 31.205325。"
+    },
+    {
+      "IDBAT": 1618,
+      "queries": [
+        "融光大戏院 海宁路330 现在",
+        "融光大戏院 海宁路330 2026 拆除"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "虹口政务影史直接连接融光大戏院、国际电影院与海宁路330号；新民2023现场报道说建筑仍在、星美2018年关闭至今。2025《作家文摘》影史摘要又有融光已拆说法，未取得拆除公告或近期现场资料来裁定。OSM原点在海宁路以北约71米且无命名影院范围，不能沿用星美名称断言仍营业，也不能直接认定已拆；待核。 原UTM独立转换WGS84为121.481218, 31.253032。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1618",
+        "https://www.thepaper.cn/newsDetail_forward_4029953",
+        "https://www.sohu.com/a/740162458_114986",
+        "https://zjwz.cnepaper.com/epaper/resfile/2025-05-20/7/zjwz202505207.pdf",
+        "https://www.openstreetmap.org/way/1255166888"
+      ],
+      "originalInput": {
+        "IDBAT": 1618,
+        "NAME": "Ritz Theater",
+        "F_ADDRESS": "330 HAINING ROAD",
+        "FUNCTION": "Recreational facility / Performance site / Theater",
+        "XC": 355384.2508,
+        "YC": 3458639.364
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1618,
+        "clusterId": "vs-building-site:1618",
+        "members": [
+          {
+            "id": 1618,
+            "name": "Ritz Theater",
+            "nameZh": "融光大戲院",
+            "address": "330 HAINING ROAD",
+            "startYear": 1932,
+            "endYear": null,
+            "x": 355384.2508,
+            "y": 3458639.364
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.481218,
+        "latitude": 31.253032
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4805680,31.2524320,121.4818680,31.2536320",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "海宁路",
+            "osmId": 1255166888,
+            "osmType": "way",
+            "distanceMetres": 71,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1255166888"
+          },
+          {
+            "name": "海宁路",
+            "osmId": 1075724564,
+            "osmType": "way",
+            "distanceMetres": 85,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1075724564"
+          },
+          {
+            "name": "百官街",
+            "osmId": 64622647,
+            "osmType": "way",
+            "distanceMetres": 87,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/64622647"
+          }
+        ]
+      },
+      "accessLimitations": "2023报道原址楼仍在与2025转述已拆冲突，不根据较新文章年份单独选边；目前只确认停业，不确认原点现存楼体或拆后用途。",
+      "limitations": "虹口政务影史直接连接融光大戏院、国际电影院与海宁路330号；新民2023现场报道说建筑仍在、星美2018年关闭至今。2025《作家文摘》影史摘要又有融光已拆说法，未取得拆除公告或近期现场资料来裁定。OSM原点在海宁路以北约71米且无命名影院范围，不能沿用星美名称断言仍营业，也不能直接认定已拆；待核。 原UTM独立转换WGS84为121.481218, 31.253032。"
+    },
+    {
+      "IDBAT": 549,
+      "queries": [
+        "Robert Dollar Building 广东路51 现在",
+        "大来大楼 广东路51 2025 现在 办公",
+        "site.shanghai.gov.cn 大来大楼 广东路51",
+        "\"广东路51号\" \"2025\" 办公",
+        "\"大来大楼\" \"锦江\" 办公 改造"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "Robert Dollar英文历史名称、原广东路51号与图书馆名录原名大来大楼直接对应，现楼仍为51—59号。OSM同地址楼体way378107108距原点2米，几何相容；图书馆坐标偏东1144米，完全排除。现代写字楼代理页面2025更新列办公与底层商业，黄浦区2024监管名录仍列大来大楼，故只采用稳定的办公、商业用途，不把旧名录锦江证券经营部当作当前确定租户，不采纳其他广告把大楼写成2015竣工或口腔医院的混淆信息。 原UTM独立转换WGS84为121.485477, 31.235937。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=549",
+        "http://data.library.sh.cn/entity/architecture/0z2ce4rg0paqx8wd",
+        "https://zh.wikipedia.org/wiki/大来大楼",
+        "https://www.quanhuaoffice.com/office/809.html",
+        "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf",
+        "https://www.openstreetmap.org/way/378107108"
+      ],
+      "originalInput": {
+        "IDBAT": 549,
+        "NAME": "Robert Dollar Building",
+        "F_ADDRESS": "51 CANTON ROAD",
+        "FUNCTION": "Commercial establishment / Service / Office building",
+        "XC": 355763.84,
+        "YC": 3456738.8508
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 549,
+        "clusterId": "vs-building-site:549",
+        "members": [
+          {
+            "id": 549,
+            "name": "Robert Dollar Building",
+            "nameZh": null,
+            "address": "51 CANTON ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 355763.84,
+            "y": 3456738.8508
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.485477,
+        "latitude": 31.235937
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4848270,31.2353370,121.4861270,31.2365370",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "锦江集团财务公司证券经营部",
+            "osmId": 378107108,
+            "osmType": "way",
+            "distanceMetres": 2,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/378107108"
+          },
+          {
+            "name": "广东路",
+            "osmId": 178441747,
+            "osmType": "way",
+            "distanceMetres": 9,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/178441747"
+          },
+          {
+            "name": "蟹家大院",
+            "osmId": 11115675030,
+            "osmType": "node",
+            "distanceMetres": 10,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/11115675030"
+          }
+        ]
+      },
+      "accessLimitations": "全华办公物业页标注并非官方，已按其2025页面办公和底商描述使用，结合房管名录、历史资料和楼体几何；其他营销结果的建设年份或专科医院用途没有采用。",
+      "limitations": "Robert Dollar英文历史名称、原广东路51号与图书馆名录原名大来大楼直接对应，现楼仍为51—59号。OSM同地址楼体way378107108距原点2米，几何相容；图书馆坐标偏东1144米，完全排除。现代写字楼代理页面2025更新列办公与底层商业，黄浦区2024监管名录仍列大来大楼，故只采用稳定的办公、商业用途，不把旧名录锦江证券经营部当作当前确定租户，不采纳其他广告把大楼写成2015竣工或口腔医院的混淆信息。 原UTM独立转换WGS84为121.485477, 31.235937。"
+    },
+    {
+      "IDBAT": 1276,
+      "queries": [
+        "六三园 西江湾路230 现址 神社",
+        "六三花园 沪上神社 西江湾路 230 240"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "园史支持白石六三郎经营六三花园以及1912年沪上神社，但资料在西江湾路230与240号之间有差异；1932毁坏及后续重建、神社迁址也应分开。原点在OSM华星公寓范围内，2022政府名单将其记为同鸣路140弄，并将西江湾路230号另列，存在地块范围风险。2015旅行记的星程嘉馨酒店只是旧候选，不代表2026仍营业。同组#1275沪上神社与花园不必为同栋楼，园界、社界和迁建关系待核，整组hold。 原UTM独立转换WGS84为121.473396, 31.270716。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1276",
+        "https://zh.wikipedia.org/wiki/六三花園",
+        "https://www.sohu.com/a/360882436_556717",
+        "https://www.shanghai.gov.cn/qjzccs/20220420/f8ca0eb4b6a14e16b49d63fc3a7b1cda.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1275",
+        "https://www.openstreetmap.org/way/1434389854"
+      ],
+      "originalInput": {
+        "IDBAT": 1276,
+        "NAME": "Rokusan Garden",
+        "F_ADDRESS": "230 XIJIANGWAN",
+        "FUNCTION": "Recreational facility / Outdoor facility / Park / Garden",
+        "XC": 354666.483,
+        "YC": 3460609.8629
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1276,
+        "clusterId": "vs-building-site:1275",
+        "members": [
+          {
+            "id": 1275,
+            "name": "Shinto Shrine",
+            "nameZh": "滬上神社",
+            "address": "230 XIJIANGWAN",
+            "startYear": 1912,
+            "endYear": 1933,
+            "x": 354708.8832,
+            "y": 3460632.5583
+          },
+          {
+            "id": 1276,
+            "name": "Rokusan Garden",
+            "nameZh": "六三園",
+            "address": "230 XIJIANGWAN",
+            "startYear": 1912,
+            "endYear": null,
+            "x": 354666.483,
+            "y": 3460609.8629
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.473396,
+        "latitude": 31.270716
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4727460,31.2701160,121.4740460,31.2713160",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "华星公寓",
+            "osmId": 1434389854,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/1434389854"
+          },
+          {
+            "name": "同鸣路",
+            "osmId": 176689878,
+            "osmType": "way",
+            "distanceMetres": 33,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/176689878"
+          },
+          {
+            "name": "钧茂公寓",
+            "osmId": 1434389847,
+            "osmType": "way",
+            "distanceMetres": 40,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1434389847"
+          }
+        ]
+      },
+      "limitations": "园史支持白石六三郎经营六三花园以及1912年沪上神社，但资料在西江湾路230与240号之间有差异；1932毁坏及后续重建、神社迁址也应分开。原点在OSM华星公寓范围内，2022政府名单将其记为同鸣路140弄，并将西江湾路230号另列，存在地块范围风险。2015旅行记的星程嘉馨酒店只是旧候选，不代表2026仍营业。同组#1275沪上神社与花园不必为同栋楼，园界、社界和迁建关系待核，整组hold。 原UTM独立转换WGS84为121.473396, 31.270716。"
+    },
+    {
+      "IDBAT": 336,
+      "queries": [
+        "\"荣远中学\" 上海",
+        "\"荣远\" \"襄阳\" 学校",
+        "\"榮遠中學\" 上海"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "中文荣远/榮遠与襄阳南路组合未返回可独立核对的校史。原点距襄阳南路约1米、襄阳南路第一幼儿园南园8米；相邻335号荣园小学文字近似，但没有证据证明中小学同校或迁址，不能以幼儿园近邻自动回填，待核。 原UTM独立转换WGS84为121.453368, 31.210117。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=336",
+        "https://www.openstreetmap.org/way/12088962"
+      ],
+      "originalInput": {
+        "IDBAT": 336,
+        "NAME": "Rongyuan Junior High School",
+        "F_ADDRESS": "343 ROUTE RAYMOND TENANT DE LA TOUR",
+        "FUNCTION": "Educational facility / School / Private / Secular / Secondary",
+        "XC": 352665.5217,
+        "YC": 3453919.1348
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 336,
+        "clusterId": "vs-building-site:336",
+        "members": [
+          {
+            "id": 336,
+            "name": "Rongyuan Junior High School",
+            "nameZh": "榮遠中學校",
+            "address": "343 ROUTE RAYMOND TENANT DE LA TOUR",
+            "startYear": null,
+            "endYear": null,
+            "x": 352665.5217,
+            "y": 3453919.1348
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.453368,
+        "latitude": 31.210117
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4527180,31.2095170,121.4540180,31.2107170",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "襄阳南路",
+            "osmId": 12088962,
+            "osmType": "way",
+            "distanceMetres": 1,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/12088962"
+          },
+          {
+            "name": "襄阳南路第一幼儿园(南园)",
+            "osmId": 790293823,
+            "osmType": "way",
+            "distanceMetres": 8,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/790293823"
+          },
+          {
+            "name": "襄阳南路永嘉路",
+            "osmId": 9812010101,
+            "osmType": "node",
+            "distanceMetres": 14,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812010101"
+          }
+        ]
+      },
+      "limitations": "中文荣远/榮遠与襄阳南路组合未返回可独立核对的校史。原点距襄阳南路约1米、襄阳南路第一幼儿园南园8米；相邻335号荣园小学文字近似，但没有证据证明中小学同校或迁址，不能以幼儿园近邻自动回填，待核。 原UTM独立转换WGS84为121.453368, 31.210117。"
+    },
+    {
+      "IDBAT": 335,
+      "queries": [
+        "\"荣园小学\" 上海 315",
+        "\"荣园\" \"中学\" 上海",
+        "\"中國婦女補習學校\" \"315\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "荣园小学、榮園与中国妇女补习学校315检索未形成独立校址链。同组#337为中国妇女补习学校，同址可能分时或分楼，均缺校史；与相邻#336荣远中学校也不能由近音合并。原点几乎在今襄阳南路线上，旧街边与现道路边界待核，整组保持未确认。 原UTM独立转换WGS84为121.453352, 31.210275。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=335",
+        "https://www.virtualshanghai.net/data/buildings?ID=337",
+        "https://www.openstreetmap.org/way/12088962"
+      ],
+      "originalInput": {
+        "IDBAT": 335,
+        "NAME": "Rongyuan Primary School",
+        "F_ADDRESS": "315 ROUTE RAYMOND TENANT DE LA TOUR",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 352664.2436,
+        "YC": 3453936.6712
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 335,
+        "clusterId": "vs-building-site:335",
+        "members": [
+          {
+            "id": 335,
+            "name": "Rongyuan Primary School",
+            "nameZh": "榮園小學校",
+            "address": "315 ROUTE RAYMOND TENANT DE LA TOUR",
+            "startYear": null,
+            "endYear": null,
+            "x": 352664.2436,
+            "y": 3453936.6712
+          },
+          {
+            "id": 337,
+            "name": "Zhongguo Women's Training School",
+            "nameZh": "中國婦女補習學校",
+            "address": "315 ROUTE RAYMOND TENANT DE LA TOUR",
+            "startYear": null,
+            "endYear": null,
+            "x": 352661.7616,
+            "y": 3453956.7771
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.453352,
+        "latitude": 31.210275
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4527020,31.2096750,121.4540020,31.2108750",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "襄阳南路",
+            "osmId": 12088962,
+            "osmType": "way",
+            "distanceMetres": 2,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/12088962"
+          },
+          {
+            "name": "襄阳南路永嘉路",
+            "osmId": 9812010101,
+            "osmType": "node",
+            "distanceMetres": 4,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812010101"
+          },
+          {
+            "name": "襄阳南路永嘉路",
+            "osmId": 9812043026,
+            "osmType": "node",
+            "distanceMetres": 5,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812043026"
+          }
+        ]
+      },
+      "limitations": "荣园小学、榮園与中国妇女补习学校315检索未形成独立校址链。同组#337为中国妇女补习学校，同址可能分时或分楼，均缺校史；与相邻#336荣远中学校也不能由近音合并。原点几乎在今襄阳南路线上，旧街边与现道路边界待核，整组保持未确认。 原UTM独立转换WGS84为121.453352, 31.210275。"
+    },
+    {
+      "IDBAT": 1676,
+      "queries": [
+        "上海 划船总会 南苏州路76 2026"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "设计方原文明确原设施含东船库、中会所和西游泳池，1990年代及2009年多次拆改，保留部分结构后于2010年依原貌复建，2021年再整合为公共空间；不是1905原楼完整存续。原点距乍浦路桥几何3米，近桥处的旧西翼/泳池边界未获可量化地籍或原图证明，不能由76号名称直接把本点写成现会所。历史主体及更新链可靠，位置范围待核保留review。 原UTM独立转换WGS84为121.483253, 31.245755。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1676",
+        "https://www.gooood.cn/renovation-of-shanghai-rowing-club-and-surrounding-public-space-china-by-tjadoriginal-design-studio.htm",
+        "https://hkda.shhk.gov.cn/hkda/gzdt/20260430/459fb933-6d74-4d34-b82a-54283d632965.html",
+        "https://whlyj.sh.gov.cn/gqfc/20201124/35c4eef0f367400e92497da37a2ca66f.html",
+        "https://www.openstreetmap.org/way/144965772"
+      ],
+      "originalInput": {
+        "IDBAT": 1676,
+        "NAME": "Rowing Club",
+        "F_ADDRESS": "76 SOOCHOW ROAD",
+        "FUNCTION": "Recreational facility / Sport facility / Outdoor facility",
+        "XC": 355566.954,
+        "YC": 3457830.0587
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1676,
+        "clusterId": "vs-building-site:1676",
+        "members": [
+          {
+            "id": 1676,
+            "name": "Rowing Club",
+            "nameZh": null,
+            "address": "76 SOOCHOW ROAD",
+            "startYear": 1905,
+            "endYear": null,
+            "x": 355566.954,
+            "y": 3457830.0587
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.483253,
+        "latitude": 31.245755
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4826030,31.2451550,121.4839030,31.2463550",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "乍浦路",
+            "osmId": 144965772,
+            "osmType": "way",
+            "distanceMetres": 3,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/144965772"
+          },
+          {
+            "name": "乍浦路桥",
+            "osmId": 815631995,
+            "osmType": "way",
+            "distanceMetres": 3,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/815631995"
+          },
+          {
+            "name": "乍浦路桥",
+            "osmId": 144965773,
+            "osmType": "way",
+            "distanceMetres": 4,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/144965773"
+          }
+        ]
+      },
+      "limitations": "设计方原文明确原设施含东船库、中会所和西游泳池，1990年代及2009年多次拆改，保留部分结构后于2010年依原貌复建，2021年再整合为公共空间；不是1905原楼完整存续。原点距乍浦路桥几何3米，近桥处的旧西翼/泳池边界未获可量化地籍或原图证明，不能由76号名称直接把本点写成现会所。历史主体及更新链可靠，位置范围待核保留review。 原UTM独立转换WGS84为121.483253, 31.245755。"
+    },
+    {
+      "IDBAT": 385,
+      "queries": [
+        "\"Russian Club\" \"1053\" Shanghai",
+        "\"俄罗斯总会\" \"福煦路1053\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "Building Russian Shanghai引用1938年《字林西报》记A. B. Radbill改造1053 Avenue Foch俄罗斯总会，并把该楼列为已拆。原记录1936不据此改动；缺拆除时间、现门牌和用地边界。原点近延安中路25米，不把道路近邻当作已证明道路拓宽占地，也不混同803号苏联总会或退休军官俱乐部。 原UTM独立转换WGS84为121.444422, 31.223158。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=385",
+        "https://brs.russianshanghai.city/architects/m-z/a-b-radbill",
+        "https://www.openstreetmap.org/way/515227367"
+      ],
+      "originalInput": {
+        "IDBAT": 385,
+        "NAME": "Russian Club",
+        "F_ADDRESS": "1053 AVENUE FOCH",
+        "FUNCTION": "Recreational facility / Indoor facility / Club",
+        "XC": 351833.5655,
+        "YC": 3455376.6681
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 385,
+        "clusterId": "vs-building-site:385",
+        "members": [
+          {
+            "id": 385,
+            "name": "Russian Club",
+            "nameZh": null,
+            "address": "1053 AVENUE FOCH",
+            "startYear": 1936,
+            "endYear": null,
+            "x": 351833.5655,
+            "y": 3455376.6681
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.444422,
+        "latitude": 31.223158
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4437720,31.2225580,121.4450720,31.2237580",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "延安中路",
+            "osmId": 515227367,
+            "osmType": "way",
+            "distanceMetres": 25,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/515227367"
+          },
+          {
+            "name": "延安高架路",
+            "osmId": 10728694,
+            "osmType": "way",
+            "distanceMetres": 28,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/10728694"
+          },
+          {
+            "name": "上海地铁7号线",
+            "osmId": 461654540,
+            "osmType": "way",
+            "distanceMetres": 39,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/461654540"
+          }
+        ]
+      },
+      "limitations": "Building Russian Shanghai引用1938年《字林西报》记A. B. Radbill改造1053 Avenue Foch俄罗斯总会，并把该楼列为已拆。原记录1936不据此改动；缺拆除时间、现门牌和用地边界。原点近延安中路25米，不把道路近邻当作已证明道路拓宽占地，也不混同803号苏联总会或退休军官俱乐部。 原UTM独立转换WGS84为121.444422, 31.223158。"
+    },
+    {
+      "IDBAT": 352,
+      "queries": [
+        "\"退职军官俱乐部\" 上海",
+        "\"Russian\" \"Pensioners\" \"Lafayette\" Shanghai",
+        "\"1260\" \"Lafayette\" \"Club\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "中英文退休/退职军官俱乐部与1260 Lafayette检索没有取得独立会员组织或地址沿革。不套用福煦路俄罗斯总会；原点距襄阳南路4米，而1260号旧门牌与现复兴中路编号关系不明，附近餐厅、住宅只为POI线索，待核。 原UTM独立转换WGS84为121.452693, 31.215102。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=352",
+        "https://www.openstreetmap.org/way/12088962"
+      ],
+      "originalInput": {
+        "IDBAT": 352,
+        "NAME": "Russian Club for Army Pensioneers",
+        "F_ADDRESS": "1260 ROUTE LAFAYETTE",
+        "FUNCTION": "Recreational facility / Indoor facility / Club",
+        "XC": 352608.9552,
+        "YC": 3454472.6121
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 352,
+        "clusterId": "vs-building-site:352",
+        "members": [
+          {
+            "id": 352,
+            "name": "Russian Club for Army Pensioneers",
+            "nameZh": "退職軍官倶樂部",
+            "address": "1260 ROUTE LAFAYETTE",
+            "startYear": null,
+            "endYear": null,
+            "x": 352608.9552,
+            "y": 3454472.6121
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.452693,
+        "latitude": 31.215102
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4520430,31.2145020,121.4533430,31.2157020",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "襄阳南路",
+            "osmId": 12088962,
+            "osmType": "way",
+            "distanceMetres": 4,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/12088962"
+          },
+          {
+            "name": "赛百味",
+            "osmId": 7418823145,
+            "osmType": "node",
+            "distanceMetres": 11,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/7418823145"
+          },
+          {
+            "name": "襄阳南路166弄",
+            "osmId": 1433743005,
+            "osmType": "way",
+            "distanceMetres": 31,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1433743005"
+          }
+        ]
+      },
+      "limitations": "中英文退休/退职军官俱乐部与1260 Lafayette检索没有取得独立会员组织或地址沿革。不套用福煦路俄罗斯总会；原点距襄阳南路4米，而1260号旧门牌与现复兴中路编号关系不明，附近餐厅、住宅只为POI线索，待核。 原UTM独立转换WGS84为121.452693, 31.215102。"
+    },
+    {
+      "IDBAT": 999,
+      "queries": [
+        "\"俄文报纸\" \"616\"",
+        "\"Shanghai Zaria\" \"Foch\"",
+        "\"俄文\" \"福煦路\" 报"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "原名仅为Russian Newspaper，FUNCTION却标公园，缺具体报纸名称。检索Shanghai Zaria、俄文报与福煦路及616/622，没有直接地址闭环；上海曙光报等同类报纸不能未经地址证据认定。OSM原点近陕西大厦5米，但不是历史报社存在或拆建证明，待核。 原UTM独立转换WGS84为121.457343, 31.22607。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=999",
+        "https://www.openstreetmap.org/way/515123441"
+      ],
+      "originalInput": {
+        "IDBAT": 999,
+        "NAME": "Russian Newspaper",
+        "F_ADDRESS": "616/622 AVENUE FOCH",
+        "FUNCTION": "Recreational facility / Outdoor facility / Park",
+        "XC": 353068.9493,
+        "YC": 3455682.1742
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 999,
+        "clusterId": "vs-building-site:999",
+        "members": [
+          {
+            "id": 999,
+            "name": "Russian Newspaper",
+            "nameZh": "俄文報紙",
+            "address": "616/622 AVENUE FOCH",
+            "startYear": null,
+            "endYear": null,
+            "x": 353068.9493,
+            "y": 3455682.1742
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.457343,
+        "latitude": 31.22607
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4566930,31.2254700,121.4579930,31.2266700",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "陕西大厦",
+            "osmId": 515123441,
+            "osmType": "way",
+            "distanceMetres": 5,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/515123441"
+          },
+          {
+            "name": "延安中路",
+            "osmId": 515126385,
+            "osmType": "way",
+            "distanceMetres": 12,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/515126385"
+          },
+          {
+            "name": "延安中路",
+            "osmId": 985133427,
+            "osmType": "way",
+            "distanceMetres": 31,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/985133427"
+          }
+        ]
+      },
+      "limitations": "原名仅为Russian Newspaper，FUNCTION却标公园，缺具体报纸名称。检索Shanghai Zaria、俄文报与福煦路及616/622，没有直接地址闭环；上海曙光报等同类报纸不能未经地址证据认定。OSM原点近陕西大厦5米，但不是历史报社存在或拆建证明，待核。 原UTM独立转换WGS84为121.457343, 31.22607。"
+    },
+    {
+      "IDBAT": 368,
+      "queries": [
+        "\"S.S.Somkeh\"",
+        "\"Somekh\" \"Albert\" Shanghai residence",
+        "\"S. S. Somekh\" Shanghai"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已查原拼写Somkeh及可能变体S. S. Somekh，目录检索出现Somekh姓氏只能说明存在同名在沪商人，不能确定本记录人物、住宅或机构。原点近延安高架及延安中路，不套用圆明园路的Somekh大楼或他族家族住所；2号旧门牌与现代地块待核。 原UTM独立转换WGS84为121.451325, 31.225546。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=368",
+        "https://www.openstreetmap.org/way/11635095"
+      ],
+      "originalInput": {
+        "IDBAT": 368,
+        "NAME": "S.S.Somkeh",
+        "F_ADDRESS": "2 AVENUE DU ROI ALBERT",
+        "FUNCTION": "Undefined",
+        "XC": 352494.8492,
+        "YC": 3455632.1361
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 368,
+        "clusterId": "vs-building-site:368",
+        "members": [
+          {
+            "id": 368,
+            "name": "S.S.Somkeh",
+            "nameZh": null,
+            "address": "2 AVENUE DU ROI ALBERT",
+            "startYear": null,
+            "endYear": null,
+            "x": 352494.8492,
+            "y": 3455632.1361
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.451325,
+        "latitude": 31.225546
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4506750,31.2249460,121.4519750,31.2261460",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "延安高架路",
+            "osmId": 11635095,
+            "osmType": "way",
+            "distanceMetres": 16,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/11635095"
+          },
+          {
+            "name": "延安中路",
+            "osmId": 515136605,
+            "osmType": "way",
+            "distanceMetres": 21,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/515136605"
+          },
+          {
+            "name": "延安中路",
+            "osmId": 1226645411,
+            "osmType": "way",
+            "distanceMetres": 24,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1226645411"
+          }
+        ]
+      },
+      "limitations": "已查原拼写Somkeh及可能变体S. S. Somekh，目录检索出现Somekh姓氏只能说明存在同名在沪商人，不能确定本记录人物、住宅或机构。原点近延安高架及延安中路，不套用圆明园路的Somekh大楼或他族家族住所；2号旧门牌与现代地块待核。 原UTM独立转换WGS84为121.451325, 31.225546。"
+    },
+    {
+      "IDBAT": 417,
+      "queries": [
+        "圣心医院 金司徒路197 现在",
+        "\"圣心医院\" \"岳阳路\"",
+        "\"圣心医院\" \"祁齐路197\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "医院史资料记战时圣心医院及护校迁祁齐路197号、战后迁回杨浦旧址。岳阳路本条不能套用杭州路349号今日康复医院用途；亦不混同中比镭锭治疗院的另一战时住址。OSM近标作建业里扩建预留地11米、建业里42米，缺197号旧院界和当前地块管理资料，保持待核。 原UTM独立转换WGS84为121.447935, 31.206608。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=417",
+        "https://zh.wikipedia.org/wiki/圣心医院",
+        "https://m.hz.bendibao.com/mip/ly49256.shtm",
+        "https://www.openstreetmap.org/way/493698771"
+      ],
+      "originalInput": {
+        "IDBAT": 417,
+        "NAME": "Sacred Heart Hospital (Hôpital du Sacré Coeur)",
+        "F_ADDRESS": "197 ROUTE GHISI",
+        "FUNCTION": "Institutional site / Medical facility / Hospital",
+        "XC": 352142.4466,
+        "YC": 3453537.4325
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 417,
+        "clusterId": "vs-building-site:417",
+        "members": [
+          {
+            "id": 417,
+            "name": "Sacred Heart Hospital (Hôpital du Sacré Coeur)",
+            "nameZh": "聖心醫院",
+            "address": "197 ROUTE GHISI",
+            "startYear": null,
+            "endYear": null,
+            "x": 352142.4466,
+            "y": 3453537.4325
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.447935,
+        "latitude": 31.206608
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4472850,31.2060080,121.4485850,31.2072080",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "brownfield, planned to expand JIan Yeli",
+            "osmId": 493698771,
+            "osmType": "way",
+            "distanceMetres": 11,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/493698771"
+          },
+          {
+            "name": "Jian Yeli",
+            "osmId": 493698006,
+            "osmType": "way",
+            "distanceMetres": 42,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/493698006"
+          },
+          {
+            "name": "Yueyang Gardens",
+            "osmId": 332231936,
+            "osmType": "way",
+            "distanceMetres": 68,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/332231936"
+          }
+        ]
+      },
+      "limitations": "医院史资料记战时圣心医院及护校迁祁齐路197号、战后迁回杨浦旧址。岳阳路本条不能套用杭州路349号今日康复医院用途；亦不混同中比镭锭治疗院的另一战时住址。OSM近标作建业里扩建预留地11米、建业里42米，缺197号旧院界和当前地块管理资料，保持待核。 原UTM独立转换WGS84为121.447935, 31.206608。"
+    },
+    {
+      "IDBAT": 1298,
+      "queries": [
+        "圣芳济学堂 南浔路281 旧址",
+        "site.bhgz.edu.sh.cn 北虹 南浔 281 圣芳济",
+        "site.shhk.gov.cn 北虹高级中学 2026 南浔路281",
+        "北虹高级中学 150周年 2024 南浔"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "虹口区政府与学校档案馆合编150周年图史说明1874年创办、1884年迁虹口、1953年改北虹；南浔融媒直接把南浔281号现北虹与圣芳济相连。2024周年活动和2026日新楼修缮项目均确认同地址教育用途。原点位于OSM南浔281号校区way1155356654内；仅确认学校旧址和校园教育延续，1884是迁址年，不宣称院内全部现楼建于1884，也不混同另在异址发展的圣芳济分校。 原UTM独立转换WGS84为121.48701, 31.250921。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1298",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240927/f722c1f6-d357-4613-8b2a-169dec1d4cee.html",
+        "https://www.thepaper.cn/newsDetail_forward_17869765",
+        "https://sh.people.com.cn/n2/2024/0923/c134768-40986644.html",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/319900/2100000000055705/20266/93c4cb11-0583-41aa-aada-818d48748d8a.PDF",
+        "https://www.openstreetmap.org/way/1155356654"
+      ],
+      "originalInput": {
+        "IDBAT": 1298,
+        "NAME": "Saint Francis Xavier School",
+        "F_ADDRESS": "281 NANZIN ROAD",
+        "FUNCTION": "Educational facility / School / Private / Religious / Primary / Catholic",
+        "XC": 355932.6077,
+        "YC": 3458397.7832
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1298,
+        "clusterId": "vs-building-site:1298",
+        "members": [
+          {
+            "id": 1298,
+            "name": "Saint Francis Xavier School",
+            "nameZh": "聖芳濟學堂",
+            "address": "281 NANZIN ROAD",
+            "startYear": 1884,
+            "endYear": null,
+            "x": 355932.6077,
+            "y": 3458397.7832
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.48701,
+        "latitude": 31.250921
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4863600,31.2503210,121.4876600,31.2515210",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "上海市北虹高级中学",
+            "osmId": 1155356654,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/1155356654"
+          },
+          {
+            "name": "峨眉路",
+            "osmId": 177592890,
+            "osmType": "way",
+            "distanceMetres": 9,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/177592890"
+          },
+          {
+            "name": "汉阳路",
+            "osmId": 35422928,
+            "osmType": "way",
+            "distanceMetres": 41,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/35422928"
+          }
+        ]
+      },
+      "limitations": "虹口区政府与学校档案馆合编150周年图史说明1874年创办、1884年迁虹口、1953年改北虹；南浔融媒直接把南浔281号现北虹与圣芳济相连。2024周年活动和2026日新楼修缮项目均确认同地址教育用途。原点位于OSM南浔281号校区way1155356654内；仅确认学校旧址和校园教育延续，1884是迁址年，不宣称院内全部现楼建于1884，也不混同另在异址发展的圣芳济分校。 原UTM独立转换WGS84为121.48701, 31.250921。"
+    }
+  ]
+}

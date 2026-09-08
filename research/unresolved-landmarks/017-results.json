@@ -1,0 +1,2199 @@
+{
+  "methodology": {
+    "coordinateTransform": "EPSG:32651 → EPSG:4326; GCJ-02 is supplied only for comparison with Chinese map services.",
+    "evidencePolicy": "verified requires a source that directly identifies the place or present site; likely is a spatial/name inference; unresolved means no reliable modern identity was found.",
+    "roadNameMapping": "Matched against the project historical-road index and manually reviewed for this batch.",
+    "resultOrdering": "Records are ordered verified → likely → unresolved; original Virtual Shanghai fields remain unchanged inside each record."
+  },
+  "recordCount": 50,
+  "verificationSummary": {
+    "verified": 12,
+    "likely": 16,
+    "unresolved": 22
+  },
+  "records": [
+    {
+      "IDBAT": 512,
+      "NAME": "Sassoon House - Cathay Hotel",
+      "F_ADDRESS": "20 NANKING ROAD",
+      "FUNCTION": "Commercial establishment / Retail business / Lodging / Hotel",
+      "XC": 355677.036,
+      "YC": 3457320.6624,
+      "historicalNameZh": null,
+      "historicalStartYear": 1929,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.484482,
+          "latitude": 31.241174
+        },
+        "gcj02": {
+          "longitude": 121.48897,
+          "latitude": 31.239206
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "费尔蒙和平饭店（原沙逊大厦／华懋饭店）",
+      "currentAddress": "上海市黄浦区南京东路20号",
+      "currentUse": "酒店住宿、餐饮、宴会及饭店历史展示",
+      "relationship": "same-building",
+      "verificationStatus": "verified",
+      "notes": "费尔蒙运营官网将现和平饭店与1929年开业的Cathay Hotel联系，现址为南京东路20号，提供住宿餐饮及活动服务。原记录1929年、20 Nanking Road及独特沙逊大厦名称相互吻合。独立原点在OSM和平饭店北楼轮廓内，区别此前014的南京东路23号南楼。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 512",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=512"
+        },
+        {
+          "title": "费尔蒙和平饭店官网：上海豪华酒店、南京东路20号及华懋饭店历史",
+          "url": "https://www.fairmont.com/zh/hotels/shanghai/fairmont-peace-hotel.html"
+        },
+        {
+          "title": "上海市政府英文服务：和平饭店历史与2010年修复后重开",
+          "url": "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=53fcda72-b6ba-4c67-8861-d567d0257cc8"
+        },
+        {
+          "title": "OpenStreetMap：和平饭店北楼建筑轮廓",
+          "url": "https://www.openstreetmap.org/way/177998987"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1531,
+      "NAME": "Sassoon Villa",
+      "F_ADDRESS": "2409 HUNGJAO ROAD",
+      "FUNCTION": "Residential site / Villa",
+      "XC": 343419.9214,
+      "YC": 3451884.2636,
+      "historicalNameZh": "沙孫別墅",
+      "historicalStartYear": 1932,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.356663,
+          "latitude": 31.190561
+        },
+        "gcj02": {
+          "longitude": 121.361264,
+          "latitude": 31.188666
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "HUNGJAO ROAD",
+          "modernNameZh": "虹桥路"
+        }
+      ],
+      "currentNameZh": "沙逊别墅（原龙柏饭店1号楼）",
+      "currentAddress": "上海市长宁区虹桥路2409号",
+      "currentUse": "文物别墅保留；2026年环评现场调查称无人长期居住，实际经营用途待核",
+      "relationship": "same-building",
+      "verificationStatus": "verified",
+      "notes": "2026年迎宾三路地道东延伸工程环评检索正文直接列沙逊别墅即龙柏饭店1号楼、虹桥路2409号及其围墙内保护范围，现场调查无人长期居住。因此不能沿用旧饭店资料声称正在作为酒店客房。环评大文件未完整读取位置图；OSM初查无附近具名对象，扩大框也未覆盖具名别墅院界，不能说明不存在。原点是否在该楼或同号大院内及当前实际使用情况待核，保留review。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1531",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1531"
+        },
+        {
+          "title": "长宁区政府：迎宾三路地道东延伸工程项目环评报告表（2026-01，检索文字第12页）",
+          "url": "https://static.shcn.gov.cn/cncms/2026/01/16/7f006b35-0d35-4fdd-81d4-895c98bd8d47.pdf"
+        },
+        {
+          "title": "第一财经：虹桥路上的花园别墅和盲童学校，见证上海西区百年变迁（2023）",
+          "url": "https://m.yicai.com/news/101827172.html"
+        }
+      ]
+    },
+    {
+      "IDBAT": 396,
+      "NAME": "Savoy Apartments",
+      "F_ADDRESS": "163 ROUTE DE GROUCHY",
+      "FUNCTION": "Residential site / Apartment building",
+      "XC": 351815.334,
+      "YC": 3454616.4628,
+      "historicalNameZh": null,
+      "historicalStartYear": 1928,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.444343,
+          "latitude": 31.216299
+        },
+        "gcj02": {
+          "longitude": 121.448946,
+          "latitude": 31.214418
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE DE GROUCHY",
+          "modernNameZh": "延庆路"
+        }
+      ],
+      "currentNameZh": "瑞华公寓（原赛华公寓／Savoy Apartments）",
+      "currentAddress": "上海市徐汇区常熟路209弄1—4号（延庆路转角）",
+      "currentUse": "历史公寓住宅，底层沿街商铺",
+      "relationship": "same-building",
+      "verificationStatus": "verified",
+      "notes": "上海市房屋管理局2021年修缮报道直接给出Savoy Apts.旧名、1928年、常熟路209弄1—4号、125户居民和底层商铺，与本条名称及年代一致。原Route de Grouchy对应延庆路，公寓确有延庆路侧立面；独立原点位于常熟路与延庆路同一转角、距OSM瑞华公寓轮廓23米，地块位置相容。旧163号为历史道路门牌，未改原字段；判断依独特楼名、年份、同一转角及两侧立面，未把不同地址另栋住宅并入。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 396",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=396"
+        },
+        {
+          "title": "上海房管（上海市房屋管理局）：瑞华公寓：经典装饰艺术派建筑的新生（2021-02-23）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_11427915"
+        },
+        {
+          "title": "OpenStreetMap：瑞华公寓建筑轮廓",
+          "url": "https://www.openstreetmap.org/way/495305884"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1325,
+      "NAME": "Secret Headquarters of the Shanghai General Trade Union",
+      "F_ADDRESS": "965 DIXWELL ROAD",
+      "FUNCTION": "Military facility / Headquarters",
+      "XC": 355743.6789,
+      "YC": 3459518.485,
+      "historicalNameZh": "上海總工會秘密機關舊址",
+      "historicalStartYear": 1925,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.484865,
+          "latitude": 31.261006
+        },
+        "gcj02": {
+          "longitude": 121.489353,
+          "latitude": 31.259046
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海总工会秘密机关旧址／金融街（海伦）中心地块线索",
+      "currentAddress": "上海市虹口区四平路122弄21号历史旧址（旧狄思威路麦加里21号；原点现落金融街海伦中心地块）",
+      "currentUse": "原工会机关纪念地点；原点办公商业开发用地线索，具体遗址关系待核",
+      "relationship": "demolished-site-redeveloped",
+      "verificationStatus": "verified",
+      "notes": "虹口政府历史资料与市文保名录确认狄思威路麦加里21号、今四平路122弄21号的1925年秘密机关。原记录仅旧965号，不含弄内21号；独立原点在OSM金融街（海伦）中心院界内。有地方踏访称旧屋已拆只存纪念标志，但本轮未完整读取官方保护范围大图或取得拆建主证，不能把文保名称理解为原建筑保存。旧965号所覆盖院落、遗址标志与原点开发地块的关系及楼栋现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1325",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1325"
+        },
+        {
+          "title": "上海市政府：2014年文物保护单位公布，上海总工会秘密机关旧址四平路122弄21号",
+          "url": "https://www.shanghai.gov.cn/shanghai/download/gongkai/hff1429.pdf"
+        },
+        {
+          "title": "虹口区政府：上海总工会秘密机关在狄思威路麦加里历史资料（2022）",
+          "url": "https://www.shhk.gov.cn/qyfwy/030002/030002002/030002002005/20220307/c60683c2-3843-404d-9592-7e0504f9d754.html"
+        },
+        {
+          "title": "OpenStreetMap：金融街（海伦）中心院界",
+          "url": "https://www.openstreetmap.org/way/438128702"
+        }
+      ]
+    },
+    {
+      "IDBAT": 760,
+      "NAME": "Shanghai Chamber of Commerce",
+      "F_ADDRESS": "470 NORTH SOOCHOW ROAD",
+      "FUNCTION": "Community facility / Professional association / Trade association",
+      "XC": 354993.6702,
+      "YC": 3457757.1141,
+      "historicalNameZh": "上海市商會",
+      "historicalStartYear": 1915,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.477245,
+          "latitude": 31.245026
+        },
+        "gcj02": {
+          "longitude": 121.481758,
+          "latitude": 31.243081
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "NORTH SOOCHOW ROAD",
+          "modernNameZh": "北苏州路"
+        }
+      ],
+      "currentNameZh": "上海总商会旧址（今宝格丽酒店历史建筑部分）",
+      "currentAddress": "上海市静安区北苏州路470号（今文安路宝格丽酒店历史建筑区）",
+      "currentUse": "保存的商会南楼用于餐饮、宴会等酒店设施；本组早期建筑关系待核",
+      "relationship": "same-building-repurposed",
+      "verificationStatus": "verified",
+      "notes": "静安区图书馆明确商会1915年迁入，现存1915年牌门楼和南大楼，现酒店官网将修复后的历史商会楼用于餐饮等。同组#1260原年代1884、#1367出使行辕亦1884，已分别读取；图书馆说旧址原为出使行辕，但现1915南楼不等于1884建筑保存。不能用现酒店统一覆盖行辕与早期商会记录；不同年代建筑层位、各原点同院内具体对应及全组现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 760",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=760"
+        },
+        {
+          "title": "静安区图书馆：上海总商会旧址，原行辕、1915年建筑及现存范围",
+          "url": "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=158"
+        },
+        {
+          "title": "上海宝格丽酒店官网：酒店概览及修复历史商会建筑",
+          "url": "https://www.bulgarihotels.com/zh_CN/shanghai/the-hotel/overview"
+        },
+        {
+          "title": "上海宝格丽酒店官网：宝丽轩设于历史商会建筑三楼",
+          "url": "https://www.bulgarihotels.com/zh_CN/shanghai/dining/chinese-fine-dining-restaurant?articleTopic=Design"
+        },
+        {
+          "title": "Virtual Shanghai：同组1260，上海总商会，1884年",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1260"
+        },
+        {
+          "title": "Virtual Shanghai：同组1367，出使行辕，1884年",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1367"
+        }
+      ]
+    },
+    {
+      "IDBAT": 587,
+      "NAME": "Shanghai Commercial and Saving Bank",
+      "F_ADDRESS": "368 KIANGSE ROAD",
+      "FUNCTION": "Commercial establishment / Finance / Bank",
+      "XC": 355381.2988,
+      "YC": 3457407.0948,
+      "historicalNameZh": null,
+      "historicalStartYear": 1931,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.481365,
+          "latitude": 31.241917
+        },
+        "gcj02": {
+          "longitude": 121.485863,
+          "latitude": 31.239959
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "KIANGSE ROAD",
+          "modernNameZh": "江西中路"
+        }
+      ],
+      "currentNameZh": "上海大楼（上海商业储蓄银行旧楼）",
+      "currentAddress": "上海市黄浦区江西中路368号、宁波路40—50号",
+      "currentUse": "浦发银行黄浦支行营业、办公等（历史大楼部分空间）",
+      "relationship": "same-building",
+      "verificationStatus": "verified",
+      "notes": "上海银行同业2025年文章由浦发银行上海分行供稿，直接确认宁波路50号原上海商业储蓄银行1929年大楼保留至今、1998年设黄浦支行且当前营业大厅仍保持旧空间。该文通过搜索全文索引读取，普通打开为空壳；另有市商务委银行设备名单旁证。图书馆4A011名录文字把江西中路368与宁波路40、50列为同一历史楼，独立原点在江西中路宁波路口、距浦发节点30米，相互相容；未采用图书馆偏东坐标。今宁波路50号还含全季酒店，结论仅限原银行大楼部分空间仍作银行服务与办公，不声称全部为银行或全行总部。1929年建筑与原1931年记录保留差异，不改原字段。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 587",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=587"
+        },
+        {
+          "title": "上海市商务委：银行小面额存取款设备名单，宁波路50号浦发银行",
+          "url": "https://sww.sh.gov.cn/cmsres/21/21aa472d5a334aab93bab83e782f21fb/96f875de3f646c7528e78e31adaca402.pdf"
+        },
+        {
+          "title": "上海商业储蓄银行大楼：三栋建筑地址及后续利用线索",
+          "url": "https://zh.wikipedia.org/wiki/上海商业储蓄银行大楼"
+        },
+        {
+          "title": "上海银行同业／浦发银行上海分行供稿：银端漫步丨宁波路50号：浦发银行黄浦支行（原上海商业储蓄银行）（2025-05-17，搜索全文索引）",
+          "url": "https://www.jfdaily.com/sgh/detail?id=1571006"
+        },
+        {
+          "title": "华住官方：全季上海外滩宁波路酒店，同门牌另有酒店，作用途范围限定",
+          "url": "https://m.huazhu.com/Hotel/Detail/8000288"
+        },
+        {
+          "title": "OpenStreetMap：浦发银行近江西中路宁波路口节点",
+          "url": "https://www.openstreetmap.org/node/10754867832"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1349,
+      "NAME": "Shanghai Federation of Trade Unions",
+      "F_ADDRESS": "820 ZHONGXING",
+      "FUNCTION": "Community facility",
+      "XC": 353934.2768,
+      "YC": 3458934.184,
+      "historicalNameZh": "上海總工會",
+      "historicalStartYear": 1927,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.465952,
+          "latitude": 31.25551
+        },
+        "gcj02": {
+          "longitude": 121.470502,
+          "latitude": 31.253599
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ZHONGXING",
+          "modernNameZh": "中兴路"
+        }
+      ],
+      "currentNameZh": "湖州会馆—上海总工会遗址",
+      "currentAddress": "上海市静安区中兴路828号",
+      "currentUse": "原建筑群毁后，在遗址复原展示空间开展工运历史展览、职工及党群服务",
+      "relationship": "demolished-site-redeveloped",
+      "verificationStatus": "verified",
+      "notes": "静安区官方资料明确1927年总工会在湖州会馆公开办公，1932年建筑群被毁，后为棚户、铁路职工住宅；现遗址重建牌楼及布展，不是整座原会馆保存。2021年官方开放报道给中兴路828号、140平方米二层空间，一楼工运展厅、二楼党群及文明实践服务。原820号与今828属同一会馆用地关系，以独特机构、1927年及原点落在OSM现湖州会馆轮廓内交叉核对；原地址不改。现用途限遗址展示与公共服务空间，不包括整个原约1.3万平方米院落。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1349",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1349"
+        },
+        {
+          "title": "静安区政府：红色印迹寻访｜湖州会馆—上海总工会遗址：修旧如旧还原历史（2021-03-01），原建筑毁后场地变化",
+          "url": "https://www.jingan.gov.cn/rmtzx/003008/003008006/20210301/27a9d1f1-ae6c-47a8-8810-d6a98369b207.html"
+        },
+        {
+          "title": "静安区政府：湖州会馆修缮后开放，全年开展136场活动，打造红色文化地标（2021-04-29）",
+          "url": "https://www.jingan.gov.cn/rmtzx/003008/003008006/20210429/6830442c-056f-4951-ac80-6d2a1677f1c5.html"
+        },
+        {
+          "title": "静安区融媒体：百年工运遗址修缮一新仍服务市民职工（2021-06-18），复原牌楼及正式开馆",
+          "url": "https://www.jingan.gov.cn/rmtzx/003003/20210618/2fd9d353-00bd-4e89-a7da-06a1acb3c2a0.html"
+        },
+        {
+          "title": "OpenStreetMap：湖州会馆现展示建筑轮廓",
+          "url": "https://www.openstreetmap.org/way/1302220799"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1518,
+      "NAME": "Shanghai Gouverment",
+      "F_ADDRESS": "170 SHIHCHENFU ROAD",
+      "FUNCTION": "Administrative facility / City hall",
+      "XC": 352296.1079,
+      "YC": 3453051.4014,
+      "historicalNameZh": "上海市政府",
+      "historicalStartYear": 1927,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.449619,
+          "latitude": 31.202244
+        },
+        "gcj02": {
+          "longitude": 121.454209,
+          "latitude": 31.200346
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海特别市政府旧址线索（原沪海道尹公署）",
+      "currentAddress": "上海市徐汇区平江路48号3号、7号历史楼（原市政府路170号对应待核）",
+      "currentUse": "旧政府建筑保留；同号有办公和旅店，原点具体用途待核",
+      "relationship": "same-building-repurposed",
+      "verificationStatus": "verified",
+      "notes": "上海党史明确1919年沪海道尹公署今平江48号，1927年上海特别市政府在此成立；并区别西侧今平江170弄12号1924年交涉使公署。官方优秀历史建筑名录将市政府旧址列48号3、7号楼。现代机构官方地址仍有平江48办公，而2026年6月公布旅店许可指48号1幢部分楼层，不能把同院1幢旅店泛写为原3、7号历史楼。原字段170号、原点与现48号不同楼栋关系及确切现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1518",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1518"
+        },
+        {
+          "title": "上海党史：血染枫林桥：志士信仰之火不灭，区分沪海道尹与交涉使两公署",
+          "url": "https://www.ccphistory.org.cn/shds/shhm/content/7d13a7a1-82c1-4aa7-b888-4536c371130c.html"
+        },
+        {
+          "title": "上海市房管局：第四批优秀历史建筑，4D046平江路48号3号、7号楼",
+          "url": "https://fgj.sh.gov.cn/yxlsjz1/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+        },
+        {
+          "title": "徐汇区政府：2026年5月公共场所新证名单，平江路48号1幢旅店许可",
+          "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019ed4ac1cc728a9"
+        },
+        {
+          "title": "大唐电信官方：加入我们，上海总部平江路48号（2026）",
+          "url": "https://www.dscomm.com.cn/das/lxwm/jrwm/A142008004Gone1.html"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1265,
+      "NAME": "Shanghai Law School",
+      "F_ADDRESS": "574 XIJIANGWAN",
+      "FUNCTION": "Educational facility / University / Private / Secular",
+      "XC": 354750.5164,
+      "YC": 3461267.2691,
+      "historicalNameZh": "上海法學院",
+      "historicalStartYear": 1926,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.474183,
+          "latitude": 31.276656
+        },
+        "gcj02": {
+          "longitude": 121.478708,
+          "latitude": 31.274733
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "JIANGWAN",
+          "modernNameZh": "东江湾路"
+        }
+      ],
+      "currentNameZh": "上海市团校（原上海法学院校址）",
+      "currentAddress": "上海市虹口区西江湾路574号",
+      "currentUse": "团干部及青年教育培训、青年研究与青少年历史教育；校地内保留原辅成堂",
+      "relationship": "same-site-continuing-use",
+      "verificationStatus": "verified",
+      "notes": "校史实查明确上海法学院在西江湾574号办学，后历经数校，1989年团校入驻；原1926年是前身创办年，非本处现存房屋建成年，原字段保留。历史校园多次战毁重建，辅成堂（青年会堂）保存，钧儒楼1999年拆后建教学培训楼，不能将整院写为1926原楼保存。2026国家哲社文献中心《青年学报》列团校主办及574号，2025上海市文旅局活动目录亦列该址中国少年儿童运动史上海馆。独立原点在OSM团校院界内。判断限同一校地继续教育、研究用途，不说是同一办学机构，也不锁定原点为青年会堂单栋。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1265",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1265"
+        },
+        {
+          "title": "上观新闻：海上记忆｜西江湾路574号，竟然承载过上海七所学校（2017），辅成堂存、钧儒楼拆",
+          "url": "https://www.shobserver.com/wx/detail.do?id=69655"
+        },
+        {
+          "title": "国家哲学社会科学文献中心：《青年学报》2026年期刊、团校主办及西江湾路574号",
+          "url": "https://www.ncpssd.cn/journal/details?gch=88009A"
+        },
+        {
+          "title": "上海市文旅局：2025红色文化季活动，团校574号少年儿童运动史上海馆",
+          "url": "https://cmp.whlyj.sh.gov.cn/CMP/news_view.ac?id=64bca44e975c4cedaac044d9d4f45861"
+        },
+        {
+          "title": "OpenStreetMap：上海市团校院界",
+          "url": "https://www.openstreetmap.org/way/1385175406"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1459,
+      "NAME": "Shanghai Local Court",
+      "F_ADDRESS": "152 CHECHAN ROAD",
+      "FUNCTION": "Administrative facility / Court house / Municipal court",
+      "XC": 355736.9585,
+      "YC": 3454096.1288,
+      "historicalNameZh": "上海地方審判廳",
+      "historicalStartYear": 1917,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.485575,
+          "latitude": 31.212097
+        },
+        "gcj02": {
+          "longitude": 121.490056,
+          "latitude": 31.210113
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海市地方审判厅旧址／公安机关用地线索",
+      "currentAddress": "上海市黄浦区南车站路152号",
+      "currentUse": "历史建筑保护及公安业务办公用地；旧厅楼栋现用途待核",
+      "relationship": "same-building-repurposed",
+      "verificationStatus": "verified",
+      "notes": "检察机关史料确认1917年迁南车站新厅；黄浦区文保点名单将地方审判厅旧址列南车站152号。政府采购原招标文件列同址公安业务技术大楼家具，证明近年公安办公用地，但同院新建业务楼不自动等于1917年审判厅楼。原点靠徽宁路、未取得历史1/2号楼院界与现使用房屋图，历史厅保存范围及原点当前楼栋用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1459",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1459"
+        },
+        {
+          "title": "上海市检察院：第一章清末民初检察机构，1917年新厅迁址",
+          "url": "https://www.sh.jcy.gov.cn/sfjc/jwgk2/byjsjdt/jcls/73020.jhtml"
+        },
+        {
+          "title": "黄浦区政府：第二批文物保护点公布名单，上海市地方审判厅旧址南车站路152号",
+          "url": "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf"
+        },
+        {
+          "title": "上海政府采购：上海市公安局南车站路业务技术大楼办公家具招标文件（原PDF检索正文）",
+          "url": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/ad12e478-19d6-4e38-8a13-ade6e5d608e8.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1436,
+      "NAME": "Shanghai Maternity Hospital",
+      "F_ADDRESS": "934 GREAT WESTERN ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital / Maternity Hospital",
+      "XC": 350173.9079,
+      "YC": 3454539.9084,
+      "historicalNameZh": "上海婦產醫院",
+      "historicalStartYear": 1935,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.427128,
+          "latitude": 31.215399
+        },
+        "gcj02": {
+          "longitude": 121.431761,
+          "latitude": 31.213543
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "私立妇孺医院旧址／上海美立方医疗美容医院现址",
+      "currentAddress": "上海市长宁区延安西路934号（历史大西路门牌与原点范围待核）",
+      "currentUse": "同门牌现为医疗美容医院；历史楼对应范围待核",
+      "relationship": "same-building-repurposed",
+      "verificationStatus": "verified",
+      "notes": "长宁区规资局历史建筑页直接记1935年私立妇孺医院位于延安西934号，旧文所说如今真爱女子医院已不足反映当前名称。2026年区卫健医疗广告审查原PDF索引列美立方医院、934号及有效期2026-04-22至2027-04-21，明确当前医疗美容用途；大PDF未完整下载核页。原点临江苏路与延安高架，附近最先出现达华宾馆轮廓，未完成934号原医院楼界包含或相容关系；旧资料又列大西路212号，不能只凭934数字认定无门牌变化。建筑身份候选强，但原点与旧院范围待核，不以路口附近酒店替代本院。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1436",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1436"
+        },
+        {
+          "title": "长宁区规资局：延安西路934号，1935年上海私立妇孺医院历史建筑（2024）",
+          "url": "https://www.shcn.gov.cn/col7698/20241209/1272926.html"
+        },
+        {
+          "title": "长宁区卫健委：2026年医疗广告审查证明汇编，美立方医院934号，长卫登字2026第000363号（原PDF搜索索引）",
+          "url": "https://zwgk.shcn.gov.cn/xxgk/zfjc-wsjk/2026/135/81599/fdf55dfb528f4f99a513a991b0314935.pdf"
+        },
+        {
+          "title": "长宁区卫健委：2025年上海美立方医疗美容医院医疗广告审查证明，934号",
+          "url": "https://zwgk.shcn.gov.cn/xxgk/zfjc-wsjk/2025/161/77888/ad2c7c111b614e88b1711ebfb23acb2e.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 585,
+      "NAME": "Shanghai Power Offices",
+      "F_ADDRESS": "195 NANKING ROAD",
+      "FUNCTION": "Industrial site / Public utility / Power generation site / power plant",
+      "XC": 355390.6908,
+      "YC": 3457175.5819,
+      "historicalNameZh": null,
+      "historicalStartYear": 1931,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.481497,
+          "latitude": 31.23983
+        },
+        "gcj02": {
+          "longitude": 121.485995,
+          "latitude": 31.23787
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海艾迪逊酒店历史楼（原上海电力公司办公楼）",
+      "currentAddress": "上海市黄浦区南京东路181号历史楼（酒店统一地址199号）",
+      "currentUse": "酒店餐饮、酒吧、水疗、会议与活动等公共配套空间",
+      "relationship": "same-building-repurposed",
+      "verificationStatus": "verified",
+      "notes": "EDITION运营官网直接确认原上海电力公司总部历史楼现为酒店公共区域，万豪官网明确历史楼南京东181号与现代主楼201号不同、整体酒店地址199号，并点名Shanghai Tavern位于旧电力公司楼。Built Heritage原研究记旧楼1931年9月竣工，现代塔楼1988年落成；官网1929年与旧楼1929—1931建造期相容。本条Office名称、1931年和南京路原点距OSM181号旧楼轮廓9米构成独立交叉核对，20米处另一轮廓才是新塔。原195号与现181/199号区别保留，不声称查到逐号重编证明。当前用途仅旧楼公共配套，不包括新塔145间客房。原FUNCTION及图片链接指发电厂存在源数据不一致，未修改，未将该办公室移到杨树浦电厂。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 585",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=585"
+        },
+        {
+          "title": "安邸AD原创设计报道：看今天有多少人在聊EDITION?（2018），1931年原电力楼及艾迪逊酒店改造",
+          "url": "https://www.adstyle.com.cn/design/spotlight/news_163490503b14222b.html"
+        },
+        {
+          "title": "上海艾迪逊酒店运营官网：原上海电力公司总部历史楼用作酒店公共区域，现代塔楼为客房",
+          "url": "https://edition-hotels.cn/shanghai/"
+        },
+        {
+          "title": "万豪官网：The Shanghai EDITION，历史楼181号、现代主楼201号与旧楼Shanghai Tavern",
+          "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/"
+        },
+        {
+          "title": "Built Heritage原研究：A 30-year controversy over the Shanghai East China Electric Power Building（2021），旧楼1931及新塔1988",
+          "url": "https://link.springer.com/article/10.1186/s43238-021-00020-2"
+        },
+        {
+          "title": "OpenStreetMap：南京东路181号旧电力大楼建筑轮廓、1929—1931年",
+          "url": "https://www.openstreetmap.org/way/380339852"
+        }
+      ]
+    },
+    {
+      "IDBAT": 120,
+      "NAME": "Seventh Day Baptist Mission",
+      "F_ADDRESS": "23 ROUTE DE ZIKAWEI",
+      "FUNCTION": "Religious facility / Mission headquarter / Religious / Protestant",
+      "XC": 354827.1616,
+      "YC": 3454256.2062,
+      "historicalNameZh": "安息浸禮會",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.476004,
+          "latitude": 31.213428
+        },
+        "gcj02": {
+          "longitude": 121.480518,
+          "latitude": 31.211471
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE DE ZIKAWEI",
+          "modernNameZh": "徐家汇路／肇嘉浜路（分段）"
+        }
+      ],
+      "currentNameZh": "安息浸礼会差会／惠中堂沿革线索",
+      "currentAddress": "上海市黄浦区徐家汇路旧23号（惠中堂今38—40号，差会门牌关系待核）",
+      "currentUse": "现惠中堂宗教活动；原差会23号现用途未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "宗派资料可将安息浸礼会与徐家汇路惠中堂联系，区别于安息日会。惠中堂旧堂1982年倒塌、1997年在40号重建；但本条是差会总部而非必然同一教堂，旧23与今38—40号的街侧及用地未闭合，不能由宗派延续推定原差会地块为现教堂。机构房舍范围和原点现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 120",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=120"
+        },
+        {
+          "title": "中国基督教两会：上海惠中堂（检索资料，正文抓取超时）",
+          "url": "https://www.ccctspm.org/churchinfo/209"
+        },
+        {
+          "title": "惠中堂：教派、今址及倒塌重建史料线索",
+          "url": "https://zh.wikipedia.org/wiki/惠中堂"
+        }
+      ]
+    },
+    {
+      "IDBAT": 453,
+      "NAME": "Shanghai American School",
+      "F_ADDRESS": "10 ROUTE LOUIS DUFOUR",
+      "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+      "XC": 351524.0742,
+      "YC": 3453753.3485,
+      "historicalNameZh": "美國學堂",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.441414,
+          "latitude": 31.208477
+        },
+        "gcj02": {
+          "longitude": 121.446023,
+          "latitude": 31.206598
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE LOUIS DUFOUR",
+          "modernNameZh": "乌鲁木齐南路"
+        }
+      ],
+      "currentNameZh": "美童公学旧址线索（上海美国学校）",
+      "currentAddress": "上海市徐汇区旧Route Louis Dufour 10号（今乌鲁木齐南路；与衡山路10号校地关系待核）",
+      "currentUse": "衡山路旧校有机构及商业利用，原10号校地现用途待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "美童公学校史有衡山路10号旧校园、今衡山路8号商业及船舶机构利用线索，但原地址是Route Louis Dufour 10（乌鲁木齐南路），不是衡山路10号。独立原点仅与衡山路8号周边空间接近，辅助图未证明原学校全院界包含此点。不能把今天浦东、闵行的上海美国学校校址或整片衡山项目移回本点；校舍入口改编、原校区边界与具体存续楼栋待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 453",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=453"
+        },
+        {
+          "title": "文汇报文章转载：美童公学：这个美式校园建筑成了新晋网红打卡地（2023）",
+          "url": "https://www.wenxuecity.com/news/2023/03/05/socialnews-230496.html"
+        }
+      ]
+    },
+    {
+      "IDBAT": 27,
+      "NAME": "Shanghai Anti-Kidnapping Society",
+      "F_ADDRESS": "66 RUE HUE",
+      "FUNCTION": "Institutional site / Welfare facility / Secular / Women's refuge",
+      "XC": 354991.8311,
+      "YC": 3456165.6375,
+      "historicalNameZh": "中国救濟婦孺總會",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.477456,
+          "latitude": 31.230671
+        },
+        "gcj02": {
+          "longitude": 121.481967,
+          "latitude": 31.228718
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "中国救济妇孺总会旧址线索",
+      "currentAddress": "历史浙江南路66号一带（Rue Hue；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "上海市档案馆社会团体档案指南有中国救济妇孺总会档案，可旁证机构；未给出Rue Hue 66号到现代门牌及现用途。已审同组#26仁義善會，名称与功能不同、亦无年代，虽同66号且原点相近，不能当作同一机构。与016负责人交叉核对，两成员均缺原址连续证据，整组待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 27",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=27"
+        },
+        {
+          "title": "上海市档案馆：馆藏民国时期上海社会团体档案指南（2025）",
+          "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74644.html"
+        },
+        {
+          "title": "Virtual Shanghai：同组26，仁义善会",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=26"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1578,
+      "NAME": "Shanghai Art & Drama Society",
+      "F_ADDRESS": "1953 NORTH SZECHUEN ROAD",
+      "FUNCTION": "Community facility / Association",
+      "XC": 355093.4941,
+      "YC": 3459926.672,
+      "historicalNameZh": "上海藝術劇社",
+      "historicalStartYear": 1929,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.477979,
+          "latitude": 31.264607
+        },
+        "gcj02": {
+          "longitude": 121.482491,
+          "latitude": 31.262668
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "NORTH SZECHUEN ROAD",
+          "modernNameZh": "四川北路"
+        }
+      ],
+      "currentNameZh": "上海艺术剧社旧址线索",
+      "currentAddress": "上海市虹口区历史四川北路1953号；文献另列多伦路11号",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "虹口区志记上海艺术剧社1929年在窦乐安路（多伦路）11号成立，与本条1929年相符但不支持四川北路1953号。四川北路1953弄包含多处不同革命机构，不能套用中央联络处或周恩来旧居。是否另设机关或迁址、1953号旧今编排与原点现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1578",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1578"
+        },
+        {
+          "title": "中国国情网转载《虹口区志》：上海艺术剧社1929年多伦路11号",
+          "url": "https://www.zhongguoguoqing.cn/zsgq/xfz/201809/t20180919_5037606.shtml"
+        }
+      ]
+    },
+    {
+      "IDBAT": 424,
+      "NAME": "Shanghai Committee of Oriental Cultural Affairs",
+      "F_ADDRESS": "300 ROUTE GHISI",
+      "FUNCTION": "Institutional site",
+      "XC": 352073.4206,
+      "YC": 3453283.6241,
+      "historicalNameZh": "東方文化事業上海委員會",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.447248,
+          "latitude": 31.20431
+        },
+        "gcj02": {
+          "longitude": 121.451844,
+          "latitude": 31.202418
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "东方文化事业上海委员会旧址／岳阳路320号14号楼线索",
+      "currentAddress": "上海市徐汇区岳阳路320号14号楼（旧祁齐路300号别墅候选）",
+      "currentUse": "科研院区附属历史建筑；现具体使用单位待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "看看新闻作者实查旧行名录，将祁齐路120号旧马勒别墅、东方文化事业委员会早期事务所、后祁齐路300号所长住宅及今岳阳路320号14号楼联系起来。区别陕西南路的另一马勒别墅和南侧原自然科学研究所主楼。原记录300号可与1930年代分号相容，但未获得14号楼当前具体用途及独立原点所在楼界的闭合资料，不能用整个中科院院区科研用途替代本楼。原点与历史别墅边界、现用机构待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 424",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=424"
+        },
+        {
+          "title": "看看新闻Knews，邱力立：从“马勒别墅”到“所长住宅”，岳阳路上的这幢老宅曾经历过这些（2022-12-23；搜索全文）",
+          "url": "https://m.kankanews.com/detail/Gr21Y871D2e"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1594,
+      "NAME": "Shanghai Daily",
+      "F_ADDRESS": "66 BARCHET ROAD",
+      "FUNCTION": "Information & communication / Newspaper",
+      "XC": 354979.0665,
+      "YC": 3459301.7292,
+      "historicalNameZh": "上海日報",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.476868,
+          "latitude": 31.258956
+        },
+        "gcj02": {
+          "longitude": 121.481383,
+          "latitude": 31.257018
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "民国《上海日报》社址线索",
+      "currentAddress": "历史新乡路66号一带（Barchet Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "日文上海日报和上海每日新闻是不同的近代报纸，不能用1999年创刊的今英文Shanghai Daily代替本条。有关西里龙夫的研究援引回忆录谈上海日报工作与白保罗路宿舍，不能据此证明Barchet Road 66号。已审同组#1593广东浸信会，同一66号但不同实体，未取得分时使用关系；原报社全名、门牌与教会共址范围及现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1594",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1594"
+        },
+        {
+          "title": "《百年潮》杨田：西里龙夫回忆录中的左翼文化运动（2025；参考网转载）",
+          "url": "https://m.fx361.com/news/2025/0414/26809274.html"
+        },
+        {
+          "title": "Virtual Shanghai：同组1593，广东浸信会",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1593"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1440,
+      "NAME": "Shanghai Dairy",
+      "F_ADDRESS": "562 WUYI",
+      "FUNCTION": "Agricultural site / Dairy",
+      "XC": 348926.8972,
+      "YC": 3454401.7365,
+      "historicalNameZh": "上海牛奶公司",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.414062,
+          "latitude": 31.213992
+        },
+        "gcj02": {
+          "longitude": 121.418708,
+          "latitude": 31.212146
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海牛奶公司武夷路旧址线索",
+      "currentAddress": "历史武夷路562号；现代同号为加油站（旧今门牌关系待核）",
+      "currentUse": "现代562号加油站线索；原牛奶公司地块现用途未闭合",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "武夷路历史文章引用1936年新闻报上海牛奶公司广告，但给惇信路145号，不能直接等同原字段562号。现代地图把武夷路562号列为中国石化加油站，仅提供今日门牌使用线索。公司牧场、营业处可能分设，未以附近开元学校或同号加油站覆盖全部历史牛奶场；旧门牌转换、原点院界和存毁待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1440",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1440"
+        },
+        {
+          "title": "澎湃：申城记忆｜武夷路100岁，1936年上海牛奶公司惇信路145号广告线索",
+          "url": "https://m.thepaper.cn/newsDetail_forward_32240527"
+        },
+        {
+          "title": "Amap：中国石化武夷路加油站，武夷路562号，仅现址线索",
+          "url": "https://www.amap.com/place/B001545C71"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1333,
+      "NAME": "Shanghai Gas Company",
+      "F_ADDRESS": "?? YUYACHING ROAD",
+      "FUNCTION": "Transportation features / Roadway / Bridge",
+      "XC": 354018.669,
+      "YC": 3457305.2282,
+      "historicalNameZh": "英商自來火房",
+      "historicalStartYear": 1865,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.467075,
+          "latitude": 31.240828
+        },
+        "gcj02": {
+          "longitude": 121.47162,
+          "latitude": 31.238908
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "YUYACHING ROAD",
+          "modernNameZh": "西藏中路"
+        }
+      ],
+      "currentNameZh": "英商自来火房／大英自来火公司旧址线索",
+      "currentAddress": "上海市黄浦区西藏中路、南苏州路与厦门路一带（原门牌缺失）",
+      "currentUse": "历史煤气厂区后有办公开发；原点具体现用途待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "解放日报史料说明1865年英商自来火厂在泥城浜与苏州河附近，澎湃2021街区调查称西藏中路厦门路交口原煤气公司一带仍为燃气办公。原点却近南苏州路象屿集团大厦，不能将整个煤气厂区笼统标成现燃气办公室；原记录FUNCTION为桥梁，与名称和年代冲突，保留。厂区四至、旧点属厂房还是沿河构筑物、现楼用途与建筑存毁待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1333",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1333"
+        },
+        {
+          "title": "解放日报：百年前，煤气灯和电灯曾掐过一架（2015），大英自来火厂历史",
+          "url": "https://www.jfdaily.com/wx/detail.do?id=7966"
+        },
+        {
+          "title": "澎湃新闻：苏州河·街区观察｜中华第一街背后的城市多样性（2021），西藏中路厦门路煤气公司用地",
+          "url": "https://www.thepaper.cn/newsDetail_forward_13131020"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1260,
+      "NAME": "Shanghai General Chamber of Commerce",
+      "F_ADDRESS": "470 NORTH SOOCHOW ROAD",
+      "FUNCTION": "Community facility / Professional association / Chamber of commerce",
+      "XC": 354991.427,
+      "YC": 3457746.5157,
+      "historicalNameZh": "上海縂商會",
+      "historicalStartYear": 1884,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.477223,
+          "latitude": 31.24493
+        },
+        "gcj02": {
+          "longitude": 121.481736,
+          "latitude": 31.242985
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "NORTH SOOCHOW ROAD",
+          "modernNameZh": "北苏州路"
+        }
+      ],
+      "currentNameZh": "上海总商会旧址及早期出使行辕地块线索",
+      "currentAddress": "上海市静安区北苏州路470号（今宝格丽酒店历史建筑区）",
+      "currentUse": "现保存的商会楼为酒店餐饮宴会设施；1884年记录对应关系待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "独立审查本条1884年上海总商会、同组#760之1915年商会和#1367之1884年出使行辕。静安图书馆明确商会1915年才迁入原行辕地块，现仅存1915年牌门楼及南大楼，不能将本条1884年当成现商会南楼建成年。酒店现用史能解释1915楼，但缺1884层位与各原点的建拆沿革，整组待核；未自动将早期行辕写为现存酒店历史楼。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1260",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1260"
+        },
+        {
+          "title": "静安区图书馆：上海总商会旧址，迁址、原行辕和现存建筑",
+          "url": "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=158"
+        },
+        {
+          "title": "上海宝格丽酒店官网：历史商会楼与酒店概览",
+          "url": "https://www.bulgarihotels.com/zh_CN/shanghai/the-hotel/overview"
+        },
+        {
+          "title": "Virtual Shanghai：同组760，上海市商会1915年",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=760"
+        },
+        {
+          "title": "Virtual Shanghai：同组1367，出使行辕1884年",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1367"
+        }
+      ]
+    },
+    {
+      "IDBAT": 887,
+      "NAME": "Shanghai Health Clinic",
+      "F_ADDRESS": "526 BUBBLING WELL ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 353499.7672,
+      "YC": 3456446.654,
+      "historicalNameZh": "上海衛生療養院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.461753,
+          "latitude": 31.233019
+        },
+        "gcj02": {
+          "longitude": 121.466313,
+          "latitude": 31.231109
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "BUBBLING WELL ROAD",
+          "modernNameZh": "南京西路"
+        }
+      ],
+      "currentNameZh": "上海卫生疗养院静安寺路临时院址线索",
+      "currentAddress": "历史南京西路526号一带（Bubbling Well Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "宗派医药事业史记1938年因战乱总院与分院无法开诊，曾在静安寺路526号临时设诊所，支持本条院名和门牌的历史候选。不能将虹桥总院或后续现代医院地址搬到该临时点。原记录没有年代，临时租舍所在楼、门牌重编和现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 887",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=887"
+        },
+        {
+          "title": "宗派史资料：三、医药事业，上海卫生疗养院1938年静安寺路526号临时诊所",
+          "url": "https://m.zgaxr.com/index.php?a=show&c=index&catid=25&id=25539&m=content"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1626,
+      "NAME": "Shanghai Mainichi",
+      "F_ADDRESS": "1 THORNE ROAD",
+      "FUNCTION": "Information & communication / Newspaper",
+      "XC": 355534.8859,
+      "YC": 3458927.2054,
+      "historicalNameZh": "上海每日新聞",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.482758,
+          "latitude": 31.255647
+        },
+        "gcj02": {
+          "longitude": 121.487253,
+          "latitude": 31.253691
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "民国《上海每日新闻》社址线索",
+      "currentAddress": "历史哈尔滨路1号一带（Thorne Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "历史工商名录扫描索引列上海每日新闻社、Mainichi Shimbun与汤恩路，支持日文报社而非现在日本每日新闻上海支局，也不同于#1594《上海日报》。未核扫描原页完整栏位及汤恩路1号至今哈尔滨路门牌变化；独立原点靠吴淞路南克俭小区，不能凭邻近住宅判断原楼现用途。报社房屋、存毁及现代使用待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1626",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1626"
+        },
+        {
+          "title": "MADSpace所藏历史工商名录扫描：上海每日新闻社、汤恩路（检索文字，未核全页版面）",
+          "url": "https://madspace.org/Asset/Source/refBibliography_ID-4207_No-01.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1233,
+      "NAME": "Shanghai Naigai Wata Kaisha No.4",
+      "F_ADDRESS": "?? ICHANG ROAD",
+      "FUNCTION": "Industrial site / Factory / Textile industry / Cotton mill",
+      "XC": 350583.2729,
+      "YC": 3458257.3617,
+      "historicalNameZh": "上海内外綿會社",
+      "historicalStartYear": 1932,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.43087,
+          "latitude": 31.248981
+        },
+        "gcj02": {
+          "longitude": 121.435501,
+          "latitude": 31.247136
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ICHANG ROAD",
+          "modernNameZh": "宜昌路"
+        }
+      ],
+      "currentNameZh": "内外棉第四厂旧址线索",
+      "currentAddress": "历史宜昌路一带（Ichang Road，原门牌缺失；近今半岛花园）",
+      "currentUse": "原厂地块与现代住宅开发对应待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "普陀官方记内外棉第三、第四厂及1919年罢工纪念地在西康路宜昌路口，提供厂区历史范围线索。原记录标1932年，内外棉厂号曾因合并及重组发生变化，1919第三四厂不能不经核查套为1932第四厂。独立原点在OSM半岛花园院界内，仍缺原四厂边界、厂号分期及住宅开发连续证据，不能仅用住宅POI宣布原厂已改小区。建筑拆建、厂号与原点现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1233",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1233"
+        },
+        {
+          "title": "普陀区政府：工运潮起小沙渡（上海工人首次政治大罢工纪念地），内外棉第三四厂与西康路宜昌路口",
+          "url": "https://www.shpt.gov.cn/xfdt-bmshsjpz/20230919/915025.html"
+        },
+        {
+          "title": "普陀区档案馆：《印象——普陀区苏州河近代工业商标文化收藏集萃》，内外棉厂号沿革线索（扫描索引）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 166,
+      "NAME": "Shanghai Nanyang Hospital",
+      "F_ADDRESS": "1 RUE CHAPSAL",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 354039.8896,
+      "YC": 3455601.9422,
+      "historicalNameZh": "上海南洋醫院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.467546,
+          "latitude": 31.225468
+        },
+        "gcj02": {
+          "longitude": 121.472088,
+          "latitude": 31.22354
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海南洋医院淡水路旧址线索",
+      "currentAddress": "历史淡水路1号一带（Rue Chapsal；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "2018年医院百年报道确认南洋医院1918年始于山海关路，多次迁址，后成为卢湾区中心医院、瑞金医院卢湾分院。但正文未闭合本条淡水路1号阶段。原点临金陵西路，不能把今日医院院址移至旧淡水点，也不能由组织延续判定旧楼一直医疗使用。旧址楼宇、租用时期、门牌与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 166",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=166"
+        },
+        {
+          "title": "政务澎湃号：这家医院100岁啦！（2018-10-15），南洋医院至瑞金医院卢湾分院沿革",
+          "url": "https://www.thepaper.cn/newsDetail_forward_2531726"
+        }
+      ]
+    },
+    {
+      "IDBAT": 259,
+      "NAME": "Shanghai Office of the International Relief Committee",
+      "F_ADDRESS": "31 RUE CORNEILLE",
+      "FUNCTION": "Community facility / Benevolent association / Secular",
+      "XC": 353343.6847,
+      "YC": 3454827.2199,
+      "historicalNameZh": "國際救済委員會上海事務所",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.460352,
+          "latitude": 31.218393
+        },
+        "gcj02": {
+          "longitude": 121.464915,
+          "latitude": 31.216479
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "国际救济委员会上海事务所旧址线索",
+      "currentAddress": "历史皋兰路31号一带（Rue Corneille；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "已查英文机构、國際救済委員會上海事務所与皋兰31。抗战难民救济研究涉及多种国际委员会与饶家驹机构，但未将这一具体事务所连到31号房屋；不得与日晖港穆斯林收容所、国际饭店办公室混同。独立点临皋兰路，附近机构不足以证明原办公室延续。组织全名、房屋及現用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 259",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=259"
+        },
+        {
+          "title": "上海师范大学转载文汇报讲演：饶家驹难民区与《日内瓦第四公约》，国际救济组织背景，未闭合皋兰31号",
+          "url": "https://www.shnu.edu.cn/46/fc/c16a607996/page.htm"
+        }
+      ]
+    },
+    {
+      "IDBAT": 840,
+      "NAME": "Shanghai Race Course",
+      "F_ADDRESS": "MANDALAY ROAD",
+      "FUNCTION": "Recreational facility / Sport facility / Racecourse",
+      "XC": 353806.1611,
+      "YC": 3456341.5817,
+      "historicalNameZh": "上海跑馬場",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.464985,
+          "latitude": 31.23211
+        },
+        "gcj02": {
+          "longitude": 121.469536,
+          "latitude": 31.230191
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "MANDALAY ROAD",
+          "modernNameZh": "江阴路"
+        }
+      ],
+      "currentNameZh": "上海跑马场记录／江阴路附近原点（身份范围待核）",
+      "currentAddress": "上海市黄浦区江阴路、南京西路一带；原点在现明天广场地块",
+      "currentUse": "现点位为明天广场酒店办公综合体空间线索；历史跑马场边界待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "原记录称上海跑马场但地址Mandalay Road（今江阴路），无年代。独立原点同时落OSM明天广场两轮廓内，与人民公园、人民广场及上海大剧院不在同一建筑用地。上海党史所述大剧院承接体育宫和原跑马场看台，不能移用到此明天广场点；也不把跑马场统称直接填人民公园。已与根核对016 #788，非同一地点组，不能自动共享。原跑道、附属机构或点位偏差的历史范围及拆建链待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 840",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=840"
+        },
+        {
+          "title": "上海党史：上海大剧院的前世今生，原跑马场看台至体育宫、大剧院的另处沿革，用于排除错误套用",
+          "url": "https://www.ccphistory.org.cn/shds/shhm/content/62d68333-943c-4092-bf8a-1c809a7727ab.html"
+        },
+        {
+          "title": "OpenStreetMap：明天广场建筑轮廓，原点包含其中",
+          "url": "https://www.openstreetmap.org/way/48872369"
+        },
+        {
+          "title": "OpenStreetMap：明天广场另一闭合范围",
+          "url": "https://www.openstreetmap.org/way/445161727"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1656,
+      "NAME": "Shanghai Residents' Association (Shanhai Kyoryo Mindan Sanjogo Shunen Kinenshi)",
+      "F_ADDRESS": "128 QUINSAN ROAD",
+      "FUNCTION": "Community facility / Association",
+      "XC": 355589.9599,
+      "YC": 3458492.2939,
+      "historicalNameZh": "日本居留民團",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.483399,
+          "latitude": 31.251731
+        },
+        "gcj02": {
+          "longitude": 121.487891,
+          "latitude": 31.249771
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": "上海日本居留民团昆山路旧址线索",
+      "currentAddress": "上海市虹口区昆山路历史128号（今门牌待核）",
+      "currentUse": "现代同号有餐饮记录，原民团建筑现用途待核",
+      "relationship": null,
+      "verificationStatus": "likely",
+      "notes": "昆山路史料线索将128号与日本居留民团、1945年后亚东问题研究会相连，但未取得持续到现代的原楼存毁及门牌转换资料。现代生活服务目录同号列宝寿司和Amoy Restaurant，存在时效和多商户问题，不能作为原民团大楼整体餐饮经营的证据。独立原点临昆山路景灵堂附近，旧民团院界及现代楼栋使用待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1656",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1656"
+        },
+        {
+          "title": "昆山路（上海）：128号日本居留民团及亚东问题研究会历史线索",
+          "url": "https://zh.wikipedia.org/wiki/昆山路_(上海)"
+        },
+        {
+          "title": "上海本地宝：宝寿司昆山路128号，现代同门牌经营线索",
+          "url": "https://m.sh.bendibao.com/wangdian/dian/4116088.shtm"
+        }
+      ]
+    },
+    {
+      "IDBAT": 751,
+      "NAME": "School for English",
+      "F_ADDRESS": "788-16 BOONE ROAD",
+      "FUNCTION": "Educational facility / School / Private / Secular / Vocational / Language",
+      "XC": 354854.2007,
+      "YC": 3458191.9489,
+      "historicalNameZh": "一鳴英文學校",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.475718,
+          "latitude": 31.248931
+        },
+        "gcj02": {
+          "longitude": 121.480236,
+          "latitude": 31.246992
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "BOONE ROAD",
+          "modernNameZh": "塘沽路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史塘沽路788弄16号一带（Boone Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "已以原英文School for English、中文一鳴英文學校及Boone 788-16检索，并用塘沽路补查；没有可靠校史或旧今门牌转换资料。原年代空缺，不能与今日英语培训机构、其他一鸣学校自动对应。原校舍身份、存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 751",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=751"
+        }
+      ]
+    },
+    {
+      "IDBAT": 907,
+      "NAME": "School for Mandarin Chinese",
+      "F_ADDRESS": "?? AVENUE ROAD",
+      "FUNCTION": "Educational facility / School / Private / Secular / Vocational / Language",
+      "XC": 353151.4363,
+      "YC": 3456708.5035,
+      "historicalNameZh": "國語學校",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.458059,
+          "latitude": 31.235337
+        },
+        "gcj02": {
+          "longitude": 121.46263,
+          "latitude": 31.233437
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "AVENUE ROAD",
+          "modernNameZh": "北京西路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史爱文义路一带（Avenue Road，今北京西路；原门牌缺失）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "已查國語學校、School for Mandarin Chinese与Avenue Road，未找到可靠地址沿革。同组#906为海法學院，门牌同为问号，已独立阅读其原字段；搜索出现以色列海法大学属无关同名，不能采用。两个原点相近不足以证明学校同楼或现址，整组现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 907",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=907"
+        },
+        {
+          "title": "Virtual Shanghai：同组906，海法学院原记录",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=906"
+        }
+      ]
+    },
+    {
+      "IDBAT": 466,
+      "NAME": "School for Russian Children",
+      "F_ADDRESS": "296 ROUTE JEROME WINLING",
+      "FUNCTION": "Administrative facility / Police / French municipal council / Police station",
+      "XC": 351205.4301,
+      "YC": 3452830.4164,
+      "historicalNameZh": null,
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.438207,
+          "latitude": 31.200112
+        },
+        "gcj02": {
+          "longitude": 121.442821,
+          "latitude": 31.198234
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史宛平路296号一带（Route Jérôme Winling；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以Russian Children学校及宛平路296号检索未获得可靠校史/现址。原英文名称是俄童学校，但原FUNCTION却是法租界警务机构；此内部冲突保留，不用功能字段猜成巡捕房，也不凭俄侨学校名称套入别处校舍。建筑身份、存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 466",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=466"
+        }
+      ]
+    },
+    {
+      "IDBAT": 131,
+      "NAME": "Shanghai Association of Pork Merchants",
+      "F_ADDRESS": "311 ROUTE DU PERE FROC",
+      "FUNCTION": "Community facility / Professional association / Trade association",
+      "XC": 354213.1678,
+      "YC": 3454540.5283,
+      "historicalNameZh": null,
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.469519,
+          "latitude": 31.215916
+        },
+        "gcj02": {
+          "longitude": 121.474054,
+          "latitude": 31.213978
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE DU PERE FROC",
+          "modernNameZh": "合肥路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史合肥路311号一带（Route du Père Froc；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "按原英文猪肉商同业组织和311号历史门牌检索，缺少可靠中文机构名及地址沿革。不能用生猪业同业公会泛称或附近商业POI推出同址关系。原同业组织楼宇身份、存毁及当前使用待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 131",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=131"
+        }
+      ]
+    },
+    {
+      "IDBAT": 173,
+      "NAME": "Shanghai Chicang Hospital",
+      "F_ADDRESS": "68 RUE MARCEL TILLOT",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 354024.4781,
+      "YC": 3455390.6253,
+      "historicalNameZh": "上海痔瘡治療院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.467415,
+          "latitude": 31.22356
+        },
+        "gcj02": {
+          "longitude": 121.471957,
+          "latitude": 31.221631
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史兴安路68号一带（Rue Marcel Tillot；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以上海痔瘡治療院、Shanghai Chicang Hospital及兴安路68号检索，未有可核查的医院沿革或存续地址，现代同专科医疗机构不是历史实体证据。旧门牌、原建筑及现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 173",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=173"
+        }
+      ]
+    },
+    {
+      "IDBAT": 987,
+      "NAME": "Shanghai Clinic Mental Disease Department",
+      "F_ADDRESS": "41-74 CARTER ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 352952.9647,
+      "YC": 3456539.6754,
+      "historicalNameZh": "上海治療院神経病院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.456,
+          "latitude": 31.23379
+        },
+        "gcj02": {
+          "longitude": 121.460576,
+          "latitude": 31.231894
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史石门二路41弄74号一带（Carter Road；门牌格式待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "按上海治療院神経病院、英文精神病科及Carter 41-74检索，没有可靠医院沿革与现址。41-74可能是弄号组合，未直接视为41至74号范围。不能套用现代精神卫生医院；旧地址格式、建筑身份与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 987",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=987"
+        }
+      ]
+    },
+    {
+      "IDBAT": 918,
+      "NAME": "Shanghai Coke",
+      "F_ADDRESS": "715 YUYACHING ROAD",
+      "FUNCTION": "Commercial establishment",
+      "XC": 354089.8224,
+      "YC": 3457327.9769,
+      "historicalNameZh": null,
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.467819,
+          "latitude": 31.241042
+        },
+        "gcj02": {
+          "longitude": 121.472362,
+          "latitude": 31.23912
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "YUYACHING ROAD",
+          "modernNameZh": "西藏中路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史西藏中路715号一带（Yu Ya Ching Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "原Shanghai Coke中文与年代皆空，精确715 Yu Ya Ching检索命中《征信工商行名录》的进口出口及煤焦商索引，未核原页栏位，不能证明就是该公司或推造中文名。现代西藏中路715查询也未形成同址沿革。机构全名、旧门牌、建筑存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 918",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=918"
+        },
+        {
+          "title": "《征信工商行名录》扫描：715 Yu Ya Ching及煤焦商检索线索（未核原页栏位）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 148,
+      "NAME": "Shanghai Cotton Cloth Professional Association",
+      "F_ADDRESS": "404 RUE BRENIER DE MONTMORAND",
+      "FUNCTION": "Community facility / Professional association / Trade association",
+      "XC": 354323.4312,
+      "YC": 3454686.5686,
+      "historicalNameZh": "上海市綿布業同業公會",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.470655,
+          "latitude": 31.217247
+        },
+        "gcj02": {
+          "longitude": 121.475187,
+          "latitude": 31.215307
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史马当路404号一带（Route Brenier de Montmorand；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以綿布業同業公會、棉布业与旧404号检索，未形成机构到现代地址的可信链。同组#138义务小学同号但职能不同，已独立阅读和检索，不能以商业协会名称套入其他振华堂洋布公所或现代行业协会。两个成员的房舍范围、门牌沿革和现用途均待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 148",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=148"
+        },
+        {
+          "title": "Virtual Shanghai：同组138，棉布业同业公会义务小学",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=138"
+        }
+      ]
+    },
+    {
+      "IDBAT": 138,
+      "NAME": "Shanghai Cotton Cloth Professional Association Yiwu Primary School",
+      "F_ADDRESS": "404 RUE BRENIER DE MONTMORAND",
+      "FUNCTION": "Educational facility / School / Private / Guild / Primary",
+      "XC": 354321.5264,
+      "YC": 3454693.9071,
+      "historicalNameZh": "上海市綿布業同業公會義務小學",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.470634,
+          "latitude": 31.217313
+        },
+        "gcj02": {
+          "longitude": 121.475166,
+          "latitude": 31.215373
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史马当路404号一带（Route Brenier de Montmorand；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "本条为上海市綿布業同業公會義務小學，不能把办学机构直接等同同组#148商会会所。已查两成员名称和旧门牌，缺少学校沿革、单栋用途与旧今地址关系；同门牌和两点相近只支持候选共址，整组现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 138",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=138"
+        },
+        {
+          "title": "Virtual Shanghai：同组148，棉布业同业公会",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=148"
+        }
+      ]
+    },
+    {
+      "IDBAT": 622,
+      "NAME": "Shanghai Dancing Hall",
+      "F_ADDRESS": "440 CANTON ROAD",
+      "FUNCTION": "Recreational facility / Performance site / Dancing hall",
+      "XC": 355056.2146,
+      "YC": 3456613.7663,
+      "historicalNameZh": "上海舞廰",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.478067,
+          "latitude": 31.234721
+        },
+        "gcj02": {
+          "longitude": 121.482576,
+          "latitude": 31.232769
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "CANTON ROAD",
+          "modernNameZh": "广东路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史广东路440号一带（Canton Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "精确Shanghai Dancing Hall、上海舞廰、440 Canton及广东路440检索主要返回原始数据库，未得到独立经营名称或建筑沿革。广东路住宅与沿街商业不说明原舞厅的具体房屋，不能套入附近大世界或其他舞厅。旧址存毁和现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 622",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=622"
+        }
+      ]
+    },
+    {
+      "IDBAT": 419,
+      "NAME": "Shanghai Funeral Parlor",
+      "F_ADDRESS": "838 ROUTE DE ZIKAWEI",
+      "FUNCTION": "Site of memory / Cemetery / Funeral parlor",
+      "XC": 352487.2023,
+      "YC": 3453302.1504,
+      "historicalNameZh": "上海殯儀館",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.451587,
+          "latitude": 31.204529
+        },
+        "gcj02": {
+          "longitude": 121.456172,
+          "latitude": 31.202628
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE DE ZIKAWEI",
+          "modernNameZh": "徐家汇路／肇嘉浜路（分段）"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史肇嘉浜路838号一带（Route de Zikawei；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "用原中文上海殯儀館、英文Shanghai Funeral Parlor及838 Route de Zikawei实际查询，未取得除原数据库以外的同门牌沿革。该路填浜重编后的门牌不能直接照搬，现代上海殡葬服务或龙华殡仪馆与此旧址不同。原建筑、院界及现代地块用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 419",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=419"
+        }
+      ]
+    },
+    {
+      "IDBAT": 781,
+      "NAME": "Shanghai Gonghua Refuge",
+      "F_ADDRESS": "210-9 KAIFENG ROAD",
+      "FUNCTION": "Institutional site / Welfare facility / Refugee camp",
+      "XC": 354052.6871,
+      "YC": 3457856.3934,
+      "historicalNameZh": "上海工華収容所",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.467352,
+          "latitude": 31.245804
+        },
+        "gcj02": {
+          "longitude": 121.471897,
+          "latitude": 31.243886
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史开封路210弄9号一带（Kaifeng Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以工華収容所、Shanghai Gonghua Refuge及开封路210-9检索，未找到可靠机构记录或当前门牌沿革。原名称可能涉及旧字体或转录，但未擅自改成其他难民、儿童收容所。房舍身份、拆建与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 781",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=781"
+        }
+      ]
+    },
+    {
+      "IDBAT": 427,
+      "NAME": "Shanghai International Relief Committee Refugee Camp No. 2",
+      "F_ADDRESS": "?? ROUTE GHISI",
+      "FUNCTION": "Institutional site / Welfare facility / Refugee camp",
+      "XC": 352023.5333,
+      "YC": 3453795.8699,
+      "historicalNameZh": "上海國際救濟會第二難民収容所",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.446649,
+          "latitude": 31.208924
+        },
+        "gcj02": {
+          "longitude": 121.451246,
+          "latitude": 31.207035
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史岳阳路一带（Route Ghisi，原门牌缺失）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "检索上海国际救济会第二难民收容所、International Relief Camp No.2与岳阳路。研究资料涉及多个组织的第二收容所，穆斯林第二所位于日晖港清真寺，不能与本条国际救济会相混。原门牌缺失，尚未识别此所借用的建筑、确切院界或当前使用。原点现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 427",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=427"
+        },
+        {
+          "title": "上海党史：抗战时期救济难民资料，多个收容机构背景线索",
+          "url": "https://www.ccphistory.org.cn/shds/dsxx/content/d46de4e0-803b-40de-9d63-c32e4707bedf.html"
+        }
+      ]
+    },
+    {
+      "IDBAT": 112,
+      "NAME": "Shanghai Jianan Hospital",
+      "F_ADDRESS": "19 ROUTE DU PERE FROC",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 354766.0104,
+      "YC": 3454761.7133,
+      "historicalNameZh": "上海迦南醫院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.475289,
+          "latitude": 31.21798
+        },
+        "gcj02": {
+          "longitude": 121.479806,
+          "latitude": 31.216028
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "ROUTE DU PERE FROC",
+          "modernNameZh": "合肥路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史合肥路19号一带（Route du Père Froc；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "已以迦南醫院、Shanghai Jianan Hospital及合肥路19号检索，未见可靠院史和旧今门牌对应。检索出现境外迦南学校、现代同名医院，均无此历史用址关系。原院舍是否保留及现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 112",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=112"
+        }
+      ]
+    },
+    {
+      "IDBAT": 98,
+      "NAME": "Shanghai Junior High School for Girls",
+      "F_ADDRESS": "40-2 ROUTE PORTE DE L'OUEST",
+      "FUNCTION": "Educational facility / School / Private / Secular / Secondary",
+      "XC": 354439.0823,
+      "YC": 3455138.9336,
+      "historicalNameZh": "上海中學女子部",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.471803,
+          "latitude": 31.221342
+        },
+        "gcj02": {
+          "longitude": 121.476331,
+          "latitude": 31.219401
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史西门路40弄2号一带（Route Porte de l’Ouest，今自忠路一带）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "本条为上海中学女子部，同组#97小学及幼稚园同40-2号，已逐一读取与检索。没有资料证明它们就是今日百色路上海中学的历史校区，不能由同名移用现代学校地址。原门牌格式、两学部是否同楼、建筑存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 98",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=98"
+        },
+        {
+          "title": "Virtual Shanghai：同组97，上海小学及幼稚园",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=97"
+        }
+      ]
+    },
+    {
+      "IDBAT": 287,
+      "NAME": "Shanghai Kinder Sanatorium",
+      "F_ADDRESS": "438 ROUTE RATARD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 352674.0479,
+      "YC": 3455528.9571,
+      "historicalNameZh": "上海児科療養院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.453221,
+          "latitude": 31.224638
+        },
+        "gcj02": {
+          "longitude": 121.457804,
+          "latitude": 31.222743
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史巨鹿路438号一带（Rue Ratard；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以上海児科療養院、Kinder Sanatorium与巨鹿路438号补查，没有可靠院史或现址关系。Rue Ratard不能因中文音近误当拉都路（Route Dupleix），初轮宽泛查询未采为证据。原院舍存毁、门牌与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 287",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=287"
+        }
+      ]
+    },
+    {
+      "IDBAT": 748,
+      "NAME": "Shanghai Model Primary and Junior High School",
+      "F_ADDRESS": "721 HAINING ROAD",
+      "FUNCTION": "Educational facility / School / Private / Secular / Primary / Secondary",
+      "XC": 354822.3926,
+      "YC": 3458209.9652,
+      "historicalNameZh": "上海模範中小學",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.475381,
+          "latitude": 31.249089
+        },
+        "gcj02": {
+          "longitude": 121.4799,
+          "latitude": 31.247151
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "HAINING ROAD",
+          "modernNameZh": "海宁路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史海宁路721号一带（Haining Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以上海模範中小學、Shanghai Model Primary and Junior High及海宁路721补查，没有获得可靠校史或门牌沿革。检索大量南洋模范、模范村等无关资料，未采为本校身份。原点在海宁路山西北路口，不能从现道路位置反推学校已拆或现地块用途。历史校园、存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 748",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=748"
+        }
+      ]
+    },
+    {
+      "IDBAT": 224,
+      "NAME": "Shanghai Municipal Council",
+      "F_ADDRESS": "25 ROUTE STANISLAS CHEVALIER",
+      "FUNCTION": "Administrative facility / City hall / French municipal council",
+      "XC": 353916.0123,
+      "YC": 3454117.6844,
+      "historicalNameZh": "工部局",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.466462,
+          "latitude": 31.212065
+        },
+        "gcj02": {
+          "longitude": 121.471006,
+          "latitude": 31.210133
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史建国中路25号一带（Route Stanislas Chevalier；今门牌待核）",
+      "currentUse": "未确认；附近为8号桥创意园，不能据邻近移用",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "原英文Shanghai Municipal Council和中文工部局通常指公共租界，但原FUNCTION注明French Municipal Council，与法租界道路地址存在机构标识冲突。已查建国中路25和原名，未有具体办公室、仓库或其他房屋用途史料。独立点附近OSM为8号桥，缺其与本条历史机关的直接关系。不能将公共租界总部江西路迁来；机构身份、原建筑存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 224",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=224"
+        }
+      ]
+    },
+    {
+      "IDBAT": 605,
+      "NAME": "Shanghai Native-Medicine Hospital",
+      "F_ADDRESS": "224 TIENTSIN ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 354989.2526,
+      "YC": 3457201.9248,
+      "historicalNameZh": "上海國醫院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.477279,
+          "latitude": 31.240018
+        },
+        "gcj02": {
+          "longitude": 121.481791,
+          "latitude": 31.23807
+        }
+      },
+      "historicalRoadMappings": [],
+      "currentNameZh": null,
+      "currentAddress": "历史天津路224号一带（Tientsin Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "按上海國醫院、Shanghai Native Medicine Hospital及天津路224号检索，缺独立院史与旧今地址关系；Tientsin是本市路名，不能采用天津市医疗机构。附近现代学校、银行或商业建筑均没有与该院衔接证据。原院身份、建筑存毁及现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 605",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=605"
+        }
+      ]
+    },
+    {
+      "IDBAT": 833,
+      "NAME": "Shanghai Ophtalmology Clinic",
+      "F_ADDRESS": "251-18 WEIHAIWEI ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 353490.2155,
+      "YC": 3455975.4897,
+      "historicalNameZh": "上海眼科醫院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.461722,
+          "latitude": 31.228768
+        },
+        "gcj02": {
+          "longitude": 121.466282,
+          "latitude": 31.226856
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "WEIHAIWEI ROAD",
+          "modernNameZh": "威海路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史威海卫路251弄18号一带（今威海路；门牌待核）",
+      "currentUse": "未确认；原点在现中凯城市之光地块，沿革未闭合",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "检索上海眼科醫院、Shanghai Ophthalmology Clinic及威海卫路251-18，未取得具体历史眼科机构与地址沿革。独立原点在OSM中凯城市之光轮廓内，但尚不能确认旧弄院界和拆建链；不将现代医院名单或附近罗马尼亚领馆认定为原院现用途。建筑身份、旧门牌与现地块关系待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 833",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=833"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1038,
+      "NAME": "Shanghai Opium-Addicts Hospital",
+      "F_ADDRESS": "354-3 GORDON ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 352236.0776,
+      "YC": 3456739.4613,
+      "historicalNameZh": "上海成煙医院",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.448446,
+          "latitude": 31.235501
+        },
+        "gcj02": {
+          "longitude": 121.453042,
+          "latitude": 31.233621
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "GORDON ROAD",
+          "modernNameZh": "江宁路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史江宁路354弄3号一带（Gordon Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "原中文上海成煙医院与英文Opium Addicts Hospital存在可能的转录差异；分别查成烟、戒烟、江宁和原Gordon 354-3，仍未找到同址可靠院史。禁毒史文章说曾在上海开设戒烟医院是泛称，不能锁定这幢房屋；未改原中文。原机构、门牌、存毁与现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1038",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1038"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1143,
+      "NAME": "Shanghai Primary School and Kindergarten",
+      "F_ADDRESS": "456 GORDON ROAD",
+      "FUNCTION": "Educational facility / School / Private / Secular / Kindergarten / Primary",
+      "XC": 352142.176,
+      "YC": 3456892.3278,
+      "historicalNameZh": "上海小學幼稚園",
+      "historicalStartYear": null,
+      "historicalEndYear": null,
+      "coordinates": {
+        "sourceCrs": "EPSG:32651",
+        "wgs84": {
+          "longitude": 121.447438,
+          "latitude": 31.236868
+        },
+        "gcj02": {
+          "longitude": 121.452036,
+          "latitude": 31.234991
+        }
+      },
+      "historicalRoadMappings": [
+        {
+          "historicalName": "GORDON ROAD",
+          "modernNameZh": "江宁路"
+        }
+      ],
+      "currentNameZh": null,
+      "currentAddress": "历史江宁路456号一带（Gordon Road；今门牌待核）",
+      "currentUse": "未确认",
+      "relationship": null,
+      "verificationStatus": "unresolved",
+      "notes": "以原上海小學幼稚園、Shanghai Primary School and Kindergarten及戈登路456号实际查询，未找到独立办学沿革。名称过于通用，不能与今上海小学或戈登路其他如大同幼稚园合并。原点在江宁路边、近艺海大厦，只是空间线索。旧校舍、门牌重编及现用途待核。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1143",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1143"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1198 @@
+{
+  "batch": "016",
+  "part": "c",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/016-input.json",
+  "scope": "稳定输入 slice(34, 50)；本批50条均来自016固定快照，不挪用015。每条均实际联网查询，先审原名、中文名、年代与同组全员。查询返回摘要与可访问正文分别作为线索，限制见逐条记录。OSM仅为空间辅助，WGS84由各条原UTM独立转换，未采用聚合点或图书馆偏移坐标。",
+  "records": [
+    {
+      "IDBAT": 581,
+      "queries": [
+        "同仁医院 九江路219 旧址",
+        "site.ccctspm.org \"九江路219\" 2026"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "上海市房管局2020修缮报道直接列同一1928年楼的沿革：英童学校、1937年同仁医院迁入、战后百乐饭店、政府使用、2005年基督教全国两会迁入。机构官网联系我们仍列九江路219号及办公室、教会事工等部门，支持办公用途；同仁医院后来迁往他址不沿用医疗用途。原点与OSM九江219号楼way292718777边缘相距不足1米，楼体及地址相容；图书馆候选坐标偏东1164米排除，仅采用其同仁医院历史别名。 原UTM独立转换WGS84为121.481042, 31.238637。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=581",
+        "https://m.thepaper.cn/baijiahao_7604398",
+        "https://ccctspm.org/contactus",
+        "http://data.library.sh.cn/entity/architecture/wmzcki131cpf1x7g",
+        "https://www.openstreetmap.org/way/292718777"
+      ],
+      "originalInput": {
+        "IDBAT": 581,
+        "NAME": "Saint Luke's Hospital",
+        "F_ADDRESS": "219 KIUKIANG ROAD",
+        "FUNCTION": "Institutional site / Medical facility / Hospital",
+        "XC": 355345.5366,
+        "YC": 3457043.9387
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 581,
+        "clusterId": "vs-building-site:581",
+        "members": [
+          {
+            "id": 581,
+            "name": "Saint Luke's Hospital",
+            "nameZh": "同仁醫院",
+            "address": "219 KIUKIANG ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 355345.5366,
+            "y": 3457043.9387
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.481042,
+        "latitude": 31.238637
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4803920,31.2380370,121.4816920,31.2392370",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "曾为黄浦区人民政府大楼",
+            "osmId": 292718777,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/292718777"
+          },
+          {
+            "name": "九江路",
+            "osmId": 1064853451,
+            "osmType": "way",
+            "distanceMetres": 6,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1064853451"
+          },
+          {
+            "name": "大生大楼",
+            "osmId": 1267682865,
+            "osmType": "way",
+            "distanceMetres": 15,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1267682865"
+          }
+        ]
+      },
+      "accessLimitations": "中国基督教全国两会官网contactus经搜索返回九江路219号及办公部门文字；直接open提取两次400超时。房管局沿革全文已读；图书馆偏东坐标不采用。",
+      "limitations": "上海市房管局2020修缮报道直接列同一1928年楼的沿革：英童学校、1937年同仁医院迁入、战后百乐饭店、政府使用、2005年基督教全国两会迁入。机构官网联系我们仍列九江路219号及办公室、教会事工等部门，支持办公用途；同仁医院后来迁往他址不沿用医疗用途。原点与OSM九江219号楼way292718777边缘相距不足1米，楼体及地址相容；图书馆候选坐标偏东1164米排除，仅采用其同仁医院历史别名。 原UTM独立转换WGS84为121.481042, 31.238637。"
+    },
+    {
+      "IDBAT": 1734,
+      "queries": [
+        "\"Saint Paul\" \"Apartment\" Shanghai Robert",
+        "\"圣保罗公寓\" 上海 瑞金",
+        "\"SAINT PAUL\" \"PERE ROBERT\"",
+        "\"圣保罗公寓\" \"南昌路125\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "检索英文Saint Paul's Apartment、Pere Robert及中文圣保罗公寓，得到南昌路125号香山公寓原称圣保罗公寓的二手线索。然而原记录20E号、原点瑞金二路附近与南昌125号并未形成相互印证；不把字母E擅改为数字8，也不由英文同名直接判定是同栋。原点距南昌路26米，具体楼体待核。 原UTM独立转换WGS84为121.459173, 31.219063。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1734",
+        "https://www.meipian.cn/33droufw",
+        "https://www.openstreetmap.org/way/40140141"
+      ],
+      "originalInput": {
+        "IDBAT": 1734,
+        "NAME": "SAINT PAUL'S APARTMENT",
+        "F_ADDRESS": "20E ROUTE PERE ROBERT",
+        "FUNCTION": "Residential site",
+        "XC": 353232.3658,
+        "YC": 3454903.0645
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1734,
+        "clusterId": "vs-building-site:1734",
+        "members": [
+          {
+            "id": 1734,
+            "name": "SAINT PAUL'S APARTMENT",
+            "nameZh": null,
+            "address": "20E ROUTE PERE ROBERT",
+            "startYear": null,
+            "endYear": null,
+            "x": 353232.3658,
+            "y": 3454903.0645
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.459173,
+        "latitude": 31.219063
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4585230,31.2184630,121.4598230,31.2196630",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "南昌路",
+            "osmId": 40140141,
+            "osmType": "way",
+            "distanceMetres": 26,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/40140141"
+          },
+          {
+            "name": "于生一·苏州玉雕（上海）展销中心",
+            "osmId": 4641831990,
+            "osmType": "node",
+            "distanceMetres": 52,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4641831990"
+          },
+          {
+            "name": "上海银行",
+            "osmId": 12360498402,
+            "osmType": "node",
+            "distanceMetres": 55,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/12360498402"
+          }
+        ]
+      },
+      "limitations": "检索英文Saint Paul's Apartment、Pere Robert及中文圣保罗公寓，得到南昌路125号香山公寓原称圣保罗公寓的二手线索。然而原记录20E号、原点瑞金二路附近与南昌125号并未形成相互印证；不把字母E擅改为数字8，也不由英文同名直接判定是同栋。原点距南昌路26米，具体楼体待核。 原UTM独立转换WGS84为121.459173, 31.219063。"
+    },
+    {
+      "IDBAT": 1222,
+      "queries": [
+        "\"救世军\" \"西摩路\"",
+        "\"救世军\" \"陕西北路\"",
+        "\"救世军\" \"524\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "实际检索救世军、西摩路、陕西北路与524号，没有找到本堂可独立验证的地址沿革。救世军在上海有多个布道、收容设施，不能由组织名称覆盖本点。原点近陕西北路4米和乐活居3米；新旧门牌及建筑拆存待核。 原UTM独立转换WGS84为121.433973, 31.247401。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1222",
+        "https://www.openstreetmap.org/way/432996112"
+      ],
+      "originalInput": {
+        "IDBAT": 1222,
+        "NAME": "Salvation Army",
+        "F_ADDRESS": "524 SEYMOUR ROAD",
+        "FUNCTION": "Community facility / Benevolent association / Religious",
+        "XC": 350876.2972,
+        "YC": 3458078.0183
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1222,
+        "clusterId": "vs-building-site:1222",
+        "members": [
+          {
+            "id": 1222,
+            "name": "Salvation Army",
+            "nameZh": "救世軍福音堂",
+            "address": "524 SEYMOUR ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 350876.2972,
+            "y": 3458078.0183
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.433973,
+        "latitude": 31.247401
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4333230,31.2468010,121.4346230,31.2480010",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "乐活居",
+            "osmId": 432996112,
+            "osmType": "way",
+            "distanceMetres": 3,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/432996112"
+          },
+          {
+            "name": "陕西北路",
+            "osmId": 10695679,
+            "osmType": "way",
+            "distanceMetres": 4,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/10695679"
+          },
+          {
+            "name": "都华名苑",
+            "osmId": 1431954372,
+            "osmType": "way",
+            "distanceMetres": 15,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1431954372"
+          }
+        ]
+      },
+      "limitations": "实际检索救世军、西摩路、陕西北路与524号，没有找到本堂可独立验证的地址沿革。救世军在上海有多个布道、收容设施，不能由组织名称覆盖本点。原点近陕西北路4米和乐活居3米；新旧门牌及建筑拆存待核。 原UTM独立转换WGS84为121.433973, 31.247401。"
+    },
+    {
+      "IDBAT": 656,
+      "queries": [
+        "\"救世军\" \"厦门路188\"",
+        "\"救世军\" \"厦门路\"",
+        "\"救世军\" \"188\" \"上海\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "教会建筑研究据宗教志列1935年救世军乞丐救济所在厦门路183号，与本条男子部188号可能属于不同建筑或设施；原记录1868年也不能自动当作该救济所创办年。检索188号未找到直接闭环。原点距厦门路约56米且无命名堂舍，院界、道路两侧关系及现用途待核。 原UTM独立转换WGS84为121.46988, 31.241718。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=656",
+        "https://dl.ziliaozhan.win/%E4%B9%A6%E7%B1%8D/pdf/%E7%A0%94%E7%A9%B6/%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%BF%91%E4%BB%A3%E6%95%99%E4%BC%9A%E5%BB%BA%E7%AD%91%E5%8E%86%E5%8F%B2%E5%88%9D%E6%8E%A2.pdf",
+        "https://www.openstreetmap.org/way/15670282"
+      ],
+      "originalInput": {
+        "IDBAT": 656,
+        "NAME": "Salvation Army - Men's Division",
+        "F_ADDRESS": "188 AMOY ROAD",
+        "FUNCTION": "Community facility / Benevolent association / Religious",
+        "XC": 354287.166,
+        "YC": 3457400.1362
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 656,
+        "clusterId": "vs-building-site:656",
+        "members": [
+          {
+            "id": 656,
+            "name": "Salvation Army - Men's Division",
+            "nameZh": "救世軍福音堂",
+            "address": "188 AMOY ROAD",
+            "startYear": 1868,
+            "endYear": null,
+            "x": 354287.166,
+            "y": 3457400.1362
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.46988,
+        "latitude": 31.241718
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4692300,31.2411180,121.4705300,31.2423180",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "厦门路",
+            "osmId": 15670282,
+            "osmType": "way",
+            "distanceMetres": 56,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/15670282"
+          },
+          {
+            "name": "贵州路",
+            "osmId": 73898450,
+            "osmType": "way",
+            "distanceMetres": 68,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/73898450"
+          }
+        ]
+      },
+      "limitations": "教会建筑研究据宗教志列1935年救世军乞丐救济所在厦门路183号，与本条男子部188号可能属于不同建筑或设施；原记录1868年也不能自动当作该救济所创办年。检索188号未找到直接闭环。原点距厦门路约56米且无命名堂舍，院界、道路两侧关系及现用途待核。 原UTM独立转换WGS84为121.46988, 31.241718。"
+    },
+    {
+      "IDBAT": 1752,
+      "queries": [
+        "\"Samarkind\" Shanghai apartments",
+        "\"Samarkand Apartments\" Shanghai",
+        "\"撒马尔罕公寓\" 上海",
+        "Samarkand Apartment 上海 登云 公寓",
+        "\"撒马尔罕\" \"淮海\" 公寓 2020",
+        "\"Samarkand\" \"1986\" \"Shanghai\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "原拼写Samarkind与研究中的Samarkand可能为同名变体。徐汇房管局2025建筑史确认公和洋行1930年建撒马尔罕公寓；METROMOD以建筑师Emmanuel Gran住所记1986 Avenue Joffre 7室，未与本条2020号建立门牌关系。OSM登云公寓2068号距原点44米，但其又斯登旧名不同，不能因邻近判同楼；现代地址和建筑边界待核。 原UTM独立转换WGS84为121.431188, 31.205052。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1752",
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20251104/565553.html",
+        "https://archive.metromod.net/viewer.p/69/2952/object/5138-11320428",
+        "https://www.openstreetmap.org/way/66394035"
+      ],
+      "originalInput": {
+        "IDBAT": 1752,
+        "NAME": "SAMARKIND APARTMENTS",
+        "F_ADDRESS": "2020 AVENUE JOFFRE",
+        "FUNCTION": "Residential site",
+        "XC": 350544.3772,
+        "YC": 3453387.463
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1752,
+        "clusterId": "vs-building-site:1752",
+        "members": [
+          {
+            "id": 1752,
+            "name": "SAMARKIND APARTMENTS",
+            "nameZh": null,
+            "address": "2020 AVENUE JOFFRE",
+            "startYear": null,
+            "endYear": null,
+            "x": 350544.3772,
+            "y": 3453387.463
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.431188,
+        "latitude": 31.205052
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4305380,31.2044520,121.4318380,31.2056520",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "淮海中路",
+            "osmId": 66394035,
+            "osmType": "way",
+            "distanceMetres": 44,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/66394035"
+          },
+          {
+            "name": "登云公寓",
+            "osmId": 494634318,
+            "osmType": "way",
+            "distanceMetres": 44,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/494634318"
+          },
+          {
+            "name": "淮海中路",
+            "osmId": 444342351,
+            "osmType": "way",
+            "distanceMetres": 55,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/444342351"
+          }
+        ]
+      },
+      "limitations": "原拼写Samarkind与研究中的Samarkand可能为同名变体。徐汇房管局2025建筑史确认公和洋行1930年建撒马尔罕公寓；METROMOD以建筑师Emmanuel Gran住所记1986 Avenue Joffre 7室，未与本条2020号建立门牌关系。OSM登云公寓2068号距原点44米，但其又斯登旧名不同，不能因邻近判同楼；现代地址和建筑边界待核。 原UTM独立转换WGS84为121.431188, 31.205052。"
+    },
+    {
+      "IDBAT": 1524,
+      "queries": [
+        "上海 疗养院 农工路75 1934",
+        "\"农工路75\" \"1934\"",
+        "\"农工路75号\" 疗养院 康复"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "党史网所载院史明确1952年在农工路75号建上海工人疗养院；现历史建筑资料把延安西路2558号1—4号楼记为1947年住宅后改疗养院。输入却为1934年Sanatorium，可能不同前身或地块，不能由同75号消除年代差异。长宁公开征收决定又将农工路51号部分楼的另门牌列75/77号，说明旧今号存在多楼边界风险。原点近延安西路33米，没有命名院地包含证据，不自动归入整院医疗用途。 原UTM独立转换WGS84为121.392456, 31.200832。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1524",
+        "https://www.ccphistory.org.cn/shds/shhm/content/e2d7856c-71ac-4347-8093-1d7f633a243a.html",
+        "https://zh.wikipedia.org/wiki/延安西路2558号（1-4号楼）",
+        "https://www.shcn.gov.cn/col5916/20260615/1311992.html",
+        "https://www.openstreetmap.org/way/473715132"
+      ],
+      "originalInput": {
+        "IDBAT": 1524,
+        "NAME": "Sanatorium",
+        "F_ADDRESS": "75 NONGGONG",
+        "FUNCTION": "Institutional site / Medical facility / Hospital",
+        "XC": 346847.2952,
+        "YC": 3452972.6974
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1524,
+        "clusterId": "vs-building-site:1524",
+        "members": [
+          {
+            "id": 1524,
+            "name": "Sanatorium",
+            "nameZh": null,
+            "address": "75 NONGGONG",
+            "startYear": 1934,
+            "endYear": null,
+            "x": 346847.2952,
+            "y": 3452972.6974
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.392456,
+        "latitude": 31.200832
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.3918060,31.2002320,121.3931060,31.2014320",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "延安西路",
+            "osmId": 473715132,
+            "osmType": "way",
+            "distanceMetres": 33,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/473715132"
+          },
+          {
+            "name": "延安高架路",
+            "osmId": 513082670,
+            "osmType": "way",
+            "distanceMetres": 38,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513082670"
+          },
+          {
+            "name": "延安西路",
+            "osmId": 478286976,
+            "osmType": "way",
+            "distanceMetres": 43,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/478286976"
+          }
+        ]
+      },
+      "limitations": "党史网所载院史明确1952年在农工路75号建上海工人疗养院；现历史建筑资料把延安西路2558号1—4号楼记为1947年住宅后改疗养院。输入却为1934年Sanatorium，可能不同前身或地块，不能由同75号消除年代差异。长宁公开征收决定又将农工路51号部分楼的另门牌列75/77号，说明旧今号存在多楼边界风险。原点近延安西路33米，没有命名院地包含证据，不自动归入整院医疗用途。 原UTM独立转换WGS84为121.392456, 31.200832。"
+    },
+    {
+      "IDBAT": 1494,
+      "queries": [
+        "商船会馆 会馆街38 现状",
+        "\"商船会馆\" \"2025\" 展览",
+        "商船会馆 耋戏生 2026 场馆"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "官方文旅资料直接将1715年沙船业会馆与会馆街38号现商船会馆相连，现仅大殿和戏台两栋保存，不能将近20亩历史院落说成全部原貌留存。OSM会馆楼体way419825799包含原点，历史名称、地址及几何相容。2025文旅局和上海戏剧学院分别报道《耋戏生》在此演出及完成首轮14场驻演，支持文化演艺使用；文旅推广平台仍标不开放，故不承诺日常自由入内或当前有在售场次。 原UTM独立转换WGS84为121.49956, 31.214826。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1494",
+        "https://whlyj.sh.gov.cn/gqfc/20251016/5614a482fbb04c55b6b2533f543917fb.html",
+        "https://xxgk.sta.edu.cn/d5/e0/c3330a120288/page.htm",
+        "https://lhsr.sh.gov.cn/ywdt/20210706/2002df48-0c04-4ebf-bc54-af76dd865fa8.html",
+        "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/merchant-marine-club-209068/",
+        "https://www.openstreetmap.org/way/419825799"
+      ],
+      "originalInput": {
+        "IDBAT": 1494,
+        "NAME": "Sand Junk Guild",
+        "F_ADDRESS": "38 HUIGUAN",
+        "FUNCTION": "Community facility / Native-place association / Guild",
+        "XC": 357073.4038,
+        "YC": 3454380.4609
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1494,
+        "clusterId": "vs-building-site:1494",
+        "members": [
+          {
+            "id": 1494,
+            "name": "Sand Junk Guild",
+            "nameZh": "上船會館",
+            "address": "38 HUIGUAN",
+            "startYear": 1715,
+            "endYear": null,
+            "x": 357073.4038,
+            "y": 3454380.4609
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.49956,
+        "latitude": 31.214826
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4989100,31.2142260,121.5002100,31.2154260",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "商船会馆",
+            "osmId": 419825799,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/419825799"
+          }
+        ]
+      },
+      "accessLimitations": "文旅局与上海戏剧学院现演艺报道全文已读，旅游推广页面不开放仅作为日常进入限制，未将演艺活动等同随时开放。",
+      "limitations": "官方文旅资料直接将1715年沙船业会馆与会馆街38号现商船会馆相连，现仅大殿和戏台两栋保存，不能将近20亩历史院落说成全部原貌留存。OSM会馆楼体way419825799包含原点，历史名称、地址及几何相容。2025文旅局和上海戏剧学院分别报道《耋戏生》在此演出及完成首轮14场驻演，支持文化演艺使用；文旅推广平台仍标不开放，故不承诺日常自由入内或当前有在售场次。 原UTM独立转换WGS84为121.49956, 31.214826。"
+    },
+    {
+      "IDBAT": 230,
+      "queries": [
+        "\"三官堂\" \"223\" 上海",
+        "上海 \"三官堂\" \"泰康路\"",
+        "\"三官堂\" \"贾西义\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "检索三官堂、泰康路、贾西义路与223门牌未形成独立寺堂沿革。上海另有三官堂路及多处同名庙宇，不以同名套用。原点近泰康路37米及银行商业POI，不能据田子坊周边商业环境确定223弄26号庙址当前经营者，待核。 原UTM独立转换WGS84为121.465002, 31.209365。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=230",
+        "https://www.openstreetmap.org/node/6557228136"
+      ],
+      "originalInput": {
+        "IDBAT": 230,
+        "NAME": "Sanguantang Temple",
+        "F_ADDRESS": "223-26 ROUTE CASSINI",
+        "FUNCTION": "Religious facility / Temple / Religious / Buddhist",
+        "XC": 353772.7655,
+        "YC": 3453820.3349
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 230,
+        "clusterId": "vs-building-site:230",
+        "members": [
+          {
+            "id": 230,
+            "name": "Sanguantang Temple",
+            "nameZh": "三官堂",
+            "address": "223-26 ROUTE CASSINI",
+            "startYear": null,
+            "endYear": null,
+            "x": 353772.7655,
+            "y": 3453820.3349
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.465002,
+        "latitude": 31.209365
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4643520,31.2087650,121.4656520,31.2099650",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "汇丰银行",
+            "osmId": 6557228136,
+            "osmType": "node",
+            "distanceMetres": 24,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/6557228136"
+          },
+          {
+            "name": "泰康路",
+            "osmId": 72233373,
+            "osmType": "way",
+            "distanceMetres": 37,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/72233373"
+          },
+          {
+            "name": "喜茶",
+            "osmId": 5090928126,
+            "osmType": "node",
+            "distanceMetres": 39,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/5090928126"
+          }
+        ]
+      },
+      "limitations": "检索三官堂、泰康路、贾西义路与223门牌未形成独立寺堂沿革。上海另有三官堂路及多处同名庙宇，不以同名套用。原点近泰康路37米及银行商业POI，不能据田子坊周边商业环境确定223弄26号庙址当前经营者，待核。 原UTM独立转换WGS84为121.465002, 31.209365。"
+    },
+    {
+      "IDBAT": 629,
+      "queries": [
+        "\"三江旅馆\" \"北海路\"",
+        "上海 \"三江旅馆\" 34",
+        "\"Sanjiang Hotel\" \"Pakhoi\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "中文三江旅馆、北海路34号及英文Sanjiang Hotel/Pakhoi多轮查询未返回独立旅馆沿革；外地同名宾馆均排除。原点近湖北路28米、海口路36米，可能涉及旧支路与门牌变化，不能由现便利店或相邻旅馆推定同楼，待核。 原UTM独立转换WGS84为121.477196, 31.233834。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=629",
+        "https://www.openstreetmap.org/node/4161733693"
+      ],
+      "originalInput": {
+        "IDBAT": 629,
+        "NAME": "Sanjiang Hotel",
+        "F_ADDRESS": "34 PAKHOI ROAD",
+        "FUNCTION": "Commercial establishment / Retail business / Lodging / Hotel",
+        "XC": 354971.8926,
+        "YC": 3456516.5861
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 629,
+        "clusterId": "vs-building-site:629",
+        "members": [
+          {
+            "id": 629,
+            "name": "Sanjiang Hotel",
+            "nameZh": "三江旅館",
+            "address": "34 PAKHOI ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 354971.8926,
+            "y": 3456516.5861
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.477196,
+        "latitude": 31.233834
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4765460,31.2332340,121.4778460,31.2344340",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "全家",
+            "osmId": 4161733693,
+            "osmType": "node",
+            "distanceMetres": 21,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4161733693"
+          },
+          {
+            "name": "湖北路",
+            "osmId": 73898738,
+            "osmType": "way",
+            "distanceMetres": 28,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/73898738"
+          },
+          {
+            "name": "海口路",
+            "osmId": 39839521,
+            "osmType": "way",
+            "distanceMetres": 36,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/39839521"
+          }
+        ]
+      },
+      "limitations": "中文三江旅馆、北海路34号及英文Sanjiang Hotel/Pakhoi多轮查询未返回独立旅馆沿革；外地同名宾馆均排除。原点近湖北路28米、海口路36米，可能涉及旧支路与门牌变化，不能由现便利店或相邻旅馆推定同楼，待核。 原UTM独立转换WGS84为121.477196, 31.233834。"
+    },
+    {
+      "IDBAT": 331,
+      "queries": [
+        "\"三教善安\" 上海",
+        "\"三教\" \"善老\" 上海",
+        "\"三教善安善老堂院\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已查全名、三教/善老词组与原街道，未出现可核独立名录。长中文名可能有原图断词、异体或转录问题，不能擅自改成养老院或其他寺堂。原点距襄阳南路42米且没有对应命名院地，433弄22号旧今关系待核。 原UTM独立转换WGS84为121.453926, 31.207874。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=331",
+        "https://www.openstreetmap.org/node/9812010103"
+      ],
+      "originalInput": {
+        "IDBAT": 331,
+        "NAME": "Sanjiao Shan'an Shanlao Tangyuan",
+        "F_ADDRESS": "433-22 ROUTE RAYMOND TENANT DE LA TOUR",
+        "FUNCTION": "Religious facility / Temple / Religious / Buddhist",
+        "XC": 352715.2112,
+        "YC": 3453669.7655
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 331,
+        "clusterId": "vs-building-site:331",
+        "members": [
+          {
+            "id": 331,
+            "name": "Sanjiao Shan'an Shanlao Tangyuan",
+            "nameZh": "三教善安善老堂院",
+            "address": "433-22 ROUTE RAYMOND TENANT DE LA TOUR",
+            "startYear": null,
+            "endYear": null,
+            "x": 352715.2112,
+            "y": 3453669.7655
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.453926,
+        "latitude": 31.207874
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4532760,31.2072740,121.4545760,31.2084740",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "襄阳南路建国西路",
+            "osmId": 9812010103,
+            "osmType": "node",
+            "distanceMetres": 35,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812010103"
+          },
+          {
+            "name": "襄阳南路",
+            "osmId": 12088962,
+            "osmType": "way",
+            "distanceMetres": 42,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/12088962"
+          },
+          {
+            "name": "襄阳南路建国西路",
+            "osmId": 9812010104,
+            "osmType": "node",
+            "distanceMetres": 43,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812010104"
+          }
+        ]
+      },
+      "limitations": "已查全名、三教/善老词组与原街道，未出现可核独立名录。长中文名可能有原图断词、异体或转录问题，不能擅自改成养老院或其他寺堂。原点距襄阳南路42米且没有对应命名院地，433弄22号旧今关系待核。 原UTM独立转换WGS84为121.453926, 31.207874。"
+    },
+    {
+      "IDBAT": 729,
+      "queries": [
+        "\"三乐小学\" \"北江西\"",
+        "上海 \"三乐小学\" 江西路",
+        "\"三樂小學\" 上海"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《上海暨全国学校调查录》检索出现三乐小学，支持同名学校存在；页面相邻学校条目不能直接把其他北京路门牌配给三乐。未获得375弄34号明确配对及校舍去向。OSM只见距江西北路约66米的空间关系；香港三乐学校等外地同名结果不采用，待核。 原UTM独立转换WGS84为121.477287, 31.25131。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=729",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/NLC416-10jh006837-53329_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://www.openstreetmap.org/way/513577066"
+      ],
+      "originalInput": {
+        "IDBAT": 729,
+        "NAME": "Sanle Primary School",
+        "F_ADDRESS": "375-34 NORTH KIANGSE ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 355007.2673,
+        "YC": 3458453.6318
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 729,
+        "clusterId": "vs-building-site:729",
+        "members": [
+          {
+            "id": 729,
+            "name": "Sanle Primary School",
+            "nameZh": "三樂小學",
+            "address": "375-34 NORTH KIANGSE ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 355007.2673,
+            "y": 3458453.6318
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.477287,
+        "latitude": 31.25131
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4766370,31.2507100,121.4779370,31.2519100",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "上海地铁10号线",
+            "osmId": 513577066,
+            "osmType": "way",
+            "distanceMetres": 6,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513577066"
+          },
+          {
+            "name": "上海地铁10号线",
+            "osmId": 513622481,
+            "osmType": "way",
+            "distanceMetres": 11,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513622481"
+          },
+          {
+            "name": "江西北路",
+            "osmId": 768805831,
+            "osmType": "way",
+            "distanceMetres": 66,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/768805831"
+          }
+        ]
+      },
+      "accessLimitations": "学校调查录的搜索文字仅支持三乐小学名称，表格相邻门牌未可靠配对，不宣称有确定年代、375弄34号地址或现代校舍对应。",
+      "limitations": "《上海暨全国学校调查录》检索出现三乐小学，支持同名学校存在；页面相邻学校条目不能直接把其他北京路门牌配给三乐。未获得375弄34号明确配对及校舍去向。OSM只见距江西北路约66米的空间关系；香港三乐学校等外地同名结果不采用，待核。 原UTM独立转换WGS84为121.477287, 31.25131。"
+    },
+    {
+      "IDBAT": 1491,
+      "queries": [
+        "\"三昧乾净寺\" 上海",
+        "\"三昧\" \"福善堂\" 上海",
+        "\"三昧乾淨寺\"",
+        "\"三昧庵\" 上海 福善堂"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "全称三昧乾净寺/三昧乾淨寺只见同源数据库，县志有小南门外三昧庵、旧名茶亭以及后续火灾重建记载，只能作为近名候选。尚无证据把三昧庵与本条107 FUSHANTANG或现东江阴街原点直接相连；不自行解释为现存寺院或固定拆除年代。原点距东江阴街22米，门牌及寺界待核。 原UTM独立转换WGS84为121.494062, 31.216045。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1491",
+        "https://www.shidianguji.com/mid-page/7514431287919329307",
+        "https://www.shidianguji.com/zh/mid-page/7626871789864828974",
+        "https://www.openstreetmap.org/way/40108894"
+      ],
+      "originalInput": {
+        "IDBAT": 1491,
+        "NAME": "Sanmeijing Temple",
+        "F_ADDRESS": "107 FUSHANTANG",
+        "FUNCTION": "Religious facility / Temple / Religious / Buddhist",
+        "XC": 356551.4748,
+        "YC": 3454522.7119
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1491,
+        "clusterId": "vs-building-site:1491",
+        "members": [
+          {
+            "id": 1491,
+            "name": "Sanmeijing Temple",
+            "nameZh": "三昧乾淨寺",
+            "address": "107 FUSHANTANG",
+            "startYear": null,
+            "endYear": null,
+            "x": 356551.4748,
+            "y": 3454522.7119
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.494062,
+        "latitude": 31.216045
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4934120,31.2154450,121.4947120,31.2166450",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "东江阴街",
+            "osmId": 40108894,
+            "osmType": "way",
+            "distanceMetres": 22,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/40108894"
+          }
+        ]
+      },
+      "limitations": "全称三昧乾净寺/三昧乾淨寺只见同源数据库，县志有小南门外三昧庵、旧名茶亭以及后续火灾重建记载，只能作为近名候选。尚无证据把三昧庵与本条107 FUSHANTANG或现东江阴街原点直接相连；不自行解释为现存寺院或固定拆除年代。原点距东江阴街22米，门牌及寺界待核。 原UTM独立转换WGS84为121.494062, 31.216045。"
+    },
+    {
+      "IDBAT": 1100,
+      "queries": [
+        "\"三民小学\" \"1583\"",
+        "上海 \"三民小学\" \"静安寺路\"",
+        "\"三民\" \"南京西路\" \"小学\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "三民小学、附设幼稚园、静安寺路和南京西路及1583组合未取得独立校史。同名三民学校多在外地，不能套用。原点距南京西路6米，附近地铁线为地下交通，既不能当学校现代用途也不能证明原楼已拆；1583弄2号与现门牌待核。 原UTM独立转换WGS84为121.44279, 31.22555。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1100",
+        "https://www.openstreetmap.org/way/376634457"
+      ],
+      "originalInput": {
+        "IDBAT": 1100,
+        "NAME": "Sanmin Primary School and Kindergarten",
+        "F_ADDRESS": "1583-2 BUBBLING WELL ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Kindergarten / Primary",
+        "XC": 351681.814,
+        "YC": 3455644.0337
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1100,
+        "clusterId": "vs-building-site:1100",
+        "members": [
+          {
+            "id": 1100,
+            "name": "Sanmin Primary School and Kindergarten",
+            "nameZh": "三民小學幼稚園",
+            "address": "1583-2 BUBBLING WELL ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 351681.814,
+            "y": 3455644.0337
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.44279,
+        "latitude": 31.22555
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4421400,31.2249500,121.4434400,31.2261500",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "上海地铁2号线",
+            "osmId": 376634457,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/376634457"
+          },
+          {
+            "name": "上海地铁2号线",
+            "osmId": 376634458,
+            "osmType": "way",
+            "distanceMetres": 6,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/376634458"
+          },
+          {
+            "name": "南京西路",
+            "osmId": 1068447148,
+            "osmType": "way",
+            "distanceMetres": 6,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1068447148"
+          }
+        ]
+      },
+      "limitations": "三民小学、附设幼稚园、静安寺路和南京西路及1583组合未取得独立校史。同名三民学校多在外地，不能套用。原点距南京西路6米，附近地铁线为地下交通，既不能当学校现代用途也不能证明原楼已拆；1583弄2号与现门牌待核。 原UTM独立转换WGS84为121.44279, 31.22555。"
+    },
+    {
+      "IDBAT": 149,
+      "queries": [
+        "\"三圣殿\" \"辣斐\"",
+        "上海 \"三圣殿\" \"复兴中路\"",
+        "\"Sanshengdian\" Shanghai Temple"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "Buddhist GIS检索列上海三聖殿，支持中文名称候选，但未取得可读的具体旧街门牌和定位正文。玉佛寺、龙华寺内亦有三圣殿同名殿堂，与辣斐德路本点不相容，全部排除。原点在OSM拉法耶艺术设计中心范围内，原记录却无门牌；没有寺地与现代艺术中心的拆迁/权属证据，不能直接写文化用途，待核。 原UTM独立转换WGS84为121.471436, 31.218319。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=149",
+        "https://crgis.rchss.sinica.edu.tw/religion/bgis/02440",
+        "https://www.openstreetmap.org/way/1199660261"
+      ],
+      "originalInput": {
+        "IDBAT": 149,
+        "NAME": "Sanshengdian Temple",
+        "F_ADDRESS": "?? ROUTE LAFAYETTE",
+        "FUNCTION": "Religious facility / Temple / Religious / Unknown",
+        "XC": 354399.4661,
+        "YC": 3454804.3546
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 149,
+        "clusterId": "vs-building-site:149",
+        "members": [
+          {
+            "id": 149,
+            "name": "Sanshengdian Temple",
+            "nameZh": null,
+            "address": "?? ROUTE LAFAYETTE",
+            "startYear": null,
+            "endYear": null,
+            "x": 354399.4661,
+            "y": 3454804.3546
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.471436,
+        "latitude": 31.218319
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4707860,31.2177190,121.4720860,31.2189190",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "拉法耶艺术设计中心",
+            "osmId": 1199660261,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/1199660261"
+          },
+          {
+            "name": "复兴中路",
+            "osmId": 1297720369,
+            "osmType": "way",
+            "distanceMetres": 23,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1297720369"
+          },
+          {
+            "name": "中国工商银行",
+            "osmId": 7005478114,
+            "osmType": "node",
+            "distanceMetres": 30,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/7005478114"
+          }
+        ]
+      },
+      "accessLimitations": "GIS条目搜索返回上海三聖殿名称；打开原页为502 Bad Gateway，未取得具体门牌及几何，未将拉法耶艺术中心当作已确认旧址现用途。",
+      "limitations": "Buddhist GIS检索列上海三聖殿，支持中文名称候选，但未取得可读的具体旧街门牌和定位正文。玉佛寺、龙华寺内亦有三圣殿同名殿堂，与辣斐德路本点不相容，全部排除。原点在OSM拉法耶艺术设计中心范围内，原记录却无门牌；没有寺地与现代艺术中心的拆迁/权属证据，不能直接写文化用途，待核。 原UTM独立转换WGS84为121.471436, 31.218319。"
+    },
+    {
+      "IDBAT": 975,
+      "queries": [
+        "上海 \"三育中小学\" \"武定\"",
+        "\"三育\" \"武定路\" 上海 学校",
+        "\"三育小学\" \"福康路\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "上海老底子回忆明确旧福康路连接新闸路与武定路，旁有三育小学；学校调查录也出现三育小学。但中小学是否同一分部、无号Wuting记录对应哪处校舍尚不清。原点在中泰大厦边缘约3米，不能把福康里地区整体拆迁史覆盖到该楼；校界、门牌和现代地块待核。 原UTM独立转换WGS84为121.45271, 31.237597。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=975",
+        "https://www.thepaper.cn/newsDetail_forward_17372570",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/NLC416-10jh006837-53329_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://www.openstreetmap.org/way/1270327746"
+      ],
+      "originalInput": {
+        "IDBAT": 975,
+        "NAME": "Sanyu Primary and Junior High School",
+        "F_ADDRESS": "?? WUTING ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Kindergarten / Primary",
+        "XC": 352645.5267,
+        "YC": 3456966.0648
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 975,
+        "clusterId": "vs-building-site:975",
+        "members": [
+          {
+            "id": 975,
+            "name": "Sanyu Primary and Junior High School",
+            "nameZh": "三育中小學校",
+            "address": "?? WUTING ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 352645.5267,
+            "y": 3456966.0648
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.45271,
+        "latitude": 31.237597
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4520600,31.2369970,121.4533600,31.2381970",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "中泰大厦",
+            "osmId": 1270327746,
+            "osmType": "way",
+            "distanceMetres": 3,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1270327746"
+          },
+          {
+            "name": "石门二路街道",
+            "osmId": 6547128311,
+            "osmType": "node",
+            "distanceMetres": 17,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/6547128311"
+          },
+          {
+            "name": "武定路",
+            "osmId": 240666075,
+            "osmType": "way",
+            "distanceMetres": 20,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/240666075"
+          }
+        ]
+      },
+      "accessLimitations": "学校调查录搜索返回名称与老底子回忆提供旧福康路线索，未取得无号武定路校舍的独立范围。",
+      "limitations": "上海老底子回忆明确旧福康路连接新闸路与武定路，旁有三育小学；学校调查录也出现三育小学。但中小学是否同一分部、无号Wuting记录对应哪处校舍尚不清。原点在中泰大厦边缘约3米，不能把福康里地区整体拆迁史覆盖到该楼；校界、门牌和现代地块待核。 原UTM独立转换WGS84为121.45271, 31.237597。"
+    },
+    {
+      "IDBAT": 1291,
+      "queries": [
+        "上海 \"沙孙\" \"南浔路\" 仓库",
+        "\"Sassoon\" \"60 Nanzin\"",
+        "\"南浔路60号\" 沙逊 仓库"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "沙孙/沙逊、南浔路60号及Sassoon 60 Nanzin检索未找到可直接配对的仓储沿革。沙逊在上海拥有多处仓库和物业，不套用沙逊大厦、河滨大楼或其他鸦片仓库的现用途。原点近南浔路17米及大名路32米，旧60号地块边界和建筑去向待核。 原UTM独立转换WGS84为121.48931, 31.247915。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1291",
+        "https://www.openstreetmap.org/way/71521596"
+      ],
+      "originalInput": {
+        "IDBAT": 1291,
+        "NAME": "Sassoon Company Opium Warehouse",
+        "F_ADDRESS": "60 NANZIN ROAD",
+        "FUNCTION": "Commercial establishment / Service / Warehouse / Opium",
+        "XC": 356147.0739,
+        "YC": 3458061.5816
+      },
+      "liveAndGroupReview": {
+        "IDBAT": 1291,
+        "clusterId": "vs-building-site:1291",
+        "members": [
+          {
+            "id": 1291,
+            "name": "Sassoon Company Opium Warehouse",
+            "nameZh": "沙孫公司鴉片倉庫",
+            "address": "60 NANZIN ROAD",
+            "startYear": null,
+            "endYear": null,
+            "x": 356147.0739,
+            "y": 3458061.5816
+          }
+        ]
+      },
+      "coordinates": {
+        "longitude": 121.48931,
+        "latitude": 31.247915
+      },
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/016-osm-nearby.json",
+        "queryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4886600,31.2473150,121.4899600,31.2485150",
+        "method": "OSM public map API; named nodes and ways; distance to geometry (zero inside a closed way), not a current-use conclusion; relations excluded",
+        "lookupError": null,
+        "nearby": [
+          {
+            "name": "南浔路",
+            "osmId": 71521596,
+            "osmType": "way",
+            "distanceMetres": 17,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/71521596"
+          },
+          {
+            "name": "大名路",
+            "osmId": 475437749,
+            "osmType": "way",
+            "distanceMetres": 32,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/475437749"
+          },
+          {
+            "name": "白渡桥",
+            "osmId": 9803303602,
+            "osmType": "node",
+            "distanceMetres": 33,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/9803303602"
+          }
+        ]
+      },
+      "limitations": "沙孙/沙逊、南浔路60号及Sassoon 60 Nanzin检索未找到可直接配对的仓储沿革。沙逊在上海拥有多处仓库和物业，不套用沙逊大厦、河滨大楼或其他鸦片仓库的现用途。原点近南浔路17米及大名路32米，旧60号地块边界和建筑去向待核。 原UTM独立转换WGS84为121.48931, 31.247915。"
+    }
+  ]
+}

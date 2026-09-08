@@ -31,8 +31,10 @@ const unresolvedRecords = (await Promise.all(unresolvedFilenames.map((filename) 
 ))).flat()
 
 const researchedIds = new Set()
+const reservedIds = new Set()
 for (let number = 1; number < batchNumber; number += 1) {
-  const filename = `unresolved-landmarks-${String(number).padStart(3, '0')}-research.json`
+  const priorBatch = String(number).padStart(3, '0')
+  const filename = `unresolved-landmarks-${priorBatch}-research.json`
   const researchPath = path.join(researchDataDirectory, filename)
   try {
     const archive = JSON.parse(await fs.readFile(researchPath, 'utf8'))
@@ -40,10 +42,19 @@ for (let number = 1; number < batchNumber; number += 1) {
   } catch (error) {
     if (error.code !== 'ENOENT') throw error
   }
+
+  // Keep earlier stable batches reserved even when their research is unfinished.
+  const priorInputPath = path.join(outputDirectory, `${priorBatch}-input.json`)
+  try {
+    const records = JSON.parse(await fs.readFile(priorInputPath, 'utf8'))
+    for (const record of records) reservedIds.add(record.IDBAT)
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error
+  }
 }
 
 const selected = unresolvedRecords
-  .filter((record) => !researchedIds.has(record.IDBAT))
+  .filter((record) => !researchedIds.has(record.IDBAT) && !reservedIds.has(record.IDBAT))
   .slice(0, 50)
   .map(({ IDBAT, NAME, F_ADDRESS, FUNCTION, XC, YC }) => ({
     IDBAT,
