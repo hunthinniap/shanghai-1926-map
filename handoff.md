@@ -1,8 +1,38 @@
 # 上海历史地点现用途调查交接
 
-更新时间：2026-09-07（Asia/Taipei）
+更新时间：2026-09-08（Asia/Shanghai）
 
-## 最新进度（优先于下方 2026-08-30 存档）
+## 最新进度：009 首轮完成，下一批从 010 开始
+
+- 本轮已从 `origin/main` 快进拉取至 `4ca4ef0 feat: verify landmark sites through batch 008`。009 原始快照此前已经存在，本轮据此完成调查，没有直接使用重排后的实时 `009.json`。
+- **009 首轮调查完成 50 条，不等于全部查明**：11 verified、30 likely、9 unresolved。分类为 10 `survives-with-history`、1 `demolished-current-use`、39 `location-only-current-use`；后者包含仍无法确认具体宗地现用途的记录，不能把周边 POI 写成旧址定论。
+- 10 条 `yes` 已回填 10 个独立地点组：`299, 1634, 835, 1726, 1350, 1750, 1743, 1229, 1706, 1262`。它们的历史名称、原用途、年代、原坐标均保留；本轮只新增现用途属性，没有合并历史记录或修改道路。
+- `#249 Institut Pasteur` 的巴斯德研究所身份及瑞金二路207号今日科研用途已确认，但当前地点组另含 `#248 Nurse School`。护士学校与研究所建筑的关系仍待核，因此 #249 为 verified / review，不对整个组回填。其余 30 条 likely 也只留在研究档案；合计 31 review、9 no 未回填。
+- 主要确定项：华英女中旧址今为淮海公馆漫心府；护国禅寺旧址今为南京东路街道社区服务空间；湖心亭修缮后仍作茶楼；诺曼底公寓即武康大楼；内外棉职员住宅延续为澳门小区。学校用地转为同济或上外校园的结论限于旧校园用址，不宣称每一幢现代楼都是原校舍。
+- 湖州会馆 #1350 按“战毁后改建”记录：原会馆大部毁于1932年战事，后来建住宅，现另有遗址纪念展陈与恢复门头。不能标成原会馆完整保存；中兴路828号是纪念设施地址，不代表整个历史会馆范围。
+- 当前 override **198** 个；现用途审计为图书馆 62（缓存兜底 0）、Wikipedia 15、逐地点研究 198、现存公园 22、部分名称待审 21、具名未找到 1100、泛名 252，网络失败 0。未查明导出 **1505 条 / 31 个文件**，本批 10 个获准 ID 已移除，40 个未获准 ID 均仍保留。
+- `009-a.json`、`009-b.json`、`009-c.json` 保存逐条判断及来源；`009-results.json` 保存完整六字段、坐标转换与参考文献；`scripts/data/unresolved-landmarks-009-research.json` 保存三分类和回填建议。辅助查询保存在 `009-osm-nearby.json`、`009-shanghai-library-address.json`；OSM 末10条请求遇到429/超时等错误，错误状态已保留，不能将查询失败解读为地点不存在。
+- **010 稳定快照已准备**：`research/unresolved-landmarks/010-input.json`，50 条，已验证不重复 001—009 已研究 ID。010 尚未开展逐条研究，下一轮直接从这个快照开始，不要重新复制实时 `public/data/unresolved-landmarks/010.json`。
+
+### 下一轮工作与复核重点
+
+1. 按 010 稳定快照分组检索官方名录、方志、校史和当前机构地址；先建立旧址关系，再查现在用途。地图反查只是空间线索，不能单凭最近 POI 宣布建筑延续或拆除。
+2. 009 可继续重点查 #249 / #248 的研究所与护士学校用址边界；#1733 Intersavin / 白尔登公寓的旧门牌与坐标对应；#1173 日本西部小学、#1707 第七日本小学的宗地与校史闭环。#1720 / #1721 女校还与 #1266 / #1267 同组，暂不整组回填。
+3. 保留 #1457 徽宁会馆新老馆门牌冲突、#1290 日本邮船旧扬子路点位冲突等不确定性；不要把机构迁址后的现代地址直接移植回旧点。004 的 18 条 yes 等早期积压状态未在本轮改变，后续可另行审阅。
+4. 完成下一批后依次运行 `node scripts/compile-unresolved-research.mjs 010`、审查同组证据、`node scripts/apply-unresolved-research-overrides.mjs 010`、`npm run data:current-use`、`npm run data:unresolved`。**不要运行 `data:build`**，本任务无需道路矫正。
+
+### 本轮检查与 Git 注意事项
+
+- 50 条原始六字段逐项不变，ID 唯一，参考链接格式有效；10 个获准地点组均只有本条源记录，没有将未研究的同组记录一并覆盖。
+- 地图仍有 5507 个历史要素、3832 条道路；与拉取后的 HEAD 逐项比较，仅上述10条的 `current*` 属性变化，所有要素的历史属性和几何均不变。
+- 道路数组 `JSON.stringify(features.filter(f => f.properties.kind === 'road'))` 的 SHA-256 仍为 `e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c`。
+- `npm test`：52 项 Vitest + 12 项 Node 测试通过；`npm run build`（含数据校验与 TypeScript）通过。本机缺少 Playwright Chromium，本轮未重跑浏览器端测试，也未下载安装浏览器。
+- 拉取前本地有两个生成文件的未提交差异，已完整保存在 `stash@{0}`，消息为 `pre-pull local generated data 2026-09-08`；涉及 `public/data/historical-features.geojson` 和 `public/data/virtual-shanghai-building-clusters.json`。**尚未 pop，不要删除或直接覆盖恢复**：先审阅其中旧道路差异，避免把它们混入后续地标调查提交。
+- 正常使用 `git push origin main`，禁止 force push。下方 Windows 的 schannel 推送命令仅是旧环境存档，不适用于当前 macOS。
+
+## 2026-09-07 交接存档
+
+以下状态已由上方 009 进度更新。
 
 - 本次提交基线为 `9dccb79 feat: research landmark sites through batch 007`，远程为 `origin/main`。
 - 007 已完成：50 条，25 verified、11 likely、14 unresolved；获准项已回填。

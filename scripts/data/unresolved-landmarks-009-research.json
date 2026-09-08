@@ -1,0 +1,1563 @@
+{
+  "batch": "009",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/009-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/009-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 10,
+      "demolished-current-use": 1,
+      "location-only-current-use": 39
+    },
+    "byResolutionStatus": {
+      "resolved": 11,
+      "probable": 30,
+      "unresolved": 9
+    },
+    "mapWriteRecommendation": {
+      "yes": 10,
+      "review": 31,
+      "no": 9
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 299,
+      "historicalName": "Huaying Junior High School for Girls",
+      "historicalNameCorrectionZh": "私立華英女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.45703,
+          31.21899
+        ],
+        "gcj02": [
+          121.461602,
+          31.217084
+        ]
+      },
+      "modernRoadAddress": "275-22 茂名南路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海淮海公馆漫心府（华英女中旧址）",
+      "currentUse": "酒店及餐饮",
+      "currentAddress": "上海市黄浦区茂名南路133弄22号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "袁念琪在新民晚报的校址回忆明确把华英女子中学、勤业小学、茂名南路第一小学连接到133弄22号；华住酒店官网确认该址现经营上海淮海公馆漫心府。VS旧275-22号与现代133弄22号的推定建立在专名沿革和邻近坐标共同支持上，不以门牌数字相同为依据；只确认原址转用，不宣称所有原校舍完整保存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=299",
+        "https://news.xinmin.cn/2024/12/17/32794212.html",
+        "https://m.huazhu.com/Hotel/Detail/9000994"
+      ]
+    },
+    {
+      "IDBAT": 1634,
+      "historicalName": "Hubei Huitang",
+      "historicalNameCorrectionZh": "滬北會堂",
+      "historicalStartYear": 1924,
+      "coordinates": {
+        "wgs84": [
+          121.482225,
+          31.254758
+        ],
+        "gcj02": [
+          121.486722,
+          31.252803
+        ]
+      },
+      "modernRoadAddress": "183 武进路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "沪北会堂旧址",
+      "currentUse": "原会堂转作餐饮及旅馆等商业用途（据2025年报道）",
+      "currentAddress": "上海市虹口区武进路183号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "旧WUTSIN门牌183与现代武进路183号一致。2025年武进日报街区报道仍列出会堂旧址，记载其功能已改为餐饮店及旅馆；保留1924年建堂史，不显示为仍在宗教活动的教堂。不同资料对最初传教年份有差异，此处不据此改写原始年代；不沿用旧百科中的商户名称作为现经营品牌。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1634",
+        "https://epaper.oss-cn-hangzhou.aliyuncs.com/wujin/2025-02-26/cf8d00a09eb12ca95a5dd4b3bcc77f84.pdf",
+        "https://zh.wikipedia.org/wiki/沪北会堂"
+      ]
+    },
+    {
+      "IDBAT": 835,
+      "historicalName": "Huguo Buddhist Temple",
+      "historicalNameCorrectionZh": "護國禅寺",
+      "coordinates": {
+        "wgs84": [
+          121.464139,
+          31.231411
+        ],
+        "gcj02": [
+          121.468692,
+          31.229494
+        ]
+      },
+      "modernRoadAddress": "101 江阴路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "南京东路街道社区服务空间（护国禅寺旧址）",
+      "currentUse": "社区事务受理、公共文化活动及社区服务",
+      "currentAddress": "上海市黄浦区江阴路101号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海黄浦街区资料明确记载护国禅寺转为江阴路小学，再作江阴路101号街道服务中心。市规划资源局2023年报道说明该址改造为“悦·南东”零距离家园，现行一网通办仍列101号受理窗口。确认同址转用，不将院内所有现建筑认定为原寺完整本体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=835",
+        "https://m.thepaper.cn/newsDetail_forward_8451977",
+        "https://ghzyj.sh.gov.cn/nw2444/20230731/c049813823fa4277bddd6f457dc737dd.html",
+        "https://zwdt.sh.gov.cn/govPortals/bsfw/street/310101002000/142b443a-3d87-4575-8a6f-7c9b7adebba8"
+      ]
+    },
+    {
+      "IDBAT": 1726,
+      "historicalName": "Huxinting Teahouse",
+      "historicalNameCorrectionZh": "湖心亭茶館",
+      "coordinates": {
+        "wgs84": [
+          121.487126,
+          31.228673
+        ],
+        "gcj02": [
+          121.491603,
+          31.226692
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "湖心亭茶楼",
+      "currentUse": "茶楼、茶艺与文化体验",
+      "currentAddress": "上海市黄浦区豫园九曲桥畔湖心亭",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "独立历史资料明确这是豫园池中、九曲桥旁的湖心亭；OSM同名建筑中心约28米。运营方与新闻报道均确认2023年开始原址保护性修缮，2025年7月10日重新开放，仍以茶楼运营。VS的YUYUAN (BIS)不应误译成愚园路；此处采用豫园地标位置，不凭231旧门牌套用现代门牌。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1726",
+        "https://www.fosun.com/Upload/File/202509/5564a0b3e9634004964bddc7f753027d.pdf",
+        "https://finance.sina.com.cn/jjxw/2025-07-10/doc-infeyxsf3589628.shtml",
+        "https://www.openstreetmap.org/way/228035340"
+      ]
+    },
+    {
+      "IDBAT": 1350,
+      "historicalName": "Huzhou Guild",
+      "historicalNameCorrectionZh": "湖州會館",
+      "historicalStartYear": 1912,
+      "coordinates": {
+        "wgs84": [
+          121.465948,
+          31.255741
+        ],
+        "gcj02": [
+          121.470498,
+          31.253831
+        ]
+      },
+      "modernRoadAddress": "804 中兴路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "湖州会馆—上海总工会遗址",
+      "currentUse": "遗址纪念展陈；原会馆大片用地另建住宅",
+      "currentAddress": "上海市静安区中兴路828号（会文路转角）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "静安官方资料明确：原湖州会馆占地二十余亩，1932年战事中大部被毁，后来在遗址上建铁路职工住宅，原貌不存；2021年恢复门头与展陈并开放纪念地。现代OSM仍标湖州会馆，中心距点约24米。这里只把828号作为纪念设施地址，不把整个历史会馆用地说成完整保存的旧建筑；不混入其他上海总工会旧址的开馆新闻。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1350",
+        "https://www.jingan.gov.cn/rmtzx/003008/003008006/20210301/27a9d1f1-ae6c-47a8-8810-d6a98369b207.html",
+        "https://www.jingan.gov.cn/rmtzx/003008/003008006/20210616/a2fdb16c-ea44-4fcb-a55c-985ae7266d3b.html",
+        "https://www.meet-in-shanghai.net/cn/news/huzhou-hall--shanghai-federation-of-trade-unions-site-opened-469524/",
+        "https://www.openstreetmap.org/way/1302220799"
+      ]
+    },
+    {
+      "IDBAT": 249,
+      "historicalName": "Institut Pasteur",
+      "historicalStartYear": 1937,
+      "coordinates": {
+        "wgs84": [
+          121.461924,
+          31.211489
+        ],
+        "gcj02": [
+          121.466482,
+          31.209568
+        ]
+      },
+      "modernRoadAddress": "207 瑞金二路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "中国疾控中心寄生虫病预防控制所（巴斯德研究所旧址）",
+      "currentUse": "寄生虫病防治与热带病科研、检测及办公",
+      "currentAddress": "上海市黄浦区瑞金二路207号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "历史巴斯德研究所位于原金神父路207号；百科沿革与房管局5A072所列公董局公共卫生救济处医学化验所旧址相互支持，2026年该所公告仍列瑞金二路207号。上海图书馆地址候选一致，但其点坐标偏离约一公里，不用于重定位。地图现地点组还含#248护士学校，两者虽共门牌，是否应共享同一现址说明仍待核；暂不对整个地点组回填，防止把护士学校直接认作研究所本体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=249",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.ipd.org.cn/view6502.html",
+        "https://zh.wikipedia.org/wiki/中国疾病预防控制中心寄生虫病预防控制所",
+        "http://data.library.sh.cn/entity/architecture/libihxghjethym45"
+      ]
+    },
+    {
+      "IDBAT": 1750,
+      "historicalName": "International Savings Society Apartments / The Normandie",
+      "historicalStartYear": 1924,
+      "coordinates": {
+        "wgs84": [
+          121.433395,
+          31.206391
+        ],
+        "gcj02": [
+          121.438018,
+          31.204523
+        ]
+      },
+      "modernRoadAddress": "1920 淮海中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "武康大楼（诺曼底公寓）",
+      "currentUse": "住宅公寓及沿街商业，历史建筑外部观览",
+      "currentAddress": "上海市徐汇区淮海中路1850号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "官方文旅资料直接把诺曼底公寓、万国储蓄会投资、1924年及武康大楼联系起来，现代门牌为淮海中路1850号。转换后的原点距OSM武康大楼中心约32米，与已确认建筑位置一致。旧霞飞路1920号和现1850号并不相同，定名依据是独立专名沿革与空间共同校验，不能仅靠门牌推演。2025年官方资料仍记载楼内居民，故不用“整栋博物馆”描述。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1750",
+        "https://whlyj.sh.gov.cn/gqfc/20251203/a1174c2de60a4524bbd58144be95c49c.html",
+        "https://mzj.sh.gov.cn/lnb-lyxx/20210506/16884e165f374f7387f1a62b57c47ced.html",
+        "https://www.openstreetmap.org/way/293434151"
+      ]
+    },
+    {
+      "IDBAT": 1743,
+      "historicalName": "J.K.K. APARTMENT",
+      "coordinates": {
+        "wgs84": [
+          121.440044,
+          31.217824
+        ],
+        "gcj02": [
+          121.444656,
+          31.215951
+        ]
+      },
+      "modernRoadAddress": "956/962 长乐路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "J.K.K.公寓",
+      "currentUse": "住宅公寓",
+      "currentAddress": "上海市静安区长乐路962弄1—4号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海市房管局第五批优秀历史建筑5B001直接列出原名J.K.K.公寓、现名公寓（J.K.K.Apartment）、长乐路962弄1—4号，建于1935年、保护类别三。与VS长乐路前身ROUTE BOURGEAT的956／962号及坐标片区相合。结论限名录建筑1—4号，不把所有旧956号门面或邻楼都纳入同一保护本体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1743",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ]
+    },
+    {
+      "IDBAT": 1229,
+      "historicalName": "Japanese Living Quarters - Naigai Wata Textile Company",
+      "historicalNameCorrectionZh": "上海内外綿會社住宅",
+      "historicalStartYear": 1920,
+      "coordinates": {
+        "wgs84": [
+          121.431767,
+          31.247175
+        ],
+        "gcj02": [
+          121.436397,
+          31.245328
+        ]
+      },
+      "modernRoadAddress": "425 宜昌路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "澳门小区／华纺第二宿舍（内外棉会社职员住宅）",
+      "currentUse": "住宅小区及历史住宅保护",
+      "currentAddress": "上海市普陀区澳门路660弄",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上观现场报道明确将宜昌路小沙渡路口的内外棉会社职工住宅连接到澳门路660弄、后称华纺第二宿舍，年代与VS1920年相符。房管局第四批4N002列出澳门小区多个保护门牌；OSM澳门小区中心距原点约36米。以整个住宅用址的延续记录，不宣称原425号与现某一幢门牌已逐户对应，也不将弄内全部建筑列为保护建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1229",
+        "https://web.shobserver.com/wx/detail.do?id=83601",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.openstreetmap.org/way/495702591"
+      ]
+    },
+    {
+      "IDBAT": 1706,
+      "historicalName": "Japanese Middle School",
+      "historicalNameCorrectionZh": "日本民團中學學",
+      "historicalStartYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.499688,
+          31.283592
+        ],
+        "gcj02": [
+          121.504125,
+          31.281597
+        ]
+      },
+      "modernRoadAddress": "1209 四平路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "同济大学原日本中学校址（一二九历史建筑群）",
+      "currentUse": "大学教学科研、博物馆及礼堂等校园功能",
+      "currentAddress": "上海市杨浦区四平路1239号同济大学校内",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "同济大学官方建筑资料将一二九大楼及礼堂等明确记为原日本中学校舍，现博物馆官网仍在运营。历史点在同济校园内、接近数学学院与一二九礼堂，并非博物馆入口的精确点。本条VS开始年份1939不等于现存大楼1942年的建造年份；按旧校园用址转用记录，保留原坐标，不把整个校园都称作单幢原建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1706",
+        "https://photo.tongji.edu.cn/zt/jzkyd/y_ejlt.htm",
+        "https://www.lib.tongji.edu.cn/index.php?classid=12038",
+        "https://museum.tongji.edu.cn/main.htm",
+        "https://www.openstreetmap.org/relation/18788114",
+        "https://www.openstreetmap.org/way/183383483"
+      ]
+    },
+    {
+      "IDBAT": 1262,
+      "historicalName": "Japanese Middle School for Girls No. 2",
+      "historicalNameCorrectionZh": "第二日本高等女學校",
+      "historicalStartYear": 1942,
+      "historicalEndYear": 1945,
+      "coordinates": {
+        "wgs84": [
+          121.478732,
+          31.277692
+        ],
+        "gcj02": [
+          121.483242,
+          31.275757
+        ]
+      },
+      "modernRoadAddress": "? 大连西路_1987",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海外国语大学虹口校区（原第二日本高等女学校用址）",
+      "currentUse": "大学教育、科研及校园设施",
+      "currentAddress": "上海市虹口区大连西路550号",
+      "currentUseRelationship": "same-site-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海外国语大学官方校史逐期列出虹口校区用址，包括1941—1945年上海第二日本高等女学校、1946—1949年暨南大学一院及1950年后的上外。现大学章程列注册地址大连西路550号。确认校园层级的同址转用，不主张某一幢现楼是原女校建筑；VS1942年记录日期保持原样，不覆盖校史所述阶段。OSM本点查询失败不影响这条直接文字用址证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1262",
+        "https://100.shisu.edu.cn/fd/99/c9248a130457/page.htm",
+        "https://www.shisu.edu.cn/about/university-statutes/index.html"
+      ]
+    },
+    {
+      "IDBAT": 398,
+      "historicalName": "Huaijiu Junior High School for Girls",
+      "historicalNameCorrectionZh": "懐久女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.449423,
+          31.212695
+        ],
+        "gcj02": [
+          121.454014,
+          31.210803
+        ]
+      },
+      "modernRoadAddress": "77 汾阳路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "汾阳路77号附近住宅与沿街商业",
+      "currentUse": "坐标附近为公寓及沿街餐饮商业；原借用校舍的具体楼栋用途未确认",
+      "currentAddress": "上海市徐汇区汾阳路77号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "华东师大校史研究确认务本女中在战时改称怀久女中，并借用毕勋路和威海卫路两处校舍。此条是汾阳路校址，不是今日市二中学永康路校址。OSM的77号-1商户约22米、毕勋公寓中心约36米，只能支持现址周边住宅商业线索，不能证明原校舍即其中任一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=398",
+        "https://www.ecnu.edu.cn/info/1426/70248.htm",
+        "https://www.openstreetmap.org/node/5852825793",
+        "https://www.openstreetmap.org/way/1153682692"
+      ]
+    },
+    {
+      "IDBAT": 997,
+      "historicalName": "Huaijiu Primary and Junior High School",
+      "historicalNameCorrectionZh": "懐久女子中小學",
+      "coordinates": {
+        "wgs84": [
+          121.455438,
+          31.228495
+        ],
+        "gcj02": [
+          121.460015,
+          31.226597
+        ]
+      },
+      "modernRoadAddress": "587 威海路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "威海路威海大楼附近街坊",
+      "currentUse": "沿街商业及楼宇街坊；历史校舍的现使用单位未确认",
+      "currentAddress": "上海市静安区威海路、威海大楼附近（历史门牌587号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "校史资料确认怀久女中另有威海卫路校区，与#398应分别保存。OSM威海大楼中心距历史点约36米，毛泽东旧居约53米；它们仅为现代空间参照，不能把女校误认成毛泽东旧居或将机构迁移后的市二中学写回此点。旧587号尚无完整门牌沿革证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=997",
+        "https://www.ecnu.edu.cn/info/1426/70248.htm",
+        "https://www.openstreetmap.org/way/1200721295",
+        "https://www.openstreetmap.org/node/6557300117"
+      ]
+    },
+    {
+      "IDBAT": 76,
+      "historicalName": "Hualong Native-Medicine Hospital",
+      "historicalNameCorrectionZh": "華隆中醫院",
+      "historicalStartYear": 1930,
+      "historicalEndYear": 1950,
+      "coordinates": {
+        "wgs84": [
+          121.468657,
+          31.226346
+        ],
+        "gcj02": [
+          121.473196,
+          31.224415
+        ]
+      },
+      "modernRoadAddress": "50 黄陂南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "金陵大厦附近街坊",
+      "currentUse": "坐标附近为商业楼宇及住宿服务",
+      "currentAddress": "上海市黄浦区黄陂南路、金陵中路附近（历史门牌黄陂南路50号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "常州方志证实丁济万创办华隆中医院并另设分院，但不能把不同院址互相替代。此条贝勒路50号的历史点在金陵大厦中心约22米处；目前只确认现代商业街坊线索，尚无拆建和宗地对应材料证明医院旧楼就是金陵大厦。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=76",
+        "https://fzg.changzhou.gov.cn/html/fzg/2016/FNBDOFDF_0116/26267.html",
+        "https://www.openstreetmap.org/way/48872469"
+      ]
+    },
+    {
+      "IDBAT": 193,
+      "historicalName": "Hualong Primary School",
+      "historicalNameCorrectionZh": "華龍小學校",
+      "coordinates": {
+        "wgs84": [
+          121.464855,
+          31.221958
+        ],
+        "gcj02": [
+          121.469405,
+          31.220035
+        ]
+      },
+      "modernRoadAddress": "56-25 雁荡路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "雁荡路学校及里弄街坊",
+      "currentUse": "坐标附近有小学及历史里弄；原56-25号校舍现用途未确认",
+      "currentAddress": "上海市黄浦区雁荡路、南昌路附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "上海黄浦的街区报道记载华龙小学后改雁荡路小学，曾分设雁荡路36号、62号及南昌路48号，其中部分校舍已拆。原56-25号不能不经核对直接对应其中某处分部；附近OSM七色花小学约57米也不构成学校连续证据。保留旧校沿革但不移植到邻校。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=193",
+        "https://m.thepaper.cn/newsDetail_forward_8014324",
+        "https://www.openstreetmap.org/way/1331387912"
+      ]
+    },
+    {
+      "IDBAT": 1321,
+      "historicalName": "Huashun Wharf",
+      "historicalNameCorrectionZh": "華順碼頭",
+      "coordinates": {
+        "wgs84": [
+          121.503274,
+          31.251442
+        ],
+        "gcj02": [
+          121.507695,
+          31.249423
+        ]
+      },
+      "modernRoadAddress": "?? 公平路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "公平路渡口附近滨江地带",
+      "currentUse": "现代渡运设施及滨江空间（旧码头边界未闭合）",
+      "currentAddress": "上海市虹口区公平路南端、黄浦江岸附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口官方资料将华顺、公平等历史码头列入后来的高阳港务片区；这说明港区沿革，不等于华顺码头与公平路渡口同一设施。OSM公平路渡口约48米，作为现代位置线索保留；原码头门牌缺失，未将其自动对应到更远的国际客运中心。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1321",
+        "https://hkda.shhk.gov.cn/hkda/hkfz/010001/20260430/2d2cf47c-d906-4648-80bd-d948f25744f3.html",
+        "https://www.openstreetmap.org/node/1773236378"
+      ]
+    },
+    {
+      "IDBAT": 807,
+      "historicalName": "Huguang School",
+      "historicalNameCorrectionZh": "私立滬光學校",
+      "coordinates": {
+        "wgs84": [
+          121.468193,
+          31.226191
+        ],
+        "gcj02": [
+          121.472733,
+          31.224261
+        ]
+      },
+      "modernRoadAddress": "34 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "金陵中路西端附近街坊",
+      "currentUse": "附近有住宿与商业；旧校舍具体用途未确认",
+      "currentAddress": "上海市黄浦区金陵中路西端、黄陂南路附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "AVENUE FOCH旧路分段不能一概写成延安中路。按本条坐标，仅记录金陵中路40号住宿POI约22米的线索；未有材料证明沪光学校即这家旅店的原址，不填写拆除年代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=807",
+        "https://www.openstreetmap.org/node/4437512491"
+      ]
+    },
+    {
+      "IDBAT": 819,
+      "historicalName": "Huichun Hospital",
+      "historicalNameCorrectionZh": "回春醫院",
+      "coordinates": {
+        "wgs84": [
+          121.467138,
+          31.229357
+        ],
+        "gcj02": [
+          121.471682,
+          31.227432
+        ]
+      },
+      "modernRoadAddress": "387 武胜路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "武胜路—黄陂北路附近",
+      "currentUse": "道路及地下停车设施附近；原医院楼栋用途未确认",
+      "currentAddress": "上海市黄浦区武胜路、黄陂北路附近（历史门牌387号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "RACE COURSE ROAD对应武胜路。历史点周边OSM有人民广场地下停车场及路口，但地下设施与地面宗地不是同一证据层；没有回春医院拆除和新建项目的直接资料，不能写成医院被停车场替代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=819",
+        "https://www.openstreetmap.org/way/178723092"
+      ]
+    },
+    {
+      "IDBAT": 1539,
+      "historicalName": "Huijia Garden",
+      "historicalNameCorrectionZh": "惠家花園",
+      "historicalStartYear": 1904,
+      "coordinates": {
+        "wgs84": [
+          121.44327,
+          31.170567
+        ],
+        "gcj02": [
+          121.447872,
+          31.168666
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "龙华俞三小区附近",
+      "currentUse": "周边为住宅、养老服务等；历史花园边界未确认",
+      "currentAddress": "上海市徐汇区龙华路3208弄附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原地址只写HYDRO (LONGHUA GANG)，属于地貌线索而非完整门牌。原点附近可见俞三小区及养老设施，不能把1904年的惠家花园直接等同现代住宅小区，亦无充分证据断定其拆除时间。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1539",
+        "https://www.openstreetmap.org/way/1431494599"
+      ]
+    },
+    {
+      "IDBAT": 1041,
+      "historicalName": "Huiling Junior High School",
+      "historicalNameCorrectionZh": "恵霊中學",
+      "coordinates": {
+        "wgs84": [
+          121.448798,
+          31.23504
+        ],
+        "gcj02": [
+          121.453393,
+          31.233159
+        ]
+      },
+      "modernRoadAddress": "336 江宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "江宁路新江大楼附近街坊",
+      "currentUse": "住宅、办公等现代楼宇附近；旧学校现用途未确认",
+      "currentAddress": "上海市静安区江宁路附近（历史门牌336号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "GORDON ROAD在此为江宁路，不是陕西北路。新江大楼中心距点约25米，仅用于现位置参照。此记录与承动法律会计专修校#1039、绍兴龙山中学分校#1040共用地点组，尚未建立三条记录各自的地籍与用址沿革，不对整组回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1041",
+        "https://www.openstreetmap.org/way/1270307946"
+      ]
+    },
+    {
+      "IDBAT": 1455,
+      "historicalName": "Huining Guild",
+      "historicalNameCorrectionZh": "會寧會館",
+      "historicalStartYear": 1754,
+      "coordinates": {
+        "wgs84": [
+          121.479384,
+          31.209319
+        ],
+        "gcj02": [
+          121.483886,
+          31.207351
+        ]
+      },
+      "modernRoadAddress": "198 制造局路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "制造局路—斜土路附近街坊",
+      "currentUse": "沿街商业与住宅附近；会馆原宗地具体用途未确认",
+      "currentAddress": "上海市黄浦区制造局路、斜土路附近（历史门牌198号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "Huining Guild的历史名称应与徽宁会馆核对，原中文“會寧”原样保留。慈善基金会所载地方史记载徽宁会馆的徽宁路老、新馆及战毁沿革，但没有将制造局路198号独立院落直接连接到现代建筑。附近红双喜商户约31米，不据此宣布会馆现为该店。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1455",
+        "https://www.scf.org.cn/csjjh/n3421/n5604/u1ai308688.html",
+        "https://www.openstreetmap.org/node/13814214903"
+      ]
+    },
+    {
+      "IDBAT": 1457,
+      "historicalName": "Huining Guild New Building",
+      "historicalNameCorrectionZh": "會寧會館新館",
+      "coordinates": {
+        "wgs84": [
+          121.480726,
+          31.210597
+        ],
+        "gcj02": [
+          121.485224,
+          31.208626
+        ]
+      },
+      "modernRoadAddress": "655 徽宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "黄浦丽园附近（徽宁会馆用址线索）",
+      "currentUse": "现代住宅片区",
+      "currentAddress": "上海市黄浦区徽宁路655号历史地址所指附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "地方史将徽宁路655号称老馆，战后另建新馆为625号，而VS将655号标为New Building，两者不完全一致。OSM黄浦丽园中心距历史点约11米，地方报道也称655号原址建高层住宅，但在核对新、老馆分界之前只作位置与住宅用途线索，保留两条历史会馆记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1457",
+        "https://www.scf.org.cn/csjjh/n3421/n5604/u1ai308688.html",
+        "https://www.sohu.com/a/748236930_617377",
+        "https://www.openstreetmap.org/way/1026099214"
+      ]
+    },
+    {
+      "IDBAT": 372,
+      "historicalName": "Huixin Primary School",
+      "historicalNameCorrectionZh": "恵心小學",
+      "coordinates": {
+        "wgs84": [
+          121.449121,
+          31.221014
+        ],
+        "gcj02": [
+          121.453714,
+          31.219126
+        ]
+      },
+      "modernRoadAddress": "660 长乐路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "长乐路660号附近街坊",
+      "currentUse": "附近有口腔诊疗及沿街服务；旧校舍用途未确认",
+      "currentAddress": "上海市静安区长乐路660—666号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "ROUTE BOURGEAT为长乐路。现666号牙科POI距原点约69米，仅支持这一段街区的现代用途，不能证明惠心小学660号就是现诊所，也没有找到明确的原楼存废记载。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=372",
+        "https://www.openstreetmap.org/node/5608696123"
+      ]
+    },
+    {
+      "IDBAT": 1623,
+      "historicalName": "Inoue Hotel (Japanese)",
+      "historicalNameCorrectionZh": "井上旅館",
+      "coordinates": {
+        "wgs84": [
+          121.481589,
+          31.254916
+        ],
+        "gcj02": [
+          121.486088,
+          31.252963
+        ]
+      },
+      "modernRoadAddress": "海南路 / 武进路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "武进路、乍浦路附近商业街坊",
+      "currentUse": "周边商业楼宇、餐饮及住宿",
+      "currentAddress": "上海市虹口区武进路、乍浦路及原海南路附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原记录只有海南路／武进路路口，缺少门牌；历史坐标附近现有吉汇大厦等商业POI，中心约71米。不能将邻近酒店当成井上旅馆改名，更不能以邻近西本愿寺建筑作为旧旅馆；保留地块范围与用途线索。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1623",
+        "https://www.openstreetmap.org/way/448932891",
+        "https://www.openstreetmap.org/node/12409735007"
+      ]
+    },
+    {
+      "IDBAT": 431,
+      "historicalName": "Institut de Droit et Politique de Shanghai(Shanghai Faculty of Law and Administration)",
+      "historicalNameCorrectionZh": "上海法政學院",
+      "coordinates": {
+        "wgs84": [
+          121.443589,
+          31.21218
+        ],
+        "gcj02": [
+          121.448193,
+          31.210299
+        ]
+      },
+      "modernRoadAddress": "1391/1477 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "复兴中路—乌鲁木齐中路附近街坊",
+      "currentUse": "周边商业楼宇及沿街服务",
+      "currentAddress": "上海市徐汇区复兴中路、乌鲁木齐中路附近（历史1391／1477号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原地址有1391／1477两个号码，坐标仅提供一处位置。附近Qihua Tower商业建筑中心约52米，不能据此确认法政学院被其替代；也不能把今天华东政法大学其他校区写回此点。缺少逐院址门牌及用地沿革材料，维持待审。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=431",
+        "https://www.openstreetmap.org/way/332231361"
+      ]
+    },
+    {
+      "IDBAT": 906,
+      "historicalName": "Institute of Maritime Law",
+      "historicalNameCorrectionZh": "海法學院",
+      "coordinates": {
+        "wgs84": [
+          121.458145,
+          31.235382
+        ],
+        "gcj02": [
+          121.462716,
+          31.233481
+        ]
+      },
+      "modernRoadAddress": "?? 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "北京西路549—555号附近街坊",
+      "currentUse": "周边沿街商业及学校；原学院现用途未确认",
+      "currentAddress": "上海市静安区北京西路549—555号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "AVENUE ROAD对应北京西路，但原记录无门牌。OSM555-1号咖啡馆约36米，附近还存在现代学校，均不足以证明海法学院的宗地归属。此点还与#907共享地点组，不把邻校或海事相关同名机构作为该学院的连续实体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=906",
+        "https://www.openstreetmap.org/node/13939010835",
+        "https://www.openstreetmap.org/way/1200087876"
+      ]
+    },
+    {
+      "IDBAT": 7,
+      "historicalName": "International Saving Society",
+      "coordinates": {
+        "wgs84": [
+          121.486665,
+          31.234847
+        ],
+        "gcj02": [
+          121.491144,
+          31.23287
+        ]
+      },
+      "modernRoadAddress": "7 延安东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "延安东路7号附近楼宇",
+      "currentUse": "附近为餐饮、酒吧等商业空间",
+      "currentAddress": "上海市黄浦区延安东路7号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "EDWARD VII可对应延安东路，现代OSM在7号7楼标餐饮酒吧、距点约18米。但门牌相同不足以证明原万国储蓄会营业处与现楼连续；也没有把该营业处与本批两所万国储蓄会公寓混为同一地点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=7",
+        "https://www.openstreetmap.org/node/5887259991"
+      ]
+    },
+    {
+      "IDBAT": 1733,
+      "historicalName": "INTERSAVIN APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.456395,
+          31.214454
+        ],
+        "gcj02": [
+          121.460969,
+          31.212548
+        ]
+      },
+      "modernRoadAddress": "421 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "白尔登公寓／陕南大楼（名称候选）",
+      "currentUse": "候选建筑为住宅，2026年5月报道正在修缮；旧421号对应关系未确认",
+      "currentAddress": "候选为上海市黄浦区陕西南路213号；原点在陕西南路、汾阳路口附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "老公寓中英文名资料把Intersavin Apartment对应白尔登公寓；2026年现场报道确认白尔登位于陕西南路213号并有居民、正启动修缮。但原记录421号与现代213号的门牌链及坐标偏差尚未校验，原点附近OSM仅有陕西南路和复兴路校区等参照，不能把名称候选当成已经准确落位，暂不回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1733",
+        "https://www.sohu.com/a/386818649_649794",
+        "https://www.jfdaily.com/sgh/detail?id=1755219",
+        "https://www.openstreetmap.org/way/1063471490"
+      ]
+    },
+    {
+      "IDBAT": 1584,
+      "historicalName": "Ishii Hospital (Japanese)",
+      "historicalNameCorrectionZh": "石井醫院",
+      "coordinates": {
+        "wgs84": [
+          121.478752,
+          31.263202
+        ],
+        "gcj02": [
+          121.483261,
+          31.26126
+        ]
+      },
+      "modernRoadAddress": "1851 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "多伦生活广场附近街坊",
+      "currentUse": "现代零售商业街坊",
+      "currentAddress": "上海市虹口区四川北路、秦关路附近（历史门牌1851号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原石井医院点位邻近多伦生活广场，OSM建筑中心约41米。医院有多次用址可能，仅凭“石井医院”及北四川路旧门牌不足以认定现代商场覆盖原院界；本轮没有可靠的拆除或完整门牌重编号材料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1584",
+        "https://www.openstreetmap.org/way/1085786142",
+        "https://www.openstreetmap.org/way/1085786137"
+      ]
+    },
+    {
+      "IDBAT": 1670,
+      "historicalName": "Japanese Chamber of Commerce",
+      "historicalNameCorrectionZh": "上海日本商工會議所",
+      "coordinates": {
+        "wgs84": [
+          121.482628,
+          31.247706
+        ],
+        "gcj02": [
+          121.487123,
+          31.245747
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "天潼路—四川北路附近街坊",
+      "currentUse": "周边现代商业、酒店及办公楼宇",
+      "currentAddress": "上海市虹口区天潼路、四川北路附近（历史门牌288号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原TIENDONG为天潼路写法；点附近有星荟中心、苏宁宝丽嘉酒店等现代建筑，约65—74米。没有资料将商工会议所的288号旧门牌和整块现代综合体闭合，现阶段仅作现代街坊用途参照，不断言商会大楼仍存或已拆。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1670",
+        "https://www.openstreetmap.org/way/744529828",
+        "https://www.openstreetmap.org/way/744266710"
+      ]
+    },
+    {
+      "IDBAT": 1664,
+      "historicalName": "Japanese Club",
+      "historicalNameCorrectionZh": "日本人俱樂部",
+      "historicalStartYear": 1914,
+      "coordinates": {
+        "wgs84": [
+          121.48448,
+          31.249824
+        ],
+        "gcj02": [
+          121.488968,
+          31.24786
+        ]
+      },
+      "modernRoadAddress": "309 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "东泰大厦（日本人俱乐部旧址候选）",
+      "currentUse": "现代商住楼宇",
+      "currentAddress": "上海市虹口区塘沽路309号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "旧BOONE ROAD 309号与塘沽路309号相合。地方史博客引《虹口区志》说明1914年俱乐部迁入，称1994年原楼拆除后建东泰大厦；日本驻沪总领馆旅行社名单可确认同门牌东泰大厦办公用途。现代楼名和地址可靠，但拆建链暂主要来自二手博客，保留待审，待取得区志原文或拆建档案再升级。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1664",
+        "https://www.oldkids.com.cn/blog/view.php?bid=1651662",
+        "https://www.shanghai.cn.emb-japan.go.jp/files/100355956.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1721,
+      "historicalName": "Japanese Commercial School for Girls",
+      "historicalNameCorrectionZh": "日本女子商業學校",
+      "historicalStartYear": 1940,
+      "coordinates": {
+        "wgs84": [
+          121.484484,
+          31.271516
+        ],
+        "gcj02": [
+          121.488974,
+          31.269561
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "欧阳路绿洲紫荆花园及北侧街坊（旧女商校用址候选）",
+      "currentUse": "现代住宅街坊",
+      "currentAddress": "上海市虹口区欧阳路289号历史地址、317—351号附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "华东师大官方沿革说明欧阳路日本女子商业学校及相邻女子高等学校在1946年用作光华大学与附中，后为无线电七厂；同时给出欧阳路221号，和VS289号不一致。原点更靠近现代351弄，不能把紫荆花园整个地块认作女商校。原FUNCTION误列Harbor／Wharf／Jetty，与校名冲突，原字段不改，只在此标出。与#1720及#1266、#1267的各时代记录分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1721",
+        "https://wmzx.ecnu.edu.cn/d4/00/c34124a381952/page.htm",
+        "https://www.openstreetmap.org/way/1385150516",
+        "https://www.openstreetmap.org/way/727003100"
+      ]
+    },
+    {
+      "IDBAT": 1300,
+      "historicalName": "Japanese Consular Police",
+      "historicalNameCorrectionZh": "日本領事館警察處",
+      "coordinates": {
+        "wgs84": [
+          121.487046,
+          31.250217
+        ],
+        "gcj02": [
+          121.491525,
+          31.248246
+        ]
+      },
+      "modernRoadAddress": "147 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "塘沽路三角地、宝矿国际大厦附近",
+      "currentUse": "现代楼宇及城市道路；旧警察机构宗地用途未确认",
+      "currentAddress": "上海市虹口区塘沽路、南浔路附近（历史门牌147号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原BOONE ROAD 147号对应塘沽路历史地址，OSM宝矿国际大厦中心约45米、北虹高中约74米，仅作周边参照。日本领事警察在上海有多处驻地，不能直接套用昆山路或黄浦路其他旧址；本点与#1299共组，尚无完整宗地对应，不回填整组。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1300",
+        "https://www.openstreetmap.org/way/744535408",
+        "https://www.openstreetmap.org/way/1155356654"
+      ]
+    },
+    {
+      "IDBAT": 1720,
+      "historicalName": "Japanese High School for Girls",
+      "historicalNameCorrectionZh": "日本高等女學校",
+      "historicalEndYear": 1945,
+      "coordinates": {
+        "wgs84": [
+          121.484193,
+          31.270602
+        ],
+        "gcj02": [
+          121.488684,
+          31.268648
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "绿洲紫荆花园附近（旧女高校用址候选）",
+      "currentUse": "现代住宅及沿街商业",
+      "currentAddress": "上海市虹口区欧阳路、四达路附近（VS历史289号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "华东师大校史确认日本女子高等学校与邻近女商校后来成为光华大学暨附中欧阳路校址；但校史门牌221号与VS289号之间缺少变更和界址材料。OSM绿洲紫荆花园中心约67米，只作现位置线索。原FUNCTION误列运动场、宗教与新教，疑为同组其他记录的属性串位，保留原字段不修改；不删除同组青年会运动场及光华大学各年代记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1720",
+        "https://wmzx.ecnu.edu.cn/d4/00/c34124a381952/page.htm",
+        "https://www.openstreetmap.org/way/727003100",
+        "https://www.openstreetmap.org/node/9933322531"
+      ]
+    },
+    {
+      "IDBAT": 1580,
+      "historicalName": "Japanese Language School",
+      "historicalNameCorrectionZh": "日語學校",
+      "coordinates": {
+        "wgs84": [
+          121.480164,
+          31.264877
+        ],
+        "gcj02": [
+          121.484668,
+          31.262932
+        ]
+      },
+      "modernRoadAddress": "372 长春路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "长春公寓附近街坊",
+      "currentUse": "公寓住宅附近；日语学校具体用址未确认",
+      "currentAddress": "上海市虹口区长春路、长山路及四川北路附近（历史372号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "现代长春公寓中心距点约51米，可以作为住宅街坊参照；未发现能把旧372号日语学校连接到该公寓的校史或地籍材料。它不是今天上海日本人学校的校址，不按机构同名替换。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1580",
+        "https://www.openstreetmap.org/way/1080930176"
+      ]
+    },
+    {
+      "IDBAT": 1289,
+      "historicalName": "Japanese Military Hospital",
+      "historicalNameCorrectionZh": "陸戰隊病舍",
+      "coordinates": {
+        "wgs84": [
+          121.476247,
+          31.267156
+        ],
+        "gcj02": [
+          121.480765,
+          31.265223
+        ]
+      },
+      "modernRoadAddress": "2181 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海四一一医院附近（旧海军病舍用址候选）",
+      "currentUse": "现代医院片区；旧病舍宗地与楼栋未确认",
+      "currentAddress": "上海市虹口区四川北路、东江湾路附近；候选现院址东江湾路15号",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口区当前医疗资料确认东江湾路15号为上海四一一医院，历史叙述亦涉及日军海军医院，但尚未获得把VS北四川路2181号具体病舍对应到现医院楼栋的直接门牌或地籍材料。附近另有日本海军俱乐部后期旧址，不能混为一幢；本次OSM反查失败，保留现医院片区候选而不自动回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1289",
+        "https://www.shhk.gov.cn/xwzx/002014/20240909/bb8d43e0-35ae-43df-bd1e-02925a0cbc33.html",
+        "https://zh.wikipedia.org/wiki/上海四一一医院"
+      ]
+    },
+    {
+      "IDBAT": 1717,
+      "historicalName": "Japanese Mindan Clinic",
+      "historicalNameCorrectionZh": "日本民團診療所",
+      "historicalStartYear": 1934,
+      "coordinates": {
+        "wgs84": [
+          121.480626,
+          31.254864
+        ],
+        "gcj02": [
+          121.485128,
+          31.252913
+        ]
+      },
+      "modernRoadAddress": "?? 乍浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "利通广场附近街坊",
+      "currentUse": "现代商业办公综合体附近",
+      "currentAddress": "上海市虹口区乍浦路、武进路附近；现代参照四川北路1350号",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "历史日本民团诊疗所缺少门牌。OSM利通广场中心距原点约30米、现代地址为四川北路1350号，足以记录附近商业用途，不能据此证明原诊疗所宗地被该综合体完全覆盖。本轮未发现拆除或诊疗所转用的直接记载。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1717",
+        "https://www.openstreetmap.org/way/495625770",
+        "https://www.openstreetmap.org/way/50326343"
+      ]
+    },
+    {
+      "IDBAT": 1173,
+      "historicalName": "Japanese Primary School",
+      "historicalNameCorrectionZh": "西部日本人小学校",
+      "historicalStartYear": 1927,
+      "coordinates": {
+        "wgs84": [
+          121.435674,
+          31.235033
+        ],
+        "gcj02": [
+          121.440296,
+          31.233175
+        ]
+      },
+      "modernRoadAddress": "昌平路 / 胶州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "静安区业余大学校址候选",
+      "currentUse": "候选现址为成人及老年教育；西部日本小学的用址链未完全核实",
+      "currentAddress": "候选为上海市静安区胶州路601号；历史地址为昌平路／胶州路口",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "立命馆大学论文以历史上海案内列出西部日本人小学校在胶州路；日文旧校调查把它与第三国民学校联系起来，新民晚报2025年报道又记述胶州路601号由第三国民学校转作实验民众学校、现静安区业余大学。关键的西部小学与第三国民学校对应目前仍主要依赖个人旧校调查，故保留候选，下一步查民团学校年报及区志；不把1927年起始年份当作现楼建造年。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1173",
+        "https://www.ritsumei.ac.jp/acd/re/ssrc/result/memoirs/kiyou24/24-07.pdf",
+        "https://ekobiiki888.hatenablog.com/entry/20140329/1396093143",
+        "https://paper.xinmin.cn/html/xmwb/2025-10-28/16/223832.html"
+      ]
+    },
+    {
+      "IDBAT": 1586,
+      "historicalName": "Japanese Regular Upper Primary School",
+      "historicalNameCorrectionZh": "日本尋常高等小學校",
+      "historicalStartYear": 1917,
+      "coordinates": {
+        "wgs84": [
+          121.479384,
+          31.262549
+        ],
+        "gcj02": [
+          121.483891,
+          31.260605
+        ]
+      },
+      "modernRoadAddress": "1844 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "四川北路横浜桥、虹口区教育学院实验中学附近",
+      "currentUse": "现代中学及医疗设施附近；旧小学楼栋未确认",
+      "currentAddress": "上海市虹口区四川北路横浜桥附近（原1844号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "此条原名是日本寻常高等小学，FUNCTION却列医疗设施／医院，源记录存在明显冲突，不能按错误用途直接匹配医院。OSM教育学院实验中学中心约47米、江湾医院约65米，两者仅作现代空间参照；校史身份与1844号门牌链仍不足，不确定为任何一幢现存校园楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1586",
+        "https://www.openstreetmap.org/way/1083786824",
+        "https://www.openstreetmap.org/way/1214159074"
+      ]
+    },
+    {
+      "IDBAT": 1270,
+      "historicalName": "Japanese School for Girls",
+      "historicalNameCorrectionZh": "日本女學校",
+      "historicalStartYear": 1923,
+      "historicalEndYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.481198,
+          31.267638
+        ],
+        "gcj02": [
+          121.485699,
+          31.265691
+        ]
+      },
+      "modernRoadAddress": "103 山阴路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "虹口区第三中心小学（旧日本女学校用址候选）",
+      "currentUse": "公办小学",
+      "currentAddress": "上海市虹口区山阴路103号",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口区2026年校园开放日公告确认第三中心小学仍在山阴路103号。早期学校介绍称其用址与日本高等女校、日侨商业学校有关系，但资料年份及校名存在差异；本条与欧阳路两所女校不可因名称相似互换。保留同门牌学校用途与沿革候选，未认定现校舍是1923年本体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1270",
+        "https://www.shhk.gov.cn/hkjy_nas/c38872be-77b6-4ee4-9e7c-238308b7e3d2/2b0750be-f1ef-458e-9a29-6899c1c34bbe/2026年虹口区小学“校园开放日”活动安排.pdf",
+        "https://www.i-bei.com/a/shanghaixuexiaomulu/hongkou/xiaoxue/2011/0616/1641.html"
+      ]
+    },
+    {
+      "IDBAT": 1707,
+      "historicalName": "Japanese School No. 7",
+      "historicalNameCorrectionZh": "日本民團第七小學",
+      "historicalStartYear": 1941,
+      "coordinates": {
+        "wgs84": [
+          121.509658,
+          31.29484
+        ],
+        "gcj02": [
+          121.51406,
+          31.29282
+        ]
+      },
+      "modernRoadAddress": "?? 政本路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海开放大学国顺路校区（第七日本国民学校用址候选）",
+      "currentUse": "大学教育与培训",
+      "currentAddress": "候选为上海市杨浦区国顺路288号／政法路195号",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "上海杨浦地方史详细记录1941年日本第七国民学校设在平昌街、今国顺路288号，后经同济理学院、华东化工等转为上海开放大学，现学校2026年招生页面确认地址。VS却写ZHENGBEN（政本路）且无门牌，地方史写政法路；由于现代POI反查失败且未复核校园边界，先记录名称与机构链候选，不直接将原点改到现校门。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1707",
+        "https://www.sohu.com/a/665739388_790178",
+        "https://wgxy.sou.edu.cn/2026/0407/c10887a153700/page.htm"
+      ]
+    },
+    {
+      "IDBAT": 113,
+      "historicalName": "Huanan Primary School",
+      "historicalNameCorrectionZh": "華南小學",
+      "coordinates": {
+        "wgs84": [
+          121.474317,
+          31.216835
+        ],
+        "gcj02": [
+          121.478837,
+          31.214885
+        ]
+      },
+      "modernRoadAddress": "237 顺昌路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "顺昌路—建国东路附近",
+      "currentUse": "道路位置可查；原校园宗地的现用途未确认",
+      "currentAddress": "上海市黄浦区顺昌路、建国东路及合肥路之间附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "RUE DU MARCHE对应顺昌路。OSM仅给出顺昌路和建国东路公交定位，不能证明原237号校舍的今天用途；本轮未找到华南小学与现建筑的连续记载。不能因周边更新即断言学校已经拆除。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=113",
+        "https://www.openstreetmap.org/way/39874516"
+      ]
+    },
+    {
+      "IDBAT": 638,
+      "historicalName": "Huangdaxian Temple",
+      "historicalNameCorrectionZh": "黄大仙祠",
+      "coordinates": {
+        "wgs84": [
+          121.473427,
+          31.23951
+        ],
+        "gcj02": [
+          121.477952,
+          31.237573
+        ]
+      },
+      "modernRoadAddress": "10 顾家弄",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "顾家弄附近街坊",
+      "currentUse": "附近有幼儿园和城市楼宇，祠址的现用途未确认",
+      "currentAddress": "上海市黄浦区顾家弄附近（历史门牌10号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "KOOKA LUNG为顾家弄。原点附近虽有星光幼儿园等POI，但最近道路中心约44米、幼儿园约68米；没有祠庙界址、拆除记录或同址材料，不能把黄大仙祠认作幼儿园，也不能与其他城市的黄大仙庙混同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=638",
+        "https://www.openstreetmap.org/way/39841369",
+        "https://www.openstreetmap.org/node/11182234176"
+      ]
+    },
+    {
+      "IDBAT": 1054,
+      "historicalName": "Huaxia University",
+      "historicalNameCorrectionZh": "華夏大學",
+      "coordinates": {
+        "wgs84": [
+          121.442458,
+          31.232159
+        ],
+        "gcj02": [
+          121.447067,
+          31.230289
+        ]
+      },
+      "modernRoadAddress": "1558 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "新闸路—西康路附近",
+      "currentUse": "道路及沿街地块；原校址具体用途未确认",
+      "currentAddress": "上海市静安区新闸路、西康路附近（历史门牌1558号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "仅能将SINZA ROAD映射为新闸路并定位附近路口。未找到这所历史华夏大学与现代高校或新闸路1558号现使用单位的可靠连续资料，不能以同名培训机构替代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1054",
+        "https://www.openstreetmap.org/node/12243094889"
+      ]
+    },
+    {
+      "IDBAT": 1028,
+      "historicalName": "Huaying Primary School",
+      "historicalNameCorrectionZh": "華英小學",
+      "coordinates": {
+        "wgs84": [
+          121.451811,
+          31.234125
+        ],
+        "gcj02": [
+          121.456398,
+          31.232238
+        ]
+      },
+      "modernRoadAddress": "383 泰兴路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "泰兴路—北京西路附近街坊",
+      "currentUse": "原小学现用途未确认",
+      "currentAddress": "上海市静安区泰兴路、北京西路附近（历史门牌泰兴路383号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "MEDHURST ROAD对应泰兴路。附近嘉地中心距离约99米，不能据此把旧383号小学归入该楼；华英小学与#299华英女中名称相似但并非同址，本轮不合并两者。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1028",
+        "https://www.openstreetmap.org/way/185832619"
+      ]
+    },
+    {
+      "IDBAT": 1341,
+      "historicalName": "Hufeng Bookstore",
+      "historicalNameCorrectionZh": "湖風書局",
+      "historicalStartYear": 1931,
+      "historicalEndYear": 1934,
+      "coordinates": {
+        "wgs84": [
+          121.472104,
+          31.246762
+        ],
+        "gcj02": [
+          121.476634,
+          31.244831
+        ]
+      },
+      "modernRoadAddress": "441 七浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "七浦路附近街坊（湖风书局历史地址）",
+      "currentUse": "旧书局现使用单位与建筑存废未确认",
+      "currentAddress": "上海市静安区七浦路附近（历史门牌441号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "虹口区资料确认湖风书局在七浦路创办，苏河湾地方史进一步列出桃源坊441号，支持历史地址；但现状只有道路POI，尚不能定位到具体经营店铺或保护建筑。书局停止营业不等于其建筑已经拆除。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1341",
+        "https://www.shhk.gov.cn/xwzx/002009/002009002/20100309/b49a9497-7c6d-4642-9ab1-3a078eeba41e.html",
+        "https://m.thepaper.cn/newsDetail_forward_15974988",
+        "https://www.openstreetmap.org/way/744519077"
+      ]
+    },
+    {
+      "IDBAT": 1449,
+      "historicalName": "Huizhongtang Cemetery",
+      "historicalNameCorrectionZh": "惠中堂公幕",
+      "coordinates": {
+        "wgs84": [
+          121.476459,
+          31.212513
+        ],
+        "gcj02": [
+          121.480971,
+          31.210555
+        ]
+      },
+      "modernRoadAddress": "29 肇嘉浜路／斜徐路（残段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "徐家汇路—陆家浜路、顺昌路附近",
+      "currentUse": "道路、住宅及宗教设施附近；墓地原宗地现用途未确认",
+      "currentAddress": "上海市黄浦区徐家汇路、陆家浜路及顺昌路附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "此条是惠中堂公墓，不是惠中堂教堂本体。OSM现惠中堂约88米、园景苑约81米，不能把邻近教堂当成墓地延续；HSIAZI旧道路段及29号门牌未闭合，也没有足够的迁葬或拆除史料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1449",
+        "https://www.openstreetmap.org/node/10758463442",
+        "https://www.openstreetmap.org/way/1435294148"
+      ]
+    },
+    {
+      "IDBAT": 1315,
+      "historicalName": "Japanese Navy Club",
+      "historicalNameCorrectionZh": "日本海軍俱樂部",
+      "historicalStartYear": 1913,
+      "coordinates": {
+        "wgs84": [
+          121.508817,
+          31.256549
+        ],
+        "gcj02": [
+          121.513219,
+          31.254515
+        ]
+      },
+      "modernRoadAddress": "?? 保定路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "保定路—惠民路附近（日本海军俱乐部早期旧址）",
+      "currentUse": "早期旧址今日具体地块用途未确认",
+      "currentAddress": "上海市虹口区保定路、惠民路附近",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "抗战史资料区分保定路惠民路口的早期日本海军俱乐部与1930年代迁入四川北路底的后期俱乐部。VS本条1913年、PAOTING ROAD指向早期址，不能套用后期旧址现四一一医院的说法。历史地点大致明确，但本轮现代POI反查失败，尚无足够证据说明原厂区地块今日用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1315",
+        "https://m.krzzjn.com/show-403-27108.html"
+      ]
+    },
+    {
+      "IDBAT": 1290,
+      "historicalName": "Japanese Postal Shipping Company (Nippon Yusen Kaisha)",
+      "historicalNameCorrectionZh": "日本郵船株式会社",
+      "coordinates": {
+        "wgs84": [
+          121.488939,
+          31.246885
+        ],
+        "gcj02": [
+          121.493411,
+          31.244907
+        ]
+      },
+      "modernRoadAddress": "5 扬子路／扬子江路（门牌沿革）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "虹口扬子路历史地址待核点",
+      "currentUse": "现地点专名及具体用途未确认",
+      "currentAddress": "上海市虹口区，WGS84 121.488939，31.246885（仅历史坐标转换）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原地址5 NORTH YANGTSE ROAD的旧路段和门牌尚未闭合。虽有日本邮船在黄浦路等处的总部及码头资料，不能仅凭公司相同就把这一点搬到其他分支；现代POI查询失败，本轮保留坐标，不据编译器的路名候选认定现址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1290"
+      ]
+    },
+    {
+      "IDBAT": 1268,
+      "historicalName": "Japanese Primary School No. 2 (North)",
+      "historicalNameCorrectionZh": "日本第二北部小學校",
+      "historicalStartYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.486972,
+          31.269204
+        ],
+        "gcj02": [
+          121.491453,
+          31.267241
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "四达路历史学校地址待核点",
+      "currentUse": "原学校宗地的现用途未确认",
+      "currentAddress": "上海市虹口区四达路附近（原58 SIDAS，现代门牌未确认）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "SIDAS按音译先作为四达路候选，原点在欧阳路东侧街坊。历史北部第二小学可能经历改名及借址，未取得校史、旧地图界址与现建筑的三方对应；OSM查询失败，不能仅以现代四达路58弄存在就认定整弄是旧校。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1268"
+      ]
+    }
+  ]
+}
