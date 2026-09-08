@@ -1,0 +1,165 @@
+{
+  "batch": "013",
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "61b5932224594348cf199008bc67470cd47e8f75",
+  "baselineMapSha256": "88b4e0be094cd017754e55c4f836ccc3afdaf86cb920186ff999367c68649e32",
+  "baselineOverrideCount": 225,
+  "note": "For batches after 012, the baseline is the immediately preceding completed batch working-tree state; the commit anchor remains the pushed 011 commit until further commits are made.",
+  "research": {
+    "recordCount": 50,
+    "originalSixFieldsUnchanged": true,
+    "uniqueIds": true,
+    "previousResearchedIdsExcluded": 600,
+    "separatelyApprovedCompanionIds": [],
+    "verificationSummary": {
+      "verified": 18,
+      "likely": 28,
+      "unresolved": 4
+    },
+    "classificationSummary": {
+      "total": 50,
+      "byOutcomeCategory": {
+        "survives-with-history": 11,
+        "demolished-current-use": 7,
+        "location-only-current-use": 32
+      },
+      "byResolutionStatus": {
+        "resolved": 18,
+        "probable": 28,
+        "unresolved": 4
+      },
+      "mapWriteRecommendation": {
+        "review": 32,
+        "yes": 14,
+        "no": 4
+      }
+    }
+  },
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyApprovedCurrentFieldsChanged": true,
+    "changedFeatureGroupIds": [
+      "landmark-vs-site-1261",
+      "landmark-vs-site-1332",
+      "landmark-vs-site-1511",
+      "landmark-vs-site-1547",
+      "landmark-vs-site-38",
+      "landmark-vs-site-482",
+      "landmark-vs-site-495",
+      "landmark-vs-site-506",
+      "landmark-vs-site-509",
+      "landmark-vs-site-529",
+      "landmark-vs-site-550",
+      "landmark-vs-site-599",
+      "landmark-vs-site-679",
+      "landmark-vs-site-782"
+    ],
+    "coveredSourceRecordIds": [
+      38,
+      482,
+      495,
+      506,
+      509,
+      529,
+      550,
+      599,
+      679,
+      782,
+      1261,
+      1332,
+      1511,
+      1547
+    ],
+    "priorOverridesUnchanged": 225,
+    "totalOverrides": 239,
+    "fullGroupIdGuards": true,
+    "allBatchGroupsReviewed": 50
+  },
+  "currentUseAudit": {
+    "landmarkGroups": 1670,
+    "matchedFromLibrary": 62,
+    "matchedFromLibraryCache": 0,
+    "matchedFromWikipedia": 15,
+    "matchedFromResearch": 239,
+    "matchedFromCurrentPlaceName": 22,
+    "needsReviewPartialName": 20,
+    "needsReviewDuplicateSource": 0,
+    "notFound": 1072,
+    "genericName": 240,
+    "networkFailures": 0
+  },
+  "unresolved": {
+    "before": 1475,
+    "after": 1461,
+    "fileCount": 30,
+    "removedIds": [
+      38,
+      482,
+      495,
+      506,
+      509,
+      529,
+      550,
+      599,
+      679,
+      782,
+      1261,
+      1332,
+      1511,
+      1547
+    ],
+    "addedIds": [],
+    "retainedSixFieldsUnchanged": true,
+    "allHeldBatchRecordsStillPresent": true
+  },
+  "nextBatch": {
+    "batch": "014",
+    "recordCount": 50,
+    "uniqueIds": true,
+    "previousResearchedIdsExcluded": 650
+  },
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "vitest": 52,
+      "node": 12
+    },
+    "build": {
+      "status": "passed",
+      "includes": [
+        "validate:data",
+        "TypeScript",
+        "Vite"
+      ],
+      "note": "Existing bundle-size advisory remains."
+    },
+    "playwright": {
+      "status": "passed",
+      "passed": 40,
+      "failed": 0,
+      "projects": [
+        "desktop",
+        "mobile"
+      ],
+      "command": "npm run test:e2e -- --config=.cache/playwright-011.config.ts --workers=4",
+      "configurationNote": "Original test suite and projects, using temporary ignored configuration for free port 4183; the existing listener on default port 4173 is preserved."
+    },
+    "logs": [
+      {
+        "name": "unit",
+        "logPath": "/private/tmp/shanghai-013-unit.log"
+      },
+      {
+        "name": "build",
+        "logPath": "/private/tmp/shanghai-013-build.log"
+      },
+      {
+        "name": "playwright",
+        "logPath": "/private/tmp/shanghai-013-playwright.log"
+      }
+    ]
+  }
+}

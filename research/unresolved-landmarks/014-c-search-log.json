@@ -1,0 +1,4713 @@
+{
+  "batch": "014",
+  "part": "c",
+  "researchedAt": "2026-09-08",
+  "method": "正式014-input与预检候选全字段严格一致后确认。16条均实际联网检索，原六字段不改；逐条检查同组成员，全部为单成员。检索摘录与正文阅读区别记录。两轮OSM均失败，不将失败或近邻解释为身份或现用途证明。 图书馆逐条审查完成；5个verified候选另经OSM主API地图范围请求成功，原始坐标和返回几何保存在每条日志中，未从近邻推现用途。",
+  "records": [
+    {
+      "IDBAT": 726,
+      "queries": [
+        "培新小学 河南北路",
+        "培新小学 河南 上海",
+        "培新 436 上海",
+        "河南北路436 小学",
+        "培新小學 河南"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原记录中文为培新小学。国家图书馆藏旧学校调查录的检索摘录列培新小学在北河南路底宝兴坊，支持校名与道路身份；尚未证明宝兴坊与原436-7的对应，也未找到该校迁并沿革及现建筑用途。436-7不能径自解释为现代436弄7号；调查录另列北河南路439号培成小学，不能混同。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 726",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=726"
+        },
+        {
+          "title": "国家图书馆藏《上海暨全国学校调查录》扫描件（检索摘录，整份PDF读取超时）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+        }
+      ],
+      "limitations": "仅检索摘录获得旧校名道路；未称已读完整扫描件。",
+      "groupReview": {
+        "groupMembers": [
+          726
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.475629,
+            "latitude": 31.251331
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.475629,
+            "latitude": 31.251331
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 726,
+          "historicalName": "Peixin Primary School",
+          "historicalAddress": "436-7 NORTH HONAN ROAD",
+          "historicalRoad": "NORTH HONAN ROAD",
+          "historicalNumber": "436-7",
+          "modernRoadCandidates": [
+            "河南北路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.475629,
+              "latitude": 31.251331
+            }
+          },
+          "queries": [
+            {
+              "query": "河南北路436-7号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 484,
+      "queries": [
+        "培真 875 上海",
+        "培真小学 海格路",
+        "培真 华山路 上海",
+        "海格路875",
+        "华山路875号",
+        "华山路 培真"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文为培真中小学幼稚园，原英文为小学及幼稚园，原FUNCTION却为公园；原字段均保留。旧学校调查录检索摘录确列培真小学在海格路875号，校名门牌一致。现代华山路校址及旧校舍对应待核；培真中学1953年并入复旦中学的机构沿革线索不足以证明原875号小学、幼稚园现为复旦中学。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 484",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=484"
+        },
+        {
+          "title": "国家图书馆藏《上海暨全国学校调查录》扫描件（检索摘录）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+        }
+      ],
+      "limitations": "搜狗复旦中学条目只用于排查中学机构沿革，未作为旧址直接证明；门牌重新编号未建立。",
+      "groupReview": {
+        "groupMembers": [
+          484
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.430946,
+            "latitude": 31.203964
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.430946,
+            "latitude": 31.203964
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 484,
+          "historicalName": "Peizhen Primary School and Kindergarten",
+          "historicalAddress": "875 AVENUE HAIG",
+          "historicalRoad": "AVENUE HAIG",
+          "historicalNumber": "875",
+          "modernRoadCandidates": [
+            "华山路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.430946,
+              "latitude": 31.203964
+            }
+          },
+          "queries": [
+            {
+              "query": "华山路875号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 1509,
+      "queries": [
+        "蓬莱医院 黄家",
+        "蓬莱医院 黄家路",
+        "蓬莱医院 黄家阙",
+        "蓬莱医院 163",
+        "黄家路163 医院 创建",
+        "沪南医院 前身 蓬莱",
+        "site.ybj.sh.gov.cn 终止上海市黄浦区中西医结合医院"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原记录蓬莱医院在黄家路163号。黄浦区中西医结合医院2023年度决算与2026年医保公告均载黄家路163号；决算所述1993年沪南医院与南市区中医医院合并的沿革没有接上蓬莱医院。2026年8月28日官方通告终止该院医保服务协议，仅凭此不能断定停业。现址院落与1928年原医院的承继、旧楼存废及当前使用状态待核，不能用同门牌直接闭环。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1509",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1509"
+        },
+        {
+          "title": "黄浦区中西医结合医院2023年度决算（机构沿革及黄家路163号）",
+          "url": "https://www.shhuangpu.gov.cn/uploadfile/5734e809-60bc-4e2d-a3b6-ae34074785ab/%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%BB%84%E6%B5%A6%E5%8C%BA%E4%B8%AD%E8%A5%BF%E5%8C%BB%E7%BB%93%E5%90%88%E5%8C%BB%E9%99%A22023%E5%B9%B4%E5%BA%A6%E5%86%B3%E7%AE%97.pdf"
+        },
+        {
+          "title": "上海市医保局：关于终止上海市黄浦区中西医结合医院医保服务协议的通告（2026-08-28）",
+          "url": "https://ybj.sh.gov.cn/gsgg/20260828/b3c5caaa5f54405c8643dbc90acde636.html"
+        }
+      ],
+      "limitations": "区分蓬莱路诊所、蓬莱门诊部及地段医院，均未据相近名称并入此点；医保协议终止不等同医院停业。",
+      "groupReview": {
+        "groupMembers": [
+          1509
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.490015,
+            "latitude": 31.218174
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.490015,
+            "latitude": 31.218174
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1509,
+          "historicalName": "Penglai Hospital",
+          "historicalAddress": "163 HUANGJIA",
+          "historicalRoad": "HUANGJIA",
+          "historicalNumber": "163",
+          "modernRoadCandidates": [],
+          "roadMappingMethod": "unmapped",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.490015,
+              "latitude": 31.218174
+            }
+          },
+          "queries": []
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 1481,
+      "queries": [
+        "蓬莱大戏院 学前111",
+        "蓬莱大戏院 沧海苑 拆除",
+        "学前街111 沧海苑",
+        "蓬莱大戏院 遗址 2025"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "新民晚报2025年旧址导览直接标明蓬莱大戏院遗址为学前街111号，说明原戏院建筑于20世纪90年代拆除，随后建成沧海苑住宅区；解放日报2015年报道亦明确该地已为沧海苑。当前房产地址资料为学前街111弄。关系是旧戏院拆除后住宅开发，不能标作原戏院建筑仍存。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1481",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1481"
+        },
+        {
+          "title": "新民晚报：周边漫步——蓬莱大戏院遗址（2025-09-30）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2025-09-30/16/222120.html"
+        },
+        {
+          "title": "解放日报／人民网党史：抗战中的文化呐喊【2】（2015-07-12）",
+          "url": "https://dangshi.people.com.cn/n/2015/0712/c85037-27290226-2.html"
+        },
+        {
+          "title": "房天下：沧海苑小区资料（学前街111弄）",
+          "url": "https://www.fang.com/xiaoqu/sh-1210001016/"
+        }
+      ],
+      "limitations": "2025新民正文已用urllib成功完整读取并留本地临时HTML；前次2021页面读取失败不影响该直接证据。",
+      "groupReview": {
+        "groupMembers": [
+          1481
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.485305,
+            "latitude": 31.217304
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.485305,
+            "latitude": 31.217304
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1481,
+          "historicalName": "Penglai Theater",
+          "historicalAddress": "111 XUEQIAN XIANG",
+          "historicalRoad": "XUEQIAN XIANG",
+          "historicalNumber": "111",
+          "modernRoadCandidates": [],
+          "roadMappingMethod": "unmapped",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.485305,
+              "latitude": 31.217304
+            }
+          },
+          "queries": []
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      },
+      "directOsmMapCheck": {
+        "IDBAT": 1481,
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=121.48470499999999,31.216704,121.485905,31.217903999999997",
+        "wgs84": [
+          121.485305,
+          31.217304
+        ],
+        "features": [
+          {
+            "osmType": "node",
+            "osmId": 6618161610,
+            "tags": {
+              "addr:street": "学前街",
+              "amenity": "restaurant",
+              "description": "包子白,花卷,面",
+              "name": "普明面馆"
+            },
+            "nearestVertexDistanceM": 14.0,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.485426,
+                31.2172323
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 40040118,
+            "tags": {
+              "highway": "residential",
+              "name": "学前街",
+              "name:en": "Xueqian Street"
+            },
+            "nearestVertexDistanceM": 15.8,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.483971,
+                31.2196218
+              ],
+              [
+                121.4841092,
+                31.2194093
+              ],
+              [
+                121.4841929,
+                31.2192723
+              ],
+              [
+                121.4842885,
+                31.2191306
+              ],
+              [
+                121.4843896,
+                31.2189773
+              ],
+              [
+                121.4850419,
+                31.2179875
+              ],
+              [
+                121.4851605,
+                31.2178076
+              ],
+              [
+                121.4853665,
+                31.217514
+              ],
+              [
+                121.4854206,
+                31.2174057
+              ],
+              [
+                121.4855263,
+                31.21716
+              ],
+              [
+                121.4857764,
+                31.216458
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 39751289,
+            "tags": {
+              "cycleway:both": "no",
+              "highway": "residential",
+              "name": "尚文路",
+              "name:en": "Shangwen Road",
+              "oneway": "yes",
+              "oneway:bicycle": "no"
+            },
+            "nearestVertexDistanceM": 26.5,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4846968,
+                31.2165784
+              ],
+              [
+                121.4847685,
+                31.2166501
+              ],
+              [
+                121.4850931,
+                31.2169366
+              ],
+              [
+                121.4855263,
+                31.21716
+              ],
+              [
+                121.4865562,
+                31.2174653
+              ],
+              [
+                121.4869892,
+                31.2176228
+              ],
+              [
+                121.4870607,
+                31.2176438
+              ],
+              [
+                121.4872845,
+                31.2177094
+              ],
+              [
+                121.4878627,
+                31.2178812
+              ],
+              [
+                121.4879982,
+                31.2179059
+              ],
+              [
+                121.4884962,
+                31.2180115
+              ],
+              [
+                121.489134,
+                31.2180824
+              ],
+              [
+                121.4894514,
+                31.2180935
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1331269904,
+            "tags": {
+              "amenity": "school",
+              "name": "上海师范大学附属黄浦梅溪小学"
+            },
+            "nearestVertexDistanceM": 27.0,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.485027,
+                31.2173539
+              ],
+              [
+                121.4846398,
+                31.2171359
+              ],
+              [
+                121.48443,
+                31.2174082
+              ],
+              [
+                121.4843733,
+                31.2173763
+              ],
+              [
+                121.4842555,
+                31.2175293
+              ],
+              [
+                121.4846994,
+                31.2177793
+              ],
+              [
+                121.485027,
+                31.2173539
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 7097893644,
+            "tags": {
+              "brand": "全家",
+              "brand:en": "FamilyMart",
+              "brand:wikidata": "Q11247682",
+              "brand:wikipedia": "en:FamilyMart",
+              "brand:zh": "全家",
+              "name": "全家",
+              "name:en": "FamilyMart",
+              "name:zh": "全家",
+              "shop": "convenience"
+            },
+            "nearestVertexDistanceM": 31.2,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4856325,
+                31.2172941
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 505633389,
+            "tags": {
+              "building": "apartments",
+              "building:levels": "15",
+              "name": "中华大厦"
+            },
+            "nearestVertexDistanceM": 46.2,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4858647,
+                31.216682
+              ],
+              [
+                121.4860397,
+                31.2166827
+              ],
+              [
+                121.4861413,
+                31.2167326
+              ],
+              [
+                121.4862782,
+                31.2167676
+              ],
+              [
+                121.4864843,
+                31.2168213
+              ],
+              [
+                121.4865985,
+                31.2168764
+              ],
+              [
+                121.4866251,
+                31.2169836
+              ],
+              [
+                121.4864511,
+                31.2172199
+              ],
+              [
+                121.4861372,
+                31.2170005
+              ],
+              [
+                121.4856763,
+                31.217036
+              ],
+              [
+                121.4856949,
+                31.2168589
+              ],
+              [
+                121.4857882,
+                31.2168545
+              ],
+              [
+                121.4857858,
+                31.2167491
+              ],
+              [
+                121.4858647,
+                31.216682
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 505633388,
+            "tags": {
+              "building": "apartments",
+              "building:levels": "15",
+              "name": "蓬莱大厦"
+            },
+            "nearestVertexDistanceM": 63.3,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4851261,
+                31.2165687
+              ],
+              [
+                121.4853085,
+                31.2165365
+              ],
+              [
+                121.4855392,
+                31.2165526
+              ],
+              [
+                121.4855258,
+                31.2166054
+              ],
+              [
+                121.485617,
+                31.2166168
+              ],
+              [
+                121.4855633,
+                31.2167545
+              ],
+              [
+                121.4852978,
+                31.2167246
+              ],
+              [
+                121.4850296,
+                31.2167866
+              ],
+              [
+                121.484941,
+                31.2166811
+              ],
+              [
+                121.4850296,
+                31.2166512
+              ],
+              [
+                121.4850027,
+                31.2165939
+              ],
+              [
+                121.4851261,
+                31.2165687
+              ]
+            ]
+          }
+        ],
+        "method": "直接读取OSM map API公开WGS84原始节点和way；nearestVertexDistanceM只是原点到已列way顶点的最小近似距离，不能当作到地块边界的距离。点在polygon内用闭合way二维射线法判定；名称近邻仅空间辅助。",
+        "assessment": "原点在学前街、尚文路口附近；未返回具名沧海苑边界，近邻学校与面馆不用于改写地块用途。历史111号到沧海苑关系由2025新民直接证明。"
+      }
+    },
+    {
+      "IDBAT": 1366,
+      "queries": [
+        "盆汤弄桥 山西路桥",
+        "盆汤弄桥 重建 2007",
+        "山西路桥 人行 2025",
+        "山西路桥 51 2007"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "上海广播电视台看看新闻桥史明确山西路桥又称盆汤弄桥，老木桥1956年拆除，2007年建成现钢结构人行桥；桥梁资料亦给出现桥51米及2007年重建。原记录SHANSE与盆汤弄桥名称相合，现桥连接苏州河南北岸的山西路。当前为原桥位重建的步行交通设施，不是旧木桥本体保存；旧桥始建年份有资料差异，不用于本项关系判定。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1366",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1366"
+        },
+        {
+          "title": "看看新闻：苏州河上那些桥的故事（2022-09-30）",
+          "url": "https://www.kankanews.com/detail/6awW5KNr8yX"
+        },
+        {
+          "title": "上观新闻：【地标】盆汤弄桥和老上海的混堂生活（2014）",
+          "url": "https://www.shobserver.com/wx/detail.do?id=3088"
+        },
+        {
+          "title": "老百晓集桥：上海市山西路桥（现人行桥及重建沿革）",
+          "url": "https://www.china-qiao.com/ql02/shql018.htm"
+        },
+        {
+          "title": "OpenStreetMap：山西路步行桥（原始地图几何，2026-09-08读取）",
+          "url": "https://www.openstreetmap.org/way/46975482"
+        }
+      ],
+      "limitations": "2014上观旧桥始建年份与2022看看新闻不一致，未沿用年份。分类用demolished-site-redeveloped，不用会被编译成存续的same-site-rebuilt。",
+      "groupReview": {
+        "groupMembers": [
+          1366
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.476134,
+            "latitude": 31.242393
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.476134,
+            "latitude": 31.242393
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1366,
+          "historicalName": "Pengtanglong Bridge",
+          "historicalAddress": "SHANSE -BRIDGE (SUZHOU HE)-",
+          "historicalRoad": "SHANSE -BRIDGE (SUZHOU HE)-",
+          "modernRoadCandidates": [],
+          "roadMappingMethod": "unmapped",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.476134,
+              "latitude": 31.242393
+            }
+          },
+          "queries": []
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      },
+      "directOsmMapCheck": {
+        "IDBAT": 1366,
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=121.475534,31.241793,121.47673400000001,31.242993",
+        "wgs84": [
+          121.476134,
+          31.242393
+        ],
+        "features": [
+          {
+            "osmType": "way",
+            "osmId": 441752330,
+            "tags": {
+              "bicycle": "yes",
+              "cycleway:both": "no",
+              "highway": "residential",
+              "lanes": "1",
+              "name": "北苏州路",
+              "name:en": "Beisuzhou Road",
+              "oneway": "yes",
+              "oneway:bicycle": "no",
+              "source": "interpolation",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 5.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.476314,
+                31.2425247
+              ],
+              [
+                121.4761305,
+                31.2424433
+              ],
+              [
+                121.4759481,
+                31.2423825
+              ],
+              [
+                121.4759244,
+                31.2423771
+              ],
+              [
+                121.4757657,
+                31.2423409
+              ],
+              [
+                121.4755992,
+                31.2423183
+              ],
+              [
+                121.4754304,
+                31.2423097
+              ],
+              [
+                121.4752242,
+                31.2423312
+              ],
+              [
+                121.4751041,
+                31.2423524
+              ],
+              [
+                121.4750544,
+                31.2423612
+              ],
+              [
+                121.4749051,
+                31.2424125
+              ],
+              [
+                121.4747207,
+                31.242502
+              ],
+              [
+                121.4745954,
+                31.2425666
+              ],
+              [
+                121.4742385,
+                31.2427154
+              ],
+              [
+                121.4739288,
+                31.2428679
+              ],
+              [
+                121.473713,
+                31.2430327
+              ],
+              [
+                121.4735375,
+                31.2431939
+              ],
+              [
+                121.4734183,
+                31.2433455
+              ],
+              [
+                121.4733502,
+                31.2434442
+              ],
+              [
+                121.4732707,
+                31.243557
+              ],
+              [
+                121.473191,
+                31.2436344
+              ],
+              [
+                121.4730752,
+                31.243694
+              ],
+              [
+                121.4728666,
+                31.2437366
+              ],
+              [
+                121.4726658,
+                31.2437335
+              ],
+              [
+                121.4724633,
+                31.2437272
+              ],
+              [
+                121.472237,
+                31.2437229
+              ],
+              [
+                121.4720458,
+                31.2437218
+              ],
+              [
+                121.4719398,
+                31.2437348
+              ],
+              [
+                121.4718961,
+                31.2437385
+              ],
+              [
+                121.4718271,
+                31.2437444
+              ],
+              [
+                121.4716101,
+                31.2437502
+              ],
+              [
+                121.4715128,
+                31.2437485
+              ],
+              [
+                121.4714065,
+                31.2437411
+              ],
+              [
+                121.4711193,
+                31.2437117
+              ],
+              [
+                121.470918,
+                31.2436991
+              ],
+              [
+                121.4703481,
+                31.2436774
+              ],
+              [
+                121.4702633,
+                31.2436696
+              ],
+              [
+                121.4701258,
+                31.243642
+              ],
+              [
+                121.4699654,
+                31.2436061
+              ],
+              [
+                121.4698328,
+                31.2435713
+              ],
+              [
+                121.469683,
+                31.2435223
+              ],
+              [
+                121.4694055,
+                31.2434153
+              ],
+              [
+                121.4691219,
+                31.2432888
+              ],
+              [
+                121.4690541,
+                31.2432571
+              ],
+              [
+                121.4687335,
+                31.2431074
+              ],
+              [
+                121.4685724,
+                31.2430261
+              ],
+              [
+                121.4685206,
+                31.242998
+              ],
+              [
+                121.4682765,
+                31.2428581
+              ],
+              [
+                121.4681517,
+                31.2427837
+              ],
+              [
+                121.4679609,
+                31.2426679
+              ],
+              [
+                121.4678404,
+                31.2425986
+              ],
+              [
+                121.4677892,
+                31.2425727
+              ],
+              [
+                121.467731,
+                31.2425469
+              ],
+              [
+                121.4676703,
+                31.2425228
+              ],
+              [
+                121.4676062,
+                31.2424933
+              ],
+              [
+                121.4673388,
+                31.2423519
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 39959308,
+            "tags": {
+              "highway": "residential",
+              "name": "山西北路",
+              "name:en": "North Shanxi Road"
+            },
+            "nearestVertexDistanceM": 22.5,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.476314,
+                31.2425247
+              ],
+              [
+                121.476306,
+                31.2426761
+              ],
+              [
+                121.4761986,
+                31.2430841
+              ],
+              [
+                121.4761923,
+                31.2431081
+              ],
+              [
+                121.4761481,
+                31.2432826
+              ],
+              [
+                121.4760947,
+                31.2434956
+              ],
+              [
+                121.4759675,
+                31.2442252
+              ],
+              [
+                121.4759216,
+                31.2444888
+              ],
+              [
+                121.4757444,
+                31.2454359
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 46975482,
+            "tags": {
+              "bridge": "yes",
+              "highway": "footway",
+              "layer": "1",
+              "name": "山西路步行桥",
+              "name:en": "Shanxi Road Pedestrian Bridge"
+            },
+            "nearestVertexDistanceM": 22.5,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4764596,
+                31.241967
+              ],
+              [
+                121.476314,
+                31.2425247
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1383666947,
+            "tags": {
+              "cycleway:both": "no",
+              "highway": "residential",
+              "lanes": "1",
+              "name": "北苏州路",
+              "name:en": "Beisuzhou Road",
+              "oneway": "yes",
+              "oneway:bicycle": "no",
+              "source": "interpolation"
+            },
+            "nearestVertexDistanceM": 22.5,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4784313,
+                31.2443511
+              ],
+              [
+                121.4783619,
+                31.2442896
+              ],
+              [
+                121.4782552,
+                31.2441868
+              ],
+              [
+                121.4781934,
+                31.2441188
+              ],
+              [
+                121.4781518,
+                31.2440705
+              ],
+              [
+                121.4780708,
+                31.2439784
+              ],
+              [
+                121.4780231,
+                31.2439278
+              ],
+              [
+                121.4779694,
+                31.2438777
+              ],
+              [
+                121.4779567,
+                31.2438667
+              ],
+              [
+                121.4779006,
+                31.243818
+              ],
+              [
+                121.4778338,
+                31.2437644
+              ],
+              [
+                121.4777393,
+                31.2436963
+              ],
+              [
+                121.4776659,
+                31.2436419
+              ],
+              [
+                121.4775894,
+                31.2435829
+              ],
+              [
+                121.4775162,
+                31.2435233
+              ],
+              [
+                121.4774469,
+                31.2434625
+              ],
+              [
+                121.4773047,
+                31.2433241
+              ],
+              [
+                121.4772185,
+                31.2432427
+              ],
+              [
+                121.477122,
+                31.2431604
+              ],
+              [
+                121.4770237,
+                31.2430819
+              ],
+              [
+                121.476919,
+                31.2430032
+              ],
+              [
+                121.4764613,
+                31.2426363
+              ],
+              [
+                121.476314,
+                31.2425247
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 744519080,
+            "tags": {
+              "building": "apartments",
+              "name": "河滨豪园"
+            },
+            "nearestVertexDistanceM": 25.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4759984,
+                31.2429407
+              ],
+              [
+                121.4760243,
+                31.2428565
+              ],
+              [
+                121.4760725,
+                31.2428708
+              ],
+              [
+                121.4761449,
+                31.2426273
+              ],
+              [
+                121.4759604,
+                31.2425853
+              ],
+              [
+                121.4759488,
+                31.2425614
+              ],
+              [
+                121.4759301,
+                31.2425434
+              ],
+              [
+                121.4759067,
+                31.2425374
+              ],
+              [
+                121.4758787,
+                31.2425374
+              ],
+              [
+                121.4758577,
+                31.2425474
+              ],
+              [
+                121.4758367,
+                31.2425574
+              ],
+              [
+                121.475784,
+                31.2425442
+              ],
+              [
+                121.4755495,
+                31.2424855
+              ],
+              [
+                121.4755518,
+                31.2424616
+              ],
+              [
+                121.4755518,
+                31.2424376
+              ],
+              [
+                121.4755495,
+                31.2424176
+              ],
+              [
+                121.4755075,
+                31.2424236
+              ],
+              [
+                121.4755145,
+                31.2424536
+              ],
+              [
+                121.4755098,
+                31.2424815
+              ],
+              [
+                121.4754981,
+                31.2424995
+              ],
+              [
+                121.4754701,
+                31.2425195
+              ],
+              [
+                121.4754374,
+                31.2425234
+              ],
+              [
+                121.4754117,
+                31.2425195
+              ],
+              [
+                121.4753837,
+                31.2425075
+              ],
+              [
+                121.4753697,
+                31.2424855
+              ],
+              [
+                121.4753627,
+                31.2424656
+              ],
+              [
+                121.4753603,
+                31.2424376
+              ],
+              [
+                121.4753744,
+                31.2424176
+              ],
+              [
+                121.475337,
+                31.2423937
+              ],
+              [
+                121.4753207,
+                31.2424156
+              ],
+              [
+                121.475309,
+                31.2424316
+              ],
+              [
+                121.4753043,
+                31.2424616
+              ],
+              [
+                121.4752086,
+                31.2424616
+              ],
+              [
+                121.4751659,
+                31.2424668
+              ],
+              [
+                121.4751105,
+                31.2424735
+              ],
+              [
+                121.4749961,
+                31.2425175
+              ],
+              [
+                121.4749027,
+                31.2425534
+              ],
+              [
+                121.4749004,
+                31.2427262
+              ],
+              [
+                121.4748269,
+                31.2427256
+              ],
+              [
+                121.4748259,
+                31.2428208
+              ],
+              [
+                121.4749024,
+                31.2428214
+              ],
+              [
+                121.4749017,
+                31.2428853
+              ],
+              [
+                121.4750176,
+                31.2428862
+              ],
+              [
+                121.4750183,
+                31.2428182
+              ],
+              [
+                121.4751502,
+                31.2428194
+              ],
+              [
+                121.4751495,
+                31.2428832
+              ],
+              [
+                121.475257,
+                31.2428841
+              ],
+              [
+                121.4752578,
+                31.2428161
+              ],
+              [
+                121.4753604,
+                31.242817
+              ],
+              [
+                121.4753608,
+                31.242781
+              ],
+              [
+                121.4754915,
+                31.2427921
+              ],
+              [
+                121.4754791,
+                31.2428322
+              ],
+              [
+                121.4755532,
+                31.2428488
+              ],
+              [
+                121.4755341,
+                31.2429106
+              ],
+              [
+                121.4756462,
+                31.2429358
+              ],
+              [
+                121.4756664,
+                31.2428701
+              ],
+              [
+                121.4757939,
+                31.2428989
+              ],
+              [
+                121.4757749,
+                31.2429606
+              ],
+              [
+                121.4758789,
+                31.2429841
+              ],
+              [
+                121.4758992,
+                31.2429183
+              ],
+              [
+                121.4759984,
+                31.2429407
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1005345489,
+            "tags": {
+              "alt_name:en": "Wusong River",
+              "alt_name:zh": "苏州河",
+              "alt_name:zh-Hant": "吳淞江",
+              "alt_name:zh-Latn-pinyin": "sūzhōu hé",
+              "name": "苏州河",
+              "name:en": "Suzhou Creek",
+              "name:ja": "蘇州河",
+              "name:zh": "苏州河",
+              "name:zh-Hans": "苏州河",
+              "name:zh-Hant": "蘇州河",
+              "name:zh-Latn-pinyin": "Wúsōng Jiāng",
+              "nsdi_code": "FK2974",
+              "waterway": "river",
+              "zhb_code": "11FM200100"
+            },
+            "nearestVertexDistanceM": 27.2,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.381368,
+                31.2209668
+              ],
+              [
+                121.3815907,
+                31.2209164
+              ],
+              [
+                121.3824219,
+                31.2207252
+              ],
+              [
+                121.3840496,
+                31.2204708
+              ],
+              [
+                121.38535,
+                31.2204253
+              ],
+              [
+                121.3875609,
+                31.2205385
+              ],
+              [
+                121.3895928,
+                31.2205167
+              ],
+              [
+                121.391608,
+                31.2205617
+              ],
+              [
+                121.3919725,
+                31.2205537
+              ],
+              [
+                121.3924678,
+                31.2204858
+              ],
+              [
+                121.3929476,
+                31.2203899
+              ],
+              [
+                121.3939444,
+                31.2201541
+              ],
+              [
+                121.3942526,
+                31.2201115
+              ],
+              [
+                121.3945986,
+                31.2202061
+              ],
+              [
+                121.3948709,
+                31.2203672
+              ],
+              [
+                121.3950379,
+                31.2206137
+              ],
+              [
+                121.3952098,
+                31.2210594
+              ],
+              [
+                121.3952014,
+                31.2215967
+              ],
+              [
+                121.3952302,
+                31.2220534
+              ],
+              [
+                121.3952973,
+                31.2223092
+              ],
+              [
+                121.3954943,
+                31.2225228
+              ],
+              [
+                121.3957252,
+                31.2226287
+              ],
+              [
+                121.3960214,
+                31.2226744
+              ],
+              [
+                121.3963739,
+                31.2226315
+              ],
+              [
+                121.3971424,
+                31.2224731
+              ],
+              [
+                121.3983893,
+                31.2224186
+              ],
+              [
+                121.3992663,
+                31.2224451
+              ],
+              [
+                121.4002816,
+                31.2226412
+              ],
+              [
+                121.4011485,
+                31.2229015
+              ],
+              [
+                121.4022772,
+                31.2233738
+              ],
+              [
+                121.4035353,
+                31.2239901
+              ],
+              [
+                121.4047939,
+                31.2243308
+              ],
+              [
+                121.4057858,
+                31.2243624
+              ],
+              [
+                121.4072205,
+                31.2245218
+              ],
+              [
+                121.4083185,
+                31.2247767
+              ],
+              [
+                121.4086127,
+                31.2248813
+              ],
+              [
+                121.4086526,
+                31.2248955
+              ],
+              [
+                121.41001,
+                31.2254393
+              ],
+              [
+                121.4109112,
+                31.2258429
+              ],
+              [
+                121.4112622,
+                31.22621
+              ],
+              [
+                121.4114262,
+                31.2264668
+              ],
+              [
+                121.4114577,
+                31.2272503
+              ],
+              [
+                121.4112237,
+                31.2281729
+              ],
+              [
+                121.4105679,
+                31.229476
+              ],
+              [
+                121.4102246,
+                31.2302099
+              ],
+              [
+                121.4102142,
+                31.2304172
+              ],
+              [
+                121.4106967,
+                31.2304668
+              ],
+              [
+                121.4113404,
+                31.2303934
+              ],
+              [
+                121.4122416,
+                31.2297696
+              ],
+              [
+                121.4131858,
+                31.2288521
+              ],
+              [
+                121.4145682,
+                31.2275193
+              ],
+              [
+                121.4148949,
+                31.2272612
+              ],
+              [
+                121.4150747,
+                31.2271586
+              ],
+              [
+                121.4152518,
+                31.2271018
+              ],
+              [
+                121.4154584,
+                31.2270719
+              ],
+              [
+                121.4156774,
+                31.227077
+              ],
+              [
+                121.415892,
+                31.2271223
+              ],
+              [
+                121.4161804,
+                31.227252
+              ],
+              [
+                121.4164473,
+                31.2274205
+              ],
+              [
+                121.4166871,
+                31.227624
+              ],
+              [
+                121.4169011,
+                31.2278465
+              ],
+              [
+                121.4170857,
+                31.2280692
+              ],
+              [
+                121.4178843,
+                31.2291005
+              ],
+              [
+                121.4182115,
+                31.2294803
+              ],
+              [
+                121.4184306,
+                31.2297079
+              ],
+              [
+                121.4188424,
+                31.2300896
+              ],
+              [
+                121.4194054,
+                31.2305721
+              ],
+              [
+                121.4196764,
+                31.2308119
+              ],
+              [
+                121.4198366,
+                31.2309927
+              ],
+              [
+                121.4199479,
+                31.2311497
+              ],
+              [
+                121.4202633,
+                31.2317437
+              ],
+              [
+                121.4205172,
+                31.2322873
+              ],
+              [
+                121.4211185,
+                31.2338812
+              ],
+              [
+                121.4213378,
+                31.2344937
+              ],
+              [
+                121.4214727,
+                31.2351144
+              ],
+              [
+                121.4215166,
+                31.2357176
+              ],
+              [
+                121.421486,
+                31.2365475
+              ],
+              [
+                121.4213925,
+                31.2376035
+              ],
+              [
+                121.4214173,
+                31.2379801
+              ],
+              [
+                121.4215718,
+                31.238259
+              ],
+              [
+                121.4224301,
+                31.2387067
+              ],
+              [
+                121.4233743,
+                31.2391029
+              ],
+              [
+                121.4248591,
+                31.240057
+              ],
+              [
+                121.4259063,
+                31.2406734
+              ],
+              [
+                121.4261724,
+                31.2409963
+              ],
+              [
+                121.4262496,
+                31.2413852
+              ],
+              [
+                121.4258887,
+                31.2424291
+              ],
+              [
+                121.425245,
+                31.244337
+              ],
+              [
+                121.4245587,
+                31.2457295
+              ],
+              [
+                121.4245095,
+                31.2458921
+              ],
+              [
+                121.4245302,
+                31.246053
+              ],
+              [
+                121.4246071,
+                31.2461751
+              ],
+              [
+                121.424732,
+                31.246294
+              ],
+              [
+                121.4249256,
+                31.2464167
+              ],
+              [
+                121.425181,
+                31.2464911
+              ],
+              [
+                121.4265839,
+                31.2467354
+              ],
+              [
+                121.4287473,
+                31.2471237
+              ],
+              [
+                121.4291503,
+                31.2473457
+              ],
+              [
+                121.4293824,
+                31.2477107
+              ],
+              [
+                121.4294507,
+                31.2481528
+              ],
+              [
+                121.4292193,
+                31.2503817
+              ],
+              [
+                121.4292091,
+                31.2505779
+              ],
+              [
+                121.4292083,
+                31.2507701
+              ],
+              [
+                121.4292236,
+                31.2509098
+              ],
+              [
+                121.4292578,
+                31.2510184
+              ],
+              [
+                121.4293252,
+                31.2511348
+              ],
+              [
+                121.429412,
+                31.2512207
+              ],
+              [
+                121.4295729,
+                31.2512975
+              ],
+              [
+                121.4297685,
+                31.2513276
+              ],
+              [
+                121.4299574,
+                31.2513201
+              ],
+              [
+                121.4301624,
+                31.2512668
+              ],
+              [
+                121.4305072,
+                31.2511323
+              ],
+              [
+                121.4309343,
+                31.2509325
+              ],
+              [
+                121.4321543,
+                31.2500607
+              ],
+              [
+                121.4326693,
+                31.2497672
+              ],
+              [
+                121.4330216,
+                31.24978
+              ],
+              [
+                121.4334422,
+                31.2501836
+              ],
+              [
+                121.4349868,
+                31.2543532
+              ],
+              [
+                121.4350712,
+                31.2545147
+              ],
+              [
+                121.4352643,
+                31.2547486
+              ],
+              [
+                121.4354625,
+                31.2548649
+              ],
+              [
+                121.4357629,
+                31.2549237
+              ],
+              [
+                121.4361019,
+                31.2549044
+              ],
+              [
+                121.4364231,
+                31.2547853
+              ],
+              [
+                121.4366941,
+                31.2545871
+              ],
+              [
+                121.436938,
+                31.2543038
+              ],
+              [
+                121.4371576,
+                31.2539423
+              ],
+              [
+                121.4372599,
+                31.253648
+              ],
+              [
+                121.4373511,
+                31.2533315
+              ],
+              [
+                121.4375067,
+                31.2524327
+              ],
+              [
+                121.437605,
+                31.2521556
+              ],
+              [
+                121.4377831,
+                31.2518997
+              ],
+              [
+                121.4380699,
+                31.2516714
+              ],
+              [
+                121.4383314,
+                31.2515438
+              ],
+              [
+                121.438778,
+                31.2514696
+              ],
+              [
+                121.4392358,
+                31.2514787
+              ],
+              [
+                121.4401044,
+                31.2515374
+              ],
+              [
+                121.4422233,
+                31.2517896
+              ],
+              [
+                121.4429998,
+                31.2519237
+              ],
+              [
+                121.4437133,
+                31.2521621
+              ],
+              [
+                121.4443423,
+                31.2524087
+              ],
+              [
+                121.444928,
+                31.2526813
+              ],
+              [
+                121.4453146,
+                31.2528612
+              ],
+              [
+                121.4455828,
+                31.2529438
+              ],
+              [
+                121.4458403,
+                31.2529162
+              ],
+              [
+                121.4460442,
+                31.2527787
+              ],
+              [
+                121.4461461,
+                31.252378
+              ],
+              [
+                121.4461675,
+                31.251846
+              ],
+              [
+                121.4461246,
+                31.2508004
+              ],
+              [
+                121.4458993,
+                31.2498098
+              ],
+              [
+                121.4452355,
+                31.2487582
+              ],
+              [
+                121.4438179,
+                31.2473054
+              ],
+              [
+                121.4436623,
+                31.2470796
+              ],
+              [
+                121.4436221,
+                31.2468078
+              ],
+              [
+                121.4436302,
+                31.2465877
+              ],
+              [
+                121.443767,
+                31.2463747
+              ],
+              [
+                121.4443134,
+                31.2458321
+              ],
+              [
+                121.4471747,
+                31.2440068
+              ],
+              [
+                121.4488047,
+                31.2429465
+              ],
+              [
+                121.4497832,
+                31.2418531
+              ],
+              [
+                121.4507796,
+                31.2409247
+              ],
+              [
+                121.4515138,
+                31.2402771
+              ],
+              [
+                121.4520121,
+                31.2400406
+              ],
+              [
+                121.4525576,
+                31.2399158
+              ],
+              [
+                121.4528489,
+                31.2398984
+              ],
+              [
+                121.4531435,
+                31.239924
+              ],
+              [
+                121.453616,
+                31.2400497
+              ],
+              [
+                121.4540827,
+                31.2402469
+              ],
+              [
+                121.4545226,
+                31.24049
+              ],
+              [
+                121.4549961,
+                31.2408972
+              ],
+              [
+                121.4555097,
+                31.2415083
+              ],
+              [
+                121.4561373,
+                31.2422742
+              ],
+              [
+                121.4563411,
+                31.2424783
+              ],
+              [
+                121.456604,
+                31.2426663
+              ],
+              [
+                121.4568611,
+                31.2427906
+              ],
+              [
+                121.4574194,
+                31.2430218
+              ],
+              [
+                121.4578056,
+                31.2431548
+              ],
+              [
+                121.4581171,
+                31.2432541
+              ],
+              [
+                121.4583585,
+                31.2433092
+              ],
+              [
+                121.45901,
+                31.2433722
+              ],
+              [
+                121.4604862,
+                31.2430989
+              ],
+              [
+                121.4619368,
+                31.2426383
+              ],
+              [
+                121.4639237,
+                31.2413435
+              ],
+              [
+                121.4647606,
+                31.2411325
+              ],
+              [
+                121.4656404,
+                31.2411508
+              ],
+              [
+                121.4664987,
+                31.2413893
+              ],
+              [
+                121.4672393,
+                31.2418375
+              ],
+              [
+                121.4686582,
+                31.2426946
+              ],
+              [
+                121.4692268,
+                31.2430615
+              ],
+              [
+                121.4704928,
+                31.2433642
+              ],
+              [
+                121.4712975,
+                31.2433642
+              ],
+              [
+                121.4718017,
+                31.2433458
+              ],
+              [
+                121.4723811,
+                31.2432083
+              ],
+              [
+                121.4735613,
+                31.2426854
+              ],
+              [
+                121.4743177,
+                31.2423012
+              ],
+              [
+                121.475074,
+                31.2421167
+              ],
+              [
+                121.4755293,
+                31.2420588
+              ],
+              [
+                121.4761282,
+                31.2421488
+              ],
+              [
+                121.4765932,
+                31.2423207
+              ],
+              [
+                121.4769495,
+                31.2424685
+              ],
+              [
+                121.4773267,
+                31.2427161
+              ],
+              [
+                121.47806,
+                31.2433789
+              ],
+              [
+                121.4784714,
+                31.2439295
+              ],
+              [
+                121.4789257,
+                31.2443732
+              ],
+              [
+                121.4798162,
+                31.2451804
+              ],
+              [
+                121.4804492,
+                31.2455932
+              ],
+              [
+                121.4808998,
+                31.24585
+              ],
+              [
+                121.4815714,
+                31.2461077
+              ],
+              [
+                121.481882,
+                31.2461848
+              ],
+              [
+                121.4822302,
+                31.2462444
+              ],
+              [
+                121.4827451,
+                31.2462834
+              ],
+              [
+                121.4831984,
+                31.2462123
+              ],
+              [
+                121.483697,
+                31.2460992
+              ],
+              [
+                121.4841396,
+                31.2459525
+              ],
+              [
+                121.48462,
+                31.2457858
+              ],
+              [
+                121.4860308,
+                31.2452606
+              ],
+              [
+                121.4866645,
+                31.2450543
+              ],
+              [
+                121.4874082,
+                31.2448169
+              ],
+              [
+                121.490504,
+                31.2442046
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 73897667,
+            "tags": {
+              "cycleway:both": "no",
+              "highway": "residential",
+              "name": "南苏州路",
+              "name:en": "South Suzhou Road",
+              "name:zh": "南苏州路",
+              "name:zh-Hans": "南苏州路",
+              "oneway": "yes",
+              "oneway:bicycle": "no",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 55.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4681904,
+                31.2419534
+              ],
+              [
+                121.4683038,
+                31.2420237
+              ],
+              [
+                121.4686042,
+                31.2422732
+              ],
+              [
+                121.4689614,
+                31.2425
+              ],
+              [
+                121.4691847,
+                31.2426262
+              ],
+              [
+                121.4694851,
+                31.2427876
+              ],
+              [
+                121.4697887,
+                31.2428896
+              ],
+              [
+                121.470275,
+                31.243022
+              ],
+              [
+                121.4706127,
+                31.24307
+              ],
+              [
+                121.4708356,
+                31.2430872
+              ],
+              [
+                121.4709935,
+                31.2430918
+              ],
+              [
+                121.4710564,
+                31.2430936
+              ],
+              [
+                121.471462,
+                31.2430901
+              ],
+              [
+                121.4715734,
+                31.2430835
+              ],
+              [
+                121.4716796,
+                31.2430708
+              ],
+              [
+                121.4718562,
+                31.2430423
+              ],
+              [
+                121.472002,
+                31.2430178
+              ],
+              [
+                121.4721586,
+                31.2429882
+              ],
+              [
+                121.4724371,
+                31.2428979
+              ],
+              [
+                121.4726368,
+                31.2428232
+              ],
+              [
+                121.4728093,
+                31.2427421
+              ],
+              [
+                121.4730279,
+                31.2426352
+              ],
+              [
+                121.4733198,
+                31.2424924
+              ],
+              [
+                121.4736576,
+                31.2423045
+              ],
+              [
+                121.4737482,
+                31.2422406
+              ],
+              [
+                121.473843,
+                31.2421612
+              ],
+              [
+                121.4739293,
+                31.2421054
+              ],
+              [
+                121.4741263,
+                31.2419957
+              ],
+              [
+                121.474181,
+                31.2419652
+              ],
+              [
+                121.4742939,
+                31.2419187
+              ],
+              [
+                121.4743688,
+                31.2419037
+              ],
+              [
+                121.4744603,
+                31.2418932
+              ],
+              [
+                121.4745555,
+                31.2418878
+              ],
+              [
+                121.4745814,
+                31.2418855
+              ],
+              [
+                121.4746749,
+                31.241877
+              ],
+              [
+                121.4747402,
+                31.2418702
+              ],
+              [
+                121.4749266,
+                31.2418418
+              ],
+              [
+                121.4750639,
+                31.2418239
+              ],
+              [
+                121.4751699,
+                31.2418124
+              ],
+              [
+                121.4754547,
+                31.241798
+              ],
+              [
+                121.4757821,
+                31.2418168
+              ],
+              [
+                121.4761607,
+                31.2418853
+              ],
+              [
+                121.4763913,
+                31.2419446
+              ],
+              [
+                121.4764596,
+                31.241967
+              ],
+              [
+                121.4765292,
+                31.241994
+              ],
+              [
+                121.4769239,
+                31.2421809
+              ],
+              [
+                121.4775064,
+                31.242537
+              ],
+              [
+                121.4778308,
+                31.2427915
+              ],
+              [
+                121.4784675,
+                31.2433279
+              ],
+              [
+                121.4785399,
+                31.2433889
+              ],
+              [
+                121.4786435,
+                31.2434955
+              ],
+              [
+                121.4787087,
+                31.2435551
+              ],
+              [
+                121.4788063,
+                31.2436387
+              ],
+              [
+                121.4793677,
+                31.2440863
+              ],
+              [
+                121.479593,
+                31.2443367
+              ],
+              [
+                121.4798711,
+                31.2446174
+              ],
+              [
+                121.4801953,
+                31.2448441
+              ],
+              [
+                121.4804998,
+                31.2450175
+              ],
+              [
+                121.4809062,
+                31.2451909
+              ],
+              [
+                121.4814071,
+                31.2453432
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1203032313,
+            "tags": {
+              "cycleway:both": "no",
+              "highway": "residential",
+              "name": "山西南路",
+              "name:en": "South Shanxi Road",
+              "name:zh": "山西南路",
+              "name:zh-Hans": "山西南路",
+              "name:zh-Hant": "山西南路",
+              "oneway": "no",
+              "oneway:bicycle": "no"
+            },
+            "nearestVertexDistanceM": 56.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4765695,
+                31.2416929
+              ],
+              [
+                121.4764596,
+                31.241967
+              ]
+            ]
+          }
+        ],
+        "method": "直接读取OSM map API公开WGS84原始节点和way；nearestVertexDistanceM只是原点到已列way顶点的最小近似距离，不能当作到地块边界的距离。点在polygon内用闭合way二维射线法判定；名称近邻仅空间辅助。",
+        "assessment": "返回具名山西路步行桥way46975482，原点在北岸山西北路桥头附近（距最近桥way顶点22.5米）；直接桥史负责旧桥与现桥重建关系。"
+      }
+    },
+    {
+      "IDBAT": 1748,
+      "queries": [
+        "贝当公寓 700 衡山公寓",
+        "衡山路700 公寓 2025",
+        "Petain Apartments 700"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "徐汇区房管局2025年专题直接将衡山路700号衡山公寓与贝当公寓对应，介绍1930至1932年的原楼、居民生活及2016年保护修缮，支持现楼继续居住使用。原点及原门牌700与该楼相符。官方文章另提衡山路283至297号也曾称贝当公寓，属于另一处建筑，不能按英文同名合并。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1748",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1748"
+        },
+        {
+          "title": "徐汇区房管局：贰月｜游心寓目贝当公寓（2025）",
+          "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250205/551438.html"
+        }
+      ],
+      "limitations": "官方2025专题全文已读；另一份英文城市游览材料的1936建年未用于本楼年代结论。",
+      "groupReview": {
+        "groupMembers": [
+          1748
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.436941,
+            "latitude": 31.200857
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.436941,
+            "latitude": 31.200857
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1748,
+          "historicalName": "PETAIN APARTMENTS",
+          "historicalAddress": "700 AVENUE PETAIN",
+          "historicalRoad": "AVENUE PETAIN",
+          "historicalNumber": "700",
+          "modernRoadCandidates": [
+            "衡山路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.436941,
+              "latitude": 31.200857
+            }
+          },
+          "queries": [
+            {
+              "query": "衡山路700号",
+              "candidates": [
+                {
+                  "nameZh": "衡山公寓",
+                  "alternateName": "衡山公寓",
+                  "address": "衡山路700号",
+                  "type": "上海市优秀历史建筑",
+                  "uri": "http://data.library.sh.cn/entity/architecture/yi55wqa43dngf2p3",
+                  "placeUri": "http://data.library.sh.cn/entity/place/gbjiu33e2bbxy6t4",
+                  "longitude": 121.44824,
+                  "latitude": 31.205221,
+                  "distanceMetres": 1179,
+                  "exactAddressTextMatch": true,
+                  "libraryDetail": {
+                    "nameE": "hengshangongyu",
+                    "address": "衡山路700号",
+                    "placeUri": "http://data.library.sh.cn/entity/place/gbjiu33e2bbxy6t4",
+                    "houseNumber": "700号",
+                    "firstImg": "",
+                    "source": "上海市第四批优秀历史建筑",
+                    "type": "上海市优秀历史建筑",
+                    "uri": "http://data.library.sh.cn/entity/architecture/yi55wqa43dngf2p3",
+                    "long": "121.44824",
+                    "nameT": "衡山公寓",
+                    "nameS": "衡山公寓",
+                    "des": "",
+                    "road": "衡山路",
+                    "roadUri": "http://data.library.sh.cn/entity/road/5usd0gq8j62kwpv8",
+                    "lat": "31.205221",
+                    "eventList": [],
+                    "imageList": [],
+                    "personList": [],
+                    "workList": [],
+                    "otherNameList": [
+                      {
+                        "nameType": "原名",
+                        "nameUri": "http://data.library.sh.cn/authority/name/02p5mcudubbjslha",
+                        "name": "贝当公寓"
+                      }
+                    ],
+                    "descriptionList": [],
+                    "placeValue": "徐汇"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "assessment": "名称、门牌及旧名支持身份；图书馆坐标明显东偏逾一公里，不作为点位坐标或建筑边界，不改原坐标。"
+      },
+      "directOsmMapCheck": {
+        "IDBAT": 1748,
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=121.436341,31.200257,121.43754100000001,31.201456999999998",
+        "wgs84": [
+          121.436941,
+          31.200857
+        ],
+        "features": [
+          {
+            "osmType": "node",
+            "osmId": 11330533686,
+            "tags": {
+              "addr:housenumber": "706",
+              "addr:street": "衡山路",
+              "government": "transportation",
+              "name": "上海市交通发展研究中心",
+              "office": "government"
+            },
+            "nearestVertexDistanceM": 27.8,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4369339,
+                31.2006074
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 4849327422,
+            "tags": {
+              "bus": "yes",
+              "highway": "bus_stop",
+              "name": "衡山路宛平路",
+              "name:zh": "衡山路宛平路",
+              "public_transport": "platform"
+            },
+            "nearestVertexDistanceM": 51.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4373059,
+                31.2005144
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 9774996966,
+            "tags": {
+              "bus": "yes",
+              "name": "衡山路宛平路",
+              "name:zh": "衡山路宛平路",
+              "public_transport": "stop_position"
+            },
+            "nearestVertexDistanceM": 59.9,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4373897,
+                31.2004788
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 492977118,
+            "tags": {
+              "bicycle": "no",
+              "foot": "yes",
+              "hgv": "no",
+              "highway": "secondary",
+              "lanes": "2",
+              "motorcycle": "no",
+              "name": "衡山路",
+              "name:en": "Hengshan Road",
+              "name:zh": "衡山路",
+              "name:zh-Hans": "衡山路",
+              "name:zh-Hant": "衡山路",
+              "name:zh-Latn-pinyin": "Héngshān Lù",
+              "oneway": "yes",
+              "trolley_wire": "yes"
+            },
+            "nearestVertexDistanceM": 59.9,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4409496,
+                31.2052726
+              ],
+              [
+                121.440331,
+                31.2044282
+              ],
+              [
+                121.4398917,
+                31.2038184
+              ],
+              [
+                121.4394131,
+                31.2031869
+              ],
+              [
+                121.4386245,
+                31.2021271
+              ],
+              [
+                121.4384805,
+                31.2019098
+              ],
+              [
+                121.4383014,
+                31.2016883
+              ],
+              [
+                121.4373897,
+                31.2004788
+              ],
+              [
+                121.4369387,
+                31.1998804
+              ],
+              [
+                121.4367952,
+                31.1996921
+              ],
+              [
+                121.436591,
+                31.1994065
+              ],
+              [
+                121.4363314,
+                31.1990839
+              ],
+              [
+                121.435577,
+                31.1980862
+              ]
+            ]
+          }
+        ],
+        "method": "直接读取OSM map API公开WGS84原始节点和way；nearestVertexDistanceM只是原点到已列way顶点的最小近似距离，不能当作到地块边界的距离。点在polygon内用闭合way二维射线法判定；名称近邻仅空间辅助。",
+        "assessment": "返回衡山路及706号交通发展研究中心门牌等，地理与700号邻接相容；未返回具名700号公寓边界，故不声称点落已认证公寓polygon。700号现楼身份及住宅用途由徐汇房管2025专题直接证明。"
+      }
+    },
+    {
+      "IDBAT": 467,
+      "queries": [
+        "贝当巡捕房 648 652",
+        "建国西路648 巡捕房 拆除",
+        "贝当巡捕房 司法局 旧址",
+        "建国西路652 天平司法所"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "徐汇区2025年房管资料明确1915年在今建国西路648号设贝当巡捕房。现市司法局官方及2026采购资料载648号，2026徐汇公告载652号为天平司法所。公开方志目录提供司法局1982迁648、1994临迁、1997吴兴225新办公楼建成的线索，东方公证处采访也将吴兴225与今市司法局相连。旧捕房院落各建筑是否全部拆除、现楼与原648至652范围的对应仍待核，不能把整个旧捕房院落认作原楼保存或全部拆建。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 467",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=467"
+        },
+        {
+          "title": "徐汇区房管局：建国西路相关优秀历史建筑修缮实录（2025-11-14）",
+          "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20251114/565928.html"
+        },
+        {
+          "title": "上海市司法局：联系我们（建国西路648号）",
+          "url": "https://sfj.sh.gov.cn/qt-lxwm/20191217/f2985562faf941858bbcd181de37adcc.html"
+        },
+        {
+          "title": "徐汇区：2026年人民陪审员选任公告（天平司法所建国西路652号）",
+          "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d9a0cb2001e1e"
+        },
+        {
+          "title": "史志库：《上海司法行政志》公开目录及概要（非原书全文）",
+          "url": "https://shizhiku.com/p/detail/wpf426485fc6/"
+        },
+        {
+          "title": "东方公证处：南浦大桥、浦东机场……听公证员讲述重点工程背后的故事（2025）",
+          "url": "https://www.sh-notary.org.cn/dfgzc/bcdt/5282.jhtml"
+        }
+      ],
+      "limitations": "根协作补查并读取官方历史与当前资料；本分片独立读公证处全文。拆除仅见2022自媒体配图文字，不据此确定全院拆除；后续查《上海司法行政志》第九章第五节基建，未宣称已读原PDF全文。过时市检察院用途不采用。",
+      "groupReview": {
+        "groupMembers": [
+          467
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.440504,
+            "latitude": 31.202951
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.440504,
+            "latitude": 31.202951
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 467,
+          "historicalName": "Pétain Police Station (Poste Pétain)",
+          "historicalAddress": "648-652 ROUTE JOSEPH FRELUPT",
+          "historicalRoad": "ROUTE JOSEPH FRELUPT",
+          "historicalNumber": "648-652",
+          "modernRoadCandidates": [
+            "建国西路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.440504,
+              "latitude": 31.202951
+            }
+          },
+          "queries": [
+            {
+              "query": "建国西路648-652号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 452,
+      "queries": [
+        "Peter Pan School Shanghai 133",
+        "Peter Pan School Shanghai Boissezon",
+        "复兴西路133 学校",
+        "白赛仲路133 学校"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "加州州立大学北岭分校旧中国人口述史中，Kurt Heftman回忆Peter Pan School位于Route Boissezon并由澳大利亚籍Mrs Taylor经营，支持该校身份和道路，未给出足以核准133号建筑的沿革。现地图列复兴西路133号楼仅为地址线索；尚无学校与现楼、具体用途或拆建关系直接证据。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 452",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=452"
+        },
+        {
+          "title": "CSUN Old China Hands Oral History Project：Kurt Heftman访谈（Peter Pan School／Route Boissezon，PDF检索摘录）",
+          "url": "https://digital-collections.csun.edu/digital/api/collection/OCHOH/id/205/download"
+        },
+        {
+          "title": "高德地图：复兴西路133号楼（门牌线索）",
+          "url": "https://www.amap.com/place/B0I29RHZ55"
+        }
+      ],
+      "limitations": "PDF元信息返回23页，但分页读取和本地下载均失败，仅采用已返回检索段落；不声称完整访谈已读。地图地址不证明旧校现用。",
+      "groupReview": {
+        "groupMembers": [
+          452
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.437962,
+            "latitude": 31.212474
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.437962,
+            "latitude": 31.212474
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 452,
+          "historicalName": "Peter Pan School",
+          "historicalAddress": "133 ROUTE GUSTAVE BOISSEZON",
+          "historicalRoad": "ROUTE GUSTAVE BOISSEZON",
+          "historicalNumber": "133",
+          "modernRoadCandidates": [],
+          "roadMappingMethod": "unmapped",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.437962,
+              "latitude": 31.212474
+            }
+          },
+          "queries": []
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 875,
+      "queries": [
+        "九福制药 250",
+        "九福 白克路",
+        "凤阳路250 九福",
+        "九福 苔圣园",
+        "黄河路50 九福 原厂"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文九福制药公司。臣邦医药公司史载1927年在白克路250号建厂并改组九福；黄浦档案馆2024年文章称九福迁到黄河路、今苔圣园。现苔圣园位于黄河路50号一带，凤阳路250号又为上海医药行业协会联系地址。两组来源提供相邻门牌和厂址线索，但未厘清原250号与现50号、现250号的重新编号及厂区边界，旧楼改造保留范围也待核，不能将相邻整栋或协会全部空间直接视为原药厂。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 875",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=875"
+        },
+        {
+          "title": "臣邦医药：百年见证（九福白克路250号建厂沿革）",
+          "url": "https://www.chenpon.com/story/640e8813a5c0ff397929ad47"
+        },
+        {
+          "title": "黄浦档案馆／澎湃：“派克路”上不止有美食，还见证了中国第一位女西医的“医世济民”传奇（2024）",
+          "url": "https://m.thepaper.cn/detail/26759419"
+        },
+        {
+          "title": "上海医药行业协会：联系我们（凤阳路250号）",
+          "url": "https://www.shppa.net/lxwm.html"
+        },
+        {
+          "title": "澎湃新闻：坐标上海｜黄河路走进后《繁花》时代（2024）",
+          "url": "https://www.thepaper.cn/newsDetail_forward_26967979"
+        }
+      ],
+      "limitations": "档案馆正文已用urllib完整读取。未经可靠原始资料支持的1928建楼、1993加层细节未写成确定事实；不采用机构史页面无关道路名称错误。",
+      "groupReview": {
+        "groupMembers": [
+          875
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.466284,
+            "latitude": 31.236111
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.466284,
+            "latitude": 31.236111
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 875,
+          "historicalName": "Pharmaceutical Company",
+          "historicalAddress": "250 BURKILL ROAD",
+          "historicalRoad": "BURKILL ROAD",
+          "historicalNumber": "250",
+          "modernRoadCandidates": [
+            "凤阳路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.466284,
+              "latitude": 31.236111
+            }
+          },
+          "queries": [
+            {
+              "query": "凤阳路250号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 1155,
+      "queries": [
+        "上海 制药 麦根727",
+        "Pharmaceutical Products Factory 727 Markham",
+        "麦根路 药厂",
+        "麥根 727",
+        "澳门路727 制药"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "原英文仅为制药厂泛称，无中文商号。Markham Road为麦根路，其道路系统后分成淮安路、西苏州路、泰兴路、康定东路、石门二路等，不能只把727号移到某一条现代道路。周到道路史虽介绍沿线制药工业，未指出原727号对应企业。具体厂名、历史门牌对照、建筑存废及现用途均待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1155",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1155"
+        },
+        {
+          "title": "周到上海：不足500米的淮安路竟有157年历史（2019-03-15）",
+          "url": "https://static.zhoudaosh.com/files/cnews/2019/20190315/8E1FF2B1A061B63772F674BE15C4B1147025BAE7E1631324AF812BB538C57389/3.html"
+        }
+      ],
+      "limitations": "首轮曾误试澳门路727号，查清Markham=麦根后排除，现代澳门路商铺资料不入主结论；不能将麦根313开美科等邻厂移到727。",
+      "groupReview": {
+        "groupMembers": [
+          1155
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.446216,
+            "latitude": 31.241353
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.446216,
+            "latitude": 31.241353
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1155,
+          "historicalName": "Pharmaceutical Products Factory",
+          "historicalAddress": "727 MARKHAM ROAD",
+          "historicalRoad": "MARKHAM ROAD",
+          "historicalNumber": "727",
+          "modernRoadCandidates": [
+            "石门二路",
+            "康定东东路",
+            "泰兴路",
+            "西苏州路",
+            "泰兴路(北段)",
+            "淮安路",
+            "康定东路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.446216,
+              "latitude": 31.241353
+            }
+          },
+          "queries": [
+            {
+              "query": "石门二路727号",
+              "candidates": []
+            },
+            {
+              "query": "康定东东路727号",
+              "candidates": []
+            },
+            {
+              "query": "泰兴路727号",
+              "candidates": []
+            },
+            {
+              "query": "西苏州路727号",
+              "candidates": []
+            },
+            {
+              "query": "泰兴路(北段)727号",
+              "candidates": []
+            },
+            {
+              "query": "淮安路727号",
+              "candidates": []
+            },
+            {
+              "query": "康定东路727号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 1654,
+      "queries": [
+        "日昇堂 吴淞",
+        "日昇堂大药房 上海",
+        "吴淞路280 药房"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文日昇堂大药房。近代上海药业研究资料目录记日昇堂大药店Nisshodo Dispensary为吴淞路的日商药店，支持名称和道路；未闭合原280号与现代地块及现用建筑。材料中1930年代另开东嘉兴路批发部是不同营业点，不能把它作为吴淞路旧址的现名。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1654",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1654"
+        },
+        {
+          "title": "MADSpace藏近代上海药业研究资料：日昇堂大药店／Nisshodo Dispensary条目（PDF检索摘录）",
+          "url": "https://madspace.org/Asset/Source/refBibliography_ID-4207_No-01.pdf"
+        }
+      ],
+      "limitations": "研究资料片段可读，未取得可直接证明280号现宗地或旧楼保存的近年资料。",
+      "groupReview": {
+        "groupMembers": [
+          1654
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.48501,
+            "latitude": 31.251157
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.48501,
+            "latitude": 31.251157
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1654,
+          "historicalName": "Pharmacy (Japanese)",
+          "historicalAddress": "280 WOOSUNG ROAD",
+          "historicalRoad": "WOOSUNG ROAD",
+          "historicalNumber": "280",
+          "modernRoadCandidates": [
+            "吴淞路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.48501,
+              "latitude": 31.251157
+            }
+          },
+          "queries": [
+            {
+              "query": "吴淞路280号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 40,
+      "queries": [
+        "药房医院 上海175",
+        "药房医院 敏体尼荫",
+        "西藏南路175 医院"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "原名称药房医院为泛称，现有检索未获得可靠的医院专名、院史或旧门牌沿革。Boulevard de Montigny对应今西藏南路，但不能据175号直接认定某家现医院。教会建筑研究附录出现西藏南路175号伯特利教会的线索，也没有证明其与本条医院有关；医院身份、地块范围、建筑存废及现用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 40",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=40"
+        }
+      ],
+      "limitations": "教会研究PDF检索片段只列伯特利教会；不同功能同门牌不足以证明身份。未用附近曙光医院替代此泛名点。",
+      "groupReview": {
+        "groupMembers": [
+          40
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.475337,
+            "latitude": 31.22842
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.475337,
+            "latitude": 31.22842
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 40,
+          "historicalName": "Pharmacy Hospital",
+          "historicalAddress": "175 BOULEVARD DE MONTIGNY",
+          "historicalRoad": "BOULEVARD DE MONTIGNY",
+          "historicalNumber": "175",
+          "modernRoadCandidates": [
+            "西藏南路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.475337,
+              "latitude": 31.22842
+            }
+          },
+          "queries": [
+            {
+              "query": "西藏南路175号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 1082,
+      "queries": [
+        "钢琴学校 1423 上海",
+        "静安寺路1423 钢琴",
+        "爱文义路1423",
+        "Piano School 1423",
+        "北京西路1423"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "原记录只有Piano School及中文钢琴学校泛称，缺少专名。Avenue Road为爱文义路、今北京西路。实际检索未取得1423号学校的独立沿革或现楼对应，不能按相近门牌或音乐学校名称推定。具体学校身份、旧门牌对照、建筑存废及现用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1082",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1082"
+        }
+      ],
+      "limitations": "首轮将Avenue Road误试为静安寺路，核对历史道路后纠正为爱文义路/北京西路；错误道路结果未用于主记录。",
+      "groupReview": {
+        "groupMembers": [
+          1082
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.443619,
+            "latitude": 31.22957
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.443619,
+            "latitude": 31.22957
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1082,
+          "historicalName": "Piano School",
+          "historicalAddress": "1423 AVENUE ROAD",
+          "historicalRoad": "AVENUE ROAD",
+          "historicalNumber": "1423",
+          "modernRoadCandidates": [
+            "北京西路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.443619,
+              "latitude": 31.22957
+            }
+          },
+          "queries": [
+            {
+              "query": "北京西路1423号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    },
+    {
+      "IDBAT": 473,
+      "queries": [
+        "毕卡第公寓 衡山534",
+        "衡山宾馆 2023 更名",
+        "毕卡第 衡山花园酒店 2026",
+        "衡山花园酒店 534 site.xuhui.gov.cn 2026"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "原毕卡第公寓后来改为衡山宾馆。2023年市住建委、历保中心修缮报道说明既有历史楼完成保护修缮；2026年徐汇市场监管名录列衡山花园酒店在衡山路534号，当前携程酒店页面以“上海毕卡第衡山花园酒店”在同址经营，形成旧公寓、原楼修缮及现酒店用途链。此条对应534号历史楼，不将毗邻酒店其他新楼统称为原公寓；原FUNCTION医疗设施疑为原数据分类问题，未更改。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 473",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=473"
+        },
+        {
+          "title": "澎湃新闻：衡山路534号毕卡第公寓的时代（2020）",
+          "url": "https://www.thepaper.cn/newsDetail_forward_8172196"
+        },
+        {
+          "title": "上海长宁转市住建委、历保中心：【关注】衡山宾馆修缮归来（2023-05-15）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_23085605"
+        },
+        {
+          "title": "徐汇区市场监管局：2026年徐汇区特种设备安全监管工作计划（附件1第17项，衡山路534号）",
+          "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019c278d5b410eb3"
+        },
+        {
+          "title": "携程酒店：上海毕卡第衡山花园酒店（衡山路534号）",
+          "url": "https://hotels.ctrip.com/hotels/133905770.html"
+        }
+      ],
+      "limitations": "2023修缮正文已读。2026官网web工具find因表格分词未匹配534，但搜索及本地urllib完整HTML均核到附件1第17行；不采用酒店聚合平台的旧名关闭标签认定当前停业。",
+      "groupReview": {
+        "groupMembers": [
+          473
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.438189,
+            "latitude": 31.202663
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.438189,
+            "latitude": 31.202663
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 473,
+          "historicalName": "Picardie Apartments",
+          "historicalAddress": "534 AVENUE PETAIN",
+          "historicalRoad": "AVENUE PETAIN",
+          "historicalNumber": "534",
+          "modernRoadCandidates": [
+            "衡山路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.438189,
+              "latitude": 31.202663
+            }
+          },
+          "queries": [
+            {
+              "query": "衡山路534号",
+              "candidates": [
+                {
+                  "nameZh": "衡山宾馆",
+                  "alternateName": "衡山賓館",
+                  "address": "衡山路534号",
+                  "type": "上海市优秀历史建筑",
+                  "uri": "http://data.library.sh.cn/entity/architecture/gw1pwo5wr8cxegh5",
+                  "placeUri": "http://data.library.sh.cn/entity/place/gbjiu33e2bbxy6t4",
+                  "longitude": 121.449615,
+                  "latitude": 31.207008,
+                  "distanceMetres": 1189,
+                  "exactAddressTextMatch": true,
+                  "libraryDetail": {
+                    "nameE": "hengshanbinguan",
+                    "address": "衡山路534号",
+                    "placeUri": "http://data.library.sh.cn/entity/place/gbjiu33e2bbxy6t4",
+                    "houseNumber": "534号",
+                    "firstImg": "",
+                    "source": "上海市第二批优秀历史建筑",
+                    "type": "上海市优秀历史建筑",
+                    "uri": "http://data.library.sh.cn/entity/architecture/gw1pwo5wr8cxegh5",
+                    "long": "121.449615",
+                    "nameT": "衡山賓館",
+                    "nameS": "衡山宾馆",
+                    "des": "衡山宾馆位于上海市徐汇区衡山路，是上海著名的六大饭店之一，典型欧式建筑，现为五星级宾馆。 衡山宾馆前身是著名的毕卡第公寓，为南北朝向的公寓式建筑，毗邻徐家汇绿地和衡山公园，环境优雅，该宾馆共有客房239间。",
+                    "road": "衡山路",
+                    "roadUri": "http://data.library.sh.cn/entity/road/5usd0gq8j62kwpv8",
+                    "lat": "31.207008",
+                    "eventList": [],
+                    "imageList": [],
+                    "personList": [],
+                    "workList": [],
+                    "otherNameList": [
+                      {
+                        "nameType": "原名",
+                        "nameUri": "http://data.library.sh.cn/authority/name/4fnf1wtgwm6aasrg",
+                        "name": "毕卡第公寓"
+                      }
+                    ],
+                    "descriptionList": [
+                      {
+                        "description": "衡山宾馆位于上海市徐汇区衡山路，是上海著名的六大饭店之一，典型欧式建筑，现为五星级宾馆。 衡山宾馆前身是著名的毕卡第公寓，为南北朝向的公寓式建筑，毗邻徐家汇绿地和衡山公园，环境优雅，该宾馆共有客房239间。"
+                      }
+                    ],
+                    "placeValue": "徐汇"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "assessment": "名称、门牌及旧名支持身份；图书馆坐标明显东偏逾一公里，不作为点位坐标或建筑边界，不改原坐标。"
+      },
+      "directOsmMapCheck": {
+        "IDBAT": 473,
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=121.43758899999999,31.202063000000003,121.438789,31.203263",
+        "wgs84": [
+          121.438189,
+          31.202663
+        ],
+        "features": [
+          {
+            "osmType": "way",
+            "osmId": 147711037,
+            "tags": {
+              "highway": "residential",
+              "lanes": "2",
+              "name": "宛平路",
+              "name:en": "Wanping Road",
+              "source": "estimation",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 10.0,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4384805,
+                31.2019098
+              ],
+              [
+                121.4384213,
+                31.2020823
+              ],
+              [
+                121.4381089,
+                31.2026052
+              ],
+              [
+                121.4375939,
+                31.2035321
+              ],
+              [
+                121.4370569,
+                31.20449
+              ],
+              [
+                121.4354578,
+                31.2072026
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 4886672626,
+            "tags": {
+              "addr:city": "上海",
+              "addr:housenumber": "838",
+              "addr:street": "衡山路",
+              "amenity": "cinema",
+              "description": "snall-ish but comfortableNo IMAXcheaper than big cinemascheaper with app \"GEWARA\"Restaurant Pistolera next door",
+              "dsscreated": "#cinema",
+              "name": "衡山电影院",
+              "name:en": "Hengshan Cinema",
+              "note": "Show this to your Taxi Driver: 衡山路838号, 近宛平路",
+              "opening_hours": "08:00-22:00",
+              "phone": "+86 6437 7418"
+            },
+            "nearestVertexDistanceM": 42.1,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4386093,
+                31.2027806
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 164050136,
+            "tags": {
+              "leisure": "park",
+              "name": "衡山公园",
+              "name:en": "Hengshan Park",
+              "name:zh": "衡山公园",
+              "source": "estimation",
+              "wikidata": "Q4745937",
+              "wikipedia": "zh:衡山公园"
+            },
+            "nearestVertexDistanceM": 57.5,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4377051,
+                31.2030769
+              ],
+              [
+                121.4367744,
+                31.2026685
+              ],
+              [
+                121.4369514,
+                31.2023657
+              ],
+              [
+                121.4371499,
+                31.2020536
+              ],
+              [
+                121.4373109,
+                31.2019504
+              ],
+              [
+                121.4375615,
+                31.2019724
+              ],
+              [
+                121.4380373,
+                31.2020834
+              ],
+              [
+                121.4380967,
+                31.2018885
+              ],
+              [
+                121.4381665,
+                31.2019068
+              ],
+              [
+                121.4382723,
+                31.2021514
+              ],
+              [
+                121.4377051,
+                31.2030769
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 545482990,
+            "tags": {
+              "building": "yes",
+              "landuse": "military",
+              "military": "barracks",
+              "name": "武警营房"
+            },
+            "nearestVertexDistanceM": 69.9,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4375054,
+                31.2034644
+              ],
+              [
+                121.4376964,
+                31.2031286
+              ],
+              [
+                121.4367744,
+                31.2026685
+              ],
+              [
+                121.4365919,
+                31.2030417
+              ],
+              [
+                121.4375054,
+                31.2034644
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 405470751,
+            "tags": {
+              "addr:city": "上海",
+              "addr:housenumber": "516号",
+              "addr:street": "衡山路",
+              "leisure": "sports_centre",
+              "name": "国际网球中心",
+              "phone": "+86 21 6415 5588",
+              "sport": "tennis"
+            },
+            "nearestVertexDistanceM": 70.0,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4373738,
+                31.204072
+              ],
+              [
+                121.4380916,
+                31.2044137
+              ],
+              [
+                121.4382586,
+                31.2042567
+              ],
+              [
+                121.4386587,
+                31.2044992
+              ],
+              [
+                121.4389458,
+                31.2041154
+              ],
+              [
+                121.4389198,
+                31.2038664
+              ],
+              [
+                121.4386934,
+                31.2035859
+              ],
+              [
+                121.4378552,
+                31.2032238
+              ],
+              [
+                121.4373738,
+                31.204072
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 492977118,
+            "tags": {
+              "bicycle": "no",
+              "foot": "yes",
+              "hgv": "no",
+              "highway": "secondary",
+              "lanes": "2",
+              "motorcycle": "no",
+              "name": "衡山路",
+              "name:en": "Hengshan Road",
+              "name:zh": "衡山路",
+              "name:zh-Hans": "衡山路",
+              "name:zh-Hant": "衡山路",
+              "name:zh-Latn-pinyin": "Héngshān Lù",
+              "oneway": "yes",
+              "trolley_wire": "yes"
+            },
+            "nearestVertexDistanceM": 72.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4409496,
+                31.2052726
+              ],
+              [
+                121.440331,
+                31.2044282
+              ],
+              [
+                121.4398917,
+                31.2038184
+              ],
+              [
+                121.4394131,
+                31.2031869
+              ],
+              [
+                121.4386245,
+                31.2021271
+              ],
+              [
+                121.4384805,
+                31.2019098
+              ],
+              [
+                121.4383014,
+                31.2016883
+              ],
+              [
+                121.4373897,
+                31.2004788
+              ],
+              [
+                121.4369387,
+                31.1998804
+              ],
+              [
+                121.4367952,
+                31.1996921
+              ],
+              [
+                121.436591,
+                31.1994065
+              ],
+              [
+                121.4363314,
+                31.1990839
+              ],
+              [
+                121.435577,
+                31.1980862
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1272480702,
+            "tags": {
+              "bicycle": "no",
+              "foot": "yes",
+              "highway": "secondary",
+              "lanes": "2",
+              "name": "衡山路",
+              "name:en": "Hengshan Road",
+              "name:zh": "衡山路",
+              "name:zh-Hans": "衡山路",
+              "name:zh-Hant": "衡山路",
+              "name:zh-Latn-pinyin": "Héngshān Lù",
+              "oneway": "yes",
+              "trolley_wire": "yes"
+            },
+            "nearestVertexDistanceM": 80.3,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4385675,
+                31.2019149
+              ],
+              [
+                121.4386842,
+                31.2020789
+              ],
+              [
+                121.4392072,
+                31.2027603
+              ],
+              [
+                121.4396135,
+                31.2032834
+              ],
+              [
+                121.4399391,
+                31.2037119
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 9774996969,
+            "tags": {
+              "bus": "yes",
+              "name": "衡山路高安路",
+              "name:zh": "衡山路高安路",
+              "public_transport": "stop_position"
+            },
+            "nearestVertexDistanceM": 152.1,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4396135,
+                31.2032834
+              ]
+            ]
+          }
+        ],
+        "method": "直接读取OSM map API公开WGS84原始节点和way；nearestVertexDistanceM只是原点到已列way顶点的最小近似距离，不能当作到地块边界的距离。点在polygon内用闭合way二维射线法判定；名称近邻仅空间辅助。",
+        "assessment": "原点在宛平路、衡山路酒店历史楼街区，附近具名衡山公园及516号国际网球中心与官方楼址描述相容；历史楼轮廓未标注名称，不将附近场馆用作现用途。534号原楼及酒店用途由官方修缮与2026监管直接证明。"
+      }
+    },
+    {
+      "IDBAT": 1667,
+      "queries": [
+        "Pierce Apartment 411 Boone Road Shanghai",
+        "浦西公寓 披亚斯 塘沽411",
+        "浦西公寓 2025 住宅",
+        "浦西公寓 2026"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "上海住建部门2026年专题直接列浦西公寓原名披亚斯公寓Pearce Apartments，1931年建，地址包括塘沽路411至429号、乍浦路199至215号及蟠龙街26号，并描述现楼住户生活、原楼梯及天井。原英文Pierce为近似拼写，原文路411号与1931年建年共同对应此楼；1977年加盖两层后原楼继续居住使用。隔街塘沽路387至401号小浦西公寓为另一建筑，不并入本条。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1667",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1667"
+        },
+        {
+          "title": "上海住建官方澎湃号：【城市印象】河畔寓居：百年滨水公寓群的往事与日常（2026-06-12）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33367674"
+        },
+        {
+          "title": "人民网：92岁浦西公寓旧梯重启（2023-07-21）",
+          "url": "https://sh.people.com.cn/BIG5/n2/2023/0721/c134768-40502757.html"
+        },
+        {
+          "title": "OpenStreetMap：浦西公寓（原始地图几何，2026-09-08读取）",
+          "url": "https://www.openstreetmap.org/way/494546990"
+        }
+      ],
+      "limitations": "2026官方全文明确三个近邻公寓的不同范围，已逐项区分；不因同期1931建成年份将小浦西混并。",
+      "groupReview": {
+        "groupMembers": [
+          1667
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.482265,
+            "latitude": 31.250062
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.482265,
+            "latitude": 31.250062
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1667,
+          "historicalName": "Pierce Apartment",
+          "historicalAddress": "411 BOONE ROAD",
+          "historicalRoad": "BOONE ROAD",
+          "historicalNumber": "411",
+          "modernRoadCandidates": [
+            "坊沽路",
+            "塘沽路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.482265,
+              "latitude": 31.250062
+            }
+          },
+          "queries": [
+            {
+              "query": "坊沽路411号",
+              "candidates": []
+            },
+            {
+              "query": "塘沽路411号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      },
+      "directOsmMapCheck": {
+        "IDBAT": 1667,
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=121.48166499999999,31.249462,121.482865,31.250662",
+        "wgs84": [
+          121.482265,
+          31.250062
+        ],
+        "features": [
+          {
+            "osmType": "way",
+            "osmId": 744527939,
+            "tags": {
+              "natural": "wood"
+            },
+            "nearestVertexDistanceM": 9.6,
+            "pointInsidePolygon": true,
+            "coordinates": [
+              [
+                121.4819405,
+                31.2496428
+              ],
+              [
+                121.481908,
+                31.2496672
+              ],
+              [
+                121.4819039,
+                31.2497141
+              ],
+              [
+                121.4819507,
+                31.2497384
+              ],
+              [
+                121.4820137,
+                31.2497315
+              ],
+              [
+                121.4820727,
+                31.2497263
+              ],
+              [
+                121.4821438,
+                31.2497332
+              ],
+              [
+                121.4822007,
+                31.249761
+              ],
+              [
+                121.4822434,
+                31.2497906
+              ],
+              [
+                121.4822332,
+                31.2498427
+              ],
+              [
+                121.4821845,
+                31.2498583
+              ],
+              [
+                121.4821113,
+                31.2498688
+              ],
+              [
+                121.4820869,
+                31.2499209
+              ],
+              [
+                121.4820869,
+                31.2499348
+              ],
+              [
+                121.4820645,
+                31.2499904
+              ],
+              [
+                121.4820442,
+                31.2500252
+              ],
+              [
+                121.4820544,
+                31.2500634
+              ],
+              [
+                121.4821275,
+                31.2500929
+              ],
+              [
+                121.4821824,
+                31.2501138
+              ],
+              [
+                121.4822007,
+                31.2501555
+              ],
+              [
+                121.4821906,
+                31.2501989
+              ],
+              [
+                121.4822434,
+                31.2502146
+              ],
+              [
+                121.4822881,
+                31.2501833
+              ],
+              [
+                121.4823146,
+                31.2501729
+              ],
+              [
+                121.4823227,
+                31.2501399
+              ],
+              [
+                121.4823654,
+                31.250053
+              ],
+              [
+                121.4823674,
+                31.2499782
+              ],
+              [
+                121.4823654,
+                31.2499487
+              ],
+              [
+                121.4823837,
+                31.2498809
+              ],
+              [
+                121.4823938,
+                31.2498236
+              ],
+              [
+                121.4824121,
+                31.2497697
+              ],
+              [
+                121.4824243,
+                31.2497245
+              ],
+              [
+                121.4824081,
+                31.2496985
+              ],
+              [
+                121.4823511,
+                31.249688
+              ],
+              [
+                121.4822861,
+                31.249695
+              ],
+              [
+                121.4822211,
+                31.2496706
+              ],
+              [
+                121.4821743,
+                31.2496585
+              ],
+              [
+                121.4820889,
+                31.2496585
+              ],
+              [
+                121.4820422,
+                31.2496567
+              ],
+              [
+                121.4820035,
+                31.2496411
+              ],
+              [
+                121.4819751,
+                31.2496359
+              ],
+              [
+                121.4819405,
+                31.2496428
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 494546990,
+            "tags": {
+              "building": "yes",
+              "building:levels": "9",
+              "heritage": "4",
+              "heritage:operator": "上海全国重点文物保护单位列表",
+              "heritage:ref": "4F004",
+              "name": "浦西公寓",
+              "old_name": "披亚斯公寓",
+              "start_date": "1931"
+            },
+            "nearestVertexDistanceM": 18.1,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4824457,
+                31.2497137
+              ],
+              [
+                121.4828447,
+                31.2497747
+              ],
+              [
+                121.4827701,
+                31.2501488
+              ],
+              [
+                121.4827138,
+                31.250197
+              ],
+              [
+                121.482663,
+                31.2502251
+              ],
+              [
+                121.4823624,
+                31.2502016
+              ],
+              [
+                121.4824457,
+                31.2497137
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 64622647,
+            "tags": {
+              "highway": "residential",
+              "name": "百官街",
+              "name:en": "Baiguan Street",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 29.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4818072,
+                31.2524379
+              ],
+              [
+                121.4819149,
+                31.2513153
+              ],
+              [
+                121.4819538,
+                31.2510539
+              ],
+              [
+                121.4820744,
+                31.2502724
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1075724582,
+            "tags": {
+              "highway": "residential",
+              "name": "塘沽路",
+              "name:en": "Tanggu Road",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 29.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4806767,
+                31.2501468
+              ],
+              [
+                121.4811252,
+                31.2501871
+              ],
+              [
+                121.4818682,
+                31.2502539
+              ],
+              [
+                121.4820744,
+                31.2502724
+              ],
+              [
+                121.4827993,
+                31.2503147
+              ],
+              [
+                121.4832606,
+                31.2502437
+              ],
+              [
+                121.4836273,
+                31.2501878
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 744525771,
+            "tags": {
+              "leisure": "park",
+              "name": "昆山公园",
+              "name:en": "Kunshan Gardens"
+            },
+            "nearestVertexDistanceM": 31.4,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4820832,
+                31.2504281
+              ],
+              [
+                121.4820913,
+                31.2503534
+              ],
+              [
+                121.4821238,
+                31.250336
+              ],
+              [
+                121.4822567,
+                31.2503444
+              ],
+              [
+                121.4824602,
+                31.2503573
+              ],
+              [
+                121.4826178,
+                31.2503673
+              ],
+              [
+                121.4827072,
+                31.2504455
+              ],
+              [
+                121.4826821,
+                31.2505498
+              ],
+              [
+                121.4825172,
+                31.2505245
+              ],
+              [
+                121.482456,
+                31.2508165
+              ],
+              [
+                121.4824104,
+                31.2510068
+              ],
+              [
+                121.4825812,
+                31.2510537
+              ],
+              [
+                121.4825753,
+                31.2510888
+              ],
+              [
+                121.4825466,
+                31.2512588
+              ],
+              [
+                121.4825202,
+                31.2512987
+              ],
+              [
+                121.4824836,
+                31.2513178
+              ],
+              [
+                121.4824409,
+                31.2513178
+              ],
+              [
+                121.482008,
+                31.2512727
+              ],
+              [
+                121.4819876,
+                31.2512483
+              ],
+              [
+                121.4819693,
+                31.2512049
+              ],
+              [
+                121.4819823,
+                31.2511148
+              ],
+              [
+                121.4819908,
+                31.2510565
+              ],
+              [
+                121.4820344,
+                31.2507548
+              ],
+              [
+                121.4822214,
+                31.2507756
+              ],
+              [
+                121.4822682,
+                31.2504437
+              ],
+              [
+                121.4820832,
+                31.2504281
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 1196303153,
+            "tags": {
+              "amenity": "school",
+              "education": "school",
+              "name": "海南中学"
+            },
+            "nearestVertexDistanceM": 35.6,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4808664,
+                31.2506469
+              ],
+              [
+                121.4816277,
+                31.250721
+              ],
+              [
+                121.4816714,
+                31.2504979
+              ],
+              [
+                121.4819691,
+                31.2505329
+              ],
+              [
+                121.4820171,
+                31.2503013
+              ],
+              [
+                121.4810812,
+                31.2502112
+              ],
+              [
+                121.4810563,
+                31.2503608
+              ],
+              [
+                121.4809148,
+                31.2503524
+              ],
+              [
+                121.4808664,
+                31.2506469
+              ]
+            ]
+          },
+          {
+            "osmType": "way",
+            "osmId": 144965241,
+            "tags": {
+              "cycleway": "opposite_lane",
+              "highway": "residential",
+              "name": "乍浦路",
+              "name:en": "Zhapu Road",
+              "oneway": "yes",
+              "surface": "asphalt"
+            },
+            "nearestVertexDistanceM": 58.1,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4823102,
+                31.2527012
+              ],
+              [
+                121.4825862,
+                31.2513835
+              ],
+              [
+                121.4826528,
+                31.2510735
+              ],
+              [
+                121.4827993,
+                31.2503147
+              ],
+              [
+                121.4829279,
+                31.2497514
+              ],
+              [
+                121.4830163,
+                31.2493645
+              ],
+              [
+                121.4830903,
+                31.249034
+              ],
+              [
+                121.4831315,
+                31.2488469
+              ],
+              [
+                121.4832057,
+                31.2484429
+              ],
+              [
+                121.4832488,
+                31.2482015
+              ],
+              [
+                121.4833205,
+                31.2478005
+              ],
+              [
+                121.4833383,
+                31.2476878
+              ],
+              [
+                121.4833408,
+                31.2475579
+              ]
+            ]
+          },
+          {
+            "osmType": "node",
+            "osmId": 9865594615,
+            "tags": {
+              "bus": "yes",
+              "name": "塘沽路乍浦路",
+              "name:zh": "塘沽路乍浦路",
+              "public_transport": "stop_position"
+            },
+            "nearestVertexDistanceM": 130.3,
+            "pointInsidePolygon": false,
+            "coordinates": [
+              [
+                121.4836273,
+                31.2501878
+              ]
+            ]
+          }
+        ],
+        "method": "直接读取OSM map API公开WGS84原始节点和way；nearestVertexDistanceM只是原点到已列way顶点的最小近似距离，不能当作到地块边界的距离。点在polygon内用闭合way二维射线法判定；名称近邻仅空间辅助。",
+        "assessment": "返回浦西公寓way494546990（旧名披亚斯、1931年、9层），原点与具名建筑最近顶点约18.1米；原点落近邻绿化polygon而非公寓本体，不移动点或把绿地当该楼。门牌、旧名、年代及现住户由2026住建全文直接闭环。"
+      }
+    },
+    {
+      "IDBAT": 1129,
+      "queries": [
+        "贫儿教养院 胶州",
+        "胶州路397 贫儿",
+        "胶州路397 2025",
+        "胶州路397 历史",
+        "贫儿 397 上海"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文贫儿教养院及胶州路397号可与历史教会建筑研究附录地址相印证。后续资料提供该地址曾为工业科研单位的线索，华鑫物业2025年公开租赁信息显示397号仍有办公空间出租。但尚未取得贫儿教养院院舍与后来厂房、科研及现办公楼逐栋对应的可靠沿革；现地块不等于原院楼仍存，旧院建筑范围、拆建和具体现用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1129",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1129"
+        },
+        {
+          "title": "《上海市近代教会建筑历史初探》附录：贫儿教养院胶州路397号（PDF检索摘录）",
+          "url": "https://dl.ziliaozhan.win/%E4%B9%A6%E7%B1%8D/pdf/%E7%A0%94%E7%A9%B6/%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%BF%91%E4%BB%A3%E6%95%99%E4%BC%9A%E5%BB%BA%E7%AD%91%E5%8E%86%E5%8F%B2%E5%88%9D%E6%8E%A2.pdf"
+        },
+        {
+          "title": "中国计算机学会：东海-I型微型计算机（1980—1984）（2026-03-25，胶州路397号工业科研沿革）",
+          "url": "https://www.ccf.org.cn/Computing_history/Full_List/2025/ellsjy/2026-03-25/865841.shtml"
+        },
+        {
+          "title": "华鑫置业：上海华鑫物业管理顾问有限公司信息公开（2025，胶州路397号租赁资料）",
+          "url": "https://www.chinafortune.com.cn/uploadpath/2025/4/27/e9d54594-6446-4659-9eec-6cb878df76d0.pdf"
+        }
+      ],
+      "limitations": "教会研究与原数据可能共有早期图源，不当作现代建筑独立闭环；维基中国生化厂及新浪博客旧楼保存叙述未获权威逐栋证实，故未升级。 华鑫物业PDF先经web与urllib读取失败，随后curl下载成功并用pdfplumber全文读取，核到397号分公司及出租资料；并非仅搜索摘要。",
+      "groupReview": {
+        "groupMembers": [
+          1129
+        ],
+        "outcome": "已核对本地历史要素同组成员，该条为单成员组。"
+      },
+      "spatialChecks": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "wgs84": {
+            "longitude": 121.437092,
+            "latitude": 31.232469
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "wgs84": {
+            "longitude": 121.437092,
+            "latitude": 31.232469
+          },
+          "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "nearby": [],
+          "assessment": "查询失败，不能解释为地点不存在或附近没有POI。"
+        }
+      ],
+      "libraryCheck": {
+        "file": "research/unresolved-landmarks/014-shanghai-library-address.json",
+        "result": {
+          "IDBAT": 1129,
+          "historicalName": "Pin'er Jiaoyangyuan",
+          "historicalAddress": "397 KIAOCHOW ROAD",
+          "historicalRoad": "KIAOCHOW ROAD",
+          "historicalNumber": "397",
+          "modernRoadCandidates": [
+            "胶州路"
+          ],
+          "roadMappingMethod": "local-road-layer-exact",
+          "coordinates": {
+            "wgs84": {
+              "longitude": 121.437092,
+              "latitude": 31.232469
+            }
+          },
+          "queries": [
+            {
+              "query": "胶州路397号",
+              "candidates": []
+            }
+          ]
+        },
+        "assessment": "已查，无地址候选或无法自动映射道路均不证明无对应旧址。"
+      }
+    }
+  ]
+}

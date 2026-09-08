@@ -1,0 +1,159 @@
+{
+  "batch": "012",
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "61b5932224594348cf199008bc67470cd47e8f75",
+  "baselineMapSha256": "572bf5fe2921e79a61658991f7a3598e1d2dbe8322f833244721512aa1cc761d",
+  "baselineOverrideCount": 211,
+  "note": "For batches after 012, the baseline is the immediately preceding completed batch working-tree state; the commit anchor remains the pushed 011 commit until further commits are made.",
+  "research": {
+    "recordCount": 50,
+    "originalSixFieldsUnchanged": true,
+    "uniqueIds": true,
+    "previousResearchedIdsExcluded": 550,
+    "verificationSummary": {
+      "verified": 18,
+      "likely": 16,
+      "unresolved": 16
+    },
+    "classificationSummary": {
+      "total": 50,
+      "byOutcomeCategory": {
+        "survives-with-history": 16,
+        "demolished-current-use": 2,
+        "location-only-current-use": 32
+      },
+      "byResolutionStatus": {
+        "resolved": 18,
+        "probable": 16,
+        "unresolved": 16
+      },
+      "mapWriteRecommendation": {
+        "yes": 15,
+        "review": 19,
+        "no": 16
+      }
+    }
+  },
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyApprovedCurrentFieldsChanged": true,
+    "changedFeatureGroupIds": [
+      "landmark-vs-site-1252",
+      "landmark-vs-site-1307",
+      "landmark-vs-site-1447",
+      "landmark-vs-site-1520",
+      "landmark-vs-site-174",
+      "landmark-vs-site-1764",
+      "landmark-vs-site-1769",
+      "landmark-vs-site-288",
+      "landmark-vs-site-523",
+      "landmark-vs-site-536",
+      "landmark-vs-site-647",
+      "landmark-vs-site-66",
+      "landmark-vs-site-667",
+      "landmark-vs-site-671"
+    ],
+    "coveredSourceRecordIds": [
+      66,
+      174,
+      175,
+      288,
+      523,
+      536,
+      647,
+      667,
+      671,
+      1252,
+      1307,
+      1447,
+      1520,
+      1764,
+      1769
+    ],
+    "priorOverridesUnchanged": 211,
+    "totalOverrides": 225,
+    "fullGroupIdGuards": true,
+    "allBatchGroupsReviewed": 48
+  },
+  "currentUseAudit": {
+    "landmarkGroups": 1670,
+    "matchedFromLibrary": 62,
+    "matchedFromLibraryCache": 0,
+    "matchedFromWikipedia": 15,
+    "matchedFromResearch": 225,
+    "matchedFromCurrentPlaceName": 22,
+    "needsReviewPartialName": 21,
+    "needsReviewDuplicateSource": 0,
+    "notFound": 1083,
+    "genericName": 242,
+    "networkFailures": 0
+  },
+  "unresolved": {
+    "before": 1490,
+    "after": 1475,
+    "fileCount": 30,
+    "removedIds": [
+      66,
+      174,
+      175,
+      288,
+      523,
+      536,
+      647,
+      667,
+      671,
+      1252,
+      1307,
+      1447,
+      1520,
+      1764,
+      1769
+    ],
+    "addedIds": [],
+    "retainedSixFieldsUnchanged": true,
+    "allHeldBatchRecordsStillPresent": true
+  },
+  "nextBatch": {
+    "batch": "013",
+    "recordCount": 50,
+    "uniqueIds": true,
+    "previousResearchedIdsExcluded": 600
+  },
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "vitest": 52,
+      "node": 12
+    },
+    "build": {
+      "status": "passed",
+      "includes": [
+        "validate:data",
+        "TypeScript",
+        "Vite"
+      ],
+      "note": "Existing bundle-size advisory remains."
+    },
+    "playwright": {
+      "status": "passed",
+      "passed": 40,
+      "failed": 0,
+      "projects": [
+        "desktop",
+        "mobile"
+      ],
+      "command": "npm run test:e2e -- --config=.cache/playwright-011.config.ts --workers=4",
+      "configurationNote": "Temporary ignored configuration uses free port 4183; original projects preserved.",
+      "regressionUpdate": "The removed Yanzhong proposal remains absent. Searching the verified current-use name 广场公园 now opens the historical Baxian Bridge market and states its original site was redeveloped. Initial outdated search-miss expectation and an intermediate label typo were corrected before the successful full run."
+    },
+    "gitDiffCheck": "passed",
+    "logs": [
+      "/private/tmp/shanghai-012-unit.log",
+      "/private/tmp/shanghai-012-build.log",
+      "/private/tmp/shanghai-012-playwright-final.log"
+    ]
+  }
+}

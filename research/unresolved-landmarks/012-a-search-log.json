@@ -1,0 +1,404 @@
+{
+  "batch": "012",
+  "part": "a",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/012-input.json",
+  "scope": "稳定输入slice(0,17)。逐条实际搜索历史名称、中文名、门牌及现代用途；来源为成功取得并审阅的正文、检索摘要、原始扫描件OCR和根任务共享OSM。检索未命中不表示机构不存在。",
+  "records": [
+    {
+      "IDBAT": 79,
+      "queries": [
+        "\"利生小学\" 上海 桃源路",
+        "\"利生小學\" 上海",
+        "\"Rue de Lagrene\" 上海",
+        "\"剌格纳路\" 上海",
+        "\"拉格纳路\" 上海",
+        "\"喇格纳路\" \"路\" 上海",
+        "\"利生小学\" \"崇德路\"",
+        "\"上海暨全國學校調查錄\" \"利生\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《上海暨全国学校调查录》检索OCR直接列利生小学校、法租界剌格纳路158号，确认学校及旧门牌。Rue de Lagrene即喇格纳路、今崇德路。原坐标却靠近太仓路、顺昌路和经纬公寓，离历史道路的位置存在差异；158号重编、校舍边界及坐标均待核。不能与另有明确沿革的喇格纳小学（第二中国小学）混同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=79",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_上海暨全國學校調查錄.pdf",
+        "https://zh.wikipedia.org/wiki/崇德路_(上海市)",
+        "https://www.openstreetmap.org/way/293416975",
+        "https://www.openstreetmap.org/way/654297631"
+      ]
+    },
+    {
+      "IDBAT": 1400,
+      "queries": [
+        "\"豊田紡織廠\" 上海",
+        "\"丰田纺织厂\" \"愚园路1000\"",
+        "\"丰田纱厂\" 2025 纪念馆",
+        "\"丰田纱厂\" \"创邑\" \"2730\"",
+        "\"丰田纱厂\" \"中山西路\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "原中文豊田紡織廠和1921年可与丰田在上海创办纱厂的官方企业资料对应，英文Litian疑似转录，保留原字段。文汇建筑研究将丰田纱厂、后来铁工部及万航渡路2730号创邑·河分别叙述；企业纪念馆恢复的是2318号铁工部办公楼、食堂，不能把整个纱厂认作现纪念馆。原地址只有中山西路、没有门牌，OSM近邻无有效具名结果，厂区边界和原点现代地块仍待核。纪念馆2022年活动由运营方确认，但一般不开放，不能据此宣称当前常态公众开放。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1400",
+        "https://dzb.whb.cn/imgPath/2023-01-04/110104.pdf",
+        "https://www.tcmit.org/wp-content/uploads/c7bfe2736d53177a94b8aa8378a1f68f.pdf",
+        "https://www.jtbcorp.jp/jp/sustainability/clean/2022/001.html",
+        "https://www.cnqcr.com/wqzs/46/43662.html"
+      ]
+    },
+    {
+      "IDBAT": 1432,
+      "queries": [
+        "\"豊田紡織廠\" 上海",
+        "\"丰田纺织厂\" \"愚园路1000\"",
+        "\"丰田\" \"愚园路1000号\"",
+        "\"丰田纱厂\" 2025 纪念馆",
+        "\"丰田\" \"愚园路\" 宿舍",
+        "\"丰田纱厂\" \"创邑\" \"2730\"",
+        "\"愚园路1249弄\" 住宅 丰田",
+        "\"丰田纱厂\" \"中山西路\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "薛理勇2017文汇文章与住宅建筑研究直接把愚园路1249弄识别为丰田纱厂自建职工住宅，存在独栋与联排多个部分。2025年长宁区市容报道仍将1249弄作为有楼道、垃圾箱房的居住小区管理。OSM原点约54米为御华名苑，现代地图亦出现御华名苑愚园路1249弄店，提供空间线索；但旧1000号和今1249弄的重编、干部住宅与普通宿舍分区、具体栋号及拆存范围仍待核，不把全弄视为原楼。原英文Litian与中文豊田的差异保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1432",
+        "https://dzb.whb.cn/images/2017-11/05/7/71105.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_15152847",
+        "https://www.shcn.gov.cn/col7560/20250526/1290777.html",
+        "https://maps.apple.com/place?auid=1118497536247991&lsp=57879",
+        "https://www.openstreetmap.org/way/1432484550"
+      ]
+    },
+    {
+      "IDBAT": 393,
+      "queries": [
+        "\"Little Floks\" Shanghai",
+        "\"Little Folks Garden School\" Shanghai",
+        "\"Little Folks\" \"Bourgeat\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已检索原拼写Little Floks、可能的Little Folks Garden School及Bourgeat组合，未找到独立可核验的校史或门牌沿革。Route Bourgeat为蒲石路、今长乐路；OSM仅支持原点近长乐路常熟路街区。不能将原675号直接套用现代675号，也不能由附近商铺推断学校后身，历史身份及原址待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=393",
+        "https://www.openstreetmap.org/way/1068144843"
+      ]
+    },
+    {
+      "IDBAT": 903,
+      "queries": [
+        "\"六华小学\" \"成都\"",
+        "\"六華\" \"597\"",
+        "\"和衷中学\" \"成都路\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "检索六华小学、六華、成都路597-5及同组和衷中学均未取得可靠独立沿革。同组#902为Hezhong Junior High School、和衷中学，地址相同且坐标接近，仍可能是共址或不同时期办学；没有材料证明两校同一机构。#903中文记小学、幼稚园而英文及FUNCTION含Junior High/Secondary，原字段全部保留。不能把一条学校名称解释扩展至全组，学校关系、门牌和校舍均待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=903",
+        "https://www.virtualshanghai.net/data/buildings?ID=902",
+        "https://www.openstreetmap.org/way/431113259"
+      ]
+    },
+    {
+      "IDBAT": 1252,
+      "queries": [
+        "\"梨园公所\" \"593\"",
+        "\"梨园公所\" \"慈修庵\" site:gov.cn",
+        "\"梨园公所\" 2025 慈修",
+        "\"梨园公所\" \"慈修庵\" 上海黄浦",
+        "\"慈修庵\" \"593\" 2025"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "2025年上海黄浦融媒体记者稿直接把如今方浜中路593号慈修庵与1905年梨园公所对应，现代使用者及历史门牌已有直接证据。较早资料记此处曾作小学或幼儿园、拟与庵置换；2021文章称已经置换，但所述2001年与2005年仍拟购入的旧报道存在年份差异，因此不采用确切置换年。OSM原点距南侧星光幼儿园要素中心20米、距北侧榛苓街15号慈修庵51米，反映空间及可能未更新的用途标签；现代使用者以2025年官方同址报道为准。梨园前楼和慈修庵本院为相邻的保护建筑，不将前者仍写成学校，也不将两处历史建筑视为同一原始建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1252",
+        "https://www.sohu.com/a/919030925_121668715",
+        "https://www.sohu.com/a/442569139_100258418",
+        "https://bj.sina.com.cn/art/2005-02-25/64452.shtml?from=wap",
+        "https://www.shhuangpu.gov.cn/uploadfile/4040A0D522754071801E241A9DF905F5_措施_1.pdf",
+        "https://www.openstreetmap.org/way/1425971412",
+        "https://www.openstreetmap.org/way/494395699"
+      ]
+    },
+    {
+      "IDBAT": 536,
+      "queries": [
+        "\"Liza Building\" Shanghai",
+        "\"迦陵大楼\" site:gov.cn",
+        "\"嘉陵大楼\" \"99\"",
+        "\"迦陵大楼\" \"99\"",
+        "\"迦陵大楼\" 商办 银行",
+        "\"嘉陵大楼\" 工商银行 南京东路99",
+        "\"Jialing Building keeps alive\"",
+        "\"Liza Building\" \"346\""
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "《征信工商行名录》出现346 Szechuen Road的Liza Building租户，市政府英文网站转载的建筑考察明确Liza Hardoon Building即今99 Nanjing Road East的Jialing Building，2020修缮报道将四川中路346号与嘉陵大楼直接联系。旧建筑原有商铺、办公室及顶层居住空间，故本条Residential并不意味着整栋皆住宅，原字段保留。OSM嘉陵大楼距原点23米、工商银行26米，与同一街角建筑相容；现地图继续标办公楼和银行。仅确认银行及商办用途，不将旧研究院租户当作现使用者。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=536",
+        "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_徵信工商行名錄.pdf",
+        "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=9085e4cc-fc63-43f6-b138-f08fe4787179",
+        "https://finance.sina.cn/2020-09-18/detail-iivhvpwy7457914.d.html?vt=4",
+        "https://maps.apple.com/place?auid=1117162011539263&lsp=57879",
+        "https://www.openstreetmap.org/way/1196704492",
+        "https://www.openstreetmap.org/node/4163338593"
+      ]
+    },
+    {
+      "IDBAT": 220,
+      "queries": [
+        "\"卢家湾公墓\" \"复兴\"",
+        "\"卢家湾\" \"公墓\"",
+        "\"Rue Chapsal\" 上海",
+        "\"卢家湾公墓\" \"淡水路\"",
+        "\"Lokawei\" cemetery today",
+        "\"卢家湾公墓\" \"1959\"",
+        "\"上海租界公墓研究\" \"476\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "Lokawei为卢家湾旧译，公墓研究确认卢家湾公墓1951年停止新葬，1959年撤销并改作停车场。Rue Chapsal即萨坡赛路、今淡水路；此处不应与八仙桥、静安寺或复兴公园等其他墓地混同。研究足以确认历史身份和撤销，但476号到今天门牌、墓地范围及停车场此后的更新缺少直接证据，现宗地待核。OSM本次近邻未返回具名要素，不能将1959年停车用途当作2026年现状。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=220",
+        "https://epress.lib.uts.edu.au/journals/index.php/provincial_china/article/view/987/995",
+        "https://www.shobserver.cn/wx/detail.do?id=12765",
+        "https://www.globaltimes.cn/content/845886.shtml"
+      ]
+    },
+    {
+      "IDBAT": 867,
+      "queries": [
+        "\"龙门中小学\" \"牯岭路\"",
+        "\"龍門中小學\" 上海",
+        "\"牯岭路34号\" 学校",
+        "\"龙门小学\" \"牯岭路\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已检索龙门中小学、龍門中小學、牯岭路34号和龙门小学牯岭路，未取得该校与现宗地的独立连续证据。其他学校沿革偶有龙门小学及牯岭路字样，但不足以证明本条中小学及34号身份。OSM原点几乎落在北京西路1号新金桥广场要素中心，和历史牯岭路门牌存在道路位置差异，坐标、门牌和拆建链条均待核，不能直接回填该广场。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=867",
+        "https://www.openstreetmap.org/way/970379991"
+      ]
+    },
+    {
+      "IDBAT": 796,
+      "queries": [
+        "\"龙兴禅寺\" \"延安\"",
+        "\"龙兴禅寺\" \"954\"",
+        "\"龍興禅寺\" 上海"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已按龙兴禅寺、龍興禅寺、上海、延安及954号组合实际检索，未取得独立可靠的上海寺史与地址证据。不能混同杭州延安路龙兴寺经幢或其他城市同名寺院。OSM仅显示原点近延安东路、武胜路，旧954号门牌对应、寺院范围及存废待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=796",
+        "https://www.openstreetmap.org/way/178699051"
+      ]
+    },
+    {
+      "IDBAT": 667,
+      "queries": [
+        "\"老闸巡捕房\" \"贵州路101\" 现",
+        "\"老闸捕房\" 2025 学校"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "南京东路街道相关建筑介绍直接确认贵州路101号原老闸捕房，1949年后先后作培光中学、商业职业技术学校，2006年为商贸旅游学校；原审讯红楼、部分牢房仍存。2026年黄浦区财政公开表继续列贵州路校区老闸捕房旧址校舍修缮，上海市发展研究中心2026年4月报道赴旧址参观。OSM旧址距原点14米、校舍18米，与历史贵州路天津路位置相容。描述的是校内保留的历史建筑，不意味着今天校园所有建筑均为捕房原楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=667",
+        "https://www.sohu.com/a/308119047_186647",
+        "https://www.shhuangpu.gov.cn/uploadfile/60da8247-5eff-4e1c-a8f1-d254a5a48c25/2026%E5%B9%B4%E8%B4%A2%E6%94%BF%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E8%A1%A8%E6%A0%BC.pdf",
+        "https://fzzx.sh.gov.cn/zxyw/20260417/e86bde3edab44403b29510fbd8d7e7ce.html",
+        "https://www.openstreetmap.org/node/11841684246",
+        "https://www.openstreetmap.org/way/1197283892"
+      ]
+    },
+    {
+      "IDBAT": 813,
+      "queries": [
+        "\"陆家观音堂\" 上海",
+        "\"陸家観音堂\"",
+        "\"陆家观音堂\" \"244\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《中国历史地理论丛》2013年第28卷第4辑所载研究的寺院表列陆家观音堂、咸丰年间、中正路244号，与中文寺名及244号线索相符。旧福煦路后为中正路、今延安中路相关路段，但234与244双号记录、道路改造及具体宗地仍待核。OSM原点靠近重庆中路和南北高架，仅为现街区参照，不能据附近公安POI或道路就断言寺院变成该设施。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=813",
+        "https://g-city.sass.org.cn/_upload/article/files/d1/3f/ac39329d4354acc7d190d72c7447/729822c2-6cb6-47f0-9828-8ae972a6819c.pdf",
+        "https://www.openstreetmap.org/way/40322293"
+      ]
+    },
+    {
+      "IDBAT": 288,
+      "queries": [
+        "\"兰心大戏院\" \"2026\"",
+        "\"兰心大戏院\" \"101\""
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "2026年光明日报的剧场研究明确今天长乐路、茂名南路转角的兰心为1931年落成的第三代Lyceum Theatre，与本条年份、英文名和道路相符；前两代在圆明园路、香港路及虎丘路一带，不能把1860年代创办年当成本楼建造年。现演出地址为茂名南路57号，输入101号作为旧门牌保留。旧今号码不同，但唯一同名第三代剧院、1931建筑沿革、同一街角及OSM戏院距原点37米共同支持同楼；OSM附近56号餐饮是街角其他地址，不据其距离认作剧院后身。2026年报道及当年演出安排确认现舞台用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=288",
+        "https://caiyi.cctv.com/2026/02/06/ARTIBaWwTbBwUmfFuIYnVvyH260206.shtml",
+        "https://www.motianlun.cn/show-detail/show-detail/6a3e011912ad730001e0ec86",
+        "https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimfwqf3620021.shtml",
+        "https://www.openstreetmap.org/way/449067893"
+      ]
+    },
+    {
+      "IDBAT": 1764,
+      "queries": [
+        "\"LYDIA APARTMENTS\" Shanghai",
+        "\"陕西南路492\" 公寓",
+        "\"立地公寓\" \"Lydia\"",
+        "\"立地公寓\" site:gov.cn",
+        "\"陕南公寓\" \"490\" site:gov.cn",
+        "\"立地公寓\" 修缮 住宅",
+        "\"立地公寓\" 徐汇 490 492",
+        "\"在转角邂逅名家之作\" 合记"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "2024年新民晚报关于历史建筑铭牌的现场案例直接将陕西南路490号与Lydia Apartments、立地公寓对应；2023年上观建筑档案研究确认合记公寓亦名立地公寓，地址490、492号，并据1930年代路图和建造档案确认现楼。现代房产页面仍列该单栋居住小区及两门牌，高德现有书店信息在492号一层，故只说主要住宅兼有局部商业。原地址492 Avenue du Roi Albert与今陕西南路492号延续，原点与永嘉路口相容；不将整楼标成书店。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1764",
+        "https://news.xinmin.cn/2024/01/22/32572263.html",
+        "https://finance.sina.cn/2023-10-28/detail-imzsrsqu3025697.d.html?wm=3049_0015",
+        "https://sh.esf.fang.com/loupan/1210920250.htm",
+        "https://ranks.amap.com/ranking/二手书店/上海市/白领",
+        "https://www.openstreetmap.org/way/1207401650"
+      ]
+    },
+    {
+      "IDBAT": 647,
+      "queries": [
+        "\"金域大戏院\" \"780\"",
+        "\"金城大戏院\" \"北京东路\"",
+        "\"金域大戏院\" 上海",
+        "\"黄浦剧场\" \"2026\" \"780\""
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "宾夕法尼亚大学中国早期建筑师展览资料直接以中英文对照金城大戏院／Lyric Theater，地址北京东路780号、1934年开业，与本条英文、门牌和年份一致；原中文金域疑为金城误录，保留原数据。黄浦官方沿革确认金城后为黄浦剧场，2026年区新闻中心及意大利驻沪总领馆的演出安排继续列780号。OSM黄浦剧场距原点20米，匹配现存剧院。上海图书馆辅助候选虽别名门牌相符，所返坐标偏东约1147米，未采用其坐标。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=647",
+        "https://www.design.upenn.edu/sites/default/files/uploads/news/Exhibition-The%20Rise%20of%20Modernity%2CThe%20First%20of%20Chinese%20Architects%20from%20the%20University%20of%20Pennsylvania.pdf",
+        "https://sghexport.shobserver.com/html/baijiahao/2020/07/30/233956.html",
+        "https://m.thepaper.cn/newsDetail_forward_33345957",
+        "https://iicshanghai.esteri.it/zh/gli_eventi/calendario/teatro-lamica-geniale-a-fumetti-a-shanghai/",
+        "https://www.openstreetmap.org/way/414733191"
+      ]
+    },
+    {
+      "IDBAT": 20,
+      "queries": [
+        "\"Mallet Police Station\" Shanghai",
+        "\"麦兰捕房\" \"174\"",
+        "\"麦兰捕房\" site:shhuangpu.gov.cn",
+        "\"麦兰捕房\" \"金陵东路174号\" 政府"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "房管局第五批优秀历史建筑名录5A077直接将法租界麦兰捕房、1943年黄浦分局与今上海市公安局黄浦分局金陵东路174号对应。沿革区分1856年法租界警务创设、1864年迁入公馆马路旧楼及1935年原址新楼，因此不能把1856年当作现楼建筑年代。本条旧地址却是151 EDWARD VII，原点近延安东路、山东南路，现公安入口在金陵东路，旧街块占地、北侧门牌与原点是否落在捕房范围仍待核。建筑身份已证实，暂不由同名直接把整个街块回填为公安旧址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=20",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://zh.wikipedia.org/wiki/上海法租界麦兰捕房",
+        "https://hpcbristol.net/visual/ro-n0897",
+        "https://www.openstreetmap.org/way/178441748"
+      ]
+    },
+    {
+      "IDBAT": 772,
+      "queries": [
+        "\"漫江小学\" 上海",
+        "\"漫江小學\"",
+        "\"漫江\" \"浙江北路\""
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已按Manjiang Primary School、漫江小学、漫江小學及浙江北路检索，未找到独立学校沿革或146-19号现址证据。OSM仅返回附近七浦路，无法确认原校园是否拆除或由何单位使用。校名、门牌及原点范围待核，不能以现代同名机构或附近商业街替代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=772",
+        "https://www.openstreetmap.org/way/744519077"
+      ]
+    }
+  ],
+  "allQueries": [
+    "\"利生小学\" 上海 桃源路",
+    "\"豊田紡織廠\" 上海",
+    "\"丰田纺织厂\" \"愚园路1000\"",
+    "\"Little Floks\" Shanghai",
+    "\"六华小学\" \"成都\"",
+    "\"利生小學\" 上海",
+    "\"丰田\" \"愚园路1000号\"",
+    "\"Little Folks Garden School\" Shanghai",
+    "\"梨园公所\" \"593\"",
+    "\"Liza Building\" Shanghai",
+    "\"卢家湾公墓\" \"复兴\"",
+    "\"龙门中小学\" \"牯岭路\"",
+    "\"龍門中小學\" 上海",
+    "\"六華\" \"597\"",
+    "\"卢家湾\" \"公墓\"",
+    "\"梨园公所\" \"慈修庵\" site:gov.cn",
+    "\"龙兴禅寺\" \"延安\"",
+    "\"老闸巡捕房\" \"贵州路101\" 现",
+    "\"陆家观音堂\" 上海",
+    "\"兰心大戏院\" \"2026\"",
+    "\"LYDIA APARTMENTS\" Shanghai",
+    "\"金域大戏院\" \"780\"",
+    "\"Mallet Police Station\" Shanghai",
+    "\"漫江小学\" 上海",
+    "\"龙兴禅寺\" \"954\"",
+    "\"金城大戏院\" \"北京东路\"",
+    "\"金域大戏院\" 上海",
+    "\"陕西南路492\" 公寓",
+    "\"立地公寓\" \"Lydia\"",
+    "\"麦兰捕房\" \"174\"",
+    "\"梨园公所\" 2025 慈修",
+    "\"丰田纱厂\" 2025 纪念馆",
+    "\"立地公寓\" site:gov.cn",
+    "\"迦陵大楼\" site:gov.cn",
+    "\"老闸捕房\" 2025 学校",
+    "\"梨园公所\" \"慈修庵\" 上海黄浦",
+    "\"陕南公寓\" \"490\" site:gov.cn",
+    "\"嘉陵大楼\" \"99\"",
+    "\"迦陵大楼\" \"99\"",
+    "\"丰田\" \"愚园路\" 宿舍",
+    "\"龍興禅寺\" 上海",
+    "\"陸家観音堂\"",
+    "\"牯岭路34号\" 学校",
+    "\"漫江小學\"",
+    "\"兰心大戏院\" \"101\"",
+    "\"立地公寓\" 修缮 住宅",
+    "\"迦陵大楼\" 商办 银行",
+    "\"龙门小学\" \"牯岭路\"",
+    "\"Rue de Lagrene\" 上海",
+    "\"Rue Chapsal\" 上海",
+    "\"漫江\" \"浙江北路\"",
+    "\"和衷中学\" \"成都路\"",
+    "\"剌格纳路\" 上海",
+    "\"拉格纳路\" 上海",
+    "\"嘉陵大楼\" 工商银行 南京东路99",
+    "\"麦兰捕房\" site:shhuangpu.gov.cn",
+    "\"喇格纳路\" \"路\" 上海",
+    "\"麦兰捕房\" \"金陵东路174号\" 政府",
+    "\"立地公寓\" 徐汇 490 492",
+    "\"慈修庵\" \"593\" 2025",
+    "\"Jialing Building keeps alive\"",
+    "\"在转角邂逅名家之作\" 合记",
+    "\"黄浦剧场\" \"2026\" \"780\"",
+    "\"卢家湾公墓\" \"淡水路\"",
+    "\"丰田纱厂\" \"创邑\" \"2730\"",
+    "\"愚园路1249弄\" 住宅 丰田",
+    "\"Lokawei\" cemetery today",
+    "\"利生小学\" \"崇德路\"",
+    "\"陆家观音堂\" \"244\"",
+    "\"丰田纱厂\" \"中山西路\"",
+    "\"卢家湾公墓\" \"1959\"",
+    "\"Little Folks\" \"Bourgeat\"",
+    "\"上海暨全國學校調查錄\" \"利生\"",
+    "\"Liza Building\" \"346\"",
+    "\"上海租界公墓研究\" \"476\""
+  ],
+  "processNotes": [
+    "#79初查桃源路方向未采用；经历史道路条目确认Rue de Lagrene为崇德路，主记录仅保留最终道路。",
+    "#1252搜狐页面web工具间歇400/timeout；2026-09-08以urllib成功取回25536字节HTML至/tmp/012-a-liyuan-sohu.html，根任务独立复核正文，确认2025官方593号慈修庵为梨园旧址。",
+    "#536 SHINE原网页多次无法open，找到并审读上海市政府英文网站2017转载全文。",
+    "#813上海社科院PDF检索OCR直接命中陆家观音堂及244号；open一度取得11页索引，后续404。仅引可重复检索获得的表格信息，不扩展未读内容。",
+    "#1432薛理勇文章对人物英文名的推断未用于结论，仅采用员工住宅区事实，并以独立住宅空间研究和2025区政府居住管理记录补强。",
+    "#647图书馆候选名址相符但坐标偏东1147米，坐标不采用。",
+    "#288不将1860年代机构创办时间当作1931第三代现楼年代；101旧门牌与57现门牌均保留，合并唯一名称、年代、街角及现剧院空间证据。"
+  ]
+}

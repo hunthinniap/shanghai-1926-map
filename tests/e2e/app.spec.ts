@@ -120,15 +120,21 @@ test('does not expose the removed French Concession green-space proposals', asyn
   await expectSearchMiss(page, search, 'Jardins du 3, route Pottier')
 })
 
-test('does not expose the removed Yanzhong green-space proposals', async ({ page }) => {
+test('keeps Yanzhong proposals removed while finding the verified market site by its current use', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
   await expectSearchMiss(page, search, '辅德里公园')
   await expectSearchMiss(page, search, 'Taku Road Gardens')
   await expectSearchMiss(page, search, '冬园')
   await expectSearchMiss(page, search, 'Jardins de l’avenue Foch')
-  await expectSearchMiss(page, search, '广场公园')
   await expectSearchMiss(page, search, 'Jardins de l’avenue Édouard-VII')
+
+  await search.fill('广场公园')
+  await page.getByRole('option', { name: /Market \(Baxian Bridge\)/ }).click()
+  const detail = page.getByRole('complementary', { name: 'Market (Baxian Bridge)详情' })
+  await expect(detail).toContainText('广场公园')
+  await expect(detail).toContainText('八仙橋小菜場')
+  await expect(detail).toContainText('原址已拆除或重新开发')
 })
 
 test('treats Route Gaston Kahn as the full modern Jiashan Road', async ({ page }) => {

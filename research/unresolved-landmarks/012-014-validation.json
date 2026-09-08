@@ -1,0 +1,300 @@
+{
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "61b5932224594348cf199008bc67470cd47e8f75",
+  "researchedRecords": 150,
+  "totalResearchedIds": 700,
+  "batches": [
+    {
+      "batch": "012",
+      "research": {
+        "recordCount": 50,
+        "originalSixFieldsUnchanged": true,
+        "uniqueIds": true,
+        "previousResearchedIdsExcluded": 550,
+        "verificationSummary": {
+          "verified": 18,
+          "likely": 16,
+          "unresolved": 16
+        },
+        "classificationSummary": {
+          "total": 50,
+          "byOutcomeCategory": {
+            "survives-with-history": 16,
+            "demolished-current-use": 2,
+            "location-only-current-use": 32
+          },
+          "byResolutionStatus": {
+            "resolved": 18,
+            "probable": 16,
+            "unresolved": 16
+          },
+          "mapWriteRecommendation": {
+            "yes": 15,
+            "review": 19,
+            "no": 16
+          }
+        }
+      },
+      "addedGroups": 14,
+      "approvedIds": [
+        66,
+        174,
+        175,
+        288,
+        523,
+        536,
+        647,
+        667,
+        671,
+        1252,
+        1307,
+        1447,
+        1520,
+        1764,
+        1769
+      ]
+    },
+    {
+      "batch": "013",
+      "research": {
+        "recordCount": 50,
+        "originalSixFieldsUnchanged": true,
+        "uniqueIds": true,
+        "previousResearchedIdsExcluded": 600,
+        "separatelyApprovedCompanionIds": [],
+        "verificationSummary": {
+          "verified": 18,
+          "likely": 28,
+          "unresolved": 4
+        },
+        "classificationSummary": {
+          "total": 50,
+          "byOutcomeCategory": {
+            "survives-with-history": 11,
+            "demolished-current-use": 7,
+            "location-only-current-use": 32
+          },
+          "byResolutionStatus": {
+            "resolved": 18,
+            "probable": 28,
+            "unresolved": 4
+          },
+          "mapWriteRecommendation": {
+            "review": 32,
+            "yes": 14,
+            "no": 4
+          }
+        }
+      },
+      "addedGroups": 14,
+      "approvedIds": [
+        38,
+        482,
+        495,
+        506,
+        509,
+        529,
+        550,
+        599,
+        679,
+        782,
+        1261,
+        1332,
+        1511,
+        1547
+      ]
+    },
+    {
+      "batch": "014",
+      "research": {
+        "recordCount": 50,
+        "originalSixFieldsUnchanged": true,
+        "uniqueIds": true,
+        "previousResearchedIdsExcluded": 650,
+        "separatelyApprovedCompanionIds": [
+          880
+        ],
+        "verificationSummary": {
+          "verified": 20,
+          "likely": 25,
+          "unresolved": 5
+        },
+        "classificationSummary": {
+          "total": 50,
+          "byOutcomeCategory": {
+            "survives-with-history": 14,
+            "demolished-current-use": 6,
+            "location-only-current-use": 30
+          },
+          "byResolutionStatus": {
+            "resolved": 20,
+            "probable": 25,
+            "unresolved": 5
+          },
+          "mapWriteRecommendation": {
+            "yes": 15,
+            "review": 30,
+            "no": 5
+          }
+        }
+      },
+      "addedGroups": 15,
+      "approvedIds": [
+        99,
+        217,
+        261,
+        473,
+        524,
+        873,
+        880,
+        1305,
+        1336,
+        1366,
+        1481,
+        1667,
+        1728,
+        1730,
+        1748,
+        1787
+      ]
+    }
+  ],
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyApprovedCurrentFieldsChanged": true,
+    "addedGroups": 43,
+    "approvedRecords": 45,
+    "preservedPriorOverrides": 211,
+    "totalOverrides": 254
+  },
+  "unresolved": {
+    "before": 1490,
+    "after": 1445,
+    "fileCount": 29,
+    "retainedOriginalSixFieldsUnchanged": true
+  },
+  "nextBatch": {
+    "batch": "015",
+    "records": 50,
+    "excludesAll700PreviouslyResearchedIds": true
+  },
+  "auxiliary": [
+    {
+      "batch": "012",
+      "library": {
+        "queriedRecords": 37,
+        "queryCount": 40,
+        "candidates": 5
+      },
+      "osm": [
+        {
+          "file": "012-osm-nearby.json",
+          "queried": 50,
+          "successful": 40
+        },
+        {
+          "file": "012-osm-retry.json",
+          "queried": 10,
+          "successful": 10
+        }
+      ],
+      "recordsWithSuccessfulNearbyQuery": 50
+    },
+    {
+      "batch": "013",
+      "library": {
+        "queriedRecords": 33,
+        "queryCount": 42,
+        "candidates": 6
+      },
+      "osm": [
+        {
+          "file": "013-osm-nearby.json",
+          "queried": 50,
+          "successful": 20
+        },
+        {
+          "file": "013-osm-retry-2.json",
+          "queried": 20,
+          "successful": 10
+        },
+        {
+          "file": "013-osm-retry-3.json",
+          "queried": 10,
+          "successful": 0
+        },
+        {
+          "file": "013-osm-retry.json",
+          "queried": 30,
+          "successful": 10
+        }
+      ],
+      "recordsWithSuccessfulNearbyQuery": 40
+    },
+    {
+      "batch": "014",
+      "library": {
+        "queriedRecords": 36,
+        "queryCount": 47,
+        "candidates": 5
+      },
+      "osm": [
+        {
+          "file": "014-osm-nearby.json",
+          "queried": 50,
+          "successful": 0
+        },
+        {
+          "file": "014-osm-retry.json",
+          "queried": 50,
+          "successful": 0
+        }
+      ],
+      "recordsWithSuccessfulNearbyQuery": 0
+    }
+  ],
+  "directOsmApiChecks014": {
+    "batchRecords": 20,
+    "ids": [
+      1730,
+      1728,
+      1336,
+      99,
+      1357,
+      261,
+      91,
+      524,
+      708,
+      1557,
+      1305,
+      179,
+      217,
+      873,
+      1787,
+      1481,
+      1366,
+      1748,
+      473,
+      1667
+    ],
+    "additionalCompanionIds": [
+      880
+    ],
+    "note": "Separate from failed Overpass counts. Includes checks that support holds, and map responses without named target polygons. Stored in each part search log."
+  },
+  "auxiliaryMethodNotes": [
+    "Nearby Overpass errors are preserved and never treated as absence. Distances are supporting clues only.",
+    "013 final retry and 014 retry use named nodes/ways, excluding relations; earlier passes query nodes/ways/relations. All queries use unchanged WGS84 input coordinates.",
+    "014 has separate direct OSM API checks saved in the part search logs, including an independent coordinate check for companion880; these are not counted as successful Overpass requests.",
+    "013 #506 additionally has a successful direct OSM API polygon check in 013-c-search-log.json; it is separate from the nearby-query coverage count."
+  ],
+  "checks": {
+    "allThreeBatchesValidated": true,
+    "unitAndBuildPassedForEachBatch": true,
+    "desktopAndMobile40PassedForEachBatch": true,
+    "gitDiffCheck": "passed"
+  }
+}

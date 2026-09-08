@@ -1,0 +1,1797 @@
+{
+  "batch": "013",
+  "part": "c",
+  "researchedAt": "2026-09-08",
+  "method": "正式013-input与预检候选全字段一致后确认。实际联网逐条检索中英文名、道路和门牌，主馆、附属寄柩所及迁址机构分别判断。检索摘录与成功读取正文明确区分；逐条审阅OSM及图书馆辅助，错误与空结果保留，当前用途不依靠近邻推定。",
+  "records": [
+    {
+      "IDBAT": 1012,
+      "queries": [
+        "上海 新女子 时装 夜校 新闸路",
+        "\"New Women Fashion Night School\"",
+        "\"新妇女\" \"裁\" \"夜校\"",
+        "上海 \"新妇女\" \"新闸路\"",
+        "\"培成\" \"新妇女\"",
+        "\"新婦女\" \"夜校\"",
+        "上海 小沙渡路 Ferry Road 西康路"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "原中文为“新婦女服？裁？専科夜校”，含缺字；英文名提供服装夜校线索。FERRY ROAD 为小沙渡路、今西康路，未取得该夜校独立校史或现代宗地链。同组 #1010 培成女子中学、#1011 培成小学及幼稚园已审查：旧学校调查录检索到培成女中附小在小沙渡路34号，但尚无它与此夜校同楼或接续证据，不能整组认定。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1012",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1012"
+        },
+        {
+          "title": "普陀区文旅：初心之旅·图说普陀红色地名——小沙渡路（今西康路）（2020）",
+          "url": "https://www.sohu.com/a/438763205_737989"
+        },
+        {
+          "title": "Virtual Shanghai：同组培成女子中学记录1010",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1010"
+        },
+        {
+          "title": "Virtual Shanghai：同组培成小学及幼稚园记录1011",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1011"
+        },
+        {
+          "title": "国家图书馆藏《上海暨全国学校调查录》扫描件（检索摘录，整份PDF读取超时）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+        }
+      ],
+      "corrections": "初试新闸路后查原记录和道路沿革，确认FERRY为西康路；未将新闸路写成当前地址。",
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "node",
+                "osmId": 11824776156,
+                "name": "西康路南京西路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 7,
+                "coordinates": {
+                  "latitude": 31.2296949,
+                  "longitude": 121.4477983
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/11824776156"
+              },
+              {
+                "osmType": "relation",
+                "osmId": 17482513,
+                "name": "西康路南京西路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 11,
+                "coordinates": {
+                  "latitude": 31.2296621,
+                  "longitude": 121.4477455
+                },
+                "sourceUrl": "https://www.openstreetmap.org/relation/17482513"
+              },
+              {
+                "osmType": "node",
+                "osmId": 11824776155,
+                "name": "西康路南京西路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 17,
+                "coordinates": {
+                  "latitude": 31.2296292,
+                  "longitude": 121.4476927
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/11824776155"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1273359395,
+                "name": "西康路",
+                "nameEn": "Xikang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 39,
+                "coordinates": {
+                  "latitude": 31.2298594,
+                  "longitude": 121.4475185
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1273359395"
+              },
+              {
+                "osmType": "way",
+                "osmId": 39224566,
+                "name": "西康路",
+                "nameEn": "Xikang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 63,
+                "coordinates": {
+                  "latitude": 31.2291288,
+                  "longitude": 121.4480714
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/39224566"
+              },
+              {
+                "osmType": "node",
+                "osmId": 4452026142,
+                "name": "Lobster X Chicken",
+                "nameEn": null,
+                "address": "南阳路100",
+                "category": "restaurant",
+                "distanceMetres": 73,
+                "coordinates": {
+                  "latitude": 31.2301782,
+                  "longitude": 121.4473922
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/4452026142"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 861,
+      "queries": [
+        "新世界 城 商厦 1995 原址 拆除 1915",
+        "\"別世界\" \"435\" 上海",
+        "\"别世界\" \"虞洽卿\"",
+        "\"别世界\" \"新世界\" 上海",
+        "\"别世界\" \"上海\" \"戏院\""
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原英文 New World、中文“別世界”、1918年和虞洽卿路435号之间存在需解决的身份差异。黄浦2025年史料区分1915年南楼及1918年北楼：南楼2002年拆后成为人民广场下沉式广场，北楼1993年拆后1995年建成新世界城。原点近现新世界城提供北楼空间线索，但不能仅按英文名、起年或近邻确定原中文“別世界”的楼址；原中文是否误录、435号与现楼宗地对应待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 861",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=861"
+        },
+        {
+          "title": "央广网：从游乐场到商城，这里有没有你记忆中的新世界城？（2019）",
+          "url": "https://www.cnr.cn/shanghai/tt/20190414/t20190414_524577168.shtml"
+        },
+        {
+          "title": "澎湃新闻：110年前就有“新世界”了？（2025）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_32202122"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 51317339,
+                "name": "新世界城",
+                "nameEn": "New World City",
+                "address": null,
+                "category": "mall",
+                "distanceMetres": 18,
+                "coordinates": {
+                  "latitude": 31.2370655,
+                  "longitude": 121.469085
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/51317339"
+              },
+              {
+                "osmType": "node",
+                "osmId": 12851498502,
+                "name": "Xijiade",
+                "nameEn": null,
+                "address": null,
+                "category": "food_court",
+                "distanceMetres": 29,
+                "coordinates": {
+                  "latitude": 31.2369182,
+                  "longitude": 121.4691201
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/12851498502"
+              },
+              {
+                "osmType": "node",
+                "osmId": 11162688754,
+                "name": "SFC上影影城",
+                "nameEn": null,
+                "address": null,
+                "category": "cinema",
+                "distanceMetres": 30,
+                "coordinates": {
+                  "latitude": 31.2372089,
+                  "longitude": 121.4691925
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/11162688754"
+              },
+              {
+                "osmType": "node",
+                "osmId": 12999897353,
+                "name": "瑞幸咖啡",
+                "nameEn": "Luckin Coffee",
+                "address": null,
+                "category": "cafe",
+                "distanceMetres": 30,
+                "coordinates": {
+                  "latitude": 31.2373129,
+                  "longitude": 121.4691042
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/12999897353"
+              },
+              {
+                "osmType": "node",
+                "osmId": 13337972302,
+                "name": "3号仓库·创意中国菜(新世界城店)",
+                "nameEn": "No. 3 Warehouse Restaurant",
+                "address": "南京西路2-68",
+                "category": "restaurant",
+                "distanceMetres": 31,
+                "coordinates": {
+                  "latitude": 31.2368234,
+                  "longitude": 121.4688816
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/13337972302"
+              },
+              {
+                "osmType": "node",
+                "osmId": 12999317386,
+                "name": "和府捞面",
+                "nameEn": null,
+                "address": null,
+                "category": "restaurant",
+                "distanceMetres": 43,
+                "coordinates": {
+                  "latitude": 31.2367226,
+                  "longitude": 121.468917
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/12999317386"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "西藏中路435号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1651,
+      "queries": [
+        "日本堂 书店 上海 吴淞路 237",
+        "\"日本堂\" \"吴淞路\"",
+        "\"日本堂書店\" \"237\"",
+        "\"Nihondo\" \"237\" Shanghai",
+        "\"日本堂\" \"吴淞路237\"",
+        "\"上海\" \"日本堂\" \"塘沽路\""
+      ],
+      "verificationStatus": "likely",
+      "outcome": "日本堂书店作为在沪日文出版与地图制作机构有独立资料；1939年地图资料记书店在文路280号（今塘沽路）。尚未取得吴淞路237号这一营业点与后期塘沽路店的迁址关系、旧楼处置或当前用地证据。不能因日本堂后期门牌明确而跨址回填。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1651",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1651"
+        },
+        {
+          "title": "文汇报：清末民国初日本堂的上海地图制作（2017）",
+          "url": "https://dzb.whb.cn/html/2017-08/18/content_585008.html"
+        },
+        {
+          "title": "地图守望者：上海老地图鉴赏（四十一）——日制《最新大上海地图》（2021）",
+          "url": "https://www.chizusekai.com/h-nd-636.html"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1075724583,
+                "name": "塘沽路",
+                "nameEn": "Tanggu Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 35,
+                "coordinates": {
+                  "latitude": 31.2500843,
+                  "longitude": 121.4844143
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1075724583"
+              },
+              {
+                "osmType": "way",
+                "osmId": 35422929,
+                "name": "塘沽路",
+                "nameEn": "Tanggu Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 62,
+                "coordinates": {
+                  "latitude": 31.2500187,
+                  "longitude": 121.48527
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/35422929"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177574808,
+                "name": "吴淞路",
+                "nameEn": "Wusong Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 69,
+                "coordinates": {
+                  "latitude": 31.2502645,
+                  "longitude": 121.4854164
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177574808"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1365542393,
+                "name": "虹口区第一中心小学",
+                "nameEn": null,
+                "address": null,
+                "category": "school",
+                "distanceMetres": 102,
+                "coordinates": {
+                  "latitude": 31.2509967,
+                  "longitude": 121.4840053
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1365542393"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "吴淞路237号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 38,
+      "queries": [
+        "四明公所 寄柩所 木料库 宁波路 山东南路",
+        "\"四明公所\" \"淮海东路\" \"2025\"",
+        "\"四明公所\" \"门楼\" \"拆除\""
+      ],
+      "verificationStatus": "verified",
+      "outcome": "原宁波路为今淮海东路，与北部现宁波路不同。文旅资料明确主馆原址淮海东路45号，1998年拆除，仅留门楼平移23米至人民路582号；新民2023年文章明确原馆址现为东淮海国际大厦45—49号。本条记主馆地块，不能把移位门楼等同整座公所原楼存续，也不向木栈 #48 或义冢 #1253 的相邻地块扩展。 原点距OSM淮海东路49号商铺23米、现四明公所遗存点66米，仅作主馆与移位门楼空间核对，未以店铺推定整座大厦经营内容。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 38",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=38"
+        },
+        {
+          "title": "上海市文旅推广网：马尚龙·四明公所，宁波移民的有依之地（2024）",
+          "url": "https://www.meet-in-shanghai.net/cn/news/ma-shanglong-siming-gongshuo-a-place-for-immigrants-in-ningbo-114888/"
+        },
+        {
+          "title": "新民晚报：头顶四明山（2023）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2023-08-24/13/167637.html"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "node",
+                "osmId": 11279680169,
+                "name": "Jinjiang Inn",
+                "nameEn": "Jinjiang Inn",
+                "address": null,
+                "category": "hotel",
+                "distanceMetres": 15,
+                "coordinates": {
+                  "latitude": 31.2279293,
+                  "longitude": 121.4777725
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/11279680169"
+              },
+              {
+                "osmType": "node",
+                "osmId": 6036170787,
+                "name": "慧缘素食坊",
+                "nameEn": "Huiyuan Vegan",
+                "address": "淮海东路49",
+                "category": "restaurant",
+                "distanceMetres": 23,
+                "coordinates": {
+                  "latitude": 31.2282728,
+                  "longitude": 121.4777819
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/6036170787"
+              },
+              {
+                "osmType": "way",
+                "osmId": 40297715,
+                "name": "淮海东路",
+                "nameEn": "East Huaihai Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 33,
+                "coordinates": {
+                  "latitude": 31.2282679,
+                  "longitude": 121.4775243
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/40297715"
+              },
+              {
+                "osmType": "node",
+                "osmId": 6897155004,
+                "name": "中国建设银行",
+                "nameEn": "China Construction Bank",
+                "address": null,
+                "category": "bank",
+                "distanceMetres": 61,
+                "coordinates": {
+                  "latitude": 31.2279381,
+                  "longitude": 121.4771621
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/6897155004"
+              },
+              {
+                "osmType": "node",
+                "osmId": 5660417525,
+                "name": "四明公所",
+                "nameEn": null,
+                "address": null,
+                "category": "attraction",
+                "distanceMetres": 66,
+                "coordinates": {
+                  "latitude": 31.2277051,
+                  "longitude": 121.4783343
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5660417525"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9113970966,
+                "name": "小北门",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 76,
+                "coordinates": {
+                  "latitude": 31.2280894,
+                  "longitude": 121.4785793
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9113970966"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 48,
+      "queries": [
+        "\"四明公所\" \"木栈\"",
+        "\"四明公所\" \"木棧\"",
+        "四明公所 寄柩所 木料库 宁波路 山东南路"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "按“四明公所木栈／木棧”、木料库及道路组合检索，未取得独立木栈地块沿革。四明公所确有赊材、售棺业务，但一般公所史不能证明本木栈与主馆建筑同址；主馆拆改及人民路门楼的结论不可跨至本点。具体宗地范围与现用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 48",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=48"
+        },
+        {
+          "title": "上海市工商业联合会：四明公所——宁波人在上海最早的同乡同业公所（2017）",
+          "url": "https://www.sfic.cn/xw/xq/5/15906"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "node",
+                "osmId": 13463957017,
+                "name": "全家",
+                "nameEn": "FamilyMart",
+                "address": null,
+                "category": "convenience",
+                "distanceMetres": 61,
+                "coordinates": {
+                  "latitude": 31.2269219,
+                  "longitude": 121.4776951
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/13463957017"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1222703382,
+                "name": "桃源路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 62,
+                "coordinates": {
+                  "latitude": 31.2268811,
+                  "longitude": 121.4764102
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1222703382"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9778550788,
+                "name": "西藏南路淮海东路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 76,
+                "coordinates": {
+                  "latitude": 31.2265068,
+                  "longitude": 121.4764523
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9778550788"
+              },
+              {
+                "osmType": "way",
+                "osmId": 15419875,
+                "name": "西藏南路",
+                "nameEn": "South Xizang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 77,
+                "coordinates": {
+                  "latitude": 31.2267463,
+                  "longitude": 121.4762795
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/15419875"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9778550789,
+                "name": "西藏南路淮海东路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 81,
+                "coordinates": {
+                  "latitude": 31.2264839,
+                  "longitude": 121.4764041
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9778550789"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1222703383,
+                "name": "桃源路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 95,
+                "coordinates": {
+                  "latitude": 31.2267504,
+                  "longitude": 121.4760843
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1222703383"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1253,
+      "queries": [
+        "\"四明义冢\" 淮海",
+        "\"四明義冢\" 上海 宁波路",
+        "四明公所 寄柩所 木料库 宁波路 山东南路"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文“四明義冢”，位于主馆原点北侧，不能仅按英文 Coffin Repository 等同主馆。四明公所早期义冢及1898年后逐步迁柩、迁坟有文史依据；本条无门牌，尚不能把原点对应至现商务楼、道路或门楼所在空间。保留义冢身份线索，不由主馆 #38 已查明推定本地块。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1253",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1253"
+        },
+        {
+          "title": "上海社会科学院：四明公所的厝柩问题（2003）",
+          "url": "https://www.sass.org.cn/2003/1028/c1203a21472/page.htm"
+        },
+        {
+          "title": "上海市文旅推广网：马尚龙·四明公所，宁波移民的有依之地（2024）",
+          "url": "https://www.meet-in-shanghai.net/cn/news/ma-shanglong-siming-gongshuo-a-place-for-immigrants-in-ningbo-114888/"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": null,
+            "nearby": [
+              {
+                "osmType": "node",
+                "osmId": 6975647435,
+                "name": "云南南路",
+                "nameEn": null,
+                "address": null,
+                "category": "restaurant",
+                "distanceMetres": 9,
+                "coordinates": {
+                  "latitude": 31.2287116,
+                  "longitude": 121.4769707
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/6975647435"
+              },
+              {
+                "osmType": "way",
+                "osmId": 39920684,
+                "name": "云南南路",
+                "nameEn": "South Yunnan Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 44,
+                "coordinates": {
+                  "latitude": 31.2285549,
+                  "longitude": 121.4766494
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/39920684"
+              },
+              {
+                "osmType": "node",
+                "osmId": 13462114801,
+                "name": "Wonton acme",
+                "nameEn": null,
+                "address": null,
+                "category": "cafe",
+                "distanceMetres": 57,
+                "coordinates": {
+                  "latitude": 31.2291541,
+                  "longitude": 121.4767017
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/13462114801"
+              },
+              {
+                "osmType": "node",
+                "osmId": 6897142451,
+                "name": "星巴克",
+                "nameEn": "Starbucks",
+                "address": null,
+                "category": "cafe",
+                "distanceMetres": 60,
+                "coordinates": {
+                  "latitude": 31.2282438,
+                  "longitude": 121.4768289
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/6897142451"
+              },
+              {
+                "osmType": "way",
+                "osmId": 40297715,
+                "name": "淮海东路",
+                "nameEn": "East Huaihai Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 69,
+                "coordinates": {
+                  "latitude": 31.2282679,
+                  "longitude": 121.4775243
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/40297715"
+              },
+              {
+                "osmType": "node",
+                "osmId": 6885190566,
+                "name": "如家酒店",
+                "nameEn": "Home Inn Plus",
+                "address": "金陵东路531",
+                "category": "hotel",
+                "distanceMetres": 71,
+                "coordinates": {
+                  "latitude": 31.2293744,
+                  "longitude": 121.4771736
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/6885190566"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1272,
+      "queries": [
+        "\"四明公所\" \"北工场\"",
+        "\"四明公所\" \"北厂\"",
+        "\"同心苗圃\"",
+        "\"同心路723\" 花园路250",
+        "\"花园路250号\" 公园"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "社科院研究将1921年虹口横浜丙舍即北厂寄柩所对应至当时同心苗圃。原记录同时列花园250及同心723；现代同门牌分别检索到花园城三期、德必运动LOFT商户，不能据同号将其任一范围认作整座北厂。原北厂边界、苗圃后续分割和现用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1272",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1272"
+        },
+        {
+          "title": "上海社会科学院：四明公所的厝柩问题（2003）",
+          "url": "https://www.sass.org.cn/2003/1028/c1203a21472/page.htm"
+        },
+        {
+          "title": "上海乐居：花园城三期（花园路250号）",
+          "url": "https://house.leju.com/sh/1504/"
+        },
+        {
+          "title": "携程：逸刻EGO同心路店（同心路723号10幢）",
+          "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2/132105997.html"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1470,
+      "queries": [
+        "\"四明公所\" \"南工场\"",
+        "\"四明公所\" \"南厂\"",
+        "上海 \"蒙自路430号\""
+      ],
+      "verificationStatus": "likely",
+      "outcome": "社科院研究将1903年日晖港南厂寄柩所对应到蒙自路430号，并述原址1920年改建竣工；政府救助机构目录及2025年志愿服务活动支持该门牌仍用于救助管理。原记录无新桥路门牌且终年1920，不能据机构同址确定该记录楼体是否保留；厂区原范围及与现救助站建筑的对应待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1470",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1470"
+        },
+        {
+          "title": "上海社会科学院：四明公所的厝柩问题（2003）",
+          "url": "https://www.sass.org.cn/2003/1028/c1203a21472/page.htm"
+        },
+        {
+          "title": "上海普陀：上海市救助管理机构一览表（2021）",
+          "url": "https://www.shpt.gov.cn/zhengwu/shwzllqtryjz-mzjshqz/2024/104/117871.html"
+        },
+        {
+          "title": "上海志愿者网：上海市救助管理站志愿服务队（含2025年活动）",
+          "url": "https://sh.zhiyuanyun.com/app/org/view.php?id=o43GbuBsP5viQ"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 674,
+      "queries": [
+        "\"宁波同乡会\" \"480\"",
+        "\"西藏中路480号\" 现在",
+        "\"宁波同乡会\" \"西藏\" \"拆除\"",
+        "\"宁波同乡会\" \"480\" \"商场\""
+      ],
+      "verificationStatus": "verified",
+      "outcome": "原虞洽卿路480号的宁波同乡会大楼有研究资料直接对应今西藏中路480号。政协2019年文章明确它在原大上海电影院南侧，旧房已拆、另建新楼。尚无后建楼名称、门牌范围和近期经营用途的直接链条，现用待核；不能套用对街新世界城或淮海东路四明公所。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 674",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=674"
+        },
+        {
+          "title": "上海静安图书馆《静安文史》2025春：李秋君和何香凝、张大千在静安",
+          "url": "https://www.shjinganlib.net/FileUploader/UploadFile/20250624/20250624101247-2025%E6%98%A5.pdf"
+        },
+        {
+          "title": "政协头条：向解放军献上第一份厚礼，记1949年上海工商界的劳军义卖（2019）",
+          "url": "https://www.icppcc.cn/newsDetail_1009301"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 47157274,
+                "name": "西藏中路",
+                "nameEn": "Middle Xizang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 28,
+                "coordinates": {
+                  "latitude": 31.2380513,
+                  "longitude": 121.4694434
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/47157274"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1074771169,
+                "name": "西藏中路",
+                "nameEn": "Middle Xizang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 30,
+                "coordinates": {
+                  "latitude": 31.2376937,
+                  "longitude": 121.4697826
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1074771169"
+              },
+              {
+                "osmType": "node",
+                "osmId": 7099689669,
+                "name": "喜茶",
+                "nameEn": "Heytea",
+                "address": null,
+                "category": "cafe",
+                "distanceMetres": 44,
+                "coordinates": {
+                  "latitude": 31.2374049,
+                  "longitude": 121.469453
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/7099689669"
+              },
+              {
+                "osmType": "way",
+                "osmId": 490348728,
+                "name": "大上海电影院",
+                "nameEn": "Metropol Cinema",
+                "address": null,
+                "category": "yes",
+                "distanceMetres": 48,
+                "coordinates": {
+                  "latitude": 31.2378439,
+                  "longitude": 121.4699966
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/490348728"
+              },
+              {
+                "osmType": "node",
+                "osmId": 7099702415,
+                "name": "麦当劳",
+                "nameEn": "McDonald's",
+                "address": "西藏中路525",
+                "category": "fast_food",
+                "distanceMetres": 61,
+                "coordinates": {
+                  "latitude": 31.2379786,
+                  "longitude": 121.4688847
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/7099702415"
+              },
+              {
+                "osmType": "node",
+                "osmId": 12999897353,
+                "name": "瑞幸咖啡",
+                "nameEn": "Luckin Coffee",
+                "address": null,
+                "category": "cafe",
+                "distanceMetres": 66,
+                "coordinates": {
+                  "latitude": 31.2373129,
+                  "longitude": 121.4691042
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/12999897353"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1074771169,
+                "name": "西藏中路",
+                "nameEn": "Middle Xizang Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 30,
+                "coordinates": {
+                  "latitude": 31.2376937,
+                  "longitude": 121.4697826
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1074771169"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "西藏中路480号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 754,
+      "queries": [
+        "\"宁波同乡会第一小学\"",
+        "\"宁波同乡会\" \"第一小学\" \"七浦\"",
+        "\"七浦路218\" 小学"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "中国文艺网据《宁波旅沪同乡会百年纪》把第一小学追溯至七浦路宁波旅沪公学，支持机构及道路；未给218号。旧《上海暨全国学校调查录》的检索摘录另在七浦218号列无锡旅沪小学，尚待年代与迁校资料厘清。同组 #747 只有泛名“小学校”同门牌，已审查但没有证明它必属宁波第一小学，不能整组回填。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 754",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=754"
+        },
+        {
+          "title": "中国文艺网：且寄相思绘画中（2022）",
+          "url": "https://www.cflac.org.cn/whsy/mx/202208/t20220812_1254473.html"
+        },
+        {
+          "title": "国家图书馆藏《上海暨全国学校调查录》扫描件（检索摘录，整份PDF读取超时）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+        },
+        {
+          "title": "Virtual Shanghai：同组泛名小学校记录747",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=747"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1101656546,
+                "name": "塘沽路",
+                "nameEn": "Tanggu Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 53,
+                "coordinates": {
+                  "latitude": 31.2482913,
+                  "longitude": 121.4763239
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1101656546"
+              },
+              {
+                "osmType": "node",
+                "osmId": 2552160716,
+                "name": "圣和圣韩国馆（Korean Fashion Market）",
+                "nameEn": null,
+                "address": null,
+                "category": "marketplace",
+                "distanceMetres": 100,
+                "coordinates": {
+                  "latitude": 31.2486079,
+                  "longitude": 121.4767437
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/2552160716"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9127157467,
+                "name": "河南北路海宁路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 103,
+                "coordinates": {
+                  "latitude": 31.2480415,
+                  "longitude": 121.4772812
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9127157467"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9127157466,
+                "name": "河南北路海宁路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 111,
+                "coordinates": {
+                  "latitude": 31.2480679,
+                  "longitude": 121.4773579
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9127157466"
+              },
+              {
+                "osmType": "way",
+                "osmId": 48985076,
+                "name": "河南北路",
+                "nameEn": "North Henan Road",
+                "address": null,
+                "category": null,
+                "distanceMetres": 111,
+                "coordinates": {
+                  "latitude": 31.247725,
+                  "longitude": 121.4773865
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/48985076"
+              },
+              {
+                "osmType": "relation",
+                "osmId": 13267949,
+                "name": "河南北路海宁路",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 115,
+                "coordinates": {
+                  "latitude": 31.2477372,
+                  "longitude": 121.4774287
+                },
+                "sourceUrl": "https://www.openstreetmap.org/relation/13267949"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "七浦路218号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1472,
+      "queries": [
+        "\"甬溪堂\" 上海",
+        "\"浙绍永锡堂\" 斜土路",
+        "\"斜土路313号\" \"永锡\""
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文是“浙紹永錫堂”，不按英文的 Ningbo-Shaoxing 字样混同四明公所。文史材料明确永锡堂本馆在丽园路650号，后用于爱童幼儿园，另有顺昌路等产业。没有找到斜土路313号本条与现存古戏台院落同址、或该地块拆改的直接证据；不可将爱童幼儿园跨址写入。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1472",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1472"
+        },
+        {
+          "title": "上观新闻：魔都一所幼儿园所在地，百年之前竟然是……（2019）",
+          "url": "https://www.jfdaily.com/wx/detail.do?id=153812"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 1471,
+      "queries": [
+        "\"宁墓园\" 上海",
+        "\"斜土路251号\" \"现在\"",
+        "\"斜土路251号\" 墓园"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文“寧墓園”。上海市慈善基金会转载文史文章记徽宁会馆墓园首辟斜土路251号，与本条门牌直接相合，可作徽宁墓园身份线索；文中后述旧馆改建厂房和民房指会馆馆址，未明确涵盖本墓园地块。不能把徽宁路625号新馆、闵行墓园或其他同乡墓地套入本点。原墓园范围、迁葬和当下用途待核。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1471",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1471"
+        },
+        {
+          "title": "上海市慈善基金会：徽宁会馆·近代旅沪徽商的乡土之链（2025）",
+          "url": "https://www.scf.org.cn/csjjh/n3421/n5604/u1ai308688.html"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "unmapped",
+        "queries": [],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 506,
+      "queries": [
+        "\"日邮大楼\" \"2025\"",
+        "日邮大楼 中山东一路31 现在",
+        "\"日本邮船\" \"外滩\" \"31\"",
+        "\"Nippon Yusen\" \"Bund\" \"31\"",
+        "\"Nippon Yusen Kaisha Building\" Shanghai demolished",
+        "\"日本邮船\" \"半岛酒店\"",
+        "\"半岛酒店\" \"日本邮船\" \"友谊商店\"",
+        "上海 半岛酒店 原址 日本邮船 大楼 31号 32号",
+        "上海 半岛酒店 32 中山东一路 地图 坐标"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "旧商行名录明确日本邮船上海支店在外滩31号。三联作者贾冬婷文章明确现半岛酒店地块前部曾为日本邮船及共济会堂所在地；半岛官网2025资料列酒店现址中山东一路32号。原点落在OSM半岛酒店现用范围内，与文献地块关系相合。以原址纳入新建酒店认定，旧楼具体拆除年份不详，不将现酒店认作日本邮船原楼，亦不与外滩5号日清大楼混同。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 506",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=506"
+        },
+        {
+          "title": "近代商行名录：Nippon Yusen Kaisha, Shanghai Branch（外滩31号）",
+          "url": "https://www.bnasie.eu/Asset/Source/bnBook_ID-1976_No-01.pdf"
+        },
+        {
+          "title": "三联中读·贾冬婷：看得见外滩的房间（公开节选）",
+          "url": "https://ny.zdline.cn/h5/article/detail.do?artId=27992"
+        },
+        {
+          "title": "上海半岛酒店：2025节庆新闻稿（现址中山东一路32号）",
+          "url": "https://www.peninsula.com/-/media/files/shanghai/newsroom/2025/psh_2025-festive-press-release.pdf"
+        },
+        {
+          "title": "OpenStreetMap：半岛饭店，中山东一路32号（完整范围与标签）",
+          "url": "https://www.openstreetmap.org/way/177929887"
+        }
+      ],
+      "demolitionChronology": "另查朱荫贵2021文述1945年接收外滩31号三层砖楼，与叶立标2026文中1930年代拆除说不一致。不能据此填具体拆除年；现用酒店地块关系由旧商行门牌、三联地块沿革、官方当前酒店地址及OSM范围独立闭合。",
+      "chronologySources": [
+        {
+          "title": "朱荫贵：抗战胜利后的招商局与民生公司（2021）",
+          "url": "https://www.sohu.com/a/492136718_260616"
+        },
+        {
+          "title": "叶立标：孙中山上海横滨正金银行合照考析（拆楼年代说待交叉核对）",
+          "url": "https://www.sohu.com/a/1014595841_523187"
+        }
+      ],
+      "directOsmGeometry": {
+        "sourceUrl": "https://www.openstreetmap.org/way/177929887",
+        "apiUrl": "https://www.openstreetmap.org/api/0.6/way/177929887/full",
+        "tags": {
+          "addr:housenumber": "32",
+          "addr:street": "中山东一路",
+          "addr:street:en": "East Zhongshan No. 1 Road",
+          "name": "半岛饭店",
+          "name:en": "The Peninsula Shanghai",
+          "tourism": "hotel",
+          "wikidata": "Q24911653",
+          "wikipedia": "en:The Peninsula Shanghai"
+        },
+        "nodes": [
+          {
+            "lat": 31.2431003,
+            "lon": 121.4839208
+          },
+          {
+            "lat": 31.2430989,
+            "lon": 121.4840295
+          },
+          {
+            "lat": 31.2430983,
+            "lon": 121.4840698
+          },
+          {
+            "lat": 31.2430978,
+            "lon": 121.4841064
+          },
+          {
+            "lat": 31.2430954,
+            "lon": 121.4842646
+          },
+          {
+            "lat": 31.2430942,
+            "lon": 121.4843454
+          },
+          {
+            "lat": 31.2430941,
+            "lon": 121.4843714
+          },
+          {
+            "lat": 31.2430946,
+            "lon": 121.4844084
+          },
+          {
+            "lat": 31.2427752,
+            "lon": 121.484408
+          },
+          {
+            "lat": 31.2427733,
+            "lon": 121.4847552
+          },
+          {
+            "lat": 31.2431503,
+            "lon": 121.4847644
+          },
+          {
+            "lat": 31.2431342,
+            "lon": 121.4856362
+          },
+          {
+            "lat": 31.2433314,
+            "lon": 121.4856067
+          },
+          {
+            "lat": 31.2435304,
+            "lon": 121.4855617
+          },
+          {
+            "lat": 31.2437749,
+            "lon": 121.4854888
+          },
+          {
+            "lat": 31.2436263,
+            "lon": 121.4838357
+          },
+          {
+            "lat": 31.2431824,
+            "lon": 121.4839115
+          },
+          {
+            "lat": 31.2431003,
+            "lon": 121.4839208
+          }
+        ],
+        "historicalPoint": {
+          "longitude": 121.485086,
+          "latitude": 31.2434
+        },
+        "pointWithinCurrentHotelArea": true,
+        "method": "OSM公开API获取way全部节点，以射线法判断原WGS84点是否位于现酒店范围内；范围仅作历史文献关系的空间辅助，不由范围推导沿革。"
+      },
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 177929887,
+                "name": "半岛饭店",
+                "nameEn": "The Peninsula Shanghai",
+                "address": "中山东一路32",
+                "category": "hotel",
+                "distanceMetres": 36,
+                "coordinates": {
+                  "latitude": 31.2432741,
+                  "longitude": 121.484736
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177929887"
+              },
+              {
+                "osmType": "way",
+                "osmId": 11618012,
+                "name": "原英国驻上海总领事馆",
+                "nameEn": "Former Consulate-General of the United Kingdom, Shanghai",
+                "address": "中山东一路33",
+                "category": "attraction",
+                "distanceMetres": 117,
+                "coordinates": {
+                  "latitude": 31.2443604,
+                  "longitude": 121.4845854
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/11618012"
+              }
+            ]
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "中山东一路31号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 550,
+      "queries": [
+        "\"日清大楼\" \"2025\"",
+        "\"日清大楼\" site:shanghai.gov.cn",
+        "\"外滩5号\" \"2026\"",
+        "\"中山东一路5号\" \"华夏银行\"",
+        "\"日清大楼\" \"广东路20号\"",
+        "Kanpai Classic Bund Michelin"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "Nisshin Kisen Kaisha 对应日清汽船会社，原中文“日進”保留在原始字段。图书馆外滩影像展及新民资料把日清汽船1921—1925年办公楼与今外滩5号／广东路20号直接连接；历经招商局、上海海运局使用后转商业出租，楼体延续。2026年上观文章列老乾杯外滩本店在广东路20号外滩5号楼5楼，支持当前餐饮用途，不以一间餐厅代指整栋唯一租户。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 550",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=550"
+        },
+        {
+          "title": "上海图书馆：天际线·建筑景观与城市记忆——外滩影像展",
+          "url": "https://historical.tapbetter.com/exhibition/bundimages/"
+        },
+        {
+          "title": "新民周刊：百年空间激活背后的资本故事（2017）",
+          "url": "https://www.xinminweekly.com.cn/tegao/2017/11/08/9414.html"
+        },
+        {
+          "title": "上观新闻：炭火慢烤鲜香四溢，在黄浦遇见舌尖极致满足（2026-03-17）",
+          "url": "https://www.jfdaily.com/sgh/detail?id=1721654"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": [
+              {
+                "osmType": "relation",
+                "osmId": 17719394,
+                "name": "隧道夜宵线：崂山路潍坊路 -> 上海火车站",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 99,
+                "coordinates": {
+                  "latitude": 31.2373742,
+                  "longitude": 121.4857268
+                },
+                "sourceUrl": "https://www.openstreetmap.org/relation/17719394"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": [
+              {
+                "osmType": "relation",
+                "osmId": 17719394,
+                "name": "隧道夜宵线：崂山路潍坊路 -> 上海火车站",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 99,
+                "coordinates": {
+                  "latitude": 31.2373742,
+                  "longitude": 121.4857268
+                },
+                "sourceUrl": "https://www.openstreetmap.org/relation/17719394"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "中山东一路5号",
+            "candidates": [
+              {
+                "nameZh": "上海海运（集团）公司",
+                "address": "中山东一路5号",
+                "uri": "http://data.library.sh.cn/entity/architecture/8vx48h4pnz7o2tsi",
+                "distanceMetres": 1144,
+                "alternateHistoricalNames": [
+                  {
+                    "nameType": "原名",
+                    "nameUri": "http://data.library.sh.cn/authority/name/too06uc2xa74qbzs",
+                    "name": "日清大楼"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "interpretation": "门牌及历史名称可相互核对，但图书馆点距原点约1.1公里，显示系统性坐标偏移，不采用该坐标或旧单位标签推断当下用途。"
+      },
+      "fullTextRead": "2026-03-17上观新闻正文完整读取，题为《炭火慢烤鲜香四溢，在黄浦遇见舌尖极致满足》；正文“老乾杯”小节明确广东路20号外滩5号楼5楼，文末标注上海黄浦官方微信。非只据检索摘要。"
+    },
+    {
+      "IDBAT": 1621,
+      "queries": [
+        "\"新田旅馆\" 上海 234",
+        "\"新田旅館\" \"上海\"",
+        "\"新田旅馆\" \"武进路\"",
+        "\"新田旅館\" \"234\"",
+        "\"新田旅馆\" 老靶子路",
+        "\"新田旅館\" 上海 武進路"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "日文虹口访古游记在武进路、海南路、乍浦路一带记新田旅馆，并有标为2004年拍摄的旧新田旅馆照片线索；没有直接取得旧234号与当下门牌、楼体存续或使用的可靠链。武进路北侧多家日式旅馆并列，不能把邻近井上旅馆、山崎旅馆或对面会堂的现用途归入本条。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1621",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1621"
+        },
+        {
+          "title": "4travel：虹口の不思議な建物・西本願寺＆1933老場坊（2009访古游记）",
+          "url": "https://4travel.jp/travelogue/10419477"
+        },
+        {
+          "title": "中国＆台湾屋のひとりごと：上海租界紀行「日本人租界」をゆく第三章（检索可见2004照片说明，正文读取404）",
+          "url": "https://note.com/formosanhistory/n/n2a7de898cdda"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": []
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "武进路234号",
+            "candidates": []
+          }
+        ],
+        "interpretation": "无精确建筑候选或道路未自动映射；空结果不证明不存在。"
+      }
+    },
+    {
+      "IDBAT": 529,
+      "queries": [
+        "\"字林大楼\" \"友邦\" \"2025\"",
+        "\"中山东一路17号\" site:aia.com.cn",
+        "\"字林大楼\" site:shanghai.gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "原记录1924年字林西报，吻合现字林大楼落成期。上海图书馆展览把原字林西报楼与友邦大厦直接连接，友邦官网沿革列1998年迁回外滩17号；其2025年7月更新的公司概况明确公司住所和营业场所为17号3—8楼，形成历史楼体、门牌及当下用途闭环。只陈述已披露楼层用途，不将整栋全部楼层都推定为友邦独用。",
+      "acceptedSources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 529",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=529"
+        },
+        {
+          "title": "上海图书馆：天际线·建筑景观与城市记忆——外滩影像展",
+          "url": "https://historical.tapbetter.com/exhibition/bundimages/"
+        },
+        {
+          "title": "友邦人寿：百年友邦（1998迁回中山东一路17号）",
+          "url": "https://www.aia.com.cn/zh-cn/aia/aia.gongyi"
+        },
+        {
+          "title": "友邦人寿：公司概况（2025-07-01更新）",
+          "url": "https://www.aia.com.cn/zh-cn/gongkaixinxipilou/jibenxinxi/gongsigaikuang.jibenxinxi"
+        }
+      ],
+      "spatialCheck": {
+        "lookups": [
+          {
+            "file": "013-osm-nearby.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+            "nearby": [
+              {
+                "osmType": "relation",
+                "osmId": 17788940,
+                "name": "旅游2线：五卅运动纪念碑 -> 五卅运动纪念碑",
+                "nameEn": null,
+                "address": null,
+                "category": null,
+                "distanceMetres": 96,
+                "coordinates": {
+                  "latitude": 31.2409015,
+                  "longitude": 121.4855454
+                },
+                "sourceUrl": "https://www.openstreetmap.org/relation/17788940"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry.json",
+            "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 504)",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1196704497,
+                "name": "友邦大厦",
+                "nameEn": "American International Assurance Building",
+                "address": "中山东一路17",
+                "category": "yes",
+                "distanceMetres": 16,
+                "coordinates": {
+                  "latitude": 31.2400918,
+                  "longitude": 121.485102
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1196704497"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1196704498,
+                "name": "外滩18号",
+                "nameEn": "Bund18",
+                "address": "中山东一路18",
+                "category": "commercial",
+                "distanceMetres": 18,
+                "coordinates": {
+                  "latitude": 31.2403457,
+                  "longitude": 121.4850132
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1196704498"
+              },
+              {
+                "osmType": "node",
+                "osmId": 2537680003,
+                "name": "KEV Bar",
+                "nameEn": "Bar Rouge",
+                "address": "中山东一路18",
+                "category": "bar",
+                "distanceMetres": 29,
+                "coordinates": {
+                  "latitude": 31.2403725,
+                  "longitude": 121.4851904
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/2537680003"
+              },
+              {
+                "osmType": "node",
+                "osmId": 5495677823,
+                "name": "Mr and Mrs Bund",
+                "nameEn": "Mr and Mrs Bund",
+                "address": null,
+                "category": "restaurant",
+                "distanceMetres": 34,
+                "coordinates": {
+                  "latitude": 31.2403353,
+                  "longitude": 121.4852793
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5495677823"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1196704496,
+                "name": "招商银行",
+                "nameEn": "China Merchants Bank",
+                "address": "中山东一路16",
+                "category": "bank",
+                "distanceMetres": 37,
+                "coordinates": {
+                  "latitude": 31.2398956,
+                  "longitude": 121.4851521
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1196704496"
+              },
+              {
+                "osmType": "node",
+                "osmId": 476148697,
+                "name": "字林大楼",
+                "nameEn": "North China Daily News Building",
+                "address": null,
+                "category": "attraction",
+                "distanceMetres": 42,
+                "coordinates": {
+                  "latitude": 31.2401622,
+                  "longitude": 121.4854137
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/476148697"
+              }
+            ]
+          },
+          {
+            "file": "013-osm-retry-2.json",
+            "lookupError": "Overpass batch failed (https://overpass.kumi.systems/api/interpreter: The operation was aborted due to timeout; https://overpass.private.coffee/api/interpreter: The operation was aborted due to timeout; https://overpass-api.de/api/interpreter: fetch failed)",
+            "nearby": []
+          }
+        ],
+        "interpretation": "现代近邻仅辅助判断道路和原点，未单独用于认定楼体或当前用途。"
+      },
+      "libraryCheck": {
+        "file": "013-shanghai-library-address.json",
+        "roadMappingMethod": "local-road-layer-exact",
+        "queries": [
+          {
+            "query": "中山东一路17号",
+            "candidates": [
+              {
+                "nameZh": "友邦大厦",
+                "address": "中山东一路17号",
+                "uri": "http://data.library.sh.cn/entity/architecture/8iaihkx025hcsuig",
+                "distanceMetres": 1157,
+                "alternateHistoricalNames": [
+                  {
+                    "nameType": "原名",
+                    "nameUri": "http://data.library.sh.cn/authority/name/ybfhfc8jugktissd",
+                    "name": "字林西报大楼"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "interpretation": "门牌及历史名称可相互核对，但图书馆点距原点约1.1公里，显示系统性坐标偏移，不采用该坐标或旧单位标签推断当下用途。"
+      }
+    }
+  ]
+}

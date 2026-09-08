@@ -1,0 +1,1355 @@
+{
+  "batch": "014",
+  "part": "b",
+  "researchedAt": "2026-09-08",
+  "method": "Every record was searched by historic names, door numbers and modern use. Original UTM coordinates remain unchanged. Failed Overpass queries do not establish absence; selected sites were independently checked through the read-only OpenStreetMap map/full API. Nearby features alone do not prove historical identity. Large historical school scans returned indexed text but could not be downloaded or visually verified.",
+  "records": [
+    {
+      "IDBAT": 91,
+      "queries": [
+        "八仙桥 公墓 淮海公园 156 寿宁路",
+        "八仙桥公墓 淮海公园",
+        "淮海公园 2026 开放",
+        "淮海公园 2026 上海 改造",
+        "淮海公园 156"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "历史资料确认八仙桥两公墓在1950年代迁出，1958年土地分别改建淮海公园及体育场，不能将整个旧墓园等同于现公园。原点在OSM淮海公园西缘之外，西侧还涉及新世界项目，故不直接给原点贴公园标签。2026年官方规划及8月拆房采购公告确认公园改扩建项目，未据招标推断全部已拆或已完工；旧Route Vouillemont 156号对应墓园分区、原点现地块与施工状态待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=91",
+        "https://paper.xinmin.cn/html/xmwb/2023-03-24/14/158080.html",
+        "https://www.ubpa.com.cn/index.php?a=show&c=content&id=1469",
+        "https://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202608/t20260822_27185970.htm",
+        "https://www.shanghai.gov.cn/gwk/search/content/cec126bd-b68d-4575-ae01-bfe0a7703618",
+        "https://www.openstreetmap.org/way/499566575"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.472488,
+          "latitude": 31.225135
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/499566575",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "leisure": "park",
+              "name": "淮海公园",
+              "name:en": "Huaihai Park",
+              "name:ru": "Парк Хуайхай",
+              "name:zh": "淮海公园",
+              "name:zh-Hans": "淮海公园",
+              "name:zh-Hant": "淮海公園"
+            },
+            "polygonWgs84": [
+              [
+                121.4739383,
+                31.2242526
+              ],
+              [
+                121.4732946,
+                31.2256449
+              ],
+              [
+                121.4729888,
+                31.2262779
+              ],
+              [
+                121.4721949,
+                31.2259797
+              ],
+              [
+                121.472683,
+                31.2247733
+              ],
+              [
+                121.4725328,
+                31.224443
+              ],
+              [
+                121.472683,
+                31.2238375
+              ],
+              [
+                121.473831,
+                31.2241678
+              ],
+              [
+                121.4739383,
+                31.2242526
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 4.4
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 524,
+      "queries": [
+        "Palace Hotel 23 Nanking Road 斯沃琪 和平饭店 南楼",
+        "斯沃琪和平饭店艺术中心 历史 23",
+        "斯沃琪和平饭店艺术中心 2026"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "运营方官方网站直接将Palace Hotel与汇中饭店、和平饭店南楼及现艺术中心联系起来，并列南京东路23号。官网区分1905年翻新计划、1907年火灾后重新建设及1908年开业；本条1906年原字段不改。2026年主页持续开展艺术家驻留和十五周年项目，证明现用途。原点距OSM南楼轮廓约3米、与其同一街角相容，区别南京路北面的费尔蒙和平饭店；图书馆文字候选可旁证，偏东约1.2公里的图书馆坐标不采用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=524",
+        "https://www.swatch-art-peace-hotel.com/zh-hans/history",
+        "https://www.swatch-art-peace-hotel.com/zh-hans",
+        "https://www.swatch-art-peace-hotel.com/sites/default/files/files/module/file-box/2023_05-factsheet-swatch-art-peace-hotel-cn.pdf",
+        "https://www.openstreetmap.org/way/177998982"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.484706,
+          "latitude": 31.2407
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/177998982",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "addr:housenumber": "19",
+              "addr:street": "中山东一路",
+              "addr:street:en": "East Zhongshan No. 1 Road",
+              "building": "hotel",
+              "building:levels": "8",
+              "heritage": "yes",
+              "heritage:operator": "上海市优秀历史建筑",
+              "heritage:ref": "1989年7号",
+              "name": "和平饭店南楼",
+              "name:en": "Peace Hotel South Building",
+              "start_date": "1908",
+              "tourism": "hotel",
+              "wikidata": "Q11133012",
+              "wikimedia_commons": "Category:Shanghai Palace Hotel",
+              "wikipedia": "zh:汇中饭店大楼"
+            },
+            "polygonWgs84": [
+              [
+                121.484437,
+                31.2406245
+              ],
+              [
+                121.4843649,
+                31.2406106
+              ],
+              [
+                121.4843692,
+                31.2405934
+              ],
+              [
+                121.4843972,
+                31.2404861
+              ],
+              [
+                121.484466,
+                31.2404991
+              ],
+              [
+                121.4844738,
+                31.2404739
+              ],
+              [
+                121.4845355,
+                31.2404858
+              ],
+              [
+                121.4845465,
+                31.2404569
+              ],
+              [
+                121.4845697,
+                31.2404373
+              ],
+              [
+                121.4846041,
+                31.2404284
+              ],
+              [
+                121.4846404,
+                31.2404306
+              ],
+              [
+                121.4846688,
+                31.2404414
+              ],
+              [
+                121.4846968,
+                31.2404638
+              ],
+              [
+                121.4847082,
+                31.2404914
+              ],
+              [
+                121.4847032,
+                31.240516
+              ],
+              [
+                121.4849137,
+                31.2405569
+              ],
+              [
+                121.485296,
+                31.2406294
+              ],
+              [
+                121.4852929,
+                31.2407377
+              ],
+              [
+                121.4853007,
+                31.2407477
+              ],
+              [
+                121.4853025,
+                31.2407583
+              ],
+              [
+                121.4852974,
+                31.2407735
+              ],
+              [
+                121.4852893,
+                31.2407849
+              ],
+              [
+                121.4852758,
+                31.2407946
+              ],
+              [
+                121.4852609,
+                31.2407977
+              ],
+              [
+                121.4852435,
+                31.240796
+              ],
+              [
+                121.4852337,
+                31.240791
+              ],
+              [
+                121.4852271,
+                31.240783
+              ],
+              [
+                121.4852272,
+                31.240775
+              ],
+              [
+                121.4845099,
+                31.2406371
+              ],
+              [
+                121.4844999,
+                31.2406456
+              ],
+              [
+                121.4844879,
+                31.2406512
+              ],
+              [
+                121.4844733,
+                31.2406538
+              ],
+              [
+                121.4844572,
+                31.2406495
+              ],
+              [
+                121.484445,
+                31.2406421
+              ],
+              [
+                121.4844379,
+                31.2406329
+              ],
+              [
+                121.484437,
+                31.2406245
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 2.7
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 708,
+      "queries": [
+        "Palace Theater 北海路214",
+        "中央大戏院 北海 214",
+        "茉莉花剧场 北海路",
+        "北海路214号 中央",
+        "北海路 中央大戏院 247",
+        "茉莉花剧场 建筑 改建 历史"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "申江大戏院于1925年易为中央大戏院，后成为工人文化宫影剧场及茉莉花剧场，1952年越剧演出记录已列中央大戏院北海路247号。施工报道确认2020—2023年改造保留并加固历史构件，当前由上海话剧艺术中心运营，2026年仍有演出。原点在现剧场西侧，距OSM轮廓约20米；原数据214与独立历史及现用247未找到门牌重编证据，且附近有其他建筑，故身份沿革确认、原点单栋及旧门牌待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=708",
+        "https://www.yueju.net/api/shows_form_details?id=191",
+        "https://dzb.whb.cn/2021-01-14/2/detail-711368.html",
+        "https://weibo.com/7804803715/MnXjp98Tl",
+        "https://m.thepaper.cn/newsDetail_forward_32547955",
+        "https://www.openstreetmap.org/way/369237869"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.47354,
+          "latitude": 31.232106
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/369237869",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "amenity": "theatre",
+              "building": "yes",
+              "name": "茉莉花剧场",
+              "name:en": "Jasmine Theater",
+              "name:ru": "театр Жасмин",
+              "source": "Bing"
+            },
+            "polygonWgs84": [
+              [
+                121.473727,
+                31.2321973
+              ],
+              [
+                121.4738965,
+                31.232182
+              ],
+              [
+                121.4739759,
+                31.2321679
+              ],
+              [
+                121.4740327,
+                31.2321387
+              ],
+              [
+                121.4741794,
+                31.2319618
+              ],
+              [
+                121.4741094,
+                31.2319408
+              ],
+              [
+                121.4740511,
+                31.2319236
+              ],
+              [
+                121.4740371,
+                31.2319003
+              ],
+              [
+                121.4738708,
+                31.2318496
+              ],
+              [
+                121.4738241,
+                31.2319422
+              ],
+              [
+                121.4738487,
+                31.2319494
+              ],
+              [
+                121.473727,
+                31.2321973
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 20.3
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 785,
+      "queries": [
+        "泛美女中 浙江北路61",
+        "汎美 中學 上海",
+        "審美女子中學 上海 浙江",
+        "审美女中 61",
+        "同盟会中部总会 浙江北路",
+        "审美 浙江北路 学校",
+        "审美女子 同盟会",
+        "同盟会中部总会 拆除"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "原中文審美女子中學与英文Panmei不完全对应，1936年中学一览表检索文字可旁证审美女子初级中学。地方建筑调查记同盟会机关旧房1938年改作审美女中、后为浙江北路第二小学；该学校沿革尚缺直接官方原页。已独立审查同组#1337：官方将同盟会遗址列为纪念地点，保护范围图指向浙江北路曲阜路口西南绿地，不能当作原建筑保存。原61号、早期821号以及学校与纪念地点范围仍待核，整组不由同门牌自动闭环。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=785",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e9/SSID-11336597_%E5%85%A8%E5%9C%8B%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E4%B8%80%E8%A6%BD%E8%A1%A8_1936%E5%B9%B4.pdf",
+        "https://blog.sina.com.cn/s/blog_5d1bdf480102w6di.html",
+        "https://www.shanghai.gov.cn/shanghai/download/gongkai/hff1429.pdf",
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1337"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.471172,
+          "latitude": 31.244849
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      },
+      "groupReview": {
+        "groupSourceIds": [
+          785,
+          1337
+        ],
+        "result": "hold",
+        "member1337": "原同盟会机关有官方纪念地点记录，未据此确认审美女校范围或现原建筑保存。"
+      }
+    },
+    {
+      "IDBAT": 1610,
+      "queries": [
+        "Pantheon Theater Shanghai",
+        "百星大戏院 抚顺",
+        "百星大戏院旧址 虹口",
+        "罗浮路27号 养老院 2025",
+        "百星大戏院 养老院",
+        "百星 养老 site:shhk.gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "虹口政府明确百星大戏院位于罗浮路27号、租俭德储蓄会大楼改建，后作中央日报社及永生金笔厂。叶圣陶传记相关报道将旧福生路27与今罗浮27相连。2021报道曾称养老院，旅馆平台仍保留翰庭酒店旧条目，但上海纪委2024年12月20日公布的整改材料直接说明罗浮路27号因无独立供水供电暂时空置，优先按有日期的官方资料记录，不把旧酒店页当现营业证据。原输入29与27门牌差异、2026年当前租用/开放状态待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1610",
+        "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/06a0bfb0-3f91-4e14-a16a-cf9e6fd48952.html",
+        "https://www.thepaper.cn/newsDetail_forward_15206461",
+        "https://www.shjjjc.gov.cn/shsjjjcw/xszg/content/6fb0891e-a9f1-4a58-8548-c4ea4b1b0b8e.html",
+        "https://www.hqlib.cn/en/detail.aspx?ID=94c096fa&classID=395&className="
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.476729,
+          "latitude": 31.253362
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 1557,
+      "queries": [
+        "番禺公墓 番禺绿地",
+        "番禺绿地 虹桥公墓 政府",
+        "番禺绿地 2026 徐汇",
+        "番禺公墓 虹桥 胸科医院"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "历史研究将虹桥路番禺路口墓地分东西两区，东区哥伦比亚路公墓与犹太社群有关，后并入虹桥公墓，旧墓地仅部分成为番禺绿地。原点位于现OSM番禺绿地东界之外，不能用公墓统称将其全部填为公园，也不能移到宋庆龄陵园。2026年9月4日官方报道番禺公园改造已完成、即将重新开放，原为民政系统附属绿地；未声称当日已开园。番禺公墓与本条点位的分区、当前机构或绿地边界待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1557",
+        "https://www.thepaper.cn/newsDetail_forward_18411118",
+        "https://www.yicai.com/news/101945661.html",
+        "https://www.shanghai.gov.cn/nw4411/20260904/e0d51326258a4a53b77752e33e4e9e9c.html",
+        "https://www.openstreetmap.org/way/85711367"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.42309,
+          "latitude": 31.197939
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/85711367",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "leisure": "park",
+              "name": "番禺绿地",
+              "name:en": "Panyu Greenland"
+            },
+            "polygonWgs84": [
+              [
+                121.4212211,
+                31.1988216
+              ],
+              [
+                121.421338,
+                31.1988133
+              ],
+              [
+                121.4221331,
+                31.1991153
+              ],
+              [
+                121.4227768,
+                31.1990786
+              ],
+              [
+                121.4228948,
+                31.198014
+              ],
+              [
+                121.422809,
+                31.1974634
+              ],
+              [
+                121.422566,
+                31.1969656
+              ],
+              [
+                121.4223203,
+                31.1964623
+              ],
+              [
+                121.4222511,
+                31.1962751
+              ],
+              [
+                121.4212143,
+                31.1965636
+              ],
+              [
+                121.4216181,
+                31.1973624
+              ],
+              [
+                121.4212289,
+                31.197499
+              ],
+              [
+                121.4211997,
+                31.1975093
+              ],
+              [
+                121.4213821,
+                31.1982526
+              ],
+              [
+                121.4211345,
+                31.1982945
+              ],
+              [
+                121.4211953,
+                31.1987213
+              ],
+              [
+                121.4212211,
+                31.1988216
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 19.5
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 1305,
+      "queries": [
+        "Paradise Theater 267",
+        "天堂大戏院 东嘉兴",
+        "SNH48 东嘉兴路267号 2026",
+        "天堂大戏院 嘉兴影剧院 改造"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "虹口图书馆具名记天堂大戏院于今东嘉兴路267号兴建，后更名嘉兴影剧院，并于2013年改为星梦剧院。2013年同期采访说明采用保护性整修、恢复历史立面并对内部作现代化改造，属保留建筑恢复演出。虹口区2026年2月官方演艺介绍仍列嘉兴路267号SNH48星梦剧院。原点在现OSM剧院西侧约20余米，原路名和267门牌、独特建筑沿革相互支持；仅说明位置相容，不改坐标。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1305",
+        "https://hqlib.cn/Web/detail.aspx?ID=4741b8b6&classID=395&className=",
+        "https://culture.ifeng.com/c/7fAlvH6iH5O",
+        "https://www.shhk.gov.cn/xwzx/002008/002008045/002008045002/20260216/5b87ca0e-8570-40d1-a068-3db53fb871a9.html",
+        "https://www.openstreetmap.org/way/615404527"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.485549,
+          "latitude": 31.258837
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/615404527",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "addr:district": "虹口区",
+              "addr:housenumber": "267号",
+              "addr:postcode": "200080",
+              "addr:province": "上海市",
+              "addr:street": "嘉兴路",
+              "amenity": "theatre",
+              "building": "yes",
+              "building:levels": "4",
+              "height": "13",
+              "name": "SNH48星梦剧院",
+              "name:en": "SNH48 Star Dream Theatre",
+              "opening_hours": "We-Fr 16:00-22:00; Sa-Su 10:00-22:00",
+              "smoking": "no",
+              "tourism": "viewpoint",
+              "website": "https://www.snh48.com/",
+              "wheelchair": "limited"
+            },
+            "polygonWgs84": [
+              [
+                121.4858112,
+                31.2588932
+              ],
+              [
+                121.4857468,
+                31.2586135
+              ],
+              [
+                121.485964,
+                31.2585722
+              ],
+              [
+                121.4860284,
+                31.2588611
+              ],
+              [
+                121.4858112,
+                31.2588932
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 23.2
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 179,
+      "queries": [
+        "巴黎大戏院 552",
+        "巴黎大戏院 上海",
+        "淮海电影院 552",
+        "巴黎 淮海电影院 拆",
+        "淮海中路552号 电影院",
+        "HAI550 2026 淮海"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "官方报道明确淮海中路550号由东华、巴黎大戏院及淮海电影院用址演变，1990年代改建为七层时代广场，后为芭比旗舰店，2024年成为HAI550；解放日报回忆文直接记原电影院1993年拆除。2026年HAI550官方活动仍列550号，故不能称1920年代戏院建筑原样留存，也不能把1990年代保留结构混同旧戏院。旧552与今550未取得独立门牌重编材料，原点落在附近无名建筑轮廓中，具体地块对应待核，保留review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=179",
+        "https://mzj.sh.gov.cn/lnb-xw/20240903/d369eaf3181f41b3b54efc3df8375912.html",
+        "https://www.jfdaily.com/wx/detail.do?id=39447",
+        "https://weibo.com/2/detail/5336962618622304",
+        "https://www.shobserver.com/sgh/detail?id=4014739"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.463562,
+          "latitude": 31.222942
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/859424218",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "building": "yes"
+            },
+            "polygonWgs84": [
+              [
+                121.4638802,
+                31.2227007
+              ],
+              [
+                121.4635744,
+                31.2230631
+              ],
+              [
+                121.4635161,
+                31.2231317
+              ],
+              [
+                121.463445,
+                31.2230985
+              ],
+              [
+                121.4636515,
+                31.2226913
+              ],
+              [
+                121.4637735,
+                31.2226466
+              ],
+              [
+                121.4638802,
+                31.2227007
+              ]
+            ],
+            "pointInsidePolygon": true,
+            "approxDistanceToBoundaryMetres": 3.3
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 217,
+      "queries": [
+        "Park Apartments 455 Shanghai",
+        "复兴中路455 公寓",
+        "派克公寓 花园公寓 住宅"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "上海住建政务文章直接说明花园公寓又名派克公寓、位于复兴中路455号并建于1926年，与Park Apartments、Route Lafayette 455及建年相符；其对现存立面、楼梯和套间的描述支持建筑留存。黄浦区绿色小区复验名录明确455弄1—30号花园公寓住宅范围，2026住宅平台仍以花园公寓列住宅。原点距OSM建筑西北轮廓约1米，与建筑相容；图书馆别名文字旁证可用，偏东坐标不采用。不以个别短租广告将整幢公寓改写成酒店。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=217",
+        "https://m.thepaper.cn/baijiahao_25248615",
+        "https://www.shhuangpu.gov.cn/uploadfile/5da05219-d984-4660-af10-2af08f7c35a3/%E5%85%B3%E4%BA%8E%E6%98%8E%E7%8F%A0%E5%AE%B6%E5%9B%AD%E7%AD%8990%E4%B8%AA%E2%80%9C%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%BB%BF%E8%89%B2%E5%B0%8F%E5%8C%BA%E2%80%9D%E9%80%9A%E8%BF%87%E5%A4%8D%E9%AA%8C%E7%9A%84%E9%80%9A%E7%9F%A5.pdf",
+        "https://sh.jiwu.com/loupan/801061.html",
+        "https://www.openstreetmap.org/way/494955744"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.467999,
+          "latitude": 31.217341
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/494955744",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "addr:housenumber": "455",
+              "addr:street": "复兴中路",
+              "building": "yes",
+              "building:levels": "5",
+              "heritage": "4",
+              "heritage:operator": "上海市优秀历史建筑",
+              "heritage:ref": "4C012",
+              "name": "花园公寓",
+              "name:en": "Hua Yuan Apartments",
+              "old_name": "派克公寓",
+              "start_date": "1926"
+            },
+            "polygonWgs84": [
+              [
+                121.4682231,
+                31.2167984
+              ],
+              [
+                121.4681453,
+                31.2172503
+              ],
+              [
+                121.4683224,
+                31.217271
+              ],
+              [
+                121.4686496,
+                31.2173535
+              ],
+              [
+                121.4687382,
+                31.2169432
+              ],
+              [
+                121.4688856,
+                31.2169659
+              ],
+              [
+                121.4687758,
+                31.2174478
+              ],
+              [
+                121.4687007,
+                31.2174845
+              ],
+              [
+                121.46836,
+                31.2173905
+              ],
+              [
+                121.4680032,
+                31.2173329
+              ],
+              [
+                121.4680997,
+                31.2167893
+              ],
+              [
+                121.4682231,
+                31.2167984
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 1.0
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 873,
+      "queries": [
+        "国际饭店 164 历史",
+        "国际饭店 南京西路170 锦江 官方",
+        "Park Hotel 164 Bubbling Well Road"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "MADS历史商业资料明确Park Hotel中文国际饭店、旧址164 Bubbling Well Road；规划资源局建筑档案和国资委2026年报道确认南京西路170号的1934年开业历史建筑，原记录1933年不修改。锦江丽笙官方当前酒店页提供170号住宿、餐饮和会议服务，现用途闭环。原点位于现建筑西侧约15米，与南京西路黄河路转角相容；OSM的Park Hotel及170号进一步核对位置，不据旁边鸿祥大厦覆盖旧酒店。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=873",
+        "https://madspace.org/db/Advertisers?ID=1014",
+        "https://ghzyj.sh.gov.cn/tpxw/20200413/0032-965435.html",
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260209/0d2041a6f4494fbf991984d052e11149.html",
+        "https://www.radissonhotels.com/zh-cn/hotels/park-hotel",
+        "https://www.openstreetmap.org/way/369342509"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.466714,
+          "latitude": 31.23547
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/369342509",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "addr:housenumber": "170",
+              "addr:street": "南京西路",
+              "building": "yes",
+              "heritage": "2",
+              "heritage:operator": "上海全国重点文物保护单位列表",
+              "heritage:ref": "6-927",
+              "name": "国际饭店",
+              "name:en": "Park Hotel",
+              "name:zh": "国际饭店",
+              "source": "Bing",
+              "stars": "4",
+              "tourism": "hotel",
+              "wheelchair": "limited",
+              "wikidata": "Q23812",
+              "wikimedia_commons": "Category:Park Hotel Shanghai",
+              "wikipedia": "en:Park Hotel Shanghai"
+            },
+            "polygonWgs84": [
+              [
+                121.4669007,
+                31.2358928
+              ],
+              [
+                121.4673235,
+                31.2354722
+              ],
+              [
+                121.4670885,
+                31.2352995
+              ],
+              [
+                121.4666657,
+                31.23572
+              ],
+              [
+                121.4669007,
+                31.2358928
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 14.6
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 1787,
+      "queries": [
+        "宝隆医院 415",
+        "宝隆医院 旧址 拆",
+        "长征医院 宝隆医院 凤阳路 450",
+        "宝隆医院 凤阳路415号 旧址",
+        "site:shczyy.com 宝隆医院",
+        "site.shanghai.gov.cn 长征医院 2026 凤阳"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "医院官网当前以凤阳路415号发布2026年医疗与住培信息；上观2023年医院建筑论坛报道直接将凤阳路原白克路上的现长征医院与宝隆医院联系，文史馆亲历者另证宝隆医院旧址后作中美医院。已逐条复核同组#880：原名仅Hospital、同415门牌、无建年，未强行为其添加宝隆别名或指定旧楼。两记录分别按原UTM转WGS84后均在现OSM北院院界内，#1787近南界，#880在更北侧骨科楼范围。两点只限院区医疗现用途和历史用址延续，不断言两条指向同一历史单栋，也不以现代武汉同济医院地址替换上海旧点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1787",
+        "https://www.shczyy.com/",
+        "https://www.shobserver.cn/wx/detail.do?id=647447",
+        "https://wsyjg.sh.gov.cn/detailpage/gycl-90.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=880",
+        "https://www.openstreetmap.org/way/1156225369",
+        "https://www.openstreetmap.org/way/369342599"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.463335,
+          "latitude": 31.234627
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/1156225369",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "landuse": "military",
+              "name": "中国人民解放军海军军医大学第二附属医院（上海长征医院）（北院）",
+              "operator": "中国人民解放军海军军医大学",
+              "operator:type": "military",
+              "wikidata": "Q15920666",
+              "wikipedia": "zh:上海长征医院"
+            },
+            "polygonWgs84": [
+              [
+                121.4623597,
+                31.2349105
+              ],
+              [
+                121.462785,
+                31.2349766
+              ],
+              [
+                121.4631313,
+                31.2350266
+              ],
+              [
+                121.4636777,
+                31.2350439
+              ],
+              [
+                121.4637924,
+                31.2348612
+              ],
+              [
+                121.4634731,
+                31.2346594
+              ],
+              [
+                121.4632787,
+                31.2346108
+              ],
+              [
+                121.4630976,
+                31.2344681
+              ],
+              [
+                121.4629649,
+                31.2344017
+              ],
+              [
+                121.4624939,
+                31.2343402
+              ],
+              [
+                121.4623597,
+                31.2349105
+              ]
+            ],
+            "pointInsidePolygon": true,
+            "approxDistanceToBoundaryMetres": 0.2
+          },
+          {
+            "sourceUrl": "https://www.openstreetmap.org/way/369342599",
+            "retrievedAt": "2026-09-08",
+            "observedTags": {
+              "building": "hospital",
+              "name": "骨科",
+              "source": "Bing"
+            },
+            "polygonWgs84": [
+              [
+                121.4636297,
+                31.2350165
+              ],
+              [
+                121.4637288,
+                31.2348524
+              ],
+              [
+                121.4633868,
+                31.2347099
+              ],
+              [
+                121.4633029,
+                31.2347308
+              ],
+              [
+                121.4631628,
+                31.2350017
+              ],
+              [
+                121.4634514,
+                31.2349953
+              ],
+              [
+                121.4635752,
+                31.2350006
+              ],
+              [
+                121.4636297,
+                31.2350165
+              ]
+            ],
+            "pointInsidePolygon": false,
+            "approxDistanceToBoundaryMetres": 10.2
+          }
+        ],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      },
+      "groupReview": {
+        "groupSourceIds": [
+          880,
+          1787
+        ],
+        "scope": "院区医疗用址延续，仅批准院区级现用途；不将880追认为宝隆单栋，不声称整组历史建筑保存。",
+        "members": [
+          {
+            "IDBAT": 1787,
+            "rawName": "Paulun Hospital",
+            "rawNameZh": "宝隆医院",
+            "rawAddress": "415 BURKILL ROAD",
+            "rawStartYear": null,
+            "rawEndYear": null,
+            "rawUTM": {
+              "x": 353652.8723,
+              "y": 3456622.7774
+            },
+            "originalWgs84": {
+              "longitude": 121.463335,
+              "latitude": 31.234627
+            },
+            "scopeConclusion": "名称有独立历史源；原点位于现代北院内，仅现医疗院区连续使用。",
+            "pointInsidePolygon": true,
+            "approxDistanceToBoundaryMetres": 0.2
+          },
+          {
+            "IDBAT": 880,
+            "rawName": "Hospital",
+            "rawNameZh": "醫院",
+            "rawAddress": "415 BURKILL ROAD",
+            "rawStartYear": null,
+            "rawEndYear": null,
+            "rawUTM": {
+              "x": 353657.2742,
+              "y": 3456654.6614
+            },
+            "originalWgs84": {
+              "longitude": 121.463376,
+              "latitude": 31.234915
+            },
+            "scopeConclusion": "泛称医院、同历史415号且原点在现代北院内；仅院区医疗现用途，无法独立确定其旧单栋或宝隆别名。",
+            "pointInsidePolygon": true,
+            "approxDistanceToBoundaryMetres": 13.2
+          }
+        ],
+        "boundarySource": "https://www.openstreetmap.org/way/1156225369",
+        "boundaryPolygonWgs84": [
+          [
+            121.4623597,
+            31.2349105
+          ],
+          [
+            121.462785,
+            31.2349766
+          ],
+          [
+            121.4631313,
+            31.2350266
+          ],
+          [
+            121.4636777,
+            31.2350439
+          ],
+          [
+            121.4637924,
+            31.2348612
+          ],
+          [
+            121.4634731,
+            31.2346594
+          ],
+          [
+            121.4632787,
+            31.2346108
+          ],
+          [
+            121.4630976,
+            31.2344681
+          ],
+          [
+            121.4629649,
+            31.2344017
+          ],
+          [
+            121.4624939,
+            31.2343402
+          ],
+          [
+            121.4623597,
+            31.2349105
+          ]
+        ],
+        "originalCoordinateConversion": "repository utm51nToWgs84(EPSG:32651 to EPSG:4326) applied to each member, not feature-group centroid"
+      }
+    },
+    {
+      "IDBAT": 737,
+      "queries": [
+        "培本小学 河南",
+        "培本小学 上海",
+        "培本 北河南路",
+        "河南北路120弄",
+        "Peiben Primary School 120 North Honan"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "按培本小学、Peiben、北河南路及河南北路120弄31号检索，没有找到可靠的旧校址到当前地块链条。民国学校调查录的检索文字另列培本小学在康脑脱路温养邨88弄26号，同时列培新小学在北河南路底宝兴坊，两者不能仅凭近似校名混用或宣称迁址；本次该大型扫描PDF下载失败，仅取得索引文字，未检视原页。无法确定120-31所指学校是否同名异校及今门牌，原建筑存毁、现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=737",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.477838,
+          "latitude": 31.246477
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 1010,
+      "queries": [
+        "培成 渡口路",
+        "上海 培成女 校址",
+        "培成女子 小沙渡路34",
+        "新妇女 裁剪 小沙渡",
+        "新婦女 夜校 上海"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "上戏附中官方账号校史纠正早期校址：1925静安寺路316、317号，1926卡德路61号，1929小沙渡路1号；民国学校调查录索引另记培成女子中学小沙渡路34号。可确认机构历史，不能将今天上戏附中康定路校址搬到旧点。原记录Ferry Road缺门牌，1与34的使用阶段及旧地块边界尚未闭环。已审查同组#1011小学幼稚园和#1012新妇女服装专科夜校，后者中文残缺且没有共址直接证据；三条仅近点聚合不足确认同一校舍，整组现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1010",
+        "https://www.sohu.com/a/217976483_729869",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://ecpo.cats.uni-heidelberg.de/frauenzeitschriften/public/magazine/page_content.php?img_issue_page=27&issue_id=167&issue_number=18&magazin_id=3&year=1933",
+        "https://www.virtualshanghai.net/data/buildings?ID=1011",
+        "https://www.virtualshanghai.net/data/buildings?ID=1012"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.44793,
+          "latitude": 31.229579
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      },
+      "groupReview": {
+        "groupSourceIds": [
+          1010,
+          1011,
+          1012
+        ],
+        "result": "hold",
+        "member1012": "原名残缺新妇女服装专科夜校，Ferry Road无门牌，未取得与培成校舍共址的直接证据。"
+      }
+    },
+    {
+      "IDBAT": 1011,
+      "queries": [
+        "培成 渡口路",
+        "上海 培成女 校址",
+        "培成女子 小沙渡路34",
+        "新妇女 裁剪 小沙渡",
+        "新婦女 夜校 上海"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "培成校史明确曾更名培成女子中小学校，可为原小学条目提供机构层面的旁证；校史先后记录静安寺路、卡德路与小沙渡路，不能把几个阶段的学校地址合并。学校调查录不同版本检索文字提及小沙渡路34号附小，但OCR有培德/培成等混淆，未取得原图作逐字确认。幼稚园是否在同一楼、本条Ferry Road无门牌对应哪一校舍仍待核。与#1010及#1012分别审查，未有服装夜校共用校舍的直接证据，整组保留待核，不移至现代上戏附中地址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1011",
+        "https://www.sohu.com/a/217976483_729869",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/NLC416-10jh006837-53329_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1010",
+        "https://www.virtualshanghai.net/data/buildings?ID=1012"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.447891,
+          "latitude": 31.229621
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      },
+      "groupReview": {
+        "groupSourceIds": [
+          1010,
+          1011,
+          1012
+        ],
+        "result": "hold",
+        "member1012": "原名残缺新妇女服装专科夜校，Ferry Road无门牌，未取得与培成校舍共址的直接证据。"
+      }
+    },
+    {
+      "IDBAT": 433,
+      "queries": [
+        "培明 巨泼来斯",
+        "培明中小學 79",
+        "培明 蒲石路",
+        "培兴中小学 上海 五原",
+        "五原路79弄 18"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "学校调查录索引直接列培兴中小学（培明中小学）、赵主教路79弄18号，与本条名称和门牌相符，提供不同于南阳路培明女中的校名线索。但大型原扫描下载失败，本次只能读取索引文字。五原路历史研究提示该路有门牌微调及弄名变化，不能将旧79弄18号直接当成今79号。检索未取得旧校舍现状或当代用途资料；与#1069南阳路培明女中不因同名合并，具体建筑及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=433",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://m.thepaper.cn/newsDetail_forward_8997477"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.442679,
+          "latitude": 31.214665
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 1069,
+      "queries": [
+        "培明 南阳路205",
+        "南阳路205号 现在",
+        "培明女中 南阳路 旧址",
+        "南阳路205号 住宅"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "民国学校调查录索引直接列培明女子中学南阳路205号；地方史文章引校史记抗战期间学校曾迁至此处，战后返新闸路，故不把现代培明中学所在地替代原点。新民晚报2021年采访列205号体彩网点，新闻晨报2020年将同号咖啡店描述为嵌在居民楼里的商铺，当代小区资料也列住宅，但仅能说明今门牌的混合使用，未证明与旧女校在同一保留楼栋或同一范围。原校舍存毁、门牌范围和具体当前用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1069",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://www.sohu.com/a/577852602_121332532",
+        "https://paper.xinmin.cn/html/dfsports/2021-07-05/B02/29510.html",
+        "https://ep.shxwcb.com/2020/05/24/img/04-050524.pdf",
+        "https://mfang.58.com/sh/xinfang/xq100682089/"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.445465,
+          "latitude": 31.229381
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    },
+    {
+      "IDBAT": 855,
+      "queries": [
+        "培仁小学 上海 同孚",
+        "培仁 同孚路",
+        "培仁小学 上海 旧址",
+        "同孚路262 石门",
+        "同孚路262弄",
+        "石门一路262弄 27"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "民国学校调查录检索文字直接列培仁小学、同孚路262弄27号，并有校长和学生数，能够支持原始校名与门牌；本次大型扫描PDF下载失败，仅取得索引文本，未检视原页。继续以同孚路、石门一路262弄27号和校名搜索，没有获得旧弄堂到现代楼栋的连续关系。不能用今同名外省小学或附近商业综合体代替本校；旧门牌、原建筑存毁及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=855",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "014-osm-nearby.json",
+          "014-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.458495,
+          "latitude": 31.230769
+        },
+        "lookupError": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+        "directOsmChecks": [],
+        "caution": "Point/polygon proximity is supporting evidence only; neither original map coordinates nor raw fields were changed."
+      }
+    }
+  ]
+}

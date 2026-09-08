@@ -1,0 +1,112 @@
+{
+  "batch": "014",
+  "reviewedAt": "2026-09-08",
+  "scope": "明确复核批次外的全部同组成员；本文件不增加014的50条及累计700条批内研究统计。",
+  "featureGroupId": "landmark-vs-site-880",
+  "reviewedSourceRecordIds": [
+    880,
+    1787
+  ],
+  "records": [
+    {
+      "IDBAT": 880,
+      "NAME": "Hospital",
+      "F_ADDRESS": "415 BURKILL ROAD",
+      "FUNCTION": "Institutional site / Medical facility / Hospital",
+      "XC": 353657.2742,
+      "YC": 3456654.6614,
+      "verificationStatus": "verified",
+      "mapWriteRecommendation": "yes",
+      "relationship": "same-site-institutional-continuity",
+      "currentUse": "医院院区，提供医疗服务",
+      "currentAddress": "上海市黄浦区凤阳路415号北院范围",
+      "notes": "批次外同组成员880仅泛称Hospital，原门牌415 BURKILL ROAD，无独立建年或旧楼专名。主任务读取原始记录、医院当前官网和凤阳路原医院沿革，并单独将880原始UTM转换为WGS84；其点位落在长征医院北院公开OSM院界内，与1787同院区而非同一旧楼的判断相容。批准范围仅为原址院区继续提供医疗服务；不添加宝隆别名、年代，不断言原单栋存续，也不更改原坐标或历史属性。",
+      "references": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1787",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1787"
+        },
+        {
+          "title": "上海长征医院官网：海军军医大学第二附属医院，2026年信息及凤阳路415号",
+          "url": "https://www.shczyy.com/"
+        },
+        {
+          "title": "上观新闻：百年老建筑里读懂上海医院的前世今生（2023-08-28），宝隆医院与凤阳路长征医院",
+          "url": "https://www.shobserver.cn/wx/detail.do?id=647447"
+        },
+        {
+          "title": "上海市文史研究馆：亲历者从医回忆，凤阳路宝隆医院旧址后作中美医院",
+          "url": "https://wsyjg.sh.gov.cn/detailpage/gycl-90.html"
+        },
+        {
+          "title": "Virtual Shanghai：同组880，Hospital，415 BURKILL ROAD，无年份",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=880"
+        },
+        {
+          "title": "OpenStreetMap：长征医院北院范围，两条原始点位均在其内",
+          "url": "https://www.openstreetmap.org/way/1156225369"
+        },
+        {
+          "title": "OpenStreetMap：长征医院骨科楼，仅说明880点位落在现楼范围",
+          "url": "https://www.openstreetmap.org/way/369342599"
+        }
+      ],
+      "coordinates": {
+        "wgs84": {
+          "longitude": 121.463376,
+          "latitude": 31.234915
+        }
+      },
+      "spatialReview": {
+        "pointInsidePolygon": true,
+        "sourceUrl": "https://www.openstreetmap.org/way/1156225369",
+        "polygonWgs84": [
+          [
+            121.4623597,
+            31.2349105
+          ],
+          [
+            121.462785,
+            31.2349766
+          ],
+          [
+            121.4631313,
+            31.2350266
+          ],
+          [
+            121.4636777,
+            31.2350439
+          ],
+          [
+            121.4637924,
+            31.2348612
+          ],
+          [
+            121.4634731,
+            31.2346594
+          ],
+          [
+            121.4632787,
+            31.2346108
+          ],
+          [
+            121.4630976,
+            31.2344681
+          ],
+          [
+            121.4629649,
+            31.2344017
+          ],
+          [
+            121.4624939,
+            31.2343402
+          ],
+          [
+            121.4623597,
+            31.2349105
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1389 @@
+{
+  "batch": "014",
+  "part": "a",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/014-input.json",
+  "scope": "正式input的slice(0,17)，与预检全字段严格一致；仅调查current字段。17条均实际联网检索，已复核同组与直接地图几何。",
+  "records": [
+    {
+      "IDBAT": 1579,
+      "queries": [
+        "\"北四川路巡捕房\" \"1962\"",
+        "北四川路 捕房 四川北路1962 旧址",
+        "\"北四川路捕房\" 旧址",
+        "\"北四川路1962\"",
+        "\"四川北路1962号\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "历史研究扫描直接将North Szechuen Road Police Station列在北四川路狄思威路转角，今路名为四川北路、溧阳路；另一沿革称其改为狄思威路捕房，今溧阳路1338号四川北路派出所。两者可能有迁址或院落入口变化，尚不能把同一警务机构延续等同原1962号楼存续。原点、旧今门牌与迁址链待核；不套用闵行路虹口捕房或哈尔滨路嘉兴捕房。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1579",
+        "https://www.virtualshanghai.net/Asset/Source/bnBook_ID-185_No-1.pdf",
+        "https://zh.wikipedia.org/wiki/上海公共租界工部局警務處",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240321/a9e9a2b2-08e9-464f-a468-808d4ed223a5.html"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 248,
+      "queries": [
+        "\"护士学校\" \"瑞金二路207\"",
+        "\"护士学校\" \"金神父路\"",
+        "\"公董局\" \"护士学校\"",
+        "\"护士学校\" \"207\" \"上海\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "同组#249巴斯德研究所已在009确证207号科研用途，但其notes明确护士学校建筑边界未闭合。本轮实际检索护士学校、金神父路及207号，没有找到本校直接沿革；震旦校史所列广慈高级护士职业学校在197号，不能仅凭相邻医院或护理教育名称覆盖207号。护士学校正式校名、院内位置和与巴斯德研究所先后关系待核，同组不回填。 图书馆辅助只返回寄生虫所文字候选，候选坐标距原点约1118米，未用于定位。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=248",
+        "https://www.ipd.org.cn/view6502.html",
+        "https://bkso.baidu.com/item/震旦大学/2453542"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "libraryAssessment": "图书馆瑞金二路207号候选仅科研院所文字信息，坐标相距1118米不采用，也不能确定护士学校楼栋。"
+    },
+    {
+      "IDBAT": 1607,
+      "queries": [
+        "\"奥迪安戏院\" 上海",
+        "\"奥迪安\" \"公园\"",
+        "\"奥迪安\" \"今\" \"四川北路公园\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "虹口图书馆直接确认奥迪安位于北四川路600号宜乐里旧址、今四川北路虬江路西南角，1925开幕并于1932年一二八战事中焚毁。2024党史导览称站在毗邻戏院遗址的四川北路公园绿地讲述，语义为毗邻，不能据此直接说戏院原址就是公园。独立身份及毁损清楚，正式原点与街角现代地块、现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1607",
+        "https://www.hqlib.cn/Web/detail.aspx?ID=b9ca8038&classID=395",
+        "https://www.ccphistory.org.cn/shds/bdxx/content/82c41fef-f114-4f28-8608-1bb8b2bb733a.html"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1475,
+      "queries": [
+        "\"上海市通志馆\" \"291\"",
+        "\"通志馆\" \"淡水路291\" 现在",
+        "\"淡水路291号\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "市民政局及地方志系统纪念文章直接确认1932年上海市通志馆设于萨坡赛路291号三层红砖洋房，今路名淡水路。同组#141为小学及幼稚园，尚无独立学校名称与接用馆舍关系；仅同门牌不足以把二者归同一现用途。现代同号楼址存废、用途及同组学校身份待核，不能用华东路4111号今通志馆的机构继承替换原址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1475",
+        "https://mzj.sh.gov.cn/lnb-wsws/20220922/2d21b754bcb441db8ba313ddbe73e844.html",
+        "https://dfz.jl.gov.cn/fzg/202208/t20220826_8552515.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=141"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1636,
+      "queries": [
+        "\"日本海军武官府\" \"203\"",
+        "\"日本海军武官\" \"武进路\"",
+        "\"日本海軍武官府\" 上海 青年"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "WUTSIN对应武进路；与#1635日本基督青年会同组、同203号且原点仅相差约9米。实际以中日文武官府、武进路和青年会组合检索，学术资料只证明上海虹口曾有海军武官府，未闭合203号与青年会楼的占用或交替关系。不能套附近海军陆战队总部或沪北会堂；楼体、门牌、两成员沿革与现代用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1636",
+        "https://www.virtualshanghai.net/data/buildings?ID=1635",
+        "https://wwwacc.ntl.edu.tw/public/Attachment/281415523478.pdf",
+        "https://www.openstreetmap.org/way/175621779"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 604,
+      "queries": [
+        "\"邮政局\" \"北京路148\"",
+        "\"邮政局\" \"北京东路148\"",
+        "\"北京路148号\" 上海 邮政",
+        "\"上海\" \"邮政\" \"148\" \"北京\"",
+        "\"北京路\" \"邮政局\" \"1896\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "邮政官方沿革的转载及静安图书馆说明1896国家邮政设立、1897大清邮政局仍在海关后院，1907才迁北京路9号新厦，与本条1896年、148号不能直接等同。北京路还曾有英国邮局7号等机构，泛称Postal Service Administration不足以选定其中一栋。148旧号、具体邮政部门、迁址和现楼对应待核，不改用北苏州路1924邮政总局大楼的沿革。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=604",
+        "https://wenhui.whb.cn/zhuzhan/xinwen/20220121/445128.html",
+        "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=CUSTOMSLIBRARY&id=206",
+        "https://jds.cssn.cn/xscg/xslw/201605/t20160506_5252265.shtml"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1730,
+      "queries": [
+        "\"摩西会堂\" \"62\"",
+        "上海 摩西会堂 site:mapcarta.com"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "上海市文旅局保护图直接列长阳路62号摩西会堂建筑本体，2026政府采购需求分别列摩西会堂、北楼、南楼，确认现纪念馆文化设施用途。机构1907初创于熙华德路，1927迁华德路现址；输入1927符合后者，却将道路写成SEWARD而非WARD，保留原字段并在此说明混用。原点距OSM长阳路62号纪念馆轮廓约10米，与保护图和唯一会堂身份相容，支持现址原会堂保存；不把整个5000平方米纪念馆都视为原会堂。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1730",
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/7950ce1b-ad1c-49b6-a9bb-376695b862c0.pdf",
+        "https://china.diplo.de/blob/1585130/120efbe746810ad2d38bab3ce6dba039/publikation-jews-of-shanghai-data.pdf",
+        "https://api.openstreetmap.org/api/0.6/way/206608461/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 1730,
+        "url": "https://api.openstreetmap.org/api/0.6/way/206608461/full.json",
+        "tags": {
+          "addr:city": "上海市",
+          "addr:district": "虹口区",
+          "addr:housenumber": "62",
+          "addr:street": "长阳路",
+          "name": "上海犹太难民纪念馆",
+          "name:en": "Shanghai Jewish Refugee Museum",
+          "name:zh": "上海犹太难民纪念馆",
+          "opening_hours": "09:00-16:30",
+          "tourism": "museum",
+          "wikidata": "Q11078482",
+          "wikimedia_commons": "Category:Shanghai Jewish Refugees Museum",
+          "wikipedia": "en:Shanghai Jewish Refugees Museum"
+        },
+        "centroid": [
+          121.50479874,
+          31.2561802
+        ],
+        "centroidDistanceM": 34,
+        "nearestOutlineDistanceM": 9.8,
+        "originalWgs84": {
+          "longitude": 121.504571,
+          "latitude": 31.256416
+        },
+        "geometryWgs84": [
+          [
+            121.5044119,
+            31.256225
+          ],
+          [
+            121.5046434,
+            31.2563503
+          ],
+          [
+            121.5048223,
+            31.2564574
+          ],
+          [
+            121.5052189,
+            31.2560684
+          ],
+          [
+            121.5048972,
+            31.2557999
+          ],
+          [
+            121.5044119,
+            31.256225
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      }
+    },
+    {
+      "IDBAT": 1728,
+      "queries": [
+        "\"拉结会堂\" \"520\"",
+        "\"西摩路会堂\" \"520\"",
+        "上海 西摩路会堂 陕西北路500 2026",
+        "上海 西摩会堂 site:mapcarta.com"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "静安图书馆确认西摩会堂1920建成、今陕西北路500号，与Ohel Rachel名称年代相符；1921年为启用时间。2024静安政府答复说明院落含486、500、544号，由教师教育学院等管理使用，并已有会堂VR展示；不把院落办公用途扩大为大殿已改成办公室或仍日常宗教开放。输入520旧号与现门牌组不同，但原点距OSM具名拉结会堂建筑轮廓约18米，独特建筑名称、年代、道路与位置共同确认同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1728",
+        "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=4619",
+        "https://www.jingan.gov.cn/govxxgk/JA0/2024-06-05/b5736290-e20b-4536-86c1-55daa3b042ef.html",
+        "https://zh.wikipedia.org/wiki/拉结会堂",
+        "https://api.openstreetmap.org/api/0.6/way/206515891/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 1728,
+        "url": "https://api.openstreetmap.org/api/0.6/way/206515891/full.json",
+        "tags": {
+          "alt_name": "Seymour Synagogue",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "heritage": "yes",
+          "name": "拉结会堂",
+          "name:en": "Ohel Rachel Synagogue",
+          "name:he": "בית הכנסת אוהל רחל",
+          "religion": "jewish",
+          "service_times": "major festivals",
+          "start_date": "1921",
+          "wikidata": "Q11077044"
+        },
+        "centroid": [
+          121.44826665000001,
+          31.2334537
+        ],
+        "centroidDistanceM": 34.1,
+        "nearestOutlineDistanceM": 18.2,
+        "originalWgs84": {
+          "longitude": 121.447938,
+          "latitude": 31.233577
+        },
+        "geometryWgs84": [
+          [
+            121.4483976,
+            31.2335455
+          ],
+          [
+            121.4481189,
+            31.2335244
+          ],
+          [
+            121.4481357,
+            31.2333619
+          ],
+          [
+            121.4484144,
+            31.233383
+          ],
+          [
+            121.4483976,
+            31.2335455
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      }
+    },
+    {
+      "IDBAT": 1336,
+      "queries": [
+        "\"老垃圾桥\" \"1908\"",
+        "\"浙江路桥\" \"2025\" site:sh.gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "薛理勇在上观直接说明老垃圾桥即浙江路桥，1908钢桥与输入年相符；2015桥体吊移大修后复位，属于历史桥体修缮。2025—2035苏州河官方规划继续列现桥和两岸公共空间。原点距OSM具名浙江路桥轮廓约24米，其老垃圾桥别名及1908年亦吻合，支持同桥延续。same-building用于表达同一历史构筑物保存；仅更新地点current信息，原道路字段及道路几何不改。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1336",
+        "https://web.shobserver.com/wx/detail.do?id=7404",
+        "https://ghzyj.sh.gov.cn/cmsres/80/80bc624543814377a64e832016968a11/08b030a1c2d3de3669bfb9480eb7a5f9.pdf",
+        "https://mapcarta.com/W815631991",
+        "https://api.openstreetmap.org/api/0.6/way/815631991/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 1336,
+        "url": "https://api.openstreetmap.org/api/0.6/way/815631991/full.json",
+        "tags": {
+          "alt_name": "老垃圾桥",
+          "alt_name:en": "Laolaji Bridge",
+          "alt_name:zh": "老垃圾桥",
+          "bridge": "yes",
+          "bridge:structure": "truss",
+          "layer": "1",
+          "man_made": "bridge",
+          "name": "浙江路桥",
+          "name:en": "Zhejiang Road Bridge",
+          "name:zh": "浙江路桥",
+          "start_date": "1908",
+          "wikidata": "Q11148876",
+          "wikipedia": "zh:浙江路桥"
+        },
+        "centroid": [
+          121.47198891999999,
+          31.24327876
+        ],
+        "centroidDistanceM": 34.9,
+        "nearestOutlineDistanceM": 24.4,
+        "originalWgs84": {
+          "longitude": 121.471689,
+          "latitude": 31.243459
+        },
+        "geometryWgs84": [
+          [
+            121.4719573,
+            31.2436145
+          ],
+          [
+            121.4720984,
+            31.2436068
+          ],
+          [
+            121.4720565,
+            31.2430454
+          ],
+          [
+            121.4719154,
+            31.2430531
+          ],
+          [
+            121.471917,
+            31.243074
+          ],
+          [
+            121.4719573,
+            31.2436145
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      }
+    },
+    {
+      "IDBAT": 1161,
+      "queries": [
+        "\"Old Houses\" \"Seymour Road\" Shanghai"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "原名Old Houses只泛称旧房屋，无中文专名、门牌或年代。已检索英文原名和Seymour Road，只取得同源建筑表及陕西北路其他知名公寓，无法识别本点。不能把附近有名的南洋公寓、住宅名录套给这个无门牌点；历史原宅范围、建筑存废与现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1161",
+        "https://www.jingan.gov.cn/govxxgk/JA0/2024-06-05/b5736290-e20b-4536-86c1-55daa3b042ef.html"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: HTTP 429)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 99,
+      "queries": [
+        "\"亚蒙大戏院\" \"259\"",
+        "\"亚蒙\" \"吕宋路\"",
+        "上海 亚蒙 电影院 寿宁路",
+        "\"月光大戏院\" \"亚蒙\"",
+        "\"亚蒙大戏院\" 拆除",
+        "\"大庆剧场\" \"太平湖\"",
+        "\"Rue Eugene Bard\" \"自忠\"",
+        "\"大庆剧场\" \"259\"",
+        "\"大庆剧场\" \"自忠路\"",
+        "太平桥公园 太平湖 site:mapcarta.com",
+        "\"大庆剧场\" \"顺昌路90\"",
+        "\"太平湖\" \"亚蒙\"",
+        "Shanghai Taiping Lake site:mapcarta.com",
+        "上海 太平桥绿地 site:openstreetmap.org",
+        "上海 太平桥公园 site:mapcarta.com 湖"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "上海通志与电影学术研究直接把月光、亚蒙、大同、大庆列为同院沿革；地方志资料转载列后址顺昌路90号，近年报道直接指出剧场拆后成为太平湖。原记录白尔路259号与后期资料顺昌路90号分列不同道路入口门牌，尚无确切门牌对照表，原字段保留。原点位于OSM具名新天地太平湖多边形内，距湖岸约14米，与旧址改为湖区的文字证据相容；现址结论限原点处湖面，不将全湖或全公园认作原剧场建筑边界。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=99",
+        "https://www.shanghai.gov.cn/shanghai/newshanghai/上海通志.pdf",
+        "https://dflt.qdu.edu.cn/__local/3/49/66/17A0B63ED0FCA4DFD373A71FDD7_8E57AEA0_30F6C.pdf",
+        "https://paper.xinmin.cn/html/xmwb/2023-10-30/16/172259.html",
+        "https://m.huxiu.com/article/2071514.html?type=text",
+        "https://renwen.shnu.edu.cn/_t745/7e/61/c2900a425569/page.htm",
+        "https://m.thepaper.cn/newsDetail_forward_7098703",
+        "https://api.openstreetmap.org/api/0.6/way/292718783/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 99,
+        "url": "https://api.openstreetmap.org/api/0.6/way/292718783/full.json",
+        "tags": {
+          "name": "新天地太平湖",
+          "name:en": "Taiping Lake",
+          "name:zh": "新天地太平湖",
+          "natural": "water",
+          "water": "lake"
+        },
+        "inside": true,
+        "nearestOutlineDistanceM": 13.992238504805627,
+        "originalWgs84": {
+          "longitude": 121.472349,
+          "latitude": 31.221893
+        },
+        "geometryWgs84": [
+          [
+            121.4715168,
+            31.2221425
+          ],
+          [
+            121.4715165,
+            31.2221974
+          ],
+          [
+            121.4715375,
+            31.2222304
+          ],
+          [
+            121.4716041,
+            31.2222304
+          ],
+          [
+            121.4716497,
+            31.2222484
+          ],
+          [
+            121.4716848,
+            31.2222963
+          ],
+          [
+            121.4716848,
+            31.2223563
+          ],
+          [
+            121.4717093,
+            31.2223833
+          ],
+          [
+            121.4717654,
+            31.2223922
+          ],
+          [
+            121.4718039,
+            31.2223473
+          ],
+          [
+            121.4718495,
+            31.2223203
+          ],
+          [
+            121.4719126,
+            31.2223233
+          ],
+          [
+            121.4719652,
+            31.2222993
+          ],
+          [
+            121.4719827,
+            31.2222574
+          ],
+          [
+            121.4720142,
+            31.2222364
+          ],
+          [
+            121.4721404,
+            31.2222064
+          ],
+          [
+            121.4722175,
+            31.2221704
+          ],
+          [
+            121.4722385,
+            31.2221015
+          ],
+          [
+            121.4722806,
+            31.2220475
+          ],
+          [
+            121.4723472,
+            31.2220416
+          ],
+          [
+            121.4724208,
+            31.2220565
+          ],
+          [
+            121.4724839,
+            31.2220505
+          ],
+          [
+            121.4725715,
+            31.2219786
+          ],
+          [
+            121.4726486,
+            31.2219486
+          ],
+          [
+            121.4727222,
+            31.2219277
+          ],
+          [
+            121.4727958,
+            31.2218707
+          ],
+          [
+            121.4728554,
+            31.2218677
+          ],
+          [
+            121.472922,
+            31.2218557
+          ],
+          [
+            121.4729711,
+            31.2218197
+          ],
+          [
+            121.4730412,
+            31.2217988
+          ],
+          [
+            121.4731078,
+            31.2218048
+          ],
+          [
+            121.4731709,
+            31.2217958
+          ],
+          [
+            121.4732235,
+            31.2217628
+          ],
+          [
+            121.4733076,
+            31.2217598
+          ],
+          [
+            121.4733637,
+            31.2217808
+          ],
+          [
+            121.4734162,
+            31.2217748
+          ],
+          [
+            121.4734618,
+            31.2217208
+          ],
+          [
+            121.4735389,
+            31.2216999
+          ],
+          [
+            121.47363,
+            31.2217298
+          ],
+          [
+            121.4736581,
+            31.2217838
+          ],
+          [
+            121.4736966,
+            31.2217958
+          ],
+          [
+            121.4737808,
+            31.2217838
+          ],
+          [
+            121.4738824,
+            31.2218048
+          ],
+          [
+            121.473949,
+            31.2217988
+          ],
+          [
+            121.4739946,
+            31.2218108
+          ],
+          [
+            121.4740506,
+            31.2217988
+          ],
+          [
+            121.4740892,
+            31.2217568
+          ],
+          [
+            121.4740927,
+            31.2216819
+          ],
+          [
+            121.4740506,
+            31.2216099
+          ],
+          [
+            121.4739911,
+            31.2215889
+          ],
+          [
+            121.473958,
+            31.2215365
+          ],
+          [
+            121.4739368,
+            31.2215547
+          ],
+          [
+            121.4739698,
+            31.221598
+          ],
+          [
+            121.4739746,
+            31.2216232
+          ],
+          [
+            121.4739545,
+            31.2216383
+          ],
+          [
+            121.4738944,
+            31.2216182
+          ],
+          [
+            121.4738166,
+            31.2216101
+          ],
+          [
+            121.4737517,
+            31.2215879
+          ],
+          [
+            121.4737211,
+            31.2215415
+          ],
+          [
+            121.4737529,
+            31.2215022
+          ],
+          [
+            121.4738024,
+            31.2214821
+          ],
+          [
+            121.4738614,
+            31.2215032
+          ],
+          [
+            121.4739097,
+            31.2215375
+          ],
+          [
+            121.4739286,
+            31.2215163
+          ],
+          [
+            121.4738473,
+            31.2214541
+          ],
+          [
+            121.4737597,
+            31.2214331
+          ],
+          [
+            121.4737001,
+            31.2213731
+          ],
+          [
+            121.473602,
+            31.2213462
+          ],
+          [
+            121.4734583,
+            31.2213342
+          ],
+          [
+            121.4733496,
+            31.2213671
+          ],
+          [
+            121.4732936,
+            31.2214511
+          ],
+          [
+            121.4732865,
+            31.221556
+          ],
+          [
+            121.473262,
+            31.2216159
+          ],
+          [
+            121.4731954,
+            31.2216549
+          ],
+          [
+            121.4730517,
+            31.2216729
+          ],
+          [
+            121.4729571,
+            31.2216549
+          ],
+          [
+            121.4728484,
+            31.2216009
+          ],
+          [
+            121.4726872,
+            31.22155
+          ],
+          [
+            121.4725189,
+            31.221511
+          ],
+          [
+            121.4724488,
+            31.221526
+          ],
+          [
+            121.4723928,
+            31.221568
+          ],
+          [
+            121.4723542,
+            31.2216669
+          ],
+          [
+            121.4723192,
+            31.2217598
+          ],
+          [
+            121.4722596,
+            31.2217928
+          ],
+          [
+            121.4721614,
+            31.2217988
+          ],
+          [
+            121.4720948,
+            31.2217838
+          ],
+          [
+            121.4720563,
+            31.2217718
+          ],
+          [
+            121.4719757,
+            31.2217388
+          ],
+          [
+            121.4719161,
+            31.2216429
+          ],
+          [
+            121.4718775,
+            31.221556
+          ],
+          [
+            121.4718179,
+            31.221487
+          ],
+          [
+            121.4717268,
+            31.2214691
+          ],
+          [
+            121.4716567,
+            31.22149
+          ],
+          [
+            121.4716287,
+            31.221556
+          ],
+          [
+            121.4716672,
+            31.2216249
+          ],
+          [
+            121.4717408,
+            31.2216849
+          ],
+          [
+            121.4717584,
+            31.2217598
+          ],
+          [
+            121.4717338,
+            31.2218377
+          ],
+          [
+            121.4716532,
+            31.2218917
+          ],
+          [
+            121.4715691,
+            31.2220266
+          ],
+          [
+            121.4716238,
+            31.2220449
+          ],
+          [
+            121.4716523,
+            31.2220815
+          ],
+          [
+            121.4716428,
+            31.2221262
+          ],
+          [
+            121.4716024,
+            31.2221486
+          ],
+          [
+            121.4715168,
+            31.2221425
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      },
+      "rejectedEvidence": "新民晚报2023回忆中亚蒙更名先后与方志和学术电影史不一致，未采用其更名顺序，也未将其2003叙述断言为太平湖建成确年。白尔路259号与顺昌路90号没有取回确切门牌对照表，采用同院沿革及现原点位于湖内的交叉证据，只更新原点现用途。"
+    },
+    {
+      "IDBAT": 1357,
+      "queries": [
+        "\"东方图书馆\" \"宝山路584\"",
+        "\"第八\" \"日本\" \"宝山路584\"",
+        "\"民团第八\" \"学校\" 上海",
+        "\"宝山路584号\" \"第八\" 日本 学校 暨南"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "市北职高策划的2021教育新闻网资料直接确认584号校园为东方图书馆旧址；2017新闻出版局报告所提原址复建仅为可行性调研，不能写成已建新博物馆。图书馆1932被毁，输入结束年1942不代表旧楼保存。原点距OSM市北职高校园边界约9米，空间相容。同组#1360民团第八学校在010仍likely；2021校史虽提1946接用宝山路原日本人学校，未明确第八校编号和1942校舍范围，现有个人游记不能独立确证。第八校身份与分楼关系待核，暂不整组回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1357",
+        "https://m.shedunews.sh.cn/msite_10/con/2021-05/28/content_7106.html",
+        "https://www.shanghai.gov.cn/cmsres/9b/9bb702df7aee4320bb90d1d3e9502b59/caaf2f6e46861ef0ea46c3d985018570.pdf",
+        "https://dzb.whb.cn/imgPath/2024-06-21/80621.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=1360",
+        "https://api.openstreetmap.org/api/0.6/way/1387302976/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 1357,
+        "url": "https://api.openstreetmap.org/api/0.6/way/1387302976/full.json",
+        "tags": {
+          "amenity": "school",
+          "barrier": "wall",
+          "name": "上海市市北高级职业中学"
+        },
+        "centroid": [
+          121.47309652499996,
+          31.2609454
+        ],
+        "centroidDistanceM": 68.7,
+        "nearestOutlineDistanceM": 9.1,
+        "originalWgs84": {
+          "longitude": 121.47303,
+          "latitude": 31.26156
+        },
+        "geometryWgs84": [
+          [
+            121.4721029,
+            31.260612
+          ],
+          [
+            121.4723017,
+            31.2603971
+          ],
+          [
+            121.4724813,
+            31.2601975
+          ],
+          [
+            121.4726558,
+            31.259998
+          ],
+          [
+            121.4728482,
+            31.259771
+          ],
+          [
+            121.4728751,
+            31.2597524
+          ],
+          [
+            121.4729046,
+            31.259748
+          ],
+          [
+            121.472929,
+            31.2597513
+          ],
+          [
+            121.4729495,
+            31.2597688
+          ],
+          [
+            121.4731805,
+            31.260366
+          ],
+          [
+            121.4733079,
+            31.260658
+          ],
+          [
+            121.4734713,
+            31.2609704
+          ],
+          [
+            121.4736678,
+            31.2613302
+          ],
+          [
+            121.4736882,
+            31.2613633
+          ],
+          [
+            121.4737818,
+            31.2615151
+          ],
+          [
+            121.4739179,
+            31.2617216
+          ],
+          [
+            121.4739256,
+            31.2617556
+          ],
+          [
+            121.4739179,
+            31.261783
+          ],
+          [
+            121.4738884,
+            31.2618137
+          ],
+          [
+            121.4735357,
+            31.2620417
+          ],
+          [
+            121.4735087,
+            31.2620483
+          ],
+          [
+            121.4734869,
+            31.2620439
+          ],
+          [
+            121.4732099,
+            31.261851
+          ],
+          [
+            121.4730495,
+            31.2617019
+          ],
+          [
+            121.4728584,
+            31.2615176
+          ],
+          [
+            121.4720936,
+            31.2606934
+          ],
+          [
+            121.4720812,
+            31.2606663
+          ],
+          [
+            121.4720834,
+            31.2606341
+          ],
+          [
+            121.4721029,
+            31.260612
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      }
+    },
+    {
+      "IDBAT": 1536,
+      "queries": [
+        "\"龙华路\" \"孤儿院\" \"1909\"",
+        "\"龙华路\" \"孤儿院\" 上海",
+        "\"上海孤儿院\" \"1909\" \"龙华\"",
+        "\"上海孤儿院\" \"龙华\" \"住宅\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "独立慈善史介绍上海孤儿院1909年龙华新院建成、1910迁入，与输入1909和龙华路相合。地方影像资料称在茂公桥、今华容路龙华路一带；2018城市漫步将烈士陵园对面原孤儿院对应现代住宅。仍欠可靠地籍或官方旧今建筑边界，原点及住宅名称待核。不能混同蒲汇塘路55号、1864年创办的土山湾孤儿院。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1536",
+        "https://www.sohu.com/a/384209810_120164309",
+        "https://m.thepaper.cn/newsDetail_forward_2323479",
+        "https://blog.sina.com.cn/s/blog_552cd0640102dsfk.html"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 261,
+      "queries": [
+        "\"圣尼古拉斯\" \"皋兰路16\"",
+        "\"思南书局\" \"诗歌店\" \"2026\"",
+        "上海 圣尼古拉斯教堂 site:mapcarta.com"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "市住建委、市历保中心2024建筑介绍直接将皋兰路16号思南诗歌书店对应圣尼古拉斯教堂，2019在保留旧楼内加入独立钢结构书架；设计方2026项目介绍再次确认旧墙和穹顶保留。输入1931年、18旧号与资料1932始建、今16号有差别，原字段不变。原点距OSM具名圣尼古拉教堂轮廓约37米，OSM记1934竣工；唯一教堂名称、皋兰路及建筑沿革共同支持同楼改用书店，不沿用过时餐厅用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=261",
+        "https://sh.people.com.cn/n2/2024/0711/c134768-40909281.html",
+        "https://www.archdaily.com/zh/1163752/si-nan-shu-ju-star-shi-ge-dian-wutopia-lab",
+        "https://www.shobserver.cn/sgh/detail?id=1494368",
+        "https://api.openstreetmap.org/api/0.6/way/206609489/full.json"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ],
+      "directOsmFetch": {
+        "IDBAT": 261,
+        "url": "https://api.openstreetmap.org/api/0.6/way/206609489/full.json",
+        "tags": {
+          "addr:housenumber": "16",
+          "addr:street": "皋兰路",
+          "building": "yes",
+          "check_date": "01.2026",
+          "heritage": "yes",
+          "heritage:operator": "上海圣尼古拉堂",
+          "heritage:ref": "C-Ⅲ-013",
+          "name": "东正教堂",
+          "name:en": "Former St. Nicholas Russian Orthodox",
+          "name:ru": "Бывший Свято-Николаевский храм",
+          "start_date": "1934",
+          "wikidata": "Q2384843",
+          "wikimedia_commons": "Category:St. Nicholas Russian Orthodox Church (Shanghai)",
+          "wikipedia": "en:Saint Nicholas' Church, Shanghai"
+        },
+        "centroid": [
+          121.46153087500001,
+          31.21901505
+        ],
+        "centroidDistanceM": 47.3,
+        "nearestOutlineDistanceM": 37.3,
+        "originalWgs84": {
+          "longitude": 121.461163,
+          "latitude": 31.2193
+        },
+        "geometryWgs84": [
+          [
+            121.461441,
+            31.2190635
+          ],
+          [
+            121.4614895,
+            31.2189314
+          ],
+          [
+            121.4616207,
+            31.2189666
+          ],
+          [
+            121.4615723,
+            31.2190987
+          ],
+          [
+            121.461441,
+            31.2190635
+          ]
+        ],
+        "attribution": "http://www.openstreetmap.org/copyright",
+        "geometrySource": "Complete way/node response independently checked against the saved direct API response; coordinates are unmodified WGS84."
+      }
+    },
+    {
+      "IDBAT": 1608,
+      "queries": [
+        "\"大阪朝日\" \"上海\" \"Haskell\"",
+        "\"大阪朝日新聞\" \"上海\" \"赫司克而\"",
+        "\"Haskell Road\" Shanghai 中州",
+        "\"赫司克而路\" 今",
+        "\"赫司克尔路\" 宝安",
+        "\"大阪朝日\" \"宝安路\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "日文尾崎秀实考察引用研究文本称大阪朝日上海通信部在赫司克而路52号，1932以后迁东熙华德路，与输入1929 Haskell Road可相容。该考察也称新道路开辟后现场已变；仍需独立官方或原始报社资料确认52号地块和迁后拆存。赫司克而路为今中州路南段；原点位置及具体楼宇用途待核，不能用东长治路迁后报社覆盖本点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1608",
+        "https://www.tokyo-kurenaidan.com/sorge-ozaki1.htm",
+        "https://blog.sina.com.cn/s/blog_5d1bdf480102vul4.html"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1630,
+      "queries": [
+        "\"大阪每日\" \"海宁路190\"",
+        "\"大阪每日\" \"海宁路\"",
+        "\"大阪每日\" \"上海\" \"支局\" 海宁"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "地方历史照片汇编把1939日军经过的吴淞路海宁路西北角圆顶楼认作东京日日、大阪每日上海分社，并记1980年代电视机修理部及后道路拓宽拆除、新邮电楼。与输入报社名称有独立影像线索，但未有原始地籍或官方历史核定190号对应、拆除具体年代及现地块。不能把海宁路口东北角另一邮电支局楼混入；原点与新旧街角边界待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1630",
+        "https://www.meipian.cn/3zz6b951"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 1318,
+      "queries": [
+        "\"大阪商船码头\" \"110\"",
+        "上海 大阪商船码头 杨树浦路",
+        "\"大阪商船\" \"码头\" \"杨树浦路\" \"现\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《世纪》历史考证明确大阪码头又名杨树浦码头，1914购入、1915重建营业，1918并平和码头，位于秦皇岛路西侧与汇山码头相连；与输入1915吻合。其与秦皇岛路东侧黄浦码头相隔道路，不能把现秦皇岛游船码头或勤工俭学码头标志直接当大阪码头。原110号、港区岸线范围及今滨江设施对应待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1318",
+        "https://www.shxygy.com.cn/2020/12/24/303/",
+        "https://www.sohu.com/a/295942257_534720",
+        "https://ditu.amap.com/place/B00156O685"
+      ],
+      "osmBatchAttempts": [
+        {
+          "file": "research/unresolved-landmarks/014-osm-nearby.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        },
+        {
+          "file": "research/unresolved-landmarks/014-osm-retry.json",
+          "error": "Overpass batch failed (https://overpass-api.de/api/interpreter: fetch failed)",
+          "interpretation": "查询失败，不能解释为周边没有对象。"
+        }
+      ]
+    }
+  ],
+  "allQueries": [
+    "\"北四川路巡捕房\" \"1962\"",
+    "\"护士学校\" \"瑞金二路207\"",
+    "\"奥迪安戏院\" 上海",
+    "\"上海市通志馆\" \"291\"",
+    "\"日本海军武官府\" \"203\"",
+    "\"邮政局\" \"北京路148\"",
+    "\"摩西会堂\" \"62\"",
+    "\"拉结会堂\" \"520\"",
+    "\"老垃圾桥\" \"1908\"",
+    "\"Old Houses\" \"Seymour Road\" Shanghai",
+    "\"亚蒙大戏院\" \"259\"",
+    "\"东方图书馆\" \"宝山路584\"",
+    "\"龙华路\" \"孤儿院\" \"1909\"",
+    "\"圣尼古拉斯\" \"皋兰路16\"",
+    "\"大阪朝日\" \"上海\" \"Haskell\"",
+    "\"大阪每日\" \"海宁路190\"",
+    "\"大阪商船码头\" \"110\"",
+    "\"龙华路\" \"孤儿院\" 上海",
+    "\"亚蒙\" \"吕宋路\"",
+    "\"西摩路会堂\" \"520\"",
+    "上海 亚蒙 电影院 寿宁路",
+    "上海 西摩路会堂 陕西北路500 2026",
+    "上海 大阪商船码头 杨树浦路",
+    "北四川路 捕房 四川北路1962 旧址",
+    "\"北四川路捕房\" 旧址",
+    "\"护士学校\" \"金神父路\"",
+    "\"Omon\" \"Theatre\" Shanghai",
+    "\"大阪朝日新聞\" \"上海\" \"赫司克而\"",
+    "\"公董局\" \"护士学校\"",
+    "\"月光大戏院\" \"亚蒙\"",
+    "\"邮政局\" \"北京东路148\"",
+    "\"大阪每日\" \"海宁路\"",
+    "\"思南书局\" \"诗歌店\" \"2026\"",
+    "\"浙江路桥\" \"2025\" site:sh.gov.cn",
+    "\"上海孤儿院\" \"1909\" \"龙华\"",
+    "\"北京路148号\" 上海 邮政",
+    "\"上海\" \"邮政\" \"148\" \"北京\"",
+    "\"北京路\" \"邮政局\" \"1896\"",
+    "\"亚蒙大戏院\" 拆除",
+    "\"通志馆\" \"淡水路291\" 现在",
+    "\"大阪商船\" \"码头\" \"杨树浦路\" \"现\"",
+    "\"奥迪安\" \"公园\"",
+    "\"大庆剧场\" \"太平湖\"",
+    "\"日本海军武官\" \"武进路\"",
+    "\"淡水路291号\"",
+    "\"北四川路1962\"",
+    "\"大阪每日\" \"上海\" \"支局\" 海宁",
+    "\"日本海軍武官府\" 上海 青年",
+    "\"Rue Eugene Bard\" \"自忠\"",
+    "\"大庆剧场\" \"259\"",
+    "\"上海孤儿院\" \"龙华\" \"住宅\"",
+    "\"奥迪安\" \"今\" \"四川北路公园\"",
+    "\"护士学校\" \"207\" \"上海\"",
+    "\"四川北路1962号\"",
+    "\"大庆剧场\" \"自忠路\"",
+    "\"Haskell Road\" Shanghai 中州",
+    "\"赫司克而路\" 今",
+    "\"赫司克尔路\" 宝安",
+    "\"大阪朝日\" \"宝安路\"",
+    "上海 摩西会堂 site:mapcarta.com",
+    "上海 西摩会堂 site:mapcarta.com",
+    "上海 圣尼古拉斯教堂 site:mapcarta.com",
+    "太平桥公园 太平湖 site:mapcarta.com",
+    "\"大庆剧场\" \"顺昌路90\"",
+    "\"太平湖\" \"亚蒙\"",
+    "\"第八\" \"日本\" \"宝山路584\"",
+    "\"民团第八\" \"学校\" 上海",
+    "Shanghai Taiping Lake site:mapcarta.com",
+    "上海 太平桥绿地 site:openstreetmap.org",
+    "上海 太平桥公园 site:mapcarta.com 湖",
+    "\"宝山路584号\" \"第八\" 日本 学校 暨南"
+  ],
+  "fetchNotes": [
+    "已web.open亲读虹口图书馆奥迪安条目、静安2024第0805号答复、教育新闻网2021市北职高校史、《世纪》大阪码头考证全文；其余证据按检索摘要提炼，未声称均打开全文。",
+    "同组249、1360、1635旧批记录仅供保留限制，未编辑；本轮没有改动原始六字段或构建全局数据。",
+    "中州路/Haskell道路对应已另外联网核实；初稿尝试宝安路已纠正，最终主记录只保留中州路。",
+    "正式两轮Overpass全部失败，原始错误逐条留在osmBatchAttempts；未按空结果排除任何候选。直接OSM API完整取回六个具名way及节点，投影采用原点纬度处经度余弦比例估算距离，湖面以射线法判断包含。OSM仅校验空间与现名，不单独证明历史身份。",
+    "正式复核亲读2020《图忆老卢湾的影剧院场馆》全文；根已独立复读1728政府答复、1730政府2026需求、1336薛理勇沿革、261建筑师项目介绍并认可历史主链。",
+    "门牌、年份、道路差异均保留在主notes而未修改原六字段。1357同组1360以及248同组249仍限制整组回填；1475同组141和1636同组1635也没有充分新证据。",
+    "主任务归档审校：将六项已取回的完整way/node响应中的原始几何嵌入directOsmFetch，并与原响应逐节点比较；补存各条原UTM转换点，结论未变化。"
+  ]
+}
