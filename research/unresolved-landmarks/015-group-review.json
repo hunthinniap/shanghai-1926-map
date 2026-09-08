@@ -1,0 +1,1327 @@
+{
+  "batch": "015",
+  "reviewedAt": "2026-09-08",
+  "baselineCommit": "68044824569daadc804c184874c06dc378f99893",
+  "scope": "补做015稳定快照50条，已完成的016—018保持不变。逐项审查所有涉及组及全部成员，未经独立批准成员不得随组回填；019保持待研究。",
+  "groupCount": 49,
+  "sourceRecordCount": 61,
+  "approvedGroups": [
+    {
+      "featureGroupId": "landmark-vs-site-715",
+      "batchRecordIds": [
+        715
+      ],
+      "reviewedSourceRecordIds": [
+        715
+      ],
+      "decision": "apply",
+      "reason": "#715: 上海黄浦官方沿革明确学校1916年迁今址，历经工部局局立格致公学等名称，现为广西北路66号格致中学；2026教育考试院招生方案直接列同址为黄浦校区及测试地点。原点在OSM格致中学校园way488669428闭合几何内，名称、地址与空间相符。确认的是原校地继续教育用途；官方另记2005年新校舍竣工，不把现有每幢校舍当作早期原楼，也不混同2014年另设的奉贤校区。 原UTM独立转换WGS84为121.475008, 31.232858。"
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1649",
+      "batchRecordIds": [
+        1649
+      ],
+      "reviewedSourceRecordIds": [
+        1649
+      ],
+      "decision": "apply",
+      "reason": "#1649: 房管局优秀历史建筑名录4F006直接将工部局西童女子学校、上海市安装工程有限公司与塘沽路390号对应，运营企业官网2026年新闻页页脚仍列同址。原Boone Road 390号、独特校名与旧楼名录构成直接旧今链；独立原点距OSM同名同门牌旧楼边界约23米，位于相同塘沽路、乍浦路街角，空间相容。房管总名录建造年为1893—1894（一说1886），与原1895有年份口径差异，保留原字段；不把后来迁走的女校现校址套回此楼。"
+    },
+    {
+      "featureGroupId": "landmark-vs-site-821",
+      "batchRecordIds": [
+        821
+      ],
+      "reviewedSourceRecordIds": [
+        821
+      ],
+      "decision": "apply",
+      "reason": "#821: 复旦大学历史系刘平发表于澎湃新闻的研究直接记载浦东同乡会1933年在爱多亚路成都路口开建、1936年八层大厦落成，并于1990年代中期因建延安东路高架桥拆除。原1933年、1454 Edward VII与该独特大厦及路口相容。独立原UTM转换点位于OSM延安东路立交闭合范围内，附近两条高架及地面路网相互印证；据此确认拆后交通用地，未细分原楼每一部分对应桥面、道路或附属空地。现地址按现代路口表达，不把旧1454号假定为今日同号。"
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1430",
+      "batchRecordIds": [
+        1430
+      ],
+      "reviewedSourceRecordIds": [
+        1430
+      ],
+      "decision": "apply",
+      "reason": "#1430: 长宁区2023年资料明确岐山村位于愚园路1032弄，建于1925—1931年，是联体花园住宅及独栋花园洋房组成的住宅群；与原中文岐山邨、1032号及1925—1930年代区间相符，原年代字段不改。2026年5月报道回顾2021年开始的居住条件改善工程，172处卫生设施改造改善486户居住环境，支持住宅用途延续，并非2026年新启动工程。原UTM独立换算点距OSM岐山村住宅区边界约6米，名称、道路门牌和空间相容。以住宅区持续使用记载，不逐栋宣称原物保存。"
+    }
+  ],
+  "reviewedGroups": [
+    {
+      "featureGroupId": "landmark-vs-site-1090",
+      "batchRecordIds": [
+        1090
+      ],
+      "reviewedSourceRecordIds": [
+        1090
+      ],
+      "decision": "hold",
+      "reason": "#1090: 静安官方沿革明确平安电影院在平安大楼底层，1939年由商场改戏院，2006年转ZARA；新闻晨报将影院、1193号与ZARA同楼直接相连。原1932年与资料所述1925年大楼、1939年影院开业不一致，原字段保留。OSM旧Zara点距27米只作位置线索；2026商业媒体仅报道PRADA计划，地图用户关于ZARA搬离的旧评论也非正式营业资料。不能以旧租户或未来计划冒充当前营业，待核；不混同西侧原沧州饭店地块的锦沧文华。 原UTM独立转换WGS84为121.450095, 31.229033。",
+      "members": [
+        {
+          "IDBAT": 1090,
+          "historicalName": "Ping'an Theater",
+          "historicalAddress": "1193 BUBBLING WELL ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1090"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-957",
+      "batchRecordIds": [
+        957,
+        1393
+      ],
+      "reviewedSourceRecordIds": [
+        957,
+        1393
+      ],
+      "decision": "hold",
+      "reason": "#957: 档案馆指南确认苏州旅沪同乡会历史机构及档案，未给635号楼体。街道史中的平江公所四至与当前博华地块相容，但公所土地曾先行分售，不能由公所大范围推定本同乡会的具体房舍。独立转换本条原点后也位于博华广场way1460069700内，当前办公零售有Hines官网支持；同组1393的院地、会员组织使用分期和旧今门牌仍待核。 原UTM独立转换WGS84为121.457365, 31.238706。 #1393: 《岁月拾萃》所述平江公所原有40余亩在四路之间，20世纪20年代已有土地分售；不能把同文另一实体江宁公所的中药厂拆迁沿革移给平江公所。原点与同组957均落在OSM博华广场闭合几何内，Hines官网确认现669号办公及零售。仍缺635号公所余存院地与已售地块、同乡会办公处的具体分期边界，整组待核，不以四至范围或新旧号相近直接判定原楼拆建。 原UTM独立转换WGS84为121.457319, 31.238827。",
+      "members": [
+        {
+          "IDBAT": 957,
+          "historicalName": "Pingjiang Native Place Association (Suzhou Native Place Association)",
+          "historicalAddress": "635 SINZA ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=957"
+        },
+        {
+          "IDBAT": 1393,
+          "historicalName": "Pingjiang Gongsuo",
+          "historicalAddress": "635 SINZA ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1393"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1231",
+      "batchRecordIds": [
+        1231
+      ],
+      "reviewedSourceRecordIds": [
+        1231
+      ],
+      "decision": "hold",
+      "reason": "#1231: 以平民小学、长寿路、1400号及英文Pingmin／Robison精确组合检索，未得到独立的本校沿革或旧门牌资料；搜索中其他地区平民学校无法对应。原点近源达大厦23米、泰极大厦26米，但没有学校与两楼地块流转证据，不据近邻认定现办公或住宅；旧1400号的现代位置待核。 原UTM独立转换WGS84为121.434151, 31.243674。",
+      "members": [
+        {
+          "IDBAT": 1231,
+          "historicalName": "Pingmin Primary School",
+          "historicalAddress": "1400 ROBISON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1231"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1102",
+      "batchRecordIds": [
+        1102
+      ],
+      "reviewedSourceRecordIds": [
+        1102
+      ],
+      "decision": "hold",
+      "reason": "#1102: 宋富祖回忆文字提供滨海小学后改南京西路小学、并入愚园路第七小学的线索；朱道伟回忆独立明确延年坊为南京西路1603弄，弄内24、26号有小学，后迁并到另一侧愚七，且延年坊居民1996年因拆迁搬走。两份个人回忆支持地址方向，尚不足证明本校楼体拆建与现地块边界。原点近南京西路7米、芮欧百货14米，不能把机构迁并等同原址仍办学，也不直接回填商场，待核。 原UTM独立转换WGS84为121.442009, 31.225141。",
+      "members": [
+        {
+          "IDBAT": 1102,
+          "historicalName": "Pinhai Primary School",
+          "historicalAddress": "1603-24 BUBBLING WELL ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1102"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-313",
+      "batchRecordIds": [
+        313
+      ],
+      "reviewedSourceRecordIds": [
+        313,
+        321
+      ],
+      "decision": "hold",
+      "reason": "#313: 以法工部局花园、建国西路133号及法文Jardins des Plantes交叉检索，未获独立沿革；另曾试探检索菜市路但没有支持，不将菜市路与建国西路视为同路。已审同组321的FMC花园管理记录，同址两点相隔约48米，不能仅凭标签判断花园与管理用房范围。原点距建国西路5米、黄浦区业余大学几何9米，没有旧花园与现大学地块直接对应，待核。 原UTM独立转换WGS84为121.458706, 31.208852。",
+      "members": [
+        {
+          "IDBAT": 313,
+          "historicalName": "Plant and Flower Garden (Jardins des Plante) - French Municipal Council",
+          "historicalAddress": "133 ROUTE JOSEPH FRELUPT",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=313"
+        },
+        {
+          "IDBAT": 321,
+          "historicalName": "FMC - Gardens, Parks and Plants",
+          "historicalAddress": "133 ROUTE JOSEPH FRELUPT",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "location-only",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=321",
+          "previousResearchEvidence": "历史地址可对应建国西路133号一带，坐标落在青少年科技活动中心周边；没有园林苗圃的边界、迁移或原设施保存证据。"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-326",
+      "batchRecordIds": [
+        326
+      ],
+      "reviewedSourceRecordIds": [
+        326
+      ],
+      "decision": "hold",
+      "reason": "#326: 胜成小学及繁体勝成小學、511号、操场组合均未找到能独立确认本校的资料。记录专指操场，不能把附近校名或临街餐馆当作同一历史实体。原点近Wagas门店22米、嘉善路60米，仅能确定现道路环境，原操场范围和存废待核。 原UTM独立转换WGS84为121.455282, 31.206621。",
+      "members": [
+        {
+          "IDBAT": 326,
+          "historicalName": "Playground - Shengcheng Primary School",
+          "historicalAddress": "511 ROUTE GASTON KAHN",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=326"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-722",
+      "batchRecordIds": [
+        722
+      ],
+      "reviewedSourceRecordIds": [
+        722
+      ],
+      "decision": "hold",
+      "reason": "#722: 市华小学、繁体市華小學、134号与运动场组合检索未取得独立校史；不能以泛称学校或近邻小学替代原市华。原点近康乐路10米、安庆路34米、闸北第一中心小学39米，尚无原校运动场与该校园的地块承接资料，待核。 原UTM独立转换WGS84为121.472234, 31.249272。",
+      "members": [
+        {
+          "IDBAT": 722,
+          "historicalName": "Playground - Shihua Primary School",
+          "historicalAddress": "134 CUNNINGHAM ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=722"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1660",
+      "batchRecordIds": [
+        1660
+      ],
+      "reviewedSourceRecordIds": [
+        1660
+      ],
+      "decision": "hold",
+      "reason": "#1660: 中文警察官舍、吴淞路210号和英文Police Dormitories三组检索未获得独立原楼沿革，不能把附近其他警务建筑合并。原点距吴淞路约2米、隧道几何约3米，但道路邻近不能证明官舍因道路工程被拆除，具体旧门牌与建筑边界待核。 原UTM独立转换WGS84为121.485311, 31.249897。",
+      "members": [
+        {
+          "IDBAT": 1660,
+          "historicalName": "Police Dormitories",
+          "historicalAddress": "210 WOOSUNG ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1660"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-715",
+      "batchRecordIds": [
+        715
+      ],
+      "reviewedSourceRecordIds": [
+        715
+      ],
+      "decision": "apply",
+      "reason": "#715: 上海黄浦官方沿革明确学校1916年迁今址，历经工部局局立格致公学等名称，现为广西北路66号格致中学；2026教育考试院招生方案直接列同址为黄浦校区及测试地点。原点在OSM格致中学校园way488669428闭合几何内，名称、地址与空间相符。确认的是原校地继续教育用途；官方另记2005年新校舍竣工，不把现有每幢校舍当作早期原楼，也不混同2014年另设的奉贤校区。 原UTM独立转换WGS84为121.475008, 31.232858。",
+      "members": [
+        {
+          "IDBAT": 715,
+          "historicalName": "Polytechnic Public School for Chinese",
+          "historicalAddress": "66 KWANGSE ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "yes",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=715"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1219",
+      "batchRecordIds": [
+        1219
+      ],
+      "reviewedSourceRecordIds": [
+        1219
+      ],
+      "decision": "hold",
+      "reason": "#1219: 普陀路捕房名称能在租界警务沿革检索中得到历史机构线索，但1291旧号、医院前身和原捕房存废的针对性检索未闭合。独立原点位于OSM普陀区人民医院院地内，不能据此认定医院改自原捕房或现楼就是旧楼；普陀路捕房也不与另一个戈登路捕房混同，待核。 原UTM独立转换WGS84为121.436762, 31.247552。",
+      "members": [
+        {
+          "IDBAT": 1219,
+          "historicalName": "Pootoo Road Police Station",
+          "historicalAddress": "1291 GORDON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1219"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-232",
+      "batchRecordIds": [
+        232
+      ],
+      "reviewedSourceRecordIds": [
+        232,
+        233,
+        234
+      ],
+      "decision": "hold",
+      "reason": "#232: 最高检／检察日报把建国中路22号院中的1915年会审公廨和1918年警务处中央捕房分别与现检察办公相连；原记录1933年不改。已审同组234第三分院与233第二特区监狱女监，后者不能等同中央捕房底层的一般候审拘留房。司法部确认第二特区监狱前身为会审公廨监狱，但未给女监楼界；原点距OSM会审公廨约63米，三点院地分界仍待核。保留010遗留复核，不把另组思南路99号整体监狱用途复制到本组。 原UTM独立转换WGS84为121.464198, 31.211767。",
+      "members": [
+        {
+          "IDBAT": 232,
+          "historicalName": "Poste Central de Police - Central Police Headquarters",
+          "historicalAddress": "22 ROUTE STANISLAS CHEVALIER",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=232"
+        },
+        {
+          "IDBAT": 233,
+          "historicalName": "Jiangsu Women Jailhouse No. 2",
+          "historicalAddress": "22 ROUTE STANISLAS CHEVALIER",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=233",
+          "previousResearchEvidence": "官方司法旧址资料可确认会审公廨、中央捕房和法院，但不能把一般候审监房等同于第二特区女子监狱。历史点距会审公廨和瑞金医院感染门诊均约51米，二者均非女监延续的证据。同组#232、#234历史记录保留，女监证据不足使整组暂缓回填。"
+        },
+        {
+          "IDBAT": 234,
+          "historicalName": "Jiangsu Supreme Court - Branch No. 3",
+          "historicalAddress": "22 ROUTE STANISLAS CHEVALIER",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=234",
+          "previousResearchEvidence": "黄浦检察院官方材料明确江苏高等法院第三分院、法租界中央捕房等曾在现院址使用，历史法院身份可确认。现地点组还含#232中央捕房、#233女监；资料没有足以区分女监楼栋及其存毁的直接证据。暂按整个司法院落的沿革记录，具体空间关系待核，不能把三条源记录一律标成同一现存法院楼。"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1302",
+      "batchRecordIds": [
+        1302
+      ],
+      "reviewedSourceRecordIds": [
+        1302
+      ],
+      "decision": "hold",
+      "reason": "#1302: 2011年商业网站设计院名录列上海市区供电局设计所在九龙路417号，构成供电机构与地址线索，但不证明历史Power Company Station的设施性质、原楼连续性或2026仍使用。原点近峨眉路35米、余杭路40米和耀江国际广场40米；缺少历史站址到现地块的直接资料，不据相同门牌或邻近办公楼回填，待核。 原UTM独立转换WGS84为121.486418, 31.252639。",
+      "members": [
+        {
+          "IDBAT": 1302,
+          "historicalName": "Power Company Station",
+          "historicalAddress": "417 FEARON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1302"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1185",
+      "batchRecordIds": [
+        1186
+      ],
+      "reviewedSourceRecordIds": [
+        1185,
+        1186
+      ],
+      "decision": "hold",
+      "reason": "#1186: 原名只有中小学泛称，同组1185也仅为中学，相隔约13米而无独立校名。中英文826号、学校组合未找到可确认校史；纺织学会会员录的西康路826号是会员通讯地址，不能把其教育经历栏当校园地址。原点贴近康海大楼几何边缘（距离四舍五入为0米但不在闭合面内），缺少旧校与现住宅的承接资料，整组待核。 原UTM独立转换WGS84为121.439449, 31.239807。",
+      "members": [
+        {
+          "IDBAT": 1185,
+          "historicalName": "Junior High School",
+          "historicalAddress": "826 FERRY ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1185",
+          "limitation": "核对原始名称、门牌和分组；缺少本成员独立现用途闭环证据，不能随组回填。"
+        },
+        {
+          "IDBAT": 1186,
+          "historicalName": "Primary and Junior High School",
+          "historicalAddress": "826 FERRY ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1186"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1005",
+      "batchRecordIds": [
+        1005
+      ],
+      "reviewedSourceRecordIds": [
+        1005
+      ],
+      "decision": "hold",
+      "reason": "#1005: 独立原点落在OSM爱国学校way437445543内，现校园地址线索为北京西路919号；但本条1935年原名仅泛称中小学和幼儿园。新民晚报学校沿革记爱国女学30年代初在江湾尘园，战后多次迁址，不能把现在的校园名称倒推为1935年的原校。899与919的地块关系、原校正式身份和建筑存废均待核。 原UTM独立转换WGS84为121.452771, 31.232853。",
+      "members": [
+        {
+          "IDBAT": 1005,
+          "historicalName": "Primary and Junior High School, Kindergarten",
+          "historicalAddress": "899 AVENUE ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1005"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1543",
+      "batchRecordIds": [
+        1543
+      ],
+      "reviewedSourceRecordIds": [
+        1543
+      ],
+      "decision": "hold",
+      "reason": "#1543: 地方志转载将漕宝路40号与江苏第二监狱相连，监狱管理局资料明确1917年始建、1919年7月启用，后扩至120亩，1937年撤销后毁于炮火；不把它当作现存监狱。旧弼教路部分今为康健路、钦州路，而原点在习勤路附近，距光大会展中心西区几何65米。缺旧监区图与现代地块叠合，不能把大范围监狱直接归为会展中心，现用途待核；不与法租界第二特区监狱混淆。 原UTM独立转换WGS84为121.423967, 31.169099。",
+      "members": [
+        {
+          "IDBAT": 1543,
+          "historicalName": "Prison",
+          "historicalAddress": "40 CAOBAO",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1543"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1039",
+      "batchRecordIds": [
+        1039
+      ],
+      "reviewedSourceRecordIds": [
+        1039,
+        1040,
+        1041
+      ],
+      "decision": "hold",
+      "reason": "#1039: 按原中文承動法律會計専修校、繁简法律会计专修及戈登路检索，未得本校独立沿革。已读同组1040稽山中学上海分校的018研究和1041惠灵中学的009研究：前者1938年租旧戈登336号四层洋房，仅支持该成员；另外两校与其同楼分期仍不明。旧336号不能等同今江宁336号庞青城住宅，近新江大楼22米也非身份证据，全部同组待核。 原UTM独立转换WGS84为121.448708, 31.235339。",
+      "members": [
+        {
+          "IDBAT": 1039,
+          "historicalName": "Professional School of Law and Accounting",
+          "historicalAddress": "336 GORDON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1039"
+        },
+        {
+          "IDBAT": 1040,
+          "historicalName": "Shaoxing Longshan Junior High School",
+          "historicalAddress": "336 GORDON ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1040",
+          "previousResearchEvidence": "稽山中学校史交流材料明确1938年上海分校曾租戈登路336号四层洋房，支持原中文绍兴？山中学的稽山读法。原名原字段不改；已审查同组#1039承动法律会计专修校、#1041惠灵中学，尚缺两者与同楼的直接承继资料。不能把旧戈登336等同今江宁336庞青城住宅（后者旧号另为7号）；全部同组保留复核。"
+        },
+        {
+          "IDBAT": 1041,
+          "historicalName": "Huiling Junior High School",
+          "historicalAddress": "336 GORDON ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1041",
+          "previousResearchEvidence": "GORDON ROAD在此为江宁路，不是陕西北路。新江大楼中心距点约25米，仅用于现位置参照。此记录与承动法律会计专修校#1039、绍兴龙山中学分校#1040共用地点组，尚未建立三条记录各自的地籍与用址沿革，不对整组回填。"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-123",
+      "batchRecordIds": [
+        126
+      ],
+      "reviewedSourceRecordIds": [
+        123,
+        126
+      ],
+      "decision": "hold",
+      "reason": "#126: 原条为江苏省立上海中学，年代空缺；同组#123为1922年上海美专，两条均为菜市路440号。姚骏恩求学回忆及新民晚报忆旧支持省立中学曾在菜市路设校，但未闭合440号内的具体房舍与美专三栋保护建筑。2026年澎湃报道政府答复明确顺昌路560号所在103-1地块2024年完成征收、目前方案征询，文化开放空间是规划目标，不能沿用早年住宅现用途或写成已经开放。两成员独立原点及校舍范围、共用时段待核，整组继续review。",
+      "members": [
+        {
+          "IDBAT": 123,
+          "historicalName": "Shanghai School of Fine Arts",
+          "historicalAddress": "440 RUE DU MARCHE",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=123",
+          "previousResearchEvidence": "澎湃2019年寻访明确原菜市路440号对应今顺昌路560号，美专主体建筑当时保存并作民居；2021年刘海粟美术馆发布的更新项目说明该区域进入更新。现用途不能直接沿用2019年结论。同组#126为省立上海中学，虽原地址亦440号，中国工程院院士姚骏恩自述可支持其战时曾在菜市路办学，但440号与美专具体校舍关系尚未直接闭合，建筑承继待核；全组保留复核，不随美专单条覆盖。"
+        },
+        {
+          "IDBAT": 126,
+          "historicalName": "Provincial Shanghai Junior High Schoo",
+          "historicalAddress": "440 RUE DU MARCHE",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=126"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1277",
+      "batchRecordIds": [
+        1277
+      ],
+      "reviewedSourceRecordIds": [
+        1277
+      ],
+      "decision": "hold",
+      "reason": "#1277: 原英文Public Hospital与原中文怡園、公园功能（Park）及1910年记录冲突。已分别检索怡园、同心路292号及年代，未找到足以校正实体的独立来源。原点落在OSM同心苑范围只能说明今日空间环境，不能据英文改认医院，也不能把附近住宅自动当成怡园原地块现用途。原名冲突、院界及存废待核。",
+      "members": [
+        {
+          "IDBAT": 1277,
+          "historicalName": "Public Hospital",
+          "historicalAddress": "292 TONGXIN",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1277"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-578",
+      "batchRecordIds": [
+        578
+      ],
+      "reviewedSourceRecordIds": [
+        578
+      ],
+      "decision": "hold",
+      "reason": "#578: 原条仅为公共停车场、河南路问号门牌且无年代。中文旧停车场与英文Honan Road检索未取得可唯一识别的场地资料。原点虽接近今河南中路及外滩老市府地块，但道路边缘或邻近商业楼均不能替代停车场边界；具体位置、旧今存废和用途待核。",
+      "members": [
+        {
+          "IDBAT": 578,
+          "historicalName": "Public Parking",
+          "historicalAddress": "?? HONAN ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=578"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1649",
+      "batchRecordIds": [
+        1649
+      ],
+      "reviewedSourceRecordIds": [
+        1649
+      ],
+      "decision": "apply",
+      "reason": "#1649: 房管局优秀历史建筑名录4F006直接将工部局西童女子学校、上海市安装工程有限公司与塘沽路390号对应，运营企业官网2026年新闻页页脚仍列同址。原Boone Road 390号、独特校名与旧楼名录构成直接旧今链；独立原点距OSM同名同门牌旧楼边界约23米，位于相同塘沽路、乍浦路街角，空间相容。房管总名录建造年为1893—1894（一说1886），与原1895有年份口径差异，保留原字段；不把后来迁走的女校现校址套回此楼。",
+      "members": [
+        {
+          "IDBAT": 1649,
+          "historicalName": "Public School for Girls (SMC)",
+          "historicalAddress": "390 BOONE ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "yes",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1649"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1288",
+      "batchRecordIds": [
+        1288
+      ],
+      "reviewedSourceRecordIds": [
+        1288
+      ],
+      "decision": "hold",
+      "reason": "#1288: 1907年北四川路公共泳池的沿革与原年份相容；资料同时记载1922年新建虹口泳池，后者今东江湾路500号，不能混作本条仍存的建筑。原点落在OSM四一一医院院区范围，但未取得多伦路284号旧池范围、关闭后房地转换与医院院界的直接资料。不能仅据医院近邻或沿革传闻判定本池拆后医疗用途，旧门牌及原池存废待核。",
+      "members": [
+        {
+          "IDBAT": 1288,
+          "historicalName": "Public Swimming Pool",
+          "historicalAddress": "284 TOLUN",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1288"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-386",
+      "batchRecordIds": [
+        386
+      ],
+      "reviewedSourceRecordIds": [
+        386
+      ],
+      "decision": "hold",
+      "reason": "#386: 新民晚报校史报道记载1937年战事后浦东中学迁到浦西东湖路办学，支持本条是战时借用旧址。尚未闭合杜美路13号具体校舍的后续存废及现代用途；机构后来回到浦东，不能把今日浦东中学校园地址移到原点。OSM附近幼儿园和商店均无直接沿革证据，门牌与原校舍范围待核。",
+      "members": [
+        {
+          "IDBAT": 386,
+          "historicalName": "Pudong Junior High School",
+          "historicalAddress": "13 ROUTE DOUMER",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=386"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1701",
+      "batchRecordIds": [
+        1701
+      ],
+      "reviewedSourceRecordIds": [
+        1701
+      ],
+      "decision": "hold",
+      "reason": "#1701: 寺史资料将1935年租屋设寺、后扩建的旧寺置于烂泥渡吴家厅一带，后因陆家嘴开发迁往源深路，现寺为迁建建筑。本条1935年及陆家嘴原点对应早期用址方向，但问号门牌缺少旧寺院界；瑞苑公寓、国寿大厦等近邻不能证明覆盖原寺。原址存废及重建地块用途待核，不将源深路375号的新寺用途标在旧点。",
+      "members": [
+        {
+          "IDBAT": 1701,
+          "historicalName": "Pudong Mosque",
+          "historicalAddress": "??",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1701"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-821",
+      "batchRecordIds": [
+        821
+      ],
+      "reviewedSourceRecordIds": [
+        821
+      ],
+      "decision": "apply",
+      "reason": "#821: 复旦大学历史系刘平发表于澎湃新闻的研究直接记载浦东同乡会1933年在爱多亚路成都路口开建、1936年八层大厦落成，并于1990年代中期因建延安东路高架桥拆除。原1933年、1454 Edward VII与该独特大厦及路口相容。独立原UTM转换点位于OSM延安东路立交闭合范围内，附近两条高架及地面路网相互印证；据此确认拆后交通用地，未细分原楼每一部分对应桥面、道路或附属空地。现地址按现代路口表达，不把旧1454号假定为今日同号。",
+      "members": [
+        {
+          "IDBAT": 821,
+          "historicalName": "Pudong Native-Place Association (Pootung Building)",
+          "historicalAddress": "1454 EDWARD VII",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "yes",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=821"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-103",
+      "batchRecordIds": [
+        103
+      ],
+      "reviewedSourceRecordIds": [
+        103
+      ],
+      "decision": "hold",
+      "reason": "#103: 已检索普济禅寺、原273号及济南路，未找到可靠的独立寺院沿革。初步检索时另查了永年路方向，未获得支持，不作为道路对应依据。现济南路、源成里及翠湖住宅近邻只作空间环境，不能替代旧寺宗地图。原寺身份、门牌和存废现用途待核。",
+      "members": [
+        {
+          "IDBAT": 103,
+          "historicalName": "Puji Temple",
+          "historicalAddress": "273 RUE BLUNTSCHLI",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=103"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1398",
+      "batchRecordIds": [
+        1398
+      ],
+      "reviewedSourceRecordIds": [
+        1398
+      ],
+      "decision": "hold",
+      "reason": "#1398: 上海市慈善基金会的组织史支持普善山庄创办于1914年并办理义冢、收殓等慈善业务，与原年份及墓地功能相容，但该组织有多处墓地、办公和材栈，组织沿革不能直接证明普善路186号墓界。原点落在OSM紫兰苑范围，仍缺原墓地与现住宅地块转换资料。与另条#1145戈登路470号材栈方向分别审查，不合并用途；原义冢门牌、迁葬及存废待核。",
+      "members": [
+        {
+          "IDBAT": 1398,
+          "historicalName": "Pushan Cemetery",
+          "historicalAddress": "186 PUSHAN",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1398"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1145",
+      "batchRecordIds": [
+        1145
+      ],
+      "reviewedSourceRecordIds": [
+        1145
+      ],
+      "decision": "hold",
+      "reason": "#1145: 组织史可确认普善山庄慈善实体；汇编转引线索称其材栈设在戈登路、康脑脱路口，与原点江宁路康定路口方向相容，但未亲读原《江宁路（戈登路）史料汇编》具体页及470号房地图。不同于#1398普善路义冢，不能因同机构而视作墓地。OSM艺海大厦覆盖当前原点仅为空间证据，材栈原院界、拆迁和现代楼地转换待核。",
+      "members": [
+        {
+          "IDBAT": 1145,
+          "historicalName": "Pushan Shanzhuang",
+          "historicalAddress": "470 GORDON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1145"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-919",
+      "batchRecordIds": [
+        919
+      ],
+      "reviewedSourceRecordIds": [
+        919
+      ],
+      "decision": "hold",
+      "reason": "#919: 《普陀洛迦新志》僧人记事确有1923—1924年居上海报本堂下院的记载，支持该历史实体存在；未取得长沙路163号的直接地址、院界或后来沿革。附近地铁设施和大观园等POI不能补足这一链条，不与普陀山本山报本堂混淆。旧院位置、存废及现用途待核。",
+      "members": [
+        {
+          "IDBAT": 919,
+          "historicalName": "Putuoshan Bao Bentang Xiayuan Temple",
+          "historicalAddress": "163 CHANGSHA ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=919"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-9",
+      "batchRecordIds": [
+        9
+      ],
+      "reviewedSourceRecordIds": [
+        9
+      ],
+      "decision": "hold",
+      "reason": "#9: 学校资料将潜德小学及其1945年附设幼儿班与永安路教育机构联系起来；旧教会建筑研究地址表列潜德小学永安路8号。后幼儿园独立并迁址，2023年政府招生表已列永安路幼儿园在福佑路144号，不能把该园现地址或附近四川南路小学用途填回原8号。原小学与附设幼儿班房舍范围、旧楼存废及现用途待核。",
+      "members": [
+        {
+          "IDBAT": 9,
+          "historicalName": "Qiande Primary School",
+          "historicalAddress": "8 RUE LAGUERRE",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=9"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-636",
+      "batchRecordIds": [
+        636
+      ],
+      "reviewedSourceRecordIds": [
+        636,
+        637
+      ],
+      "decision": "hold",
+      "reason": "#636: 钱江会馆史料记1909年建馆、馆后办钱江小学，1956年改宁波路第三小学，1984年旧馆拆除改建五层校舍。2023年政府招生与2024年物业合同明确今星光幼儿园使用宁波路430弄5号。已独审同组#637（1909年会馆）与本条无年代小学，两条旧号均430弄1号；但原点均靠近牛庄路、南无锡路，当前幼儿园仅有距本条55米的OSM节点，无校地边界，尚不能证明两点覆盖旧会馆的哪一部分。1号至5号关系与完整院界待核，整组review，不把1984年拆后新校舍写成旧馆保存。",
+      "members": [
+        {
+          "IDBAT": 636,
+          "historicalName": "Qianjiang Primary School",
+          "historicalAddress": "430-1 NINGPO ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=636"
+        },
+        {
+          "IDBAT": 637,
+          "historicalName": "Qianjiang Guild",
+          "historicalAddress": "430-1 NINGPO ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=637",
+          "limitation": "核对原始名称、门牌和分组；缺少本成员独立现用途闭环证据，不能随组回填。"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1110",
+      "batchRecordIds": [
+        1111
+      ],
+      "reviewedSourceRecordIds": [
+        1110,
+        1111
+      ],
+      "decision": "hold",
+      "reason": "#1111: 已检索岐江职业中学及愚园路68号，未取得可靠校史与现代房地对应。原组另有#1110仅名中学、同68号、年代亦缺，已逐项审阅，两名不能在没有校史证据时合并为一个学校。原点虽接近晶品等商业设施，缺少旧校范围及拆迁链，全部组员现用途待核。",
+      "members": [
+        {
+          "IDBAT": 1110,
+          "historicalName": "Junior High School",
+          "historicalAddress": "68 YUYUEN ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1110",
+          "limitation": "核对原始名称、门牌和分组；缺少本成员独立现用途闭环证据，不能随组回填。"
+        },
+        {
+          "IDBAT": 1111,
+          "historicalName": "Qijiang Professional Junior High School",
+          "historicalAddress": "68 YUYUEN ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1111"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-43",
+      "batchRecordIds": [
+        43
+      ],
+      "reviewedSourceRecordIds": [
+        43
+      ],
+      "decision": "hold",
+      "reason": "#43: 勤德女子小学名称与旧562弄38号检索没有形成独立证据链。不能将名称相似的求德小学、景德学校或其他教会女校套用，也未获得弄内校舍门牌沿革。原点邻近今会稽路方向只是地理背景，具体旧校身份、存废和现用途待核。",
+      "members": [
+        {
+          "IDBAT": 43,
+          "historicalName": "Qinde Primary School for Girls",
+          "historicalAddress": "562-38 BOULEVARD DES DEUX REPUBLIQUES",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=43"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-478",
+      "batchRecordIds": [
+        478
+      ],
+      "reviewedSourceRecordIds": [
+        478
+      ],
+      "decision": "hold",
+      "reason": "#478: 原条青岛球会，英文Qingdao (Football) Association，门牌与年代都缺失。以繁简中文及民国徐家汇语境检索未找到可靠历史实体；不得将搜索所得现代青岛足球俱乐部或上海其他运动场认作本条。虽然原点落在OSM美罗城商业地块内，仍缺旧球会具体用址、存废和地块转换链，现用途待核。",
+      "members": [
+        {
+          "IDBAT": 478,
+          "historicalName": "Qingdao (Football) Association",
+          "historicalAddress": "??",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=478"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-893",
+      "batchRecordIds": [
+        894
+      ],
+      "reviewedSourceRecordIds": [
+        893,
+        894
+      ],
+      "decision": "hold",
+      "reason": "#894: 原中文为青華學校，不能与清华学校混同。青华、白克路428号及同组树华职业补习学校的组合检索仅得到原数据库及其镜像，未建立独立身份和沿革。同组#893樹華職業補習學校也是428号但点位不同，是否同校舍待核。原点距长征医院北院界约37米，不能据近邻医院认定原学校现用。",
+      "members": [
+        {
+          "IDBAT": 893,
+          "historicalName": "Shuhua Professional Vocational Continuation School",
+          "historicalAddress": "428 BURKILL ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=893",
+          "limitation": "核对原始名称、门牌和分组；缺少本成员独立现用途闭环证据，不能随组回填。"
+        },
+        {
+          "IDBAT": 894,
+          "historicalName": "Qinghua School",
+          "historicalAddress": "428 BURKILL ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=894"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-663",
+      "batchRecordIds": [
+        663
+      ],
+      "reviewedSourceRecordIds": [
+        663
+      ],
+      "decision": "hold",
+      "reason": "#663: 《民主》2023年文章记1938年效实中学沪分校在牛庄路清凉寺旁民宅办学，独立支持寺名和道路；“寺旁民宅”不能改写为学校占用旧寺。原点位于OSM商贸旅游学校范围，但未找到764号旧寺与该校地块的直接继承资料。寺院具体界址、存废和现用途待核。",
+      "members": [
+        {
+          "IDBAT": 663,
+          "historicalName": "Qingliang",
+          "historicalAddress": "764 NEWCHWANG ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=663"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-186",
+      "batchRecordIds": [
+        186
+      ],
+      "reviewedSourceRecordIds": [
+        186
+      ],
+      "decision": "hold",
+      "reason": "#186: 原中文青年中學，无始终年。以学校名、环龙路及南昌路34号检索，未取得可识别该校的独立校史或旧址资料。原点在OSM渔阳里范围，距社会主义青年团中央机关旧址约4米、七色花小学约11米；这些是不同实体，不能以“青年”同词或近邻关系确定校舍沿革。",
+      "members": [
+        {
+          "IDBAT": 186,
+          "historicalName": "Qingnian Junior High School",
+          "historicalAddress": "34 ROUTE VALLON",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=186"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-846",
+      "batchRecordIds": [
+        846
+      ],
+      "reviewedSourceRecordIds": [
+        846
+      ],
+      "decision": "hold",
+      "reason": "#846: 教会学校回顾资料记清心女中抗战中借静安寺路591弄5号，1946年返陆家浜路；上观2023年乔榛访谈记清心小学1938年迁润康邨591弄5号，后改南京西路第一小学。中小学曾同址的线索较强，但小学名称沿续不能证明临时女中校舍今天仍办学。原点距OSM上海电视台地块约13米、润康邨约32米，591弄5号现界址、建筑存废和用途待核，不使用迁回后的陆家浜路校园作为现址。",
+      "members": [
+        {
+          "IDBAT": 846,
+          "historicalName": "Qingxin Junior High School for Girls",
+          "historicalAddress": "591-5 BUBBLING WELL ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=846"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1248",
+      "batchRecordIds": [
+        1248
+      ],
+      "reviewedSourceRecordIds": [
+        1248
+      ],
+      "decision": "hold",
+      "reason": "#1248: 原中文浸禮會教堂，原年代1847—1920。教会建筑研究附录的检索摘录列浸会堂、进德女校及明德小学位福建南路147（149）号，与原145/149 Rue Tourane及原点福建南路、人民路附近相容。第一浸会堂条目记1847年创设、人民路706号和1958年划给小学，但其1991年拆除段落转称“天安堂”，存在实体混杂，不据此确认本堂拆除年份。现地块与小学关系、建筑存废和用途仍待核，原终年1920不解释为拆除年。",
+      "members": [
+        {
+          "IDBAT": 1248,
+          "historicalName": "Qinlihui Jiaotang",
+          "historicalAddress": "145/149 RUE TOURANE",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1248"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-46",
+      "batchRecordIds": [
+        46
+      ],
+      "reviewedSourceRecordIds": [
+        46
+      ],
+      "decision": "hold",
+      "reason": "#46: 曾茂朝生平报道记其1943年在上海清如小学就读，支持学校身份但未列地址。上观道路回顾明确会稽路原华成路（Rue Voisin）；原点在会稽路、西藏南路附近。仍未找到清如小学59-1号的具体建筑、迁并或存废资料，现用途待核。",
+      "members": [
+        {
+          "IDBAT": 46,
+          "historicalName": "Qinru Primary School",
+          "historicalAddress": "59-1 RUE VOISIN",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=46"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1430",
+      "batchRecordIds": [
+        1430
+      ],
+      "reviewedSourceRecordIds": [
+        1430
+      ],
+      "decision": "apply",
+      "reason": "#1430: 长宁区2023年资料明确岐山村位于愚园路1032弄，建于1925—1931年，是联体花园住宅及独栋花园洋房组成的住宅群；与原中文岐山邨、1032号及1925—1930年代区间相符，原年代字段不改。2026年5月报道回顾2021年开始的居住条件改善工程，172处卫生设施改造改善486户居住环境，支持住宅用途延续，并非2026年新启动工程。原UTM独立换算点距OSM岐山村住宅区边界约6米，名称、道路门牌和空间相容。以住宅区持续使用记载，不逐栋宣称原物保存。",
+      "members": [
+        {
+          "IDBAT": 1430,
+          "historicalName": "Qishan Apartments",
+          "historicalAddress": "1032 YUYUAN ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "yes",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1430"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1600",
+      "batchRecordIds": [
+        1601
+      ],
+      "reviewedSourceRecordIds": [
+        1600,
+        1601
+      ],
+      "decision": "hold",
+      "reason": "#1601: 《中国档案报》转载资料将秋瑾1906年筹办《中国女报》的北四川路厚德里对应今四川北路1515弄91号。中新网2012年探访记仍为民居出租，同时指出保护牌载建筑建于1920年代，与秋瑾1906年居住有楼代冲突，不能认定现楼即1906年原物。尚无近期直接用途资料。已核同组#1600日本海軍中部墓地同为1515号，针对中文全称和门牌检索仍无独立身份闭环；不能把墓地一并映射为秋瑾旧居，同组地块关系待核。",
+      "members": [
+        {
+          "IDBAT": 1600,
+          "historicalName": "Cemetery of the Japanese Navy",
+          "historicalAddress": "1515 NORTH SZECHUEN ROAD",
+          "inBatch": false,
+          "inThisRound": false,
+          "verificationStatus": null,
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1600",
+          "previousResearchEvidence": "同址现为永丰坊住宅里弄，但墓地清除后直接建成永丰坊的时序与地籍链尚无可靠证据。"
+        },
+        {
+          "IDBAT": 1601,
+          "historicalName": "Qiu Jin's Residence",
+          "historicalAddress": "1515 NORTH SZECHUEN ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1601"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-953",
+      "batchRecordIds": [
+        953
+      ],
+      "reviewedSourceRecordIds": [
+        953
+      ],
+      "decision": "hold",
+      "reason": "#953: 原中文求徳女子女子中學含重复字；以求德女中检索，教会建筑研究附录记1928年学校地址新闸路565号，地方回忆亦述求德女校与附近大田路天主堂及后续学校合并关系。资料尚未把565-16的具体旧校舍与现建筑相连。现采购文件中的565弄61号幼儿园不是原16号，不能对调数字；原点距OSM大田路天主堂约40米，也不足确定校舍。门牌、存废及现用途待核。",
+      "members": [
+        {
+          "IDBAT": 953,
+          "historicalName": "Qiude Junior High School for Girls",
+          "historicalAddress": "565-16 SINZA ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=953"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-387",
+      "batchRecordIds": [
+        387
+      ],
+      "reviewedSourceRecordIds": [
+        387
+      ],
+      "decision": "hold",
+      "reason": "#387: 原中文私立求智小學，无始终年。学校名、延庆路及56号组合检索未发现独立身份与地址资料，原数据库的镜像不算独立证据。不能将求智改作其他求知学校。原点距OSM沪江别墅边界约7米，缺乏学校借址或建筑转用链条，不据近邻认定住宅现用。",
+      "members": [
+        {
+          "IDBAT": 387,
+          "historicalName": "Qiuzhi Primary School",
+          "historicalAddress": "56 ROUTE DE GROUCHY",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=387"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-223",
+      "batchRecordIds": [
+        223
+      ],
+      "reviewedSourceRecordIds": [
+        223
+      ],
+      "decision": "hold",
+      "reason": "#223: 原中文群化學校，原门牌7/11 Route Conty。上观道路资料将Route Conty对应康悌路、今建国东路；原点却在重庆南路以西建国中路附近，距OSM8号桥一期约2米。未找到学校名与原门牌的独立沿革，且道路、原点对应尚有疑点，不能直接赋予创意园区现用。",
+      "members": [
+        {
+          "IDBAT": 223,
+          "historicalName": "Qunhua Primary School",
+          "historicalAddress": "7/11 ROUTE CONTY",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=223"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-774",
+      "batchRecordIds": [
+        774
+      ],
+      "reviewedSourceRecordIds": [
+        774
+      ],
+      "decision": "hold",
+      "reason": "#774: 原中文群英小學，地址仅写Yuqingli Loong。学校名、106号及余庆里组合检索未得到可与原点闭合的独立材料；余庆里只是转写检索假设，不能据此固定中文里名。现代茂名南路余庆里、其他城市同名学校和片区开发结果均未采用。原点位于苏州河北侧、浙江北路以东附近，原里弄和学校现用途待核。",
+      "members": [
+        {
+          "IDBAT": 774,
+          "historicalName": "Qunying Primary School",
+          "historicalAddress": "106-6 YUQINGLI LOONG",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=774"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1416",
+      "batchRecordIds": [
+        1416
+      ],
+      "reviewedSourceRecordIds": [
+        1416
+      ],
+      "decision": "hold",
+      "reason": "#1416: 新湖南2016年文章区分上海群治大学与湖南群治学校，引用上海地方志称沪校在劳勃生路110号、今长寿路728号。与原Robison Road和群治大學相容，不能把长沙校址的消失描述套到上海。原点在OSM西部俊园地块内部，但未找到沪校完整界址、拆迁或改建为该小区的直接资料，旧校舍存废与现用途仍待核。",
+      "members": [
+        {
+          "IDBAT": 1416,
+          "historicalName": "Qunzhi University",
+          "historicalAddress": "?? ROBISON ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1416"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1469",
+      "batchRecordIds": [
+        1469
+      ],
+      "reviewedSourceRecordIds": [
+        1469
+      ],
+      "decision": "hold",
+      "reason": "#1469: 地方回顾文章称1893年湖南人集资建庙、1950年代改感应器厂，后为8号桥创意园；与原中文瞿真人廟、1893年有呼应，但文章所述旧址在汝南街以北。原点却在五里桥路附近的OSM正房小区内，存在明显街段差异。学报检索摘录提供瞿公信仰和1950年代庙宇拆除线索，未读完整论文，不能据此补成具体门牌。旧庙界址、拆建关系及原点现用途待核。",
+      "members": [
+        {
+          "IDBAT": 1469,
+          "historicalName": "Quzhenren Temple",
+          "historicalAddress": "?? CHUMEN ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "likely",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1469"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-158",
+      "batchRecordIds": [
+        158
+      ],
+      "reviewedSourceRecordIds": [
+        158
+      ],
+      "decision": "hold",
+      "reason": "#158: 原live中文仅为醫院，不能从Quzhibu擅造中文院名。上师大文章将Auguste Boppe对应蒲柏路、今太仓路；英文院名及蒲柏路480号检索未得到独立医院身份或旧址资料。原点在OSM淮海中路小学范围内，缺乏医院转作学校的直接沿革，不能据校界位置确认当前用途。",
+      "members": [
+        {
+          "IDBAT": 158,
+          "historicalName": "Quzhibu Hospital",
+          "historicalAddress": "480 RUE AUGUSTE BOPPE",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "unresolved",
+          "mapWriteRecommendation": "no",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=158"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-790",
+      "batchRecordIds": [
+        790
+      ],
+      "reviewedSourceRecordIds": [
+        790
+      ],
+      "decision": "hold",
+      "reason": "#790: 静安区资料与设计院项目说明确认1933年跑马总会大楼转为历史博物馆；文旅局2026年8月更新的直属单位资料列南京西路325号。设计院明确馆区东楼1933年、西楼1928年；原记录为跑馬俱樂部、1933年，机构及东楼沿革有直接证据，但原点在黄陂北路西侧近286艺术空间和工商银行，距OSM标注1933年跑马总会的ROOF325建筑约35米。慕霍克路304号与东西楼、街侧的具体对应仍待核，暂不回填。该组仅#790，不与整个跑马场地块共用结论。",
+      "members": [
+        {
+          "IDBAT": 790,
+          "historicalName": "Race Club",
+          "historicalAddress": "304 MOHAWK ROAD",
+          "inBatch": true,
+          "inThisRound": true,
+          "verificationStatus": "verified",
+          "mapWriteRecommendation": "review",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=790"
+        }
+      ]
+    }
+  ]
+}

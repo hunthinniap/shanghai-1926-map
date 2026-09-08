@@ -1,0 +1,193 @@
+{
+  "batch": "015",
+  "reviewedAt": "2026-09-08",
+  "scope": "主任务对关键实体、来源时效和全部成员限制的独立复核；与三份逐条搜索日志互补，不将辅助空间匹配单独作为现用途证据。",
+  "rootResearchQueries": [
+    {
+      "ids": [
+        232,
+        233,
+        234
+      ],
+      "queries": [
+        "中央巡捕房 女监 建国中路 22号 黄浦公安分局 2025",
+        "建国中路 20 22号 中央巡捕房 女监 保护 范围",
+        "\"第二特区\" \"女监\" 上海",
+        "\"女监\" \"薛华立路\"",
+        "\"江苏第二\" \"监狱\" \"22\" 上海",
+        "\"女监\" \"建国中路\"",
+        "\"女监居北\" 上海",
+        "\"第二特区监狱\" site:gov.cn",
+        "\"女监\" \"薛华立\" site:cn",
+        "\"监狱\" \"思南路99\" 女"
+      ]
+    },
+    {
+      "ids": [
+        1090
+      ],
+      "queries": [
+        "\"平安大楼\" \"Prada\" \"2026\"",
+        "\"平安大楼\" \"普拉达\"",
+        "\"平安大楼\" \"ZARA\" 2026"
+      ]
+    },
+    {
+      "ids": [
+        1649
+      ],
+      "queries": [
+        "site:siec.scg.com.cn 塘沽路390 2026",
+        "site:scg.com.cn \"安装\" \"塘沽路390\" 2025",
+        "site:fgj.sh.gov.cn \"工部局西童女子学校\""
+      ]
+    }
+  ],
+  "sourceReviews": [
+    {
+      "ids": [
+        232,
+        233,
+        234
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "最高人民检察院／检察日报：百年老楼见证初心与传承（2021-06-25）",
+          "url": "https://www.spp.gov.cn/spp/dsxxjy/202106/t20210625_530510.shtml",
+          "accessMethod": "搜索返回正文",
+          "finding": "两历史办公楼为1915年会审公廨与1918年警务处中央捕房，现作黄浦检察院办公，支持具体机构沿革；原232的1933年不改。"
+        },
+        {
+          "title": "司法部：民国时期唯一的一本监管医学专著《监狱卫生概要》（2025-08-01）",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/jgsz/jgszzsdw/zsdwzgjygzxh/zgjygzxhxwdt/202508/t20250801_523315.html",
+          "accessMethod": "搜索返回正文",
+          "finding": "明确上海第二特区监狱前身是法租界会审公廨监狱，1931年接收；没有给女监楼栋范围，不能据此证明原22号点位就是该监狱女监。"
+        },
+        {
+          "title": "《上海监狱志》论坛转载：上海第二特区监狱条目（原书页未核）",
+          "url": "https://www.hongyanhun.com/bbs/read.php?page=1&skinco=wind8black&tid=1408&toread=1",
+          "accessMethod": "搜索返回转录文字，非原始书页",
+          "finding": "全监地址为马斯南路285号、今思南99号，女监在监区北部。只能作为进一步查原监区图的线索，不能把此女监等同中央捕房的一般候审拘留房。"
+        }
+      ],
+      "limitation": "独立核对三个原始点与现会审公廨几何，旧女监与原22号院地仍未闭合；不把010已批准246/1510思南99号整体监狱用途复用至这组三点，不追加批准批外成员。"
+    },
+    {
+      "ids": [
+        1090
+      ],
+      "decision": "hold-pending-current-use",
+      "sources": [
+        {
+          "title": "商䲜时代：五年不开新店后，这次Prada为何要在上海下一盘大棋？（2026-04-20）",
+          "url": "https://www.sohu.com/a/1011812204_121716405",
+          "accessMethod": "搜索返回正文，商业媒体信息",
+          "finding": "只称计划在平安大楼开设旗舰店，不能证明已经装修完毕或开业。"
+        },
+        {
+          "title": "Apple Maps：平安大楼用户评价",
+          "url": "https://maps.apple.com/place?auid=1117162011833092&lsp=57879",
+          "accessMethod": "搜索返回用户评价",
+          "finding": "用户称旧ZARA已经搬走，仅作旧商业用途可能过时的提醒，不能代替新运营方的正式资料。"
+        }
+      ],
+      "limitation": "历史平安大戏院与平安大楼关系可确认；旧租户资料不能证明2026现用途，新店传闻也不等于实际营业。"
+    },
+    {
+      "ids": [
+        1649
+      ],
+      "decision": "supports-office-use",
+      "sources": [
+        {
+          "title": "上海市房管局：第四批优秀历史建筑4F006（页面更新2023-06-01）",
+          "url": "https://fgj.sh.gov.cn/yxlsjz1/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "accessMethod": "主任务搜索返回名录条目后，独立直接打开yxlsjz与yxlsjz1两路径正文；图书馆地址接口文字交叉核对",
+          "finding": "工部局西童女子学校、上海市安装工程有限公司和塘沽路390号直接对应。"
+        },
+        {
+          "title": "上海市安装工程集团有限公司官网",
+          "url": "https://siec.scg.com.cn/",
+          "accessMethod": "直接打开在主任务未返回正文；搜索索引返回2026年8月新闻及地址页脚",
+          "finding": "企业官网仍以塘沽路390号为联系地址，支持旧校楼企业办公用途；不以图书馆偏东1.168公里的坐标替换原点。"
+        },
+        {
+          "title": "上海建工安装集团：上海建工安装集团亮相2026中国物博会（正文日期2026-07-02）",
+          "url": "https://siec.scg.com.cn/scg_az_jtyw/2026-07-14/Detail_241258.htm",
+          "accessMethod": "主任务搜索返回后独立直接打开企业正文及地址页脚",
+          "finding": "可定位的2026年企业页面同列塘沽路390号。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1430
+      ],
+      "decision": "supports-residential-use",
+      "sources": [
+        {
+          "title": "上海长宁：逛逛愚园路，认识历史名人（2023-10-02）",
+          "url": "https://www.shcn.gov.cn/col6991/20231009/1245614.html",
+          "accessMethod": "主任务直接打开正文",
+          "finding": "岐山村在愚园1032弄，住宅群建于1925—1931年，与原名称、年代及地址相容。"
+        },
+        {
+          "title": "上海长宁：媒体视野中的长宁（2026-05-16）",
+          "url": "https://www.shcn.gov.cn/col3991/20260518/1309678.html",
+          "accessMethod": "主任务直接打开正文",
+          "finding": "2026报道回顾2021年启动的居住条件改善，172处卫生设施改造惠及486户；支持继续居住，不能说工程在2026年才启动。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        715
+      ],
+      "decision": "supports-school-site-continuity",
+      "sources": [
+        {
+          "title": "上海黄浦：百五十载，格物致知（2024-11-16）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_29369657",
+          "accessMethod": "主任务直接打开正文",
+          "finding": "格致公学1916年迁今址，现格致中学广西北路66号，2005年有新校舍竣工；应确认原校地继续教育用途，不宣称每幢现楼均为旧校舍。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        821
+      ],
+      "decision": "supports-demolished-traffic-site",
+      "sources": [
+        {
+          "title": "澎湃新闻：刘平，辛亥元勋，革命游侠——洪门五圣山山主向海潜事略（2023-03-26）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_22399882",
+          "accessMethod": "主任务直接打开手机版全文；桌面地址未成功返回",
+          "finding": "研究作者为复旦大学历史系教授；直接记1933年在爱多亚路成都路口开建、1936年落成、1990年代中期因延安东路高架建设拆除。原点位于现代立交范围，确认交通设施及附属用地，拆除年不写死为1995。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        123,
+        126
+      ],
+      "decision": "hold-and-correct-source-attribution",
+      "sources": [
+        {
+          "title": "中国光学／澎湃号：院士访谈 | 北京航空航天大学，姚骏恩院士（2022-05-08）",
+          "url": "https://www.thepaper.cn/newsDetail_forward_17956844",
+          "accessMethod": "主任务直接打开并读求学段落；院士馆同稿直接打开失败",
+          "finding": "受访者为姚骏恩，非姚开泰；自述省立上海中学战时迁菜市路、改私立沪新中学。未提供440号具体房舍链，整组继续暂缓。"
+        }
+      ],
+      "correction": "纠正018中同组#123的来源署名错误，仅将相关研究文本的姚开泰改为姚骏恩，不改历史源字段、判断、批准名单或地图。"
+    }
+  ],
+  "finalEditorialReview": {
+    "record": 313,
+    "change": "明确菜市路是未获支持的试探检索，不暗示它与建国西路同路；保留实际查询原词，同步part和log。",
+    "decisionUnchanged": "unresolved/no"
+  }
+}
