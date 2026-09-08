@@ -1,0 +1,1584 @@
+{
+  "batch": "011",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/011-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/011-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 12,
+      "demolished-current-use": 5,
+      "location-only-current-use": 33
+    },
+    "byResolutionStatus": {
+      "resolved": 17,
+      "probable": 22,
+      "unresolved": 11
+    },
+    "mapWriteRecommendation": {
+      "review": 30,
+      "yes": 9,
+      "no": 11
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 4112,
+      "historicalName": "Joffre Police Station (Poste Joffre)",
+      "coordinates": {
+        "wgs84": [
+          121.471254,
+          31.225648
+        ],
+        "gcj02": [
+          121.475785,
+          31.22371
+        ]
+      },
+      "modernRoadAddress": "211 淮海中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "霞飞巡捕房旧址／上海爱马仕之家",
+      "currentUse": "历史巡捕房建筑的商业零售再利用；旧211号与现入口及各楼栋范围待核",
+      "currentAddress": "上海市黄浦区淮海中路217、233号及嵩山路65、67号（2023更新名录；爱马仕入口217号）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai本条注释直接写更名为Lafayette Police Station #88，两条地址同为211 AVENUE JOFFRE，应保留各自历史记录。新民晚报2018年记淮海中路235号霞飞捕房旧楼在2014年由爱马仕入驻。房管局第三批名录2023更新页将3C005旧捕房今用途列为商场，并明确现址217、233号及嵩山路65、67号，品牌官网现列217号；人民网2014开幕报道也直接把217号建筑追溯到旧捕房。现代入口与保护建筑范围已有直接官方证据，剩余旧211号到现址的门牌重编及历史捕房各楼栋边界仍待核，因此本part暂保留review供整组复核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=4112",
+        "https://www.virtualshanghai.net/data/buildings?ID=88",
+        "https://news.sina.cn/2018-02-02/detail-ifyreuzn1870796.d.html?vt=4",
+        "https://www.hermes.cn/cn/zh/find-store/china/shanghai/hermes-maison-shanghai-GTXRBUSG/",
+        "https://www.openstreetmap.org/node/6897142553",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://lady.people.com.cn/n/2014/0919/c1014-25690640.html"
+      ]
+    },
+    {
+      "IDBAT": 1388,
+      "historicalName": "Junior High School (Datong University)",
+      "historicalNameCorrectionZh": "大同大學付中學",
+      "historicalStartYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.445509,
+          31.2341
+        ],
+        "gcj02": [
+          121.450111,
+          31.232225
+        ]
+      },
+      "modernRoadAddress": "1340 新闸路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市五四中学（原大同大学附中二院）",
+      "currentUse": "中学教育，保留1939年大同大学附中二院校舍；历史门牌对应待核",
+      "currentAddress": "上海市静安区新闸路1370号（历史记录为1340号）",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "review",
+      "evidence": "静安区2025年官方报道直接记五四中学在1370号、正谊楼等三栋由1939年大同大学附中二院校舍演变而来，与本条1939年及同组#1046二校舍的名称相符。学校1995年并入市西，1998年新群中学迁入后复牌，不能声称办学主体从未变化。1340与1370号的门牌对应及旧校园边界待核，且1340弄另为三元坊，故两条均暂缓地图回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1388",
+        "https://www.jingan.gov.cn/rmtzx/003001/20251031/960721d6-1435-4f59-aab8-951179f0f53b.html",
+        "https://zh.wikipedia.org/wiki/新闸路",
+        "https://www.openstreetmap.org/way/1330910239"
+      ]
+    },
+    {
+      "IDBAT": 1046,
+      "historicalName": "Junior High School No. 2 of Datong University",
+      "historicalNameCorrectionZh": "大同大學付属中学第二校舎",
+      "historicalStartYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.445361,
+          31.234038
+        ],
+        "gcj02": [
+          121.449963,
+          31.232164
+        ]
+      },
+      "modernRoadAddress": "1340 新闸路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海市五四中学（原大同大学附中二院）",
+      "currentUse": "中学教育，保留1939年大同大学附中二院校舍；历史门牌对应待核",
+      "currentAddress": "上海市静安区新闸路1370号（历史记录为1340号）",
+      "currentUseRelationship": "same-site-continuing-use",
+      "mapWriteRecommendation": "review",
+      "evidence": "现五四中学在新闸路1370号；2025年区政府报道确认正谊楼等仍保留1939年大同大学附中二院校舍。历史二校舍名称和年代可与同组#1388对应，但输入1340号与今天1370号尚无直接门牌改编证据，1340弄另有三元坊住宅，原校园边界待核。只确认学校及建筑群沿革，不将1370号结论机械扩展到1340号全部地块。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1046",
+        "https://www.jingan.gov.cn/rmtzx/003001/20251031/960721d6-1435-4f59-aab8-951179f0f53b.html",
+        "https://zh.wikipedia.org/wiki/新闸路",
+        "https://www.openstreetmap.org/way/1330910239"
+      ]
+    },
+    {
+      "IDBAT": 1719,
+      "historicalName": "Kabuki Cinema",
+      "historicalNameCorrectionZh": "永安伎電影院",
+      "historicalStartYear": 1924,
+      "coordinates": {
+        "wgs84": [
+          121.478875,
+          31.262029
+        ],
+        "gcj02": [
+          121.483384,
+          31.260087
+        ]
+      },
+      "modernRoadAddress": "1800 四川北路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "仲益永安商厦（原永安电影院旧址）",
+      "currentUse": "电影院拆除后改建的商厦，含商业与酒店用途",
+      "currentAddress": "上海市虹口区四川北路1800号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Kabuki即上海歌舞伎座，后经上海剧场、永安大戏院而为永安电影院，历史地址1800号延续。影院历经战毁重建，1990年代拆除后原址建商厦；上观的鲁迅观影研究直接指原上海演艺馆今为仲益永安商厦，华住官网现列1800号4楼汉庭酒店。仅描述整栋商厦含商业及住宿，不能说现楼是1924年影院原建筑，也不把整栋认作汉庭。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1719",
+        "https://export.shobserver.com/toutiao/html/535716.html",
+        "https://zh.wikipedia.org/wiki/永安電影院",
+        "https://m.huazhu.com/Hotel/Detail/2000811",
+        "https://www.openstreetmap.org/way/1083786831"
+      ]
+    },
+    {
+      "IDBAT": 518,
+      "historicalName": "Kelly & Walsh",
+      "historicalNameCorrectionZh": "別発書店",
+      "coordinates": {
+        "wgs84": [
+          121.483701,
+          31.240931
+        ],
+        "gcj02": [
+          121.488191,
+          31.238965
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "和平商务楼（别发洋行大楼）",
+      "currentUse": "历史建筑沿用，现作商办及餐饮等商业用途",
+      "currentAddress": "上海市黄浦区南京东路66号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "黄海涛研究直接确认别发洋行1919年迁至南京路12号，重编后为66号，原楼仍立而外貌改动，即和平商务楼；2024年研究进一步说明12、22、66号来自门牌重编而非迁址。现餐饮地址仍列南京东路66号和平商务楼3、4层，历史名称与现代门牌可闭合。但OSM本条原坐标距工联大厦要素中心仅约8米，工联地址为南京东路98号，政府楼宇灯光清单也将工联大厦和和平商务楼分列。需核对输入点是否偏移及两栋建筑地块边界，因此本条坐标闭环待核，先不回填地图；印刷用途原字段保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=518",
+        "https://www.researchgate.net/publication/372574115_qingmominchushanghaidexishudianbiefayangxing",
+        "https://cbfx.cbpt.cnki.net/portal/journal/portal/client/paper/8fefc58dac809c0ca99b722890438763",
+        "https://maps.apple.com/place?auid=1118498791865154&lsp=57879",
+        "https://you.ctrip.com/food/shanghai2/17515870.html",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/fad689f2-7e01-4d30-9e55-7723e864483d.pdf",
+        "https://cnmilaw.gov/pdf/cnmiregister/2005_Volume_27/2005_Number_01.pdf",
+        "https://www.openstreetmap.org/way/1196676110"
+      ]
+    },
+    {
+      "IDBAT": 1732,
+      "historicalName": "KING'S LYNN APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.442905,
+          31.205249
+        ],
+        "gcj02": [
+          121.44751,
+          31.203365
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "安亭公寓（金司林公寓）",
+      "currentUse": "历史公寓保留，继续作为居民住宅使用",
+      "currentAddress": "上海市徐汇区安亭路43号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "英文King’s Lynn Apartments与金司林公寓的对应、旧国富门路43号与今安亭路43号共同锁定本楼。房管局第四批名录列原名金司林公寓、现名安亭公寓；市历保中心供稿的2026年文章确认2025年修缮后仍作居民住宅。不同资料对建成年份和设计者有出入，本次不改历史年代字段，也不把这些有争议的细节写成定论。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1732",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.jfdaily.com/sgh/detail?id=1739812",
+        "https://www.sohu.com/a/906841213_640391"
+      ]
+    },
+    {
+      "IDBAT": 1768,
+      "historicalName": "KOFFMAN APARTMENT",
+      "coordinates": {
+        "wgs84": [
+          121.435199,
+          31.210097
+        ],
+        "gcj02": [
+          121.43982,
+          31.208228
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "国富门公寓",
+      "currentUse": "历史公寓保留，楼上居住、底层附楼及临街空间作商铺",
+      "currentAddress": "上海市徐汇区武康路230、232号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "旧福开森路230/232号与今武康路230、232号一致，1935年Koffman设计图、现场建筑史调查和官方名录共同支持本楼身份。徐汇区房管局2025年修缮实录确认原四层后加建为五层，仍设居住单元且底层附楼现作商铺。各资料对命名缘由及1935/1936年分别作设计或建成年的表述有差别，本次保留原历史信息，不据争议改名人身份或年代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1768",
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250919/563719.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://brs.russianshanghai.city/architects/m-z/g-b-rabinovich",
+        "https://www.amcham-shanghai.org/sites/default/files/2017-02/05%2016%20ins.pdf"
+      ]
+    },
+    {
+      "IDBAT": 399,
+      "historicalName": "Lafayette Garden Theater",
+      "historicalNameCorrectionZh": "辣斐花園劇場",
+      "coordinates": {
+        "wgs84": [
+          121.450326,
+          31.213715
+        ],
+        "gcj02": [
+          121.454915,
+          31.211821
+        ]
+      },
+      "modernRoadAddress": "1315 复兴中路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "上海邮电医院南部（辣斐花园旧址）",
+      "currentUse": "原娱乐园地改作医院南部院区，提供健康体检等医疗服务",
+      "currentAddress": "上海市徐汇区复兴中路1315号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "方志上海沿街史明确区分辣斐花园与复兴中路323号辣斐大戏院，并记花园已消失、原址成为上海邮电医院南部。历史和现代门牌均为1315号；2024年静安卫健委抽查名单及2025年记者现场采访继续确认院区和体检用途。这里按花园及剧场用地转为医疗院区记录，不把现代医院楼声称为原剧场，也不与1363号克莱门公寓内的溜冰场混同。另排除复兴中路1186号：徐汇区2026年3月30日公告已将该处旧名“辣斐大戏院旧址”更正为“上海大戏院旧址”，不是本条1315号的花园剧场。 OSM现名“上海邮电医院（南部）”要素中心距原点约42米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=399",
+        "https://article.xuexi.cn/html/14471131995231452324.html?share_to=weibo&source=share&study_comment_disable=1&study_style_id=feeds_default",
+        "https://www.jingan.gov.cn/govxxgk/JC0/2024-12-18/5d133314-63a6-4b2b-bac1-da69fe56ff54.html",
+        "https://www.sohu.com/a/874060996_121123697",
+        "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "https://www.openstreetmap.org/way/787352069"
+      ]
+    },
+    {
+      "IDBAT": 139,
+      "historicalName": "Lafayette Movie Theater",
+      "historicalNameCorrectionZh": "辣斐大戲院",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.471169,
+          31.218414
+        ],
+        "gcj02": [
+          121.475699,
+          31.216473
+        ]
+      },
+      "modernRoadAddress": "323 复兴中路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "拉法耶文化艺术中心",
+      "currentUse": "原戏院拆除重建后改为沉浸式文化艺术展览空间",
+      "currentAddress": "上海市黄浦区复兴中路323号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "2025年设计方项目说明直接确认辣斐大戏院于2006—2009年拆除重建，2014年在重建楼基础上改为艺术中心，2024—2025年由ALIGHT光禹莱特改造为拉法耶文化艺术中心。2026年7月至10月黑水城展览资料确认该址仍作文化展陈。建筑是重建及改造后的空间，不是邬达克1933年原戏院本体完整保留。 OSM现名“拉法耶艺术设计中心”要素中心距原点约37米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=139",
+        "https://www.gooood.cn/lafayette-culture-center-renovation-by-they-architects.htm",
+        "https://www.sohu.com/a/1052420653_121668715",
+        "https://data.library.sh.cn/entity/physicalculturalheritage/5qzpiy5tcdz8dmd3",
+        "https://www.openstreetmap.org/way/1199660261"
+      ]
+    },
+    {
+      "IDBAT": 88,
+      "historicalName": "Lafayette Police Station (Poste Lafayette)",
+      "historicalNameCorrectionZh": "公董局巡捕房",
+      "coordinates": {
+        "wgs84": [
+          121.471254,
+          31.225648
+        ],
+        "gcj02": [
+          121.475785,
+          31.22371
+        ]
+      },
+      "modernRoadAddress": "211 淮海中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "霞飞路巡捕房旧址／上海爱马仕之家",
+      "currentUse": "历史巡捕房建筑群现作品牌零售与展示；本条所指楼栋边界待核",
+      "currentAddress": "上海市黄浦区淮海中路217号（现商店入口）；现行名录列217、233号及嵩山路65、67号（旧211号对应待核）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai在线记录直接说明本条为#4112 Joffre Police Station的后续名称，照片707亦共同链接两条，保留各自历史记录。旧版房管局名录和2018年报道曾记235号，更新于2023年的官方第三批优秀历史建筑表将3C005列为淮海中路217、233号及嵩山路65、67号，用途商场；爱马仕官网现入口为217号。OSM Hermès点距原始位置约22米，点位相容。集团法律文件还列211、213、215、227号12号楼为企业登记地址。院落商业再利用可确认，旧211号具体楼栋及门牌沿革仍待核，暂不整组回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=88",
+        "https://www.virtualshanghai.net/Photos/Images?ID=707",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://news.sina.cn/2018-02-02/detail-ifyreuzn1870796.d.html?vt=4",
+        "https://www.hermes.cn/cn/zh/find-store/china/shanghai/hermes-maison-shanghai-GTXRBUSG/",
+        "https://assets.hermes.com/is/content/hermesedito/Legal/Binding_Corporate_Rules_BCRs_FRpdf.pdf",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://www.openstreetmap.org/node/6897142553"
+      ]
+    },
+    {
+      "IDBAT": 56,
+      "historicalName": "Lagrene School",
+      "historicalNameCorrectionZh": "啦格納小學",
+      "coordinates": {
+        "wgs84": [
+          121.475067,
+          31.223547
+        ],
+        "gcj02": [
+          121.479585,
+          31.221598
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "喇格纳小学旧址／新天地东台里文化空间",
+      "currentUse": "学校旧楼整体平移保护后，现作艺术展览、设计节及文化活动空间",
+      "currentAddress": "上海市黄浦区新天地东台里西北角；文保登记浏河口路50号（平移前）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "喇格纳小学实体保存并转作文化空间的沿革明确：2020年整栋向西北平移61.7米，2026年在新天地东台里举办UNFOLD艺术设计节，已非普通学校教学用途。但输入地址为旧奥利和路84号，而文保登记为浏河口路50号；旧今门牌及原坐标与平移后位置的关系尚待核。保留输入历史坐标，不把位移后的建筑直接当成原点上从未移动的校舍。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=56",
+        "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf",
+        "https://sghexport.shobserver.com/html/baijiahao/2020/10/15/278680.html",
+        "https://www.yicai.com/news/103227958.html",
+        "https://www.shuionland.com/pic/20250912/202509121329435562.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1365,
+      "historicalName": "Laozha Bridge",
+      "historicalNameCorrectionZh": "老閘橋",
+      "historicalStartYear": 1885,
+      "historicalEndYear": 5,
+      "coordinates": {
+        "wgs84": [
+          121.474121,
+          31.24231
+        ],
+        "gcj02": [
+          121.478644,
+          31.240372
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "福建路桥（老闸桥原址重建）",
+      "currentUse": "原桥多次拆除重建，现为跨苏州河的道路交通桥梁",
+      "currentAddress": "上海市黄浦区福建中路—静安区福建北路，跨苏州河",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "《上海通志》记1885年老闸桥，现地沿革明确为福建路桥；现代桥不是1885年的木桥。老桥历经重建，1968年混凝土桥于2001年拆除，新桥2004年开工、2008年通车。2025年苏州河桥梁实景报道与市绿化市容局桥名牌提升清单可确认桥梁仍在使用。这里只更新本条地标的现用途，不调整道路要素或桥梁几何。原桥实体已拆，按拆除后原址现用途处理，不归为历史桥体仍存。 OSM现名“福建路桥”要素中心距原点约22米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1365",
+        "https://www.shanghai.gov.cn/shanghai/newshanghai/%E4%B8%8A%E6%B5%B7%E9%80%9A%E5%BF%97.pdf",
+        "https://news.sina.com.cn/o/2007-10-25/005312781545s.shtml",
+        "https://www.thepaper.cn/newsDetail_forward_31609753",
+        "https://www.shanghai.gov.cn/gwk/search/content/c7d13f15-565a-4224-a3c6-da1c5f224e51",
+        "https://www.openstreetmap.org/way/815631992"
+      ]
+    },
+    {
+      "IDBAT": 1715,
+      "historicalName": "Liangjiang Sports School for Women",
+      "historicalNameCorrectionZh": "兩江女子體育專科學校",
+      "historicalStartYear": 1931,
+      "coordinates": {
+        "wgs84": [
+          121.489936,
+          31.295237
+        ],
+        "gcj02": [
+          121.494409,
+          31.293276
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "两江女子体育专科学校旧址／游泳池遗存",
+      "currentUse": "原校园大部毁改，游泳池及附属老建筑修缮为市民健身（健康）中心；本点与遗存范围待核",
+      "currentAddress": "上海市虹口区邯郸路47弄8号及原校园一带",
+      "currentUseRelationship": "site-redeveloped-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "文旅资料明确1931年购地建校、战时毁坏及复建沿革，虹口区政府2021年和2023年现场文史报道确认游泳池旧址已改为社区健身设施。这里的原校园有2.6万余平方米，不能把泳池遗存等同整座学校完整保存；输入仅有XIEHE LU无门牌，本坐标落入旧校园哪一部分、与邯郸路47弄8号遗存及运光新村的边界仍待核，暂缓地图回填。OSM原点约39米处为虹口实验学校小学部、约63米处为邯郸路47弄运光新村，尚不能替代原校园边界考证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1715",
+        "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-the-swimming-pool-of-liangjiang-womens-sports-college-327865/",
+        "https://www.shhk.gov.cn/xwzx/002006/20211116/d47c5282-2647-47da-b051-8f79c9f08657.html",
+        "https://m.thepaper.cn/newsDetail_forward_23722920",
+        "https://www.openstreetmap.org/way/1385162455"
+      ]
+    },
+    {
+      "IDBAT": 449,
+      "historicalName": "Liberty Apartments",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.439055,
+          31.214517
+        ],
+        "gcj02": [
+          121.443669,
+          31.212644
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "自由公寓",
+      "currentUse": "现存历史公寓，继续作住宅使用",
+      "currentAddress": "上海市徐汇区五原路258号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "徐汇区房管局2025年专文直接对应Liberty Apartments与五原路258号，并记录现存九层居住建筑、18套住房及2017年保护性修缮。该文依据营造许可和住户名录推断1934年中竣工，区别于原数据1933年；原历史年份保留。图书馆辅助条目文字相符，但坐标比原点偏东约1.17公里，未采用该坐标或改动原几何。OSM原点附近约60米为五原路270弄，支持五原路西段的位置，不能采用图书馆偏东坐标。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=449",
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20251222/567476.html",
+        "https://www.openstreetmap.org/way/675591795"
+      ]
+    },
+    {
+      "IDBAT": 978,
+      "historicalName": "Lido Dancing Hall and Swimming Pool",
+      "historicalNameCorrectionZh": "麗都花園舞廰及游泳池",
+      "historicalStartYear": 1950,
+      "coordinates": {
+        "wgs84": [
+          121.453503,
+          31.233963
+        ],
+        "gcj02": [
+          121.458086,
+          31.232072
+        ]
+      },
+      "modernRoadAddress": "306 泰兴路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "丽都花园旧址／上海市政协机关大院",
+      "currentUse": "上海市政协办公及文化联谊空间；原洋楼已拆后重建文化俱乐部，旧绿孔雀彩窗迁入新楼",
+      "currentAddress": "上海市静安区北京西路860号",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "丽都花园舞厅及泳池原位于泰兴路306号，现为北京西路860号上海市政协大院。2025年民革市委会史文直接对应旧306号与丽都花园，政协官方系统及2026年人民政协网确认当前办公与文化活动用途。新民晚报2017年《丽都花园的绿孔雀》明确：原三层洋楼于本世纪初拆除，原地重建文化俱乐部，旧绿孔雀彩窗迁装新楼；因此按同址重建记录，不把保留的装饰构件当作原楼仍存。维基条目称小楼仍存与其所引原文后半段相矛盾，不采用该存续结论。1980年代院内另建办公高楼；输入1950年不作为丽都建成年份。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=978",
+        "https://wap.xinmin.cn/content/30936226.html",
+        "https://m.thepaper.cn/newsDetail_forward_30489547",
+        "https://web.shszx.gov.cn/",
+        "https://www.rmzxw.com.cn/c/2026-02-02/3863262.shtml",
+        "https://www.openstreetmap.org/node/11129495429"
+      ]
+    },
+    {
+      "IDBAT": 584,
+      "historicalName": "Lihe Yanghang",
+      "historicalStartYear": 1898,
+      "coordinates": {
+        "wgs84": [
+          121.480998,
+          31.239365
+        ],
+        "gcj02": [
+          121.485497,
+          31.237406
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "礼和洋行旧址／商办空间",
+      "currentUse": "历史建筑改造为办公及沿街商业；输入旧门牌对应待核",
+      "currentAddress": "上海市黄浦区九江路168号、江西中路255号（历史210号对应待核）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "review",
+      "evidence": "1898年礼和洋行建筑的身份和现代九江路168号、江西中路255号的商办用途有建筑改造方资料及政府监管名录支持；2017年改造保留历史外观，内部木结构等已有改造，不能视为所有构件原装。输入门牌为210 KIUKIANG ROAD而不是现168号，尚无直接门牌沿革闭环，需复核旧地籍与点位，因此保留待核，不把当前210号的其他建筑混同为礼和洋行。OSM原点约10米处标为南京大楼，与礼和洋行目标存在位置疑点，进一步要求旧门牌与点位复核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=584",
+        "https://www.archiposition.com/items/20180525120629",
+        "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf",
+        "https://www.justwork.com.cn/products/%E7%A4%BC%E5%92%8C%E6%B4%8B%E8%A1%8C/",
+        "https://www.openstreetmap.org/way/378107150"
+      ]
+    },
+    {
+      "IDBAT": 451,
+      "historicalName": "Lincoln Apartments",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.440207,
+          31.210832
+        ],
+        "gcj02": [
+          121.444818,
+          31.208956
+        ]
+      },
+      "modernRoadAddress": "1562 淮海中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "林肯公寓（曙光公寓）",
+      "currentUse": "现存历史公寓，继续作住宅及出租住宅使用",
+      "currentAddress": "上海市徐汇区淮海中路1554—1568号、1562弄2—5号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原1562 AVENUE JOFFRE与现淮海中路1562弄相应。徐汇区文物信息变更公告明确林肯公寓现规范名为林肯公寓（曙光公寓），覆盖淮海中路1554—1568号；历史保护名录及住宅房源佐证建筑仍存且用于居住。1930年为原数据建造起点，未改动。老楼曾有沉降并列入2012年修缮计划，资料不支持将其写成拆除重建或目前经营的酒店。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=451",
+        "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html",
+        "https://www.mdshrealty.com/project-cn/--167-1095.html",
+        "https://news.sohu.com/20120319/n338212724.shtml"
+      ]
+    },
+    {
+      "IDBAT": 644,
+      "historicalName": "Jinlong Sidawang Temple",
+      "historicalNameCorrectionZh": "金龍四大王廟",
+      "coordinates": {
+        "wgs84": [
+          121.473471,
+          31.24194
+        ],
+        "gcj02": [
+          121.477996,
+          31.240004
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "厦门路老闸大王庙旧址线索",
+      "currentUse": "寺庙已不存；原宗地今天的具体用途未确认",
+      "currentAddress": "上海市黄浦区厦门路7号附近（历史地址1/9 AMOY ROAD）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "东方网转载文直接记载老闸桥南的金龙四大王庙在今厦门路7号且已不存，与本条厦门路1/9号和福建路桥南的坐标相符。不得混同大田路、新闸桥旁的另一座新闸大王庙。厦门路7号旧庙界及今天对应宗地用途仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=644",
+        "https://www.hunantoday.cn/news/xhn/202006/17401001.html",
+        "https://www.openstreetmap.org/node/11135889796"
+      ]
+    },
+    {
+      "IDBAT": 52,
+      "historicalName": "Jinrong Primary School",
+      "historicalNameCorrectionZh": "金榮小學校",
+      "coordinates": {
+        "wgs84": [
+          121.475926,
+          31.223759
+        ],
+        "gcj02": [
+          121.480441,
+          31.221808
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "浏河口路八仙桥附近金荣小学位置线索",
+      "currentUse": "周边为太平洋新天地商业中心等商业设施；原小学宗地及当前使用单位未确认",
+      "currentAddress": "上海市黄浦区浏河口路附近（历史门牌20号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "Rue Oriou可对应浏河口路，学校中文字段为金榮小學校；网络资料提及黄金荣在八仙桥兴办金荣小学，但未取得能将校史、20号门牌与现楼栋闭合的可靠材料。仅保存道路及名称线索，不把同名外地金荣小学或附近学校认作继承者。 OSM在原点附近64米列太平洋新天地商业中心，只能说明周边更新，20号旧址对应仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=52",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表",
+        "https://zh.wikipedia.org/wiki/黄金荣",
+        "https://www.openstreetmap.org/way/401230320"
+      ]
+    },
+    {
+      "IDBAT": 1240,
+      "historicalName": "Jishanjiang Temple (Buddhist)",
+      "historicalNameCorrectionZh": "積善講寺",
+      "coordinates": {
+        "wgs84": [
+          121.485117,
+          31.229452
+        ],
+        "gcj02": [
+          121.489601,
+          31.227477
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "积善讲寺旧址位置线索",
+      "currentUse": "周边福源商厦等商业设施；寺院原宗地具体用途未确认",
+      "currentAddress": "上海市黄浦区沉香阁路、福佑路附近（原路名缺失，仅35号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "《上海县续志》有积善讲寺及崇正北官塾记载，可佐证历史寺名；方志记县署西北的寺院，输入却仅存35 ?门牌，不能据旧城厢附近另有沉香阁便将两寺等同。缺少35号路名、寺界和拆建沿革，现址待核。 OSM的福源商厦约20米、沉香阁约44米仅供空间排查，均不自动作为积善讲寺后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1240",
+        "https://www.shidianguji.com/book/LG2SHXXZV01/chapter/1lxtm607kyofi",
+        "https://www.openstreetmap.org/way/369237987"
+      ]
+    },
+    {
+      "IDBAT": 1251,
+      "historicalName": "Jiumudi Dancing Hall",
+      "historicalNameCorrectionZh": "九畝地新舞臺",
+      "historicalStartYear": 1913,
+      "historicalEndYear": 1927,
+      "coordinates": {
+        "wgs84": [
+          121.481549,
+          31.227514
+        ],
+        "gcj02": [
+          121.486046,
+          31.225548
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "九亩地新舞台旧址位置线索",
+      "currentUse": "周边为露香园住宅及商业更新街区；原戏院宗地用途未确认",
+      "currentAddress": "上海市黄浦区大境路、露香园路附近（历史门牌85号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "校方介绍和地方史资料都把1913—1914年新舞台置于九亩地、今大境路露香园路口，与本条年份和中文名相符；不混同1908年十六铺新舞台。原NAME为Dancing Hall、FUNCTION为舞厅，但中文及历史资料指戏院，六字段仍保留。露香园更新是街区层面证据，85号与今天具体地块的对应仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1251",
+        "https://www.sohu.com/a/666125741_121124758",
+        "https://www.thepaper.cn/newsDetail_forward_27296244",
+        "https://www.openstreetmap.org/way/40035606"
+      ]
+    },
+    {
+      "IDBAT": 269,
+      "historicalName": "Jiuxing Theater",
+      "historicalNameCorrectionZh": "九星大戯院",
+      "coordinates": {
+        "wgs84": [
+          121.461532,
+          31.225279
+        ],
+        "gcj02": [
+          121.466092,
+          31.223366
+        ]
+      },
+      "modernRoadAddress": "359 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "延安中路九星大戏院旧址位置线索",
+      "currentUse": "周边为巨鹿路158号大同坊餐饮商业空间；旧戏院宗地精确对应待核",
+      "currentAddress": "上海市黄浦区延安中路成都南路以西一带（历史福煦路359号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "上海大学博物馆刊物依据1952年演出说明书确认九星大戏院存在并指出剧场已消失；汪曾祺研究文章转引校友回忆，记其位于致远中学对面、东侧小弄通巨鹿路。上述只能收敛福煦路沿线位置，不能把359号直接当作现延安中路359号或确认绿地的某一分区。 OSM原点附近24米为大同坊，30米餐饮地址为巨鹿路158号；校友回忆中已成延中绿地的是对面的致远中学，不能由此声称戏院就在绿地内。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=269",
+        "https://museum.shu.edu.cn/uploadfile/DOC/shu/2016-4.pdf",
+        "https://www.sohu.com/a/200514596_787295",
+        "https://www.openstreetmap.org/node/5535127325"
+      ]
+    },
+    {
+      "IDBAT": 746,
+      "historicalName": "Jixiang Temple",
+      "historicalNameCorrectionZh": "吉祥寺",
+      "coordinates": {
+        "wgs84": [
+          121.476488,
+          31.247753
+        ],
+        "gcj02": [
+          121.481003,
+          31.245811
+        ]
+      },
+      "modernRoadAddress": "204 七浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "七浦路吉祥寺旧址线索",
+      "currentUse": "周边七浦路服饰商业街区；寺庙原地块具体用途未确认",
+      "currentAddress": "上海市静安区七浦路河南北路附近（历史门牌204号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "中国民主促进会文章引1943年《万象》广告的“七浦路吉祥寺天禅室”，并记亦幻、若瓢等僧人的寺内活动，可靠确认本地寺院身份；居民手稿亦记寺在七浦路近河南北路。204号宗地及寺界至塘沽路的范围仍待核，不能自动接受附近市场POI为整座寺院后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=746",
+        "https://www.mj.org.cn/m/hszl/mrys/202006/t20200628_228528.htm",
+        "https://www.ivy436.com/nd.jsp?id=773",
+        "https://www.openstreetmap.org/way/1101656546"
+      ]
+    },
+    {
+      "IDBAT": 412,
+      "historicalName": "Joseph Tennis Club",
+      "coordinates": {
+        "wgs84": [
+          121.450623,
+          31.20987
+        ],
+        "gcj02": [
+          121.455211,
+          31.207974
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "永嘉路400号附近旧网球俱乐部位置线索",
+      "currentUse": "周边为花园住宅及上海枫叶交响幼儿园；旧网球场范围及当前宗地用途未确认",
+      "currentAddress": "上海市徐汇区永嘉路400号附近（旧西爱咸斯路）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "Joseph Tennis Club只找到Virtual Shanghai及其转录，缺少独立俱乐部沿革。永嘉路400号有近期花园住宅房产资料，但没有证明网球场与该洋房同一宗地或旧400号沿用，不能以相同门牌认作同一建筑。相邻中国中学的机构迁移也不能用于本条回填。 OSM幼儿园约38米、永嘉路396弄约45米，均未能证明与旧网球场的宗地连续性，待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=412",
+        "https://www.sohu.com/a/981267858_121123889",
+        "https://www.openstreetmap.org/way/790308784"
+      ]
+    },
+    {
+      "IDBAT": 752,
+      "historicalName": "Junhuaju Shantang",
+      "historicalNameCorrectionZh": "峻化聚善堂",
+      "coordinates": {
+        "wgs84": [
+          121.475761,
+          31.248555
+        ],
+        "gcj02": [
+          121.480279,
+          31.246615
+        ]
+      },
+      "modernRoadAddress": "784 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "塘沽路峻化聚善堂位置线索",
+      "currentUse": "旧善堂宗地及今天用途未确认",
+      "currentAddress": "上海市静安区塘沽路、山西北路附近（历史门牌784号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "检索峻化聚善堂与塘沽路后得到纪念王一亭的地方史文，记其参与塘沽路该善堂，只能作为名称和道路线索。未取得784号新旧门牌、建筑存废和现地块沿革；原FUNCTION寺庙分类并不足以确定慈善机构的具体宗教性质。 OSM最近山西北路约35米、塘沽路约61米；道路近邻无法确认今天哪一栋建筑覆盖旧善堂，仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=752",
+        "https://blog.sina.com.cn/s/blog_ae74151f0102vmt9.html",
+        "https://www.openstreetmap.org/way/1101656570"
+      ]
+    },
+    {
+      "IDBAT": 316,
+      "historicalName": "Kaiming Junior High School",
+      "historicalNameCorrectionZh": "開明中學校",
+      "coordinates": {
+        "wgs84": [
+          121.462001,
+          31.208913
+        ],
+        "gcj02": [
+          121.466558,
+          31.206991
+        ]
+      },
+      "modernRoadAddress": "400 瑞金二路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "瑞金二路、泰康路附近开明中学旧址线索",
+      "currentUse": "周边明德邨住宅；现瑞金二路400号另列社区学院，均未与旧校宗地闭合",
+      "currentAddress": "上海市黄浦区瑞金二路、泰康路附近（历史400 ROUTE PERE ROBERT）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "ROUTE PERE ROBERT是金神父路、今瑞金二路。《上海暨全国学校调查录》原始史料检索OCR明确列开明中学、金神父路买西义路400号，并有校长和学生资料，足以确认学校历史身份。原点靠近瑞金二路泰康路、OSM明德邨约40米；当前政府采购名单的瑞金二路400号为黄浦区社区学院（瑞金南路校区），但400号历史道路归属、重编及校舍边界仍待核，不能仅同号就认作原校后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=316",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_上海暨全國學校調查錄.pdf",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/13b07c4e-f985-4fb5-bd14-31d9d0731fe5.pdf",
+        "https://www.openstreetmap.org/way/910662342"
+      ]
+    },
+    {
+      "IDBAT": 359,
+      "historicalName": "Kelmsott Garden",
+      "historicalStartYear": 1927,
+      "coordinates": {
+        "wgs84": [
+          121.452771,
+          31.220854
+        ],
+        "gcj02": [
+          121.457355,
+          31.218959
+        ]
+      },
+      "modernRoadAddress": "188 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "纪家花园（陕西南路188弄）候选",
+      "currentUse": "现存历史花园住宅群及居住用途；与本条公园分类关系待核",
+      "currentAddress": "上海市徐汇区陕西南路188弄",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "同地址的Virtual Shanghai #4135写Kelmscott Garden并注Lilong-type housing，震旦同学录亦有Kelmscott Gardens的住址记录；徐汇街道材料确认188弄为1920年代纪家花园，2026年仍作为老旧住宅实施白蚁防治。本条拼作Kelmsott且FUNCTION明确Park，可能是同住宅群名称转录及类型误分，但尚缺直接中英文名称、旧地块边界证据，待核后再决定是否回填，不修改原六字段。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=359",
+        "https://www.virtualshanghai.net/data/buildings?ID=4135",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/NLC416-10jh005495-61770_上海震旦大學同學錄.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_22924288",
+        "https://www.shanghai.gov.cn/nw17239/20260602/12df2fb688fb4c82b12690f020474335.html"
+      ]
+    },
+    {
+      "IDBAT": 800,
+      "historicalName": "Kelun Hospital",
+      "historicalNameCorrectionZh": "克倫医院",
+      "coordinates": {
+        "wgs84": [
+          121.4726,
+          31.231782
+        ],
+        "gcj02": [
+          121.477127,
+          31.229843
+        ]
+      },
+      "modernRoadAddress": "95-4 西藏中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "克伦医院旧址线索",
+      "currentUse": "医院历史身份有旁证；具体原址建筑、现用途未确认",
+      "currentAddress": "上海市黄浦区西藏中路一带（历史95-4号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "温州市中医院院报的陶正一史料记载，1929年其入张克伦创办、位于上海西藏路的克伦医院学习，可支持医院名称与道路，但没有旧95-4号至今门牌的沿革。精确地块、建筑存毁和现用途均待核；不能把附近现代医院视为其后继。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=800",
+        "https://www.wzszyy.cn/wzuploads/site_6/20260302/202603021812087150.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1672,
+      "historicalName": "Kempeitai Headquarters",
+      "historicalNameCorrectionZh": "日本憲兵隊本部",
+      "historicalStartYear": 1937,
+      "coordinates": {
+        "wgs84": [
+          121.480438,
+          31.248265
+        ],
+        "gcj02": [
+          121.48494,
+          31.246312
+        ]
+      },
+      "modernRoadAddress": "491 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大桥大楼／日本宪兵队本部候选",
+      "currentUse": "本条具体原址与现代使用单位未确认",
+      "currentAddress": "上海市虹口区四川北路85号候选（与历史491号对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "资料能确认日军曾在四川北路大桥大楼设宪兵本部，研究给出的现代地址为四川北路85号／旧崇明路6号。OSM大桥大楼要素中心距本条原始WGS84点约14米，点位相容；但旧491号与今85号、旧崇明路6号的门牌沿革及本条1937年所指院落尚未闭环，不能仅凭近邻自动回填。具体楼栋现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1672",
+        "https://www.shjinganlib.net/News_Detailed.aspx?ColumnNameEn=NOTICE&id=11951",
+        "https://yangtze.silkroadinfo.org.cn/2017/6/30/20170630131536.pdf",
+        "https://www.openstreetmap.org/way/446939660"
+      ]
+    },
+    {
+      "IDBAT": 617,
+      "historicalName": "Kexue Yiqiguan",
+      "historicalNameCorrectionZh": "科學儀器館",
+      "coordinates": {
+        "wgs84": [
+          121.477658,
+          31.236028
+        ],
+        "gcj02": [
+          121.482168,
+          31.234077
+        ]
+      },
+      "modernRoadAddress": "406 福州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "福州路科学仪器馆旧址线索",
+      "currentUse": "周边文化用品零售街坊；科学仪器馆原楼现用途未确认",
+      "currentAddress": "上海市黄浦区福州路406号（旧今门牌关系待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "《上海城市规划》所载英雄金笔厂沿革确认1938年租赁福州路406号科学仪器馆三楼恢复生产。2021年前后的店招清单记406号为嘉骏美术用品，但欠缺原楼连续关系及近期使用证明。2025年新民晚报一文将古籍书店门牌误写为406号，而2026年市文旅局阅读地图明确为401号，故不采用古籍书店作此址现用途。具体门牌、楼栋和商户存续待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=617",
+        "https://www.shplanning.com.cn/archive/download/id/554.html",
+        "https://qxb-img-osscache.qixin.com/bid/75aa2115a82e77bde3560cda3defb2fc.pdf",
+        "https://img1.xinmin.cn/xmwb/2025-04-19/110419.pdf",
+        "https://whlyj.sh.gov.cn/gqfc/20260814/37bdc2f8fb3b4f88a6fed2e03975712e.html"
+      ]
+    },
+    {
+      "IDBAT": 1763,
+      "historicalName": "KING'S ALBERT APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.456595,
+          31.21587
+        ],
+        "gcj02": [
+          121.461168,
+          31.213964
+        ]
+      },
+      "modernRoadAddress": "377 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "陕南邨／亚尔培公寓候选",
+      "currentUse": "候选历史公寓群仍为居民住宅；本条具体楼栋未确认",
+      "currentAddress": "上海市黄浦区陕西南路151—187号（与历史377号对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "King Albert Apartments与陕南邨的中英文对应有建筑史研究和名录支持，位置也与陕西南路复兴中路公寓群吻合。但调查文章抄录1932年名录地址为373 Avenue du Roi Albert，本条为377号；尚缺旧377号至现151—187号中具体楼栋的对应。不能因英文名近似就将同街所有Albert公寓等同，门牌与院界待核。 OSM现名“陕南邨”要素中心距原点约38米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1763",
+        "https://brs.russianshanghai.city/buildings",
+        "https://www.thepaper.cn/newsDetail_forward_7992764",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.openstreetmap.org/way/494305170"
+      ]
+    },
+    {
+      "IDBAT": 1528,
+      "historicalName": "Kongjia Garden",
+      "historicalNameCorrectionZh": "孔家花園",
+      "coordinates": {
+        "wgs84": [
+          121.373393,
+          31.19417
+        ],
+        "gcj02": [
+          121.378021,
+          31.1923
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "虹桥路孔家花园／云峰宾馆候选",
+      "currentUse": "候选历史别墅现为上海警备区第三招待所（云峰宾馆）；本条门牌对应未闭环",
+      "currentAddress": "上海市长宁区虹桥路2258、2260号（与历史2154号对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "长宁区规划资源局2025年资料明确孔祥熙度假别墅孔家花园位于虹桥路2258、2260号，现为云峰宾馆。本条历史名与虹桥地区吻合，但输入门牌2154不同，且尚未查得旧2154号门牌变更及花园边界资料；OSM的虹桥路2260号与2258号孔氏别墅点分别距原点约60米、78米，支持地段相容，但未直接界定旧2154号花园院界。不能混用斜土路2421号同名孔家花园酒家的资料，原址对应待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1528",
+        "https://www.shcn.gov.cn/col7698/20250210/1277973.html",
+        "https://www.shcn.gov.cn/col7698/20220302/1212020.html",
+        "https://www.openstreetmap.org/node/4933524716"
+      ]
+    },
+    {
+      "IDBAT": 1604,
+      "historicalName": "Korean Protestant Church",
+      "coordinates": {
+        "wgs84": [
+          121.477844,
+          31.255555
+        ],
+        "gcj02": [
+          121.482356,
+          31.253613
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "虬江支路吉祥里韩国基督教礼拜堂旧址线索",
+      "currentUse": "礼拜堂旧址具体楼栋、存毁和现用途未确认",
+      "currentAddress": "上海市虹口区虬江支路212弄（历史吉祥里）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "《上海市近代教会建筑历史初探》附录据《上海市行号路图录》列韩国基督教礼拜堂在虬江支路212弄（吉祥里），能够补足本条英文泛称和地址中遗漏的“弄”。尚无礼拜堂具体弄内门牌、拆建记录或现机构沿革，不把整条里弄或附近教堂当成其延续；现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1604",
+        "https://dl.ziliaozhan.win/%E4%B9%A6%E7%B1%8D/pdf/%E7%A0%94%E7%A9%B6/%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%BF%91%E4%BB%A3%E6%95%99%E4%BC%9A%E5%BB%BA%E7%AD%91%E5%8E%86%E5%8F%B2%E5%88%9D%E6%8E%A2.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1714,
+      "historicalName": "Labor University",
+      "historicalNameCorrectionZh": "勞動大學",
+      "historicalStartYear": 1927,
+      "historicalEndYear": 1932,
+      "coordinates": {
+        "wgs84": [
+          121.478246,
+          31.299067
+        ],
+        "gcj02": [
+          121.48276,
+          31.297142
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "国立劳动大学江湾旧址线索",
+      "currentUse": "江湾旧校园已在战事中受毁；本条精确宗地的现代用途未确认",
+      "currentAddress": "上海市虹口区车站西路、车站南路附近（历史105号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口区2024年资料把1927年劳动大学校门定位在今车站西路与车站南路交界，并记大学与孙总理纪念碑毁于一二八战事；1933年同济附设高职曾使用劳动大学工学院原址，说明需要分辨校园和建筑而非概括整校全毁。未查得105号校园原界与今地块的直接对应，不能把附近现代学校或工厂当作整个旧校园，现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1714",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240416/acde8aa7-b697-4cfb-b110-5050ce85a10c.html",
+        "https://news.xinmin.cn/2023/02/25/32325475.html",
+        "https://www.shda.gov.cn/dawh/csjy/202608/t20260807_76643.html"
+      ]
+    },
+    {
+      "IDBAT": 239,
+      "historicalName": "Lanxing Primary School",
+      "historicalNameCorrectionZh": "私立蘭星小學",
+      "coordinates": {
+        "wgs84": [
+          121.462382,
+          31.209574
+        ],
+        "gcj02": [
+          121.466938,
+          31.207651
+        ]
+      },
+      "modernRoadAddress": "326 泰康路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "泰康路兰星小学旧址位置线索",
+      "currentUse": "现代同号餐饮POI仅供位置参照；旧校舍现用途未确认",
+      "currentAddress": "上海市黄浦区泰康路一带（历史326号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "以兰星小学、私立蘭星小學、Lanxing Primary School及泰康路326号检索，未得到独立校史或拆建沿革。地图聚合站有泰康路326号Tree Hand Cafe餐飲POI，但仅属现代同号参照，不能证明店铺所在楼即原校舍，也不能据其网页抓取时间断言仍营业。历史门牌与校园边界、楼栋存毁和当前使用单位待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=239",
+        "https://sh.city8.com/cater/8da5l3794kozb90e8c"
+      ]
+    },
+    {
+      "IDBAT": 170,
+      "historicalName": "Laodahua Dancing",
+      "historicalNameCorrectionZh": "老大華跳",
+      "coordinates": {
+        "wgs84": [
+          121.468596,
+          31.225341
+        ],
+        "gcj02": [
+          121.473135,
+          31.22341
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "马当路老大华／维纳斯舞厅旧址线索",
+      "currentUse": "候选原址已改建商办楼宇，K11马当路侧为位置线索；本条精确宗地未闭环",
+      "currentAddress": "上海市黄浦区马当路、淮海中路附近；旧41号与后25号对应待核",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "现场史述把马当路老大华舞厅、后来的维纳斯舞厅及大华书场联系到今K11马当路侧，中国青年报记者对原售票员的采访确认大华书场1990年关闭后原址建商业楼宇。但文汇报所记大华书场是马当路25号，本条是旧41号，且各文对更名年份表述存在差异。旧门牌和原建筑范围待核，不以街区沿革直接宣布本点就是K11某一店铺。 OSM现名“K11 艺术购物中心”要素中心距原点约43米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=170",
+        "https://www.sohu.com/a/837052495_121123854",
+        "https://zqb.cyol.com/html/2011-07/06/nw.D110000zgqnb_20110706_1-12.htm",
+        "https://dzb.whb.cn/images/2018-08/24/11/110824.pdf",
+        "https://www.openstreetmap.org/way/48872919"
+      ]
+    },
+    {
+      "IDBAT": 384,
+      "historicalName": "Leren Hospital",
+      "historicalNameCorrectionZh": "樂仁醫院",
+      "coordinates": {
+        "wgs84": [
+          121.445373,
+          31.222293
+        ],
+        "gcj02": [
+          121.449974,
+          31.220413
+        ]
+      },
+      "modernRoadAddress": "70 富民路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "富民路乐仁医院旧址位置线索",
+      "currentUse": "1962年曾转作第六人民医院员工家属宿舍；今日整栋用途未确认",
+      "currentAddress": "上海市静安区富民路70号一带",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "六院官方院史直接记载1962年接收富民路70号原乐仁医院，改为员工家属宿舍，确立了旧院门牌与后续用途。现门牌另有甜品店索引，但未取得可靠营业日期，商铺也不能代表整栋。医院建筑是否仍完整保留、宿舍后续及当前使用单位待核；不能以光华医院的机构沿革把其现代地址移到本点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=384",
+        "https://www.6thhosp.com/upload/doc/201505/06094930.pdf",
+        "https://m.sh.bendibao.com/wangdian/dian/4774349.shtm"
+      ]
+    },
+    {
+      "IDBAT": 1513,
+      "historicalName": "Li Park (Liyuan)",
+      "historicalNameCorrectionZh": "麗園",
+      "coordinates": {
+        "wgs84": [
+          121.46724,
+          31.2085
+        ],
+        "gcj02": [
+          121.471782,
+          31.206565
+        ]
+      },
+      "modernRoadAddress": "279 徐家汇路／肇嘉浜路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "徐家汇路丽园历史用地线索",
+      "currentUse": "附近已有住宅和园林更新线索；历史丽园原宗地现用途未确认",
+      "currentAddress": "上海市黄浦区徐家汇路附近（历史279号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文为麗園而不是李园，不能误套闵行李园或局门路丽园公园。2025年黄浦报道记鲁班路丽园路转角深处有清末丽园，2004年翻修为住宅小区内苏式园林，提供同名园林的后续线索；但本条原坐标与该路口并非直接重合，旧徐家汇路279号、军用功能及园地边界待核，不能将今重修园林自动套到本点。OSM原点约67米处标有住宅帝庭，仅作周边用地线索。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1513",
+        "https://sghexport.shobserver.com/html/baijiahao/2025/01/03/1490181.html",
+        "https://www.openstreetmap.org/way/1327459752"
+      ]
+    },
+    {
+      "IDBAT": 271,
+      "historicalName": "Lianhua Buddhist Temple",
+      "historicalNameCorrectionZh": "寺廟",
+      "historicalStartYear": 1913,
+      "historicalEndYear": 1956,
+      "coordinates": {
+        "wgs84": [
+          121.462495,
+          31.22489
+        ],
+        "gcj02": [
+          121.467052,
+          31.222974
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "成都南路莲花庵用地线索",
+      "currentUse": "寺庵旧址的现代宗地及用途未确认",
+      "currentAddress": "上海市黄浦区成都南路一带（历史36／40号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原英文Lianhua Buddhist Temple而中文仅记寺廟。《普陀山志》记圆通庵于1900年在上海贝谛鏖路（今成都南路）建莲花庵下院，与名称、道路相容，构成身份线索；但缺36／40号门牌及1956年后处置资料，且创建年份与输入1913不同，需区分创院与建楼。志书后述1960年改招待所及1990年收回系普陀山圆通庵本院，不能移作上海莲花庵现用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=271",
+        "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2476/site/attach/0/3zyz-1-1/%E6%99%AE%E9%99%80%E5%B1%B1%E5%BF%97.pdf"
+      ]
+    },
+    {
+      "IDBAT": 794,
+      "historicalName": "Jiren Hospital",
+      "historicalNameCorrectionZh": "濟仁醫院",
+      "coordinates": {
+        "wgs84": [
+          121.472387,
+          31.230733
+        ],
+        "gcj02": [
+          121.476914,
+          31.228794
+        ]
+      },
+      "modernRoadAddress": "87 武胜路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "周边为人民广场、武胜路及地下停车场等交通设施；旧医院宗地用途未确认",
+      "currentAddress": "上海市黄浦区人民广场东南侧附近（历史地址87 RACE COURSE ROAD）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "分别检索济仁医院、濟仁醫院、Jiren Hospital和87 Race Course Road，未找到可核验的院史与门牌沿革。中文次序是济仁而非仁济，不能将山东中路仁济医院的历史和今日地址移植到本点。原87号宗地及医院存废均待核。 OSM最近为人民广场交通节点及武胜路、地下停车场，不构成原医院沿革证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=794",
+        "https://www.openstreetmap.org/way/1327579131",
+        "https://www.openstreetmap.org/way/178725150"
+      ]
+    },
+    {
+      "IDBAT": 1153,
+      "historicalName": "Junior High School for Refugees",
+      "historicalNameCorrectionZh": "上海難童初級中學",
+      "coordinates": {
+        "wgs84": [
+          121.447552,
+          31.23847
+        ],
+        "gcj02": [
+          121.45215,
+          31.236593
+        ]
+      },
+      "modernRoadAddress": "康定路 / 昌化路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "昌平路昌化路附近上海难童初级中学坐标线索",
+      "currentUse": "周边鸿印里等街区；原难童中学校址及今日宗地用途未确认",
+      "currentAddress": "上海市静安区昌平路、昌化路附近（历史地址为康定路、昌化路口，无门牌）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "已按上海难童初级中学、难童中学、康定路昌化路及健行中学线索检索，未找到本校和现宗地的可靠连续证据。同组#1150健行中学、#1151北新中小学、#1152泛称中学只凭同一无门牌路口和近坐标聚合，不能据健行中学可能借用徐园就把四条记录全部标为徐园旧址或某现代学校。 OSM附近约44米鸿印里只能作为当前街区参照，不能代替学校宗地沿革证据。 同组010调查已指出原点近鸿印里、昌平路320号，和历史所写康定路昌化路口不一致；路口偏移、具体校址与组内学校关系均待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1153",
+        "https://www.openstreetmap.org/way/989903064"
+      ]
+    },
+    {
+      "IDBAT": 1736,
+      "historicalName": "LEE APARTMENT",
+      "coordinates": {
+        "wgs84": [
+          121.457093,
+          31.219803
+        ],
+        "gcj02": [
+          121.461665,
+          31.217898
+        ]
+      },
+      "modernRoadAddress": "847 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "淮海中路Lee公寓位置线索",
+      "currentUse": "具体建筑和现用途未确认",
+      "currentAddress": "上海市黄浦区淮海中路一带（历史847号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "检索LEE APARTMENT、Lee Apartments、847 Avenue Joffre和淮海中路847号，未取得能把英文公寓名连至现建筑的独立资料。原记录没有中文名和年代，不能仅凭Lee猜测“李氏公寓”或人物故居；旧847号的今门牌、楼栋存毁和现代使用单位均待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1736"
+      ]
+    },
+    {
+      "IDBAT": 298,
+      "historicalName": "Leshan Temple",
+      "historicalNameCorrectionZh": "樂善寺",
+      "coordinates": {
+        "wgs84": [
+          121.458602,
+          31.219967
+        ],
+        "gcj02": [
+          121.46317,
+          31.218058
+        ]
+      },
+      "modernRoadAddress": "771 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "淮海中路乐善寺位置线索",
+      "currentUse": "旧寺具体宗地与现用途未确认",
+      "currentAddress": "上海市黄浦区淮海中路一带（历史771号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文樂善寺，历史霞飞路771号。已检索乐善寺、繁体名、霞飞路及淮海中路门牌组合，尚无独立沿革或新旧门牌对应；不能混同外地同名寺院或上海乐善堂。仅道路名称转换不足以认定原建筑存续或拆除。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=298"
+      ]
+    },
+    {
+      "IDBAT": 694,
+      "historicalName": "Liangji Hospital",
+      "historicalNameCorrectionZh": "良済医院",
+      "coordinates": {
+        "wgs84": [
+          121.472271,
+          31.23333
+        ],
+        "gcj02": [
+          121.476799,
+          31.231393
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "汕头路良济医院位置线索",
+      "currentUse": "原医院建筑与具体宗地现用途未确认",
+      "currentAddress": "上海市黄浦区汕头路一带（历史78号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原名良済医院，SWATOW ROAD对应汕头路。检索良济、良済、Liangji Hospital及汕头路78号，未找到可信医院沿革或当下宗地资料；外地良济医院以及仁济医院不是本条身份依据。没有独立证据证明拆除。OSM原点近人民大道与西藏中路，另有道路／点位相容性问题，需核原标注。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=694",
+        "https://www.openstreetmap.org/way/1292578259"
+      ]
+    },
+    {
+      "IDBAT": 1435,
+      "historicalName": "Lianhua Hotel",
+      "historicalNameCorrectionZh": "蓮花賓館",
+      "coordinates": {
+        "wgs84": [
+          121.427405,
+          31.215534
+        ],
+        "gcj02": [
+          121.432038,
+          31.213678
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "延安西路莲花宾馆位置线索",
+      "currentUse": "旧宾馆具体建筑及现用途未确认",
+      "currentAddress": "上海市长宁区延安西路一带（历史大西路914号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文蓮花賓館，GREAT WESTERN ROAD为大西路、今延安西路。已按宾馆名、Lianhua Hotel及旧914号检索，尚无可靠沿革与现代门牌对应；黄山同名莲花宾馆更名徽商故里酒店的资料地理不符，不采用。不能依据邻近现酒店判定同址经营。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1435"
+      ]
+    },
+    {
+      "IDBAT": 146,
+      "historicalName": "Lijiao Gubeitang Temple",
+      "historicalNameCorrectionZh": "理教古北堂",
+      "coordinates": {
+        "wgs84": [
+          121.470963,
+          31.21716
+        ],
+        "gcj02": [
+          121.475494,
+          31.215219
+        ]
+      },
+      "modernRoadAddress": "396 合肥路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "合肥路理教古北堂位置线索",
+      "currentUse": "原善堂建筑及宗地现用途未确认",
+      "currentAddress": "上海市黄浦区合肥路一带（历史396号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原名理教古北堂，ROUTE DU PERE FROC对应合肥路。已检索中英文堂名、合肥路及396号，只有原数据库转载和慈善机关旧书目录线索，尚无可核内容建立建筑处置与现代宗地关系。理教堂口不能凭古北二字移到现代古北地区，也不能与其他善堂混同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=146"
+      ]
+    },
+    {
+      "IDBAT": 281,
+      "historicalName": "Lijiao Shanli Shantang",
+      "historicalNameCorrectionZh": "理教善縁善堂",
+      "coordinates": {
+        "wgs84": [
+          121.457008,
+          31.223471
+        ],
+        "gcj02": [
+          121.461581,
+          31.221568
+        ]
+      },
+      "modernRoadAddress": "366-11 长乐路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "长乐路理教善缘善堂位置线索",
+      "currentUse": "原善堂具体楼栋与现用途未确认",
+      "currentAddress": "上海市黄浦区长乐路一带（历史366弄11号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文理教善縁善堂而英文为Lijiao Shanli Shantang，保留原字段，不擅改成其他善堂。已检索善缘善堂、善縁、理教、长乐路366弄11号及原法文道路名，未取得独立门牌和处置沿革。不能因为所在街坊存在历史住宅而判定善堂仍存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=281"
+      ]
+    },
+    {
+      "IDBAT": 128,
+      "historicalName": "Linlong Primary School",
+      "historicalNameCorrectionZh": "林隆小學",
+      "coordinates": {
+        "wgs84": [
+          121.471317,
+          31.21348
+        ],
+        "gcj02": [
+          121.475846,
+          31.211536
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "马当路林隆小学位置线索",
+      "currentUse": "原校舍与宗地现用途未确认",
+      "currentAddress": "上海市黄浦区马当路一带（历史585弄5A号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "RUE BRENIER DE MONTMORAND对应马当路。已检索林隆小学、繁体名、英文名及585弄5A门牌，检索所得为原数据转载或其他地区无关人名，未发现可靠校史或旧址拆建文献；不能把相近名称的现代学校套入。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=128"
+      ]
+    },
+    {
+      "IDBAT": 1402,
+      "historicalName": "Liolita Apartment",
+      "coordinates": {
+        "wgs84": [
+          121.402396,
+          31.22685
+        ],
+        "gcj02": [
+          121.407047,
+          31.225013
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "中山路Liolita公寓位置线索",
+      "currentUse": "历史公寓身份、具体原址和现用途均未确认",
+      "currentAddress": "上海市长宁区中山路旧线附近（原记录无门牌）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原文Liolita Apartment无中文名，地址仅ZHONGSHAN LU且缺门牌。按原拼写及中山路公寓组合检索，尚无独立结果；原坐标仅能提供长宁区中山路旧线附近空间线索。不能擅自纠正为Lolita、丽都或其他相似名公寓，也不能仅凭周边现代住宅断定原公寓已拆。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1402"
+      ]
+    },
+    {
+      "IDBAT": 1157,
+      "historicalName": "Liren Primary School and Kindergarten",
+      "historicalNameCorrectionZh": "立人小學校立人幼稚園",
+      "coordinates": {
+        "wgs84": [
+          121.443594,
+          31.239826
+        ],
+        "gcj02": [
+          121.448201,
+          31.237957
+        ]
+      },
+      "modernRoadAddress": "707-8 江宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "江宁路立人小学及幼稚园位置线索",
+      "currentUse": "原学校楼栋与宗地现用途未确认",
+      "currentAddress": "上海市静安区江宁路一带（历史707弄8号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文立人小學校立人幼稚園，GORDON ROAD对应江宁路。已按立人小学、立人小学校、江宁路707弄8号及英文名检索，未取得独立校史、门牌沿革或现址资料。同组#1158英文学校同记707-8 GORDON ROAD，但没有证据证明属于同一学校或同一楼栋的分期名称，不能整组自动回填。OSM原点约43米处为MOHO Mall，但缺历史宗地边界，不能据此把#1157及#1158判为已拆。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1157",
+        "https://www.virtualshanghai.net/data/buildings?ID=1158",
+        "https://www.openstreetmap.org/way/1200746372"
+      ]
+    }
+  ]
+}

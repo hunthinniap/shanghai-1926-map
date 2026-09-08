@@ -1,0 +1,852 @@
+{
+  "batch": "011",
+  "part": "b",
+  "researchedAt": "2026-09-08",
+  "method": "Manual web searches by original English name, Chinese name, historical door number and modern-road candidates; explicit old/new address conflicts retain review. Queries without reliable evidence do not establish absence.",
+  "records": [
+    {
+      "IDBAT": 800,
+      "queries": [
+        "上海 克伦医院",
+        "西藏中路95 医院",
+        "克伦医院 西藏 张克伦"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "温州市中医院院报的陶正一史料记载，1929年其入张克伦创办、位于上海西藏路的克伦医院学习，可支持医院名称与道路，但没有旧95-4号至今门牌的沿革。精确地块、建筑存毁和现用途均待核；不能把附近现代医院视为其后继。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=800",
+        "https://www.wzszyy.cn/wzuploads/site_6/20260302/202603021812087150.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.4726,
+          "latitude": 31.231782
+        },
+        "nearestCandidates": [
+          {
+            "name": "武胜路",
+            "distanceMetres": 20,
+            "sourceUrl": "https://www.openstreetmap.org/way/1075505400"
+          },
+          {
+            "name": "西藏中路",
+            "distanceMetres": 43,
+            "sourceUrl": "https://www.openstreetmap.org/way/1074409255"
+          },
+          {
+            "name": "西藏中路",
+            "distanceMetres": 69,
+            "sourceUrl": "https://www.openstreetmap.org/way/1074409232"
+          },
+          {
+            "name": "西藏中路",
+            "distanceMetres": 74,
+            "sourceUrl": "https://www.openstreetmap.org/way/1272548721"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1672,
+      "queries": [
+        "四川北路491号 宪兵",
+        "Kempeitai 491",
+        "北四川路491",
+        "日本宪兵队 四川北路 本部"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "资料能确认日军曾在四川北路大桥大楼设宪兵本部，研究给出的现代地址为四川北路85号／旧崇明路6号。OSM大桥大楼要素中心距本条原始WGS84点约14米，点位相容；但旧491号与今85号、旧崇明路6号的门牌沿革及本条1937年所指院落尚未闭环，不能仅凭近邻自动回填。具体楼栋现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1672",
+        "https://www.shjinganlib.net/News_Detailed.aspx?ColumnNameEn=NOTICE&id=11951",
+        "https://yangtze.silkroadinfo.org.cn/2017/6/30/20170630131536.pdf",
+        "https://www.openstreetmap.org/way/446939660"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.480438,
+          "latitude": 31.248265
+        },
+        "nearestCandidates": [
+          {
+            "name": "大桥大楼",
+            "distanceMetres": 14,
+            "sourceUrl": "https://www.openstreetmap.org/way/446939660"
+          },
+          {
+            "name": "全家",
+            "distanceMetres": 36,
+            "sourceUrl": "https://www.openstreetmap.org/node/4508394692"
+          },
+          {
+            "name": "四川北路武昌路",
+            "distanceMetres": 54,
+            "sourceUrl": "https://www.openstreetmap.org/relation/14229554"
+          },
+          {
+            "name": "四川北路武昌路",
+            "distanceMetres": 64,
+            "sourceUrl": "https://www.openstreetmap.org/node/9802898883"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 617,
+      "queries": [
+        "福州路406号 科学仪器",
+        "科学仪器馆 古籍书店",
+        "福州路406号 嘉骏",
+        "上海古籍书店 福州路 2025"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "《上海城市规划》所载英雄金笔厂沿革确认1938年租赁福州路406号科学仪器馆三楼恢复生产。2021年前后的店招清单记406号为嘉骏美术用品，但欠缺原楼连续关系及近期使用证明。2025年新民晚报一文将古籍书店门牌误写为406号，而2026年市文旅局阅读地图明确为401号，故不采用古籍书店作此址现用途。具体门牌、楼栋和商户存续待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=617",
+        "https://www.shplanning.com.cn/archive/download/id/554.html",
+        "https://qxb-img-osscache.qixin.com/bid/75aa2115a82e77bde3560cda3defb2fc.pdf",
+        "https://img1.xinmin.cn/xmwb/2025-04-19/110419.pdf",
+        "https://whlyj.sh.gov.cn/gqfc/20260814/37bdc2f8fb3b4f88a6fed2e03975712e.html"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.477658,
+          "latitude": 31.236028
+        },
+        "nearestCandidates": [
+          {
+            "name": "上海图书公司",
+            "distanceMetres": 24,
+            "sourceUrl": "https://www.openstreetmap.org/node/4161718102"
+          },
+          {
+            "name": "Cafe Begonia",
+            "distanceMetres": 33,
+            "sourceUrl": "https://www.openstreetmap.org/node/4161738291"
+          },
+          {
+            "name": "上海美术用品商店",
+            "distanceMetres": 35,
+            "sourceUrl": "https://www.openstreetmap.org/node/4367746489"
+          },
+          {
+            "name": "福州路福建中路",
+            "distanceMetres": 35,
+            "sourceUrl": "https://www.openstreetmap.org/node/9857831196"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1763,
+      "queries": [
+        "KING’S ALBERT APARTMENTS Shanghai",
+        "陕西南路377号 公寓",
+        "King Albert Shanghai apartment",
+        "King’s Albert Shanghai -site:virtualshanghai.net"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "King Albert Apartments与陕南邨的中英文对应有建筑史研究和名录支持，位置也与陕西南路复兴中路公寓群吻合。但调查文章抄录1932年名录地址为373 Avenue du Roi Albert，本条为377号；尚缺旧377号至现151—187号中具体楼栋的对应。不能因英文名近似就将同街所有Albert公寓等同，门牌与院界待核。 OSM现名“陕南邨”要素中心距原点约38米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1763",
+        "https://brs.russianshanghai.city/buildings",
+        "https://www.thepaper.cn/newsDetail_forward_7992764",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.openstreetmap.org/way/494305170"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.456595,
+          "latitude": 31.21587
+        },
+        "nearestCandidates": [
+          {
+            "name": "陕南邨",
+            "distanceMetres": 38,
+            "sourceUrl": "https://www.openstreetmap.org/way/494305170"
+          },
+          {
+            "name": "复兴中路陕西南路",
+            "distanceMetres": 39,
+            "sourceUrl": "https://www.openstreetmap.org/node/6897139584"
+          },
+          {
+            "name": "复兴中路陕西南路",
+            "distanceMetres": 43,
+            "sourceUrl": "https://www.openstreetmap.org/relation/14193527"
+          },
+          {
+            "name": "复兴中路陕西南路",
+            "distanceMetres": 47,
+            "sourceUrl": "https://www.openstreetmap.org/node/9778459419"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1732,
+      "queries": [
+        "King’s Lynn Shanghai apartments",
+        "金司林公寓 安亭路43",
+        "安亭路43号 site:xuhui.gov.cn",
+        "金司林公寓 安亭公寓 2025"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "英文King’s Lynn Apartments与金司林公寓的对应、旧国富门路43号与今安亭路43号共同锁定本楼。房管局第四批名录列原名金司林公寓、现名安亭公寓；市历保中心供稿的2026年文章确认2025年修缮后仍作居民住宅。不同资料对建成年份和设计者有出入，本次不改历史年代字段，也不把这些有争议的细节写成定论。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1732",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.jfdaily.com/sgh/detail?id=1739812",
+        "https://www.sohu.com/a/906841213_640391"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.442905,
+          "latitude": 31.205249
+        },
+        "nearestCandidates": [
+          {
+            "name": "Light",
+            "distanceMetres": 67,
+            "sourceUrl": "https://www.openstreetmap.org/node/7770070186"
+          },
+          {
+            "name": "安亭路",
+            "distanceMetres": 70,
+            "sourceUrl": "https://www.openstreetmap.org/way/10045779"
+          },
+          {
+            "name": "上海质量技术认证中心",
+            "distanceMetres": 80,
+            "sourceUrl": "https://www.openstreetmap.org/way/789801642"
+          },
+          {
+            "name": "前进大楼",
+            "distanceMetres": 83,
+            "sourceUrl": "https://www.openstreetmap.org/way/1216768097"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1768,
+      "queries": [
+        "Koffman apartment Shanghai",
+        "武康路232号 公寓",
+        "国富门公寓 site:gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "旧福开森路230/232号与今武康路230、232号一致，1935年Koffman设计图、现场建筑史调查和官方名录共同支持本楼身份。徐汇区房管局2025年修缮实录确认原四层后加建为五层，仍设居住单元且底层附楼现作商铺。各资料对命名缘由及1935/1936年分别作设计或建成年的表述有差别，本次保留原历史信息，不据争议改名人身份或年代。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1768",
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250919/563719.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://brs.russianshanghai.city/architects/m-z/g-b-rabinovich",
+        "https://www.amcham-shanghai.org/sites/default/files/2017-02/05%2016%20ins.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.435199,
+          "latitude": 31.210097
+        },
+        "nearestCandidates": [
+          {
+            "name": "Modi Cafe",
+            "distanceMetres": 61,
+            "sourceUrl": "https://www.openstreetmap.org/node/6366812757"
+          },
+          {
+            "name": "世界小学",
+            "distanceMetres": 62,
+            "sourceUrl": "https://www.openstreetmap.org/way/787359872"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1528,
+      "queries": [
+        "孔家花园 2154",
+        "孔家花园 虹桥路 孔祥熙",
+        "云峰宾馆 2260 2025"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "长宁区规划资源局2025年资料明确孔祥熙度假别墅孔家花园位于虹桥路2258、2260号，现为云峰宾馆。本条历史名与虹桥地区吻合，但输入门牌2154不同，且尚未查得旧2154号门牌变更及花园边界资料；OSM的虹桥路2260号与2258号孔氏别墅点分别距原点约60米、78米，支持地段相容，但未直接界定旧2154号花园院界。不能混用斜土路2421号同名孔家花园酒家的资料，原址对应待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1528",
+        "https://www.shcn.gov.cn/col7698/20250210/1277973.html",
+        "https://www.shcn.gov.cn/col7698/20220302/1212020.html",
+        "https://www.openstreetmap.org/node/4933524716"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.373393,
+          "latitude": 31.19417
+        },
+        "nearestCandidates": [
+          {
+            "name": "总工会幼儿园",
+            "distanceMetres": 48,
+            "sourceUrl": "https://www.openstreetmap.org/way/1242252344"
+          },
+          {
+            "name": "孔氏别墅",
+            "distanceMetres": 60,
+            "sourceUrl": "https://www.openstreetmap.org/node/4933524716"
+          },
+          {
+            "name": "Bubba's Texas Bar-B-Q",
+            "distanceMetres": 68,
+            "sourceUrl": "https://www.openstreetmap.org/node/1066173050"
+          },
+          {
+            "name": "孔氏别墅",
+            "distanceMetres": 78,
+            "sourceUrl": "https://www.openstreetmap.org/node/4933524694"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1604,
+      "queries": [
+        "上海 虬江支路212",
+        "韩国 教会 虬江支路",
+        "虬江支路 韩国",
+        "虬江支路212弄 吉祥里"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "《上海市近代教会建筑历史初探》附录据《上海市行号路图录》列韩国基督教礼拜堂在虬江支路212弄（吉祥里），能够补足本条英文泛称和地址中遗漏的“弄”。尚无礼拜堂具体弄内门牌、拆建记录或现机构沿革，不把整条里弄或附近教堂当成其延续；现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1604",
+        "https://dl.ziliaozhan.win/%E4%B9%A6%E7%B1%8D/pdf/%E7%A0%94%E7%A9%B6/%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%BF%91%E4%BB%A3%E6%95%99%E4%BC%9A%E5%BB%BA%E7%AD%91%E5%8E%86%E5%8F%B2%E5%88%9D%E6%8E%A2.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.477844,
+          "latitude": 31.255555
+        },
+        "nearestCandidates": [
+          {
+            "name": "虬江路电子市场",
+            "distanceMetres": 27,
+            "sourceUrl": "https://www.openstreetmap.org/way/1385301459"
+          },
+          {
+            "name": "新广路",
+            "distanceMetres": 62,
+            "sourceUrl": "https://www.openstreetmap.org/way/41890784"
+          },
+          {
+            "name": "虬江支路",
+            "distanceMetres": 90,
+            "sourceUrl": "https://www.openstreetmap.org/way/175637234"
+          },
+          {
+            "name": "新广路",
+            "distanceMetres": 94,
+            "sourceUrl": "https://www.openstreetmap.org/way/175957674"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1714,
+      "queries": [
+        "上海 劳动大学 车站西路",
+        "车站西路105号 劳动大学",
+        "劳动大学 旧址 上海 车站",
+        "车站西路105"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "虹口区2024年资料把1927年劳动大学校门定位在今车站西路与车站南路交界，并记大学与孙总理纪念碑毁于一二八战事；1933年同济附设高职曾使用劳动大学工学院原址，说明需要分辨校园和建筑而非概括整校全毁。未查得105号校园原界与今地块的直接对应，不能把附近现代学校或工厂当作整个旧校园，现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1714",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240416/acde8aa7-b697-4cfb-b110-5050ce85a10c.html",
+        "https://news.xinmin.cn/2023/02/25/32325475.html",
+        "https://www.shda.gov.cn/dawh/csjy/202608/t20260807_76643.html"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.478246,
+          "latitude": 31.299067
+        },
+        "nearestCandidates": [
+          {
+            "name": "福赐花苑",
+            "distanceMetres": 25,
+            "sourceUrl": "https://www.openstreetmap.org/way/1173253865"
+          },
+          {
+            "name": "车站北路",
+            "distanceMetres": 61,
+            "sourceUrl": "https://www.openstreetmap.org/way/39657603"
+          },
+          {
+            "name": "文治福邸",
+            "distanceMetres": 94,
+            "sourceUrl": "https://www.openstreetmap.org/relation/19643289"
+          },
+          {
+            "name": "车站西路",
+            "distanceMetres": 96,
+            "sourceUrl": "https://www.openstreetmap.org/way/39792507"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 399,
+      "queries": [
+        "上海 辣斐花园 剧场",
+        "邮电医院 复兴中路1315 2025",
+        "上海邮电医院 1315号 site:gov.cn",
+        "辣斐花园 医院 site:gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "方志上海沿街史明确区分辣斐花园与复兴中路323号辣斐大戏院，并记花园已消失、原址成为上海邮电医院南部。历史和现代门牌均为1315号；2024年静安卫健委抽查名单及2025年记者现场采访继续确认院区和体检用途。这里按花园及剧场用地转为医疗院区记录，不把现代医院楼声称为原剧场，也不与1363号克莱门公寓内的溜冰场混同。另排除复兴中路1186号：徐汇区2026年3月30日公告已将该处旧名“辣斐大戏院旧址”更正为“上海大戏院旧址”，不是本条1315号的花园剧场。 OSM现名“上海邮电医院（南部）”要素中心距原点约42米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=399",
+        "https://article.xuexi.cn/html/14471131995231452324.html?share_to=weibo&source=share&study_comment_disable=1&study_style_id=feeds_default",
+        "https://www.jingan.gov.cn/govxxgk/JC0/2024-12-18/5d133314-63a6-4b2b-bac1-da69fe56ff54.html",
+        "https://www.sohu.com/a/874060996_121123697",
+        "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1",
+        "https://www.openstreetmap.org/way/787352069"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.450326,
+          "latitude": 31.213715
+        },
+        "nearestCandidates": [
+          {
+            "name": "荣城酒家",
+            "distanceMetres": 17,
+            "sourceUrl": "https://www.openstreetmap.org/node/10724683286"
+          },
+          {
+            "name": "滢一日本料理",
+            "distanceMetres": 36,
+            "sourceUrl": "https://www.openstreetmap.org/node/8321155978"
+          },
+          {
+            "name": "上海邮电医院（南部）",
+            "distanceMetres": 42,
+            "sourceUrl": "https://www.openstreetmap.org/way/787352069"
+          },
+          {
+            "name": "Barules",
+            "distanceMetres": 44,
+            "sourceUrl": "https://www.openstreetmap.org/node/5788473039"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 139,
+      "queries": [
+        "上海 辣斐 323 国泰",
+        "拉法耶 2026 323",
+        "拉法耶艺术设计中心 重建",
+        "拉法耶艺术设计中心 拆 2013"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "2025年设计方项目说明直接确认辣斐大戏院于2006—2009年拆除重建，2014年在重建楼基础上改为艺术中心，2024—2025年由ALIGHT光禹莱特改造为拉法耶文化艺术中心。2026年7月至10月黑水城展览资料确认该址仍作文化展陈。建筑是重建及改造后的空间，不是邬达克1933年原戏院本体完整保留。 OSM现名“拉法耶艺术设计中心”要素中心距原点约37米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=139",
+        "https://www.gooood.cn/lafayette-culture-center-renovation-by-they-architects.htm",
+        "https://www.sohu.com/a/1052420653_121668715",
+        "https://data.library.sh.cn/entity/physicalculturalheritage/5qzpiy5tcdz8dmd3",
+        "https://www.openstreetmap.org/way/1199660261"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.471169,
+          "latitude": 31.218414
+        },
+        "nearestCandidates": [
+          {
+            "name": "复兴中路",
+            "distanceMetres": 7,
+            "sourceUrl": "https://www.openstreetmap.org/way/1297720369"
+          },
+          {
+            "name": "中国建设银行",
+            "distanceMetres": 26,
+            "sourceUrl": "https://www.openstreetmap.org/node/4161765892"
+          },
+          {
+            "name": "上海银行",
+            "distanceMetres": 30,
+            "sourceUrl": "https://www.openstreetmap.org/node/4161768493"
+          },
+          {
+            "name": "拉法耶艺术设计中心",
+            "distanceMetres": 37,
+            "sourceUrl": "https://www.openstreetmap.org/way/1199660261"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 88,
+      "queries": [
+        "上海 霞飞捕房 211",
+        "霞飞路211 捕房",
+        "Lafayette Police Station Shanghai",
+        "霞飞路捕房 爱马仕 211",
+        "霞飞路捕房 site:gov.cn",
+        "Hermes Shanghai maison 217 huaihai 2026 official"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "Virtual Shanghai在线记录直接说明本条为#4112 Joffre Police Station的后续名称，照片707亦共同链接两条，保留各自历史记录。旧版房管局名录和2018年报道曾记235号，更新于2023年的官方第三批优秀历史建筑表将3C005列为淮海中路217、233号及嵩山路65、67号，用途商场；爱马仕官网现入口为217号。OSM Hermès点距原始位置约22米，点位相容。集团法律文件还列211、213、215、227号12号楼为企业登记地址。院落商业再利用可确认，旧211号具体楼栋及门牌沿革仍待核，暂不整组回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=88",
+        "https://www.virtualshanghai.net/Photos/Images?ID=707",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://news.sina.cn/2018-02-02/detail-ifyreuzn1870796.d.html?vt=4",
+        "https://www.hermes.cn/cn/zh/find-store/china/shanghai/hermes-maison-shanghai-GTXRBUSG/",
+        "https://assets.hermes.com/is/content/hermesedito/Legal/Binding_Corporate_Rules_BCRs_FRpdf.pdf",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://www.openstreetmap.org/node/6897142553"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.471254,
+          "latitude": 31.225648
+        },
+        "nearestCandidates": [
+          {
+            "name": "淮海中路嵩山路",
+            "distanceMetres": 9,
+            "sourceUrl": "https://www.openstreetmap.org/node/9812022922"
+          },
+          {
+            "name": "淮海中路嵩山路",
+            "distanceMetres": 17,
+            "sourceUrl": "https://www.openstreetmap.org/node/5274677121"
+          },
+          {
+            "name": "Hermès",
+            "distanceMetres": 22,
+            "sourceUrl": "https://www.openstreetmap.org/node/6897142553"
+          },
+          {
+            "name": "Victoria's Secret",
+            "distanceMetres": 41,
+            "sourceUrl": "https://www.openstreetmap.org/node/4697523689"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 56,
+      "queries": [
+        "上海 啦格纳 小学",
+        "Lagrene School Shanghai",
+        "喇格纳小学 84",
+        "喇格纳小学 2025 新天地",
+        "喇格纳 济南路",
+        "Rue Oriou Shanghai"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "喇格纳小学实体保存并转作文化空间的沿革明确：2020年整栋向西北平移61.7米，2026年在新天地东台里举办UNFOLD艺术设计节，已非普通学校教学用途。但输入地址为旧奥利和路84号，而文保登记为浏河口路50号；旧今门牌及原坐标与平移后位置的关系尚待核。保留输入历史坐标，不把位移后的建筑直接当成原点上从未移动的校舍。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=56",
+        "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf",
+        "https://sghexport.shobserver.com/html/baijiahao/2020/10/15/278680.html",
+        "https://www.yicai.com/news/103227958.html",
+        "https://www.shuionland.com/pic/20250912/202509121329435562.pdf"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.475067,
+          "latitude": 31.223547
+        },
+        "nearestCandidates": [
+          {
+            "name": "吉安路湖滨路",
+            "distanceMetres": 60,
+            "sourceUrl": "https://www.openstreetmap.org/node/11664726198"
+          },
+          {
+            "name": "吉安路湖滨路",
+            "distanceMetres": 62,
+            "sourceUrl": "https://www.openstreetmap.org/relation/17269921"
+          },
+          {
+            "name": "吉安路湖滨路",
+            "distanceMetres": 64,
+            "sourceUrl": "https://www.openstreetmap.org/node/11664726199"
+          },
+          {
+            "name": "太平洋新天地商业中心",
+            "distanceMetres": 74,
+            "sourceUrl": "https://www.openstreetmap.org/way/401230320"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 239,
+      "queries": [
+        "上海 兰星小学 泰康路",
+        "兰星小学 上海",
+        "兰星小学 泰康",
+        "泰康路326号 学校"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "以兰星小学、私立蘭星小學、Lanxing Primary School及泰康路326号检索，未得到独立校史或拆建沿革。地图聚合站有泰康路326号Tree Hand Cafe餐飲POI，但仅属现代同号参照，不能证明店铺所在楼即原校舍，也不能据其网页抓取时间断言仍营业。历史门牌与校园边界、楼栋存毁和当前使用单位待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=239",
+        "https://sh.city8.com/cater/8da5l3794kozb90e8c"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.462382,
+          "latitude": 31.209574
+        },
+        "nearestCandidates": [
+          {
+            "name": "上海古籍出版社读者服务部",
+            "distanceMetres": 28,
+            "sourceUrl": "https://www.openstreetmap.org/node/5042024832"
+          },
+          {
+            "name": "上海古籍出版社",
+            "distanceMetres": 37,
+            "sourceUrl": "https://www.openstreetmap.org/way/799017738"
+          },
+          {
+            "name": "Absurd",
+            "distanceMetres": 47,
+            "sourceUrl": "https://www.openstreetmap.org/node/6356239729"
+          },
+          {
+            "name": "泰康路",
+            "distanceMetres": 48,
+            "sourceUrl": "https://www.openstreetmap.org/way/1064574493"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 170,
+      "queries": [
+        "上海 老大华 舞",
+        "大华书场 拆除",
+        "K11 马当路 41"
+      ],
+      "verificationStatus": "likely",
+      "outcome": "现场史述把马当路老大华舞厅、后来的维纳斯舞厅及大华书场联系到今K11马当路侧，中国青年报记者对原售票员的采访确认大华书场1990年关闭后原址建商业楼宇。但文汇报所记大华书场是马当路25号，本条是旧41号，且各文对更名年份表述存在差异。旧门牌和原建筑范围待核，不以街区沿革直接宣布本点就是K11某一店铺。 OSM现名“K11 艺术购物中心”要素中心距原点约43米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=170",
+        "https://www.sohu.com/a/837052495_121123854",
+        "https://zqb.cyol.com/html/2011-07/06/nw.D110000zgqnb_20110706_1-12.htm",
+        "https://dzb.whb.cn/images/2018-08/24/11/110824.pdf",
+        "https://www.openstreetmap.org/way/48872919"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.468596,
+          "latitude": 31.225341
+        },
+        "nearestCandidates": [
+          {
+            "name": "马当路",
+            "distanceMetres": 14,
+            "sourceUrl": "https://www.openstreetmap.org/way/10628429"
+          },
+          {
+            "name": "香港新世界大厦",
+            "distanceMetres": 39,
+            "sourceUrl": "https://www.openstreetmap.org/way/65254415"
+          },
+          {
+            "name": "Simply life",
+            "distanceMetres": 40,
+            "sourceUrl": "https://www.openstreetmap.org/node/4744025923"
+          },
+          {
+            "name": "K11 艺术购物中心",
+            "distanceMetres": 43,
+            "sourceUrl": "https://www.openstreetmap.org/way/48872919"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1365,
+      "queries": [
+        "老闸桥 福建路 重建",
+        "福建路桥 site:shanghai.gov.cn",
+        "福建路桥 2008 2001"
+      ],
+      "verificationStatus": "verified",
+      "outcome": "《上海通志》记1885年老闸桥，现地沿革明确为福建路桥；现代桥不是1885年的木桥。老桥历经重建，1968年混凝土桥于2001年拆除，新桥2004年开工、2008年通车。2025年苏州河桥梁实景报道与市绿化市容局桥名牌提升清单可确认桥梁仍在使用。这里只更新本条地标的现用途，不调整道路要素或桥梁几何。原桥实体已拆，按拆除后原址现用途处理，不归为历史桥体仍存。 OSM现名“福建路桥”要素中心距原点约22米，与候选位置相容；近邻距离只作定位旁证。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1365",
+        "https://www.shanghai.gov.cn/shanghai/newshanghai/%E4%B8%8A%E6%B5%B7%E9%80%9A%E5%BF%97.pdf",
+        "https://news.sina.com.cn/o/2007-10-25/005312781545s.shtml",
+        "https://www.thepaper.cn/newsDetail_forward_31609753",
+        "https://www.shanghai.gov.cn/gwk/search/content/c7d13f15-565a-4224-a3c6-da1c5f224e51",
+        "https://www.openstreetmap.org/way/815631992"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.474121,
+          "latitude": 31.24231
+        },
+        "nearestCandidates": [
+          {
+            "name": "福建路桥",
+            "distanceMetres": 22,
+            "sourceUrl": "https://www.openstreetmap.org/way/815631992"
+          },
+          {
+            "name": "福建中路",
+            "distanceMetres": 59,
+            "sourceUrl": "https://www.openstreetmap.org/way/73897135"
+          },
+          {
+            "name": "福建北路",
+            "distanceMetres": 77,
+            "sourceUrl": "https://www.openstreetmap.org/way/73897035"
+          },
+          {
+            "name": "老闸桥",
+            "distanceMetres": 79,
+            "sourceUrl": "https://www.openstreetmap.org/node/11135889796"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    },
+    {
+      "IDBAT": 1736,
+      "queries": [
+        "LEE APARTMENT Shanghai 847",
+        "淮海中路847号 公寓",
+        "淮海中路847",
+        "Shanghai Lee Apartments Joffre"
+      ],
+      "verificationStatus": "unresolved",
+      "outcome": "检索LEE APARTMENT、Lee Apartments、847 Avenue Joffre和淮海中路847号，未取得能把英文公寓名连至现建筑的独立资料。原记录没有中文名和年代，不能仅凭Lee猜测“李氏公寓”或人物故居；旧847号的今门牌、楼栋存毁和现代使用单位均待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1736"
+      ],
+      "spatialCrossCheck": {
+        "sourceFiles": [
+          "011-osm-nearby.json",
+          "011-osm-retry.json"
+        ],
+        "originalWgs84": {
+          "longitude": 121.457093,
+          "latitude": 31.219803
+        },
+        "nearestCandidates": [
+          {
+            "name": "名创优品",
+            "distanceMetres": 36,
+            "sourceUrl": "https://www.openstreetmap.org/node/4445038290"
+          },
+          {
+            "name": "国泰电影院",
+            "distanceMetres": 37,
+            "sourceUrl": "https://www.openstreetmap.org/way/445267150"
+          },
+          {
+            "name": "国泰电影院",
+            "distanceMetres": 45,
+            "sourceUrl": "https://www.openstreetmap.org/node/4881610277"
+          },
+          {
+            "name": "Bug Coffee",
+            "distanceMetres": 48,
+            "sourceUrl": "https://www.openstreetmap.org/node/4427249032"
+          }
+        ],
+        "caution": "近邻POI只用于检查候选位置，不单独证明身份或门牌沿革；未命中亦不表示建筑不存在。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "batch": "011",
+  "part": "a",
+  "researchedAt": "2026-09-08",
+  "input": "research/unresolved-landmarks/011-input.json",
+  "scope": "稳定输入前17条；搜索尝试为代表性查询，来源清单为实际返回并审阅的网页/检索摘要及共享OSM结果。检索未命中不等于机构不存在。",
+  "records": [
+    {
+      "IDBAT": 644,
+      "queries": [
+        "金龙四大王庙 厦门路",
+        "金龍四大王廟",
+        "厦门路7号 大王庙"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "东方网转载文直接记载老闸桥南的金龙四大王庙在今厦门路7号且已不存，与本条厦门路1/9号和福建路桥南的坐标相符。不得混同大田路、新闸桥旁的另一座新闸大王庙。厦门路7号旧庙界及今天对应宗地用途仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=644",
+        "https://www.hunantoday.cn/news/xhn/202006/17401001.html",
+        "https://www.openstreetmap.org/node/11135889796"
+      ]
+    },
+    {
+      "IDBAT": 52,
+      "queries": [
+        "金榮小學校",
+        "金荣小学 浏河口路",
+        "金荣小学 八仙桥",
+        "20 RUE ORIOU"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "Rue Oriou可对应浏河口路，学校中文字段为金榮小學校；网络资料提及黄金荣在八仙桥兴办金荣小学，但未取得能将校史、20号门牌与现楼栋闭合的可靠材料。仅保存道路及名称线索，不把同名外地金荣小学或附近学校认作继承者。 OSM在原点附近64米列太平洋新天地商业中心，只能说明周边更新，20号旧址对应仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=52",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表",
+        "https://zh.wikipedia.org/wiki/黄金荣",
+        "https://www.openstreetmap.org/way/401230320"
+      ]
+    },
+    {
+      "IDBAT": 794,
+      "queries": [
+        "济仁医院 上海",
+        "濟仁醫院",
+        "Jiren Hospital Shanghai",
+        "87 Race Course Road"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "分别检索济仁医院、濟仁醫院、Jiren Hospital和87 Race Course Road，未找到可核验的院史与门牌沿革。中文次序是济仁而非仁济，不能将山东中路仁济医院的历史和今日地址移植到本点。原87号宗地及医院存废均待核。 OSM最近为人民广场交通节点及武胜路、地下停车场，不构成原医院沿革证据。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=794",
+        "https://www.openstreetmap.org/way/1327579131",
+        "https://www.openstreetmap.org/way/178725150"
+      ]
+    },
+    {
+      "IDBAT": 1240,
+      "queries": [
+        "積善講寺",
+        "积善讲寺 上海",
+        "积善讲寺 35"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《上海县续志》有积善讲寺及崇正北官塾记载，可佐证历史寺名；方志记县署西北的寺院，输入却仅存35 ?门牌，不能据旧城厢附近另有沉香阁便将两寺等同。缺少35号路名、寺界和拆建沿革，现址待核。 OSM的福源商厦约20米、沉香阁约44米仅供空间排查，均不自动作为积善讲寺后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1240",
+        "https://www.shidianguji.com/book/LG2SHXXZV01/chapter/1lxtm607kyofi",
+        "https://www.openstreetmap.org/way/369237987"
+      ]
+    },
+    {
+      "IDBAT": 1251,
+      "queries": [
+        "九亩地 新舞台 大境路",
+        "九畝地新舞臺",
+        "新舞台 85 大境路"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "校方介绍和地方史资料都把1913—1914年新舞台置于九亩地、今大境路露香园路口，与本条年份和中文名相符；不混同1908年十六铺新舞台。原NAME为Dancing Hall、FUNCTION为舞厅，但中文及历史资料指戏院，六字段仍保留。露香园更新是街区层面证据，85号与今天具体地块的对应仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1251",
+        "https://www.sohu.com/a/666125741_121124758",
+        "https://www.thepaper.cn/newsDetail_forward_27296244",
+        "https://www.openstreetmap.org/way/40035606"
+      ]
+    },
+    {
+      "IDBAT": 269,
+      "queries": [
+        "九星大戏院",
+        "九星大戏院 福煦路359",
+        "九星大戏院 汪曾祺"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "上海大学博物馆刊物依据1952年演出说明书确认九星大戏院存在并指出剧场已消失；汪曾祺研究文章转引校友回忆，记其位于致远中学对面、东侧小弄通巨鹿路。上述只能收敛福煦路沿线位置，不能把359号直接当作现延安中路359号或确认绿地的某一分区。 OSM原点附近24米为大同坊，30米餐饮地址为巨鹿路158号；校友回忆中已成延中绿地的是对面的致远中学，不能由此声称戏院就在绿地内。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=269",
+        "https://museum.shu.edu.cn/uploadfile/DOC/shu/2016-4.pdf",
+        "https://www.sohu.com/a/200514596_787295",
+        "https://www.openstreetmap.org/node/5535127325"
+      ]
+    },
+    {
+      "IDBAT": 746,
+      "queries": [
+        "吉祥寺 七浦路",
+        "吉祥寺 七浦路204",
+        "七浦路 吉祥寺 若瓢"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "中国民主促进会文章引1943年《万象》广告的“七浦路吉祥寺天禅室”，并记亦幻、若瓢等僧人的寺内活动，可靠确认本地寺院身份；居民手稿亦记寺在七浦路近河南北路。204号宗地及寺界至塘沽路的范围仍待核，不能自动接受附近市场POI为整座寺院后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=746",
+        "https://www.mj.org.cn/m/hszl/mrys/202006/t20200628_228528.htm",
+        "https://www.ivy436.com/nd.jsp?id=773",
+        "https://www.openstreetmap.org/way/1101656546"
+      ]
+    },
+    {
+      "IDBAT": 4112,
+      "queries": [
+        "Joffre Police Station Shanghai",
+        "霞飞巡捕房 淮海中路"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "Virtual Shanghai本条注释直接写更名为Lafayette Police Station #88，两条地址同为211 AVENUE JOFFRE，应保留各自历史记录。新民晚报2018年记淮海中路235号霞飞捕房旧楼在2014年由爱马仕入驻。房管局第三批名录2023更新页将3C005旧捕房今用途列为商场，并明确现址217、233号及嵩山路65、67号，品牌官网现列217号；人民网2014开幕报道也直接把217号建筑追溯到旧捕房。现代入口与保护建筑范围已有直接官方证据，剩余旧211号到现址的门牌重编及历史捕房各楼栋边界仍待核，因此本part暂保留review供整组复核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=4112",
+        "https://www.virtualshanghai.net/data/buildings?ID=88",
+        "https://news.sina.cn/2018-02-02/detail-ifyreuzn1870796.d.html?vt=4",
+        "https://www.hermes.cn/cn/zh/find-store/china/shanghai/hermes-maison-shanghai-GTXRBUSG/",
+        "https://www.openstreetmap.org/node/6897142553",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://lady.people.com.cn/n/2014/0919/c1014-25690640.html"
+      ],
+      "coordination": "与research_b的#88共同核对VS更名关系、2018新民报道及爱马仕现门店。"
+    },
+    {
+      "IDBAT": 412,
+      "queries": [
+        "Joseph Tennis Club Shanghai",
+        "Joseph Tennis Club 400",
+        "永嘉路400号 网球"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "Joseph Tennis Club只找到Virtual Shanghai及其转录，缺少独立俱乐部沿革。永嘉路400号有近期花园住宅房产资料，但没有证明网球场与该洋房同一宗地或旧400号沿用，不能以相同门牌认作同一建筑。相邻中国中学的机构迁移也不能用于本条回填。 OSM幼儿园约38米、永嘉路396弄约45米，均未能证明与旧网球场的宗地连续性，待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=412",
+        "https://www.sohu.com/a/981267858_121123889",
+        "https://www.openstreetmap.org/way/790308784"
+      ]
+    },
+    {
+      "IDBAT": 752,
+      "queries": [
+        "峻化聚善堂",
+        "峻化聚善堂 塘沽路",
+        "塘沽路784号"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "检索峻化聚善堂与塘沽路后得到纪念王一亭的地方史文，记其参与塘沽路该善堂，只能作为名称和道路线索。未取得784号新旧门牌、建筑存废和现地块沿革；原FUNCTION寺庙分类并不足以确定慈善机构的具体宗教性质。 OSM最近山西北路约35米、塘沽路约61米；道路近邻无法确认今天哪一栋建筑覆盖旧善堂，仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=752",
+        "https://blog.sina.com.cn/s/blog_ae74151f0102vmt9.html",
+        "https://www.openstreetmap.org/way/1101656570"
+      ]
+    },
+    {
+      "IDBAT": 1388,
+      "queries": [
+        "大同大学附中 新闸路1340",
+        "大同附中 五四中学 1370",
+        "五四中学 1939 正谊楼"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "静安区2025年官方报道直接记五四中学在1370号、正谊楼等三栋由1939年大同大学附中二院校舍演变而来，与本条1939年及同组#1046二校舍的名称相符。学校1995年并入市西，1998年新群中学迁入后复牌，不能声称办学主体从未变化。1340与1370号的门牌对应及旧校园边界待核，且1340弄另为三元坊，故两条均暂缓地图回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1388",
+        "https://www.jingan.gov.cn/rmtzx/003001/20251031/960721d6-1435-4f59-aab8-951179f0f53b.html",
+        "https://zh.wikipedia.org/wiki/新闸路",
+        "https://www.openstreetmap.org/way/1330910239"
+      ]
+    },
+    {
+      "IDBAT": 1153,
+      "queries": [
+        "上海难童初级中学",
+        "上海难童中学 康定路",
+        "健行中学 康定路",
+        "上海难童中学 昌化路"
+      ],
+      "verificationStatus": "unresolved",
+      "conclusion": "已按上海难童初级中学、难童中学、康定路昌化路及健行中学线索检索，未找到本校和现宗地的可靠连续证据。同组#1150健行中学、#1151北新中小学、#1152泛称中学只凭同一无门牌路口和近坐标聚合，不能据健行中学可能借用徐园就把四条记录全部标为徐园旧址或某现代学校。 OSM附近约44米鸿印里只能作为当前街区参照，不能代替学校宗地沿革证据。 同组010调查已指出原点近鸿印里、昌平路320号，和历史所写康定路昌化路口不一致；路口偏移、具体校址与组内学校关系均待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1153",
+        "https://www.openstreetmap.org/way/989903064"
+      ]
+    },
+    {
+      "IDBAT": 1046,
+      "queries": [
+        "大同大学附属中学 第二校舍",
+        "大同附中二院 1939",
+        "新闸路1340 五四中学"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "现五四中学在新闸路1370号；2025年区政府报道确认正谊楼等仍保留1939年大同大学附中二院校舍。历史二校舍名称和年代可与同组#1388对应，但输入1340号与今天1370号尚无直接门牌改编证据，1340弄另有三元坊住宅，原校园边界待核。只确认学校及建筑群沿革，不将1370号结论机械扩展到1340号全部地块。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1046",
+        "https://www.jingan.gov.cn/rmtzx/003001/20251031/960721d6-1435-4f59-aab8-951179f0f53b.html",
+        "https://zh.wikipedia.org/wiki/新闸路",
+        "https://www.openstreetmap.org/way/1330910239"
+      ]
+    },
+    {
+      "IDBAT": 1719,
+      "queries": [
+        "Kabuki Cinema Shanghai 1800",
+        "永安电影院 四川北路1800",
+        "仲益永安商厦",
+        "汉庭 四川北路1800"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "Kabuki即上海歌舞伎座，后经上海剧场、永安大戏院而为永安电影院，历史地址1800号延续。影院历经战毁重建，1990年代拆除后原址建商厦；上观的鲁迅观影研究直接指原上海演艺馆今为仲益永安商厦，华住官网现列1800号4楼汉庭酒店。仅描述整栋商厦含商业及住宿，不能说现楼是1924年影院原建筑，也不把整栋认作汉庭。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1719",
+        "https://export.shobserver.com/toutiao/html/535716.html",
+        "https://zh.wikipedia.org/wiki/永安電影院",
+        "https://m.huazhu.com/Hotel/Detail/2000811",
+        "https://www.openstreetmap.org/way/1083786831"
+      ],
+      "coordination": "Root补充华住官网当前1800号4楼用途和上观原演艺馆→仲益永安商厦来源。"
+    },
+    {
+      "IDBAT": 316,
+      "queries": [
+        "开明中学 上海",
+        "開明中學校",
+        "Kaiming Pere Robert",
+        "开明中学 瑞金二路",
+        "瑞金二路400号",
+        "开明中学 金神父路",
+        "開明中學 上海 400",
+        "开明中学 丁衣仁",
+        "開明中學 金神父路",
+        "上海开明中学 校史"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "ROUTE PERE ROBERT是金神父路、今瑞金二路。《上海暨全国学校调查录》原始史料检索OCR明确列开明中学、金神父路买西义路400号，并有校长和学生资料，足以确认学校历史身份。原点靠近瑞金二路泰康路、OSM明德邨约40米；当前政府采购名单的瑞金二路400号为黄浦区社区学院（瑞金南路校区），但400号历史道路归属、重编及校舍边界仍待核，不能仅同号就认作原校后身。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=316",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_上海暨全國學校調查錄.pdf",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/13b07c4e-f985-4fb5-bd14-31d9d0731fe5.pdf",
+        "https://www.openstreetmap.org/way/910662342"
+      ],
+      "rejectedCandidate": "初稿误把ROUTE PERE ROBERT译为建国西路，现已按金神父路/瑞金二路纠正并删除建国西路400号房产网页。补搜得原始学校调查录。"
+    },
+    {
+      "IDBAT": 518,
+      "queries": [
+        "别发书店 南京东路66",
+        "别发洋行 和平商务楼",
+        "别发 工联大厦",
+        "和平商务楼 工联大厦",
+        "工联大厦 98"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "黄海涛研究直接确认别发洋行1919年迁至南京路12号，重编后为66号，原楼仍立而外貌改动，即和平商务楼；2024年研究进一步说明12、22、66号来自门牌重编而非迁址。现餐饮地址仍列南京东路66号和平商务楼3、4层，历史名称与现代门牌可闭合。但OSM本条原坐标距工联大厦要素中心仅约8米，工联地址为南京东路98号，政府楼宇灯光清单也将工联大厦和和平商务楼分列。需核对输入点是否偏移及两栋建筑地块边界，因此本条坐标闭环待核，先不回填地图；印刷用途原字段保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=518",
+        "https://www.researchgate.net/publication/372574115_qingmominchushanghaidexishudianbiefayangxing",
+        "https://cbfx.cbpt.cnki.net/portal/journal/portal/client/paper/8fefc58dac809c0ca99b722890438763",
+        "https://maps.apple.com/place?auid=1118498791865154&lsp=57879",
+        "https://you.ctrip.com/food/shanghai2/17515870.html",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/fad689f2-7e01-4d30-9e55-7723e864483d.pdf",
+        "https://cnmilaw.gov/pdf/cnmiregister/2005_Volume_27/2005_Number_01.pdf",
+        "https://www.openstreetmap.org/way/1196676110"
+      ],
+      "coordinateRisk": "历史名称→66号和平商务楼来源强，但输入点最近为98号工联大厦，政府清单将两楼分列，保留verified研究并以待核触发review。"
+    },
+    {
+      "IDBAT": 359,
+      "queries": [
+        "Kelmsott Garden Shanghai",
+        "Kelmscott Gardens Avenue Roi Albert",
+        "陕西南路188 纪家花园",
+        "纪家花园 2026"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "同地址的Virtual Shanghai #4135写Kelmscott Garden并注Lilong-type housing，震旦同学录亦有Kelmscott Gardens的住址记录；徐汇街道材料确认188弄为1920年代纪家花园，2026年仍作为老旧住宅实施白蚁防治。本条拼作Kelmsott且FUNCTION明确Park，可能是同住宅群名称转录及类型误分，但尚缺直接中英文名称、旧地块边界证据，待核后再决定是否回填，不修改原六字段。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=359",
+        "https://www.virtualshanghai.net/data/buildings?ID=4135",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/NLC416-10jh005495-61770_上海震旦大學同學錄.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_22924288",
+        "https://www.shanghai.gov.cn/nw17239/20260602/12df2fb688fb4c82b12690f020474335.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "batch": "011",
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "b7a3f5132996a54304a7081f6ff91520e598a224",
+  "research": {
+    "recordCount": 50,
+    "originalSixFieldsUnchanged": true,
+    "uniqueIds": true,
+    "previous500IdsExcluded": true,
+    "verificationSummary": {
+      "verified": 17,
+      "likely": 22,
+      "unresolved": 11
+    },
+    "mapWriteRecommendation": {
+      "review": 30,
+      "yes": 9,
+      "no": 11
+    }
+  },
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyCurrentFieldsChanged": true,
+    "changedFeatureGroupIds": [
+      "landmark-vs-site-1365",
+      "landmark-vs-site-139",
+      "landmark-vs-site-1719",
+      "landmark-vs-site-1732",
+      "landmark-vs-site-1768",
+      "landmark-vs-site-399",
+      "landmark-vs-site-449",
+      "landmark-vs-site-451",
+      "landmark-vs-site-978"
+    ],
+    "coveredSourceRecordIds": [
+      139,
+      399,
+      449,
+      451,
+      978,
+      1365,
+      1719,
+      1732,
+      1768
+    ],
+    "priorOverridesUnchanged": 202,
+    "totalOverrides": 211,
+    "fullGroupIdGuards": true,
+    "allBatchGroupsReviewed": 48
+  },
+  "unresolved": {
+    "before": 1499,
+    "after": 1490,
+    "fileCount": 30,
+    "removedIds": [
+      139,
+      399,
+      449,
+      451,
+      978,
+      1365,
+      1719,
+      1732,
+      1768
+    ],
+    "addedIds": [],
+    "retainedSixFieldsUnchanged": true,
+    "allHeldBatchRecordsStillPresent": true
+  },
+  "nextBatch": {
+    "batch": "012",
+    "recordCount": 50,
+    "uniqueIds": true,
+    "previous550ResearchedIdsExcluded": true
+  },
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "vitest": 52,
+      "node": 12
+    },
+    "build": {
+      "status": "passed",
+      "includes": [
+        "validate:data",
+        "TypeScript",
+        "Vite"
+      ],
+      "note": "Existing bundle-size advisory remains."
+    },
+    "playwright": {
+      "status": "passed",
+      "passed": 40,
+      "failed": 0,
+      "projects": [
+        "desktop",
+        "mobile"
+      ],
+      "command": "npm run test:e2e -- --config=.cache/playwright-011.config.ts --workers=4",
+      "runtime": "Chromium revision 1234 installed for this run",
+      "configurationNote": "Temporary ignored config inherited the original projects and test cases; only base URL/server port changed from 4173 to 4183, with explicit test/output paths.",
+      "initialAttempt": "Default port 4173 was occupied by an existing Python listener returning no HTTP response; webServer readiness timed out after 60000 ms. Existing process was left running."
+    },
+    "gitDiffCheck": "passed"
+  },
+  "localGit": {
+    "branch": "main",
+    "stashList": "",
+    "note": "The previous handoff stash is absent from this checkout; no stash was restored or deleted in this turn."
+  }
+}
