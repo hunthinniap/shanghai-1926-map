@@ -1,0 +1,89 @@
+{
+  "batch": "010",
+  "reviewedAt": "2026-09-08",
+  "scope": "Group-level check before current-use overrides; this does not merge, delete or rewrite historical records.",
+  "approvedGroups": [
+    {
+      "featureGroupId": "landmark-vs-site-515",
+      "batchRecordIds": [
+        515
+      ],
+      "reviewedSourceRecordIds": [
+        515
+      ],
+      "decision": "apply",
+      "reason": "单记录；外滩27号沿革明确，现楼为1920年代重建，采用site-redeveloped并剔除已迁出美术馆用途。"
+    },
+    {
+      "featureGroupId": "landmark-vs-site-1424",
+      "batchRecordIds": [
+        1424
+      ],
+      "reviewedSourceRecordIds": [
+        1424
+      ],
+      "decision": "apply",
+      "reason": "单记录；兆丰别墅历史住宅与修缮状态明确，周边小梁薄板房置换不等于历史别墅拆除。"
+    },
+    {
+      "featureGroupId": "landmark-vs-site-246",
+      "batchRecordIds": [
+        246
+      ],
+      "reviewedSourceRecordIds": [
+        246,
+        1510
+      ],
+      "decision": "apply",
+      "reason": "补核#1510法租界监狱，原285 RUE MASSENET与#246相同。监管史及2026公安用房资料支持同一监狱的分期记录共享现址说明。",
+      "companionSources": [
+        {
+          "IDBAT": 1510,
+          "historicalName": "Prison - French Concession",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1510"
+        }
+      ]
+    },
+    {
+      "featureGroupId": "landmark-vs-site-776",
+      "batchRecordIds": [
+        777
+      ],
+      "reviewedSourceRecordIds": [
+        776,
+        777
+      ],
+      "decision": "apply",
+      "reason": "补核#776上海第一特区地方法院，同为浙江北路191号；2025文旅答复直接列举两法院的先后用途及现保管情况。",
+      "companionSources": [
+        {
+          "IDBAT": 776,
+          "historicalName": "Shanghai First Special Area Court of Justice",
+          "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=776"
+        }
+      ]
+    }
+  ],
+  "heldVerifiedRecords": [
+    {
+      "IDBAT": 1466,
+      "reason": "江南总局历史身份与保留遗存明确，但历史点和工业博物馆现地块关系待核。"
+    },
+    {
+      "IDBAT": 235,
+      "reason": "法院沿革明确，旧59号与今20—22号及原坐标边界待核。"
+    },
+    {
+      "IDBAT": 234,
+      "reason": "同组女监#233的本体与用址未核，不覆盖整个#232组。"
+    },
+    {
+      "IDBAT": 1590,
+      "reason": "大会堂拆建与会史馆现用明确，但同组广肇公学#1588用址界线待核。"
+    }
+  ],
+  "limitations": [
+    "OSM末10条原请求出现超时；补试返回HTTP 406，未把失败结果解读为不存在。",
+    "currentUse仅写有直接证据的现用途；likely与unresolved仍留在未查明导出中。"
+  ]
+}

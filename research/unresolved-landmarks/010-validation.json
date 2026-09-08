@@ -1,0 +1,76 @@
+{
+  "batch": "010",
+  "validatedAt": "2026-09-08",
+  "baselineCommit": "30a84f9",
+  "research": {
+    "recordCount": 50,
+    "originalSixFieldsUnchanged": true,
+    "uniqueIds": true,
+    "previous450IdsExcluded": true,
+    "verificationSummary": {
+      "verified": 8,
+      "likely": 30,
+      "unresolved": 12
+    },
+    "mapWriteRecommendation": {
+      "yes": 4,
+      "review": 34,
+      "no": 12
+    }
+  },
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyCurrentFieldsChanged": true,
+    "changedFeatureGroupIds": [
+      "landmark-vs-site-1424",
+      "landmark-vs-site-246",
+      "landmark-vs-site-515",
+      "landmark-vs-site-776"
+    ],
+    "coveredSourceRecordIds": [
+      246,
+      515,
+      776,
+      777,
+      1424,
+      1510
+    ],
+    "priorOverridesUnchanged": 198,
+    "totalOverrides": 202,
+    "fullGroupIdGuards": true
+  },
+  "unresolved": {
+    "before": 1505,
+    "after": 1499,
+    "fileCount": 30,
+    "removedIds": [
+      246,
+      515,
+      776,
+      777,
+      1424,
+      1510
+    ],
+    "addedIds": [],
+    "retainedSixFieldsUnchanged": true,
+    "all46HeldBatchRecordsStillPresent": true
+  },
+  "nextBatch": {
+    "batch": "011",
+    "recordCount": 50,
+    "uniqueIds": true,
+    "previous500ResearchedIdsExcluded": true
+  },
+  "checks": {
+    "vitest": "52 passed",
+    "nodeTests": "12 passed",
+    "productionBuild": "passed after data generation completed",
+    "playwrightStatic": "4 passed",
+    "playwrightBrowser": "not run; Chromium runtime absent",
+    "diffCheck": "passed"
+  },
+  "preservedUserChanges": "stash@{0}: On main: pre-pull local generated data 2026-09-08"
+}
