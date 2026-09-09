@@ -1,0 +1,443 @@
+{
+  "batch": "019",
+  "reviewedAt": "2026-09-09",
+  "scope": "主任务补查、关键原文复读、时效与空间复核；补充分片日志，不把网络失败或近邻POI当作不存在/同一建筑。",
+  "rootQueryCount": 32,
+  "rootResearchQueries": [
+    {
+      "ids": [
+        603
+      ],
+      "queries": [
+        "site.shanghai.gov.cn 四明银行 北京东路 240 现在"
+      ]
+    },
+    {
+      "ids": [
+        1552
+      ],
+      "queries": [
+        "site.shanghai.gov.cn 徐家汇 观象台 气象博物馆 蒲西路 166 2026"
+      ]
+    },
+    {
+      "ids": [
+        1303
+      ],
+      "queries": [
+        "site.shhk.gov.cn 1933 老场坊 屠宰场 沙泾路 10号"
+      ]
+    },
+    {
+      "ids": [
+        1552
+      ],
+      "queries": [
+        "上海气象博物馆 Amap 蒲西路166 地理坐标",
+        "徐家汇观象台 1872 老楼 原址 新楼 100米"
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "queries": [
+        "锡克教堂 东宝兴路 326 Amap",
+        "site.shhk.gov.cn 锡克 326 居委 2025"
+      ]
+    },
+    {
+      "ids": [
+        1303
+      ],
+      "queries": [
+        "上海 1933 老场坊 旧屠宰场 武进路 1933"
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "queries": [
+        "site.amap.com \"东宝兴路326\""
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "queries": [
+        "\"东宝兴路326号\" \"居委会\"",
+        "\"锡克教堂\" \"地理坐标\"",
+        "\"永美居委会\" Amap"
+      ]
+    },
+    {
+      "ids": [
+        61
+      ],
+      "queries": [
+        "\"曙光医院\" \"西院\" \"地理坐标\""
+      ]
+    },
+    {
+      "ids": [
+        1552
+      ],
+      "queries": [
+        "\"徐家汇书院\" \"地理坐标\"",
+        "\"徐家汇天主堂\" \"地理坐标\""
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "queries": [
+        "\"四川北路街道城建中心\" \"地理坐标\"",
+        "\"东宝兴路326\" \"2026\""
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "queries": [
+        "\"新乡小区\" \"地理坐标\"",
+        "\"东宝兴路\" \"326号\" \"高德\""
+      ]
+    },
+    {
+      "ids": [
+        1218
+      ],
+      "queries": [
+        "\"水月医院\" \"普陀路\" \"190\"",
+        "\"普陀区人民医院\" \"院址\" \"江宁\""
+      ]
+    },
+    {
+      "ids": [
+        447
+      ],
+      "queries": [
+        "site.amersports.com \"Anfu\" Salomon Shanghai 2025",
+        "\"安福路187\" 萨洛蒙 2025"
+      ]
+    },
+    {
+      "ids": [
+        486
+      ],
+      "queries": [
+        "site.xuhui.gov.cn \"天平路137\" 2026",
+        "\"新里137\" 党群 2025"
+      ]
+    },
+    {
+      "ids": [
+        86
+      ],
+      "queries": [
+        "\"Rue Ou Song Kiang\" 济南 太仓",
+        "\"济南路\" \"朱葆三\" \"济南\" 吴淞江路"
+      ]
+    },
+    {
+      "ids": [
+        86
+      ],
+      "queries": [
+        "\"吴淞江路\" \"太仓路\"",
+        "\"Rue Ou Song Kiang\" \"Taicang\""
+      ]
+    },
+    {
+      "ids": [
+        61
+      ],
+      "queries": [
+        "site.shutcm.edu.cn \"普安路185号\" \"2026\""
+      ]
+    },
+    {
+      "ids": [
+        1420,
+        1419
+      ],
+      "queries": [
+        "site.news.xinmin.cn/2024/07/14/32693613 \"五厂\"",
+        "site.news.xinmin.cn/2024/07/14/32693613 \"749\""
+      ]
+    }
+  ],
+  "sourceReviews": [
+    {
+      "ids": [
+        1218
+      ],
+      "decision": "apply",
+      "sources": [
+        {
+          "title": "普陀区：普陀区人民医院建院90周年系列活动启动（2023-03-29）",
+          "url": "https://www.shpt.gov.cn/yaowen/20230329/891968.html",
+          "accessMethod": "主任务打开正文",
+          "finding": "确认水月医院为前身，后为纺织第一医院，1999年属地管理。"
+        },
+        {
+          "title": "普陀区市场监管局：2025年监督检查单位名单",
+          "url": "https://www.shpt.gov.cn/zhengwu/gsgg-scjgjzhzw/2025/303/199954/61e2e885ce624b179352a26df896f3ed.pdf",
+          "accessMethod": "主任务打开34页PDF及检索1291，第13页（零基P12）第200项",
+          "finding": "医院正式名称及江宁路1291号。是2025年监管名单，不是原楼保存证明。"
+        },
+        {
+          "title": "OSM普陀区人民医院院界",
+          "url": "https://www.openstreetmap.org/way/1199472710",
+          "accessMethod": "读取015批次2026-09-08原查询缓存；本轮按独立原点重新测算",
+          "finding": "1218原点位于闭合院界内。机构、原点和现院址相符；确认原址医疗延续，不宣称所有楼均1933原物。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        61
+      ],
+      "decision": "apply",
+      "sources": [
+        {
+          "title": "曙光医院官方号：建院110周年系列报道·四明渊源（2016-12-01）",
+          "url": "https://www.sohu.com/a/120404409_374907",
+          "accessMethod": "主任务打开医院账号转载全文",
+          "finding": "1922年四明医院即今西曙光院址，北桃源路、西普安路；与早年宁寿里院址分开。"
+        },
+        {
+          "title": "上海中医药大学：曙光医院（2021-12-16）",
+          "url": "https://ygc.shutcm.edu.cn/2021/1216/c1308a139215/page.htm",
+          "accessMethod": "主任务打开页面",
+          "finding": "高校官方医院信息，与西院用途相容。"
+        },
+        {
+          "title": "上海市政府：曙光医院2022年度决算",
+          "url": "https://www.shanghai.gov.cn/cmsres/2b/2bef786774604fac943ca6d8aee0b803/e85c145d0fc2380da8b878c003127b6c.pdf",
+          "accessMethod": "主任务打开23页PDF，封面及第3页（零基P2）32—39行",
+          "finding": "封面确定是2022年度，不使用抓取日期充当文献年度；西部普安185号，占地28亩，医疗科研教学。已更正分片和日志原先年度未核标题。"
+        },
+        {
+          "title": "高德：曙光医院西院",
+          "url": "https://ditu.amap.com/place/B00155KIAT",
+          "accessMethod": "主任务搜索返回地点信息及GCJ-02坐标",
+          "finding": "高德121.479237,31.222916与原WGS转GCJ121.478860,31.223389约64米。点到POI不是院界证明，结合医院直接院史和同街块支持同院址延续。"
+        },
+        {
+          "title": "黄浦区公示：曙光医院肝病中心建设项目环评",
+          "url": "https://www.shhuangpu.gov.cn/uploadfile/5EAD228CDD084EEB8542E681D39983D6_%E5%85%AC%E7%A4%BA_1.pdf",
+          "accessMethod": "主任务搜索返回2025年环评文字；未完整读图",
+          "finding": "补充同院址近期医疗项目线索；未借该PDF坐标推定地籍边界。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1303
+      ],
+      "decision": "apply",
+      "sources": [
+        {
+          "title": "上海市国资委：1933老场坊相关国企报道（2024-04-11）",
+          "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20240411/046fc42953634b52b84dcac9ef09c986.html",
+          "accessMethod": "主任务打开全文",
+          "finding": "工部局宰牲场1933年11月完成、1934年1月使用；2002年停产，2007年保护修缮后文化创意、办公与活动用途。"
+        },
+        {
+          "title": "高德：1933老场坊",
+          "url": "https://www.amap.com/place/B00155LPBC",
+          "accessMethod": "实际检索返回地址及GCJ-02坐标",
+          "finding": "原WGS121.487447,31.256591转GCJ121.491925,31.254621，与POI121.491884,31.254559约8米；用于辅助，旧楼身份依官方沿革。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1552
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "中国科学院上海天文台历史沿革",
+          "url": "https://shao.cas.cn/2020Ver/gkjj/lsyg/",
+          "accessMethod": "主任务打开全文",
+          "finding": "1872年徐家汇观象台位于蒲西路221号，1901年在西侧蒲西166号另建楼；两代楼不可混写。"
+        },
+        {
+          "title": "高德：上海气象博物馆",
+          "url": "https://ditu.amap.com/place/B0I0NM6P0T",
+          "accessMethod": "主任务搜索返回坐标",
+          "finding": "当前博物馆GCJ121.436219,31.190156，距原点转换后121.435987,31.188479约188米北。未闭合旧点对应楼代；从verified草稿下调likely，不移动历史点。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1592
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "虹口区：锡克教堂介绍（2022-11-14）",
+          "url": "https://www.shhk.gov.cn/xwzx/002008/002008040/20221114/e1ecd89f-c37d-4ef6-a1a1-6e09b8fe7c2d.html",
+          "accessMethod": "主任务打开全文",
+          "finding": "东宝兴326号为旧锡克教堂，1906购地、1908年3月完成。原328号及1907年不改，具体楼层与门牌边界仍需核。"
+        },
+        {
+          "title": "虹口区：2026年8月社区活动",
+          "url": "https://www.shhk.gov.cn/xwzx/002014/20260803/1885263c-d32b-49e8-8d75-e61ee1835c7e.html",
+          "accessMethod": "主任务搜索返回正文",
+          "finding": "8月7日活动地点东宝兴326号底楼，支持现社区服务线索，不直接证明原328号全部建筑用途。"
+        },
+        {
+          "title": "上海市欧美同学会《海归学人》2025年第6期",
+          "url": "https://www.china-sorsa.org/msgpage/d6d40478-b9bb-4de4-8aab-2d477f22432d/20260112110359.pdf",
+          "accessMethod": "分片读取刊期及相关段落；主任务首次打开返回44页元数据，后续查找和复读超时",
+          "finding": "刊期为2025年第6期；2026-01上传不是2026实访。分片相关用途线索保留，主任务不声称完整复读该PDF。"
+        },
+        {
+          "title": "人民网：相关街区报道（2025-01-06）",
+          "url": "https://sh.people.com.cn/n2/2025/0106/c134768-41099116.html",
+          "accessMethod": "分片读取；主任务再次打开超时",
+          "finding": "社区实践站线索来自分片，本轮不冒称主任务成功打开。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1612,
+        1613
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "虹口图书馆：爱普廬影戏院",
+          "url": "https://www.hqlib.cn/en/detail.aspx?ID=37f21ce5&classID=395&className=",
+          "accessMethod": "主任务打开全文",
+          "finding": "1911-12-21开幕，1931年初拆后兴建四行储蓄大厦。原1613年1910保留；旧资料称九州黄金总汇但未给现状日期，不能当2026租户。现宗地用途未闭合，整组hold。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        447
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "Amer Sports：Making retail waves in China with innovative new stores（2025-09-04）",
+          "url": "https://www.amersports.com/newsroom/making-retail-waves-in-china-with-innovative-new-stores/",
+          "accessMethod": "主任务打开品牌母公司全文",
+          "finding": "支持Salomon安福路历史楼概念店2025开业，不单独证明树民学校旧校舍沿革。"
+        },
+        {
+          "title": "品牌开店稿转载（2025-08-08）",
+          "url": "https://pangjing.cn/6103485-2/",
+          "accessMethod": "主任务搜索正文",
+          "finding": "地址安福187号；与旧校同门牌仅为线索，整宗地关系尚不明。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        486
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "徐汇区：天平街道相关公共就业服务（2026-02-02）",
+          "url": "https://www.xuhui.gov.cn/gzfw-shdt/20260202/569013.html",
+          "accessMethod": "主任务打开全文",
+          "finding": "天平137号底楼公共就业服务活动，为现党群/社区服务线索。"
+        },
+        {
+          "title": "徐汇区：天平街道社区活动（2026-08-20）",
+          "url": "https://www.xuhui.gov.cn/zfjg_jdz_tpjd_bmdt/20260820/575915.html",
+          "accessMethod": "主任务搜索正文",
+          "finding": "新里137社区服务；不能由同号直接解释历史学校、原功能球场冲突。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1419,
+        1420
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "新民晚报／上海普陀、普陀档案馆：内外棉厂沿革（2024-07-14）",
+          "url": "https://news.xinmin.cn/2024/07/14/32693613.html",
+          "accessMethod": "主任务直接打开超时；后两次定向搜索返回正文",
+          "finding": "五厂后来为军服/被服厂、749仓库叶家宅100号，2016年后创享塔；六七厂属上棉七、长寿748，2000年迁建后苏堤春晓。分开记录两条链，旧厂宗地边界仍缺。"
+        },
+        {
+          "title": "普陀区长寿路街道：老厂房与更新空间",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html",
+          "accessMethod": "主任务打开全文；页面显示日期2023-04-21，URL日期不是发布日期",
+          "finding": "支持创享塔办公公共空间及上棉七迁建后苏堤春晓；此较早文对五六七厂概括合并，与2024详细沿革存在口径差异，不能据此将三个厂统一回填同一现用途。"
+        }
+      ]
+    },
+    {
+      "ids": [
+        86
+      ],
+      "decision": "hold",
+      "sources": [
+        {
+          "title": "民国《征信工商行名录》",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+          "accessMethod": "主任务搜索返回原文索引，未完整读地籍图",
+          "finding": "原文列Rue Ou Song Kiang即吴淞江路。"
+        },
+        {
+          "title": "维基百科：太仓路",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E4%BB%93%E8%B7%AF",
+          "accessMethod": "主任务搜索返回条目",
+          "finding": "太仓路东段旧称吴淞江路；仅历史路名辅助，宗地与现用途仍未知。"
+        }
+      ],
+      "correction": "撤回草稿济南路假设，currentAddress改太仓路东段（原吴淞江路31号，门牌待核）。原失败试探query保留；不改道路图层。"
+    }
+  ],
+  "spatialAudit": {
+    "freshRequests": "OSM www主map端点、api.openstreetmap.org端点以及Overpass预检均超时，无本轮新取得50点OSM数据。",
+    "fallback": "读取001—018共1482个带几何的命名node/way缓存，不含relation；按每个成员原UTM独立转换，160米内按点到几何最短距离取最多15项，闭合way包含记0。缓存来源文件、原请求URL和日期逐项保留。",
+    "coverage": "58个组内成员均计算，48个有缓存近邻；其余10个为空仅代表缓存覆盖不完整。现代POI与点的相容不独立证明历史身份。",
+    "canonicalCoordinates": "历史WGS84几何不动；GCJ-02仅为国内地图查询比较。",
+    "library": "上海图书馆地址查询保存019-shanghai-library-address.json。#1724和平饭店与#1017怀恩堂是同门牌候选，坐标均东偏约1.2公里，未采用其坐标及同楼推断。"
+  },
+  "finalGenerationReview": {
+    "firstRun": "图书馆查询四行仓库一度返回0候选，造成非019的#1338 current字段被清空；发现后未交付该状态。",
+    "targetedRetry": {
+      "query": "四行仓库",
+      "endpoint": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures",
+      "httpStatus": 200,
+      "result": "0",
+      "candidateCount": 1,
+      "record": {
+        "uri": "http://data.library.sh.cn/entity/architecture/1febywhgbsnytgr1",
+        "nameS": "春申江家具城等",
+        "address": "光复路21号",
+        "longitude": 121.47751,
+        "latitude": 31.246096
+      },
+      "note": "公共API凭据不保存在工件中；本次用于核查生成器返回差异，不把历史旧租户文本重新认定为2026现租户。#1338是批次外既有结论，保持原样，需未来专项复核。"
+    },
+    "secondRun": "重新运行现用途生成后恢复62条图书馆匹配，0缓存兜底、282条逐地点研究；仅019的3个获准组current字段发生变化。",
+    "cQueryAccounting": "C实际searchAttempts共85条query，逐记录分配84条；剩余site:shanghai.gov.cn \"衍庆里\" \"工部局\"是探索性排除查询，留在searchAttempts，不虚构归属。A40+B77+C85=202次分片实际搜索，主任务另32次web查询，此外一次图书馆定向API重查。"
+  },
+  "finalEditorialReview": [
+    "只批准61、1218、1303三个单成员组，其余45组全部hold。",
+    "原始六字段、live中文与年代、全部历史分期记录均保留。",
+    "#1658英文Publishing House与中文中西書院冲突明确保留，不改称中西印书馆。",
+    "#61决算年份已由主任务原PDF确认并更正标题；#1347的缓存说明更正为此前批次缓存，非本轮新查询。",
+    "研究结论中的拆除史实与地图分类区分：现用途或准确宗地未闭合，仍属本轮位置线索/待核；例如1613虽有明确拆除史，本轮不批准现用途。"
+  ]
+}

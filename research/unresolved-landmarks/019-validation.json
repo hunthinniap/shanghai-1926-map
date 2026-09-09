@@ -1,0 +1,116 @@
+{
+  "batch": "019",
+  "validatedAt": "2026-09-09T12:14:41.727Z",
+  "baselineCommit": "85b2ff9002c83566ef2a4994edeb575939fb1c8a",
+  "baselineMapSha256": "cd8bf848525dede71a50a95648927b37100d0f79685b4b43b791a6a0e00a08af",
+  "research": {
+    "recordCount": 50,
+    "verificationSummary": {
+      "verified": 3,
+      "likely": 23,
+      "unresolved": 24
+    },
+    "classificationSummary": {
+      "total": 50,
+      "byOutcomeCategory": {
+        "survives-with-history": 3,
+        "location-only-current-use": 47
+      },
+      "byResolutionStatus": {
+        "resolved": 3,
+        "probable": 23,
+        "unresolved": 24
+      },
+      "mapWriteRecommendation": {
+        "yes": 3,
+        "review": 23,
+        "no": 24
+      }
+    },
+    "recordAssignedQueries": [
+      40,
+      77,
+      84
+    ],
+    "cActualAttemptQueries": 85,
+    "rootAdditionalQueries": 32,
+    "totalResearchedIds": 950,
+    "previousResearchIdsExcluded": 900,
+    "priorFilesByteExact": 162,
+    "stableInputByteExact": true,
+    "originalSixFieldsUnchanged": true,
+    "compiledContentMatchesFrozenParts": true,
+    "workflowContentMatchesResults": true,
+    "logsAndMemberCoordinatesConsistent": true
+  },
+  "map": {
+    "featureCount": 5507,
+    "roadCount": 3832,
+    "roadSha256": "e46e1a75414269cf555a15b17f5ec0ad2e5d797cab7ea9c99101bf374913c95c",
+    "historicalPropertiesAndGeometryUnchanged": true,
+    "onlyApprovedCurrentFieldsChanged": true,
+    "approvedResearchIds": [
+      61,
+      1218,
+      1303
+    ],
+    "reviewedGroups": 48,
+    "reviewedMembers": 58,
+    "newGroups": 3,
+    "previousOverrides": 279,
+    "finalOverrides": 282,
+    "previousOverridesUnchanged": true,
+    "completeGroupGuards": true
+  },
+  "currentUseAudit": {
+    "landmarkGroups": 1670,
+    "matchedFromLibrary": 62,
+    "matchedFromLibraryCache": 0,
+    "matchedFromWikipedia": 15,
+    "matchedFromResearch": 282,
+    "matchedFromCurrentPlaceName": 22,
+    "needsReviewPartialName": 16,
+    "needsReviewDuplicateSource": 0,
+    "notFound": 1050,
+    "genericName": 223,
+    "networkFailures": 0
+  },
+  "unresolved": {
+    "before": 1420,
+    "after": 1417,
+    "files": 29,
+    "removedIds": [
+      61,
+      1218,
+      1303
+    ]
+  },
+  "nextPreparedBatch": {
+    "batch": "020",
+    "recordCount": 50,
+    "excludesAll950ResearchedIds": true
+  },
+  "auxiliary": {
+    "libraryRecordsWithQueries": 38,
+    "libraryQueryCount": 46,
+    "libraryCandidates": 2,
+    "osmReviewedMembers": 58,
+    "osmWithCachedNearby": 48,
+    "osmBatchRecordsWithCachedNearby": 40,
+    "osmFreshQueriesSuccessful": 0,
+    "osmNote": "Cached node/way geometry only; requests timed out. Empty cache coverage is not evidence of absence."
+  },
+  "checks": {
+    "dataInvariants": "passed",
+    "unitTests": "npm test: 52 Vitest and 12 Node tests passed",
+    "build": "Final npm run build passed data validation, TypeScript and Vite; existing large-bundle warning remains",
+    "e2e": "40 desktop/mobile Playwright tests passed using installed Google Chrome on port 4183",
+    "batchSmoke": "6 additional desktop/mobile tests passed: modern-name search opens each approved historical record and shows its current address/use and sources",
+    "diffCheck": "git diff --check passed",
+    "resolvedIntermediateFailures": [
+      "First build ran before the in-flight current-use generation finished and reported unpropagated overrides; final build rerun after generation passed",
+      "First current-use generation got zero library candidates for out-of-batch #1338. A targeted API retry returned the original record; the second generation preserved it. Final map differs only in the three approved groups"
+    ],
+    "temporaryTools": "Validation script and Chrome Playwright configs/smoke tests are in ignored .cache; no application code or checked-in test configuration changed"
+  }
+}

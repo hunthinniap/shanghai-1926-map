@@ -1,0 +1,3696 @@
+{
+  "batch": "019",
+  "part": "b",
+  "researchedAt": "2026-09-09",
+  "researchDates": [
+    "2026-09-08",
+    "2026-09-09"
+  ],
+  "inProgress": false,
+  "method": "固定输入slice(17,33)，16条全部完成本轮检索。逐条读取live中文名/年代、地点组所有成员及各自原始UTM坐标，独立转换WGS84；保留原始六字段。queries包含9月8日实际已查询及9月9日续查（不是建议查询）。来源注明实际读取方式和日期限制。019-osm-nearby复用001—018缓存，本轮接口超时；图书馆仅门牌线索，均不作为新实时查询。verified限历史院址与现代医院用途闭合；其余明确候选或未闭合。仅编辑019-b及其日志，无地图/Git/共享数据更改。",
+  "records": [
+    {
+      "IDBAT": 61,
+      "queries": [
+        "上海 \"四明医院\" \"125\"",
+        "site:gov.cn \"四明医院\" 曙光",
+        "\"四明医院\" \"西藏南路\"",
+        "\"四明医院\" \"普安路\"",
+        "site.sgyy.cn \"四明\" \"普安\"",
+        "\"曙光医院\" \"普安路185\" \"2026\"",
+        "曙光医院 普安路185 site:shutcm.edu.cn 2026",
+        "\"曙光医院\" \"普安路185号\" site:shanghai.gov.cn"
+      ],
+      "verificationStatus": "verified",
+      "suggestedApproval": "yes",
+      "outcome": "live为四明醫院、1922年、爱来格路125号。医院自身院史明确1922四明医院即今西曙光院址，北桃源路、西普安路，与原点街块相符；大学官网及市政府医院概况均列西院普安路185号及医疗职能。采用同宗地机构延续，不声称1922楼完整保留；1906宁寿里及浦东东院不混入。OSM缓存缺医院院界不能反证医院不在。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：四明醫院（记录61）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=61"
+        },
+        {
+          "title": "曙光医院官方号：建院110周年系列报道·四明渊源（2016-12-01）",
+          "url": "https://www.sohu.com/a/120404409_374907"
+        },
+        {
+          "title": "上海中医药大学：曙光医院（2021-12-16）",
+          "url": "https://ygc.shutcm.edu.cn/2021/1216/c1308a139215/page.htm"
+        },
+        {
+          "title": "上海市政府：上海中医药大学附属曙光医院2022年度决算（第3页医院概况）",
+          "url": "https://www.shanghai.gov.cn/cmsres/2b/2bef786774604fac943ca6d8aee0b803/e85c145d0fc2380da8b878c003127b6c.pdf"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=61",
+        "https://www.sohu.com/a/120404409_374907",
+        "https://ygc.shutcm.edu.cn/2021/1216/c1308a139215/page.htm",
+        "https://www.shanghai.gov.cn/cmsres/2b/2bef786774604fac943ca6d8aee0b803/e85c145d0fc2380da8b878c003127b6c.pdf"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：四明醫院（记录61）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=61",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "曙光医院官方号：建院110周年系列报道·四明渊源（2016-12-01）",
+          "url": "https://www.sohu.com/a/120404409_374907",
+          "sourceDate": "2016-12-01",
+          "accessMethod": "web-open-read",
+          "limitation": "已读取网页正文；仅将明确陈述用于判断，规划不视为完成。"
+        },
+        {
+          "title": "上海中医药大学：曙光医院（2021-12-16）",
+          "url": "https://ygc.shutcm.edu.cn/2021/1216/c1308a139215/page.htm",
+          "sourceDate": "2021-12-16",
+          "accessMethod": "web-open-read",
+          "limitation": "官网正文确认医院及西部普安185号；来源较早，未据其认定单体建筑延续。"
+        },
+        {
+          "title": "上海市政府：上海中医药大学附属曙光医院2022年度决算（第3页医院概况）",
+          "url": "https://www.shanghai.gov.cn/cmsres/2b/2bef786774604fac943ca6d8aee0b803/e85c145d0fc2380da8b878c003127b6c.pdf",
+          "sourceDate": null,
+          "accessMethod": "web-search-result-read",
+          "limitation": "搜索正文直接列西院普安185号与医院职能；搜索标记近期上传不能代替文件实际年度。"
+        }
+      ],
+      "readingLimitations": "sgyy.cn官网打开502；黄浦区肝病中心环评PDF打开失败，未声称已读院界图。AIA名单搜索索引曾列曙光及2026-03-04，但打开后是2026-08-12新版且全文未找到曙光/普安，故不作为当前用途来源。近期商业挂号页仅补充运营线索，不作为主证。院史+大学官网+市政府单位概况支持医院院址延续，但旧楼清单仍未知。",
+      "original": {
+        "IDBAT": 61,
+        "NAME": "Siming Hospital",
+        "F_ADDRESS": "125 RUE SOEUR ALLEGRE",
+        "FUNCTION": "Institutional site / Medical facility / Hospital",
+        "XC": 354686.7596,
+        "YC": 3455578.2471
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-61",
+        "members": [
+          {
+            "id": 61,
+            "name": "Siming Hospital",
+            "nameZh": "四明醫院",
+            "address": "125 RUE SOEUR ALLEGRE",
+            "startYear": 1922,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Institutional site",
+              "TYP02": "Medical facility",
+              "TYP03": "Hospital",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354686.7596,
+            "y": 3455578.2471,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=61",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.474339,
+              "latitude": 31.225335
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 61,
+        "historicalName": "Siming Hospital",
+        "historicalAddress": "125 RUE SOEUR ALLEGRE",
+        "historicalRoad": "RUE SOEUR ALLEGRE",
+        "historicalNumber": "125",
+        "modernRoadCandidates": [
+          "桃源路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.474339,
+            "latitude": 31.225335
+          }
+        },
+        "queries": [
+          {
+            "query": "桃源路125号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 61,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.474339,
+              "latitude": 31.225335
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 401230320,
+                "name": "太平洋新天地商业中心",
+                "nameEn": null,
+                "address": "",
+                "category": "retail",
+                "distanceMetres": 140,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4756584,
+                  "latitude": 31.223461500000003
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/401230320",
+                "tags": {
+                  "landuse": "retail",
+                  "name": "太平洋新天地商业中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4764230,31.2237470,121.4777230,31.2249470",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 664,
+      "queries": [
+        "上海 \"四明堂药房\" \"156\"",
+        "\"四明堂\" 上海 药房",
+        "\"四明堂\" \"六合路\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "原名四明堂藥房，年代空缺；劳合路今六合路仅为道路映射。本轮未查到可独立证实六合路156旧门牌沿革、该药房宗地及现代占用的资料；同名药店、曙光医院相关四明药房不能混用。 OSM缓存近邻酒吧68米、商贸旅游学校74米，均不能确定药房原点用途。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：四明堂藥房（记录664）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=664"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=664"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：四明堂藥房（记录664）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=664",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        }
+      ],
+      "readingLimitations": "中英文名称和旧今路名已实际检索，未取得药房地址沿革的独立证据；现代近邻不作为现址证据。",
+      "original": {
+        "IDBAT": 664,
+        "NAME": "Simingtang Pharmacy",
+        "F_ADDRESS": "156 LLOYD ROAD",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Pharmacy",
+        "XC": 354272.5956,
+        "YC": 3457139.3493
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-664",
+        "members": [
+          {
+            "id": 664,
+            "name": "Simingtang Pharmacy",
+            "nameZh": "四明堂藥房",
+            "address": "156 LLOYD ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Pharmacy",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354272.5956,
+            "y": 3457139.3493,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=664",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.469765,
+              "latitude": 31.239364
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 664,
+        "historicalName": "Simingtang Pharmacy",
+        "historicalAddress": "156 LLOYD ROAD",
+        "historicalRoad": "LLOYD ROAD",
+        "historicalNumber": "156",
+        "modernRoadCandidates": [
+          "六合路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.469765,
+            "latitude": 31.239364
+          }
+        },
+        "queries": [
+          {
+            "query": "六合路156号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 664,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.469765,
+              "latitude": 31.239364
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "node",
+                "osmId": 5729363544,
+                "name": "Oh bar",
+                "nameEn": null,
+                "address": "",
+                "category": "bar",
+                "distanceMetres": 68,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4702115,
+                  "latitude": 31.2388913
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5729363544",
+                "tags": {
+                  "amenity": "bar",
+                  "name": "Oh bar"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1197281627,
+                "name": "上海市商贸旅游学校",
+                "nameEn": null,
+                "address": "",
+                "category": "school",
+                "distanceMetres": 74,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.47083584000002,
+                  "latitude": 31.23931258
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1197281627",
+                "tags": {
+                  "amenity": "school",
+                  "name": "上海市商贸旅游学校"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 373833615,
+                "name": "港陆黄浦中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 87,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.47048183333334,
+                  "latitude": 31.238632299999995
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/373833615",
+                "tags": {
+                  "building": "commercial",
+                  "name": "港陆黄浦中心",
+                  "source": "Bing"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1199775871,
+                "name": "永平安",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 96,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.47106765000001,
+                  "latitude": 31.238819316666667
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1199775871",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "永平安"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 373833561,
+                "name": "申之江",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 103,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.47078842857142,
+                  "latitude": 31.23888417142857
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/373833561",
+                "tags": {
+                  "building": "commercial",
+                  "name": "申之江",
+                  "source": "Bing"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1724,
+      "queries": [
+        "上海 \"中比银行\" \"外滩20\"",
+        "\"Sino-Belgian Bank\" \"Bund\"",
+        "\"中比银行\" \"外滩\" 荷兰",
+        "\"中比银行\" \"汉口路\"",
+        "\"Sino-Belgian Bank\" Shanghai address",
+        "\"Netherlands Trading Society\" \"20 Bund\"",
+        "site:boc.cn \"中山东一路23号\" \"1937\"",
+        "\"Sino-Belge\" \"Hankow\"",
+        "\"Sino-Belgian\" \"13\" \"Hankow\"",
+        "site:boc.cn \"外滩23号\" \"1937\"",
+        "\"中国银行大楼\" \"1937\" site:boc.cn"
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "中比銀行年代空缺；银行官方仅证1902沪分支。历史旅行手册同时列中比银行13 Hankow Road、荷兰银行20 Bund，存在迁址/门牌线索冲突。三成员各自原点：1724、1725在OSM缓存和平饭店范围内；511（中國銀行、1937）在范围外距33米，不能复制现用途。Fairmont官网2026活动确认酒店经营，但未闭合旧中比银行→此宗地；图书馆20号点偏1167米不采用。511、1725各自年代和用房仍待核，整组review。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：中比銀行（记录1724）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1724"
+        },
+        {
+          "title": "法国巴黎银行历史档案：BNP Paribas group present in China for more than 160 years（发布日期未核）",
+          "url": "https://histoire.bnpparibas/en/bnp-paribas-group-present-in-china-for-more-than-160-years/"
+        },
+        {
+          "title": "历史原书Shanghai: a handbook for travellers and residents，Banks页（书籍出版年待核）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Shanghai_-_a_handbook_for_travellers_and_residents_to_the_chief_objects_of_interest_in_and_around_the_foreign_settlement_and_native_city_%28IA_shanghaihandbook00darw%29.pdf"
+        },
+        {
+          "title": "Fairmont和平饭店官方酒店及2026优惠页面",
+          "url": "https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel.html"
+        },
+        {
+          "title": "OpenStreetMap：和平饭店范围（2026-09-08缓存）",
+          "url": "https://www.openstreetmap.org/way/177998987"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1724",
+        "https://histoire.bnpparibas/en/bnp-paribas-group-present-in-china-for-more-than-160-years/",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Shanghai_-_a_handbook_for_travellers_and_residents_to_the_chief_objects_of_interest_in_and_around_the_foreign_settlement_and_native_city_%28IA_shanghaihandbook00darw%29.pdf",
+        "https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel.html",
+        "https://www.openstreetmap.org/way/177998987"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：中比銀行（记录1724）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1724",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "法国巴黎银行历史档案：BNP Paribas group present in China for more than 160 years（发布日期未核）",
+          "url": "https://histoire.bnpparibas/en/bnp-paribas-group-present-in-china-for-more-than-160-years/",
+          "sourceDate": null,
+          "accessMethod": "web-open-read-and-find",
+          "limitation": "打开银行官方历史页并find1902，确认上海分支开办，仅机构史没有具体路号。"
+        },
+        {
+          "title": "历史原书Shanghai: a handbook for travellers and residents，Banks页（书籍出版年待核）",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Shanghai_-_a_handbook_for_travellers_and_residents_to_the_chief_objects_of_interest_in_and_around_the_foreign_settlement_and_native_city_%28IA_shanghaihandbook00darw%29.pdf",
+          "sourceDate": null,
+          "accessMethod": "web-search-result-read",
+          "limitation": "原书Banks页搜索OCR列中比13 Hankow Road、Netherlands Trading Society20Bund。未核版次，不能假定与无年份VS记录同年。"
+        },
+        {
+          "title": "Fairmont和平饭店官方酒店及2026优惠页面",
+          "url": "https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel.html",
+          "sourceDate": "2026（活动日期）",
+          "accessMethod": "web-open-read",
+          "limitation": "正文可读2026-06-17至09-30促销及南京东路20号；只证酒店当前经营，不证旧银行同址。"
+        },
+        {
+          "title": "OpenStreetMap：和平饭店范围（2026-09-08缓存）",
+          "url": "https://www.openstreetmap.org/way/177998987",
+          "sourceDate": "2026-09-08（缓存读取）",
+          "accessMethod": "cached-osm-geometry-read",
+          "limitation": "本轮接口超时，复用018几何并独立测试1724/1725/511，不是新鲜OSM查询。"
+        }
+      ],
+      "readingLimitations": "中比/荷兰/中行同组不能相互证明。中国银行官网各次定向搜索未取得足以闭合511单体的结果。旧手册地址可能是另一时期，不将其直接视为VS错误，也不据20号匹配推断拆除后建酒店。现代酒店仅为原点现状线索。",
+      "original": {
+        "IDBAT": 1724,
+        "NAME": "Sino-Belgian Bank",
+        "F_ADDRESS": "20 BUND ROAD",
+        "FUNCTION": "Commercial establishment / Finance / Bank",
+        "XC": 355719.0651,
+        "YC": 3457310.8744
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-511",
+        "members": [
+          {
+            "id": 511,
+            "name": "Bank of China",
+            "nameZh": "中國銀行",
+            "address": "20 BUND ROAD",
+            "startYear": 1937,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Finance",
+              "TYP03": "Bank",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355674.2242,
+            "y": 3457372.9218,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=511",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.484445,
+              "latitude": 31.241645
+            }
+          },
+          {
+            "id": 1724,
+            "name": "Sino-Belgian Bank",
+            "nameZh": "中比銀行",
+            "address": "20 BUND ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Finance",
+              "TYP03": "Bank",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355719.0651,
+            "y": 3457310.8744,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1724",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.484925,
+              "latitude": 31.241091
+            }
+          },
+          {
+            "id": 1725,
+            "name": "Bank of Nederlandsche Handel-Maatschappij",
+            "nameZh": "荷蘭銀行",
+            "address": "20 BUND ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Finance",
+              "TYP03": "Bank",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355722.0253,
+            "y": 3457329.0307,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1725",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.484953,
+              "latitude": 31.241255
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1724,
+        "historicalName": "Sino-Belgian Bank",
+        "historicalAddress": "20 BUND ROAD",
+        "historicalRoad": "BUND ROAD",
+        "historicalNumber": "20",
+        "modernRoadCandidates": [
+          "中山东一路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.484925,
+            "latitude": 31.241091
+          }
+        },
+        "queries": [
+          {
+            "query": "中山东一路20号",
+            "candidates": [
+              {
+                "nameZh": "和平饭店北楼",
+                "alternateName": "和平飯店北樓",
+                "address": "黄浦区中山东一路20号",
+                "type": "上海市优秀历史建筑",
+                "uri": "http://data.library.sh.cn/entity/architecture/2iloklca2gojo53e",
+                "placeUri": "http://data.library.sh.cn/entity/place/r4tibjuyc0ta5p75",
+                "longitude": 121.49633,
+                "latitude": 31.244972,
+                "distanceMetres": 1167,
+                "exactAddressTextMatch": true,
+                "libraryDetail": {
+                  "nameE": "hepingfandianbeilou",
+                  "address": "黄浦区中山东一路20号",
+                  "placeUri": "http://data.library.sh.cn/entity/place/r4tibjuyc0ta5p75",
+                  "houseNumber": "20号",
+                  "firstImg": "",
+                  "source": "上海市第一批优秀历史建筑",
+                  "type": "上海市优秀历史建筑",
+                  "uri": "http://data.library.sh.cn/entity/architecture/2iloklca2gojo53e",
+                  "long": "121.49633",
+                  "nameT": "和平飯店北樓",
+                  "nameS": "和平饭店北楼",
+                  "des": "和平饭店北楼位于上海南京东路口，相对的两幢大楼均称为和平饭店。北楼建于1929年，原名华懋饭店，属芝加哥学派哥特式建筑，楼高77米，共十二层。华懋饭店是由当时富甲一方的英籍犹太人爱利斯·维克多·沙逊建造的，故又被称为“沙逊大厦”。外墙采用花岗岩石块砌成，由旋转厅门而入，大堂地面用乳白色意大利大理石铺成，顶端古铜镂花吊灯，豪华典雅，有“远东第一楼”的美誉。 2006年3月8日，上海外滩20号的和平饭店迎来100庆典。2007年4月1日 起和平饭店将全面暂停客房预订业务，为上半年即将开始的全面停业改造做准备。",
+                  "road": "中山东一路",
+                  "roadUri": "http://data.library.sh.cn/entity/road/kw5afrhy7ef4vtip",
+                  "lat": "31.244972",
+                  "eventList": [],
+                  "imageList": [],
+                  "personList": [],
+                  "workList": [],
+                  "otherNameList": [
+                    {
+                      "nameType": "原名",
+                      "nameUri": "http://data.library.sh.cn/authority/name/bbibnxqvi5vw3bzv",
+                      "name": "沙逊大厦"
+                    },
+                    {
+                      "nameType": "原名",
+                      "nameUri": "http://data.library.sh.cn/authority/name/i4gtovlawqwiqp8v",
+                      "name": "华懋饭店"
+                    }
+                  ],
+                  "descriptionList": [
+                    {
+                      "description": "和平饭店北楼位于上海南京东路口，相对的两幢大楼均称为和平饭店。北楼建于1929年，原名华懋饭店，属芝加哥学派哥特式建筑，楼高77米，共十二层。华懋饭店是由当时富甲一方的英籍犹太人爱利斯·维克多·沙逊建造的，故又被称为“沙逊大厦”。外墙采用花岗岩石块砌成，由旋转厅门而入，大堂地面用乳白色意大利大理石铺成，顶端古铜镂花吊灯，豪华典雅，有“远东第一楼”的美誉。 2006年3月8日，上海外滩20号的和平饭店迎来100庆典。2007年4月1日 起和平饭店将全面暂停客房预订业务，为上半年即将开始的全面停业改造做准备。"
+                    }
+                  ],
+                  "placeValue": "黄浦"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 511,
+            "inBatch": false,
+            "wgs84": {
+              "longitude": 121.484445,
+              "latitude": 31.241645
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 177993356,
+                "name": "中国工商银行",
+                "nameEn": "Industrial and Commercial Bank of China",
+                "address": "中山东一路 24",
+                "category": "bank",
+                "distanceMetres": 23,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48508368750001,
+                  "latitude": 31.2419199
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177993356",
+                "tags": {
+                  "addr:housenumber": "24",
+                  "addr:street": "中山东一路",
+                  "addr:street:en": "East Zhongshan No. 1 Road",
+                  "amenity": "bank",
+                  "brand": "中国工商银行",
+                  "brand:en": "Industrial and Commercial Bank of China",
+                  "brand:wikidata": "Q26463",
+                  "brand:wikipedia": "en:Industrial and Commercial Bank of China",
+                  "brand:zh": "中国工商银行",
+                  "building": "yes",
+                  "building:levels": "7",
+                  "heritage": "yes",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "A-Ⅲ-009",
+                  "name": "中国工商银行",
+                  "name:en": "Industrial and Commercial Bank of China",
+                  "name:zh": "中国工商银行",
+                  "old_name": "横滨正金银行大楼;Yokohama Specie Bank",
+                  "start_date": "1924",
+                  "wikidata": "Q6123444",
+                  "wikimedia_commons": "Category:Former Yokohama Specie Bank Building Shanghai",
+                  "wikipedia": "en:Yokohama Specie Bank Building"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177998987,
+                "name": "和平饭店",
+                "nameEn": "Peace Hotel",
+                "address": "",
+                "category": "hotel",
+                "distanceMetres": 33,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48434419166666,
+                  "latitude": 31.241101733333334
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998987",
+                "tags": {
+                  "name": "和平饭店",
+                  "name:en": "Peace Hotel",
+                  "tourism": "hotel",
+                  "wheelchair": "limited",
+                  "wikidata": "Q377875",
+                  "wikimedia_commons": "Category:Peace Hotel",
+                  "wikipedia": "en:Peace Hotel"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1196676110,
+                "name": "工联大厦",
+                "nameEn": null,
+                "address": "",
+                "category": "yes",
+                "distanceMetres": 86,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48372293749999,
+                  "latitude": 31.240849462499998
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1196676110",
+                "tags": {
+                  "building": "yes",
+                  "name": "工联大厦"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 4164210390,
+                "name": "中国银行",
+                "nameEn": "Bank of China",
+                "address": "",
+                "category": "bank",
+                "distanceMetres": 92,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.484948,
+                  "latitude": 31.2409386
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/4164210390",
+                "tags": {
+                  "amenity": "bank",
+                  "bic": "BKCHCNBJXXX",
+                  "brand": "中国银行",
+                  "brand:en": "Bank of China",
+                  "brand:wikidata": "Q790068",
+                  "brand:wikipedia": "en:Bank of China",
+                  "brand:zh": "中国银行",
+                  "name": "中国银行",
+                  "name:en": "Bank of China",
+                  "name:zh": "中国银行",
+                  "official_name": "Bank of China"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177998982,
+                "name": "和平饭店南楼",
+                "nameEn": "Peace Hotel South Building",
+                "address": "中山东一路 19",
+                "category": "hotel",
+                "distanceMetres": 110,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48478028055557,
+                  "latitude": 31.240619488888893
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998982",
+                "tags": {
+                  "addr:housenumber": "19",
+                  "addr:street": "中山东一路",
+                  "addr:street:en": "East Zhongshan No. 1 Road",
+                  "building": "hotel",
+                  "building:levels": "8",
+                  "heritage": "yes",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "1989年7号",
+                  "name": "和平饭店南楼",
+                  "name:en": "Peace Hotel South Building",
+                  "start_date": "1908",
+                  "tourism": "hotel",
+                  "wikidata": "Q11133012",
+                  "wikimedia_commons": "Category:Shanghai Palace Hotel",
+                  "wikipedia": "zh:汇中饭店大楼"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          },
+          {
+            "IDBAT": 1724,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.484925,
+              "latitude": 31.241091
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 177998987,
+                "name": "和平饭店",
+                "nameEn": "Peace Hotel",
+                "address": "",
+                "category": "hotel",
+                "distanceMetres": 0,
+                "pointInsideClosedWay": true,
+                "coordinates": {
+                  "longitude": 121.48434419166666,
+                  "latitude": 31.241101733333334
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998987",
+                "tags": {
+                  "name": "和平饭店",
+                  "name:en": "Peace Hotel",
+                  "tourism": "hotel",
+                  "wheelchair": "limited",
+                  "wikidata": "Q377875",
+                  "wikimedia_commons": "Category:Peace Hotel",
+                  "wikipedia": "en:Peace Hotel"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 4164210390,
+                "name": "中国银行",
+                "nameEn": "Bank of China",
+                "address": "",
+                "category": "bank",
+                "distanceMetres": 17,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.484948,
+                  "latitude": 31.2409386
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/4164210390",
+                "tags": {
+                  "amenity": "bank",
+                  "bic": "BKCHCNBJXXX",
+                  "brand": "中国银行",
+                  "brand:en": "Bank of China",
+                  "brand:wikidata": "Q790068",
+                  "brand:wikipedia": "en:Bank of China",
+                  "brand:zh": "中国银行",
+                  "name": "中国银行",
+                  "name:en": "Bank of China",
+                  "name:zh": "中国银行",
+                  "official_name": "Bank of China"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177998982,
+                "name": "和平饭店南楼",
+                "nameEn": "Peace Hotel South Building",
+                "address": "中山东一路 19",
+                "category": "hotel",
+                "distanceMetres": 41,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48478028055557,
+                  "latitude": 31.240619488888893
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998982",
+                "tags": {
+                  "addr:housenumber": "19",
+                  "addr:street": "中山东一路",
+                  "addr:street:en": "East Zhongshan No. 1 Road",
+                  "building": "hotel",
+                  "building:levels": "8",
+                  "heritage": "yes",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "1989年7号",
+                  "name": "和平饭店南楼",
+                  "name:en": "Peace Hotel South Building",
+                  "start_date": "1908",
+                  "tourism": "hotel",
+                  "wikidata": "Q11133012",
+                  "wikimedia_commons": "Category:Shanghai Palace Hotel",
+                  "wikipedia": "zh:汇中饭店大楼"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 5369464821,
+                "name": "Shook",
+                "nameEn": "Shook",
+                "address": "",
+                "category": "restaurant",
+                "distanceMetres": 44,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4849314,
+                  "latitude": 31.2406922
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5369464821",
+                "tags": {
+                  "amenity": "restaurant",
+                  "name": "Shook",
+                  "name:en": "Shook"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 9385734990,
+                "name": "Blancpain",
+                "nameEn": "Blancpain",
+                "address": "",
+                "category": "jewelry",
+                "distanceMetres": 54,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4847171,
+                  "latitude": 31.240643
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/9385734990",
+                "tags": {
+                  "name": "Blancpain",
+                  "name:en": "Blancpain",
+                  "shop": "jewelry"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          },
+          {
+            "IDBAT": 1725,
+            "inBatch": false,
+            "wgs84": {
+              "longitude": 121.484953,
+              "latitude": 31.241255
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 177998987,
+                "name": "和平饭店",
+                "nameEn": "Peace Hotel",
+                "address": "",
+                "category": "hotel",
+                "distanceMetres": 0,
+                "pointInsideClosedWay": true,
+                "coordinates": {
+                  "longitude": 121.48434419166666,
+                  "latitude": 31.241101733333334
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998987",
+                "tags": {
+                  "name": "和平饭店",
+                  "name:en": "Peace Hotel",
+                  "tourism": "hotel",
+                  "wheelchair": "limited",
+                  "wikidata": "Q377875",
+                  "wikimedia_commons": "Category:Peace Hotel",
+                  "wikipedia": "en:Peace Hotel"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 4164210390,
+                "name": "中国银行",
+                "nameEn": "Bank of China",
+                "address": "",
+                "category": "bank",
+                "distanceMetres": 35,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.484948,
+                  "latitude": 31.2409386
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/4164210390",
+                "tags": {
+                  "amenity": "bank",
+                  "bic": "BKCHCNBJXXX",
+                  "brand": "中国银行",
+                  "brand:en": "Bank of China",
+                  "brand:wikidata": "Q790068",
+                  "brand:wikipedia": "en:Bank of China",
+                  "brand:zh": "中国银行",
+                  "name": "中国银行",
+                  "name:en": "Bank of China",
+                  "name:zh": "中国银行",
+                  "official_name": "Bank of China"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177993356,
+                "name": "中国工商银行",
+                "nameEn": "Industrial and Commercial Bank of China",
+                "address": "中山东一路 24",
+                "category": "bank",
+                "distanceMetres": 50,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48508368750001,
+                  "latitude": 31.2419199
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177993356",
+                "tags": {
+                  "addr:housenumber": "24",
+                  "addr:street": "中山东一路",
+                  "addr:street:en": "East Zhongshan No. 1 Road",
+                  "amenity": "bank",
+                  "brand": "中国工商银行",
+                  "brand:en": "Industrial and Commercial Bank of China",
+                  "brand:wikidata": "Q26463",
+                  "brand:wikipedia": "en:Industrial and Commercial Bank of China",
+                  "brand:zh": "中国工商银行",
+                  "building": "yes",
+                  "building:levels": "7",
+                  "heritage": "yes",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "A-Ⅲ-009",
+                  "name": "中国工商银行",
+                  "name:en": "Industrial and Commercial Bank of China",
+                  "name:zh": "中国工商银行",
+                  "old_name": "横滨正金银行大楼;Yokohama Specie Bank",
+                  "start_date": "1924",
+                  "wikidata": "Q6123444",
+                  "wikimedia_commons": "Category:Former Yokohama Specie Bank Building Shanghai",
+                  "wikipedia": "en:Yokohama Specie Bank Building"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 177998982,
+                "name": "和平饭店南楼",
+                "nameEn": "Peace Hotel South Building",
+                "address": "中山东一路 19",
+                "category": "hotel",
+                "distanceMetres": 58,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48478028055557,
+                  "latitude": 31.240619488888893
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/177998982",
+                "tags": {
+                  "addr:housenumber": "19",
+                  "addr:street": "中山东一路",
+                  "addr:street:en": "East Zhongshan No. 1 Road",
+                  "building": "hotel",
+                  "building:levels": "8",
+                  "heritage": "yes",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "1989年7号",
+                  "name": "和平饭店南楼",
+                  "name:en": "Peace Hotel South Building",
+                  "start_date": "1908",
+                  "tourism": "hotel",
+                  "wikidata": "Q11133012",
+                  "wikimedia_commons": "Category:Shanghai Palace Hotel",
+                  "wikipedia": "zh:汇中饭店大楼"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 5369464821,
+                "name": "Shook",
+                "nameEn": "Shook",
+                "address": "",
+                "category": "restaurant",
+                "distanceMetres": 63,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4849314,
+                  "latitude": 31.2406922
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5369464821",
+                "tags": {
+                  "amenity": "restaurant",
+                  "name": "Shook",
+                  "name:en": "Shook"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4838320,31.2405740,121.4851320,31.2417740",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1571,
+      "queries": [
+        "上海 \"法华积谷仓\"",
+        "\"法华积谷仓\"",
+        "\"法华\" \"积谷\" 上海",
+        "\"法华\" \"积谷仓\" 上海"
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live中文法華積穀倉、1874；英文Sino-French把地名法华误读为中法，不作为法国设施检索依据。上海县续志法华仓同治十三年线索与1874相合，1928学区史料记法华小学借旧积谷仓。但法华镇路697号旧宗地、仓屋存毁及现代用途未闭合，不能把附近法华禅寺/交大535号当同一地点。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：法華積穀倉（记录1571）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1571"
+        },
+        {
+          "title": "上海县续志卷二：法华仓（历史原文数字化；编纂年未核）",
+          "url": "https://www.shidianguji.com/book/LG2SHXXZV01/chapter/1lxtm4nwkjztn"
+        },
+        {
+          "title": "澎湃新闻：1928年的上海“特别市”学区与入学争夺战（2016）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_1444612"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1571",
+        "https://www.shidianguji.com/book/LG2SHXXZV01/chapter/1lxtm4nwkjztn",
+        "https://m.thepaper.cn/newsDetail_forward_1444612"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：法華積穀倉（记录1571）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1571",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "上海县续志卷二：法华仓（历史原文数字化；编纂年未核）",
+          "url": "https://www.shidianguji.com/book/LG2SHXXZV01/chapter/1lxtm4nwkjztn",
+          "sourceDate": null,
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "澎湃新闻：1928年的上海“特别市”学区与入学争夺战（2016）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_1444612",
+          "sourceDate": "2016",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        }
+      ],
+      "readingLimitations": "上海县续志搜索OCR法华仓同治十三年与live1874相合；澎湃1928学区文章只能证借仓办小学，未证明法华镇路697号具体宗地。上海交通大学法华禅寺535号是另一处，不采用。",
+      "original": {
+        "IDBAT": 1571,
+        "NAME": "Sino-French Granary",
+        "F_ADDRESS": "697 FAHUAZHEN LU",
+        "FUNCTION": "Commercial establishment / Service / Warehouse",
+        "XC": 349230.3112,
+        "YC": 3453823.8542
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1571",
+        "members": [
+          {
+            "id": 1571,
+            "name": "Sino-French Granary",
+            "nameZh": "法華積穀倉",
+            "address": "697 FAHUAZHEN LU",
+            "startYear": 1874,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Service",
+              "TYP03": "Warehouse",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 349230.3112,
+            "y": 3453823.8542,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1571",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.417333,
+              "latitude": 31.208819
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1571,
+        "historicalName": "Sino-French Granary",
+        "historicalAddress": "697 FAHUAZHEN LU",
+        "historicalRoad": "FAHUAZHEN LU",
+        "historicalNumber": "697",
+        "modernRoadCandidates": [],
+        "roadMappingMethod": "unmapped",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.417333,
+            "latitude": 31.208819
+          }
+        },
+        "queries": []
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1571,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.417333,
+              "latitude": 31.208819
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": []
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1434,
+      "queries": [
+        "\"中法制药厂\" \"大西路\"",
+        "\"中法制药厂\" 上海 旧址",
+        "\"中法制药厂\" \"1119\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live中法製藥廠、年代空缺；大西路今延安西路。尚无独立来源把1119号旧址及原点与现建筑用途闭合；不能把中法大药房的零售店、重庆同名药厂或医药公司继承史套入此处。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：中法製藥廠（记录1434）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1434"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1434"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：中法製藥廠（记录1434）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1434",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        }
+      ],
+      "readingLimitations": "中文实体、旧路名及门牌组合搜索未取得可闭合来源；图书馆无候选、OSM空缓存不是拆除证据。",
+      "original": {
+        "IDBAT": 1434,
+        "NAME": "Sino-French Pharmaceutical Factory",
+        "F_ADDRESS": "1119 GREAT WESTERN ROAD",
+        "FUNCTION": "Industrial site / Factory / Pharmaceutical industry",
+        "XC": 349942.2904,
+        "YC": 3454381.6706
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1434",
+        "members": [
+          {
+            "id": 1434,
+            "name": "Sino-French Pharmaceutical Factory",
+            "nameZh": "中法製藥廠",
+            "address": "1119 GREAT WESTERN ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Industrial site",
+              "TYP02": "Factory",
+              "TYP03": "Pharmaceutical industry",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 349942.2904,
+            "y": 3454381.6706,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1434",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.424721,
+              "latitude": 31.213942
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1434,
+        "historicalName": "Sino-French Pharmaceutical Factory",
+        "historicalAddress": "1119 GREAT WESTERN ROAD",
+        "historicalRoad": "GREAT WESTERN ROAD",
+        "historicalNumber": "1119",
+        "modernRoadCandidates": [
+          "延安西路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.424721,
+            "latitude": 31.213942
+          }
+        },
+        "queries": [
+          {
+            "query": "延安西路1119号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1434,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.424721,
+              "latitude": 31.213942
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": []
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1330,
+      "queries": [
+        "\"中日公寓\" \"1040\"",
+        "\"中日公寓\" \"溧阳路\"",
+        "\"中日公寓\" \"狄思威\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live中日公寓、1932；同组1331中日教會亦1932、1040 DIXWELL ROAD，两点相距约23米。学术史料可见古屋孙次郎经营中日公寓与教会，但未查清公寓1040号宗地、原楼存毁和目前占用。教会机构不复存在不等于公寓拆除；两成员各自原点及空间关系待核。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：中日公寓（记录1330）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1330"
+        },
+        {
+          "title": "佐々木勝彦：古屋神学の魅力——その独自な「バランス感覚」はどのようにして形成されたのか？(2)（2019）",
+          "url": "https://www.tohoku-gakuin.ac.jp/research/journal/bk2019/pdf/humanities16_02.pdf"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1330",
+        "https://www.tohoku-gakuin.ac.jp/research/journal/bk2019/pdf/humanities16_02.pdf"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：中日公寓（记录1330）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1330",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "佐々木勝彦：古屋神学の魅力——その独自な「バランス感覚」はどのようにして形成されたのか？(2)（2019）",
+          "url": "https://www.tohoku-gakuin.ac.jp/research/journal/bk2019/pdf/humanities16_02.pdf",
+          "sourceDate": "2019",
+          "accessMethod": "web-open-read",
+          "limitation": "读取PDF第1—2页，记古屋孙次郎牧会、经营中日公寓，但无1040号宗地和现代用途。"
+        }
+      ],
+      "readingLimitations": "大学研究论文只证明历史机构联系；原点不落在OSM缓存溧阳小区内（距55米），不能替换为住宅。两成员独立原点均待核。",
+      "original": {
+        "IDBAT": 1330,
+        "NAME": "Sino-Japanese Apartments",
+        "F_ADDRESS": "1040 DIXWELL ROAD",
+        "FUNCTION": "Residential site / Apartment building / Religious",
+        "XC": 355661.8059,
+        "YC": 3459687.5806
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1330",
+        "members": [
+          {
+            "id": 1330,
+            "name": "Sino-Japanese Apartments",
+            "nameZh": "中日公寓",
+            "address": "1040 DIXWELL ROAD",
+            "startYear": 1932,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Residential site",
+              "TYP02": "Apartment building",
+              "TYP03": null,
+              "TYP04": "Religious",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355661.8059,
+            "y": 3459687.5806,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1330",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.483981,
+              "latitude": 31.262521
+            }
+          },
+          {
+            "id": 1331,
+            "name": "Sino-Japanese Religious Association",
+            "nameZh": "中日教會",
+            "address": "1040 DIXWELL ROAD",
+            "startYear": 1932,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Community facility",
+              "TYP02": "Association",
+              "TYP03": null,
+              "TYP04": "Religious",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": "Christian",
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355639.2948,
+            "y": 3459691.9897,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1331",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.483744,
+              "latitude": 31.262558
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1330,
+        "historicalName": "Sino-Japanese Apartments",
+        "historicalAddress": "1040 DIXWELL ROAD",
+        "historicalRoad": "DIXWELL ROAD",
+        "historicalNumber": "1040",
+        "modernRoadCandidates": [
+          "溧阳路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.483981,
+            "latitude": 31.262521
+          }
+        },
+        "queries": [
+          {
+            "query": "溧阳路1040号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1330,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.483981,
+              "latitude": 31.262521
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 493710148,
+                "name": "溧阳小区",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 55,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48237042399998,
+                  "latitude": 31.264546352000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/493710148",
+                "tags": {
+                  "boundary": "protected_area",
+                  "building:levels": "2",
+                  "heritage": "4",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "F-Ⅲ-03",
+                  "landuse": "residential",
+                  "name": "溧阳小区",
+                  "protect_class": "22",
+                  "start_date": "1914"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680480,
+                "name": "虹口区公证处",
+                "nameEn": null,
+                "address": "",
+                "category": "government",
+                "distanceMetres": 82,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48375318000001,
+                  "latitude": 31.263408760000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680480",
+                "tags": {
+                  "building": "yes",
+                  "name": "虹口区公证处",
+                  "office": "government"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 438128702,
+                "name": "金融街（海伦）中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 90,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48505977499998,
+                  "latitude": 31.261074833333335
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/438128702",
+                "tags": {
+                  "landuse": "commercial",
+                  "name": "金融街（海伦）中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4842150,31.2604060,121.4855150,31.2616060",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680479,
+                "name": "永融企业中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 96,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48454166,
+                  "latitude": 31.263546246666667
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680479",
+                "tags": {
+                  "building": "commercial",
+                  "name": "永融企业中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          },
+          {
+            "IDBAT": 1331,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.483744,
+              "latitude": 31.262558
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 493710148,
+                "name": "溧阳小区",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 54,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48237042399998,
+                  "latitude": 31.264546352000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/493710148",
+                "tags": {
+                  "boundary": "protected_area",
+                  "building:levels": "2",
+                  "heritage": "4",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "F-Ⅲ-03",
+                  "landuse": "residential",
+                  "name": "溧阳小区",
+                  "protect_class": "22",
+                  "start_date": "1914"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680480,
+                "name": "虹口区公证处",
+                "nameEn": null,
+                "address": "",
+                "category": "government",
+                "distanceMetres": 79,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48375318000001,
+                  "latitude": 31.263408760000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680480",
+                "tags": {
+                  "building": "yes",
+                  "name": "虹口区公证处",
+                  "office": "government"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680479,
+                "name": "永融企业中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 104,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48454166,
+                  "latitude": 31.263546246666667
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680479",
+                "tags": {
+                  "building": "commercial",
+                  "name": "永融企业中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 438128702,
+                "name": "金融街（海伦）中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 111,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48505977499998,
+                  "latitude": 31.261074833333335
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/438128702",
+                "tags": {
+                  "landuse": "commercial",
+                  "name": "金融街（海伦）中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4842150,31.2604060,121.4855150,31.2616060",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1331,
+      "queries": [
+        "\"中日教会\" 上海 横浜",
+        "\"中日教会\" \"2017\" 古屋"
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live中日教會、1932；同组1330中日公寓各有独立原点，不能互当别名。明治学院学术论文记2017重访时教会已不存在，仅能证明机构消失，不能推导旧楼拆除。1040号旧今门牌、原点房舍与现代具体用途待核；同组1330亦待核。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：中日教會（记录1331）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1331"
+        },
+        {
+          "title": "明治学院：志村卯三郎研究—中国人難民を支援した「NGOのパイオニア」（2018）",
+          "url": "https://meigaku.repo.nii.ac.jp/record/2675/files/karuchuru_12_75-112.pdf"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1331",
+        "https://meigaku.repo.nii.ac.jp/record/2675/files/karuchuru_12_75-112.pdf"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：中日教會（记录1331）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1331",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "明治学院：志村卯三郎研究—中国人難民を支援した「NGOのパイオニア」（2018）",
+          "url": "https://meigaku.repo.nii.ac.jp/record/2675/files/karuchuru_12_75-112.pdf",
+          "sourceDate": "2018",
+          "accessMethod": "web-search-result-read",
+          "limitation": "搜索返回第5章2017现场报告，教会已不存在；PDF打开429，未绕过限流、未声称通读PDF。"
+        }
+      ],
+      "readingLimitations": "2017重访描述机构消失不能等同旧楼拆毁。两原点均在溧阳小区缓存范围外（各约54—55米），近邻住房不足确定用途。",
+      "original": {
+        "IDBAT": 1331,
+        "NAME": "Sino-Japanese Religious Association",
+        "F_ADDRESS": "1040 DIXWELL ROAD",
+        "FUNCTION": "Community facility / Association / Religious / Christian",
+        "XC": 355639.2948,
+        "YC": 3459691.9897
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1330",
+        "members": [
+          {
+            "id": 1330,
+            "name": "Sino-Japanese Apartments",
+            "nameZh": "中日公寓",
+            "address": "1040 DIXWELL ROAD",
+            "startYear": 1932,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Residential site",
+              "TYP02": "Apartment building",
+              "TYP03": null,
+              "TYP04": "Religious",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355661.8059,
+            "y": 3459687.5806,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1330",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.483981,
+              "latitude": 31.262521
+            }
+          },
+          {
+            "id": 1331,
+            "name": "Sino-Japanese Religious Association",
+            "nameZh": "中日教會",
+            "address": "1040 DIXWELL ROAD",
+            "startYear": 1932,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Community facility",
+              "TYP02": "Association",
+              "TYP03": null,
+              "TYP04": "Religious",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": "Christian",
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355639.2948,
+            "y": 3459691.9897,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1331",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.483744,
+              "latitude": 31.262558
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1331,
+        "historicalName": "Sino-Japanese Religious Association",
+        "historicalAddress": "1040 DIXWELL ROAD",
+        "historicalRoad": "DIXWELL ROAD",
+        "historicalNumber": "1040",
+        "modernRoadCandidates": [
+          "溧阳路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.483744,
+            "latitude": 31.262558
+          }
+        },
+        "queries": [
+          {
+            "query": "溧阳路1040号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1330,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.483981,
+              "latitude": 31.262521
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 493710148,
+                "name": "溧阳小区",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 55,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48237042399998,
+                  "latitude": 31.264546352000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/493710148",
+                "tags": {
+                  "boundary": "protected_area",
+                  "building:levels": "2",
+                  "heritage": "4",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "F-Ⅲ-03",
+                  "landuse": "residential",
+                  "name": "溧阳小区",
+                  "protect_class": "22",
+                  "start_date": "1914"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680480,
+                "name": "虹口区公证处",
+                "nameEn": null,
+                "address": "",
+                "category": "government",
+                "distanceMetres": 82,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48375318000001,
+                  "latitude": 31.263408760000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680480",
+                "tags": {
+                  "building": "yes",
+                  "name": "虹口区公证处",
+                  "office": "government"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 438128702,
+                "name": "金融街（海伦）中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 90,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48505977499998,
+                  "latitude": 31.261074833333335
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/438128702",
+                "tags": {
+                  "landuse": "commercial",
+                  "name": "金融街（海伦）中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4842150,31.2604060,121.4855150,31.2616060",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680479,
+                "name": "永融企业中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 96,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48454166,
+                  "latitude": 31.263546246666667
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680479",
+                "tags": {
+                  "building": "commercial",
+                  "name": "永融企业中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          },
+          {
+            "IDBAT": 1331,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.483744,
+              "latitude": 31.262558
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 493710148,
+                "name": "溧阳小区",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 54,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48237042399998,
+                  "latitude": 31.264546352000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/493710148",
+                "tags": {
+                  "boundary": "protected_area",
+                  "building:levels": "2",
+                  "heritage": "4",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "F-Ⅲ-03",
+                  "landuse": "residential",
+                  "name": "溧阳小区",
+                  "protect_class": "22",
+                  "start_date": "1914"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680480,
+                "name": "虹口区公证处",
+                "nameEn": null,
+                "address": "",
+                "category": "government",
+                "distanceMetres": 79,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48375318000001,
+                  "latitude": 31.263408760000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680480",
+                "tags": {
+                  "building": "yes",
+                  "name": "虹口区公证处",
+                  "office": "government"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1081680479,
+                "name": "永融企业中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 104,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48454166,
+                  "latitude": 31.263546246666667
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1081680479",
+                "tags": {
+                  "building": "commercial",
+                  "name": "永融企业中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4835520,31.2634570,121.4848520,31.2646570",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 438128702,
+                "name": "金融街（海伦）中心",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 111,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.48505977499998,
+                  "latitude": 31.261074833333335
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/438128702",
+                "tags": {
+                  "landuse": "commercial",
+                  "name": "金融街（海伦）中心"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4842150,31.2604060,121.4855150,31.2616060",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1415,
+      "queries": [
+        "\"日华纺织\" \"社宅\"",
+        "site:gov.cn \"日华\" \"华纺\"",
+        "\"华纺宿舍\" \"2026\"",
+        "\"华纺宿舍\" 开放 改造",
+        "\"华纺宿舍\" \"899\" \"2025\"",
+        "\"华坊宿舍\" \"2026\""
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "live为1928年日華紡織社宅、槟榔路门牌不详。静安区2021正式答复直接确认安远899弄为1928年日华职工宿舍，原址保留四幢，2019征收、2020交接静工集团。文化设计中心是规划，2025/2026定向查无已开放证据；当前经营和原点对应四幢的具体边界待核，维持likely。澳门路660弄另一个华纺宿舍不混用。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：日華紡織社宅（记录1415）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1415"
+        },
+        {
+          "title": "静安区政府对市政协第1001号提案的答复（2021-06-30；发布2021-07-09）",
+          "url": "https://www.jingan.gov.cn/govxxgk/JA0/2021-07-09/f9a779ec-82cc-4043-9928-2276028456ba.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1415",
+        "https://www.jingan.gov.cn/govxxgk/JA0/2021-07-09/f9a779ec-82cc-4043-9928-2276028456ba.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：日華紡織社宅（记录1415）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1415",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "静安区政府对市政协第1001号提案的答复（2021-06-30；发布2021-07-09）",
+          "url": "https://www.jingan.gov.cn/govxxgk/JA0/2021-07-09/f9a779ec-82cc-4043-9928-2276028456ba.html",
+          "sourceDate": "2021-07-09",
+          "accessMethod": "web-open-read",
+          "limitation": "已读取网页正文；仅将明确陈述用于判断，规划不视为完成。"
+        }
+      ],
+      "readingLimitations": "只取得2021地块保护更新正式答复；尚无更近的竣工/开放公告。不得将“未查到”解释成项目未完成，也不得把规划文化中心或历史住宅当作已确认现用途。OSM仅有94米外西部俊园，不能使用。",
+      "original": {
+        "IDBAT": 1415,
+        "NAME": "Sino-Japanese Textile Company Dormitory",
+        "F_ADDRESS": "?? PENANG ROAD",
+        "FUNCTION": "Residential site / Dormitory / Factory",
+        "XC": 350234.3087,
+        "YC": 3456835.8511
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1415",
+        "members": [
+          {
+            "id": 1415,
+            "name": "Sino-Japanese Textile Company Dormitory",
+            "nameZh": "日華紡織社宅",
+            "address": "?? PENANG ROAD",
+            "startYear": 1928,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Residential site",
+              "TYP02": "Dormitory",
+              "TYP03": "Factory",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 350234.3087,
+            "y": 3456835.8511,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1415",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.427419,
+              "latitude": 31.236115
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1415,
+        "historicalName": "Sino-Japanese Textile Company Dormitory",
+        "historicalAddress": "?? PENANG ROAD",
+        "historicalRoad": "PENANG ROAD",
+        "modernRoadCandidates": [
+          "安远路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.427419,
+            "latitude": 31.236115
+          }
+        },
+        "queries": []
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1415,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.427419,
+              "latitude": 31.236115
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 730779488,
+                "name": "西部俊园",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 94,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4276370125,
+                  "latitude": 31.2374834125
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/730779488",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "西部俊园",
+                  "residential": "apartments"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4266790,31.2374810,121.4279790,31.2386810",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1420,
+      "queries": [
+        "\"日华纺织\" \"第五\"",
+        "\"上棉七厂\" \"叶家宅路111号\" 现在",
+        "\"日华\" \"第五\" site:daj.shpt.gov.cn",
+        "\"日华\" \"五、六、七\" \"厂\""
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "live日華紡織第五工場、宝成弄/劳勃生路。档案和2024普陀稿明确五厂战时改军服厂，战后被服厂接收，未并入中纺七厂；后续749仓库叶家宅100号。2023街道确认100号原被服厂已改创享塔、含办公商业公共空间。第五工场原点与保留楼/园区边界仍待核，仅列候选；不得套用六七厂→苏堤春晓住宅链条。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：日華紡織第五工場（记录1420）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1420"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf"
+        },
+        {
+          "title": "新民网·上海普陀：“宝成湾”名字出自哪里？（2024-07-14）",
+          "url": "https://news.xinmin.cn/2024/07/14/32693613.html"
+        },
+        {
+          "title": "长寿路街道：年轻态、时尚感、科技化……是时候重新认识长寿的TA（页面2023-04-21）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1420",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://news.xinmin.cn/2024/07/14/32693613.html",
+        "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：日華紡織第五工場（记录1420）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1420",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+          "sourceDate": "2020-01-06",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "新民网·上海普陀：“宝成湾”名字出自哪里？（2024-07-14）",
+          "url": "https://news.xinmin.cn/2024/07/14/32693613.html",
+          "sourceDate": "2024-07-14",
+          "accessMethod": "web-search-result-read",
+          "limitation": "全文打开超时；搜索正文清楚区分五厂军服/仓库线与六七厂棉纺线。"
+        },
+        {
+          "title": "长寿路街道：年轻态、时尚感、科技化……是时候重新认识长寿的TA（页面2023-04-21）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html",
+          "sourceDate": "2023-04-21",
+          "accessMethod": "web-open-read",
+          "limitation": "页面日期不同于URL20230330，按正文日期记录；读到叶家宅100号创享塔已开放及办公商业用途。"
+        }
+      ],
+      "readingLimitations": "档案PDF开页错误，只读搜索返回的五六七厂段落；2024新民开页超时但搜索可读五厂沿革。早期资料概述“日华五六七→上棉七”过度归并，已按五厂例外修正。原点边界未闭合，因此不能verified或声称原工场单体保留。",
+      "original": {
+        "IDBAT": 1420,
+        "NAME": "Sino-Japanese Textile Factory No. 5",
+        "F_ADDRESS": "BAOCHENG LONG / ROBISON ROAD",
+        "FUNCTION": "Industrial site / Factory / Textile / Cotton",
+        "XC": 350182.8718,
+        "YC": 3457262.7451
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1420",
+        "members": [
+          {
+            "id": 1420,
+            "name": "Sino-Japanese Textile Factory No. 5",
+            "nameZh": "日華紡織第五工場",
+            "address": "BAOCHENG LONG / ROBISON ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Industrial site",
+              "TYP02": "Factory",
+              "TYP03": "Textile",
+              "TYP04": "Cotton",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 350182.8718,
+            "y": 3457262.7451,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1420",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.426815,
+              "latitude": 31.239959
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1420,
+        "historicalName": "Sino-Japanese Textile Factory No. 5",
+        "historicalAddress": "BAOCHENG LONG / ROBISON ROAD",
+        "historicalRoad": "BAOCHENG LONG / ROBISON ROAD",
+        "modernRoadCandidates": [],
+        "roadMappingMethod": "unmapped",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.426815,
+            "latitude": 31.239959
+          }
+        },
+        "queries": []
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1420,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.426815,
+              "latitude": 31.239959
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1464976498,
+                "name": "长寿路792弄",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 113,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.42663855,
+                  "latitude": 31.238613487499997
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1464976498",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "长寿路792弄"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4266790,31.2374810,121.4279790,31.2386810",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1419,
+      "queries": [
+        "\"日华纺织\" \"第七\"",
+        "\"上棉七厂\" \"叶家宅路111号\" 现在",
+        "\"日华\" \"五、六、七\" \"厂\""
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "live日華紡織第七工場、门牌年代空缺。档案与2024普陀稿记六七厂后成中纺/上棉七厂；2023街道直接记上棉七2000年迁建、原址为苏堤春晓名苑。该厂区现状链条可作候选，但第七工场原始点与整个后期厂区的精确界址尚缺图证。第五工场在战后走被服厂线，不可与本条归并。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：日華紡織第七工場（记录1419）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1419"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf"
+        },
+        {
+          "title": "新民网·上海普陀：“宝成湾”名字出自哪里？（2024-07-14）",
+          "url": "https://news.xinmin.cn/2024/07/14/32693613.html"
+        },
+        {
+          "title": "长寿路街道：年轻态、时尚感、科技化……是时候重新认识长寿的TA（页面2023-04-21）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1419",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://news.xinmin.cn/2024/07/14/32693613.html",
+        "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：日華紡織第七工場（记录1419）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1419",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+          "sourceDate": "2020-01-06",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "新民网·上海普陀：“宝成湾”名字出自哪里？（2024-07-14）",
+          "url": "https://news.xinmin.cn/2024/07/14/32693613.html",
+          "sourceDate": "2024-07-14",
+          "accessMethod": "web-search-result-read",
+          "limitation": "搜索正文区分六七厂中纺七厂长寿748号与五厂被服厂；打开超时。"
+        },
+        {
+          "title": "长寿路街道：年轻态、时尚感、科技化……是时候重新认识长寿的TA（页面2023-04-21）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230330/892277.html",
+          "sourceDate": "2023-04-21",
+          "accessMethod": "web-open-read",
+          "limitation": "读到2000迁建后苏堤春晓名苑及居民现状，但具体原第七工场界址仍未读到。"
+        }
+      ],
+      "readingLimitations": "住宅名称有政府现状依据，编号分厂具体范围缺宗地图；不会因总厂历史即将全部分厂映射同一现代小区。OSM缓存只有136米外长寿792弄，不是本点命名证据。",
+      "original": {
+        "IDBAT": 1419,
+        "NAME": "Sino-Japanese Textile Factory No. 7",
+        "F_ADDRESS": "?? ROBISON ROAD",
+        "FUNCTION": "Industrial site / Factory / Textile / Cotton",
+        "XC": 349976.2744,
+        "YC": 3457101.7879
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1419",
+        "members": [
+          {
+            "id": 1419,
+            "name": "Sino-Japanese Textile Factory No. 7",
+            "nameZh": "日華紡織第七工場",
+            "address": "?? ROBISON ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Industrial site",
+              "TYP02": "Factory",
+              "TYP03": "Textile",
+              "TYP04": "Cotton",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 349976.2744,
+            "y": 3457101.7879,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1419",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.424671,
+              "latitude": 31.23848
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1419,
+        "historicalName": "Sino-Japanese Textile Factory No. 7",
+        "historicalAddress": "?? ROBISON ROAD",
+        "historicalRoad": "ROBISON ROAD",
+        "modernRoadCandidates": [
+          "长寿路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.424671,
+            "latitude": 31.23848
+          }
+        },
+        "queries": []
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1419,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.424671,
+              "latitude": 31.23848
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1464976498,
+                "name": "长寿路792弄",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 136,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.42663855,
+                  "latitude": 31.238613487499997
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1464976498",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "长寿路792弄"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4266790,31.2374810,121.4279790,31.2386810",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1417,
+      "queries": [
+        "\"日华纺织\" \"三厂\" \"四厂\"",
+        "site:shpt.gov.cn \"上棉六厂\" \"现在\"",
+        "\"苏河梦立方\" \"2026\" 开业",
+        "\"日华\" \"三厂\" \"834\" site:daj.shpt.gov.cn"
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live中文空缺、始年1918；档案资料记日华第三/四厂分别1921/1923开办，后为上棉六厂长寿834号，明确在长寿路北、武宁路东。原点却在长寿路南侧，宗地与年代冲突待核。街道证北侧仓库1997改家乐福、2020停业；2025正式答复将苏河梦立方完工目标写为2026，不能沿用2023“2024运营”计划，更不能把该北侧项目填到本点。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：Sino-Japanese textile factory Nﾰ3 & Nﾰ4（记录1417）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1417"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf"
+        },
+        {
+          "title": "长寿路街道：今日谈家渡湾（2023-04-06）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230406/893152.html"
+        },
+        {
+          "title": "普陀区文旅局：对第097号代表建议的答复（2025-05-14）",
+          "url": "https://www.shpt.gov.cn/zhengwu/jyta-wljzhzw/2025/161/196687.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1417",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230406/893152.html",
+        "https://www.shpt.gov.cn/zhengwu/jyta-wljzhzw/2025/161/196687.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：Sino-Japanese textile factory Nﾰ3 & Nﾰ4（记录1417）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1417",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "普陀区档案馆：苏州河印象·近代工业商标文化收藏集萃（文件2020-01-06）",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+          "sourceDate": "2020-01-06",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "长寿路街道：今日谈家渡湾（2023-04-06）",
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230406/893152.html",
+          "sourceDate": "2023-04-06",
+          "accessMethod": "web-open-read",
+          "limitation": "已读取网页正文；仅将明确陈述用于判断，规划不视为完成。"
+        },
+        {
+          "title": "普陀区文旅局：对第097号代表建议的答复（2025-05-14）",
+          "url": "https://www.shpt.gov.cn/zhengwu/jyta-wljzhzw/2025/161/196687.html",
+          "sourceDate": "2025-05-14",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        }
+      ],
+      "readingLimitations": "档案PDF打开错误，仅以搜索返回的日华第三/四厂完整相关段落为证。1918可能是公司创办时间而非三四厂建筑时间，未改原字段。现代改造项目未能覆盖原始南侧坐标，故现代名称/用途保持未确认。",
+      "original": {
+        "IDBAT": 1417,
+        "NAME": "Sino-Japanese textile factory Nﾰ3 & Nﾰ4",
+        "F_ADDRESS": "?? ROBISON ROAD",
+        "FUNCTION": "Industrial site / Factory / Textile / Cotton",
+        "XC": 350003.8568,
+        "YC": 3456938.1056
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1417",
+        "members": [
+          {
+            "id": 1417,
+            "name": "Sino-Japanese textile factory Nﾰ3 & Nﾰ4",
+            "nameZh": null,
+            "address": "?? ROBISON ROAD",
+            "startYear": 1918,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Industrial site",
+              "TYP02": "Factory",
+              "TYP03": "Textile",
+              "TYP04": "Cotton",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 350003.8568,
+            "y": 3456938.1056,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1417",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.424985,
+              "latitude": 31.237008
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1417,
+        "historicalName": "Sino-Japanese textile factory Nﾰ3 & Nﾰ4",
+        "historicalAddress": "?? ROBISON ROAD",
+        "historicalRoad": "ROBISON ROAD",
+        "modernRoadCandidates": [
+          "长寿路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.424985,
+            "latitude": 31.237008
+          }
+        },
+        "queries": []
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1417,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.424985,
+              "latitude": 31.237008
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": []
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 890,
+      "queries": [
+        "\"新闸巡捕房\" \"293\"",
+        "\"新闸巡捕房\" 北京西路",
+        "\"Sinza Police Station\" Shanghai",
+        "site:gov.cn \"北京西路295号\"",
+        "\"北京西路295\" \"巡捕\"",
+        "\"北京西路\" \"293\" 消防",
+        "site:shanghai.gov.cn \"新闸巡捕房\"",
+        "\"新闸巡捕房\" \"现\"",
+        "\"北京西路295号\" 消防 2025"
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "live新閘巡捕房、293 AVENUE ROAD；爱文义路今北京西路，不是南京西路的静安寺路。周到2019将巡捕房列为今295号；方志稿2020明确295为1911启用新闸救火会、后北京消防站，城管局2024仍列北京中队295。警消可能邻接但不能互当实体，293/295旧今门牌及原点房舍待核。仅记录消防片区线索，不声称巡捕房原楼延续。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：新閘巡捕房（记录890）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=890"
+        },
+        {
+          "title": "周到上海：江宁路有幢三层红砖瓦楼，曾是静安四大巡捕房之一（2019）",
+          "url": "https://static.zhoudaosh.com/DA7B6FC1DBBA051EF7C062EFBA2B5A1BC7924F61FA28035456A7312D12375555"
+        },
+        {
+          "title": "SHINE：Sinza Police Station相关历史报道（2018-09-22）",
+          "url": "https://www.shine.cn/feature/art-culture/1809222550/"
+        },
+        {
+          "title": "上海方志供稿·上观：【图溯】老上海救火会知多少（2020-11-09）",
+          "url": "https://sghexport.shobserver.com/html/baijiahao/2020/11/09/294312.html"
+        },
+        {
+          "title": "上海市城市管理行政执法局：一江一河3.5学雷锋活动（2024-03-04）",
+          "url": "https://cgzf.sh.gov.cn/channel_8/20240304/c7cef5210cd0402faaf5da444a18c696.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=890",
+        "https://static.zhoudaosh.com/DA7B6FC1DBBA051EF7C062EFBA2B5A1BC7924F61FA28035456A7312D12375555",
+        "https://www.shine.cn/feature/art-culture/1809222550/",
+        "https://sghexport.shobserver.com/html/baijiahao/2020/11/09/294312.html",
+        "https://cgzf.sh.gov.cn/channel_8/20240304/c7cef5210cd0402faaf5da444a18c696.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：新閘巡捕房（记录890）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=890",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "周到上海：江宁路有幢三层红砖瓦楼，曾是静安四大巡捕房之一（2019）",
+          "url": "https://static.zhoudaosh.com/DA7B6FC1DBBA051EF7C062EFBA2B5A1BC7924F61FA28035456A7312D12375555",
+          "sourceDate": "2019",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "SHINE：Sinza Police Station相关历史报道（2018-09-22）",
+          "url": "https://www.shine.cn/feature/art-culture/1809222550/",
+          "sourceDate": "2018-09-22",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "上海方志供稿·上观：【图溯】老上海救火会知多少（2020-11-09）",
+          "url": "https://sghexport.shobserver.com/html/baijiahao/2020/11/09/294312.html",
+          "sourceDate": "2020-11-09",
+          "accessMethod": "web-search-result-read",
+          "limitation": "搜索段落列1911新闸救火会、北京西路295号及北京消防站沿革，证明消防实体而非巡捕房。"
+        },
+        {
+          "title": "上海市城市管理行政执法局：一江一河3.5学雷锋活动（2024-03-04）",
+          "url": "https://cgzf.sh.gov.cn/channel_8/20240304/c7cef5210cd0402faaf5da444a18c696.html",
+          "sourceDate": "2024-03-04",
+          "accessMethod": "web-search-result-read",
+          "limitation": "搜索正文列黄浦消防支队北京中队门前北京西路295号，确认现代消防用途。"
+        }
+      ],
+      "readingLimitations": "周到巡捕房地址与方志消防站地址相同不构成历史同实体证据。2026活动搜狐转载称人民广场消防救援站，未核第一发布方，不擅自统一现代机构名称。无确切建筑范围图，仅likely。",
+      "original": {
+        "IDBAT": 890,
+        "NAME": "Sinza Police Station",
+        "F_ADDRESS": "293 AVENUE ROAD",
+        "FUNCTION": "Administrative facility / Police / Shanghai Municipal Council / Police station",
+        "XC": 353728.0812,
+        "YC": 3456892.5795
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-890",
+        "members": [
+          {
+            "id": 890,
+            "name": "Sinza Police Station",
+            "nameZh": "新閘巡捕房",
+            "address": "293 AVENUE ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Administrative facility",
+              "TYP02": "Police",
+              "TYP03": "Shanghai Municipal Council",
+              "TYP04": "Police station",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 353728.0812,
+            "y": 3456892.5795,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=890",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.464085,
+              "latitude": 31.23707
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 890,
+        "historicalName": "Sinza Police Station",
+        "historicalAddress": "293 AVENUE ROAD",
+        "historicalRoad": "AVENUE ROAD",
+        "historicalNumber": "293",
+        "modernRoadCandidates": [
+          "北京西路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.464085,
+            "latitude": 31.23707
+          }
+        },
+        "queries": [
+          {
+            "query": "北京西路293号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 890,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.464085,
+              "latitude": 31.23707
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 475044373,
+                "name": "三徳小区",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 50,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.46207232222221,
+                  "latitude": 31.23829421111111
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/475044373",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "三徳小区"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4624360,31.2387030,121.4637360,31.2399030",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "node",
+                "osmId": 5894330287,
+                "name": "Tea shop",
+                "nameEn": null,
+                "address": "",
+                "category": "convenience",
+                "distanceMetres": 63,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4638358,
+                  "latitude": 31.2375966
+                },
+                "sourceUrl": "https://www.openstreetmap.org/node/5894330287",
+                "tags": {
+                  "name": "Tea shop",
+                  "shop": "convenience"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4626960,31.2375800,121.4639960,31.2387800",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 159,
+      "queries": [
+        "\"斯盛\" \"小学\" 上海",
+        "\"斯盛\" \"蒲柏路\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live斯盛中小学，英文及功能仅小学、年代空缺。太仓路西段旧蒲柏路477号未与学校各次迁址闭合；校史中的多稼路校址或后来学校继承，不足证明本点的用途。原点宗地与现代占用未核，不替换成市八等后继学校现址。 OSM缓存中新茂大厦距5米、淮海中路小学距17米且均不包含原点，二者都不能当作已确认现址。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：斯盛中小学（记录159）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=159"
+        },
+        {
+          "title": "华师大附属浦东中学校史栏目：杨斯盛办学史（2014）",
+          "url": "https://www.hspd.pudong-edu.sh.cn/site/site1/list/9fcab2f5-0157-4745-8c70-d8ae560d354d_category_1.html"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=159",
+        "https://www.hspd.pudong-edu.sh.cn/site/site1/list/9fcab2f5-0157-4745-8c70-d8ae560d354d_category_1.html"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：斯盛中小学（记录159）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=159",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "华师大附属浦东中学校史栏目：杨斯盛办学史（2014）",
+          "url": "https://www.hspd.pudong-edu.sh.cn/site/site1/list/9fcab2f5-0157-4745-8c70-d8ae560d354d_category_1.html",
+          "sourceDate": "2014",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        }
+      ],
+      "readingLimitations": "校史只涉及机构名称与其他校址。旧477号尚未闭合；不得拿靠近的现小学或办公楼补成历史延续。",
+      "original": {
+        "IDBAT": 159,
+        "NAME": "Sisheng Primary School",
+        "F_ADDRESS": "477 RUE AUGUSTE BOPPE",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 354138.6583,
+        "YC": 3455290.1457
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-159",
+        "members": [
+          {
+            "id": 159,
+            "name": "Sisheng Primary School",
+            "nameZh": "斯盛中小学",
+            "address": "477 RUE AUGUSTE BOPPE",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Educational facility",
+              "TYP02": "School",
+              "TYP03": "Private",
+              "TYP04": "Secular",
+              "TYP05": "Primary",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354138.6583,
+            "y": 3455290.1457,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=159",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.468628,
+              "latitude": 31.222668
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 159,
+        "historicalName": "Sisheng Primary School",
+        "historicalAddress": "477 RUE AUGUSTE BOPPE",
+        "historicalRoad": "RUE AUGUSTE BOPPE",
+        "historicalNumber": "477",
+        "modernRoadCandidates": [
+          "太仓路",
+          "太仓路（西段）"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.468628,
+            "latitude": 31.222668
+          }
+        },
+        "queries": [
+          {
+            "query": "太仓路477号",
+            "candidates": []
+          },
+          {
+            "query": "太仓路（西段）477号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 159,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.468628,
+              "latitude": 31.222668
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 372180438,
+                "name": "新茂大厦",
+                "nameEn": null,
+                "address": "",
+                "category": "apartments",
+                "distanceMetres": 5,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.46892698000002,
+                  "latitude": 31.22262718
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/372180438",
+                "tags": {
+                  "building": "apartments",
+                  "name": "新茂大厦",
+                  "name:zh": "新茂大厦",
+                  "name:zh-Hans": "新茂大厦",
+                  "name:zh-Hant": "新茂大廈",
+                  "source": "Bing"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4676080,31.2215590,121.4689080,31.2227590",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1331385844,
+                "name": "淮海中路小学",
+                "nameEn": null,
+                "address": "",
+                "category": "school",
+                "distanceMetres": 17,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4683471,
+                  "latitude": 31.22295816
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1331385844",
+                "tags": {
+                  "amenity": "school",
+                  "name": "淮海中路小学"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4676080,31.2215590,121.4689080,31.2227590",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1157439685,
+                "name": "锦麟天地雅苑",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 44,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.46914434,
+                  "latitude": 31.222058479999998
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1157439685",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "锦麟天地雅苑",
+                  "residential": "apartments"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4676080,31.2215590,121.4689080,31.2227590",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 372180528,
+                "name": "卢湾区政府2号楼",
+                "nameEn": null,
+                "address": "重庆南路 139",
+                "category": "yes",
+                "distanceMetres": 88,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4677419,
+                  "latitude": 31.222070533333333
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/372180528",
+                "tags": {
+                  "addr:housenumber": "139",
+                  "addr:street": "重庆南路",
+                  "building": "yes",
+                  "building:levels": "3",
+                  "heritage": "4",
+                  "heritage:operator": "上海市优秀历史建筑",
+                  "heritage:ref": "4C008",
+                  "name": "卢湾区政府2号楼",
+                  "old_name": "克美产科医院",
+                  "source": "Bing",
+                  "start_date": "1910s"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4676080,31.2215590,121.4689080,31.2227590",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 40325255,
+                "name": "新天地",
+                "nameEn": "Xintiandi",
+                "address": "",
+                "category": "attraction",
+                "distanceMetres": 100,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.47038320384614,
+                  "latitude": 31.222258642307697
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/40325255",
+                "tags": {
+                  "landuse": "retail",
+                  "name": "新天地",
+                  "name:en": "Xintiandi",
+                  "name:ko": "신천지",
+                  "name:ru": "северный район исторического Синьтяньди",
+                  "name:zh": "新天地",
+                  "tourism": "attraction",
+                  "wikipedia": "zh:新天地"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4711530,31.2207420,121.4724530,31.2219420",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1255,
+      "queries": [
+        "\"小世界\" \"福佑路\" 236",
+        "site:gov.cn \"小世界\" \"福佑路234\"",
+        "\"小世界\" \"福佑路\" \"2025\"",
+        "\"小世界会所\" 豫园 2024 2025 2026",
+        "\"小世界会所\" \"2026\"",
+        "\"小世界\" \"77299\"",
+        "\"小世界\" \"福佑路\" site:paper.xinmin.cn/html/xmwb/2020-08-09/14/77299.html",
+        "\"小世界会所\" \"新民晚报\" \"2020\""
+      ],
+      "verificationStatus": "likely",
+      "suggestedApproval": "review",
+      "outcome": "live小世界、1918、福佑路236号。新民2020忆述现为豫园小世界会所，浦发银行2010商户文件列福佑路234号会所并记原小世界。小世界先后文化场所、商用的链条较强，但234/236范围、1918始建与后期建筑及当前实际经营尚需复核，不自动认定1918楼完整延续。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：小世界（记录1255）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1255"
+        },
+        {
+          "title": "新民晚报：小世界回忆（2020-08-09）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2020-08-09/14/77299.html"
+        },
+        {
+          "title": "浦发银行上海旅游商户指南：小世界会所（2010）",
+          "url": "https://www.spdbccc.com.cn/zh/shanghai_travel/merchant.pdf"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1255",
+        "https://paper.xinmin.cn/html/xmwb/2020-08-09/14/77299.html",
+        "https://www.spdbccc.com.cn/zh/shanghai_travel/merchant.pdf"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：小世界（记录1255）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1255",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        },
+        {
+          "title": "新民晚报：小世界回忆（2020-08-09）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2020-08-09/14/77299.html",
+          "sourceDate": "2020-08-09",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        },
+        {
+          "title": "浦发银行上海旅游商户指南：小世界会所（2010）",
+          "url": "https://www.spdbccc.com.cn/zh/shanghai_travel/merchant.pdf",
+          "sourceDate": "2010",
+          "accessMethod": "web-search-result-read",
+          "limitation": "只读取搜索结果可见段落；不假称已读全文；来源年代不等于当前仍在运营。"
+        }
+      ],
+      "readingLimitations": "2020新民页面open内部错误，只使用9月8日搜索返回的小世界会所段落；后续精确URL查询未稳定重现该段。银行2010商户文件较早，未查到2026一手营业公告，旧楼仍存与当前会所运营分开判断。",
+      "original": {
+        "IDBAT": 1255,
+        "NAME": "Small World",
+        "F_ADDRESS": "236 FUYOU ROAD",
+        "FUNCTION": "Recreational facility / Performance site / Theater / Amusement center",
+        "XC": 355861.3718,
+        "YC": 3456056.0098
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1255",
+        "members": [
+          {
+            "id": 1255,
+            "name": "Small World",
+            "nameZh": "小世界",
+            "address": "236 FUYOU ROAD",
+            "startYear": 1918,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Performance site",
+              "TYP03": "Theater",
+              "TYP04": "Amusement center",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355861.3718,
+            "y": 3456056.0098,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1255",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.486599,
+              "latitude": 31.22979
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1255,
+        "historicalName": "Small World",
+        "historicalAddress": "236 FUYOU ROAD",
+        "historicalRoad": "FUYOU ROAD",
+        "historicalNumber": "236",
+        "modernRoadCandidates": [
+          "福佑路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.486599,
+            "latitude": 31.22979
+          }
+        },
+        "queries": [
+          {
+            "query": "福佑路236号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1255,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.486599,
+              "latitude": 31.22979
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": []
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 724,
+      "queries": [
+        "\"工部局\" \"垃圾\" \"579\"",
+        "\"工部局垃圾处\" 武进路",
+        "\"工部局\" \"靶子路\" 垃圾",
+        "\"工部局\" \"靶子路579\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live工部局拉圾處（原始字样保留）、武进路前身靶子路579号、年代空缺。未找到该处理设施的宗地范围、撤除时间或现代具体使用者；不能把武进路沿线一般垃圾设施或邻近机构视为延续。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：工部局拉圾處（记录724）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=724"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=724"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：工部局拉圾處（记录724）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=724",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        }
+      ],
+      "readingLimitations": "实际检索垃圾处、靶子路579号未取得精确设施材料；靶子路其他医院/靶场资料不适用于本记录。OSM无缓存不表示空地或无设施。",
+      "original": {
+        "IDBAT": 724,
+        "NAME": "SMC - Garbage Disposal",
+        "F_ADDRESS": "579 RANGE ROAD",
+        "FUNCTION": "Administrative facility / City hall / Shanghai Municipal Council / Municipal service",
+        "XC": 354816.6976,
+        "YC": 3458516.9089
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-724",
+        "members": [
+          {
+            "id": 724,
+            "name": "SMC - Garbage Disposal",
+            "nameZh": "工部局拉圾處",
+            "address": "579 RANGE ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Administrative facility",
+              "TYP02": "City hall",
+              "TYP03": "Shanghai Municipal Council",
+              "TYP04": "Municipal service",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354816.6976,
+            "y": 3458516.9089,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=724",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.475277,
+              "latitude": 31.251857
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 724,
+        "historicalName": "SMC - Garbage Disposal",
+        "historicalAddress": "579 RANGE ROAD",
+        "historicalRoad": "RANGE ROAD",
+        "historicalNumber": "579",
+        "modernRoadCandidates": [
+          "武进路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.475277,
+            "latitude": 31.251857
+          }
+        },
+        "queries": [
+          {
+            "query": "武进路579号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 724,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.475277,
+              "latitude": 31.251857
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": []
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1195,
+      "queries": [
+        "\"工部局卫生处\" \"435\"",
+        "\"工部局卫生处\" \"渡船路\"",
+        "\"工部局\" \"渡船路435\""
+      ],
+      "verificationStatus": "unresolved",
+      "suggestedApproval": "location-only",
+      "outcome": "live工部局衛生處、渡船路435号、年代空缺。渡船路今西康路，但旧今门牌不能直接对应；尚未确认该处是行政办公室、检验设施或基层业务处所，也未闭合其原始点与现代用途。 OSM源达大厦距41米且不含原点，不能据此填办公用途。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：工部局衛生處（记录1195）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1195"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1195"
+      ],
+      "sourceReadDetails": [
+        {
+          "title": "Virtual Shanghai：工部局衛生處（记录1195）",
+          "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1195",
+          "sourceDate": null,
+          "accessMethod": "cached-live-source-read",
+          "limitation": "读取项目live缓存（2026-08-28）及该记录六个原始字段，未改动原数据。"
+        }
+      ],
+      "readingLimitations": "机构名和渡船路435组合无独立闭环；旧今435号不能直接相等。源达大厦等近邻不能替代卫生处原宗地。",
+      "original": {
+        "IDBAT": 1195,
+        "NAME": "SMC - Public Health Department",
+        "F_ADDRESS": "435 FERRY ROAD",
+        "FUNCTION": "Administrative facility / City hall / Shanghai Municipal Council / Municipal service",
+        "XC": 350972.8148,
+        "YC": 3457663.4426
+      },
+      "groupReview": {
+        "groupId": "landmark-vs-site-1195",
+        "members": [
+          {
+            "id": 1195,
+            "name": "SMC - Public Health Department",
+            "nameZh": "工部局衛生處",
+            "address": "435 FERRY ROAD",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Administrative facility",
+              "TYP02": "City hall",
+              "TYP03": "Shanghai Municipal Council",
+              "TYP04": "Municipal service",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 350972.8148,
+            "y": 3457663.4426,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1195",
+            "provenance": "shapefile+live-list",
+            "wgs84": {
+              "longitude": 121.435048,
+              "latitude": 31.243674
+            }
+          }
+        ]
+      },
+      "libraryReview": {
+        "IDBAT": 1195,
+        "historicalName": "SMC - Public Health Department",
+        "historicalAddress": "435 FERRY ROAD",
+        "historicalRoad": "FERRY ROAD",
+        "historicalNumber": "435",
+        "modernRoadCandidates": [
+          "西康路"
+        ],
+        "roadMappingMethod": "local-road-layer-exact",
+        "coordinates": {
+          "wgs84": {
+            "longitude": 121.435048,
+            "latitude": 31.243674
+          }
+        },
+        "queries": [
+          {
+            "query": "西康路435号",
+            "candidates": []
+          }
+        ]
+      },
+      "spatialAudit": {
+        "method": "019主任务复用001—018命名设施几何；本轮新OSM请求超时，并非新鲜网络查询。各成员原点独立测量，点落范围只证现地理线索，不证历史宗地延续。",
+        "members": [
+          {
+            "IDBAT": 1195,
+            "inBatch": true,
+            "wgs84": {
+              "longitude": 121.435048,
+              "latitude": 31.243674
+            },
+            "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+            "reviewedAt": "2026-09-09",
+            "lookupError": "Fresh OSM map API and Overpass preflight requests timed out; cached geometry only. Empty nearby does not indicate absence.",
+            "nearby": [
+              {
+                "osmType": "way",
+                "osmId": 1344049780,
+                "name": "源达大厦",
+                "nameEn": null,
+                "address": "",
+                "category": "commercial",
+                "distanceMetres": 41,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.43443594333331,
+                  "latitude": 31.243902803333338
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1344049780",
+                "tags": {
+                  "building": "commercial",
+                  "name": "源达大厦"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4335010,31.2430740,121.4348010,31.2442740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 1465321532,
+                "name": "泰极大厦",
+                "nameEn": null,
+                "address": "",
+                "category": "apartments",
+                "distanceMetres": 109,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4337450941176,
+                  "latitude": 31.243826800000004
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/1465321532",
+                "tags": {
+                  "building": "apartments",
+                  "name": "泰极大厦"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4335010,31.2430740,121.4348010,31.2442740",
+                "cachedQueriedAt": "2026-09-08"
+              },
+              {
+                "osmType": "way",
+                "osmId": 430971040,
+                "name": "上青佳园",
+                "nameEn": null,
+                "address": "",
+                "category": "residential",
+                "distanceMetres": 121,
+                "pointInsideClosedWay": false,
+                "coordinates": {
+                  "longitude": 121.4328153235294,
+                  "latitude": 31.24359265294118
+                },
+                "sourceUrl": "https://www.openstreetmap.org/way/430971040",
+                "tags": {
+                  "landuse": "residential",
+                  "name": "上青佳园",
+                  "name:zh": "上青佳园",
+                  "name:zh-Latn-pinyin": "shǎng qīng jiā yuán",
+                  "residential": "apartments"
+                },
+                "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+                "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4335010,31.2430740,121.4348010,31.2442740",
+                "cachedQueriedAt": "2026-09-08"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "completedAt": "2026-09-09",
+  "unusedSourceChecks": [
+    {
+      "IDBAT": 61,
+      "url": "https://www.sgyy.cn/",
+      "accessMethod": "web-open-attempt",
+      "result": "502，无可读内容"
+    },
+    {
+      "IDBAT": 61,
+      "url": "https://www.shhuangpu.gov.cn/uploadfile/5EAD228CDD084EEB8542E681D39983D6_%E5%85%AC%E7%A4%BA_1.pdf",
+      "accessMethod": "web-open-attempt",
+      "result": "内部错误；父代理已报告位置文字线索，本代理未将其作亲读证据"
+    },
+    {
+      "IDBAT": 61,
+      "url": "https://www.aia.com.hk/content/dam/hk-wise/pdf/find-a-hospital/cashless_hospitals_in_mainland_china_sc.pdf",
+      "accessMethod": "web-open-read-and-find",
+      "result": "搜索索引旧版列曙光，但打开2026-08-12新版检索未见曙光/普安，剔除。不能因保险名单未列即判医院关闭。"
+    }
+  ]
+}
