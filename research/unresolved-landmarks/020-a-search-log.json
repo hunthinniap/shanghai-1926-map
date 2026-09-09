@@ -2,11 +2,13 @@
   "batch": "020",
   "part": "a",
   "researchedAt": "2026-09-09",
-  "status": "in-progress",
+  "status": "complete",
   "input": "research/unresolved-landmarks/020-input.json",
-  "scope": "slice(0,17)，已核对17条及其17个单成员地点组；网络调查未完成，阶段存档不可回填。",
-  "queryCount": 0,
-  "proposedYesIds": [],
+  "scope": "稳定输入slice(0,17)，共17条及17个单成员地点组；本代理执行62次实际web搜索，每条至少2次。读取live中文、年代、note与全部同组原UTM，独立转换WGS84；保留具体来源与读取失败。OSM使用001—018既有缓存，不声称为今日新采样；图书馆只用地址文字。",
+  "queryCount": 62,
+  "proposedYesIds": [
+    1314
+  ],
   "records": [
     {
       "originalInput": {
@@ -26,37 +28,115 @@
         "clusterId": "landmark-vs-site-1308",
         "members": [
           {
-            "IDBAT": 1308,
+            "id": 1308,
             "name": "Sports Field (Japanese Association)",
             "nameZh": "日本人體育協會運動場",
             "address": "16 YUCAI",
             "startYear": 1923,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Sport facility",
+              "TYP03": null,
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 356769.1898,
             "y": 3459769.324,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1308",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1308,
             "wgs84": {
               "longitude": 121.495597,
               "latitude": 31.263395
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1308,
-      "queries": [],
+      "queries": [
+        "\"日本人体育协会\" \"运动场\" 上海 育才",
+        "\"育才路\" \"日本\" \"运动场\"",
+        "上海 日本 体育协会 运動場 \"1923\""
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "原中文为日本人體育協會運動場，起始年1923。已检索中文协会、育才路和1923年运动场线索，未获得能够把该协会场地与16号、原点联系起来的独立史料；检得虹口体育场、精武会等是其他实体，不采用。缓存仅有距点54米的地铁4号线，无法判定地面原运动场范围或建筑存废；YUCAI道路与今路名对应待核。 原UTM独立转换WGS84为121.495597, 31.263395；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "日本人体育协会运动场旧址待核",
+      "currentAddress": "原16 YUCAI（具体今址待核）",
+      "currentUse": "历史运动场的具体边界及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1308",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1308"
+        },
+        {
+          "title": "OpenStreetMap：上海地铁4号线（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/97550421"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1308"
+        "https://www.virtualshanghai.net/data/buildings?ID=1308",
+        "https://www.openstreetmap.org/way/97550421"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1308",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1308",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：上海地铁4号线（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/97550421",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "上海地铁4号线",
+            "osmId": 97550421,
+            "osmType": "way",
+            "distanceMetres": 54,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/97550421",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4891130,31.2611620,121.4904130,31.2623620",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上海地铁4号线",
+            "osmId": 49026397,
+            "osmType": "way",
+            "distanceMetres": 70,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/49026397",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4891130,31.2611620,121.4904130,31.2623620",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。"
     },
     {
       "originalInput": {
@@ -76,37 +156,147 @@
         "clusterId": "landmark-vs-site-834",
         "members": [
           {
-            "IDBAT": 834,
+            "id": 834,
             "name": "Sports Ground",
             "nameZh": "運動場",
             "address": "31 WEIHAIWEI ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Sport facility",
+              "TYP03": "Ball game field",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 353913.3571,
             "y": 3456102.6103,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=834",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 834,
             "wgs84": {
               "longitude": 121.466145,
               "latitude": 31.229968
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 834,
-      "queries": [],
+      "queries": [
+        "\"威海卫路31\" 运动场",
+        "\"31 Weihaiwei Road\" Shanghai sports"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "原名称仅Sports Ground，中文运动场，无年代。中英文31 Weihaiwei Road及威海卫路31号检索未取得运动场独立身份或门牌沿革。缓存中黄陂北路距88米、人民广场距112米、中区广场距113米，均不足把无名场地落实到某一现代设施，不将附近广场或商厦写作其后身；旧31号具体对应待核。 原UTM独立转换WGS84为121.466145, 31.229968；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "威海卫路运动场旧址待核",
+      "currentAddress": "上海市黄浦区威海路、黄陂北路一带（历史威海卫路31号）",
+      "currentUse": "运动场所属机构、地块和现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 834",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=834"
+        },
+        {
+          "title": "OpenStreetMap：黄陂北路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/654297629"
+        },
+        {
+          "title": "OpenStreetMap：人民广场（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/404709025"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=834"
+        "https://www.virtualshanghai.net/data/buildings?ID=834",
+        "https://www.openstreetmap.org/way/654297629",
+        "https://www.openstreetmap.org/way/404709025"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 834",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=834",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：黄陂北路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/654297629",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：人民广场（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/404709025",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "黄陂北路",
+            "osmId": 654297629,
+            "osmType": "way",
+            "distanceMetres": 88,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/654297629",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4653960,31.2321350,121.4666960,31.2333350",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "人民广场",
+            "osmId": 404709025,
+            "osmType": "way",
+            "distanceMetres": 112,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/404709025",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4706240,31.2289040,121.4719240,31.2301040",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "中区广场",
+            "osmId": 314729060,
+            "osmType": "way",
+            "distanceMetres": 113,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/314729060",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4648490,31.2307670,121.4661490,31.2319670",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "威海苑",
+            "osmId": 441870924,
+            "osmType": "way",
+            "distanceMetres": 120,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/441870924",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4648490,31.2307670,121.4661490,31.2319670",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。"
     },
     {
       "originalInput": {
@@ -126,37 +316,138 @@
         "clusterId": "landmark-vs-site-770",
         "members": [
           {
-            "IDBAT": 770,
+            "id": 770,
             "name": "Sports Ground (Private School)",
             "nameZh": "運動場",
             "address": "402 TSEPOO ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Sport facility",
+              "TYP03": "Ball game field",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 354574.1367,
             "y": 3458042.7547,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=770",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 770,
             "wgs84": {
               "longitude": 121.472799,
               "latitude": 31.24755
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 770,
-      "queries": [],
+      "queries": [
+        "\"天潼路402\" 学校 运动场",
+        "\"塘沽路402\" 学校",
+        "\"七浦路402\" 学校 运动场"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "原英文仅标私校运动场，未记校名或年份。TSEPOO ROAD在道路映射中对应七浦路；精确七浦路402号检索未获得可独立认定的学校沿革。原点近缓存塘沽路10米、海宁路71米，与历史所记七浦路的院区范围尚未对应，不能沿用同号现代门牌或周围学校；位置与旧址边界待核。 原UTM独立转换WGS84为121.472799, 31.24755；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "七浦路私校运动场旧址待核",
+      "currentAddress": "上海市静安区塘沽路、海宁路一带（历史七浦路402号待核）",
+      "currentUse": "私校名称、场地及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 770",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=770"
+        },
+        {
+          "title": "OpenStreetMap：塘沽路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/39959552"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=770"
+        "https://www.virtualshanghai.net/data/buildings?ID=770",
+        "https://www.openstreetmap.org/way/39959552"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 770",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=770",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：塘沽路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/39959552",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "塘沽路",
+            "osmId": 39959552,
+            "osmType": "way",
+            "distanceMetres": 10,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/39959552",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4740140,31.2479740,121.4753140,31.2491740",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "海宁路",
+            "osmId": 24447849,
+            "osmType": "way",
+            "distanceMetres": 71,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/24447849",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4747310,31.2484890,121.4760310,31.2496890",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "康乐路",
+            "osmId": 150941892,
+            "osmType": "way",
+            "distanceMetres": 73,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/150941892",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4715840,31.2486720,121.4728840,31.2498720",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "北横通道",
+            "osmId": 1338279266,
+            "osmType": "way",
+            "distanceMetres": 77,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1338279266",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4832870,31.2537050,121.4845870,31.2549050",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。",
+      "searchCorrections": "首轮误试天潼路402、塘沽路402；复核TSEPOO道路映射后改检七浦路402。误试保留在真实查询日志，不作为道路结论。"
     },
     {
       "originalInput": {
@@ -176,37 +467,166 @@
         "clusterId": "landmark-vs-site-1223",
         "members": [
           {
-            "IDBAT": 1223,
+            "id": 1223,
             "name": "Spring & Weaving Company",
             "nameZh": null,
             "address": "1433 GORDON ROAD",
             "startYear": 1920,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Industrial site",
+              "TYP02": "Factory",
+              "TYP03": "Textile industry",
+              "TYP04": "Cotton mill",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 350918.5489,
             "y": 3458283.6464,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1223",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1223,
             "wgs84": {
               "longitude": 121.434386,
               "latitude": 31.249261
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1223,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"戈登路1433\" 纱厂",
+        "同兴纱厂 江宁路1433 上海广播器材厂 现址",
+        "\"江宁路1433号\" \"现在\"",
+        "\"同兴纱厂\" \"光明城市\"",
+        "\"同兴第一\" \"江宁路\" 广播 现在"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "普陀档案馆记孙良惠在戈登路1433号日商同兴纱厂工作，并指江宁路北端临苏州河，与原棉纺厂地址吻合。原英文Spring & Weaving Company未给公司专名、原年1920；二手厂史记同兴第一厂1918年创建；档案PDF第115—116页直接连缀军服、被服、101厂沿革并注明已拆除。年代差异及原英文仍保留。现原点附近乐活居距86米、宜昌路99米，尚无原厂宗地到具体今建筑的直接资料；英文实体对应、厂界和現用途待核。 原UTM独立转换WGS84为121.434386, 31.249261；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "同兴纱厂旧址线索",
+      "currentAddress": "上海市普陀区江宁路北段、苏州河一带（历史戈登路1433号）",
+      "currentUse": "候选同兴纱厂已拆除，具体今地块及用途待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1223",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1223"
+        },
+        {
+          "title": "普陀区档案馆：华校生、刘景成《孙良惠革命活动踪迹寻访记》",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/154da4a8c9a7479da8abf401c98ae60d.pdf"
+        },
+        {
+          "title": "江宁路上的优秀历史保护建筑和名人故居（日商纱厂段，二手沿革）",
+          "url": "https://min.news/zh-hant/culture/71072608fc297e5d70fd49b888286470.html/5"
+        },
+        {
+          "title": "OpenStreetMap：乐活居（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/432996112"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1223"
+        "https://www.virtualshanghai.net/data/buildings?ID=1223",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/154da4a8c9a7479da8abf401c98ae60d.pdf",
+        "https://min.news/zh-hant/culture/71072608fc297e5d70fd49b888286470.html/5",
+        "https://www.openstreetmap.org/way/432996112"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1223",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1223",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "普陀区档案馆：华校生、刘景成《孙良惠革命活动踪迹寻访记》",
+          "url": "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/154da4a8c9a7479da8abf401c98ae60d.pdf",
+          "accessMethod": "web搜索取得1433号段；web.open失败后普通HTTPS下载全文，以捆绑pypdf读取第115—116页，确认101厂已拆",
+          "failures": [
+            "web.open Internal Error"
+          ],
+          "localPath": "/private/tmp/020-a-1223-archive.pdf",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "江宁路上的优秀历史保护建筑和名人故居（日商纱厂段，二手沿革）",
+          "url": "https://min.news/zh-hant/culture/71072608fc297e5d70fd49b888286470.html/5",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：乐活居（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/432996112",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "乐活居",
+            "osmId": 432996112,
+            "osmType": "way",
+            "distanceMetres": 86,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/432996112",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4333230,31.2468010,121.4346230,31.2480010",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "宜昌路",
+            "osmId": 50832835,
+            "osmType": "way",
+            "distanceMetres": 99,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/50832835",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4341380,31.2509040,121.4354380,31.2521040",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "苏州河",
+            "osmId": 1005345489,
+            "osmType": "way",
+            "distanceMetres": 135,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1005345489",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4664250,31.2402280,121.4677250,31.2414280",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "梦清园",
+            "osmId": 101312398,
+            "osmType": "way",
+            "distanceMetres": 154,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/101312398",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4341380,31.2509040,121.4354380,31.2521040",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。",
+      "rejectedLeads": "搜索上海广播器材厂带出延安西路1319号的异地机构，不用于江宁路原地块；乐活居仅86米近邻，光明城市检索未获直接宗地链。"
     },
     {
       "originalInput": {
@@ -226,37 +646,169 @@
         "clusterId": "landmark-vs-site-616",
         "members": [
           {
-            "IDBAT": 616,
+            "id": 616,
             "name": "Stockbroker Company (Société de Courtage)",
             "nameZh": null,
             "address": "429 KIUKIANG ROAD",
             "startYear": 1922,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Finance",
+              "TYP03": "Stockbroker",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 354986.5362,
             "y": 3456928.1423,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=616",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 616,
             "wgs84": {
               "longitude": 121.47729,
               "latitude": 31.237548
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 616,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"九江路429\" 证券",
+        "上海 华商证券交易所 九江路429 旧址 现在"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "工商名录检索出现429 Kiukiang Road的China Merchants Stock Exchange，中文沿革也把华商证券交易所早期设址写在九江路429号，提供身份线索；原记录是泛称Société de Courtage、1922年，尚不足证明就是该交易所整个机构。1934年迁九江路501号、汉口路422号的新证券大楼属于另址，不把其现办公用途移到此点。缓存华盛大厦距61米，只是近邻；旧429号与当前宗地及房屋用途待核。 原UTM独立转换WGS84为121.47729, 31.237548；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "九江路证券经纪机构旧址线索",
+      "currentAddress": "上海市黄浦区九江路一带（历史九江路429号）",
+      "currentUse": "原证券经纪机构的具体楼体及现用途待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 616",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=616"
+        },
+        {
+          "title": "《民国文献类编续编·经济卷435》所收工商名录：429 Kiukiang Road 交易所地址",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/SSID-14455197_%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB%E9%A1%9E%E7%B7%A8%E7%BA%8C%E7%B7%A8_%E7%B6%93%E6%BF%9F%E5%8D%B7_435.pdf"
+        },
+        {
+          "title": "上海闹市办公楼走廊里藏着一座金库，主人原来是杜月笙？（九江路429号与1934年迁址沿革）",
+          "url": "https://www.sohu.com/a/922497123_99917329"
+        },
+        {
+          "title": "上海市文旅推广网：证券大楼旧址（1934年新楼，作为迁址区分）",
+          "url": "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-the-securities-building-785881/"
+        },
+        {
+          "title": "OpenStreetMap：华盛大厦（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/378107155"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=616"
+        "https://www.virtualshanghai.net/data/buildings?ID=616",
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/SSID-14455197_%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB%E9%A1%9E%E7%B7%A8%E7%BA%8C%E7%B7%A8_%E7%B6%93%E6%BF%9F%E5%8D%B7_435.pdf",
+        "https://www.sohu.com/a/922497123_99917329",
+        "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-the-securities-building-785881/",
+        "https://www.openstreetmap.org/way/378107155"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 616",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=616",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "《民国文献类编续编·经济卷435》所收工商名录：429 Kiukiang Road 交易所地址",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/SSID-14455197_%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB%E9%A1%9E%E7%B7%A8%E7%BA%8C%E7%B7%A8_%E7%B6%93%E6%BF%9F%E5%8D%B7_435.pdf",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上海闹市办公楼走廊里藏着一座金库，主人原来是杜月笙？（九江路429号与1934年迁址沿革）",
+          "url": "https://www.sohu.com/a/922497123_99917329",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上海市文旅推广网：证券大楼旧址（1934年新楼，作为迁址区分）",
+          "url": "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-the-securities-building-785881/",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：华盛大厦（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/378107155",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "九江路",
+            "osmId": 47150988,
+            "osmType": "way",
+            "distanceMetres": 7,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/47150988",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4783380,31.2372940,121.4796380,31.2384940",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "华盛大厦",
+            "osmId": 378107155,
+            "osmType": "way",
+            "distanceMetres": 61,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/378107155",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4783380,31.2372940,121.4796380,31.2384940",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "山西小区",
+            "osmId": 1198048996,
+            "osmType": "way",
+            "distanceMetres": 82,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1198048996",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4773690,31.2355450,121.4786690,31.2367450",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上海地铁2号线",
+            "osmId": 376634457,
+            "osmType": "way",
+            "distanceMetres": 95,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/376634457",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。"
     },
     {
       "originalInput": {
@@ -276,37 +828,218 @@
         "clusterId": "landmark-vs-site-657",
         "members": [
           {
-            "IDBAT": 657,
+            "id": 657,
             "name": "Strand Theater",
             "nameZh": "新光大戯院",
             "address": "586 NINGPO ROAD",
             "startYear": 1930,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Performance site",
+              "TYP03": "Theater",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 354443.5237,
             "y": 3457085.9902,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=657",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 657,
             "wgs84": {
               "longitude": 121.471567,
               "latitude": 31.238904
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 657,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"新光大戏院\" \"586\" 现",
+        "新光影艺苑 2026 演出 宁波路586",
+        "\"新光\" \"影艺苑\" 2025 2026 演出",
+        "\"新光影艺苑\" 关闭 改造",
+        "\"新光\" \"星空间\" \"2026\"",
+        "\"宁波路586号\" \"2025\"",
+        "\"新光影艺苑\" \"2024\"",
+        "\"亚朵\" \"宁波路586\" 上海",
+        "\"上海人民广场南京路步行街亚朵酒店\" site:yaduo.com",
+        "\"亚朵\" \"宁波路586号\" 官网"
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "上海图书馆以新光电影院、新光大戏院及宁波路586号建立沿革，1930年与原记录相符。2024年12月电影山海经文章直接说明该历史戏院已改为亚朵酒店；黄浦2024年9月公共场所注销索引列新光影艺苑影剧院许可于9月24日注销。携程当前酒店页列2024年开业及一层-3/-4、二至五层，但高德同名同址同电话页面标暂停营业，缺运营方更新，现营业状态待核。原点转换GCJ02后距酒店高德点约28米，同址建筑关系相容；图书馆辅助坐标偏东约1.17公里不采用。酒店用途限定资料列出的楼层，不能据旧演出信息继续称当前影院或把全栋所有空间均认作客房。 原UTM独立转换WGS84为121.471567, 31.238904；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "原新光大戏院（现酒店用途线索）",
+      "currentAddress": "上海市黄浦区宁波路586号（酒店列一层部分、二至五层）",
+      "currentUse": "原戏院建筑部分改作亚朵酒店；当前营业状态待核",
+      "relationship": "same-building-repurposed",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 657",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=657"
+        },
+        {
+          "title": "上海图书馆：新光电影院（新光大戏院）",
+          "url": "https://data.library.sh.cn/entity/theater/en35d3v0eud14egz"
+        },
+        {
+          "title": "电影山海经：这家影院是优秀历史建筑，现在变成酒店（2024-12）",
+          "url": "https://www.sohu.com/a/838017433_121124773"
+        },
+        {
+          "title": "黄浦区卫生健康部门：2024年9月公共场所注销名单（上海新光影艺苑有限公司）",
+          "url": "https://www.shhuangpu.gov.cn/shhpewb/epointtemp/editor/uploadfile/20241126100010091212.pdf"
+        },
+        {
+          "title": "携程：上海人民广场南京路步行街亚朵酒店（宁波路586号，所用楼层及当前订房页面）",
+          "url": "https://hotels.ctrip.com/hotels/122188561.html"
+        },
+        {
+          "title": "高德地图：上海人民广场南京路步行街亚朵酒店（页面标注暂停营业）",
+          "url": "https://www.amap.com/place/B0KRJD2NMW"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=657"
+        "https://www.virtualshanghai.net/data/buildings?ID=657",
+        "https://data.library.sh.cn/entity/theater/en35d3v0eud14egz",
+        "https://www.sohu.com/a/838017433_121124773",
+        "https://www.shhuangpu.gov.cn/shhpewb/epointtemp/editor/uploadfile/20241126100010091212.pdf",
+        "https://hotels.ctrip.com/hotels/122188561.html",
+        "https://www.amap.com/place/B0KRJD2NMW"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 657",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=657",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上海图书馆：新光电影院（新光大戏院）",
+          "url": "https://data.library.sh.cn/entity/theater/en35d3v0eud14egz",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "电影山海经：这家影院是优秀历史建筑，现在变成酒店（2024-12）",
+          "url": "https://www.sohu.com/a/838017433_121124773",
+          "accessMethod": "web.open首次只返回页面元信息，随后open超时；普通HTTPS成功取得并读取article完整正文",
+          "failures": [
+            "web.open Internal Error / 400 Timeout fetching"
+          ],
+          "localPath": "/private/tmp/020-a-657-sohu.html",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "黄浦区卫生健康部门：2024年9月公共场所注销名单（上海新光影艺苑有限公司）",
+          "url": "https://www.shhuangpu.gov.cn/shhpewb/epointtemp/editor/uploadfile/20241126100010091212.pdf",
+          "accessMethod": "web.search_query返回2024年9月公共场所注销段及新光影艺苑行；PDF直接读取失败，因此只按索引范围使用",
+          "failures": [
+            "web.open Internal Error",
+            "普通HTTPS下载 SSL EOF occurred in violation of protocol"
+          ],
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "携程：上海人民广场南京路步行街亚朵酒店（宁波路586号，所用楼层及当前订房页面）",
+          "url": "https://hotels.ctrip.com/hotels/122188561.html",
+          "accessMethod": "web.search_query返回现酒店页面主体（开业年、96间及具体楼层、点评）；未进行订房交易，不能消除高德暂停营业反证",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "高德地图：上海人民广场南京路步行街亚朵酒店（页面标注暂停营业）",
+          "url": "https://www.amap.com/place/B0KRJD2NMW",
+          "accessMethod": "web.search_query返回高德地址、GCJ02坐标及页面状态；仅作为当次地图线索",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "永平安",
+            "osmId": 1199775871,
+            "osmType": "way",
+            "distanceMetres": 14,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1199775871",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "贵州路",
+            "osmId": 73898394,
+            "osmType": "way",
+            "distanceMetres": 14,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/73898394",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4697610,31.2393980,121.4710610,31.2405980",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "施耐德电气",
+            "osmId": 8508706926,
+            "osmType": "node",
+            "distanceMetres": 36,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/8508706926",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "牛庄路",
+            "osmId": 39839919,
+            "osmType": "way",
+            "distanceMetres": 37,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/39839919",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4700900,31.2386820,121.4713900,31.2398820",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "新光电影院586号及新光大戏院别名文字可用；候选坐标偏东约1173米，未采用坐标"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。",
+      "operatingStatusReview": {
+        "conclusion": "影院旧用途不再据旧材料维持；酒店用途及原楼关系有明确来源，但高德暂停营业与携程当前售房并列，保持review。",
+        "excludedPseudoOfficialPages": [
+          "shanghaicityhotels.com",
+          "besthotelshanghai.com",
+          "iinhotel.com",
+          "qiantaohotel.com"
+        ],
+        "reason": "品牌官网域名精确查询无直接门店结果；搜索出现的酒店网站为第三方，未冒充运营方。",
+        "gcj02Check": {
+          "originalPointConverted": {
+            "longitude": 121.476098,
+            "latitude": 31.236971
+          },
+          "amapPoint": {
+            "longitude": 121.476387,
+            "latitude": 31.236928
+          },
+          "distanceMetres": 28,
+          "method": "用项目wgs84ToGcj02转换，再用纬度修正平面距离；POI接近不单独证明原楼，以同址原楼改酒店正文为主。"
+        }
+      }
     },
     {
       "originalInput": {
@@ -326,37 +1059,131 @@
         "clusterId": "landmark-vs-site-1314",
         "members": [
           {
-            "IDBAT": 1314,
+            "id": 1314,
             "name": "Studley Park",
             "nameZh": null,
             "address": "102 WAYSIDE ROAD",
             "startYear": 1918,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Outdoor facility",
+              "TYP03": "Park",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 357796.4654,
             "y": 3458901.0307,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1314",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1314,
             "wgs84": {
               "longitude": 121.506507,
               "latitude": 31.255689
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1314,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"Studley Park\" Shanghai 102",
+        "霍山公园 2026 118号 开放",
+        "site:shhk.gov.cn \"霍山公园\" \"2025\"",
+        "site:shhk.gov.cn \"霍山公园\" \"斯德\""
+      ],
+      "verificationStatus": "verified",
+      "conclusion": "上海市文旅推广网直接说明霍山路118号霍山公园原名Studley Park，1917年建、1944年更名，构成独特名称与同地公园沿革；原记录起始年1918、门牌102 WAYSIDE ROAD仍保留，不宣称取得102到118的门牌重编表。原点独立转换GCJ02为121.510917,31.253662，与高德公园点121.511102,31.253428约31米，空间相容且无竞争候选。《虹口年鉴2025》记2024年9月试行、10月1日起24小时开放，支持近期持续公共公园用途；判定针对公园场地，不指所有园内设施自1917年未改。 原UTM独立转换WGS84为121.506507, 31.255689；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "霍山公园",
+      "currentAddress": "上海市虹口区霍山路118号",
+      "currentUse": "城市公共公园及犹太难民历史纪念场地",
+      "relationship": "same-site-continuing-use",
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1314",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1314"
+        },
+        {
+          "title": "上海市文旅推广网：Shanghai Jewish Refugees Museum（Huoshan Park / Studley Park 段）",
+          "url": "https://www.meet-in-shanghai.net/en/tourist-attraction/shanghai-jewish-refugees-museum--4a--museum--tourist-attraction-773742/"
+        },
+        {
+          "title": "虹口区人民政府：《虹口年鉴2025》园林绿化·新增2座24小时开放公园",
+          "url": "https://www.shhk.gov.cn/shhk/6926197e-6e91-45ae-aed8-2e7986c3f1a8/b18f7762-7d99-4ede-ba7a-1547ab288c22/%E8%99%B9%E5%8F%A3%E5%B9%B4%E9%89%B42025.pdf"
+        },
+        {
+          "title": "高德地图：霍山公园（霍山路118号，坐标仅作空间校验）",
+          "url": "https://www.amap.com/place/B00155L2R3"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1314"
+        "https://www.virtualshanghai.net/data/buildings?ID=1314",
+        "https://www.meet-in-shanghai.net/en/tourist-attraction/shanghai-jewish-refugees-museum--4a--museum--tourist-attraction-773742/",
+        "https://www.shhk.gov.cn/shhk/6926197e-6e91-45ae-aed8-2e7986c3f1a8/b18f7762-7d99-4ede-ba7a-1547ab288c22/%E8%99%B9%E5%8F%A3%E5%B9%B4%E9%89%B42025.pdf",
+        "https://www.amap.com/place/B00155L2R3"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1314",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1314",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上海市文旅推广网：Shanghai Jewish Refugees Museum（Huoshan Park / Studley Park 段）",
+          "url": "https://www.meet-in-shanghai.net/en/tourist-attraction/shanghai-jewish-refugees-museum--4a--museum--tourist-attraction-773742/",
+          "accessMethod": "web.open与find读取官方页面全文；Huoshan Park段（行91、105）直接列Studley及118号",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "虹口区人民政府：《虹口年鉴2025》园林绿化·新增2座24小时开放公园",
+          "url": "https://www.shhk.gov.cn/shhk/6926197e-6e91-45ae-aed8-2e7986c3f1a8/b18f7762-7d99-4ede-ba7a-1547ab288c22/%E8%99%B9%E5%8F%A3%E5%B9%B4%E9%89%B42025.pdf",
+          "accessMethod": "web.search_query返回年鉴绿化段及新增2座24小时公园全文片段；web.open因文件超过上限失败，未下载及未编造页码",
+          "failures": [
+            "400 Content length is too large: 13012698"
+          ],
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "高德地图：霍山公园（霍山路118号，坐标仅作空间校验）",
+          "url": "https://www.amap.com/place/B00155L2R3",
+          "accessMethod": "web.search_query返回高德地址、GCJ02坐标及页面状态；仅作为当次地图线索",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。",
+      "gcj02Check": {
+        "originalPointConverted": {
+          "longitude": 121.510917,
+          "latitude": 31.253662
+        },
+        "amapPoint": {
+          "longitude": 121.511102,
+          "latitude": 31.253428
+        },
+        "distanceMetres": 31,
+        "method": "由独立WGS84再用项目wgs84ToGcj02转换，与高德公园GCJ02在同坐标系比较；纬度修正平面距离四舍五入。",
+        "decision": "官方独特英文旧名与同地公园沿革为身份主证，约31米空间相容支持102/118入口记载差异；未声称有门牌重编表。"
+      }
     },
     {
       "originalInput": {
@@ -376,37 +1203,163 @@
         "clusterId": "landmark-vs-site-1662",
         "members": [
           {
-            "IDBAT": 1662,
+            "id": 1662,
             "name": "Sudo (Satomi) Clinic (Japanese)",
             "nameZh": null,
             "address": "108 MILLER ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Institutional site",
+              "TYP02": "Medical facility",
+              "TYP03": "Hospital",
+              "TYP04": "Clinic",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 355883.7593,
             "y": 3458225.0583,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1662",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1662,
             "wgs84": {
               "longitude": 121.486522,
               "latitude": 31.249357
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1662,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"Sudo\" \"Clinic\" \"Miller Road\" Shanghai",
+        "\"須藤\" \"医院\" \"上海\" 密勒路"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "琉球大学纪要第77集第26页记须藤五百三医院位于密勒路北段108号，支持Sudo Clinic历史实体。2008年历史散步文章据2005年照片与资料记三层楼、二层诊室及1919年开业，能提供原楼线索但不能证明2026年仍作诊所。原点近缓存峨眉路10米、闵行路17米，附近虹口分局距40米不可移用为原诊所现用途；旧108号楼体存续和当前用途待核。 原UTM独立转换WGS84为121.486522, 31.249357；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "须藤医院旧址线索",
+      "currentAddress": "上海市虹口区峨眉路、闵行路交会处一带（历史密勒路108号）",
+      "currentUse": "须藤医院原楼的当前具体使用者待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1662",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1662"
+        },
+        {
+          "title": "小泽保博：芥川龍之介「支那游記」研究（中），琉球大学教育学部纪要第77集（2010，第26页）",
+          "url": "https://u-ryukyu.repo.nii.ac.jp/record/2005684/files/No77p001.pdf"
+        },
+        {
+          "title": "井上：第36回上海历史散步・战前的日本人居住区（2008文中2005年须藤医院照片与说明）",
+          "url": "https://4travel.jp/travelogue/10235706"
+        },
+        {
+          "title": "OpenStreetMap：峨眉路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/177592890"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1662"
+        "https://www.virtualshanghai.net/data/buildings?ID=1662",
+        "https://u-ryukyu.repo.nii.ac.jp/record/2005684/files/No77p001.pdf",
+        "https://4travel.jp/travelogue/10235706",
+        "https://www.openstreetmap.org/way/177592890"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1662",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1662",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "小泽保博：芥川龍之介「支那游記」研究（中），琉球大学教育学部纪要第77集（2010，第26页）",
+          "url": "https://u-ryukyu.repo.nii.ac.jp/record/2005684/files/No77p001.pdf",
+          "accessMethod": "web搜索返回第26页；web.open失败后普通HTTPS下载全文，以捆绑pypdf复核首页题名作者，正文第26页地址见搜索摘录",
+          "failures": [
+            "web.open Internal Error",
+            "系统pdftotext不存在、系统Python缺pypdf；使用已有捆绑Python依赖"
+          ],
+          "localPath": "/private/tmp/020-a-1662-paper.pdf",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "井上：第36回上海历史散步・战前的日本人居住区（2008文中2005年须藤医院照片与说明）",
+          "url": "https://4travel.jp/travelogue/10235706",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：峨眉路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/177592890",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "峨眉路",
+            "osmId": 177592890,
+            "osmType": "way",
+            "distanceMetres": 10,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/177592890",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4863600,31.2503210,121.4876600,31.2515210",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "闵行路",
+            "osmId": 35422926,
+            "osmType": "way",
+            "distanceMetres": 17,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/35422926",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4846610,31.2492970,121.4859610,31.2504970",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "虹口分局",
+            "osmId": 1267646409,
+            "osmType": "way",
+            "distanceMetres": 40,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1267646409",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4846610,31.2492970,121.4859610,31.2504970",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "塘沽路",
+            "osmId": 177596646,
+            "osmType": "way",
+            "distanceMetres": 74,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/177596646",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4846610,31.2492970,121.4859610,31.2504970",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。"
     },
     {
       "originalInput": {
@@ -426,37 +1379,139 @@
         "clusterId": "landmark-vs-site-406",
         "members": [
           {
-            "IDBAT": 406,
+            "id": 406,
             "name": "Suiren Hospital",
             "nameZh": "髄仁醫院",
             "address": "1325 ROUTE LAFAYETTE",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Institutional site",
+              "TYP02": "Medical facility",
+              "TYP03": "Hospital",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 352182.6286,
             "y": 3454261.2851,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=406",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 406,
             "wgs84": {
               "longitude": 121.44825,
               "latitude": 31.213142
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 406,
-      "queries": [],
+      "queries": [
+        "\"髄仁医院\" 上海 复兴",
+        "\"随仁医院\" \"复兴\" 上海",
+        "\"Suiren Hospital\" Shanghai \"1325\"",
+        "\"绥仁医院\" 上海"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "保留live中文髄仁醫院；已实际检索髄仁、随仁、绥仁、Suiren Hospital及1325号，未取得独立院史或旧今门牌链。异体字仅作为检索尝试，未擅改历史院名。缓存最近为地下地铁线，汾阳路距141米，不提供原医院地块证据；不能以复兴中路周围知名医院替代。具体旧址及现用途待核。 原UTM独立转换WGS84为121.44825, 31.213142；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "髄仁医院旧址待核",
+      "currentAddress": "上海市徐汇区复兴中路一带（历史辣斐德路1325号）",
+      "currentUse": "医院身份、具体房屋及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 406",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=406"
+        },
+        {
+          "title": "OpenStreetMap：汾阳路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/438431105"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=406"
+        "https://www.virtualshanghai.net/data/buildings?ID=406",
+        "https://www.openstreetmap.org/way/438431105"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 406",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=406",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：汾阳路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/438431105",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "上海地铁10号线",
+            "osmId": 513622481,
+            "osmType": "way",
+            "distanceMetres": 35,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513622481",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4809050,31.2352420,121.4822050,31.2364420",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上海地铁10号线",
+            "osmId": 513577066,
+            "osmType": "way",
+            "distanceMetres": 46,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513577066",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4809050,31.2352420,121.4822050,31.2364420",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "汾阳路",
+            "osmId": 438431105,
+            "osmType": "way",
+            "distanceMetres": 141,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/438431105",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4480390,31.2104700,121.4493390,31.2116700",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "白公馆",
+            "osmId": 1153659654,
+            "osmType": "way",
+            "distanceMetres": 144,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1153659654",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4480390,31.2104700,121.4493390,31.2116700",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。",
+      "searchCorrections": "髄仁／随仁／绥仁均实际检索，尚无证据判定异字；原中文不改。"
     },
     {
       "originalInput": {
@@ -476,37 +1531,162 @@
         "clusterId": "landmark-vs-site-531",
         "members": [
           {
-            "IDBAT": 531,
+            "id": 531,
             "name": "Sumitomo Bank",
             "nameZh": "住友銀行",
             "address": "69 KIUKIANG ROAD",
             "startYear": 1936,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Finance",
+              "TYP03": "Bank",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 355628.4099,
             "y": 3457120.461,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=531",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 531,
             "wgs84": {
               "longitude": 121.484,
               "latitude": 31.239362
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 531,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"住友银行\" \"九江路69\" 现",
+        "\"住友银行大楼\" 上海 现在 九江",
+        "\"住友银行\" \"华夏\" \"九江\"",
+        "上海 住友银行旧址 九江路 51号",
+        "\"住友银行\" \"33号\" 上海"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "财联社所载永福路52号人物史提及九江路69号住友银行大楼，支持原名与旧址线索。另有上证夜读等将住友上海早期行址写作旧1号、今33号，未证明本记录1936年69号与33号是同一楼或一次门牌改编。原点近缓存四川中路24米、上海医药工业有限公司楼34米，不能因此改认附近德华银行楼或现上投楼。住友不同分期行址、69号对应及当前具体用途待核。 原UTM独立转换WGS84为121.484, 31.239362；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "住友银行九江路旧址线索",
+      "currentAddress": "上海市黄浦区九江路东段（历史九江路69号）",
+      "currentUse": "原69号住友银行楼体与现用途待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 531",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=531"
+        },
+        {
+          "title": "财联社／乐居财经：上海的花园洋房：永福路52号的故事（九江路69号住友银行大楼记述）",
+          "url": "https://www.cls.cn/detail/768862"
+        },
+        {
+          "title": "上证夜读：从外滩上投大厦，回望上海资管百年风云（住友银行旧1号、今33号）",
+          "url": "https://www.sohu.com/a/662589462_120988576"
+        },
+        {
+          "title": "OpenStreetMap：上海医药工业有限公司（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/380339822"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=531"
+        "https://www.virtualshanghai.net/data/buildings?ID=531",
+        "https://www.cls.cn/detail/768862",
+        "https://www.sohu.com/a/662589462_120988576",
+        "https://www.openstreetmap.org/way/380339822"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 531",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=531",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "财联社／乐居财经：上海的花园洋房：永福路52号的故事（九江路69号住友银行大楼记述）",
+          "url": "https://www.cls.cn/detail/768862",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上证夜读：从外滩上投大厦，回望上海资管百年风云（住友银行旧1号、今33号）",
+          "url": "https://www.sohu.com/a/662589462_120988576",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：上海医药工业有限公司（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/380339822",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "外滩中央广场",
+            "osmId": 1156620264,
+            "osmType": "way",
+            "distanceMetres": 24,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1156620264",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "四川中路",
+            "osmId": 238346293,
+            "osmType": "way",
+            "distanceMetres": 24,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/238346293",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上海医药工业有限公司",
+            "osmId": 380339822,
+            "osmType": "way",
+            "distanceMetres": 34,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/380339822",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "嘉陵大楼",
+            "osmId": 1196704492,
+            "osmType": "way",
+            "distanceMetres": 80,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1196704492",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4829360,31.2397880,121.4842360,31.2409880",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。",
+      "rejectedLeads": "华夏及九江路51号是追加候选检索，无直接住友69号证据，未采用；旧1/今33号与本条69号不得合并。"
     },
     {
       "originalInput": {
@@ -526,37 +1706,161 @@
         "clusterId": "landmark-vs-site-1783",
         "members": [
           {
-            "IDBAT": 1783,
+            "id": 1783,
             "name": "SUN APARTMENT",
             "nameZh": null,
             "address": "?? BUBBLING WELL ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Residential site",
+              "TYP02": null,
+              "TYP03": null,
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 351538.2771,
             "y": 3455644.4493,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1783",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1783,
             "wgs84": {
               "longitude": 121.441283,
               "latitude": 31.225536
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1783,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"太阳公寓\" \"南京西路\" 拆",
+        "\"南京西路1636\" \"太阳\"",
+        "\"太阳公寓\" \"久光\"",
+        "\"久百城市广场\" \"庙弄\""
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "原Bubbling Well Road门牌为??。《征信工商行名录》将Sun列1636 Bubbling Well Road，与651 Weihaiwei Road的Sun Court分列，支持南京西路太阳公寓方向并排除威海路同名公寓。朱道伟庙弄回忆称南京西路1634弄西侧有五层太阳公寓。原点位于既有缓存久百城市广场闭合面内，但尚缺太阳公寓原平面、拆除及商城宗地沿革，不能仅据点落现商场即断言原公寓全部被其取代。1634弄、1636和原??的对应及地块转换待核。 原UTM独立转换WGS84为121.441283, 31.225536；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "太阳公寓旧址线索",
+      "currentAddress": "上海市静安区南京西路、静安寺东侧一带（历史Sun Apartment门牌待核）",
+      "currentUse": "太阳公寓与现久百城市广场地块的直接对应待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1783",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1783"
+        },
+        {
+          "title": "《征信工商行名录》：Sun 1636 Bubbling Well Road 与 Sun Court 651 Weihaiwei Road 分列",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+        },
+        {
+          "title": "朱道伟／上海老底子：静安寺庙弄往事（南京西路1634弄西侧太阳公寓记述）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_7457138"
+        },
+        {
+          "title": "OpenStreetMap：久百城市广场（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/255637011"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1783"
+        "https://www.virtualshanghai.net/data/buildings?ID=1783",
+        "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+        "https://m.thepaper.cn/newsDetail_forward_7457138",
+        "https://www.openstreetmap.org/way/255637011"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1783",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1783",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "《征信工商行名录》：Sun 1636 Bubbling Well Road 与 Sun Court 651 Weihaiwei Road 分列",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "朱道伟／上海老底子：静安寺庙弄往事（南京西路1634弄西侧太阳公寓记述）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_7457138",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：久百城市广场（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/255637011",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "久百城市广场",
+            "osmId": 255637011,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/255637011",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4421400,31.2249500,121.4434400,31.2261500",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "静安寺",
+            "osmId": 13981430,
+            "osmType": "way",
+            "distanceMetres": 19,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/13981430",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4413590,31.2245410,121.4426590,31.2257410",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "久光",
+            "osmId": 4810793847,
+            "osmType": "node",
+            "distanceMetres": 41,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4810793847",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4413590,31.2245410,121.4426590,31.2257410",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "2",
+            "osmId": 2613105487,
+            "osmType": "node",
+            "distanceMetres": 51,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/2613105487",
+            "cachedSourceFile": "research/unresolved-landmarks/015-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4413590,31.2245410,121.4426590,31.2257410",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。",
+      "rejectedLeads": "威海路651号Sun Court与南京西路Sun两处由历史名录分别列出；久百商城点包含原点仍缺旧楼原平面及拆改链。"
     },
     {
       "originalInput": {
@@ -576,37 +1880,138 @@
         "clusterId": "landmark-vs-site-1207",
         "members": [
           {
-            "IDBAT": 1207,
+            "id": 1207,
             "name": "Suzhou Jingshantang",
             "nameZh": "蘇州晶善堂",
             "address": "980 FERRY ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Community facility",
+              "TYP02": "Benevolent association",
+              "TYP03": "Secular",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 351225.844,
             "y": 3457463.5403,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1207",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1207,
             "wgs84": {
               "longitude": 121.437734,
               "latitude": 31.241903
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1207,
-      "queries": [],
+      "queries": [
+        "\"苏州\" \"晶善堂\" 上海",
+        "\"苏州\" \"积善堂\" \"西康路\"",
+        "\"西康路980\" 善堂"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "原中文为蘇州晶善堂；已检索晶善堂、积善堂与西康路980号，未得到能够确认具体善堂的独立历史资料。晶与积只作异字检索，不将其他城市或同名善堂移入。原点近缓存西康路2米、九茂小区4米，无法证明原善堂拆存或今住宅对应；名称、旧980号宗地及现用途待核。 原UTM独立转换WGS84为121.437734, 31.241903；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "苏州晶善堂旧址待核",
+      "currentAddress": "上海市静安区西康路一带（历史小沙渡路980号）",
+      "currentUse": "善堂实体与现址用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1207",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1207"
+        },
+        {
+          "title": "OpenStreetMap：九茂小区（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/1464060924"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1207"
+        "https://www.virtualshanghai.net/data/buildings?ID=1207",
+        "https://www.openstreetmap.org/way/1464060924"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1207",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1207",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：九茂小区（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/1464060924",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "西康路",
+            "osmId": 457601885,
+            "osmType": "way",
+            "distanceMetres": 2,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/457601885",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4369420,31.2414920,121.4382420,31.2426920",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "九茂小区",
+            "osmId": 1464060924,
+            "osmType": "way",
+            "distanceMetres": 4,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1464060924",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4369420,31.2414920,121.4382420,31.2426920",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "华侨城",
+            "osmId": 730912748,
+            "osmType": "way",
+            "distanceMetres": 10,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/730912748",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4369420,31.2414920,121.4382420,31.2426920",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "冠龙大厦",
+            "osmId": 1464060932,
+            "osmType": "way",
+            "distanceMetres": 20,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1464060932",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4369420,31.2414920,121.4382420,31.2426920",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。",
+      "searchCorrections": "晶善堂与积善堂作异字查询，未获得依据，保留原中文晶。"
     },
     {
       "originalInput": {
@@ -626,37 +2031,147 @@
         "clusterId": "landmark-vs-site-1126",
         "members": [
           {
-            "IDBAT": 1126,
+            "id": 1126,
             "name": "Suzhou Normal School for Girls",
             "nameZh": "蘇州女子師範學校",
             "address": "1826 SINZA ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Educational facility",
+              "TYP02": "School",
+              "TYP03": "Private",
+              "TYP04": "Secular",
+              "TYP05": "Vocational",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 351237.1634,
             "y": 3456132.3415,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1126",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1126,
             "wgs84": {
               "longitude": 121.43805,
               "latitude": 31.229898
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1126,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"苏州女子师范\" \"新闸路\"",
+        "\"新闸路1826\" 学校"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "《百年名校丨新苏师范的前世今生》记1938年在上海新闸路租校舍办沪校、数年后停办并于1945年返苏复校，支持苏州女子师范在沪办学的历史方向。资料未列1826号及所租原楼，机构后来在苏州的发展不能作为此上海点的当前用途。缓存延平路距65米、周边商业节点不具院界证据；旧1826号具体校舍、拆存及现用途待核。 原UTM独立转换WGS84为121.43805, 31.229898；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "苏州女子师范沪校旧址线索",
+      "currentAddress": "上海市静安区新闸路、延平路一带（历史新闸路1826号）",
+      "currentUse": "抗战时期借用校舍的具体原楼及现用途待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1126",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1126"
+        },
+        {
+          "title": "百年名校丨新苏师范的前世今生（1938年借新闸路校舍、1945年返苏沿革）",
+          "url": "https://www.sohu.com/a/424556530_120058100"
+        },
+        {
+          "title": "OpenStreetMap：延平路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/424580488"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1126"
+        "https://www.virtualshanghai.net/data/buildings?ID=1126",
+        "https://www.sohu.com/a/424556530_120058100",
+        "https://www.openstreetmap.org/way/424580488"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1126",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1126",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "百年名校丨新苏师范的前世今生（1938年借新闸路校舍、1945年返苏沿革）",
+          "url": "https://www.sohu.com/a/424556530_120058100",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：延平路（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/424580488",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "延平路",
+            "osmId": 424580488,
+            "osmType": "way",
+            "distanceMetres": 65,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/424580488",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4365650,31.2303660,121.4378650,31.2315660",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "Breadfast",
+            "osmId": 11762669869,
+            "osmType": "node",
+            "distanceMetres": 77,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/11762669869",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4365650,31.2303660,121.4378650,31.2315660",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "Raw",
+            "osmId": 4520459250,
+            "osmType": "node",
+            "distanceMetres": 120,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4520459250",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4365650,31.2303660,121.4378650,31.2315660",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "胶州路 319 弄",
+            "osmId": 131469475,
+            "osmType": "way",
+            "distanceMetres": 127,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/131469475",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4365650,31.2303660,121.4378650,31.2315660",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。"
     },
     {
       "originalInput": {
@@ -676,37 +2191,126 @@
         "clusterId": "landmark-vs-site-958",
         "members": [
           {
-            "IDBAT": 958,
+            "id": 958,
             "name": "Suzhou Xiyuansi Fenyuan Temple",
             "nameZh": "蘇州西園寺分院",
             "address": "476 AVENUE ROAD",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Religious facility",
+              "TYP02": "Temple",
+              "TYP03": null,
+              "TYP04": "Religious",
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": "Unknown",
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 353319.2565,
             "y": 3456829.2471,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=958",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 958,
             "wgs84": {
               "longitude": 121.459803,
               "latitude": 31.236447
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 958,
-      "queries": [],
+      "queries": [
+        "\"西园寺分院\" 上海 北京西路",
+        "\"苏州西园寺\" \"上海\" \"分院\"",
+        "\"西园寺\" \"476\" 上海"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "已以苏州西园寺上海分院、476号及北京西路等组合实际检索，未取得上海分院的独立沿革或边界。原点在缓存静安雕塑公园闭合面内，只说明当前坐标环境，不能用苏州本寺资料证明上海分院，更不能直接判定该寺拆后改园。旧476号与寺院范围及现用途待核。 原UTM独立转换WGS84为121.459803, 31.236447；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "苏州西园寺分院旧址待核",
+      "currentAddress": "上海市静安区北京西路、静安雕塑公园一带（历史爱文义路476号）",
+      "currentUse": "分院的历史范围、存废及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 958",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=958"
+        },
+        {
+          "title": "OpenStreetMap：静安雕塑公园（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/404696024"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=958"
+        "https://www.virtualshanghai.net/data/buildings?ID=958",
+        "https://www.openstreetmap.org/way/404696024"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 958",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=958",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：静安雕塑公园（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/404696024",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "静安雕塑公园",
+            "osmId": 404696024,
+            "osmType": "way",
+            "distanceMetres": 0,
+            "pointInsideClosedWay": true,
+            "sourceUrl": "https://www.openstreetmap.org/way/404696024",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4574090,31.2347370,121.4587090,31.2359370",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "北京西路",
+            "osmId": 1125986381,
+            "osmType": "way",
+            "distanceMetres": 83,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1125986381",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4579320,31.2342230,121.4592320,31.2354230",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上外静安外国语小学",
+            "osmId": 1200087876,
+            "osmType": "way",
+            "distanceMetres": 99,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1200087876",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4579320,31.2342230,121.4592320,31.2354230",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。"
     },
     {
       "originalInput": {
@@ -726,37 +2330,92 @@
         "clusterId": "landmark-vs-site-1567",
         "members": [
           {
-            "IDBAT": 1567,
+            "id": 1567,
             "name": "Swedish Consulate",
             "nameZh": "瑞典領事館",
             "address": "393 FAHUA",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Diplomatic representation",
+              "TYP02": "Consulate",
+              "TYP03": null,
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 349493.7577,
             "y": 3453433.8036,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1567",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 1567,
             "wgs84": {
               "longitude": 121.420156,
               "latitude": 31.205335
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 1567,
-      "queries": [],
+      "queries": [
+        "\"瑞典领事馆\" \"法华\" 393",
+        "\"Swedish Consulate\" \"393\" Shanghai",
+        "上海 瑞典领事馆 法华路 旧址"
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "已检索瑞典领事馆、法华路、393及Swedish Consulate旧址，未获得原393 FAHUA与具体建筑的独立对应。上海外办现列瑞典总领馆在淮海中路381号，为现机构地址，不能当作本历史点的旧址延续；新华路外国弄堂的瑞典公使官邸亦缺与393直接关系，不合并。缓存未覆盖具名目标不代表建筑不存在。历史道路与门牌、馆舍是否迁址及当前原地块用途待核。 原UTM独立转换WGS84为121.420156, 31.205335；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "瑞典领事馆旧址待核",
+      "currentAddress": "原393 FAHUA（具体今道路、门牌及馆址范围待核）",
+      "currentUse": "历史领事馆的原地块及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 1567",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1567"
+        },
+        {
+          "title": "上海市人民政府外事办公室：驻沪领事机构信息（瑞典总领事馆今淮海中路381号，非原址证明）",
+          "url": "https://wsb.sh.gov.cn/ztzl/zhlsjgxx/index.html"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=1567"
+        "https://www.virtualshanghai.net/data/buildings?ID=1567",
+        "https://wsb.sh.gov.cn/ztzl/zhlsjgxx/index.html"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 1567",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=1567",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "上海市人民政府外事办公室：驻沪领事机构信息（瑞典总领事馆今淮海中路381号，非原址证明）",
+          "url": "https://wsb.sh.gov.cn/ztzl/zhlsjgxx/index.html",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。"
     },
     {
       "originalInput": {
@@ -776,37 +2435,140 @@
         "clusterId": "landmark-vs-site-886",
         "members": [
           {
-            "IDBAT": 886,
+            "id": 886,
             "name": "Swimming Pool",
             "nameZh": "游泳池",
             "address": "541 BURKILL ROAD",
             "startYear": 1938,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Sport facility",
+              "TYP03": "Swimming pool",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 353438.003,
             "y": 3456502.6608,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=886",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 886,
             "wgs84": {
               "longitude": 121.461097,
               "latitude": 31.233517
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 886,
-      "queries": [],
+      "queries": [
+        "\"卡德路541\" 游泳",
+        "\"山东路541\" 游泳池 上海",
+        "\"Burkill Road\" \"541\" swimming",
+        "\"白克路541\" 游泳",
+        "\"白克路\" \"游泳池\" \"大陆\""
+      ],
       "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "conclusion": "原名仅Swimming Pool，中文游泳池，起始年1938。精确Burkill Road 541、白克路541及游泳池组合未得到独立场馆名称或改建沿革。缓存静安新村距3米、修德新村50米只提供现空间线索，不能把泳池直接认作附近住宅院落或其他同路泳池。旧541号所属房产、泳池范围与现用途待核。 原UTM独立转换WGS84为121.461097, 31.233517；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "白克路游泳池旧址待核",
+      "currentAddress": "上海市静安区凤阳路一带（历史白克路541号）",
+      "currentUse": "无名游泳池所属机构、原边界及现用途未确认",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 886",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=886"
+        },
+        {
+          "title": "OpenStreetMap：静安新村（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/450587722"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=886"
+        "https://www.virtualshanghai.net/data/buildings?ID=886",
+        "https://www.openstreetmap.org/way/450587722"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 886",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=886",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：静安新村（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/450587722",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "静安新村",
+            "osmId": 450587722,
+            "osmType": "way",
+            "distanceMetres": 3,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/450587722",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4611030,31.2324190,121.4624030,31.2336190",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "修德新村",
+            "osmId": 1200088722,
+            "osmType": "way",
+            "distanceMetres": 50,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/1200088722",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4611030,31.2324190,121.4624030,31.2336190",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "星巴克",
+            "osmId": 12387694601,
+            "osmType": "node",
+            "distanceMetres": 59,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/12387694601",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4611030,31.2324190,121.4624030,31.2336190",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "中国银行",
+            "osmId": 4397696154,
+            "osmType": "node",
+            "distanceMetres": 70,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4397696154",
+            "cachedSourceFile": "research/unresolved-landmarks/017-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4611030,31.2324190,121.4624030,31.2336190",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "实际搜索已执行，未取得原实体与旧今地块的可靠独立闭环；相关名录或近邻均不代替具体身份。",
+      "searchCorrections": "首轮误试卡德路541、山东路541，后以原Burkill Road及白克路541改检；错误道路不采用。"
     },
     {
       "originalInput": {
@@ -826,37 +2588,147 @@
         "clusterId": "landmark-vs-site-347",
         "members": [
           {
-            "IDBAT": 347,
+            "id": 347,
             "name": "Swimming Pool Lanyuan",
             "nameZh": "蘭園遊泳池",
             "address": "342 ROUTE CARDINAL MERCIER",
             "startYear": null,
             "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Recreational facility",
+              "TYP02": "Sport facility",
+              "TYP03": "Swimming pool",
+              "TYP04": null,
+              "TYP05": null,
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
             "x": 353014.0983,
             "y": 3454690.5778,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=347",
+            "provenance": "shapefile+live-list",
+            "IDBAT": 347,
             "wgs84": {
               "longitude": 121.456913,
               "latitude": 31.217119
             }
           }
-        ]
+        ],
+        "decision": "单记录组，已核对全部成员原中文、年代、note和独立原点"
       },
       "IDBAT": 347,
-      "queries": [],
-      "verificationStatus": "unresolved",
-      "conclusion": "阶段性存档：已核对原六字段、live中文/年代和所有同组原点，网络调查待完成。",
+      "queries": [
+        "\"兰园游泳池\" 上海",
+        "\"兰园\" \"游泳池\" 茂名南路 342"
+      ],
+      "verificationStatus": "likely",
+      "conclusion": "东方早报2012年上海泳池史把兰园游泳池列为法租界私人泳池，支持历史实体，但未给342号或现代后身。原点附近缓存希勒公寓距37米、咖啡馆47米，不足认定泳池属于该公寓或改作咖啡馆。名称与342号原院界、拆存以及现用途仍待核。 原UTM独立转换WGS84为121.456913, 31.217119；现地点组仅含本条，已核全部成员。",
+      "currentNameZh": "兰园游泳池旧址线索",
+      "currentAddress": "上海市黄浦区茂名南路一带（历史迈尔西爱路342号）",
+      "currentUse": "兰园原游泳池边界及現用途待核",
+      "relationship": null,
+      "sources": [
+        {
+          "title": "Virtual Shanghai：建筑记录 347",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=347"
+        },
+        {
+          "title": "东方早报：穿越90年看老上海游泳激情（2012，凤凰网转载）",
+          "url": "https://news.ifeng.com/c/7fcgk96BB64"
+        },
+        {
+          "title": "OpenStreetMap：希勒公寓（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/488956321"
+        }
+      ],
       "sourceUrls": [
-        "https://www.virtualshanghai.net/data/buildings?ID=347"
+        "https://www.virtualshanghai.net/data/buildings?ID=347",
+        "https://news.ifeng.com/c/7fcgk96BB64",
+        "https://www.openstreetmap.org/way/488956321"
       ],
       "sourceAccess": [
         {
           "title": "Virtual Shanghai：建筑记录 347",
           "url": "https://www.virtualshanghai.net/data/buildings?ID=347",
-          "accessMethod": "本地live原始数据核对",
-          "sourceDate": null,
+          "accessMethod": "本轮读取本地live原中文、年代、note及原址；不是新增独立网页证据",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "东方早报：穿越90年看老上海游泳激情（2012，凤凰网转载）",
+          "url": "https://news.ifeng.com/c/7fcgk96BB64",
+          "accessMethod": "本轮web.search_query返回的具名网页正文片段／索引摘录，依片段范围使用",
+          "accessedAt": "2026-09-09"
+        },
+        {
+          "title": "OpenStreetMap：希勒公寓（既有批次缓存，仅空间线索）",
+          "url": "https://www.openstreetmap.org/way/488956321",
+          "accessMethod": "读取020-osm-nearby中001—018批已有几何缓存，非今日重新联网采样",
           "accessedAt": "2026-09-09"
         }
-      ]
+      ],
+      "coordinateMethod": "由本条原始XC/YC使用scripts/lib/coordinate-systems.mjs之utm51nToWgs84从EPSG:32651独立转换EPSG:4326，保留6位小数；不使用聚合点或图书馆偏移坐标",
+      "osmGeometryReview": {
+        "file": "research/unresolved-landmarks/020-osm-nearby.json",
+        "method": "Reuse previously recorded OSM named-node/way geometry from batches 001–018; independently measure each original point; incomplete spatial coverage, not a new OSM query or a current-use conclusion",
+        "lookupError": "A fresh public OSM map API preflight near record 1705 timed out after 15 seconds; cached geometry only. Empty nearby does not indicate absence.",
+        "nearby": [
+          {
+            "name": "希勒公寓",
+            "osmId": 488956321,
+            "osmType": "way",
+            "distanceMetres": 37,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/488956321",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4565740,31.2171320,121.4578740,31.2183320",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "上海地铁10号线",
+            "osmId": 513622481,
+            "osmType": "way",
+            "distanceMetres": 44,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/way/513622481",
+            "cachedSourceFile": "research/unresolved-landmarks/018-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4809050,31.2352420,121.4822050,31.2364420",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "Blacksheep Coffee",
+            "osmId": 12624600218,
+            "osmType": "node",
+            "distanceMetres": 47,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/12624600218",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4565740,31.2171320,121.4578740,31.2183320",
+            "cachedQueriedAt": "2026-09-08"
+          },
+          {
+            "name": "瑞福園",
+            "osmId": 4467516689,
+            "osmType": "node",
+            "distanceMetres": 48,
+            "pointInsideClosedWay": false,
+            "sourceUrl": "https://www.openstreetmap.org/node/4467516689",
+            "cachedSourceFile": "research/unresolved-landmarks/016-osm-nearby.json",
+            "cachedQueryUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=121.4565740,31.2171320,121.4578740,31.2183320",
+            "cachedQueriedAt": "2026-09-08"
+          }
+        ],
+        "conclusion": "仅采用既有缓存空间线索；覆盖不完整，空结果不表示不存在；现代近邻或闭合面内点并不单独证明历史院界。"
+      },
+      "libraryAddressReview": {
+        "file": "research/unresolved-landmarks/020-shanghai-library-address.json",
+        "finding": "本条无可采纳的候选，不据无结果断言不存在"
+      },
+      "queryAssessment": "查询取得上列具体线索，按来源读取范围与主结论区分已确认史实、迁址或现用途限制。"
     }
   ]
 }
