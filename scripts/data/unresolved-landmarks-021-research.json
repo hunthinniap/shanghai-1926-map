@@ -1,0 +1,1604 @@
+{
+  "batch": "021",
+  "researchedAt": "2026-09-09",
+  "input": "research/unresolved-landmarks/021-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/021-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 13,
+      "demolished-current-use": 2,
+      "location-only-current-use": 35
+    },
+    "byResolutionStatus": {
+      "resolved": 15,
+      "probable": 18,
+      "unresolved": 17
+    },
+    "mapWriteRecommendation": {
+      "review": 24,
+      "yes": 9,
+      "no": 17
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 1553,
+      "historicalName": "Tushanwan Cimutang Orphanage",
+      "historicalNameCorrectionZh": "土山灣慈母堂孤兒院",
+      "historicalStartYear": 1855,
+      "coordinates": {
+        "wgs84": [
+          121.431294,
+          31.188509
+        ],
+        "gcj02": [
+          121.435919,
+          31.186635
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "土山湾孤儿院旧址部分用地（工艺美术教育）",
+      "currentUse": "旧院部分用地现作工艺美术教育，原点所指楼体及范围待核",
+      "currentAddress": "漕溪北路502号一带；另有蒲汇塘路55号土山湾博物馆",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文土山灣慈母堂孤兒院、1855年、448 CAOXI BEILU。徐家汇源资料述1864年迁入土山湾、原蒲西路448号并列大院四至；原1855年不等于现地楼体建年，原道路和入口记载保留差异。文汇2019明确1965年美专迁漕溪北502号原孤儿院旧址内，规资局2023将502号学院徐汇分校与蒲汇塘55号博物馆分列，2025教育考试院目录仍列502号工艺美院教学点。原点距现代学院院界4米，支持旧院部分地块的教育使用，不能把整院等同博物馆，也不足确定本条448号代表哪期哪栋，原点楼体存废与范围待核。 原UTM独立转换WGS84为121.431294, 31.188509；已核全部同组成员：#1553。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1553",
+        "https://www.xujiahuiorigin.com/zouJin/jingQuXunLiInner?id=6c903cb5a9aa6a9936343ecd16a48208",
+        "https://wenhui.whb.cn/third/yidian/201905/10/261571.html",
+        "https://ghzyj.sh.gov.cn/xh/20230907/4507797618a846c8b918395de603cfaa.html",
+        "https://www.shmeea.edu.cn/download/20251117/01.pdf",
+        "https://www.openstreetmap.org/way/791178371"
+      ]
+    },
+    {
+      "IDBAT": 548,
+      "historicalName": "Union Building",
+      "historicalStartYear": 1916,
+      "coordinates": {
+        "wgs84": [
+          121.485931,
+          31.236135
+        ],
+        "gcj02": [
+          121.490413,
+          31.234161
+        ]
+      },
+      "modernRoadAddress": "17 广东路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "有利大楼（外滩三号）",
+      "currentUse": "保留历史建筑，现为餐饮及休闲商业空间",
+      "currentAddress": "中山东一路3号、广东路17号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "上海黄浦沿革直接列Union Building为有利大楼，广东路正门17号，外滩入口为今3号、旧石刻4号，并记1916年重建为现楼，与原名、原广东17号及1916年相合。房管局第二批名录2A002明确原有利银行、现外滩3号餐厅，外滩三号官方网站仍提供餐厅预订及餐饮空间介绍，上海黄浦2026年2月实访Jean-Georges餐厅补充证实当前餐饮使用。原点距有利大楼外缘4米，虽邻外滩五号8米，独特楼名与同号主证明确对应有利楼。只归纳楼内餐饮休闲商业用途，不将单家餐厅营业时间或业态扩为全楼属性。 原UTM独立转换WGS84为121.485931, 31.236135；已核全部同组成员：#548。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=548",
+        "https://www.thepaper.cn/newsDetail_forward_9189183",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.threeonthebund.com/en/home",
+        "https://www.thepaper.cn/newsDetail_forward_32610155",
+        "https://www.openstreetmap.org/way/178408816",
+        "https://www.openstreetmap.org/way/178408821"
+      ]
+    },
+    {
+      "IDBAT": 116,
+      "historicalName": "Venus Theater",
+      "historicalNameCorrectionZh": "榮金大戲院",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.475912,
+          31.215574
+        ],
+        "gcj02": [
+          121.480427,
+          31.213619
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "荣金大戏院旧址（原建国电影院）",
+      "currentUse": "历史戏院保护更新线索明确，具体当前使用及原点范围待核",
+      "currentAddress": "建国东路原11号一带（康悌路旧址及更新边界待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文榮金大戲院、1930年。2020回访文保告知牌资料记1930年创建、1957年改建国电影院，约2014年停映，后曾为超市等及黄浦文化国资中心办公；这些旧用途不作为2026现状。2023东方网报道建国东路69/70街坊更新项目包含荣金大戏院文保点，尚未给出戏院当前运营或交付后用途。原点贴近现建国东路道路、距中海顺昌玖里边缘7米，需核历史戏院地块在更新中保留/移位范围，不能直接写为住宅项目或仍放电影，待核。 原UTM独立转换WGS84为121.475912, 31.215574；已核全部同组成员：#116。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=116",
+        "https://m.thepaper.cn/baijiahao_8310697",
+        "https://www.sohu.com/a/674112668_120823584",
+        "https://www.openstreetmap.org/way/1064398311",
+        "https://www.openstreetmap.org/way/1192582882"
+      ]
+    },
+    {
+      "IDBAT": 527,
+      "historicalName": "Wai Foong House",
+      "coordinates": {
+        "wgs84": [
+          121.484197,
+          31.237927
+        ],
+        "gcj02": [
+          121.488685,
+          31.235959
+        ]
+      },
+      "modernRoadAddress": "218 四川中路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "新汇丰大楼（小汇丰大楼）",
+      "currentUse": "历史办公楼；楼内有办公机构及二楼上海市留学人员之家联谊、展陈空间",
+      "currentAddress": "四川中路210—220号（双号，主要入口220号）",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "历史工商建筑名录直接列Wayfoong House匯豐、220 Szechuen Road；Virtual Shanghai网页亦提示Wai Foong可写Wayfoong。房管局2A048汇丰大楼保护地址为四川中210—220号双号，覆盖原218号，以整栋门牌范围解释原218和今入口220，不宣称发现门牌重编公告。2025机场进出口公司招标载5楼办公，2026年2月中新网现场报道明确新汇丰二楼为上海市留学人员之家。原点靠四川中路，距OSM标旧参事室的大楼外缘13米；结合独特旧名与完整门牌范围确认此楼。分层用途不扩作整楼均为留学人员之家。 原UTM独立转换WGS84为121.484197, 31.237927；已核全部同组成员：#527。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=527",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/NLC511-027032013015432-16401_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.avinex.com/uploadfiles/ftp/zs/2E5588B52F2C8F3448258C3F001EA771/zhaoshanggg/N25019%20%E6%8B%9B%E6%A0%87%E5%85%AC%E5%91%8A%28%E5%85%AC%E6%9C%8D%E5%B9%B3%E5%8F%B0%29.pdf",
+        "https://www.chinanews.com.cn/gn/2026/02-28/10578486.shtml",
+        "https://www.openstreetmap.org/way/380339909",
+        "https://www.openstreetmap.org/way/39705367"
+      ]
+    },
+    {
+      "IDBAT": 1037,
+      "historicalName": "Wangdetang",
+      "historicalNameCorrectionZh": "望徳堂",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.447072,
+          31.23162
+        ],
+        "gcj02": [
+          121.45167,
+          31.229741
+        ]
+      },
+      "modernRoadAddress": "1220-2 北京西路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "望德堂住宅",
+      "currentUse": "保留历史建筑，现为住宅",
+      "currentAddress": "北京西路1220弄2号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原中文望徳堂、1930年、1220-2 AVENUE ROAD。薛理勇在新民晚报记1930年奥古斯丁公司申请在今北京西1220弄建Augustinian Procuration，中文望德堂；房管局2B023直接列望德堂现住宅、北京西1220弄2号，静安区2025文普补录继续列望德堂旧址同号。原点位于北京西路北侧、西康路东侧的相应街块，距最近学校院界24米、泛太平洋大厦34米，空间相容且没有落入两者闭合范围；未因近邻改写为学校或办公。仅对应2号单体，不扩至另一保护项目1220弄1—108号全里弄，原宗教FUNCTION不改。 原UTM独立转换WGS84为121.447072, 31.231620；已核全部同组成员：#1037。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1037",
+        "https://xmwb.xinmin.cn/html/2014-08/17/content_28_1.htm",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html",
+        "https://www.openstreetmap.org/way/1199470373",
+        "https://www.openstreetmap.org/way/1199470370"
+      ]
+    },
+    {
+      "IDBAT": 1124,
+      "historicalName": "Wanguo Funeral Parlor",
+      "historicalNameCorrectionZh": "萬國殯儀館",
+      "historicalStartYear": 1925,
+      "coordinates": {
+        "wgs84": [
+          121.438376,
+          31.229218
+        ],
+        "gcj02": [
+          121.442992,
+          31.227353
+        ]
+      },
+      "modernRoadAddress": "207 胶州路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "万国殡仪馆旧址线索（今上海假肢厂用地）",
+      "currentUse": "207号现由上海假肢厂使用并设康复辅具服务、展示体验；原点范围待核",
+      "currentAddress": "胶州路207号（原殡仪馆院界与原点对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文萬國殯儀館、1925年。民政局资料支持该馆历史及1953年接收；其全文不支持假肢厂转换，转换仅另有建筑可阅读片段称胶州125弄后门北侧原万国今假肢厂。2024上海静安报道207号康复辅具体验馆，2026区生态环境局检查名单直接确认上海假肢厂有限公司仍在胶州207号。原点近云和花园31米、云峰饭店47米，未获旧殡仪馆整院与假肢厂界址图；同一207号不等于原点必在现厂建筑内，旧别墅存废及原点对应待核。 原UTM独立转换WGS84为121.438376, 31.229218；已核全部同组成员：#1124。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1124",
+        "https://mzj.sh.gov.cn/MZ_BZ105_0-2-85/20200515/MZ_BZ105_554.html",
+        "https://m.readja.com/nd.jsp?id=211",
+        "https://finance.sina.cn/2024-12-25/detail-ineasrzi0549252.d.html",
+        "https://www.jingan.gov.cn/govxxgk/JC4/2026-05-06/bf196a3a-5f39-4c6c-9b5a-de12d01fa140.html?type=2",
+        "https://www.openstreetmap.org/way/1432015449"
+      ]
+    },
+    {
+      "IDBAT": 1237,
+      "historicalName": "Weather (Gutzlaf) Tower",
+      "historicalNameCorrectionZh": "氣象信號塔",
+      "historicalStartYear": 1907,
+      "coordinates": {
+        "wgs84": [
+          121.487317,
+          31.235354
+        ],
+        "gcj02": [
+          121.491794,
+          31.233375
+        ]
+      },
+      "modernRoadAddress": "中山东一路 / 中山东二路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "外滩信号台（建筑已整体迁移）",
+      "currentUse": "原点现用途待核；平移后塔体作为历史景观保存，不将塔内用途回填至原点",
+      "currentAddress": "原外滩/法兰西外滩交界一带；今塔地址中山东二路1号甲",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原名Weather (Gutzlaf) Tower、原年1907。政务史料明确1993年因道路扩建将信号台整体向东移动24.5米；不同文章的初建/改建年份有差异，本轮保留原年。原点独立换算GCJ-02后距今塔高德点约44米，该POI差距不等于工程平移距离。原点临近现中山东一路/外滩隧道线位，仍没有旧塔基础与今道路边界的直接对应，因此原点具体用途待核，不用现塔景观、展览或咖啡用途闭环旧点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1237",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1237",
+        "https://www.thepaper.cn/newsDetail_forward_10124581",
+        "https://www.amap.com/place/B0FFGEQZXS"
+      ]
+    },
+    {
+      "IDBAT": 1765,
+      "historicalName": "WEE APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.457334,
+          31.212293
+        ],
+        "gcj02": [
+          121.461905,
+          31.210383
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "WEE公寓（历史名称）",
+      "currentUse": null,
+      "currentAddress": "原79 ROUTE HERVE DE SIEYES（今永嘉路一带，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "《徵信工商行名录》检索文字明确列Wee, 79 Route Herve de Sieyes，与原英文和门牌直接对应，可核历史身份；原中文及年代为空。原点距上海文化广场用地边缘约6米，不能因此认定公寓已改为文化广场。未找到旧今门牌重编、建筑存废、地块沿革和当前使用资料，现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1765",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1765",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/NLC511-027032013015432-16401_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+      ]
+    },
+    {
+      "IDBAT": 516,
+      "historicalName": "Whiteaway, Laidlaw & Company",
+      "historicalStartYear": 1904,
+      "coordinates": {
+        "wgs84": [
+          121.483106,
+          31.240839
+        ],
+        "gcj02": [
+          121.487598,
+          31.238875
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "惠罗公司大楼",
+      "currentUse": "惠罗商业空间，经营购物、潮玩及城市文化消费体验",
+      "currentAddress": "南京东路100号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "学术论文案例18将Whiteaway, Laidlaw & Co.与惠羅公司、旧南京路98—114号四川路口直接对应，并称1904年开业；原数据1904保留为来源年代，不将它当作现存楼体竣工年。房管5A041明确今南京东路100号惠罗公司大楼，国资委2026年报道其保护历史建筑特征后的商业改造和现实运营。独立原点在OSM惠罗楼闭合面内；现代邻楼慈安里或工联大厦的98号段不用于逐号硬套。旧址商业楼身份与当代使用已闭合。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=516",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=516",
+        "https://kanagawa-u.repo.nii.ac.jp/record/6450/files/40-09.pdf",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260608/63f56cbd7e4f4db98596c464942434d7.html"
+      ]
+    },
+    {
+      "IDBAT": 1631,
+      "historicalName": "Willie's Theater",
+      "historicalNameCorrectionZh": "威利大戯院",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.48213,
+          31.253185
+        ],
+        "gcj02": [
+          121.486627,
+          31.251229
+        ]
+      },
+      "modernRoadAddress": "408 乍浦路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "胜利电影院",
+      "currentUse": "电影放映、展览及文化交流活动",
+      "currentAddress": "乍浦路408号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "虹口图书馆沿革明确1929年好莱坞大戏院、1930年国民大戏院、1931年改威利大戏院，后来更名胜利电影院，今址乍浦路408号。原年1930保留，不据其推定威利改名或楼体始建年。旧楼经历八九十年代大修及2022—2023年修缮，区政府说明以1931年外立面照片修复，并保留电影放映；2025年实际观影活动和12月文旅名单继续确认使用。原点距影院OSM面约17米，转GCJ后距高德约29米，结合独特影院名称及原今同408号支持同楼；不声称所有构件为1929年原物。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1631",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1631",
+        "https://www.hqlib.cn/Web/detail.aspx?ID=7b2b157f&classID=395&className=",
+        "https://www.shhk.gov.cn/slh/038001/20231030/2120421e-47d6-4295-9b7a-810a1168b45b.html",
+        "https://www.shhk.gov.cn/xwzx/002008/002008045/002008045003/20250630/44dc200a-100d-4785-8d97-83c0d15fe961.html",
+        "https://cmp.whlyj.sh.gov.cn/CMP/news_view.ac?id=284848583060459ab959e1faa3edf6cd",
+        "https://www.amap.com/place/B0JAXZZ2R4"
+      ]
+    },
+    {
+      "IDBAT": 681,
+      "historicalName": "Wing On Company",
+      "historicalNameCorrectionZh": "永安公司",
+      "historicalStartYear": 1918,
+      "coordinates": {
+        "wgs84": [
+          121.473444,
+          31.236993
+        ],
+        "gcj02": [
+          121.477968,
+          31.235054
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "永安百货（永安公司旧楼）",
+      "currentUse": "百货零售及配套商业",
+      "currentAddress": "南京东路635号",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "市文旅局历史正文明确永安公司于1918年9月5日在南京路635号开办百货；房管名录1A019将旧、新楼合列为保存建筑。2025年税务即买即退名单直接列永安百货有限公司南京东路635号，市政府同期消费活动名单另列635号一楼商铺，确认当代商业使用。原点在OSM永安百货旧楼面内，与原1918年及浙江路南京路口相容。本条仅指635号旧楼，不将627号永安新厦/七重天宾馆及新楼商户并入；631为独立组，已与c组分别审查。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=681",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=681",
+        "https://whlyj.sh.gov.cn/gqfc/20220314/d7e8557a337b4533b6bc048244edcb8d.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.shanghai.gov.cn/gwk/search/content/ff117e8ab2954939991bd9033668ca18",
+        "https://www.shanghai.gov.cn/nw17239/20251105/f313048f316743c28825ab7e37848dc3.html"
+      ]
+    },
+    {
+      "IDBAT": 631,
+      "historicalName": "Wing On Company (New Building)",
+      "historicalNameCorrectionZh": "永安公司新廈",
+      "historicalStartYear": 1935,
+      "coordinates": {
+        "wgs84": [
+          121.474108,
+          31.237025
+        ],
+        "gcj02": [
+          121.47863,
+          31.235085
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "新永安大楼（七重天大厦）",
+      "currentUse": "楼内七重天宾馆客房及餐饮经营",
+      "currentAddress": "南京东路627号",
+      "currentUseRelationship": "same-building-repurposed",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原中文永安公司新廈、原起年1935及627号明确指新楼，与1918年开业、南京东路635号的永安旧楼分开。建筑沿革说明新楼位于老天蟾地块并经改造，2024年社区报资料将其与1985年七重天宾馆改建联系；资料建造年份有1932、1933等不同记述，不改原起年。文旅官方宾馆名录明确627号客房及餐厅，东方明珠运营方2026年5月7日报道仍有实际客餐经营，现用途仅据已证实的楼内宾馆部分，不概括每层租户。原点距新楼OSM外缘约6米、旧楼约4米，落在浙江中路边缘附近；采用独特新楼名称、627门牌和1930年代沿革作对应，不因旧楼更近而跨楼套用，也不移动原点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=631",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=631",
+        "https://www.thepaper.cn/newsDetail_forward_22798040",
+        "https://ep.sqcbmedia.com/njdl/2024/02/28/images/060228.pdf",
+        "https://lycx.whlyj.sh.gov.cn/c/starHotel.view.ac?id=16529",
+        "https://www.opg.cn/cn/newsCenter/newsInfo/2052201345346076672.html",
+        "https://hotels.ctrip.com/hotels/480128.html",
+        "https://www.openstreetmap.org/way/160895636"
+      ]
+    },
+    {
+      "IDBAT": 1154,
+      "historicalName": "Wing On Cotton Factory",
+      "historicalNameCorrectionZh": "永安公司紡織廠",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.448133,
+          31.24159
+        ],
+        "gcj02": [
+          121.45273,
+          31.239714
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "永安第三棉纺厂／上海无线电三厂旧址线索",
+      "currentUse": "旧无线电厂后建商办住项目的线索；原纱厂各地块现用途待核",
+      "currentAddress": "原麦根路491号；西苏州路65号天鼎花园一带（厂界待核）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "同组1383为永安第三棉紡廠，两个原点均已独立换算和审查。档案指南检索摘录直接把No.3 Wing On Cotton Mill与491 Markham Road联系；厂史称1915年创鸿裕、1928年永安收购改三厂，因此两条原起年1915可能指前身，不能写成该年即以永安三厂名义创设。厂史又称1960年原50亩中38亩转作西苏州路65号无线电三厂；人民日报2014年正文确认该旧无线电厂改建天鼎花园商办住项目，当时北部已入住而南部仍拟开发。两原点均在现OSM天鼎花园面内，但旧50亩、转用38亩、后建分期及各点原厂房关系待核，不能因现代同院界批准整组；本条及1383均不回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1154",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1154",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1383",
+        "https://assets.cengage.com/gale/psm/9500451C.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_6890916",
+        "https://paper.people.com.cn/rmrbhwb/html/2014-03/09/content_1399824.htm",
+        "https://www.openstreetmap.org/way/431702247"
+      ]
+    },
+    {
+      "IDBAT": 1358,
+      "historicalName": "Workers' Club of the Commercial Press",
+      "historicalNameCorrectionZh": "商務印書館工人俱樂部",
+      "coordinates": {
+        "wgs84": [
+          121.472564,
+          31.261125
+        ],
+        "gcj02": [
+          121.477093,
+          31.2592
+        ]
+      },
+      "modernRoadAddress": "300 中兴路",
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "市北职业高级中学校园（东方图书馆及商务印书馆工人俱乐部遗址）",
+      "currentUse": "职业教育及红色历史教育展示",
+      "currentAddress": "宝山路584号校园内（原记录中兴路300号）",
+      "currentUseRelationship": "demolished-site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原中文商務印書館工人俱樂部，无年代附注。商务印书馆官方沿革直接将俱乐部置于东方图书馆底层，红色宝山资料记录1927年该处作为工人纠察队总指挥部、原楼1932年被毁，不能称旧俱乐部建筑仍存。上海党史官网2024年明确东方图书馆原址在宝山路584号市北职高校内，并建红色教育展示空间；市教育考试院2026年该校招生章程仍列584号为中职就读地址。原中兴路300号与今宝山路584号是不同街向的地址记录，采用独特底层俱乐部—图书馆—同址校园的直接链条和原点落在本轮OSM市北校园way1387302976内部的空间证据，不扩展为整个商务印书馆厂区，不改原门牌或坐标。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1358",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1358",
+        "https://www.cp.com.cn/Content/2021/05-20/1606474201.html",
+        "https://bsl.cnseen.com/index.php/default/content/2.html",
+        "https://www.ccphistory.org.cn/shds/hsyj/content/ddd5e44f-fa55-46ef-b584-62ff53d73029.html",
+        "https://www.shmeea.edu.cn/download/20260429/1/423.pdf",
+        "https://www.openstreetmap.org/way/1387302976"
+      ]
+    },
+    {
+      "IDBAT": 623,
+      "historicalName": "Wugong Restaurant",
+      "historicalNameCorrectionZh": "呉宮飯店",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.477409,
+          31.2355
+        ],
+        "gcj02": [
+          121.48192,
+          31.23355
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "吴宫大楼（城际上海外滩南京路步行街酒店）",
+      "currentUse": "酒店住宿及配套餐饮",
+      "currentAddress": "福州路431号（吴宫大楼保护点范围福州路415—433号；原记录福建中路152号）",
+      "currentUseRelationship": "same-building",
+      "mapWriteRecommendation": "yes",
+      "evidence": "原中文呉宮飯店、起年1930；英文及分类称Restaurant，与中文饭店可兼指旅馆的含义有差异，原字段保留。迈点网2026年3月24日投资人采访直接记录福州路福建路街角的1930年吴宫大楼，经吴宫旅舍、红旗招待所、吴宫饭店及大酒店阶段后改作已开业城际酒店，并明确多次加建、加固和改造，不能称1930年原状保存。黄浦区官方保护点名单列吴宫大楼福州路415—433号，高德现酒店为431号；原点独立转换至GCJ-02后距该酒店点约29.64米。未取得原福建中路152号逐号换编证明，依据独特吴宫名、1930年、同一街角和建筑沿革综合认定；POI仅空间辅助，不声称已读吴宫完整面界，也不移动历史点。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=623",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=623",
+        "https://caifuhao.eastmoney.com/news/20260324092027561380790",
+        "https://www.shhuangpu.gov.cn/uploadfile/6051185f-9fc3-44b3-93e3-e4aa4c122c1a/%E9%BB%84%E6%B5%A6%E5%8C%BA%E7%AC%AC%E4%BA%8C%E6%89%B9%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%85%AC%E5%B8%83%E5%90%8D%E5%8D%95.pdf",
+        "https://ditu.amap.com/place/B0LRGZT7ZK"
+      ]
+    },
+    {
+      "IDBAT": 285,
+      "historicalName": "Tongyi Primary and Junior High School",
+      "historicalNameCorrectionZh": "同義中小學校",
+      "coordinates": {
+        "wgs84": [
+          121.454433,
+          31.224936
+        ],
+        "gcj02": [
+          121.459013,
+          31.223039
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "同义中小学旧址待核",
+      "currentUse": "原校具体院址与现用途待核",
+      "currentAddress": "巨鹿路原408号（旧巨籁达路，今地块待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文同義中小學校，年代未载。学校调查录将同義中小學列为三个校址，其中一址为408号；路名OCR作“巨穎道路”，与Route Ratard旧称巨籁达路相近，仅可支持学校及门牌线索。原点在现代明德里范围内，向明初中院界在35米外；未获得同义校舍转为明德里或向明的沿革，不能把多校址机构与近邻学校合并。旧门牌、原校占地及楼体存废待核。 原UTM独立转换WGS84为121.454433, 31.224936；已核全部同组成员：#285。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=285",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+        "https://www.openstreetmap.org/way/1200721934",
+        "https://www.openstreetmap.org/way/1199737544"
+      ]
+    },
+    {
+      "IDBAT": 1373,
+      "historicalName": "Tongyi Silk Factory",
+      "historicalNameCorrectionZh": "統益紗廠",
+      "historicalStartYear": 1919,
+      "coordinates": {
+        "wgs84": [
+          121.442974,
+          31.248972
+        ],
+        "gcj02": [
+          121.447583,
+          31.247109
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "统益纱厂旧址待核",
+      "currentUse": "候选原点在圣骊澳门苑范围，原纱厂地块与现用途待核",
+      "currentAddress": "原澳门路10号；史料厂址莫干山路9号（宗地对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文統益紗廠、1919年，英文及FUNCTION作Silk；档案馆资料将统益纱厂记为1919年创建的棉纺企业，厂址莫干山路9号，后改上海第十一化学纤维厂。其位于西苏州路西、莫干山路南的叙述尚不能证明澳门路10号为同一院入口。已复读020批#1211原结论；#1211与本条均落圣骊澳门苑闭合范围，但一个泛称紡織廠，另一个具统益厂名且行业记录有差异，二者均缺旧厂实测边界至住宅用地的证据，整组待核。 原UTM独立转换WGS84为121.442974, 31.248972；已核全部同组成员：#1211、#1373。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1373",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://www.openstreetmap.org/way/1431954368",
+        "https://www.openstreetmap.org/way/1431954369"
+      ]
+    },
+    {
+      "IDBAT": 1587,
+      "historicalName": "Ume Kikan",
+      "historicalNameCorrectionZh": "美機關",
+      "historicalStartYear": 1939,
+      "coordinates": {
+        "wgs84": [
+          121.478682,
+          31.261474
+        ],
+        "gcj02": [
+          121.483191,
+          31.259532
+        ]
+      },
+      "modernRoadAddress": "SHIQING ROAD / 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "梅机关早期址线索（永乐坊一带）",
+      "currentUse": "早期机关确切院址与现用途待核",
+      "currentAddress": "四川北路、海伦西路附近（原SHIQING ROAD路口对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文美機關、英文Ume Kikan、1939年。按梅机关检索，二手文史资料记最初设于北四川路永乐坊梅花堂，随后迁往东体育会路重光堂；这能提供早期地点线索，不能将迁址后的重光堂用途套入本点。原点近横浜综合通信楼9米、永乐坊18米及海伦西路24米，尚缺SHIQING ROAD准确道路对应、梅花堂具体门牌和旧院边界。原中文异写不改，亦不据近邻中国电信认定原机关已改通信楼，待核。 原UTM独立转换WGS84为121.478682, 31.261474；已核全部同组成员：#1587。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1587",
+        "https://read01.com/zh-sg/BMnNEN.html",
+        "https://www.openstreetmap.org/way/1083786810",
+        "https://www.openstreetmap.org/way/1083786838"
+      ]
+    },
+    {
+      "IDBAT": 1681,
+      "historicalName": "US Marine's YMCA",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.481559,
+          31.244524
+        ],
+        "gcj02": [
+          121.486057,
+          31.242566
+        ]
+      },
+      "modernRoadAddress": "?? 香港路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "香港路美国海军青年会旧址待核",
+      "currentUse": "青年会原址和现楼用途待核",
+      "currentAddress": "香港路、四川中路附近（原门牌缺失）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原1915年、US Marine's YMCA，门牌为??。泳池史文章独立提及香港路Navy WMCA室内泳池，支持此街上的海军青年会线索，但未给门牌或存废。组内#594青年會1915年、#595青年會年代未载及本条分别复核，三点相距约数十米仍不能证明同一楼体或分期。原点近华德大楼22米、锦江之星26米及佳利商务楼35米，均仅现代邻居；文章后述gym系其他泳池，不移用于本楼。全部成员原院界与当下使用者待核。 原UTM独立转换WGS84为121.481559, 31.244524；已核全部同组成员：#594、#595、#1681。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1681",
+        "https://shanghaitours.canalblog.com/archives/2014/02/24/29289241.html",
+        "https://www.openstreetmap.org/way/293504490",
+        "https://www.openstreetmap.org/node/5221144321",
+        "https://www.openstreetmap.org/way/293504485"
+      ]
+    },
+    {
+      "IDBAT": 1376,
+      "historicalName": "Wannian'an",
+      "historicalNameCorrectionZh": "萬年庵",
+      "historicalStartYear": 1937,
+      "coordinates": {
+        "wgs84": [
+          121.43986,
+          31.255845
+        ],
+        "gcj02": [
+          121.444476,
+          31.25399
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "万年庵旧址待核",
+      "currentUse": "原庵具体地块、毁损后沿革及现用途待核",
+      "currentAddress": "原潭子湾143号（今中远两湾城、远景路附近，具体地块待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文萬年庵、1937年。地名沿革论坛转载提及潭子湾万年庵在抗战时期被炸毁，可作庵名和毁损线索；未找到可核原方志页、原143号门牌图或迁建记录，不能将1937起始年直接改作毁庵年。原点近中远两湾城边缘9米、两湾城变电站27米，与后来的大型改造区域相近，但缺本庵院界到具体住宅或变电站地块的直接关系，暂不判拆后改建为任一现代项目，待核。 原UTM独立转换WGS84为121.439860, 31.255845；已核全部同组成员：#1376。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1376",
+        "https://www.yidian.org/viewthread.php?action=printable&fid=699&tid=22221",
+        "https://www.openstreetmap.org/way/236799214",
+        "https://www.openstreetmap.org/way/1386902977"
+      ]
+    },
+    {
+      "IDBAT": 226,
+      "historicalName": "Wastewater Treatmen Plant (Usine de Traitement des Eaux)",
+      "historicalNameCorrectionZh": "自來水廠",
+      "coordinates": {
+        "wgs84": [
+          121.467589,
+          31.210824
+        ],
+        "gcj02": [
+          121.47213,
+          31.208889
+        ]
+      },
+      "modernRoadAddress": "312 重庆南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "法商水电公司卢家湾供水设施（历史候选）",
+      "currentUse": null,
+      "currentAddress": "原吕班路312号（今重庆南路一带，具体旧址范围待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文自來水廠与英文Wastewater Treatment Plant的功能描述不完全一致。署名历史文章记法商水电公司位于重庆南路310—312号，并描述卢家湾水塔；可提示本记录所属设施。尚无资料将原处理厂、相邻水塔和发电厂各自院界对应到本原点，不能把法商黄浦江取水厂或附近当代POI作为现用途。旧址范围、存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=226",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=226",
+        "https://www.sohu.com/a/243799438_777824"
+      ]
+    },
+    {
+      "IDBAT": 276,
+      "historicalName": "Water Reservoir",
+      "historicalNameCorrectionZh": "大千溜水場",
+      "coordinates": {
+        "wgs84": [
+          121.457936,
+          31.225271
+        ],
+        "gcj02": [
+          121.462506,
+          31.223366
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大千溜冰场（历史名称候选）",
+      "currentUse": null,
+      "currentAddress": "原圣母院路2号（今瑞金一路一带，具体门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文为大千溜水場，英文及分类为Water Reservoir，存在功能冲突。上海发布历史文章所引1938年申报广告明确圣母院路大千溜冰场，因而溜水可能是原数据讹字，但本轮不修改原字段。该文没有2号的逐号对应，原点虽落在OSM大德邨地块，仍不足证明是该溜冰场拆后形成的住宅。原实体功能、楼代、今址及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=276",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=276",
+        "https://news.cjn.cn/zjjjdpd/sh_20054/202202/t3942126.htm"
+      ]
+    },
+    {
+      "IDBAT": 415,
+      "historicalName": "Water Tank",
+      "historicalNameCorrectionZh": "水塔",
+      "historicalStartYear": 1923,
+      "coordinates": {
+        "wgs84": [
+          121.448503,
+          31.208785
+        ],
+        "gcj02": [
+          121.453096,
+          31.206893
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "西爱咸斯路水塔（历史候选）",
+      "currentUse": null,
+      "currentAddress": "原西爱咸斯路490号（今永嘉路一带，具体门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文水塔，原年1923。供水史线索称1909年起十四年间铺管至吕班路和西爱咸斯路新建水塔，时间与街名可相容，但仅民间文章，没有490号或可落图院界。原点距现永嘉路约70米，不能认定旁边任一住宅或单位就是塔址。水塔身份、存废、原院界和现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=415",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=415",
+        "https://www.oldkids.cn/blog/view.php?bid=1663851"
+      ]
+    },
+    {
+      "IDBAT": 1595,
+      "historicalName": "Water Tower",
+      "historicalNameCorrectionZh": "水塔",
+      "historicalStartYear": 1911,
+      "coordinates": {
+        "wgs84": [
+          121.473681,
+          31.262343
+        ],
+        "gcj02": [
+          121.478207,
+          31.260415
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "闸北水电设施水塔（历史候选）",
+      "currentUse": null,
+      "currentAddress": "原宝山路626号（具体今址待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原水塔记录年1911。文汇号历史材料提到1911年闸北水电设施及横浜桥西堍水塔，提供可能的历史背景；尚未将宝山路626号与本原点逐址对应。原点临近今东宝兴路、中兴路，不能采用迁址杨浦后的闸北水厂用途。原塔身份、建筑存废和原址现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1595",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1595",
+        "https://www.whb.cn/zhuzhan/whh/20191125/305063.html"
+      ]
+    },
+    {
+      "IDBAT": 1312,
+      "historicalName": "Wayside Road Police Station",
+      "historicalNameCorrectionZh": "巡捕房",
+      "coordinates": {
+        "wgs84": [
+          121.50443,
+          31.25483
+        ],
+        "gcj02": [
+          121.508847,
+          31.252809
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "汇山路巡捕房（历史候选）",
+      "currentUse": null,
+      "currentAddress": "原21 WAYSIDE ROAD（历史门牌及原址范围待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文仅巡捕房且年代空缺。任弼时被捕经历等历史叙述可确认汇山路巡捕房这个名称，但未说明21号具体位置或建筑处置。原点距海门路约4米、北外滩来福士用地边缘约13米，不能据此将捕房认作现商场或现派出所；机构迁址也不能代表原址延续。旧址范围、存废和现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1312",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1312",
+        "https://wangkui.shjjjcw.gov.cn/education_detail.php?class_id=131&id=689"
+      ]
+    },
+    {
+      "IDBAT": 55,
+      "historicalName": "Weiyang Dancing Hall",
+      "historicalNameCorrectionZh": "維揚大舞臺",
+      "coordinates": {
+        "wgs84": [
+          121.475657,
+          31.223086
+        ],
+        "gcj02": [
+          121.480173,
+          31.221135
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "维扬大舞台（历史名）",
+      "currentUse": null,
+      "currentAddress": "原62 RUE HENNEQUIN（具体今门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文維揚大舞臺，英文Dancing Hall与中文剧场含义有别。《上海通志》明确1930年代有专演扬剧的维扬大舞台，可支持剧场名称，但未给62号原门牌及其存废。原点落在OSM太平洋新天地商业中心地块内，缺少从该舞台原址到现建设地块的直接史料，不能只凭圈内位置写拆后商用。现址范围、建筑存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=55",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=55",
+        "https://www.shanghai.gov.cn/shanghai/newshanghai/%E4%B8%8A%E6%B5%B7%E9%80%9A%E5%BF%97.pdf"
+      ]
+    },
+    {
+      "IDBAT": 558,
+      "historicalName": "William Hunts Company",
+      "coordinates": {
+        "wgs84": [
+          121.485629,
+          31.237392
+        ],
+        "gcj02": [
+          121.490112,
+          31.235419
+        ]
+      },
+      "modernRoadAddress": "9 中山东一路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "轮船招商总局大楼（现址候选）",
+      "currentUse": "候选楼用于办公及“百年航程”展厅；与本条原用址关系待核",
+      "currentAddress": "中山东一路9号（与William Hunts Company历史用址关系待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原名称William Hunts Company、外滩9号，年代及中文均空缺。美国外交档案确认William Hunt与招商局财产交易联系，但涉及汉口等地，不能作为上海9号直接门牌证明。招商局官网明确中山东一路9号现楼1901年始建、2022年修缮后设办公和展厅。原点距现楼外缘约5米，位置相容，但Hunt使用此楼的确切年代、用房阶段与历史实体链仍待核，暂不按近邻认定同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=558",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=558",
+        "https://history.state.gov/historicaldocuments/frus1938v04/d507",
+        "https://www.cmhk.com/main/xwzx/jtyw/content/1793243607923818498_1793243607995121666.html"
+      ]
+    },
+    {
+      "IDBAT": 1282,
+      "historicalName": "World Theater",
+      "historicalNameCorrectionZh": "世界大戲院",
+      "historicalStartYear": 1926,
+      "historicalEndYear": 1937,
+      "coordinates": {
+        "wgs84": [
+          121.46885,
+          31.266467
+        ],
+        "gcj02": [
+          121.473392,
+          31.264554
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "世界大戏院旧址线索",
+      "currentUse": "戏院1937年战毁的文献线索；具体原地块现用途待核",
+      "currentAddress": "原青云路249号；文献称西宝兴路青云路角",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文世界大戲院，原年代1926—1937必须保留。《东方论坛》2016年论文的放映表把世界大戏院列在西宝兴路青云路角，1937年3月仍有电影放映；电影史研究另记1934年复业后未逃过1937年炮火。原点在现OSM恒业公寓面内仅是空间线索，未取得青云249号旧界至公寓拆建的直接资料，不把战毁戏院写成仍存，更不与南京同名世界大戏院混同。旧地块边界与现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1282",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1282",
+        "https://dflt.qdu.edu.cn/__local/3/49/66/17A0B63ED0FCA4DFD373A71FDD7_8E57AEA0_30F6C.pdf",
+        "https://www.virtualshanghai.net/texts/articles?ID=138"
+      ]
+    },
+    {
+      "IDBAT": 1444,
+      "historicalName": "Wutian Taishun Yusuo",
+      "coordinates": {
+        "wgs84": [
+          121.42203,
+          31.21807
+        ],
+        "gcj02": [
+          121.42667,
+          31.21622
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "武田泰淳寓所线索",
+      "currentUse": "具体旧寓所和现用途待核",
+      "currentAddress": "原XI?ANBANG无门牌；中山公园附近旧寓所的文献线索",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "live中文名、年代、附注均空，原分类为演艺设施。Wutian Taishun Yusuo拼音很可能指武田泰淳寓所；北海道大学论文首段记他1944年6月至1946年1月居沪，住过中山公园附近洋馆，与原点处于长宁片区有空间相容性。这只是独特人名和寓所称谓的识别线索，论文未给本条XI?ANBANG的准确门牌，也未证明原点对应哪栋洋馆；不把小说场景或附近愚园路住宅当成实址，建筑存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1444",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1444",
+        "https://eprints.lib.hokudai.ac.jp/repo/huscap/all/89714/Kokugokokubunkenkyu_154_01-14.pdf",
+        "https://ir.library.osaka-u.ac.jp/repo/ouka/all/56518/mrj_030_001.pdf"
+      ]
+    },
+    {
+      "IDBAT": 755,
+      "historicalName": "Wuxi Native Place Association Primary School",
+      "historicalNameCorrectionZh": "無錫旅滬同郷会小學",
+      "coordinates": {
+        "wgs84": [
+          121.475697,
+          31.248044
+        ],
+        "gcj02": [
+          121.480215,
+          31.246104
+        ]
+      },
+      "modernRoadAddress": "232-5 七浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "无锡旅沪同乡会小学旧址线索",
+      "currentUse": "学校旧址、校舍及现用途待核",
+      "currentAddress": "原七浦路232-5号；学校调查录记七浦路218号（对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文無錫旅滬同郷会小學，同组745中文仅第一小學，均无年代附注，两点相距约9米。《上海暨全国学校调查录》摘录确有无锡旅沪小学，却列七浦路218号，与原232-5尚未取得门牌或迁址对应。745的泛称不能直接认定为同一学校或把别的同乡会第一小学套入此组；现代两点靠近不能替代成员身份关系。旧院界及各校舍现用途待核，整组不回填。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=755",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=755",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=745",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1184,
+      "historicalName": "Wuxi School of National Studies",
+      "historicalNameCorrectionZh": "無錫國學専修学校",
+      "coordinates": {
+        "wgs84": [
+          121.438949,
+          31.240147
+        ],
+        "gcj02": [
+          121.443565,
+          31.238287
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "无锡国学专修学校上海临时校址线索",
+      "currentUse": "临时校舍及现地块用途待核",
+      "currentAddress": "原小沙渡路850号（今西康路旧新门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文無錫國學専修学校，无年代附注。广东政协所载文史材料检索摘录直接记上海国专1939年租小沙渡路850号通州中学校舍，随后多次迁址；1950年返无锡的学校沿革不能当本地块用途。另有马利历史材料同样提及小沙渡850号金城工艺社总厂及现代M+街区，但未建立临时校舍与厂区的时期、门牌编次和具体院界对应。原点紧邻西康路，不能仅凭现代同号园区确认校舍已转文创，原址建筑及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1184",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1184",
+        "https://www.gdszx.gov.cn/attachment/0/0/459/40569.pdf",
+        "https://m.thepaper.cn/newsDetail_forward_29706132"
+      ]
+    },
+    {
+      "IDBAT": 1562,
+      "historicalName": "Wuzhou Pharmaceutical Factory No. 2",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.42627,
+          31.203
+        ],
+        "gcj02": [
+          121.430904,
+          31.201139
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "五洲第二制药厂旧址线索",
+      "currentUse": "原二厂建筑及现用途待核",
+      "currentAddress": "淮海西路一带（原林森西路176号，具体厂界待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "live中文名空，起年1933。中国职工技术协会资料记张辅忠1933年建五洲第二制药厂，五洲沿革文章称1934年元旦安和寺路（今淮海西路）二厂落成开工，建厂与开工节点可不同，均不改原起年。原二厂不能与福州路公司总部、恒业路三厂或徐家汇皂厂混同；已找到二厂名与道路、时期线索，未取得林森西路176号厂界和改建后现用的直接沿革。原点附近新华路、淮海西路及现代设施只作范围提示，具体原厂房待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1562",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1562",
+        "https://tcwta.org.cn/detail_zgkjfslsm/-/article/LIJxw4s5yIr9/v/111171.html",
+        "https://www.thepaper.cn/newsDetail_forward_11713245"
+      ]
+    },
+    {
+      "IDBAT": 857,
+      "historicalName": "Xianle Theater",
+      "historicalNameCorrectionZh": "仙樂大戯院",
+      "coordinates": {
+        "wgs84": [
+          121.457681,
+          31.232385
+        ],
+        "gcj02": [
+          121.462253,
+          31.230484
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "仙乐／美华大戏院旧址线索",
+      "currentUse": "现兴业太古汇范围的空间线索；三历史实体的宗地及现用关系待核",
+      "currentAddress": "原Love Lane 80号（今吴江路，旧门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "原中文仙樂大戯院，无年代附注。同组856为新生女子高級職業學校、859为中国婦女節制協會，三者原址均80 Love Lane，全部独立检查。吴江路道路资料记1939年80号仙乐大戏院、1947年更名美华，演出史亦有1939年仙乐演出；不能与南京西路仙乐斯或香港同名戏院混用。三原点都在现OSM兴业太古汇面内，但尚未获得剧院、女校和妇女节制协会各自占地、时序和拆建宗地直接证据；女先贤资料仅能旁证组织名称，不能补出80号同址关系。全组身份—原址—现用闭环待核，不单凭仙乐楼或现代商场批准其余成员。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=857",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=857",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=856",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=859",
+        "https://zh.wikipedia.org/wiki/%E5%90%B4%E6%B1%9F%E8%B7%AF",
+        "https://yule.sohu.com/20080313/n255694501.shtml",
+        "https://www.sohu.com/a/1055906847_121123809",
+        "https://www.openstreetmap.org/way/1157366233"
+      ]
+    },
+    {
+      "IDBAT": 1755,
+      "historicalName": "TOWER APARTMENS",
+      "coordinates": {
+        "wgs84": [
+          121.452278,
+          31.217677
+        ],
+        "gcj02": [
+          121.456863,
+          31.215781
+        ]
+      },
+      "modernRoadAddress": "1033 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "Tower Apartments旧址待核",
+      "currentUse": "历史公寓具体位置与现用途未确认",
+      "currentAddress": "淮海中路、襄阳路交会附近（原霞飞路1033号对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原英文拼作TOWER APARTMENS，未载中文或年代。已检索Tower Apartments、Joffre、1033及今淮海中路1033号，未获得独立名录或沿革确认公寓名称。现代原点接近淮海中路/襄阳路交会及环贸iapm边缘，不能据近邻把这座未识别公寓认作商场前身；亦未采用淮海名邸等其他公寓搜索结果。公寓中文名、旧1033号对应及拆存待核。 原UTM独立转换WGS84为121.452278, 31.217677；已核全部同组成员：#1755。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1755",
+        "https://www.openstreetmap.org/way/1322916760",
+        "https://www.openstreetmap.org/way/13866211"
+      ]
+    },
+    {
+      "IDBAT": 654,
+      "historicalName": "Tung Kai Bank Warehouse",
+      "coordinates": {
+        "wgs84": [
+          121.47023,
+          31.242654
+        ],
+        "gcj02": [
+          121.474765,
+          31.240727
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "Tung Kai银行仓库旧址待核",
+      "currentUse": "原仓库实体、存废及现用途未确认",
+      "currentAddress": "南苏州路原881号（旧今门牌与仓库身份待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原条目没有中文行名和年代。按英文Tung Kai Bank Warehouse、苏州路881号及东莱仓库拼写候选进行检索，未确认Tung Kai与某一中文银行的同一性；不把试搜的东莱银行当作已证实译名。工商平台确有四行仓库南二仓库注册地址南苏州路881号，但仅同号不能证明原银行仓库沿革或现仍经营。新OSM只有距点38米南苏州路道路几何，未识别原楼，待核。 原UTM独立转换WGS84为121.470230, 31.242654；已核全部同组成员：#654。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=654",
+        "https://www.gongsi.com.cn/detail/e91442a3-1945-379d-b52e-ca8ad33a100d1",
+        "https://www.openstreetmap.org/way/73897667"
+      ]
+    },
+    {
+      "IDBAT": 236,
+      "historicalName": "Vehicle Examination Office - Registration Bureau",
+      "historicalNameCorrectionZh": "車務處駐車間",
+      "coordinates": {
+        "wgs84": [
+          121.462444,
+          31.21096
+        ],
+        "gcj02": [
+          121.467,
+          31.209038
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "法公董局车务处驻车间旧址待核",
+      "currentUse": "原行政设施楼体及现用途未确认",
+      "currentAddress": "瑞金二路、建国中西路交会一带（原薛华立路28号对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文車務處駐車間，与英文车辆检验登记机构并非完全相同表述，年代未载。已检索车务处、薛华立路28号和英文Stanislas Chevalier门牌组合，未取得具体办公楼或停车设施沿革。全部同组成员含#237法工部局財務處，原址同为28号、年代未载，两点均未独立闭合。道路及附近法租界行政建筑史只能提供街区线索，不能把22号检察院、瑞金医院或车务与财务机关当一栋；原楼与旧28号范围待核。 原UTM独立转换WGS84为121.462444, 31.210960；已核全部同组成员：#236、#237。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=236",
+        "https://www.openstreetmap.org/way/1467537297",
+        "https://www.openstreetmap.org/way/205190138"
+      ]
+    },
+    {
+      "IDBAT": 307,
+      "historicalName": "Vietnamese Police Dormitory",
+      "historicalNameCorrectionZh": "越捕宿舎",
+      "coordinates": {
+        "wgs84": [
+          121.461319,
+          31.21088
+        ],
+        "gcj02": [
+          121.465879,
+          31.20896
+        ]
+      },
+      "modernRoadAddress": "2 建国西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "越捕宿舍旧址待核",
+      "currentUse": "原宿舍楼体、存废及现用途未确认",
+      "currentAddress": "建国西路原2号一带（原福履理路，旧今位置待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文越捕宿舎，英文为Vietnamese Police Dormitory，但原FUNCTION却列公园，保留这一原数据矛盾。按越捕宿舍及建国西路组合实际搜索，结果中中法工学院临时法越兵营属另一机构地点，不能用来证明本条2号。原点近安和新村4米、瑞金二路198弄10米，尚未取得旧宿舍院界、拆存或住宅接替沿革；不据相邻里弄判作原宿舍现存，待核。 原UTM独立转换WGS84为121.461319, 31.210880；已核全部同组成员：#307。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=307",
+        "https://www.openstreetmap.org/way/494402482",
+        "https://www.openstreetmap.org/way/494402481"
+      ]
+    },
+    {
+      "IDBAT": 805,
+      "historicalName": "Wang Rongchu Dental Clinic",
+      "historicalNameCorrectionZh": "王榮初牙醫院",
+      "coordinates": {
+        "wgs84": [
+          121.470368,
+          31.229006
+        ],
+        "gcj02": [
+          121.474902,
+          31.227072
+        ]
+      },
+      "modernRoadAddress": "227 武胜路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "王荣初牙医院旧址待核",
+      "currentUse": "原牙医诊所身份、楼体及现用途未确认",
+      "currentAddress": "武胜路原227号一带（旧跑马厅路，门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文王榮初牙醫院，未载年代。已按王荣初/王榮初、牙医/牙醫及跑马厅路组合检索，未找到独立执业名录、旧227号沿革或可核实的迁址信息。现代原点近武胜路、延安东路及人民广场周边；道路、公园和便利店都不足以确定诊所原楼去向。没有把其他王姓牙医机构或现代同号商户作为同一实体，原地点与现用途待核。 原UTM独立转换WGS84为121.470368, 31.229006；已核全部同组成员：#805。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=805",
+        "https://www.openstreetmap.org/way/1338361263",
+        "https://www.openstreetmap.org/way/511404873"
+      ]
+    },
+    {
+      "IDBAT": 709,
+      "historicalName": "Wanquan Hospital",
+      "historicalNameCorrectionZh": "萬全醫院",
+      "coordinates": {
+        "wgs84": [
+          121.473236,
+          31.23217
+        ],
+        "gcj02": [
+          121.477761,
+          31.23023
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "万全医院旧址待核",
+      "currentUse": "原医院实体、楼体存废及现用途未确认",
+      "currentAddress": "北海路原261号（旧今门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文萬全醫院，年代未载。已用简繁医院名、北海路/261号检索，未获得本院独立历史名录或此门牌到现代地点的沿革；不能将同名外地医院或其他医师机构作为迁址证据。原点近餐厅12米、市工人文化宫院界19米及北海路15米，近邻文化宫与东方饭店自身沿革不能证明万全医院也在其院内。具体旧址、原楼与当前用途待核。 原UTM独立转换WGS84为121.473236, 31.232170；已核全部同组成员：#709。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=709",
+        "https://www.openstreetmap.org/way/292718768",
+        "https://www.openstreetmap.org/way/24577522"
+      ]
+    },
+    {
+      "IDBAT": 1209,
+      "historicalName": "Wax Factory",
+      "historicalStartYear": 1917,
+      "coordinates": {
+        "wgs84": [
+          121.442396,
+          31.246449
+        ],
+        "gcj02": [
+          121.447006,
+          31.244586
+        ]
+      },
+      "modernRoadAddress": "3 长寿路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "原3 ROBISON ROAD（今长寿路一带，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文空缺、原年1917，名称仅Wax Factory。三次检索未得3号蜡厂的独立具名记录或现址链；搜索中9号白礼氏洋烛厂属于不同门牌，不能合并。原点邻近长寿路、城耀大厦，只是空间背景。厂名、旧今门牌、厂房存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1209",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1209"
+      ]
+    },
+    {
+      "IDBAT": 353,
+      "historicalName": "Weida Hotel",
+      "historicalStartYear": 1919,
+      "coordinates": {
+        "wgs84": [
+          121.453151,
+          31.21805
+        ],
+        "gcj02": [
+          121.457733,
+          31.216152
+        ]
+      },
+      "modernRoadAddress": "993 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": "原993 AVENUE JOFFRE（今淮海中路一带，具体门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原年1919、中文空缺。Virtual Shanghai照片2040的图注称Zengweida building同时有Weida Hotel和Weida Apartments；中文曾韦达等试译检索未得到独立匹配，不擅定中文楼名。该照片与建筑数据库同源，只能作历史线索，不能把附近现酒店、商铺或同号新地址当成原旅馆延续。原楼存废、旧今门牌和现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=353",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=353",
+        "https://www.virtualshanghai.net/photos/images?ID=2040"
+      ]
+    },
+    {
+      "IDBAT": 1121,
+      "historicalName": "Weishengtang",
+      "historicalNameCorrectionZh": "衛生堂",
+      "coordinates": {
+        "wgs84": [
+          121.440085,
+          31.228369
+        ],
+        "gcj02": [
+          121.444698,
+          31.226501
+        ]
+      },
+      "modernRoadAddress": "1622 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "卫生堂（历史名）",
+      "currentUse": null,
+      "currentAddress": "原1622 AVENUE ROAD（具体今门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文衛生堂、年代空缺。以名称、1622号及北京西路组合检索，未得到可确认机构性质和用址的独立资料；早期海格路探查未返回相关证据，不据其确定道路。原点在今北京西路胶州路一带，附近商店或上海警备区空间信息不说明卫生堂身份及地块继承。机构身份、门牌、建筑存废和现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1121",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1121"
+      ]
+    },
+    {
+      "IDBAT": 741,
+      "historicalName": "Wenchang Primary and Junior High School",
+      "historicalNameCorrectionZh": "私立文昌中小學校",
+      "coordinates": {
+        "wgs84": [
+          121.47371,
+          31.248102
+        ],
+        "gcj02": [
+          121.478235,
+          31.246168
+        ]
+      },
+      "modernRoadAddress": "894 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "文昌中小学校（历史名）",
+      "currentUse": null,
+      "currentAddress": "原894 BOONE ROAD（今塘沽路一带，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文私立文昌中小學校、年代空缺。以学校全名及塘沽路894号检索未找到独立沿革或现用途材料。742是另一个单成员组、909号小学，原点约54米之外，不能仅因名称相似合并为一校或用共同近邻回填。原门牌对应、校舍存废、院界和现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=741",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=741"
+      ]
+    },
+    {
+      "IDBAT": 742,
+      "historicalName": "Wenchang Primary School",
+      "historicalNameCorrectionZh": "上海市私立文昌小學",
+      "coordinates": {
+        "wgs84": [
+          121.473538,
+          31.247643
+        ],
+        "gcj02": [
+          121.478063,
+          31.245709
+        ]
+      },
+      "modernRoadAddress": "909 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "文昌小学（历史名）",
+      "currentUse": null,
+      "currentAddress": "原909 BOONE ROAD（今塘沽路一带，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文上海市私立文昌小學、年代空缺。以全称及塘沽路909号检索未得独立校史、原校舍或当代用址证据。741原894号中小学属于另一组、另一原点，不能按邻近关系替代本条核实。原点邻近福建北路、塘沽路，不能直接写现商场、住宅或任一现代文昌小学。旧今门牌、校舍存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=742",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=742"
+      ]
+    },
+    {
+      "IDBAT": 428,
+      "historicalName": "Womenﾒs Foreign Missionary Society",
+      "historicalNameCorrectionZh": "外國女佈道会",
+      "coordinates": {
+        "wgs84": [
+          121.444694,
+          31.209684
+        ],
+        "gcj02": [
+          121.449296,
+          31.207799
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "外国女布道会旧址待考",
+      "currentUse": "历史机构的具体院址、建筑及现用途待核",
+      "currentAddress": "衡山路一带（原Avenue Petain，无门牌）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文外國女佈道会，无起止年代或附注；英文团体名可以对应不同教派的妇女海外传教组织。中英文全名、Petain及衡山路组合检索未建立具体宗派、院址与现用的独立沿革，传教士年鉴中的泛称不足以识别本条。原点附近OSM幼稚园约9米只是现代邻近设施，不能把原宗教医疗机构直接写成该幼稚园，原楼存废待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=428",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=428"
+      ]
+    },
+    {
+      "IDBAT": 346,
+      "historicalName": "Woo Chang Sanatorium and Hospital",
+      "coordinates": {
+        "wgs84": [
+          121.455491,
+          31.216515
+        ],
+        "gcj02": [
+          121.460067,
+          31.214612
+        ]
+      },
+      "modernRoadAddress": "331 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "Woo Chang疗养院及医院旧址待考",
+      "currentUse": "医院中文身份、原院址和现用途待核",
+      "currentAddress": "陕西南路一带（原Avenue du Roi Albert 331号，门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "live中文名、起止年代和附注均空；Woo Chang不能仅凭音译确定为吴昌。检索英文全名、331号和亚尔培路，得到同门牌相关人物住所材料，但未证该住址与这所医院为同一实体或同一时期。原点附近OSM瑞金二路社区卫生服务中心约31米不构成医院延续证据；中文名、建筑存废及具体院址待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=346",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=346"
+      ]
+    },
+    {
+      "IDBAT": 319,
+      "historicalName": "Wufu Daoist Temple",
+      "historicalNameCorrectionZh": "五福道院",
+      "coordinates": {
+        "wgs84": [
+          121.461279,
+          31.208782
+        ],
+        "gcj02": [
+          121.465838,
+          31.206862
+        ]
+      },
+      "modernRoadAddress": "410-22 瑞金二路T",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "五福道院旧址待考",
+      "currentUse": "原道院身份及现用途待核",
+      "currentAddress": "原Route Pere Robertt 410-22号（具体门牌及院址待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文五福道院，无年代附注。中文名与金神父路、瑞金路等道路组合检索未取得该上海道院的独立沿革，台湾等外地同名寺庙排除。原地址拼作Pere Robertt，不能自行拆分410-22为现弄号、也不能由附近建筑推定旧庙已经改用；具体院址、存废及现用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=319",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=319"
+      ]
+    },
+    {
+      "IDBAT": 1526,
+      "historicalName": "Wujia Garden",
+      "historicalNameCorrectionZh": "吳家花園",
+      "coordinates": {
+        "wgs84": [
+          121.374773,
+          31.203537
+        ],
+        "gcj02": [
+          121.379404,
+          31.201673
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "吴家花园旧址待考",
+      "currentUse": "花园身份、旧地块及现用途待核",
+      "currentAddress": "原Macleod Road无门牌（道路与原点有明显分歧）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文吳家花園，无年代附注。道路对照检索将Macleod Road对应淮阴路，而原点独立转换在虹桥片区，空间明显西偏，不能擅自纠点或用同名花园消除冲突。新民晚报关于617专线的报道提及吴家花园与顾家花园名称辨析，未证明此条旧Macleod Road花园就是该处。现OSM无近邻命名对象不表示原地没有建筑；园主身份、道路矛盾及后续土地用途待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1526",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1526",
+        "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+        "https://xmwb.xinmin.cn/lab/html/2016-07/10/content_27_1.htm"
+      ]
+    },
+    {
+      "IDBAT": 328,
+      "historicalName": "Xianghua Primary School",
+      "historicalNameCorrectionZh": "翔華小學校",
+      "coordinates": {
+        "wgs84": [
+          121.455724,
+          31.20835
+        ],
+        "gcj02": [
+          121.460299,
+          31.206442
+        ]
+      },
+      "modernRoadAddress": "248-1 建国西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "翔华小学校旧址待考",
+      "currentUse": "原校址、校舍及现用途待核",
+      "currentAddress": "建国西路一带（原Route Joseph Frelupt 248-1号，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文翔華小學校、英文Primary School均称小学，而原FUNCTION末级Secondary，原资料内部有差异，保持不改。中文繁简名称及门牌、道路检索未找到可归属于该校的独立校史；现代外地同名学校排除。原点附近地铁线路属地下几何，不能当作历史学校现地块用途，近邻商铺也不足以证明同栋。旧门牌、校舍存废和现用待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=328",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=328"
+      ]
+    },
+    {
+      "IDBAT": 643,
+      "historicalName": "Xianglin Hospital",
+      "historicalNameCorrectionZh": "祥麟醫院",
+      "coordinates": {
+        "wgs84": [
+          121.474337,
+          31.241429
+        ],
+        "gcj02": [
+          121.478859,
+          31.23949
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "祥麟医院旧址待考",
+      "currentUse": "原院址、建筑和现用途待核",
+      "currentAddress": "北京东路一带（原Peking Road 578号，门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原中文祥麟醫院，无年代附注。医院繁简名称、578号及北京路组合检索未获得独立院史或门牌沿革，搜索中的现代人名或外地医院不采用。原点距OSM北京东路小学约24米，不能据近邻学校认定医院原楼改校；医院准确身份、地块与现用待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=643",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=643"
+      ]
+    }
+  ]
+}
