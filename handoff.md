@@ -43,7 +43,7 @@
 1. **从research/unresolved-landmarks/020-input.json继续**：已固定50条且排除001—019全部950个首轮研究ID；020尚未调查。不要复制会漂移的实时020.json，不要重写固定快照。
 2. 按逐条检索→全部同组成员核实→compile 020→复核批准名单→apply overrides→data:current-use→data:unresolved→验证测试继续。现存、已拆、仅位置线索按证据区分；第三类查不到具体当前用途时应明确未知，不能填相邻POI。
 3. **不要运行data:build，不做道路或历史坐标矫正。** WGS84为地图规范坐标，GCJ-02只用于国内地图查询。
-4. 本轮开始及提交前fetch确认本地main与origin/main均为`85b2ff9002c83566ef2a4994edeb575939fb1c8a`。本轮完成后按已授权流程普通commit／push，再核对远程；禁止force push。
+4. 019成果已本地提交为`b591097`。本轮开始及提交前fetch确认本地main与origin/main均为`85b2ff9002c83566ef2a4994edeb575939fb1c8a`；之后普通push遇HTTP/2错误，HTTP/1.1重试收到Empty reply，最终ls-remote也连接github.com:443超时。**本轮尚未成功推送，远程最终状态无法重新核实**，不要写成已同步。网络恢复后先fetch确认分支关系，再普通git push origin main并核对HEAD与origin/main；禁止force push。本条网络阻塞说明另存后续本地文档提交。
 5. 原stash仍保留：`stash@{0}: On main: pre-pull local generated data 2026-09-08`。未apply、pop或drop；不要将下方更早存档的“无stash”当作当前状态。
 
 ## 015进度存档（以下为该轮完成时记录）
