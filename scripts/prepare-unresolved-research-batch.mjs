@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loadExternalResearch, externalResearchExclusions } from './lib/external-research.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const batch = process.argv[2]
@@ -30,8 +31,11 @@ const unresolvedRecords = (await Promise.all(unresolvedFilenames.map((filename) 
   fs.readFile(path.join(unresolvedDirectory, filename), 'utf8').then(JSON.parse),
 ))).flat()
 
-const researchedIds = new Set()
-const reservedIds = new Set()
+// External reports use immutable ID snapshots, not the current numbered chunks.
+// Partial investigations stay reserved for follow-up rather than being picked
+// again as a new, unresearched batch. This does not approve any map writes.
+const externalArchives = await loadExternalResearch(projectRoot)
+const { researchedIds, reservedIds } = externalResearchExclusions(externalArchives)
 for (let number = 1; number < batchNumber; number += 1) {
   const priorBatch = String(number).padStart(3, '0')
   const filename = `unresolved-landmarks-${priorBatch}-research.json`

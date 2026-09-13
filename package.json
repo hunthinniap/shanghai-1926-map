@@ -16,6 +16,7 @@
     "data:unresolved": "node scripts/export-unresolved-landmarks.mjs",
     "research:unresolved:first": "node scripts/compile-unresolved-research.mjs 001",
     "research:unresolved:prepare": "node scripts/prepare-unresolved-research-batch.mjs",
+    "research:progress": "node scripts/research-progress.mjs",
     "research:shlib-address": "node scripts/research-shanghai-library-by-address.mjs",
     "data:building-links": "node scripts/apply-virtual-shanghai-building-links.mjs",
     "data:site-separations": "node scripts/apply-virtual-shanghai-site-separations.mjs",
@@ -25,7 +26,7 @@
     "validate:data": "node scripts/validate-data.mjs",
     "build": "npm run validate:data && tsc --noEmit -p tsconfig.app.json && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs",
+    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs",
     "test:watch": "vitest",
     "test:e2e": "playwright test"
   },

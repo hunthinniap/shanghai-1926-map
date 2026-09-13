@@ -1,0 +1,67 @@
+{
+  "validatedAt": "2026-09-12T08:51:37.702Z",
+  "validationScope": "offline arithmetic, data preservation and research consistency; not an independent audit of web-source truth",
+  "baselineHead": "991f3987b0dc5c1dd49b841a59c1bb0548a8e5b8",
+  "recordCount": 10,
+  "groups": 9,
+  "originalFieldsAndCoordinatesExact": true,
+  "allGroupMembersCovered": true,
+  "fixed022InputPreserved": true,
+  "fixed022Overlap": 0,
+  "summaryCountsMatch": true,
+  "mapImportExecuted": false,
+  "overrides": 296,
+  "featureCount": 5507,
+  "roadCount": 3832,
+  "mapSha256": "156ef08fd71ae2dcf685083b2280c44c3f797c7f8226afa1d663d4b5b1561f8f",
+  "protectedFilesPreserved": 105,
+  "protectedFilesMatchHead": true,
+  "externalArchiveManifestHashesMatch": true,
+  "uploadedSourceHashMatches": true,
+  "rawOverpassWays": 118,
+  "independentlyRecomputedPointWayPairs": 123,
+  "keyContainmentChecks": [
+    [
+      1565,
+      545482989,
+      true
+    ],
+    [
+      1062,
+      1153655815,
+      true
+    ],
+    [
+      1693,
+      293400223,
+      false
+    ],
+    [
+      403,
+      533589793,
+      false
+    ]
+  ],
+  "jsonParsed": 10,
+  "researchFileSha256": {
+    "gemini-upload-022-completion-baseline.json": "0dc1af87742d6fef6be15fce5fdf066d5ed3f40cc47285a4449fdb77f3dacd92",
+    "gemini-upload-022-followup-c.json": "acc611a3e687ef457434aba6b424b41e81d9e857ca20f9303041425083ed3cd1",
+    "gemini-upload-022-followup-hospitals.json": "f6613f9072b84cd2f6481c1bcfba6d58ca631f626f041d869e53fd5f72a18071",
+    "gemini-upload-022-followup-other.json": "2b3439aecd34ec5374caaffaf409bf4374924cfe7527db2d29bd365187e52a27",
+    "gemini-upload-022-followup-review.json": "ba171969348e2ae2637467a0f68372de704ec5ff6870c304e216aab8a1510dc3",
+    "gemini-upload-022-overpass-2026-09-12.json": "1a6b6c706c58d02f93528aa3c33e54657e88adda763458e8389985ac02252d31",
+    "gemini-upload-022-spatial-2026-09-12.json": "1ad3372c9efd5b9271b966778a4dca93761f6355fffdc396bc3844c6916dd015",
+    "gemini-upload-022-spatial-cache-review.json": "01a305f34d96ed4bd9b7a6021d274f1da3112b608b112f824c53370318dfd579",
+    "gemini-upload-022-spatial-review-2026-09-12.json": "f73850dcf810fdf31097f76186fcf893deb26161524f8a5c8e596976c3617b96",
+    "gemini-upload-022-spatial.json": "546f43710e523a47361d758ca9b72c254f856df1f23ad05478e8eab2e18a5673"
+  },
+  "gitDiffCheck": "passed",
+  "applicationBuildRun": false,
+  "noGitCommitOrPush": true,
+  "coordinateTests": {
+    "command": "node --test scripts/lib/coordinate-systems.test.mjs",
+    "passed": 3,
+    "failed": 0,
+    "runDate": "2026-09-12"
+  }
+}

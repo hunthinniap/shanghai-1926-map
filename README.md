@@ -12,6 +12,12 @@ npm run dev
 
 `npm run data:build` 会从 Virtual Shanghai 下载 CC BY/CC0 的开放 Shapefile，转换为 WGS84 GeoJSON，并写入 `public/data/`。生成后的数据随静态应用一起部署，运行时不会请求历史数据源。
 
+## 历史地点调查
+
+调查覆盖按 IDBAT 记录，见 [调查进度](research/PROGRESS.md)。外部研究原件及输入快照保存在 `research/external/`，补充评审与原作者结论分别保留。
+
+运行 `npm run research:progress` 会核验已登记外部文件的校验和及记录一致性，并更新当前 JSON 文件与调查进度的对照表。`npm run research:unresolved:prepare -- NNN` 会跳过已有外部调查或正在补证的记录。登记进度不会执行地图回填。
+
 ## 验证
 
 ```bash

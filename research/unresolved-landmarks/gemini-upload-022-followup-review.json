@@ -1,0 +1,1567 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "independent-root-review-of-uploaded-gemini-022",
+  "reviewedAt": "2026-09-12",
+  "researchStartedAt": "2026-09-10",
+  "status": "bounded-follow-up-complete-map-unchanged",
+  "scope": {
+    "primaryIds": [
+      573,
+      574,
+      591,
+      1062,
+      1139,
+      1355,
+      1565,
+      1693,
+      403
+    ],
+    "companionIds": [
+      1354
+    ],
+    "notFixedBatch022": true,
+    "overlapWithFixed022": 0,
+    "uploadedSource": {
+      "path": "/Users/yuntian/.codex/attachments/96afb80a-fcd6-492a-96da-af88d78edf0c/pasted-text.txt",
+      "sha256": "98fc7691d83035b41b1af555a41a5e30f7126fe196b64c95832944e96ab7a119",
+      "bytes": 120308
+    },
+    "inputIdentityNote": "Gemini上传报告的022标签与本仓库固定022不是同一批；本文件不代表完成固定022，也不重新编译或覆盖已注册的外部current-020报告。"
+  },
+  "authority": "本文件汇合早期文字分片与2026-09-12成功Overpass空间复核，作为这10个ID的最新补查判断。分片中“地图请求失败”“尚待空间复核”是当时记录，已被本次空间证据补充；不是自动地图导入文件。",
+  "definitions": {
+    "verified": "历史地点与现代校园／院址及2026现用途的对应可支持限定范围写入；不要求整片原物均存。",
+    "likely": "存在有依据候选，但当前原点／单栋／时效或沿革至少一项未闭合。",
+    "unresolved": "不能确定本历史记录对应的现代地点用途；知道历史机构存在并不等于现用已查明。",
+    "yes": "主审建议可进入限定范围回填；尚未执行，不等于注册报告原有状态变更。",
+    "review": "继续审查；同组1354/1355不自动传播。",
+    "no": "没有可安全写入的具体用途。"
+  },
+  "summary": {
+    "records": 10,
+    "primaryRecords": 9,
+    "companionRecords": 1,
+    "verificationStatus": {
+      "verified": 2,
+      "likely": 6,
+      "unresolved": 2
+    },
+    "mapWriteRecommendation": {
+      "yes": 2,
+      "review": 7,
+      "no": 1
+    },
+    "readyIds": [
+      1565,
+      1062
+    ],
+    "mapImportExecuted": false,
+    "overridesUnchanged": 296,
+    "formalProgressSnapshot": {
+      "legacyFixedIds": 1050,
+      "registeredExternalIds": 50,
+      "allIdsWithResearchRecords": 1100,
+      "currentUnresolvedExport": 1403,
+      "note": "正式进度为research/progress.json的已有注册口径。本补查不直接改其生成统计；有研究记录不等于查明。"
+    }
+  },
+  "invariants": {
+    "fixed022InputPreserved": true,
+    "historicalRecordsPreserved": true,
+    "coordinatesPreserved": true,
+    "roadsPreserved": true,
+    "groupsPreserved": true,
+    "externalArchivePreserved": true,
+    "noDataBuild": true,
+    "noGitCommitOrPushThisTurn": true
+  },
+  "spatialMethod": {
+    "freshMapApi": "10点首次与2026-09-12重试均失败，失败工件保留；不把失败解释为无地点。",
+    "cache": "另存老批次缓存辅助，均标原查询时间，不冒充新查询。",
+    "successfulOverpass": "2026-09-12成功取得118个way的完整geometry；请求覆盖7个查询中心，未覆盖573/574，1354使用1355邻域返回面独立计算。",
+    "comparisonCrs": "EPSG:4326; original EPSG:32651 projected to WGS84, GCJ-02 only for domestic map comparison.",
+    "geometryLimit": "OSM面不是地籍，且未构建relations；闭合有面积语义的way才计算包含。坐标舍入与测绘误差仍在，小数距离仅是计算结果。",
+    "rawFile": "research/unresolved-landmarks/gemini-upload-022-overpass-2026-09-12.json",
+    "reviewFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json"
+  },
+  "records": [
+    {
+      "IDBAT": 1565,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 1565,
+        "name": "Fudan University",
+        "nameZh": "復旦公學",
+        "address": "1626 HUASHAN",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Educational facility",
+          "TYP02": "University",
+          "TYP03": "Private",
+          "TYP04": "Secular",
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 350291.4277,
+        "y": 3453456.259,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1565",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1565",
+      "groupMemberIds": [
+        1565
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "verified",
+      "mapWriteRecommendation": "yes",
+      "mapImportExecuted": false,
+      "outcomeCategory": "survives-with-history",
+      "outcomeCandidate": null,
+      "currentUseRelationship": "same-site-educational-use-with-partial-historic-buildings",
+      "currentNameZh": "复旦中学华山路校址（复旦公学旧址）",
+      "currentAddress": "华山路1626号",
+      "currentUse": "中学教育及校史展示；校内李公祠现为校史馆",
+      "candidate": {
+        "nameZh": "复旦中学华山路校址（复旦公学旧址）",
+        "address": "华山路1626号",
+        "use": "中学教育及校史展示；校内李公祠现为校史馆",
+        "onlyLead": false
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified",
+          "summary": "原复旦公学与华山1626号直接对应；独立2026官方沿革说明大学部迁出、中学留驻。"
+        },
+        "address": {
+          "status": "verified",
+          "summary": "原1626 HUASHAN与今华山路1626号一致；不等同复旦小学。"
+        },
+        "buildingFate": {
+          "status": "partially-verified",
+          "summary": "校址有历史建筑留存；校门重建，校园扩展。李公祠现作校史馆，不把全校当原物。"
+        },
+        "currentUse": {
+          "status": "verified-at-site-level",
+          "summary": "中学教育及校史展示；不指定原点单栋室内用途。"
+        },
+        "spatial": {
+          "status": "compatible-at-site-level",
+          "summary": "原点在OSM复旦中学校园way545482989内，距边界43.16米。文保附图仅单栋且未地理配准，不能计算原点在保护楼内。"
+        },
+        "temporal": {
+          "status": "verified-for-2026-use",
+          "summary": "2026-05-05区政府报道支持现用途；原startYear=null保留。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.428523,
+          "latitude": 31.20564
+        },
+        "gcj02": {
+          "longitude": 121.433154,
+          "latitude": 31.203778
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 545482989,
+            "name": "复旦中学",
+            "tags": {
+              "amenity": "school",
+              "name": "复旦中学"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/545482989",
+            "isArea": true,
+            "pointInsideArea": true,
+            "distanceMetres": 0,
+            "distanceToBoundaryMetres": 43.16
+          },
+          {
+            "osmId": 1199688372,
+            "name": "复旦小学",
+            "tags": {
+              "amenity": "school",
+              "name": "复旦小学"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1199688372",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 141.3,
+            "distanceToBoundaryMetres": 141.3
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-c.json",
+      "sources": [
+        {
+          "id": "FUDAN-CN-2026",
+          "title": "“日月光华，旦复旦兮”：复旦公学旧址的历史故事【长宁建筑可阅读】",
+          "url": "https://www.shcn.gov.cn/col6991/20260506/1309199.html"
+        },
+        {
+          "id": "FUDAN-PROTECTION-DRAFT-2024",
+          "title": "关于征求《长宁区区级文物保护单位保护范围划定方案》意见的公告及附图",
+          "url": "https://zwgk.shcn.gov.cn/xxgk/cazj-zw/2024/284/75138.html"
+        },
+        {
+          "id": "FUDAN-PROTECTION-PROGRESS-2025",
+          "title": "公众代表列席区政府常务会议，提了这些建议",
+          "url": "https://www.shcn.gov.cn/col5441/20250319/1280707.html"
+        },
+        {
+          "id": "OSM-ROOT-20260912",
+          "title": "OpenStreetMap Overpass 完整 way 几何及独立空间复核",
+          "url": "https://www.openstreetmap.org/way/545482989"
+        }
+      ],
+      "limitations": [
+        "单栋与原点的对应未完成，但不阻碍校园级教育用途判断。",
+        "区保最终核准图未取得；不把校园面等同文保保护范围。"
+      ],
+      "nextSteps": [
+        "如回填，仅写校园级教育与历史展示，不填具体保护单栋用途。"
+      ]
+    },
+    {
+      "IDBAT": 1062,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 1062,
+        "name": "China Inland Mission",
+        "nameZh": "内地會",
+        "address": "1531 SINZA ROAD",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Religious facility",
+          "TYP02": "Mission headquarter",
+          "TYP03": null,
+          "TYP04": "Religious",
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": "Protestant",
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 351754.9661,
+        "y": 3456269.8363,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1062",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1062",
+      "groupMemberIds": [
+        1062
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "verified",
+      "mapWriteRecommendation": "yes",
+      "mapImportExecuted": false,
+      "outcomeCategory": "survives-with-history",
+      "outcomeCandidate": null,
+      "currentUseRelationship": "same-site-medical-reuse-with-partial-historic-buildings",
+      "currentNameZh": "内地会旧址（上海市儿童医院北京西路院区）",
+      "currentAddress": "新闸路1515–1533号（单号）、北京西路1400弄24号",
+      "currentUse": "保留历史楼群，现为儿童医院医疗服务用地",
+      "candidate": {
+        "nameZh": "内地会旧址（上海市儿童医院北京西路院区）",
+        "address": "新闸路1515–1533号（单号）、北京西路1400弄24号",
+        "use": "保留历史楼群，现为儿童医院医疗服务用地",
+        "onlyLead": false
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified",
+          "summary": "房管5B044与城建档案串起内地会—市六医院—儿童医院。"
+        },
+        "address": {
+          "status": "verified",
+          "summary": "原1531 SINZA在名录新闸1515—1533单号范围内；另列北京西1400弄24号。"
+        },
+        "buildingFate": {
+          "status": "partially-verified",
+          "summary": "正式名录确认院内5、7、9、10号等历史楼群；不概括全院均原楼或未经改建。"
+        },
+        "currentUse": {
+          "status": "verified-at-site-level",
+          "summary": "上海市儿童医院北京西路院区，医疗服务；不指定本点为10号楼或某科室。"
+        },
+        "spatial": {
+          "status": "compatible-at-site-level",
+          "summary": "原点在儿童医院way1153655815内，距边界14.91米；静安区中心医院则在原点152.11米外。"
+        },
+        "temporal": {
+          "status": "verified-for-2026-use",
+          "summary": "医院2026门诊信息及2026-08-24院区导航采购佐证使用；档案记1994-05-28迁入，不采1991。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.443465,
+          "latitude": 31.231204
+        },
+        "gcj02": {
+          "longitude": 121.448071,
+          "latitude": 31.229332
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 1153655815,
+            "name": "上海市儿童医院",
+            "tags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "上海市儿童医院"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1153655815",
+            "isArea": true,
+            "pointInsideArea": true,
+            "distanceMetres": 0,
+            "distanceToBoundaryMetres": 14.91
+          },
+          {
+            "osmId": 1153656333,
+            "name": "静安区中心医院",
+            "tags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "静安区中心医院"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1153656333",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 152.11,
+            "distanceToBoundaryMetres": 152.11
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-hospitals.json",
+      "sources": [],
+      "limitations": [
+        "1930/1931具体建设与迁入年份未在本轮高优先级来源中逐项定清，不补入原始startYear。",
+        "原始点指向哪栋及单栋室内用途未核；名录群体范围不能解作整个旧45亩地界。",
+        "主任务另存OSM检查，不能把本条来源地址范围写成计算过的containment。"
+      ],
+      "nextSteps": [
+        "如回填，用院址医疗再利用及部分历史楼群存续关系，不用整栋完全同一的断言。"
+      ]
+    },
+    {
+      "IDBAT": 573,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 573,
+        "name": "Zhonghua Publishing House",
+        "nameZh": "中華書局",
+        "address": "221 HONAN ROAD",
+        "startYear": 1915,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Commercial establishment",
+          "TYP02": "Retail business",
+          "TYP03": "Store",
+          "TYP04": "Cultural products",
+          "TYP05": "Bookstore",
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 355321.8957,
+        "y": 3456806.787,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=573",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-573",
+      "groupMemberIds": [
+        573
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "historical-address-and-area-candidate",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "福州路—河南中路西南角原书局区域（酒店及商铺线索）",
+        "address": "旧河南路221号；北幢福州路259号线索待核",
+        "use": "酒店及沿街商业（2019区档案报道的区域用途）",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified-historical-only",
+          "summary": "中华书局曾在棋盘街，与商务相邻；南北楼不可混。"
+        },
+        "address": {
+          "status": "partial",
+          "summary": "原河南221、中华北幢与福州259号线索需地籍／门牌对应。"
+        },
+        "buildingFate": {
+          "status": "unresolved",
+          "summary": "约2006道路拓宽的拟拆报道不能替代实际拆改范围。"
+        },
+        "currentUse": {
+          "status": "candidate-only",
+          "summary": "2019官方街区史给出酒店线索，不是2026本楼持续营业证明。"
+        },
+        "spatial": {
+          "status": "unresolved",
+          "summary": "新鲜OSM map API失败；成功Overpass查询未覆盖本点。与574相近不意味着同一楼体。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "保留原1915；另记资料1916迁入。不能把文章转载日当现场调查日。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.480828,
+          "latitude": 31.236495
+        },
+        "gcj02": {
+          "longitude": 121.485328,
+          "latitude": 31.234536
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Successful Overpass query did not cover this point; empty nearby does not mean absent.",
+        "selectedWays": []
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-c.json",
+      "sources": [
+        {
+          "id": "BOOKSTORES-HP-2019",
+          "title": "倾听｜老上海的老书店",
+          "url": "https://m.thepaper.cn/newsDetail_forward_4714682"
+        },
+        {
+          "id": "BOOKSTORES-NORTH-SOUTH-2020",
+          "title": "“四马路”，原来海派文化是在此地发源的",
+          "url": "https://m.thepaper.cn/newsDetail_forward_7908118"
+        },
+        {
+          "id": "BOOKSTORES-WH-MIRROR",
+          "title": "寻找老建筑里的旧书局",
+          "url": "https://www.shobserver.cn/wx/detail.do?id=834953"
+        }
+      ],
+      "limitations": [
+        "中华北幢与旧221号、今门牌及原点楼体边界未闭合。",
+        "2026当前用途和具体经营方没有足够更新证据。",
+        "拓宽后实际保留与拆建范围待核。"
+      ],
+      "nextSteps": [
+        "查北幢拓宽前后图、现门牌和近期实访；不要回填上海科技书店。"
+      ]
+    },
+    {
+      "IDBAT": 574,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 574,
+        "name": "Commercial Press",
+        "nameZh": "商務印書館",
+        "address": "211 HONAN ROAD",
+        "startYear": 1901,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Commercial establishment",
+          "TYP02": "Retail business",
+          "TYP03": "Store",
+          "TYP04": "Cultural products",
+          "TYP05": "Bookstore",
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 355323.8747,
+        "y": 3456798.3287,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=574",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-574",
+      "groupMemberIds": [
+        574
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "address-bridge-with-building-extent-unresolved",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "商务发行所南幢旧址（今河南中路221号候选）",
+        "address": "今河南中路221号，旧河南路211号",
+        "use": "酒店及沿街商铺（文汇文章所见；非2026核实）",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified-historical-only",
+          "summary": "商务印书馆发行所与宝山路印刷总厂、中华北幢均不同。"
+        },
+        "address": {
+          "status": "supported",
+          "summary": "文汇文章明确旧211→今河南中221号南幢。"
+        },
+        "buildingFate": {
+          "status": "unresolved",
+          "summary": "科技书店因拓宽拟部分拆而搬；尚无完成拆改范围。"
+        },
+        "currentUse": {
+          "status": "candidate-only",
+          "summary": "作者所见酒店及沿街商铺；缺2026使用核实。"
+        },
+        "spatial": {
+          "status": "unresolved",
+          "summary": "成功Overpass未覆盖本点；旧原点未与拓宽后的南楼边界对应。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "原1901保留；文献1903设所、1912新楼另记，转载日期不算新实访。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.48085,
+          "latitude": 31.236419
+        },
+        "gcj02": {
+          "longitude": 121.48535,
+          "latitude": 31.23446
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Successful Overpass query did not cover this point; empty nearby does not mean absent.",
+        "selectedWays": []
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-c.json",
+      "sources": [
+        {
+          "id": "BOOKSTORES-WH-MIRROR",
+          "title": "寻找老建筑里的旧书局",
+          "url": "https://www.shobserver.cn/wx/detail.do?id=834953"
+        },
+        {
+          "id": "BOOKSTORES-NORTH-SOUTH-2020",
+          "title": "“四马路”，原来海派文化是在此地发源的",
+          "url": "https://m.thepaper.cn/newsDetail_forward_7908118"
+        },
+        {
+          "id": "BOOKSTORES-HP-2019",
+          "title": "倾听｜老上海的老书店",
+          "url": "https://m.thepaper.cn/newsDetail_forward_4714682"
+        }
+      ],
+      "limitations": [
+        "旧211号楼拓宽前后实际保留范围与原始点的对应。",
+        "当前酒店／商业仍经营的近期可靠证据。"
+      ],
+      "nextSteps": [
+        "补南楼边界与近期经营证据；不将北楼和南楼合并为一个历史实体。"
+      ]
+    },
+    {
+      "IDBAT": 591,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 591,
+        "name": "Apartments for Foreigners",
+        "nameZh": "外人公寓",
+        "address": "343 SOOCHOW ROAD",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Residential site",
+          "TYP02": "Apartment building",
+          "TYP03": null,
+          "TYP04": null,
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 355186.4577,
+        "y": 3457653.0248,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=591",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-591",
+      "groupMemberIds": [
+        591
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "same-number-modern-address-candidate",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "华隆大厦／黄浦区人才发展服务中心（现代同号地址候选）",
+        "address": "南苏州路343号，华隆大厦G层",
+        "use": "现代同号地址G层设人才公共服务窗口；旧公寓与现楼关系未明",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "unresolved-modern-match",
+          "summary": "原名外人公寓为描述性名称，未确定现楼连续链。"
+        },
+        "address": {
+          "status": "partial",
+          "summary": "现代南苏州343华隆大厦G层有政府地址资料；旧343是否同一宗地仍需旧图。"
+        },
+        "buildingFate": {
+          "status": "unresolved",
+          "summary": "不采用商业网页相互冲突的1905／1996楼龄来断言拆建。"
+        },
+        "currentUse": {
+          "status": "verified-candidate-only",
+          "summary": "现代该址G层有黄浦人才公共服务窗口；不能扩大到整楼，更不能据此认定是原公寓。"
+        },
+        "spatial": {
+          "status": "unresolved",
+          "summary": "附近取得的楼面无名，原点未在楼面内，最近17.11米；无华隆大厦明确命名／地址面。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "2019政府搬迁通知与2026读取的现行指南支持现代候选用途，未定历史建筑存废。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.479284,
+          "latitude": 31.244111
+        },
+        "gcj02": {
+          "longitude": 121.48379,
+          "latitude": 31.242159
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 293504495,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/293504495",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 17.11,
+            "distanceToBoundaryMetres": 17.11
+          },
+          {
+            "osmId": 293504496,
+            "name": null,
+            "tags": {
+              "building": "yes",
+              "building:levels": "32"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/293504496",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 18.74,
+            "distanceToBoundaryMetres": 18.74
+          },
+          {
+            "osmId": 293504492,
+            "name": null,
+            "tags": {
+              "building": "yes",
+              "building:levels": "9"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/293504492",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 18.79,
+            "distanceToBoundaryMetres": 18.79
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-hospitals.json",
+      "sources": [],
+      "limitations": [
+        "Soochow Road到南苏州路方向与旧门牌延续仍需结合原始点/历史图核对，不能仅凭现代同号闭环。",
+        "华隆大厦建造年份的商业网页有1905/1996矛盾，不采用为确定拆建年。",
+        "外人公寓可为描述性用途名，未定出稳定专名。"
+      ],
+      "nextSteps": [
+        "查南苏州343号门牌沿革、华隆大厦竣工宗地与旧公寓位置。"
+      ]
+    },
+    {
+      "IDBAT": 1139,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 1139,
+        "name": "Chinese Red Cross Hospital No. 3",
+        "nameZh": "中國紅十字會第三醫院",
+        "address": "1748 SINZA ROAD",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Institutional site",
+          "TYP02": "Medical facility",
+          "TYP03": "Hospital",
+          "TYP04": null,
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 351379.7184,
+        "y": 3456215.8793,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1139",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1139",
+      "groupMemberIds": [
+        1139
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "coordinate-only-use-unknown",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": null,
+        "address": "原1748 SINZA ROAD，现代门牌对应待核",
+        "use": null,
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "historical-name-only",
+          "summary": "原库记第三红十字医院；报道的同名医院旁证没有新闸1748地址桥接。"
+        },
+        "address": {
+          "status": "unresolved",
+          "summary": "旧1748与现门牌及院界未闭合，不能串到1515—1533的儿童医院。"
+        },
+        "buildingFate": {
+          "status": "unresolved",
+          "summary": "旧院原楼存废及拆建时间未查明。"
+        },
+        "currentUse": {
+          "status": "unresolved",
+          "summary": "原点所在OSM建筑只有building=yes，不能推断住宅、医院或商业。"
+        },
+        "spatial": {
+          "status": "geometry-only",
+          "summary": "在无名建筑way1200585421内，距外缘约1.20米；地图边缘误差不可忽视，无功能标签。"
+        },
+        "temporal": {
+          "status": "unresolved",
+          "summary": "不把新闻中的1942收治事件改写为原startYear。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.439534,
+          "latitude": 31.23067
+        },
+        "gcj02": {
+          "longitude": 121.444148,
+          "latitude": 31.228804
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 1200585421,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1200585421",
+            "isArea": true,
+            "pointInsideArea": true,
+            "distanceMetres": 0,
+            "distanceToBoundaryMetres": 1.2
+          },
+          {
+            "osmId": 1217913699,
+            "name": null,
+            "tags": {
+              "building": "house"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1217913699",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 15.19,
+            "distanceToBoundaryMetres": 15.19
+          },
+          {
+            "osmId": 1217913690,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1217913690",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 19.85,
+            "distanceToBoundaryMetres": 19.85
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-hospitals.json",
+      "sources": [],
+      "limitations": [
+        "旧院创办、迁址、结束及拆建年代均未查实。",
+        "门牌相同的商业住宅候选不等于原点所在地，当前具体用途仍待核。",
+        "暂归位置待查队列并不表示现用途已完成调查。"
+      ],
+      "nextSteps": [
+        "查新闸1748现门牌照片、街景与1940年代红会分院目录；拒绝邻院和污染房产地址的替代。"
+      ]
+    },
+    {
+      "IDBAT": 1355,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 1355,
+        "name": "Commercial Press",
+        "nameZh": "商務印書館總廠",
+        "address": "499 BAOSHAN ROAD",
+        "startYear": 1907,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Industrial site",
+          "TYP02": "Factory",
+          "TYP03": "Printing",
+          "TYP04": null,
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 354675.0917,
+        "y": 3459504.158,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1355",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1354",
+      "groupMemberIds": [
+        1354,
+        1355
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": "demolished-current-use-with-remains-question",
+      "currentUseRelationship": "historical-factory-area-modern-residential-candidate",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "宝山路499弄小区",
+        "address": "宝山路499弄",
+        "use": "居民住宅及沿街商铺",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified-historical-only",
+          "summary": "商务总厂与宝山499历史对应强；不是对面584号东方图书馆。"
+        },
+        "address": {
+          "status": "supported-at-area-level",
+          "summary": "2025劳动报记者重访今499弄居民区和沿街店铺；旧厂内部界线未齐。"
+        },
+        "buildingFate": {
+          "status": "partially-verified",
+          "summary": "1932大部战毁，但馆史记藏版房幸存；其2026存废未查清，不写全部无存。"
+        },
+        "currentUse": {
+          "status": "verified-area-candidate",
+          "summary": "原总馆区域的住宅及沿街商铺有2025实访，不能覆盖两个成员独立原点。"
+        },
+        "spatial": {
+          "status": "unresolved",
+          "summary": "新查询未返回可识别住宅区面；不能用道路对面的学校面替代厂地。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "战毁、后用与2025区域实访已区分；不推断藏版房今日仍在。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.473647,
+          "latitude": 31.260744
+        },
+        "gcj02": {
+          "longitude": 121.478173,
+          "latitude": 31.258815
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 1387302979,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302979",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 36.4,
+            "distanceToBoundaryMetres": 36.4
+          },
+          {
+            "osmId": 1387302990,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302990",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 72.66,
+            "distanceToBoundaryMetres": 72.66
+          },
+          {
+            "osmId": 1387302982,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302982",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 74.92,
+            "distanceToBoundaryMetres": 74.92
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-other.json",
+      "sources": [
+        {
+          "id": "factory-official-2023",
+          "title": "一场红色定向赛，将百年宝山路26处红色遗址“串珠成线”",
+          "url": "https://www.jingan.gov.cn/rmtzx/003001/20230427/e93b0203-ed76-4226-b9f0-2b97816b4e0e.html"
+        },
+        {
+          "id": "factory-current-2025",
+          "title": "英雄之城丨从“文明炬火”到“人间烟火”！重走商务印书馆旧址，回溯血火中的抗战史诗",
+          "url": "https://www.51ldb.com/shsldb/sz/content/019904b88317c0010000d7c90f012edc.htm"
+        },
+        {
+          "id": "factory-survival-1932",
+          "title": "馆史︱出版巨子 一代醇儒——商务印书馆成立120周年暨张元济诞辰150周年纪念",
+          "url": "https://www.cp.com.cn/Content/2017/06-15/1003321371.html"
+        }
+      ],
+      "limitations": [
+        "两个组员各自原点与现住宅范围／独栋关系未取得",
+        "国光影片公司1926后是否仍用相同棚址及对应今地块需核",
+        "不以现小区边界重建历史厂界",
+        "藏版房的位置与当下存废有待独立实物档案／现行名录补证"
+      ],
+      "nextSteps": [
+        "与1354整组暂缓；补旧厂、摄影棚及今499弄住宅的边界。",
+        "单独核藏版房现存状况与位置。"
+      ]
+    },
+    {
+      "IDBAT": 1354,
+      "role": "required-group-companion",
+      "original": {
+        "id": 1354,
+        "name": "Guoguang Film Company",
+        "nameZh": "國光影片公司",
+        "address": "499 BAOSHAN ROAD",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Commercial establishment",
+          "TYP02": "Service",
+          "TYP03": "Leisure",
+          "TYP04": "Film company",
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 354643.0071,
+        "y": 3459401.9388,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1354",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1354",
+      "groupMemberIds": [
+        1354,
+        1355
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "historical-institution-link-subsite-unknown",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "宝山路499弄住宅区域（厂址范围线索）",
+        "address": "宝山路499弄",
+        "use": null,
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "verified-historical-only",
+          "summary": "商务电影部1926独立为国光有出版方亲历资料；仍与总厂保留为不同历史实体。"
+        },
+        "address": {
+          "status": "partial",
+          "summary": "与1355共旧499号，但摄影棚所处宗地及独立后沿用范围未定。"
+        },
+        "buildingFate": {
+          "status": "unresolved",
+          "summary": "机构结束不等于某栋1928或1932拆毁；结束时点资料有1927年底／1928初差异。"
+        },
+        "currentUse": {
+          "status": "unresolved",
+          "summary": "不能把总厂区域住宅用途自动赋予电影公司点位。"
+        },
+        "spatial": {
+          "status": "unresolved",
+          "summary": "与1355相距约107米，未落入已识别现住宅面；按本点独立复核。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "原年份null保留；1926及1927／1928只作独立历史语境。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.473325,
+          "latitude": 31.259818
+        },
+        "gcj02": {
+          "longitude": 121.477852,
+          "latitude": 31.25789
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 1387302982,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302982",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 44.97,
+            "distanceToBoundaryMetres": 44.97
+          },
+          {
+            "osmId": 1387302979,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302979",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 118.35,
+            "distanceToBoundaryMetres": 118.35
+          },
+          {
+            "osmId": 1387302981,
+            "name": null,
+            "tags": {
+              "building": "school"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1387302981",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 126.26,
+            "distanceToBoundaryMetres": 126.26
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-other.json",
+      "sources": [
+        {
+          "id": "guoguang-firstperson",
+          "title": "杨小仲：忆商务印书馆电影部",
+          "url": "https://www.cp.com.cn/Content/2014/09-16/1516474181.html"
+        },
+        {
+          "id": "guoguang-official-history",
+          "title": "商务印书馆与早期中国电影",
+          "url": "https://www.cp.com.cn/Content/2014/08-01/1624349404.html"
+        },
+        {
+          "id": "guoguang-secondary-2020",
+          "title": "聊聊老闸北的电影业",
+          "url": "https://m.thepaper.cn/newsDetail_forward_6074208"
+        },
+        {
+          "id": "factory-current-2025",
+          "title": "英雄之城丨从“文明炬火”到“人间烟火”！重走商务印书馆旧址，回溯血火中的抗战史诗",
+          "url": "https://www.51ldb.com/shsldb/sz/content/019904b88317c0010000d7c90f012edc.htm"
+        }
+      ],
+      "limitations": [
+        "同499门牌不能替代单栋对应；两个原点相距约107米",
+        "亲历者说明1920棚在编辑所旁，但缺地籍图识别该棚及其1926后沿用",
+        "现住宅的具体用地范围及本点落位待核"
+      ],
+      "nextSteps": [
+        "核摄影棚位置和分期使用；同组1355未一并回填，不合并删除记录。"
+      ]
+    },
+    {
+      "IDBAT": 1693,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 1693,
+        "name": "Zhonghua Theater",
+        "nameZh": "中華大戲院",
+        "address": "1603 ZHONGHUA",
+        "startYear": 1914,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Recreational facility",
+          "TYP02": "Performance site",
+          "TYP03": "Theater",
+          "TYP04": null,
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 355161.7779,
+        "y": 3455327.0182,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1693",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-1693",
+      "groupMemberIds": [
+        1693
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": "demolished-current-use",
+      "currentUseRelationship": "demolished-site-greenbelt-candidate",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "中华路金家坊口环城绿地",
+        "address": "原中华路1603号、金家坊口东北角",
+        "use": "公共绿地（2023作者所述；2026状态待核）",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "supported",
+          "summary": "2023专题研究对应中华1603、金家坊口东北角及共和—中华沿革；引用原报和2003续志。"
+        },
+        "address": {
+          "status": "supported-by-secondary-source",
+          "summary": "原1603与研究文章同号同路口；需旧影院建筑底图验证。"
+        },
+        "buildingFate": {
+          "status": "supported-secondary",
+          "summary": "文章记1992改建、1995今日世界、2000关闭、2001-09拆除作环城绿地；2003续志原页未直接读到。"
+        },
+        "currentUse": {
+          "status": "candidate-only",
+          "summary": "绿地是新的合理候选；不是仍营业的今日世界酒楼。"
+        },
+        "spatial": {
+          "status": "nearby-not-inside",
+          "summary": "原点距最近grass面way293400223为19.42米且在面外；不能以最近绿地直接判inside，也未证明原点具体在道路／步道。"
+        },
+        "temporal": {
+          "status": "partial",
+          "summary": "2001拆除与2023作者描述、2026OSM草地要分开；2001照片不是当前营业证明。原1914保留，文献1915开幕另记。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.479361,
+          "latitude": 31.223128
+        },
+        "gcj02": {
+          "longitude": 121.483865,
+          "latitude": 31.221167
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 293400223,
+            "name": null,
+            "tags": {
+              "landuse": "grass"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/293400223",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 19.42,
+            "distanceToBoundaryMetres": 19.42
+          },
+          {
+            "osmId": 447124044,
+            "name": null,
+            "tags": {
+              "building": "yes",
+              "height": "70"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/447124044",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 38.16,
+            "distanceToBoundaryMetres": 38.16
+          },
+          {
+            "osmId": 293400222,
+            "name": null,
+            "tags": {
+              "landuse": "grass"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/293400222",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 43.56,
+            "distanceToBoundaryMetres": 43.56
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-other.json",
+      "sources": [
+        {
+          "id": "theater-2023-full",
+          "title": "南市共和大戏院之旧梦影痕",
+          "url": "https://news.qq.com/rain/a/20230801A00IUW00"
+        },
+        {
+          "id": "theater-secondary-360",
+          "title": "中华剧场",
+          "url": "https://baike.so.com/doc/7144708-7368442.html"
+        },
+        {
+          "id": "theater-secondary-blog",
+          "title": "上海影剧院历史（三）",
+          "url": "https://blog.sina.com.cn/s/blog_5d1bdf480102zeei.html"
+        }
+      ],
+      "limitations": [
+        "独立读取2003《南市区续志》第三十四编文化第三章影剧院",
+        "核绿地现状与原GIS点，尤其近年相邻旧改地块界线",
+        "不将相邻上海壹号院广告中的公共空间当成已经建成的本址用途"
+      ],
+      "nextSteps": [
+        "直接核2003南市区续志影剧院章。",
+        "对齐原影院范围与今绿带、步道及道路边线；不借相邻新盘效果图补现状。"
+      ]
+    },
+    {
+      "IDBAT": 403,
+      "role": "uploaded-report-candidate",
+      "original": {
+        "id": 403,
+        "name": "Embassy of Belgium",
+        "nameZh": "比國大使館",
+        "address": "1300 ROUTE LAFAYETTE",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "types": {
+          "TYP01": "Diplomatic representation",
+          "TYP02": "Consulate",
+          "TYP03": null,
+          "TYP04": null,
+          "TYP05": null,
+          "TYP06": null,
+          "TYP07": null,
+          "TYP08": null,
+          "TYP09": null,
+          "TYP10": null,
+          "TYP11": null
+        },
+        "x": 352261.3517,
+        "y": 3454370.9428,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=403",
+        "provenance": "shapefile+live-list"
+      },
+      "groupId": "landmark-vs-site-403",
+      "groupMemberIds": [
+        403
+      ],
+      "researchProgress": "completed-bounded-follow-up",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapImportExecuted": false,
+      "outcomeCategory": null,
+      "outcomeCandidate": null,
+      "currentUseRelationship": "historical-consulate-modern-building-candidate",
+      "currentNameZh": null,
+      "currentAddress": null,
+      "currentUse": null,
+      "candidate": {
+        "nameZh": "上海音乐学院专家楼（4D008b候选）",
+        "address": "汾阳路20号",
+        "use": "名录列上音专家楼；2017二手资料称办公及专家接待，2026具体用途未知",
+        "onlyLead": true
+      },
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate-only",
+          "summary": "名录有汾阳20号比利时领馆／上音专家楼，但未与旧Lafayette1300建立直接桥接。"
+        },
+        "address": {
+          "status": "unresolved",
+          "summary": "旧1300、汾阳20、淮海1131南楼需分别核；现武夷路领馆也不是本址。"
+        },
+        "buildingFate": {
+          "status": "candidate-protected-building",
+          "summary": "有现存保护楼候选，不代表原点所指楼已验证保存。"
+        },
+        "currentUse": {
+          "status": "unresolved-for-this-point",
+          "summary": "名录使用单位不能当2026本点实际使用，更不把音乐城堡营业宣传套入。"
+        },
+        "spatial": {
+          "status": "conflict-requires-review",
+          "summary": "原点在无名building=yes way1199438328内，距边缘2.59米；位于上音汾阳校园way533589793外约52.89米。不是新康花园面内。"
+        },
+        "temporal": {
+          "status": "unresolved",
+          "summary": "名录页面更新时间不等于当年现场用途核验，仍需2026使用资料。"
+        }
+      },
+      "spatial": {
+        "wgs84": {
+          "longitude": 121.44906,
+          "latitude": 31.214141
+        },
+        "gcj02": {
+          "longitude": 121.453652,
+          "latitude": 31.21225
+        },
+        "sourceFile": "research/unresolved-landmarks/gemini-upload-022-spatial-review-2026-09-12.json",
+        "scopeWarning": "Complete queried ways only, no relation reconstruction; not a cadastral boundary or current-operation certificate.",
+        "selectedWays": [
+          {
+            "osmId": 1199438328,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1199438328",
+            "isArea": true,
+            "pointInsideArea": true,
+            "distanceMetres": 0,
+            "distanceToBoundaryMetres": 2.59
+          },
+          {
+            "osmId": 1199438333,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1199438333",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 15.42,
+            "distanceToBoundaryMetres": 15.42
+          },
+          {
+            "osmId": 1199438329,
+            "name": null,
+            "tags": {
+              "building": "yes"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/1199438329",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 19.29,
+            "distanceToBoundaryMetres": 19.29
+          },
+          {
+            "osmId": 533589793,
+            "name": "上海音乐学院汾阳校区",
+            "tags": {
+              "addr:housenumber": "20",
+              "addr:street": "汾阳路",
+              "amenity": "university",
+              "name": "上海音乐学院汾阳校区",
+              "name:en": "Shanghai Conservatory of Music",
+              "name:zh": "上海音乐学院"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/533589793",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 52.89,
+            "distanceToBoundaryMetres": 52.89
+          },
+          {
+            "osmId": 451903669,
+            "name": "新康花园",
+            "tags": {
+              "boundary": "protected_area",
+              "heritage": "4",
+              "heritage:operator": "上海市优秀历史建筑",
+              "heritage:ref": "1989年38号",
+              "landuse": "residential",
+              "name": "新康花园",
+              "protect_class": "22",
+              "start_date": "1934"
+            },
+            "sourceUrl": "https://www.openstreetmap.org/way/451903669",
+            "isArea": true,
+            "pointInsideArea": false,
+            "distanceMetres": 64.49,
+            "distanceToBoundaryMetres": 64.49
+          }
+        ]
+      },
+      "textualWorkingFile": "research/unresolved-landmarks/gemini-upload-022-followup-other.json",
+      "sources": [
+        {
+          "id": "belgium-heritage",
+          "title": "第四批优秀历史建筑",
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+        },
+        {
+          "id": "belgium-secondary-fenyang",
+          "title": "汾阳路20号（原比利时领馆）",
+          "url": "https://www.sohu.com/a/209036123_649794"
+        },
+        {
+          "id": "belgium-wikipedia",
+          "title": "比利时驻上海总领事馆",
+          "url": "https://zh.wikipedia.org/wiki/比利时驻上海总领事馆"
+        },
+        {
+          "id": "belgium-current-official",
+          "title": "驻上海总领事馆地址及工作时间",
+          "url": "https://china.diplomatie.belgium.be/cn/dashiguanhelingshiguan/zhushanghaizonglingshiguan/zhushanghaizonglingshiguandezhijigongzuoshijian"
+        },
+        {
+          "id": "belgium-municipal-defense-lead",
+          "title": "搜索索引标题：关于进一步推广政采云平台的汇报",
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/11eb455d-414b-41c3-8d18-1a783acc8f96.pdf"
+        }
+      ],
+      "limitations": [
+        "旧Lafayette1300到汾阳20的明确门牌／宗地／照片对应",
+        "与淮海1131南楼音乐城堡及4D008a犹太俱乐部严格区分",
+        "精确原点与专家楼范围；本轮新OSM失败且旧缓存无命名近邻，不能伪报inside",
+        "2026专家楼具体使用单位／用途"
+      ],
+      "nextSteps": [
+        "查旧路1300门牌重编与领馆历史照片；先确定原点具体建筑，不移点追候选。"
+      ]
+    }
+  ],
+  "nextWork": [
+    {
+      "priority": 1,
+      "ids": [
+        1565,
+        1062
+      ],
+      "action": "如进入回填流程，按本主审限定范围生成候选并复核approved名单，再apply；本轮未执行。"
+    },
+    {
+      "priority": 2,
+      "ids": [
+        1693,
+        403,
+        573,
+        574
+      ],
+      "action": "查原楼／宗地边界及较新使用资料；中华剧场优先复读续志，不回写酒楼。"
+    },
+    {
+      "priority": 3,
+      "ids": [
+        1569,
+        691,
+        204,
+        1712
+      ],
+      "action": "已注册外部报告的剩余重点补证仍待完成；本轮委派中断，无完成工件，不标为调查完成。"
+    },
+    {
+      "priority": 4,
+      "file": "research/unresolved-landmarks/022-input.json",
+      "action": "固定022仍50条未调查，保留输入，按ID去重开始后续首轮。"
+    }
+  ]
+}
