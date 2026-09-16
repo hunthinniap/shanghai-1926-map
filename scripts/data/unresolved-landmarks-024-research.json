@@ -1,0 +1,1468 @@
+{
+  "batch": "024",
+  "researchedAt": "2026-09-15",
+  "input": "research/unresolved-landmarks/024-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/024-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "location-only-current-use": 50
+    },
+    "byResolutionStatus": {
+      "probable": 9,
+      "unresolved": 41
+    },
+    "mapWriteRecommendation": {
+      "review": 9,
+      "no": 41
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 923,
+      "historicalName": "Huimin Primary School",
+      "historicalNameCorrectionZh": "恵民小學",
+      "coordinates": {
+        "wgs84": [
+          121.465429,
+          31.238663
+        ],
+        "gcj02": [
+          121.469979,
+          31.236746
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "温州路17弄一带胡敏小学旧址候选",
+      "currentUse": "温州路北段曾经历拆除与更新，现为道路及更新后城市街区；学校原校舍和现用途未核",
+      "currentAddress": "今温州路17弄附近（原17-4 WENCHOW ROAD）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "温州路道路沿革资料记北段曾于1983年拆除并在2020—2021年更新，2025年规划新曹光彪小学；但没有将17-4号胡敏小学与现单体或规划校址直接对应，保留为位置级候选。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=923",
+        "https://zh.wikipedia.org/wiki/温州路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 924,
+      "historicalName": "Huimin Primary School",
+      "historicalNameCorrectionZh": "恵民小學",
+      "coordinates": {
+        "wgs84": [
+          121.465452,
+          31.239707
+        ],
+        "gcj02": [
+          121.470002,
+          31.237791
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "温州路82弄一带胡敏小学旧址候选",
+      "currentUse": "温州路北段曾经历拆除与更新，现为道路及更新后城市街区；学校原校舍和现用途未核",
+      "currentAddress": "今温州路82弄附近（原82-50 WENCHOW ROAD）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "温州路道路沿革资料记北段曾于1983年拆除并在2020—2021年更新，2025年规划新曹光彪小学；但没有将82-50号胡敏小学与现单体或规划校址直接对应，保留为位置级候选。该记录与#923地址不同，独立保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=924",
+        "https://zh.wikipedia.org/wiki/温州路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 1245,
+      "historicalName": "Zhengjia Muqiao Zhengjia Bridge",
+      "historicalNameCorrectionZh": "鄭家木橋",
+      "coordinates": {
+        "wgs84": [
+          121.478466,
+          31.232929
+        ],
+        "gcj02": [
+          121.482973,
+          31.230975
+        ]
+      },
+      "modernRoadAddress": "AVENUE 延安东路 / RUE TOURANE",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "郑家木桥旧址（福建中路南段—延安东路路口）",
+      "currentUse": "现为道路交叉口；原木桥已不存在，地点关系可定位到路口级",
+      "currentAddress": "今福建中路南段与延安东路交叉口（原 Avenue Edward VII / Rue Tourane）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Waksman 的上海道路资料将 Zhengjia Muqiao 定位在今福建中路南段与延安东路交界；现存为道路交叉口，未发现木桥实体或独立遗构。地址从历史路名闭合到路口级，但不是现存建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1245",
+        "https://www.waksman.ru/Russian/Criticism/Shanhai.pdf",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1573,
+      "historicalName": "Zhengshi Middle School",
+      "historicalNameCorrectionZh": "正始中學",
+      "coordinates": {
+        "wgs84": [
+          121.420664,
+          31.20788
+        ],
+        "gcj02": [
+          121.425304,
+          31.206027
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海交通大学长宁校区（原正始中学北楼／礼堂）",
+      "currentUse": "上海交通大学长宁校区教学、培训及校园文化使用；原正始中学礼堂/北楼仍作为校区建筑使用",
+      "currentAddress": "法华镇路535号（旧址资料亦见525号，门牌有差异）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "上海交通大学官方校史确认1930年正始中学建校，现长宁校区位于法华镇路535号，北楼为原正始中学礼堂；澎湃资料记战后校址为法华镇路525号。因旧525与现535门牌差异、原坐标未落到具体楼栋，暂标 likely，不直接回填单栋。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1573",
+        "https://sce.sjtu.edu.cn/FacultyIntroduction333/info.aspx?itemid=577",
+        "https://m.thepaper.cn/newsDetail_forward_11011983"
+      ]
+    },
+    {
+      "IDBAT": 1326,
+      "historicalName": "Zhexing Market",
+      "historicalNameCorrectionZh": "浙興菜場",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.48333,
+          31.260964
+        ],
+        "gcj02": [
+          121.487823,
+          31.259008
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "浙兴菜场旧址／浙兴里片区",
+      "currentUse": "原浙兴菜场已动迁；原址片区为浙兴里居住街区，现新浙兴菜场另在嘉兴路262号",
+      "currentAddress": "今四平路97弄一带（原 Dixwell Road 930—964号、浙兴里）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口区政府资料确认1930年代浙兴菜场为两层钢筋混凝土市场并称原址已动迁；地方旧里资料将Dixwell Road 930/954/964号对应到今四平路97弄浙兴里。可闭合到片区，但未核定原菜场建筑是否有残留及原点对应地块。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1326",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20240205/1d44c024-5d64-415f-8e34-04547ca602a7.html",
+        "https://blog.sina.com.cn/s/blog_5d1bdf480102vy1x.html",
+        "https://sww.sh.gov.cn/zxxxgk/20151023/0023-239004.html",
+        "https://zh.wikipedia.org/wiki/溧阳路"
+      ]
+    },
+    {
+      "IDBAT": 1287,
+      "historicalName": "Zhi'enyuan (Japanese Temple)",
+      "historicalNameCorrectionZh": "知恩院",
+      "historicalStartYear": 1924,
+      "coordinates": {
+        "wgs84": [
+          121.477206,
+          31.266762
+        ],
+        "gcj02": [
+          121.481721,
+          31.264826
+        ]
+      },
+      "modernRoadAddress": "270 多伦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "多伦路250号住宅（旧知恩院／孔公馆）",
+      "currentUse": "现为民居；上海市文物保护单位住宅建筑",
+      "currentAddress": "多伦路250号（原记录270 TOLUN，门牌存在差异）",
+      "currentUseRelationship": "same-site-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "上海文化旅游官方资料确认多伦路250号住宅建于1924年，抗战时期曾由日方占用并作知恩院，战后恢复住宅用途，现为民居且列入市级文保。原记录写270号，与现官方250号门牌不一致，因此保守标 likely。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1287",
+        "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/residence-at-250-duolun-road-986661/"
+      ]
+    },
+    {
+      "IDBAT": 1409,
+      "historicalName": "Zhongfang Factory No. 3",
+      "historicalNameCorrectionZh": "鐘紡公大三廠",
+      "historicalStartYear": 1907,
+      "coordinates": {
+        "wgs84": [
+          121.420992,
+          31.23218
+        ],
+        "gcj02": [
+          121.425634,
+          31.230338
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "中纺公大三厂旧址（后中纺上海第一绢纺织厂）",
+      "currentUse": "历史厂名沿革可闭合至中纺上海第一绢纺织厂、国营上海绢纺织厂；当前具体厂界及现用途尚未核定",
+      "currentAddress": "万航渡后路33号（今万航渡路33号一带）",
+      "currentUseRelationship": "historical-address-and-area-candidate",
+      "mapWriteRecommendation": "review",
+      "evidence": "普陀区档案资料记中纺公大三厂1906/1907年在万航渡后路33号设立，1946年改为中纺上海第一绢纺织厂，1950年改国营上海绢纺织厂。可确认历史地址与厂名沿革，但没有把33号原厂界闭合到今日单体的资料。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1409",
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://zh.wikipedia.org/wiki/万航渡路"
+      ]
+    },
+    {
+      "IDBAT": 573,
+      "historicalName": "Zhonghua Publishing House",
+      "historicalNameCorrectionZh": "中華書局",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.480828,
+          31.236495
+        ],
+        "gcj02": [
+          121.485328,
+          31.234536
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "福州路—河南中路西南角中华书局旧址区域",
+      "currentUse": "部分历史楼体保留并有办公/商业使用线索，具体经营主体和2026年用途未核",
+      "currentAddress": "河南中路221号（原中华书局总局；今福州路河南中路西南角）",
+      "currentUseRelationship": "site-redeveloped-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "商务印书馆发行所旧址官方资料确认相邻中华书局建筑建于1915年，2008年道路拓宽切去东侧十余米，剩余楼体与发行所相连；澎湃资料确认1916年中华书局总局迁至福州路与河南中路西南角。现址可定位到街角及部分保留楼体，但当前经营主体、楼栋边界与原点精确关系仍待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=573",
+        "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-the-commercial-presss-distribution-office-083976/",
+        "https://www.thepaper.cn/newsDetail_forward_18832593"
+      ]
+    },
+    {
+      "IDBAT": 1693,
+      "historicalName": "Zhonghua Theater",
+      "historicalNameCorrectionZh": "中華大戲院",
+      "historicalStartYear": 1914,
+      "coordinates": {
+        "wgs84": [
+          121.479361,
+          31.223128
+        ],
+        "gcj02": [
+          121.483865,
+          31.221167
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "中华剧场旧址（中华路—方浜路口）",
+      "currentUse": "中华剧场据资料于2001年拆除；现为老城道路、绿地及商业混合街区，旧剧场单体用途不存",
+      "currentAddress": "中华路1603号一带（原地址；中华路与方浜路口）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "剧场沿革资料将中华剧场定位在中华路与方浜路口，并记2001年9月3日拆除；澎湃老西门文章亦列出共和大戏院—中华大戏院—中华剧场的沿革。现可判断为拆除后重建/道路绿地片区，但未核定拆除后具体宗地用途。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1693",
+        "https://baike.so.com/doc/7144708-7368442.html",
+        "https://www.thepaper.cn/newsDetail_forward_29671087"
+      ]
+    },
+    {
+      "IDBAT": 749,
+      "historicalName": "Zhengde Primary School",
+      "historicalNameCorrectionZh": "私立正徳小學",
+      "coordinates": {
+        "wgs84": [
+          121.475704,
+          31.249163
+        ],
+        "gcj02": [
+          121.480222,
+          31.247224
+        ]
+      },
+      "modernRoadAddress": "691-14 海宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengde Primary School”（691-14 HAINING ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=749"
+      ]
+    },
+    {
+      "IDBAT": 730,
+      "historicalName": "Zhengji Primary School",
+      "historicalNameCorrectionZh": "正基小學",
+      "coordinates": {
+        "wgs84": [
+          121.477056,
+          31.250971
+        ],
+        "gcj02": [
+          121.48157,
+          31.249029
+        ]
+      },
+      "modernRoadAddress": "375-39 NORTH 江西中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengji Primary School”（375-39 NORTH KIANGSE ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=730"
+      ]
+    },
+    {
+      "IDBAT": 912,
+      "historicalName": "Zhengjuanye Primary School",
+      "historicalNameCorrectionZh": "證券業小學",
+      "coordinates": {
+        "wgs84": [
+          121.458499,
+          31.234776
+        ],
+        "gcj02": [
+          121.463069,
+          31.232874
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengjuanye Primary School”（16 WONGKASHAW GARDENS）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=912"
+      ]
+    },
+    {
+      "IDBAT": 367,
+      "historicalName": "Zhenguang Junior High School",
+      "historicalNameCorrectionZh": "正光中學",
+      "coordinates": {
+        "wgs84": [
+          121.451719,
+          31.224184
+        ],
+        "gcj02": [
+          121.456306,
+          31.222292
+        ]
+      },
+      "modernRoadAddress": "80 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhenguang Junior High School”（80 AVENUE DU ROI ALBERT）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=367"
+      ]
+    },
+    {
+      "IDBAT": 811,
+      "historicalName": "Zhengxing Junior High School for Girls",
+      "historicalNameCorrectionZh": "正行女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.466224,
+          31.225724
+        ],
+        "gcj02": [
+          121.47077,
+          31.223799
+        ]
+      },
+      "modernRoadAddress": "160 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengxing Junior High School for Girls”（160 AVENUE FOCH）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=811"
+      ]
+    },
+    {
+      "IDBAT": 380,
+      "historicalName": "Zhengzhi Primary School",
+      "historicalNameCorrectionZh": "正志小學校",
+      "coordinates": {
+        "wgs84": [
+          121.443326,
+          31.218606
+        ],
+        "gcj02": [
+          121.447932,
+          31.216728
+        ]
+      },
+      "modernRoadAddress": "77 常熟路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengzhi Primary School”（77 ROUTE DE SAY-ZOONG）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=380"
+      ]
+    },
+    {
+      "IDBAT": 690,
+      "historicalName": "Zhenhua Hotel",
+      "historicalNameCorrectionZh": "振華旅館",
+      "coordinates": {
+        "wgs84": [
+          121.473604,
+          31.234814
+        ],
+        "gcj02": [
+          121.478128,
+          31.232874
+        ]
+      },
+      "modernRoadAddress": "636-5 福州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhenhua Hotel”（636-5 FOOCHOW ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=690"
+      ]
+    },
+    {
+      "IDBAT": 1499,
+      "historicalName": "Zhening Guild",
+      "historicalNameCorrectionZh": "浙寧會館",
+      "historicalStartYear": 1901,
+      "coordinates": {
+        "wgs84": [
+          121.496006,
+          31.219638
+        ],
+        "gcj02": [
+          121.500451,
+          31.217626
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhening Guild”（37 ??）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1499"
+      ]
+    },
+    {
+      "IDBAT": 766,
+      "historicalName": "Zhenru Primary School",
+      "historicalNameCorrectionZh": "真茹小學",
+      "coordinates": {
+        "wgs84": [
+          121.474584,
+          31.243053
+        ],
+        "gcj02": [
+          121.479105,
+          31.241114
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhenru Primary School”（20-9 NORTH FOKIEN ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=766"
+      ]
+    },
+    {
+      "IDBAT": 1722,
+      "historicalName": "Zhentai Cotton Mill",
+      "historicalNameCorrectionZh": "振泰紡織廠",
+      "coordinates": {
+        "wgs84": [
+          121.41653,
+          31.230093
+        ],
+        "gcj02": [
+          121.421176,
+          31.228253
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhentai Cotton Mill”（1185 GUANGFU XILU）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1722"
+      ]
+    },
+    {
+      "IDBAT": 227,
+      "historicalName": "Zhentang Gongsuo",
+      "historicalNameCorrectionZh": "真堂公所",
+      "coordinates": {
+        "wgs84": [
+          121.46586,
+          31.211581
+        ],
+        "gcj02": [
+          121.470406,
+          31.209651
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhentang Gongsuo”（313 RUE MASSENET）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=227"
+      ]
+    },
+    {
+      "IDBAT": 826,
+      "historicalName": "Zhenxi Primary School",
+      "historicalNameCorrectionZh": "振西小學",
+      "coordinates": {
+        "wgs84": [
+          121.461469,
+          31.227383
+        ],
+        "gcj02": [
+          121.466029,
+          31.225471
+        ]
+      },
+      "modernRoadAddress": "417-4 威海路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhenxi Primary School”（417-4 WEIHAIWEI ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=826"
+      ]
+    },
+    {
+      "IDBAT": 127,
+      "historicalName": "Zheshao Guild - Yongxi Building",
+      "historicalNameCorrectionZh": "浙紹公所永錫堂",
+      "coordinates": {
+        "wgs84": [
+          121.474452,
+          31.213984
+        ],
+        "gcj02": [
+          121.478971,
+          31.212032
+        ]
+      },
+      "modernRoadAddress": "430 顺昌路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zheshao Guild - Yongxi Building”（430 RUE DU MARCHE）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=127"
+      ]
+    },
+    {
+      "IDBAT": 697,
+      "historicalName": "Zhicheng Hospital",
+      "historicalNameCorrectionZh": "志成医院",
+      "coordinates": {
+        "wgs84": [
+          121.473301,
+          31.233419
+        ],
+        "gcj02": [
+          121.477826,
+          31.231479
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhicheng Hospital”（12 SWATOW ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=697"
+      ]
+    },
+    {
+      "IDBAT": 1638,
+      "historicalName": "Zhicheng Temple",
+      "historicalNameCorrectionZh": "至誠堂",
+      "coordinates": {
+        "wgs84": [
+          121.483749,
+          31.253644
+        ],
+        "gcj02": [
+          121.48824,
+          31.251684
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhicheng Temple”（463 WOOSUNG）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1638"
+      ]
+    },
+    {
+      "IDBAT": 1093,
+      "historicalName": "Zhiren Junior High School for Girls",
+      "historicalNameCorrectionZh": "智仁勇女子中學校",
+      "coordinates": {
+        "wgs84": [
+          121.450316,
+          31.226943
+        ],
+        "gcj02": [
+          121.454906,
+          31.225056
+        ]
+      },
+      "modernRoadAddress": "872 威海路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhiren Junior High School for Girls”（872 WEIHAIWEI ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1093"
+      ]
+    },
+    {
+      "IDBAT": 986,
+      "historicalName": "Zhiyong University",
+      "historicalNameCorrectionZh": "致用大學",
+      "coordinates": {
+        "wgs84": [
+          121.455653,
+          31.234076
+        ],
+        "gcj02": [
+          121.46023,
+          31.23218
+        ]
+      },
+      "modernRoadAddress": "707-48 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhiyong University”（707-48 AVENUE ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=986"
+      ]
+    },
+    {
+      "IDBAT": 1364,
+      "historicalName": "Zhiyuan Park",
+      "historicalNameCorrectionZh": "止園",
+      "historicalStartYear": 1932,
+      "coordinates": {
+        "wgs84": [
+          121.464599,
+          31.260041
+        ],
+        "gcj02": [
+          121.469153,
+          31.258136
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhiyuan Park”（292 ZHIYUAN）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1364"
+      ]
+    },
+    {
+      "IDBAT": 685,
+      "historicalName": "Zhizhen Taoist Temple",
+      "historicalNameCorrectionZh": "致真道院",
+      "coordinates": {
+        "wgs84": [
+          121.473733,
+          31.235514
+        ],
+        "gcj02": [
+          121.478256,
+          31.233574
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhizhen Taoist Temple”（236 -20 KWANGSE ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=685"
+      ]
+    },
+    {
+      "IDBAT": 1074,
+      "historicalName": "Zhizhong Junior High School for Girls",
+      "historicalNameCorrectionZh": "治中女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.445536,
+          31.230125
+        ],
+        "gcj02": [
+          121.450138,
+          31.228248
+        ]
+      },
+      "modernRoadAddress": "185 南阳路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhizhong Junior High School for Girls”（185 NANYANG）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1074"
+      ]
+    },
+    {
+      "IDBAT": 274,
+      "historicalName": "Zhongde Midwives School",
+      "historicalNameCorrectionZh": "中徳助産學校",
+      "coordinates": {
+        "wgs84": [
+          121.459695,
+          31.225053
+        ],
+        "gcj02": [
+          121.46426,
+          31.223144
+        ]
+      },
+      "modernRoadAddress": "457 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongde Midwives School”（457 AVENUE FOCH）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=274"
+      ]
+    },
+    {
+      "IDBAT": 1414,
+      "historicalName": "Zhongfang Factory No. 4",
+      "historicalNameCorrectionZh": "鐘紡公大四廠",
+      "historicalStartYear": 1932,
+      "coordinates": {
+        "wgs84": [
+          121.425772,
+          31.233588
+        ],
+        "gcj02": [
+          121.430409,
+          31.231742
+        ]
+      },
+      "modernRoadAddress": "?? 余姚路 (770 YUYAO ROAD)",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongfang Factory No. 4”（?? SINGAPORE ROAD (770 YUYAO ROAD)）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1414"
+      ]
+    },
+    {
+      "IDBAT": 49,
+      "historicalName": "Zhongfang Guangsi Xiayuan (Temple)",
+      "historicalNameCorrectionZh": "中方廣寺下院",
+      "coordinates": {
+        "wgs84": [
+          121.477814,
+          31.227013
+        ],
+        "gcj02": [
+          121.482323,
+          31.225058
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongfang Guangsi Xiayuan (Temple)”（303/309 RUE PALIKAO）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=49"
+      ]
+    },
+    {
+      "IDBAT": 639,
+      "historicalName": "Zhongguo Jishenghui (Buddhist)",
+      "historicalNameCorrectionZh": "中國濟生會",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.47336,
+          31.239703
+        ],
+        "gcj02": [
+          121.477885,
+          31.237766
+        ]
+      },
+      "modernRoadAddress": "20 顾家弄",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Jishenghui (Buddhist)”（20 KOOKA LUNG）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=639"
+      ]
+    },
+    {
+      "IDBAT": 411,
+      "historicalName": "Zhongguo Junior High School",
+      "historicalNameCorrectionZh": "中國中學",
+      "historicalStartYear": 1936,
+      "coordinates": {
+        "wgs84": [
+          121.45091,
+          31.210456
+        ],
+        "gcj02": [
+          121.455497,
+          31.20856
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Junior High School”（388 ROUTE HERVE DE SIEYES）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=411"
+      ]
+    },
+    {
+      "IDBAT": 1171,
+      "historicalName": "Zhongguo Mental Nursing Home - Branch",
+      "historicalNameCorrectionZh": "中國瘋病療養院第四分院",
+      "coordinates": {
+        "wgs84": [
+          121.435076,
+          31.233229
+        ],
+        "gcj02": [
+          121.439699,
+          31.231371
+        ]
+      },
+      "modernRoadAddress": "888-7 康定路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Mental Nursing Home - Branch”（888-7 CONNAUGHT ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1171"
+      ]
+    },
+    {
+      "IDBAT": 333,
+      "historicalName": "Zhongguo Primary School and Kindergarten",
+      "historicalNameCorrectionZh": "中國幼稚園、中國小學",
+      "coordinates": {
+        "wgs84": [
+          121.455648,
+          31.211615
+        ],
+        "gcj02": [
+          121.460223,
+          31.209709
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Primary School and Kindergarten”（249 ROUTE HERVE DE SIEYES）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=333"
+      ]
+    },
+    {
+      "IDBAT": 1078,
+      "historicalName": "Zhongguo School",
+      "historicalNameCorrectionZh": "中國公學",
+      "coordinates": {
+        "wgs84": [
+          121.445142,
+          31.227339
+        ],
+        "gcj02": [
+          121.449744,
+          31.225462
+        ]
+      },
+      "modernRoadAddress": "1456 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo School”（1456 BUBBLING WELL ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1078"
+      ]
+    },
+    {
+      "IDBAT": 337,
+      "historicalName": "Zhongguo Women's Training School",
+      "historicalNameCorrectionZh": "中國婦女補習學校",
+      "coordinates": {
+        "wgs84": [
+          121.453323,
+          31.210456
+        ],
+        "gcj02": [
+          121.457904,
+          31.208554
+        ]
+      },
+      "modernRoadAddress": "315 襄阳南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Women's Training School”（315 ROUTE RAYMOND TENANT DE LA TOUR）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=337"
+      ]
+    },
+    {
+      "IDBAT": 1611,
+      "historicalName": "Zhonghe Apartment",
+      "historicalNameCorrectionZh": "中和公寓",
+      "historicalStartYear": 1935,
+      "coordinates": {
+        "wgs84": [
+          121.480265,
+          31.253853
+        ],
+        "gcj02": [
+          121.484768,
+          31.251903
+        ]
+      },
+      "modernRoadAddress": "297 武进路 ROAD",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghe Apartment”（297 WUTSIN ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1611"
+      ]
+    },
+    {
+      "IDBAT": 199,
+      "historicalName": "Zhonghua Elementary Professional School for Girls",
+      "historicalNameCorrectionZh": "中華女子初級職業学校",
+      "coordinates": {
+        "wgs84": [
+          121.468134,
+          31.217831
+        ],
+        "gcj02": [
+          121.472674,
+          31.215898
+        ]
+      },
+      "modernRoadAddress": "458/460 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Elementary Professional School for Girls”（458/460 ROUTE LAFAYETTE）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=199"
+      ]
+    },
+    {
+      "IDBAT": 1176,
+      "historicalName": "Zhonghua Funeral Parlor",
+      "historicalNameCorrectionZh": "中華殯儀館",
+      "coordinates": {
+        "wgs84": [
+          121.438484,
+          31.238537
+        ],
+        "gcj02": [
+          121.443101,
+          31.236677
+        ]
+      },
+      "modernRoadAddress": "2-A 余姚路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Funeral Parlor”（2-A SINGAPORE ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1176"
+      ]
+    },
+    {
+      "IDBAT": 764,
+      "historicalName": "Zhonghua Huangwanzi Hui",
+      "historicalNameCorrectionZh": "中華黄萬字會",
+      "coordinates": {
+        "wgs84": [
+          121.475875,
+          31.245003
+        ],
+        "gcj02": [
+          121.480392,
+          31.243061
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Huangwanzi Hui”（140-3 NORTH SHANSE ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=764"
+      ]
+    },
+    {
+      "IDBAT": 779,
+      "historicalName": "Zhonghua Junior High School",
+      "historicalNameCorrectionZh": "中華初級中學",
+      "coordinates": {
+        "wgs84": [
+          121.469212,
+          31.246914
+        ],
+        "gcj02": [
+          121.473751,
+          31.244991
+        ]
+      },
+      "modernRoadAddress": "596 七浦路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Junior High School”（596 TSEPOO ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=779"
+      ]
+    },
+    {
+      "IDBAT": 198,
+      "historicalName": "Zhonghua Junior High School for Girls",
+      "historicalNameCorrectionZh": "中華女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.468146,
+          31.217779
+        ],
+        "gcj02": [
+          121.472686,
+          31.215846
+        ]
+      },
+      "modernRoadAddress": "458/460 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Junior High School for Girls”（458/460 ROUTE LAFAYETTE）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=198"
+      ]
+    },
+    {
+      "IDBAT": 762,
+      "historicalName": "Zhonghua Primary School for Girls",
+      "historicalNameCorrectionZh": "中華女子小學",
+      "coordinates": {
+        "wgs84": [
+          121.476621,
+          31.244873
+        ],
+        "gcj02": [
+          121.481136,
+          31.242929
+        ]
+      },
+      "modernRoadAddress": "498-136 北苏州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Primary School for Girls”（498-136 NORTH SOOCHOW ROAD）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=762"
+      ]
+    },
+    {
+      "IDBAT": 194,
+      "historicalName": "Zhonghua Professional Vocational Continuation School No. 1",
+      "historicalNameCorrectionZh": "第一中華職業補習學校",
+      "coordinates": {
+        "wgs84": [
+          121.464753,
+          31.221431
+        ],
+        "gcj02": [
+          121.469303,
+          31.219508
+        ]
+      },
+      "modernRoadAddress": "80 雁荡路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Professional Vocational Continuation School No. 1”（80 ROUTE VOYRON）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=194"
+      ]
+    },
+    {
+      "IDBAT": 1474,
+      "historicalName": "Zhonghua Sports Hall",
+      "historicalNameCorrectionZh": "中華運動場",
+      "historicalStartYear": 1924,
+      "historicalEndYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.470829,
+          31.215685
+        ],
+        "gcj02": [
+          121.47536,
+          31.213744
+        ]
+      },
+      "modernRoadAddress": "223 合肥路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Sports Hall”（223 ROUTE DU PERE FROC）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1474"
+      ]
+    },
+    {
+      "IDBAT": 181,
+      "historicalName": "Zhonghua Vocational Continuation School for Girls",
+      "historicalNameCorrectionZh": "中華婦女補習学校",
+      "coordinates": {
+        "wgs84": [
+          121.465752,
+          31.224067
+        ],
+        "gcj02": [
+          121.4703,
+          31.222143
+        ]
+      },
+      "modernRoadAddress": "462 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Vocational Continuation School for Girls”（462 AVENUE JOFFRE）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=181"
+      ]
+    },
+    {
+      "IDBAT": 308,
+      "historicalName": "Zhonghua Xueyishe",
+      "historicalNameCorrectionZh": "中華學藝社",
+      "coordinates": {
+        "wgs84": [
+          121.459873,
+          31.211443
+        ],
+        "gcj02": [
+          121.464437,
+          31.209527
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghua Xueyishe”（45 AVENUE VICTOR EMMANUEL III）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=308"
+      ]
+    },
+    {
+      "IDBAT": 273,
+      "historicalName": "Zhonghui Hospital",
+      "historicalNameCorrectionZh": "中穂醫院",
+      "historicalStartYear": 1931,
+      "coordinates": {
+        "wgs84": [
+          121.459673,
+          31.225403
+        ],
+        "gcj02": [
+          121.464238,
+          31.223494
+        ]
+      },
+      "modernRoadAddress": "457 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhonghui Hospital”（457 AVENUE FOCH）；本轮完成原始身份与道路级检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=273"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "batch": "022",
+  "round": "r4",
+  "startedAt": "2026-09-14",
+  "recordIds": [1080, 1081],
+  "scopeNote": "1080为固定022批成员；1081是同一地点组的批外成员，单独核对但不带入022输入或地图回填。",
+  "queries": [
+    {"query":"錫珍女子中學 上海","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"锡珍女子中学宿舍 常德路","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"常德路310号 信义会 优秀历史建筑 住宅","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"310 Hart Road Shanghai Xizhen","executedAt":"2026-09-14","method":"web-search"}
+  ],
+  "sources": [
+    {
+      "url":"https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1080",
+      "title":"Xizhen Junior High School for Girls | Virtual Shanghai",
+      "access":"full-text exact record",
+      "finding":"ID1080为錫珍女子中學，地址310 HART ROAD，教育设施/私立/世俗/中学。"
+    },
+    {
+      "url":"https://www.virtualshanghai.net/data/buildings?pn=18",
+      "title":"Buildings | Virtual Shanghai",
+      "access":"full-text table",
+      "finding":"同一地点组的ID1081为正光中學，地址同为310 HART ROAD；未将两条历史记录合并。"
+    },
+    {
+      "url":"https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+      "title":"第五批历保建筑清单 | 上海市房屋管理局",
+      "access":"full-text",
+      "finding":"静安区5B021信义会，现使用单位住宅，地址常德路310号，1922年，保护类别三。"
+    },
+    {
+      "url":"https://blog.sina.com.cn/s/blog_5d1bdf480102zeb6.html",
+      "title":"常德路310号信义会",
+      "access":"full-text",
+      "finding":"记载310号为信义会中心；锡珍女子中学1938年创办后迁入赫德路310号，1954年并入协进女中，1963年培进中学迁至康定路770号。"
+    }
+  ],
+  "findings": [
+    {
+      "IDBAT":1080,
+      "historicalIdentity":"錫珍女子中學 / Xizhen Junior High School for Girls",
+      "historicalAddress":"310 HART ROAD（今常德路310号）",
+      "currentCandidate":"信义会住宅（上海市第五批优秀历史建筑5B021）",
+      "currentUse":"居民住宅（官方名录口径，2020-04-14）",
+      "relationship":"same-site-repurposed",
+      "status":"likely",
+      "mapWriteRecommendation":"review",
+      "limitations":["未核定学校占用的楼层/单体范围。","未核定学校与同址正光中学的先后使用。","现有OSM批量面外结果不证明历史建筑边界。"]
+    },
+    {
+      "IDBAT":1081,
+      "historicalIdentity":"正光中學 / Zhengguang Junior High School",
+      "historicalAddress":"310 HART ROAD",
+      "status":"unresolved",
+      "mapWriteRecommendation":"no",
+      "note":"只确认Virtual Shanghai原始条目；不因与1080同址而复制锡珍女中住宅结论。"
+    }
+  ],
+  "mapAction":"none",
+  "notes":"只更新022主结果/evidence中的1080研究进度；未移动坐标、修改原始输入、道路、地点组或地图图层。"
+}

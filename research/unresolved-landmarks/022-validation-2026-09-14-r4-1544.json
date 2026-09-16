@@ -1,0 +1,23 @@
+{
+  "validatedAt":"2026-09-14",
+  "round":"r4",
+  "scope":"ID1544; no map write",
+  "checks":[
+    "022 input snapshot unchanged and ID1544 originalInput exact",
+    "022 results/evidence ID1544 status and conclusion agree",
+    "all ID1544 result source URLs have matching sourceReviews",
+    "historical school succession kept separate from current Shanghai No.4 Middle School address",
+    "45→201 address and 201 protected-site identity kept separate from exact school building boundary",
+    "2023-07-15 Shanghai Lao Zhan closure recorded without asserting later use",
+    "same-group ID497 remains independent",
+    "JSON parse and git diff --check"
+  ],
+  "failures":[],
+  "inputSha256":"42420a19f71deb8ce674b1cda741060664dd45ea54ad9464ac8ff16e3da1629",
+  "record":"1544",
+  "progressDelta":{"partial":0,"notStarted":0},
+  "statusDelta":{"likely":1,"unresolved":-1},
+  "recommendationDelta":{"review":1,"no":-1},
+  "mapAction":"none",
+  "notes":"ID1544在本批之前已有前置partial，故本轮只将现代对应由unresolved推进为likely，并保留partial；旧022-validate.mjs仍是r2基线校验器。"
+}

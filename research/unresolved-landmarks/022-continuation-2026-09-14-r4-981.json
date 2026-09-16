@@ -1,0 +1,57 @@
+{
+  "batch": "022",
+  "date": "2026-09-14",
+  "round": "r4",
+  "recordId": 981,
+  "recordName": "Xiude Primary School / 私立修徳小學",
+  "originalAddress": "728 AVENUE ROAD",
+  "researchProgress": "partial",
+  "verificationStatus": "likely",
+  "mapWriteRecommendation": "review",
+  "queries": [
+    {
+      "query": "Xiude Primary School 728 AVENUE ROAD Shanghai",
+      "purpose": "确认Virtual Shanghai精确记录的历史名称、门牌与坐标"
+    },
+    {
+      "query": "修德小学 北京西路728号 1937",
+      "purpose": "核对学校的历史年份与独立学校／教会建筑名录"
+    },
+    {
+      "query": "728 Avenue Road Shanghai current address",
+      "purpose": "核对Avenue Road到今北京西路的道路映射与门牌语境"
+    },
+    {
+      "query": "国际丽都城 北京西路758弄 2005 住宅",
+      "purpose": "核对原点所在现代候选地块的地址、住宅用途与建成年代"
+    }
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/Data/Buildings?ID=981",
+    "https://upload.wikimedia.org/wikipedia/commons/2/2e/NLC416-10jh006837-53329_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+    "https://dl.ziliaozhan.win/%E4%B9%A6%E7%B1%8D/pdf/%E7%A0%94%E7%A9%B6/%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%BF%91%E4%BB%A3%E6%95%99%E4%BC%9A%E5%BB%BA%E7%AD%91%E5%8E%86%E5%8F%B2%E5%88%9D%E6%8E%A2.pdf",
+    "https://asiademo.com/jhiea_en/wp-content/uploads/2014/06/0606-FA-04.pdf",
+    "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E8%A5%BF%E8%B7%AF_(%E4%B8%8A%E6%B5%B7)",
+    "https://www.sinyi.com.cn/handhouse/detail?cookieuid=&id=56603",
+    "https://www.jia.com/zxq/shanghai/lp-16968/xqcs/",
+    "https://m.fang.com/xiaoqu/strategy/sh/1210065781.html",
+    "https://www.openstreetmap.org/way/431888200"
+  ],
+  "findings": {
+    "identity": "Virtual Shanghai精确页确认Xiude Primary School／私立修徳小學、728 AVENUE ROAD；1942年调查录记爱文义路728号、校长朱锡田、学生330人；同济论文及静安区域研究均将修德小学列为1937年北京西路728号。",
+    "roadAndAddress": "Avenue Road为今北京西路；原门牌728号的道路级位置与现代原点相容，但北京西路728号到现代北京西路758弄／石门二路199弄的逐号换编尚无官方桥接。",
+    "currentUse": "原点WGS84 121.455371,31.234486落在OSM way/431888200国际丽都城面内；信义、齐家、房天下均将国际丽都城列为北京西路758弄／石门二路199弄的住宅／公寓项目，约2003—2006年建成。",
+    "buildingFate": "现代住宅开发覆盖原点所在候选地块，提示原学校建筑可能已被拆改；本轮未找到修德小学停办、迁址、拆除或原校舍保留的直接档案。"
+  },
+  "limitations": [
+    "1942调查录与学术论文证明历史校址，但没有提供学校后续停办／迁址日期或校舍建筑图。",
+    "728号旧门牌与758弄现行弄号并非同一门牌表达，未取得逐号换编、地籍或规划批文。",
+    "OSM面内关系只是当前几何辅助，不是历史宗地证明；房产资料证明住宅用途，但未声明与修德小学的历史关联。",
+    "不移动原坐标、不修改道路、不合并历史实体、不写入地图。"
+  ],
+  "nextResearch": [
+    "查静安区地名／地籍档案和旧门牌图，建立728号与758弄、石门二路199弄的宗地桥接。",
+    "检索上海教育志、静安区志、教会档案与旧报刊，寻找修德小学停办、迁址、拆除或校舍保留记录。",
+    "查国际丽都城建设规划、拆迁资料或历史影像，核对住宅开发是否覆盖原校地及是否有可识别旧建筑残留。"
+  ]
+}

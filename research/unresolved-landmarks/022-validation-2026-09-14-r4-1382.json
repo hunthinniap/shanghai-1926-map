@@ -1,0 +1,20 @@
+{
+  "validatedAt":"2026-09-14",
+  "round":"r4",
+  "scope":"ID1382; no map write",
+  "checks":[
+    "022 input snapshot unchanged and ID1382 originalInput exact",
+    "022 results/evidence ID1382 status and conclusion agree",
+    "all ID1382 result source URLs have matching sourceReviews",
+    "historical building fate separated from unknown modern parcel use",
+    "JSON parse and git diff --check"
+  ],
+  "failures":[],
+  "inputSha256":"42420a19f71deb8ce674b1cda741060664dd45ea54ad9464ac8ff16e3da1629",
+  "record":"1382",
+  "progressDelta":{"partial":1,"notStarted":-1},
+  "statusDelta":{"likely":1,"unresolved":-1},
+  "recommendationDelta":{"review":1,"no":-1},
+  "mapAction":"none",
+  "notes":"旧022-validate.mjs仍是r2基线校验器；本文件只记录本轮增量校验，不覆盖旧验证结果。"
+}

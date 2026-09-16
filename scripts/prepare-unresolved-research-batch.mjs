@@ -16,6 +16,7 @@ const unresolvedDirectory = path.join(projectRoot, 'public', 'data', 'unresolved
 const researchDataDirectory = path.join(projectRoot, 'scripts', 'data')
 const outputDirectory = path.join(projectRoot, 'research', 'unresolved-landmarks')
 const outputPath = path.join(outputDirectory, `${batch}-input.json`)
+const excludedUtilityPath = path.join(outputDirectory, 'excluded-utility-records.json')
 
 try {
   await fs.access(outputPath)
@@ -36,6 +37,16 @@ const unresolvedRecords = (await Promise.all(unresolvedFilenames.map((filename) 
 // again as a new, unresearched batch. This does not approve any map writes.
 const externalArchives = await loadExternalResearch(projectRoot)
 const { researchedIds, reservedIds } = externalResearchExclusions(externalArchives)
+// Utility records explicitly parked by the curator are retained in their
+// original numbered chunks but are not selected for a future research batch.
+try {
+  const excluded = JSON.parse(await fs.readFile(excludedUtilityPath, 'utf8'))
+  for (const record of excluded.records ?? []) {
+    if (Number.isInteger(record.IDBAT)) researchedIds.add(record.IDBAT)
+  }
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error
+}
 for (let number = 1; number < batchNumber; number += 1) {
   const priorBatch = String(number).padStart(3, '0')
   const filename = `unresolved-landmarks-${priorBatch}-research.json`

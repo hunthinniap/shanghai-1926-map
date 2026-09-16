@@ -1,0 +1,42 @@
+{
+  "batch": "023",
+  "date": "2026-09-15",
+  "round": "r3",
+  "inputFile": "research/unresolved-landmarks/023-input.json",
+  "inputSha256": "7b200b917f13cdbaae613e4e1763c4eddb430aa065aefa83d6332c0b6246e4fe",
+  "scopeIds": [732, 78, 759, 793, 379, 54, 1438, 812, 720, 1329],
+  "resultChecks": {
+    "inputRecordCount": 50,
+    "resultRecordCount": 50,
+    "researchedResultCountCumulative": 30,
+    "remainingPlaceholderCount": 20,
+    "duplicateIds": false,
+    "originalInputPreserved": true,
+    "statusCountsInCumulativeScope": {"likely": 10, "unresolved": 20},
+    "mapWriteCountsInCumulativeScope": {"review": 10, "no": 20}
+  },
+  "evidenceChecks": {
+    "evidenceRecordCount": 10,
+    "evidenceIdsMatchScope": true,
+    "originalFieldsPreserved": true,
+    "sourceUrlsCoverClaims": true,
+    "allResearchStatuses": "partial",
+    "osmSpatialReview": "not-completed-timeout"
+  },
+  "mapChecks": {
+    "mapWritten": false,
+    "coordinatesChanged": false,
+    "roadDataChanged": false,
+    "groupMembershipChanged": false
+  },
+  "preservationChecks": {
+    "raw023InputOverwritten": false,
+    "remaining20MarkedInvestigated": false,
+    "historicalEntitiesMerged": false
+  },
+  "notes": [
+    "第21—30条全部由固定占位推进为partial；likely只表示候选桥接，未获地图批准。",
+    "虞洽卿住宅与月村均保留独立ID，不因同一旧路名Edinburgh或邻近住宅线索合并。",
+    "023剩余20条保留占位结果，等待逐条研究。"
+  ]
+}

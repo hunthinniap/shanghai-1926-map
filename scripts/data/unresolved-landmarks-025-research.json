@@ -1,0 +1,1520 @@
+{
+  "batch": "025",
+  "researchedAt": "2026-09-15",
+  "input": "research/unresolved-landmarks/025-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/025-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 1,
+      "demolished-current-use": 1,
+      "location-only-current-use": 48
+    },
+    "byResolutionStatus": {
+      "resolved": 2,
+      "probable": 5,
+      "unresolved": 43
+    },
+    "mapWriteRecommendation": {
+      "yes": 2,
+      "review": 5,
+      "no": 43
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 357,
+      "historicalName": "Orthodox Church",
+      "historicalNameCorrectionZh": "天主救堂",
+      "historicalStartYear": 1938,
+      "coordinates": {
+        "wgs84": [
+          121.450568,
+          31.219438
+        ],
+        "gcj02": [
+          121.455157,
+          31.217547
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "新乐路东正教堂（圣母大堂）",
+      "currentUse": "现址建筑保留并列入上海市文物保护单位；宗教活动及日常开放状态本轮未核",
+      "currentAddress": "新乐路55号（原 Route Paul Henry 55号）",
+      "currentUseRelationship": "same-site-preserved",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai将该条记为55 ROUTE PAUL HENRY并给出今新乐路55号；上海市政府文保名录和保护范围资料直接列新乐路东正教堂55号。Virtual Shanghai中文名写作“天主救堂”，与官方现名存在数据差异，保留原名并以官方现址名为准。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=357",
+        "https://www.shanghai.gov.cn/shanghai/download/gongkai/hff1429.pdf",
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Religious"
+      ]
+    },
+    {
+      "IDBAT": 1284,
+      "historicalName": "Orthodox Church",
+      "historicalNameCorrectionZh": "主顯堂",
+      "historicalStartYear": 1905,
+      "historicalEndYear": 1932,
+      "coordinates": {
+        "wgs84": [
+          121.474548,
+          31.265591
+        ],
+        "gcj02": [
+          121.479071,
+          31.263662
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "demolished-current-use",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "主显堂旧址",
+      "currentUse": "主显堂1934年拆除；现为住宅区，原教堂单体不存",
+      "currentAddress": "宝山路874号（原 Orthodox Church）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "yes",
+      "evidence": "新民晚报资料记宝山路主显堂1934年全部拆除，旧地后来成为棚户区并建为住宅区，地址相当于宝山路874号；与Virtual Shanghai的旧874号地址直接对应。此条可归入“明确拆除，原址现住宅”。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1284",
+        "https://xmwb.xinmin.cn/html/2015-10/11/content_27_1.htm",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Religious"
+      ]
+    },
+    {
+      "IDBAT": 1559,
+      "historicalName": "Jiaotong University (of Communications)",
+      "historicalNameCorrectionZh": "東亞同文書院",
+      "coordinates": {
+        "wgs84": [
+          121.430737,
+          31.200242
+        ],
+        "gcj02": [
+          121.435364,
+          31.198375
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海交通大学徐汇校区（旧华山路954号地址候选）",
+      "currentUse": "现为上海交通大学徐汇校区，教学、科研、校史展示等校园使用；旧记录对应具体楼栋未核",
+      "currentAddress": "今华山路1954号上海交通大学徐汇校区（旧记录954号，门牌桥接未闭合）",
+      "currentUseRelationship": "historical-address-and-area-candidate",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai将东亚同文书院均记在954 HUASHAN LU；上海交大官方资料确认现徐汇校区地址为华山路1954号且为历史校园。由于954→1954的门牌沿革、两条历史记录各自占用范围和原点到具体楼栋尚未闭合，分别保留为likely候选，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1559",
+        "https://gk.sjtu.edu.cn/Data/List/bxdd",
+        "https://jjc.sjtu.edu.cn/info/1531/5351.htm",
+        "https://www.shanghai.gov.cn/shanghai/download/gongkai/hff1429.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1560,
+      "historicalName": "Jiaotong University (of Communications)",
+      "historicalNameCorrectionZh": "交通大學",
+      "coordinates": {
+        "wgs84": [
+          121.429292,
+          31.200346
+        ],
+        "gcj02": [
+          121.433921,
+          31.19848
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海交通大学徐汇校区（旧华山路954号地址候选）",
+      "currentUse": "现为上海交通大学徐汇校区，教学、科研、校史展示等校园使用；旧记录对应具体楼栋未核",
+      "currentAddress": "今华山路1954号上海交通大学徐汇校区（旧记录954号，门牌桥接未闭合）",
+      "currentUseRelationship": "historical-address-and-area-candidate",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai将交通大学均记在954 HUASHAN LU；上海交大官方资料确认现徐汇校区地址为华山路1954号且为历史校园。由于954→1954的门牌沿革、两条历史记录各自占用范围和原点到具体楼栋尚未闭合，分别保留为likely候选，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1560",
+        "https://gk.sjtu.edu.cn/Data/List/bxdd",
+        "https://jjc.sjtu.edu.cn/info/1531/5351.htm",
+        "https://www.shanghai.gov.cn/shanghai/download/gongkai/hff1429.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1070,
+      "historicalName": "New China University",
+      "historicalNameCorrectionZh": "新中國大學第一院",
+      "coordinates": {
+        "wgs84": [
+          121.445836,
+          31.229283
+        ],
+        "gcj02": [
+          121.450437,
+          31.227405
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "南阳大楼住宅（原南阳路183号共址机构候选）",
+      "currentUse": "现为南阳大楼住宅小区；原学校/大学使用已结束，具体旧楼栋对应未核",
+      "currentAddress": "南阳路183弄之1—2号（原记录183 NAYANG）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai将New China University记在183 NAYANG；现代地址资料确认南阳路183弄为南阳大楼住宅。该共址只能说明历史地址与现片区相容，不能证明三条记录均对应同一栋楼或同一继承关系；与同址学校记录仍独立保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1070",
+        "https://www.amap.com/place/B00155L3RY",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1067,
+      "historicalName": "Pinhai Lide Junior High School",
+      "historicalNameCorrectionZh": "濱海立徳中學",
+      "coordinates": {
+        "wgs84": [
+          121.445592,
+          31.228849
+        ],
+        "gcj02": [
+          121.450194,
+          31.226972
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "南阳大楼住宅（原南阳路183号共址机构候选）",
+      "currentUse": "现为南阳大楼住宅小区；原学校/大学使用已结束，具体旧楼栋对应未核",
+      "currentAddress": "南阳路183弄之1—2号（原记录183 NAYANG）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai将Pinhai Lide Junior High School记在183 NAYANG；现代地址资料确认南阳路183弄为南阳大楼住宅。该共址只能说明历史地址与现片区相容，不能证明三条记录均对应同一栋楼或同一继承关系；两条滨海学校记录与#1070大学记录仍独立保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1067",
+        "https://www.amap.com/place/B00155L3RY",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1068,
+      "historicalName": "Pinhai Lide Junior High School",
+      "historicalNameCorrectionZh": "濱海中學",
+      "coordinates": {
+        "wgs84": [
+          121.445997,
+          31.228968
+        ],
+        "gcj02": [
+          121.450598,
+          31.22709
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "南阳大楼住宅（原南阳路183号共址机构候选）",
+      "currentUse": "现为南阳大楼住宅小区；原学校/大学使用已结束，具体旧楼栋对应未核",
+      "currentAddress": "南阳路183弄之1—2号（原记录183 NAYANG）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai将Pinhai Lide Junior High School记在183 NAYANG；现代地址资料确认南阳路183弄为南阳大楼住宅。该共址只能说明历史地址与现片区相容，不能证明三条记录均对应同一栋楼或同一继承关系；两条滨海学校记录与#1070大学记录仍独立保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1068",
+        "https://www.amap.com/place/B00155L3RY",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 280,
+      "historicalName": "International Dispensary",
+      "historicalNameCorrectionZh": "國際診療所",
+      "coordinates": {
+        "wgs84": [
+          121.458207,
+          31.223386
+        ],
+        "gcj02": [
+          121.462776,
+          31.22148
+        ]
+      },
+      "modernRoadAddress": "342 长乐路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“International Dispensary”（342 ROUTE BOURGEAT）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=280",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 570,
+      "historicalName": "International Dispensary",
+      "historicalNameCorrectionZh": "五洲大藥房",
+      "coordinates": {
+        "wgs84": [
+          121.481316,
+          31.236548
+        ],
+        "gcj02": [
+          121.485814,
+          31.234587
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“International Dispensary”（212 HONAN ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=570",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1392,
+      "historicalName": "Japanese Cemetery",
+      "historicalNameCorrectionZh": "日本人墓地",
+      "historicalStartYear": 1913,
+      "coordinates": {
+        "wgs84": [
+          121.456115,
+          31.237259
+        ],
+        "gcj02": [
+          121.460691,
+          31.235364
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Japanese Cemetery”（?? CARTER ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1392",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1057,
+      "historicalName": "Military Camp",
+      "historicalNameCorrectionZh": "兵營",
+      "coordinates": {
+        "wgs84": [
+          121.44249,
+          31.23112
+        ],
+        "gcj02": [
+          121.447098,
+          31.229249
+        ]
+      },
+      "modernRoadAddress": "1067-9 常德路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Military Camp”（1067-9 HART ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1057",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1064,
+      "historicalName": "Military Camp",
+      "historicalNameCorrectionZh": "兵營",
+      "coordinates": {
+        "wgs84": [
+          121.445312,
+          31.23242
+        ],
+        "gcj02": [
+          121.449914,
+          31.230545
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Military Camp”（225/295 FERRY ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1064",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 83,
+      "historicalName": "Muslim Cemetery",
+      "historicalNameCorrectionZh": "回教徒公墓",
+      "coordinates": {
+        "wgs84": [
+          121.471723,
+          31.224218
+        ],
+        "gcj02": [
+          121.476252,
+          31.222278
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Muslim Cemetery”（380 RUE OU SONG KIANG）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=83",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1517,
+      "historicalName": "Muslim Cemetery",
+      "historicalNameCorrectionZh": "回教公墓",
+      "coordinates": {
+        "wgs84": [
+          121.462137,
+          31.201028
+        ],
+        "gcj02": [
+          121.466693,
+          31.199102
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Muslim Cemetery”（?? ZIATU ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1517",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 673,
+      "historicalName": "Native Place Association",
+      "historicalNameCorrectionZh": "同郷会",
+      "coordinates": {
+        "wgs84": [
+          121.469697,
+          31.237934
+        ],
+        "gcj02": [
+          121.474234,
+          31.236006
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Native Place Association”（59-4 LLYOD ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=673",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 947,
+      "historicalName": "Native Place Association",
+      "historicalNameCorrectionZh": "同郷會",
+      "coordinates": {
+        "wgs84": [
+          121.458804,
+          31.240595
+        ],
+        "gcj02": [
+          121.463373,
+          31.238695
+        ]
+      },
+      "modernRoadAddress": "951 成都北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Native Place Association”（951 CHENGTU ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=947",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1115,
+      "historicalName": "New China University",
+      "historicalNameCorrectionZh": "新中國大學",
+      "coordinates": {
+        "wgs84": [
+          121.439838,
+          31.226552
+        ],
+        "gcj02": [
+          121.444451,
+          31.224684
+        ]
+      },
+      "modernRoadAddress": "2 胶州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“New China University”（2 KIAOCHOW ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1115",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1007,
+      "historicalName": "Night School for English",
+      "historicalNameCorrectionZh": "育英英文夜校",
+      "coordinates": {
+        "wgs84": [
+          121.453143,
+          31.233
+        ],
+        "gcj02": [
+          121.457727,
+          31.231109
+        ]
+      },
+      "modernRoadAddress": "875 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Night School for English”（875 AVENUE ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1007",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1098,
+      "historicalName": "Night School for English",
+      "historicalNameCorrectionZh": "育英英文夜校",
+      "coordinates": {
+        "wgs84": [
+          121.440892,
+          31.224735
+        ],
+        "gcj02": [
+          121.445503,
+          31.222864
+        ]
+      },
+      "modernRoadAddress": "1691 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Night School for English”（1691 BUBBLING WELL ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1098",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 731,
+      "historicalName": "Ophtalmology Clinic",
+      "historicalNameCorrectionZh": "黄色一山眼科",
+      "coordinates": {
+        "wgs84": [
+          121.475225,
+          31.249484
+        ],
+        "gcj02": [
+          121.479745,
+          31.247546
+        ]
+      },
+      "modernRoadAddress": "720 海宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Ophtalmology Clinic”（720 HAINING ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=731",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 817,
+      "historicalName": "Ophtalmology Clinic",
+      "historicalNameCorrectionZh": "眼科醫院",
+      "coordinates": {
+        "wgs84": [
+          121.466824,
+          31.227519
+        ],
+        "gcj02": [
+          121.471369,
+          31.225594
+        ]
+      },
+      "modernRoadAddress": "1290 延安东路 ROAD",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Ophtalmology Clinic”（1290 EDWARD VII ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=817",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 637,
+      "historicalName": "Qianjiang Guild",
+      "historicalNameCorrectionZh": "銭江會館",
+      "historicalStartYear": 1909,
+      "coordinates": {
+        "wgs84": [
+          121.474167,
+          31.240022
+        ],
+        "gcj02": [
+          121.478689,
+          31.238083
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Qianjiang Guild”（430-1 NINGPO ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=637",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 738,
+      "historicalName": "Qianjiang Guild",
+      "historicalNameCorrectionZh": "錢江會館 (戰時為難民収容所（上海組合救災會難民救濟分會第一収容所、",
+      "historicalStartYear": 1888,
+      "coordinates": {
+        "wgs84": [
+          121.476335,
+          31.248966
+        ],
+        "gcj02": [
+          121.480851,
+          31.247025
+        ]
+      },
+      "modernRoadAddress": "752 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Qianjiang Guild”（752 BOONE ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=738",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 973,
+      "historicalName": "Rickshaw Pullers Mutual Aid Association",
+      "historicalNameCorrectionZh": "上海人力车夫协助会",
+      "coordinates": {
+        "wgs84": [
+          121.451488,
+          31.239616
+        ],
+        "gcj02": [
+          121.456076,
+          31.237732
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Rickshaw Pullers Mutual Aid Association”（288 MARKHAM ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=973",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 703,
+      "historicalName": "Sanshan Guild",
+      "historicalNameCorrectionZh": "三山會館",
+      "historicalStartYear": 1897,
+      "coordinates": {
+        "wgs84": [
+          121.473069,
+          31.233916
+        ],
+        "gcj02": [
+          121.477594,
+          31.231977
+        ]
+      },
+      "modernRoadAddress": "671 福州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Sanshan Guild”（671 FOOCHOW ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=703",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 207,
+      "historicalName": "Shandong Guild",
+      "historicalNameCorrectionZh": "山東會館",
+      "historicalStartYear": 1901,
+      "coordinates": {
+        "wgs84": [
+          121.467197,
+          31.219674
+        ],
+        "gcj02": [
+          121.47174,
+          31.217744
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shandong Guild”（249 ROUTE PORTE DE L'OUEST）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=207",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1522,
+      "historicalName": "Shandong Guild",
+      "historicalNameCorrectionZh": "山東會館",
+      "coordinates": {
+        "wgs84": [
+          121.443934,
+          31.191963
+        ],
+        "gcj02": [
+          121.448536,
+          31.190071
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shandong Guild”（424 WANPING NANLU）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1522",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 425,
+      "historicalName": "Shanghai Hospital",
+      "historicalNameCorrectionZh": "上海醫院",
+      "coordinates": {
+        "wgs84": [
+          121.44723,
+          31.206907
+        ],
+        "gcj02": [
+          121.451826,
+          31.205016
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Hospital”（170/172 ROUTE GHISI）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=425",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1493,
+      "historicalName": "Shanghai Hospital",
+      "historicalNameCorrectionZh": "上海醫院",
+      "historicalStartYear": 1909,
+      "coordinates": {
+        "wgs84": [
+          121.500387,
+          31.212317
+        ],
+        "gcj02": [
+          121.504815,
+          31.210288
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Hospital”（1 DUOJIA）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1493",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 878,
+      "historicalName": "Shanghai Junior High School",
+      "historicalNameCorrectionZh": "上海中學",
+      "coordinates": {
+        "wgs84": [
+          121.462602,
+          31.233679
+        ],
+        "gcj02": [
+          121.46716,
+          31.231767
+        ]
+      },
+      "modernRoadAddress": "460 成都北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Junior High School”（460 CHENGTU ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=878",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1225,
+      "historicalName": "Shanghai Junior High School",
+      "historicalNameCorrectionZh": "上海中學",
+      "coordinates": {
+        "wgs84": [
+          121.435376,
+          31.245223
+        ],
+        "gcj02": [
+          121.439999,
+          31.24337
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Junior High School”（1297 FERRY ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1225",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 583,
+      "historicalName": "Shanghai Municipal Council - Bureau of Health",
+      "historicalNameCorrectionZh": "工部局衛生分處",
+      "coordinates": {
+        "wgs84": [
+          121.478923,
+          31.237637
+        ],
+        "gcj02": [
+          121.483429,
+          31.235684
+        ]
+      },
+      "modernRoadAddress": "340 汉口路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Municipal Council - Bureau of Health”（340 HANKOW ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=583",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 757,
+      "historicalName": "Shanghai Municipal Council - Bureau of Health",
+      "historicalNameCorrectionZh": "工部局衛生處",
+      "coordinates": {
+        "wgs84": [
+          121.473646,
+          31.247035
+        ],
+        "gcj02": [
+          121.478171,
+          31.2451
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Municipal Council - Bureau of Health”（270 NORTH FOKIEN ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=757",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 33,
+      "historicalName": "Shanghai Telephone Company",
+      "historicalNameCorrectionZh": "上海電話公司",
+      "coordinates": {
+        "wgs84": [
+          121.475632,
+          31.229679
+        ],
+        "gcj02": [
+          121.480149,
+          31.227731
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Telephone Company”（106 RUE PALIKAO）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=33",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 401,
+      "historicalName": "Shanghai Telephone Company",
+      "historicalNameCorrectionZh": "上海電話公司",
+      "historicalStartYear": 1908,
+      "coordinates": {
+        "wgs84": [
+          121.449561,
+          31.213084
+        ],
+        "gcj02": [
+          121.454152,
+          31.211192
+        ]
+      },
+      "modernRoadAddress": "57 汾阳路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Telephone Company”（57 ROUTE PICHON）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=401",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1281,
+      "historicalName": "Shanghai University",
+      "historicalNameCorrectionZh": "上海大學",
+      "historicalStartYear": 1925,
+      "historicalEndYear": 1927,
+      "coordinates": {
+        "wgs84": [
+          121.469908,
+          31.267346
+        ],
+        "gcj02": [
+          121.474446,
+          31.26543
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai University”（187 QINGYUN）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1281",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1283,
+      "historicalName": "Shanghai University",
+      "historicalNameCorrectionZh": "上海大學",
+      "historicalStartYear": 1922,
+      "historicalEndYear": 1925,
+      "coordinates": {
+        "wgs84": [
+          121.467305,
+          31.265586
+        ],
+        "gcj02": [
+          121.471851,
+          31.263676
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai University”（323 QINGYUN LU）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1283",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 172,
+      "historicalName": "Shangxian Women and Children Hospital",
+      "historicalNameCorrectionZh": "尚賢婦孺醫院",
+      "coordinates": {
+        "wgs84": [
+          121.467168,
+          31.224751
+        ],
+        "gcj02": [
+          121.471711,
+          31.222823
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shangxian Women and Children Hospital”（12 RUE CHAPSAL）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=172",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 389,
+      "historicalName": "Shangxian Women and Children Hospital",
+      "historicalNameCorrectionZh": "尚賢婦孺醫院",
+      "coordinates": {
+        "wgs84": [
+          121.448297,
+          31.218143
+        ],
+        "gcj02": [
+          121.452891,
+          31.216256
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shangxian Women and Children Hospital”（11 ROUTE DOUMER）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=389",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 15,
+      "historicalName": "Shenmuyuan Orphanage",
+      "historicalNameCorrectionZh": "聖母院 - 拯亡會",
+      "historicalStartYear": 1871,
+      "coordinates": {
+        "wgs84": [
+          121.486476,
+          31.232712
+        ],
+        "gcj02": [
+          121.490956,
+          31.230735
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shenmuyuan Orphanage”（37 RUE MONTAUBAN）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=15",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 497,
+      "historicalName": "Shenmuyuan Orphanage",
+      "historicalNameCorrectionZh": "聖母院",
+      "historicalStartYear": 1868,
+      "coordinates": {
+        "wgs84": [
+          121.434518,
+          31.193296
+        ],
+        "gcj02": [
+          121.439138,
+          31.19142
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shenmuyuan Orphanage”（45 CAOXI BEILU）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=497",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 182,
+      "historicalName": "Shihua Primary School",
+      "historicalNameCorrectionZh": "時化小學",
+      "coordinates": {
+        "wgs84": [
+          121.464149,
+          31.224392
+        ],
+        "gcj02": [
+          121.468701,
+          31.222472
+        ]
+      },
+      "modernRoadAddress": "114 长乐路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shihua Primary School”（114 ROUTE BOURGEAT）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=182",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 723,
+      "historicalName": "Shihua Primary School",
+      "historicalNameCorrectionZh": "市華小學",
+      "coordinates": {
+        "wgs84": [
+          121.473194,
+          31.249323
+        ],
+        "gcj02": [
+          121.47772,
+          31.247391
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shihua Primary School”（371-23 ELGIN ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=723",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1275,
+      "historicalName": "Shinto Shrine",
+      "historicalNameCorrectionZh": "滬上神社",
+      "historicalStartYear": 1912,
+      "historicalEndYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.473838,
+          31.270926
+        ],
+        "gcj02": [
+          121.478364,
+          31.269001
+        ]
+      },
+      "modernRoadAddress": "230 XI东江湾路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shinto Shrine”（230 XIJIANGWAN）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1275",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1278,
+      "historicalName": "Shinto Shrine",
+      "historicalNameCorrectionZh": "上海神社",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.477881,
+          31.269342
+        ],
+        "gcj02": [
+          121.482394,
+          31.267405
+        ]
+      },
+      "modernRoadAddress": "118 东江湾路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shinto Shrine”（118 JIANGWAN）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1278",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 621,
+      "historicalName": "Shizhong Primary School",
+      "historicalNameCorrectionZh": "市中小學",
+      "coordinates": {
+        "wgs84": [
+          121.47903,
+          31.233798
+        ],
+        "gcj02": [
+          121.483536,
+          31.231843
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shizhong Primary School”（64 WUHU ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=621",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 710,
+      "historicalName": "Shizhong Primary School",
+      "historicalNameCorrectionZh": "時中小學",
+      "coordinates": {
+        "wgs84": [
+          121.473258,
+          31.231786
+        ],
+        "gcj02": [
+          121.477783,
+          31.229846
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shizhong Primary School”（267-14 PAKHOI ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=710",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 610,
+      "historicalName": "Silk Cocoon Guild",
+      "historicalNameCorrectionZh": "絲業會館",
+      "coordinates": {
+        "wgs84": [
+          121.476448,
+          31.240331
+        ],
+        "gcj02": [
+          121.480963,
+          31.238386
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Silk Cocoon Guild”（255-12 SHANSE ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=610",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 734,
+      "historicalName": "Silk Cocoon Guild",
+      "historicalNameCorrectionZh": "絲廠繭業總公所",
+      "coordinates": {
+        "wgs84": [
+          121.474873,
+          31.249627
+        ],
+        "gcj02": [
+          121.479394,
+          31.24769
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Silk Cocoon Guild”（433 NORTH SHANSE ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=734",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1156,
+      "historicalName": "SMC - Public Works Department",
+      "historicalNameCorrectionZh": "工部局公務處",
+      "coordinates": {
+        "wgs84": [
+          121.443232,
+          31.240526
+        ],
+        "gcj02": [
+          121.44784,
+          31.238658
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“SMC - Public Works Department”（753 SEYMOUR ROAD）；本轮完成历史身份、旧地址与现代线索检索，/本轮仅形成道路级或机构级线索/，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1156",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    }
+  ]
+}

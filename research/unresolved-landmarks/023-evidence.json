@@ -1,0 +1,180 @@
+{
+  "inputFileName": "research/unresolved-landmarks/023-input.json",
+  "inputSha256": "7b200b917f13cdbaae613e4e1763c4eddb430aa065aefa83d6332c0b6246e4fe",
+  "inputIds": [1506, 750, 1508, 852, 659, 1437, 692, 364, 151, 565],
+  "researchedAt": "2026-09-15",
+  "lastContinuedAt": "2026-09-15",
+  "recordCount": 10,
+  "batchStatus": "partial",
+  "scope": "023固定快照的首轮10条；023其余40条仍未启动。",
+  "validation": {
+    "inputRecordCount": 50,
+    "researchedRecordCount": 10,
+    "originalInputPreserved": true,
+    "mapWritten": false,
+    "osmProbe": "not-completed-timeout"
+  },
+  "records": [
+    {
+      "IDBAT": 1506,
+      "originalInput": {"IDBAT":1506,"NAME":"Yaowang Temple","F_ADDRESS":"?? TIANDENG XIANG","FUNCTION":"Religious facility / Temple / Religious","XC":356351.3678,"YC":3455015.499},
+      "historicalContext": {"nameZh":"藥王廟","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=1506","notes":"原库精确条目确认历史名称与TIANDENG XIANG；年份空值保留。"},
+      "researchProgress": {"status":"partial","focus":["历史身份","旧地名与现代道路","现址用途"],"stopReason":"已完成身份与道路线索查询，但未建立现代宗地桥接。","delta":"发现药局弄药王庙遗址的低质量线索，尚不能闭合。"},
+      "queries":[{"query":"药王庙 Yaowang Temple 天灯弄 上海 原址现状","executedAt":"2026-09-15","method":"web-search"},{"query":"药局弄 药王庙 遗址","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=1506","title":"Virtual Shanghai：藥王廟（ID 1506）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目的名称、地址与坐标","supports":"历史身份及原始TIANDENG XIANG地址","limitations":"不提供现代逐号地籍或现用途","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://waptieba.baidu.com/p/6082719772","title":"百度贴吧：药局弄药王庙遗址线索","publisher":"百度贴吧","publishedAt":null,"accessMethod":"search-snippet","locator":"药王庙遗址相关段落","supports":"提供旧城药王庙消失线索","limitations":"低质量二手线索，不能单独证明门牌或现代地块","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"web-search"}
+      ],
+      "identityEvidence":"精确ID页确认藥王廟。",
+      "addressEvidence":"TIANDENG XIANG保留为旧地址；现代路名未闭合。",
+      "buildingFateEvidence":"未找到可核的拆除或存续档案。",
+      "currentUseEvidence":"现庙址与宗地用途未核。",
+      "fieldFindings":{"identity":{"status":"confirmed","finding":"藥王廟身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=1506"],"gap":"中文旧地名与门牌"},"address":{"status":"unresolved","finding":"天灯弄线索未闭合","sourceUrls":["https://waptieba.baidu.com/p/6082719772"],"gap":"现代宗地"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"官方地籍或现行机构资料"}},
+      "spatialReview":null,
+      "relatedRecords":[],
+      "conflicts":[],
+      "remainingQuestions":["TIANDENG XIANG对应现代道路及门牌","原址现宗地与用途"],
+      "nextResearchActions":[{"targetGap":"旧地名与现地块","action":"查旧城地籍、地方志及历史地图","targetSource":"上海地方志/历史地籍","acceptanceCriterion":"能将原点闭合到现代宗地并给出现用途日期"}],
+      "verificationStatus":"unresolved",
+      "mapWriteRecommendation":"no",
+      "mapWriteScope":{"level":"none","description":"仅保留历史身份线索","excludedClaims":["不把低质量遗址线索当作现代地址","不写入地图"]},
+      "mapWriteReason":"没有唯一现代宗地或用途证据。",
+      "conclusion":"药王庙历史身份已确认，但天灯弄旧址和现用途仍未解析。"
+    },
+    {
+      "IDBAT": 750,
+      "originalInput": {"IDBAT":750,"NAME":"Yazhou Printer","F_ADDRESS":"788-17 BOONE ROAD","FUNCTION":"Industrial site / Factory / Printing","XC":354862.632,"YC":3458193.7062},
+      "historicalContext": {"nameZh":"亞洲印務局","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=750","notes":"原库精确条目确认名称与788-17 BOONE ROAD。"},
+      "researchProgress": {"status":"partial","focus":["历史身份","Boone Road道路映射","楼体现状"],"stopReason":"完成道路级映射，缺旧门牌至现代楼体桥接。","delta":"Boone Road可对应塘沽路；未找到现用途。"},
+      "queries":[{"query":"亚洲印务局 788-17 Boone Road 上海 塘沽路","executedAt":"2026-09-15","method":"web-search"},{"query":"Yazhou Printer Shanghai current site","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=750","title":"Virtual Shanghai：亞洲印務局（ID 750）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称、旧门牌和坐标","limitations":"不证明现址","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://zh.wikipedia.org/wiki/塘沽路","title":"维基百科：塘沽路","publisher":"Wikipedia","publishedAt":null,"accessMethod":"full-text","locator":"旧路名沿革","supports":"Boone Road→塘沽路道路级映射","limitations":"不提供788-17逐号地籍","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"road-history"},
+        {"url":"https://dzb.whb.cn/imgPath/2021-09-05/80905.pdf","title":"文汇报PDF：Boone Road道路沿革线索","publisher":"文汇报","publishedAt":"2021-09-05","accessMethod":"pdf-search","locator":"道路名称对照段落","supports":"补充旧路名沿革","limitations":"未证明印务局楼体存续","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"road-history"}
+      ],
+      "identityEvidence":"精确ID页确认亞洲印務局。",
+      "addressEvidence":"788-17 Boone Road可到道路级塘沽路。",
+      "buildingFateEvidence":"未找到原印务局拆除或保留证据。",
+      "currentUseEvidence":"现用途未核。",
+      "fieldFindings":{"identity":{"status":"confirmed","finding":"亞洲印務局身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=750"],"gap":"中文沿革"},"address":{"status":"candidate","finding":"Boone Road→塘沽路","sourceUrls":["https://zh.wikipedia.org/wiki/塘沽路","https://dzb.whb.cn/imgPath/2021-09-05/80905.pdf"],"gap":"788-17现代门牌"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"建筑或地籍档案"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["788-17与现代塘沽路门牌","原厂房存废和现用途"],"nextResearchActions":[{"targetGap":"旧门牌桥接","action":"检索虹口区地籍、旧门牌表及厂史","targetSource":"地方志/地籍","acceptanceCriterion":"取得逐号或可复核建筑对应"}],
+      "verificationStatus":"unresolved","mapWriteRecommendation":"no","mapWriteScope":{"level":"none","description":"仅道路级线索","excludedClaims":["不把塘沽路同号或近邻设施当作原楼"]},"mapWriteReason":"道路级映射不足以确认现址楼体。","conclusion":"亚洲印务局历史身份和Boone Road→塘沽路已确认，现代建筑与用途未查明。"
+    },
+    {
+      "IDBAT": 1508,
+      "originalInput": {"IDBAT":1508,"NAME":"Yeshiyuan Garden","F_ADDRESS":"?? NINGHE / YESHIYUAN","FUNCTION":"Recreational facility / Outdoor facility / Park / Garden","XC":356033.3307,"YC":3454872.1408},
+      "historicalContext": {"nameZh":"也是園","startYear":1878,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=1508","notes":"原库年份与NINGHE/YESHIYUAN地址保留。"},
+      "researchProgress": {"status":"partial","focus":["园林历史","旧址片区","现地块用途"],"stopReason":"找到园址及毁失线索，但未闭合原点至现代宗地。","delta":"史料指向凝和路、也是园弄、乔家路片区；部分遗存移存豫园。"},
+      "queries":[{"query":"也是园 凝和路 乔家路 原址 现状","executedAt":"2026-09-15","method":"web-search"},{"query":"也是园 上海 毁失 豫园 石构件","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=1508","title":"Virtual Shanghai：也是園（ID 1508）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称、1878年和旧址字段","limitations":"不等于现代宗地","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://zh.wikipedia.org/wiki/也是园","title":"维基百科：也是园","publisher":"Wikipedia","publishedAt":null,"accessMethod":"full-text","locator":"也是园沿革与遗存","supports":"凝和路/也是园弄/乔家路位置线索及毁失叙述","limitations":"现代边界和现用途不精确","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"history"},
+        {"url":"https://www.sohu.com/a/327525591_391448","title":"搜狐：也是园旧址与乔家路片区","publisher":"搜狐","publishedAt":null,"accessMethod":"reprint","locator":"旧址段落","supports":"补充旧址片区联系","limitations":"转载资料，不能代替地籍","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"history"},
+        {"url":"https://tech.sina.cn/2020-08-21/detail-iivhuipn9809072.d.html","title":"新浪：也是园遗存与历史地图线索","publisher":"新浪","publishedAt":"2020-08-21","accessMethod":"full-text","locator":"历史地图与遗存段落","supports":"战争时期毁失及遗存线索","limitations":"未完成现代宗地配准","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"history"}
+      ],
+      "identityEvidence":"精确ID页确认也是園（1878）。","addressEvidence":"多来源将园址置于凝和路、也是园弄、乔家路一带。","buildingFateEvidence":"史料称园林大部毁失，部分石构件移存豫园。","currentUseEvidence":"现片区为老城混合空间，具体承接宗地未核。","fieldFindings":{"identity":{"status":"confirmed","finding":"也是园身份和年份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=1508"],"gap":"原园边界"},"address":{"status":"candidate","finding":"凝和路/乔家路片区候选","sourceUrls":["https://zh.wikipedia.org/wiki/也是园","https://www.sohu.com/a/327525591_391448"],"gap":"现代宗地"},"buildingFate":{"status":"likely","finding":"大部毁失、遗存移存线索","sourceUrls":["https://tech.sina.cn/2020-08-21/detail-iivhuipn9809072.d.html"],"gap":"毁失时间与范围"},"currentUse":{"status":"unresolved","finding":"现用途未按宗地确认","sourceUrls":[],"gap":"现行地籍"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["原园边界与原点位置","毁失后现宗地用途"],"nextResearchActions":[{"targetGap":"历史园址配准","action":"读取历史地图并对照现行宗地","targetSource":"上海历史地图/规划资料","acceptanceCriterion":"能明确原点承接的现代地块和用途日期"}],
+      "verificationStatus":"likely","mapWriteRecommendation":"review","mapWriteScope":{"level":"site","description":"仅凝和路/乔家路片区候选","excludedClaims":["不把整个乔家路片区写成原园","不移动坐标"]},"mapWriteReason":"历史片区联系较强，但缺具体宗地边界。","conclusion":"也是园旧址与老城片区及毁失线索相符，当前只能提出review候选。"
+    },
+    {
+      "IDBAT": 852,
+      "originalInput": {"IDBAT":852,"NAME":"Yici Hospital","F_ADDRESS":"348-25 WEIHAWEI ROAD","FUNCTION":"Institutional site / Medical facility / Hospital","XC":353257.4207,"YC":3456113.6804},
+      "historicalContext": {"nameZh":"仁慈診療所","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=852","notes":"原库门牌与名称保留。"},
+      "researchProgress": {"status":"partial","focus":["医疗机构身份","威海路道路映射","现代用途"],"stopReason":"确认历史索引和道路级名称，缺现代单体桥接。","delta":"Histoire de Chine索引支持Yici Hospital；没有持续医疗或拆除证据。"},
+      "queries":[{"query":"仁慈诊疗所 348-25 Weihaiwei Road 上海 现址","executedAt":"2026-09-15","method":"web-search"},{"query":"Yici Hospital Shanghai Weihaiwei Road","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=852","title":"Virtual Shanghai：仁慈診療所（ID 852）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史身份与原门牌","limitations":"无现代用途证明","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility","title":"Histoire de Chine：Medical facility索引","publisher":"Histoire de Chine","publishedAt":null,"accessMethod":"index","locator":"Yici Hospital条目","supports":"医疗机构身份交叉索引","limitations":"未提供逐号现代地址连续性","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Histoire de Chine"}
+      ],
+      "identityEvidence":"两库确认仁慈诊疗所。","addressEvidence":"Weihaiwei Road道路级对应今威海路。","buildingFateEvidence":"未找到拆除或原楼存续资料。","currentUseEvidence":"现用途未核。","fieldFindings":{"identity":{"status":"confirmed","finding":"历史医疗机构身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=852","https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"],"gap":"独立地址档案"},"address":{"status":"candidate","finding":"旧门牌可映射威海路","sourceUrls":["https://www.virtualshanghai.net/data/buildings/?entity_name=Medical+facility"],"gap":"今门牌"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"现行机构资料"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["348-25现代门牌","旧诊疗所楼体存废"],"nextResearchActions":[{"targetGap":"现代单体","action":"查静安区房屋名录、旧医院沿革与地籍","targetSource":"官方历保/卫生志","acceptanceCriterion":"取得唯一现代单体或明确拆除后用途"}],
+      "verificationStatus":"unresolved","mapWriteRecommendation":"no","mapWriteScope":{"level":"none","description":"仅身份与道路级信息","excludedClaims":["不把近邻医院或住宅套入原址"]},"mapWriteReason":"没有现代单体和用途证据。","conclusion":"仁慈诊疗所历史身份已确认，但原址现状未解析。"
+    },
+    {
+      "IDBAT": 659,
+      "originalInput": {"IDBAT":659,"NAME":"Yide Hospital","F_ADDRESS":"230-234 KWEICHOW ROAD","FUNCTION":"Institutional site / Medical facility / Hospital","XC":354379.4534,"YC":3457213.0443},
+      "historicalContext": {"nameZh":"一徳醫院","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=659","notes":"原库名称与230-234 KWEICHOW ROAD保留。"},
+      "researchProgress": {"status":"partial","focus":["医疗机构身份","贵州路道路映射","现址用途"],"stopReason":"完成历史索引和道路级映射，未完成现代单体核对。","delta":"Histoire de Chine医疗索引交叉确认；没有现用途桥接。"},
+      "queries":[{"query":"一德医院 230-234 Kweichow Road 上海 原址","executedAt":"2026-09-15","method":"web-search"},{"query":"Yide Hospital Shanghai current site","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=659","title":"Virtual Shanghai：一徳醫院（ID 659）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称与旧门牌","limitations":"无现代用途证明","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility","title":"Histoire de Chine：Medical facility索引","publisher":"Histoire de Chine","publishedAt":null,"accessMethod":"index","locator":"Yide Hospital条目","supports":"医疗机构身份交叉索引","limitations":"无逐号现址桥接","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Histoire de Chine"}
+      ],
+      "identityEvidence":"两库确认一德医院。","addressEvidence":"Kweichow Road道路级对应今贵州路。","buildingFateEvidence":"未找到拆除或持续使用证据。","currentUseEvidence":"现用途未核。","fieldFindings":{"identity":{"status":"confirmed","finding":"一德医院身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=659","https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"],"gap":"独立沿革"},"address":{"status":"candidate","finding":"旧路名到贵州路","sourceUrls":["https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"],"gap":"现代门牌"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"现代机构/地籍"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["230-234现代门牌及宗地","医院楼体存废"],"nextResearchActions":[{"targetGap":"现代单体","action":"查虹口区卫生志、房屋名录和地籍","targetSource":"地方志/官方房屋资料","acceptanceCriterion":"取得唯一现代地块或拆除后用途"}],
+      "verificationStatus":"unresolved","mapWriteRecommendation":"no","mapWriteScope":{"level":"none","description":"仅身份与道路级信息","excludedClaims":["不以附近医疗POI替代原医院"]},"mapWriteReason":"缺现代单体、拆除或现用途证据。","conclusion":"一德医院历史身份和贵州路道路级映射已确认，原址现状未解析。"
+    },
+    {
+      "IDBAT": 1437,
+      "originalInput": {"IDBAT":1437,"NAME":"Yiding Apartments","F_ADDRESS":"495 EDINBURGH ROAD","FUNCTION":"Residential site / Rowhouse","XC":350180.0841,"YC":3454960.6928},
+      "historicalContext": {"nameZh":"憶定邨","startYear":1934,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=1437","notes":"原库1934年和495 EDINBURGH ROAD保留。"},
+      "researchProgress": {"status":"partial","focus":["公寓身份","旧路名与现弄号","住宅及保护身份"],"stopReason":"现弄号和住宅/保护身份有资料，原点至具体楼栋未做地籍闭合。","delta":"Edinburgh Road→今江苏路；忆定村为江苏路495弄的新式里弄住宅和优秀历史建筑。"},
+      "queries":[{"query":"忆定村 Yiding Apartments 495 Edinburgh Road 今江苏路","executedAt":"2026-09-15","method":"web-search"},{"query":"上海 Edinburgh Road 忆定盘路 江苏路","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=1437","title":"Virtual Shanghai：憶定邨（ID 1437）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称、年份与旧门牌","limitations":"不等于现代保护或逐楼现况","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://zh.wikipedia.org/wiki/忆定村","title":"维基百科：忆定村","publisher":"Wikipedia","publishedAt":null,"accessMethod":"full-text","locator":"现地址与建筑性质","supports":"江苏路495弄、新式里弄住宅、优秀历史建筑","limitations":"缺原点与单楼地籍测绘","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"heritage"},
+        {"url":"https://www.jfdaily.com/wx/detail.do?id=801461","title":"解放日报：上海旧路名与今江苏路沿革","publisher":"解放日报","publishedAt":null,"accessMethod":"full-text","locator":"Edinburgh Road道路沿革","supports":"旧路名现代道路映射","limitations":"不证明495号具体楼栋","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"road-history"}
+      ],
+      "identityEvidence":"Virtual Shanghai确认憶定邨（1934）。","addressEvidence":"495 Edinburgh Road与江苏路495弄有道路和地址资料支持。","buildingFateEvidence":"保护名录支持建筑群延续，具体楼栋保存范围未核。","currentUseEvidence":"忆定村现为居住社区。","fieldFindings":{"identity":{"status":"confirmed","finding":"忆定村身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=1437"],"gap":"楼栋边界"},"address":{"status":"likely","finding":"今江苏路495弄","sourceUrls":["https://zh.wikipedia.org/wiki/忆定村","https://www.jfdaily.com/wx/detail.do?id=801461"],"gap":"原门牌到弄内楼号"},"currentUse":{"status":"likely","finding":"新式里弄住宅且列优秀历史建筑","sourceUrls":["https://zh.wikipedia.org/wiki/忆定村"],"gap":"现行居住与保护范围"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["原点对应弄内哪一栋","保护范围与现居住状态"],"nextResearchActions":[{"targetGap":"楼栋闭合","action":"查优秀历史建筑名录和街道门牌图","targetSource":"上海房管/规划资料","acceptanceCriterion":"明确495号历史点对应现代弄内楼栋"}],
+      "verificationStatus":"likely","mapWriteRecommendation":"review","mapWriteScope":{"level":"site","description":"江苏路495弄忆定村候选","excludedClaims":["不扩至整个弄外区域","不移动原坐标"]},"mapWriteReason":"旧路名、现弄号和住宅保护身份较一致，但缺原点至楼栋边界。","conclusion":"忆定村现址和住宅性质有较强支持，暂列likely/review。"
+    },
+    {
+      "IDBAT": 692,
+      "originalInput": {"IDBAT":692,"NAME":"Yipinxiang Hotel","F_ADDRESS":"270 YUYACHING ROAD","FUNCTION":"Commercial establishment / Retail business / Lodging / Hotel","XC":354410.5733,"YC":3456605.158},
+      "historicalContext": {"nameZh":"一品香中西旅社","startYear":1883,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=692","notes":"原库1883年与270 YUYACHING ROAD保留。"},
+      "researchProgress": {"status":"partial","focus":["旅社身份与迁址","西藏路门牌","原址现商业用途"],"stopReason":"现商业地块候选明确，原旅社楼体连续性和范围未核。","delta":"资料指向西藏路270号及今来福士广场原址一带。"},
+      "queries":[{"query":"一品香中西旅社 270 Yuyaching Road 西藏中路 来福士","executedAt":"2026-09-15","method":"web-search"},{"query":"一品香旅社 上海 西藏路270号 迁址","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=692","title":"Virtual Shanghai：一品香中西旅社（ID 692）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称、1883年和旧门牌","limitations":"不说明现代楼体命运","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://xmwb.xinmin.cn/html/2016-07/24/content_27_1.htm","title":"新民晚报：一品香旅社与西藏路270号沿革","publisher":"新民晚报","publishedAt":"2016-07-24","accessMethod":"full-text","locator":"旅社迁址和现址段落","supports":"西藏路270号及后续地块线索","limitations":"未提供原楼体边界测绘","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"local-history"},
+        {"url":"https://blog.sina.com.cn/s/blog_5d1bdf480102vedn.html","title":"新浪博客：一品香旅社历史线索","publisher":"新浪博客","publishedAt":null,"accessMethod":"full-text","locator":"一品香沿革段落","supports":"补充旅社历史线索","limitations":"个人博客，需与正式档案互证","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"local-history"}
+      ],
+      "identityEvidence":"Virtual Shanghai确认一品香中西旅社。","addressEvidence":"Yuyaching Road→西藏中路道路级对应，资料指向270号。","buildingFateEvidence":"现商业综合体表明地块发生重建候选；原旅社楼体是否保留未核。","currentUseEvidence":"今来福士广场为商业综合体。","fieldFindings":{"identity":{"status":"confirmed","finding":"一品香旅社身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=692"],"gap":"旅社档案"},"address":{"status":"likely","finding":"西藏中路270号候选","sourceUrls":["https://xmwb.xinmin.cn/html/2016-07/24/content_27_1.htm"],"gap":"逐号原址边界"},"currentUse":{"status":"likely","finding":"现为来福士广场商业综合体","sourceUrls":["https://xmwb.xinmin.cn/html/2016-07/24/content_27_1.htm"],"gap":"原楼体连续性"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["旅社原楼是否拆除","270号与来福士地块边界"],"nextResearchActions":[{"targetGap":"原址重建链条","action":"查西藏中路270号历保、规划许可及旧地图","targetSource":"黄浦区规划/房管资料","acceptanceCriterion":"证明原旅社与现商业地块的唯一桥接及建筑命运"}],
+      "verificationStatus":"likely","mapWriteRecommendation":"review","mapWriteScope":{"level":"site","description":"西藏中路270号来福士原址候选","excludedClaims":["不称原旅社楼体仍存","不把整座商场写成旅社原物"]},"mapWriteReason":"迁址和现商业地块联系较强，但缺楼体连续性。","conclusion":"一品香旅社原址与今来福士广场地块存在likely联系，暂不回填。"
+    },
+    {
+      "IDBAT": 364,
+      "originalInput": {"IDBAT":364,"NAME":"Yishan Primary School","F_ADDRESS":"106 AVENUE DU ROI ALBERT","FUNCTION":"Educational facility / School / Private / Secular / Primary","XC":352556.2725,"YC":3455350.9933},
+      "historicalContext": {"nameZh":"岐春小學","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=364","notes":"原库地址与教育功能保留。"},
+      "researchProgress": {"status":"partial","focus":["学校身份","旧路名与现代门牌","现址候选用途"],"stopReason":"完成道路级门牌映射和现址目录线索，未核学校楼栋连续性。","delta":"Avenue du Roi Albert→陕西南路；106号现有酒店/公寓候选。"},
+      "queries":[{"query":"岐春小学 106 Avenue du Roi Albert 陕西南路106 现址","executedAt":"2026-09-15","method":"web-search"},{"query":"陕西南路106号 锦畅大酒店 原址","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=364","title":"Virtual Shanghai：岐春小學（ID 364）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史校名、旧路名和门牌","limitations":"不提供现代校址连续性","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://zh.wikipedia.org/wiki/上海法租界道路列表","title":"维基百科：上海法租界道路列表","publisher":"Wikipedia","publishedAt":null,"accessMethod":"full-text","locator":"Avenue du Roi Albert道路对照","supports":"现代陕西南路道路级映射","limitations":"不证明106号建筑命运","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"road-history"},
+        {"url":"https://sh.loupan.com/community/8797799.html","title":"楼盘网：陕西南路106号现址目录","publisher":"楼盘网","publishedAt":null,"accessMethod":"directory","locator":"地址与楼盘用途条目","supports":"酒店/住宅公寓候选用途","limitations":"商业目录，不能证明学校原楼或拆建链","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"current-directory"}
+      ],
+      "identityEvidence":"Virtual Shanghai确认岐春小学。","addressEvidence":"Avenue du Roi Albert道路级对应今陕西南路，106号为候选。","buildingFateEvidence":"未取得学校停办或原楼拆除日期。","currentUseEvidence":"106号地址目录显示酒店/住宅公寓候选。","fieldFindings":{"identity":{"status":"confirmed","finding":"岐春小学身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=364"],"gap":"校史"},"address":{"status":"likely","finding":"今陕西南路106号候选","sourceUrls":["https://zh.wikipedia.org/wiki/上海法租界道路列表"],"gap":"旧门牌与宗地"},"currentUse":{"status":"candidate","finding":"酒店/住宅公寓候选","sourceUrls":["https://sh.loupan.com/community/8797799.html"],"gap":"原校舍对应楼栋"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["106号原校舍是否拆除","现酒店/公寓是否承接原点"],"nextResearchActions":[{"targetGap":"校址桥接","action":"查卢湾教育志、房管名录和106号建筑档案","targetSource":"地方志/历保资料","acceptanceCriterion":"取得原学校至现代建筑的唯一对应"}],
+      "verificationStatus":"likely","mapWriteRecommendation":"review","mapWriteScope":{"level":"site","description":"陕西南路106号候选","excludedClaims":["不把酒店目录等同原校舍连续存在"]},"mapWriteReason":"门牌和现用途候选存在，但学校楼体关系未闭合。","conclusion":"岐春小学与陕西南路106号及现酒店/公寓有候选联系，保持review。"
+    },
+    {
+      "IDBAT": 151,
+      "originalInput": {"IDBAT":151,"NAME":"Yixin Primary School","F_ADDRESS":"123-61 ROUTE PORTE DE L'OUEST","FUNCTION":"Educational facility / School / Private / Secular / Primary","XC":354321.1966,"YC":3454924.5201},
+      "historicalContext": {"nameZh":"一心小學","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=151","notes":"原库学校名称与123-61旧路地址保留。"},
+      "researchProgress": {"status":"partial","focus":["学校身份","Route Porte de l'Ouest映射","现址用途"],"stopReason":"旧路名现代分段存在冲突，未取得现代门牌桥接。","delta":"只确认历史名称和旧路名，现址仍未解析。"},
+      "queries":[{"query":"一心小学 123-61 Route Porte de l'Ouest 上海 旧址","executedAt":"2026-09-15","method":"web-search"},{"query":"Route Porte de l'Ouest Shanghai modern road","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=151","title":"Virtual Shanghai：一心小學（ID 151）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史学校和旧门牌","limitations":"不提供现代对应","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"},
+        {"url":"https://zh.wikipedia.org/wiki/上海法租界道路列表","title":"维基百科：上海法租界道路列表","publisher":"Wikipedia","publishedAt":null,"accessMethod":"full-text","locator":"Route Porte de l'Ouest分段","supports":"提供现代道路映射线索","limitations":"不同分段解释冲突，不能据此定址","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"road-history"}
+      ],
+      "identityEvidence":"精确ID页确认一心小学。","addressEvidence":"Route Porte de l'Ouest现代分段映射有冲突。","buildingFateEvidence":"未查到校舍存废资料。","currentUseEvidence":"现用途未核。","fieldFindings":{"identity":{"status":"confirmed","finding":"一心小学身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=151"],"gap":"校史"},"address":{"status":"conflicting","finding":"旧路名现代分段冲突","sourceUrls":["https://zh.wikipedia.org/wiki/上海法租界道路列表"],"gap":"123-61现代门牌"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"现代学校/地籍资料"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[{"field":"address","description":"Route Porte de l'Ouest的公开现代分段映射不能唯一闭合123-61。"}],"remainingQuestions":["旧路名对应的现代道路","学校原址及现用途"],"nextResearchActions":[{"targetGap":"地址冲突","action":"查法租界道路图和旧门牌表","targetSource":"历史地图/地籍","acceptanceCriterion":"唯一现代门牌与宗地可复核"}],
+      "verificationStatus":"unresolved","mapWriteRecommendation":"no","mapWriteScope":{"level":"none","description":"仅历史身份","excludedClaims":["不因坐标近邻学校猜测现址"]},"mapWriteReason":"地址映射冲突且没有现代用途证据。","conclusion":"一心小学身份已确认，现代道路、门牌与用途仍未解析。"
+    },
+    {
+      "IDBAT": 565,
+      "originalInput": {"IDBAT":565,"NAME":"Yixing Distribution Office","F_ADDRESS":"6 TONGGEBAKA","FUNCTION":"Commercial establishment","XC":355513.0097,"YC":3456558.6975},
+      "historicalContext": {"nameZh":"興行發行所","startYear":null,"endYear":null,"sourceUrl":"https://www.virtualshanghai.net/data/buildings?ID=565","notes":"原库精确条目确认名称与6 TONGGEBAKA。"},
+      "researchProgress": {"status":"partial","focus":["发行所身份","Tonggebaka旧地名","现址用途"],"stopReason":"仅找到精确历史条目，现代道路和宗地未闭合。","delta":"Tonggebaka未在本轮公开现代道路资料中确认。"},
+      "queries":[{"query":"兴行发行所 6 Tonggebaka 上海 旧址","executedAt":"2026-09-15","method":"web-search"},{"query":"Tonggebaka Shanghai historical street","executedAt":"2026-09-15","method":"web-search"}],
+      "sourceReviews":[
+        {"url":"https://www.virtualshanghai.net/data/buildings?ID=565","title":"Virtual Shanghai：興行發行所（ID 565）","publisher":"Virtual Shanghai","publishedAt":null,"accessMethod":"full-text","locator":"精确ID条目","supports":"历史名称、旧地名和门牌","limitations":"无现代道路或现用途说明","accessedAt":"2026-09-15","readThisRound":true,"sourceFamily":"Virtual Shanghai"}
+      ],
+      "identityEvidence":"精确ID页确认興行發行所。","addressEvidence":"Tonggebaka现代对应未找到。","buildingFateEvidence":"未查到楼体存废。","currentUseEvidence":"现用途未核。","fieldFindings":{"identity":{"status":"confirmed","finding":"興行發行所身份确认","sourceUrls":["https://www.virtualshanghai.net/data/buildings?ID=565"],"gap":"机构沿革"},"address":{"status":"unresolved","finding":"Tonggebaka未闭合现代道路","sourceUrls":[],"gap":"旧地图/门牌"},"currentUse":{"status":"unresolved","finding":"现用途未知","sourceUrls":[],"gap":"现代地籍"}},
+      "spatialReview":null,"relatedRecords":[],"conflicts":[],"remainingQuestions":["Tonggebaka现代道路","6号宗地和现用途"],"nextResearchActions":[{"targetGap":"旧地名","action":"查旧上海道路表、报刊广告和地籍图","targetSource":"历史地图/报刊/地籍","acceptanceCriterion":"确认现代道路、门牌及现地块"}],
+      "verificationStatus":"unresolved","mapWriteRecommendation":"no","mapWriteScope":{"level":"none","description":"仅历史身份","excludedClaims":["不以坐标附近商业POI代替原发行所"]},"mapWriteReason":"旧地名和现宗地均未闭合。","conclusion":"兴行发行所历史身份已确认，但Tonggebaka及现用途仍未知。"
+    }
+  ]
+}

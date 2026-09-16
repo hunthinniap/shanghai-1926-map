@@ -1,0 +1,51 @@
+{
+  "batch": "022",
+  "date": "2026-09-15",
+  "round": "r5",
+  "recordId": 1527,
+  "recordName": "Yaojia Garden",
+  "originalAddress": "HONGQIAO / MACLEOD",
+  "researchProgress": "partial",
+  "verificationStatus": "likely",
+  "mapWriteRecommendation": "review",
+  "queries": [
+    {
+      "query": "Yaojia Garden Virtual Shanghai ID 1527",
+      "purpose": "读取精确历史建筑条目及原始年代/门牌。"
+    },
+    {
+      "query": "HONGQIAO / MACLEOD 上海旧路名现代道路对照",
+      "purpose": "核对旧路名与现代道路及门牌范围。"
+    },
+    {
+      "query": "ID 1527 原址现状 建筑存废 现用途",
+      "purpose": "寻找现代候选、拆除/重建或持续使用证据。"
+    },
+    {
+      "query": "Yaojia Garden Shanghai current site use",
+      "purpose": "补查独立身份与现址连续性资料。"
+    }
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/%E6%95%B0%E6%8D%AE/%E5%BB%BA%E7%AD%91?ID=1527",
+    "https://mzj.sh.gov.cn/lnb-lyxx/20230117/8978ad238bdf4a22848f7ab8baadbac6.html",
+    "https://zh.wikipedia.org/wiki/淮阴路姚氏住宅",
+    "https://www.virtualshanghai.net/Asset/Source/bnBook_ID-185_No-1.pdf",
+    "https://www.openstreetmap.org/way/1433255279"
+  ],
+  "findings": {
+    "identity": "历史索引与Virtual Shanghai精确条目确认历史名称及原始地址。",
+    "roadAndAddress": "已完成道路级旧名映射；现代门牌/单体桥接仍按likely或unresolved保留。",
+    "currentUse": "找到现址/现用途候选，但缺官方逐号地籍或保留/拆除档案。",
+    "buildingFate": "本轮未将空间近邻或候选名称写成建筑本体存续结论。"
+  },
+  "limitations": [
+    "历史数据库条目不等同于逐号地籍或建筑命运档案。",
+    "OSM及现代网页仅作空间/用途辅助，不能单独证明历史对应。",
+    "不移动原坐标、不修改道路、不合并历史实体、不写入地图。"
+  ],
+  "nextResearch": [
+    "继续查官方历保/地籍、地方志和现行机构资料，逐号核对原门牌与现代单体。",
+    "若仍无法建立唯一原址—现代建筑桥接，维持当前审慎等级。"
+  ]
+}

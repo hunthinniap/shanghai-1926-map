@@ -1,0 +1,1486 @@
+{
+  "batch": "030",
+  "researchedAt": "2026-09-15",
+  "input": "research/unresolved-landmarks/030-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/030-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "location-only-current-use": 50
+    },
+    "byResolutionStatus": {
+      "unresolved": 50
+    },
+    "mapWriteRecommendation": {
+      "no": 50
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 625,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.476532,
+          31.235152
+        ],
+        "gcj02": [
+          121.481046,
+          31.233204
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今湖北路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（138-12 HOOPEH ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=625",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 660,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.470908,
+          31.239876
+        ],
+        "gcj02": [
+          121.475441,
+          31.237946
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今福州路/牯岭路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（56 CHEFOO ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=660",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 687,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.473201,
+          31.235482
+        ],
+        "gcj02": [
+          121.477726,
+          31.233543
+        ]
+      },
+      "modernRoadAddress": "667 汉口路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今汉口路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（667 HANKOW ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=687",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 695,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.472844,
+          31.232842
+        ],
+        "gcj02": [
+          121.47737,
+          31.230903
+        ]
+      },
+      "modernRoadAddress": "730 广东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今广东路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（730 CANTON ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=695",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 713,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.473875,
+          31.230868
+        ],
+        "gcj02": [
+          121.478398,
+          31.228925
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安东路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（150 EDWARD ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=713",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 714,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.473147,
+          31.232645
+        ],
+        "gcj02": [
+          121.477672,
+          31.230705
+        ]
+      },
+      "modernRoadAddress": "721 广东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今广东路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（721 CANTON ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=714",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 721,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "植生醫院",
+      "coordinates": {
+        "wgs84": [
+          121.474372,
+          31.249221
+        ],
+        "gcj02": [
+          121.478894,
+          31.247285
+        ]
+      },
+      "modernRoadAddress": "768 海宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今海宁路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（768 HAINING ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=721",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 769,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.472229,
+          31.247444
+        ],
+        "gcj02": [
+          121.476758,
+          31.245513
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今康脑脱路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（29 CUNNINGHAM ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=769",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 780,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "上海急救時疫医院",
+      "coordinates": {
+        "wgs84": [
+          121.466666,
+          31.246336
+        ],
+        "gcj02": [
+          121.471213,
+          31.24442
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今西藏北路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（240 NORTH THIBET ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=780",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 798,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.471376,
+          31.229593
+        ],
+        "gcj02": [
+          121.475906,
+          31.227657
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今龙门路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（17-90 LUNGMEN ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=798",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 799,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.471139,
+          31.229331
+        ],
+        "gcj02": [
+          121.47567,
+          31.227395
+        ]
+      },
+      "modernRoadAddress": "1002 延安东路 ROAD",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安东路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（1002 EDWARD VII ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=799",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 815,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.46624,
+          31.226948
+        ],
+        "gcj02": [
+          121.470786,
+          31.225024
+        ]
+      },
+      "modernRoadAddress": "1325 AVENUE 延安东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安东路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（1325 AVENUE EDWARD VII）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=815",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 822,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.462807,
+          31.225983
+        ],
+        "gcj02": [
+          121.467363,
+          31.224067
+        ]
+      },
+      "modernRoadAddress": "334 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安中路／金陵西路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（334 AVENUE FOCH）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=822",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 829,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.459373,
+          31.226341
+        ],
+        "gcj02": [
+          121.463939,
+          31.224433
+        ]
+      },
+      "modernRoadAddress": "504-3 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安中路／金陵西路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（504-3 AVENUE FOCH）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=829",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 830,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.458516,
+          31.227615
+        ],
+        "gcj02": [
+          121.463085,
+          31.22571
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今雅砻路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（74 YATES ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=830",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 864,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.468426,
+          31.237751
+        ],
+        "gcj02": [
+          121.472967,
+          31.235826
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今海门路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（80 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=864",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 898,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.461516,
+          31.235053
+        ],
+        "gcj02": [
+          121.466077,
+          31.233144
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今海门路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（508 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=898",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 899,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.460233,
+          31.234643
+        ],
+        "gcj02": [
+          121.464798,
+          31.232737
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今海门路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（578 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=899",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 920,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.465635,
+          31.240461
+        ],
+        "gcj02": [
+          121.470184,
+          31.238545
+        ]
+      },
+      "modernRoadAddress": "154 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今新闸路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（154 SINZA ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=920",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 921,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.466136,
+          31.238976
+        ],
+        "gcj02": [
+          121.470684,
+          31.237058
+        ]
+      },
+      "modernRoadAddress": "130 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今北京西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（130 AVENUE ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=921",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 922,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.46612,
+          31.23864
+        ],
+        "gcj02": [
+          121.470668,
+          31.236722
+        ]
+      },
+      "modernRoadAddress": "136 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今北京西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（136 AVENUE ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=922",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 925,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.464057,
+          31.238607
+        ],
+        "gcj02": [
+          121.468611,
+          31.236694
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今大沽路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（253-25 PARK ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=925",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 926,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.463891,
+          31.237912
+        ],
+        "gcj02": [
+          121.468445,
+          31.235999
+        ]
+      },
+      "modernRoadAddress": "256 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今北京西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（256 AVENUE ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=926",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 977,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.45461,
+          31.237342
+        ],
+        "gcj02": [
+          121.45919,
+          31.23545
+        ]
+      },
+      "modernRoadAddress": "812-29 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今新闸路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（812-29 SINZA ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=977",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 980,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "中國瘋病醫院",
+      "coordinates": {
+        "wgs84": [
+          121.455013,
+          31.234332
+        ],
+        "gcj02": [
+          121.459592,
+          31.232438
+        ]
+      },
+      "modernRoadAddress": "750 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今北京西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（750 AVENUE ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=980",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1058,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.442648,
+          31.230438
+        ],
+        "gcj02": [
+          121.447256,
+          31.228567
+        ]
+      },
+      "modernRoadAddress": "418 常德路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "现代地址缺失，现址与用途未核",
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（418 HART ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1058",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1105,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "coordinates": {
+        "wgs84": [
+          121.440315,
+          31.223053
+        ],
+        "gcj02": [
+          121.444927,
+          31.221182
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今延安西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（2-A GREAT WESTERN ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1105",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1519,
+      "historicalName": "Hospital",
+      "historicalNameCorrectionZh": "醫院",
+      "historicalStartYear": 1936,
+      "coordinates": {
+        "wgs84": [
+          121.449285,
+          31.200372
+        ],
+        "gcj02": [
+          121.453875,
+          31.198474
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今凤阳路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Hospital”（FOONGLING ROAD / I-HSUENYUEN ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1519",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1049,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.445904,
+          31.234792
+        ],
+        "gcj02": [
+          121.450505,
+          31.232917
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今西藏北路/西藏中路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（629 SEYMOUR ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1049",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1053,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.442127,
+          31.233279
+        ],
+        "gcj02": [
+          121.446736,
+          31.23141
+        ]
+      },
+      "modernRoadAddress": "?? 武定路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今武定路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（?? WUTING ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1053",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1077,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.445064,
+          31.227316
+        ],
+        "gcj02": [
+          121.449667,
+          31.225439
+        ]
+      },
+      "modernRoadAddress": "1456 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今南京西路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（1456 BUBBLING WELL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1077",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1110,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.441371,
+          31.227003
+        ],
+        "gcj02": [
+          121.445981,
+          31.225132
+        ]
+      },
+      "modernRoadAddress": "68 愚园路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今愚园路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（68 YUYUEN ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1110",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1130,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.436873,
+          31.233258
+        ],
+        "gcj02": [
+          121.441493,
+          31.231398
+        ]
+      },
+      "modernRoadAddress": "445 胶州路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今胶州路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（445 KIAOCHOW ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1130",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1137,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.438567,
+          31.232485
+        ],
+        "gcj02": [
+          121.443183,
+          31.230622
+        ]
+      },
+      "modernRoadAddress": "952 武定路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今武定路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（952 WUTING ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1137",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1146,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.444601,
+          31.236453
+        ],
+        "gcj02": [
+          121.449205,
+          31.234581
+        ]
+      },
+      "modernRoadAddress": "359 康定路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今康定路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（359 CONNAUGHT ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1146",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1152,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.447615,
+          31.238512
+        ],
+        "gcj02": [
+          121.452213,
+          31.236635
+        ]
+      },
+      "modernRoadAddress": "康定路 / 昌化路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今康定路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（CONNAUGHT ROAD / TONQUIN ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1152",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1185,
+      "historicalName": "Junior High School",
+      "historicalNameCorrectionZh": "中學",
+      "coordinates": {
+        "wgs84": [
+          121.439317,
+          31.239793
+        ],
+        "gcj02": [
+          121.443933,
+          31.237932
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今东大名路/杨树浦路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Junior High School”（826 FERRY ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1185",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 80,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.472192,
+          31.223433
+        ],
+        "gcj02": [
+          121.476719,
+          31.221492
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今自忠路／太仓路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（368 RUE EUGENE BARD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=80",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 95,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.472024,
+          31.222076
+        ],
+        "gcj02": [
+          121.476552,
+          31.220134
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今自忠路／太仓路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（265 RUE EUGENE BARD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=95",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 157,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.467853,
+          31.223336
+        ],
+        "gcj02": [
+          121.472394,
+          31.221406
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今肇嘉浜路／徐家汇路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（3 RUE CHAPSAL）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=157",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 162,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.469787,
+          31.22222
+        ],
+        "gcj02": [
+          121.474322,
+          31.220284
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今建国西路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（215-12 RUE BRENIER DE MONTMORAND）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=162",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 167,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.468285,
+          31.225422
+        ],
+        "gcj02": [
+          121.472825,
+          31.223492
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今建国西路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（39 RUE BRENIER DE MONTMORAND）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=167",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 183,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.463497,
+          31.224848
+        ],
+        "gcj02": [
+          121.468051,
+          31.22293
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今建国西路旧称段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（29-25 RUE DU LIEUTENANT PETIOT）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=183",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 192,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.4648,
+          31.221785
+        ],
+        "gcj02": [
+          121.46935,
+          31.219862
+        ]
+      },
+      "modernRoadAddress": "62 雁荡路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今雁荡路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（62 ROUTE VOYRON）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=192",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 200,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.467148,
+          31.218336
+        ],
+        "gcj02": [
+          121.471691,
+          31.216405
+        ]
+      },
+      "modernRoadAddress": "496-A 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今复兴中路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（496-A ROUTE LAFAYETTE）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=200",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 206,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.467199,
+          31.219599
+        ],
+        "gcj02": [
+          121.471742,
+          31.217669
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今华山路／乌鲁木齐北路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（249 ROUTE PORTE DE L'OUEST）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=206",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 270,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.461123,
+          31.225377
+        ],
+        "gcj02": [
+          121.465684,
+          31.223465
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今长乐路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（120-2 ROUTE RATARD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=270",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 295,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.459619,
+          31.217139
+        ],
+        "gcj02": [
+          121.464184,
+          31.215226
+        ]
+      },
+      "modernRoadAddress": "68 瑞金二路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今瑞金二路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（68 ROUTE PERE ROBERT）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=295",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 349,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.453258,
+          31.217314
+        ],
+        "gcj02": [
+          121.45784,
+          31.215416
+        ]
+      },
+      "modernRoadAddress": "987-186 淮海中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今淮海中路分段",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（987-186 AVENUE JOFFRE）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=349",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 350,
+      "historicalName": "Primary School",
+      "historicalNameCorrectionZh": "小學校",
+      "coordinates": {
+        "wgs84": [
+          121.45419,
+          31.215763
+        ],
+        "gcj02": [
+          121.45877,
+          31.213862
+        ]
+      },
+      "modernRoadAddress": "1218-42 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": "仅完成旧路名到现代道路级映射，具体单体/当前用途未核",
+      "currentAddress": "今复兴中路",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Primary School”（1218-42 ROUTE LAFAYETTE）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=350",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    }
+  ]
+}

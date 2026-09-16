@@ -16,6 +16,16 @@ const countBy = (items, key) => items.reduce((counts, item) => {
   return counts
 }, {})
 
+const excludedUtilityIds = new Set()
+try {
+  const excludedUtilities = await readJson('research/unresolved-landmarks/excluded-utility-records.json')
+  for (const record of excludedUtilities.records ?? []) {
+    if (Number.isInteger(record.IDBAT)) excludedUtilityIds.add(record.IDBAT)
+  }
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error
+}
+
 for (const filename of (await fs.readdir(path.join(projectRoot, 'scripts/data'))).sort()) {
   if (!/^unresolved-landmarks-\d{3}-research\.json$/u.test(filename)) continue
   const file = `scripts/data/${filename}`
@@ -57,7 +67,8 @@ for (const filename of (await fs.readdir(path.join(projectRoot, 'public/data/unr
     total: entries.length,
     withResearchRecords: entries.filter(hasResearch).length,
     reservedWithoutResults: entries.filter((record) => !hasResearch(record) && record.reservedBatches.length > 0).length,
-    notYetInvestigatedOrReserved: entries.filter((record) => !hasResearch(record) && record.reservedBatches.length === 0).length,
+    parkedUtilityRecords: entries.filter((record) => excludedUtilityIds.has(record.IDBAT)).length,
+    notYetInvestigatedOrReserved: entries.filter((record) => !hasResearch(record) && !excludedUtilityIds.has(record.IDBAT) && record.reservedBatches.length === 0).length,
     externalResearchProgress: countBy(entries.flatMap((record) => record.externalReports), (report) => report.researchProgress),
   })
 }
@@ -71,6 +82,7 @@ const summary = {
   currentChunkRecords: chunks.reduce((sum, chunk) => sum + chunk.total, 0),
   currentChunkRecordsWithResearch: chunks.reduce((sum, chunk) => sum + chunk.withResearchRecords, 0),
   currentChunkRecordsReservedWithoutResults: chunks.reduce((sum, chunk) => sum + chunk.reservedWithoutResults, 0),
+  currentChunkRecordsParkedUtility: chunks.reduce((sum, chunk) => sum + chunk.parkedUtilityRecords, 0),
   currentChunkRecordsNotYetInvestigatedOrReserved: chunks.reduce((sum, chunk) => sum + chunk.notYetInvestigatedOrReserved, 0),
   externalReportObservations: {
     researchProgress: countBy(externalRecords, (record) => record.researchProgress.status),
@@ -112,8 +124,8 @@ for (const archive of externalArchives) {
   lines.push(`  原报告结论：verified ${verificationCounts.verified ?? 0} 条、likely ${verificationCounts.likely ?? 0} 条、unresolved ${verificationCounts.unresolved ?? 0} 条；回填建议：yes ${mapCounts.yes ?? 0} 条、review ${mapCounts.review ?? 0} 条、no ${mapCounts.no ?? 0} 条。`)
   if (archive.supplementalReview?.followUpQueue?.length) lines.push(`  本项目优先补证 ID：${archive.supplementalReview.followUpQueue.filter((record) => record.status === 'pending').map((record) => record.IDBAT).join('、')}。`)
 }
-lines.push('', '## 当前文件与调查记录对照', '', '| 当前文件 | 条数 | 有调查记录 | 已分配、无结果 | 未调查、未分配 |', '|---|---:|---:|---:|---:|')
-for (const chunk of chunks) lines.push(`| [${path.basename(chunk.file)}](../${chunk.file}) | ${chunk.total} | ${chunk.withResearchRecords} | ${chunk.reservedWithoutResults} | ${chunk.notYetInvestigatedOrReserved} |`)
+lines.push('', '## 当前文件与调查记录对照', '', '| 当前文件 | 条数 | 有调查记录 | 已分配、无结果 | 已停放 utility | 未调查、未分配 |', '|---|---:|---:|---:|---:|---:|')
+for (const chunk of chunks) lines.push(`| [${path.basename(chunk.file)}](../${chunk.file}) | ${chunk.total} | ${chunk.withResearchRecords} | ${chunk.reservedWithoutResults} | ${chunk.parkedUtilityRecords} | ${chunk.notYetInvestigatedOrReserved} |`)
 lines.push('', '外部报告的 partial 记录保留在补证队列中，不会被新批次选择脚本再次当作从未调查的记录。报告的 completed 不代表所有剩余问题已解决。', '')
 await fs.writeFile(path.join(projectRoot, 'research/PROGRESS.md'), lines.join('\n'))
 console.log(JSON.stringify(summary, null, 2))

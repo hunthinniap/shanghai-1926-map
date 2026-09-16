@@ -1,0 +1,42 @@
+{
+  "batch": "023",
+  "date": "2026-09-15",
+  "round": "r1",
+  "inputFile": "research/unresolved-landmarks/023-input.json",
+  "inputSha256": "7b200b917f13cdbaae613e4e1763c4eddb430aa065aefa83d6332c0b6246e4fe",
+  "scopeIds": [1506, 750, 1508, 852, 659, 1437, 692, 364, 151, 565],
+  "resultChecks": {
+    "inputRecordCount": 50,
+    "resultRecordCount": 50,
+    "researchedResultCount": 10,
+    "remainingPlaceholderCount": 40,
+    "duplicateIds": false,
+    "originalInputPreserved": true,
+    "statusCountsInResearchedScope": {"likely": 4, "unresolved": 6},
+    "mapWriteCountsInResearchedScope": {"review": 4, "no": 6}
+  },
+  "evidenceChecks": {
+    "evidenceRecordCount": 10,
+    "evidenceIdsMatchScope": true,
+    "originalFieldsPreserved": true,
+    "sourceUrlsCoverClaims": true,
+    "allResearchStatuses": "partial",
+    "osmSpatialReview": "not-completed-timeout"
+  },
+  "mapChecks": {
+    "mapWritten": false,
+    "coordinatesChanged": false,
+    "roadDataChanged": false,
+    "groupMembershipChanged": false
+  },
+  "preservationChecks": {
+    "raw023InputOverwritten": false,
+    "remaining40MarkedInvestigated": false,
+    "historicalEntitiesMerged": false
+  },
+  "notes": [
+    "首轮10条的结果和证据均标注为partial；likely只表示可继续复核的候选，不代表地图批准。",
+    "OSM公共端点超时，未生成023空间缓存；没有将失败或未命中解释为拆除。",
+    "023剩余40条保留占位结果，等待后续逐条研究。"
+  ]
+}

@@ -1,0 +1,1547 @@
+{
+  "batch": "023",
+  "researchedAt": "2026-09-15",
+  "input": "research/unresolved-landmarks/023-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/023-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 1,
+      "location-only-current-use": 49
+    },
+    "byResolutionStatus": {
+      "resolved": 1,
+      "probable": 17,
+      "unresolved": 32
+    },
+    "mapWriteRecommendation": {
+      "yes": 1,
+      "review": 17,
+      "no": 32
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 701,
+      "historicalName": "Zhejiang Theater",
+      "historicalNameCorrectionZh": "浙江大戯院",
+      "historicalStartYear": 1930,
+      "coordinates": {
+        "wgs84": [
+          121.474895,
+          31.233981
+        ],
+        "gcj02": [
+          121.479414,
+          31.232037
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "浙江电影院（原浙江大戏院）",
+      "currentUse": "现仍为电影院；红砖Art Deco建筑列为黄浦区文保点",
+      "currentAddress": "今浙江中路123号（原Chekiang Road 123号）",
+      "currentUseRelationship": "same-site-preserved",
+      "mapWriteRecommendation": "yes",
+      "evidence": "Virtual Shanghai精确条目确认浙江大戏院、1930年、123 CHEKIANG ROAD。黄浦区风貌区名录将浙江中路123号列为浙江大戏院旧址；2025年潮新闻实地报道确认现名浙江电影院、仍每日放映并保留四层红砖建筑和原有装饰。历史名称、现址与持续电影院用途形成直接闭环，建议yes（仍不修改历史原字段）。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=701",
+        "https://zh.wikipedia.org/wiki/上海市历史文化风貌区",
+        "https://tidenews.com.cn/video_detail.html?id=3167689",
+        "https://ditu.amap.com/place/B0015325A9"
+      ]
+    },
+    {
+      "IDBAT": 1508,
+      "historicalName": "Yeshiyuan Garden",
+      "historicalNameCorrectionZh": "也是園",
+      "historicalStartYear": 1878,
+      "coordinates": {
+        "wgs84": [
+          121.488574,
+          31.219133
+        ],
+        "gcj02": [
+          121.493045,
+          31.217143
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "也是园旧址（遗存线索）",
+      "currentUse": "历史园林大部毁失；现为老城混合居住、商业及道路空间，具体承接宗地待核",
+      "currentAddress": "凝和路／也是园弄／乔家路一带（精确宗地待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认也是園（1878）及NINGHE／YESHIYUAN地址。中文史料将其置于凝和路、也是园弄、乔家路一带，并记战争时期园林大部毁失，部分石构件移存豫园；这支持历史地点与现老城区域候选对应，但未闭合原点至具体宗地或现行门牌，地图建议review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1508",
+        "https://zh.wikipedia.org/wiki/也是园",
+        "https://www.sohu.com/a/327525591_391448",
+        "https://tech.sina.cn/2020-08-21/detail-iivhuipn9809072.d.html"
+      ]
+    },
+    {
+      "IDBAT": 1437,
+      "historicalName": "Yiding Apartments",
+      "historicalNameCorrectionZh": "憶定邨",
+      "historicalStartYear": 1934,
+      "coordinates": {
+        "wgs84": [
+          121.42713,
+          31.219195
+        ],
+        "gcj02": [
+          121.431764,
+          31.217341
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "忆定村（Yiding Apartments）",
+      "currentUse": "新式里弄住宅；现为居住社区，列上海优秀历史建筑",
+      "currentAddress": "江苏路495弄（原Edinburgh Road 495号）",
+      "currentUseRelationship": "same-site-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认憶定邨、1934年及495 EDINBURGH ROAD。道路沿革资料将Edinburgh Road对应今江苏路；忆定村资料给出今江苏路495弄，并记为新式里弄住宅及上海优秀历史建筑。历史门牌到现弄号和原点—具体楼栋仍未做地籍闭合，故likely/review，不直接写入地图。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1437",
+        "https://zh.wikipedia.org/wiki/忆定村",
+        "https://www.jfdaily.com/wx/detail.do?id=801461"
+      ]
+    },
+    {
+      "IDBAT": 692,
+      "historicalName": "Yipinxiang Hotel",
+      "historicalNameCorrectionZh": "一品香中西旅社",
+      "historicalStartYear": 1883,
+      "coordinates": {
+        "wgs84": [
+          121.471291,
+          31.234563
+        ],
+        "gcj02": [
+          121.475822,
+          31.232629
+        ]
+      },
+      "modernRoadAddress": "270 西藏中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "一品香中西旅社旧址（候选）",
+      "currentUse": "现为来福士广场商业综合体；原旅社楼体连续性未核",
+      "currentAddress": "西藏中路270号（原Yuyaching Road 270号；今来福士广场原址一带）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认一品香中西旅社、1883年及270 YUYACHING ROAD。新民晚报与补充历史资料将一品香迁至西藏路270号，并指向今来福士广场原址一带；可支持原址被商业综合体重建的候选判断，但未证明旅社原楼保留或具体占地边界，地图建议review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=692",
+        "https://xmwb.xinmin.cn/html/2016-07/24/content_27_1.htm",
+        "https://blog.sina.com.cn/s/blog_5d1bdf480102vedn.html"
+      ]
+    },
+    {
+      "IDBAT": 364,
+      "historicalName": "Yishan Primary School",
+      "historicalNameCorrectionZh": "岐春小學",
+      "coordinates": {
+        "wgs84": [
+          121.452011,
+          31.223018
+        ],
+        "gcj02": [
+          121.456597,
+          31.221125
+        ]
+      },
+      "modernRoadAddress": "106 陕西南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "岐春小学旧址（候选）",
+      "currentUse": "现为酒店及住宅公寓等混合用途候选，原校舍对应楼栋待核",
+      "currentAddress": "陕西南路106号（原Avenue du Roi Albert 106号）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认岐春小學、106 AVENUE DU ROI ALBERT；道路对照支持今陕西南路106号。现有地址目录显示该号为锦畅大酒店／住宅公寓候选，但来源不足以证明学校楼体拆除、重建时间或完整宗地对应，地图建议review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=364",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表",
+        "https://sh.loupan.com/community/8797799.html"
+      ]
+    },
+    {
+      "IDBAT": 214,
+      "historicalName": "Yixing Primary School",
+      "historicalNameCorrectionZh": "義興小學",
+      "coordinates": {
+        "wgs84": [
+          121.468443,
+          31.215837
+        ],
+        "gcj02": [
+          121.472982,
+          31.213902
+        ]
+      },
+      "modernRoadAddress": "349-1 合肥路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "义兴小学旧址（候选）",
+      "currentUse": "现为普通住宅小区候选，原校舍及楼体连续性未核",
+      "currentAddress": "合肥路349弄一带（原Route du Père Froc 349-1；逐号对应待核）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认義興小學、349-1 ROUTE DU PERE FROC；道路对照支持今合肥路。现代地址目录有合肥路349弄住宅小区，但未取得旧349-1到弄内楼栋、学校停办或拆建链的独立档案，故likely/review，不把住宅目录当成原校舍存续证明。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=214",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表",
+        "https://sh.dushiquan.net/xiaoqu/31056/"
+      ]
+    },
+    {
+      "IDBAT": 1383,
+      "historicalName": "Yong'an Cotton Mill No. 3",
+      "historicalNameCorrectionZh": "永安第三棉紡廠",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.448596,
+          31.24115
+        ],
+        "gcj02": [
+          121.453192,
+          31.239273
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "永安第三棉纺厂旧址（候选）",
+      "currentUse": "现为天鼎花园等住宅小区；原厂区范围与旧厂房存续待核",
+      "currentAddress": "淮安路491号／西苏州路65号厂区一带（原Markham Road 491号）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认永安第三棉纺厂、1915年及491 MARKHAM ROAD。地方工业史将麦根路今淮安路厂址与西苏州路65号无线电三厂前身链条相连；现代天鼎花园位于西苏州路65弄、约2001年建成，支持厂区后续住宅重建候选，但原厂50亩/38亩边界和本点对应楼体未闭合，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1383",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cotton+mill",
+        "https://m.thepaper.cn/newsDetail_forward_6890916",
+        "https://www.sinyi.com.cn/handhouse/detail?cookieuid=%7B%7Bcookieuid%7D%7D&id=57024"
+      ]
+    },
+    {
+      "IDBAT": 1523,
+      "historicalName": "Yongan' Cemetery",
+      "historicalNameCorrectionZh": "永安公墓",
+      "historicalStartYear": 1928,
+      "coordinates": {
+        "wgs84": [
+          121.394325,
+          31.207254
+        ],
+        "gcj02": [
+          121.398973,
+          31.205406
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "永安公墓旧址（已消失）",
+      "currentUse": "公墓已消失，现为高校、办公/商业及道路混合用地；原墓址范围较大",
+      "currentAddress": "古北路—仙霞路口至古北路678号一带（原GUBEI/XIANXIA）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认1928年永安公墓。上海人民网上海地方史料将其范围描述为古北路仙霞路口至古北路678号一带，现包括上海工程技术大学南侧及同铨、嘉麒、鑫达等楼宇，1980年代已破坏殆尽；范围级现用途可写为混合城市用地，但原点与具体现宗地未闭合，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1523",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cemetery",
+        "https://sh.people.com.cn/n2/2021/1018/c134768-34961952.html",
+        "https://m.thepaper.cn/baijiahao_8029383"
+      ]
+    },
+    {
+      "IDBAT": 563,
+      "historicalName": "Yongnian Renshou Insurance Company",
+      "historicalNameCorrectionZh": "永年人寿保険公司",
+      "historicalStartYear": 1910,
+      "coordinates": {
+        "wgs84": [
+          121.484329,
+          31.235569
+        ],
+        "gcj02": [
+          121.488817,
+          31.233599
+        ]
+      },
+      "modernRoadAddress": "93 广东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "永年大楼（永年人寿保险公司旧址）",
+      "currentUse": "优秀历史建筑，现为办公用途（资料记恒松资本租用）",
+      "currentAddress": "广东路93号（原Canton Road 93号）",
+      "currentUseRelationship": "same-site-rebuilt",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认永年人寿保险公司93 CANTON ROAD；公开建筑史料将公司早期广东路13号对应今93号，1907年拆旧房后建成1910年永年大楼，现为广东路93号优秀历史建筑并作办公使用。公司记录与现楼关系较强，但现租户和原点至楼体边界仍待官方名录/地籍复核，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=563",
+        "https://zh.wikipedia.org/wiki/永年大楼",
+        "https://www.insurdaily.com/archives/5006.html"
+      ]
+    },
+    {
+      "IDBAT": 732,
+      "historicalName": "Yu Xiaqing Residence",
+      "historicalNameCorrectionZh": "虞洽卿公館",
+      "coordinates": {
+        "wgs84": [
+          121.47534,
+          31.249665
+        ],
+        "gcj02": [
+          121.479859,
+          31.247727
+        ]
+      },
+      "modernRoadAddress": "704 海宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "虞洽卿住宅／虞公馆（候选）",
+      "currentUse": "历史住宅候选；现行建筑用途与楼体范围待核",
+      "currentAddress": "海宁路702—704号一带（原Haining Road 704号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认虞洽卿住宅、704 HAINING ROAD。旧电话簿/建筑史料将虞氏住宅联系到海宁路702—704号，支持历史地址候选；未取得官方建筑名录、现行门牌或原点—楼体边界，故likely/review，不把附近梅龙镇老洋房或其他虞宅混入。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=732",
+        "https://read01.com/NNDLAe3.html",
+        "https://zh.wikipedia.org/wiki/海宁路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 1438,
+      "historicalName": "Yue Apartments",
+      "historicalNameCorrectionZh": "月邨",
+      "historicalStartYear": 1921,
+      "coordinates": {
+        "wgs84": [
+          121.426277,
+          31.219045
+        ],
+        "gcj02": [
+          121.430912,
+          31.217192
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "月村（Yue Apartments）",
+      "currentUse": "新式里弄住宅；现为保留部分居住社区，部分因道路拓宽/邮政楼建设消失",
+      "currentAddress": "江苏路480弄（原Edinburgh Road 472号一带）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认月邨、472 EDINBURGH ROAD。解放日报与月村资料将Edinburgh Road对应今江苏路480弄，并记原22幢住宅因江苏路拓宽及邮政支局建设仅部分保存；可支持现住宅社区和部分遗存，但原点至具体楼栋未闭合，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1438",
+        "https://www.shobserver.cn/wx/detail.do?id=801461",
+        "https://zh.wikipedia.org/wiki/月村"
+      ]
+    },
+    {
+      "IDBAT": 434,
+      "historicalName": "Yueqin Tuoxuetang",
+      "historicalNameCorrectionZh": "樂勤脱學堂",
+      "coordinates": {
+        "wgs84": [
+          121.444579,
+          31.213176
+        ],
+        "gcj02": [
+          121.449181,
+          31.211293
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "宝庆路10号（劳莱德学校旧址）",
+      "currentUse": "现为办公/科研及商业租用；原学校建筑边界待核",
+      "currentAddress": "今宝庆路10号（原Route Pottier 10号）",
+      "currentUseRelationship": "same-site-reused",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认樂勤脱學堂、10 ROUTE POTTIER；道路资料将Route Pottier对应今宝庆路。澎湃宝庆路专题直接记宝庆路10号为劳莱德学校，现址目录及企业登记显示该号仍有办公/科研与商业使用，但未取得学校原楼与现楼逐栋配准，故likely/review，不宣称整栋原物保存。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=434",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Religious",
+        "https://www.thepaper.cn/newsDetail_forward_5388126",
+        "https://www.coworkinghub.com/cn_shanghai/cn/building/10-baoqing-road/12671"
+      ]
+    },
+    {
+      "IDBAT": 1027,
+      "historicalName": "Yuequn Junior High School",
+      "historicalNameCorrectionZh": "上海樂群中學",
+      "coordinates": {
+        "wgs84": [
+          121.451518,
+          31.232852
+        ],
+        "gcj02": [
+          121.456106,
+          31.230965
+        ]
+      },
+      "modernRoadAddress": "970 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "北京西路970号旧校址（乐群/省吾等学校旧址）",
+      "currentUse": "现仍有教育用途地址线索（北京西路第四幼儿园）；具体楼栋与长期沿革待核",
+      "currentAddress": "今北京西路970号（原Avenue Road 970号）",
+      "currentUseRelationship": "same-site-reused",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认樂群中學、970 AVENUE ROAD，并显示同号还有建华工业学校/建华职业中学；长宁区政府史料记省吾中学1946—1947年在今北京西路970号三楼，说明该址确为多校共用历史教育地点。现代目录将北京西路第四幼儿园列于970号，但来源不足以证明占用原楼或与乐群中学直接承继，故likely/review，不合并同址不同学校记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1027",
+        "https://www.shcn.gov.cn/col6991/20251009/1299719.html",
+        "https://www.weiqiming.com/qiming/wDNisictdIhoKqdHlw.html"
+      ]
+    },
+    {
+      "IDBAT": 1700,
+      "historicalName": "Yujia Temple",
+      "historicalNameCorrectionZh": "俞家廟",
+      "coordinates": {
+        "wgs84": [
+          121.509944,
+          31.225181
+        ],
+        "gcj02": [
+          121.514339,
+          31.22313
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "俞家庙旧址（潍坊西路志忠里一带）",
+      "currentUse": "1946—1948年曾作洋泾中学临时校舍；现地块用途及庙址遗存未核",
+      "currentAddress": "今潍坊西路志忠里一带（原Laodaidu Lu；具体庙址门牌待核）",
+      "currentUseRelationship": "site-reused-then-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai/Histoire de Chine确认俞家庙条目，但旧地址仅记LAODAIDU LU。洋泾中学校史明确1946年在浦东俞家庙（今潍坊西路志忠里）复校并以庙舍作临时校舍，地方志道路资料也以俞家庙解释潍坊西路命名。该证据闭合到范围级历史地点和阶段性教育用途，但未核出庙址单体或现地块用途，故likely/review，不把后来的洋泾中学校园当作庙宇原物。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1700",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Religious",
+        "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B4%8B%E6%B3%BE%E4%B8%AD%E5%AD%A6",
+        "https://zh.wikipedia.org/wiki/%E6%BD%8D%E5%9D%8A%E8%A5%BF%E8%B7%AF"
+      ]
+    },
+    {
+      "IDBAT": 1385,
+      "historicalName": "Yuyuan Silk Factory",
+      "historicalNameCorrectionZh": "裕源紗廠",
+      "historicalStartYear": 1894,
+      "historicalEndYear": 1918,
+      "coordinates": {
+        "wgs84": [
+          121.445764,
+          31.243708
+        ],
+        "gcj02": [
+          121.450366,
+          31.241837
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "静安河滨花园（原裕源/国棉四厂厂址候选）",
+      "currentUse": "现为居民住宅及商业/办公配套；原厂房已不存",
+      "currentAddress": "今淮安路640号、西苏州路一带（原Markham Road 640号）",
+      "currentUseRelationship": "site-redeveloped",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认裕源丝厂、640 MARKHAM ROAD；工业沿革资料将淮安路640号与裕源纱厂—国棉四厂相连。静安区街道文化地图明确国棉四厂已关闭，原厂区翻建为居民住宅；现代楼盘资料确认静安河滨花园地址为淮安路640号。可认定范围级厂址已改为住宅，但原点对应厂房和旧厂界未闭合，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1385",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cotton+mill",
+        "https://www.jingan.gov.cn/rmtzx/003008/003008006/20170629/17443d7e-e9cd-4055-988b-24635a432f02.html",
+        "https://m.leju.com/sh/house/40905/"
+      ]
+    },
+    {
+      "IDBAT": 1741,
+      "historicalName": "ZENITH APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.443132,
+          31.204887
+        ],
+        "gcj02": [
+          121.447737,
+          31.203003
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "增您智公寓（ZENITH APARTMENTS）",
+      "currentUse": "现为住宅；安亭居委会二楼亦使用该号",
+      "currentAddress": "今安亭路71号（原An'ting Road 71号）",
+      "currentUseRelationship": "same-site-residential-use",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai确认ZENITH APARTMENTS、71 AN'TING ROAD。安亭路道路资料把安亭路71号列为增您智公寓/徐汇区文物保护点；住宅专题记该公寓建于1936年、现为民居，居委会资料也显示该号二楼办公。地址与建筑身份相符，但未取得官方保护点原档案或原点—楼体配准，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1741",
+        "https://zh.wikipedia.org/wiki/%E5%AE%89%E4%B8%81%E8%B7%AF",
+        "https://www.biwuke.com/fangxunnei/1747.html",
+        "https://sh.dushiquan.net/xzqh/391219/"
+      ]
+    },
+    {
+      "IDBAT": 1356,
+      "historicalName": "Zhabei Church",
+      "historicalNameCorrectionZh": "閘北堂",
+      "historicalStartYear": 1916,
+      "coordinates": {
+        "wgs84": [
+          121.4718,
+          31.260201
+        ],
+        "gcj02": [
+          121.476332,
+          31.258277
+        ]
+      },
+      "modernRoadAddress": "340 宝通路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "上海市基督教闸北堂",
+      "currentUse": "现仍为基督教堂并开放礼拜；现堂为1947年重建建筑",
+      "currentAddress": "今宝通路340号（原Baotong Road 340号）",
+      "currentUseRelationship": "same-site-rebuilt",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认闸北教堂、340 BAOTONG。中国基督教两会官方资料明确闸北堂位于宝通路340号，1914年迁建于今址，1932/1937毁于战火后1947年重建，现仍有礼拜；高德地址与官方一致。因现堂非原1910年代建筑，关系记为原址重建，地图建议review而非直接yes。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1356",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Church",
+        "https://www.ccctspm.org/churchinfo/213",
+        "https://www.amap.com/place/B00154DRUN"
+      ]
+    },
+    {
+      "IDBAT": 1727,
+      "historicalName": "Zhang Garden",
+      "historicalNameCorrectionZh": "張園",
+      "coordinates": {
+        "wgs84": [
+          121.455692,
+          31.2301
+        ],
+        "gcj02": [
+          121.460269,
+          31.228203
+        ]
+      },
+      "modernRoadAddress": "MOULMEIN ROAD / 威海路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "张园（张家花园）",
+      "currentUse": "历史街区活化；现为商业、文化展示与旅游空间，部分石库门建筑保留",
+      "currentAddress": "今威海路590弄、泰兴路一带（原Moulmein Road / Weihaiwei Road）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认张园及Moulmein Road/Weihaiwei Road交叉地址。上海规划学会案例将张园对应今威海路590弄、泰兴路一带，记有42栋历史建筑及活化更新；现行旅游资料也以威海路590弄列张园入口。可确认范围级现址和活化用途，但原点对应园内具体建筑、保存/重建边界仍待核，故likely/review。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1727",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Garden",
+        "https://en.planning.org.cn/nua/view?id=1093",
+        "https://hk.trip.com/travel-guide/attraction/shanghai/zhangyuan-house-31659493"
+      ]
+    },
+    {
+      "IDBAT": 1506,
+      "historicalName": "Yaowang Temple",
+      "historicalNameCorrectionZh": "藥王廟",
+      "coordinates": {
+        "wgs84": [
+          121.491891,
+          31.220465
+        ],
+        "gcj02": [
+          121.496351,
+          31.218466
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "药王庙旧址线索（天灯弄；待核）",
+      "currentUse": "原庙址与现宗地用途未核",
+      "currentAddress": "天灯弄一带（原 TIANDENG XIANG；精确门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认藥王廟及原TIANDENG XIANG，但地址缺门牌。检索到药局弄药王庙遗址的低质量线索，未能把其闭合到现行道路、宗地或建筑；不以旧城近邻推断现用途。空间预查因OSM端点超时未完成，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1506",
+        "https://waptieba.baidu.com/p/6082719772"
+      ]
+    },
+    {
+      "IDBAT": 750,
+      "historicalName": "Yazhou Printer",
+      "historicalNameCorrectionZh": "亞洲印務局",
+      "coordinates": {
+        "wgs84": [
+          121.475806,
+          31.248948
+        ],
+        "gcj02": [
+          121.480324,
+          31.247008
+        ]
+      },
+      "modernRoadAddress": "788-17 塘沽路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "亚洲印务局旧址（待核）",
+      "currentUse": "原印务局楼体存废及现用途未核",
+      "currentAddress": "今塘沽路788号一带（原Boone Road；旧门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认亞洲印務局、788-17 BOONE ROAD。道路资料支持Boone Road今塘沽路，但未取得788-17到现代门牌或原印刷厂楼体的独立桥接；不把道路同号或邻近建筑当作现址用途，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=750",
+        "https://zh.wikipedia.org/wiki/塘沽路",
+        "https://dzb.whb.cn/imgPath/2021-09-05/80905.pdf"
+      ]
+    },
+    {
+      "IDBAT": 852,
+      "historicalName": "Yici Hospital",
+      "historicalNameCorrectionZh": "仁慈診療所",
+      "coordinates": {
+        "wgs84": [
+          121.459258,
+          31.229986
+        ],
+        "gcj02": [
+          121.463825,
+          31.22808
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "仁慈诊疗所旧址（待核）",
+      "currentUse": "原诊疗所楼体存废及现用途未核",
+      "currentAddress": "今威海路348号一带（原Weihaiwei Road 348-25；门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine医疗索引确认仁慈診療所、348-25 WEIHAWEI ROAD；道路级可对应今威海路，但未找到旧门牌至现代单体、拆除或持续医疗使用的独立证据。地图建议no，不把近邻医院或住宅用途套入原诊所。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=852",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"
+      ]
+    },
+    {
+      "IDBAT": 659,
+      "historicalName": "Yide Hospital",
+      "historicalNameCorrectionZh": "一徳醫院",
+      "coordinates": {
+        "wgs84": [
+          121.470876,
+          31.240042
+        ],
+        "gcj02": [
+          121.475409,
+          31.238112
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "一德医院旧址（待核）",
+      "currentUse": "原医院楼体存废及现用途未核",
+      "currentAddress": "今贵州路230—234号一带（原Kweichow Road；门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine医疗索引确认一徳醫院、230-234 KWEICHOW ROAD；只完成历史身份和道路级贵州路映射，未取得现门牌、楼体存续或拆除后的现用途证据。地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=659",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"
+      ]
+    },
+    {
+      "IDBAT": 151,
+      "historicalName": "Yixin Primary School",
+      "historicalNameCorrectionZh": "一心小學",
+      "coordinates": {
+        "wgs84": [
+          121.470597,
+          31.219393
+        ],
+        "gcj02": [
+          121.475129,
+          31.217454
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "一心小学旧址（待核）",
+      "currentUse": "原校址、楼体存废及现用途未核",
+      "currentAddress": "Route Porte de l'Ouest旧路段（现代道路及123—61门牌对应待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认一心小學、123-61 ROUTE PORTE DE L'OUEST。该旧路名的现代分段映射在公开道路表之间存在冲突，尚未闭合到唯一现代门牌或学校地块；不因坐标近邻学校推断现用途，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=151",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 565,
+      "historicalName": "Yixing Distribution Office",
+      "historicalNameCorrectionZh": "興行發行所",
+      "coordinates": {
+        "wgs84": [
+          121.48287,
+          31.234281
+        ],
+        "gcj02": [
+          121.487363,
+          31.232315
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "兴行发行所旧址（待核）",
+      "currentUse": "原发行所楼体存废及现用途未核",
+      "currentAddress": "通阁巴卡6号一带（原6 TONGGEBAKA；现代路名及门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认興行發行所及6 TONGGEBAKA，但旧地名未能在本轮公开道路表、现代门牌或独立机构资料中闭合。保留历史身份线索，不把坐标附近商业设施当作现址，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=565"
+      ]
+    },
+    {
+      "IDBAT": 1271,
+      "historicalName": "Yiyuan",
+      "historicalNameCorrectionZh": "主順堂",
+      "coordinates": {
+        "wgs84": [
+          121.470184,
+          31.272878
+        ],
+        "gcj02": [
+          121.474722,
+          31.270964
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "主顺堂（Yiyuan；待核）",
+      "currentUse": "原教堂存废及现用途未核",
+      "currentAddress": "Huayuan旧地名（现代道路及门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine教会索引确认Yiyuan中文名主順堂，地址仅记?? HUAYUAN；缺门牌、道路现代对应和教堂沿革。不能把其他Huayuan地址或附近宗教设施套入本点，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1271",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Church"
+      ]
+    },
+    {
+      "IDBAT": 593,
+      "historicalName": "YMCA Headquarters",
+      "historicalNameCorrectionZh": "青年會",
+      "historicalStartYear": 1907,
+      "coordinates": {
+        "wgs84": [
+          121.481147,
+          31.243822
+        ],
+        "gcj02": [
+          121.485646,
+          31.241865
+        ]
+      },
+      "modernRoadAddress": "460 江西中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "青年会旧址（待核）",
+      "currentUse": "原青年会楼体存废及现用途未核",
+      "currentAddress": "今江西中路460号一带（原Kiangse Road 460号；现代楼栋待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认青年會、1907年及460 KIANGSE ROAD；道路级可对应今江西中路。检索到青年会机构后迁西藏南路123号的沿革线索，但无法证明460号原楼的现代楼栋和用途，且不得与四川中路595-607号青年会大楼（其他历史记录）合并，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=593",
+        "https://web.chinamcloud.com/shhpdst/tzypc/dacl/27020558.shtml",
+        "https://zh.wikipedia.org/wiki/上海市优秀历史历史建筑"
+      ]
+    },
+    {
+      "IDBAT": 696,
+      "historicalName": "Yongxiang Hospital",
+      "historicalNameCorrectionZh": "永祥医院",
+      "coordinates": {
+        "wgs84": [
+          121.473008,
+          31.232917
+        ],
+        "gcj02": [
+          121.477534,
+          31.230978
+        ]
+      },
+      "modernRoadAddress": "720 广东路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "永祥医院旧址（待核）",
+      "currentUse": "原医院楼体存废及现用途未核",
+      "currentAddress": "今广东路720号一带（原Canton Road 720号；现代门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认永祥医院、720 CANTON ROAD；本轮未取得独立的中文院史、现代门牌或拆除/持续医疗使用资料。不能以广东路其他医院或邻近商业设施替代，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=696",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"
+      ]
+    },
+    {
+      "IDBAT": 1422,
+      "historicalName": "Yongyu Cotton Mill",
+      "historicalNameCorrectionZh": "永豫紗廠",
+      "historicalStartYear": 1920,
+      "coordinates": {
+        "wgs84": [
+          121.423865,
+          31.243533
+        ],
+        "gcj02": [
+          121.428505,
+          31.241694
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "永豫纱厂旧址（待核）",
+      "currentUse": "原纱厂楼体存废及现用途未核",
+      "currentAddress": "今光复西路379号一带（原Guangfu Xilu 379号；厂界待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认永豫紗廠、1920年及379 GUANGFU XILU；未找到可靠的厂史、现代宗地或旧厂房保留资料。道路级地址不足以指定现住宅/工业用途，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1422",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cotton+mill"
+      ]
+    },
+    {
+      "IDBAT": 283,
+      "historicalName": "Youying Primary School",
+      "historicalNameCorrectionZh": "有英小學",
+      "coordinates": {
+        "wgs84": [
+          121.4533,
+          31.225492
+        ],
+        "gcj02": [
+          121.457883,
+          31.223598
+        ]
+      },
+      "modernRoadAddress": "725 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "优英小学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "今延安中路725号一带（原Avenue Foch 725号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认優英小學、725 AVENUE FOCH；道路资料只能将Avenue Foch作分段道路名称，尚未获得725号现代门牌、学校沿革或楼体存废证据。公开搜索中出现的同名外区学校与本点无关，予以排除，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=283",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1566,
+      "historicalName": "Yu Family Tomb",
+      "historicalNameCorrectionZh": "郁氏山壯",
+      "historicalStartYear": 1894,
+      "coordinates": {
+        "wgs84": [
+          121.425222,
+          31.207062
+        ],
+        "gcj02": [
+          121.429857,
+          31.205204
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "郁氏山庄墓地旧址（待核）",
+      "currentUse": "墓地/墓葬存续及现用途未核",
+      "currentAddress": "Tanwei 119号旧址（现代地名及门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认郁氏山莊、1894年及119 TANWEI；本轮未找到可复核的现代道路、墓地迁移或现宗地资料。不能以其他郁氏墓地或公墓记录替代本点，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1566",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cemetery"
+      ]
+    },
+    {
+      "IDBAT": 78,
+      "historicalName": "Yuandong Hospital",
+      "historicalNameCorrectionZh": "遠東醫院",
+      "coordinates": {
+        "wgs84": [
+          121.472781,
+          31.223532
+        ],
+        "gcj02": [
+          121.477306,
+          31.221589
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "远东医院旧址（待核）",
+      "currentUse": "原医院楼体存废及现用途未核",
+      "currentAddress": "今乌鲁木齐南路130号一带（原Rue de Lagrene 130号；现代门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认遠東醫院、130 RUE DE LAGRENE；旧路名可作徐汇/法租界道路线索，但未找到现代130号、医院迁并或拆建档案。不能以附近医院或住宅POI替代原院址，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=78",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"
+      ]
+    },
+    {
+      "IDBAT": 759,
+      "historicalName": "Yuandong Primary School",
+      "historicalNameCorrectionZh": "遠東小學",
+      "coordinates": {
+        "wgs84": [
+          121.47501,
+          31.246501
+        ],
+        "gcj02": [
+          121.47953,
+          31.244562
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "远东小学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "今山西北路249号一带（原North Shanse Road 249-4；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认遠東小學、249-4 NORTH SHANSE ROAD；仅完成历史身份和道路级山西北路线索，未找到现代校址或校舍命运资料。地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=759",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private"
+      ]
+    },
+    {
+      "IDBAT": 793,
+      "historicalName": "Yuandong Shangke Hospital",
+      "historicalNameCorrectionZh": "遠東傷科醫院",
+      "coordinates": {
+        "wgs84": [
+          121.472443,
+          31.231094
+        ],
+        "gcj02": [
+          121.47697,
+          31.229155
+        ]
+      },
+      "modernRoadAddress": "69-3 武胜路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "远东伤科医院旧址（待核）",
+      "currentUse": "原医院楼体存废及现用途未核",
+      "currentAddress": "今武胜路69号一带（原Race Course Road 69-3；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认遠東傷科醫院、69-3 RACE COURSE ROAD；道路级可对应今武胜路，但未取得现代69号单体、医院沿革或拆除资料，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=793",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility"
+      ]
+    },
+    {
+      "IDBAT": 379,
+      "historicalName": "Yucai Junior High School",
+      "historicalNameCorrectionZh": "育才初級中學",
+      "coordinates": {
+        "wgs84": [
+          121.444046,
+          31.218863
+        ],
+        "gcj02": [
+          121.44865,
+          31.216984
+        ]
+      },
+      "modernRoadAddress": "79 常熟路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "育才初级中学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "今常熟路79号一带（原Route de Say-Zoong 79号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认育才初級中學、79 ROUTE DE SAY-ZOONG；道路资料支持旧路名今常熟路，但常熟路现有历史住宅/学校资料无法闭合79号原校舍，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=379",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private",
+        "https://zh.wikipedia.org/wiki/常熟路"
+      ]
+    },
+    {
+      "IDBAT": 54,
+      "historicalName": "Yucai Primary School",
+      "historicalNameCorrectionZh": "育材小學",
+      "coordinates": {
+        "wgs84": [
+          121.475411,
+          31.223662
+        ],
+        "gcj02": [
+          121.479928,
+          31.221712
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "育材小学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "Rue Hennequin 40号旧址（现代道路及门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认育材小學、40 RUE HENNEQUIN；本轮未找到Hennequin现代道路对应、门牌桥接或学校沿革，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=54",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private"
+      ]
+    },
+    {
+      "IDBAT": 812,
+      "historicalName": "Yuehua Primary School",
+      "historicalNameCorrectionZh": "樂華小學校",
+      "coordinates": {
+        "wgs84": [
+          121.466061,
+          31.225714
+        ],
+        "gcj02": [
+          121.470608,
+          31.22379
+        ]
+      },
+      "modernRoadAddress": "162 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "乐华小学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "今延安中路162号一带（原Avenue Foch 162号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认樂華小學校、162 AVENUE FOCH；道路级可对应今延安中路，但未找到162号校舍沿革、拆建或现机构资料，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=812",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private",
+        "https://zh.wikipedia.org/wiki/延安中路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 720,
+      "historicalName": "Yuelin Temple",
+      "historicalNameCorrectionZh": "岳林寺下院",
+      "coordinates": {
+        "wgs84": [
+          121.473446,
+          31.248901
+        ],
+        "gcj02": [
+          121.477971,
+          31.246968
+        ]
+      },
+      "modernRoadAddress": "822 海宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "月林寺旧址（待核）",
+      "currentUse": "原寺院存废及现用途未核",
+      "currentAddress": "今海宁路822号一带（原Haining Road 822号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认月林寺、822 HAINING ROAD；道路本身仍为海宁路，但未找到寺院中文沿革、现代门牌或遗址资料。不能据海宁路近邻建筑推断寺院现用途，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=720",
+        "https://zh.wikipedia.org/wiki/海宁路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 1329,
+      "historicalName": "Yuenaiwu Garden",
+      "historicalNameCorrectionZh": "月迺屋花園",
+      "coordinates": {
+        "wgs84": [
+          121.483666,
+          31.264121
+        ],
+        "gcj02": [
+          121.488158,
+          31.262166
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "月迺屋花园／学校旧址（待核）",
+      "currentUse": "原园林/学校功能与现用途未核",
+      "currentAddress": "今大连西路1177号一带（原Dixwell Road 1177号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认月迺屋花園、1177 DIXWELL ROAD，原FUNCTION同时指向学校/花园；本轮只确认历史索引和旧地址，未取得Dixwell现代道路、学校或花园现址桥接，保留功能冲突并建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1329",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private"
+      ]
+    },
+    {
+      "IDBAT": 955,
+      "historicalName": "Yufosi Xiayuan Temple",
+      "historicalNameCorrectionZh": "玉佛寺下院",
+      "coordinates": {
+        "wgs84": [
+          121.459498,
+          31.239218
+        ],
+        "gcj02": [
+          121.464065,
+          31.237316
+        ]
+      },
+      "modernRoadAddress": "853 成都北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "玉佛寺下院旧址（成都路线索）",
+      "currentUse": "成都路下院现用途未核；现玉佛寺主寺继续宗教活动",
+      "currentAddress": "原成都路853号；玉佛寺现主要寺址为安远路170号（非同址）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认玉佛寺下院、853 CHENGTU ROAD。玉佛寺官方资料和寺史确认现主要寺址在安远路170号；关于成都路853号的公开文章只指出旧地图标注/下院线索，未取得下院迁移、拆除或现宗地桥接。因此不把安远路主寺冒充成都路原址，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=955",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Religious",
+        "https://www.yufotemple.com/yfcq.html",
+        "https://www.sohu.com/a/237197487_804162"
+      ]
+    },
+    {
+      "IDBAT": 1343,
+      "historicalName": "Zhabei Cishantuan",
+      "historicalNameCorrectionZh": "日本軍彈藥庫",
+      "historicalStartYear": 1912,
+      "coordinates": {
+        "wgs84": [
+          121.460127,
+          31.245714
+        ],
+        "gcj02": [
+          121.464693,
+          31.243813
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "闸北慈善团／日本军弹药库旧址（名称冲突，待核）",
+      "currentUse": "旧机构/军用设施存废及现用途未核",
+      "currentAddress": "原南星路29号（今道路与门牌未闭合）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "输入名称为Zhabei Cishantuan，但Virtual Shanghai精确条目中文名显示日本軍彈藥庫，Histoire索引仅能确认机构条目和29 NANXING，存在历史名称/功能冲突。未找到可靠现代门牌、军用设施沿革或现宗地用途；不据同名慈善机构或道路近邻猜测，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1343",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Institutional+site"
+      ]
+    },
+    {
+      "IDBAT": 1396,
+      "historicalName": "Zhabei General Bureau of Public Works",
+      "historicalNameCorrectionZh": "閘北工程總局",
+      "coordinates": {
+        "wgs84": [
+          121.455205,
+          31.247404
+        ],
+        "gcj02": [
+          121.459785,
+          31.245515
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "闸北工程总局旧址（天目西路2号）",
+      "currentUse": "1956—2003年曾为闸北公安分局地址；2003年后现用途未核",
+      "currentAddress": "今天目西路2号一带（原Tianmu Xilu 2号）",
+      "currentUseRelationship": "same-site-reused",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认闸北工程总局、2 TIANMU XILU。上海公安史料记闸北、北站分局1956年迁入天目西路2号，至2003年再迁，证明同号后续公共机构使用；但未找到工程总局原楼体、拆改日期及2026现用途，不能把公安分局旧址直接当作原工程总局建筑，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1396",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Municipal+service",
+        "https://gaj.sh.gov.cn/shga/wzXxfbGj/detail?pa=887367aa1785f652f89cd8d0bb43e938"
+      ]
+    },
+    {
+      "IDBAT": 1339,
+      "historicalName": "Zhabei Theater",
+      "historicalNameCorrectionZh": "閘北大戲院",
+      "coordinates": {
+        "wgs84": [
+          121.461589,
+          31.243442
+        ],
+        "gcj02": [
+          121.466151,
+          31.241537
+        ]
+      },
+      "modernRoadAddress": "21 大田路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "闸北大戏院旧址（大统路一带）",
+      "currentUse": "旧戏院存废及现用途未核",
+      "currentAddress": "今大统路21号一带（原Tatung Road 21号）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认闸北大戏院、21 TATUNG ROAD；现代街道资料将Tatung Road对应大统路，并把闸北大戏院列作历史街道文化节点。未找到21号逐号现址、拆除/改建日期或当前业态，不能以大统路其他剧场（如更新舞台）代替，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1339",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Performance+site",
+        "https://mobile.epaper.routeryun.com/index.php/home/article/index/appkey/233/date/2023-03-14/page/1343126/aid/7492825.html"
+      ]
+    },
+    {
+      "IDBAT": 1380,
+      "historicalName": "Zhabei Water & Power Company (Plant)",
+      "historicalNameCorrectionZh": "閘北水電廠",
+      "historicalStartYear": 1910,
+      "coordinates": {
+        "wgs84": [
+          121.447741,
+          31.25042
+        ],
+        "gcj02": [
+          121.452339,
+          31.248548
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "闸北水电公司（恒丰路旧厂址线索）",
+      "currentUse": "旧水电厂/办公设施经历迁建、并撤；原点现宗地用途未核",
+      "currentAddress": "恒丰路底、叉袋角及今上海火车站附近（原Hengfeng Road，门牌缺失）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai条目将ID 1380记为闸北水电公司Plant、地址仅?? HENGFENG。地方电力史料确认恒丰路底/叉袋角为早期闸北水电公司旧厂，后迁军工路并形成现闸北发电厂；现有文保资料描述的是虹口阿瑞里办公房或军工路新厂，均不足以闭合本条无门牌原点，故仍unresolved/no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1380",
+        "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-zhabei-hydropower-company-523447/",
+        "https://www.jfdaily.com.cn/wx/detail.do?id=913196"
+      ]
+    },
+    {
+      "IDBAT": 963,
+      "historicalName": "Zhang Manqing Ophtalmology Clinic",
+      "historicalNameCorrectionZh": "張曼青眼科",
+      "coordinates": {
+        "wgs84": [
+          121.457532,
+          31.23605
+        ],
+        "gcj02": [
+          121.462104,
+          31.234151
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "张曼卿眼科诊所旧址（待核）",
+      "currentUse": "原诊所存废及现用途未核",
+      "currentAddress": "原Carter Road 154—156号（现代道路、门牌及楼体待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认张曼青眼科、154—156 CARTER ROAD；现有索引没有现代门牌、诊所沿革或建筑存续信息。Carter Road旧路名无法仅凭道路级对应闭合到现单体，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=963",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Institutional+site"
+      ]
+    },
+    {
+      "IDBAT": 1147,
+      "historicalName": "Zhang Qin Hospital",
+      "historicalNameCorrectionZh": "張琴醫院",
+      "coordinates": {
+        "wgs84": [
+          121.448287,
+          31.238851
+        ],
+        "gcj02": [
+          121.452883,
+          31.236973
+        ]
+      },
+      "modernRoadAddress": "262-13 昌化路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "张琴医院旧址（待核）",
+      "currentUse": "原医院楼体存废及现用途未核",
+      "currentAddress": "今昌化路262号一带（原Tonquin Road 262-13号；现代门牌待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认张琴医院、262-13 TONQUIN ROAD；道路资料可将Tonquin Road作为昌化路道路线索，但未取得医院迁并、旧门牌转换或现单体用途证据。不能把同区域其他医院或康定/昌化路近邻设施套入本点，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1147",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Institutional+site",
+        "https://zh.wikipedia.org/wiki/昌化路"
+      ]
+    },
+    {
+      "IDBAT": 645,
+      "historicalName": "Zhe-Hu Crepe Trade Association",
+      "historicalNameCorrectionZh": "浙湖縐業公會",
+      "coordinates": {
+        "wgs84": [
+          121.475369,
+          31.241664
+        ],
+        "gcj02": [
+          121.479888,
+          31.239722
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "浙湖绉业公会旧址（待核）",
+      "currentUse": "公会旧址存废及现用途未核",
+      "currentAddress": "今北京东路522号一带（原Peking Road 522号；现代门牌/楼栋待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认浙湖縐業公會、522 PEKING ROAD；旧路名可作北京路/北京东路范围线索，但未找到公会沿革、现代逐号门牌或楼体现状。会馆类历史身份不能由现行同号商铺推定用途，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=645",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Association",
+        "https://zh.wikipedia.org/wiki/北京东路_(上海)"
+      ]
+    },
+    {
+      "IDBAT": 1456,
+      "historicalName": "Zhejin Guild",
+      "historicalNameCorrectionZh": "浙金公所",
+      "historicalStartYear": 1880,
+      "coordinates": {
+        "wgs84": [
+          121.477397,
+          31.209299
+        ],
+        "gcj02": [
+          121.481906,
+          31.207337
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "浙金公所旧址（待核）",
+      "currentUse": "公所旧址存废及现用途未核",
+      "currentAddress": "今丽园路498号一带（原Liyuan Road 498号；现代门牌桥接待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认浙金公所、498 LIYUAN；会馆研究文献仅能确认浙金公所为金华籍行业/同乡组织及清末设置，未找到498号现代道路、逐号门牌或建筑现状。道路名称存在译写差异，故不把其他公所或现住宅套入本点，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1456",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Guild",
+        "https://s3.us-west-1.wasabisys.com/p-library/books/666e6ae15f05cab944cdd725c0cf6118.pdf"
+      ]
+    },
+    {
+      "IDBAT": 1013,
+      "historicalName": "Zhende Junior High School",
+      "historicalNameCorrectionZh": "上海私立振徳初級中學校",
+      "coordinates": {
+        "wgs84": [
+          121.447228,
+          31.230911
+        ],
+        "gcj02": [
+          121.451826,
+          31.229032
+        ]
+      },
+      "modernRoadAddress": "1215 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "振德初级中学旧址（待核）",
+      "currentUse": "原中学校舍存废及现用途未核",
+      "currentAddress": "今北京西路1215号一带（原Avenue Road 1215号；现代门牌/楼栋待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认振德初级中学、1215 AVENUE ROAD；Histoire索引同时确认同号振德小学及幼稚园。道路资料支持Avenue Road为今北京西路，但未找到两校的迁并、拆除或现地块桥接；两条历史记录保留独立，不因同址合并，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1013",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1014,
+      "historicalName": "Zhende Primary School and Kindergarten",
+      "historicalNameCorrectionZh": "振徳小學及幼稚園",
+      "coordinates": {
+        "wgs84": [
+          121.447258,
+          31.230923
+        ],
+        "gcj02": [
+          121.451856,
+          31.229044
+        ]
+      },
+      "modernRoadAddress": "1215 北京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "振德小学及幼稚园旧址（待核）",
+      "currentUse": "原小学/幼稚园校舍存废及现用途未核",
+      "currentAddress": "今北京西路1215号一带（原Avenue Road 1215号；现代门牌/楼栋待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai与Histoire de Chine确认振德小学及幼稚园、1215 AVENUE ROAD；同号另有振德初级中学记录。仅完成北京西路道路级映射，未取得学校沿革、现代门牌或楼栋存续证据；不把同号不同学段合并，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1014",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Kindergarten",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 58,
+      "historicalName": "Zhendong Primary School",
+      "historicalNameCorrectionZh": "震東小學",
+      "coordinates": {
+        "wgs84": [
+          121.475708,
+          31.22529
+        ],
+        "gcj02": [
+          121.480224,
+          31.22334
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": "震东小学旧址（待核）",
+      "currentUse": "原校舍存废及现用途未核",
+      "currentAddress": "原Rue Buissonnet 93-13（现代道路、门牌及校舍待核）",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai精确条目确认震東小學、93-13 RUE BUISSONNET；Histoire索引亦列同名学校，但未找到Buissonnet现代道路、门牌转换、迁并或建筑现状资料。搜索到的外省同名小学与上海旧址无关，予以排除，地图建议no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=58",
+        "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School"
+      ]
+    }
+  ]
+}

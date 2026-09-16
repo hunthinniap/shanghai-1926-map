@@ -1,0 +1,22 @@
+{
+  "validatedAt":"2026-09-14",
+  "round":"r4",
+  "scope":"ID756; no map write",
+  "checks":[
+    "022 input snapshot unchanged and ID756 originalInput exact",
+    "022 results/evidence ID756 status and conclusion agree",
+    "all ID756 result source URLs have matching sourceReviews",
+    "TSEPOO ROAD mapped to 七浦路 and kept separate from Chapoo Road/乍浦路",
+    "same-address Xu-family gate relocation kept separate from clinic identity",
+    "nearby 303/368 market POIs not promoted to exact 342 current use",
+    "JSON parse and git diff --check"
+  ],
+  "failures":[],
+  "inputSha256":"42420a19f71deb8ce674b1cda741060664dd45ea54ad9464ac8ff16e3da1629e",
+  "record":"756",
+  "progressDelta":{"partial":1,"notStarted":-1},
+  "statusDelta":{"likely":1,"unresolved":-1},
+  "recommendationDelta":{"review":1,"no":-1},
+  "mapAction":"none",
+  "notes":"旧022-validate.mjs仍是r2基线校验器；本文件只记录本轮增量校验，不覆盖旧验证结果。"
+}

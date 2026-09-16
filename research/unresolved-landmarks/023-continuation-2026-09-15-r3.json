@@ -1,0 +1,49 @@
+{
+  "batch": "023",
+  "date": "2026-09-15",
+  "round": "r3",
+  "scopeIds": [732, 78, 759, 793, 379, 54, 1438, 812, 720, 1329],
+  "recordCount": 10,
+  "researchProgress": "partial",
+  "findings": [
+    {"recordId":732,"status":"partial","verificationStatus":"likely","mapWriteRecommendation":"review","finding":"虞洽卿住宅704 Haining Road与海宁路702—704号住宅线索相符，原点到具体楼体未闭合。"},
+    {"recordId":78,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"远东医院130 Rue de Lagrene身份确认，现代门牌和楼体未核。"},
+    {"recordId":759,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"远东小学249-4 North Shanse Road身份确认，现址和校舍命运未核。"},
+    {"recordId":793,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"远东伤科医院69-3 Race Course Road身份确认，现代单体和用途未核。"},
+    {"recordId":379,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"育才初级中学79 Route de Say-Zoong身份确认，常熟路道路级映射未闭合现代校舍。"},
+    {"recordId":54,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"育材小学40 Rue Hennequin身份确认，现代道路和现用途未核。"},
+    {"recordId":1438,"status":"partial","verificationStatus":"likely","mapWriteRecommendation":"review","finding":"月村472 Edinburgh Road→江苏路480弄，部分住宅因道路拓宽/邮政楼建设消失，现存范围和原点楼栋待核。"},
+    {"recordId":812,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"乐华小学162 Avenue Foch身份确认，延安中路162号现代校舍未核。"},
+    {"recordId":720,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"月林寺822 Haining Road身份确认，寺院现代遗址和用途未核。"},
+    {"recordId":1329,"status":"partial","verificationStatus":"unresolved","mapWriteRecommendation":"no","finding":"月迺屋花园1177 Dixwell Road身份确认，旧功能字段与现代对应均未闭合。"}
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/data/buildings?ID=732",
+    "https://read01.com/NNDLAe3.html",
+    "https://zh.wikipedia.org/wiki/海宁路_(上海)",
+    "https://www.virtualshanghai.net/data/buildings?ID=78",
+    "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility",
+    "https://www.virtualshanghai.net/data/buildings?ID=759",
+    "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Private",
+    "https://www.virtualshanghai.net/data/buildings?ID=793",
+    "https://www.virtualshanghai.net/data/buildings?ID=379",
+    "https://zh.wikipedia.org/wiki/常熟路",
+    "https://www.virtualshanghai.net/data/buildings?ID=54",
+    "https://www.virtualshanghai.net/data/buildings?ID=1438",
+    "https://www.shobserver.cn/wx/detail.do?id=801461",
+    "https://zh.wikipedia.org/wiki/月村",
+    "https://www.virtualshanghai.net/data/buildings?ID=812",
+    "https://zh.wikipedia.org/wiki/延安中路_(上海)",
+    "https://www.virtualshanghai.net/data/buildings?ID=720",
+    "https://www.virtualshanghai.net/data/buildings?ID=1329"
+  ],
+  "limitations": [
+    "本轮以历史索引、道路资料和可用现代地址线索为主，未完成OSM几何预查。",
+    "未将同号道路、附近学校/医院或通用住宅目录当作原建筑存续证明。",
+    "732和1438均与Edinburgh/Haining住宅线索有关，仍按独立ID保留，不合并。"
+  ],
+  "nextResearch": [
+    "继续处理023最后20条，随后补做likely候选的现代地籍/保护名录核验。",
+    "优先查732、1438的住宅范围，及医院/学校记录的旧门牌与现址关系。"
+  ]
+}

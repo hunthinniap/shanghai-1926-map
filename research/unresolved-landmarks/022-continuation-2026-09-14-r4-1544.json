@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "batch": "022",
+  "round": "r4",
+  "startedAt": "2026-09-14",
+  "recordIds": [1544],
+  "scopeNote": "处理固定022批成员1544徐汇女中学；保留原始输入、地点组、坐标和空间预查，区分45号复合院区内学校、圣母院及后续商业/餐厅用途，不把现四中天钥桥路100号当作旧址现址。",
+  "queries": [
+    {"query":"\"徐汇女中\" \"漕溪北路45号\"","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"徐汇女中 汇明女子中学 上海市第四中学 沿革","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"漕溪北路45号 201号 徐家汇圣母院 上海老站","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"上海老站 漕溪北路201号 2023 停业","executedAt":"2026-09-14","method":"web-search"}
+  ],
+  "sources": [
+    {
+      "url":"https://www.virtualshanghai.net/data/buildings?ID=1544",
+      "title":"Xuhui Girl Junior High School | Virtual Shanghai",
+      "access":"full-text exact record",
+      "finding":"精确ID1544为徐匯女中學/Xuhui Girl Junior High School，1867，45 CAOXI BEILU，教育设施/私立/世俗/中学。"
+    },
+    {
+      "url":"https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Secular",
+      "title":"Xuhui Girl Junior High School | Histoire de Chine",
+      "access":"full-text",
+      "finding":"独立索引列出徐匯女中學、1867、45 CAOXI BEILU及教育类型。"
+    },
+    {
+      "url":"https://sh4z.xhedu.sh.cn/cms/app/info/cat/index.php/169",
+      "title":"上海市第四中学历史材料专区",
+      "access":"full-text",
+      "finding":"上海四中官网记学校创建于1867、前身经言小学/崇德女校；当前学校地址为天钥桥路100号。"
+    },
+    {
+      "url":"https://www.whb.cn/zhuzhan/kandian/20170918/103182_3.html",
+      "title":"汇思想：从一到十二，你知道上海那些以数字命名的学校吗？",
+      "access":"full-text",
+      "finding":"文汇报沿革记徐汇女子中学创于1867、1934年由崇德女校改名，并与启明女校共同构成后来的上海四中教育谱系。"
+    },
+    {
+      "url":"https://www.shanghai.gov.cn/newshanghai2018/zfgb/201410/ZFGB1410.pdf",
+      "title":"上海市人民政府公报（徐家汇天主教历史建筑群）",
+      "access":"pdf-full-text",
+      "finding":"官方名录第4页列徐家汇圣母院旧址，漕溪北路201号，1929年，近现代重要史迹及代表性建筑。"
+    },
+    {
+      "url":"https://www.sohu.com/a/705053063_121123697",
+      "title":"曾连续入选米其林！在徐汇开了23年的本帮菜餐厅暂停营业",
+      "access":"full-text",
+      "finding":"报道说明45号复合院区包含徐汇女中/启明女校，1999年起部分拆迁、2009年建成中金国际广场；2001年圣母院旧址租给上海老站。"
+    },
+    {
+      "url":"https://sghexport.shobserver.com/html/baijiahao/2023/07/23/1080490.html",
+      "title":"这家开业23年的上海传奇本帮菜馆关门了？",
+      "access":"full-text",
+      "finding":"上海观察/新闻坊报道上海老站徐家汇店因租约到期于2023-07-15为最后营业日，车厢和标识随后搬离。"
+    },
+    {
+      "url":"https://blog.sina.com.cn/s/blog_5d1bdf480101g0bz.html",
+      "title":"漕溪北路201号原徐家汇圣母院",
+      "access":"full-text",
+      "finding":"地方建筑记录直接称201号为原45号，院内包含徐汇女子中学等机构，2013年时为上海老站餐馆。"
+    }
+  ],
+  "findings": [
+    {
+      "IDBAT":1544,
+      "historicalIdentity":"徐匯女中學 / Xuhui Girl Junior High School",
+      "historicalAddress":"45 CAOXI BEILU；现代地址候选为漕溪北路201号（原45号）复合院区",
+      "buildingFate":"复合院区部分校舍据媒体自1999年起拆迁，201号圣母院主体列为市级文物保护单位；1544原点具体单体未闭合",
+      "currentUse":"201号原上海老站餐厅已于2023-07-15停业；建筑后续用途/开放状态未核",
+      "relationship":"same-site-repurposed",
+      "status":"likely",
+      "mapWriteRecommendation":"review",
+      "limitations":[
+        "现上海市第四中学在天钥桥路100号，属于学校继承线，不是45号原址现址。",
+        "45号复合院区内徐汇女中、圣母院、启明女校等机构的具体楼栋/楼层未由地籍或平面闭合。",
+        "1999年起拆迁报道为院区级叙述，不能判定1544原点所在单体已拆或保留。",
+        "2023-07-15之后201号建筑的现行经营/开放用途未找到可核资料。"
+      ]
+    }
+  ],
+  "mapAction":"none",
+  "notes":"本轮更新022主结果/evidence中的1544研究进度；未移动坐标、修改原始输入、道路、地点组或地图图层。"
+}

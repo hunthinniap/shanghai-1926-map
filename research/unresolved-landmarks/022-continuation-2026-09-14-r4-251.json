@@ -1,0 +1,54 @@
+{
+  "batch": "022",
+  "date": "2026-09-14",
+  "round": "r4",
+  "recordId": 251,
+  "recordName": "Xinya Junior High School / 新亞中學",
+  "originalAddress": "553 ROUTE LAFAYETTE",
+  "researchProgress": "partial",
+  "verificationStatus": "likely",
+  "mapWriteRecommendation": "review",
+  "queries": [
+    {
+      "query": "\"Xinya Junior High School\" \"553 ROUTE LAFAYETTE\"",
+      "purpose": "确认历史实体与原始地址"
+    },
+    {
+      "query": "Route Lafayette 辣斐德路 复兴中路 553",
+      "purpose": "核对道路旧名与今名"
+    },
+    {
+      "query": "复兴中路553号 复兴坊 历史建筑 住宅",
+      "purpose": "核对现代候选建筑与当前用途"
+    },
+    {
+      "query": "新亚中学 辣斐德路553号 上海",
+      "purpose": "寻找学校迁址、校舍或机构沿革独立记录"
+    }
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/data/buildings?ID=251",
+    "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Secular",
+    "https://data.library.sh.cn/entity/road/4k5d4eorop643342",
+    "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+    "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+    "https://www.openstreetmap.org/way/494309300"
+  ],
+  "findings": {
+    "identity": "Virtual Shanghai与Histoire de Chine独立索引均确认新亚中学／新亞中學、553 ROUTE LAFAYETTE及私立世俗中学类型；未取得可核的运营时间线。",
+    "address": "上海图书馆道路沿革确认Route Lafayette（辣斐德路）为今复兴中路，原553号可规范为复兴中路553号；官方历保范围覆盖复兴坊553弄及相邻门牌。",
+    "currentUseCandidate": "上海市房屋管理局列4C015辣斐坊现名复兴坊，黄浦区官方环评将该处作为居民区；可作为新式里弄住宅／社区级候选。",
+    "spatial": "原点命中OSM思南公馆保护面，点在面内、距边界约7.3米；仅为空间辅助，不能据此把新亚中学等同思南公馆或确认具体楼栋。"
+  },
+  "limitations": [
+    "未找到新亚中学创办、停办、迁址或校舍楼栋的独立档案。",
+    "553号旧门牌与复兴坊具体入口、楼栋和历史地籍边界未闭合。",
+    "复兴坊居民区证据为社区级现状，不是553号逐栋产权或经营名录。",
+    "本轮不移动原坐标、不修改道路、不合并历史实体、不写入地图。"
+  ],
+  "nextResearch": [
+    "检索上海教育志、黄浦区学校档案及旧报刊，确定新亚中学运营年代与停办／迁址。",
+    "取得复兴坊553弄历史地籍、保护图或门牌资料，核学校占用的具体楼栋与原点关系。",
+    "补查553号当前逐栋使用单位；只有范围和日期均可复核时再考虑地图回填。"
+  ]
+}

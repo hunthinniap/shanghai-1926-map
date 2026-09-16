@@ -1,0 +1,1641 @@
+{
+  "artifactType": "independent-research-findings",
+  "batch": "022",
+  "round": "2026-09-13-r3-factories",
+  "createdAt": "2026-09-14T01:12:52Z",
+  "researchExecutionDates": [
+    "2026-09-13"
+  ],
+  "writeDate": "2026-09-14",
+  "scopeIds": [
+    1377,
+    1210
+  ],
+  "scope": "只写本专属调查JSON；不改主results/evidence/地图/道路/原字段/分组，不新查Overpass。",
+  "inputFile": "research/unresolved-landmarks/022-input.json",
+  "inputSha256": "42420a19f71deb8ce674b1cda741060664dd45ea54ad9464ac8ff16e3da1629e",
+  "previousMaterials": [
+    "research/prompts/continue-site-research.md（完整读取）",
+    "022-context.json（相应记录和全部两成员）",
+    "022-osm-nearby.json（相应两点缓存）",
+    "022-evidence.json（相应两条旧记录）"
+  ],
+  "searchLog": {
+    "date": "2026-09-13",
+    "scopeIds": [
+      1377,
+      1210
+    ],
+    "queries": [
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "上海 \"新裕二厂\" \"长寿\"",
+        "executedAt": "2026-09-13 14:14:45 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "上海 \"新裕纺织\" \"第二厂\"",
+        "executedAt": "2026-09-13 14:14:45 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"秋水云庐\" \"棉纺\"",
+        "executedAt": "2026-09-13 14:14:45 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"上海第十四棉纺织厂\" \"秋水云庐\"",
+        "executedAt": "2026-09-13 14:15:02 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"新裕\" \"长寿路30号\"",
+        "executedAt": "2026-09-13 14:15:02 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"秋水云庐\" \"原\" \"厂\"",
+        "executedAt": "2026-09-13 14:15:02 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"新裕\" \"Robison\"",
+        "executedAt": "2026-09-13 14:15:02 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "site.shtong.gov.cn \"第十四棉纺织厂\"",
+        "executedAt": "2026-09-13 14:15:24 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "site.shpt.gov.cn \"秋水云庐\" \"十四\"",
+        "executedAt": "2026-09-13 14:15:24 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"新裕\" \"溥益\" \"长寿\"",
+        "executedAt": "2026-09-13 14:15:24 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"上海第十四棉纺织厂\" \"新裕\"",
+        "executedAt": "2026-09-13 14:16:03 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"新裕\" \"长寿路\" 8",
+        "executedAt": "2026-09-13 14:16:03 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "site.shpt.gov.cn \"秋水云庐\" \"厂址\"",
+        "executedAt": "2026-09-13 14:16:03 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"Robison Road\" \"长寿\"",
+        "executedAt": "2026-09-13 14:16:03 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "site.shpt.gov.cn \"秋水云庐\" \"2025\"",
+        "executedAt": "2026-09-13 14:16:47 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "site.shpt.gov.cn \"秋水云庐\" \"28\"",
+        "executedAt": "2026-09-13 14:16:47 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"新裕纺织第二厂\" \"十四\" -site:kknews.cc -site:read01.com",
+        "executedAt": "2026-09-13 14:16:47 UTC"
+      },
+      {
+        "IDBAT": [
+          1377,
+          1210
+        ],
+        "q": "\"上海第十四棉纺织厂\" \"长寿路30\" -site:kknews.cc -site:read01.com",
+        "executedAt": "2026-09-13 14:16:47 UTC"
+      }
+    ],
+    "virtualShanghaiReads": [
+      {
+        "IDBAT": 1377,
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=1377",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "Description表，web正文13–24行",
+        "rows": "Building ID 1377; English name Xinyu Cotton Mill No. 2; Chinese Name 新裕二厰; Address 8 ROBISON ROAD; Date Construction 1924; Main Type Industrial site; Sub Type Factory; Textile; Cotton; Weaving; Pos X 351593.0517; Pos Y 3458057.9793",
+        "limitation": "数据库原字段非独立地籍，不确认1924年名称已使用。"
+      },
+      {
+        "IDBAT": 1210,
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=1210",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "curl取得HTML，Description表完整逐行核读",
+        "rows": "Building ID 1210; English name Xinyu Textile Factory  No. 2; Chinese Name 新裕紡織第二廠; Address 8 ROBISON ROAD; Date Construction 1924; Main Type Industrial site; Sub Type Factory; Textile industry; Cotton mill; Pos X 351580.1131; Pos Y 3458055.2426",
+        "limitation": "web英文精确页与中文精确页Internal Error，后curl成功；保留原固定输入空格与拼写，不把两页算两份独立史料。"
+      }
+    ],
+    "webReads": [
+      {
+        "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "人物精确页：姓名、学年度、院别、职务或系别、通讯处",
+        "outcome": "通讯处明确记为上海长寿路八号新裕纺织二厂，支持独立于VS的历史机构及八号门牌。",
+        "limitations": "学年度1923不是通讯处采录年份；网页未见原校友录封面、版次、原页影像，不能把这条资料回推为1923厂址证明。URL含2012/10/24但正文未显示发布日期。"
+      },
+      {
+        "url": "https://www.thepaper.cn/newsDetail_forward_4194262",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "上海第十四棉纺织厂小节，正文113–120行；文末资料来源长寿视野",
+        "outcome": "长寿路30号上棉十四厂沿革列1924溥益二厂、1935年11月新裕二厂、1937年2月诚孚代管、1954公私合营、1957国营新裕、1958年12月国营上棉十四厂。",
+        "limitations": "属于政务传播的沿革摘要，不是改门牌或宗地契据；文末泛称厂房消失不能证明本输入具体旧楼全部拆除。相关厂照点击失败。"
+      },
+      {
+        "url": "https://www.jiemian.com/article/2735198.html",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "reprint",
+        "locator": "桌面页日期2018/12/24 13:09；秋水云庐小节（移动页97–103行）；文末来源上海普陀",
+        "outcome": "正文直接说明秋水云庐原上棉十四厂厂址、近长寿路桥，已建高层花园住宅，形成超出OSM邻近的现代场地联系。",
+        "limitations": "这篇支持2018的住宅与厂址叙述；旧貌和新貌图均403未看，微信原文失败。原厂范围及旧楼保留、拆除年不明。与长寿视野沿革摘要属同一地方政务传播来源家族，不按独立见证累加。"
+      },
+      {
+        "url": "https://www.sohu.com/a/235629401_809597",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "1939/1948行号图说明及文末新裕纺织二厂图注（278–280行）",
+        "outcome": "图注把新裕二厂记为长寿路101号、原溥益纱厂；指出与八号、后期30号之间尚需核对的门牌差异。正文列出1939劳勃生路北、1948长寿路行号图线索。",
+        "limitations": "非官方地籍记录；图注可能错注或不同门牌时代，不能静默选择。3张相关行号图/厂照实际点击均Timeout，未核图内门牌，未配准。"
+      },
+      {
+        "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "2026年第2期网页摘要与参考文献，注释Q198-1-1、Q198-1-28、Q198-1-33、Q198-1-15",
+        "outcome": "核到诚孚代管新裕的研究背景及可直接追查的上海市档案馆诚孚企业档案编号，包含两厂一所简史、1949调查登记表和1953合并改组文件。",
+        "limitations": "这里只读开放摘要与注释；网页全文要求CNKI，论文PDF及原档均未取得，不能声称已核文章全部正文或原档厂界。"
+      },
+      {
+        "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "pdf",
+        "locator": "唯一第1页全页图像核读；备案编号普陀2024-27、28、29三行",
+        "outcome": "2024-08-07秋水云庐3号楼A/C/D单元地下人防对应长寿路28弄15号楼、16–19、21–22，备案单位上海凯尚物业，备案用途其他用途。",
+        "limitations": "仅证明相应地下工程地址及2024备案状态；不能把地下其他用途外推为全小区用途，也不证明1924厂房保存。发布日期正文未给，表内记录日为2024-08-07。"
+      },
+      {
+        "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "2024年度主要工作回顾，第七节推进社区治理（68行）",
+        "outcome": "报告明确在2024工作回顾中提及缓解秋水云庐停车难，支持该居住社区仍纳入实际社区治理。",
+        "limitations": "社区层面活动不能认定历史厂房逐栋现用途，也不是2026现场调查。"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "历史小节",
+        "outcome": "路名释读Robison Road为劳勃生路、今长寿路，用于检索原地址。",
+        "limitations": "只做路名解释，不证明门牌8直接变30或28弄；官方引用链接实际404。"
+      },
+      {
+        "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+        "accessedAt": "2026-09-13",
+        "accessMethod": "full-text",
+        "locator": "正文全文及新裕、诚孚全文检索",
+        "outcome": "实际读该指南，未检出新裕或诚孚；保留无效检索路径说明。",
+        "limitations": "未检出不等于馆藏无Q198档案；已由《史林》注释得到具体档号，本指南不作厂址支持证据。"
+      }
+    ],
+    "newSpatialQueries": 0,
+    "reusedSpatialQueryDate": "2026-09-12",
+    "actualQueryCount": 18,
+    "queryCountingNote": "18个实际执行查询同时服务两条同址记录，不能当作36次独立查询；两条VS精确ID各自核读。"
+  },
+  "sourceReviews": [
+    {
+      "url": "https://www.virtualshanghai.net/data/buildings?ID=1377",
+      "title": "Xinyu Cotton Mill No. 2 | Virtual Shanghai",
+      "publisher": "Virtual Shanghai",
+      "publishedAt": null,
+      "accessMethod": "full-text",
+      "locator": "Description表 Building ID、English name、Chinese Name、Address、Date Construction、Pos X/Y（web正文13–24行）",
+      "supports": "精确ID1377对应新裕二厰，8 ROBISON ROAD，1924，原点351593.0517/3458057.9793。",
+      "limitations": "1924系页面Date Construction字段，不能据此断言新裕名称于1924已使用；网页未给原图或厂界。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "Virtual Shanghai"
+    },
+    {
+      "url": "https://www.virtualshanghai.net/data/buildings?ID=1210",
+      "title": "Xinyu Textile Factory No. 2 | Virtual Shanghai",
+      "publisher": "Virtual Shanghai",
+      "publishedAt": null,
+      "accessMethod": "full-text",
+      "locator": "curl取得精确ID1210 HTML，Description完整表逐行核读（web精确英文及中文页均Internal Error后采用curl）",
+      "supports": "精确ID1210对应新裕紡織第二廠，8 ROBISON ROAD，1924，351580.1131/3458055.2426。",
+      "limitations": "原英文HTML为Xinyu Textile Factory  No. 2，中间双空格不改固定输入；本页与1377属同一数据库，非两份独立史料。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "Virtual Shanghai"
+    },
+    {
+      "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+      "title": "浙江档案数据库·浙江大学校友录：袁绳武",
+      "publisher": "浙江省档案馆（浙江档案数据库）",
+      "publishedAt": null,
+      "accessMethod": "full-text",
+      "locator": "人物精确页：姓名、学年度、院别、职务或系别、通讯处",
+      "supports": "通讯处明确记为上海长寿路八号新裕纺织二厂，支持独立于VS的历史机构及八号门牌。",
+      "limitations": "学年度1923不是通讯处采录年份；网页未见原校友录封面、版次、原页影像，不能把这条资料回推为1923厂址证明。URL含2012/10/24但正文未显示发布日期。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "浙江档案馆-浙大校友录"
+    },
+    {
+      "url": "https://www.thepaper.cn/newsDetail_forward_4194262",
+      "title": "侬晓得伐？谈起“老底子”的普陀，绕不开的竟是“棉纺”......",
+      "publisher": "澎湃号·政务，资料来源长寿视野",
+      "publishedAt": "2019-08-18",
+      "accessMethod": "full-text",
+      "locator": "上海第十四棉纺织厂小节，正文113–120行；文末资料来源长寿视野",
+      "supports": "长寿路30号上棉十四厂沿革列1924溥益二厂、1935年11月新裕二厂、1937年2月诚孚代管、1954公私合营、1957国营新裕、1958年12月国营上棉十四厂。",
+      "limitations": "属于政务传播的沿革摘要，不是改门牌或宗地契据；文末泛称厂房消失不能证明本输入具体旧楼全部拆除。相关厂照点击失败。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "上海普陀-长寿视野工业史"
+    },
+    {
+      "url": "https://www.jiemian.com/article/2735198.html",
+      "title": "满满的回忆！普陀这条最“吉利”的路，老早底额样子侬还认得伐？",
+      "publisher": "界面新闻转载上海普陀",
+      "publishedAt": "2018-12-24",
+      "accessMethod": "reprint",
+      "locator": "桌面页日期2018/12/24 13:09；秋水云庐小节（移动页97–103行）；文末来源上海普陀",
+      "supports": "正文直接说明秋水云庐原上棉十四厂厂址、近长寿路桥，已建高层花园住宅，形成超出OSM邻近的现代场地联系。",
+      "limitations": "这篇支持2018的住宅与厂址叙述；旧貌和新貌图均403未看，微信原文失败。原厂范围及旧楼保留、拆除年不明。与长寿视野沿革摘要属同一地方政务传播来源家族，不按独立见证累加。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "上海普陀-长寿视野工业史"
+    },
+    {
+      "url": "https://www.sohu.com/a/235629401_809597",
+      "title": "中国现代工业重要发祥地——长寿路街道（上）",
+      "publisher": "搜狐号·影像档案库",
+      "publishedAt": "2018-06-13",
+      "accessMethod": "full-text",
+      "locator": "1939/1948行号图说明及文末新裕纺织二厂图注（278–280行）",
+      "supports": "图注把新裕二厂记为长寿路101号、原溥益纱厂；指出与八号、后期30号之间尚需核对的门牌差异。正文列出1939劳勃生路北、1948长寿路行号图线索。",
+      "limitations": "非官方地籍记录；图注可能错注或不同门牌时代，不能静默选择。3张相关行号图/厂照实际点击均Timeout，未核图内门牌，未配准。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "影像档案库"
+    },
+    {
+      "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc",
+      "title": "近代华商纱厂的委托经营问题研究——以诚孚公司为中心的考察",
+      "publisher": "《史林》期刊，王仰旭、廖大伟",
+      "publishedAt": "2026-04-01",
+      "accessMethod": "full-text",
+      "locator": "2026年第2期网页摘要与参考文献，注释Q198-1-1、Q198-1-28、Q198-1-33、Q198-1-15",
+      "supports": "核到诚孚代管新裕的研究背景及可直接追查的上海市档案馆诚孚企业档案编号，包含两厂一所简史、1949调查登记表和1953合并改组文件。",
+      "limitations": "这里只读开放摘要与注释；网页全文要求CNKI，论文PDF及原档均未取得，不能声称已核文章全部正文或原档厂界。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "史林2026-02-王仰旭廖大伟"
+    },
+    {
+      "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+      "title": "2024年8月民防工程备案信息",
+      "publisher": "上海市普陀区政府",
+      "publishedAt": null,
+      "accessMethod": "pdf",
+      "locator": "唯一第1页全页图像核读；备案编号普陀2024-27、28、29三行",
+      "supports": "2024-08-07秋水云庐3号楼A/C/D单元地下人防对应长寿路28弄15号楼、16–19、21–22，备案单位上海凯尚物业，备案用途其他用途。",
+      "limitations": "仅证明相应地下工程地址及2024备案状态；不能把地下其他用途外推为全小区用途，也不证明1924厂房保存。发布日期正文未给，表内记录日为2024-08-07。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "普陀区-202408民防备案"
+    },
+    {
+      "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html",
+      "title": "2025年长寿路街道社区代表会议报告",
+      "publisher": "上海市普陀区长寿路街道办事处",
+      "publishedAt": "2025-03-07",
+      "accessMethod": "full-text",
+      "locator": "2024年度主要工作回顾，第七节推进社区治理（68行）",
+      "supports": "报告明确在2024工作回顾中提及缓解秋水云庐停车难，支持该居住社区仍纳入实际社区治理。",
+      "limitations": "社区层面活动不能认定历史厂房逐栋现用途，也不是2026现场调查。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "长寿路街道2025社区代表会议"
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+      "title": "长寿路（上海）",
+      "publisher": "维基百科",
+      "publishedAt": null,
+      "accessMethod": "full-text",
+      "locator": "历史小节",
+      "supports": "路名释读Robison Road为劳勃生路、今长寿路，用于检索原地址。",
+      "limitations": "只做路名解释，不证明门牌8直接变30或28弄；官方引用链接实际404。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "维基百科-长寿路"
+    },
+    {
+      "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+      "title": "馆藏民国时期上海纺织企业档案指南",
+      "publisher": "上海市档案馆",
+      "publishedAt": "2024-05-15",
+      "accessMethod": "full-text",
+      "locator": "正文全文及新裕、诚孚全文检索",
+      "supports": "实际读该指南，未检出新裕或诚孚；保留无效检索路径说明。",
+      "limitations": "未检出不等于馆藏无Q198档案；已由《史林》注释得到具体档号，本指南不作厂址支持证据。",
+      "accessedAt": "2026-09-13",
+      "readThisRound": true,
+      "sourceFamily": "上海市档案馆-纺织企业指南"
+    },
+    {
+      "url": "https://www.openstreetmap.org/way/430938773",
+      "title": "OpenStreetMap way/430938773",
+      "publisher": "OpenStreetMap贡献者",
+      "publishedAt": null,
+      "accessMethod": "full-text",
+      "locator": "research/unresolved-landmarks/022-overpass-10.json 内 way/430938773 完整几何及tags",
+      "supports": "本次原点与现状完整面之间的几何关系。",
+      "limitations": "本轮读取022-osm-nearby与022-evidence缓存并复用2026-09-12查询/计算，不新查Overpass；不是历史地籍或实时入住证明，未查relation。",
+      "accessedAt": "2026-09-12T08:57:15.085Z",
+      "readThisRound": false,
+      "sourceFamily": "OpenStreetMap"
+    }
+  ],
+  "attachments": {
+    "pdfs": [
+      {
+        "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+        "title": "2024年8月民防工程备案信息",
+        "accessedAt": "2026-09-13",
+        "downloaded": true,
+        "downloadMethod": "curl -L --fail；web截图Timeout后采用本地渲染",
+        "localPath": "/Users/yuntian/.codex/artifacts/shanghai-1926-map/research-sources/2026-09-13/batch022-r3-qiushui-civil-defence-202408.pdf",
+        "bytes": 78340,
+        "sha256": "efa11eef5691105a1fd6db110a176e293a7d5c7db5145157be3ac48a016865b1",
+        "pageCount": 1,
+        "pagesRead": [
+          1
+        ],
+        "visuallyRead": true,
+        "renderMethod": "bundled pdftoppm -scale-to 2000 -png，view_image全页",
+        "renderedPagePath": "/Users/yuntian/.codex/artifacts/shanghai-1926-map/research-sources/2026-09-13/batch022-r3-qiushui-civil-defence-202408-1.png",
+        "renderedPageSha256": "2e85857a3561e3af3760cdc4a555341f7b6c4aff75bfb91ea21c0e89b428c203",
+        "locator": "普陀2024-27/28/29三行；表标题、列标题、备案日期均已核",
+        "limitation": "仅相应地下人防地址和备案状态，不外推全住宅用途或历史楼保存。"
+      }
+    ],
+    "failedImages": [
+      {
+        "url": "https://img1.jiemian.com/101/original/20181224/154562405367094900.jpeg",
+        "description": "秋水云庐区域旧貌",
+        "result": "403 Forbidden",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      },
+      {
+        "url": "https://img2.jiemian.com/101/original/20181224/154562408092600000.jpeg",
+        "description": "秋水云庐现状配图",
+        "result": "403 Forbidden",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      },
+      {
+        "url": "https://5b0988e595225.cdn.sohucs.com/images/20180613/46be79a50c264227b962fd331ab82142.jpeg",
+        "description": "1939劳勃生路北（戈登路至东京路）段行号图",
+        "result": "Timeout",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      },
+      {
+        "url": "https://5b0988e595225.cdn.sohucs.com/images/20180613/70aa4522f3874b8fb47eeebb77ad2f81.jpeg",
+        "description": "1948长寿路（今昌化路至江宁路）段行号图",
+        "result": "Timeout",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      },
+      {
+        "url": "https://5b0988e595225.cdn.sohucs.com/images/20180613/6a8e64ea045f4b33819de4f55e148004.jpeg",
+        "description": "Sohu新裕二厂厂照，正文图注称长寿101",
+        "result": "Timeout",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      },
+      {
+        "url": "https://image.thepaper.cn/www/image/27/593/111.jpg",
+        "description": "上棉十四厂配图",
+        "result": "重定向imagenfs后工具读取失败",
+        "attemptedAt": "2026-09-13",
+        "downloaded": false,
+        "visuallyRead": false,
+        "localPath": null
+      }
+    ],
+    "failedOtherReads": [
+      {
+        "url": "https://mp.weixin.qq.com/s/JcXamZYsAgPOfh9T2Sw5HA",
+        "accessedAt": "2026-09-13",
+        "outcome": "微信原文不可打开，使用明确标注来源的界面转载"
+      },
+      {
+        "url": "https://www.shpt.gov.cn/csjd/csqj-sqdt/20231011/919435.html",
+        "accessedAt": "2026-09-13",
+        "outcome": "维基百科引官方长寿路史链接404"
+      }
+    ],
+    "unreadLeads": [
+      {
+        "title": "《史林》论文全文和Q198原档",
+        "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc",
+        "limitation": "开放页只有摘要与注释；页面提示需CNKI全文，未取得论文PDF或Q198-1-28原档。不是已核的厂界证据。"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "IDBAT": 1377,
+      "result": {
+        "IDBAT": 1377,
+        "currentNameZh": "秋水云庐（候选，待核）",
+        "currentAddress": "长寿路28弄（候选，待核）",
+        "currentUse": "住宅小区（候选原址，待核）",
+        "relationship": null,
+        "verificationStatus": "likely",
+        "notes": "本轮精确核读ID 1377原页，保留新裕二厰、8 ROBISON ROAD及1924原字段。浙江档案校友录独立记载长寿路八号新裕纺织二厂；2019年长寿视野沿革摘要把新裕二厂接至长寿路30号上棉十四厂，2018年上海普陀文章明确秋水云庐原上棉十四厂厂址，形成住宅小区候选联系。2024年民防备案核到长寿路28弄、2025年街道报告回顾该居民区停车治理。待核：八号、30号、101号图注的门牌时代及厂界变更尚未解释，相关行号图和旧貌图读取失败；未证具体旧厂房拆除日期或保留范围。复用2026-09-12 OSM缓存，本点位于秋水云庐面内、距边界17.73米，仅支持几何相容线索。保持likely/review，不直接回填、移动坐标或与ID 1210合并。",
+        "sources": [
+          {
+            "title": "Xinyu Cotton Mill No. 2 | Virtual Shanghai",
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1377"
+          },
+          {
+            "title": "浙江档案数据库·浙江大学校友录：袁绳武",
+            "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html"
+          },
+          {
+            "title": "侬晓得伐？谈起“老底子”的普陀，绕不开的竟是“棉纺”......",
+            "url": "https://www.thepaper.cn/newsDetail_forward_4194262"
+          },
+          {
+            "title": "满满的回忆！普陀这条最“吉利”的路，老早底额样子侬还认得伐？",
+            "url": "https://www.jiemian.com/article/2735198.html"
+          },
+          {
+            "title": "中国现代工业重要发祥地——长寿路街道（上）",
+            "url": "https://www.sohu.com/a/235629401_809597"
+          },
+          {
+            "title": "近代华商纱厂的委托经营问题研究——以诚孚公司为中心的考察",
+            "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc"
+          },
+          {
+            "title": "2024年8月民防工程备案信息",
+            "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf"
+          },
+          {
+            "title": "2025年长寿路街道社区代表会议报告",
+            "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+          },
+          {
+            "title": "长寿路（上海）",
+            "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)"
+          },
+          {
+            "title": "OpenStreetMap way/430938773",
+            "url": "https://www.openstreetmap.org/way/430938773"
+          }
+        ]
+      },
+      "evidence": {
+        "IDBAT": 1377,
+        "originalInput": {
+          "IDBAT": 1377,
+          "NAME": "Xinyu Cotton Mill No. 2",
+          "F_ADDRESS": "8 ROBISON ROAD",
+          "FUNCTION": "Industrial site / Factory / Textile / Cotton / Weaving",
+          "XC": 351593.0517,
+          "YC": 3458057.9793
+        },
+        "historicalContext": {
+          "nameZh": "新裕二厰",
+          "startYear": 1924,
+          "endYear": null,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1377",
+          "notes": "原库和本轮精确VS页核对一致。Date Construction=1924保留；2019沿革摘要中1924为溥益二厂，1935年才称新裕二厂，不把原年份当新裕名称启用年。"
+        },
+        "researchProgress": {
+          "status": "partial",
+          "focus": [
+            "新裕二厂—上棉十四厂厂史链",
+            "Robison八号至现代长寿路28弄地块",
+            "住宅现状与旧楼保留范围"
+          ],
+          "stopReason": "已取得实质现代候选，但已发现的1939/1948行号图、厂照与旧貌图读取失败，论文原档未取得；8/30/101号差异未解释，未完成厂界交叉核验。",
+          "delta": "新增浙江档案精确通讯处、政务厂史及原厂改住宅叙述、2024民防原页和2025社区治理证据；由仅OSM预查unresolved提升为likely/review，未认定全厂拆除。"
+        },
+        "queries": [
+          {
+            "query": "上海 \"新裕二厂\" \"长寿\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "上海 \"新裕纺织\" \"第二厂\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"秋水云庐\" \"棉纺\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"秋水云庐\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"长寿路30号\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"秋水云庐\" \"原\" \"厂\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"Robison\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shtong.gov.cn \"第十四棉纺织厂\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"十四\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"溥益\" \"长寿\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"新裕\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"长寿路\" 8",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"厂址\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"Robison Road\" \"长寿\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"2025\"",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"28\"",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕纺织第二厂\" \"十四\" -site:kknews.cc -site:read01.com",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"长寿路30\" -site:kknews.cc -site:read01.com",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          }
+        ],
+        "sourceReviews": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1377",
+            "title": "Xinyu Cotton Mill No. 2 | Virtual Shanghai",
+            "publisher": "Virtual Shanghai",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "Description表 Building ID、English name、Chinese Name、Address、Date Construction、Pos X/Y（web正文13–24行）",
+            "supports": "精确ID1377对应新裕二厰，8 ROBISON ROAD，1924，原点351593.0517/3458057.9793。",
+            "limitations": "1924系页面Date Construction字段，不能据此断言新裕名称于1924已使用；网页未给原图或厂界。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "Virtual Shanghai"
+          },
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1210",
+            "title": "Xinyu Textile Factory No. 2 | Virtual Shanghai",
+            "publisher": "Virtual Shanghai",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "curl取得精确ID1210 HTML，Description完整表逐行核读（web精确英文及中文页均Internal Error后采用curl）",
+            "supports": "精确ID1210对应新裕紡織第二廠，8 ROBISON ROAD，1924，351580.1131/3458055.2426。",
+            "limitations": "原英文HTML为Xinyu Textile Factory  No. 2，中间双空格不改固定输入；本页与1377属同一数据库，非两份独立史料。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "Virtual Shanghai"
+          },
+          {
+            "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+            "title": "浙江档案数据库·浙江大学校友录：袁绳武",
+            "publisher": "浙江省档案馆（浙江档案数据库）",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "人物精确页：姓名、学年度、院别、职务或系别、通讯处",
+            "supports": "通讯处明确记为上海长寿路八号新裕纺织二厂，支持独立于VS的历史机构及八号门牌。",
+            "limitations": "学年度1923不是通讯处采录年份；网页未见原校友录封面、版次、原页影像，不能把这条资料回推为1923厂址证明。URL含2012/10/24但正文未显示发布日期。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "浙江档案馆-浙大校友录"
+          },
+          {
+            "url": "https://www.thepaper.cn/newsDetail_forward_4194262",
+            "title": "侬晓得伐？谈起“老底子”的普陀，绕不开的竟是“棉纺”......",
+            "publisher": "澎湃号·政务，资料来源长寿视野",
+            "publishedAt": "2019-08-18",
+            "accessMethod": "full-text",
+            "locator": "上海第十四棉纺织厂小节，正文113–120行；文末资料来源长寿视野",
+            "supports": "长寿路30号上棉十四厂沿革列1924溥益二厂、1935年11月新裕二厂、1937年2月诚孚代管、1954公私合营、1957国营新裕、1958年12月国营上棉十四厂。",
+            "limitations": "属于政务传播的沿革摘要，不是改门牌或宗地契据；文末泛称厂房消失不能证明本输入具体旧楼全部拆除。相关厂照点击失败。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海普陀-长寿视野工业史"
+          },
+          {
+            "url": "https://www.jiemian.com/article/2735198.html",
+            "title": "满满的回忆！普陀这条最“吉利”的路，老早底额样子侬还认得伐？",
+            "publisher": "界面新闻转载上海普陀",
+            "publishedAt": "2018-12-24",
+            "accessMethod": "reprint",
+            "locator": "桌面页日期2018/12/24 13:09；秋水云庐小节（移动页97–103行）；文末来源上海普陀",
+            "supports": "正文直接说明秋水云庐原上棉十四厂厂址、近长寿路桥，已建高层花园住宅，形成超出OSM邻近的现代场地联系。",
+            "limitations": "这篇支持2018的住宅与厂址叙述；旧貌和新貌图均403未看，微信原文失败。原厂范围及旧楼保留、拆除年不明。与长寿视野沿革摘要属同一地方政务传播来源家族，不按独立见证累加。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海普陀-长寿视野工业史"
+          },
+          {
+            "url": "https://www.sohu.com/a/235629401_809597",
+            "title": "中国现代工业重要发祥地——长寿路街道（上）",
+            "publisher": "搜狐号·影像档案库",
+            "publishedAt": "2018-06-13",
+            "accessMethod": "full-text",
+            "locator": "1939/1948行号图说明及文末新裕纺织二厂图注（278–280行）",
+            "supports": "图注把新裕二厂记为长寿路101号、原溥益纱厂；指出与八号、后期30号之间尚需核对的门牌差异。正文列出1939劳勃生路北、1948长寿路行号图线索。",
+            "limitations": "非官方地籍记录；图注可能错注或不同门牌时代，不能静默选择。3张相关行号图/厂照实际点击均Timeout，未核图内门牌，未配准。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "影像档案库"
+          },
+          {
+            "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc",
+            "title": "近代华商纱厂的委托经营问题研究——以诚孚公司为中心的考察",
+            "publisher": "《史林》期刊，王仰旭、廖大伟",
+            "publishedAt": "2026-04-01",
+            "accessMethod": "full-text",
+            "locator": "2026年第2期网页摘要与参考文献，注释Q198-1-1、Q198-1-28、Q198-1-33、Q198-1-15",
+            "supports": "核到诚孚代管新裕的研究背景及可直接追查的上海市档案馆诚孚企业档案编号，包含两厂一所简史、1949调查登记表和1953合并改组文件。",
+            "limitations": "这里只读开放摘要与注释；网页全文要求CNKI，论文PDF及原档均未取得，不能声称已核文章全部正文或原档厂界。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "史林2026-02-王仰旭廖大伟"
+          },
+          {
+            "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+            "title": "2024年8月民防工程备案信息",
+            "publisher": "上海市普陀区政府",
+            "publishedAt": null,
+            "accessMethod": "pdf",
+            "locator": "唯一第1页全页图像核读；备案编号普陀2024-27、28、29三行",
+            "supports": "2024-08-07秋水云庐3号楼A/C/D单元地下人防对应长寿路28弄15号楼、16–19、21–22，备案单位上海凯尚物业，备案用途其他用途。",
+            "limitations": "仅证明相应地下工程地址及2024备案状态；不能把地下其他用途外推为全小区用途，也不证明1924厂房保存。发布日期正文未给，表内记录日为2024-08-07。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "普陀区-202408民防备案"
+          },
+          {
+            "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html",
+            "title": "2025年长寿路街道社区代表会议报告",
+            "publisher": "上海市普陀区长寿路街道办事处",
+            "publishedAt": "2025-03-07",
+            "accessMethod": "full-text",
+            "locator": "2024年度主要工作回顾，第七节推进社区治理（68行）",
+            "supports": "报告明确在2024工作回顾中提及缓解秋水云庐停车难，支持该居住社区仍纳入实际社区治理。",
+            "limitations": "社区层面活动不能认定历史厂房逐栋现用途，也不是2026现场调查。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "长寿路街道2025社区代表会议"
+          },
+          {
+            "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+            "title": "长寿路（上海）",
+            "publisher": "维基百科",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "历史小节",
+            "supports": "路名释读Robison Road为劳勃生路、今长寿路，用于检索原地址。",
+            "limitations": "只做路名解释，不证明门牌8直接变30或28弄；官方引用链接实际404。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "维基百科-长寿路"
+          },
+          {
+            "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+            "title": "馆藏民国时期上海纺织企业档案指南",
+            "publisher": "上海市档案馆",
+            "publishedAt": "2024-05-15",
+            "accessMethod": "full-text",
+            "locator": "正文全文及新裕、诚孚全文检索",
+            "supports": "实际读该指南，未检出新裕或诚孚；保留无效检索路径说明。",
+            "limitations": "未检出不等于馆藏无Q198档案；已由《史林》注释得到具体档号，本指南不作厂址支持证据。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海市档案馆-纺织企业指南"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/430938773",
+            "title": "OpenStreetMap way/430938773",
+            "publisher": "OpenStreetMap贡献者",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "research/unresolved-landmarks/022-overpass-10.json 内 way/430938773 完整几何及tags",
+            "supports": "本次原点与现状完整面之间的几何关系。",
+            "limitations": "本轮读取022-osm-nearby与022-evidence缓存并复用2026-09-12查询/计算，不新查Overpass；不是历史地籍或实时入住证明，未查relation。",
+            "accessedAt": "2026-09-12T08:57:15.085Z",
+            "readThisRound": false,
+            "sourceFamily": "OpenStreetMap"
+          }
+        ],
+        "identityEvidence": "VS精确页确认原名与八号地址；浙江档案校友录独立出现新裕纺织二厂；政务沿革明确其前身溥益二厂及后称上棉十四厂。机构存在与厂史链可支持；1377/1210仍分别保留。",
+        "addressEvidence": "Robison为今长寿路；浙江档案记长寿八号，2019上棉十四厂摘要记30号，2018文章明确现代秋水云庐原该厂址；2024备案明确现代28弄。Sohu101号图注与前述不同，旧今门牌与各期厂界未证。",
+        "buildingFateEvidence": "2018叙述支持旧厂地已开发花园住宅的候选链；无具体旧厂建筑拆除日期或保留清单，不能从泛称厂房消失或高层住宅推出全部拆除。",
+        "currentUseEvidence": "秋水云庐在2018被明确描述为花园住宅，2024人防备案确认其28弄地址，2025街道报告回顾2024居民区停车治理。可支持现代候选为住宅社区，但不把地下备案‘其他用途’套到全小区。",
+        "fieldFindings": {
+          "identity": {
+            "status": "confirmed",
+            "finding": "VS精确页确认原名与八号地址；浙江档案校友录独立出现新裕纺织二厂；政务沿革明确其前身溥益二厂及后称上棉十四厂。机构存在与厂史链可支持；1377/1210仍分别保留。",
+            "sourceUrls": [
+              "https://www.virtualshanghai.net/data/buildings?ID=1377",
+              "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262"
+            ],
+            "gap": "1924建筑字段与1935新裕名称启用语义区分；不凭同组合并ID。"
+          },
+          "address": {
+            "status": "candidate",
+            "finding": "Robison为今长寿路；浙江档案记长寿八号，2019上棉十四厂摘要记30号，2018文章明确现代秋水云庐原该厂址；2024备案明确现代28弄。Sohu101号图注与前述不同，旧今门牌与各期厂界未证。",
+            "sourceUrls": [
+              "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+              "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262",
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.sohu.com/a/235629401_809597"
+            ],
+            "gap": "需解释8/30/101号差异，核厂区分期范围与现代28弄关系。"
+          },
+          "buildingFate": {
+            "status": "candidate",
+            "finding": "2018叙述支持旧厂地已开发花园住宅的候选链；无具体旧厂建筑拆除日期或保留清单，不能从泛称厂房消失或高层住宅推出全部拆除。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262"
+            ],
+            "gap": "旧楼逐栋存废、拆除日期及保留范围未知。"
+          },
+          "currentUse": {
+            "status": "candidate",
+            "finding": "秋水云庐在2018被明确描述为花园住宅，2024人防备案确认其28弄地址，2025街道报告回顾2024居民区停车治理。可支持现代候选为住宅社区，但不把地下备案‘其他用途’套到全小区。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+            ],
+            "gap": "当前住宅场地可确认存在，精确对应输入厂区范围仍待核；不延伸具体住户或租户。"
+          },
+          "spatial": {
+            "status": "candidate",
+            "finding": "复用2026-09-12缓存，ID 1377在秋水云庐OSM way430938773内，面距0、边界距17.73米；对历史厂界未形成独立核验。",
+            "sourceUrls": [
+              "https://www.openstreetmap.org/way/430938773"
+            ],
+            "gap": "历史宗地边界及8/30/101号问题尚未解决，不把inside当同址证明。"
+          },
+          "temporal": {
+            "status": "candidate",
+            "finding": "历史链分别依2018/2019摘要，现代社区另有2024民防备案与2025报告回顾2024治理；住宅属于稳定用途，但本轮未取得2026现场核查。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+            ],
+            "gap": "时点与范围均分别标注；2025报告发布日期不把2024行为更新为2025发生。"
+          }
+        },
+        "spatialReview": {
+          "originalWgs84": {
+            "longitude": 121.441501,
+            "latitude": 31.247312
+          },
+          "originalGcj02": {
+            "longitude": 121.446113,
+            "latitude": 31.24545
+          },
+          "conversionMethod": "项目scripts/lib/coordinate-systems.mjs：utm51nToWgs84（EPSG:32651东距X、北距Y → EPSG:4326，经度longitude／纬度latitude）；GCJ-02仅另存，本次OSM距离全用WGS84。",
+          "comparisonSourceUrl": "https://www.openstreetmap.org/way/430938773",
+          "comparisonCrs": "EPSG:4326",
+          "distanceMeters": 0,
+          "distanceToBoundaryMeters": 17.73,
+          "containment": "inside",
+          "finding": "复用2026-09-12缓存，ID 1377在秋水云庐OSM way430938773内，面距0、边界距17.73米；对历史厂界未形成独立核验。",
+          "assessmentMethod": "geometry",
+          "compatibility": "uncertain",
+          "measurementTarget": "原点到OSM way/430938773 面集合；在面内距离记0，另列距边界距离。",
+          "evidenceLocators": [
+            {
+              "url": "https://www.openstreetmap.org/way/430938773",
+              "location": "research/unresolved-landmarks/022-overpass-10.json，完整geometry和tags；逐点结果022-osm-nearby.json IDBAT=1377",
+              "dataDate": "2026-09-12T08:57:15.085Z",
+              "accessMethod": "本轮复用2026-09-12已执行Overpass完整几何及逐点计算缓存；未新查Overpass。",
+              "limitation": "当前OSM几何，不是历史宗地，不证明用途或原点定位精度。"
+            }
+          ],
+          "uncertainty": "历史点精度未知；OSM众包轮廓并非实测地籍，靠边距离只作风险提示，不能以小数精度表示确定性。"
+        },
+        "relatedRecords": [
+          {
+            "IDBAT": 1210,
+            "name": "新裕紡織第二廠",
+            "basis": "同项目地点组landmark-vs-site-1210，原址均8 ROBISON ROAD；本轮两ID精确VS页分别核读。",
+            "verificationStatus": "likely",
+            "reviewStatus": "分别核对各点缓存及原字段，均保留review；厂史线索可共享，不改为一个记录。",
+            "originalWgs84": {
+              "longitude": 121.441365,
+              "latitude": 31.247285
+            },
+            "spatialEvidenceFile": "research/unresolved-landmarks/022-osm-nearby.json",
+            "groupAction": "hold：不合并，不自动回填。"
+          }
+        ],
+        "conflicts": [
+          "浙江档案为长寿八号、后期上棉十四厂为长寿30号、搜狐厂照图注称长寿101号；不能静默视为同一门牌，需核原图和门牌变更。",
+          "VS原Date Construction=1924，沿革资料1924名溥益二厂、1935称新裕；建筑起始年与名称起始年不能混用。"
+        ],
+        "remainingQuestions": [
+          "1924/1930年代新裕二厂完整厂界，及八号、30号、101号各自年代和地点？",
+          "秋水云庐开发包括原二厂哪些地块、是否留有厂房或构件？",
+          "两条VS点位所表示的功能/空间尺度是否相同，是否可各自在场地尺度评价？"
+        ],
+        "nextResearchActions": [
+          {
+            "targetGap": "门牌与厂界",
+            "action": "取得已定位的1939劳勃生路北行号图及1948长寿路昌化—江宁路图原件，核图内新裕/溥益位置和门牌；对照苏州河、昌化路、长寿路桥等固定参照，不先移动原点。",
+            "targetSource": "影像档案库所引行号图原出版物；上海图书馆行号图数字馆藏",
+            "acceptanceCriterion": "可读图内实际厂名/门牌并解释8、30、101号差异，得到可交叉核验的场地范围。"
+          },
+          {
+            "targetGap": "厂史、厂产与分割",
+            "action": "向馆藏目录查Q198-1-28两厂一所简史、Q198-1-33（1949第一二厂调查登记）、Q198-1-15（1953合并改组）中厂址/土地/厂房表，区别二厂与一厂、实验所。",
+            "targetSource": "上海市档案馆诚孚企业股份有限公司全宗Q198；《史林》2026年第2期注释提供档号",
+            "acceptanceCriterion": "原档支持二厂确切场地，并将后期上棉十四厂厂产衔接到该场地而非仅机构继承。"
+          },
+          {
+            "targetGap": "开发与现状回填范围",
+            "action": "查秋水云庐长寿路28弄的土地出让、规划验收总平面及原上棉十四厂拆建资料，界定是否全部拆除或部分保留；结合当前居委/物业资料仅核社区用途。",
+            "targetSource": "普陀规划资源部门、城建档案及建设单位原项目材料",
+            "acceptanceCriterion": "可以说明输入点所在原厂地被开发的具体范围与建筑存废；当前用途证据与该范围相称后再评估yes。"
+          }
+        ],
+        "verificationStatus": "likely",
+        "mapWriteRecommendation": "review",
+        "mapWriteScope": {
+          "level": null,
+          "description": null,
+          "excludedClaims": [
+            "不认定1924已经使用新裕厂名。",
+            "不将两条历史记录合并，不移动原点、改道路。",
+            "不认定全厂拆除，不指定某栋住宅承接某历史车间。",
+            "不把地下人防备案用途外推为整个小区。"
+          ],
+          "useEvidenceDate": null
+        },
+        "mapWriteReason": "有政务原厂改住宅叙述及厂史链，超过单纯OSM邻近，可列likely；门牌差异、旧新厂界、旧楼存废和逐点范围尚待核，不足yes。",
+        "conclusion": "本轮精确核读ID 1377原页，保留新裕二厰、8 ROBISON ROAD及1924原字段。浙江档案校友录独立记载长寿路八号新裕纺织二厂；2019年长寿视野沿革摘要把新裕二厂接至长寿路30号上棉十四厂，2018年上海普陀文章明确秋水云庐原上棉十四厂厂址，形成住宅小区候选联系。2024年民防备案核到长寿路28弄、2025年街道报告回顾该居民区停车治理。待核：八号、30号、101号图注的门牌时代及厂界变更尚未解释，相关行号图和旧貌图读取失败；未证具体旧厂房拆除日期或保留范围。复用2026-09-12 OSM缓存，本点位于秋水云庐面内、距边界17.73米，仅支持几何相容线索。保持likely/review，不直接回填、移动坐标或与ID 1210合并。"
+      }
+    },
+    {
+      "IDBAT": 1210,
+      "result": {
+        "IDBAT": 1210,
+        "currentNameZh": "秋水云庐（候选，待核）",
+        "currentAddress": "长寿路28弄（候选，待核）",
+        "currentUse": "住宅小区（候选原址，待核）",
+        "relationship": null,
+        "verificationStatus": "likely",
+        "notes": "本轮精确核读ID 1210原页，保留新裕紡織第二廠、8 ROBISON ROAD及1924原字段。浙江档案校友录独立记载长寿路八号新裕纺织二厂；2019年长寿视野沿革摘要把新裕二厂接至长寿路30号上棉十四厂，2018年上海普陀文章明确秋水云庐原上棉十四厂厂址，形成住宅小区候选联系。2024年民防备案核到长寿路28弄、2025年街道报告回顾该居民区停车治理。待核：八号、30号、101号图注的门牌时代及厂界变更尚未解释，相关行号图和旧貌图读取失败；未证具体旧厂房拆除日期或保留范围。复用2026-09-12 OSM缓存，本点位于秋水云庐面内、距边界5.24米，仅支持几何相容线索。保持likely/review，不直接回填、移动坐标或与ID 1377合并。",
+        "sources": [
+          {
+            "title": "Xinyu Textile Factory No. 2 | Virtual Shanghai",
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1210"
+          },
+          {
+            "title": "浙江档案数据库·浙江大学校友录：袁绳武",
+            "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html"
+          },
+          {
+            "title": "侬晓得伐？谈起“老底子”的普陀，绕不开的竟是“棉纺”......",
+            "url": "https://www.thepaper.cn/newsDetail_forward_4194262"
+          },
+          {
+            "title": "满满的回忆！普陀这条最“吉利”的路，老早底额样子侬还认得伐？",
+            "url": "https://www.jiemian.com/article/2735198.html"
+          },
+          {
+            "title": "中国现代工业重要发祥地——长寿路街道（上）",
+            "url": "https://www.sohu.com/a/235629401_809597"
+          },
+          {
+            "title": "近代华商纱厂的委托经营问题研究——以诚孚公司为中心的考察",
+            "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc"
+          },
+          {
+            "title": "2024年8月民防工程备案信息",
+            "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf"
+          },
+          {
+            "title": "2025年长寿路街道社区代表会议报告",
+            "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+          },
+          {
+            "title": "长寿路（上海）",
+            "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)"
+          },
+          {
+            "title": "OpenStreetMap way/430938773",
+            "url": "https://www.openstreetmap.org/way/430938773"
+          }
+        ]
+      },
+      "evidence": {
+        "IDBAT": 1210,
+        "originalInput": {
+          "IDBAT": 1210,
+          "NAME": "Xinyu Textile Factory No. 2",
+          "F_ADDRESS": "8 ROBISON ROAD",
+          "FUNCTION": "Industrial site / Factory / Textile industry / Cotton mill",
+          "XC": 351580.1131,
+          "YC": 3458055.2426
+        },
+        "historicalContext": {
+          "nameZh": "新裕紡織第二廠",
+          "startYear": 1924,
+          "endYear": null,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1210",
+          "notes": "原库和本轮精确VS页核对一致。Date Construction=1924保留；2019沿革摘要中1924为溥益二厂，1935年才称新裕二厂，不把原年份当新裕名称启用年。"
+        },
+        "researchProgress": {
+          "status": "partial",
+          "focus": [
+            "新裕二厂—上棉十四厂厂史链",
+            "Robison八号至现代长寿路28弄地块",
+            "住宅现状与旧楼保留范围"
+          ],
+          "stopReason": "已取得实质现代候选，但已发现的1939/1948行号图、厂照与旧貌图读取失败，论文原档未取得；8/30/101号差异未解释，未完成厂界交叉核验。",
+          "delta": "新增浙江档案精确通讯处、政务厂史及原厂改住宅叙述、2024民防原页和2025社区治理证据；由仅OSM预查unresolved提升为likely/review，未认定全厂拆除。"
+        },
+        "queries": [
+          {
+            "query": "上海 \"新裕二厂\" \"长寿\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "上海 \"新裕纺织\" \"第二厂\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"秋水云庐\" \"棉纺\"",
+            "executedAt": "2026-09-13 14:14:45 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"秋水云庐\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"长寿路30号\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"秋水云庐\" \"原\" \"厂\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"Robison\"",
+            "executedAt": "2026-09-13 14:15:02 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shtong.gov.cn \"第十四棉纺织厂\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"十四\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"溥益\" \"长寿\"",
+            "executedAt": "2026-09-13 14:15:24 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"新裕\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕\" \"长寿路\" 8",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"厂址\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"Robison Road\" \"长寿\"",
+            "executedAt": "2026-09-13 14:16:03 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"2025\"",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "site.shpt.gov.cn \"秋水云庐\" \"28\"",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"新裕纺织第二厂\" \"十四\" -site:kknews.cc -site:read01.com",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          },
+          {
+            "query": "\"上海第十四棉纺织厂\" \"长寿路30\" -site:kknews.cc -site:read01.com",
+            "executedAt": "2026-09-13 14:16:47 UTC",
+            "sharedWithIds": [
+              1377,
+              1210
+            ]
+          }
+        ],
+        "sourceReviews": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1377",
+            "title": "Xinyu Cotton Mill No. 2 | Virtual Shanghai",
+            "publisher": "Virtual Shanghai",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "Description表 Building ID、English name、Chinese Name、Address、Date Construction、Pos X/Y（web正文13–24行）",
+            "supports": "精确ID1377对应新裕二厰，8 ROBISON ROAD，1924，原点351593.0517/3458057.9793。",
+            "limitations": "1924系页面Date Construction字段，不能据此断言新裕名称于1924已使用；网页未给原图或厂界。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "Virtual Shanghai"
+          },
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1210",
+            "title": "Xinyu Textile Factory No. 2 | Virtual Shanghai",
+            "publisher": "Virtual Shanghai",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "curl取得精确ID1210 HTML，Description完整表逐行核读（web精确英文及中文页均Internal Error后采用curl）",
+            "supports": "精确ID1210对应新裕紡織第二廠，8 ROBISON ROAD，1924，351580.1131/3458055.2426。",
+            "limitations": "原英文HTML为Xinyu Textile Factory  No. 2，中间双空格不改固定输入；本页与1377属同一数据库，非两份独立史料。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "Virtual Shanghai"
+          },
+          {
+            "url": "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+            "title": "浙江档案数据库·浙江大学校友录：袁绳武",
+            "publisher": "浙江省档案馆（浙江档案数据库）",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "人物精确页：姓名、学年度、院别、职务或系别、通讯处",
+            "supports": "通讯处明确记为上海长寿路八号新裕纺织二厂，支持独立于VS的历史机构及八号门牌。",
+            "limitations": "学年度1923不是通讯处采录年份；网页未见原校友录封面、版次、原页影像，不能把这条资料回推为1923厂址证明。URL含2012/10/24但正文未显示发布日期。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "浙江档案馆-浙大校友录"
+          },
+          {
+            "url": "https://www.thepaper.cn/newsDetail_forward_4194262",
+            "title": "侬晓得伐？谈起“老底子”的普陀，绕不开的竟是“棉纺”......",
+            "publisher": "澎湃号·政务，资料来源长寿视野",
+            "publishedAt": "2019-08-18",
+            "accessMethod": "full-text",
+            "locator": "上海第十四棉纺织厂小节，正文113–120行；文末资料来源长寿视野",
+            "supports": "长寿路30号上棉十四厂沿革列1924溥益二厂、1935年11月新裕二厂、1937年2月诚孚代管、1954公私合营、1957国营新裕、1958年12月国营上棉十四厂。",
+            "limitations": "属于政务传播的沿革摘要，不是改门牌或宗地契据；文末泛称厂房消失不能证明本输入具体旧楼全部拆除。相关厂照点击失败。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海普陀-长寿视野工业史"
+          },
+          {
+            "url": "https://www.jiemian.com/article/2735198.html",
+            "title": "满满的回忆！普陀这条最“吉利”的路，老早底额样子侬还认得伐？",
+            "publisher": "界面新闻转载上海普陀",
+            "publishedAt": "2018-12-24",
+            "accessMethod": "reprint",
+            "locator": "桌面页日期2018/12/24 13:09；秋水云庐小节（移动页97–103行）；文末来源上海普陀",
+            "supports": "正文直接说明秋水云庐原上棉十四厂厂址、近长寿路桥，已建高层花园住宅，形成超出OSM邻近的现代场地联系。",
+            "limitations": "这篇支持2018的住宅与厂址叙述；旧貌和新貌图均403未看，微信原文失败。原厂范围及旧楼保留、拆除年不明。与长寿视野沿革摘要属同一地方政务传播来源家族，不按独立见证累加。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海普陀-长寿视野工业史"
+          },
+          {
+            "url": "https://www.sohu.com/a/235629401_809597",
+            "title": "中国现代工业重要发祥地——长寿路街道（上）",
+            "publisher": "搜狐号·影像档案库",
+            "publishedAt": "2018-06-13",
+            "accessMethod": "full-text",
+            "locator": "1939/1948行号图说明及文末新裕纺织二厂图注（278–280行）",
+            "supports": "图注把新裕二厂记为长寿路101号、原溥益纱厂；指出与八号、后期30号之间尚需核对的门牌差异。正文列出1939劳勃生路北、1948长寿路行号图线索。",
+            "limitations": "非官方地籍记录；图注可能错注或不同门牌时代，不能静默选择。3张相关行号图/厂照实际点击均Timeout，未核图内门牌，未配准。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "影像档案库"
+          },
+          {
+            "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/bad6ed2afa9fe6658a30fb41b0d913dc",
+            "title": "近代华商纱厂的委托经营问题研究——以诚孚公司为中心的考察",
+            "publisher": "《史林》期刊，王仰旭、廖大伟",
+            "publishedAt": "2026-04-01",
+            "accessMethod": "full-text",
+            "locator": "2026年第2期网页摘要与参考文献，注释Q198-1-1、Q198-1-28、Q198-1-33、Q198-1-15",
+            "supports": "核到诚孚代管新裕的研究背景及可直接追查的上海市档案馆诚孚企业档案编号，包含两厂一所简史、1949调查登记表和1953合并改组文件。",
+            "limitations": "这里只读开放摘要与注释；网页全文要求CNKI，论文PDF及原档均未取得，不能声称已核文章全部正文或原档厂界。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "史林2026-02-王仰旭廖大伟"
+          },
+          {
+            "url": "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+            "title": "2024年8月民防工程备案信息",
+            "publisher": "上海市普陀区政府",
+            "publishedAt": null,
+            "accessMethod": "pdf",
+            "locator": "唯一第1页全页图像核读；备案编号普陀2024-27、28、29三行",
+            "supports": "2024-08-07秋水云庐3号楼A/C/D单元地下人防对应长寿路28弄15号楼、16–19、21–22，备案单位上海凯尚物业，备案用途其他用途。",
+            "limitations": "仅证明相应地下工程地址及2024备案状态；不能把地下其他用途外推为全小区用途，也不证明1924厂房保存。发布日期正文未给，表内记录日为2024-08-07。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "普陀区-202408民防备案"
+          },
+          {
+            "url": "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html",
+            "title": "2025年长寿路街道社区代表会议报告",
+            "publisher": "上海市普陀区长寿路街道办事处",
+            "publishedAt": "2025-03-07",
+            "accessMethod": "full-text",
+            "locator": "2024年度主要工作回顾，第七节推进社区治理（68行）",
+            "supports": "报告明确在2024工作回顾中提及缓解秋水云庐停车难，支持该居住社区仍纳入实际社区治理。",
+            "limitations": "社区层面活动不能认定历史厂房逐栋现用途，也不是2026现场调查。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "长寿路街道2025社区代表会议"
+          },
+          {
+            "url": "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+            "title": "长寿路（上海）",
+            "publisher": "维基百科",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "历史小节",
+            "supports": "路名释读Robison Road为劳勃生路、今长寿路，用于检索原地址。",
+            "limitations": "只做路名解释，不证明门牌8直接变30或28弄；官方引用链接实际404。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "维基百科-长寿路"
+          },
+          {
+            "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+            "title": "馆藏民国时期上海纺织企业档案指南",
+            "publisher": "上海市档案馆",
+            "publishedAt": "2024-05-15",
+            "accessMethod": "full-text",
+            "locator": "正文全文及新裕、诚孚全文检索",
+            "supports": "实际读该指南，未检出新裕或诚孚；保留无效检索路径说明。",
+            "limitations": "未检出不等于馆藏无Q198档案；已由《史林》注释得到具体档号，本指南不作厂址支持证据。",
+            "accessedAt": "2026-09-13",
+            "readThisRound": true,
+            "sourceFamily": "上海市档案馆-纺织企业指南"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/430938773",
+            "title": "OpenStreetMap way/430938773",
+            "publisher": "OpenStreetMap贡献者",
+            "publishedAt": null,
+            "accessMethod": "full-text",
+            "locator": "research/unresolved-landmarks/022-overpass-10.json 内 way/430938773 完整几何及tags",
+            "supports": "本次原点与现状完整面之间的几何关系。",
+            "limitations": "本轮读取022-osm-nearby与022-evidence缓存并复用2026-09-12查询/计算，不新查Overpass；不是历史地籍或实时入住证明，未查relation。",
+            "accessedAt": "2026-09-12T08:57:15.085Z",
+            "readThisRound": false,
+            "sourceFamily": "OpenStreetMap"
+          }
+        ],
+        "identityEvidence": "VS精确页确认原名与八号地址；浙江档案校友录独立出现新裕纺织二厂；政务沿革明确其前身溥益二厂及后称上棉十四厂。机构存在与厂史链可支持；1377/1210仍分别保留。",
+        "addressEvidence": "Robison为今长寿路；浙江档案记长寿八号，2019上棉十四厂摘要记30号，2018文章明确现代秋水云庐原该厂址；2024备案明确现代28弄。Sohu101号图注与前述不同，旧今门牌与各期厂界未证。",
+        "buildingFateEvidence": "2018叙述支持旧厂地已开发花园住宅的候选链；无具体旧厂建筑拆除日期或保留清单，不能从泛称厂房消失或高层住宅推出全部拆除。",
+        "currentUseEvidence": "秋水云庐在2018被明确描述为花园住宅，2024人防备案确认其28弄地址，2025街道报告回顾2024居民区停车治理。可支持现代候选为住宅社区，但不把地下备案‘其他用途’套到全小区。",
+        "fieldFindings": {
+          "identity": {
+            "status": "confirmed",
+            "finding": "VS精确页确认原名与八号地址；浙江档案校友录独立出现新裕纺织二厂；政务沿革明确其前身溥益二厂及后称上棉十四厂。机构存在与厂史链可支持；1377/1210仍分别保留。",
+            "sourceUrls": [
+              "https://www.virtualshanghai.net/data/buildings?ID=1210",
+              "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262"
+            ],
+            "gap": "1924建筑字段与1935新裕名称启用语义区分；不凭同组合并ID。"
+          },
+          "address": {
+            "status": "candidate",
+            "finding": "Robison为今长寿路；浙江档案记长寿八号，2019上棉十四厂摘要记30号，2018文章明确现代秋水云庐原该厂址；2024备案明确现代28弄。Sohu101号图注与前述不同，旧今门牌与各期厂界未证。",
+            "sourceUrls": [
+              "https://zh.wikipedia.org/wiki/长寿路_(上海)",
+              "https://zjdy.zjdafw.gov.cn/art/2012/10/24/art_26_8595.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262",
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.sohu.com/a/235629401_809597"
+            ],
+            "gap": "需解释8/30/101号差异，核厂区分期范围与现代28弄关系。"
+          },
+          "buildingFate": {
+            "status": "candidate",
+            "finding": "2018叙述支持旧厂地已开发花园住宅的候选链；无具体旧厂建筑拆除日期或保留清单，不能从泛称厂房消失或高层住宅推出全部拆除。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262"
+            ],
+            "gap": "旧楼逐栋存废、拆除日期及保留范围未知。"
+          },
+          "currentUse": {
+            "status": "candidate",
+            "finding": "秋水云庐在2018被明确描述为花园住宅，2024人防备案确认其28弄地址，2025街道报告回顾2024居民区停车治理。可支持现代候选为住宅社区，但不把地下备案‘其他用途’套到全小区。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+            ],
+            "gap": "当前住宅场地可确认存在，精确对应输入厂区范围仍待核；不延伸具体住户或租户。"
+          },
+          "spatial": {
+            "status": "candidate",
+            "finding": "复用2026-09-12缓存，ID 1210在秋水云庐OSM way430938773内，面距0、边界距5.24米；对历史厂界未形成独立核验。",
+            "sourceUrls": [
+              "https://www.openstreetmap.org/way/430938773"
+            ],
+            "gap": "历史宗地边界及8/30/101号问题尚未解决，不把inside当同址证明。"
+          },
+          "temporal": {
+            "status": "candidate",
+            "finding": "历史链分别依2018/2019摘要，现代社区另有2024民防备案与2025报告回顾2024治理；住宅属于稳定用途，但本轮未取得2026现场核查。",
+            "sourceUrls": [
+              "https://www.jiemian.com/article/2735198.html",
+              "https://www.thepaper.cn/newsDetail_forward_4194262",
+              "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+              "https://www.shpt.gov.cn/zhengwu/zcwj-csljdzhzw/2025/55/194701.html"
+            ],
+            "gap": "时点与范围均分别标注；2025报告发布日期不把2024行为更新为2025发生。"
+          }
+        },
+        "spatialReview": {
+          "originalWgs84": {
+            "longitude": 121.441365,
+            "latitude": 31.247285
+          },
+          "originalGcj02": {
+            "longitude": 121.445977,
+            "latitude": 31.245424
+          },
+          "conversionMethod": "项目scripts/lib/coordinate-systems.mjs：utm51nToWgs84（EPSG:32651东距X、北距Y → EPSG:4326，经度longitude／纬度latitude）；GCJ-02仅另存，本次OSM距离全用WGS84。",
+          "comparisonSourceUrl": "https://www.openstreetmap.org/way/430938773",
+          "comparisonCrs": "EPSG:4326",
+          "distanceMeters": 0,
+          "distanceToBoundaryMeters": 5.24,
+          "containment": "inside",
+          "finding": "复用2026-09-12缓存，ID 1210在秋水云庐OSM way430938773内，面距0、边界距5.24米；对历史厂界未形成独立核验。",
+          "assessmentMethod": "geometry",
+          "compatibility": "uncertain",
+          "measurementTarget": "原点到OSM way/430938773 面集合；在面内距离记0，另列距边界距离。",
+          "evidenceLocators": [
+            {
+              "url": "https://www.openstreetmap.org/way/430938773",
+              "location": "research/unresolved-landmarks/022-overpass-10.json，完整geometry和tags；逐点结果022-osm-nearby.json IDBAT=1210",
+              "dataDate": "2026-09-12T08:57:15.085Z",
+              "accessMethod": "本轮复用2026-09-12已执行Overpass完整几何及逐点计算缓存；未新查Overpass。",
+              "limitation": "当前OSM几何，不是历史宗地，不证明用途或原点定位精度。"
+            }
+          ],
+          "uncertainty": "历史点精度未知；OSM众包轮廓并非实测地籍，靠边距离只作风险提示，不能以小数精度表示确定性。"
+        },
+        "relatedRecords": [
+          {
+            "IDBAT": 1377,
+            "name": "新裕二厰",
+            "basis": "同项目地点组landmark-vs-site-1210，原址均8 ROBISON ROAD；本轮两ID精确VS页分别核读。",
+            "verificationStatus": "likely",
+            "reviewStatus": "分别核对各点缓存及原字段，均保留review；厂史线索可共享，不改为一个记录。",
+            "originalWgs84": {
+              "longitude": 121.441501,
+              "latitude": 31.247312
+            },
+            "spatialEvidenceFile": "research/unresolved-landmarks/022-osm-nearby.json",
+            "groupAction": "hold：不合并，不自动回填。"
+          }
+        ],
+        "conflicts": [
+          "浙江档案为长寿八号、后期上棉十四厂为长寿30号、搜狐厂照图注称长寿101号；不能静默视为同一门牌，需核原图和门牌变更。",
+          "VS原Date Construction=1924，沿革资料1924名溥益二厂、1935称新裕；建筑起始年与名称起始年不能混用。"
+        ],
+        "remainingQuestions": [
+          "1924/1930年代新裕二厂完整厂界，及八号、30号、101号各自年代和地点？",
+          "秋水云庐开发包括原二厂哪些地块、是否留有厂房或构件？",
+          "两条VS点位所表示的功能/空间尺度是否相同，是否可各自在场地尺度评价？"
+        ],
+        "nextResearchActions": [
+          {
+            "targetGap": "门牌与厂界",
+            "action": "取得已定位的1939劳勃生路北行号图及1948长寿路昌化—江宁路图原件，核图内新裕/溥益位置和门牌；对照苏州河、昌化路、长寿路桥等固定参照，不先移动原点。",
+            "targetSource": "影像档案库所引行号图原出版物；上海图书馆行号图数字馆藏",
+            "acceptanceCriterion": "可读图内实际厂名/门牌并解释8、30、101号差异，得到可交叉核验的场地范围。"
+          },
+          {
+            "targetGap": "厂史、厂产与分割",
+            "action": "向馆藏目录查Q198-1-28两厂一所简史、Q198-1-33（1949第一二厂调查登记）、Q198-1-15（1953合并改组）中厂址/土地/厂房表，区别二厂与一厂、实验所。",
+            "targetSource": "上海市档案馆诚孚企业股份有限公司全宗Q198；《史林》2026年第2期注释提供档号",
+            "acceptanceCriterion": "原档支持二厂确切场地，并将后期上棉十四厂厂产衔接到该场地而非仅机构继承。"
+          },
+          {
+            "targetGap": "开发与现状回填范围",
+            "action": "查秋水云庐长寿路28弄的土地出让、规划验收总平面及原上棉十四厂拆建资料，界定是否全部拆除或部分保留；结合当前居委/物业资料仅核社区用途。",
+            "targetSource": "普陀规划资源部门、城建档案及建设单位原项目材料",
+            "acceptanceCriterion": "可以说明输入点所在原厂地被开发的具体范围与建筑存废；当前用途证据与该范围相称后再评估yes。"
+          }
+        ],
+        "verificationStatus": "likely",
+        "mapWriteRecommendation": "review",
+        "mapWriteScope": {
+          "level": null,
+          "description": null,
+          "excludedClaims": [
+            "不认定1924已经使用新裕厂名。",
+            "不将两条历史记录合并，不移动原点、改道路。",
+            "不认定全厂拆除，不指定某栋住宅承接某历史车间。",
+            "不把地下人防备案用途外推为整个小区。"
+          ],
+          "useEvidenceDate": null
+        },
+        "mapWriteReason": "有政务原厂改住宅叙述及厂史链，超过单纯OSM邻近，可列likely；门牌差异、旧新厂界、旧楼存废和逐点范围尚待核，不足yes。",
+        "conclusion": "本轮精确核读ID 1210原页，保留新裕紡織第二廠、8 ROBISON ROAD及1924原字段。浙江档案校友录独立记载长寿路八号新裕纺织二厂；2019年长寿视野沿革摘要把新裕二厂接至长寿路30号上棉十四厂，2018年上海普陀文章明确秋水云庐原上棉十四厂厂址，形成住宅小区候选联系。2024年民防备案核到长寿路28弄、2025年街道报告回顾该居民区停车治理。待核：八号、30号、101号图注的门牌时代及厂界变更尚未解释，相关行号图和旧貌图读取失败；未证具体旧厂房拆除日期或保留范围。复用2026-09-12 OSM缓存，本点位于秋水云庐面内、距边界5.24米，仅支持几何相容线索。保持likely/review，不直接回填、移动坐标或与ID 1377合并。"
+      }
+    }
+  ],
+  "validation": {
+    "executionStatus": "executed",
+    "executedAt": "2026-09-14",
+    "checks": [
+      "JSON可解析；2条ID及原顺序为1377、1210；originalInput与022-input逐项相等。",
+      "每条result严格8字段；notes与conclusion逐字一致；来源覆盖全部results.sources和fieldFindings.sourceUrls。",
+      "两条均partial、likely/review；18次共享实际查询、两次独立精确VS读取，非36次查询。",
+      "PDF本地源文件存在；git diff --check退出0。"
+    ],
+    "failures": []
+  },
+  "summary": {
+    "records": 2,
+    "completed": 0,
+    "partial": 2,
+    "notStarted": 0,
+    "verified": 0,
+    "likely": 2,
+    "unresolved": 0,
+    "yes": 0,
+    "review": 2,
+    "no": 0,
+    "note": "两条均由未开始/未解决推进为部分完成/候选审核；未直接回填地图。"
+  }
+}

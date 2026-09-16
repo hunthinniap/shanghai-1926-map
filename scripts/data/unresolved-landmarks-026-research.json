@@ -1,0 +1,1497 @@
+{
+  "batch": "026",
+  "researchedAt": "2026-09-15",
+  "input": "research/unresolved-landmarks/026-input.json",
+  "method": {
+    "sourceCrs": "EPSG:32651",
+    "canonicalCrs": "EPSG:4326",
+    "mapLookupCrs": "GCJ-02",
+    "outcomeCategories": {
+      "survives-with-history": "可确认历史实体延续到今天，或历史建筑/机构在原址有明确连续关系。",
+      "demolished-current-use": "可确认历史实体已经拆除、毁坏或被重建，并可说明原址今天的用途。",
+      "location-only-current-use": "历史实体与现代地块之间尚无闭环；只保留空间、名称或现代地点线索。"
+    },
+    "notes": [
+      "WGS84 coordinates are canonical; GCJ-02 coordinates are lookup aids only and must not be written back as project geometry.",
+      "A translated road, nearby POI, or matching modern street number alone is not evidence of building continuity.",
+      "The raw six-field input remains stable in research/unresolved-landmarks/026-input.json even after unresolved chunks are regenerated.",
+      "Map overrides are applied at feature-group level; mixed-evidence groups require an additional group-level review."
+    ]
+  },
+  "summary": {
+    "total": 50,
+    "byOutcomeCategory": {
+      "survives-with-history": 1,
+      "location-only-current-use": 49
+    },
+    "byResolutionStatus": {
+      "resolved": 1,
+      "probable": 5,
+      "unresolved": 44
+    },
+    "mapWriteRecommendation": {
+      "yes": 1,
+      "review": 5,
+      "no": 44
+    }
+  },
+  "records": [
+    {
+      "IDBAT": 601,
+      "historicalName": "YMCA",
+      "historicalNameCorrectionZh": "青年會",
+      "coordinates": {
+        "wgs84": [
+          121.482284,
+          31.245055
+        ],
+        "gcj02": [
+          121.486779,
+          31.243095
+        ]
+      },
+      "modernRoadAddress": "131 虎丘路",
+      "outcomeCategory": "survives-with-history",
+      "resolutionStatus": "resolved",
+      "confidence": "high",
+      "currentNameZh": "虎丘公寓（原中华基督教青年会全国总部大楼）",
+      "currentUse": "现为住宅公寓；历史建筑外观与原青年会总部身份保留",
+      "currentAddress": "虎丘路131号（原131 MUSEUM ROAD）",
+      "currentUseRelationship": "same-site-preserved",
+      "mapWriteRecommendation": "yes",
+      "evidence": "虎丘公寓资料直接确认原名青年协会大楼/中华基督教青年会全国总部大楼，位于今虎丘路131号，现作住宅；与Virtual Shanghai原131 MUSEUM ROAD逐号对应。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=601",
+        "https://zh.wikipedia.org/wiki/虎丘公寓"
+      ]
+    },
+    {
+      "IDBAT": 1737,
+      "historicalName": "LOCK APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.440915,
+          31.219724
+        ],
+        "gcj02": [
+          121.445526,
+          31.217851
+        ]
+      },
+      "modernRoadAddress": "245 华山路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大胜胡同（华山路新式里弄片区）",
+      "currentUse": "现为居住为主的历史里弄；部分建筑有老字号展示/公共文化活化线索",
+      "currentAddress": "今华山路229弄、241弄、251弄、263弄、275弄、285弄片区（旧门牌245 Avenue Haig逐号对应未完全核）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "大胜胡同资料确认华山路东侧由多条弄堂组成（229、241、251、263、275、285弄），整体为历史新式里弄并持续住宅使用；原记录245 Avenue Haig可定位到华山路大胜胡同片区，但旧门牌与具体弄号/楼栋尚未逐号桥接。四条记录分别保留，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1737",
+        "https://zh.wikipedia.org/wiki/大胜胡同"
+      ]
+    },
+    {
+      "IDBAT": 1738,
+      "historicalName": "LOCK APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.440693,
+          31.219599
+        ],
+        "gcj02": [
+          121.445304,
+          31.217726
+        ]
+      },
+      "modernRoadAddress": "255 华山路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大胜胡同（华山路新式里弄片区）",
+      "currentUse": "现为居住为主的历史里弄；部分建筑有老字号展示/公共文化活化线索",
+      "currentAddress": "今华山路229弄、241弄、251弄、263弄、275弄、285弄片区（旧门牌255 Avenue Haig逐号对应未完全核）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "大胜胡同资料确认华山路东侧由多条弄堂组成（229、241、251、263、275、285弄），整体为历史新式里弄并持续住宅使用；原记录255 Avenue Haig可定位到华山路大胜胡同片区，但旧门牌与具体弄号/楼栋尚未逐号桥接。四条记录分别保留，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1738",
+        "https://zh.wikipedia.org/wiki/大胜胡同"
+      ]
+    },
+    {
+      "IDBAT": 1739,
+      "historicalName": "LOCK APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.440465,
+          31.219467
+        ],
+        "gcj02": [
+          121.445077,
+          31.217594
+        ]
+      },
+      "modernRoadAddress": "265 华山路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大胜胡同（华山路新式里弄片区）",
+      "currentUse": "现为居住为主的历史里弄；部分建筑有老字号展示/公共文化活化线索",
+      "currentAddress": "今华山路229弄、241弄、251弄、263弄、275弄、285弄片区（旧门牌265 Avenue Haig逐号对应未完全核）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "大胜胡同资料确认华山路东侧由多条弄堂组成（229、241、251、263、275、285弄），整体为历史新式里弄并持续住宅使用；原记录265 Avenue Haig可定位到华山路大胜胡同片区，但旧门牌与具体弄号/楼栋尚未逐号桥接。四条记录分别保留，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1739",
+        "https://zh.wikipedia.org/wiki/大胜胡同"
+      ]
+    },
+    {
+      "IDBAT": 1740,
+      "historicalName": "LOCK APARTMENTS",
+      "coordinates": {
+        "wgs84": [
+          121.44024,
+          31.219333
+        ],
+        "gcj02": [
+          121.444852,
+          31.217461
+        ]
+      },
+      "modernRoadAddress": "275 华山路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "大胜胡同（华山路新式里弄片区）",
+      "currentUse": "现为居住为主的历史里弄；部分建筑有老字号展示/公共文化活化线索",
+      "currentAddress": "今华山路229弄、241弄、251弄、263弄、275弄、285弄片区（旧门牌275 Avenue Haig逐号对应未完全核）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "大胜胡同资料确认华山路东侧由多条弄堂组成（229、241、251、263、275、285弄），整体为历史新式里弄并持续住宅使用；原记录275 Avenue Haig可定位到华山路大胜胡同片区，但旧门牌与具体弄号/楼栋尚未逐号桥接。四条记录分别保留，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1740",
+        "https://zh.wikipedia.org/wiki/大胜胡同"
+      ]
+    },
+    {
+      "IDBAT": 1583,
+      "historicalName": "Uchiyama Book Shop",
+      "historicalNameCorrectionZh": "内山書店",
+      "historicalStartYear": 1917,
+      "historicalEndYear": 1929,
+      "coordinates": {
+        "wgs84": [
+          121.478894,
+          31.263518
+        ],
+        "gcj02": [
+          121.483403,
+          31.261576
+        ]
+      },
+      "modernRoadAddress": "1887 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "内山书店早期旧址（魏盛里）",
+      "currentUse": "原书店早期店址建筑/里弄片区仍在，现为居住与街区商业混合使用；纪念设施及具体楼栋未核",
+      "currentAddress": "今四川北路1881弄魏盛里内（原1887 NORTH SZECHUEN ROAD附近）",
+      "currentUseRelationship": "same-site-partially-preserved",
+      "mapWriteRecommendation": "review",
+      "evidence": "虹口区政府资料确认内山书店初创时期设于北四川路魏盛里，今四川北路1881弄；上海内山书店沿革亦记早期店址。原记录1887号与现弄号为片区级桥接，未核具体门牌和楼栋。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1583",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20221117/d8c9fc63-2cf0-4b1f-8157-a8980d64585c.html",
+        "https://zh.wikipedia.org/wiki/上海内山书店"
+      ]
+    },
+    {
+      "IDBAT": 191,
+      "historicalName": "Advanced School (école Complémentaire)",
+      "coordinates": {
+        "wgs84": [
+          121.464861,
+          31.222199
+        ],
+        "gcj02": [
+          121.469411,
+          31.220276
+        ]
+      },
+      "modernRoadAddress": "56-1 雁荡路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Advanced School (école Complémentaire)”（56-1 ROUTE VOYRON）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=191",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1540,
+      "historicalName": "Airport",
+      "historicalNameCorrectionZh": "機場",
+      "historicalStartYear": 1922,
+      "coordinates": {
+        "wgs84": [
+          121.45396,
+          31.165283
+        ],
+        "gcj02": [
+          121.458536,
+          31.163358
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Airport”（null）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1540",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1051,
+      "historicalName": "American Army Camp Residences",
+      "historicalNameCorrectionZh": "美國兵營住宅",
+      "coordinates": {
+        "wgs84": [
+          121.447277,
+          31.235983
+        ],
+        "gcj02": [
+          121.451875,
+          31.234106
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“American Army Camp Residences”（null）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1051",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 70,
+      "historicalName": "Bank of China",
+      "historicalNameCorrectionZh": "中國銀行",
+      "coordinates": {
+        "wgs84": [
+          121.473982,
+          31.227661
+        ],
+        "gcj02": [
+          121.478504,
+          31.225717
+        ]
+      },
+      "modernRoadAddress": "107/117 龙门路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Bank of China”（107/117 RUE MARCO POLO）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=70",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 511,
+      "historicalName": "Bank of China",
+      "historicalNameCorrectionZh": "中國銀行",
+      "historicalStartYear": 1937,
+      "coordinates": {
+        "wgs84": [
+          121.484445,
+          31.241645
+        ],
+        "gcj02": [
+          121.488933,
+          31.239678
+        ]
+      },
+      "modernRoadAddress": "20 中山东一路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Bank of China”（20 BUND ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=511",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 993,
+      "historicalName": "Bank of China",
+      "historicalNameCorrectionZh": "中國銀行",
+      "coordinates": {
+        "wgs84": [
+          121.456436,
+          31.232639
+        ],
+        "gcj02": [
+          121.461011,
+          31.230741
+        ]
+      },
+      "modernRoadAddress": "801 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Bank of China”（801 BUBBLING WELL ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=993",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 416,
+      "historicalName": "French China Field Battalion (Bataillon de Marche de Chine)",
+      "historicalNameCorrectionZh": "法國兵營",
+      "coordinates": {
+        "wgs84": [
+          121.452212,
+          31.2096
+        ],
+        "gcj02": [
+          121.456796,
+          31.2077
+        ]
+      },
+      "modernRoadAddress": "388-15 襄阳南路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“French China Field Battalion (Bataillon de Marche de Chine)”（388-15 ROUTE RAYMOND TENANT DE LA TOUR）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=416",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 422,
+      "historicalName": "French China Field Battalion (Bataillon de Marche de Chine)",
+      "historicalNameCorrectionZh": "法國兵營",
+      "coordinates": {
+        "wgs84": [
+          121.448614,
+          31.203758
+        ],
+        "gcj02": [
+          121.453206,
+          31.201863
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“French China Field Battalion (Bataillon de Marche de Chine)”（319 ROUTE GHISI）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=422",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 463,
+      "historicalName": "French China Field Battalion (Bataillon de Marche de Chine)",
+      "historicalNameCorrectionZh": "法國兵營",
+      "coordinates": {
+        "wgs84": [
+          121.439744,
+          31.202097
+        ],
+        "gcj02": [
+          121.444355,
+          31.200217
+        ]
+      },
+      "modernRoadAddress": "691 建国西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“French China Field Battalion (Bataillon de Marche de Chine)”（691 ROUTE JOSEPH FRELUPT）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=463",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 468,
+      "historicalName": "French China Field Battalion (Bataillon de Marche de Chine)",
+      "historicalNameCorrectionZh": "法國兵營",
+      "coordinates": {
+        "wgs84": [
+          121.439843,
+          31.202654
+        ],
+        "gcj02": [
+          121.444454,
+          31.200774
+        ]
+      },
+      "modernRoadAddress": "?? 吴兴路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“French China Field Battalion (Bataillon de Marche de Chine)”（?? ROUTE BRIDOU）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=468",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 481,
+      "historicalName": "French China Field Battalion (Bataillon de Marche de Chine)",
+      "historicalNameCorrectionZh": "法國兵營",
+      "coordinates": {
+        "wgs84": [
+          121.43235,
+          31.202536
+        ],
+        "gcj02": [
+          121.436975,
+          31.200668
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“French China Field Battalion (Bataillon de Marche de Chine)”（204 ROUTE PROSPER PARIS）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=481",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 810,
+      "historicalName": "Guandi Temple",
+      "historicalNameCorrectionZh": "關帝廟",
+      "historicalStartYear": 1851,
+      "historicalEndYear": 1959,
+      "coordinates": {
+        "wgs84": [
+          121.467256,
+          31.226016
+        ],
+        "gcj02": [
+          121.471799,
+          31.224089
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Guandi Temple”（10 TAMSUI ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=810",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1097,
+      "historicalName": "Guandi Temple",
+      "historicalNameCorrectionZh": "關帝廟",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.440933,
+          31.224686
+        ],
+        "gcj02": [
+          121.445544,
+          31.222815
+        ]
+      },
+      "modernRoadAddress": "1691 南京西路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Guandi Temple”（1691 BUBBLING WELL ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1097",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1478,
+      "historicalName": "Guandi Temple",
+      "historicalNameCorrectionZh": "關帝廟",
+      "coordinates": {
+        "wgs84": [
+          121.482013,
+          31.223218
+        ],
+        "gcj02": [
+          121.486508,
+          31.221249
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Guandi Temple”（955 EASTERN FUSHING ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1478",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 47,
+      "historicalName": "Police Sub-Station (Poste de Surveillance)",
+      "historicalNameCorrectionZh": "警所",
+      "coordinates": {
+        "wgs84": [
+          121.478052,
+          31.226104
+        ],
+        "gcj02": [
+          121.48256,
+          31.224148
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Police Sub-Station (Poste de Surveillance)”（BUISSONNET / DAJING / DEUX REPUBLIQUES / PALIKAO）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=47",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 119,
+      "historicalName": "Police Sub-Station (Poste de Surveillance)",
+      "historicalNameCorrectionZh": "警所",
+      "coordinates": {
+        "wgs84": [
+          121.477032,
+          31.213305
+        ],
+        "gcj02": [
+          121.481543,
+          31.211346
+        ]
+      },
+      "modernRoadAddress": "RUE DE CAPITAINE RABIER / 徐家汇路／肇嘉浜路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Police Sub-Station (Poste de Surveillance)”（RUE DE CAPITAINE RABIER / ROUTE DE ZIKAWEI）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=119",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 222,
+      "historicalName": "Police Sub-Station (Poste de Surveillance)",
+      "historicalNameCorrectionZh": "警所",
+      "coordinates": {
+        "wgs84": [
+          121.468498,
+          31.210691
+        ],
+        "gcj02": [
+          121.473036,
+          31.208753
+        ]
+      },
+      "modernRoadAddress": "重庆南路 / 徐家汇路／肇嘉浜路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Police Sub-Station (Poste de Surveillance)”（AVENUE DUBAIL / ROUTE DE ZIKAWEI）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=222",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 255,
+      "historicalName": "School of English",
+      "historicalNameCorrectionZh": "英専學校",
+      "coordinates": {
+        "wgs84": [
+          121.461152,
+          31.218572
+        ],
+        "gcj02": [
+          121.465713,
+          31.216656
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“School of English”（21 RUE CORNEILLE）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=255",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1085,
+      "historicalName": "School of English",
+      "coordinates": {
+        "wgs84": [
+          121.446313,
+          31.224605
+        ],
+        "gcj02": [
+          121.450913,
+          31.222724
+        ]
+      },
+      "modernRoadAddress": "1224 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“School of English”（1224 AVENUE FOCH）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1085",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1158,
+      "historicalName": "School of English",
+      "historicalNameCorrectionZh": "英文学校",
+      "coordinates": {
+        "wgs84": [
+          121.443501,
+          31.23978
+        ],
+        "gcj02": [
+          121.448108,
+          31.237912
+        ]
+      },
+      "modernRoadAddress": "707-8 江宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“School of English”（707-8 GORDON ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1158",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 592,
+      "historicalName": "Shanghai Water Works",
+      "coordinates": {
+        "wgs84": [
+          121.480371,
+          31.244177
+        ],
+        "gcj02": [
+          121.484873,
+          31.242222
+        ]
+      },
+      "modernRoadAddress": "466 江西中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Water Works”（466 KIANGSE ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=592",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 596,
+      "historicalName": "Shanghai Water Works",
+      "historicalStartYear": 1880,
+      "coordinates": {
+        "wgs84": [
+          121.48016,
+          31.244607
+        ],
+        "gcj02": [
+          121.484663,
+          31.242653
+        ]
+      },
+      "modernRoadAddress": "484 江西中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Water Works”（484 KIANGSE ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=596",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 941,
+      "historicalName": "Shanghai Water Works",
+      "historicalNameCorrectionZh": "上海自来水廠",
+      "coordinates": {
+        "wgs84": [
+          121.460418,
+          31.240936
+        ],
+        "gcj02": [
+          121.464983,
+          31.239033
+        ]
+      },
+      "modernRoadAddress": "426 新闸路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Shanghai Water Works”（426 SINZA ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=941",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1160,
+      "historicalName": "SMC - Public Works Department",
+      "historicalNameCorrectionZh": "工部局公務處",
+      "coordinates": {
+        "wgs84": [
+          121.444162,
+          31.240963
+        ],
+        "gcj02": [
+          121.448768,
+          31.239094
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“SMC - Public Works Department”（838 MARKHAM ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1160",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1016,
+      "historicalName": "SMC Primary School",
+      "historicalNameCorrectionZh": "工部局小學",
+      "coordinates": {
+        "wgs84": [
+          121.448233,
+          31.231389
+        ],
+        "gcj02": [
+          121.452829,
+          31.229508
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“SMC Primary School”（375 SEYMOUR ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1016",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1174,
+      "historicalName": "SMC Primary School",
+      "historicalNameCorrectionZh": "工部局小學",
+      "historicalStartYear": 1933,
+      "coordinates": {
+        "wgs84": [
+          121.436384,
+          31.238155
+        ],
+        "gcj02": [
+          121.441005,
+          31.236298
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“SMC Primary School”（966 CHANGDE ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1174",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 552,
+      "historicalName": "Socony Oil Station",
+      "coordinates": {
+        "wgs84": [
+          121.485767,
+          31.235042
+        ],
+        "gcj02": [
+          121.49025,
+          31.233068
+        ]
+      },
+      "modernRoadAddress": "50 延安东路 ROAD",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Socony Oil Station”（50 EDWARD VII ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=552",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 998,
+      "historicalName": "Socony Oil Station",
+      "coordinates": {
+        "wgs84": [
+          121.458076,
+          31.226122
+        ],
+        "gcj02": [
+          121.462646,
+          31.224217
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Socony Oil Station”（5 YATES ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=998",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 761,
+      "historicalName": "Tianhou Temple",
+      "historicalNameCorrectionZh": "天后宮",
+      "historicalStartYear": 1883,
+      "coordinates": {
+        "wgs84": [
+          121.477574,
+          31.244927
+        ],
+        "gcj02": [
+          121.482085,
+          31.242981
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Tianhou Temple”（?? NORTH HONAN ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=761",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1699,
+      "historicalName": "Tianhou Temple",
+      "historicalNameCorrectionZh": "天后宮",
+      "coordinates": {
+        "wgs84": [
+          121.512324,
+          31.226132
+        ],
+        "gcj02": [
+          121.516711,
+          31.224074
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Tianhou Temple”（?? LAODAIDU LU）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1699",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 184,
+      "historicalName": "Tongyi Primary School",
+      "historicalNameCorrectionZh": "同義小學",
+      "coordinates": {
+        "wgs84": [
+          121.463138,
+          31.225177
+        ],
+        "gcj02": [
+          121.467693,
+          31.22326
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Tongyi Primary School”（139 ROUTE RATARD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=184",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 809,
+      "historicalName": "Tongyi Primary School",
+      "historicalNameCorrectionZh": "同義小學校",
+      "coordinates": {
+        "wgs84": [
+          121.467956,
+          31.226049
+        ],
+        "gcj02": [
+          121.472497,
+          31.22412
+        ]
+      },
+      "modernRoadAddress": "50/54 延安中路／金陵西路（分段）",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Tongyi Primary School”（50/54 AVENUE FOCH）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=809",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1597,
+      "historicalName": "Uchiyama Book Shop",
+      "historicalNameCorrectionZh": "内山書店",
+      "historicalStartYear": 1929,
+      "historicalEndYear": 1945,
+      "coordinates": {
+        "wgs84": [
+          121.478864,
+          31.266915
+        ],
+        "gcj02": [
+          121.483373,
+          31.264975
+        ]
+      },
+      "modernRoadAddress": "250 四川北路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Uchiyama Book Shop”（250 NORTH SZECHUEN ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1597",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1159,
+      "historicalName": "Wenhua Junior High School",
+      "historicalNameCorrectionZh": "文化中學",
+      "coordinates": {
+        "wgs84": [
+          121.444444,
+          31.240164
+        ],
+        "gcj02": [
+          121.449049,
+          31.238294
+        ]
+      },
+      "modernRoadAddress": "702 江宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Wenhua Junior High School”（702 GORDON ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1159",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1208,
+      "historicalName": "Wenhua Junior High School",
+      "historicalNameCorrectionZh": "文化中學",
+      "coordinates": {
+        "wgs84": [
+          121.44069,
+          31.245205
+        ],
+        "gcj02": [
+          121.445303,
+          31.243344
+        ]
+      },
+      "modernRoadAddress": "809/811 昌化路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Wenhua Junior High School”（809/811 TONQUIN ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1208",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 32,
+      "historicalName": "YMCA",
+      "historicalNameCorrectionZh": "青年會",
+      "historicalStartYear": 1932,
+      "coordinates": {
+        "wgs84": [
+          121.4749,
+          31.22934
+        ],
+        "gcj02": [
+          121.479419,
+          31.227394
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“YMCA”（123 BOULEVARD DE MONTIGNY）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=32",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 594,
+      "historicalName": "YMCA",
+      "historicalNameCorrectionZh": "青年會",
+      "historicalStartYear": 1915,
+      "coordinates": {
+        "wgs84": [
+          121.481543,
+          31.244582
+        ],
+        "gcj02": [
+          121.486041,
+          31.242624
+        ]
+      },
+      "modernRoadAddress": "?? 香港路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“YMCA”（?? HONGKONG ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=594",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 595,
+      "historicalName": "YMCA",
+      "historicalNameCorrectionZh": "青年會",
+      "coordinates": {
+        "wgs84": [
+          121.481732,
+          31.244574
+        ],
+        "gcj02": [
+          121.486229,
+          31.242616
+        ]
+      },
+      "modernRoadAddress": "?? 香港路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“YMCA”（?? HONGKONG ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=595",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1001,
+      "historicalName": "YWCA",
+      "historicalNameCorrectionZh": "女青年會",
+      "coordinates": {
+        "wgs84": [
+          121.453506,
+          31.230772
+        ],
+        "gcj02": [
+          121.458089,
+          31.22888
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“YWCA”（323 MOULMEIN ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1001",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1387,
+      "historicalName": "YWCA",
+      "historicalNameCorrectionZh": "基督教女青年會",
+      "historicalStartYear": 1946,
+      "historicalEndYear": 1959,
+      "coordinates": {
+        "wgs84": [
+          121.446598,
+          31.23705
+        ],
+        "gcj02": [
+          121.451198,
+          31.235175
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“YWCA”（495 KIANGNING ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1387",
+        "https://zh.wikipedia.org/wiki/上海法租界道路列表"
+      ]
+    },
+    {
+      "IDBAT": 1023,
+      "historicalName": "Zhengguang Junior High School",
+      "historicalNameCorrectionZh": "正光中學",
+      "coordinates": {
+        "wgs84": [
+          121.449907,
+          31.233577
+        ],
+        "gcj02": [
+          121.454499,
+          31.231694
+        ]
+      },
+      "modernRoadAddress": "210 江宁路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengguang Junior High School”（210 GORDON ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1023",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 1081,
+      "historicalName": "Zhengguang Junior High School",
+      "historicalNameCorrectionZh": "正光中學",
+      "coordinates": {
+        "wgs84": [
+          121.442511,
+          31.228572
+        ],
+        "gcj02": [
+          121.447119,
+          31.2267
+        ]
+      },
+      "modernRoadAddress": "310 常德路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhengguang Junior High School”（310 HART ROAD）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1081",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 108,
+      "historicalName": "Zhongguo Junior High School for Girls",
+      "historicalNameCorrectionZh": "中國女子中學",
+      "coordinates": {
+        "wgs84": [
+          121.471869,
+          31.219231
+        ],
+        "gcj02": [
+          121.476397,
+          31.217288
+        ]
+      },
+      "modernRoadAddress": "284-4 复兴中路",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Junior High School for Girls”（284-4 ROUTE LAFAYETTE）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=108",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    },
+    {
+      "IDBAT": 334,
+      "historicalName": "Zhongguo Junior High School for Girls",
+      "historicalNameCorrectionZh": "中國中學女子部",
+      "coordinates": {
+        "wgs84": [
+          121.455499,
+          31.211551
+        ],
+        "gcj02": [
+          121.460075,
+          31.209645
+        ]
+      },
+      "modernRoadAddress": null,
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "Virtual Shanghai确认历史记录“Zhongguo Junior High School for Girls”（249 ROUTE HERVE DE SIEYES）；本轮完成身份、旧地址与现代线索检索，但未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；不把邻近设施或同路名推定为现址，地图建议 no。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=334",
+        "https://www.histoire-chine.fr/shanghai-buildings/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "batch": "022",
+  "date": "2026-09-14",
+  "round": "r4",
+  "recordId": 1210,
+  "recordName": "Xinyu Textile Factory No. 2 / 新裕紡織第二廠",
+  "originalAddress": "8 ROBISON ROAD",
+  "researchProgress": "partial",
+  "verificationStatus": "likely",
+  "mapWriteRecommendation": "review",
+  "queries": [
+    {
+      "query": "Xinyu Textile Factory No. 2 8 ROBISON ROAD Shanghai",
+      "purpose": "确认本条历史实体、原始门牌与年代"
+    },
+    {
+      "query": "新裕纺织第二厂 溥益第二纱厂 劳勃生路8号",
+      "purpose": "核对企业沿革与上棉十四厂继承关系"
+    },
+    {
+      "query": "新裕纺织二厂 长寿路101号 长寿路30号",
+      "purpose": "核对旧门牌重编号与现代道路地址"
+    },
+    {
+      "query": "秋水云庐 上棉十四厂 长寿路28弄 现状",
+      "purpose": "核对原厂址对应的现代小区与当前用途"
+    }
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/data/buildings?ID=1210",
+    "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Cotton",
+    "https://www.jsw.com.cn/2019/1121/1515599.shtml",
+    "https://www.sohu.com/a/235629401_809597",
+    "https://kknews.cc/zh-sg/history/lebz84g.html",
+    "https://www.jiemian.com/article/2735198.html",
+    "https://www.shpt.gov.cn/zhengwu/dxkjyh-gdbzdgz/2024/255/191849/6f331e758e9b430ba1e396424ec25a1e.pdf",
+    "https://www.amap.com/place/B00155I7G5",
+    "https://www.openstreetmap.org/way/430938773"
+  ],
+  "findings": {
+    "identity": "Virtual Shanghai与Histoire de Chine确认新裕紡織第二廠／Xinyu Textile Factory No. 2，1924年、8 ROBISON ROAD；徐静仁传记将同门牌溥益第二纱厂记为上海国棉十四厂前身。",
+    "industrialLineage": "地方沿革资料将1924溥益纺织第二厂接到1935年新裕纺织第二厂、1958年上海第十四棉纺织厂；同组1377保留为独立记录，未合并。",
+    "address": "Robison Road为今长寿路，但资料出现长寿路8号、101号、30号等门牌；今秋水云庐地址为长寿路28弄1—22号，重编号尚无官方逐号桥接。",
+    "currentUse": "界面新闻将秋水云庐明确为上棉十四厂厂址、现高层住宅；普陀区2024年人防备案和高德POI提供28弄1—22号住宅社区的当前地址旁证。",
+    "spatial": "原点位于OSM秋水云庐面内，距边界约5.24米；空间关系与上述场地候选相容，但不是历史地籍证明。"
+  },
+  "limitations": [
+    "长寿路8号、101号、30号与今28弄的门牌重编号关系未闭合。",
+    "未取得上棉十四厂原始厂界、拆建规划或逐栋建筑保留记录。",
+    "秋水云庐住宅为小区级现状，不能指定原厂房对应某一栋住宅或断言局部保留。",
+    "同组ID1377已单独研究但其记录分工仍待档案确认，本条不与其合并。",
+    "本轮不移动原坐标、不修改道路、不合并历史实体、不写入地图。"
+  ],
+  "nextResearch": [
+    "调取普陀区地名档案和旧门牌图，解决劳勃生路8号至长寿路旧101号/30号及今28弄的桥接。",
+    "查上海纺织档案、旧厂图和规划审批，核定上棉十四厂厂界、厂房拆除/保留及秋水云庐用地边界。",
+    "比较同组ID1377的原始记录与企业档案，确定两条记录是别名、分期还是不同资料对象。"
+  ]
+}

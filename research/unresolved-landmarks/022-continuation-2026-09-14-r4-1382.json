@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "batch": "022",
+  "round": "r4",
+  "startedAt": "2026-09-14",
+  "recordIds": [1382],
+  "scopeNote": "仅处理固定022批成员1382徐园；保留原始输入、地点组、坐标和空间预查，不将路口级候选扩写为现代单一宗地。",
+  "queries": [
+    {"query":"上海 徐园 康脑脱路","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"徐园 康定路5号 现在 地址 住宅 工厂","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"徐园 康定路168号 大明造纸厂 现址","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"康定路 昌化路 徐园 旧址","executedAt":"2026-09-14","method":"web-search"}
+  ],
+  "sources": [
+    {
+      "url":"https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1382",
+      "title":"Xu Garden | Virtual Shanghai",
+      "access":"full-text exact record",
+      "finding":"精确ID 1382为徐園，原地址字段为?? CONNAUGHT ROAD，1909，功能为公园/花园。"
+    },
+    {
+      "url":"https://www.jfdaily.com/journal/getMobileArticle.htm?id=511329",
+      "title":"康定路上，故事从徐园讲起 | 解放日报",
+      "access":"full-text",
+      "finding":"记载康脑脱路即今康定路，新徐园在康脑脱路5号、约今康定路江宁路以东；并记其在战乱前后焚毁、仅存残垣。"
+    },
+    {
+      "url":"https://www.jingan.gov.cn/rmtzx/003008/003008006/20170629/17443d7e-e9cd-4055-988b-24635a432f02.html",
+      "title":"手绘文化地图留存城区历史“记忆江宁” | 静安区政府",
+      "access":"full-text",
+      "finding":"地方政府资料将徐园旧址定位在康定路昌化路，并记载其上世纪30年代被焚毁、现已消失。"
+    }
+  ],
+  "findings": [
+    {
+      "IDBAT":1382,
+      "historicalIdentity":"徐園 / Xu Garden",
+      "historicalAddress":"康脑脱路5号（约今康定路江宁路以东）；地方记忆资料另定位康定路昌化路旧址",
+      "buildingFate":"上世纪30年代或战乱前后焚毁并消失",
+      "currentUse":"具体现代宗地用途未核定",
+      "relationship":"same-site-repurposed",
+      "status":"likely",
+      "mapWriteRecommendation":"review",
+      "limitations":["原始英文地址不完整，5号与昌化路路口定位未由同一套门牌/地籍资料闭合。","焚毁后的地块分割、重建和现行用途未找到独立资料。","OSM近邻面仅作空间候选，不证明历史承接关系。"]
+    }
+  ],
+  "mapAction":"none",
+  "notes":"本轮只更新022主结果/evidence中的1382研究进度；未移动坐标、修改原始输入、道路、地点组或地图图层。"
+}

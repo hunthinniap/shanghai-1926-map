@@ -1,0 +1,56 @@
+{
+  "batch": "022",
+  "date": "2026-09-15",
+  "round": "r4",
+  "recordId": 704,
+  "recordName": "Xiyuan Theater / 西園劇場",
+  "originalAddress": "154-5 KWANGSE ROAD",
+  "researchProgress": "partial",
+  "verificationStatus": "likely",
+  "mapWriteRecommendation": "review",
+  "queries": [
+    {
+      "query": "\"154-5 Kwangse Road\" Shanghai; \"Xiyuan Theater\"",
+      "purpose": "确认Virtual Shanghai精确记录与独立地点索引中的历史名称、中文名和门牌。"
+    },
+    {
+      "query": "Kwangse Road Shanghai modern name Guangxi North Road",
+      "purpose": "建立Kwangse Road（广西路）到今广西北路的道路名称映射。"
+    },
+    {
+      "query": "\"广西北路158号\" \"福州路655号\" 图书馆大楼",
+      "purpose": "核对现行门牌、图书馆大楼范围及公共机构入驻情况。"
+    },
+    {
+      "query": "\"福州路655号\" 黄浦区图书馆 现状",
+      "purpose": "确认现代地址的公共图书馆与综合办公用途及其持续性。"
+    }
+  ],
+  "sources": [
+    "https://www.virtualshanghai.net/Data/Buildings?ID=704",
+    "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Performance%20site",
+    "https://zh.wikipedia.org/wiki/广西北路",
+    "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1035IC/f46211e6-d15e-4ac8-8056-fc438c3455f2.pdf",
+    "https://whlyj.sh.gov.cn/gqfc/20250905/32ad6ff65a6345848f5429782d2a8959.html",
+    "https://ditu.amap.com/place/B00155I1RO",
+    "https://www.openstreetmap.org/way/369237876",
+    "https://www.openstreetmap.org/way/369237955"
+  ],
+  "findings": {
+    "identity": "Virtual Shanghai精确ID 704和Histoire de Chine索引均确认Xiyuan Theater／西園劇場、154-5 KWANGSE ROAD，类型为Recreational facility／Performance site／Theater。",
+    "roadAndAddress": "道路沿革资料将Kwangse/Quangsee Road（广西路）对应今广西北路；上海政府采购合同将现图书馆大楼列为广西北路158号／福州路655号，构成同一路段近号段的现代地址候选，但未取得逐号换编档案。",
+    "currentUse": "2023年官方物业合同说明广西北路158号／福州路655号大楼内有黄浦区图书馆、档案馆、老年活动中心等单位；上海市文化和旅游局2025年报道确认福州路655号图书馆继续提供公共阅读和城市书房服务。",
+    "buildingFate": "原点与OSM黄浦区图书馆面约17.40米、与相邻无名建筑面约8.15米，空间上相容但不在图书馆面内；本轮未找到西园剧场停业、拆除或原建筑连续保留的直接记录。"
+  },
+  "limitations": [
+    "Virtual Shanghai与Histoire de Chine提供历史名称／门牌，但没有建成、运营或停业年代。",
+    "广西北路158号／福州路655号是现大楼地址，尚无官方逐号换编、地籍或建筑平面将154-5号直接闭合到现楼。",
+    "政府合同和文旅报道证明现公共文化与档案用途，不证明原西园剧场建筑本体存续；OSM、高德仅作当前空间辅助。",
+    "不移动原坐标、不修改道路、不合并历史实体、不写入地图。"
+  ],
+  "nextResearch": [
+    "查阅1930—1950年代上海市行号路图录、工部局地籍／建筑许可和申报剧场广告，复原154-5号建筑边界。",
+    "寻找西园剧场停业、拆除、改建或现图书馆大楼建设的带日期档案，核对原剧场与现综合大楼是否同一宗地或建筑。",
+    "若无法取得门牌和工程桥接，保留现图书馆大楼为likely/review候选，不将其写成已核定原剧场现址。"
+  ]
+}

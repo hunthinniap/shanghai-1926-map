@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "batch": "022",
+  "round": "r4",
+  "startedAt": "2026-09-14",
+  "recordIds": [756],
+  "scopeNote": "处理固定022批成员756徐少甫诊所；保留原始输入、地点组、坐标和空间预查，不把同址徐氏宅砖雕门楼或七浦路近邻市场POI并入诊所。",
+  "queries": [
+    {"query":"徐少甫诊所 342 TSEPOO ROAD 徐少甫診所","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"Tsepoo Road 七浦路 Chapoo Road 乍浦路","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"七浦路342号 徐氏宅砖雕门楼","executedAt":"2026-09-14","method":"web-search"},
+    {"query":"七浦路303号 368号 服装市场","executedAt":"2026-09-14","method":"web-search"}
+  ],
+  "sources": [
+    {
+      "url":"https://www.virtualshanghai.net/data/buildings?ID=756",
+      "title":"Xu Shaofu Clinic | Virtual Shanghai",
+      "access":"full-text exact record",
+      "finding":"精确ID 756为徐少甫診所，原地址342 TSEPOO ROAD，类型为Institutional site / Medical facility / Clinic；年代字段为空。"
+    },
+    {
+      "url":"https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Medical+facility",
+      "title":"Medical facility索引 | Histoire de Chine",
+      "access":"full-text",
+      "finding":"独立索引列出Xu Shaofu Clinic / 徐少甫診所 / 342 TSEPOO ROAD / Clinic。"
+    },
+    {
+      "url":"https://www.histoire-chine.fr/vieux-shanghai/?fulltxt=P",
+      "title":"旧上海道路中法对照 | Histoire de Chine",
+      "access":"full-text",
+      "finding":"道路对照将Tsepoo Road对应七浦路、Chapoo Road对应乍浦路；本条原地址应规范为七浦路342号。"
+    },
+    {
+      "url":"https://www.jingan.gov.cn/main/2238d24f-cdbd-4192-bdc7-35d97f6597e9/c2679037-37d3-4951-8553-49fbba6091e7/%E9%9D%99%E5%AE%89%E5%8C%BA%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E7%82%B9%E5%90%8D%E5%BD%95.pdf",
+      "title":"静安区文物保护点名录 | 静安区政府",
+      "access":"pdf-full-text",
+      "finding":"第6页第192项记徐氏宅砖雕门楼原地址七浦路342号，已迁至共和新路1555号闸北公园内；未明示与诊所同一。"
+    },
+    {
+      "url":"https://www.jingan.gov.cn/rmtzx/003008/003008004/20220621/f28da1f1-d0ca-42fc-9390-a400256aa4b6.html",
+      "title":"七浦路服装市场商贸报道 | 静安区政府",
+      "access":"full-text",
+      "finding":"2022年官方报道确认七浦路服装批发/零售商圈及沿街店铺经营。"
+    },
+    {
+      "url":"https://ditu.amap.com/place/B00155AXS9",
+      "title":"七浦路服装批发市场（303号） | 高德地图",
+      "access":"full-text",
+      "finding":"现行POI为七浦路303号服装批发市场，仅作342号商圈级近邻旁证。"
+    },
+    {
+      "url":"https://www.amap.com/place/B00155FXE4",
+      "title":"上海超飞捷服装批发市场（368号） | 高德地图",
+      "access":"full-text",
+      "finding":"现行POI为七浦路368号上海超飞捷服装批发市场，仅作342号商圈级近邻旁证。"
+    }
+  ],
+  "findings": [
+    {
+      "IDBAT":756,
+      "historicalIdentity":"徐少甫診所 / Xu Shaofu Clinic",
+      "historicalAddress":"342 TSEPOO ROAD；道路对照规范为今七浦路342号",
+      "buildingFate":"同址另有徐氏宅砖雕门楼已迁至闸北公园；诊所楼体存废及二者关系未证",
+      "currentUse":"七浦路303—368号商圈级服装批发/零售候选；342号具体经营单位未核定",
+      "relationship":null,
+      "status":"likely",
+      "mapWriteRecommendation":"review",
+      "limitations":[
+        "缺少徐少甫人物身份与诊所运营年代的独立机构史或报刊记录。",
+        "不能把同址徐氏宅砖雕门楼迁移直接解释为诊所建筑拆除或迁移。",
+        "303号、368号近邻市场POI不能替代342号精确现行用途。",
+        "OSM无名面只作空间候选，不证明历史实体承接。"
+      ]
+    }
+  ],
+  "mapAction":"none",
+  "notes":"本轮更新022主结果/evidence中的756研究进度；未移动坐标、修改原始输入、道路、地点组或地图图层。"
+}

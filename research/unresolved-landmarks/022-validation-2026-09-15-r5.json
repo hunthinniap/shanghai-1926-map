@@ -1,0 +1,49 @@
+{
+  "validatedAt": "2026-09-15",
+  "batch": "022",
+  "round": "r5",
+  "executionStatus": "executed",
+  "validationScope": "离线结构、原始字段保持、来源覆盖及研究状态对齐；不构成历史建筑对应或当前运营的独立证明。",
+  "inputSha256": "42420a19f71deb8ce674b1cda741060664dd45ea54ad9464ac8ff16e3da1629e",
+  "records": 50,
+  "groups": 49,
+  "groupMembers": 64,
+  "checks": [
+    "022-input/results/evidence均为50条且ID顺序一致",
+    "所有evidence.originalInput与022-input逐字一致",
+    "所有results.sources均被对应sourceReviews覆盖",
+    "最后十条均为partial、各含4条2026-09-15查询",
+    "结果与证据verificationStatus/mapWriteRecommendation一致",
+    "246 actual queries across dated logs；r5新增40条",
+    "无not-started记录",
+    "地图、坐标、道路、原始字段及分组未写入或合并"
+  ],
+  "statusCounts": {
+    "researchProgress": {
+      "completed": 8,
+      "partial": 42,
+      "not-started": 0
+    },
+    "verificationStatus": {
+      "verified": 2,
+      "likely": 19,
+      "unresolved": 29
+    },
+    "mapWriteRecommendation": {
+      "yes": 0,
+      "review": 21,
+      "no": 29
+    }
+  },
+  "r5RecordIds": [1620, 450, 1625, 1246, 699, 1384, 464, 94, 133, 1527],
+  "r5TargetedQueries": 40,
+  "evidenceRecordQueryCount": 245,
+  "spatialCacheDate": "2026-09-12",
+  "mapWritten": false,
+  "failures": [],
+  "notes": [
+    "6条likely/review仅为人工复核候选，4条仍unresolved/no。",
+    "每条记录的逐号地籍、建筑保留/拆除与现行用途证据仍按各自evidence缺口保留。",
+    "本轮未运行应用build、data:build、commit或push。"
+  ]
+}

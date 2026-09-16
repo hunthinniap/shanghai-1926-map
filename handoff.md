@@ -1,6 +1,98 @@
 # 上海历史地点现用途调查交接
 
-更新时间：2026-09-13（Asia/Shanghai；第二次续查r2）
+## 最新增量：2026-09-15，首轮未调查队列清空并校正进度口径
+
+- 已连续完成 024—031 八个批次及 032 尾批次：共新增 410 条首轮研究记录（024/025/026/027/028/029/030/031各50条，032为10条）。每批均有固定输入、a/b/c分片、results、evidence、review和validation；原始字段、历史坐标、道路、分组及同址不同历史实体均未改写。
+- `node scripts/research-progress.mjs` 现显示：当前文件 1403 条中 **1362 条有调查记录、42 条已停放 utility、0 条未调查且未分配、0 条已分配但无结果**。42 条是此前明确分流的 toilet/public bath 记录，清单仍在 `research/unresolved-landmarks/excluded-utility-records.json`，不再进入 research 队列。
+- 024—032新增研究的重点强结论仍需人工批准：025 的 #357 新乐路55号东正教堂、#1284 宝山路874号主显堂旧址、026 的 #601 虎丘路131号虎丘公寓建议 yes（未写地图）；024/025/026 其余 likely 候选共19条建议 review；其余首轮结果保持 no。
+- 为避免 utility 被误报为未调查，进度脚本新增“已停放 utility”统计列；这只是口径修正，不改变任何地图数据或研究结论。地图仍未写入，未运行 `data:build`，未commit或push。
+- 后续工作从“发现未调查记录”转为：①复核 024—026 的 verified/likely 候选（地籍、文保范围、楼栋边界）；②继续深挖 027—032 unresolved；③处理外部报告补证队列 ID 204、574、691、1062、1355、1565、1569、1712。
+
+## 最新增量：2026-09-15，029批次首轮50条全部完成
+
+- 固定 `research/unresolved-landmarks/029-input.json`（50条，SHA-256：`7083c53250b83e74b626932662038028eaf76a6ac85e98d168dedd9d99a8c5f0`），结果见 `029-results.json`、`029-evidence.json`、`029-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-029-research.json`。
+- 本批次结论为 **0 verified / 0 likely / 50 unresolved**，地图建议全部 no。住宅复合体、学校和寺庙只完成旧地址到现代道路级筛查，未形成楼栋/地籍或现用途闭环。
+- 当前运行 `node scripts/research-progress.mjs` 口径：固定当前未查明快照1403条中 **1202条已有调查记录、50条固定但尚无正式结果（017/018）、151条未调查且未分配**。029结果未应用到 `public/data`，地图覆盖统计不变。
+- 本轮未写地图、未运行 `data:build`、未commit或push。下一步固定030，继续处理剩余151条；优先对有门牌公寓、学校和宗教地点补地籍/保护名录，缺门牌记录保持 unresolved。
+
+## 最新增量：2026-09-15，028批次首轮50条全部完成
+
+- 固定 `research/unresolved-landmarks/028-input.json`（50条，SHA-256：`01f69e411cf5ad7e84ef23fcfb123061a448a7719f5b010a2e1997a134edca84`），结果见 `028-results.json`、`028-evidence.json`、`028-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-028-research.json`。
+- 本批次结论为 **0 verified / 0 likely / 50 unresolved**，地图建议全部 no。学校、花园、难民营、运动场、邮局、兵营、教堂和墓地多数只能完成旧路名到现代道路级映射，未形成具体单体/现用途闭环。
+- 当前运行 `node scripts/research-progress.mjs` 口径：固定当前未查明快照1403条中 **1152条已有调查记录、50条固定但尚无正式结果（017/018）、201条未调查且未分配**。028结果未应用到 `public/data`，地图覆盖统计不变。
+- 本轮未写地图、未运行 `data:build`、未commit或push。下一步固定029，优先从有门牌的工厂、教堂、邮局和学校档案入手；无门牌记录继续保持 unresolved，待地方志/地籍证据。
+
+## 最新增量：2026-09-15，027批次首轮50条全部完成
+
+- 固定 `research/unresolved-landmarks/027-input.json`，并完成50条首轮身份、旧地址及道路级筛查；结果见 `027-results.json`、`027-evidence.json`、`027-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-027-research.json`。输入SHA-256：`c09131a43550d865095e1bce32fbd74c683a38cec3b6324f2754f06d6b1c73aa`。
+- 本批次结论为 **0 verified / 0 likely / 50 unresolved**，地图建议全部 no。部分公寓、剧场、银行、学校和宗教记录已得到现代道路级名称，但没有可靠的具体单体/现用途桥接，故不晋级 likely。
+- 027中有多条门牌为空（机场、兵营、墓地、学校/会馆等）；空地址不被猜测补全。所有同址/相近历史实体继续独立保留。
+- 当前运行 `node scripts/research-progress.mjs` 口径：固定当前未查明快照1403条中 **1102条已有调查记录、50条固定但尚无正式结果（017/018）、251条未调查且未分配**。027结果未应用到 `public/data`，地图覆盖统计不变。
+- 本轮未写地图、未运行 `data:build`、未commit或push。下一步固定028，优先处理有明确门牌的住宅、公用设施、剧场和宗教地点，再回头补查无门牌记录。
+
+## 最新增量：2026-09-15，026批次首轮50条全部完成
+
+- 固定 `research/unresolved-landmarks/026-input.json`（50条，SHA-256：`ca13f80e0b5b70db837b896dfa2326bf05c170e0d2ca609f34e4cc77a42b0fa8`），结果见 `026-results.json`、`026-evidence.json`、`026-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-026-research.json`。
+- 本批次结论为 **1 verified / 5 likely / 44 unresolved**，地图建议 **1 yes（待批准）/ 5 review / 44 no**。601 虎丘路131号原青年会总部（今虎丘公寓）有直接现址与住宅用途资料；1737—1740大胜胡同、1583内山书店早期店址为片区/门牌候选，未自动写地图。
+- 44条 unresolved 只保留历史身份、旧门牌和道路/机构级线索；不把同路名、同号、近邻POI或搜索未命中当成建筑存续/拆除证据。大胜胡同四条记录和其他同址历史实体均独立保留。
+- 当前运行 `node scripts/research-progress.mjs` 口径：固定当前未查明快照1403条中 **1052条已有调查记录、50条固定但尚无正式结果（017/018）、301条未调查且未分配**。026结果仍未应用到 `public/data`，地图覆盖统计不变。
+- 本轮未写地图、未运行 `data:build`、未commit或push。下一步优先复核024—026的候选与yes条目，再固定027处理剩余301条。
+
+## 最新增量：2026-09-15，025批次首轮50条全部完成
+
+- 继续固定 `research/unresolved-landmarks/025-input.json`（50条，SHA-256：`1d8d034334e1b98cb2abef8f67a5eb725ebb980c996926618d8f9b57eb815ce5`），结果见 `025-results.json`、`025-evidence.json`、`025-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-025-research.json`。
+- 本批次结论为 **2 verified / 5 likely / 43 unresolved**，地图建议 **2 yes（待批准）/ 5 review / 43 no**。verified为 **357 新乐路东正教堂（新乐路55号）** 与 **1284 主显堂旧址（宝山路874号，1934拆除后现住宅区）**；两条建议均未写入地图。
+- 5条likely为 **1559、1560（华山路954号旧交大/东亚同文书院共址候选）**、**1067、1068、1070（南阳路183号共址机构候选）**。现代地址/用途线索明确，但门牌沿革、原点到楼栋和各历史实体边界未闭合；同址记录分别保留，不合并。
+- 43条unresolved仅保留Virtual Shanghai身份、旧门牌和道路/机构级线索；不把道路翻译、同号、近邻POI或搜索未命中当成建筑存续/拆除证据。`025-validation-2026-09-15.json` 已确认50/50结果、输入未覆盖、坐标/道路/分组未变。
+- 运行 `node scripts/research-progress.mjs` 后，当前固定未查明快照1403条中 **1002条已有调查记录、50条固定但尚无正式结果（017/018）、351条未调查且未分配**。研究结果仍未应用到 `public/data`，地图覆盖统计不变。
+- 本轮未写地图、未运行 `data:build`、未commit或push。下一步优先复核357/1284和7条likely（024的9条、025的5条合计14条候选），随后固定026继续处理剩余351条。
+
+## 最新增量：2026-09-15，024批次首轮50条全部完成
+
+- 全项目重新扫描后，024固定快照 `research/unresolved-landmarks/024-input.json` 的50条已全部完成首轮研究；输入SHA-256为 `2bb43c73bba58ef83960055202a090ecb9d91d9eb2d4f1bba1d7013d812b86c7`。结果见 `024-results.json`、`024-evidence.json`、`024-review.md`，工作流结果见 `scripts/data/unresolved-landmarks-024-research.json`。
+- 本批次结论为 **9 likely / 41 unresolved / 0 verified**，地图建议 **9 review / 41 no / 0 yes**。likely为1245郑家木桥、1573正始中学、1326浙兴菜场、1287知恩院、1409中纺公大三厂、573中华书局、1693中华剧场及923/924胡敏小学；均仍缺楼栋/地籍级闭环，不得自动回填。
+- 其中可确认的拆除或重建线索只作为现址语境保存：郑家木桥为今道路路口，浙兴菜场原址已动迁，中华剧场资料记2001年拆除，温州路北段经历更新；这些结论不等于原点已对应唯一现代宗地。
+- 41条unresolved保留历史身份、旧门牌和道路级线索，不把同路名、同号、近邻POI或搜索未命中解释为原建筑存续/拆除。923与924同名但门牌不同，198/199等同址不同历史记录仍独立保留。
+- 当前运行 `node scripts/research-progress.mjs` 口径：**1150 legacyResearchIds + 50 externalResearchIds = 1200 条已有研究记录**；固定当前未查明快照1403条中 **952条已有调查记录、50条固定但尚无正式结果（017/018）、401条未调查且未分配**。024不写入 `public/data`，因此不算地图覆盖。
+- 本轮未写地图、未运行 `data:build`、未移动历史坐标、未调整道路/分组、未commit或push。下一步优先对9条likely做第二轮地籍/保护名录/楼栋边界复核，再从剩余401条中固定下一批；unresolved继续补地方志、校史、厂史和拆迁档案。
+
+## 最新增量：2026-09-15，023批次首轮50条全部完成
+
+- 全项目重新扫描后确认：固定022已没有 not-started 记录；下一固定快照为 research/unresolved-landmarks/023-input.json，共50条，SHA-256为 7b200b917f13cdbaae613e4e1763c4eddb430aa065aefa83d6332c0b6246e4fe。
+- 本轮已完成023全部50条：前30条沿用 r1—r3，后20条新增 r4、r5。结果保存在 `023-results.json`；证据分为 `023-evidence.json`、`023-evidence-r2.json`、`023-evidence-r3.json`、`023-evidence-r4.json`、`023-evidence-r5.json`；完整评审见 `023-review.md`。
+- 全批次结论为 **1 verified / 17 likely / 32 unresolved**，地图建议 **1 yes（待批准）/ 17 review / 32 no**。唯一达到强现址与持续用途证据的是 **701 浙江大戏院→浙江电影院（浙江中路123号）**；likely条目仍是候选，未回填地图。
+- 023已没有未启动占位对象；不要把 likely 或 verified 自动当成已批准地图覆盖。OSM近邻脚本因公共端点超时中止，没有生成本批空间缓存，也没有把未命中解释为拆除。
+- 最新运行 research-progress 后的当前文件口径为：902条已有调查记录，50条已固定但尚无正式结果（017、018），451条未调查且未分配；023的编译结果已写入 `scripts/data/unresolved-landmarks-023-research.json`，但尚未应用到 `public/data`，所以不计入当前地图覆盖统计。下一步可继续固定024—029，或先对023的17条likely与701做地籍/保护名录复核。保留同址不同历史记录，不合并、不移动历史坐标、不调整道路。
+- 本轮只保存研究工件，未写地图、未运行 data:build、未commit或push；工作区已有的022研究改动继续保留。
+
+## 最新增量：2026-09-15，固定022批次已处理完所有未启动记录
+
+- 继续固定 `research/unresolved-landmarks/022-input.json` 的最后10条：**1620、450、1625、1246、699、1384、464、94、133、1527**。十条均已由 `not-started` 推进为 `partial`，每条补入4条带日期查询、来源评述、现址/现用途判断、空间限制和下一步。
+- 其中 **6条为 likely/review**：450 雅法公寓（Yafa Court，五原路253—263号住宅候选）、1246 洋布公所→福建南路吉安里候选、1384 扬子木材厂→静安河滨花园住宅候选、464 燕平会馆→高安路第一小学宛平校区候选、133 延泽医院→卢湾一中心小学／恒基旭辉天地近邻候选、1527 姚家花园→淮阴路200号西郊宾馆紫竹楼。
+- **4条仍为 unresolved/no**：1620 八千代旅馆（Range Road→武进路，门牌缺失）、1625 大和饭店（Hannen Road→海南路84号，现址单体未核）、699 养心小学（广西北路109号附近，现机构未核）、94 晏心寺（Rue Eugene Bard→自忠路/太仓路段，原址及现用途未闭合）。道路级映射或历史身份不等于建筑存续证明。
+- 当前固定022口径：**8 completed / 42 partial / 0 not-started；2 verified / 19 likely / 29 unresolved；0 yes / 21 review / 29 no**。地图未写入，坐标、道路、分组及原始字段均未改；同址的不同历史实体仍独立保留。
+- 新增十份逐条 `022-continuation-2026-09-15-r5-*.json`、十份对应逐条校验及总校验 `022-validation-2026-09-15-r5.json`；日期日志累计查询口径为246次（evidence记录数组为245条，历史部分检索另存于日志）。研究结果、证据与综述见下方文件。
+- Git：此前 `git pull --ff-only` 已显示 **Already up to date**；本地工作区仍保留未提交研究改动，本轮不commit/push。
+
+## 历史增量：2026-09-15，r4曾推进至第44条（已由上方r5接续）
+
+- Git核对：本地 `main` 与 `origin/main` 均为 `17106ec`（`17106ecfb702414cab0ec1c24d7bfd0ed9c3e51e`）；工作区保留未提交研究改动，因此本轮未执行会覆盖工作区的pull、commit或push。
+- 本轮接着固定 `research/unresolved-landmarks/022-input.json`，将 **1080 锡珍女子中学** 从 `not-started` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-1080.json`。
+- 同轮继续将 **1382 徐园** 从 `not-started` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-1382.json`。历史园林已确认在康定路沿线、上世纪30年代或战乱前后焚毁并消失，但现代宗地与现用途仍未知。
+- 同轮继续将 **756 徐少甫诊所** 从 `not-started` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-756.json`。342 TSEPOO ROAD经道路对照确认为今七浦路342号；同址徐氏宅砖雕门楼已迁至闸北公园，但与诊所保持独立，342号现行单位仍未核定。
+- 同轮继续将 **1544 徐汇女中学** 由已有 `partial / unresolved` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-1544.json`。45 CAOXI BEILU对应今漕溪北路201号圣母院旧址复合院区；现上海四中在天钥桥路100号不作为旧址现址，上海老站已于2023-07-15停业，201号后续用途及学校原点对应楼栋仍未核定。
+- 同轮继续将 **251 新亚中学** 由 `not-started / unresolved / no` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-251.json`。553 ROUTE LAFAYETTE对应今复兴中路553号，现代候选为受保护的复兴坊住宅社区；学校实际占用楼栋、建筑存废及原点—单体边界未核定。
+- 同轮继续将 **1377 新裕二厂** 由 `not-started / unresolved / no` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-1377.json`。8 ROBISON ROAD经企业沿革对应今长寿路一带，现代候选为秋水云庐住宅小区（原上棉十四厂厂址）；8号、101号、30号门牌重编号及原厂界未闭合。
+- 同轮继续将 **1210 新裕纺织第二厂** 由 `not-started / unresolved / no` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-1210.json`。与1377分别保留，但现代候选同为秋水云庐住宅小区（原上棉十四厂厂址）；门牌重编号、原厂界和两条记录档案分工仍未核定。
+- 同轮继续将 **981 修德小学** 由 `not-started / unresolved / no` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-14-r4-981.json`。728 AVENUE ROAD（今北京西路）原点与国际丽都城住宅候选地块空间相容，现行候选地址为北京西路758弄／石门二路199弄；旧门牌桥接、学校停办／拆除日期和原校舍边界仍未核定。
+- 同轮继续将 **704 西园剧场** 由 `not-started / unresolved / no` 推进为 **partial / likely / review**；研究记录见 `022-continuation-2026-09-15-r4-704.json`。154-5 KWANGSE ROAD对应今广西北路，现代候选为广西北路158号／福州路655号黄浦区图书馆大楼；现公共文化与档案综合用途有官方记录，但154-5→158号逐号桥接、西园剧场停业／拆除日期及原建筑边界仍未核定。
+- 310 HART ROAD 对应今常德路310号。上海市房屋管理局第五批优秀历史建筑名录列该址为5B021“信义会”，现使用单位为住宅；地方建筑记录记锡珍女中1938年创办后迁入此处、1954年并入协进女中、1963年培进迁址。
+- 1080 的学校占用楼层、与同址正光中学（批外成员1081）的先后关系、保护范围及原点—单体边界仍未闭合；不移动坐标、不合并历史实体、不回填地图。
+- （r4历史快照）固定022主文件口径曾为 **8 completed / 32 partial / 10 not-started；2 verified / 13 likely / 35 unresolved；0 yes / 15 review / 35 no**；当前统计以上方r5为准，地图保持未回填。
+- 已建立 `research/unresolved-landmarks/excluded-utility-records.json`，42条厕所/公共浴室及功能冲突记录从后续research队列分流，原始数据保留。
+- （r4历史快照）下一条曾为 **1620**；上述门牌桥接、剧场/校舍存废和厂界缺口已由r5分别更新，具体以022-evidence与r5记录为准。
+
+以下为历史存档：更新时间：2026-09-13（Asia/Shanghai；第二次续查r2）
 
 ## 最新进度：固定022推进至第29条，研究已保存，地图未回填
 
