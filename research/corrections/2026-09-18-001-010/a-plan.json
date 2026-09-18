@@ -1,0 +1,460 @@
+{
+  "date": "2026-09-18",
+  "basis": "research/rechecks/2026-09-18-001-010/a-audit.json",
+  "scope": "仅列001—003十条有finding记录的可执行修正；本计划未执行任何原文件、地图或代码修改，也未新增网络研究。",
+  "patchSemantics": {
+    "workflowPatch": "按IDBAT浅合并到现有workflow记录；未列字段保持原值。",
+    "resultPatch": "仅001现有results.records按IDBAT合并；不要为002/003制造results文件。",
+    "partPatch": "仅001对应part按IDBAT合并。{}表示有意不改；null是研究字段的明确空值。",
+    "mapPatch": "update时对现有override合并列出的字段，再由正常构建生成地图；历史名称、sourceRecordIds、expectedHistoricalNames和几何不变。hold时null表示删除该group全部现代current*属性，不写null值到产品。",
+    "mapAction": "hold必须删除/停用既有现代override，单改workflow状态不会自动清除旧地图。retain不改map。",
+    "derivedArtifacts": "root按实际改变更新summary/统计及派生产物；禁止调用会从当前重排批次补造旧输入的编译路径。"
+  },
+  "compilerDependencies": [
+    {
+      "IDBAT": 241,
+      "path": "scripts/compile-unresolved-research.mjs",
+      "action": "outcomeCategory将same-site-rebuilt归demolished-current-use，保持既有notes/原址附近限定。"
+    },
+    {
+      "IDBAT": 538,
+      "path": "scripts/compile-unresolved-research.mjs",
+      "action": "sourceDataIssues的538硬编码替换为对应workflowPatch.sourceDataIssue；防止重新编译恢复确定前后栋断言。"
+    }
+  ],
+  "explicitNonChanges": [
+    {
+      "IDBAT": 569,
+      "reason": "不属于本次十条finding；保留当前未知现用说明及explicitlyApprovedMapWriteIds审批，不作任何修改。"
+    }
+  ],
+  "targets": [
+    {
+      "batch": "001",
+      "IDBAT": 18,
+      "workflow": "scripts/data/unresolved-landmarks-001-research.json",
+      "result": "research/unresolved-landmarks/001-results.json",
+      "part": "research/unresolved-landmarks/001-a.json",
+      "featureGroupId": "landmark-vs-site-18",
+      "fullGroupMemberIds": [
+        18
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 241,
+      "workflow": "scripts/data/unresolved-landmarks-001-research.json",
+      "result": "research/unresolved-landmarks/001-results.json",
+      "part": "research/unresolved-landmarks/001-b.json",
+      "featureGroupId": "landmark-vs-site-241",
+      "fullGroupMemberIds": [
+        241
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 538,
+      "workflow": "scripts/data/unresolved-landmarks-001-research.json",
+      "result": "research/unresolved-landmarks/001-results.json",
+      "part": "research/unresolved-landmarks/001-b.json",
+      "featureGroupId": "landmark-vs-site-538",
+      "fullGroupMemberIds": [
+        538
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 1274,
+      "workflow": "scripts/data/unresolved-landmarks-001-research.json",
+      "result": "research/unresolved-landmarks/001-results.json",
+      "part": "research/unresolved-landmarks/001-c.json",
+      "featureGroupId": "landmark-vs-site-1274",
+      "fullGroupMemberIds": [
+        1274
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1678,
+      "workflow": "scripts/data/unresolved-landmarks-002-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-1678",
+      "fullGroupMemberIds": [
+        1678
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 499,
+      "workflow": "scripts/data/unresolved-landmarks-002-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-499",
+      "fullGroupMemberIds": [
+        499,
+        1554
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1756,
+      "workflow": "scripts/data/unresolved-landmarks-002-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-1756",
+      "fullGroupMemberIds": [
+        1756
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 210,
+      "workflow": "scripts/data/unresolved-landmarks-002-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-210",
+      "fullGroupMemberIds": [
+        210
+      ]
+    },
+    {
+      "batch": "003",
+      "IDBAT": 503,
+      "workflow": "scripts/data/unresolved-landmarks-003-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-503",
+      "fullGroupMemberIds": [
+        503
+      ]
+    },
+    {
+      "batch": "003",
+      "IDBAT": 1551,
+      "workflow": "scripts/data/unresolved-landmarks-003-research.json",
+      "result": null,
+      "part": null,
+      "featureGroupId": "landmark-vs-site-1551",
+      "fullGroupMemberIds": [
+        1551
+      ]
+    }
+  ],
+  "records": [
+    {
+      "batch": "001",
+      "IDBAT": 18,
+      "disposition": "withdraw-unsupported-candidate",
+      "reason": "撤销仅凭门牌数值范围得出的现代同址及拆建断言；没有新的反向身份结论。",
+      "workflowPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "currentUseRelationship": "coordinate-only",
+        "resolutionStatus": "unresolved",
+        "confidence": "low",
+        "mapWriteRecommendation": "no",
+        "outcomeCategory": "location-only-current-use",
+        "evidence": "原记录为亚洲饭店、135 EDWARD VII。旧研究曾以135位于134—150的数字区间推定同址，该推断不成立：旧今门牌、道路侧别和地块对应均未闭合。延安东路134—150号楼仅为旧研究提出的候选，不能据此认定亚洲饭店原址或拆建关系；纱业银行楼与中汇大楼的名称亦不能混用。历史记录原字段保留，原点现代对应及用途待核。"
+      },
+      "resultPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "relationship": null,
+        "verificationStatus": "unresolved",
+        "notes": "原记录为亚洲饭店、135 EDWARD VII。旧研究曾以135位于134—150的数字区间推定同址，该推断不成立：旧今门牌、道路侧别和地块对应均未闭合。延安东路134—150号楼仅为旧研究提出的候选，不能据此认定亚洲饭店原址或拆建关系；纱业银行楼与中汇大楼的名称亦不能混用。历史记录原字段保留，原点现代对应及用途待核。"
+      },
+      "partPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "relationship": null,
+        "verificationStatus": "unresolved",
+        "notes": "原记录为亚洲饭店、135 EDWARD VII。旧研究曾以135位于134—150的数字区间推定同址，该推断不成立：旧今门牌、道路侧别和地块对应均未闭合。延安东路134—150号楼仅为旧研究提出的候选，不能据此认定亚洲饭店原址或拆建关系；纱业银行楼与中汇大楼的名称亦不能混用。历史记录原字段保留，原点现代对应及用途待核。"
+      },
+      "mapAction": "hold",
+      "mapPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "currentUseRelationship": null,
+        "currentUseNote": null,
+        "currentUseSources": null,
+        "currentUseSourceUri": null,
+        "currentUseSourceId": null,
+        "currentUseMatch": null,
+        "evidence": null
+      },
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=18",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.openstreetmap.org/way/300481519"
+      ],
+      "remainingGap": "须取得旧135号门牌变更、历史地块/建筑图或精确地址沿革；现存候选自身的身份不能证明其与亚洲饭店同址。"
+    },
+    {
+      "batch": "001",
+      "IDBAT": 241,
+      "disposition": "correct-demolition-classification",
+      "reason": "原说明已明确原堂拆除、原址附近重建；只修正存废统计，保留既有宗教场所延续说明与已批准名址用途。",
+      "workflowPatch": {
+        "outcomeCategory": "demolished-current-use"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=241",
+        "https://www.catholicsh.org/NewListIn.aspx?InfoCategoryID=17&InfosID=13549",
+        "https://zh.wikipedia.org/wiki/上海圣伯多禄堂"
+      ],
+      "remainingGap": "尚无本轮新旧建筑范围图；不新增严格原位保存或精确新旧足迹一致的说法。root需同步修compiler使same-site-rebuilt归demolished-current-use。"
+    },
+    {
+      "batch": "001",
+      "IDBAT": 538,
+      "disposition": "retain-approved-modern-site-with-narrower-temporal-claim",
+      "reason": "保留已核实的总工会名址用途和yes；收窄原年份差推断，并改用不声称某一具体楼代已拆的同址延续关系。原源题名“第二批”更正为已读页面“第三批”。",
+      "workflowPatch": {
+        "evidence": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
+        "sourceDataIssue": "原记录起年1940与现楼1948年竣工不一致；差异可能涉及所指楼代或原年代误记，仅凭年份不能确定前后建筑关系。",
+        "currentUseRelationship": "same-site-continuing-use"
+      },
+      "resultPatch": {
+        "notes": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
+        "relationship": "same-site-continuing-use",
+        "references": [
+          {
+            "title": "Virtual Shanghai 建筑记录 #538",
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=538"
+          },
+          {
+            "title": "上海市房屋管理局：第三批优秀历史建筑（交通银行 / 上海市总工会）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+          },
+          {
+            "title": "OpenStreetMap：上海市总工会",
+            "url": "https://www.openstreetmap.org/way/178405872"
+          }
+        ]
+      },
+      "partPatch": {
+        "notes": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
+        "relationship": "same-site-continuing-use",
+        "sources": [
+          {
+            "title": "上海市房屋管理局：第三批优秀历史建筑（交通银行 / 上海市总工会）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+          },
+          {
+            "title": "OpenStreetMap：上海市总工会",
+            "url": "https://www.openstreetmap.org/way/178405872"
+          }
+        ]
+      },
+      "mapAction": "update",
+      "mapPatch": {
+        "currentUseNote": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
+        "evidence": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
+        "currentUseSources": [
+          {
+            "title": "上海市房屋管理局：第三批优秀历史建筑（交通银行 / 上海市总工会）",
+            "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+          },
+          {
+            "title": "OpenStreetMap：上海市总工会",
+            "url": "https://www.openstreetmap.org/way/178405872"
+          }
+        ]
+      },
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=538",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://www.openstreetmap.org/way/178405872"
+      ],
+      "remainingGap": "输入所指具体楼代仍未确定；保留原1940年，不改坐标，不据此撤销当前总工会办公身份。compiler内sourceDataIssues的538硬编码须同步使用本计划文字，以免重新编译恢复旧断言。"
+    },
+    {
+      "batch": "001",
+      "IDBAT": 1274,
+      "disposition": "hold-unclosed-site-continuity",
+      "reason": "现机构及833号有证，旧记录与现地块连续性仍仅同名近邻，降为现代候选并撤回肯定回填。",
+      "workflowPatch": {
+        "resolutionStatus": "probable",
+        "confidence": "medium",
+        "outcomeCategory": "location-only-current-use",
+        "currentUseRelationship": "coordinate-only",
+        "mapWriteRecommendation": "review",
+        "evidence": "历史中文字段为宝兴殡仪馆，原地址仅记西宝兴路而无门牌和起年。政府资料确认现上海市宝兴殡仪馆位于西宝兴路833号，现机构的名称与空间位置构成候选线索；这些线索尚不能单独证明历史原点与现馆原址延续。保留候选名址及其殡仪服务用途，旧今院界和机构原址连续关系待核。"
+      },
+      "resultPatch": {
+        "verificationStatus": "likely",
+        "relationship": null,
+        "notes": "历史中文字段为宝兴殡仪馆，原地址仅记西宝兴路而无门牌和起年。政府资料确认现上海市宝兴殡仪馆位于西宝兴路833号，现机构的名称与空间位置构成候选线索；这些线索尚不能单独证明历史原点与现馆原址延续。保留候选名址及其殡仪服务用途，旧今院界和机构原址连续关系待核。"
+      },
+      "partPatch": {
+        "verificationStatus": "likely",
+        "relationship": null,
+        "notes": "历史中文字段为宝兴殡仪馆，原地址仅记西宝兴路而无门牌和起年。政府资料确认现上海市宝兴殡仪馆位于西宝兴路833号，现机构的名称与空间位置构成候选线索；这些线索尚不能单独证明历史原点与现馆原址延续。保留候选名址及其殡仪服务用途，旧今院界和机构原址连续关系待核。"
+      },
+      "mapAction": "hold",
+      "mapPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "currentUseRelationship": null,
+        "currentUseNote": null,
+        "currentUseSources": null,
+        "currentUseSourceUri": null,
+        "currentUseSourceId": null,
+        "currentUseMatch": null,
+        "evidence": null
+      },
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1274",
+        "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
+        "https://zh.wikipedia.org/wiki/上海市宝兴殡仪馆"
+      ],
+      "remainingGap": "补馆史旧址、年代或历史院界资料；研究中保留候选字段不意味着地图可以自动写入。"
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1678,
+      "disposition": "correct-map-district-only",
+      "reason": "旧workflow无错区，错误仅在当前map/override增加的行政区。",
+      "workflowPatch": {},
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "update",
+      "mapPatch": {
+        "currentAddress": "黄浦区南苏州路175号"
+      },
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "remainingGap": "具体当前承租单位仍按既有说明待核；本次不扩张用途。"
+    },
+    {
+      "batch": "002",
+      "IDBAT": 499,
+      "disposition": "withdraw-completed-reconstruction-claim-and-hold-entire-group",
+      "reason": "将计划误写完成态；现原点用途和整组范围均未闭合。删除landmark-vs-site-499的整条现代override，作用范围必须包括499及1554。",
+      "workflowPatch": {
+        "resolutionStatus": "unresolved",
+        "confidence": "low",
+        "outcomeCategory": "location-only-current-use",
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "currentUseRelationship": "coordinate-only",
+        "mapWriteRecommendation": "no",
+        "evidence": "徐汇年鉴网页摘录2009年12月15日《联合时报》第2版《徐家汇修女院将异地重建》，使用“将在房屋拆除后异地重建”“将在新建的公共绿地内重现”等计划表述。该资料支持当年的处置计划，不能单独证明实际拆卸、异位复建竣工及当前遗存范围；2017为网页日期，不能当作工程完成年。原点现用途待核，撤销据此将原址直接认定为上海电影博物馆、电影广场或已复建修女楼的结论。同组#1554教堂与#499修女院应分别核验建筑处置和地块范围，整组暂不写现代用途。",
+        "sourceUrls": [
+          "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2017/05/04/d_88699.html?tm=1740650511988"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {
+        "currentNameZh": null,
+        "currentAddress": null,
+        "currentUse": null,
+        "currentUseRelationship": null,
+        "currentUseNote": null,
+        "currentUseSources": null,
+        "currentUseSourceUri": null,
+        "currentUseSourceId": null,
+        "currentUseMatch": null,
+        "evidence": null
+      },
+      "sourceUrls": [
+        "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2017/05/04/d_88699.html?tm=1740650511988"
+      ],
+      "remainingGap": "需工程实施/竣工、异位新址与原址图，以及499修女院和1554教堂分别处置的证据。被移除的2026外摆经济政策网页不证明该工程完成，不再作为此结论来源；本计划不声称工程从未发生。"
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1756,
+      "disposition": "correct-map-district-only",
+      "reason": "workflow门牌无误，当前map/override的徐汇区错误；精确项目原文称黄浦区国泰公寓。",
+      "workflowPatch": {},
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "update",
+      "mapPatch": {
+        "currentAddress": "黄浦区淮海中路816弄、818—832号"
+      },
+      "sourceUrls": [
+        "https://www.shbtpm.com/info/detail/56964",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1756"
+      ],
+      "remainingGap": "无本次需要改变的楼体、住宅用途或原坐标结论。"
+    },
+    {
+      "batch": "002",
+      "IDBAT": 210,
+      "disposition": "retain-record-and-log-access-gap",
+      "reason": "本轮网页读取失败不能推出原结论错误；既有身份、地址、宿舍用途及地图全部保持。补读事项仅记录于本计划和审查报告，不向产品注入网络错误。",
+      "workflowPatch": {},
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.ccphistory.org.cn/shds/shkyws/content/00f17d69-f692-4cbb-aef8-25ab59647234.html",
+        "https://www.shanghai.gov.cn/hpqywjy/20250416/e1823c7eac2a46af9a27036dc13f3715.html"
+      ],
+      "remainingGap": "党史网精确正文需之后可读归档或重读；无已取得的新反证，本次不降级、不撤回。"
+    },
+    {
+      "batch": "003",
+      "IDBAT": 503,
+      "disposition": "correct-map-district-only",
+      "reason": "workflow无错区；房管局第二批黄浦区段2A020列虎丘路128号，纠正map/override额外增加的虹口区。",
+      "workflowPatch": {},
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "update",
+      "mapPatch": {
+        "currentAddress": "黄浦区虎丘路128号"
+      },
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+        "https://www.shanghai.gov.cn/nw4411/20241010/c74051d489284526ab031ea450de5668.html",
+        "https://whlyj.sh.gov.cn/wbzx/20211217/beb016da4f504e848ef16e86250d2c95.html"
+      ],
+      "remainingGap": "本次只改行政区，不把另一来源读取失败当成展览用途已停止的证据。"
+    },
+    {
+      "batch": "003",
+      "IDBAT": 1551,
+      "disposition": "retain-building-identity-remove-unverified-current-display-use",
+      "reason": "现建筑主链保留，展示开放无近期依据；按root授权保留建筑名址，现用途明确未知，不继续写政府办公与公共文化展示的肯定组合。 原址身份可保留，具体现用途未知，工作流改review；地图只保留明确标注未知的用途说明。",
+      "workflowPatch": {
+        "currentNameZh": "徐家汇大修道院旧址",
+        "currentUse": "未知（当前具体使用方式及展示开放情况待核）",
+        "evidence": "南丹路40号的大修道院历史建筑身份及地址可核。2019年政务报道回顾2016年底层设置徐汇区汇展示厅，同时说明报道当时暂不对外开放；这不能证明2026年仍提供公共展示或已恢复开放，也不能据2019状态认定今天仍关闭。保留徐家汇大修道院旧址名称和地址，当前具体使用方式及展示开放情况待核。",
+        "mapWriteRecommendation": "review"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "update",
+      "mapPatch": {
+        "currentNameZh": "徐家汇大修道院旧址",
+        "currentUse": "未知（当前具体使用方式及展示开放情况待核）",
+        "currentUseNote": "南丹路40号的大修道院历史建筑身份及地址可核。2019年政务报道回顾2016年底层设置徐汇区汇展示厅，同时说明报道当时暂不对外开放；这不能证明2026年仍提供公共展示或已恢复开放，也不能据2019状态认定今天仍关闭。保留徐家汇大修道院旧址名称和地址，当前具体使用方式及展示开放情况待核。",
+        "evidence": "南丹路40号的大修道院历史建筑身份及地址可核。2019年政务报道回顾2016年底层设置徐汇区汇展示厅，同时说明报道当时暂不对外开放；这不能证明2026年仍提供公共展示或已恢复开放，也不能据2019状态认定今天仍关闭。保留徐家汇大修道院旧址名称和地址，当前具体使用方式及展示开放情况待核。"
+      },
+      "sourceUrls": [
+        "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_4428923"
+      ],
+      "remainingGap": "须由现管理方或近期官方资料确认具体用途/开放；不新增关闭断言。保留same-building仅表达历史楼身份，不代表展示仍运营。"
+    }
+  ]
+}

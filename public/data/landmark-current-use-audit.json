@@ -13,13 +13,14 @@
     "matchedFromLibrary": 62,
     "matchedFromLibraryCache": 0,
     "matchedFromWikipedia": 15,
-    "matchedFromResearch": 296,
+    "matchedFromResearch": 276,
     "matchedFromCurrentPlaceName": 22,
     "needsReviewPartialName": 14,
     "needsReviewDuplicateSource": 0,
-    "notFound": 1043,
-    "genericName": 218,
-    "networkFailures": 0
+    "notFound": 994,
+    "genericName": 215,
+    "networkFailures": 0,
+    "needsReviewResearch": 72
   },
   "networkFailures": [],
   "records": [
@@ -61,18 +62,19 @@
       "category": "医院 / 儿童医院",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "原址用途待核 / 儿童医院机构延续",
-        "currentNameZh": "上海市儿童医院（上海交通大学医学院附属儿童医院）",
-        "currentAddress": "泸定路355号；北京西路1400弄24号（机构现址，非历史原址）",
-        "currentUseNote": "Virtual Shanghai 所载 65 Moulmein Road 位于今茂名北路、延安中路口一带，是1937年上海难童医院的初创院址。医院1940年起已迁离，现有泸定路与北京西路两院区；慕尔鸣路历史点今天的具体用途尚待核，卡片中的医院名称只表示机构沿革。",
-        "currentUseRelationship": "institutional-successor-relocated",
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shchildren.com.cn/contents/813/10193.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "上海市儿童医院官方院史确认其前身为1937年创办的上海难童医院；Virtual Shanghai 的旧门牌、上海城建档案对初创院址的定位，以及医院公布的现院区地址能够相互闭合。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1000"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1000",
+        "sourceRecordIds": [
+          1000
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。原点现代名称/用途留空或明确原址未查明，将异地后继移入历史沿革字段；现代对应status宜unresolved，保留迁址事实。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1000",
+          "https://www.shchildren.com.cn/contents/813/10193.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -351,12 +353,25 @@
       "historicalName": "Jianhua Professional Junior High School",
       "mappedName": "建華職業中學",
       "category": "重要建筑",
-      "queries": [
-        "建华职业中学",
-        "上海乐群中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1025",
+        "sourceRecordIds": [
+          1025,
+          1026,
+          1027
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1025,1026,1027；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1025",
+          "https://www.openstreetmap.org/way/185832619",
+          "https://www.virtualshanghai.net/data/buildings?ID=1026"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1028",
@@ -550,12 +565,24 @@
       "historicalName": "Professional School of Law and Accounting",
       "mappedName": "承動法律會計専修校",
       "category": "重要建筑",
-      "queries": [
-        "承动法律会计専修校",
-        "绍兴？山中学上海分校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1039",
+        "sourceRecordIds": [
+          1039,
+          1040,
+          1041
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1039,1040,1041；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1041",
+          "https://www.openstreetmap.org/way/1270307946"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-104",
@@ -575,32 +602,25 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "住宅小区",
-        "currentNameZh": "中华新村（辛家花园／清凉禅寺旧址）",
-        "currentAddress": "上海市静安区新闸路1010号",
-        "currentUseNote": "学术资料明确记载辛家花园位于新闸路1010号，后改作清凉禅寺并曾由新亚药厂使用；公开地方史资料把今新闸路1010号中华新村认作其旧址。Virtual Shanghai 的难民医院应是战时对该处建筑群的临时使用。现有证据能确认宗地沿革，但不能确认当年医院使用的具体单体仍存。",
-        "currentUseRelationship": "same-site-repurposed",
-        "currentUseSources": [
-          {
-            "title": "《史林》：辛家花园、清凉禅寺与新亚药厂沿革",
-            "url": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/e835e7568d89926aef4d41eb08ffd424"
-          },
-          {
-            "title": "人民网：新闸路1010号辛家花园旧址",
-            "url": "https://art.people.com.cn/n/2014/0424/c206244-24938147.html"
-          },
-          {
-            "title": "光明网：辛家花园与新亚药厂",
-            "url": "https://www.gmw.cn/01ds/2002-10/16/05-2155B4BE3A5BF68848256C540002461C.htm"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1042",
+        "sourceRecordIds": [
+          1042,
+          1043,
+          1044,
+          1390,
+          1391
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/e835e7568d89926aef4d41eb08ffd424",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "学术资料明确记载辛家花园位于新闸路1010号，后改作清凉禅寺并曾由新亚药厂使用；公开地方史资料把今新闸路1010号中华新村认作其旧址。Virtual Shanghai 的难民医院应是战时对该处建筑群的临时使用。现有证据能确认宗地沿革，但不能确认当年医院使用的具体单体仍存。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1042"
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。暂停完整五成员回填，主条降likely/review；逐核1042营、1043院、1044/1391寺及1390园的年代/子地块；不能由园名推医院。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1042,1043,1044,1390,1391；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1043",
+          "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/e835e7568d89926aef4d41eb08ffd424",
+          "https://art.people.com.cn/n/2014/0424/c206244-24938147.html",
+          "https://www.gmw.cn/01ds/2002-10/16/05-2155B4BE3A5BF68848256C540002461C.htm"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -727,11 +747,23 @@
       "historicalName": "Jiangcheng Primary School",
       "mappedName": "江城小學",
       "category": "重要建筑",
-      "queries": [
-        "江城小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1055",
+        "sourceRecordIds": [
+          1055
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1055",
+          "https://www.openstreetmap.org/node/9804252406",
+          "https://www.openstreetmap.org/way/431876173"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1056",
@@ -788,28 +820,20 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "政府机关办公",
-        "currentNameZh": "上海市静安区人民政府",
-        "currentAddress": "上海市静安区常德路370号",
-        "currentUseNote": "Hart Road 可对应今常德路，历史门牌370号与静安区人民政府公布的常德路370号一致。现有证据能够闭合到同一地址宗地，但不足以证明历史助产医院及学校建筑保存至今，因此只作同址用途变化，不作同一建筑认定。",
-        "currentUseRelationship": "same-site-repurposed",
-        "currentUseSources": [
-          {
-            "title": "上海市静安区人民政府：政府地址",
-            "url": "https://www.jingan.gov.cn/xxgk/002019/002019005/002019005005/info-gover-leader.html?tableindex=1"
-          },
-          {
-            "title": "上海市静安区政府信息公开年度报告",
-            "url": "https://www.shanghai.gov.cn/zt/zfxxgkndbg/2023zfxxgknb/%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%99%E5%AE%89%E5%8C%BA2023%E5%B9%B4%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E5%B7%A5%E4%BD%9C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1061",
+        "sourceRecordIds": [
+          1061
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.jingan.gov.cn/xxgk/002019/002019005/002019005005/info-gover-leader.html?tableindex=1",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "Hart Road 可对应今常德路，历史门牌370号与静安区人民政府公布的常德路370号一致。现有证据能够闭合到同一地址宗地，但不足以证明历史助产医院及学校建筑保存至今，因此只作同址用途变化，不作同一建筑认定。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1061"
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。保留区政府为候选，降likely/review；补旧医院专名、原图或院地沿革。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1061",
+          "https://www.jingan.gov.cn/xxgk/002019/002019005/002019005005/info-gover-leader.html?tableindex=1",
+          "https://www.shanghai.gov.cn/zt/zfxxgkndbg/2023zfxxgknb/%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%99%E5%AE%89%E5%8C%BA2023%E5%B9%B4%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E5%B7%A5%E4%BD%9C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -1732,11 +1756,24 @@
       "historicalName": "Customs Library",
       "mappedName": "海關圖書館",
       "category": "重要建筑",
-      "queries": [
-        "海关图书馆"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1138",
+        "sourceRecordIds": [
+          1138
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/007-b.json，按ID定位。保留1708号为机构沿革/邻址候选，勿以现图书馆用途代表1714号原址；查原早期馆舍范围。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1138",
+          "https://www.jalib.net/ReaderSynopsis.aspx?ColumnNameEn=Introduction",
+          "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html",
+          "https://finance.sina.com.cn/jjxw/2024-04-23/doc-inasvrzr1919717.shtml"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1139",
@@ -1864,32 +1901,24 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "住宅小区",
-        "currentNameZh": "南草坪住宅小区（鸿章纱厂旧址）",
-        "currentAddress": "上海市静安区泰兴路685号一带",
-        "currentUseNote": "本条与 Virtual Shanghai #1149 是同一鸿章纺织染厂厂区的重复记录。史料把厂址列为泰兴路685号，并梳理出1918年鸿章染织厂、1953年国营上海第十三棉纺织厂、1988年鸿章棉纺织厂的沿革；转换后的历史坐标落在今南草坪住宅小区范围。原厂房已拆，故只认定原厂区改建为住宅，不主张现有建筑与旧厂房相同。",
-        "currentUseRelationship": "site-redeveloped",
-        "currentUseSources": [
-          {
-            "title": "上海档案信息网：鸿章纺织染厂档案",
-            "url": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html"
-          },
-          {
-            "title": "澎湃新闻：鸿章纱厂与泰兴路街区",
-            "url": "https://www.thepaper.cn/newsDetail_forward_1719847"
-          },
-          {
-            "title": "周到上海：老麦根路街区沿革",
-            "url": "https://static.zhoudaosh.com/files/cnews/2018/20180808/97D8C56ECA3B0C372492E766D1D3A6A09D906943AAA69388A7873618FA348E1D/4.html"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1149",
+        "sourceRecordIds": [
+          1149,
+          1381
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "本条与 Virtual Shanghai #1149 是同一鸿章纺织染厂厂区的重复记录。史料把厂址列为泰兴路685号，并梳理出1918年鸿章染织厂、1953年国营上海第十三棉纺织厂、1988年鸿章棉纺织厂的沿革；转换后的历史坐标落在今南草坪住宅小区范围。原厂房已拆，故只认定原厂区改建为住宅，不主张现有建筑与旧厂房相同。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1149"
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。保留同一厂的双记录及南草坪候选；补厂界与689弄住宅边界/拆建档案再yes，当前降likely/review。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1149,1381；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1381",
+          "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+          "https://www.thepaper.cn/newsDetail_forward_1719847",
+          "https://static.zhoudaosh.com/files/cnews/2018/20180808/97D8C56ECA3B0C372492E766D1D3A6A09D906943AAA69388A7873618FA348E1D/4.html",
+          "https://sh.jiwu.com/loupan/174382.html",
+          "https://www.virtualshanghai.net/data/buildings?ID=1149"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -1908,12 +1937,26 @@
       "historicalName": "Beixin Primary and Junior High School",
       "mappedName": "北新中小學",
       "category": "重要建筑",
-      "queries": [
-        "北新中小学",
-        "上海难童初级中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1150",
+        "sourceRecordIds": [
+          1150,
+          1151,
+          1152,
+          1153
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1150,1151,1152,1153；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1150",
+          "https://www.openstreetmap.org/way/989903064",
+          "https://www.openstreetmap.org/node/12385693903"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1154",
@@ -2171,11 +2214,23 @@
       "historicalName": "Jinghua Primary and Junior High School",
       "mappedName": "競華中小學",
       "category": "重要建筑",
-      "queries": [
-        "竞华中小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1175",
+        "sourceRecordIds": [
+          1175
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1175",
+          "https://www.openstreetmap.org/way/1324706267",
+          "https://www.openstreetmap.org/way/1467619643"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1176",
@@ -2215,11 +2270,24 @@
       "historicalName": "Jike Primary School",
       "mappedName": "金科小學",
       "category": "重要建筑",
-      "queries": [
-        "金科小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1179",
+        "sourceRecordIds": [
+          1179
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1179",
+          "https://zh.wikipedia.org/wiki/上海市江宁学校",
+          "https://www.openstreetmap.org/way/1131985348",
+          "https://www.openstreetmap.org/way/296375952"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-118",
@@ -3618,28 +3686,20 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "殡仪服务机构",
-        "currentNameZh": "上海市宝兴殡仪馆",
-        "currentAddress": "西宝兴路833号",
-        "currentUseNote": "历史中文字段为宝兴殡仪馆，转换点位距现宝兴殡仪馆很近；政府资料确认现机构地址为西宝兴路833号。",
-        "currentUseRelationship": "same-site-continuing-use",
-        "currentUseSources": [
-          {
-            "title": "上海市政府部门资料：上海市宝兴殡仪馆",
-            "url": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html"
-          },
-          {
-            "title": "维基百科：上海市宝兴殡仪馆",
-            "url": "https://zh.wikipedia.org/wiki/上海市宝兴殡仪馆"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1274",
+        "sourceRecordIds": [
+          1274
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "历史中文字段为宝兴殡仪馆，转换点位距现宝兴殡仪馆很近；政府资料确认现机构地址为西宝兴路833号。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1274"
+        "reason": "现机构及833号有证，旧记录与现地块连续性仍仅同名近邻，降为现代候选并撤回肯定回填。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1274",
+          "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
+          "https://zh.wikipedia.org/wiki/上海市宝兴殡仪馆"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -4002,12 +4062,24 @@
       "historicalName": "Thomas Hanbury School for Girls",
       "mappedName": "漢壁禮蒙女堂",
       "category": "重要建筑",
-      "queries": [
-        "汉壁礼蒙女堂",
-        "日本领事馆警察处"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1299",
+        "sourceRecordIds": [
+          1299,
+          1300
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1299,1300；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1300",
+          "https://www.openstreetmap.org/way/744535408",
+          "https://www.openstreetmap.org/way/1155356654"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-13",
@@ -4044,32 +4116,21 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "电力公共服务营业及办公",
-        "currentNameZh": "国网九龙路供电营业厅",
-        "currentAddress": "上海市虹口区九龙路375号",
-        "currentUseNote": "Virtual Shanghai所列虹口公共屠宰场地址为斐伦路375号，斐伦路今九龙路。虹口区政府史料说明早期屠宰场于1892年建成、1930年代另迁至沙泾路新场，但精确旧门牌375号来自 Virtual Shanghai，不能把政府史料单独解释成门牌证据，也不能与“1933老场坊”混同。现行政府资料明确九龙路375号为国网供电营业厅；历史路名映射与同号门牌共同支持原址用途已改为电力服务，但没有证据认定屠宰场原建筑仍存。",
-        "currentUseRelationship": "same-site-repurposed",
-        "currentUseSources": [
-          {
-            "title": "上海市虹口区人民政府：虹口早期屠宰场及迁建历史",
-            "url": "https://www.shhk.gov.cn/xwzx/002008/002008040/20230420/d1a09064-daa6-4509-9043-b1c2e93f28bd.html"
-          },
-          {
-            "title": "上海市虹口区人民政府：国网九龙路营业厅（九龙路375号）",
-            "url": "https://www.shhk.gov.cn/xwzx/002008/002008040/20230727/7265c637-fc6f-4d52-9c05-ec6a80bc2855.html"
-          },
-          {
-            "title": "上海市企业服务云：九龙路供电营业厅",
-            "url": "https://www.ssme.sh.gov.cn/invest/invest%21investShSdq.do"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1301",
+        "sourceRecordIds": [
+          1301
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shhk.gov.cn/xwzx/002008/002008040/20230420/d1a09064-daa6-4509-9043-b1c2e93f28bd.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "Virtual Shanghai所列虹口公共屠宰场地址为斐伦路375号，斐伦路今九龙路。虹口区政府史料说明早期屠宰场于1892年建成、1930年代另迁至沙泾路新场，但精确旧门牌375号来自 Virtual Shanghai，不能把政府史料单独解释成门牌证据，也不能与“1933老场坊”混同。现行政府资料明确九龙路375号为国网供电营业厅；历史路名映射与同号门牌共同支持原址用途已改为电力服务，但没有证据认定屠宰场原建筑仍存。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1301"
+        "reason": "已核实际分片research/unresolved-landmarks/008-b.json，按ID定位。降likely/review并保留旧场与1933新场区别；补原址图/门牌/电力地块建设史，现代供电现址可另存。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1301",
+          "https://www.shhk.gov.cn/xwzx/002008/002008040/20230420/d1a09064-daa6-4509-9043-b1c2e93f28bd.html",
+          "https://www.shhk.gov.cn/xwzx/002008/002008040/20230727/7265c637-fc6f-4d52-9c05-ec6a80bc2855.html",
+          "https://www.ssme.sh.gov.cn/invest/invest%21investShSdq.do"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -4474,11 +4535,23 @@
       "historicalName": "Huashun Wharf",
       "mappedName": "華順碼頭",
       "category": "重要建筑",
-      "queries": [
-        "华顺码头"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1321",
+        "sourceRecordIds": [
+          1321
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1321",
+          "https://hkda.shhk.gov.cn/hkda/hkfz/010001/20260430/2d2cf47c-d906-4648-80bd-d948f25744f3.html",
+          "https://www.openstreetmap.org/node/1773236378"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1322",
@@ -4540,12 +4613,27 @@
       "historicalName": "Shanghai Secret Services (Japanese)",
       "mappedName": "上海特務機關",
       "category": "重要建筑",
-      "queries": [
-        "上海特务机关",
-        "京沪中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1327",
+        "sourceRecordIds": [
+          1327,
+          1328,
+          1329
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1327,1328,1329；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1327",
+          "https://www.xhstgst.com/static/新沪回忆录.pdf",
+          "https://www.openstreetmap.org/way/24474916",
+          "https://www.openstreetmap.org/way/1081680479",
+          "https://www.openstreetmap.org/way/1434318970"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-133",
@@ -5053,32 +5141,21 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "三级甲等综合性中医医院",
-        "currentNameZh": "上海市中医医院芷江中路院区",
-        "currentAddress": "上海市静安区芷江中路274号（南门：天通庵路191号）",
-        "currentUseNote": "历史记录的191 TIANTONG'AN精确对应今天通庵路191号；上海党史网确认中国公立医院在横浜路补萝居花园创办、1937年被毁。现门牌为上海市中医医院芷江中路院区南门，上海中医药大学官方资料确认其为三级甲等综合性中医医院。原医院已毁，故不标为同一建筑。",
-        "currentUseRelationship": "same-site-continuing-use",
-        "currentUseSources": [
-          {
-            "title": "上海党史网：历史上的上海时疫医院",
-            "url": "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html"
-          },
-          {
-            "title": "上海中医药大学：市中医医院",
-            "url": "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm"
-          },
-          {
-            "title": "上海市政府采购文件：上海市中医医院沿街绿地（天通庵路191号）",
-            "url": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1362",
+        "sourceRecordIds": [
+          1362
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "历史记录的191 TIANTONG'AN精确对应今天通庵路191号；上海党史网确认中国公立医院在横浜路补萝居花园创办、1937年被毁。现门牌为上海市中医医院芷江中路院区南门，上海中医药大学官方资料确认其为三级甲等综合性中医医院。原医院已毁，故不标为同一建筑。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1362"
+        "reason": "已核实际分片research/unresolved-landmarks/007-b.json，按ID定位。若宗地关系补闭合，用demolished-site-redeveloped；现阶段同时审查旧191号与现院区关系。；补原院界/旧门牌和现院区直接链，在此之前降低到likely/review；不要仅同号即批准。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1362",
+          "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
+          "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm",
+          "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -5765,11 +5842,23 @@
       "historicalName": "Jardine Matheson and Company Cotton Mill",
       "mappedName": "怡和洋行公益纱廠",
       "category": "重要建筑",
-      "queries": [
-        "怡和洋行公益纱厂"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1408",
+        "sourceRecordIds": [
+          1408
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1408",
+          "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+          "https://www.openstreetmap.org/way/1431405192"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1409",
@@ -6506,11 +6595,23 @@
       "historicalName": "Huining Guild",
       "mappedName": "會寧會館",
       "category": "重要建筑",
-      "queries": [
-        "会宁会馆"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1455",
+        "sourceRecordIds": [
+          1455
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1455",
+          "https://www.scf.org.cn/csjjh/n3421/n5604/u1ai308688.html",
+          "https://www.openstreetmap.org/node/13814214903"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1456",
@@ -6657,11 +6758,26 @@
       "historicalName": "Jiangnan Arsenal",
       "mappedName": "江南製造總局",
       "category": "重要建筑",
-      "queries": [
-        "江南制造总局"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1466",
+        "sourceRecordIds": [
+          1466
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。在现代对应标准下用likely/review；保留已确认历史事实与具体候选，不能因历史身份确实而verified。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1466",
+          "https://www.shjsjtdw.cn/node2/n59/u1ai15377.html",
+          "https://siec.scg.com.cn/scg_az_jtyw/2025-03-06/Detail_237870.htm",
+          "https://sheitc.sh.gov.cn/cmsres/0c/0c09e7ea843c4ab99e40cf5ba5065de2/37a0fcd6a1803bd9582dafaea58b97f1.pdf",
+          "https://www.openstreetmap.org/way/1150102610",
+          "https://www.openstreetmap.org/way/1150102616"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1467",
@@ -6767,11 +6883,25 @@
       "historicalName": "Jingjiang Guild",
       "mappedName": "京江公所",
       "category": "重要建筑",
-      "queries": [
-        "京江公所"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1477",
+        "sourceRecordIds": [
+          1477
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1477",
+          "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74644.html",
+          "https://iaste.org/wp-content/uploads/2025/08/Volume-355.pdf",
+          "https://www.openstreetmap.org/relation/13251292",
+          "https://www.openstreetmap.org/way/640647899"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1478",
@@ -7239,11 +7369,11 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "site-redeveloped",
         "currentUse": "住宅",
         "currentNameZh": "江海南关办公楼",
         "currentAddress": "上海市黄浦区外马路348号",
-        "currentUseNote": "Virtual Shanghai 的泛称 Customs 对应外马路348号江海南关办公楼；1922年建筑保存至今，官方优秀历史建筑名录登记现用途为住宅。",
-        "currentUseRelationship": "same-building",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "currentUseSources": [
           {
             "title": "上海市房屋管理局：江海南关办公楼（外马路348号）",
@@ -7254,10 +7384,10 @@
             "url": "https://m.thepaper.cn/baijiahao_6306630"
           }
         ],
+        "currentUseNote": "原记录的1901年对应外马路江海关设关用址，原名称、外马路348号及1901年源字段保持不变。澎湃沿革明确现址在1922年重新建造办公楼及宿舍，房管优秀历史建筑名录亦列现江海南关办公楼建于1922年、登记用途为住宅。因此按关址延续及后建楼对应处理，不称现楼为1901年同一栋原建筑；建筑关系改为拆后改建。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "currentUseMatch": "verified-online-research",
-        "evidence": "历史功能、精确门牌、建筑专名和现用途由官方名录直接闭环。",
+        "evidence": "原记录的1901年对应外马路江海关设关用址，原名称、外马路348号及1901年源字段保持不变。澎湃沿革明确现址在1922年重新建造办公楼及宿舍，房管优秀历史建筑名录亦列现江海南关办公楼建于1922年、登记用途为住宅。因此按关址延续及后建楼对应处理，不称现楼为1901年同一栋原建筑；建筑关系改为拆后改建。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-1502"
       }
     },
@@ -7809,11 +7939,22 @@
       "historicalName": "Huijia Garden",
       "mappedName": "惠家花園",
       "category": "重要建筑",
-      "queries": [
-        "惠家花园"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1539",
+        "sourceRecordIds": [
+          1539
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1539",
+          "https://www.openstreetmap.org/way/1431494599"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-154",
@@ -7998,21 +8139,21 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
-        "currentUse": "政府办公与公共文化展示",
-        "currentNameZh": "徐家汇大修道院旧址 / 徐汇区汇展示厅",
-        "currentAddress": "徐汇区南丹路40号",
-        "currentUseNote": "徐家汇大修道院历史建筑保存于徐汇区政府大院内，现兼具政府办公和公共文化展示功能。",
         "currentUseRelationship": "same-building",
+        "currentUse": "未知（当前具体使用方式及展示开放情况待核）",
+        "currentNameZh": "徐家汇大修道院旧址",
+        "currentAddress": "徐汇区南丹路40号",
+        "currentUseSourceUri": "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
         "currentUseSources": [
           {
             "title": "徐汇区政务报道：南丹路40号大修道院与汇展示厅",
             "url": "https://www.thepaper.cn/newsDetail_forward_4428923"
           }
         ],
+        "currentUseNote": "南丹路40号的大修道院历史建筑身份及地址可核。2019年政务报道回顾2016年底层设置徐汇区汇展示厅，同时说明报道当时暂不对外开放；这不能证明2026年仍提供公共展示或已恢复开放，也不能据2019状态认定今天仍关闭。保留徐家汇大修道院旧址名称和地址，当前具体使用方式及展示开放情况待核。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://whlyj.sh.gov.cn/cmsres/1a/1a4769b5ccca4fe69f258cb217a463aa/d6ef3920b48ce0de4be34a048c978fd5.pdf",
         "currentUseMatch": "verified-online-research",
-        "evidence": "官方文化遗产资料确认其为徐家汇天主教历史建筑群组成，政务报道确认南丹路40号现状和底层展示厅。",
+        "evidence": "南丹路40号的大修道院历史建筑身份及地址可核。2019年政务报道回顾2016年底层设置徐汇区汇展示厅，同时说明报道当时暂不对外开放；这不能证明2026年仍提供公共展示或已恢复开放，也不能据2019状态认定今天仍关闭。保留徐家汇大修道院旧址名称和地址，当前具体使用方式及展示开放情况待核。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-1551"
       }
     },
@@ -8423,11 +8564,22 @@
       "historicalName": "Japanese Language School",
       "mappedName": "日語學校",
       "category": "重要建筑",
-      "queries": [
-        "日语学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1580",
+        "sourceRecordIds": [
+          1580
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1580",
+          "https://www.openstreetmap.org/way/1080930176"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1581",
@@ -8443,11 +8595,25 @@
       "historicalName": "Japanese Youth School of Industry",
       "mappedName": "日本失業青年學校",
       "category": "重要建筑",
-      "queries": [
-        "日本失业青年学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1582",
+        "sourceRecordIds": [
+          1582
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1582",
+          "https://www.openstreetmap.org/way/40140576",
+          "https://www.openstreetmap.org/way/1434318969",
+          "https://www.openstreetmap.org/node/9907469334",
+          "https://www.openstreetmap.org/way/1080930176"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1583",
@@ -8465,33 +8631,69 @@
       "historicalName": "Ishii Hospital (Japanese)",
       "mappedName": "石井醫院",
       "category": "重要建筑",
-      "queries": [
-        "石井医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1584",
+        "sourceRecordIds": [
+          1584
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1584",
+          "https://www.openstreetmap.org/way/1085786142",
+          "https://www.openstreetmap.org/way/1085786137"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1585",
       "historicalName": "Fumin Hospital",
       "mappedName": "福民醫院",
       "category": "重要建筑",
-      "queries": [
-        "福民医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1585",
+        "sourceRecordIds": [
+          1585
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/007-c.json，按ID定位。建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1585",
+          "https://www.shobserver.cn/wx/detail.do?id=861400",
+          "https://www.shhk.gov.cn/xwzx/002014/20250507/32efd845-2276-4a5f-a2d1-afb5002e42a5.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1586",
       "historicalName": "Japanese Regular Upper Primary School",
       "mappedName": "日本尋常高等小學校",
       "category": "重要建筑",
-      "queries": [
-        "日本寻常高等小学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1586",
+        "sourceRecordIds": [
+          1586
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1586",
+          "https://www.openstreetmap.org/way/1083786824",
+          "https://www.openstreetmap.org/way/1214159074"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1587",
@@ -8545,18 +8747,19 @@
       "category": "宗教设施 / 基督教堂",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "宗教机构延续 / 基督教新教教堂已迁址",
-        "currentNameZh": "上海怀恩堂（机构现址，非历史原址）",
-        "currentAddress": "静安区陕西北路375号（机构现址，非历史原址；历史点为东宝兴路271号一带）",
-        "currentUseNote": "Virtual Shanghai 将 Church 误作 Temple，且旧门牌写作东宝兴路297号；中国基督教两会记载第二处怀恩堂位于东宝兴路271号，1937年撤离，1942年迁入今陕西北路375号。陕西北路375号是机构现址，非历史原址；旧址今日具体用途尚未找到可靠证据。",
-        "currentUseRelationship": "institutional-successor-relocated",
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.ccctspm.org/churchinfo/212",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "中国基督教两会的怀恩堂专页完整记录东宝兴路旧址、迁移过程、陕西北路现址和当前礼拜用途。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1591"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1591",
+        "sourceRecordIds": [
+          1591
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。原点现代名称/用途留空或明确原址未查明，将异地后继移入历史沿革字段；现代对应status宜unresolved，保留迁址事实。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1591",
+          "https://www.ccctspm.org/churchinfo/212"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -9000,11 +9203,23 @@
       "historicalName": "Inoue Hotel (Japanese)",
       "mappedName": "井上旅館",
       "category": "重要建筑",
-      "queries": [
-        "井上旅馆"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1623",
+        "sourceRecordIds": [
+          1623
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1623",
+          "https://www.openstreetmap.org/way/448932891",
+          "https://www.openstreetmap.org/node/12409735007"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1624",
@@ -9188,24 +9403,19 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "政府与消费者权益保护机构办公 / 文物建筑",
-        "currentNameZh": "恩德堂旧址",
-        "currentAddress": "虹口区乍浦路490号",
-        "currentUseNote": "原记录的Ende Temple实际是基督教恩德堂（Endeavourers' Church），建筑保存，现由虹口区消费者权益保护等机构使用。",
-        "currentUseRelationship": "same-building",
-        "currentUseSources": [
-          {
-            "title": "虹口区政府：乍浦路490号现行办公用途",
-            "url": "https://www.shhk.gov.cn/xwzx/002003/20180131/2d000623-d12b-4bed-8c41-bce2d222d4f2.html"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1633",
+        "sourceRecordIds": [
+          1633
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shhk.gov.cn/xwzx/002006/20210819/3c53da87-4561-44e1-8686-f427b7cc89a8.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "虹口区官方史料确认恩德堂名称、宗教属性、乍浦路与武进路口位置及现存建筑用途。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-1633"
+        "reason": "官方名录把武进路225弄3—11号宿舍/教堂与乍浦路480、490号主教堂列成两条。旧结果跨地址套用主教堂用途，且 context 显示错误已经进入地图。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1633",
+          "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -9244,12 +9454,24 @@
       "historicalName": "Office of the Japanese Marine",
       "mappedName": "日本海軍武官府",
       "category": "重要建筑",
-      "queries": [
-        "日本海军武官府",
-        "日本基督青年会"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1635",
+        "sourceRecordIds": [
+          1635,
+          1636
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：1635,1636；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1635",
+          "https://www.openstreetmap.org/way/175621779",
+          "https://www.openstreetmap.org/node/12324030459"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1637",
@@ -9868,11 +10090,23 @@
       "historicalName": "Japanese Chamber of Commerce",
       "mappedName": "上海日本商工會議所",
       "category": "重要建筑",
-      "queries": [
-        "上海日本商工会议所"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1670",
+        "sourceRecordIds": [
+          1670
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1670",
+          "https://www.openstreetmap.org/way/744529828",
+          "https://www.openstreetmap.org/way/744266710"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1671",
@@ -9996,13 +10230,13 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "same-building",
         "currentUse": "办公 / 上海市优秀历史建筑（具体承租用途待核）",
         "currentNameZh": "颐中大楼",
-        "currentAddress": "虹口区南苏州路175号",
-        "currentUseNote": "原英美颐中烟草股份有限公司建筑以颐中大楼之名保存；官方名录未提供当前具体承租单位。",
-        "currentUseRelationship": "same-building",
-        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentAddress": "黄浦区南苏州路175号",
         "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "currentUseNote": "原英美颐中烟草股份有限公司建筑以颐中大楼之名保存；官方名录未提供当前具体承租单位。",
+        "currentUseSourceId": "verified-landmark-current-uses",
         "currentUseMatch": "verified-online-research",
         "evidence": "上海市房屋管理局优秀历史建筑名录将颐中大楼、英美颐中烟草股份有限公司和南苏州路175号直接对应。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-1678"
@@ -10185,11 +10419,24 @@
       "historicalName": "Japanese Telegraph",
       "mappedName": "日本電信局",
       "category": "重要建筑",
-      "queries": [
-        "日本电信局"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1690",
+        "sourceRecordIds": [
+          1690
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1690",
+          "https://www.openstreetmap.org/way/144965240",
+          "https://www.openstreetmap.org/way/446937835",
+          "https://www.openstreetmap.org/way/71523154"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1691",
@@ -10597,11 +10844,23 @@
       "historicalName": "Japanese Mindan Clinic",
       "mappedName": "日本民團診療所",
       "category": "重要建筑",
-      "queries": [
-        "日本民团诊疗所"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-1717",
+        "sourceRecordIds": [
+          1717
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1717",
+          "https://www.openstreetmap.org/way/495625770",
+          "https://www.openstreetmap.org/way/50326343"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-1718",
@@ -11219,13 +11478,13 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "same-building",
         "currentUse": "住宅 / 上海市优秀历史建筑",
         "currentNameZh": "国泰公寓",
-        "currentAddress": "徐汇区淮海中路816弄、818—832号",
-        "currentUseNote": "Cathay Flats 建筑群以国泰公寓之名保存，继续作为住宅使用。",
-        "currentUseRelationship": "same-building",
-        "currentUseSourceId": "verified-landmark-current-uses",
+        "currentAddress": "黄浦区淮海中路816弄、818—832号",
         "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "currentUseNote": "Cathay Flats 建筑群以国泰公寓之名保存，继续作为住宅使用。",
+        "currentUseSourceId": "verified-landmark-current-uses",
         "currentUseMatch": "verified-online-research",
         "evidence": "上海市房屋管理局优秀历史建筑名录直接列出国泰公寓及完整现代门牌范围。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-1756"
@@ -11740,11 +11999,23 @@
       "historicalName": "Asia Hotel",
       "mappedName": "亞洲飯店",
       "category": "重要建筑",
-      "queries": [
-        "亚洲饭店"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-18",
+        "sourceRecordIds": [
+          18
+        ],
+        "reason": "撤销仅凭门牌数值范围得出的现代同址及拆建断言；没有新的反向身份结论。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=18",
+          "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "https://www.openstreetmap.org/way/300481519"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-180",
@@ -11904,11 +12175,23 @@
       "historicalName": "Hualong Primary School",
       "mappedName": "華龍小學校",
       "category": "重要建筑",
-      "queries": [
-        "华龙小学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-193",
+        "sourceRecordIds": [
+          193
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=193",
+          "https://m.thepaper.cn/newsDetail_forward_8014324",
+          "https://www.openstreetmap.org/way/1331387912"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-194",
@@ -12420,11 +12703,25 @@
       "historicalName": "Jinde Junior High School for Girls",
       "mappedName": "進徳女子中学",
       "category": "重要建筑",
-      "queries": [
-        "进徳女子中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-23",
+        "sourceRecordIds": [
+          23
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=23",
+          "https://m.thepaper.cn/baijiahao_23941150",
+          "https://www.openstreetmap.org/way/15419906",
+          "https://www.openstreetmap.org/way/1323097578",
+          "https://www.openstreetmap.org/node/6255824786"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-230",
@@ -12453,23 +12750,51 @@
       "historicalName": "Poste Central de Police - Central Police Headquarters",
       "mappedName": "中央巡捕房",
       "category": "重要建筑",
-      "queries": [
-        "中央巡捕房",
-        "江苏高等法院第三分院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-232",
+        "sourceRecordIds": [
+          232,
+          233,
+          234
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：232,233,234；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=233",
+          "https://www.sh.jcy.gov.cn/hpjcx/pfyd/yasf/25933.jhtml",
+          "https://www.sh.jcy.gov.cn/hpjcy/hjsf/index.jhtml",
+          "https://www.openstreetmap.org/node/5063146321",
+          "https://www.openstreetmap.org/way/745254448"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-235",
       "historicalName": "Jiangsu Shanghai Judicial Court No. 2",
       "mappedName": "江蘇上海第二特區地方法院",
       "category": "重要建筑",
-      "queries": [
-        "江苏上海第二特区地方法院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-235",
+        "sourceRecordIds": [
+          235
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。在现代对应标准下用likely/review；保留已确认历史事实与具体候选，不能因历史身份确实而verified。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=235",
+          "https://www.sh.jcy.gov.cn/hpjcx/pfyd/yasf/25933.jhtml",
+          "https://www.sh.jcy.gov.cn/hpjcy/hjsf/index.jhtml",
+          "https://www.openstreetmap.org/way/745254448"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-236",
@@ -13136,28 +13461,20 @@
       "category": "旅馆 / 饭店",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "酒店住宿",
-        "currentNameZh": "大沪饭店（现作汉庭酒店）",
-        "currentAddress": "上海市黄浦区延安东路343号",
-        "currentUseNote": "Dah Woo 对应大沪饭店，不是大华饭店。历史名录给出爱多亚路341弄5号，官方监管名录把上海大沪饭店有限公司／汉庭连锁酒店大沪饭店列在延安东路343号；按同址酒店用途延续处理。",
-        "currentUseRelationship": "same-site-continuing-use",
-        "currentUseSources": [
-          {
-            "title": "《上海万业录》：大沪饭店",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf"
-          },
-          {
-            "title": "黄浦区2024固定污染源监管名单：大沪饭店",
-            "url": "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-28",
+        "sourceRecordIds": [
+          28
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "Dah Woo 对应大沪饭店，不是大华饭店。历史名录给出爱多亚路341弄5号，官方监管名录把上海大沪饭店有限公司／汉庭连锁酒店大沪饭店列在延安东路343号；按同址酒店用途延续处理。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-28"
+        "reason": "已核实际分片research/unresolved-landmarks/007-b.json，按ID定位。补旧图或营业沿革直接链；在无此证据时保留大沪饭店候选，宜likely/review，不用数字相近作为闭环。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=28",
+          "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf",
+          "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -13221,28 +13538,20 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "城市道路、高架及沿线公共空间；戏院已拆",
-        "currentNameZh": "延安中路道路及高架沿线地块",
-        "currentAddress": "静安区延安中路、陕西南路交会处附近",
-        "currentUseNote": "金门大戏院后称延安电影院，并由中福会儿童艺术剧场使用；1996年为延安路高架工程拆除，原址现为道路、高架及沿线公共空间。",
-        "currentUseRelationship": "site-redeveloped",
-        "currentUseSources": [
-          {
-            "title": "戏院沿革：金门大戏院至中福会儿童艺术剧场",
-            "url": "https://yueju.net/api/shows_details?id=572"
-          },
-          {
-            "title": "上海剧场史：1996年因延安路高架工程拆除",
-            "url": "https://m.thepaper.cn/newsDetail_forward_7098703"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-286",
+        "sourceRecordIds": [
+          286
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://m.thepaper.cn/newsDetail_forward_6286895",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "戏院沿革资料确认Golden Gate Theater的中文名、延安中路555号旧址、后续院名和1996年拆除原因。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-286"
+        "reason": "已实际重读的两篇文章只支持院名与555号；指定为拆除证据的文章没有该记载，另一个源不可读。确切拆除年、原因和今日道路边界仍需来源。",
+        "sourceUrls": [
+          "https://m.thepaper.cn/newsDetail_forward_6286895",
+          "https://m.thepaper.cn/newsDetail_forward_7098703",
+          "https://www.virtualshanghai.net/data/buildings?ID=286"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -13661,11 +13970,24 @@
       "historicalName": "Jiangsu Province Supreme Court No. 3",
       "mappedName": "江蘇高等法院第三分院",
       "category": "重要建筑",
-      "queries": [
-        "江苏高等法院第三分院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-305",
+        "sourceRecordIds": [
+          305
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=305",
+          "https://www.openstreetmap.org/way/1119184639",
+          "https://www.openstreetmap.org/way/1460063236",
+          "https://www.openstreetmap.org/node/2151674718"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-306",
@@ -13721,11 +14043,24 @@
       "historicalName": "Jiangsu Provincial Junior High School",
       "mappedName": "江蘇省立上海中學第二部",
       "category": "重要建筑",
-      "queries": [
-        "江苏省立上海中学第二部"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-309",
+        "sourceRecordIds": [
+          309,
+          311
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：309,311；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=311",
+          "https://www.openstreetmap.org/way/405467372",
+          "https://www.openstreetmap.org/way/72233381"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-31",
@@ -13902,24 +14237,20 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "办公、商业与城市道路；公墓已撤销",
-        "currentNameZh": "中福商务楼及周边地块",
-        "currentAddress": "徐汇区嘉善路516—518号附近",
-        "currentUseNote": "卢家湾外国/法国公墓在1950年代停止使用，1959年前后撤销并曾转作公共交通停车用地，后继续城市开发；地图仍保留两条独立同址历史记录。",
-        "currentUseRelationship": "site-redeveloped",
-        "currentUseSources": [
-          {
-            "title": "上海观察：卢家湾公墓撤销与土地后续用途",
-            "url": "https://www.shobserver.cn/wx/detail.do?id=12765"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-325",
+        "sourceRecordIds": [
+          325,
+          1515
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.virtualshanghai.net/texts/articles?ID=81",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "研究资料和上海地方报道确认公墓停用、撤销及停车场阶段，坐标今天落在中福商务楼一带。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-325"
+        "reason": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+        "sourceUrls": [
+          "https://www.shobserver.cn/wx/detail.do?id=12765",
+          "https://www.virtualshanghai.net/texts/articles?ID=81"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -14559,11 +14890,22 @@
       "historicalName": "Huixin Primary School",
       "mappedName": "恵心小學",
       "category": "重要建筑",
-      "queries": [
-        "恵心小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-372",
+        "sourceRecordIds": [
+          372
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=372",
+          "https://www.openstreetmap.org/node/5608696123"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-373",
@@ -14608,11 +14950,23 @@
       "historicalName": "Cunde Primary and Junior High School",
       "mappedName": "存徳小學・中學",
       "category": "重要建筑",
-      "queries": [
-        "存徳小学・中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-375",
+        "sourceRecordIds": [
+          375
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/007-b.json，按ID定位。建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=375",
+          "https://oce.sjtu.edu.cn/xz_sy/9239.html",
+          "https://www.shjinganlib.net/CommunityLibraryList.aspx?ColumnNameEn=COMMUNITY&id=101"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-376",
@@ -14701,11 +15055,26 @@
       "historicalName": "Jihua Hospital",
       "mappedName": "濟華醫院",
       "category": "重要建筑",
-      "queries": [
-        "济华医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-381",
+        "sourceRecordIds": [
+          381
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=381",
+          "https://epaper.file.routeryun.com/jdb/2018-06-26/P8/23c272ec68093e077470c4afddb96abb.pdf",
+          "https://www.6thhosp.com/upload/doc/201505/06094930.pdf",
+          "https://www.shyyxh.cn/Attach/Attaches/month_2104/202104301205555003.pdf",
+          "https://www.shyyxh.cn/Attach/Attaches/month_2504/202504300242098749.pdf",
+          "https://www.openstreetmap.org/node/4356456791"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-382",
@@ -14970,11 +15339,24 @@
       "historicalName": "Huaijiu Junior High School for Girls",
       "mappedName": "懐久女子中學",
       "category": "重要建筑",
-      "queries": [
-        "懐久女子中学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-398",
+        "sourceRecordIds": [
+          398
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=398",
+          "https://www.ecnu.edu.cn/info/1426/70248.htm",
+          "https://www.openstreetmap.org/node/5852825793",
+          "https://www.openstreetmap.org/way/1153682692"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-399",
@@ -15530,12 +15912,24 @@
       "historicalName": "Margaret Williamson Hospital (wartime branch)",
       "mappedName": "西門婦孺醫院徐家匯路臨時院址",
       "category": "医院 / 妇产科医院",
-      "queries": [
-        "西门妇孺医院徐家汇路临时院址",
-        "西门妇孺医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-421",
+        "sourceRecordIds": [
+          421
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/008-c.json，按ID定位。建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=421",
+          "https://news.fudan.edu.cn/2021/0715/c31a109713/page.htm",
+          "https://www.whb.cn/zhuzhan/kandian/20150418/28751.html",
+          "https://www.sh93.gov.cn/detailpage/ssgc-3413cf76-bfbb-11ec-a3a7-7c8ae163e649.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-422",
@@ -15641,24 +16035,21 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "外交官邸 / 上海市优秀历史建筑",
-        "currentNameZh": "法国驻上海总领事官邸",
-        "currentAddress": "徐汇区淮海中路1431号",
-        "currentUseNote": "淮海中路1431号花园住宅保存，并继续作为法国驻上海总领事官邸；商务参赞是历史时期的具体使用部门。",
-        "currentUseRelationship": "same-building",
-        "currentUseSources": [
-          {
-            "title": "高德地图：法国驻上海总领事官邸现址",
-            "url": "https://ditu.amap.com/place/B00155NERB"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-430",
+        "sourceRecordIds": [
+          430
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "上海优秀历史建筑资料确认建筑与地址，现址资料确认其继续承担法国外交官邸用途。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-430"
+        "reason": "两个官方/学术来源能证实1431号现存及用途，但原1449号门牌和特定部门尚缺直接衔接；不能只因法国外交用途相似即确认。",
+        "sourceUrls": [
+          "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "https://ditu.amap.com/place/B00155NERB",
+          "https://www.virtualshanghai.net/data/buildings?ID=430",
+          "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -15666,11 +16057,22 @@
       "historicalName": "Institut de Droit et Politique de Shanghai(Shanghai Faculty of Law and Administration)",
       "mappedName": "上海法政學院",
       "category": "重要建筑",
-      "queries": [
-        "上海法政学院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-431",
+        "sourceRecordIds": [
+          431
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=431",
+          "https://www.openstreetmap.org/way/332231361"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-432",
@@ -16393,32 +16795,22 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "精品酒店客房、餐饮及贵宾活动空间",
-        "currentNameZh": "上海兴国宾馆丽笙精选1号楼（赫世屋／Hazelwood）",
-        "currentAddress": "上海市长宁区兴国路72号院内（宾馆对外地址常用兴国路78号）",
-        "currentUseNote": "长宁区政府确认兴国宾馆1号楼位于兴国路72号院内、原为太古洋行大班住宅；上海市政府资料又直接说明1号楼贵宾厅依托1934年建成的 Hezelwood／赫世屋，2023年修缮后继续提供客房、餐饮和活动服务。",
-        "currentUseRelationship": "same-building",
-        "currentUseSources": [
-          {
-            "title": "长宁区政府：兴国宾馆1号楼",
-            "url": "https://www.shcn.gov.cn/col7698/20230119/1229080.html"
-          },
-          {
-            "title": "上海市人民政府：兴国宾馆丽笙精选一号楼贵宾厅",
-            "url": "https://www.shanghai.gov.cn/nw4411/20241030/2adcb0b189b54c34a3685ab0c0440e68.html"
-          },
-          {
-            "title": "长宁区政府：修缮后的兴国宾馆1号楼开放客房餐饮",
-            "url": "https://www.shcn.gov.cn/col6991/20250624/1292794.html"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-479",
+        "sourceRecordIds": [
+          479,
+          480
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shcn.gov.cn/col7698/20230119/1229080.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "长宁区政府确认兴国宾馆1号楼位于兴国路72号院内、原为太古洋行大班住宅；上海市政府资料又直接说明1号楼贵宾厅依托1934年建成的 Hezelwood／赫世屋，2023年修缮后继续提供客房、餐饮和活动服务。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-479"
+        "reason": "已核实际分片research/unresolved-landmarks/008-a.json，按ID定位。单独核球场原点、范围及现功能；未核前hold整组或只对480受限展示，不把479标原酒店楼。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：479,480；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=480",
+          "https://www.shcn.gov.cn/col7698/20230119/1229080.html",
+          "https://www.shanghai.gov.cn/nw4411/20241030/2adcb0b189b54c34a3685ab0c0440e68.html",
+          "https://www.shcn.gov.cn/col6991/20250624/1292794.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -16599,11 +16991,22 @@
       "historicalName": "Jianwen Primary School",
       "mappedName": "健文小學",
       "category": "重要建筑",
-      "queries": [
-        "健文小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-490",
+        "sourceRecordIds": [
+          490
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=490",
+          "https://www.openstreetmap.org/way/787353308"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-491",
@@ -16744,24 +17147,19 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "博物馆 / 电影文化商业综合体",
-        "currentNameZh": "上海电影博物馆、上海电影广场（圣衣院修女楼异位复建）",
-        "currentAddress": "徐汇区漕溪北路595号",
-        "currentUseNote": "圣衣院修女楼因地铁工程拆卸后在同一片区异位复建，原址现为上海电影博物馆和上海电影广场；不是严格原位原构保存。",
-        "currentUseRelationship": "partial-remains-on-original-site",
-        "currentUseSources": [
-          {
-            "title": "上海市政府：上海电影博物馆",
-            "url": "https://www.shanghai.gov.cn/tszczq-qtqj4/20260113/0d414870e60a465faa5878023a40e3b7.html"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-499",
+        "sourceRecordIds": [
+          499,
+          1554
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2017/05/04/d_88699.html?tm=1740650511988",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "徐汇区档案资料明确记录修女楼拆卸、异位复建及与上海电影博物馆地块的关系。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-499"
+        "reason": "将计划误写完成态；现原点用途和整组范围均未闭合。删除landmark-vs-site-499的整条现代override，作用范围必须包括499及1554。",
+        "sourceUrls": [
+          "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2017/05/04/d_88699.html?tm=1740650511988"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -16876,11 +17274,11 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "same-building",
         "currentUse": "优秀历史建筑 / 展览与文化活动空间",
         "currentNameZh": "广学大楼",
-        "currentAddress": "虹口区虎丘路128号",
-        "currentUseNote": "Christian Literature Building 建筑以广学大楼之名保存，现用于展览及文化活动；具体常设租户可能调整。",
-        "currentUseRelationship": "same-building",
+        "currentAddress": "黄浦区虎丘路128号",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
         "currentUseSources": [
           {
             "title": "上海市政府：广学大楼建筑文化展览",
@@ -16891,8 +17289,8 @@
             "url": "https://whlyj.sh.gov.cn/wbzx/20211217/beb016da4f504e848ef16e86250d2c95.html"
           }
         ],
+        "currentUseNote": "Christian Literature Building 建筑以广学大楼之名保存，现用于展览及文化活动；具体常设租户可能调整。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html",
         "currentUseMatch": "verified-online-research",
         "evidence": "上海优秀历史建筑资料直接列出虎丘路128号广学大楼，市级文化报道确认楼内持续举办建筑文化展览。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-503"
@@ -17413,36 +17811,22 @@
       "category": "金融机构 / 银行",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "金融史展馆 / 中国银行办公物业",
-        "currentNameZh": "中国银行（上海）文博馆（大清银行旧址）",
-        "currentAddress": "上海市黄浦区汉口路50号（四川中路268—270号）",
-        "currentUseNote": "Virtual Shanghai 的 General Bank of China 应纠正为 Bank of China／中國銀行。中国银行1912年在汉口路3号（后改50号）成立，1936工商名录仍列该门牌；现存大清银行旧楼由中国银行作为文博馆及办公物业使用。",
-        "currentUseRelationship": "same-building",
-        "currentUseSources": [
-          {
-            "title": "中国银行官方行史：汉口路3号（后50号）成立",
-            "url": "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html"
-          },
-          {
-            "title": "1936 Directory & Chronicle：Bank of China, 50 Hankow Road",
-            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
-          },
-          {
-            "title": "中国银行：汉口路50号中国银行博物馆",
-            "url": "https://wap.boc.cn/bif/bi1/202211/t20221129_22161500.html"
-          },
-          {
-            "title": "上海市房屋管理局：大清银行旧址",
-            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-525",
+        "sourceRecordIds": [
+          525
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "Virtual Shanghai 的 General Bank of China 应纠正为 Bank of China／中國銀行。中国银行1912年在汉口路3号（后改50号）成立，1936工商名录仍列该门牌；现存大清银行旧楼由中国银行作为文博馆及办公物业使用。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-525"
+        "reason": "已核实际分片research/unresolved-landmarks/007-c.json，按ID定位。保留原英文/年，标注中行候选校正；补1901原机构及后建银行楼的实体/地块链后确定建筑关系。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=525",
+          "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html",
+          "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+          "https://wap.boc.cn/bif/bi1/202211/t20221129_22161500.html",
+          "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -17769,14 +18153,14 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "same-site-continuing-use",
         "currentUse": "上海市总工会办公",
         "currentNameZh": "上海市总工会大楼（交通银行大楼）",
         "currentAddress": "中山东一路14号",
-        "currentUseNote": "现存交通银行大楼1948年竣工，晚于 Virtual Shanghai 记录的1940年，因此应理解为同一机构/地块的后建大楼，不能把1940年记录直接当作现建筑建成年代。",
-        "currentUseRelationship": "same-site-continuing-use",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
         "currentUseSources": [
           {
-            "title": "上海市房屋管理局：第二批优秀历史建筑（交通银行 / 上海市总工会）",
+            "title": "上海市房屋管理局：第三批优秀历史建筑（交通银行 / 上海市总工会）",
             "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
           },
           {
@@ -17784,10 +18168,10 @@
             "url": "https://www.openstreetmap.org/way/178405872"
           }
         ],
+        "currentUseNote": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
         "currentUseMatch": "verified-online-research",
-        "evidence": "现存交通银行大楼1948年竣工，晚于 Virtual Shanghai 记录的1940年，因此应理解为同一机构/地块的后建大楼，不能把1940年记录直接当作现建筑建成年代。",
+        "evidence": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-538"
       }
     },
@@ -17908,21 +18292,21 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "same-site-repurposed",
         "currentUse": "办公楼",
         "currentNameZh": "德国邮局旧址（现办公楼）",
         "currentAddress": "上海市黄浦区四川中路200号（亦挂牌福州路60号、70号）",
-        "currentUseNote": "上海市优秀历史建筑名录直接列出“德国邮局”，地址四川中路200号，并注明福州路60号、70号等门牌，建于1905年，现使用性质为办公楼；与 Virtual Shanghai 的福州路70号记录相互印证。",
-        "currentUseRelationship": "same-building",
+        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "currentUseSources": [
           {
             "title": "上海市房屋管理局：上海市优秀历史建筑名单（德国邮局）",
             "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
           }
         ],
+        "currentUseNote": "上海市优秀历史建筑名录直接列德国邮局，地址四川中路200号，并注明福州路60号、70号等门牌，现楼建于1905年，名录使用性质为办公楼。原记录的1903年及福州路70号原字段保持不变；1903是源记录年代，不能直接当作1905现楼的建造年。本次确认德国邮局用址与该办公建筑的对应，关系限于同址用途变化，不再宣称1903时点与1905现楼为同一栋原物。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "currentUseMatch": "verified-online-research",
-        "evidence": "上海市优秀历史建筑名录直接列出“德国邮局”，地址四川中路200号，并注明福州路60号、70号等门牌，建于1905年，现使用性质为办公楼；与 Virtual Shanghai 的福州路70号记录相互印证。",
+        "evidence": "上海市优秀历史建筑名录直接列德国邮局，地址四川中路200号，并注明福州路60号、70号等门牌，现楼建于1905年，名录使用性质为办公楼。原记录的1903年及福州路70号原字段保持不变；1903是源记录年代，不能直接当作1905现楼的建造年。本次确认德国邮局用址与该办公建筑的对应，关系限于同址用途变化，不再宣称1903时点与1905现楼为同一栋原物。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-544"
       }
     },
@@ -18209,36 +18593,23 @@
       "category": "金融机构 / 银行及报社办公楼",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "上海电气控股集团办公",
-        "currentNameZh": "申达大楼",
-        "currentAddress": "上海市黄浦区福州路89号、四川中路149号",
-        "currentUseNote": "China Banking Corporation 是菲律宾 Chinabank 的上海分行，中文名中兴银行；福州路89号与四川中路149号是街角建筑的双门牌。该楼现名申达大楼，近年仍由上海电气控股集团办公使用。",
-        "currentUseRelationship": "same-building",
-        "currentUseSources": [
-          {
-            "title": "Chinabank 官方百年史：1929年设上海分行",
-            "url": "https://www.chinabank.ph/our-centennial-story"
-          },
-          {
-            "title": "1936 Directory & Chronicle：China Banking Corporation",
-            "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
-          },
-          {
-            "title": "上海市房屋管理局：中兴银行／申达大楼",
-            "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
-          },
-          {
-            "title": "上海电气控股集团：四川中路149号办公地址",
-            "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-10-19/601727_20241019_AH7B.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-556",
+        "sourceRecordIds": [
+          556,
+          562
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.chinabank.ph/our-centennial-story",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "China Banking Corporation 是菲律宾 Chinabank 的上海分行，中文名中兴银行；福州路89号与四川中路149号是街角建筑的双门牌。该楼现名申达大楼，近年仍由上海电气控股集团办公使用。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-556"
+        "reason": "已核实际分片research/unresolved-landmarks/007-a.json，按ID定位。补报社所在前后楼及年代，或将组写入范围限制到已核成员；不认定银行主条本身已证伪。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：556,562；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=556",
+          "https://www.chinabank.ph/our-centennial-story",
+          "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+          "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-10-19/601727_20241019_AH7B.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -18246,11 +18617,24 @@
       "historicalName": "Jaya China Japan",
       "mappedName": "插華輪船公司",
       "category": "重要建筑",
-      "queries": [
-        "插华轮船公司"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-557",
+        "sourceRecordIds": [
+          557
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=557",
+          "https://www.openstreetmap.org/way/380339843",
+          "https://www.openstreetmap.org/way/380340012",
+          "https://www.openstreetmap.org/way/380339845"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-558",
@@ -18859,7 +19243,22 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-589",
+        "sourceRecordIds": [
+          589
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=589",
+          "https://www.openstreetmap.org/way/380339997",
+          "https://www.openstreetmap.org/node/8363347556",
+          "https://www.openstreetmap.org/node/8363347555"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-59",
@@ -19936,11 +20335,11 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
+        "currentUseRelationship": "site-redeveloped",
         "currentUse": "保障性租赁住房、人才服务式公寓及配套商业共享空间",
         "currentNameZh": "苏河美欣公寓",
-        "currentAddress": "上海市静安区西藏中路728号",
-        "currentUseNote": "史料明确把上海煤气公司总部及煤气设施列于虞洽卿路656号；上海市政府和市住房管理部门均说明今西藏中路728号苏河美欣公寓所在地是上海最早煤气厂旧址，储气罐约在世纪之交拆除，后建美欣办公楼并再改造为公寓。旧设施已拆、宗地用途连续可证。",
-        "currentUseRelationship": "site-redeveloped",
+        "currentAddress": "上海市黄浦区西藏中路728号",
+        "currentUseSourceUri": "https://ritsumei.repo.nii.ac.jp/record/14127/files/e_69_4_takimoto.pdf",
         "currentUseSources": [
           {
             "title": "Ritsumeikan University Repository：上海瓦斯事业史研究",
@@ -19955,10 +20354,10 @@
             "url": "https://fgj.sh.gov.cn/gqdt/20250918/0b7a36b050244df28b23abe710365649.html"
           }
         ],
+        "currentUseNote": "史料明确把上海煤气公司总部及煤气设施列于虞洽卿路656号；上海市政府和市住房管理部门均说明今西藏中路728号苏河美欣公寓所在地是上海最早煤气厂旧址，储气罐约在世纪之交拆除，后建美欣办公楼并再改造为公寓。旧设施已拆、宗地用途连续可证。 市政府及市房管局2025年报道明确该项目属于黄浦、位于苏州河南岸；现地址行政区更正为黄浦区。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://ritsumei.repo.nii.ac.jp/record/14127/files/e_69_4_takimoto.pdf",
         "currentUseMatch": "verified-online-research",
-        "evidence": "史料明确把上海煤气公司总部及煤气设施列于虞洽卿路656号；上海市政府和市住房管理部门均说明今西藏中路728号苏河美欣公寓所在地是上海最早煤气厂旧址，储气罐约在世纪之交拆除，后建美欣办公楼并再改造为公寓。旧设施已拆、宗地用途连续可证。",
+        "evidence": "史料明确把上海煤气公司总部及煤气设施列于虞洽卿路656号；上海市政府和市住房管理部门均说明今西藏中路728号苏河美欣公寓所在地是上海最早煤气厂旧址，储气罐约在世纪之交拆除，后建美欣办公楼并再改造为公寓。旧设施已拆、宗地用途连续可证。 市政府及市房管局2025年报道明确该项目属于黄浦、位于苏州河南岸；现地址行政区更正为黄浦区。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-652"
       }
     },
@@ -19969,32 +20368,22 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "燃气企业及燃气行业机构办公",
-        "currentNameZh": "上海燃气有限公司（美华大楼）",
-        "currentAddress": "上海市黄浦区西藏中路656号（历史门牌706号地块）",
-        "currentUseNote": "原“大英自来火房”及上海煤气公司地块位于西藏中路、厦门路口；地方志研究明确该地今天仍为上海燃气办公场所。1905年旧办公楼已鉴定为危房并拆除，故是原址与机构用途延续，不是原建筑保存。",
-        "currentUseRelationship": "same-site-continuing-use",
-        "currentUseSources": [
-          {
-            "title": "上海地方志研究：原煤气厂所在地仍为上海燃气办公场所",
-            "url": "https://www.thepaper.cn/newsDetail_forward_13131020"
-          },
-          {
-            "title": "上海住建系统企业信息：上海燃气市北销售有限公司注册地址",
-            "url": "https://ciac.zjw.sh.gov.cn/JGBQyWsbsNewWeb/QyWSGSGg/QyFrame.aspx?sbid=XI3G04rWO3A%3D"
-          },
-          {
-            "title": "上海门牌研究：1905年煤气公司办公楼拆除记录",
-            "url": "https://www.thepaper.cn/newsDetail_forward_17420247"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-653",
+        "sourceRecordIds": [
+          653,
+          655
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.thepaper.cn/newsDetail_forward_13131020",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "原“大英自来火房”及上海煤气公司地块位于西藏中路、厦门路口；地方志研究明确该地今天仍为上海燃气办公场所。1905年旧办公楼已鉴定为危房并拆除，故是原址与机构用途延续，不是原建筑保存。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-653"
+        "reason": "已核实际分片research/unresolved-landmarks/007-c.json，按ID定位。补653几何/旧厂界与两储气罐区别；保留655办公沿革，653不可仅因同706号继承。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：653,655；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=655",
+          "https://www.thepaper.cn/newsDetail_forward_13131020",
+          "https://ciac.zjw.sh.gov.cn/JGBQyWsbsNewWeb/QyWSGSGg/QyFrame.aspx?sbid=XI3G04rWO3A%3D",
+          "https://www.thepaper.cn/newsDetail_forward_17420247"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -20230,7 +20619,23 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-668",
+        "sourceRecordIds": [
+          668,
+          669
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：668,669；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=668",
+          "https://www.openstreetmap.org/node/6288362985",
+          "https://www.openstreetmap.org/way/39840341",
+          "https://www.openstreetmap.org/way/490348728"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-67",
@@ -20768,7 +21173,20 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "generic-name"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-7",
+        "sourceRecordIds": [
+          7
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=7",
+          "https://www.openstreetmap.org/node/5887259991"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-70",
@@ -21207,28 +21625,21 @@
       "category": "重要建筑",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "电信通信机房、数据与办公服务设施",
-        "currentNameZh": "中国电信上海公司北区电信局（爱伦影戏院旧址）",
-        "currentAddress": "上海市虹口区江西北路333号（海宁路口；历史门牌记海宁路532号或550号）",
-        "currentUseNote": "虹口区图书馆资料将爱伦活动影戏园定位于海宁路532号、江西北路口，说明其后为四海粮店、现为北区电信局；Virtual Shanghai 采用海宁路550号，差异应与历史门牌或道路调整有关。公开名录可核实现北区电信局地址为江西北路333号，原影院建筑已不存。",
-        "currentUseRelationship": "site-redeveloped",
-        "currentUseSources": [
-          {
-            "title": "虹口区图书馆：爱伦活动影戏园",
-            "url": "https://www.hqlib.cn/Web/detail.aspx?ID=71c9acc9&classID=700&className="
-          },
-          {
-            "title": "上海市经济和信息化委员会资料：北区电信局江西北路333号",
-            "url": "https://sheitc.sh.gov.cn/cmsres/15/15e4f1516ba64762be4f9d0ccb9c3072/45a16a3d1f3acee2d775cfa17e5b9945.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-728",
+        "sourceRecordIds": [
+          728,
+          1692
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.hqlib.cn/Web/detail.aspx?ID=71c9acc9&classID=700&className=",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "虹口区图书馆资料将爱伦活动影戏园定位于海宁路532号、江西北路口，说明其后为四海粮店、现为北区电信局；Virtual Shanghai 采用海宁路550号，差异应与历史门牌或道路调整有关。公开名录可核实现北区电信局地址为江西北路333号，原影院建筑已不存。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-728"
+        "reason": "已核实际分片research/unresolved-landmarks/008-a.json，按ID定位。保留影院主链，补728的独立历史地址/时期再批准整个组；不把现电信局倒推过去电话公司必在此楼。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：728,1692；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1692",
+          "https://www.hqlib.cn/Web/detail.aspx?ID=71c9acc9&classID=700&className=",
+          "https://sheitc.sh.gov.cn/cmsres/15/15e4f1516ba64762be4f9d0ccb9c3072/45a16a3d1f3acee2d775cfa17e5b9945.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -21610,11 +22021,23 @@
       "historicalName": "Hualong Native-Medicine Hospital",
       "mappedName": "華隆中醫院",
       "category": "重要建筑",
-      "queries": [
-        "华隆中医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-76",
+        "sourceRecordIds": [
+          76
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=76",
+          "https://fzg.changzhou.gov.cn/html/fzg/2016/FNBDOFDF_0116/26267.html",
+          "https://www.openstreetmap.org/way/48872469"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-760",
@@ -21883,12 +22306,25 @@
       "historicalName": "Jimin Hospital",
       "mappedName": "濟民醫院",
       "category": "重要建筑",
-      "queries": [
-        "济民医院",
-        "上海急救时疫医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-780",
+        "sourceRecordIds": [
+          780,
+          1342
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-c.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：780,1342；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1342",
+          "https://www.openstreetmap.org/way/49228662",
+          "https://www.openstreetmap.org/node/4395476990",
+          "https://www.openstreetmap.org/node/4395882391"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-781",
@@ -22263,11 +22699,22 @@
       "historicalName": "Huguang School",
       "mappedName": "私立滬光學校",
       "category": "重要建筑",
-      "queries": [
-        "私立沪光学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-807",
+        "sourceRecordIds": [
+          807
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=807",
+          "https://www.openstreetmap.org/node/4437512491"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-808",
@@ -22407,11 +22854,22 @@
       "historicalName": "Huichun Hospital",
       "mappedName": "回春醫院",
       "category": "重要建筑",
-      "queries": [
-        "回春医院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-819",
+        "sourceRecordIds": [
+          819
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=819",
+          "https://www.openstreetmap.org/way/178723092"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-82",
@@ -22499,11 +22957,23 @@
       "historicalName": "Jiangsu Province Supreme Court No. 2",
       "mappedName": "江蘇高等法院第二分院",
       "category": "重要建筑",
-      "queries": [
-        "江苏高等法院第二分院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-824",
+        "sourceRecordIds": [
+          824
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=824",
+          "https://www.openstreetmap.org/way/1330899747",
+          "https://www.openstreetmap.org/node/12999317385"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-825",
@@ -22758,28 +23228,20 @@
       "category": "休闲设施 / 海关俱乐部",
       "queries": [],
       "searchResultCount": 0,
-      "status": "matched-research",
-      "accepted": {
-        "currentUse": "生物医药企业注册地址／原献血站；所在同益里现为住宅社区",
-        "currentNameZh": "同益里10号（上海血液生物医药有限责任公司注册地址）",
-        "currentAddress": "上海市黄浦区南京西路479弄10号",
-        "currentUseNote": "静安寺路479弄10号可精确换算为今南京西路479弄10号；静安区图书馆资料明确此处为江海关同益里俱乐部，后改献血站。上海市科委名录仍把上海血液生物医药有限责任公司登记在同一门牌。现存建筑是否完全保留1930年代原构件无足够证据，因此不标为同一建筑。",
-        "currentUseRelationship": "same-site-repurposed",
-        "currentUseSources": [
-          {
-            "title": "静安区图书馆：百年江海关与邮政",
-            "url": "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135"
-          },
-          {
-            "title": "上海市科学技术委员会名录（南京西路479弄10号）",
-            "url": "https://stcsm.sh.gov.cn/cmsres/1b/1bfa5c059a95468d88f64e6b47e1d790/36664caaf6d3584ef48caced4e279920.pdf"
-          }
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-843",
+        "sourceRecordIds": [
+          843
         ],
-        "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135",
-        "currentUseMatch": "verified-online-research",
-        "evidence": "静安寺路479弄10号可精确换算为今南京西路479弄10号；静安区图书馆资料明确此处为江海关同益里俱乐部，后改献血站。上海市科委名录仍把上海血液生物医药有限责任公司登记在同一门牌。现存建筑是否完全保留1930年代原构件无足够证据，因此不标为同一建筑。",
-        "matchedLegacyFeatureGroupId": "landmark-vs-site-843"
+        "reason": "已核实际分片research/unresolved-landmarks/007-b.json，按ID定位。补现单位/物业实际使用与名录日期，或只写已证实历史沿革和注册地址线索，暂保review。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=843",
+          "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135",
+          "https://stcsm.sh.gov.cn/cmsres/1b/1bfa5c059a95468d88f64e6b47e1d790/36664caaf6d3584ef48caced4e279920.pdf"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -22891,11 +23353,23 @@
       "historicalName": "Jianghai Primary School",
       "mappedName": "江海小學校",
       "category": "重要建筑",
-      "queries": [
-        "江海小学校"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-851",
+        "sourceRecordIds": [
+          851
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=851",
+          "https://www.openstreetmap.org/node/12119978630",
+          "https://www.openstreetmap.org/way/405382146"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-852",
@@ -23285,17 +23759,22 @@
       "historicalName": "Shanghai Junior High School",
       "mappedName": "上海中學",
       "category": "重要建筑",
-      "queries": [
-        "上海中学",
-        "健行大学"
-      ],
-      "searchResultCount": 1,
-      "status": "not-found",
-      "nearestSearchResult": {
-        "currentNameZh": "上海中学大礼堂",
-        "currentAddress": "上中路400号(门牌遗失)另：百色路989号（北门，学生出入门）",
-        "distanceMetres": 9622,
-        "query": "上海中学"
+      "queries": [],
+      "searchResultCount": 0,
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-878",
+        "sourceRecordIds": [
+          878,
+          879
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/010-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：878,879；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=879",
+          "https://www.openstreetmap.org/way/538432095"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
       }
     },
     {
@@ -23438,21 +23917,25 @@
       "searchResultCount": 0,
       "status": "matched-research",
       "accepted": {
-        "currentUse": "消防救援站 / 消防文化展示",
-        "currentNameZh": "嵩山消防救援站",
-        "currentAddress": "黄浦区淮海中路197号",
-        "currentUseNote": "淮海中路197号百年消防站保存并继续承担消防救援功能，同时规划建设消防文化展示空间。",
         "currentUseRelationship": "same-building",
+        "currentUse": "消防救援站；消防文化展示空间为规划用途",
+        "currentNameZh": "嵩山消防救援站",
+        "currentAddress": "黄浦区淮海中路193号（2021官方报道；与原197号院落/入口关系待核）",
+        "currentUseSourceUri": "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml",
         "currentUseSources": [
           {
-            "title": "上海市消防事业发展十四五规划：嵩山站大修与延续使用",
+            "title": "应急管理部：嵩山消防救援站与淮海中路193号地址",
+            "url": "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+          },
+          {
+            "title": "上海市消防事业发展十四五规划：嵩山站相关规划",
             "url": "https://www.shanghai.gov.cn/gwk/search/content/cc5ecf025ada460eaa447b4533733b60"
           }
         ],
+        "currentUseNote": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。",
         "currentUseSourceId": "verified-landmark-current-uses",
-        "currentUseSourceUri": "https://www.shanghai.gov.cn/nw9820/20231116/f2c869bc3c1f4fac8ae622bb7eb3ac5c.html",
         "currentUseMatch": "verified-online-research",
-        "evidence": "上海市政府消防资料明确嵩山消防站具有百年历史、仍在消防站体系内并实施保护性更新。",
+        "evidence": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。",
         "matchedLegacyFeatureGroupId": "landmark-vs-site-89"
       }
     },
@@ -23679,12 +24162,24 @@
       "historicalName": "School for Mandarin Chinese",
       "mappedName": "國語學校",
       "category": "重要建筑",
-      "queries": [
-        "国语学校",
-        "海法学院"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-906",
+        "sourceRecordIds": [
+          906,
+          907
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-b.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。 同址组成员：906,907；root须逐成员追踪独立证据，不能据本patch改写组外研究或抹去其他批准。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=906",
+          "https://www.openstreetmap.org/node/13939010835",
+          "https://www.openstreetmap.org/way/1200087876"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-908",
@@ -24788,11 +25283,24 @@
       "historicalName": "Huaijiu Primary and Junior High School",
       "mappedName": "懐久女子中小學",
       "category": "重要建筑",
-      "queries": [
-        "懐久女子中小学"
-      ],
+      "queries": [],
       "searchResultCount": 0,
-      "status": "not-found"
+      "status": "needs-review-research",
+      "reviewHold": {
+        "featureGroupId": "landmark-vs-site-997",
+        "sourceRecordIds": [
+          997
+        ],
+        "reason": "已核实际分片research/unresolved-landmarks/009-a.json，按ID定位。建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。 执行hold时只撤本研究批准形成的现代用途override/采用结果；保留历史feature、原名、历史沿革、XY及其他经独立批准的来源，不将null写成一条有效override。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=997",
+          "https://www.ecnu.edu.cn/info/1426/70248.htm",
+          "https://www.openstreetmap.org/way/1200721295",
+          "https://www.openstreetmap.org/node/6557300117"
+        ],
+        "reviewedAt": "2026-09-18",
+        "reviewRef": "research/corrections/2026-09-18-001-010/README.md"
+      }
     },
     {
       "featureGroupId": "landmark-vs-site-998",
@@ -25201,5 +25709,7 @@
         "currentUseMatch": "documented-current-place"
       }
     }
-  ]
+  ],
+  "correctedAt": "2026-09-18",
+  "correctionReview": "research/corrections/2026-09-18-001-010/README.md"
 }

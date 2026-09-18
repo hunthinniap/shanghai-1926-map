@@ -1,7 +1,7 @@
 {
   "batch": "006",
   "researchedAt": "2026-08-30",
-  "input": "public/data/unresolved-landmarks/006.json",
+  "input": null,
   "method": {
     "sourceCrs": "EPSG:32651",
     "canonicalCrs": "EPSG:4326",
@@ -23,26 +23,35 @@
   "summary": {
     "total": 50,
     "byOutcomeCategory": {
+      "location-only-current-use": 35,
       "survives-with-history": 13,
-      "demolished-current-use": 3,
-      "location-only-current-use": 34
+      "demolished-current-use": 2
     },
     "byResolutionStatus": {
-      "resolved": 14,
-      "probable": 2,
-      "location-only": 34
+      "location-only": 34,
+      "probable": 3,
+      "resolved": 13
     },
     "mapWriteRecommendation": {
-      "yes": 14,
-      "review": 2,
-      "location-only": 34
+      "location-only": 34,
+      "review": 3,
+      "yes": 13
     }
   },
   "records": [
     {
       "IDBAT": 1760,
       "historicalName": "GOLD DRAGON APARTMENTS",
-      "coordinates": { "wgs84": [121.456452, 31.22486], "gcj02": [121.461026, 31.222958] },
+      "coordinates": {
+        "wgs84": [
+          121.456452,
+          31.22486
+        ],
+        "gcj02": [
+          121.461026,
+          31.222958
+        ]
+      },
       "modernRoadAddress": "巨鹿路234号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -62,29 +71,47 @@
       "IDBAT": 286,
       "historicalName": "Golden Gate Theater",
       "historicalNameCorrectionZh": "金门大戏院（后为延安电影院、中福会儿童艺术剧场）",
-      "coordinates": { "wgs84": [121.452588, 31.225478], "gcj02": [121.457173, 31.223585] },
-      "modernRoadAddress": "延安中路555号旧址",
-      "outcomeCategory": "demolished-current-use",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
-      "currentNameZh": "延安中路道路及高架沿线地块",
-      "currentUse": "城市道路、高架及沿线公共空间",
-      "currentAddress": "延安中路、陕西南路交会处附近",
-      "currentUseRelationship": "demolished-redeveloped",
-      "mapWriteRecommendation": "yes",
-      "evidence": "戏院沿革资料将Golden Gate Theater对应为金门大戏院，后改延安电影院并由中福会儿童艺术剧场使用；资料明确记载其在1996年为延安路高架工程拆除，坐标今天落在延安中路道路与高架沿线。",
+      "coordinates": {
+        "wgs84": [
+          121.452588,
+          31.225478
+        ],
+        "gcj02": [
+          121.457173,
+          31.223585
+        ]
+      },
+      "modernRoadAddress": "延安中路555号历史剧场址线索；原745 Avenue Foch换号待核",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "延安中路道路及高架沿线地块（候选）",
+      "currentUse": "原点附近道路、高架及公共空间候选；旧剧场与现地块对应待核",
+      "currentAddress": "候选：延安中路、陕西南路交会处附近",
+      "currentUseRelationship": "historical-theater-current-site-unproven",
+      "mapWriteRecommendation": "review",
+      "evidence": "可读剧场史记载金门大戏院后改延安电影院、再为中福会儿童艺术剧场，使用延安中路555号。原745 Avenue Foch与555号换号、确切拆除年/原因及旧剧场范围与今日道路高架对应待补证。道路现用只保留候选，撤回确定拆除与yes推荐。",
       "sourceUrls": [
-        "https://yueju.net/api/shows_details?id=572",
         "https://m.thepaper.cn/newsDetail_forward_6286895",
         "https://m.thepaper.cn/newsDetail_forward_7098703",
         "https://www.virtualshanghai.net/data/buildings?ID=286"
-      ]
+      ],
+      "sourceDataIssue": "已读澎湃6286895及7098703支持金门大戏院、延安电影院、中福会儿童艺术剧场及555号，但未记载原研究归给它们的1996年因高架拆除。另一原引用不可读，不把失败当反证；拆除年、原因及用地链另待可读资料。"
     },
     {
       "IDBAT": 1609,
       "historicalName": "Gongdao Bookstore",
       "historicalNameCorrectionZh": "公道书店",
-      "coordinates": { "wgs84": [121.478671, 31.253592], "gcj02": [121.48318, 31.251646] },
+      "coordinates": {
+        "wgs84": [
+          121.478671,
+          31.253592
+        ],
+        "gcj02": [
+          121.48318,
+          31.251646
+        ]
+      },
       "modernRoadAddress": "武进路、四川北路口附近（旧哈斯克尔路1号）",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -104,7 +131,16 @@
     {
       "IDBAT": 1323,
       "historicalName": "Gonghexiang Wharf",
-      "coordinates": { "wgs84": [121.496263, 31.250428], "gcj02": [121.500709, 31.248429] },
+      "coordinates": {
+        "wgs84": [
+          121.496263,
+          31.250428
+        ],
+        "gcj02": [
+          121.500709,
+          31.248429
+        ]
+      },
       "modernRoadAddress": "东大名路、新建路隧道浦西出口一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -123,7 +159,16 @@
     {
       "IDBAT": 1439,
       "historicalName": "Gongping Funeral Parlor",
-      "coordinates": { "wgs84": [121.412847, 31.211629], "gcj02": [121.417494, 31.209782] },
+      "coordinates": {
+        "wgs84": [
+          121.412847,
+          31.211629
+        ],
+        "gcj02": [
+          121.417494,
+          31.209782
+        ]
+      },
       "modernRoadAddress": "凯旋路815号、延安西路地铁站附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -143,7 +188,16 @@
       "IDBAT": 30,
       "historicalName": "Gongwutai Cinema",
       "historicalNameCorrectionZh": "荣记共舞台（今上海共舞台）",
-      "coordinates": { "wgs84": [121.474605, 31.230631], "gcj02": [121.479125, 31.228686] },
+      "coordinates": {
+        "wgs84": [
+          121.474605,
+          31.230631
+        ],
+        "gcj02": [
+          121.479125,
+          31.228686
+        ]
+      },
       "modernRoadAddress": "延安东路433号一带",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -163,7 +217,16 @@
       "IDBAT": 489,
       "historicalName": "Good Shepherd Convent Home of Refuge",
       "historicalNameCorrectionZh": "徐家汇善牧院",
-      "coordinates": { "wgs84": [121.433519, 31.198469], "gcj02": [121.438141, 31.196597] },
+      "coordinates": {
+        "wgs84": [
+          121.433519,
+          31.198469
+        ],
+        "gcj02": [
+          121.438141,
+          31.196597
+        ]
+      },
       "modernRoadAddress": "衡山路910号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -183,7 +246,16 @@
     {
       "IDBAT": 1008,
       "historicalName": "Grand Danois",
-      "coordinates": { "wgs84": [121.453052, 31.231251], "gcj02": [121.457636, 31.22936] },
+      "coordinates": {
+        "wgs84": [
+          121.453052,
+          31.231251
+        ],
+        "gcj02": [
+          121.457636,
+          31.22936
+        ]
+      },
       "modernRoadAddress": "南京西路、南汇路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -204,7 +276,16 @@
       "IDBAT": 876,
       "historicalName": "Grand Theater",
       "historicalNameCorrectionZh": "大光明影戏院（今大光明电影院）",
-      "coordinates": { "wgs84": [121.465836, 31.235426], "gcj02": [121.470384, 31.233507] },
+      "coordinates": {
+        "wgs84": [
+          121.465836,
+          31.235426
+        ],
+        "gcj02": [
+          121.470384,
+          31.233507
+        ]
+      },
       "modernRoadAddress": "南京西路216号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -225,7 +306,16 @@
       "IDBAT": 706,
       "historicalName": "Great China Hotel",
       "historicalNameCorrectionZh": "大中华饭店",
-      "coordinates": { "wgs84": [121.472025, 31.233581], "gcj02": [121.476554, 31.231645] },
+      "coordinates": {
+        "wgs84": [
+          121.472025,
+          31.233581
+        ],
+        "gcj02": [
+          121.476554,
+          31.231645
+        ]
+      },
       "modernRoadAddress": "西藏中路200号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -247,7 +337,16 @@
       "IDBAT": 666,
       "historicalName": "Great Eastern Dispensary",
       "historicalNameCorrectionZh": "中法大药房股份有限公司总行",
-      "coordinates": { "wgs84": [121.469516, 31.239801], "gcj02": [121.474053, 31.237874] },
+      "coordinates": {
+        "wgs84": [
+          121.469516,
+          31.239801
+        ],
+        "gcj02": [
+          121.474053,
+          31.237874
+        ]
+      },
       "modernRoadAddress": "北京东路851号旧址、今北京东路与芝罘路一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -268,7 +367,16 @@
       "IDBAT": 1234,
       "historicalName": "Great Eastern Dispensary Factory",
       "historicalNameCorrectionZh": "中法大药房制药厂",
-      "coordinates": { "wgs84": [121.419197, 31.213049], "gcj02": [121.423839, 31.211199] },
+      "coordinates": {
+        "wgs84": [
+          121.419197,
+          31.213049
+        ],
+        "gcj02": [
+          121.423839,
+          31.211199
+        ]
+      },
       "modernRoadAddress": "定西路、昭化路一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -290,7 +398,16 @@
       "IDBAT": 29,
       "historicalName": "Great World",
       "historicalNameCorrectionZh": "大世界",
-      "coordinates": { "wgs84": [121.474503, 31.230344], "gcj02": [121.479023, 31.2284] },
+      "coordinates": {
+        "wgs84": [
+          121.474503,
+          31.230344
+        ],
+        "gcj02": [
+          121.479023,
+          31.2284
+        ]
+      },
       "modernRoadAddress": "西藏南路1号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -310,7 +427,16 @@
       "IDBAT": 392,
       "historicalName": "Gresham Apartments",
       "historicalNameCorrectionZh": "格莱勋公寓（又称光明公寓）",
-      "coordinates": { "wgs84": [121.447567, 31.21646], "gcj02": [121.452163, 31.214573] },
+      "coordinates": {
+        "wgs84": [
+          121.447567,
+          31.21646
+        ],
+        "gcj02": [
+          121.452163,
+          31.214573
+        ]
+      },
       "modernRoadAddress": "淮海中路1222—1238号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -330,7 +456,16 @@
       "IDBAT": 291,
       "historicalName": "Grosvenor House",
       "historicalNameCorrectionZh": "峻岭公寓（今锦江饭店贵宾楼）",
-      "coordinates": { "wgs84": [121.456986, 31.221377], "gcj02": [121.461559, 31.219473] },
+      "coordinates": {
+        "wgs84": [
+          121.456986,
+          31.221377
+        ],
+        "gcj02": [
+          121.461559,
+          31.219473
+        ]
+      },
       "modernRoadAddress": "茂名南路59号锦江饭店内",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -351,7 +486,16 @@
       "IDBAT": 258,
       "historicalName": "Guangdong Guild",
       "historicalNameCorrectionZh": "广东旅沪同乡会",
-      "coordinates": { "wgs84": [121.46028, 31.21897], "gcj02": [121.464843, 31.217057] },
+      "coordinates": {
+        "wgs84": [
+          121.46028,
+          31.21897
+        ],
+        "gcj02": [
+          121.464843,
+          31.217057
+        ]
+      },
       "modernRoadAddress": "皋兰路、瑞金二路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -371,7 +515,16 @@
     {
       "IDBAT": 1018,
       "historicalName": "Guangdong Kindergarten, Primary and Junior High School",
-      "coordinates": { "wgs84": [121.449291, 31.231666], "gcj02": [121.453884, 31.229782] },
+      "coordinates": {
+        "wgs84": [
+          121.449291,
+          31.231666
+        ],
+        "gcj02": [
+          121.453884,
+          31.229782
+        ]
+      },
       "modernRoadAddress": "北京西路1117号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -390,7 +543,16 @@
     {
       "IDBAT": 1593,
       "historicalName": "Guangdong Qinxinhui",
-      "coordinates": { "wgs84": [121.476429, 31.259131], "gcj02": [121.480946, 31.257194] },
+      "coordinates": {
+        "wgs84": [
+          121.476429,
+          31.259131
+        ],
+        "gcj02": [
+          121.480946,
+          31.257194
+        ]
+      },
       "modernRoadAddress": "川公路、宝源路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -400,17 +562,28 @@
       "currentAddress": "川公路、宝源路交会处一带",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "sourceDataIssue": "Qinxinhui的原中文专名尚未核定，不能仅按拼音猜作某一广东社团。",
-      "evidence": "坐标今天落在和平坊一带，但尚无可靠中文机构名、历史门牌链或建筑存废资料。",
+      "sourceDataIssue": "原中文廣東侵信會和原英文Guangdong Qinxinhui并列保留。第五批名录有广东浸信会/崇德小学（新乡路66号、川公路109号），仅提示字形/转写可能问题；原66 Barchet Road换号及楼栋对应未闭合。",
+      "evidence": "本条已有原中文廣東侵信會，不再称无中文机构名。官方广东浸信会条目提供名称及66号门牌线索；和平坊住宅现用仍仅为位置级候选，不能按名称近似确定教堂，也不扩展到同组1594上海日报。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=1593",
-        "https://ditu.amap.com/service/regeo?longitude=121.480946&latitude=31.257194"
-      ]
+        "https://ditu.amap.com/service/regeo?longitude=121.480946&latitude=31.257194",
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "historicalNameCorrectionZh": "广东侵信会（按原中文；浸信会读法待核）"
     },
     {
       "IDBAT": 792,
       "historicalName": "Guangfu Hospital",
-      "coordinates": { "wgs84": [121.472462, 31.231258], "gcj02": [121.476989, 31.229319] },
+      "coordinates": {
+        "wgs84": [
+          121.472462,
+          31.231258
+        ],
+        "gcj02": [
+          121.476989,
+          31.229319
+        ]
+      },
       "modernRoadAddress": "西藏中路、武胜路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -420,16 +593,27 @@
       "currentAddress": "武胜路14号附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "历史点坐标今天落在武胜路、西藏中路一带，但未找到广福医院的完整中文院名、迁撤年代或原院址边界，不能把现有公共机构视为医院后继。",
+      "evidence": "本条原中文为光復醫院，派生研究保留原中文身份。坐标反查提示人民广场治安派出所周边地块，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=792",
         "https://ditu.amap.com/service/regeo?longitude=121.476989&latitude=31.229319"
-      ]
+      ],
+      "historicalNameCorrectionZh": "光复医院",
+      "sourceDataIssue": "原中文为光復醫院，原英文及原类型保留；不以“广福医院”的回译覆盖原中文。"
     },
     {
       "IDBAT": 994,
       "historicalName": "Guangfu Primary and Junior High School",
-      "coordinates": { "wgs84": [121.456091, 31.226375], "gcj02": [121.460666, 31.224475] },
+      "coordinates": {
+        "wgs84": [
+          121.456091,
+          31.226375
+        ],
+        "gcj02": [
+          121.460666,
+          31.224475
+        ]
+      },
       "modernRoadAddress": "茂名北路259号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -439,16 +623,27 @@
       "currentAddress": "茂名北路259号附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "旧Moulmein Road可对应今茂名路，坐标落在康乐村附近；尚无学校正式中文名、校舍范围和存废证据。",
+      "evidence": "本条原中文为光夏中小學校，派生研究保留原中文身份。坐标反查提示康乐村住宅街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=994",
         "https://ditu.amap.com/service/regeo?longitude=121.460666&latitude=31.224475"
-      ]
+      ],
+      "historicalNameCorrectionZh": "光夏中小学校（按原中文，英中文差异待核）",
+      "sourceDataIssue": "原中文为光夏中小學校，原英文及原类型保留；不以“光复学校”的回译覆盖原中文。英文Guangfu与中文光夏不一致，正式校名待独立校史核定。"
     },
     {
       "IDBAT": 1241,
       "historicalName": "Guangfujiang Temple (Buddhist)",
-      "coordinates": { "wgs84": [121.484148, 31.227284], "gcj02": [121.488636, 31.225311] },
+      "coordinates": {
+        "wgs84": [
+          121.484148,
+          31.227284
+        ],
+        "gcj02": [
+          121.488636,
+          31.225311
+        ]
+      },
       "modernRoadAddress": "河南南路、紫华路一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -468,7 +663,16 @@
     {
       "IDBAT": 1048,
       "historicalName": "Guanggong Primary School",
-      "coordinates": { "wgs84": [121.445807, 31.234737], "gcj02": [121.450409, 31.232862] },
+      "coordinates": {
+        "wgs84": [
+          121.445807,
+          31.234737
+        ],
+        "gcj02": [
+          121.450409,
+          31.232862
+        ]
+      },
       "modernRoadAddress": "陕西北路、武定路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -488,7 +692,16 @@
       "IDBAT": 262,
       "historicalName": "Guanghua Ophtalmology Clinic",
       "historicalNameCorrectionZh": "光华眼科医院",
-      "coordinates": { "wgs84": [121.460508, 31.220019], "gcj02": [121.465071, 31.218106] },
+      "coordinates": {
+        "wgs84": [
+          121.460508,
+          31.220019
+        ],
+        "gcj02": [
+          121.465071,
+          31.218106
+        ]
+      },
       "modernRoadAddress": "南昌路218号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -508,7 +721,16 @@
     {
       "IDBAT": 820,
       "historicalName": "Guanghua Theater",
-      "coordinates": { "wgs84": [121.464055, 31.226516], "gcj02": [121.468608, 31.224597] },
+      "coordinates": {
+        "wgs84": [
+          121.464055,
+          31.226516
+        ],
+        "gcj02": [
+          121.468608,
+          31.224597
+        ]
+      },
       "modernRoadAddress": "成都北路、延安中路高架交会处附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -527,7 +749,16 @@
     {
       "IDBAT": 825,
       "historicalName": "Guangjiao Temple",
-      "coordinates": { "wgs84": [121.462543, 31.227114], "gcj02": [121.4671, 31.2252] },
+      "coordinates": {
+        "wgs84": [
+          121.462543,
+          31.227114
+        ],
+        "gcj02": [
+          121.4671,
+          31.2252
+        ]
+      },
       "modernRoadAddress": "成都北路391号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -546,7 +777,16 @@
     {
       "IDBAT": 991,
       "historicalName": "Guangming Primary School and Kindergarten",
-      "coordinates": { "wgs84": [121.455626, 31.229936], "gcj02": [121.460203, 31.228038] },
+      "coordinates": {
+        "wgs84": [
+          121.455626,
+          31.229936
+        ],
+        "gcj02": [
+          121.460203,
+          31.228038
+        ]
+      },
       "modernRoadAddress": "威海路、泰兴路一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -565,7 +805,16 @@
     {
       "IDBAT": 896,
       "historicalName": "Guangrentang",
-      "coordinates": { "wgs84": [121.461846, 31.235695], "gcj02": [121.466406, 31.233786] },
+      "coordinates": {
+        "wgs84": [
+          121.461846,
+          31.235695
+        ],
+        "gcj02": [
+          121.466406,
+          31.233786
+        ]
+      },
       "modernRoadAddress": "成都北路609号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -584,7 +833,16 @@
     {
       "IDBAT": 778,
       "historicalName": "Guangshi Primary School No. 2",
-      "coordinates": { "wgs84": [121.470428, 31.247377], "gcj02": [121.474963, 31.245451] },
+      "coordinates": {
+        "wgs84": [
+          121.470428,
+          31.247377
+        ],
+        "gcj02": [
+          121.474963,
+          31.245451
+        ]
+      },
       "modernRoadAddress": "浙江北路、海宁路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -594,17 +852,28 @@
       "currentAddress": "浙江北路191号、海宁路口附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "North Chekiang Road可对应浙江北路，但未查到广师第二小学的校史、校舍门牌链或建筑存废记录。",
+      "evidence": "本条原中文为光實第二小學，派生研究保留原中文身份。坐标反查提示浙江北路191号周边街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=778",
         "https://ditu.amap.com/service/regeo?longitude=121.474963&latitude=31.245451"
-      ]
+      ],
+      "historicalNameCorrectionZh": "光实第二小学",
+      "sourceDataIssue": "原中文为光實第二小學，原英文及原类型保留；不以“广师第二小学”的回译覆盖原中文。"
     },
     {
       "IDBAT": 1602,
       "historicalName": "Guangwutai",
       "historicalNameCorrectionZh": "广舞台（待与同名剧场区分）",
-      "coordinates": { "wgs84": [121.476613, 31.257169], "gcj02": [121.481129, 31.255231] },
+      "coordinates": {
+        "wgs84": [
+          121.476613,
+          31.257169
+        ],
+        "gcj02": [
+          121.481129,
+          31.255231
+        ]
+      },
       "modernRoadAddress": "新广路243号旧址一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -626,7 +895,16 @@
       "IDBAT": 1680,
       "historicalName": "Guangxue Dalou",
       "historicalNameCorrectionZh": "广学大楼",
-      "coordinates": { "wgs84": [121.482875, 31.244971], "gcj02": [121.487368, 31.24301] },
+      "coordinates": {
+        "wgs84": [
+          121.482875,
+          31.244971
+        ],
+        "gcj02": [
+          121.487368,
+          31.24301
+        ]
+      },
       "modernRoadAddress": "虎丘路128号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -646,7 +924,16 @@
     {
       "IDBAT": 229,
       "historicalName": "Guangxue Primary School",
-      "coordinates": { "wgs84": [121.465714, 31.209084], "gcj02": [121.47026, 31.207153] },
+      "coordinates": {
+        "wgs84": [
+          121.465714,
+          31.209084
+        ],
+        "gcj02": [
+          121.47026,
+          31.207153
+        ]
+      },
       "modernRoadAddress": "徐家汇路、泰康路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -656,16 +943,27 @@
       "currentAddress": "徐家汇路528号附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "Route de Zikawei可对应徐家汇路，坐标落到泰康路口附近；尚无广学小学正式校史、门牌沿革或校舍存废资料。",
+      "evidence": "本条原中文为光學漢校，派生研究保留原中文身份。坐标反查提示富源公寓周边街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=229",
         "https://ditu.amap.com/service/regeo?longitude=121.470260&latitude=31.207153"
-      ]
+      ],
+      "historicalNameCorrectionZh": "光学汉校（按原中文）",
+      "sourceDataIssue": "原中文为光學漢校，原英文及原类型保留；不以“广学小学”的回译覆盖原中文。“汉校”字形和正式校名待独立校史核定。"
     },
     {
       "IDBAT": 1570,
       "historicalName": "Guangyu Temple",
-      "coordinates": { "wgs84": [121.417951, 31.208548], "gcj02": [121.422594, 31.206697] },
+      "coordinates": {
+        "wgs84": [
+          121.417951,
+          31.208548
+        ],
+        "gcj02": [
+          121.422594,
+          31.206697
+        ]
+      },
       "modernRoadAddress": "法华镇路380号至681弄一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -686,7 +984,16 @@
       "IDBAT": 1588,
       "historicalName": "Guangzhao Gongxue",
       "historicalNameCorrectionZh": "广肇公学",
-      "coordinates": { "wgs84": [121.479711, 31.259817], "gcj02": [121.484217, 31.257871] },
+      "coordinates": {
+        "wgs84": [
+          121.479711,
+          31.259817
+        ],
+        "gcj02": [
+          121.484217,
+          31.257871
+        ]
+      },
       "modernRoadAddress": "东宝兴路123号旧址一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -706,7 +1013,16 @@
       "IDBAT": 1458,
       "historicalName": "Guangzhao Guild",
       "historicalNameCorrectionZh": "广肇会馆",
-      "coordinates": { "wgs84": [121.482728, 31.213344], "gcj02": [121.487219, 31.211368] },
+      "coordinates": {
+        "wgs84": [
+          121.482728,
+          31.213344
+        ],
+        "gcj02": [
+          121.487219,
+          31.211368
+        ]
+      },
       "modernRoadAddress": "陆家浜路1100号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -726,7 +1042,16 @@
       "IDBAT": 1572,
       "historicalName": "Guanyin Temple",
       "historicalNameCorrectionZh": "法华观音禅寺旧址",
-      "coordinates": { "wgs84": [121.415291, 31.207345], "gcj02": [121.419936, 31.205495] },
+      "coordinates": {
+        "wgs84": [
+          121.415291,
+          31.207345
+        ],
+        "gcj02": [
+          121.419936,
+          31.205495
+        ]
+      },
       "modernRoadAddress": "新华路650号一带",
       "outcomeCategory": "demolished-current-use",
       "resolutionStatus": "probable",
@@ -747,7 +1072,16 @@
     {
       "IDBAT": 374,
       "historicalName": "Gubo Primary School",
-      "coordinates": { "wgs84": [121.446689, 31.221261], "gcj02": [121.451287, 31.219378] },
+      "coordinates": {
+        "wgs84": [
+          121.446689,
+          31.221261
+        ],
+        "gcj02": [
+          121.451287,
+          31.219378
+        ]
+      },
       "modernRoadAddress": "富民路177号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -767,7 +1101,16 @@
       "IDBAT": 956,
       "historicalName": "Gugongyang'an - Taipingsi Temple",
       "historicalNameCorrectionZh": "古供养庵—太平寺",
-      "coordinates": { "wgs84": [121.45942, 31.239337], "gcj02": [121.463987, 31.237436] },
+      "coordinates": {
+        "wgs84": [
+          121.45942,
+          31.239337
+        ],
+        "gcj02": [
+          121.463987,
+          31.237436
+        ]
+      },
       "modernRoadAddress": "成都北路863—865号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -787,7 +1130,16 @@
     {
       "IDBAT": 63,
       "historicalName": "Guo'en Buddhist Temple",
-      "coordinates": { "wgs84": [121.473561, 31.225336], "gcj02": [121.478084, 31.223392] },
+      "coordinates": {
+        "wgs84": [
+          121.473561,
+          31.225336
+        ],
+        "gcj02": [
+          121.478084,
+          31.223392
+        ]
+      },
       "modernRoadAddress": "普安路171号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -807,7 +1159,16 @@
       "IDBAT": 1354,
       "historicalName": "Guoguang Film Company",
       "historicalNameCorrectionZh": "国光影片公司",
-      "coordinates": { "wgs84": [121.473325, 31.259818], "gcj02": [121.477852, 31.25789] },
+      "coordinates": {
+        "wgs84": [
+          121.473325,
+          31.259818
+        ],
+        "gcj02": [
+          121.477852,
+          31.25789
+        ]
+      },
       "modernRoadAddress": "宝山路499号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -826,7 +1187,16 @@
     {
       "IDBAT": 1199,
       "historicalName": "Guohua Junior High School",
-      "coordinates": { "wgs84": [121.438689, 31.245381], "gcj02": [121.443306, 31.243523] },
+      "coordinates": {
+        "wgs84": [
+          121.438689,
+          31.245381
+        ],
+        "gcj02": [
+          121.443306,
+          31.243523
+        ]
+      },
       "modernRoadAddress": "长寿路1165号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -836,17 +1206,27 @@
       "currentAddress": "长寿路1165号附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "Gordon Road可对应今长寿路西段，坐标落在圣天地商务楼一带；未找到国华初中的校史、校舍范围或拆建沿革。",
+      "evidence": "原中文为国华中学，历史地址1103 Gordon Road。原坐标反查提示长寿路1165号附近圣天地商务楼街区，仅为现代位置线索，不证明旧路名改为反查地址所在道路或旧新门牌相同。尚缺正式路名对照、校史、校界和拆建资料，维持location-only。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=1199",
         "https://ditu.amap.com/service/regeo?longitude=121.443306&latitude=31.243523"
-      ]
+      ],
+      "sourceDataIssue": "原地址1103 Gordon Road保留。旧研究“Gordon Road对应长寿路”与编译器的江宁路映射冲突，现撤回未经证明的直接对译；代码表不充当外部史料。"
     },
     {
       "IDBAT": 860,
       "historicalName": "Guotai Dancing Hall",
       "historicalNameCorrectionZh": "国泰舞厅",
-      "coordinates": { "wgs84": [121.469213, 31.237132], "gcj02": [121.473751, 31.235205] },
+      "coordinates": {
+        "wgs84": [
+          121.469213,
+          31.237132
+        ],
+        "gcj02": [
+          121.473751,
+          31.235205
+        ]
+      },
       "modernRoadAddress": "西藏中路451号旧址一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -866,7 +1246,16 @@
       "IDBAT": 1490,
       "historicalName": "Haichao Temple",
       "historicalNameCorrectionZh": "海潮寺（中文名待进一步核定）",
-      "coordinates": { "wgs84": [121.495467, 31.2145], "gcj02": [121.499913, 31.212487] },
+      "coordinates": {
+        "wgs84": [
+          121.495467,
+          31.2145
+        ],
+        "gcj02": [
+          121.499913,
+          31.212487
+        ]
+      },
       "modernRoadAddress": "多稼路118号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -885,7 +1274,16 @@
     {
       "IDBAT": 1731,
       "historicalName": "HAIG APARTMENTS",
-      "coordinates": { "wgs84": [121.439432, 31.218962], "gcj02": [121.444046, 31.21709] },
+      "coordinates": {
+        "wgs84": [
+          121.439432,
+          31.218962
+        ],
+        "gcj02": [
+          121.444046,
+          31.21709
+        ]
+      },
       "modernRoadAddress": "华山路343号、351弄一带",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "probable",
@@ -906,7 +1304,16 @@
     {
       "IDBAT": 329,
       "historicalName": "Haiguang Primary School",
-      "coordinates": { "wgs84": [121.453726, 31.208321], "gcj02": [121.458306, 31.206418] },
+      "coordinates": {
+        "wgs84": [
+          121.453726,
+          31.208321
+        ],
+        "gcj02": [
+          121.458306,
+          31.206418
+        ]
+      },
       "modernRoadAddress": "襄阳南路425号旧址一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -926,7 +1333,16 @@
       "IDBAT": 1614,
       "historicalName": "Haiguang Theater",
       "historicalNameCorrectionZh": "海光剧院（前身维多利亚大戏院、新中央大戏院）",
-      "coordinates": { "wgs84": [121.480194, 31.252323], "gcj02": [121.484697, 31.250373] },
+      "coordinates": {
+        "wgs84": [
+          121.480194,
+          31.252323
+        ],
+        "gcj02": [
+          121.484697,
+          31.250373
+        ]
+      },
       "modernRoadAddress": "海宁路410号旧址",
       "outcomeCategory": "demolished-current-use",
       "resolutionStatus": "resolved",
@@ -947,7 +1363,16 @@
       "IDBAT": 1453,
       "historicalName": "Haihui Temple (Buddhist)",
       "historicalNameCorrectionZh": "海会寺",
-      "coordinates": { "wgs84": [121.476056, 31.209727], "gcj02": [121.48057, 31.207769] },
+      "coordinates": {
+        "wgs84": [
+          121.476056,
+          31.209727
+        ],
+        "gcj02": [
+          121.48057,
+          31.207769
+        ]
+      },
       "modernRoadAddress": "丽园路565—567号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -968,7 +1393,16 @@
       "IDBAT": 1228,
       "historicalName": "Haihuisi Temple",
       "historicalNameCorrectionZh": "海会寺（与丽园路海会寺是否同名异址待核）",
-      "coordinates": { "wgs84": [121.435245, 31.244865], "gcj02": [121.439869, 31.243012] },
+      "coordinates": {
+        "wgs84": [
+          121.435245,
+          31.244865
+        ],
+        "gcj02": [
+          121.439869,
+          31.243012
+        ]
+      },
       "modernRoadAddress": "长寿路13号一带",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -989,7 +1423,16 @@
       "IDBAT": 719,
       "historicalName": "Haining Road Police Station",
       "historicalNameCorrectionZh": "西虹口捕房（汇司捕房）",
-      "coordinates": { "wgs84": [121.472984, 31.24916], "gcj02": [121.477511, 31.247228] },
+      "coordinates": {
+        "wgs84": [
+          121.472984,
+          31.24916
+        ],
+        "gcj02": [
+          121.477511,
+          31.247228
+        ]
+      },
       "modernRoadAddress": "海宁路830号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -1010,7 +1453,16 @@
     {
       "IDBAT": 215,
       "historicalName": "Haixing Primary School",
-      "coordinates": { "wgs84": [121.466538, 31.216082], "gcj02": [121.471082, 31.214152] },
+      "coordinates": {
+        "wgs84": [
+          121.466538,
+          31.216082
+        ],
+        "gcj02": [
+          121.471082,
+          31.214152
+        ]
+      },
       "modernRoadAddress": "重庆南路207号、合肥路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -1020,17 +1472,27 @@
       "currentAddress": "重庆南路207号、合肥路口附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "Route du Pere Froc可对应重庆南路，坐标落在万宜坊一带；没有找到海星小学的校史、校舍界址或与现有里弄建筑的连续关系。",
+      "evidence": "原中文为私立海星小学，历史地址630 Route du Pere Froc。原坐标反查提示重庆南路207号、合肥路口附近万宜坊街区，仅为现代位置线索，不证明旧路名改为反查地址所在道路或旧新门牌相同。尚缺正式路名对照、校史、校界和拆建资料，维持location-only。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=215",
         "https://ditu.amap.com/service/regeo?longitude=121.471082&latitude=31.214152"
-      ]
+      ],
+      "sourceDataIssue": "原地址630 Route du Pere Froc保留。旧研究“Route du Pere Froc对应重庆南路”与编译器的合肥路映射冲突，现撤回未经证明的直接对译；代码表不充当外部史料。"
     },
     {
       "IDBAT": 547,
       "historicalName": "Hamilton House",
       "historicalNameCorrectionZh": "汉弥登大楼（今福州大楼）",
-      "coordinates": { "wgs84": [121.482936, 31.236832], "gcj02": [121.487429, 31.234867] },
+      "coordinates": {
+        "wgs84": [
+          121.482936,
+          31.236832
+        ],
+        "gcj02": [
+          121.487429,
+          31.234867
+        ]
+      },
       "modernRoadAddress": "江西中路170号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -1046,5 +1508,13 @@
         "https://www.virtualshanghai.net/data/buildings?ID=547"
       ]
     }
-  ]
+  ],
+  "correctedAt": "2026-09-18",
+  "correctionReview": "research/corrections/2026-09-18-001-010/README.md",
+  "inputProvenance": {
+    "status": "original-snapshot-unavailable",
+    "note": "原同号public文件会重排，不能用作固定批次输入；已提交的同号Git历史未找回完整50条原快照。固定ID及修正前记录保存在审查context中，本轮不伪造原输入。",
+    "fixedRecordContext": "research/rechecks/2026-09-18-001-010/context.json",
+    "evidence": "research/rechecks/2026-09-18-001-010/input-provenance.json"
+  }
 }

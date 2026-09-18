@@ -21,19 +21,19 @@
   "summary": {
     "total": 50,
     "byOutcomeCategory": {
-      "survives-with-history": 18,
-      "demolished-current-use": 3,
-      "location-only-current-use": 29
+      "survives-with-history": 16,
+      "demolished-current-use": 4,
+      "location-only-current-use": 30
     },
     "byResolutionStatus": {
-      "resolved": 21,
+      "resolved": 20,
       "probable": 10,
-      "unresolved": 19
+      "unresolved": 20
     },
     "mapWriteRecommendation": {
-      "yes": 21,
+      "yes": 20,
       "review": 10,
-      "no": 19
+      "no": 20
     }
   },
   "records": [
@@ -362,7 +362,7 @@
         ]
       },
       "modernRoadAddress": "280 重庆南路",
-      "outcomeCategory": "survives-with-history",
+      "outcomeCategory": "demolished-current-use",
       "resolutionStatus": "resolved",
       "confidence": "high",
       "currentNameZh": "上海圣伯多禄堂",
@@ -429,10 +429,10 @@
       "currentNameZh": "上海市总工会大楼（交通银行大楼）",
       "currentUse": "上海市总工会办公",
       "currentAddress": "中山东一路14号",
-      "currentUseRelationship": "same-site-rebuilt",
+      "currentUseRelationship": "same-site-continuing-use",
       "mapWriteRecommendation": "yes",
-      "sourceDataIssue": "Virtual Shanghai 记录年代为1940年，现存交通银行大楼1948年才竣工；二者是同一机构地块上的前后建筑。",
-      "evidence": "现存交通银行大楼1948年竣工，晚于 Virtual Shanghai 记录的1940年，因此应理解为同一机构/地块的后建大楼，不能把1940年记录直接当作现建筑建成年代。",
+      "sourceDataIssue": "原记录起年1940与现楼1948年竣工不一致；差异可能涉及所指楼代或原年代误记，仅凭年份不能确定前后建筑关系。",
+      "evidence": "现存中山东一路14号交通银行大楼1948年竣工，现作上海市总工会办公；Virtual Shanghai保留1940年起年。二者年代不一致，不能仅凭这项差异断定原记录一定指前一栋建筑，也不能把1940年当作现楼竣工年。本条确认同址历史关联及现楼用途，不据此宣称1940年原构完整延续。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=538",
         "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
@@ -544,15 +544,15 @@
         ]
       },
       "modernRoadAddress": "?? 西宝兴路",
-      "outcomeCategory": "survives-with-history",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
       "currentNameZh": "上海市宝兴殡仪馆",
       "currentUse": "殡仪服务机构",
       "currentAddress": "西宝兴路833号",
-      "currentUseRelationship": "same-site-institutional-continuity",
-      "mapWriteRecommendation": "yes",
-      "evidence": "历史中文字段为宝兴殡仪馆，转换点位距现宝兴殡仪馆很近；政府资料确认现机构地址为西宝兴路833号。",
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "review",
+      "evidence": "历史中文字段为宝兴殡仪馆，原地址仅记西宝兴路而无门牌和起年。政府资料确认现上海市宝兴殡仪馆位于西宝兴路833号，现机构的名称与空间位置构成候选线索；这些线索尚不能单独证明历史原点与现馆原址延续。保留候选名址及其殡仪服务用途，旧今院界和机构原址连续关系待核。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=1274",
         "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
@@ -813,14 +813,14 @@
       },
       "modernRoadAddress": "135 延安东路",
       "outcomeCategory": "location-only-current-use",
-      "resolutionStatus": "probable",
-      "confidence": "medium",
-      "currentNameZh": "延安东路134—150号楼（原上海纱业银行大楼，地图通称中汇大楼）",
-      "currentUse": "办公、银行及沿街商业",
-      "currentAddress": "延安东路134—150号",
-      "currentUseRelationship": "site-redeveloped",
-      "mapWriteRecommendation": "review",
-      "evidence": "Asia Hotel 历史门牌135号落入现134—150号建筑范围；市房管局确认现存优秀历史建筑为原上海纱业银行大楼。尚未找到资料直接说明亚洲饭店拆建过程，故按原址后建建筑处理。",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "coordinate-only",
+      "mapWriteRecommendation": "no",
+      "evidence": "原记录为亚洲饭店、135 EDWARD VII。旧研究曾以135位于134—150的数字区间推定同址，该推断不成立：旧今门牌、道路侧别和地块对应均未闭合。延安东路134—150号楼仅为旧研究提出的候选，不能据此认定亚洲饭店原址或拆建关系；纱业银行楼与中汇大楼的名称亦不能混用。历史记录原字段保留，原点现代对应及用途待核。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=18",
         "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
@@ -852,7 +852,7 @@
       "mapWriteRecommendation": "yes",
       "evidence": "1928年震旦大学校园平面图把运动场画在今西院同一位置；上海交通大学医学院近年的校内比赛与场地资料继续把重庆南路280号西院运动场用于田径、足球活动。转换后的历史点直接落在现足球场内，校园、门牌和运动用途均连续。",
       "sourceUrls": [
-        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=242",
+        "https://www.virtualshanghai.net/data/buildings?ID=242",
         "https://www.thepaper.cn/newsDetail_forward_20760150",
         "https://www.shsmu.edu.cn/news/info/1003/28581.htm",
         "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm",
@@ -1518,5 +1518,7 @@
         "https://www.virtualshanghai.net/data/buildings?ID=1151"
       ]
     }
-  ]
+  ],
+  "correctedAt": "2026-09-18",
+  "correctionReview": "research/corrections/2026-09-18-001-010/README.md"
 }

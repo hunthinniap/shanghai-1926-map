@@ -19,6 +19,7 @@ const unresolvedAuditStatuses = new Set([
   'generic-name',
   'needs-review-partial-name',
   'needs-review-duplicate-source',
+  'needs-review-research',
 ])
 const [historical, audit, clusterAudit, snapshot] = await Promise.all([
   fs.readFile(historicalPath, 'utf8').then(JSON.parse),

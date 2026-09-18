@@ -1,0 +1,378 @@
+{
+  "generatedAt": "2026-09-18T14:42:45.117Z",
+  "scope": [
+    "001",
+    "007",
+    "008",
+    "009",
+    "010"
+  ],
+  "method": "Compile copies in a temporary workspace, then compare complete records by IDBAT. Only record order and all top-level metadata/date fields are ignored. Reference-array order, values, null/missing distinctions and record fields are compared exactly.",
+  "temporaryWorkspace": {
+    "path": "/var/folders/ty/jbkht21x7bl6566kp97htv600000gn/T/shanghai-compilation-validation-H2sUVu",
+    "removed": true,
+    "historicalMapCopied": false
+  },
+  "sourceFileHashes": {
+    "scripts/compile-unresolved-research.mjs": "01a07cf8e3c9f341af682d0c9bdccb640bd6d697a0c7f45852453d344acfdad8",
+    "scripts/lib/coordinate-systems.mjs": "8a5f76190c7c2a32c6fad8778276c56d4bcfa3ece874bbc2d377e500d681d814",
+    "scripts/data/virtual-shanghai-buildings-live.json": "817f564def3460c1f39e4e68bdeaa4ab4242a576be6ab7f4085031d94d0ac2d2",
+    "research/corrections/2026-09-18-001-010/a-plan.json": "6cc956d27f1d1cf0a8bf1228867fd463ad1c3c2501294b82158bd8b6021cd9e4",
+    "research/unresolved-landmarks/001-input.json": "fed5a95e67d4ebcb4069b3d6e17bbdabbe1f01edb084e629f4b9e2aa38e15236",
+    "research/unresolved-landmarks/001-a.json": "c3ee2c8124d97aec6eb70b8ce46673ea1709ff69d1126a9c8e333fa440aa2f0b",
+    "research/unresolved-landmarks/001-b.json": "b424896602d554c4cb38ceac333ed5db569e7f6ac28abdd482dd97b7dfbe3148",
+    "research/unresolved-landmarks/001-c.json": "2a58dee6e36a7031dbd5cbde20dafa9c9e29f422a8554792f5a59b8f64d65ae6",
+    "research/unresolved-landmarks/007-input.json": "808c66bbdd43f0a98dfddb8a0877292c51b38113de793ce4187cdd0347048908",
+    "research/unresolved-landmarks/007-a.json": "04920b16792fc19466ffa886044d51a358dd3ff2afd008a87cb282e2a3d017da",
+    "research/unresolved-landmarks/007-b.json": "34ed524114096bac010f5546257f04395ed9fb4f96c72762e50ee7aa17c87004",
+    "research/unresolved-landmarks/007-c.json": "9fa415dc791fad7cff8e782e834a74693f85f8a723b7c90ceccc291d9144b18e",
+    "research/unresolved-landmarks/008-input.json": "a4926db28f493af8798330cc9167fea8c4b5ee9b865c1cbcc6d8fcac10f2aa83",
+    "research/unresolved-landmarks/008-a.json": "49ceba8445b2fb9efaf4aee1e2acd5064470513ac1bf0b1ba758641e8bf56140",
+    "research/unresolved-landmarks/008-b.json": "b45963e972c5436b1c46e98451f1ebc28b13facaa8a11304c602716ca3a8bdb9",
+    "research/unresolved-landmarks/008-c.json": "c1cfa169bb108438cb775d0355b137b53ba8f64bea03cbeea426473dd6c88154",
+    "research/unresolved-landmarks/009-input.json": "0114e285d6d2c9f978a3654dc95c5a1f77b9c9ceb273eae27993e163812b0588",
+    "research/unresolved-landmarks/009-a.json": "d0628dbf93f0144a0987b4d802e480d19936b9a1d0931a028b6b020d44c0f7e8",
+    "research/unresolved-landmarks/009-b.json": "bed53797c083b5379dccdb4a10788baff92394d421b08427cb0940e348b06fe4",
+    "research/unresolved-landmarks/009-c.json": "0cb37adb8c41bafa5b36bd709ec9feeb577d79bb6cc38ba67c545484117cb80d",
+    "research/unresolved-landmarks/010-input.json": "a3cadf3ed18bbe6e3378643ce7add76f4691649fb27214d9d72b70d04e20e7b7",
+    "research/unresolved-landmarks/010-a.json": "f66b9857a1254c11aea8d095c30c718fbe4c212350424e6b6dd86f4ba4b8037d",
+    "research/unresolved-landmarks/010-b.json": "efda7538ff6df62710efdef7fd706a0e38bf6ab095ca975ed26951ac5d213785",
+    "research/unresolved-landmarks/010-c.json": "b00a59f3eac00b56373cb8b6f68289b82e70d1fa3e63b1650b12d2ea976298f7",
+    "research/unresolved-landmarks/001-results.json": "4e6259b7e54dfd0bc1a0bbba839f3a3eb7dc50d98f3c1766db28faf8159df648",
+    "scripts/data/unresolved-landmarks-001-research.json": "49e66a6096568c82c2093ec9f765776e75a0a5e52c51a436fa24c7c0e711bb60",
+    "research/unresolved-landmarks/007-results.json": "9c055f52dafc16d6448e8527b69a5eace40189f8fdd5997eb21e1b69c6f3ca9b",
+    "scripts/data/unresolved-landmarks-007-research.json": "c1276e830843ea0eceec1cdd4f27671ea9df4be4f306b545b1d461ab6923abda",
+    "research/unresolved-landmarks/008-results.json": "3d519e9958f18a86fea10713dda834df6d791c54fce6ede4e58d55f5c765607c",
+    "scripts/data/unresolved-landmarks-008-research.json": "c9805e6f90c2f4ba286198ab7a3a4d967c2e2e30e3a95b6827cc928940f0d2fa",
+    "research/unresolved-landmarks/009-results.json": "da3bbc3e05353a2bad4ea4f3f50b203ef2f62d58a6564cc9048eee18c7037247",
+    "scripts/data/unresolved-landmarks-009-research.json": "af90336002bc9d50bc09c15de254ea5e8f5d733d6e8ee9a4d3de60bc31994c7f",
+    "research/unresolved-landmarks/010-results.json": "f56dcaa787c0971bf725d788fde4749f64c40889dffd3e17a2c5b46410f95a56",
+    "scripts/data/unresolved-landmarks-010-research.json": "878cb71f2e01233624344209bc2b933c83031f4522cdcf486ab582334e3c431d"
+  },
+  "copiedDependencies": [
+    {
+      "name": "proj4",
+      "version": "2.21.0"
+    },
+    {
+      "name": "mgrs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "wkt-parser",
+      "version": "1.5.6"
+    }
+  ],
+  "batches": [
+    {
+      "batch": "001",
+      "stdout": "Compiled 50 research records to research/unresolved-landmarks/001-results.json and scripts/data/unresolved-landmarks-001-research.json.",
+      "stderr": "",
+      "result": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "FUNCTION",
+          "F_ADDRESS",
+          "IDBAT",
+          "NAME",
+          "XC",
+          "YC",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "historicalEndYear",
+          "historicalNameZh",
+          "historicalRoadMappings",
+          "historicalStartYear",
+          "notes",
+          "references",
+          "relationship",
+          "verificationStatus"
+        ],
+        "differences": []
+      },
+      "workflow": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "IDBAT",
+          "confidence",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "currentUseRelationship",
+          "evidence",
+          "historicalEndYear",
+          "historicalName",
+          "historicalNameCorrectionZh",
+          "historicalStartYear",
+          "mapWriteRecommendation",
+          "modernRoadAddress",
+          "outcomeCategory",
+          "resolutionStatus",
+          "sourceDataIssue",
+          "sourceUrls"
+        ],
+        "differences": []
+      },
+      "passed": true
+    },
+    {
+      "batch": "007",
+      "stdout": "Compiled 50 research records to research/unresolved-landmarks/007-results.json and scripts/data/unresolved-landmarks-007-research.json.",
+      "stderr": "",
+      "result": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "FUNCTION",
+          "F_ADDRESS",
+          "IDBAT",
+          "NAME",
+          "XC",
+          "YC",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "historicalEndYear",
+          "historicalNameZh",
+          "historicalRoadMappings",
+          "historicalStartYear",
+          "notes",
+          "references",
+          "relationship",
+          "verificationStatus"
+        ],
+        "differences": []
+      },
+      "workflow": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "IDBAT",
+          "confidence",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "currentUseRelationship",
+          "evidence",
+          "historicalEndYear",
+          "historicalName",
+          "historicalNameCorrectionZh",
+          "historicalStartYear",
+          "mapWriteRecommendation",
+          "modernRoadAddress",
+          "outcomeCategory",
+          "resolutionStatus",
+          "sourceDataIssue",
+          "sourceUrls"
+        ],
+        "differences": []
+      },
+      "passed": true
+    },
+    {
+      "batch": "008",
+      "stdout": "Compiled 50 research records to research/unresolved-landmarks/008-results.json and scripts/data/unresolved-landmarks-008-research.json.",
+      "stderr": "",
+      "result": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "FUNCTION",
+          "F_ADDRESS",
+          "IDBAT",
+          "NAME",
+          "XC",
+          "YC",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "historicalEndYear",
+          "historicalNameZh",
+          "historicalRoadMappings",
+          "historicalStartYear",
+          "notes",
+          "references",
+          "relationship",
+          "verificationStatus"
+        ],
+        "differences": []
+      },
+      "workflow": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "IDBAT",
+          "confidence",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "currentUseRelationship",
+          "evidence",
+          "historicalEndYear",
+          "historicalName",
+          "historicalNameCorrectionZh",
+          "historicalStartYear",
+          "mapWriteRecommendation",
+          "modernRoadAddress",
+          "outcomeCategory",
+          "resolutionStatus",
+          "sourceUrls"
+        ],
+        "differences": []
+      },
+      "passed": true
+    },
+    {
+      "batch": "009",
+      "stdout": "Compiled 50 research records to research/unresolved-landmarks/009-results.json and scripts/data/unresolved-landmarks-009-research.json.",
+      "stderr": "",
+      "result": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "FUNCTION",
+          "F_ADDRESS",
+          "IDBAT",
+          "NAME",
+          "XC",
+          "YC",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "historicalEndYear",
+          "historicalNameZh",
+          "historicalRoadMappings",
+          "historicalStartYear",
+          "notes",
+          "references",
+          "relationship",
+          "verificationStatus"
+        ],
+        "differences": []
+      },
+      "workflow": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "IDBAT",
+          "confidence",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "currentUseRelationship",
+          "evidence",
+          "historicalEndYear",
+          "historicalName",
+          "historicalNameCorrectionZh",
+          "historicalStartYear",
+          "mapWriteRecommendation",
+          "modernRoadAddress",
+          "outcomeCategory",
+          "resolutionStatus",
+          "sourceUrls"
+        ],
+        "differences": []
+      },
+      "passed": true
+    },
+    {
+      "batch": "010",
+      "stdout": "Compiled 50 research records to research/unresolved-landmarks/010-results.json and scripts/data/unresolved-landmarks-010-research.json.",
+      "stderr": "",
+      "result": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "FUNCTION",
+          "F_ADDRESS",
+          "IDBAT",
+          "NAME",
+          "XC",
+          "YC",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "historicalEndYear",
+          "historicalNameZh",
+          "historicalRoadMappings",
+          "historicalStartYear",
+          "notes",
+          "references",
+          "relationship",
+          "verificationStatus"
+        ],
+        "differences": []
+      },
+      "workflow": {
+        "expectedRecordCount": 50,
+        "compiledRecordCount": 50,
+        "comparedFields": [
+          "IDBAT",
+          "confidence",
+          "coordinates",
+          "currentAddress",
+          "currentNameZh",
+          "currentUse",
+          "currentUseRelationship",
+          "evidence",
+          "historicalEndYear",
+          "historicalName",
+          "historicalNameCorrectionZh",
+          "historicalStartYear",
+          "mapWriteRecommendation",
+          "modernRoadAddress",
+          "outcomeCategory",
+          "resolutionStatus",
+          "sourceUrls"
+        ],
+        "differences": []
+      },
+      "passed": true
+    }
+  ],
+  "specialChecks": [
+    {
+      "IDBAT": 241,
+      "field": "outcomeCategory",
+      "expected": "demolished-current-use",
+      "actual": "demolished-current-use",
+      "passed": true
+    },
+    {
+      "IDBAT": 538,
+      "field": "sourceDataIssue",
+      "expected": "原记录起年1940与现楼1948年竣工不一致；差异可能涉及所指楼代或原年代误记，仅凭年份不能确定前后建筑关系。",
+      "actual": "原记录起年1940与现楼1948年竣工不一致；差异可能涉及所指楼代或原年代误记，仅凭年份不能确定前后建筑关系。",
+      "passed": true
+    },
+    {
+      "IDBAT": 569,
+      "field": "mapWriteRecommendation",
+      "expected": "yes",
+      "actual": "yes",
+      "passed": true
+    }
+  ],
+  "originalFilesUnchanged": true,
+  "changedOriginalFiles": [],
+  "status": "passed",
+  "summary": {
+    "batchesCompared": 5,
+    "resultRecordsCompared": 250,
+    "workflowRecordsCompared": 250,
+    "differenceCount": 0,
+    "failedSpecialChecks": 0
+  }
+}

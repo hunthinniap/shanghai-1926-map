@@ -1,0 +1,104 @@
+{
+  "scope": "编译回归额外发现的2条旧生成不同步；与100条finding修正分开计数，无地图变化。",
+  "records": [
+    {
+      "batch": "001",
+      "IDBAT": 242,
+      "disposition": "synchronize-existing-approved-result-to-part",
+      "reason": "编译回归发现001-b仍是旧likely，后续已批准results/workflow为verified。同步已批准字段和来源到part，不引入新事实；统一同一VS ID的链接写法。",
+      "workflowPatch": {
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=242",
+          "https://www.thepaper.cn/newsDetail_forward_20760150",
+          "https://www.shsmu.edu.cn/news/info/1003/28581.htm",
+          "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm",
+          "https://www.shsmu.edu.cn/news/info/1023/29923.htm"
+        ]
+      },
+      "resultPatch": {
+        "references": [
+          {
+            "title": "Virtual Shanghai 建筑记录 #242",
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=242"
+          },
+          {
+            "title": "澎湃新闻：1928年震旦大学校园平面图与校址沿革",
+            "url": "https://www.thepaper.cn/newsDetail_forward_20760150"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场校内比赛",
+            "url": "https://www.shsmu.edu.cn/news/info/1003/28581.htm"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场场地记录",
+            "url": "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm"
+          },
+          {
+            "title": "上海交通大学医学院：黄浦校区西院通知（重庆南路280号）",
+            "url": "https://www.shsmu.edu.cn/news/info/1023/29923.htm"
+          }
+        ]
+      },
+      "partPatch": {
+        "currentNameZh": "上海交通大学医学院西院足球场",
+        "currentAddress": "上海市黄浦区重庆南路280号上海交通大学医学院黄浦校区西院",
+        "currentUse": "高校田径、足球运动场",
+        "relationship": "same-site-continuing-use",
+        "verificationStatus": "verified",
+        "notes": "1928年震旦大学校园平面图把运动场画在今西院同一位置；上海交通大学医学院近年的校内比赛与场地资料继续把重庆南路280号西院运动场用于田径、足球活动。转换后的历史点直接落在现足球场内，校园、门牌和运动用途均连续。",
+        "sources": [
+          {
+            "title": "澎湃新闻：1928年震旦大学校园平面图与校址沿革",
+            "url": "https://www.thepaper.cn/newsDetail_forward_20760150"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场校内比赛",
+            "url": "https://www.shsmu.edu.cn/news/info/1003/28581.htm"
+          },
+          {
+            "title": "上海交通大学医学院：西院运动场场地记录",
+            "url": "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm"
+          },
+          {
+            "title": "上海交通大学医学院：黄浦校区西院通知（重庆南路280号）",
+            "url": "https://www.shsmu.edu.cn/news/info/1023/29923.htm"
+          }
+        ]
+      },
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=242",
+        "https://www.thepaper.cn/newsDetail_forward_20760150",
+        "https://www.shsmu.edu.cn/news/info/1003/28581.htm",
+        "https://www.shsmu.edu.cn/xxgk/info/1042/1433.htm",
+        "https://www.shsmu.edu.cn/news/info/1023/29923.htm"
+      ],
+      "remainingGap": "本次只修复已批准结论被过时分片覆盖的生成问题。"
+    },
+    {
+      "batch": "007",
+      "IDBAT": 460,
+      "disposition": "synchronize-generic-road-mapping-to-current-compiler",
+      "reason": "使用已有编译器的分段道路提示，撤去旧派生字段只写徐家汇路的过度简化。保持原地址、现代门牌未核定及unresolved/no，不新增定位结论。",
+      "workflowPatch": {
+        "modernRoadAddress": "993 徐家汇路／肇嘉浜路（分段）"
+      },
+      "resultPatch": {
+        "historicalRoadMappings": [
+          {
+            "historicalName": "ROUTE DE ZIKAWEI",
+            "modernNameZh": "徐家汇路／肇嘉浜路（分段）"
+          }
+        ]
+      },
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=460"
+      ],
+      "remainingGap": "精确现代门牌和原址用途仍未核定。"
+    }
+  ]
+}

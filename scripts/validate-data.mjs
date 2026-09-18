@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { makeUnresolvedRecordComparator } from './lib/unresolved-ranking.mjs'
+import { clearCurrentUse, findCurrentUseHold } from './lib/current-use-holds.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(projectRoot, 'public', 'data', 'historical-features.geojson')
@@ -29,6 +30,9 @@ const unresolvedLandmarkChunks = await Promise.all(unresolvedLandmarkFilenames.m
 ))
 const unresolvedRecords = unresolvedLandmarkChunks.flat()
 const landmarkCurrentUseOverrides = JSON.parse(await fs.readFile(landmarkCurrentUseOverridesPath, 'utf8'))
+const landmarkCurrentUseHolds = JSON.parse(await fs.readFile(
+  path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-holds.json'), 'utf8',
+))
 const buildingClusterAudit = JSON.parse(await fs.readFile(buildingClusterAuditPath, 'utf8'))
 const buildingSiteSeparations = JSON.parse(await fs.readFile(buildingSiteSeparationsPath, 'utf8'))
 const jurisdictions = JSON.parse(await fs.readFile(jurisdictionsPath, 'utf8'))
@@ -141,6 +145,28 @@ for (const feature of collection.features ?? []) {
 }
 
 const resolvedOverrideGroups = new Set()
+const heldGroups = new Set()
+for (const hold of landmarkCurrentUseHolds) {
+  const targets = collection.features.filter((feature) =>
+    feature.properties?.kind === 'landmark' && matchesFeatureGroup(feature, hold.featureGroupId))
+  if (targets.length !== 1 || heldGroups.has(hold.featureGroupId)) {
+    errors.push(`Research hold ${hold.featureGroupId} must resolve to one unique landmark group`)
+    continue
+  }
+  heldGroups.add(hold.featureGroupId)
+  const properties = targets[0].properties
+  if (JSON.stringify([...(hold.sourceRecordIds ?? [])].sort((a, b) => a - b)) !==
+    JSON.stringify([...(properties.sourceRecordIds ?? [])].sort((a, b) => a - b))) {
+    errors.push(`Research hold ${hold.featureGroupId} does not cover its full source-record group`)
+  }
+  if (JSON.stringify(clearCurrentUse(properties)) !== JSON.stringify(properties)) {
+    errors.push(`Research hold ${hold.featureGroupId} retained current-use fields`)
+  }
+  const auditRecord = landmarkCurrentUseAudit.records.find((record) => record.featureGroupId === properties.featureGroupId)
+  if (auditRecord?.status !== 'needs-review-research' || auditRecord.accepted) {
+    errors.push(`Research hold ${hold.featureGroupId} retained an accepted audit match`)
+  }
+}
 for (const override of landmarkCurrentUseOverrides) {
   const targets = collection.features.filter(
     (feature) => feature.properties?.kind === 'landmark' && matchesFeatureGroup(feature, override.featureGroupId),
@@ -150,6 +176,9 @@ for (const override of landmarkCurrentUseOverrides) {
     continue
   }
   const target = targets[0]
+  if (findCurrentUseHold(landmarkCurrentUseHolds, target.properties)) {
+    errors.push(`Current-use override ${override.featureGroupId} conflicts with a research hold`)
+  }
   if (resolvedOverrideGroups.has(target.properties.featureGroupId)) {
     errors.push(`More than one current-use override resolves to ${target.properties.featureGroupId}`)
   }
@@ -315,7 +344,6 @@ for (const [historicalName, currentNameZh, currentUse] of currentUseAcceptanceCa
 }
 const currentUseGroupAcceptanceCases = [
   ['landmark-vs-site-301', '淡井庙遗址（上海瑞金洲际酒店内）', '酒店园区 / 历史遗迹'],
-  ['landmark-vs-site-1000', '上海市儿童医院（上海交通大学医学院附属儿童医院）', '原址用途待核 / 儿童医院机构延续'],
   ['landmark-vs-site-504', '中华基督教女青年会全国协会大楼（旧址）', '历史建筑 / 机构办公及综合使用'],
   ['landmark-vs-site-1003', '梅龙镇广场（更新中）', '商业综合体 / 城市更新地块'],
   ['landmark-vs-site-1004', '梅龙镇广场（更新中）', '商业综合体 / 城市更新地块'],
@@ -325,6 +353,12 @@ const currentUseGroupAcceptanceCases = [
   ['landmark-dingxiang-huayuan-dingxiang-huayuan', '丁香花园', '老干部活动 / 餐饮 / 历史花园建筑'],
   ['landmark-vs-site-446', '枕流公寓', '住宅 / 上海市优秀历史建筑'],
 ]
+for (const sourceRecordId of [499, 1554, 1633, 1000, 1591, 1042, 1043, 1044, 1390, 1391]) {
+  const feature = historicalCollection.features.find((entry) => entry.properties?.sourceRecordIds?.includes(sourceRecordId))
+  if (!feature || !findCurrentUseHold(landmarkCurrentUseHolds, feature.properties) || feature.properties.currentUse) {
+    errors.push(`Virtual Shanghai #${sourceRecordId} must retain its research hold until site evidence is reviewed`)
+  }
+}
 for (const [featureGroupId, currentNameZh, currentUse] of currentUseGroupAcceptanceCases) {
   const feature = collection.features.find((candidate) => candidate.properties?.featureGroupId === featureGroupId)
   if (feature?.properties?.currentNameZh !== currentNameZh || feature?.properties?.currentUse !== currentUse) {
@@ -418,6 +452,7 @@ const unresolvedAuditStatuses = new Set([
   'generic-name',
   'needs-review-partial-name',
   'needs-review-duplicate-source',
+  'needs-review-research',
 ])
 const auditRecordsByGroup = new Map(
   (landmarkCurrentUseAudit.records ?? []).map((record) => [record.featureGroupId, record]),

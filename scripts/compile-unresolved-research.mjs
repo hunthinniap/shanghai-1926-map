@@ -28,7 +28,7 @@ const statusOrder = new Map([
 const sourceDataIssues = new Map([
   [407, '原 FUNCTION 将建筑 Adeodata Hall 归为 park；现址资料证明它是历史住宅建筑，现作文化空间。'],
   [75, '公开资料同时出现延安东路725号与755号两个旧门牌版本。'],
-  [538, 'Virtual Shanghai 记录年代为1940年，现存交通银行大楼1948年才竣工；二者是同一机构地块上的前后建筑。'],
+  [538, '原记录起年1940与现楼1948年竣工不一致；差异可能涉及所指楼代或原年代误记，仅凭年份不能确定前后建筑关系。'],
   [1776, '原地址、坐标和“15 Apartments”名称之间尚无法相互校验。'],
   [1033, '原地址与坐标落点之间存在明显冲突。'],
   [465, '英文名称为 Temple，但原 FUNCTION 指向小学，来源字段互相冲突。'],
@@ -189,7 +189,7 @@ function modernRoadAddress(address) {
 
 function outcomeCategory(record) {
   if (record.verificationStatus !== 'verified') return 'location-only-current-use'
-  return /demolished|site-redeveloped(?!-partially-preserved)/u.test(record.relationship ?? '')
+  return /demolished|same-site-rebuilt|site-redeveloped(?!-partially-preserved)/u.test(record.relationship ?? '')
     ? 'demolished-current-use'
     : 'survives-with-history'
 }

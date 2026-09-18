@@ -1,7 +1,7 @@
 {
   "batch": "005",
   "researchedAt": "2026-08-30",
-  "input": "public/data/unresolved-landmarks/005.json",
+  "input": null,
   "method": {
     "sourceCrs": "EPSG:32651",
     "canonicalCrs": "EPSG:4326",
@@ -23,27 +23,38 @@
   "summary": {
     "total": 50,
     "byOutcomeCategory": {
-      "survives-with-history": 20,
-      "demolished-current-use": 4,
-      "location-only-current-use": 26
+      "survives-with-history": 18,
+      "location-only-current-use": 30,
+      "demolished-current-use": 2
     },
     "byResolutionStatus": {
-      "resolved": 20,
-      "probable": 4,
-      "location-only": 26
+      "resolved": 16,
+      "location-only": 26,
+      "probable": 7,
+      "unresolved": 1
     },
     "mapWriteRecommendation": {
-      "yes": 19,
-      "review": 5,
-      "location-only": 26
+      "review": 8,
+      "yes": 15,
+      "location-only": 26,
+      "no": 1
     }
   },
   "records": [
     {
       "IDBAT": 250,
       "historicalName": "Ecole Primaire du Sacré-Coeur (Sacred Heart Primary School)",
-      "historicalNameCorrectionZh": "圣心小学（震旦女子文理学院附属小学，后称重庆南路第一小学）",
-      "coordinates": { "wgs84": [121.465477, 31.217387], "gcj02": [121.470025, 31.21546] },
+      "historicalNameCorrectionZh": "晓星小学（圣伯多禄晓星小学，后为重庆南路第一小学）",
+      "coordinates": {
+        "wgs84": [
+          121.465477,
+          31.217387
+        ],
+        "gcj02": [
+          121.470025,
+          31.21546
+        ]
+      },
       "modernRoadAddress": "重庆南路224号历史点；建筑迁至重庆南路256号思南公馆内",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -53,18 +64,28 @@
       "currentAddress": "重庆南路256号",
       "currentUseRelationship": "relocated-reconstructed-repurposed",
       "mapWriteRecommendation": "review",
-      "evidence": "思南公馆更新时，原重庆南路第一小学建筑被逐件编号、拆卸、迁移并旋转90度后复建，现作思南公馆宴会厅。历史实体的去向明确，但今天的建筑坐标已不同于原始点，因此地图写入前需决定展示原址、现址或两者关系。",
+      "evidence": "黄浦官方文章确认天主教圣伯多禄晓星小学、后为重庆南路第一小学。思南公馆更新时，校舍逐件编号、拆卸、迁移并旋转90度后复建，作为宴会厅使用。现建筑坐标不同于原始点，保留relocated-reconstructed-repurposed及review，不把迁建现址直接回填为原点。",
       "sourceUrls": [
         "https://www.thepaper.cn/newsDetail_forward_24354679",
         "https://sinanmansions.com/business.jsp",
         "https://www.virtualshanghai.net/data/buildings?ID=250"
-      ]
+      ],
+      "sourceDataIssue": "原中文曉星小學、原英文Ecole Primaire du Sacré-Coeur (Sacred Heart Primary School)并列保留。派生中文依据黄浦官方文章采用晓星小学；撤回未经支持的震旦女子文理学院附属关系。"
     },
     {
       "IDBAT": 485,
       "historicalName": "Edan Park / Pétain Park",
       "historicalNameCorrectionZh": "贝当公园（今衡山公园）",
-      "coordinates": { "wgs84": [121.437353, 31.202474], "gcj02": [121.441969, 31.200598] },
+      "coordinates": {
+        "wgs84": [
+          121.437353,
+          31.202474
+        ],
+        "gcj02": [
+          121.441969,
+          31.200598
+        ]
+      },
       "modernRoadAddress": "广元路2号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -83,7 +104,16 @@
     {
       "IDBAT": 1772,
       "historicalName": "EDEN GARDEN APARTMENTS",
-      "coordinates": { "wgs84": [121.435365, 31.202961], "gcj02": [121.439984, 31.201088] },
+      "coordinates": {
+        "wgs84": [
+          121.435365,
+          31.202961
+        ],
+        "gcj02": [
+          121.439984,
+          31.201088
+        ]
+      },
       "modernRoadAddress": "余庆路133号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -102,7 +132,16 @@
     {
       "IDBAT": 354,
       "historicalName": "Eden Hospital",
-      "coordinates": { "wgs84": [121.453028, 31.220548], "gcj02": [121.457611, 31.218652] },
+      "coordinates": {
+        "wgs84": [
+          121.453028,
+          31.220548
+        ],
+        "gcj02": [
+          121.457611,
+          31.218652
+        ]
+      },
       "modernRoadAddress": "新乐路、陕西南路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -122,7 +161,16 @@
       "IDBAT": 1394,
       "historicalName": "Ellis Kadoorie Public School for Chinese",
       "historicalNameCorrectionZh": "上海育才公学（嘉道理学校）",
-      "coordinates": { "wgs84": [121.456552, 31.236688], "gcj02": [121.461127, 31.234791] },
+      "coordinates": {
+        "wgs84": [
+          121.456552,
+          31.236688
+        ],
+        "gcj02": [
+          121.461127,
+          31.234791
+        ]
+      },
       "modernRoadAddress": "山海关路445号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -143,7 +191,16 @@
       "IDBAT": 765,
       "historicalName": "Embankment House",
       "historicalNameCorrectionZh": "河滨大楼",
-      "coordinates": { "wgs84": [121.478817, 31.245623], "gcj02": [121.483324, 31.243673] },
+      "coordinates": {
+        "wgs84": [
+          121.478817,
+          31.245623
+        ],
+        "gcj02": [
+          121.483324,
+          31.243673
+        ]
+      },
       "modernRoadAddress": "北苏州路400号（旧门牌340号一带）",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -163,28 +220,48 @@
     {
       "IDBAT": 430,
       "historicalName": "Embassy of France - Commercial Attaché",
-      "historicalNameCorrectionZh": "法国驻沪领事机构官邸/商务参赞驻址",
-      "coordinates": { "wgs84": [121.442705, 31.211452], "gcj02": [121.447311, 31.209572] },
-      "modernRoadAddress": "淮海中路1431号",
-      "outcomeCategory": "survives-with-history",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
-      "currentNameZh": "法国驻上海总领事官邸",
-      "currentUse": "外交官邸及优秀历史建筑",
-      "currentAddress": "淮海中路1431号",
-      "currentUseRelationship": "same-building-related-diplomatic-use",
-      "mapWriteRecommendation": "yes",
-      "evidence": "淮海中路1431号花园住宅被列为优秀历史建筑，历史法国外交用途与今天法国驻上海总领事官邸相连；原记录中的“商务参赞”是某一时期的具体使用部门。",
+      "historicalNameCorrectionZh": "法国大使馆商务参赞驻址（原条目身份）",
+      "coordinates": {
+        "wgs84": [
+          121.442705,
+          31.211452
+        ],
+        "gcj02": [
+          121.447311,
+          31.209572
+        ]
+      },
+      "modernRoadAddress": "候选淮海中路1431号；原1449 Avenue Joffre换号待核",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "法国驻上海总领事官邸（原址对应待核）",
+      "currentUse": "候选现址为外交官邸；与原商务参赞驻址关系待核",
+      "currentAddress": "候选：淮海中路1431号",
+      "currentUseRelationship": "candidate-diplomatic-site-exact-building-unproven",
+      "mapWriteRecommendation": "review",
+      "evidence": "第二批优秀历史建筑名单及建筑史资料确认淮海中路1431号花园住宅及法国领事机构使用。该建筑保留为候选，但原1449 Avenue Joffre和商务参赞部门未与1431号形成直接证据链，撤回确定同楼与yes推荐。",
       "sourceUrls": [
         "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
         "https://ditu.amap.com/place/B00155NERB",
-        "https://www.virtualshanghai.net/data/buildings?ID=430"
-      ]
+        "https://www.virtualshanghai.net/data/buildings?ID=430",
+        "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+      ],
+      "sourceDataIssue": "原1449 Avenue Joffre与现代官邸淮海中路1431号尚缺直接换号及商务参赞使用资料，不能由法国外交用途相似替代身份闭合。"
     },
     {
       "IDBAT": 413,
       "historicalName": "Embassy of Poland",
-      "coordinates": { "wgs84": [121.448689, 31.21107], "gcj02": [121.453282, 31.209179] },
+      "coordinates": {
+        "wgs84": [
+          121.448689,
+          31.21107
+        ],
+        "gcj02": [
+          121.453282,
+          31.209179
+        ]
+      },
       "modernRoadAddress": "汾阳路83号",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -206,7 +283,16 @@
       "IDBAT": 69,
       "historicalName": "Empire Theater",
       "historicalNameCorrectionZh": "恩派亚大戏院（后称嵩山电影院）",
-      "coordinates": { "wgs84": [121.473619, 31.226649], "gcj02": [121.478142, 31.224705] },
+      "coordinates": {
+        "wgs84": [
+          121.473619,
+          31.226649
+        ],
+        "gcj02": [
+          121.478142,
+          31.224705
+        ]
+      },
       "modernRoadAddress": "淮海中路85号旧址、今淮海中路99号大上海时代广场地块",
       "outcomeCategory": "demolished-current-use",
       "resolutionStatus": "resolved",
@@ -226,29 +312,46 @@
     {
       "IDBAT": 1633,
       "historicalName": "Ende Temple",
-      "historicalNameCorrectionZh": "恩德堂（Endeavourers' Church，非寺庙）",
-      "coordinates": { "wgs84": [121.481498, 31.254275], "gcj02": [121.485997, 31.252322] },
-      "modernRoadAddress": "乍浦路480—490号、武进路口",
-      "outcomeCategory": "survives-with-history",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
-      "currentNameZh": "恩德堂旧址",
-      "currentUse": "政府及消费者权益保护机构办公",
-      "currentAddress": "乍浦路490号",
-      "currentUseRelationship": "same-building-repurposed",
-      "mapWriteRecommendation": "yes",
-      "sourceDataIssue": "原始英文把Endeavourers' Church缩写或误解为“Ende Temple”，功能字段也误标为寺庙。",
-      "evidence": "虹口区官方史料将该建筑确认为基督教恩德堂，位于乍浦路、武进路口并保存至今；现址由虹口区消费者权益保护等机构使用。",
+      "historicalNameCorrectionZh": "恩德堂（武进路225弄9号原条目，具体建筑待核）",
+      "coordinates": {
+        "wgs84": [
+          121.481498,
+          31.254275
+        ],
+        "gcj02": [
+          121.485997,
+          31.252322
+        ]
+      },
+      "modernRoadAddress": "历史地址225-9 Wutsin（武进路225弄9号）；现门牌和楼栋对应待核",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "unresolved",
+      "confidence": "low",
+      "currentNameZh": null,
+      "currentUse": null,
+      "currentAddress": null,
+      "currentUseRelationship": "unknown",
+      "mapWriteRecommendation": "no",
+      "sourceDataIssue": "原中文恩德堂、英文Ende Temple和原功能字段保留。第五批名录将武进路225弄3—11号教堂及宿舍与乍浦路480、490号恩德堂分列。此前主教堂和消保办公现用误套到225弄9号，现撤回；名称线索不能证明两址同楼。",
+      "evidence": "本条原地址225-9 Wutsin。第五批名录中武进路225弄3—11号为恩德堂教堂及宿舍，另列的乍浦路480、490号才关联消保机构。本条清空错误现代名称、用途、地址并暂停同楼回填，待核225弄9号楼栋、院落和现况。名录住宅用途仅为线索，不直接替换为确定现用。",
       "sourceUrls": [
-        "https://www.shhk.gov.cn/xwzx/002006/20210819/3c53da87-4561-44e1-8686-f427b7cc89a8.html",
-        "https://www.shhk.gov.cn/xwzx/002003/20180131/2d000623-d12b-4bed-8c41-bce2d222d4f2.html",
-        "https://www.virtualshanghai.net/data/buildings?ID=1633"
+        "https://www.virtualshanghai.net/data/buildings?ID=1633",
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
       ]
     },
     {
       "IDBAT": 1123,
       "historicalName": "English Soldiers Club",
-      "coordinates": { "wgs84": [121.437323, 31.227152], "gcj02": [121.441941, 31.225288] },
+      "coordinates": {
+        "wgs84": [
+          121.437323,
+          31.227152
+        ],
+        "gcj02": [
+          121.441941,
+          31.225288
+        ]
+      },
       "modernRoadAddress": "万航渡路、北京西路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -268,7 +371,16 @@
       "IDBAT": 121,
       "historicalName": "Fahua Diyuan Buddhist Association",
       "historicalNameCorrectionZh": "佛化祗园法会",
-      "coordinates": { "wgs84": [121.475169, 31.21469], "gcj02": [121.479686, 31.212736] },
+      "coordinates": {
+        "wgs84": [
+          121.475169,
+          31.21469
+        ],
+        "gcj02": [
+          121.479686,
+          31.212736
+        ]
+      },
       "modernRoadAddress": "永年路78弄3号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -289,7 +401,16 @@
       "IDBAT": 1574,
       "historicalName": "Fahua Temple",
       "historicalNameCorrectionZh": "法华禅寺",
-      "coordinates": { "wgs84": [121.420698, 31.207304], "gcj02": [121.425338, 31.20545] },
+      "coordinates": {
+        "wgs84": [
+          121.420698,
+          31.207304
+        ],
+        "gcj02": [
+          121.425338,
+          31.20545
+        ]
+      },
       "modernRoadAddress": "法华镇路525—535号地块",
       "outcomeCategory": "demolished-current-use",
       "resolutionStatus": "resolved",
@@ -310,7 +431,16 @@
       "IDBAT": 718,
       "historicalName": "Far Eastern Hotel",
       "historicalNameCorrectionZh": "远东饭店",
-      "coordinates": { "wgs84": [121.473056, 31.231807], "gcj02": [121.477581, 31.229867] },
+      "coordinates": {
+        "wgs84": [
+          121.473056,
+          31.231807
+        ],
+        "gcj02": [
+          121.477581,
+          31.229867
+        ]
+      },
       "modernRoadAddress": "西藏中路90号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -330,7 +460,16 @@
     {
       "IDBAT": 1754,
       "historicalName": "FELIX APARTMENTS",
-      "coordinates": { "wgs84": [121.448915, 31.213241], "gcj02": [121.453507, 31.21135] },
+      "coordinates": {
+        "wgs84": [
+          121.448915,
+          31.213241
+        ],
+        "gcj02": [
+          121.453507,
+          31.21135
+        ]
+      },
       "modernRoadAddress": "复兴中路1317号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -349,7 +488,16 @@
     {
       "IDBAT": 753,
       "historicalName": "Fengyuan Factory",
-      "coordinates": { "wgs84": [121.476013, 31.24817], "gcj02": [121.480529, 31.24623] },
+      "coordinates": {
+        "wgs84": [
+          121.476013,
+          31.24817
+        ],
+        "gcj02": [
+          121.480529,
+          31.24623
+        ]
+      },
       "modernRoadAddress": "塘沽路773—777号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -369,7 +517,16 @@
       "IDBAT": 1498,
       "historicalName": "Fire Bell Tower",
       "historicalNameCorrectionZh": "小南门警钟楼（火警钟楼）",
-      "coordinates": { "wgs84": [121.493238, 31.218105], "gcj02": [121.497693, 31.216101] },
+      "coordinates": {
+        "wgs84": [
+          121.493238,
+          31.218105
+        ],
+        "gcj02": [
+          121.497693,
+          31.216101
+        ]
+      },
       "modernRoadAddress": "中华路581—599号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -389,29 +546,47 @@
       "IDBAT": 89,
       "historicalName": "Firemen Barracks (French Municipal Council)",
       "historicalNameCorrectionZh": "法租界中央救火会/嵩山消防站",
-      "coordinates": { "wgs84": [121.471621, 31.22584], "gcj02": [121.47615, 31.223901] },
-      "modernRoadAddress": "淮海中路197号",
+      "coordinates": {
+        "wgs84": [
+          121.471621,
+          31.22584
+        ],
+        "gcj02": [
+          121.47615,
+          31.223901
+        ]
+      },
+      "modernRoadAddress": "淮海中路193号（2021官方报道）；原197号门牌/入口关系待核",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
       "confidence": "high",
       "currentNameZh": "嵩山消防救援站",
-      "currentUse": "消防救援站及消防文化展示",
-      "currentAddress": "淮海中路197号",
+      "currentUse": "消防救援站；消防文化展示空间为规划用途",
+      "currentAddress": "淮海中路193号（2021官方报道；与原197号院落/入口关系待核）",
       "currentUseRelationship": "same-building-same-function",
       "mapWriteRecommendation": "yes",
-      "sourceDataIssue": "坐标附近现代商业POI容易造成误判；官方规划明确嵩山消防站为拥有百年历史的现役消防站。",
-      "evidence": "历史门牌、建筑资料与上海市消防规划均指向淮海中路197号嵩山消防站；建筑与消防功能持续至今，并非邻近的商业大厦地块。",
+      "sourceDataIssue": "原197 Avenue Joffre保持不变。2021官方报道193号与原197号的院落/入口对应待核，不据门牌不同否定消防用地，不移动历史坐标。",
+      "evidence": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。",
       "sourceUrls": [
-        "https://www.shanghai.gov.cn/nw9820/20231116/f2c869bc3c1f4fac8ae622bb7eb3ac5c.html",
         "https://www.shanghai.gov.cn/gwk/search/content/cc5ecf025ada460eaa447b4533733b60",
-        "https://www.virtualshanghai.net/data/buildings?ID=89"
+        "https://www.virtualshanghai.net/data/buildings?ID=89",
+        "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
       ]
     },
     {
       "IDBAT": 1112,
       "historicalName": "First Church of Christ Scientist",
       "historicalNameCorrectionZh": "基督科学派第一教会（曾用址）",
-      "coordinates": { "wgs84": [121.440286, 31.228003], "gcj02": [121.444899, 31.226135] },
+      "coordinates": {
+        "wgs84": [
+          121.440286,
+          31.228003
+        ],
+        "gcj02": [
+          121.444899,
+          31.226135
+        ]
+      },
       "modernRoadAddress": "北京西路1623—1647号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -432,7 +607,16 @@
     {
       "IDBAT": 237,
       "historicalName": "FMC - Bureau of Finance",
-      "coordinates": { "wgs84": [121.4628, 31.21112], "gcj02": [121.467355, 31.209197] },
+      "coordinates": {
+        "wgs84": [
+          121.4628,
+          31.21112
+        ],
+        "gcj02": [
+          121.467355,
+          31.209197
+        ]
+      },
       "modernRoadAddress": "建德路28号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -451,7 +635,16 @@
     {
       "IDBAT": 420,
       "historicalName": "FMC - Bureau of Health (Service Sanitaire)",
-      "coordinates": { "wgs84": [121.450421, 31.204871], "gcj02": [121.455009, 31.202973] },
+      "coordinates": {
+        "wgs84": [
+          121.450421,
+          31.204871
+        ],
+        "gcj02": [
+          121.455009,
+          31.202973
+        ]
+      },
       "modernRoadAddress": "太原路294号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -471,7 +664,16 @@
     {
       "IDBAT": 203,
       "historicalName": "FMC - Bureau of Public Works - First District",
-      "coordinates": { "wgs84": [121.46622, 31.220966], "gcj02": [121.470766, 31.219039] },
+      "coordinates": {
+        "wgs84": [
+          121.46622,
+          31.220966
+        ],
+        "gcj02": [
+          121.470766,
+          31.219039
+        ]
+      },
       "modernRoadAddress": "南昌路28号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -490,7 +692,16 @@
     {
       "IDBAT": 458,
       "historicalName": "FMC - Bureau of Public Works - Warehouse",
-      "coordinates": { "wgs84": [121.443894, 31.203416], "gcj02": [121.448497, 31.20153] },
+      "coordinates": {
+        "wgs84": [
+          121.443894,
+          31.203416
+        ],
+        "gcj02": [
+          121.448497,
+          31.20153
+        ]
+      },
       "modernRoadAddress": "建国西路607—609号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -509,7 +720,16 @@
     {
       "IDBAT": 245,
       "historicalName": "FMC - Bureau of Public Works - Workshop",
-      "coordinates": { "wgs84": [121.466087, 31.212752], "gcj02": [121.470633, 31.210822] },
+      "coordinates": {
+        "wgs84": [
+          121.466087,
+          31.212752
+        ],
+        "gcj02": [
+          121.470633,
+          31.210822
+        ]
+      },
       "modernRoadAddress": "建国中路8—10号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -529,7 +749,16 @@
     {
       "IDBAT": 228,
       "historicalName": "FMC - Garbage Collection Trucks Carpa",
-      "coordinates": { "wgs84": [121.467151, 31.209161], "gcj02": [121.471693, 31.207226] },
+      "coordinates": {
+        "wgs84": [
+          121.467151,
+          31.209161
+        ],
+        "gcj02": [
+          121.471693,
+          31.207226
+        ]
+      },
       "modernRoadAddress": "徐家汇路271—277号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -549,7 +778,16 @@
     {
       "IDBAT": 244,
       "historicalName": "FMC - Garbage Collection Trucks Carpark",
-      "coordinates": { "wgs84": [121.466614, 31.212927], "gcj02": [121.471158, 31.210995] },
+      "coordinates": {
+        "wgs84": [
+          121.466614,
+          31.212927
+        ],
+        "gcj02": [
+          121.471158,
+          31.210995
+        ]
+      },
       "modernRoadAddress": "建德路8号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -568,7 +806,16 @@
     {
       "IDBAT": 321,
       "historicalName": "FMC - Gardens, Parks and Plants",
-      "coordinates": { "wgs84": [121.458872, 31.208442], "gcj02": [121.463438, 31.206527] },
+      "coordinates": {
+        "wgs84": [
+          121.458872,
+          31.208442
+        ],
+        "gcj02": [
+          121.463438,
+          31.206527
+        ]
+      },
       "modernRoadAddress": "建国西路133—137号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -587,7 +834,16 @@
     {
       "IDBAT": 322,
       "historicalName": "FMC - Power Station",
-      "coordinates": { "wgs84": [121.458128, 31.208613], "gcj02": [121.462696, 31.2067] },
+      "coordinates": {
+        "wgs84": [
+          121.458128,
+          31.208613
+        ],
+        "gcj02": [
+          121.462696,
+          31.2067
+        ]
+      },
       "modernRoadAddress": "建国西路135号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -597,16 +853,26 @@
       "currentAddress": "建国西路135—137号附近",
       "currentUseRelationship": "coordinate-only",
       "mapWriteRecommendation": "location-only",
-      "evidence": "坐标与旧门牌可将电站定位到建国西路135号一带，但未找到电站停用、拆除或设备迁移资料；现代用途仅来自坐标反查。",
+      "evidence": "原地址135 Route Joseph Frelup，英文称Power Station，中文称法工部局无线电台，历史功能尚不能裁定。原坐标反查提供步高里及建国西路135—137号附近线索，不证明原电站/电台建筑延续。停用、迁移、拆建及门牌链待核，维持location-only。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/data/buildings?ID=322",
         "https://ditu.amap.com/service/regeo?longitude=121.462696&latitude=31.206700"
-      ]
+      ],
+      "sourceDataIssue": "原英文FMC - Power Station、原中文“法工部局無線電台）”及原功能类型均保留；电站/无线电台的身份和功能冲突待档案核定。"
     },
     {
       "IDBAT": 318,
       "historicalName": "FMC - Warehouse Père Robert",
-      "coordinates": { "wgs84": [121.461948, 31.207679], "gcj02": [121.466505, 31.205756] },
+      "coordinates": {
+        "wgs84": [
+          121.461948,
+          31.207679
+        ],
+        "gcj02": [
+          121.466505,
+          31.205756
+        ]
+      },
       "modernRoadAddress": "瑞金二路468号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -626,7 +892,16 @@
       "IDBAT": 4108,
       "historicalName": "Foch Police Station (Poste Foch)",
       "historicalNameCorrectionZh": "福煦巡捕房配套警官公寓（原记录疑将配套宿舍写作巡捕房本体）",
-      "coordinates": { "wgs84": [121.445122, 31.214497], "gcj02": [121.449723, 31.212613] },
+      "coordinates": {
+        "wgs84": [
+          121.445122,
+          31.214497
+        ],
+        "gcj02": [
+          121.449723,
+          31.212613
+        ]
+      },
       "modernRoadAddress": "淮海中路1323号附近",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "probable",
@@ -647,7 +922,16 @@
     {
       "IDBAT": 1770,
       "historicalName": "FONCIM APARTMENTS",
-      "coordinates": { "wgs84": [121.441383, 31.202629], "gcj02": [121.445991, 31.200747] },
+      "coordinates": {
+        "wgs84": [
+          121.441383,
+          31.202629
+        ],
+        "gcj02": [
+          121.445991,
+          31.200747
+        ]
+      },
       "modernRoadAddress": "建国西路643—645号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -667,17 +951,26 @@
       "IDBAT": 1515,
       "historicalName": "Foreign Cemetery",
       "historicalNameCorrectionZh": "卢家湾外国公墓（法租界公墓）",
-      "coordinates": { "wgs84": [121.456041, 31.205955], "gcj02": [121.460615, 31.204046] },
-      "modernRoadAddress": "嘉善路516—518号一带",
-      "outcomeCategory": "demolished-current-use",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
-      "currentNameZh": "中福商务楼及周边地块",
-      "currentUse": "办公、商业及城市道路",
-      "currentAddress": "嘉善路516—518号附近",
-      "currentUseRelationship": "cemetery-abolished-redeveloped",
-      "mapWriteRecommendation": "yes",
-      "evidence": "研究资料记载卢家湾公墓1950年代停止使用并于1959年前后撤销、土地转作公共交通停车等用途，后来继续城市化改造；坐标今天落在中福商务楼一带。该条与ID 325分别保留，不因共址而合并。",
+      "coordinates": {
+        "wgs84": [
+          121.456041,
+          31.205955
+        ],
+        "gcj02": [
+          121.460615,
+          31.204046
+        ]
+      },
+      "modernRoadAddress": "候选：嘉善路516—518号附近；墓界与现地块对应待核",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "中福商务楼及周边地块（候选，墓界对应待核）",
+      "currentUse": "候选地块为办公、商业及道路；原墓界与当前用途对应待核",
+      "currentAddress": "候选：嘉善路516—518号附近",
+      "currentUseRelationship": "cemetery-abolished-current-parcel-unproven",
+      "mapWriteRecommendation": "review",
+      "evidence": "研究及地方志引述支持卢家湾公墓历史和撤销，上海观察文章记载1959年6月拨交公用事业管理局扩建露天停车场。现来源未将墓界、停车场和今日中福商务楼地块逐段对应，后者只是坐标附近候选，撤回现代精确地块的yes推荐。与ID 325共享场地级公墓史，但保留两条历史身份。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/texts/articles?ID=81",
         "https://www.shobserver.cn/wx/detail.do?id=12765",
@@ -688,7 +981,16 @@
       "IDBAT": 863,
       "historicalName": "Foreign Ymca Headquarters",
       "historicalNameCorrectionZh": "上海青年会外国部（西侨青年会）",
-      "coordinates": { "wgs84": [121.466948, 31.235654], "gcj02": [121.471493, 31.233732] },
+      "coordinates": {
+        "wgs84": [
+          121.466948,
+          31.235654
+        ],
+        "gcj02": [
+          121.471493,
+          31.233732
+        ]
+      },
       "modernRoadAddress": "南京西路150号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -707,7 +1009,16 @@
     {
       "IDBAT": 889,
       "historicalName": "Fourth Marine Club",
-      "coordinates": { "wgs84": [121.458601, 31.233352], "gcj02": [121.46317, 31.231449] },
+      "coordinates": {
+        "wgs84": [
+          121.458601,
+          31.233352
+        ],
+        "gcj02": [
+          121.46317,
+          31.231449
+        ]
+      },
       "modernRoadAddress": "凤阳路709—722号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -727,7 +1038,16 @@
       "IDBAT": 164,
       "historicalName": "Franciscan Procuration",
       "historicalNameCorrectionZh": "方济堂（方济各会账房/办事处）",
-      "coordinates": { "wgs84": [121.467518, 31.221557], "gcj02": [121.47206, 31.219627] },
+      "coordinates": {
+        "wgs84": [
+          121.467518,
+          31.221557
+        ],
+        "gcj02": [
+          121.47206,
+          31.219627
+        ]
+      },
       "modernRoadAddress": "重庆南路139号（旧门牌吕班路141号）",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -747,7 +1067,16 @@
     {
       "IDBAT": 252,
       "historicalName": "Franco-Chinese Friendship Association (Association D'amitié Franco-Chinoise)",
-      "coordinates": { "wgs84": [121.462279, 31.216913], "gcj02": [121.466836, 31.214994] },
+      "coordinates": {
+        "wgs84": [
+          121.462279,
+          31.216913
+        ],
+        "gcj02": [
+          121.466836,
+          31.214994
+        ]
+      },
       "modernRoadAddress": "复兴中路557—577号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -766,7 +1095,16 @@
     {
       "IDBAT": 716,
       "historicalName": "Franco-Chinese Pharmacy",
-      "coordinates": { "wgs84": [121.473728, 31.230777], "gcj02": [121.478251, 31.228835] },
+      "coordinates": {
+        "wgs84": [
+          121.473728,
+          31.230777
+        ],
+        "gcj02": [
+          121.478251,
+          31.228835
+        ]
+      },
       "modernRoadAddress": "西藏中路、九江路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -785,8 +1123,17 @@
     {
       "IDBAT": 341,
       "historicalName": "Franco-Chinese University - Faculty of Pharmacy",
-      "historicalNameCorrectionZh": "中法大学药科（震旦大学相关教学设施）",
-      "coordinates": { "wgs84": [121.456088, 31.213125], "gcj02": [121.460662, 31.211219] },
+      "historicalNameCorrectionZh": "中法大学药学专修科",
+      "coordinates": {
+        "wgs84": [
+          121.456088,
+          31.213125
+        ],
+        "gcj02": [
+          121.460662,
+          31.211219
+        ]
+      },
       "modernRoadAddress": "复兴中路1195号上海理工大学复兴路校区范围",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "probable",
@@ -796,17 +1143,28 @@
       "currentAddress": "复兴中路1195号",
       "currentUseRelationship": "same-campus-educational-continuity-exact-building-unproven",
       "mapWriteRecommendation": "review",
-      "evidence": "校史资料可把这一中法高等教育点与今天上海理工大学复兴路校区相连，校园教育功能延续；但未找到足以锁定“药科”当年所用单体建筑的平面或名录，写图时宜以校园关系而非某栋楼呈现。",
+      "evidence": "复旦校史确认中法大学药学专修科及1950年并入国立上海医学院药科的沿革。上海理工大学资料给出复兴路校区旧宿舍线索，但本轮PDF只取得搜索摘录，尚缺原410 Avenue du Roi Albert到具体楼栋的图籍核对。保留校园候选及review，不把教育延续当作确定同楼。",
       "sourceUrls": [
         "https://alumni.usst.edu.cn/_upload/article/files/6c/7b/b8275b48451f9d0fbaa92e915f1f/b83b69d3-06b7-46ba-acc5-23d1e5d55ee3.pdf",
         "https://www.sbc.usst.edu.cn/2023/0907/c14816a305024/page.htm",
-        "https://www.virtualshanghai.net/data/buildings?ID=341"
-      ]
+        "https://www.virtualshanghai.net/data/buildings?ID=341",
+        "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm"
+      ],
+      "sourceDataIssue": "原中文中法大學葯學専修科与英文Faculty of Pharmacy并列保留。撤回未经支持的震旦归属。同组342球场独立审查，学校/宿舍线索不得覆盖球场。"
     },
     {
       "IDBAT": 132,
       "historicalName": "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)",
-      "coordinates": { "wgs84": [121.469453, 31.21438], "gcj02": [121.473988, 31.212442] },
+      "coordinates": {
+        "wgs84": [
+          121.469453,
+          31.21438
+        ],
+        "gcj02": [
+          121.473988,
+          31.212442
+        ]
+      },
       "modernRoadAddress": "淡水路361号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -826,17 +1184,26 @@
       "IDBAT": 325,
       "historicalName": "French Cemetery",
       "historicalNameCorrectionZh": "卢家湾法国公墓",
-      "coordinates": { "wgs84": [121.456075, 31.205832], "gcj02": [121.460649, 31.203922] },
-      "modernRoadAddress": "嘉善路516—518号一带",
-      "outcomeCategory": "demolished-current-use",
-      "resolutionStatus": "resolved",
-      "confidence": "high",
-      "currentNameZh": "中福商务楼及周边地块",
-      "currentUse": "办公、商业及城市道路",
-      "currentAddress": "嘉善路516—518号附近",
-      "currentUseRelationship": "cemetery-abolished-redeveloped",
-      "mapWriteRecommendation": "yes",
-      "evidence": "卢家湾法国公墓在1950年代停止使用并于1959年前后撤销，土地曾转作公共交通停车等用途，之后继续建设；坐标今天落在中福商务楼一带。该记录与ID 1515表达不同历史命名，保留为独立条目。",
+      "coordinates": {
+        "wgs84": [
+          121.456075,
+          31.205832
+        ],
+        "gcj02": [
+          121.460649,
+          31.203922
+        ]
+      },
+      "modernRoadAddress": "候选：嘉善路516—518号附近；墓界与现地块对应待核",
+      "outcomeCategory": "location-only-current-use",
+      "resolutionStatus": "probable",
+      "confidence": "medium",
+      "currentNameZh": "中福商务楼及周边地块（候选，墓界对应待核）",
+      "currentUse": "候选地块为办公、商业及道路；原墓界与当前用途对应待核",
+      "currentAddress": "候选：嘉善路516—518号附近",
+      "currentUseRelationship": "cemetery-abolished-current-parcel-unproven",
+      "mapWriteRecommendation": "review",
+      "evidence": "研究及地方志引述支持卢家湾公墓历史和撤销，上海观察文章记载1959年6月拨交公用事业管理局扩建露天停车场。现来源未将墓界、停车场和今日中福商务楼地块逐段对应，后者只是坐标附近候选，撤回现代精确地块的yes推荐。与ID 1515共享场地级公墓史，但保留两条历史身份。",
       "sourceUrls": [
         "https://www.virtualshanghai.net/texts/articles?ID=81",
         "https://www.shobserver.cn/wx/detail.do?id=12765",
@@ -847,7 +1214,16 @@
       "IDBAT": 317,
       "historicalName": "French Chinal Field Battalion",
       "historicalNameCorrectionZh": "法国驻华野战部队营地（原英文疑有拼写错误）",
-      "coordinates": { "wgs84": [121.461955, 31.208032], "gcj02": [121.466512, 31.206109] },
+      "coordinates": {
+        "wgs84": [
+          121.461955,
+          31.208032
+        ],
+        "gcj02": [
+          121.466512,
+          31.206109
+        ]
+      },
       "modernRoadAddress": "瑞金二路450号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -868,7 +1244,16 @@
       "IDBAT": 1512,
       "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai)",
       "historicalNameCorrectionZh": "法商电车电灯公司（法电）",
-      "coordinates": { "wgs84": [121.467253, 31.211603], "gcj02": [121.471795, 31.209669] },
+      "coordinates": {
+        "wgs84": [
+          121.467253,
+          31.211603
+        ],
+        "gcj02": [
+          121.471795,
+          31.209669
+        ]
+      },
       "modernRoadAddress": "历史大型厂区约对应今重庆南路275—310号范围",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "probable",
@@ -890,7 +1275,16 @@
       "IDBAT": 212,
       "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices",
       "historicalNameCorrectionZh": "法商电车电灯公司办公处",
-      "coordinates": { "wgs84": [121.467453, 31.213408], "gcj02": [121.471994, 31.211474] },
+      "coordinates": {
+        "wgs84": [
+          121.467453,
+          31.213408
+        ],
+        "gcj02": [
+          121.471994,
+          31.211474
+        ]
+      },
       "modernRoadAddress": "重庆南路249—255号旧门牌对应区域",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -911,7 +1305,16 @@
       "IDBAT": 225,
       "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et d'éclairage Electriques de Shanghai) - Plant",
       "historicalNameCorrectionZh": "法商电车电灯公司厂部",
-      "coordinates": { "wgs84": [121.467426, 31.211787], "gcj02": [121.471967, 31.209853] },
+      "coordinates": {
+        "wgs84": [
+          121.467426,
+          31.211787
+        ],
+        "gcj02": [
+          121.471967,
+          31.209853
+        ]
+      },
       "modernRoadAddress": "历史大型厂区约对应今重庆南路275—310号范围",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "probable",
@@ -933,7 +1336,16 @@
       "IDBAT": 402,
       "historicalName": "French Military Residence",
       "historicalNameCorrectionZh": "法公董局总董官邸（俗称小白宫）",
-      "coordinates": { "wgs84": [121.449599, 31.21207], "gcj02": [121.45419, 31.210177] },
+      "coordinates": {
+        "wgs84": [
+          121.449599,
+          31.21207
+        ],
+        "gcj02": [
+          121.45419,
+          31.210177
+        ]
+      },
       "modernRoadAddress": "汾阳路79号",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -953,7 +1365,16 @@
     {
       "IDBAT": 1514,
       "historicalName": "French Rifle Range",
-      "coordinates": { "wgs84": [121.45968, 31.209008], "gcj02": [121.464244, 31.207091] },
+      "coordinates": {
+        "wgs84": [
+          121.45968,
+          31.209008
+        ],
+        "gcj02": [
+          121.464244,
+          31.207091
+        ]
+      },
       "modernRoadAddress": "建国西路135号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -974,7 +1395,16 @@
       "IDBAT": 1482,
       "historicalName": "French Water Works",
       "historicalNameCorrectionZh": "董家渡水厂（今南市水厂）",
-      "coordinates": { "wgs84": [121.495511, 31.205405], "gcj02": [121.499956, 31.203388] },
+      "coordinates": {
+        "wgs84": [
+          121.495511,
+          31.205405
+        ],
+        "gcj02": [
+          121.499956,
+          31.203388
+        ]
+      },
       "modernRoadAddress": "半淞园路592号、苗江路一带",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -994,7 +1424,16 @@
     {
       "IDBAT": 1056,
       "historicalName": "Fruit Confectionery Factory",
-      "coordinates": { "wgs84": [121.444318, 31.233263], "gcj02": [121.448923, 31.23139] },
+      "coordinates": {
+        "wgs84": [
+          121.444318,
+          31.233263
+        ],
+        "gcj02": [
+          121.448923,
+          31.23139
+        ]
+      },
       "modernRoadAddress": "新闸路1410—1432号附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -1014,7 +1453,16 @@
       "IDBAT": 81,
       "historicalName": "Fuci Primary School",
       "historicalNameCorrectionZh": "福慈小学（中文名待档案复核）",
-      "coordinates": { "wgs84": [121.472179, 31.223497], "gcj02": [121.476706, 31.221556] },
+      "coordinates": {
+        "wgs84": [
+          121.472179,
+          31.223497
+        ],
+        "gcj02": [
+          121.476706,
+          31.221556
+        ]
+      },
       "modernRoadAddress": "顺昌路2号及淮海中路口附近",
       "outcomeCategory": "location-only-current-use",
       "resolutionStatus": "location-only",
@@ -1034,7 +1482,16 @@
       "IDBAT": 1370,
       "historicalName": "Fufeng Flour Mill",
       "historicalNameCorrectionZh": "阜丰面粉厂（后与福新面粉厂相关）",
-      "coordinates": { "wgs84": [121.444637, 31.251795], "gcj02": [121.449242, 31.24993] },
+      "coordinates": {
+        "wgs84": [
+          121.444637,
+          31.251795
+        ],
+        "gcj02": [
+          121.449242,
+          31.24993
+        ]
+      },
       "modernRoadAddress": "莫干山路600号、苏州河畔",
       "outcomeCategory": "survives-with-history",
       "resolutionStatus": "resolved",
@@ -1051,5 +1508,13 @@
         "https://www.virtualshanghai.net/data/buildings?ID=1370"
       ]
     }
-  ]
+  ],
+  "correctedAt": "2026-09-18",
+  "correctionReview": "research/corrections/2026-09-18-001-010/README.md",
+  "inputProvenance": {
+    "status": "original-snapshot-unavailable",
+    "note": "原同号public文件会重排，不能用作固定批次输入；已提交的同号Git历史未找回完整50条原快照。固定ID及修正前记录保存在审查context中，本轮不伪造原输入。",
+    "fixedRecordContext": "research/rechecks/2026-09-18-001-010/context.json",
+    "evidence": "research/rechecks/2026-09-18-001-010/input-provenance.json"
+  }
 }

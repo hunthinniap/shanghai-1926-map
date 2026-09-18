@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { Converter } from 'opencc-js'
+import { applyCurrentUseHold, clearCurrentUse, findCurrentUseHold } from './lib/current-use-holds.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const historicalPath = path.join(projectRoot, 'public', 'data', 'historical-features.geojson')
@@ -9,6 +10,7 @@ const curatedParksPath = path.join(projectRoot, 'public', 'data', 'curated-parks
 const sourcesPath = path.join(projectRoot, 'public', 'data', 'sources.json')
 const auditPath = path.join(projectRoot, 'public', 'data', 'landmark-current-use-audit.json')
 const researchOverridesPath = path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-overrides.json')
+const researchHoldsPath = path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-holds.json')
 const sourceId = 'sh-library-excellent-historical-buildings'
 const wikipediaSourceId = 'wikipedia-shanghai-excellent-historical-buildings'
 const researchSourceId = 'verified-landmark-current-uses'
@@ -325,7 +327,7 @@ function representativeFeatures(collections) {
   return [...byGroup.values()]
 }
 
-const [historical, curatedParks, sources, researchOverrides, previousAudit] = await Promise.all([
+const [historical, curatedParks, sources, researchOverrides, previousAudit, researchHolds] = await Promise.all([
   fs.readFile(historicalPath, 'utf8').then(JSON.parse),
   fs.readFile(curatedParksPath, 'utf8').then(JSON.parse),
   fs.readFile(sourcesPath, 'utf8').then(JSON.parse),
@@ -334,6 +336,7 @@ const [historical, curatedParks, sources, researchOverrides, previousAudit] = aw
     if (error.code === 'ENOENT') return null
     throw error
   }),
+  fs.readFile(researchHoldsPath, 'utf8').then(JSON.parse),
 ])
 
 const networkFailures = []
@@ -391,6 +394,7 @@ function matchedByCurrentOrLegacyGroup(map, properties) {
 
 const allLandmarks = representativeFeatures([historical, curatedParks])
 const landmarks = allLandmarks.filter((feature) =>
+  findCurrentUseHold(researchHolds, feature.properties) ||
   pointCoordinates(feature) ||
   matchedByCurrentOrLegacyGroup(researchMatches, feature.properties) ||
   matchedByCurrentOrLegacyGroup(wikipediaMatches, feature.properties) ||
@@ -445,6 +449,7 @@ validateManualTargets(researchRecords, 'Research override')
 validateManualTargets(wikipediaMatches, 'Wikipedia override')
 
 const queryJobs = landmarks
+  .filter((feature) => !findCurrentUseHold(researchHolds, feature.properties))
   .filter((feature) => !matchedByCurrentOrLegacyGroup(researchMatches, feature.properties))
   .filter((feature) => !matchedByCurrentOrLegacyGroup(wikipediaMatches, feature.properties))
   .filter((feature) => !currentPlaceUse(feature.properties))
@@ -468,6 +473,9 @@ const queryResults = apiKey
 const resultsByQuery = new Map(queryResults)
 
 const preliminaryRecords = landmarks.map((feature) => {
+  if (findCurrentUseHold(researchHolds, feature.properties)) {
+    return { feature, queries: [], candidates: [] }
+  }
   const coordinates = pointCoordinates(feature)
   const hasManualResolution = Boolean(
     matchedByCurrentOrLegacyGroup(researchMatches, feature.properties) ||
@@ -534,6 +542,16 @@ const duplicateSupportedUris = new Set([...supportedUriOwners]
 
 const matches = new Map()
 const auditRecords = evaluatedRecords.map(({ feature, queries, candidates, supported, partial }) => {
+  const hold = findCurrentUseHold(researchHolds, feature.properties)
+  if (hold) {
+    return applyCurrentUseHold({
+      featureGroupId: feature.properties.featureGroupId,
+      historicalName: feature.properties.historicalName,
+      historicalChinese: feature.properties.historicalChinese,
+      mappedName: feature.properties.modernNameZh,
+      category: feature.properties.category,
+    }, hold)
+  }
   const duplicateSource = supported && duplicateSupportedUris.has(supported.record.uri)
   const accepted = duplicateSource ? undefined : supported
   const documentedCurrentPlace = currentPlaceUse(feature.properties)
@@ -636,20 +654,10 @@ function applyMatches(collection) {
     ...collection,
     features: collection.features.map((feature) => {
       if (feature.properties?.kind !== 'landmark') return feature
-      const currentUse = matches.get(feature.properties.featureGroupId)
-      const cleanedProperties = { ...feature.properties }
-      for (const key of [
-        'currentUse',
-        'currentNameZh',
-        'currentAddress',
-        'currentUseNote',
-        'currentUseRelationship',
-        'currentUseSources',
-        'currentUseSourceId',
-        'currentUseSourceUri',
-        'currentUseMatch',
-        'currentUseMatchDistance',
-      ]) delete cleanedProperties[key]
+      const currentUse = findCurrentUseHold(researchHolds, feature.properties)
+        ? undefined
+        : matches.get(feature.properties.featureGroupId)
+      const cleanedProperties = clearCurrentUse(feature.properties)
       return currentUse
         ? { ...feature, properties: { ...cleanedProperties, ...currentUse } }
         : { ...feature, properties: cleanedProperties }
@@ -684,6 +692,7 @@ const audit = {
     matchedFromCurrentPlaceName: auditRecords.filter((record) => record.status === 'current-place-name').length,
     needsReviewPartialName: auditRecords.filter((record) => record.status === 'needs-review-partial-name').length,
     needsReviewDuplicateSource: auditRecords.filter((record) => record.status === 'needs-review-duplicate-source').length,
+    needsReviewResearch: auditRecords.filter((record) => record.status === 'needs-review-research').length,
     notFound: auditRecords.filter((record) => record.status === 'not-found').length,
     genericName: auditRecords.filter((record) => record.status === 'generic-name').length,
     networkFailures: networkFailures.length,
@@ -705,6 +714,7 @@ console.log(
     `${audit.summary.matchedFromWikipedia} from Wikipedia's protected-building list; ` +
     `${audit.summary.matchedFromResearch} from verified per-place web research; ` +
     `${audit.summary.matchedFromCurrentPlaceName} current parks from their documented present names; ` +
+    `${audit.summary.needsReviewResearch} groups remain on research hold; ` +
     `${audit.summary.notFound} named groups were not found and ${audit.summary.genericName} only had generic names.`,
 )
 if (networkFailures.length) {

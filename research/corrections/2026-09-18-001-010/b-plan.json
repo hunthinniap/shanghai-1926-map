@@ -1,0 +1,538 @@
+{
+  "preparedAt": "2026-09-18",
+  "scope": "004—006旧工作流20条记录、21项finding；只生成计划，未改旧源文件。",
+  "patchSemantics": {
+    "workflowPatch": "按字段浅合并；null明确清空错误派生值，原ID/原字段/坐标不动。",
+    "resultPatch": "004—006旧格式无对应results，留空不补造。",
+    "partPatch": "004—006旧格式无对应parts，留空不补造。",
+    "retain": "保持既有地图状态；无override者不新增。",
+    "update": "浅合并现有override，保留原guard和坐标。",
+    "hold": "撤下确定型现用override，保留历史条目；候选仅存研究，sharedHoldKey相同去重。"
+  },
+  "records": [
+    {
+      "batch": "004",
+      "IDBAT": 1666,
+      "disposition": "correct-derived-text",
+      "reason": "原中文“大日本航空會社”和英文 Airline Company 都指航空运输，正文误写航运会误导后续检索。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "大日本航空会社",
+        "evidence": "Seward Road可译为今武昌路，坐标反查落在城投控股大厦一带；尚无航空会社拆建史、旧新门牌沿革或建筑资料把历史公司与今天大厦直接相连。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1666"
+      ],
+      "remainingGap": "旧新门牌、校史/院史及建筑去向未因此补证；不升级位置级结论。"
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1135,
+      "disposition": "correct-name-and-withdraw-road-translation",
+      "reason": "context 中原始中文字段为“大瑞医院”；旧研究用英文再音译的中文覆盖了已有原文。；工作流道路换名与仓库编译器显式映射“HART ROAD → 常德路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "大瑞医院",
+        "sourceDataIssue": "原中文大瑞医院、英文Darui并列保留。此前Hart Road对应武定路未经新旧路名资料证明，现撤回；编译器常德路映射只是待核线索。",
+        "evidence": "原中文为大瑞医院，历史地址557 Hart Road。原坐标反查提示武定路1761号、开伦881周边街区，仅为现代位置线索，不证明Hart Road改名武定路或旧新门牌相同。医院停办年代、院址边界及建筑去向待核，保持位置级现用。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1135"
+      ],
+      "remainingGap": "Hart Road正式换名、557号換号和院址边界待核；不移动原点，不把代码表当外部史料。"
+    },
+    {
+      "batch": "004",
+      "IDBAT": 522,
+      "disposition": "replace-mismatched-citation",
+      "reason": "原指定官方综述未出现该地点；已经找到直接列地址和展期的上海文旅页面。",
+      "workflowPatch": {
+        "currentUse": "历史建筑内办公及文化艺术使用；二楼2026年春曾举办展览",
+        "evidence": "历史地址及原建筑、国资资料对应四川中路294号江川大楼。上海文旅“李悦Soft Fever”详情列SNAP艺术中心位于二楼，展期2026年3月14日至4月24日，证明该层当时的展览使用；不据一次展览推定整楼全部用途或2026年9月仍在展。不要与四川中路299号东亚大楼混淆。",
+        "sourceUrls": [
+          "https://pdf.dfcfw.com/pdf/H2_AN202307251592615030_1.pdf",
+          "https://www.virtualshanghai.net/data/buildings?ID=522",
+          "https://www.meet-in-shanghai.net/cn/gallery/li-yue-soft-fever-320602/"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://pdf.dfcfw.com/pdf/H2_AN202307251592615030_1.pdf",
+        "https://www.virtualshanghai.net/data/buildings?ID=522",
+        "https://www.meet-in-shanghai.net/cn/gallery/li-yue-soft-fever-320602/"
+      ],
+      "remainingGap": "未新核2026年9月实时租户；历史对应沿用原来源，不扩大本轮源核范围。"
+    },
+    {
+      "batch": "004",
+      "IDBAT": 327,
+      "disposition": "withdraw-unproven-road-translation",
+      "reason": "同批审阅的006/#329把同一原路名对应襄阳南路；工作流存在未说明的道路映射矛盾，不能把反查POI道路视为历史路名换算。 编译器同样列出襄阳南路；此为内部一致性佐证，不代替外部新旧路名档案。",
+      "workflowPatch": {
+        "sourceDataIssue": "原地址393-27 Route Raymond Tenant de la Tour保留。旧研究“Route Raymond Tenant de la Tour对应嘉善路”与006/#329及编译器的襄阳南路映射冲突，现撤回未经证明的直接对译；代码表不充当外部史料。",
+        "evidence": "原中文为东浦中学，历史地址393-27 Route Raymond Tenant de la Tour。原坐标反查提示嘉善路282号附近嘉御庭地块，仅为现代位置线索，不证明旧路名改为反查地址所在道路或旧新门牌相同。尚缺正式路名对照、校史、校界和拆建资料，维持location-only。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=327",
+        "https://www.virtualshanghai.net/data/buildings?ID=329"
+      ],
+      "remainingGap": "正式路名、门牌和校界待核；不因内部映射冲突更改原点或现代POI。"
+    },
+    {
+      "batch": "005",
+      "IDBAT": 250,
+      "disposition": "correct-historical-identity",
+      "reason": "中文原记录和本条引用的黄浦官方历史文章均指晓星小学；该附属关系未获本轮来源支持。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "晓星小学（圣伯多禄晓星小学，后为重庆南路第一小学）",
+        "sourceDataIssue": "原中文曉星小學、原英文Ecole Primaire du Sacré-Coeur (Sacred Heart Primary School)并列保留。派生中文依据黄浦官方文章采用晓星小学；撤回未经支持的震旦女子文理学院附属关系。",
+        "evidence": "黄浦官方文章确认天主教圣伯多禄晓星小学、后为重庆南路第一小学。思南公馆更新时，校舍逐件编号、拆卸、迁移并旋转90度后复建，作为宴会厅使用。现建筑坐标不同于原始点，保留relocated-reconstructed-repurposed及review，不把迁建现址直接回填为原点。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=250",
+        "https://www.thepaper.cn/newsDetail_forward_24354679"
+      ],
+      "remainingGap": "英文Sacred Heart与中文晓星的名称差异待原始校史解释；迁建后原址/现址展示方式仍待决定。"
+    },
+    {
+      "batch": "005",
+      "IDBAT": 430,
+      "disposition": "hold-exact-building-claim",
+      "reason": "两个官方/学术来源能证实1431号现存及用途，但原1449号门牌和特定部门尚缺直接衔接；不能只因法国外交用途相似即确认。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "法国大使馆商务参赞驻址（原条目身份）",
+        "modernRoadAddress": "候选淮海中路1431号；原1449 Avenue Joffre换号待核",
+        "outcomeCategory": "location-only-current-use",
+        "resolutionStatus": "probable",
+        "confidence": "medium",
+        "currentNameZh": "法国驻上海总领事官邸（原址对应待核）",
+        "currentUse": "候选现址为外交官邸；与原商务参赞驻址关系待核",
+        "currentAddress": "候选：淮海中路1431号",
+        "currentUseRelationship": "candidate-diplomatic-site-exact-building-unproven",
+        "mapWriteRecommendation": "review",
+        "sourceDataIssue": "原1449 Avenue Joffre与现代官邸淮海中路1431号尚缺直接换号及商务参赞使用资料，不能由法国外交用途相似替代身份闭合。",
+        "evidence": "第二批优秀历史建筑名单及建筑史资料确认淮海中路1431号花园住宅及法国领事机构使用。该建筑保留为候选，但原1449 Avenue Joffre和商务参赞部门未与1431号形成直接证据链，撤回确定同楼与yes推荐。",
+        "sourceUrls": [
+          "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "https://ditu.amap.com/place/B00155NERB",
+          "https://www.virtualshanghai.net/data/buildings?ID=430",
+          "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://ditu.amap.com/place/B00155NERB",
+        "https://www.virtualshanghai.net/data/buildings?ID=430",
+        "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+      ],
+      "remainingGap": "需旧新门牌、历史地址录或院落图证明1449号与商务参赞用址。",
+      "mapTarget": {
+        "featureGroupId": "landmark-vs-site-430",
+        "sourceRecordIds": [
+          430
+        ]
+      }
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1633,
+      "disposition": "hold-wrong-address-current-use",
+      "reason": "官方名录把武进路225弄3—11号宿舍/教堂与乍浦路480、490号主教堂列成两条。旧结果跨地址套用主教堂用途，且 context 显示错误已经进入地图。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "恩德堂（武进路225弄9号原条目，具体建筑待核）",
+        "modernRoadAddress": "历史地址225-9 Wutsin（武进路225弄9号）；现门牌和楼栋对应待核",
+        "outcomeCategory": "location-only-current-use",
+        "resolutionStatus": "unresolved",
+        "confidence": "low",
+        "currentNameZh": null,
+        "currentUse": null,
+        "currentAddress": null,
+        "currentUseRelationship": "unknown",
+        "mapWriteRecommendation": "no",
+        "sourceDataIssue": "原中文恩德堂、英文Ende Temple和原功能字段保留。第五批名录将武进路225弄3—11号教堂及宿舍与乍浦路480、490号恩德堂分列。此前主教堂和消保办公现用误套到225弄9号，现撤回；名称线索不能证明两址同楼。",
+        "evidence": "本条原地址225-9 Wutsin。第五批名录中武进路225弄3—11号为恩德堂教堂及宿舍，另列的乍浦路480、490号才关联消保机构。本条清空错误现代名称、用途、地址并暂停同楼回填，待核225弄9号楼栋、院落和现况。名录住宅用途仅为线索，不直接替换为确定现用。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1633",
+          "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1633",
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "remainingGap": "核225弄9号楼栋、院落边界及现用；不得未经定位直接改成确定住宅。",
+      "mapTarget": {
+        "featureGroupId": "landmark-vs-site-1633",
+        "sourceRecordIds": [
+          1633
+        ]
+      }
+    },
+    {
+      "batch": "005",
+      "IDBAT": 89,
+      "disposition": "retain-fire-station-clarify-address",
+      "reason": "应急管理部现址报道使用193号，旧结果把历史197号原样填作当前门牌；需区分老门牌、建筑名录地址和现行入口。",
+      "workflowPatch": {
+        "modernRoadAddress": "淮海中路193号（2021官方报道）；原197号门牌/入口关系待核",
+        "currentAddress": "淮海中路193号（2021官方报道；与原197号院落/入口关系待核）",
+        "currentUse": "消防救援站；消防文化展示空间为规划用途",
+        "sourceDataIssue": "原197 Avenue Joffre保持不变。2021官方报道193号与原197号的院落/入口对应待核，不据门牌不同否定消防用地，不移动历史坐标。",
+        "evidence": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。",
+        "sourceUrls": [
+          "https://www.shanghai.gov.cn/gwk/search/content/cc5ecf025ada460eaa447b4533733b60",
+          "https://www.virtualshanghai.net/data/buildings?ID=89",
+          "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "update",
+      "mapPatch": {
+        "currentNameZh": "嵩山消防救援站",
+        "currentAddress": "黄浦区淮海中路193号（2021官方报道；与原197号院落/入口关系待核）",
+        "currentUse": "消防救援站；消防文化展示空间为规划用途",
+        "currentUseSourceUri": "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml",
+        "currentUseSources": [
+          {
+            "title": "应急管理部：嵩山消防救援站与淮海中路193号地址",
+            "url": "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+          },
+          {
+            "title": "上海市消防事业发展十四五规划：嵩山站相关规划",
+            "url": "https://www.shanghai.gov.cn/gwk/search/content/cc5ecf025ada460eaa447b4533733b60"
+          }
+        ],
+        "currentUseNote": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。",
+        "evidence": "应急管理部2021年报道确认嵩山消防救援站及百年历史，门牌为淮海中路193号。原197号与193号的入口和院落关系待核，门牌差异不足以否定消防用地及用途连续。本轮不调整原坐标；消防文化展示为规划内容，未核已经开放。"
+      },
+      "sourceUrls": [
+        "https://www.shanghai.gov.cn/gwk/search/content/cc5ecf025ada460eaa447b4533733b60",
+        "https://www.virtualshanghai.net/data/buildings?ID=89",
+        "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+      ],
+      "remainingGap": "193/197号入口、院落边界及最新服务地址待核；保留消防用途和原坐标。"
+    },
+    {
+      "batch": "005",
+      "IDBAT": 322,
+      "disposition": "record-original-function-conflict",
+      "reason": "原中文“无线电台”与英文 Power Station 冲突，旧结果省略此冲突并将英文当作确定身份。",
+      "workflowPatch": {
+        "sourceDataIssue": "原英文FMC - Power Station、原中文“法工部局無線電台）”及原功能类型均保留；电站/无线电台的身份和功能冲突待档案核定。",
+        "evidence": "原地址135 Route Joseph Frelup，英文称Power Station，中文称法工部局无线电台，历史功能尚不能裁定。原坐标反查提供步高里及建国西路135—137号附近线索，不证明原电站/电台建筑延续。停用、迁移、拆建及门牌链待核，维持location-only。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=322"
+      ],
+      "remainingGap": "需独立档案解释原中英名称/功能冲突；当前仅位置级。"
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1515,
+      "disposition": "hold-exact-modern-parcel",
+      "reason": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+      "workflowPatch": {
+        "modernRoadAddress": "候选：嘉善路516—518号附近；墓界与现地块对应待核",
+        "outcomeCategory": "location-only-current-use",
+        "resolutionStatus": "probable",
+        "confidence": "medium",
+        "currentNameZh": "中福商务楼及周边地块（候选，墓界对应待核）",
+        "currentUse": "候选地块为办公、商业及道路；原墓界与当前用途对应待核",
+        "currentAddress": "候选：嘉善路516—518号附近",
+        "currentUseRelationship": "cemetery-abolished-current-parcel-unproven",
+        "mapWriteRecommendation": "review",
+        "evidence": "研究及地方志引述支持卢家湾公墓历史和撤销，上海观察文章记载1959年6月拨交公用事业管理局扩建露天停车场。现来源未将墓界、停车场和今日中福商务楼地块逐段对应，后者只是坐标附近候选，撤回现代精确地块的yes推荐。与ID 325共享场地级公墓史，但保留两条历史身份。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.shobserver.cn/wx/detail.do?id=12765",
+        "https://www.virtualshanghai.net/texts/articles?ID=81"
+      ],
+      "remainingGap": "需历史墓界、停车场地籍与现代地块叠合；不能由附近POI认定具体楼宇同址。",
+      "mapTarget": {
+        "featureGroupId": "landmark-vs-site-325",
+        "sourceRecordIds": [
+          325,
+          1515
+        ],
+        "sharedHoldKey": "cemetery-325-1515",
+        "note": "两条计划指向同一override，只撤下一次，各历史记录保留。"
+      }
+    },
+    {
+      "batch": "005",
+      "IDBAT": 341,
+      "disposition": "correct-institutional-affiliation",
+      "reason": "校史将本条归入中法大学药学专修科及上海医学院沿革；震旦归属没有证据并会误导机构身份。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "中法大学药学专修科",
+        "sourceDataIssue": "原中文中法大學葯學専修科与英文Faculty of Pharmacy并列保留。撤回未经支持的震旦归属。同组342球场独立审查，学校/宿舍线索不得覆盖球场。",
+        "evidence": "复旦校史确认中法大学药学专修科及1950年并入国立上海医学院药科的沿革。上海理工大学资料给出复兴路校区旧宿舍线索，但本轮PDF只取得搜索摘录，尚缺原410 Avenue du Roi Albert到具体楼栋的图籍核对。保留校园候选及review，不把教育延续当作确定同楼。",
+        "sourceUrls": [
+          "https://alumni.usst.edu.cn/_upload/article/files/6c/7b/b8275b48451f9d0fbaa92e915f1f/b83b69d3-06b7-46ba-acc5-23d1e5d55ee3.pdf",
+          "https://www.sbc.usst.edu.cn/2023/0907/c14816a305024/page.htm",
+          "https://www.virtualshanghai.net/data/buildings?ID=341",
+          "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://alumni.usst.edu.cn/_upload/article/files/6c/7b/b8275b48451f9d0fbaa92e915f1f/b83b69d3-06b7-46ba-acc5-23d1e5d55ee3.pdf",
+        "https://www.sbc.usst.edu.cn/2023/0907/c14816a305024/page.htm",
+        "https://www.virtualshanghai.net/data/buildings?ID=341",
+        "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm"
+      ],
+      "remainingGap": "410号换号、具体旧校舍及同组球场边界待核；PDF摘录不等于全文已核。"
+    },
+    {
+      "batch": "005",
+      "IDBAT": 325,
+      "disposition": "hold-exact-modern-parcel",
+      "reason": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+      "workflowPatch": {
+        "modernRoadAddress": "候选：嘉善路516—518号附近；墓界与现地块对应待核",
+        "outcomeCategory": "location-only-current-use",
+        "resolutionStatus": "probable",
+        "confidence": "medium",
+        "currentNameZh": "中福商务楼及周边地块（候选，墓界对应待核）",
+        "currentUse": "候选地块为办公、商业及道路；原墓界与当前用途对应待核",
+        "currentAddress": "候选：嘉善路516—518号附近",
+        "currentUseRelationship": "cemetery-abolished-current-parcel-unproven",
+        "mapWriteRecommendation": "review",
+        "evidence": "研究及地方志引述支持卢家湾公墓历史和撤销，上海观察文章记载1959年6月拨交公用事业管理局扩建露天停车场。现来源未将墓界、停车场和今日中福商务楼地块逐段对应，后者只是坐标附近候选，撤回现代精确地块的yes推荐。与ID 1515共享场地级公墓史，但保留两条历史身份。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.shobserver.cn/wx/detail.do?id=12765",
+        "https://www.virtualshanghai.net/texts/articles?ID=81"
+      ],
+      "remainingGap": "需历史墓界、停车场地籍与现代地块叠合；不能由附近POI认定具体楼宇同址。",
+      "mapTarget": {
+        "featureGroupId": "landmark-vs-site-325",
+        "sourceRecordIds": [
+          325,
+          1515
+        ],
+        "sharedHoldKey": "cemetery-325-1515",
+        "note": "两条计划指向同一override，只撤下一次，各历史记录保留。"
+      }
+    },
+    {
+      "batch": "006",
+      "IDBAT": 286,
+      "disposition": "hold-demolition-and-modern-parcel-claim",
+      "reason": "已实际重读的两篇文章只支持院名与555号；指定为拆除证据的文章没有该记载，另一个源不可读。确切拆除年、原因和今日道路边界仍需来源。",
+      "workflowPatch": {
+        "modernRoadAddress": "延安中路555号历史剧场址线索；原745 Avenue Foch换号待核",
+        "outcomeCategory": "location-only-current-use",
+        "resolutionStatus": "probable",
+        "confidence": "medium",
+        "currentNameZh": "延安中路道路及高架沿线地块（候选）",
+        "currentUse": "原点附近道路、高架及公共空间候选；旧剧场与现地块对应待核",
+        "currentAddress": "候选：延安中路、陕西南路交会处附近",
+        "currentUseRelationship": "historical-theater-current-site-unproven",
+        "mapWriteRecommendation": "review",
+        "sourceDataIssue": "已读澎湃6286895及7098703支持金门大戏院、延安电影院、中福会儿童艺术剧场及555号，但未记载原研究归给它们的1996年因高架拆除。另一原引用不可读，不把失败当反证；拆除年、原因及用地链另待可读资料。",
+        "evidence": "可读剧场史记载金门大戏院后改延安电影院、再为中福会儿童艺术剧场，使用延安中路555号。原745 Avenue Foch与555号换号、确切拆除年/原因及旧剧场范围与今日道路高架对应待补证。道路现用只保留候选，撤回确定拆除与yes推荐。",
+        "sourceUrls": [
+          "https://m.thepaper.cn/newsDetail_forward_6286895",
+          "https://m.thepaper.cn/newsDetail_forward_7098703",
+          "https://www.virtualshanghai.net/data/buildings?ID=286"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "hold",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_6286895",
+        "https://m.thepaper.cn/newsDetail_forward_7098703",
+        "https://www.virtualshanghai.net/data/buildings?ID=286"
+      ],
+      "remainingGap": "需拆除院史/档案、旧新门牌和地块范围；不可读旧源留在审查历史，不继续当已验证引文。",
+      "mapTarget": {
+        "featureGroupId": "landmark-vs-site-286",
+        "sourceRecordIds": [
+          286
+        ]
+      }
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1593,
+      "disposition": "preserve-original-name-and-record-candidate",
+      "reason": "本地原中文已有“廣東侵信會”，官方建筑名单另有“广东浸信会”，并非完全无中文线索；旧表述掩盖了可能的错字/教会身份线索。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "广东侵信会（按原中文；浸信会读法待核）",
+        "sourceDataIssue": "原中文廣東侵信會和原英文Guangdong Qinxinhui并列保留。第五批名录有广东浸信会/崇德小学（新乡路66号、川公路109号），仅提示字形/转写可能问题；原66 Barchet Road换号及楼栋对应未闭合。",
+        "evidence": "本条已有原中文廣東侵信會，不再称无中文机构名。官方广东浸信会条目提供名称及66号门牌线索；和平坊住宅现用仍仅为位置级候选，不能按名称近似确定教堂，也不扩展到同组1594上海日报。",
+        "sourceUrls": [
+          "https://www.virtualshanghai.net/data/buildings?ID=1593",
+          "https://ditu.amap.com/service/regeo?longitude=121.480946&latitude=31.257194",
+          "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+        ]
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1593",
+        "https://ditu.amap.com/service/regeo?longitude=121.480946&latitude=31.257194",
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "remainingGap": "核侵/浸字形、66 Barchet Road与新乡路66号及原点楼栋；维持location-only。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 792,
+      "disposition": "correct-derived-chinese-name",
+      "reason": "context 中原始中文字段为“光復醫院”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "光复医院",
+        "sourceDataIssue": "原中文为光復醫院，原英文及原类型保留；不以“广福医院”的回译覆盖原中文。",
+        "evidence": "本条原中文为光復醫院，派生研究保留原中文身份。坐标反查提示人民广场治安派出所周边地块，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=792"
+      ],
+      "remainingGap": "旧新门牌、校史/院史及建筑去向未因此补证；不升级位置级结论。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 994,
+      "disposition": "correct-derived-chinese-name",
+      "reason": "context 中原始中文字段为“光夏中小學校”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "光夏中小学校（按原中文，英中文差异待核）",
+        "sourceDataIssue": "原中文为光夏中小學校，原英文及原类型保留；不以“光复学校”的回译覆盖原中文。英文Guangfu与中文光夏不一致，正式校名待独立校史核定。",
+        "evidence": "本条原中文为光夏中小學校，派生研究保留原中文身份。坐标反查提示康乐村住宅街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=994"
+      ],
+      "remainingGap": "旧新门牌、校史/院史及建筑去向未因此补证；不升级位置级结论。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 778,
+      "disposition": "correct-derived-chinese-name",
+      "reason": "原记录明确为光實第二小學；工作流重新音译改变了字形和对象名称。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "光实第二小学",
+        "sourceDataIssue": "原中文为光實第二小學，原英文及原类型保留；不以“广师第二小学”的回译覆盖原中文。",
+        "evidence": "本条原中文为光實第二小學，派生研究保留原中文身份。坐标反查提示浙江北路191号周边街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=778"
+      ],
+      "remainingGap": "旧新门牌、校史/院史及建筑去向未因此补证；不升级位置级结论。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 229,
+      "disposition": "correct-derived-chinese-name",
+      "reason": "context 中原始中文字段为“光學漢校”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "workflowPatch": {
+        "historicalNameCorrectionZh": "光学汉校（按原中文）",
+        "sourceDataIssue": "原中文为光學漢校，原英文及原类型保留；不以“广学小学”的回译覆盖原中文。“汉校”字形和正式校名待独立校史核定。",
+        "evidence": "本条原中文为光學漢校，派生研究保留原中文身份。坐标反查提示富源公寓周边街区，只为现代位置线索；尚缺独立校史/院史、旧新门牌、原址边界和建筑存废链，不能把附近现代机构当作同楼或后继。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=229"
+      ],
+      "remainingGap": "旧新门牌、校史/院史及建筑去向未因此补证；不升级位置级结论。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1199,
+      "disposition": "withdraw-unproven-road-translation",
+      "reason": "工作流道路换名与仓库编译器显式映射“GORDON ROAD → 江宁路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "workflowPatch": {
+        "sourceDataIssue": "原地址1103 Gordon Road保留。旧研究“Gordon Road对应长寿路”与编译器的江宁路映射冲突，现撤回未经证明的直接对译；代码表不充当外部史料。",
+        "evidence": "原中文为国华中学，历史地址1103 Gordon Road。原坐标反查提示长寿路1165号附近圣天地商务楼街区，仅为现代位置线索，不证明旧路名改为反查地址所在道路或旧新门牌相同。尚缺正式路名对照、校史、校界和拆建资料，维持location-only。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1199"
+      ],
+      "remainingGap": "正式路名、门牌和校界待核；不因内部映射冲突更改原点或现代POI。"
+    },
+    {
+      "batch": "006",
+      "IDBAT": 215,
+      "disposition": "withdraw-unproven-road-translation",
+      "reason": "工作流道路换名与仓库编译器显式映射“ROUTE DU PERE FROC → 合肥路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "workflowPatch": {
+        "sourceDataIssue": "原地址630 Route du Pere Froc保留。旧研究“Route du Pere Froc对应重庆南路”与编译器的合肥路映射冲突，现撤回未经证明的直接对译；代码表不充当外部史料。",
+        "evidence": "原中文为私立海星小学，历史地址630 Route du Pere Froc。原坐标反查提示重庆南路207号、合肥路口附近万宜坊街区，仅为现代位置线索，不证明旧路名改为反查地址所在道路或旧新门牌相同。尚缺正式路名对照、校史、校界和拆建资料，维持location-only。"
+      },
+      "resultPatch": {},
+      "partPatch": {},
+      "mapAction": "retain",
+      "mapPatch": {},
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=215"
+      ],
+      "remainingGap": "正式路名、门牌和校界待核；不因内部映射冲突更改原点或现代POI。"
+    }
+  ]
+}

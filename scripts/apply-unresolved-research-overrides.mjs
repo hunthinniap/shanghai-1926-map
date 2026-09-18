@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { findCurrentUseHold } from './lib/current-use-holds.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const chunk = process.argv[2]
@@ -22,6 +23,7 @@ const workflowPath = path.join(
 )
 const historicalPath = path.join(projectRoot, 'public', 'data', 'historical-features.geojson')
 const overridesPath = path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-overrides.json')
+const holdsPath = path.join(projectRoot, 'scripts', 'data', 'landmark-current-use-holds.json')
 
 const relationshipMap = new Map([
   ['same-building', 'same-building'],
@@ -34,11 +36,12 @@ const relationshipMap = new Map([
   ['site-redeveloped-partially-preserved', 'partial-remains-on-original-site'],
 ])
 
-const [results, workflow, historical, overrides] = await Promise.all([
+const [results, workflow, historical, overrides, holds] = await Promise.all([
   fs.readFile(resultsPath, 'utf8').then(JSON.parse),
   fs.readFile(workflowPath, 'utf8').then(JSON.parse),
   fs.readFile(historicalPath, 'utf8').then(JSON.parse),
   fs.readFile(overridesPath, 'utf8').then(JSON.parse),
+  fs.readFile(holdsPath, 'utf8').then(JSON.parse),
 ])
 
 const workflowById = new Map(workflow.records.map((record) => [record.IDBAT, record]))
@@ -61,11 +64,23 @@ const skipped = []
 for (const record of results.records) {
   const workflowRecord = workflowById.get(record.IDBAT)
   if (!workflowRecord) throw new Error(`Missing workflow record #${record.IDBAT}`)
-  if (workflowRecord.mapWriteRecommendation !== 'yes') continue
-
   const feature = featureBySourceRecordId.get(record.IDBAT)
-  if (!feature) throw new Error(`Missing landmark feature for Virtual Shanghai #${record.IDBAT}`)
+  if (!feature) {
+    if (workflowRecord.mapWriteRecommendation !== 'yes') continue
+    throw new Error(`Missing landmark feature for Virtual Shanghai #${record.IDBAT}`)
+  }
   const properties = feature.properties
+  const hold = findCurrentUseHold(holds, properties)
+  if (hold) {
+    skipped.push({
+      IDBAT: record.IDBAT,
+      featureGroupId: properties.featureGroupId,
+      reason: `research hold: ${hold.reason}`,
+      reviewRef: hold.reviewRef,
+    })
+    continue
+  }
+  if (workflowRecord.mapWriteRecommendation !== 'yes') continue
   const mixedEvidenceIds = (properties.sourceRecordIds ?? []).filter((sourceRecordId) => {
     const groupedRecord = workflowById.get(sourceRecordId)
     return groupedRecord && groupedRecord.mapWriteRecommendation !== 'yes'
