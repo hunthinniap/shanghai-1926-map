@@ -1,0 +1,4699 @@
+{
+  "batches": [
+    "004",
+    "005",
+    "006"
+  ],
+  "reviewedAt": "2026-09-18",
+  "scope": "旧 scripts/data 工作流中的004—006共150条固定ID；不按现已再生的同号public队列替换集合。",
+  "method": "每条通读原工作流并与context原中文、门牌、时序、地图使用和完整同组成员对照。高风险条目重读引用或新检索；record-review不声称重读其sourceUrls；访问失败不当作事实反证。旧格式缺少results不算内容缺失。",
+  "limitations": [
+    "004原input由root从ae0cb72恢复；005/006无完整原input快照，本轮不补造。",
+    "no-issue-found表示本轮指定层级内未发现新增可行动问题，不等于150条事实全部独立证明。",
+    "现代坐标反查只用于范围检查，本轮未对全部地块进行测绘；旧名录现名不等于2026每栋建筑的实时租户。"
+  ],
+  "coverage": {
+    "records": 150,
+    "reviewLevels": {
+      "source-recheck": 26,
+      "record-review": 124
+    },
+    "verdicts": {
+      "no-issue-found": 130,
+      "correction-needed": 11,
+      "needs-evidence": 9
+    },
+    "recordsWithReadableWebMaterial": 25,
+    "recordsWithFullTextRead": 23,
+    "recordsWithOnlyFailedSourceAttempt": 1,
+    "uniqueReadableUrls": 36
+  },
+  "records": [
+    {
+      "batch": "004",
+      "IDBAT": 408,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_7992764",
+          "title": "长三角Citywalk：宝庆路相关报道",
+          "accessMethod": "web-open-and-http-article-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "直接把宝庆路19号大华医院旧址对应今天五官科医院宝庆路院区。",
+          "limitations": "支持原址医疗用途承接，不证明所有旧建筑保存，也不单独证明两机构法律上的承继。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dahua Hospital",
+        "sourceChineseName": "大華醫院",
+        "sourceAddress": "19 ROUTE POTTIER",
+        "currentNameZh": "复旦大学附属眼耳鼻喉科医院宝庆路院区",
+        "currentAddress": "宝庆路19号",
+        "relationship": "same-site-institutional-successor",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          408
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "institutional-successor 在展示中应解释为原址医疗用途延续；旧记录已明确不保证每栋建筑原物，未发现另址套用。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1666,
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence",
+          "claim": "航运会社拆建史",
+          "problem": "原中文“大日本航空會社”和英文 Airline Company 都指航空运输，正文误写航运会误导后续检索。",
+          "recommendation": "将航运会社改为航空会社；保持原航空运输分类和 location-only。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1666"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dai Nippon Kohu Shakai (Greater Japan Airline Company)",
+        "sourceChineseName": "大日本航空會社",
+        "sourceAddress": "71 SEWARD ROAD",
+        "currentNameZh": "城投控股大厦地块",
+        "currentAddress": "武昌路119号",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1666
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1775,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "DAISY APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "20 ROUTE CAMILLE LORIOZ",
+        "currentNameZh": "永福第六小区地块",
+        "currentAddress": "泰安路24号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1775
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 686,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dalu Ophtalmology Clinic",
+        "sourceChineseName": "大陸眼科医院",
+        "sourceAddress": "671 HANKOW ROAD",
+        "currentNameZh": "中福城三期地块",
+        "currentAddress": "广西北路264号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          686
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原中文已有大陸眼科医院；正文“未找到中文名”宜理解为未独立核实标准名称，不能丢弃源字段。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 682,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dancing Hall",
+        "sourceChineseName": "舞場",
+        "sourceAddress": "250 YUYACHING ROAD",
+        "currentNameZh": "上海来福士广场地块",
+        "currentAddress": "西藏中路268号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          682
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 376,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_8909563",
+          "title": "历史走过巨鹿路和我的记忆",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "照片及文章将巨鹿路709号善导堂与文化艺术档案用途联系。",
+          "limitations": "回忆性文章不是完整宗教组织档案。"
+        },
+        {
+          "url": "https://whlyj.sh.gov.cn/zsdw/20200927/df9ea17db5bb4409a9a6f9b8a9b551fb.html",
+          "title": "上海市文旅局：上海艺术研究中心",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2026-08-10更新，机构整合含文化艺术档案馆，地址巨鹿路709号。",
+          "limitations": "确认当前文化机构地址，不单独证明院内每栋建筑的历史身份。"
+        }
+      ],
+      "queries": [
+        "\"巨鹿路709号\" \"档案馆\""
+      ],
+      "recordReview": {
+        "historicalName": "Daoist Temple",
+        "sourceChineseName": "善道堂",
+        "sourceAddress": "709 ROUTE RATARD",
+        "currentNameZh": "善导堂旧址",
+        "currentAddress": "巨鹿路709号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          376
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 982,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daoyi Primary School",
+        "sourceChineseName": "道一小學",
+        "sourceAddress": "712/724 AVENUE ROAD",
+        "currentNameZh": "西王小区、国际丽都街区",
+        "currentAddress": "北京西路718号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          982
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 966,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daozhong Junior High School",
+        "sourceChineseName": "道中中學",
+        "sourceAddress": "584/592 AVENUE ROAD",
+        "currentNameZh": "静安雕塑公园及艺术中心地块",
+        "currentAddress": "石门二路128号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          966
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "584/592 Avenue Road不同于964/965的564号，现代公园仅坐标提示，不视为同一校舍。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 964,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daozhong Junior High School for Girls",
+        "sourceChineseName": "私立道中女子初中學校",
+        "sourceAddress": "564 AVENUE ROAD",
+        "currentNameZh": "静安雕塑公园及艺术中心地块",
+        "currentAddress": "石门二路128号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          964,
+          965
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "与965同门牌564 Avenue Road；966门牌584/592只是相邻记录。不同学校/时段不合并，现代均只给位置级。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 965,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daozhong Vocational Continuation School for Girls",
+        "sourceChineseName": "道中婦女補習學校",
+        "sourceAddress": "564 AVENUE ROAD",
+        "currentNameZh": "静安雕塑公园及艺术中心地块",
+        "currentAddress": "石门二路128号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          964,
+          965
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "与964共享门牌不证明同一办学机构，职教身份仍独立；与966为附近位置，非完全相同输入地址。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1135,
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historical identity",
+          "claim": "达瑞医院",
+          "problem": "context 中原始中文字段为“大瑞医院”；旧研究用英文再音译的中文覆盖了已有原文。",
+          "recommendation": "优先保留原中文“大瑞医院”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1135"
+          ]
+        },
+        {
+          "severity": "P2",
+          "field": "evidence / historicalRoadMappings",
+          "claim": "Hart Road对应今武定路",
+          "problem": "工作流道路换名与仓库编译器显式映射“HART ROAD → 常德路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+          "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+          "sourceUrls": [],
+          "localEvidence": [
+            "scripts/compile-unresolved-research.mjs"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Darui Hospital",
+        "sourceChineseName": "大瑞医院",
+        "sourceAddress": "557 HART ROAD",
+        "currentNameZh": "开伦881周边街区",
+        "currentAddress": "武定路1761号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1135
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 698,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dasheng Hospital",
+        "sourceChineseName": "大生医院",
+        "sourceAddress": "121 KWANGSE ROAD",
+        "currentNameZh": "汕头路公共文化及商业街区",
+        "currentAddress": "汕头路151号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          698
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 60,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Datong Hospital",
+        "sourceChineseName": "大同醫院",
+        "sourceAddress": "83-25 RUE SOEUR ALLEGRE",
+        "currentNameZh": "淮海晶华周边地块",
+        "currentAddress": "桃源路108号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          60
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 150,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Datong Junior High School",
+        "sourceChineseName": "大同附中",
+        "sourceAddress": "572 RUE AMIRAL BAYLE",
+        "currentNameZh": "复兴中路323号街区",
+        "currentAddress": "复兴中路323号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          150
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1461,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://edu.eastday.com/node2/jypd/n5/20210413/u1ai38886_K20.html",
+          "title": "黄浦教育：大同中学的红色烙印",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "支持大同大学/附中的历史关联及今日南车站路353号大同中学。",
+          "limitations": "本轮未独立核全部校界和蓬莱公园边界；该部分只做记录审阅。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Datong University",
+        "sourceChineseName": "大同大學",
+        "sourceAddress": "401 CHEZHAN LU",
+        "currentNameZh": "上海市大同中学及蓬莱公园相关原校址范围",
+        "currentAddress": "南车站路353号及周边",
+        "relationship": "historical-campus-destroyed-and-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1461
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 418,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "第二批优秀历史建筑：道斐南公寓",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2D016，道斐南公寓→建国公寓，建国西路394号。",
+          "limitations": "名录确认名称/建筑/门牌；名录现名和旧机构使用栏不等于2026最新租户调查。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dauphiné Apartments",
+        "sourceChineseName": null,
+        "sourceAddress": "394 ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "建国公寓",
+        "currentAddress": "建国西路394号",
+        "relationship": "same-building",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          418
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 678,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dawutai Dancing Hall",
+        "sourceChineseName": "大舞臺",
+        "sourceAddress": "663 KIUKIANG ROAD",
+        "currentNameZh": "上海人民大舞台（亚洲大厦内）",
+        "currentAddress": "九江路663号",
+        "relationship": "same-site-rebuilt-with-institutional-name-continuity",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          678
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 284,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daxia Junior High School",
+        "sourceChineseName": "大夏中學",
+        "sourceAddress": "725 AVENUE FOCH",
+        "currentNameZh": "明德里及延安中路沿线街区",
+        "currentAddress": "延安中路、陕西北路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          283,
+          284
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组283学校记录不等于同一教育机构；location-only保持身份分离。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1403,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Daxia University",
+        "sourceChineseName": "大夏大學",
+        "sourceAddress": "?? ZHONGSHAN LU",
+        "currentNameZh": "华东师范大学普陀校区（原大夏大学校址）",
+        "currentAddress": "中山北路3663号",
+        "relationship": "same-site-institutional-successor-with-preserved-buildings",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1403
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 865,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dazhong Hospital",
+        "sourceChineseName": "大中醫院",
+        "sourceAddress": "100-12 BURKILL ROAD",
+        "currentNameZh": "新金桥广场地块",
+        "currentAddress": "长沙路791号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          865
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 684,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dazhonghua Hospital",
+        "sourceChineseName": "大中華医院",
+        "sourceAddress": "746 FOOCHOW ROAD",
+        "currentNameZh": "上海来福士广场南侧地块",
+        "currentAddress": "西藏中路146号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          684
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 211,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dehua Primary School",
+        "sourceChineseName": "私立徳華小學",
+        "sourceAddress": "502-1 ROUTE CONTY",
+        "currentNameZh": "上海交通大学附属黄浦实验中学地块",
+        "currentAddress": "建国东路518号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          211
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1182,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Delirun Bamboo Store",
+        "sourceChineseName": "德利潤竹行",
+        "sourceAddress": "1043 HART ROAD",
+        "currentNameZh": "胶州教师公寓地块",
+        "currentAddress": "胶州路163号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1182
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原中文已有德利潤竹行；不得仅从英文重新音译后覆盖原字段。当前仅位置级，没有进一步实体套用。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1710,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Deng'ai Hospital",
+        "sourceChineseName": "澄哀醫院",
+        "sourceAddress": "?? ZHENGMIN LU",
+        "currentNameZh": "上海市肺科医院（叶家花园历史建筑群）",
+        "currentAddress": "政民路507号",
+        "relationship": "same-site-institutional-successor-with-preserved-buildings",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1710
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 522,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P3",
+          "field": "sourceUrls",
+          "claim": "以4月美展综述作为四川中路294号当代展览用途证据",
+          "problem": "原指定官方综述未出现该地点；已经找到直接列地址和展期的上海文旅页面。",
+          "recommendation": "把现用引用替换/补为李悦Soft Fever详情；避免由二楼展览推断整栋全部用途。历史银行对应仍保留其历史来源。",
+          "sourceUrls": [
+            "https://www.shanghai.gov.cn/nw17239/20260409/3e3df4dfe7734bc4befd4fc538812704.html",
+            "https://www.meet-in-shanghai.net/cn/gallery/li-yue-soft-fever-320602/"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.shanghai.gov.cn/nw17239/20260409/3e3df4dfe7734bc4befd4fc538812704.html",
+          "title": "4月美展上新！来上海看大展啦",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "文章正文可读，介绍2026年4月多个展览。",
+          "limitations": "本轮正文没有四川中路294号或SNAP艺术中心，不支撑本条被分配的现用 claim。"
+        },
+        {
+          "url": "https://www.meet-in-shanghai.net/cn/gallery/li-yue-soft-fever-320602/",
+          "title": "上海文旅：李悦 Soft Fever",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "列SNAP艺术中心，四川中路294号二楼，展期2026-03-14至04-24。",
+          "limitations": "支持2026年春该层文化展览用途，不证明整楼用途或历史银行身份。"
+        }
+      ],
+      "queries": [
+        "\"德华银行\" \"四川中路294\"",
+        "\"四川中路294号\" 艺术"
+      ],
+      "recordReview": {
+        "historicalName": "Deutsch-Asiatische Bank",
+        "sourceChineseName": "徳華銀行",
+        "sourceAddress": "294 SZECHUEN ROAD",
+        "currentNameZh": "江川大楼",
+        "currentAddress": "四川中路294号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          522
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 567,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "第二批优秀历史建筑：建设大厦",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2A039，建设大厦，江西中路171—181号（单号）。",
+          "limitations": "名录确认名称/建筑/门牌；名录现名和旧机构使用栏不等于2026最新租户调查。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Development Building",
+        "sourceChineseName": null,
+        "sourceAddress": "171 KIANGSE RAOD",
+        "currentNameZh": "建设大楼",
+        "currentAddress": "江西中路181号",
+        "relationship": "same-building-renovated",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          567
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 866,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dexintang",
+        "sourceChineseName": "徳心堂",
+        "sourceAddress": "104 BURKILL ROAD",
+        "currentNameZh": "上海市格致初级中学地块",
+        "currentAddress": "长沙路1号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          866
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1646,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Ding Ling's Residence",
+        "sourceChineseName": "丁玲舊居",
+        "sourceAddress": "?? KUNSHAN",
+        "currentNameZh": "丁玲旧居",
+        "currentAddress": "昆山花园路7号",
+        "relationship": "identified-building-but-coordinate-mismatch",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          1646
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "已将可识别的丁玲旧居与原坐标错位分开，probable/review 合理；不要因姓名相同迁移原点。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 93,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dinghai Guilhall",
+        "sourceChineseName": "定海會館",
+        "sourceAddress": "111-B RUE BLUNTSCHLI",
+        "currentNameZh": "企业天地、湖滨路周边街区",
+        "currentAddress": "济南路156号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          93
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1367,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Diplomatic Mission Headquarters",
+        "sourceChineseName": "出使行轅",
+        "sourceAddress": "470 NORTH SOOCHOW ROAD",
+        "currentNameZh": "上海总商会旧址、上海宝格丽酒店相关地块",
+        "currentAddress": "北苏州路470号",
+        "relationship": "historical-site-rebuilt",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          760,
+          1260,
+          1367
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "同组760/1260商会是后续时期；必须保留出使行辕与后建总商会的先后，原关系已为historical-site-rebuilt。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 787,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dispatchment Office - Ministry of Communications",
+        "sourceChineseName": "交通部儲轉處",
+        "sourceAddress": "129 WINCHESTER ROAD",
+        "currentNameZh": "静安大悦城南座地块",
+        "currentAddress": "七浦路213号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          787
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1581,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dixwell Apartments",
+        "sourceChineseName": null,
+        "sourceAddress": "1926 NORTH SZECHUEN ROAD",
+        "currentNameZh": "溧阳大楼",
+        "currentAddress": "四川北路1914—1932号",
+        "relationship": "same-building",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1581
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 628,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dong'an Hotel",
+        "sourceChineseName": "東安旅館",
+        "sourceAddress": "504-10 CANTON ROAD",
+        "currentNameZh": "广东路666号商业楼宇",
+        "currentAddress": "广东路666号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          628
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1311,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Donghai Cinema",
+        "sourceChineseName": "東海電影院",
+        "sourceAddress": "144 MUIRHEAD ROAD",
+        "currentNameZh": "东海电影院原址街角绿地",
+        "currentAddress": "海门路、昆明路口附近",
+        "relationship": "same-site-demolished-and-landscaped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1311
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1642,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Donghe Theater",
+        "sourceChineseName": "東和劇場",
+        "sourceAddress": "341 CHAPOO ROAD",
+        "currentNameZh": "解放剧场旧址建筑",
+        "currentAddress": "乍浦路341号",
+        "relationship": "probable-same-building-heavily-altered",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          1642
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "旧址建筑重改且证据有限，probable/review 没有把现存外观当作完整剧场保存。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 143,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dongnan (Tung Nan) Hospital",
+        "sourceChineseName": "東南醫院",
+        "sourceAddress": "488 ROUTE DU PERE FROC",
+        "currentNameZh": "淮海中路街道社区卫生服务中心地块",
+        "currentAddress": "淡水路285号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          143
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 144,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dongnan Professional School",
+        "sourceChineseName": "東南高級職業学校",
+        "sourceAddress": "299 RUE CHAPSAL",
+        "currentNameZh": "淮海中路街道社区卫生服务中心地块",
+        "currentAddress": "淡水路285号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          144
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 327,
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historicalRoadMappings",
+          "claim": "Route Raymond Tenant de la Tour 对应嘉善路",
+          "problem": "同批审阅的006/#329把同一原路名对应襄阳南路；工作流存在未说明的道路映射矛盾，不能把反查POI道路视为历史路名换算。 编译器同样列出襄阳南路；此为内部一致性佐证，不代替外部新旧路名档案。",
+          "recommendation": "核正式新旧路名对照并将历史道路映射与当前坐标反查地址分开；不凭此次矛盾直接更换现代地块。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=327",
+            "https://www.virtualshanghai.net/data/buildings?ID=329"
+          ],
+          "localEvidence": [
+            "scripts/compile-unresolved-research.mjs"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dongpu Junior High School",
+        "sourceChineseName": "東浦中學",
+        "sourceAddress": "393 -27 ROUTE RAYMOND TENANT DE LA TOUR",
+        "currentNameZh": "嘉御庭地块",
+        "currentAddress": "嘉善路282号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          327
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 882,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dongxing Hospital",
+        "sourceChineseName": "東興醫院",
+        "sourceAddress": "449 BURKILL ROAD",
+        "currentNameZh": "上海长征医院急诊地块",
+        "currentAddress": "凤阳路415号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          882,
+          884
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组884中国崇德会不能自动继承医院身份；当前只定位长征医院急诊附近。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1221,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/wenti-csjd/20240905/952611.html",
+          "title": "普陀区：长寿街道社区卫生服务中心",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "页面更新至2026-03-11，列第一执业地址长寿路170号与医疗服务。",
+          "limitations": "只复核当前医疗地址；济良所/潘宅等历史身份的引用本轮未重读。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Door of Hope",
+        "sourceChineseName": "濟良所",
+        "sourceAddress": "22 ROBISON ROAD",
+        "currentNameZh": "长寿街道社区卫生服务中心",
+        "currentAddress": "长寿路170号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1221
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 361,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Doumer Theater",
+        "sourceChineseName": "杜美大戲院",
+        "sourceAddress": "9 ROUTE DOUMER",
+        "currentNameZh": "东湖大厦",
+        "currentAddress": "东湖路9号",
+        "relationship": "same-site-demolished-and-rebuilt",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          361
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 218,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dubail Apartments",
+        "sourceChineseName": null,
+        "sourceAddress": "181 AVENUE DUBAIL",
+        "currentNameZh": "重庆公寓",
+        "currentAddress": "重庆南路185号",
+        "relationship": "same-building",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          218
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1742,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "DUFOUR APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "176 ROUTE LOUIS DUFOUR",
+        "currentNameZh": "乌鲁木齐公寓（安康公寓）",
+        "currentAddress": "乌鲁木齐南路176号",
+        "relationship": "same-building",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1742
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 44,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dunbei Primary School",
+        "sourceChineseName": "敦北小學",
+        "sourceAddress": "38-34 RUE MILLOT",
+        "currentNameZh": "慎余里更新地块",
+        "currentAddress": "会稽路、人民路口一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          44
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 995,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.shsmu.edu.cn/dag/info/1047/1249.htm",
+          "title": "上海交通大学医学院档案馆：同德医学院（1918—1952）",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "支持同德医学院的办学及合并沿革。",
+          "limitations": "不独立证明2026年门诊部使用。"
+        },
+        {
+          "url": "https://www.shyueyanghospital.com/Html/News/Articles/112576.html",
+          "title": "岳阳医院：同德医学院旧址相关院史（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "搜索可读长摘录记石门一路67弄1号旧校址、推拿学校阶段及中医医院门诊部，建筑布局已改。",
+          "limitations": "正文工具打开失败，本轮仅搜索摘录；不计全文源核。"
+        },
+        {
+          "url": "https://www.shanghai.gov.cn/nw4411/20240909/272cccedcf2b4c80b3e3824cd2d3835b.html",
+          "title": "上海市政府：上海市中医医院石门路院区相关报道（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2024材料支持石门路院区仍用于医疗。",
+          "limitations": "不是每栋旧校舍保存情况调查。"
+        }
+      ],
+      "queries": [
+        "\"同德医学院\" \"石门一路\" \"门诊\"",
+        "site:gov.cn 石门一路67 中医医院 2025"
+      ],
+      "recordReview": {
+        "historicalName": "Dung Dai Medical College",
+        "sourceChineseName": "同徳醫學院",
+        "sourceAddress": "57-1 YATES ROAD",
+        "currentNameZh": "上海市中医医院石门一路门诊部",
+        "currentAddress": "石门一路67弄1号",
+        "relationship": "same-building-heavily-altered-and-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          995
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 152,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Dunren Junior High School for Girls",
+        "sourceChineseName": "私立敦仁女史小學",
+        "sourceAddress": "382 ROUTE LAFAYETTE",
+        "currentNameZh": "新天地站及周边街区",
+        "currentAddress": "复兴中路、马当路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          152
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "East Police Station (Poste de l'Est)",
+        "sourceChineseName": "公董局巡捕房",
+        "sourceAddress": "180 QUAI DE FRANCE",
+        "currentNameZh": "十六铺滨江商业及酒店街区",
+        "currentAddress": "外马路94号附近",
+        "relationship": "coordinate-only-with-source-mismatch",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原名称、地址存在来源矛盾，记录已保留source-mismatch，无需凭现代POI解决原始身份。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1663,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Eboshi Hotel (Japanese)",
+        "sourceChineseName": "江星旅館",
+        "sourceAddress": "353 BOONE ROAD",
+        "currentNameZh": "外滩豪景苑地块",
+        "currentAddress": "塘沽路287号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1663
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原中文已有江星旅館；后续检索须保留源中文，现代仍仅位置级。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 243,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Ecole Franco-Annamite (Franco-Annamite School)",
+        "sourceChineseName": null,
+        "sourceAddress": "275 RUE MASSENET",
+        "currentNameZh": "上海交通大学医学院西区地块",
+        "currentAddress": "重庆南路280号校区西侧",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          243
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 397,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Ecole Municipale Française-Ecole Rémy (French Municipal School)",
+        "sourceChineseName": "雷米小學",
+        "sourceAddress": "209 ROUTE REMI",
+        "currentNameZh": "上海市第二中学",
+        "currentAddress": "永康路200号",
+        "relationship": "same-building-repurposed-with-educational-continuity",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          397
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 250,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "historicalNameCorrectionZh",
+          "claim": "圣心小学（震旦女子文理学院附属小学）",
+          "problem": "中文原记录和本条引用的黄浦官方历史文章均指晓星小学；该附属关系未获本轮来源支持。",
+          "recommendation": "改用晓星小学／圣伯多禄晓星小学，记录英文原名差异；删除未经支持的震旦附属归属。保留 relocated 关系与 review 推荐。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=250",
+            "https://www.thepaper.cn/newsDetail_forward_24354679"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=250",
+          "title": "Virtual Shanghai：建筑 250",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "原中文字段为曉星小學，原址 224 Avenue Dubail。",
+          "limitations": "原数据库英文 Sacred Heart 与中文晓星存在跨语言差异，不能只按英文回译。"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_24354679",
+          "title": "考古黄浦｜思南公馆宴会厅的前世今生",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "上海黄浦官方文章称天主教圣伯多禄晓星小学，后为重庆南路第一小学；建筑拆卸编号、迁移并旋转 90 度复建。",
+          "limitations": "支持建筑去向，不把迁建后的现址视作历史原点。"
+        }
+      ],
+      "queries": [
+        "\"圣心小学\" \"晓星\" \"重庆\"",
+        "\"圣心小学\" \"重庆南路\""
+      ],
+      "recordReview": {
+        "historicalName": "Ecole Primaire du Sacré-Coeur (Sacred Heart Primary School)",
+        "sourceChineseName": "曉星小學",
+        "sourceAddress": "224 AVENUE DUBAIL",
+        "currentNameZh": "思南公馆宴会厅",
+        "currentAddress": "重庆南路256号",
+        "relationship": "relocated-reconstructed-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          250
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 485,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Edan Park / Pétain Park",
+        "sourceChineseName": "貝當公園 / 衡山公園",
+        "sourceAddress": "ROUTE PICARD DESTELAN / ROUTE JEROME WINLING",
+        "currentNameZh": "衡山公园",
+        "currentAddress": "广元路2号",
+        "relationship": "same-site-same-use-renamed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          485
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1772,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "EDEN GARDEN APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "34 ROUTE DELAUNAY",
+        "currentNameZh": "余庆路住宅街区",
+        "currentAddress": "余庆路133号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1772
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 354,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Eden Hospital",
+        "sourceChineseName": null,
+        "sourceAddress": "200 AVENUE DU ROI ALBERT",
+        "currentNameZh": "陕西南路188弄住宅街区",
+        "currentAddress": "陕西南路188弄、新乐路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          354
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1394,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Ellis Kadoorie Public School for Chinese",
+        "sourceChineseName": "育才公學",
+        "sourceAddress": "445 SHANHAIKWAN ROAD",
+        "currentNameZh": "上海市育才初级中学（力佩楼）",
+        "currentAddress": "山海关路445号",
+        "relationship": "same-building-educational-successor",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1394
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 765,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Embankment House",
+        "sourceChineseName": "河滨大厦",
+        "sourceAddress": "360-370 NORTH SOOCHOW ROAD",
+        "currentNameZh": "河滨大楼",
+        "currentAddress": "北苏州路400号",
+        "relationship": "same-building-same-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          765
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 430,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "currentUseRelationship / currentAddress / mapWriteRecommendation",
+          "claim": "1449 Avenue Joffre 确定对应今1431号法国总领事官邸同楼",
+          "problem": "两个官方/学术来源能证实1431号现存及用途，但原1449号门牌和特定部门尚缺直接衔接；不能只因法国外交用途相似即确认。",
+          "recommendation": "补旧新门牌对照、历史地址录或该院落图；在补齐前将同楼结论标 review，现代官邸事实可以作为候选保留。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=430",
+            "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+            "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=430",
+          "title": "Virtual Shanghai：建筑 430",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "原条目为法国大使馆商务参赞、1449 Avenue Joffre。",
+          "limitations": ""
+        },
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市第二批优秀历史建筑名单",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2D006 花园住宅现名法国领事馆，地址淮海中路1431号。",
+          "limitations": "没有给出旧1449号→今1431号换号依据或历史商务参赞使用关系。"
+        },
+        {
+          "url": "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm",
+          "title": "复旦发展研究院：淮海中路1431号建筑史相关报道",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "介绍1431号别墅的建造、业主及法国领事官邸用途。",
+          "limitations": "没有直接确认原记录的1449号与商务参赞部门。"
+        }
+      ],
+      "queries": [
+        "\"法国\" \"1431\" \"官邸\"",
+        "\"1449\" \"Joffre\" France",
+        "\"1431\" \"1449\" 淮海"
+      ],
+      "recordReview": {
+        "historicalName": "Embassy of France - Commercial Attaché",
+        "sourceChineseName": "法大使館商務参賛",
+        "sourceAddress": "1449 AVENUE JOFFRE",
+        "currentNameZh": "法国驻上海总领事官邸",
+        "currentAddress": "淮海中路1431号",
+        "relationship": "same-building-related-diplomatic-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          430
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 413,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Embassy of Poland",
+        "sourceChineseName": "波蘭公使館及總領事館",
+        "sourceAddress": "83 ROUTE PICHON",
+        "currentNameZh": "复旦大学附属眼耳鼻喉科医院汾阳院区10号楼地块",
+        "currentAddress": "汾阳路83号",
+        "relationship": "same-address-later-building-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          413,
+          1716
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "明确区分1930年代波兰外交机构与后建医院10号楼；同组1716不能反推1930年代同楼。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 69,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Empire Theater",
+        "sourceChineseName": "恩派亞大戲院",
+        "sourceAddress": "85 AVENUE JOFFRE",
+        "currentNameZh": "大上海时代广场",
+        "currentAddress": "淮海中路99号",
+        "relationship": "demolished-redeveloped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          69
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1633,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P1",
+          "field": "currentNameZh / currentAddress / currentUse / currentUseRelationship / mapWriteRecommendation",
+          "claim": "武进路225弄9号恩德堂 = 乍浦路490号恩德堂，现为政府与消保机构办公，同楼、resolved/yes",
+          "problem": "官方名录把武进路225弄3—11号宿舍/教堂与乍浦路480、490号主教堂列成两条。旧结果跨地址套用主教堂用途，且 context 显示错误已经进入地图。",
+          "recommendation": "暂停此条 same-building/yes 和当前办公用途；以武进路225弄9号为对象重新核对楼栋/院落边界。可以记录官方名录住宅线索，但不能未经定位直接替换成另一种确定现用。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1633",
+            "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+            "https://www.shhk.gov.cn/xwzx/002006/20210819/3c53da87-4561-44e1-8686-f427b7cc89a8.html"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1633",
+          "title": "Virtual Shanghai：建筑 1633",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "原址 225-9 Wutsin，中文恩德堂。",
+          "limitations": "原条目名称本身不能把该门牌替换为乍浦路主教堂。"
+        },
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市第五批优秀历史建筑名单",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "5F010：恩德堂教堂及宿舍，武进路225弄3—11号，现名住宅；5F019：恩德堂，乍浦路480、490号，现名虹口区消费者权益保护委员会。",
+          "limitations": "名录现名反映名录记录时点，不能直接证明 2026 年每户具体用途；但明确证明是两个不同地址条目。"
+        },
+        {
+          "url": "https://www.shhk.gov.cn/xwzx/002006/20210819/3c53da87-4561-44e1-8686-f427b7cc89a8.html",
+          "title": "东方网：乍浦路要旧改了……",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "文章叙述乍浦路480、490号主教堂。",
+          "limitations": "没有证明武进路225弄9号与该主教堂为同一楼。"
+        },
+        {
+          "url": "https://www.shhk.gov.cn/xwzx/002003/20180131/2d000623-d12b-4bed-8c41-bce2d222d4f2.html",
+          "title": "虹口区远程调解相关报道（2018）",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "可读正文讨论法院远程调解和消费权益机构。",
+          "limitations": "未给出武进路225弄9号当前用途，不能作为该历史原点的办公使用证据。"
+        }
+      ],
+      "queries": [
+        "\"恩德堂\" \"乍浦路490\" \"2025\"",
+        "\"恩德堂\" 消费者 乍浦",
+        "虹口 消费者权益保护委员会 地址 乍浦路 2025"
+      ],
+      "recordReview": {
+        "historicalName": "Ende Temple",
+        "sourceChineseName": "恩德堂",
+        "sourceAddress": "225-9 WUTSIN",
+        "currentNameZh": "恩德堂旧址",
+        "currentAddress": "乍浦路490号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1633
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1123,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "English Soldiers Club",
+        "sourceChineseName": null,
+        "sourceAddress": "14 JESSFIELD ROAD",
+        "currentNameZh": "万航渡路14号周边街区",
+        "currentAddress": "万航渡路14号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1123
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 121,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fahua Diyuan Buddhist Association",
+        "sourceChineseName": "佛化祇園法會",
+        "sourceAddress": "78-66 ROUTE PERE DUGOUT",
+        "currentNameZh": "佛化祗园法会旧址",
+        "currentAddress": "永年路78弄3号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          121
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1574,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_11011983",
+          "title": "法华镇｜一条马路穿越千年",
+          "accessMethod": "web-open-and-http-article-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "记寺址后为学校/党校/交大、生产单位等，1980年代拆建分割，提到525号德必与交大地块。",
+          "limitations": "支持寺址整体分割后用途；未测历史点具体落在今日哪一分地块，不能强称每栋现代建筑继承。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fahua Temple",
+        "sourceChineseName": "法華寺",
+        "sourceAddress": "535 FAHUAZHEN LU",
+        "currentNameZh": "上海交通大学长宁校区、德必法华525",
+        "currentAddress": "法华镇路525号、535号一带",
+        "relationship": "demolished-parcel-subdivided-redeveloped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1574
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "保留 demolished-parcel-subdivided 的场地级表述是必要限制；若地图需绑定单个现址POI，应另核坐标落界，不能把交大和德必当作一幢楼。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 718,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Far Eastern Hotel",
+        "sourceChineseName": "遠東飯店",
+        "sourceAddress": "90 YUYACHING ROAD",
+        "currentNameZh": "OPARTMENT远东饭店",
+        "currentAddress": "西藏中路90号",
+        "relationship": "same-building-renovated-related-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          718
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1754,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FELIX APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "1317 ROUTE LAFAYETTE",
+        "currentNameZh": "复兴中路1317—1323号住宅街区",
+        "currentAddress": "复兴中路1317号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1754
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 753,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fengyuan Factory",
+        "sourceChineseName": "豊元廠",
+        "sourceAddress": "777 BOONE ROAD",
+        "currentNameZh": "新金浦服装市场地块",
+        "currentAddress": "塘沽路773号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          753
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1498,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fire Bell Tower",
+        "sourceChineseName": "火警鈡樓",
+        "sourceAddress": "581 ZHONGHUA LU",
+        "currentNameZh": "小南门警钟楼",
+        "currentAddress": "中华路581号一带",
+        "relationship": "same-building-preserved",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1498
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 89,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "currentAddress",
+          "claim": "嵩山消防救援站当前门牌淮海中路197号",
+          "problem": "应急管理部现址报道使用193号，旧结果把历史197号原样填作当前门牌；需区分老门牌、建筑名录地址和现行入口。",
+          "recommendation": "保留历史197号；核明193/197号是否同院落并注明口径，当前地址引用现行官方站点资料。此次不据门牌差异否定消防用途连续。",
+          "sourceUrls": [
+            "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml",
+          "title": "应急管理部：嵩山消防救援站相关报道",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "官方报道将嵩山消防救援站地址写为淮海中路193号，并述百年站史。",
+          "limitations": "193号与历史197号可能是同一院落不同门牌；本轮不足以断言建筑对应错误。"
+        },
+        {
+          "url": "https://www.shanghai.gov.cn/nw9820/20231116/f2c869bc3c1f4fac8ae622bb7eb3ac5c.html",
+          "title": "上海市消防新闻发布会（2023）",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "正文可读，为消防工作新闻发布会。",
+          "limitations": "未取得可直接支持嵩山站197号现行门牌的段落。"
+        }
+      ],
+      "queries": [
+        "上海 嵩山消防救援站 淮海中路 百年"
+      ],
+      "recordReview": {
+        "historicalName": "Firemen Barracks (French Municipal Council)",
+        "sourceChineseName": "救火會",
+        "sourceAddress": "197 AVENUE JOFFRE",
+        "currentNameZh": "嵩山消防救援站",
+        "currentAddress": "淮海中路197号",
+        "relationship": "same-building-same-function",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          89
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1112,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "First Church of Christ Scientist",
+        "sourceChineseName": null,
+        "sourceAddress": "1623 AVENUE ROAD",
+        "currentNameZh": "上海市医学会办公楼",
+        "currentAddress": "北京西路1623—1647号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1112
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 237,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Bureau of Finance",
+        "sourceChineseName": "法工部局財務處",
+        "sourceAddress": "28 ROUTE STANISLAS CHEVALIER",
+        "currentNameZh": "建德路28号住宅地块",
+        "currentAddress": "建德路28号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          236,
+          237
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组236车务处与237财务处为不同历史部门；共享门牌不扩大部门功能。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 420,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Bureau of Health (Service Sanitaire)",
+        "sourceChineseName": "法工部局衛生總局",
+        "sourceAddress": "294 ROUTE RENE DELASTRE",
+        "currentNameZh": "中国科学院上海营养与健康研究所太原路园区",
+        "currentAddress": "太原路294号附近",
+        "relationship": "same-address-continuity-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          420
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 203,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Bureau of Public Works - First District",
+        "sourceChineseName": "公董局公務處",
+        "sourceAddress": "?? ROUTE DOLLFUS",
+        "currentNameZh": "城汇大厦及南昌路沿街地块",
+        "currentAddress": "南昌路28号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          203
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 458,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Bureau of Public Works - Warehouse",
+        "sourceChineseName": "法工部局公程處西棧",
+        "sourceAddress": "607 ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "上海市医学科学技术情报研究所地块",
+        "currentAddress": "建国西路602—609号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          458
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 245,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Bureau of Public Works - Workshop",
+        "sourceChineseName": "法工部局工程處",
+        "sourceAddress": "10 ROUTE STANISLAS CHEVALIER",
+        "currentNameZh": "八号桥一期",
+        "currentAddress": "建国中路8—10号",
+        "relationship": "same-industrial-parcel-fabric-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          245
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "工业地块连续与建筑本体连续分开，location-only限制与当前证据相称。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 228,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Garbage Collection Trucks Carpa",
+        "sourceChineseName": "法工部局拉圾停車處",
+        "sourceAddress": "271/277 ROUTE DE ZIKAWEI",
+        "currentNameZh": "徐家汇路、斜徐路口混合街区",
+        "currentAddress": "徐家汇路、斜徐路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          228
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 244,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Garbage Collection Trucks Carpark",
+        "sourceChineseName": "法工部局拉扱汽車停車處",
+        "sourceAddress": "8 ROUTE STANISLAS CHEVALIER",
+        "currentNameZh": "八号桥、重庆南路296号周边地块",
+        "currentAddress": "建德路、重庆南路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          244
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 321,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Gardens, Parks and Plants",
+        "sourceChineseName": "法工部局花園",
+        "sourceAddress": "133 ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "黄浦区青少年科技活动中心周边",
+        "currentAddress": "建国西路137号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          313,
+          321
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组313、321花园记录只保持地块/位置级，未借邻近建筑确定花园保存。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 322,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / sourceDataIssue",
+          "claim": "把对象直接写成法工部局电站",
+          "problem": "原中文“无线电台”与英文 Power Station 冲突，旧结果省略此冲突并将英文当作确定身份。",
+          "recommendation": "补记原数据冲突，保留两个原始称谓；具体功能待档案核定，现代用途仍只维持 location-only。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=322"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=322",
+          "title": "Virtual Shanghai：建筑 322",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "同一页英文名称为 FMC-Power Station，中文为法工部局無線電台），地址 135 Route Joseph Frelup。",
+          "limitations": "原数据自身中英文/功能冲突，不能据此判定哪个分类正确。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Power Station",
+        "sourceChineseName": "法工部局無線電台）",
+        "sourceAddress": "135 ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "步高里及建国西路137号周边地块",
+        "currentAddress": "建国西路135—137号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          322
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 318,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FMC - Warehouse Père Robert",
+        "sourceChineseName": "公董局倉庫",
+        "sourceAddress": "468 ROUTE PERE ROBERT",
+        "currentNameZh": "瑞金二路602号、打浦大楼周边地块",
+        "currentAddress": "瑞金二路、建国中路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          318
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 4108,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Foch Police Station (Poste Foch)",
+        "sourceChineseName": "巡捕房",
+        "sourceAddress": "1307 AVENUE JOFFRE",
+        "currentNameZh": "福煦巡捕房警官公寓",
+        "currentAddress": "淮海中路1323号",
+        "relationship": "same-building-related-police-housing",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          4108
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "候选警官公寓不等于巡捕房全部，保留probable/review可防功能/楼栋混用。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1770,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "FONCIM APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "643 ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "高安路、建国西路口里弄住宅",
+        "currentAddress": "建国西路643号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1770
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1515,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "currentNameZh / currentAddress / resolutionStatus / mapWriteRecommendation",
+          "claim": "公墓原点确定对应中福商务楼周边，resolved/yes",
+          "problem": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+          "recommendation": "保留公墓撤销及停车场沿革；现代中福商务楼对应降为位置级/待复核，或补历史墓界与现地块叠合证据。325 与1515 可共享场地级撤墓史，但继续保留两条历史身份。",
+          "sourceUrls": [
+            "https://www.shobserver.cn/wx/detail.do?id=12765",
+            "https://www.virtualshanghai.net/texts/articles?ID=81"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/texts/articles?ID=81",
+          "title": "安克强：上海租界公墓研究",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "确认租界公墓历史研究背景与卢家湾公墓相关历史。",
+          "limitations": "不是 2026 年地籍或现状用途调查。"
+        },
+        {
+          "url": "https://www.shobserver.cn/wx/detail.do?id=12765",
+          "title": "【知沪者也】老上海的殡葬那些事",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "引述地方志：卢湾公墓 1959 年6月拨交公用事业管理局扩建露天停车场。",
+          "limitations": "正文不出现中福商务楼或嘉善路516—518号；不能单独完成 1959 停车场到当前楼宇的地块对应。"
+        }
+      ],
+      "queries": [
+        "卢家湾 公墓 中福商务楼 嘉善路 516"
+      ],
+      "recordReview": {
+        "historicalName": "Foreign Cemetery",
+        "sourceChineseName": "外國墳山",
+        "sourceAddress": "646 ROUTE DE ZIKAWEI",
+        "currentNameZh": "中福商务楼及周边地块",
+        "currentAddress": "嘉善路516—518号附近",
+        "relationship": "cemetery-abolished-redeveloped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          325,
+          1515
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 863,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Foreign Ymca Headquarters",
+        "sourceChineseName": "西青年會",
+        "sourceAddress": "150 BUBBLING WELL ROAD",
+        "currentNameZh": "体育大厦",
+        "currentAddress": "南京西路150号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          863
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 889,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fourth Marine Club",
+        "sourceChineseName": null,
+        "sourceAddress": "722 BURKILL ROAD",
+        "currentNameZh": "汇银大厦及凤阳路沿街地块",
+        "currentAddress": "凤阳路709号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          889
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 164,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Franciscan Procuration",
+        "sourceChineseName": null,
+        "sourceAddress": "141 AVENUE DUBAIL",
+        "currentNameZh": "方济堂旧址",
+        "currentAddress": "重庆南路139号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          164
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 252,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Franco-Chinese Friendship Association (Association D'amitié Franco-Chinoise)",
+        "sourceChineseName": "中法聯誼會",
+        "sourceAddress": "577 ROUTE LAFAYETTE",
+        "currentNameZh": "复兴坊及复兴中路沿街地块",
+        "currentAddress": "复兴中路557号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          252
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 716,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Franco-Chinese Pharmacy",
+        "sourceChineseName": "中法大藥房",
+        "sourceAddress": "760 EDWARD VII ROAD",
+        "currentNameZh": "港陆广场地块",
+        "currentAddress": "西藏中路302号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          716
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 341,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "historicalNameCorrectionZh",
+          "claim": "中法大学药科（震旦大学相关教学设施）",
+          "problem": "校史将本条归入中法大学药学专修科及上海医学院沿革；震旦归属没有证据并会误导机构身份。",
+          "recommendation": "删去震旦括注，保留中法大学药学专修科；复兴路校园和具体楼栋继续 review，不将学校判断扩散到同组 342 球场。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=341",
+            "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=341",
+          "title": "Virtual Shanghai：建筑 341",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "原中文为中法大學葯學専修科，地址 410 Avenue du Roi Albert。",
+          "limitations": ""
+        },
+        {
+          "url": "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm",
+          "title": "敬忆二级教授｜宋梧生：爱国敬业，开拓创新",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "复旦大学校史文章记载 1929 年创办中法大学药学专修科、1950 年并入国立上海医学院药科。",
+          "limitations": "支持学校身份及沿革；不独立确定旧校舍具体楼栋。"
+        },
+        {
+          "url": "https://alumni.usst.edu.cn/_upload/article/files/6c/7b/b8275b48451f9d0fbaa92e915f1f/b83b69d3-06b7-46ba-acc5-23d1e5d55ee3.pdf",
+          "title": "上海理工大学校友资料 PDF（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "搜索摘录称三宿舍 1914 年建成、抗战时期一度由中法大学药学专修科占用。",
+          "limitations": "PDF 超过工具体积限制，未读完整文件或逐页核对；只把搜索摘录作为校址线索。"
+        },
+        {
+          "url": "https://www.sbc.usst.edu.cn/2023/0907/c14816a305024/page.htm",
+          "title": "原引用上海理工大学页面",
+          "accessMethod": "failed-open",
+          "readThisRound": false,
+          "accessedAt": "2026-09-18",
+          "supports": "未取得本轮可读正文。",
+          "limitations": "访问超时，不构成事实反证。"
+        }
+      ],
+      "queries": [
+        "\"中法大学\" \"药科\" \"震旦\"",
+        "\"中法大学药学\" 校址",
+        "site:usst.edu.cn 中法 药学 410"
+      ],
+      "recordReview": {
+        "historicalName": "Franco-Chinese University - Faculty of Pharmacy",
+        "sourceChineseName": "中法大學葯學専修科",
+        "sourceAddress": "410 AVENUE DU ROI ALBERT",
+        "currentNameZh": "上海理工大学复兴路校区",
+        "currentAddress": "复兴中路1195号",
+        "relationship": "same-campus-educational-continuity-exact-building-unproven",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          341,
+          342
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 132,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)",
+        "sourceChineseName": null,
+        "sourceAddress": "361 RUE CHAPSAL",
+        "currentNameZh": "淡水公寓及淡水路住宅街区",
+        "currentAddress": "淡水路361号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          132
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 325,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "currentNameZh / currentAddress / resolutionStatus / mapWriteRecommendation",
+          "claim": "公墓原点确定对应中福商务楼周边，resolved/yes",
+          "problem": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+          "recommendation": "保留公墓撤销及停车场沿革；现代中福商务楼对应降为位置级/待复核，或补历史墓界与现地块叠合证据。325 与1515 可共享场地级撤墓史，但继续保留两条历史身份。",
+          "sourceUrls": [
+            "https://www.shobserver.cn/wx/detail.do?id=12765",
+            "https://www.virtualshanghai.net/texts/articles?ID=81"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/texts/articles?ID=81",
+          "title": "安克强：上海租界公墓研究",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "确认租界公墓历史研究背景与卢家湾公墓相关历史。",
+          "limitations": "不是 2026 年地籍或现状用途调查。"
+        },
+        {
+          "url": "https://www.shobserver.cn/wx/detail.do?id=12765",
+          "title": "【知沪者也】老上海的殡葬那些事",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "引述地方志：卢湾公墓 1959 年6月拨交公用事业管理局扩建露天停车场。",
+          "limitations": "正文不出现中福商务楼或嘉善路516—518号；不能单独完成 1959 停车场到当前楼宇的地块对应。"
+        }
+      ],
+      "queries": [
+        "卢家湾 公墓 中福商务楼 嘉善路 516"
+      ],
+      "recordReview": {
+        "historicalName": "French Cemetery",
+        "sourceChineseName": "法国坟山",
+        "sourceAddress": "646 ROUTE DE ZIKAWEI",
+        "currentNameZh": "中福商务楼及周边地块",
+        "currentAddress": "嘉善路516—518号附近",
+        "relationship": "cemetery-abolished-redeveloped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          325,
+          1515
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 317,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Chinal Field Battalion",
+        "sourceChineseName": "法國兵營",
+        "sourceAddress": "450 ROUTE PERE ROBERT",
+        "currentNameZh": "上海电力设计院及泰康路周边地块",
+        "currentAddress": "瑞金二路、泰康路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          317
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1512,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai)",
+        "sourceChineseName": null,
+        "sourceAddress": "310 AVENUE DUBAIL",
+        "currentNameZh": "法商电车电灯公司旧址、法电六烈士纪念堂",
+        "currentAddress": "重庆南路275号一带",
+        "relationship": "same-large-site-partial-remains-institutional-successor",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          225,
+          1512
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "电厂、公司及纪念堂属于大地块不同对象；原结果保留review，没有把整组自动当作纪念堂建筑。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 212,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices",
+        "sourceChineseName": null,
+        "sourceAddress": "249 AVENUE DUBAIL",
+        "currentNameZh": "上海交通大学附属黄浦实验中学周边地块",
+        "currentAddress": "重庆南路255号附近",
+        "relationship": "same-company-area-exact-office-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          212
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "249号办公室与310号电厂不同，已有location-only及exact-office-unproven，不继承1512/225现存建筑。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 225,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Company of Tramways and Electricity (Compagnie Française de Tramways et d'éclairage Electriques de Shanghai) - Plant",
+        "sourceChineseName": "法商水電公司",
+        "sourceAddress": "310 AVENUE DUBAIL",
+        "currentNameZh": "法商电车电灯公司旧址、法电六烈士纪念堂",
+        "currentAddress": "重庆南路275号一带",
+        "relationship": "same-large-site-partial-remains-exact-plant-unproven",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          225,
+          1512
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "与1512同组但原字段为水电公司/电厂；具体厂房未核，review正确。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 402,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Military Residence",
+        "sourceChineseName": "法國兵房",
+        "sourceAddress": "79 ROUTE PICHON",
+        "currentNameZh": "上海工艺美术博物馆",
+        "currentAddress": "汾阳路79号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          402
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1514,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Rifle Range",
+        "sourceChineseName": null,
+        "sourceAddress": "?? ROUTE JOSEPH FRELUPT",
+        "currentNameZh": "黄浦区业余大学、青少年科技活动中心周边",
+        "currentAddress": "建国西路135—137号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1514
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1482,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "French Water Works",
+        "sourceChineseName": "董家渡水厰",
+        "sourceAddress": "?? RUE DE BEZAURE",
+        "currentNameZh": "上海城投水务南市水厂",
+        "currentAddress": "半淞园路592号",
+        "relationship": "same-site-same-function-major-reconstruction",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1482
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1056,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fruit Confectionery Factory",
+        "sourceChineseName": null,
+        "sourceAddress": "1432 SINZA ROAD",
+        "currentNameZh": "怡景苑及新闸路住宅街区",
+        "currentAddress": "新闸路1410—1432号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1056
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 81,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fuci Primary School",
+        "sourceChineseName": "福慈小學",
+        "sourceAddress": "368 RUE EUGENE BARD",
+        "currentNameZh": "九号商场及顺昌路沿街地块",
+        "currentAddress": "顺昌路2号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          80,
+          81
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组80/81的学校名称和来源记录仍分开，现址仅坐标级。"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1370,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Fufeng Flour Mill",
+        "sourceChineseName": "阜豐麵粉厰",
+        "sourceAddress": "?? WEST SOOCHOW ROAD",
+        "currentNameZh": "天安千树、阜丰福新面粉厂旧址",
+        "currentAddress": "莫干山路600号一带",
+        "relationship": "partial-historic-buildings-preserved-integrated-into-redevelopment",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1370
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1760,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "GOLD DRAGON APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "437 ROUTE RATARD",
+        "currentNameZh": "凯德·茂名公馆地块",
+        "currentAddress": "巨鹿路、茂名南路交会处一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1760
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 286,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / currentUseSources / resolutionStatus",
+          "claim": "引用澎湃7098703证明1996年因延安高架拆除，现为道路高架",
+          "problem": "已实际重读的两篇文章只支持院名与555号；指定为拆除证据的文章没有该记载，另一个源不可读。确切拆除年、原因和今日道路边界仍需来源。",
+          "recommendation": "更换能直接记载拆除的档案/院史引文并核555号与原745号换号；在补证前区分已证院名沿革与待证拆除/现用，不将访问失败当反证。",
+          "sourceUrls": [
+            "https://m.thepaper.cn/newsDetail_forward_6286895",
+            "https://m.thepaper.cn/newsDetail_forward_7098703"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_6286895",
+          "title": "当年，在静安看电影",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "照片及叙述支持儿童艺术剧场与金门大戏院的沿革、延安中路555号。",
+          "limitations": "本轮正文没有给出1996年拆除日期与原因。"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_7098703",
+          "title": "图忆老卢湾的影剧院场馆……",
+          "accessMethod": "web-open-and-http-article-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "可读文章记载金门大戏院→延安电影院→中福会儿童艺术剧场，延安中路555号。",
+          "limitations": "web 正文和下载 HTML 的文章正文均未找到1996年因高架拆除的记载；HTML导航数据出现1996数字不属史料正文。"
+        },
+        {
+          "url": "https://yueju.net/api/shows_details?id=572",
+          "title": "原引用戏院沿革页面",
+          "accessMethod": "failed-open",
+          "readThisRound": false,
+          "accessedAt": "2026-09-18",
+          "supports": "未取得可读正文。",
+          "limitations": "访问失败不构成拆除说法为假的证据。"
+        }
+      ],
+      "queries": [
+        "金门大戏院 1996 延安高架 拆除"
+      ],
+      "recordReview": {
+        "historicalName": "Golden Gate Theater",
+        "sourceChineseName": "金門大戯院",
+        "sourceAddress": "745 AVENUE FOCH",
+        "currentNameZh": "延安中路道路及高架沿线地块",
+        "currentAddress": "延安中路、陕西南路交会处附近",
+        "relationship": "demolished-redeveloped",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          286
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1609,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gongdao Bookstore",
+        "sourceChineseName": "公道書店",
+        "sourceAddress": "1 HASKELL ROAD",
+        "currentNameZh": "今潮8弄海派文化中心街区",
+        "currentAddress": "武进路502号一带",
+        "relationship": "same-area-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1609
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1323,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gonghexiang Wharf",
+        "sourceChineseName": "公和祥碼頭",
+        "sourceAddress": "690 EAST BROADWAY ROAD",
+        "currentNameZh": "青山实业大楼及道路地块",
+        "currentAddress": "东大名路690号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1323
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1439,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gongping Funeral Parlor",
+        "sourceChineseName": "公平殯儀館",
+        "sourceAddress": "830 KESWICK ROAD",
+        "currentNameZh": "延安西路地铁站周边街区",
+        "currentAddress": "凯旋路、延安西路交会处一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1439
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 30,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://dzb.whb.cn/html/2017-03/03/content_530993.html",
+          "title": "文汇报：共舞台沿革（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "搜索摘录支持1930离开大世界、1931荣记、1954共舞台和2013剧场改造等阶段。",
+          "limitations": "正文打开403；只计搜索摘录，不能据此独立认证同一建筑结构连续。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gongwutai Cinema",
+        "sourceChineseName": "榮記共舞臺",
+        "sourceAddress": "433-B AVENUE EDWARD VII",
+        "currentNameZh": "上海共舞台",
+        "currentAddress": "延安东路433号",
+        "relationship": "same-building-continuing-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          30
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 489,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Good Shepherd Convent Home of Refuge",
+        "sourceChineseName": "善牧會球濟院",
+        "sourceAddress": "910 AVENUE PETAIN",
+        "currentNameZh": "中国福利会国际和平妇幼保健院",
+        "currentAddress": "衡山路910号",
+        "relationship": "same-site-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          489
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1008,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Grand Danois",
+        "sourceChineseName": null,
+        "sourceAddress": "990/992 BUBBLING WELL ROAD",
+        "currentNameZh": "上海少年儿童图书馆南西馆周边街区",
+        "currentAddress": "南京西路962号、南汇路口附近",
+        "relationship": "coordinate-only-with-undefined-source",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1008
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原建筑名不明确，保留coordinate-only-with-undefined-source；不由现代儿童图书馆邻近反推历史身份。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 876,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Grand Theater",
+        "sourceChineseName": "大光明影戯院",
+        "sourceAddress": "216 BUBBLING WELL ROAD",
+        "currentNameZh": "大光明电影院",
+        "currentAddress": "南京西路216号",
+        "relationship": "same-building-continuing-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          876
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 706,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Great China Hotel",
+        "sourceChineseName": "大中華飯店",
+        "sourceAddress": "200 YUYACHING ROAD",
+        "currentNameZh": "大中华大楼",
+        "currentAddress": "西藏中路200号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          706
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 666,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Great Eastern Dispensary",
+        "sourceChineseName": null,
+        "sourceAddress": "851 PEKING ROAD",
+        "currentNameZh": "六合大厦周边街区",
+        "currentAddress": "北京东路、芝罘路交会处附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          666
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1234,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Great Eastern Dispensary Factory",
+        "sourceChineseName": null,
+        "sourceAddress": "?? GREAT WESTERN ROAD",
+        "currentNameZh": "宁电投大厦及周边街区",
+        "currentAddress": "昭化路、定西路交会处附近",
+        "relationship": "coordinate-only-with-address-uncertainty",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1234
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "历史Great Western Road无门牌，现行坐标只定位；不由现代大楼反推旧门牌。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 29,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Great World",
+        "sourceChineseName": "大世界",
+        "sourceAddress": "1 BOULEVARD DE MONTIGNY",
+        "currentNameZh": "上海大世界",
+        "currentAddress": "西藏南路1号",
+        "relationship": "same-building-cultural-use-continuity",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          29
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 392,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gresham Apartments",
+        "sourceChineseName": null,
+        "sourceAddress": "1228 AVENUE JOFFRE",
+        "currentNameZh": "格莱勋公寓（光明公寓）",
+        "currentAddress": "淮海中路1222—1238号",
+        "relationship": "same-building-same-use",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          392
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 291,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Grosvenor House",
+        "sourceChineseName": null,
+        "sourceAddress": "219 ROUTE CARDINAL MERCIER",
+        "currentNameZh": "锦江饭店贵宾楼（峻岭公寓）",
+        "currentAddress": "茂名南路59号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          291
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 258,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangdong Guild",
+        "sourceChineseName": "廣東旅滬同鄉會",
+        "sourceAddress": "32 RUE MOLIERE",
+        "currentNameZh": "瑞金二路69弄住宅街区",
+        "currentAddress": "瑞金二路69弄、皋兰路口附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          258
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1018,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangdong Kindergarten, Primary and Junior High School",
+        "sourceChineseName": "廣東中小學、幼稚園",
+        "sourceAddress": "1117 AVENUE ROAD",
+        "currentNameZh": "北京西路1110弄住宅街区",
+        "currentAddress": "北京西路1110弄、1123号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1018
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1593,
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P3",
+          "field": "evidence / sourceDataIssue",
+          "claim": "广东社团中文全称未定",
+          "problem": "本地原中文已有“廣東侵信會”，官方建筑名单另有“广东浸信会”，并非完全无中文线索；旧表述掩盖了可能的错字/教会身份线索。",
+          "recommendation": "保留原中文及浸信会候选，沿66号门牌核对；继续 location-only，不把同组1594上海日报自动归入该教堂。",
+          "sourceUrls": [
+            "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+            "https://www.virtualshanghai.net/data/buildings?ID=1593"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市第五批优秀历史建筑名单",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "名录列广东浸信会／崇德小学，新乡路66号、川公路109号。",
+          "limitations": "是名称及门牌后续检索线索；未闭合66 Barchet Road与该名录条目的换号及楼栋范围。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangdong Qinxinhui",
+        "sourceChineseName": "廣東侵信會",
+        "sourceAddress": "66 BARCHET ROAD",
+        "currentNameZh": "和平坊住宅街区",
+        "currentAddress": "川公路、宝源路交会处一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1593,
+          1594
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 792,
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historical identity",
+          "claim": "广福医院",
+          "problem": "context 中原始中文字段为“光復醫院”；旧研究用英文再音译的中文覆盖了已有原文。",
+          "recommendation": "优先保留原中文“光復醫院”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=792"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangfu Hospital",
+        "sourceChineseName": "光復醫院",
+        "sourceAddress": "63-5 YUYACHING ROAD",
+        "currentNameZh": "人民广场治安派出所周边地块",
+        "currentAddress": "武胜路14号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          792
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 994,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historical identity",
+          "claim": "光复学校",
+          "problem": "context 中原始中文字段为“光夏中小學校”；旧研究用英文再音译的中文覆盖了已有原文。",
+          "recommendation": "优先保留原中文“光夏中小學校”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=994"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=994",
+          "title": "Virtual Shanghai：建筑 994（本轮访问失败）",
+          "accessMethod": "failed-open",
+          "readThisRound": false,
+          "accessedAt": "2026-09-18",
+          "supports": "中文冲突判断来自本地 source/live 字段，非本轮网页正文。",
+          "limitations": "网页访问失败不支持任何新增事实判断。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangfu Primary and Junior High School",
+        "sourceChineseName": "光夏中小學校",
+        "sourceAddress": "40 MOULMEIN ROAD",
+        "currentNameZh": "康乐村住宅街区",
+        "currentAddress": "茂名北路259号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          994
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1241,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangfujiang Temple (Buddhist)",
+        "sourceChineseName": "廣福講寺",
+        "sourceAddress": "? FONGPANG (CENTRAL)",
+        "currentNameZh": "豫园派出所及周边街区",
+        "currentAddress": "紫华路75号附近",
+        "relationship": "coordinate-only-with-address-uncertainty",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1241
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1048,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guanggong Primary School",
+        "sourceChineseName": "廣公小學",
+        "sourceAddress": "629 SEYMOUR ROAD",
+        "currentNameZh": "众乐新村住宅街区",
+        "currentAddress": "陕西北路555号、武定路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1048,
+          1049
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组1049另一学校不可由共享门牌视作机构承继；此条只定位。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 262,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guanghua Ophtalmology Clinic",
+        "sourceChineseName": "光華眼科醫院",
+        "sourceAddress": "156/158 ROUTE VALLON",
+        "currentNameZh": "上海市气功研究所医疗门诊部",
+        "currentAddress": "南昌路218号",
+        "relationship": "same-building-medical-successor",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          262
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 820,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guanghua Theater",
+        "sourceChineseName": "光華大戯院",
+        "sourceAddress": "1440 EDWARD VII",
+        "currentNameZh": "成都北路道路及延安高架地块",
+        "currentAddress": "成都北路9号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          820
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 825,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangjiao Temple",
+        "sourceChineseName": "广教禅寺",
+        "sourceAddress": "67 CHENGTU ROAD",
+        "currentNameZh": "辅德里公园",
+        "currentAddress": "成都北路、威海路交会处附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          825
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 991,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangming Primary School and Kindergarten",
+        "sourceChineseName": "光明小學、幼稚園",
+        "sourceAddress": "550-72 WEIHAIWEI ROAD",
+        "currentNameZh": "张园西区周边街区",
+        "currentAddress": "泰兴路240号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          991
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 896,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangrentang",
+        "sourceChineseName": "廣仁堂",
+        "sourceAddress": "586-3 CHENGTU ROAD",
+        "currentNameZh": "中华保险华盛大厦地块",
+        "currentAddress": "成都北路609号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          896
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 778,
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence",
+          "claim": "广师第二小学",
+          "problem": "原记录明确为光實第二小學；工作流重新音译改变了字形和对象名称。",
+          "recommendation": "写作光实第二小学，并保留原字形；位置级结论无需因此升级。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=778"
+          ]
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=778",
+          "title": "Virtual Shanghai：建筑 778",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "中文原文为光實第二小學，215-30 North Chekiang Road。",
+          "limitations": ""
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangshi Primary School No. 2",
+        "sourceChineseName": "光實第二小學",
+        "sourceAddress": "215-30 NORTH CHEKIANG ROAD",
+        "currentNameZh": "浙江北路191号周边街区",
+        "currentAddress": "浙江北路191号、海宁路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          778
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1602,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangwutai",
+        "sourceChineseName": "廣舞臺",
+        "sourceAddress": "243 XINGUANG",
+        "currentNameZh": "四川北路街道社区服务街区",
+        "currentAddress": "新广路273号附近",
+        "relationship": "coordinate-only-with-homonym-risk",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1602
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "广舞台与共舞台具有同名近似风险，现有coordinate-only-with-homonym-risk保留必要边界。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1680,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangxue Dalou",
+        "sourceChineseName": "廣學大樓",
+        "sourceAddress": "?? HONGKONG ROAD",
+        "currentNameZh": "广学大楼",
+        "currentAddress": "虎丘路128号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1680
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 229,
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historical identity",
+          "claim": "广学小学",
+          "problem": "context 中原始中文字段为“光學漢校”；旧研究用英文再音译的中文覆盖了已有原文。",
+          "recommendation": "优先保留原中文“光學漢校”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=229"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangxue Primary School",
+        "sourceChineseName": "光學漢校",
+        "sourceAddress": "226-17 ROUTE DE ZIKAWEI",
+        "currentNameZh": "富源公寓周边街区",
+        "currentAddress": "徐家汇路528号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          229
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1570,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangyu Temple",
+        "sourceChineseName": "廣譽堂",
+        "sourceAddress": "661 FAHUAZHEN LU",
+        "currentNameZh": "法华镇路住宅街区",
+        "currentAddress": "法华镇路380号、681弄一带",
+        "relationship": "coordinate-only-with-name-uncertainty",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1570
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "原中文已有廣譽堂，应在后续整理中作为原始字段保留；现代用途仍低置信位置级，暂无待提升的同楼结论。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1588,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangzhao Gongxue",
+        "sourceChineseName": "廣肇公學",
+        "sourceAddress": "123 DONGBAOXING",
+        "currentNameZh": "精武大厦周边街区",
+        "currentAddress": "东宝兴路79号至123号一带",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1588,
+          1590
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "同组1590精武大堂不等于广肇公学校舍证据，当前same-address-later-use-unproven限制正确。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1458,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guangzhao Guild",
+        "sourceChineseName": "廣肇會館",
+        "sourceAddress": "1100 LUCHIAPANG ROAD",
+        "currentNameZh": "PLAYNE新邻及周边街区",
+        "currentAddress": "陆家浜路1100号附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1458
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1572,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guanyin Temple",
+        "sourceChineseName": "觀音寺",
+        "sourceAddress": "650 FAHUA",
+        "currentNameZh": "知音小区（原上海第四化纤厂地块）",
+        "currentAddress": "新华路650—668号一带",
+        "relationship": "demolished-industrialized-then-redeveloped",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          1572
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "候选观音寺—工业—住宅链仍为probable/review；未据同名直接确定寺院旧界。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 374,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gubo Primary School",
+        "sourceChineseName": "古柏小學",
+        "sourceAddress": "197 ROUTE AMIRAL COURBET",
+        "currentNameZh": "富民新村住宅街区",
+        "currentAddress": "富民路177号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          374
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 956,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Gugongyang'an - Taipingsi Temple",
+        "sourceChineseName": "古供養菴 - 太平寺",
+        "sourceAddress": "863/865 CHENGTU ROAD",
+        "currentNameZh": "成都北路854号周边街区",
+        "currentAddress": "成都北路854—865号附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          956
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 63,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guo'en Buddhist Temple",
+        "sourceChineseName": "國恩禅寺",
+        "sourceAddress": "239 ROUTE VOUILLEMONT",
+        "currentNameZh": "上海中医药大学附属曙光医院西院",
+        "currentAddress": "普安路185号一带",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          63
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1354,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guoguang Film Company",
+        "sourceChineseName": "國光影片公司",
+        "sourceAddress": "499 BAOSHAN ROAD",
+        "currentNameZh": "宝山路499弄住宅街区",
+        "currentAddress": "宝山路499弄附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1354,
+          1355
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "与1355商务印书馆总厂共享旧地址，影片公司不可直接继承工厂文保或厂房保存事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1199,
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historicalRoadMappings",
+          "claim": "Gordon Road对应今长寿路西段",
+          "problem": "工作流道路换名与仓库编译器显式映射“GORDON ROAD → 江宁路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+          "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+          "sourceUrls": [],
+          "localEvidence": [
+            "scripts/compile-unresolved-research.mjs"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guohua Junior High School",
+        "sourceChineseName": "國華中學",
+        "sourceAddress": "1103 GORDON ROAD",
+        "currentNameZh": "圣天地商务楼周边街区",
+        "currentAddress": "长寿路1165号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1199
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 860,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Guotai Dancing Hall",
+        "sourceChineseName": "國泰舞廰",
+        "sourceAddress": "451 YUYACHING ROAD",
+        "currentNameZh": "新世界城周边商业街区",
+        "currentAddress": "西藏中路、凤阳路交会处附近",
+        "relationship": "same-address-later-use-unproven",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          860
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1490,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haichao Temple",
+        "sourceChineseName": "海潮寺",
+        "sourceAddress": "?? LIUYUSI JIE",
+        "currentNameZh": "金南新苑住宅街区",
+        "currentAddress": "多稼路118号附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1490
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1731,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "HAIG APARTMENTS",
+        "sourceChineseName": null,
+        "sourceAddress": "343 AVENUE HAIG",
+        "currentNameZh": "海园小区历史建筑群",
+        "currentAddress": "华山路343号、351弄等",
+        "relationship": "same-address-surviving-complex-unproven",
+        "resolutionStatus": "probable",
+        "mapWriteRecommendation": "review",
+        "sameGroupIDs": [
+          1731
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "海园小区名录只到建筑群，旧英文公寓具体栋号仍review，范围限制明确。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 329,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haiguang Primary School",
+        "sourceChineseName": "海光小學",
+        "sourceAddress": "425 ROUTE RAYMOND TENANT DE LA TOUR",
+        "currentNameZh": "襄阳南路444弄周边街区",
+        "currentAddress": "襄阳南路444弄附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          329
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "与004/#327具有相同历史道路名；该条的襄阳南路表述与#327的嘉善路表述冲突，问题集中记录在#327，尚未依据新旧路名档案裁决。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1614,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.hqlib.cn/Web/detail.aspx?ID=6920d493&classID=395&className=",
+          "title": "虹口区图书馆：维多利亚活动影戏园（VICTORIA）",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "记载海宁路24号（今410号）、1909维多利亚、1926新中央、战后海光、1950拆除改建海宁公园。",
+          "limitations": "证明同一场地的时序用途；未独立测绘2026绿地边界，也不把两院名视为同一时期。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haiguang Theater",
+        "sourceChineseName": "海光戲院",
+        "sourceAddress": "410 HAINING ROAD",
+        "currentNameZh": "海宁绿地",
+        "currentAddress": "海宁路、四川北路交会处附近",
+        "relationship": "demolished-park",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1614,
+          1615
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "同组1615原中文新中央大戏院、英文Victoria Theater。来源支持两个历史条目共享后来的场地级公园用途；应分别保留历史院名与时序。具体override guard覆盖由root的pipeline审查处理。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1453,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://www.meet-in-shanghai.net/cn/district-level-cultural-relics-protection-point/the-former-site-of-haihui-temple-300032/",
+          "title": "上海文旅：海会寺旧址",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2025页面列丽园路565号及1944佛殿、1946楼房、1947客房等存留，标为不开放。",
+          "limitations": "支持部分遗存，不支持完整寺院格局仍存或现为开放宗教场所。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haihui Temple (Buddhist)",
+        "sourceChineseName": "海會寺",
+        "sourceAddress": "567 LIYUAN",
+        "currentNameZh": "海会寺旧址",
+        "currentAddress": "丽园路565号",
+        "relationship": "same-site-partial-survival-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          1453
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。",
+        "原记录1942年起始与后续1940年代现存建筑不互相矛盾；不得与006/#1228同名异址海会寺合并。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1228,
+      "reviewLevel": "record-review",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haihuisi Temple",
+        "sourceChineseName": "海會寺",
+        "sourceAddress": "1340 FERRY ROAD",
+        "currentNameZh": "长寿健康主题公园及周边街区",
+        "currentAddress": "长寿路13号附近",
+        "relationship": "coordinate-only-with-homonym-risk",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          1228
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。",
+        "Ferry Road海会寺与丽园路海会寺不同址，已显式分开；没有把1453遗存套入。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 719,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://edu.sh.gov.cn/jyzt_zszz2019_4/20211011/0015-xw_99851.html",
+          "title": "上海市教委：学校资料（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "政府教育资料列塘沽学校海宁路830号。",
+          "limitations": "页面内容年代较早，只证明该时点教育使用，不当作2026年实时在营核验。"
+        },
+        {
+          "url": "https://edu.sh.gov.cn/gqzszc_jaq/20210430/c4eede19bcfd446aa31a8ace961993a7.html",
+          "title": "上海市教委：2021招生相关资料（搜索摘录）",
+          "accessMethod": "search-result-excerpt",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2021学校地址线索与海宁路830号相符。",
+          "limitations": "没有完整读取校址历史档案；未由旧招生表推定2026年具体开班。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haining Road Police Station",
+        "sourceChineseName": "海寧路巡捕房",
+        "sourceAddress": "830 HAINING ROAD",
+        "currentNameZh": "上海市塘沽学校海宁路校舍（西虹口捕房旧址）",
+        "currentAddress": "海宁路830号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          719
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 215,
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "findings": [
+        {
+          "severity": "P2",
+          "field": "evidence / historicalRoadMappings",
+          "claim": "Route du Pere Froc对应重庆南路",
+          "problem": "工作流道路换名与仓库编译器显式映射“ROUTE DU PERE FROC → 合肥路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+          "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+          "sourceUrls": [],
+          "localEvidence": [
+            "scripts/compile-unresolved-research.mjs"
+          ]
+        }
+      ],
+      "sourceReviews": [],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Haixing Primary School",
+        "sourceChineseName": "私立海星小學",
+        "sourceAddress": "630 ROUTE DU PERE FROC",
+        "currentNameZh": "万宜坊住宅街区",
+        "currentAddress": "重庆南路207号、合肥路口附近",
+        "relationship": "coordinate-only",
+        "resolutionStatus": "location-only",
+        "mapWriteRecommendation": "location-only",
+        "sameGroupIDs": [
+          215
+        ],
+        "mappedOverrideCount": 0
+      },
+      "reviewNotes": [
+        "此条只给出现代坐标附近用途，关系与推荐均保持位置级；本轮未将 POI 邻近、同名或同路号当作同楼/机构承继证据。"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 547,
+      "reviewLevel": "source-recheck",
+      "verdict": "no-issue-found",
+      "findings": [],
+      "sourceReviews": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "第二批优秀历史建筑：汉弥登大楼",
+          "accessMethod": "web-open-full-text",
+          "readThisRound": true,
+          "accessedAt": "2026-09-18",
+          "supports": "2A037，汉弥登大楼→福州大楼，江西中路170号。",
+          "limitations": "名录确认名称/建筑/门牌；名录现名和旧机构使用栏不等于2026最新租户调查。"
+        }
+      ],
+      "queries": [],
+      "recordReview": {
+        "historicalName": "Hamilton House",
+        "sourceChineseName": null,
+        "sourceAddress": "170 KIANGSE ROAD",
+        "currentNameZh": "福州大楼（汉弥登大楼）",
+        "currentAddress": "江西中路170号",
+        "relationship": "same-building-repurposed",
+        "resolutionStatus": "resolved",
+        "mapWriteRecommendation": "yes",
+        "sameGroupIDs": [
+          547
+        ],
+        "mappedOverrideCount": 1
+      },
+      "reviewNotes": [
+        "逐项检查历史身份、门牌、时序、当前字段与推荐强度；未重读的来源不计入本轮源核，未发现新增可证实问题不等于独立验证全部事实。"
+      ]
+    }
+  ]
+}

@@ -16,6 +16,12 @@ npm run dev
 
 调查覆盖按 IDBAT 记录，见 [调查进度](research/PROGRESS.md)。外部研究原件及输入快照保存在 `research/external/`，补充评审与原作者结论分别保留。
 
+001—010 的结果质量检查见 [2026-09-18 复核报告](research/rechecks/2026-09-18-001-010/README.md)：500条完整审阅，其中19条需纠正、81条需补证；网页重读范围单独列明，原结果与地图尚未修订。
+
+023—032 的最新复查见 [2026-09-17—18 复查报告](research/rechecks/2026-09-17-023-032/README.md)。该目录保存本轮逐条结果、证据、空间核验和待补事项；原批次文件保留作历史版本。`research:progress` 目前统计原有调查登记，不包含此复查目录，也不表示已回填地图。
+
+Public bath 的追加研究见 [2026-09-18 历史佐证补查](research/supplemental/2026-09-18-public-baths/README.md)：重新检索38条浴室及1条分类冲突记录，保留可读网页、原件图像页码及未解问题。该专项也尚未登记进旧进度脚本，地图未回填。
+
 运行 `npm run research:progress` 会核验已登记外部文件的校验和及记录一致性，并更新当前 JSON 文件与调查进度的对照表。`npm run research:unresolved:prepare -- NNN` 会跳过已有外部调查或正在补证的记录。登记进度不会执行地图回填。
 
 ## 验证

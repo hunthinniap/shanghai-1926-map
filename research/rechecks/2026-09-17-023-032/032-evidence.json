@@ -1,0 +1,3384 @@
+{
+  "inputFileName": "research/unresolved-landmarks/032-input.json",
+  "inputSha256": "b0fc66eef32014980d9f841eee28e1bdd481ae2da1c3326a26582f99cd7c3680",
+  "inputIds": [
+    1163,
+    1166,
+    1167,
+    1192,
+    1226,
+    1227,
+    1144,
+    1790,
+    1791,
+    1792
+  ],
+  "researchedAt": "2026-09-17",
+  "recordCount": 10,
+  "previousMaterials": [
+    "research/unresolved-landmarks/032-a.json",
+    "research/unresolved-landmarks/032-b.json",
+    "research/unresolved-landmarks/032-c.json",
+    "research/unresolved-landmarks/032-evidence.json",
+    "research/unresolved-landmarks/032-input.json",
+    "research/unresolved-landmarks/032-results.json",
+    "research/unresolved-landmarks/032-review.md",
+    "research/unresolved-landmarks/032-validation-2026-09-15.json",
+    "scripts/data/unresolved-landmarks-032-research.json"
+  ],
+  "validation": {
+    "executionStatus": "executed",
+    "result": "passed",
+    "checks": [
+      "fixed input SHA-256/order and complete originalInput",
+      "strict eight fields; evidence schema; status combinations",
+      "six dimensions; source reviews; recorded queries; conclusions aligned",
+      "complete group membership and direct independent proj4 conversions",
+      "all baseline research/source/map bytes unchanged",
+      "public feature count and road count unchanged"
+    ],
+    "failures": [],
+    "executedAt": "2026-09-18T01:25:14.036829+00:00",
+    "report": "validation.json"
+  },
+  "records": [
+    {
+      "IDBAT": 1163,
+      "originalInput": {
+        "IDBAT": 1163,
+        "NAME": "Primary School",
+        "F_ADDRESS": "632-17 CONNAUGHT ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 351413.9983,
+        "YC": 3456742.0859
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1163",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "632-17 CONNAUGHT ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（632-17 CONNAUGHT ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"康定路632弄17\" 小学",
+          "\"632\" \"CONNAUGHT\" school Shanghai"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"康定路632弄17\" 小学",
+        "\"632\" \"CONNAUGHT\" school Shanghai"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"康定路632弄17\" 小学",
+            "\"632\" \"CONNAUGHT\" school Shanghai"
+          ],
+          "requestQueries": [
+            "\"康定路632弄17\" 小学",
+            "\"632\" \"CONNAUGHT\" school Shanghai",
+            "\"康定路520号\" 学校",
+            "\"康腦脫路\" \"520\" 小學"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Connaught School for Girls | Educational establishment | Planning Data",
+              "url": "https://www.planning.data.gov.uk/entity/3138457"
+            },
+            {
+              "title": "Connaught School for Girls - GOV.UK",
+              "url": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/139293?searchQueryString=tok%3D8TBfY1Wc%26startIndex%3D2500%26Count%3D13948"
+            },
+            {
+              "title": "34010261phip",
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2014/1015/a3864/ehua-20140926-12.pdf"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?pn=20"
+            },
+            {
+              "title": "School report",
+              "url": "https://files.ofsted.gov.uk/v1/file/50125509"
+            },
+            {
+              "title": "Old Shanghai Buildings - Histoire de Chine",
+              "url": "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School"
+            },
+            {
+              "title": "34010261phip",
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2014/1015/ltn20141015082.pdf"
+            },
+            {
+              "title": "BANK OF COMMUNICATIONSSHANGHAI BRANCH : 889 AVENUE JOFFRE, SHANGHAI.",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+            },
+            {
+              "title": "大阪府大阪市中央区平野町四丁目１番２号（大阪ガスビル７階）",
+              "url": "https://www.jfe-eng.co.jp/products/catalog/pdf/CA8004.pdf"
+            },
+            {
+              "title": "Connaught School for Girls — London | School Facts UK",
+              "url": "https://schoolfacts.co.uk/school/connaught-school-for-girls-139293"
+            },
+            {
+              "title": "公報編號Journal No.: 632",
+              "url": "https://www.ipd.gov.hk/hkipjournal/15052015/0000000668_20.pdf"
+            },
+            {
+              "title": "Connaught School for Girls | What School",
+              "url": "https://whatschool.ai/en/school/connaught-school-for-girls-london"
+            },
+            {
+              "title": "Connaught School for Girls",
+              "url": "https://en.wikipedia.org/wiki/Connaught_School_for_Girls"
+            },
+            {
+              "title": "Connaught School for Girls — Secondary School in London | Schools in England",
+              "url": "https://schoolsinengland.co.uk/london/waltham-forest/connaught-school-for-girls-139293"
+            },
+            {
+              "title": "Connaught School for Girls - WikiMili, The Best Wikipedia Reader",
+              "url": "https://wikimili.com/en/Connaught_School_for_Girls"
+            },
+            {
+              "title": "Connaught on Mornington - Route 20 - London Transit Arrival Predictions - TransSee",
+              "url": "https://www.transsee.ca/predict?s=london.20.MORNCON1"
+            },
+            {
+              "title": "Connaught School for Girls vs Norlington School and 6th Form: Compare Schools",
+              "url": "https://findgreatschools.co.uk/compare/connaught-school-for-girls-vs-norlington-school-and-6th-form-139293-143385"
+            },
+            {
+              "title": "Contact Us | K. Wah Group",
+              "url": "https://abc.kwah.com/en-us/contacts/index"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1163",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1163",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1163；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。",
+      "addressEvidence": "原始门牌 632-17 CONNAUGHT ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1163",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1163"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1163"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.439816,
+          "latitude": 31.23542
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1163,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "632-17 CONNAUGHT ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 351413.9983,
+          "YC": 3456742.0859,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.439816,
+            "latitude": 31.23542
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1163",
+          "assessment": "本条独立核查；原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。",
+          "action": "按原门牌 632-17 CONNAUGHT ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原记录为康脑脱路632-17的私立小学，未记专名或年代。中英文精确门牌检索未找到可确认学校的独立沿革；同弄其他门牌工商信息不能代替17号。现代校址、建筑存废及现用途均未建立对应。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今康定路（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1163",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1163",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1163；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1163",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1166,
+      "originalInput": {
+        "IDBAT": 1166,
+        "NAME": "Primary School",
+        "F_ADDRESS": "520 CONNAUGHT ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 351589.9198,
+        "YC": 3456763.7933
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1166",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "520 CONNAUGHT ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（520 CONNAUGHT ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"康定路520号\" 学校",
+          "\"康腦脫路\" \"520\" 小學"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"康定路520号\" 学校",
+        "\"康腦脫路\" \"520\" 小學"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"康定路520号\" 学校",
+            "\"康腦脫路\" \"520\" 小學"
+          ],
+          "requestQueries": [
+            "\"康定路632弄17\" 小学",
+            "\"632\" \"CONNAUGHT\" school Shanghai",
+            "\"康定路520号\" 学校",
+            "\"康腦脫路\" \"520\" 小學"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Connaught School for Girls | Educational establishment | Planning Data",
+              "url": "https://www.planning.data.gov.uk/entity/3138457"
+            },
+            {
+              "title": "Connaught School for Girls - GOV.UK",
+              "url": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/139293?searchQueryString=tok%3D8TBfY1Wc%26startIndex%3D2500%26Count%3D13948"
+            },
+            {
+              "title": "34010261phip",
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2014/1015/a3864/ehua-20140926-12.pdf"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?pn=20"
+            },
+            {
+              "title": "School report",
+              "url": "https://files.ofsted.gov.uk/v1/file/50125509"
+            },
+            {
+              "title": "Old Shanghai Buildings - Histoire de Chine",
+              "url": "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School"
+            },
+            {
+              "title": "34010261phip",
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2014/1015/ltn20141015082.pdf"
+            },
+            {
+              "title": "BANK OF COMMUNICATIONSSHANGHAI BRANCH : 889 AVENUE JOFFRE, SHANGHAI.",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+            },
+            {
+              "title": "大阪府大阪市中央区平野町四丁目１番２号（大阪ガスビル７階）",
+              "url": "https://www.jfe-eng.co.jp/products/catalog/pdf/CA8004.pdf"
+            },
+            {
+              "title": "Connaught School for Girls — London | School Facts UK",
+              "url": "https://schoolfacts.co.uk/school/connaught-school-for-girls-139293"
+            },
+            {
+              "title": "公報編號Journal No.: 632",
+              "url": "https://www.ipd.gov.hk/hkipjournal/15052015/0000000668_20.pdf"
+            },
+            {
+              "title": "Connaught School for Girls | What School",
+              "url": "https://whatschool.ai/en/school/connaught-school-for-girls-london"
+            },
+            {
+              "title": "Connaught School for Girls",
+              "url": "https://en.wikipedia.org/wiki/Connaught_School_for_Girls"
+            },
+            {
+              "title": "Connaught School for Girls — Secondary School in London | Schools in England",
+              "url": "https://schoolsinengland.co.uk/london/waltham-forest/connaught-school-for-girls-139293"
+            },
+            {
+              "title": "Connaught School for Girls - WikiMili, The Best Wikipedia Reader",
+              "url": "https://wikimili.com/en/Connaught_School_for_Girls"
+            },
+            {
+              "title": "Connaught on Mornington - Route 20 - London Transit Arrival Predictions - TransSee",
+              "url": "https://www.transsee.ca/predict?s=london.20.MORNCON1"
+            },
+            {
+              "title": "Connaught School for Girls vs Norlington School and 6th Form: Compare Schools",
+              "url": "https://findgreatschools.co.uk/compare/connaught-school-for-girls-vs-norlington-school-and-6th-form-139293-143385"
+            },
+            {
+              "title": "Contact Us | K. Wah Group",
+              "url": "https://abc.kwah.com/en-us/contacts/index"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1166",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1166",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1166；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。",
+      "addressEvidence": "原始门牌 520 CONNAUGHT ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1166",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1166"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1166"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.441659,
+          "latitude": 31.235638
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1166,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "520 CONNAUGHT ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 351589.9198,
+          "YC": 3456763.7933,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.441659,
+            "latitude": 31.235638
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1166",
+          "assessment": "本条独立核查；原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。",
+          "action": "按原门牌 520 CONNAUGHT ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原记录仅称康脑脱路520号小学。针对旧英文门牌与今康定路的学校检索未形成具体身份链，亦不能由同路的502号通州中学反推本条。现代对象和原校地现用途仍无可靠对应。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今康定路（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1166",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1166",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1166；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1166",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1167,
+      "originalInput": {
+        "IDBAT": 1167,
+        "NAME": "Primary School",
+        "F_ADDRESS": "560-21 FERRY ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 351661.6666,
+        "YC": 3456882.0949
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1167",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "560-21 FERRY ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（560-21 FERRY ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"小沙渡路\" \"560\" 小学",
+          "\"西康路560弄21\" 学校"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"小沙渡路\" \"560\" 小学",
+        "\"西康路560弄21\" 学校"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"小沙渡路\" \"560\" 小学",
+            "\"西康路560弄21\" 学校"
+          ],
+          "requestQueries": [
+            "\"小沙渡路\" \"560\" 小学",
+            "\"西康路560弄21\" 学校",
+            "\"长寿路3196\" 小学",
+            "\"3196\" \"ROBISON ROAD\" school"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Old Shanghai Buildings - Histoire de Chine",
+              "url": "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            },
+            {
+              "title": "文汇报 www.whb.cn 2022年9月24日 星期六",
+              "url": "https://dzb.whb.cn/imgPath/2022-09-24/50924.pdf"
+            },
+            {
+              "title": "上海这几处鲜为人知的“红色史迹”，周恩来邓小平曾在此活动过",
+              "url": "https://www.jfdaily.com/wx/detail.do?id=160780"
+            },
+            {
+              "title": "製 品 種 目冥 空 管 類可聽周波裝置測定用真空管・特殊増幅管・発振管・整流管・瓦斯入制御管・",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/NDL1138803_%E6%98%A0%E7%94%BB%E5%B9%B4%E9%91%91_%E6%98%AD%E5%92%8C18_part5.pdf"
+            },
+            {
+              "title": "当大自鸣钟在小沙渡路响起……",
+              "url": "https://www.jfdaily.com/wx/detail.do?id=532200"
+            },
+            {
+              "title": "Texas Public Schools Contact Numbers - Arroba Simbolo",
+              "url": "https://www.coursesafter10th.com/schools/texas-public-schools-contact-numbers/"
+            },
+            {
+              "title": "西康路上老建筑_高参88_新浪博客",
+              "url": "https://blog.sina.com.cn/s/blog_5d1bdf480101i53b.html"
+            },
+            {
+              "title": "Pa Bulletin",
+              "url": "https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol53/53-31/53-31.pdf"
+            },
+            {
+              "title": "南京市公交线路表 - 维基百科，自由的百科全书",
+              "url": "https://wiki.southaki.top/wiki/%E5%8D%97%E4%BA%AC%E5%B8%82%E5%85%AC%E4%BA%A4%E7%BA%BF%E8%B7%AF%E8%A1%A8"
+            },
+            {
+              "title": "Untitled Document",
+              "url": "https://lingua.mtsu.edu/chinese-computing/references/combined/view.php?Which=ICTCLAS"
+            },
+            {
+              "title": "Real Estate Agent - Rosio Robison | Your Local Expert in Avondale, AZ",
+              "url": "https://www.realty.com/real-estate-agents/227583/rosio_robison"
+            },
+            {
+              "title": "上海滩国际会所 _ DMX _ letou体育国米网 _ 最集中的音响人社区_音响|灯光|视频|专业|门户|网站 - Powered by 7y5lcw.com",
+              "url": "https://7y5lcw.com/thread-288219-1-1.html"
+            },
+            {
+              "title": "普陀区志 | PDF",
+              "url": "https://www.scribd.com/document/732630916/%E6%99%AE%E9%99%80%E5%8C%BA%E5%BF%97"
+            },
+            {
+              "title": "〖科小入库〗江苏省2023年第5批入库科技型中小企业名单",
+              "url": "https://www.ipzhihu.com/NewsDetail/4562230.html"
+            },
+            {
+              "title": "中奖用户名单 预约用户ID 预约用户手机号预约省份预约城市预约门店名称 5092****6839 1",
+              "url": "https://www.yonghui.cn/upload/content/file/2020/20200410154940_3061.pdf"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1167",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1167",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1167；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海这几处鲜为人知的“红色史迹”，周恩来邓小平曾在此活动过",
+          "url": "https://www.jfdaily.com/wx/detail.do?id=160780",
+          "publisher": "www.jfdaily.com",
+          "publishedAt": null,
+          "accessMethod": "search-snippet",
+          "locator": "本轮检索返回的相关段落摘要",
+          "supports": [
+            "只提供小沙渡路合兴坊560弄15号中央文库线索，与输入21号区分。"
+          ],
+          "limitations": [
+            "本条未据此确认21号学校；未把15号拆除描述外推整弄。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.jfdaily.com"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。",
+      "addressEvidence": "原始门牌 560-21 FERRY ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1167",
+            "https://www.jfdaily.com/wx/detail.do?id=160780",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1167"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1167"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.442395,
+          "latitude": 31.236714
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1167,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "560-21 FERRY ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 351661.6666,
+          "YC": 3456882.0949,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.442395,
+            "latitude": 31.236714
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1167",
+          "assessment": "本条独立核查；原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。",
+          "action": "按原门牌 560-21 FERRY ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原小沙渡路560-21小学的独立校名尚未查明；旧Ferry Road应沿西康路调查。合兴坊560弄15号中央文库旧址资料涉及另一幢，不证明21号学校的存废或现用；不把中央文库移作本条现代名称。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今东大名路/杨树浦路分段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1167",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1167",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1167；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.jfdaily.com/wx/detail.do?id=160780",
+            "method": "search-snippet",
+            "readThisRound": true,
+            "locator": "本轮检索返回的相关段落摘要",
+            "notes": [
+              "本条未据此确认21号学校；未把15号拆除描述外推整弄。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1167",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1192,
+      "originalInput": {
+        "IDBAT": 1192,
+        "NAME": "Primary School",
+        "F_ADDRESS": "3196 ROBISON ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 350720.2313,
+        "YC": 3457446.4251
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1192",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "3196 ROBISON ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（3196 ROBISON ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"长寿路3196\" 小学",
+          "\"3196\" \"ROBISON ROAD\" school"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"长寿路3196\" 小学",
+        "\"3196\" \"ROBISON ROAD\" school"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"长寿路3196\" 小学",
+            "\"3196\" \"ROBISON ROAD\" school"
+          ],
+          "requestQueries": [
+            "\"小沙渡路\" \"560\" 小学",
+            "\"西康路560弄21\" 学校",
+            "\"长寿路3196\" 小学",
+            "\"3196\" \"ROBISON ROAD\" school"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Old Shanghai Buildings - Histoire de Chine",
+              "url": "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=School"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            },
+            {
+              "title": "文汇报 www.whb.cn 2022年9月24日 星期六",
+              "url": "https://dzb.whb.cn/imgPath/2022-09-24/50924.pdf"
+            },
+            {
+              "title": "上海这几处鲜为人知的“红色史迹”，周恩来邓小平曾在此活动过",
+              "url": "https://www.jfdaily.com/wx/detail.do?id=160780"
+            },
+            {
+              "title": "製 品 種 目冥 空 管 類可聽周波裝置測定用真空管・特殊増幅管・発振管・整流管・瓦斯入制御管・",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/NDL1138803_%E6%98%A0%E7%94%BB%E5%B9%B4%E9%91%91_%E6%98%AD%E5%92%8C18_part5.pdf"
+            },
+            {
+              "title": "当大自鸣钟在小沙渡路响起……",
+              "url": "https://www.jfdaily.com/wx/detail.do?id=532200"
+            },
+            {
+              "title": "Texas Public Schools Contact Numbers - Arroba Simbolo",
+              "url": "https://www.coursesafter10th.com/schools/texas-public-schools-contact-numbers/"
+            },
+            {
+              "title": "西康路上老建筑_高参88_新浪博客",
+              "url": "https://blog.sina.com.cn/s/blog_5d1bdf480101i53b.html"
+            },
+            {
+              "title": "Pa Bulletin",
+              "url": "https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol53/53-31/53-31.pdf"
+            },
+            {
+              "title": "南京市公交线路表 - 维基百科，自由的百科全书",
+              "url": "https://wiki.southaki.top/wiki/%E5%8D%97%E4%BA%AC%E5%B8%82%E5%85%AC%E4%BA%A4%E7%BA%BF%E8%B7%AF%E8%A1%A8"
+            },
+            {
+              "title": "Untitled Document",
+              "url": "https://lingua.mtsu.edu/chinese-computing/references/combined/view.php?Which=ICTCLAS"
+            },
+            {
+              "title": "Real Estate Agent - Rosio Robison | Your Local Expert in Avondale, AZ",
+              "url": "https://www.realty.com/real-estate-agents/227583/rosio_robison"
+            },
+            {
+              "title": "上海滩国际会所 _ DMX _ letou体育国米网 _ 最集中的音响人社区_音响|灯光|视频|专业|门户|网站 - Powered by 7y5lcw.com",
+              "url": "https://7y5lcw.com/thread-288219-1-1.html"
+            },
+            {
+              "title": "普陀区志 | PDF",
+              "url": "https://www.scribd.com/document/732630916/%E6%99%AE%E9%99%80%E5%8C%BA%E5%BF%97"
+            },
+            {
+              "title": "〖科小入库〗江苏省2023年第5批入库科技型中小企业名单",
+              "url": "https://www.ipzhihu.com/NewsDetail/4562230.html"
+            },
+            {
+              "title": "中奖用户名单 预约用户ID 预约用户手机号预约省份预约城市预约门店名称 5092****6839 1",
+              "url": "https://www.yonghui.cn/upload/content/file/2020/20200410154940_3061.pdf"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1192",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1192",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1192；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。",
+      "addressEvidence": "原始门牌 3196 ROBISON ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1192",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1192"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1192"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.432429,
+          "latitude": 31.241684
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1192,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "3196 ROBISON ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 350720.2313,
+          "YC": 3457446.4251,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.432429,
+            "latitude": 31.241684
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1192",
+          "assessment": "本条独立核查；原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。",
+          "action": "按原门牌 3196 ROBISON ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原记录为劳勃生路3196号小学，门牌原样保留，不拆成31弄96号。中英文精确门牌检索未检出可核对的校名或地籍换号证据；今长寿路道路线索不足以确定原校地现代用途。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今长寿路（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1192",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1192",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1192；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1192",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1226,
+      "originalInput": {
+        "IDBAT": 1226,
+        "NAME": "Primary School",
+        "F_ADDRESS": "1328 FERRY ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 351004.0419,
+        "YC": 3457803.7512
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1226",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "1328 FERRY ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（1328 FERRY ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"小沙渡路1328\" 小学",
+          "\"西康路1328号\" 历史 学校"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"小沙渡路1328\" 小学",
+        "\"西康路1328号\" 历史 学校"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"小沙渡路1328\" 小学",
+            "\"西康路1328号\" 历史 学校"
+          ],
+          "requestQueries": [
+            "\"小沙渡路1328\" 小学",
+            "\"西康路1328号\" 历史 学校",
+            "\"小沙渡路\" \"1385\" 小學",
+            "\"1385-A\" \"FERRY ROAD\""
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "沪西清真寺",
+              "url": "https://zh.wikipedia.org/wiki/%E6%B2%AA%E8%A5%BF%E6%B8%85%E7%9C%9F%E5%AF%BA"
+            },
+            {
+              "title": "",
+              "url": "https://www.oldkids.cn/blog/view.php?bid=867500"
+            },
+            {
+              "title": "編成晚計錄查調關機化文國全中華民國二年夏出城●版出日不● 行發店書文龍許氏工商服務所作 工 何 任 界 商 工 辨 接詳章",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+            },
+            {
+              "title": "1683 Route 9, Halfmoon, NY - Former Restaurant Space Available - Realmo",
+              "url": "https://realmo.com/listing/11767770"
+            },
+            {
+              "title": "超级医王（人生几渡） - 图书馆",
+              "url": "https://cndo.cn/library/book/70266.html"
+            },
+            {
+              "title": "西康路的前世今生。",
+              "url": "https://www.meipian.cn/bsbs3h3"
+            },
+            {
+              "title": "上海市清真寺",
+              "url": "https://www.muslimwww.com/contents/3861/126210.html"
+            },
+            {
+              "title": "Federal Register / Vol. 52, No. 59 / Friday, March 27, 1987 / Notices 9943",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1987-03-27/pdf/FR-1987-03-27.pdf"
+            },
+            {
+              "title": "MVI Stations Search Locations",
+              "url": "https://apps.mshp.dps.mo.gov/HP81Web/stationLocations.jsp"
+            },
+            {
+              "title": "柯南之我不是蛇精病最新章节列表_奈可小说",
+              "url": "https://naikexs.com/book/51811/"
+            },
+            {
+              "title": "中国惊奇先生漫画在线观看漫画最新章节-1756 大型社死在线阅读-漫画地带网",
+              "url": "https://www.11zone.com/11book/61307520/2137345/"
+            },
+            {
+              "title": "RULES AND REGULATIONS 13649",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1967-09-29/pdf/FR-1967-09-29.pdf"
+            },
+            {
+              "title": "Federal Register / Vol. 51, No. 97 / Tuesday, May 20, 1986 / Notices",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1986-05-20/pdf/FR-1986-05-20.pdf"
+            },
+            {
+              "title": "阴间商人(道门老九)_全文免费阅读_最新章节-爱书网",
+              "url": "https://www.asxs1.com/book/txtid4835.htm"
+            },
+            {
+              "title": "2026 Variance Cases | Brookhaven, GA",
+              "url": "https://www.brookhavenga.gov/1055/2026-Variance-Cases"
+            },
+            {
+              "title": "帝国吃相(牧尘客)_帝国吃相小说全文免费阅读_斗破小说网",
+              "url": "https://www.dpcq6.com/diguochixiang/"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?pn=21"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1226",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1226",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1226；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。",
+      "addressEvidence": "原始门牌 1328 FERRY ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1226",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1226"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1226"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.435355,
+          "latitude": 31.244944
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1226,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "1328 FERRY ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 351004.0419,
+          "YC": 3457803.7512,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.435355,
+            "latitude": 31.244944
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1226",
+          "assessment": "本条独立核查；原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。",
+          "action": "按原门牌 1328 FERRY ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原小沙渡路1328号小学仍缺专名与存废沿革。检索中的常德路1328号清真寺及劳勃生路1328号学校属于不同道路，已排除；不能把同号或附近学校当作今西康路原地块结论。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今东大名路/杨树浦路分段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1226",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1226",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1226；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1226",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1227,
+      "originalInput": {
+        "IDBAT": 1227,
+        "NAME": "Primary School",
+        "F_ADDRESS": "1385-A FERRY ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Primary",
+        "XC": 350966.7821,
+        "YC": 3457757.9082
+      },
+      "historicalContext": {
+        "nameZh": "小學校",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1227",
+        "notes": null,
+        "originalName": "Primary School",
+        "originalAddress": "1385-A FERRY ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“Primary School”（1385-A FERRY ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"小沙渡路\" \"1385\" 小學",
+          "\"1385-A\" \"FERRY ROAD\""
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"小沙渡路\" \"1385\" 小學",
+        "\"1385-A\" \"FERRY ROAD\""
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"小沙渡路\" \"1385\" 小學",
+            "\"1385-A\" \"FERRY ROAD\""
+          ],
+          "requestQueries": [
+            "\"小沙渡路1328\" 小学",
+            "\"西康路1328号\" 历史 学校",
+            "\"小沙渡路\" \"1385\" 小學",
+            "\"1385-A\" \"FERRY ROAD\""
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "沪西清真寺",
+              "url": "https://zh.wikipedia.org/wiki/%E6%B2%AA%E8%A5%BF%E6%B8%85%E7%9C%9F%E5%AF%BA"
+            },
+            {
+              "title": "",
+              "url": "https://www.oldkids.cn/blog/view.php?bid=867500"
+            },
+            {
+              "title": "編成晚計錄查調關機化文國全中華民國二年夏出城●版出日不● 行發店書文龍許氏工商服務所作 工 何 任 界 商 工 辨 接詳章",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+            },
+            {
+              "title": "1683 Route 9, Halfmoon, NY - Former Restaurant Space Available - Realmo",
+              "url": "https://realmo.com/listing/11767770"
+            },
+            {
+              "title": "超级医王（人生几渡） - 图书馆",
+              "url": "https://cndo.cn/library/book/70266.html"
+            },
+            {
+              "title": "西康路的前世今生。",
+              "url": "https://www.meipian.cn/bsbs3h3"
+            },
+            {
+              "title": "上海市清真寺",
+              "url": "https://www.muslimwww.com/contents/3861/126210.html"
+            },
+            {
+              "title": "Federal Register / Vol. 52, No. 59 / Friday, March 27, 1987 / Notices 9943",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1987-03-27/pdf/FR-1987-03-27.pdf"
+            },
+            {
+              "title": "MVI Stations Search Locations",
+              "url": "https://apps.mshp.dps.mo.gov/HP81Web/stationLocations.jsp"
+            },
+            {
+              "title": "柯南之我不是蛇精病最新章节列表_奈可小说",
+              "url": "https://naikexs.com/book/51811/"
+            },
+            {
+              "title": "中国惊奇先生漫画在线观看漫画最新章节-1756 大型社死在线阅读-漫画地带网",
+              "url": "https://www.11zone.com/11book/61307520/2137345/"
+            },
+            {
+              "title": "RULES AND REGULATIONS 13649",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1967-09-29/pdf/FR-1967-09-29.pdf"
+            },
+            {
+              "title": "Federal Register / Vol. 51, No. 97 / Tuesday, May 20, 1986 / Notices",
+              "url": "https://www.govinfo.gov/content/pkg/FR-1986-05-20/pdf/FR-1986-05-20.pdf"
+            },
+            {
+              "title": "阴间商人(道门老九)_全文免费阅读_最新章节-爱书网",
+              "url": "https://www.asxs1.com/book/txtid4835.htm"
+            },
+            {
+              "title": "2026 Variance Cases | Brookhaven, GA",
+              "url": "https://www.brookhavenga.gov/1055/2026-Variance-Cases"
+            },
+            {
+              "title": "帝国吃相(牧尘客)_帝国吃相小说全文免费阅读_斗破小说网",
+              "url": "https://www.dpcq6.com/diguochixiang/"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?pn=21"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1227",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1227",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1227；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "仅记录本轮访问失败，非现代对应证据。"
+          ],
+          "limitations": [
+            "本轮精确ID详情打开失败或空正文；匹配ID历史字段来自固定context内live快照，未把访问失败当不存在。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。",
+      "addressEvidence": "原始门牌 1385-A FERRY ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1227",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1227"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1227"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.434971,
+          "latitude": 31.244525
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1227,
+          "name": "Primary School",
+          "nameZh": "小學校",
+          "address": "1385-A FERRY ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 350966.7821,
+          "YC": 3457757.9082,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.434971,
+            "latitude": 31.244525
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1227",
+          "assessment": "本条独立核查；原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。",
+          "action": "按原门牌 1385-A FERRY ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原小沙渡路1385-A小学未获得独立校名或现代原址资料，A后缀保留。英文Ferry Road同号检索出现海外房产，不能用于上海原点；原地块用途尚未查明，详情页访问失败另记于证据日志。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今东大名路/杨树浦路分段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1227",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "inaccessible",
+          "notes": [
+            "本轮精确ID详情打开失败或空正文；匹配ID历史字段来自固定context内live快照，未把访问失败当不存在。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1227",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1227；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮精确ID详情打开失败或空正文；匹配ID历史字段来自固定context内live快照，未把访问失败当不存在。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1227",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1144,
+      "originalInput": {
+        "IDBAT": 1144,
+        "NAME": null,
+        "F_ADDRESS": "159-5 CONNAUGHT ROAD",
+        "FUNCTION": "Educational facility / School / Private / Secular / Kindergarten / Primary",
+        "XC": 352189.4135,
+        "YC": 3456960.7927
+      },
+      "historicalContext": {
+        "nameZh": "上海小學幼稚園",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1144",
+        "notes": null,
+        "originalName": null,
+        "originalAddress": "159-5 CONNAUGHT ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“未命名记录”（159-5 CONNAUGHT ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"上海小学幼稚园\" \"康定\"",
+          "\"上海小學幼稚園\" \"159\"",
+          "\"康定路159弄5号\" 学校",
+          "\"上海小学\" \"159\" 康定路"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"上海小学幼稚园\" \"康定\"",
+        "\"上海小學幼稚園\" \"159\"",
+        "\"康定路159弄5号\" 学校",
+        "\"上海小学\" \"159\" 康定路"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"上海小学幼稚园\" \"康定\"",
+            "\"上海小學幼稚園\" \"159\""
+          ],
+          "requestQueries": [
+            "\"树标识小学\" 上海",
+            "\"樹標識小學\" \"新閘\"",
+            "\"上海小学幼稚园\" \"康定\"",
+            "\"上海小學幼稚園\" \"159\""
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "关于印发《上海市推进儿童友好城市建设三年行动方案（2026-2028年）》的通知_其他",
+              "url": "https://fgw.sh.gov.cn/fgw_zhglqt/20260317/27bc629f2ccb448ba91038b7608e4947.html"
+            },
+            {
+              "title": "Old Shanghai Buildings - Histoire de Chine",
+              "url": "https://www.histoire-chine.fr/shanghai-buildings/?entity_name=Kindergarten"
+            },
+            {
+              "title": "上海市市西中学",
+              "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B8%82%E8%A5%BF%E4%B8%AD%E5%AD%A6"
+            },
+            {
+              "title": "2024 年3 月30 日",
+              "url": "https://news.sues.edu.cn/_upload/article/files/bb/d9/cabfa2cc4ab88ae4feaa29ebe280/8a273651-6802-4def-ad61-7e71760a9807.pdf"
+            },
+            {
+              "title": "关于我们",
+              "url": "https://www.shwfl.edu.cn/about/list.htm"
+            },
+            {
+              "title": "www.whb.cn 2024年12月12日星期四 6 教卫 编辑/李相如 ■提升青少年体质的“上海",
+              "url": "https://dzb.whb.cn/imgPath/2024-12-12/61212.pdf"
+            },
+            {
+              "title": "让每个孩子享有公平而有质量的教育",
+              "url": "https://yangtze.silkroadinfo.org.cn/2020/1207/c682a4166018/page.htm"
+            },
+            {
+              "title": "推动党团队一体化建设！中山市香山小学开展党建带队建植树活动",
+              "url": "https://zsrbapp.zsnews.cn/home/content/newsContent/New_view_1220.html/663971"
+            },
+            {
+              "title": "专题 文汇报 www.whb.cn 2018年5月30日 星期三 6—7 莫基伟业：为办好人民满",
+              "url": "https://dzb.whb.cn/images/2018-05/30/6-7/6-70530.pdf"
+            },
+            {
+              "title": "上海市各区学区房全面攻略 - 爱贝亲子网",
+              "url": "https://www.i-bei.com/baby/thread-17315-1-1.html"
+            },
+            {
+              "title": "上海市崇明区陈家镇国民经济和社会发展第十五个五年规划纲要-上海市崇明区人民政府",
+              "url": "https://shcm.gov.cn/govxxgk/qzfbgs/2026-09-08/test_082e9dd0-28af-4d94-8c51-8446b27e7a7d.html"
+            },
+            {
+              "title": "上海民办福山正达外国语学校",
+              "url": "https://mbfszdwgy.u-jy.cn/portal/search?key=&type=1"
+            },
+            {
+              "title": "上海市第五十四中学2016年度社会责任报告 - 内容 - 上海市第五十四中学",
+              "url": "https://wszx.xhedu.sh.cn/cms/app/info/doc/index.php/32435"
+            },
+            {
+              "title": "上海市松江区人民政府",
+              "url": "https://www.songjiang.gov.cn/?grooveToken=null"
+            },
+            {
+              "title": "植绿护绿传文化，实小青华分校劳动实践育新人-资讯-四川教育在线-四川教育新闻门户网站",
+              "url": "https://www.scjyxw.com/xiaoxue/news/20250314/1000010000408830.html"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        },
+        {
+          "queries": [
+            "\"康定路159弄5号\" 学校",
+            "\"上海小学\" \"159\" 康定路"
+          ],
+          "requestQueries": [
+            "\"白克路170号\" 上海",
+            "\"170 Burkill Road\" Shanghai",
+            "\"康定路159弄5号\" 学校",
+            "\"上海小学\" \"159\" 康定路"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "| Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/Data/Buildings?ID=1792"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?of=1&os=a"
+            },
+            {
+              "title": "The Park Hotel, Shanghai (1931-1934) and",
+              "url": "https://dspace.library.uvic.ca/server/api/core/bitstreams/1cf3c8c6-ae81-4c47-b97f-32cf9bb7e2ff/content"
+            },
+            {
+              "title": "<table id=\"e1\">",
+              "url": "https://qzx.xhedu.sh.cn/cms/data/html/doc/2025-06/05/98129/attach/684130f3caba4.pdf"
+            },
+            {
+              "title": "Tongji-Universität in Shanghai",
+              "url": "https://www.harrassowitz-verlag.de/dzo/artikel/201/003/3698_201.pdf?t=1253883252"
+            },
+            {
+              "title": "A Guide to National Orchid Garden at Singapore Bot",
+              "url": "https://www.nparks.gov.sg/-/media/sbg/documents/national-orchid-garden-trail-guide.pdf?hash=B98DFD35DC68016D49A24518B3CFCEE946862771&la=en"
+            },
+            {
+              "title": "序号 项目 组别 省 市 学校名称 队伍编号 队伍名称 队员 教练 成绩 1 VEX IQ挑战赛小学",
+              "url": "https://jiqi.xd0731.com/zhonghuyx_admin/upload/file/20240912/20240912171840_1034.pdf"
+            },
+            {
+              "title": "CONTENTS Introduction by R. Edward Glatfelter 1 Ch",
+              "url": "https://macaudata.fmac.org.mo/macaubook/ebook001/html/PortgueseInShanghai.pdf"
+            },
+            {
+              "title": "全国童诗节宁波宁海开幕",
+              "url": "https://zj.people.com.cn/n2/2020/1228/c356505-34498349.html"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?as=72"
+            },
+            {
+              "title": "古北路，今年110岁啦！",
+              "url": "https://sh.people.com.cn/n2/2021/1018/c134768-34961952.html"
+            },
+            {
+              "title": "Cars, Clubs and Couture: A Walk with Peter Hibbard | Royal Asiatic Society China in Shanghai",
+              "url": "https://ras-china.org/events-archive/cars-clubs-and-couture-walk-peter-hibbard"
+            },
+            {
+              "title": "长桥·长桥三村东区·1室·1厅,上海徐汇长桥长桥三村二手房1室-房天下",
+              "url": "https://m.fang.com/esf/sh/8_1016652961.html"
+            },
+            {
+              "title": "A guide to Singapore: Botanical Gardens",
+              "url": "https://aguidetosingapore.blogspot.com/p/botanical-gardens.html"
+            },
+            {
+              "title": "港史文本 - HK In Texts: Directory_and_Chronicle_1935_Part_013",
+              "url": "https://www.histsyn.com/1980/01/directoryandchronicle1935part013.html"
+            },
+            {
+              "title": "Directions – weddingteaparty",
+              "url": "https://weddingteaparty.wordpress.com/how-to-get-there/"
+            },
+            {
+              "title": "上海小学三年级数学_百度教育",
+              "url": "https://easylearn.baidu.com/shijuan/juhe_1282959.html"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1144",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1144",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1144；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。",
+      "addressEvidence": "原始门牌 159-5 CONNAUGHT ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1144",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1144"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1144"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.447923,
+          "latitude": 31.237491
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1144,
+          "name": null,
+          "nameZh": "上海小學幼稚園",
+          "address": "159-5 CONNAUGHT ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 352189.4135,
+          "YC": 3456960.7927,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.447923,
+            "latitude": 31.237491
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1144",
+          "assessment": "本条独立核查；live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。",
+          "action": "按原门牌 159-5 CONNAUGHT ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "live中文名明确为“上海小學幼稚園”，原址康脑脱路159-5，年代未记。名称及精确门牌检索未找到旧校地延续证据；同库江宁路456号同名记录和今上中路上海小学都不能替代本址。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今康定路（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1144",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1144",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1144；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1144",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1790,
+      "originalInput": {
+        "IDBAT": 1790,
+        "NAME": null,
+        "F_ADDRESS": "186 BURKILL ROAD",
+        "FUNCTION": null,
+        "XC": 354003.963,
+        "YC": 3456870.173
+      },
+      "historicalContext": {
+        "nameZh": "上公中学",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1790",
+        "notes": null,
+        "originalName": null,
+        "originalAddress": "186 BURKILL ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“未命名记录”（186 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"上公中学\" \"白克路\"",
+          "\"上公中学\" \"186\"",
+          "\"上公中学\" 上海 白克"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"上公中学\" \"白克路\"",
+        "\"上公中学\" \"186\"",
+        "\"上公中学\" 上海 白克"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"上公中学\" \"白克路\"",
+            "\"上公中学\" \"186\""
+          ],
+          "requestQueries": [
+            "\"上公中学\" \"白克路\"",
+            "\"上公中学\" \"186\"",
+            "\"白克路140号\" 上海",
+            "\"140 Burkill Road\" Shanghai"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/Data/Buildings?of=1&os=a"
+            },
+            {
+              "title": "醫藥衛生 卷 民國文獻類編續編 958 民國時期文獻保護中心 中國社會科學院近代史研究所 編國家圖書",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/SSID-14458465_%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB%E9%A1%9E%E7%B7%A8%E7%BA%8C%E7%B7%A8_%E9%86%AB%E8%97%A5%E8%A1%9B%E7%94%9F%E5%8D%B7_958.pdf"
+            },
+            {
+              "title": "BANK OF COMMUNICATIONSSHANGHAI BRANCH : 889 AVENUE JOFFRE, SHANGHAI.",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+            },
+            {
+              "title": "THE NORTH ROAD CHAMPIONSHIP CLUB",
+              "url": "https://www.nrcc.org.uk/wp-content/uploads/2024/06/2024_Dunbar_Old-Bird-and-Yearling-Nom-result.pdf"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            },
+            {
+              "title": "Number 57833",
+              "url": "https://www.thegazette.co.uk/London/issue/57833"
+            },
+            {
+              "title": "御定佩文韻府 : 卷六十三之一 - Chinese Text Project",
+              "url": "https://ctext.org/wiki.pl?chapter=838475&if=en&remap=gb"
+            },
+            {
+              "title": "140 COP SHEFFIELD STREETS. CORKER BOTTOM LANE.",
+              "url": "https://leicester.contentdm.oclc.org/digital/api/collection/p16445coll4/id/275246/download"
+            },
+            {
+              "title": "259WHO'S WHO.258ALE—ANDALE—AND.",
+              "url": "https://www.chinafamilies.net/wp-content/uploads/2018/07/1904-Desk-Hong-List-Whos-who-22otcsh.pdf"
+            },
+            {
+              "title": "潜江市市场监督管理局2024年双随机抽查检查结果明细（截至2024年10月14日）_ 潜江市人民政府",
+              "url": "https://www.hbqj.gov.cn/xxgk/xxgkml/szfxxgkml/qtzdgknr/scgz/ssj/202410/t20241014_5369293.html"
+            },
+            {
+              "title": "三年学位增长近四成！珠海如何从“学有所教”迈向“学有优教”？_办学_全市_公办幼儿园",
+              "url": "https://www.sohu.com/a/808489858_100116740"
+            },
+            {
+              "title": "烟台 烟台新闻 烟台大众网 烟台大众网公告栏 中国烟台 烟台新闻网 烟台综合门户网站",
+              "url": "https://yantai.dzwww.com/xinwen/ytxw/ytjy/default_7.htm"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        },
+        {
+          "queries": [
+            "\"上公中学\" 上海 白克"
+          ],
+          "requestQueries": [
+            "site.zs-hospital.sh.cn 中山医院 1936 枫林路 180 旧址",
+            "中山医院 1936 1937 130 医学院路 纪念堂",
+            "\"植生医院\" \"山西\" 医院",
+            "\"上公中学\" 上海 白克"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "复旦大学枫林校区",
+              "url": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E6%9E%AB%E6%9E%97%E6%A0%A1%E5%8C%BA"
+            },
+            {
+              "title": "上海市优秀历史建筑",
+              "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BC%98%E7%A7%80%E5%8E%86%E5%8F%B2%E5%BB%BA%E7%AD%91"
+            },
+            {
+              "title": "复旦大学附属中山医院",
+              "url": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E4%B8%AD%E5%B1%B1%E5%8C%BB%E9%99%A2"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/Data/Buildings?of=1&os=a"
+            },
+            {
+              "title": "松德堂",
+              "url": "https://www.fudan.edu.cn/2019/0424/c426a96007/page.htm"
+            },
+            {
+              "title": "SHISHI YU SHIJI",
+              "url": "https://sswgw.org.cn/wcm.files/upload/CMSsszxw/202002/202002260902055.pdf"
+            },
+            {
+              "title": "中山医院利用档案创品牌 - 中华人民共和国国家档案局",
+              "url": "https://www.saac.gov.cn/daj/qydagz/201808/c919ef8535ee46dea37c6664492d118b.shtml"
+            },
+            {
+              "title": "血染枫林桥：志士信仰之火不灭——上海党史网",
+              "url": "https://www.ccphistory.org.cn/shds/shhm/content/7d13a7a1-82c1-4aa7-b888-4536c371130c.html"
+            },
+            {
+              "title": "中山大学校史",
+              "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%8F%B2"
+            },
+            {
+              "title": "Microsoft Word - SYSU Medical School Report, 中山大学馆藏近代医学档案目录（图片压缩）.doc",
+              "url": "https://library.indianapolis.iu.edu/wmicproject/sites/default/files/SYSU_Medical_School_Report.pdf"
+            },
+            {
+              "title": "中山医院3号楼",
+              "url": "https://fudan.edu.cn/2019/0424/c426a96006/page.htm"
+            },
+            {
+              "title": "FIT Document(Z:\\复旦\\1111\\1\\复旦-1.FIT)",
+              "url": "https://news.fudan.edu.cn/_upload/article/files/6a/40/25a0d6cb43adafa6b991d8f0f6cf/64a70ace-fc75-437a-bddc-b8a8e19ebc59.pdf"
+            },
+            {
+              "title": "国立中山大学石牌旧址建筑",
+              "url": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E6%97%A7%E5%9D%80%E5%BB%BA%E7%AD%91"
+            },
+            {
+              "title": "80年中山医院办院史，今朝有何借鉴？",
+              "url": "https://www.shobserver.cn/wx/detail.do?id=60897"
+            },
+            {
+              "title": "中山路、中山公园、中山医院……逝世后的孙中山与近代上海",
+              "url": "https://www.jfdaily.com/wx/detail.do?id=34142"
+            },
+            {
+              "title": "陈灏珠：中山医院为何没建在法租界",
+              "url": "https://www.ngdsh.org.cn/detailpage/zwxq-6ab5d5d6-c506-11ec-beaf-7c8ae163e649.html"
+            },
+            {
+              "title": "中山纪念堂 - 广州市人民政府门户网站",
+              "url": "https://www.gz.gov.cn/zt/qzzggcdcl100zn/fdbnl/ygzxds/content/post_8758880.html"
+            },
+            {
+              "title": "复旦大学附属中山医院 国家级继续教育学习班通知病理科在肿瘤多学科协作组中的作用与任务—胃癌暨病理检测",
+              "url": "https://meeting.91360.com/storage/uploads/kEK7rX4lVzya3Aw5OgOBoUlIY4JZTYZo3y0DdoyD.pdf"
+            },
+            {
+              "title": "中山医科大学",
+              "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6"
+            },
+            {
+              "title": "〖课程〗参访中山医院——通识核心课程“医学的社会文化史”学习活动回顾_历史",
+              "url": "https://www.sohu.com/a/500359626_121124307"
+            },
+            {
+              "title": "FIT Document(F:\\M9\\zs11.FIT)",
+              "url": "https://www.zhuichaguoji.org/cn/images/nationalcriminalreports/407.pdf"
+            },
+            {
+              "title": "话说中山医院的发展 - 上海科普云",
+              "url": "https://www.kpyun.net/kepuredian/3964.html"
+            },
+            {
+              "title": "〖徐汇区枫林路街道〗之一---上海特别市政府旧址",
+              "url": "https://www.meipian.cn/584c7ra6"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1790",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1790",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1790；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。",
+      "addressEvidence": "原始门牌 186 BURKILL ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1790",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1790"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1790"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.466984,
+          "latitude": 31.236902
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1790,
+          "name": null,
+          "nameZh": "上公中学",
+          "address": "186 BURKILL ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 354003.963,
+          "YC": 3456870.173,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.466984,
+            "latitude": 31.236902
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1790",
+          "assessment": "本条独立核查；live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。",
+          "action": "按原门牌 186 BURKILL ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "live记“上公中学”、白克路186号，未记年代。已按原中文名、英文及中文旧门牌检索，未发现独立校史；不擅自改成近音校名。白克路是今凤阳路线索，原地块现代对应与用途未明。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今海门路旧称段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1790",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1790",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1790；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1790",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1791,
+      "originalInput": {
+        "IDBAT": 1791,
+        "NAME": null,
+        "F_ADDRESS": "140 BURKILL ROAD",
+        "FUNCTION": null,
+        "XC": 354027.3787,
+        "YC": 3456875.0678
+      },
+      "historicalContext": {
+        "nameZh": null,
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1791",
+        "notes": null,
+        "originalName": null,
+        "originalAddress": "140 BURKILL ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“未命名记录”（140 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"白克路140号\" 上海",
+          "\"140 Burkill Road\" Shanghai"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"白克路140号\" 上海",
+        "\"140 Burkill Road\" Shanghai"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"白克路140号\" 上海",
+            "\"140 Burkill Road\" Shanghai"
+          ],
+          "requestQueries": [
+            "\"上公中学\" \"白克路\"",
+            "\"上公中学\" \"186\"",
+            "\"白克路140号\" 上海",
+            "\"140 Burkill Road\" Shanghai"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/Data/Buildings?of=1&os=a"
+            },
+            {
+              "title": "醫藥衛生 卷 民國文獻類編續編 958 民國時期文獻保護中心 中國社會科學院近代史研究所 編國家圖書",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/SSID-14458465_%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB%E9%A1%9E%E7%B7%A8%E7%BA%8C%E7%B7%A8_%E9%86%AB%E8%97%A5%E8%A1%9B%E7%94%9F%E5%8D%B7_958.pdf"
+            },
+            {
+              "title": "BANK OF COMMUNICATIONSSHANGHAI BRANCH : 889 AVENUE JOFFRE, SHANGHAI.",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NLC511-027032013015433-16400_%E5%BE%B5%E4%BF%A1%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+            },
+            {
+              "title": "THE NORTH ROAD CHAMPIONSHIP CLUB",
+              "url": "https://www.nrcc.org.uk/wp-content/uploads/2024/06/2024_Dunbar_Old-Bird-and-Yearling-Nom-result.pdf"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            },
+            {
+              "title": "Number 57833",
+              "url": "https://www.thegazette.co.uk/London/issue/57833"
+            },
+            {
+              "title": "御定佩文韻府 : 卷六十三之一 - Chinese Text Project",
+              "url": "https://ctext.org/wiki.pl?chapter=838475&if=en&remap=gb"
+            },
+            {
+              "title": "140 COP SHEFFIELD STREETS. CORKER BOTTOM LANE.",
+              "url": "https://leicester.contentdm.oclc.org/digital/api/collection/p16445coll4/id/275246/download"
+            },
+            {
+              "title": "259WHO'S WHO.258ALE—ANDALE—AND.",
+              "url": "https://www.chinafamilies.net/wp-content/uploads/2018/07/1904-Desk-Hong-List-Whos-who-22otcsh.pdf"
+            },
+            {
+              "title": "潜江市市场监督管理局2024年双随机抽查检查结果明细（截至2024年10月14日）_ 潜江市人民政府",
+              "url": "https://www.hbqj.gov.cn/xxgk/xxgkml/szfxxgkml/qtzdgknr/scgz/ssj/202410/t20241014_5369293.html"
+            },
+            {
+              "title": "三年学位增长近四成！珠海如何从“学有所教”迈向“学有优教”？_办学_全市_公办幼儿园",
+              "url": "https://www.sohu.com/a/808489858_100116740"
+            },
+            {
+              "title": "烟台 烟台新闻 烟台大众网 烟台大众网公告栏 中国烟台 烟台新闻网 烟台综合门户网站",
+              "url": "https://yantai.dzwww.com/xinwen/ytxw/ytjy/default_7.htm"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1791",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1791",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1791；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。",
+      "addressEvidence": "原始门牌 140 BURKILL ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1791",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1791"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1791"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.467229,
+          "latitude": 31.23695
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1791,
+          "name": null,
+          "nameZh": null,
+          "address": "140 BURKILL ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 354027.3787,
+          "YC": 3456875.0678,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.467229,
+            "latitude": 31.23695
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1791",
+          "assessment": "本条独立核查；原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。",
+          "action": "按原门牌 140 BURKILL ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原数据英文名、中文名和功能均为空，仅有白克路140号及原点。中文旧门牌与英文精确地址检索未补足实体身份，不能因邻近上公中学而继承学校属性；现代名称、用途及建筑关系均留空。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今海门路旧称段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1791",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1791",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1791；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1791",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    },
+    {
+      "IDBAT": 1792,
+      "originalInput": {
+        "IDBAT": 1792,
+        "NAME": null,
+        "F_ADDRESS": "170 BURKILL ROAD",
+        "FUNCTION": null,
+        "XC": 354054.3662,
+        "YC": 3456897.4251
+      },
+      "historicalContext": {
+        "nameZh": null,
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1792",
+        "notes": null,
+        "originalName": null,
+        "originalAddress": "170 BURKILL ROAD",
+        "sourceRecordProvenance": "shapefile+live-list",
+        "previousConclusion": "Virtual Shanghai确认历史记录“未命名记录”（170 BURKILL ROAD）；本轮完成身份与道路级线索筛查，未找到能把历史名称、门牌或坐标闭合到今天具体单体及持续用途的可靠证据；地图建议 no。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "\"白克路170号\" 上海",
+          "\"170 Burkill Road\" Shanghai"
+        ],
+        "stopReason": "本轮已完成针对具体名称、旧门牌和现代地块的有限检索；目前证据不支持现代对应，余项列出可执行补证。",
+        "delta": "原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。 相较旧结果，移除道路级currentAddress及无依据的现用途占位。"
+      },
+      "queries": [
+        "\"白克路170号\" 上海",
+        "\"170 Burkill Road\" Shanghai"
+      ],
+      "searchBatches": [
+        {
+          "queries": [
+            "\"白克路170号\" 上海",
+            "\"170 Burkill Road\" Shanghai"
+          ],
+          "requestQueries": [
+            "\"白克路170号\" 上海",
+            "\"170 Burkill Road\" Shanghai",
+            "\"康定路159弄5号\" 学校",
+            "\"上海小学\" \"159\" 康定路"
+          ],
+          "method": "web.search_query",
+          "accessedAt": "2026-09-17",
+          "returnedResults": [
+            {
+              "title": "| Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/Data/Buildings?ID=1792"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?of=1&os=a"
+            },
+            {
+              "title": "The Park Hotel, Shanghai (1931-1934) and",
+              "url": "https://dspace.library.uvic.ca/server/api/core/bitstreams/1cf3c8c6-ae81-4c47-b97f-32cf9bb7e2ff/content"
+            },
+            {
+              "title": "<table id=\"e1\">",
+              "url": "https://qzx.xhedu.sh.cn/cms/data/html/doc/2025-06/05/98129/attach/684130f3caba4.pdf"
+            },
+            {
+              "title": "Tongji-Universität in Shanghai",
+              "url": "https://www.harrassowitz-verlag.de/dzo/artikel/201/003/3698_201.pdf?t=1253883252"
+            },
+            {
+              "title": "A Guide to National Orchid Garden at Singapore Bot",
+              "url": "https://www.nparks.gov.sg/-/media/sbg/documents/national-orchid-garden-trail-guide.pdf?hash=B98DFD35DC68016D49A24518B3CFCEE946862771&la=en"
+            },
+            {
+              "title": "序号 项目 组别 省 市 学校名称 队伍编号 队伍名称 队员 教练 成绩 1 VEX IQ挑战赛小学",
+              "url": "https://jiqi.xd0731.com/zhonghuyx_admin/upload/file/20240912/20240912171840_1034.pdf"
+            },
+            {
+              "title": "CONTENTS Introduction by R. Edward Glatfelter 1 Ch",
+              "url": "https://macaudata.fmac.org.mo/macaubook/ebook001/html/PortgueseInShanghai.pdf"
+            },
+            {
+              "title": "全国童诗节宁波宁海开幕",
+              "url": "https://zj.people.com.cn/n2/2020/1228/c356505-34498349.html"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?as=72"
+            },
+            {
+              "title": "古北路，今年110岁啦！",
+              "url": "https://sh.people.com.cn/n2/2021/1018/c134768-34961952.html"
+            },
+            {
+              "title": "Cars, Clubs and Couture: A Walk with Peter Hibbard | Royal Asiatic Society China in Shanghai",
+              "url": "https://ras-china.org/events-archive/cars-clubs-and-couture-walk-peter-hibbard"
+            },
+            {
+              "title": "长桥·长桥三村东区·1室·1厅,上海徐汇长桥长桥三村二手房1室-房天下",
+              "url": "https://m.fang.com/esf/sh/8_1016652961.html"
+            },
+            {
+              "title": "A guide to Singapore: Botanical Gardens",
+              "url": "https://aguidetosingapore.blogspot.com/p/botanical-gardens.html"
+            },
+            {
+              "title": "港史文本 - HK In Texts: Directory_and_Chronicle_1935_Part_013",
+              "url": "https://www.histsyn.com/1980/01/directoryandchronicle1935part013.html"
+            },
+            {
+              "title": "Directions – weddingteaparty",
+              "url": "https://weddingteaparty.wordpress.com/how-to-get-there/"
+            },
+            {
+              "title": "上海小学三年级数学_百度教育",
+              "url": "https://easylearn.baidu.com/shijuan/juhe_1282959.html"
+            },
+            {
+              "title": "Buildings | Virtual Shanghai",
+              "url": "https://www.virtualshanghai.net/data/buildings?rp=1200"
+            }
+          ],
+          "interpretation": "同次请求合并返回，不将每个结果强归某条query；本条采用与排除理由见fieldFindings和conclusion。",
+          "resultAssessment": "返回结果已审阅；查询无可靠现代闭环不等于网页没有结果。各条具体候选和排除理由见conclusion。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai 建筑记录 #1792",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1792",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "inaccessible",
+          "locator": "ID=1792；本轮匹配详情打开记录与固定context/live缓存",
+          "supports": [
+            "精确ID页本轮未取得可用于核读的详细正文；历史字段由同ID固定context/live快照读取。"
+          ],
+          "limitations": [
+            "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": false,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "上海市新旧路名对照",
+          "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+          "publisher": "www.cclchinese.com",
+          "publishedAt": "2014-01-01",
+          "accessMethod": "full-text",
+          "locator": "本轮web.open/find所读对照表相应路名行",
+          "supports": [
+            "旧今路名检索方向；不证明门牌沿用或该校院现代对应。"
+          ],
+          "limitations": [
+            "二手对照表；道路分段与门牌须另查。"
+          ],
+          "accessedAt": "2026-09-17",
+          "readThisRound": true,
+          "sourceFamily": "www.cclchinese.com"
+        }
+      ],
+      "identityEvidence": "原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。",
+      "addressEvidence": "原始门牌 170 BURKILL ROAD 原样保留；不能将旧门牌直接照抄为现代门牌。",
+      "buildingFateEvidence": null,
+      "currentUseEvidence": null,
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1792",
+            "https://www.cclchinese.com/portal.php?aid=7850&mod=view"
+          ],
+          "gap": "需要独立校史、医院名录或同期地籍对本条具体实体的支持。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "尚缺原门牌对应的具体现代地块；道路级检索仅用于缩小范围。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1792"
+          ],
+          "gap": "旧今逐号或宗地关系未闭合。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无针对原建筑保留、改建或拆除的直接证据。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": null,
+          "sourceUrls": [],
+          "gap": "尚无可归属于该原地块的时效明确用途证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "已检查原XY单位并独立转换；位置落在上海不等于现代对象已确认。",
+          "sourceUrls": [],
+          "gap": "无已确认对象边界可用于本条对应检验。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "原库未记年代；不以地图显示的1949 fallback补写原年代。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=1792"
+          ],
+          "gap": "具体校院使用期间与现代用途时点仍需证据。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.467509,
+          "latitude": 31.237155
+        },
+        "conversionMethod": "检查XY数值与sourceCrs；独立执行 scripts/lib/coordinate-systems.mjs utm51nToWgs84（proj4 EPSG:32651→4326，XY轴顺序）；若XY本为经纬度则保持EPSG:4326。132个成员实例与context相符。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "保留独立原点，不借附近或同门牌POI推定具体历史实体。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "原地图点位精度、年代及宗地边界未明。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 1792,
+          "name": null,
+          "nameZh": null,
+          "address": "170 BURKILL ROAD",
+          "startYear": null,
+          "endYear": null,
+          "note": null,
+          "XC": 354054.3662,
+          "YC": 3456897.4251,
+          "sourceCrs": "EPSG:32651",
+          "wgs84": {
+            "longitude": 121.467509,
+            "latitude": 31.237155
+          },
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1792",
+          "assessment": "本条独立核查；原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。",
+        "原学校/医院的唯一宗地、建筑存废与研究日适用的用途证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "该条具体身份/宗地链缺口：原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。",
+          "action": "按原门牌 170 BURKILL ROAD 核同期教育/医疗名录及地籍图，保留确切版页和原点关系。",
+          "targetSource": "上海市档案馆地籍图、同期学校/医药名录及原始地图",
+          "acceptanceCriterion": "取得唯一实体、原门牌与宗地的直接对应；再以现状权威资料核用途。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本轮不提出现代用途回填",
+        "excludedClaims": [
+          "不改原坐标",
+          "不把机构迁址后的现名写到旧点",
+          "不认定未证实的建筑存废"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "尚未形成可靠现代对应；保留本轮历史线索与排除结果。",
+      "conclusion": "原数据名称、中文名和功能均为空，仅有白克路170号。已检索中文旧门牌与英文地址；南京西路170号等异路结果不予采用，也不与白克路186号学校合并。原地块现代用途尚未查明。",
+      "previousReview": {
+        "verificationStatus": "unresolved",
+        "mapWriteRecommendation": "no",
+        "currentAddress": "今海门路旧称段（旧门牌，未完成逐号桥接）",
+        "currentUse": "仅完成旧地址到现代道路级映射，具体单体/当前用途未核",
+        "assessment": "旧结论与道路级字段作为待核材料，本轮从live中文、原门牌及独立原点重新检索。"
+      },
+      "readAttempts": {
+        "detailsPage": {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=1792",
+          "method": "web.open exact ID; matching fixed live context",
+          "result": "metadata-only",
+          "notes": [
+            "详情打开多数仅返回页面元信息；原字段逐项核对使用context内live快照，非声称重新取得完整原文。"
+          ]
+        },
+        "sourceReads": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1792",
+            "method": "inaccessible",
+            "readThisRound": false,
+            "locator": "ID=1792；本轮匹配详情打开记录与固定context/live缓存",
+            "notes": [
+              "本轮已实际尝试打开，但仅得到页面元信息或不可用正文；不声称网页历史字段已全文读取。"
+            ]
+          },
+          {
+            "url": "https://www.cclchinese.com/portal.php?aid=7850&mod=view",
+            "method": "full-text",
+            "readThisRound": true,
+            "locator": "本轮web.open/find所读对照表相应路名行",
+            "notes": [
+              "二手对照表；道路分段与门牌须另查。"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "url": "https://www.virtualshanghai.net/data/buildings?ID=1792",
+            "description": "精确详情未取得可用正文；访问失败或元信息页面，历史字段另读固定context。"
+          }
+        ]
+      }
+    }
+  ]
+}

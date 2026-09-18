@@ -1,0 +1,238 @@
+{
+  "records": [
+    {
+      "IDBAT": 491,
+      "originalInput": {
+        "IDBAT": 491,
+        "NAME": "Fuhua Primary School",
+        "F_ADDRESS": "266/270 ROUTE PROSPER PARIS",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 350818.4031,
+        "YC": 3452715.2598
+      },
+      "historicalContext": {
+        "nameZh": "復華小學",
+        "startYear": null,
+        "endYear": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=491",
+        "notes": "精确页无年代字段；原始功能分类冲突完整保留。"
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "学校/浴室分类冲突",
+          "旧学校目录及准确门牌",
+          "同名异址排除"
+        ],
+        "stopReason": "已完成有限定向检索及关键目录原页核读；无证据不推定现代用途。",
+        "delta": "新增独立学校目录两处270号记载，排除闵行同名学校。"
+      },
+      "queries": [
+        "\"復華小學\" \"浴室\"",
+        "上海 \"复华小学\" \"266\"",
+        "上海 \"复华小学\" 民国 旧址",
+        "\"復華小學\" \"上海\"",
+        "\"Route Prosper Paris\" 路",
+        "\"Prosper Paris\" \"天平\"",
+        "\"复华小学\" \"天平路\"",
+        "\"復華\" \"潘\" 小學 上海",
+        "上海 \"天平路266\" 浴室",
+        "\"复华小学\" \"姚主教\"",
+        "\"復華小學\" \"270\"",
+        "\"復華補習學校\" \"姚主教\"",
+        "\"复华小学\" \"徐景贤\" 天平"
+      ],
+      "sourceReviews": [
+        {
+          "title": "Virtual Shanghai：復華小學（ID 491）",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=491",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "vs-details.json #491：Building ID、English name、Chinese Name、Address、TYP04/05及坐标",
+          "supports": "学校名、266/270旧门牌与Body care/Public Bath分类同时存在。",
+          "limitations": "数据库自身的类型冲突不能由同源镜像解决；无记录年代，不把1949标签默认值当事实。",
+          "accessedAt": "2026-09-18T01:29:44.635985+00:00",
+          "readThisRound": true,
+          "sourceFamily": "Virtual Shanghai"
+        },
+        {
+          "title": "《上海暨全國學校調查錄》：復華小學校、復華補習學校",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf",
+          "publisher": "原书扫描件／Wikimedia Commons托管",
+          "publishedAt": null,
+          "accessMethod": "pdf",
+          "locator": "物理第37页（印刷二十七）左栏下半：復華小學校、姚主教路270號；物理第46页（印刷卅六）右栏：復華補習學校、同址；两处均见校长毛經義。",
+          "supports": "独立同期目录支持学校身份及270号旧址。",
+          "limitations": "本轮复用上轮下载的PDF字节、实际新阅两页图像；本轮网页打开超时，不声称重新下载成功。书的出版年未核定；不证266号、浴室功能或现代用途。",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true,
+          "sourceFamily": "上海暨全國學校調查錄"
+        },
+        {
+          "title": "为解放上海，十余年间，这个地下党组织做了许多可歌可泣的斗争",
+          "url": "https://sghexport.shobserver.com/html/toutiao/2020/07/28/232250.html",
+          "publisher": "上观新闻",
+          "publishedAt": "2020-07-28",
+          "accessMethod": "full-text",
+          "locator": "正文闵行虹桥诸陈家宅及1945年创办复华小学段",
+          "supports": "排除一个同名候选：文章明确另在闵行虹桥。",
+          "limitations": "不用于支持姚主教路原址的现代继承关系。",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true,
+          "sourceFamily": "上观新闻"
+        }
+      ],
+      "identityEvidence": "原库名称与学校目录的復華小學校可对应；目录270号支持原门牌区间中的270，但原库浴室分类与学校身份相冲突。",
+      "addressEvidence": "学校目录物理第37页（印刷二十七）直接记姚主教路270號；物理第46页（印刷卅六）同址補習學校及同校长。尚不能解释266号或推定今日同号门牌。",
+      "buildingFateEvidence": "没有读到该校原楼拆除、保存或改建的直接材料。",
+      "currentUseEvidence": "未确认原址今日机构、楼栋或用途；闵行同名学校不能填入本条。",
+      "fieldFindings": {
+        "identity": {
+          "status": "conflicting",
+          "finding": "原库名称与学校目录的復華小學校可对应；目录270号支持原门牌区间中的270，但原库浴室分类与学校身份相冲突。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=491",
+            "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+          ],
+          "gap": "浴室功能来源待查。"
+        },
+        "address": {
+          "status": "candidate",
+          "finding": "学校目录物理第37页（印刷二十七）直接记姚主教路270號；物理第46页（印刷卅六）同址補習學校及同校长。尚不能解释266号或推定今日同号门牌。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+          ],
+          "gap": "原输入266号范围及现代门牌未接通。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有读到该校原楼拆除、保存或改建的直接材料。",
+          "sourceUrls": [],
+          "gap": "缺原楼沿革。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未确认原址今日机构、楼栋或用途；闵行同名学校不能填入本条。",
+          "sourceUrls": [
+            "https://sghexport.shobserver.com/html/toutiao/2020/07/28/232250.html"
+          ],
+          "gap": "266/270范围、学校与浴室分类关系、旧今门牌以及原校范围到现代场地的对应未闭合。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "仅复核原始坐标转换和独立组员；未取得可由历史链条识别的现代边界，未作点面归属判断。",
+          "sourceUrls": [],
+          "gap": "无现代候选边界。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "目录支持历史学校存在；不提供原址现代现用途时效。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+          ],
+          "gap": "266/270范围、学校与浴室分类关系、旧今门牌以及原校范围到现代场地的对应未闭合。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.434163,
+          "latitude": 31.199024
+        },
+        "conversionMethod": "按数值判别UTM51N，使用项目utm51nToWgs84转换；WGS84用于比较、GCJ另存context，不移动原点。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "仅复核原始坐标转换和独立组员；未取得可由历史链条识别的现代边界，未作点面归属判断。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [
+          "context.json #491",
+          "vs-details.json #491"
+        ],
+        "uncertainty": "历史点测绘精度和宗界未知。"
+      },
+      "relatedRecords": [],
+      "fullGroupMembers": [
+        {
+          "IDBAT": 491,
+          "liveRecord": {
+            "id": 491,
+            "name": "Fuhua Primary School",
+            "nameZh": "復華小學",
+            "address": "266/270 ROUTE PROSPER PARIS",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 350818.4031,
+            "y": 3452715.2598,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=491",
+            "provenance": "shapefile+live-list"
+          },
+          "coordinates": {
+            "sourceCrs": "EPSG:32651",
+            "wgs84": {
+              "longitude": 121.434163,
+              "latitude": 31.199024
+            },
+            "gcj02": {
+              "longitude": 121.438784,
+              "latitude": 31.197151
+            }
+          }
+        }
+      ],
+      "conflicts": [
+        "学校中英文名、独立目录与原库Public Bath分类不一致。",
+        "原书证270，不覆盖原库266号半段。"
+      ],
+      "remainingQuestions": [
+        "266/270范围、学校与浴室分类关系、旧今门牌以及原校范围到现代场地的对应未闭合。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "266/270范围、学校与浴室分类关系、旧今门牌以及原校范围到现代场地的对应未闭合。",
+          "action": "查姚主教路266/270的学校登记、地籍及原数据库分类底稿；查明是否曾同址经营浴室，再以门牌变更表建立现代对应。",
+          "targetSource": "上海市档案馆教育机构登记、房产门牌档及Virtual Shanghai底稿；原书目录两处270号为检索锚点。",
+          "acceptanceCriterion": "有明确同校名、门牌及时间的原件，说明功能冲突及原校范围；现代结论需另有现用途和空间证据。"
+        }
+      ],
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "本条学校旧址的场地级研究；本轮不回填。",
+        "excludedClaims": [
+          "把功能冲突自行改为浴室或删改原字段",
+          "闵行同名学校新址",
+          "现代天平路同号自动沿用"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "266/270范围、学校与浴室分类关系、旧今门牌以及原校范围到现代场地的对应未闭合。",
+      "conclusion": "精确ID页仍为復華小學（266/270 ROUTE PROSPER PARIS），功能却列Public Bath。《上海暨全國學校調查錄》原页独立记復華小學校在姚主教路270號，另页同址復華補習學校，支持学校身份而非浴室。闵行虹桥1945年创办的同名学校属别址，不合并。266号范围、功能分类来源及现代场地仍待查，现代字段留空，原始字段与坐标保留。",
+      "historicalCorroboration": {
+        "status": "direct",
+        "finding": "直接佐证的是学校身份与270号旧门牌，不能算成浴室身份已获佐证；原库功能冲突保留。",
+        "sourceUrls": [
+          "https://upload.wikimedia.org/wikipedia/commons/7/7c/NLC511-027032013013040-18123_%E4%B8%8A%E6%B5%B7%E6%9A%A8%E5%85%A8%E5%9C%8B%E5%AD%B8%E6%A0%A1%E8%AA%BF%E6%9F%A5%E9%8C%84.pdf"
+        ]
+      }
+    }
+  ]
+}

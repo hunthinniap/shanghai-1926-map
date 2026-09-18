@@ -1,0 +1,2006 @@
+{
+  "recordFindings": [
+    {
+      "batch": "002",
+      "IDBAT": 499,
+      "historicalName": "Carmelite Convent",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "workflow.evidence / currentUseRelationship / group scope",
+      "claim": "修女院楼已因地铁建设拆卸并异位复建，原址仅剩局部遗存。",
+      "problem": "所引徐汇年鉴摘录的是2009-12-15《联合时报》“徐家汇修女院将异地重建”。正文L75使用“将在房屋拆除后异地重建”“将在新建的公共绿地内重现”等将来时，不能支持工程已经实施、竣工及当前遗存范围。2017网页日期也不是竣工日期。该结论已用于地图并覆盖相距约58米的同组#1554教堂，原文未分别闭合两栋的处置。",
+      "recommendation": "先将已完成口吻改为当年重建计划；补实施、竣工或现状实测资料后再判断原点建筑存废、异位新址及#1554范围。本轮没有证明工程未发生，也不建议把规划反向解释为从未建成。",
+      "sourceUrls": [
+        "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2017/05/04/d_88699.html?tm=1740650511988"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1633,
+      "historicalName": "Ende Temple",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "currentNameZh / currentAddress / currentUse / currentUseRelationship / mapWriteRecommendation",
+      "claim": "武进路225弄9号恩德堂 = 乍浦路490号恩德堂，现为政府与消保机构办公，同楼、resolved/yes",
+      "problem": "官方名录把武进路225弄3—11号宿舍/教堂与乍浦路480、490号主教堂列成两条。旧结果跨地址套用主教堂用途，且 context 显示错误已经进入地图。",
+      "recommendation": "暂停此条 same-building/yes 和当前办公用途；以武进路225弄9号为对象重新核对楼栋/院落边界。可以记录官方名录住宅线索，但不能未经定位直接替换成另一种确定现用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1633",
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.shhk.gov.cn/xwzx/002006/20210819/3c53da87-4561-44e1-8686-f427b7cc89a8.html"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 1362,
+      "historicalName": "Chinese Public General Hospital",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "relationship/outcomeCategory",
+      "claim": "same-site-rebuilt；survives-with-history",
+      "problem": "本条notes与党史原文均记中国公立医院1937年被摧毁；该relation编译为存续，与原物毁坏陈述相矛盾。",
+      "recommendation": "若宗地关系补闭合，用demolished-site-redeveloped；现阶段同时审查旧191号与现院区关系。",
+      "sourceUrls": [
+        "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
+        "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 1502,
+      "historicalName": "Customs",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "relationship/notes",
+      "claim": "1901 Customs与现1922年建筑same-building",
+      "problem": "本次读原引用澎湃正文：1901在外马路建关，1922在现348号重新建造；房管名录也列1922。当前未区分1901用址与1922现楼，same-building无充分支持。",
+      "recommendation": "保留1901原始年；将1922重建说明写入，确认同宗地后改拆后重建关系，勿标1901原物存续。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://m.thepaper.cn/baijiahao_6306630"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 480,
+      "historicalName": "Hazelwood",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "group scope/relationship",
+      "claim": "same-building-repurposed覆盖同组479球场",
+      "problem": "480住宅楼的沿革可独立成立，但479是球场，不能随组继承酒店1号楼同一建筑的判定。",
+      "recommendation": "单独核球场原点、范围及现功能；未核前hold整组或只对480受限展示，不把479标原酒店楼。",
+      "sourceUrls": [
+        "https://www.shcn.gov.cn/col7698/20230119/1229080.html",
+        "https://www.shanghai.gov.cn/nw4411/20241030/2adcb0b189b54c34a3685ab0c0440e68.html",
+        "https://www.shcn.gov.cn/col6991/20250624/1292794.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1043,
+      "historicalName": "Hospital for Refugees",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "identity/site scope/group coverage",
+      "claim": "新闻难民医院1010-15为辛家花园临时使用；全组中华新村住宅",
+      "problem": "已读光明文只将辛家花园连到1010新亚药厂；独立网页称中华新村仅为辛园一隅。未直接确认医院/难民营的具体用址，也未证明1010-15原点及五个实体都落入住宅部分。",
+      "recommendation": "暂停完整五成员回填，主条降likely/review；逐核1042营、1043院、1044/1391寺及1390园的年代/子地块；不能由园名推医院。",
+      "sourceUrls": [
+        "https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/e835e7568d89926aef4d41eb08ffd424",
+        "https://art.people.com.cn/n/2014/0424/c206244-24938147.html",
+        "https://www.gmw.cn/01ds/2002-10/16/05-2155B4BE3A5BF68848256C540002461C.htm"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1061,
+      "historicalName": "Hospital and School for Midwives",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "verificationStatus/mapWriteRecommendation",
+      "claim": "370 Hart Road与常德370一致即同一宗地，verified/yes",
+      "problem": "所列两项独立来源只证明当代区政府地址，未说明助产医院及学校曾使用该院地。路名和号码相同不能闭合跨期宗地。",
+      "recommendation": "保留区政府为候选，降likely/review；补旧医院专名、原图或院地沿革。",
+      "sourceUrls": [
+        "https://www.jingan.gov.cn/xxgk/002019/002019005/002019005005/info-gover-leader.html?tableindex=1",
+        "https://www.shanghai.gov.cn/zt/zfxxgkndbg/2023zfxxgknb/%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%99%E5%AE%89%E5%8C%BA2023%E5%B9%B4%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E5%B7%A5%E4%BD%9C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1301,
+      "historicalName": "Hongkou Slaughterhouse",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P1",
+      "field": "verificationStatus/mapWriteRecommendation",
+      "claim": "斐伦375现九龙375供电营业厅，verified/yes",
+      "problem": "已复读区政府屠场史，仅给斐伦路4亩2分及1931迁建；无375号，更无原地转供电之说明。当前逻辑仍是同路同号拼接。",
+      "recommendation": "降likely/review并保留旧场与1933新场区别；补原址图/门牌/电力地块建设史，现代供电现址可另存。",
+      "sourceUrls": [
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20230420/d1a09064-daa6-4509-9043-b1c2e93f28bd.html",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20230727/7265c637-fc6f-4d52-9c05-ec6a80bc2855.html",
+        "https://www.ssme.sh.gov.cn/invest/invest%21investShSdq.do"
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 241,
+      "historicalName": "Aurora University Chapel (Saint Peter's Church)",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "workflow.outcomeCategory / rebuilding relationship",
+      "claim": "survives-with-history；same-site-rebuilt；地图same-site-continuing-use",
+      "problem": "研究自身已明确原圣伯多禄堂拆除、在原址附近重建，却归入survives-with-history，容易把场所延续统计成原楼存续。本轮搜索片段还显示向西稍移，但教区原文超时，未取得新旧建筑范围图。",
+      "recommendation": "把原楼拆除与宗教用途延续分别表达，按拆除后重建类别处理；在确定原点对应当前宗地/教堂范围前，不把“附近”改写成严格同一楼址。此项不是认定现教堂地址错误。",
+      "sourceUrls": [
+        "https://www.catholicsh.org/NewListIn.aspx?InfoCategoryID=17&InfosID=13549",
+        "https://zh.wikipedia.org/wiki/上海圣伯多禄堂"
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 1274,
+      "historicalName": "Baoxing Coffin Repository",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "workflow.evidence / same-site-institutional-continuity",
+      "claim": "历史宝兴殡仪馆与现西宝兴路833号是原址机构延续。",
+      "problem": "本轮政府资料直接证明现机构及833号，但旧记录缺门牌和起年；原研究的同址理由主要为同中文名和原点很近。现址存在并不足以单独证明历史记录原地延续。",
+      "recommendation": "补馆史、历年地址或历史院界证据来闭合该原点；在补证前将同址延续作为待核，不能把近邻距离当作单独确证。未发现现殡仪馆用途本身错误。",
+      "sourceUrls": [
+        "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/gmsh/bygxx/20250629/1286626.html",
+        "https://zh.wikipedia.org/wiki/上海市宝兴殡仪馆"
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1678,
+      "historicalName": "British American Tobacco Company",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "current map currentAddress",
+      "claim": "虹口区南苏州路175号",
+      "problem": "当前地图与override额外添加“虹口区”；本轮全文读房管局第三批名录，颐中大楼3A010列于黄浦区部分（L14）。原workflow只写南苏州路175号，并无错误区名。",
+      "recommendation": "把当前地址行政区改为黄浦区；无需因该区名错误改动历史楼身份、点位或已有限定的办公用途。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 1756,
+      "historicalName": "Cathay Flats",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "current map currentAddress",
+      "claim": "徐汇区淮海中路816弄、818—832号",
+      "problem": "当前地图与override添加徐汇区；项目服务单位合同业绩原文将该完整门牌列为“黄浦区淮海中路816弄818-832号国泰公寓外立面改造工程”（L69、L80），与当前地图区名冲突。原workflow无错误区名。",
+      "recommendation": "将当前地址行政区改为黄浦区，保留国泰公寓身份及完整门牌。",
+      "sourceUrls": [
+        "https://www.shbtpm.com/info/detail/56964"
+      ]
+    },
+    {
+      "batch": "003",
+      "IDBAT": 503,
+      "historicalName": "Christian Literature Building",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "current map currentAddress",
+      "claim": "虹口区虎丘路128号",
+      "problem": "当前地图与override添加“虹口区”；房管局第二批名录黄浦区部分2A020广学大楼为虎丘路128号（L24）。原workflow无该错误区名。",
+      "recommendation": "将当前地址行政区改为黄浦区。此次确定更正限行政区；展览运营时效未因另一来源读取失败而被判错误。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+      ]
+    },
+    {
+      "batch": "003",
+      "IDBAT": 1551,
+      "historicalName": "Convent",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentUse / currentNameZh temporal scope",
+      "claim": "现作政府办公与公共文化展示（徐汇区汇展示厅）。",
+      "problem": "现引用的2019政务报道一方面回顾2016底层展示厅开放，另一方面在L177明确当时“现处于关闭状态，暂不对外开放”。它不能证明2026仍有对公众开放的展示用途。40南丹路、1928起年与大修道院1928奠基/1929建成相容，本轮未证明历史身份或地址错配。",
+      "recommendation": "保留可核的旧大修道院/政府办公身份；公共展示写成曾设展示厅或补当前运营证据后再作现用。不能把2019关闭状态直接断言为2026仍关闭。",
+      "sourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_4428923",
+        "https://www.whb.cn/zhuzhan/jiaodian/20160519/57723.html"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 89,
+      "historicalName": "Firemen Barracks (French Municipal Council)",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentAddress",
+      "claim": "嵩山消防救援站当前门牌淮海中路197号",
+      "problem": "应急管理部现址报道使用193号，旧结果把历史197号原样填作当前门牌；需区分老门牌、建筑名录地址和现行入口。",
+      "recommendation": "保留历史197号；核明193/197号是否同院落并注明口径，当前地址引用现行官方站点资料。此次不据门牌差异否定消防用途连续。",
+      "sourceUrls": [
+        "https://www.mem.gov.cn/xw/jyll/202106/t20210621_389018.shtml"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 325,
+      "historicalName": "French Cemetery",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentNameZh / currentAddress / resolutionStatus / mapWriteRecommendation",
+      "claim": "公墓原点确定对应中福商务楼周边，resolved/yes",
+      "problem": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+      "recommendation": "保留公墓撤销及停车场沿革；现代中福商务楼对应降为位置级/待复核，或补历史墓界与现地块叠合证据。325 与1515 可共享场地级撤墓史，但继续保留两条历史身份。",
+      "sourceUrls": [
+        "https://www.shobserver.cn/wx/detail.do?id=12765",
+        "https://www.virtualshanghai.net/texts/articles?ID=81"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 430,
+      "historicalName": "Embassy of France - Commercial Attaché",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentUseRelationship / currentAddress / mapWriteRecommendation",
+      "claim": "1449 Avenue Joffre 确定对应今1431号法国总领事官邸同楼",
+      "problem": "两个官方/学术来源能证实1431号现存及用途，但原1449号门牌和特定部门尚缺直接衔接；不能只因法国外交用途相似即确认。",
+      "recommendation": "补旧新门牌对照、历史地址录或该院落图；在补齐前将同楼结论标 review，现代官邸事实可以作为候选保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=430",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://fddi.fudan.edu.cn/bc/f1/c18987a441585/page.htm"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 1515,
+      "historicalName": "Foreign Cemetery",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentNameZh / currentAddress / resolutionStatus / mapWriteRecommendation",
+      "claim": "公墓原点确定对应中福商务楼周边，resolved/yes",
+      "problem": "本轮重读可确认撤墓及停车场阶段，但引用文章未闭合当前楼宇地块链；旧结果自己的补足理由仍为坐标落在附近，当前精确归属强于已读证据。",
+      "recommendation": "保留公墓撤销及停车场沿革；现代中福商务楼对应降为位置级/待复核，或补历史墓界与现地块叠合证据。325 与1515 可共享场地级撤墓史，但继续保留两条历史身份。",
+      "sourceUrls": [
+        "https://www.shobserver.cn/wx/detail.do?id=12765",
+        "https://www.virtualshanghai.net/texts/articles?ID=81"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 286,
+      "historicalName": "Golden Gate Theater",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "evidence / currentUseSources / resolutionStatus",
+      "claim": "引用澎湃7098703证明1996年因延安高架拆除，现为道路高架",
+      "problem": "已实际重读的两篇文章只支持院名与555号；指定为拆除证据的文章没有该记载，另一个源不可读。确切拆除年、原因和今日道路边界仍需来源。",
+      "recommendation": "更换能直接记载拆除的档案/院史引文并核555号与原745号换号；在补证前区分已证院名沿革与待证拆除/现用，不将访问失败当反证。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_6286895",
+        "https://m.thepaper.cn/newsDetail_forward_7098703"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 28,
+      "historicalName": "Dah Woo Hotel",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "site/verificationStatus",
+      "claim": "旧345、历史341弄5、现343酒店视为同址延续",
+      "problem": "名称吻合有价值，但原输入、历史名录与现营业地址有三个号码，现有结论未展示弄内5号与343实体的范围/改号证据。",
+      "recommendation": "补旧图或营业沿革直接链；在无此证据时保留大沪饭店候选，宜likely/review，不用数字相近作为闭环。",
+      "sourceUrls": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/NLC511-027032016011822-43589_%E4%B8%8A%E6%B5%B7%E8%90%AC%E6%A5%AD%E9%8C%84.pdf",
+        "https://www.shhuangpu.gov.cn/uploadfile/cd0af9a5-842a-467b-ad71-63d2044e7e80/%EF%BC%882024%EF%BC%891%E5%8F%B7-%E9%99%84%E4%BB%B62024%E5%B9%B4%E7%9B%91%E7%AE%A1%E5%90%8D%E5%8D%95.pdf"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 525,
+      "historicalName": "General Bank of China",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "identity/temporal/relationship",
+      "claim": "General Bank of China应纠正为Bank of China；1901记录same-building",
+      "problem": "官方行史证实1912中行在旧大清银行成立，但不能单独证明原记录General Bank of China这个名称可直接校正；官方行史记户部银行1905成立、1912中行开业，与原1901尚未解释；1908现楼年代本轮仅见检索摘要，不能当作所读名录的日期。",
+      "recommendation": "保留原英文/年，标注中行候选校正；补1901原机构及后建银行楼的实体/地块链后确定建筑关系。",
+      "sourceUrls": [
+        "https://www.bankofchina.com/aboutboc/ab7/200809/t20080926_6931.html",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+        "https://wap.boc.cn/bif/bi1/202211/t20221129_22161500.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 556,
+      "historicalName": "China Banking Corporation",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "group scope",
+      "claim": "银行建筑说明覆盖562 Shanghai Times",
+      "problem": "562上海时报1927记录和银行同89号，但本条列出的沿革未直接说明时报的建筑位置/时期；同号可能包含前后楼。",
+      "recommendation": "补报社所在前后楼及年代，或将组写入范围限制到已核成员；不认定银行主条本身已证伪。",
+      "sourceUrls": [
+        "https://www.chinabank.ph/our-centennial-story",
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-10-19/601727_20241019_AH7B.pdf"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 655,
+      "historicalName": "Gas Works Company",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "group scope",
+      "claim": "公司办公site-continuing-use覆盖653 Gas Tower",
+      "problem": "同地段煤气工业沿革不自动证明653储气罐原点位于现办公地块，另652储气罐已被本项目对应苏河美欣。",
+      "recommendation": "补653几何/旧厂界与两储气罐区别；保留655办公沿革，653不可仅因同706号继承。",
+      "sourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_13131020",
+        "https://ciac.zjw.sh.gov.cn/JGBQyWsbsNewWeb/QyWSGSGg/QyFrame.aspx?sbid=XI3G04rWO3A%3D",
+        "https://www.thepaper.cn/newsDetail_forward_17420247"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 843,
+      "historicalName": "Chinese Maritime Customs Club",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentUse/temporal",
+      "claim": "生物医药企业注册地址／原献血站作为现用途",
+      "problem": "登记名录只能证明企业登记地址，不能证明实际占用及2026仍使用；记录已谨慎称注册地址，但地图“现用途”仍容易把登记当实际使用。图书馆网页本轮读取失败不作事实反证。",
+      "recommendation": "补现单位/物业实际使用与名录日期，或只写已证实历史沿革和注册地址线索，暂保review。",
+      "sourceUrls": [
+        "https://www.jalib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=135",
+        "https://stcsm.sh.gov.cn/cmsres/1b/1bfa5c059a95468d88f64e6b47e1d790/36664caaf6d3584ef48caced4e279920.pdf"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 1362,
+      "historicalName": "Chinese Public General Hospital",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "verificationStatus/mapWriteRecommendation",
+      "claim": "191天通庵路精确对应现南门；verified/yes",
+      "problem": "党史正文说明横浜路补萝居花园和1918地图相对方位，但未给现中医院宗地承继；现代191号采购地址只能证明现址。历史General Hospital/1914与正文1910隔离医院亦需解释。",
+      "recommendation": "补原院界/旧门牌和现院区直接链，在此之前降低到likely/review；不要仅同号即批准。",
+      "sourceUrls": [
+        "https://www.ccphistory.org.cn/shds/shkyws/content/9ef13606-0b12-4e13-8626-737cdbd08b67.html",
+        "https://ygc.shutcm.edu.cn/2021/1216/c1308a139213/page.htm",
+        "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1024FPA/310106/2100000000063168/202512/903637bf-134e-4750-8e30-bfce793a617a.pdf"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 652,
+      "historicalName": "Gas Tower",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentAddress",
+      "claim": "上海市静安区西藏中路728号",
+      "problem": "房管局2025年上海黄浦来源及市政府2025年报道均把苏河美欣列于黄浦；项目在苏州河南岸。当前静安区写错，拆后改用租赁住房的主链并未因此否定。",
+      "recommendation": "将行政区更正为黄浦区；保留西藏中路728号及原点。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/gqdt/20250918/0b7a36b050244df28b23abe710365649.html",
+        "https://www.shanghai.gov.cn/nw4411/20251019/9a953de53fa44914a8156989c0752a26.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1000,
+      "historicalName": "Hospital for Refugee Children",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentNameZh/currentAddress/map display",
+      "claim": "上海市儿童医院（机构现址，非历史原址）；历史点：上海市静安区茂名北路65号一带；机构现址：泸定路355号、北京西路1400弄24号",
+      "problem": "notes及institutional-successor-relocated已披露异地后继，不能说研究隐瞒迁址。但现代名称/地址栏仍放入迁入机构，旧点地图若直接展示该栏，会造成此处仍是现医院/教堂的误读。",
+      "recommendation": "原点现代名称/用途留空或明确原址未查明，将异地后继移入历史沿革字段；现代对应status宜unresolved，保留迁址事实。",
+      "sourceUrls": [
+        "https://www.shchildren.com.cn/contents/813/10193.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1149,
+      "historicalName": "Hongzhang Deying Factory",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentAddress/verificationStatus",
+      "claim": "鸿章旧厂=南草坪小区，泰兴685，verified/yes",
+      "problem": "原引用澎湃仅记鸿章在淮安里南侧，周到讲麦根路及张爱玲故居；两文均未直接把旧厂转用连到现代南草坪。新检索南草坪现门牌689弄，与685有未解释差别。",
+      "recommendation": "保留同一厂的双记录及南草坪候选；补厂界与689弄住宅边界/拆建档案再yes，当前降likely/review。",
+      "sourceUrls": [
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+        "https://www.thepaper.cn/newsDetail_forward_1719847",
+        "https://static.zhoudaosh.com/files/cnews/2018/20180808/97D8C56ECA3B0C372492E766D1D3A6A09D906943AAA69388A7873618FA348E1D/4.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1381,
+      "historicalName": "Hongzhang Cotton Weaving and Deying Factory",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentAddress/verificationStatus",
+      "claim": "鸿章旧厂=南草坪小区，泰兴685，verified/yes",
+      "problem": "原引用澎湃仅记鸿章在淮安里南侧，周到讲麦根路及张爱玲故居；两文均未直接把旧厂转用连到现代南草坪。新检索南草坪现门牌689弄，与685有未解释差别。",
+      "recommendation": "保留同一厂的双记录及南草坪候选；补厂界与689弄住宅边界/拆建档案再yes，当前降likely/review。",
+      "sourceUrls": [
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74642.html",
+        "https://www.thepaper.cn/newsDetail_forward_1719847",
+        "https://static.zhoudaosh.com/files/cnews/2018/20180808/97D8C56ECA3B0C372492E766D1D3A6A09D906943AAA69388A7873618FA348E1D/4.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1591,
+      "historicalName": "Huai'en Temple",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "currentNameZh/currentAddress/map display",
+      "claim": "上海怀恩堂（机构现址，非历史原址）；历史点：上海市虹口区东宝兴路271号一带；机构现址：上海市静安区陕西北路375号",
+      "problem": "notes及institutional-successor-relocated已披露异地后继，不能说研究隐瞒迁址。但现代名称/地址栏仍放入迁入机构，旧点地图若直接展示该栏，会造成此处仍是现医院/教堂的误读。",
+      "recommendation": "原点现代名称/用途留空或明确原址未查明，将异地后继移入历史沿革字段；现代对应status宜unresolved，保留迁址事实。",
+      "sourceUrls": [
+        "https://www.ccctspm.org/churchinfo/212"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 1692,
+      "historicalName": "Helen Theater",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P2",
+      "field": "group scope",
+      "claim": "影院旧址电信用途覆盖728上海电话公司",
+      "problem": "图书馆2007全文确证影院→四海粮店→路口电讯局，主条有直接链；728同550号电话公司是否同一地块阶段尚缺独立用址核对。",
+      "recommendation": "保留影院主链，补728的独立历史地址/时期再批准整个组；不把现电信局倒推过去电话公司必在此楼。",
+      "sourceUrls": [
+        "https://www.hqlib.cn/Web/detail.aspx?ID=71c9acc9&classID=700&className=",
+        "https://sheitc.sh.gov.cn/cmsres/15/15e4f1516ba64762be4f9d0ccb9c3072/45a16a3d1f3acee2d775cfa17e5b9945.pdf"
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 18,
+      "historicalName": "Asia Hotel",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "workflow.evidence / currentUseRelationship",
+      "claim": "旧135号落入现134—150号建筑范围，因此按原址后建建筑处理。",
+      "problem": "数字135位于134—150之间不能证明门牌重编关系、同侧道路或同一宗地；原研究同时把纱业银行楼称为中汇大楼，存在名称混用风险。当前为probable/review且未回填地图，风险尚被隔离。",
+      "recommendation": "保留候选而取消门牌数值范围推出同址拆建的断言；补历史门牌/地块对照，并区分纱业银行楼与延安东路143号中汇大楼后再确定现代关系。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.openstreetmap.org/way/300481519"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 327,
+      "historicalName": "Dongpu Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historicalRoadMappings",
+      "claim": "Route Raymond Tenant de la Tour 对应嘉善路",
+      "problem": "同批审阅的006/#329把同一原路名对应襄阳南路；工作流存在未说明的道路映射矛盾，不能把反查POI道路视为历史路名换算。 编译器同样列出襄阳南路；此为内部一致性佐证，不代替外部新旧路名档案。",
+      "recommendation": "核正式新旧路名对照并将历史道路映射与当前坐标反查地址分开；不凭此次矛盾直接更换现代地块。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=327",
+        "https://www.virtualshanghai.net/data/buildings?ID=329"
+      ],
+      "localEvidence": [
+        "scripts/compile-unresolved-research.mjs"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1135,
+      "historicalName": "Darui Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historical identity",
+      "claim": "达瑞医院",
+      "problem": "context 中原始中文字段为“大瑞医院”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "recommendation": "优先保留原中文“大瑞医院”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1135"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1135,
+      "historicalName": "Darui Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historicalRoadMappings",
+      "claim": "Hart Road对应今武定路",
+      "problem": "工作流道路换名与仓库编译器显式映射“HART ROAD → 常德路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+      "sourceUrls": [],
+      "localEvidence": [
+        "scripts/compile-unresolved-research.mjs"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 1666,
+      "historicalName": "Dai Nippon Kohu Shakai (Greater Japan Airline Company)",
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence",
+      "claim": "航运会社拆建史",
+      "problem": "原中文“大日本航空會社”和英文 Airline Company 都指航空运输，正文误写航运会误导后续检索。",
+      "recommendation": "将航运会社改为航空会社；保持原航空运输分类和 location-only。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=1666"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 250,
+      "historicalName": "Ecole Primaire du Sacré-Coeur (Sacred Heart Primary School)",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "historicalNameCorrectionZh",
+      "claim": "圣心小学（震旦女子文理学院附属小学）",
+      "problem": "中文原记录和本条引用的黄浦官方历史文章均指晓星小学；该附属关系未获本轮来源支持。",
+      "recommendation": "改用晓星小学／圣伯多禄晓星小学，记录英文原名差异；删除未经支持的震旦附属归属。保留 relocated 关系与 review 推荐。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=250",
+        "https://www.thepaper.cn/newsDetail_forward_24354679"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 322,
+      "historicalName": "FMC - Power Station",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / sourceDataIssue",
+      "claim": "把对象直接写成法工部局电站",
+      "problem": "原中文“无线电台”与英文 Power Station 冲突，旧结果省略此冲突并将英文当作确定身份。",
+      "recommendation": "补记原数据冲突，保留两个原始称谓；具体功能待档案核定，现代用途仍只维持 location-only。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=322"
+      ]
+    },
+    {
+      "batch": "005",
+      "IDBAT": 341,
+      "historicalName": "Franco-Chinese University - Faculty of Pharmacy",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "historicalNameCorrectionZh",
+      "claim": "中法大学药科（震旦大学相关教学设施）",
+      "problem": "校史将本条归入中法大学药学专修科及上海医学院沿革；震旦归属没有证据并会误导机构身份。",
+      "recommendation": "删去震旦括注，保留中法大学药学专修科；复兴路校园和具体楼栋继续 review，不将学校判断扩散到同组 342 球场。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=341",
+        "https://news.fudan.edu.cn/2022/0712/c968a131933/page.htm"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 215,
+      "historicalName": "Haixing Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historicalRoadMappings",
+      "claim": "Route du Pere Froc对应重庆南路",
+      "problem": "工作流道路换名与仓库编译器显式映射“ROUTE DU PERE FROC → 合肥路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+      "sourceUrls": [],
+      "localEvidence": [
+        "scripts/compile-unresolved-research.mjs"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 229,
+      "historicalName": "Guangxue Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historical identity",
+      "claim": "广学小学",
+      "problem": "context 中原始中文字段为“光學漢校”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "recommendation": "优先保留原中文“光學漢校”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=229"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 778,
+      "historicalName": "Guangshi Primary School No. 2",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence",
+      "claim": "广师第二小学",
+      "problem": "原记录明确为光實第二小學；工作流重新音译改变了字形和对象名称。",
+      "recommendation": "写作光实第二小学，并保留原字形；位置级结论无需因此升级。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=778"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 792,
+      "historicalName": "Guangfu Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historical identity",
+      "claim": "广福医院",
+      "problem": "context 中原始中文字段为“光復醫院”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "recommendation": "优先保留原中文“光復醫院”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=792"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 994,
+      "historicalName": "Guangfu Primary and Junior High School",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historical identity",
+      "claim": "光复学校",
+      "problem": "context 中原始中文字段为“光夏中小學校”；旧研究用英文再音译的中文覆盖了已有原文。",
+      "recommendation": "优先保留原中文“光夏中小學校”，另列英文/中文不一致及待核定项；不要把回译写成确定历史名称。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/data/buildings?ID=994"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1199,
+      "historicalName": "Guohua Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "evidence / historicalRoadMappings",
+      "claim": "Gordon Road对应今长寿路西段",
+      "problem": "工作流道路换名与仓库编译器显式映射“GORDON ROAD → 江宁路”冲突，可能把现代反查地名写成历史路名对应；本轮只确认内部矛盾，未以代码表充当外部历史证据。",
+      "recommendation": "核正式新旧路名资料；将历史道路换名与坐标反查POI分字段，保持位置级，不据某一方未经核验的表直接更改原点。",
+      "sourceUrls": [],
+      "localEvidence": [
+        "scripts/compile-unresolved-research.mjs"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 375,
+      "historicalName": "Cunde Primary and Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentUse",
+      "claim": "likely；未查明；1974—2006年曾作南京西路街道图书馆",
+      "problem": "现有记录主要确认历史旧址或已迁出的后继机构，notes明确当下原址用途未查明，尚无具体现代对应。",
+      "recommendation": "建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。",
+      "sourceUrls": [
+        "https://oce.sjtu.edu.cn/xz_sy/9239.html",
+        "https://www.shjinganlib.net/CommunityLibraryList.aspx?ColumnNameEn=COMMUNITY&id=101"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 1138,
+      "historicalName": "Customs Library",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "currentNameZh/relationship",
+      "claim": "静安区图书馆海关楼；institutional-successor-adjacent-building",
+      "problem": "原1714号与1936年1708号资料明确属不同时期或相邻建筑；原点现代用途尚未独立确定。",
+      "recommendation": "保留1708号为机构沿革/邻址候选，勿以现图书馆用途代表1714号原址；查原早期馆舍范围。",
+      "sourceUrls": [
+        "https://www.jalib.net/ReaderSynopsis.aspx?ColumnNameEn=Introduction",
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html",
+        "https://finance.sina.com.cn/jjxw/2024-04-23/doc-inasvrzr1919717.shtml"
+      ]
+    },
+    {
+      "batch": "007",
+      "IDBAT": 1585,
+      "historicalName": "Fumin Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentUse",
+      "claim": "likely；2026年现用途未获权威确认",
+      "problem": "现有记录主要确认历史旧址或已迁出的后继机构，notes明确当下原址用途未查明，尚无具体现代对应。",
+      "recommendation": "建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。",
+      "sourceUrls": [
+        "https://www.shobserver.cn/wx/detail.do?id=861400",
+        "https://www.shhk.gov.cn/xwzx/002014/20250507/32efd845-2276-4a5f-a2d1-afb5002e42a5.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 421,
+      "historicalName": "Hospital for Women and Children",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentUse",
+      "claim": "likely；None",
+      "problem": "现有记录主要确认历史旧址或已迁出的后继机构，notes明确当下原址用途未查明，尚无具体现代对应。",
+      "recommendation": "建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。",
+      "sourceUrls": [
+        "https://news.fudan.edu.cn/2021/0715/c31a109713/page.htm",
+        "https://www.whb.cn/zhuzhan/kandian/20150418/28751.html",
+        "https://www.sh93.gov.cn/detailpage/ssgc-3413cf76-bfbb-11ec-a3a7-7c8ae163e649.html"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 7,
+      "historicalName": "International Saving Society",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；延安东路7号附近楼宇；附近为餐饮、酒吧等商业空间",
+      "problem": "本条notes已明确尚未建立原址现代对应：EDWARD VII可对应延安东路，现代OSM在7号7楼标餐饮酒吧、距点约18米。但门牌相同不足以证明原万国储蓄会营业处与现楼连续；也没有把该营业处与本批两所万国储蓄会公寓混为同一地点。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/5887259991"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 76,
+      "historicalName": "Hualong Native-Medicine Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；金陵大厦附近街坊；坐标附近为商业楼宇及住宿服务",
+      "problem": "本条notes已明确尚未建立原址现代对应：常州方志证实丁济万创办华隆中医院并另设分院，但不能把不同院址互相替代。此条贝勒路50号的历史点在金陵大厦中心约22米处；目前只确认现代商业街坊线索，尚无拆建和宗地对应材料证明医院旧楼就是金陵大厦。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://fzg.changzhou.gov.cn/html/fzg/2016/FNBDOFDF_0116/26267.html",
+        "https://www.openstreetmap.org/way/48872469"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 193,
+      "historicalName": "Hualong Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；雁荡路学校及里弄街坊；坐标附近有小学及历史里弄；原56-25号校舍现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：上海黄浦的街区报道记载华龙小学后改雁荡路小学，曾分设雁荡路36号、62号及南昌路48号，其中部分校舍已拆。原56-25号不能不经核对直接对应其中某处分部；附近OSM七色花小学约57米也不构成学校连续证据。保留旧校沿革但不移植到邻校。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_8014324",
+        "https://www.openstreetmap.org/way/1331387912"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 372,
+      "historicalName": "Huixin Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；长乐路660号附近街坊；附近有口腔诊疗及沿街服务；旧校舍用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：ROUTE BOURGEAT为长乐路。现666号牙科POI距原点约69米，仅支持这一段街区的现代用途，不能证明惠心小学660号就是现诊所，也没有找到明确的原楼存废记载。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/5608696123"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 398,
+      "historicalName": "Huaijiu Junior High School for Girls",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；汾阳路77号附近住宅与沿街商业；坐标附近为公寓及沿街餐饮商业；原借用校舍的具体楼栋用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：华东师大校史研究确认务本女中在战时改称怀久女中，并借用毕勋路和威海卫路两处校舍。此条是汾阳路校址，不是今日市二中学永康路校址。OSM的77号-1商户约22米、毕勋公寓中心约36米，只能支持现址周边住宅商业线索，不能证明原校舍即其中任一建筑。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.ecnu.edu.cn/info/1426/70248.htm",
+        "https://www.openstreetmap.org/node/5852825793",
+        "https://www.openstreetmap.org/way/1153682692"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 431,
+      "historicalName": "Institut de Droit et Politique de Shanghai(Shanghai Faculty of Law and Administration)",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；复兴中路—乌鲁木齐中路附近街坊；周边商业楼宇及沿街服务",
+      "problem": "本条notes已明确尚未建立原址现代对应：原地址有1391／1477两个号码，坐标仅提供一处位置。附近Qihua Tower商业建筑中心约52米，不能据此确认法政学院被其替代；也不能把今天华东政法大学其他校区写回此点。缺少逐院址门牌及用地沿革材料，维持待审。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/332231361"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 807,
+      "historicalName": "Huguang School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；金陵中路西端附近街坊；附近有住宿与商业；旧校舍具体用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：AVENUE FOCH旧路分段不能一概写成延安中路。按本条坐标，仅记录金陵中路40号住宿POI约22米的线索；未有材料证明沪光学校即这家旅店的原址，不填写拆除年代。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/4437512491"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 819,
+      "historicalName": "Huichun Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；武胜路—黄陂北路附近；道路及地下停车设施附近；原医院楼栋用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：RACE COURSE ROAD对应武胜路。历史点周边OSM有人民广场地下停车场及路口，但地下设施与地面宗地不是同一证据层；没有回春医院拆除和新建项目的直接资料，不能写成医院被停车场替代。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/178723092"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 906,
+      "historicalName": "Institute of Maritime Law",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；北京西路549—555号附近街坊；周边沿街商业及学校；原学院现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：AVENUE ROAD对应北京西路，但原记录无门牌。OSM555-1号咖啡馆约36米，附近还存在现代学校，均不足以证明海法学院的宗地归属。此点还与#907共享地点组，不把邻校或海事相关同名机构作为该学院的连续实体。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/13939010835",
+        "https://www.openstreetmap.org/way/1200087876"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 997,
+      "historicalName": "Huaijiu Primary and Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；威海路威海大楼附近街坊；沿街商业及楼宇街坊；历史校舍的现使用单位未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：校史资料确认怀久女中另有威海卫路校区，与#398应分别保存。OSM威海大楼中心距历史点约36米，毛泽东旧居约53米；它们仅为现代空间参照，不能把女校误认成毛泽东旧居或将机构迁移后的市二中学写回此点。旧587号尚无完整门牌沿革证据。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.ecnu.edu.cn/info/1426/70248.htm",
+        "https://www.openstreetmap.org/way/1200721295",
+        "https://www.openstreetmap.org/node/6557300117"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1041,
+      "historicalName": "Huiling Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；江宁路新江大楼附近街坊；住宅、办公等现代楼宇附近；旧学校现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：GORDON ROAD在此为江宁路，不是陕西北路。新江大楼中心距点约25米，仅用于现位置参照。此记录与承动法律会计专修校#1039、绍兴龙山中学分校#1040共用地点组，尚未建立三条记录各自的地籍与用址沿革，不对整组回填。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1270307946"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1300,
+      "historicalName": "Japanese Consular Police",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；塘沽路三角地、宝矿国际大厦附近；现代楼宇及城市道路；旧警察机构宗地用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：原BOONE ROAD 147号对应塘沽路历史地址，OSM宝矿国际大厦中心约45米、北虹高中约74米，仅作周边参照。日本领事警察在上海有多处驻地，不能直接套用昆山路或黄浦路其他旧址；本点与#1299共组，尚无完整宗地对应，不回填整组。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/744535408",
+        "https://www.openstreetmap.org/way/1155356654"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1321,
+      "historicalName": "Huashun Wharf",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；公平路渡口附近滨江地带；现代渡运设施及滨江空间（旧码头边界未闭合）",
+      "problem": "本条notes已明确尚未建立原址现代对应：虹口官方资料将华顺、公平等历史码头列入后来的高阳港务片区；这说明港区沿革，不等于华顺码头与公平路渡口同一设施。OSM公平路渡口约48米，作为现代位置线索保留；原码头门牌缺失，未将其自动对应到更远的国际客运中心。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://hkda.shhk.gov.cn/hkda/hkfz/010001/20260430/2d2cf47c-d906-4648-80bd-d948f25744f3.html",
+        "https://www.openstreetmap.org/node/1773236378"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1455,
+      "historicalName": "Huining Guild",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；制造局路—斜土路附近街坊；沿街商业与住宅附近；会馆原宗地具体用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：Huining Guild的历史名称应与徽宁会馆核对，原中文“會寧”原样保留。慈善基金会所载地方史记载徽宁会馆的徽宁路老、新馆及战毁沿革，但没有将制造局路198号独立院落直接连接到现代建筑。附近红双喜商户约31米，不据此宣布会馆现为该店。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.scf.org.cn/csjjh/n3421/n5604/u1ai308688.html",
+        "https://www.openstreetmap.org/node/13814214903"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1539,
+      "historicalName": "Huijia Garden",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；龙华俞三小区附近；周边为住宅、养老服务等；历史花园边界未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：原地址只写HYDRO (LONGHUA GANG)，属于地貌线索而非完整门牌。原点附近可见俞三小区及养老设施，不能把1904年的惠家花园直接等同现代住宅小区，亦无充分证据断定其拆除时间。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1431494599"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1580,
+      "historicalName": "Japanese Language School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；长春公寓附近街坊；公寓住宅附近；日语学校具体用址未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：现代长春公寓中心距点约51米，可以作为住宅街坊参照；未发现能把旧372号日语学校连接到该公寓的校史或地籍材料。它不是今天上海日本人学校的校址，不按机构同名替换。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1080930176"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1584,
+      "historicalName": "Ishii Hospital (Japanese)",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；多伦生活广场附近街坊；现代零售商业街坊",
+      "problem": "本条notes已明确尚未建立原址现代对应：原石井医院点位邻近多伦生活广场，OSM建筑中心约41米。医院有多次用址可能，仅凭“石井医院”及北四川路旧门牌不足以认定现代商场覆盖原院界；本轮没有可靠的拆除或完整门牌重编号材料。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1085786142",
+        "https://www.openstreetmap.org/way/1085786137"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1586,
+      "historicalName": "Japanese Regular Upper Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；四川北路横浜桥、虹口区教育学院实验中学附近；现代中学及医疗设施附近；旧小学楼栋未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：此条原名是日本寻常高等小学，FUNCTION却列医疗设施／医院，源记录存在明显冲突，不能按错误用途直接匹配医院。OSM教育学院实验中学中心约47米、江湾医院约65米，两者仅作现代空间参照；校史身份与1844号门牌链仍不足，不确定为任何一幢现存校园楼。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1083786824",
+        "https://www.openstreetmap.org/way/1214159074"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1623,
+      "historicalName": "Inoue Hotel (Japanese)",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；武进路、乍浦路附近商业街坊；周边商业楼宇、餐饮及住宿",
+      "problem": "本条notes已明确尚未建立原址现代对应：原记录只有海南路／武进路路口，缺少门牌；历史坐标附近现有吉汇大厦等商业POI，中心约71米。不能将邻近酒店当成井上旅馆改名，更不能以邻近西本愿寺建筑作为旧旅馆；保留地块范围与用途线索。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/448932891",
+        "https://www.openstreetmap.org/node/12409735007"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1670,
+      "historicalName": "Japanese Chamber of Commerce",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；天潼路—四川北路附近街坊；周边现代商业、酒店及办公楼宇",
+      "problem": "本条notes已明确尚未建立原址现代对应：原TIENDONG为天潼路写法；点附近有星荟中心、苏宁宝丽嘉酒店等现代建筑，约65—74米。没有资料将商工会议所的288号旧门牌和整块现代综合体闭合，现阶段仅作现代街坊用途参照，不断言商会大楼仍存或已拆。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/744529828",
+        "https://www.openstreetmap.org/way/744266710"
+      ]
+    },
+    {
+      "batch": "009",
+      "IDBAT": 1717,
+      "historicalName": "Japanese Mindan Clinic",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；利通广场附近街坊；现代商业办公综合体附近",
+      "problem": "本条notes已明确尚未建立原址现代对应：历史日本民团诊疗所缺少门牌。OSM利通广场中心距原点约30米、现代地址为四川北路1350号，足以记录附近商业用途，不能据此证明原诊疗所宗地被该综合体完全覆盖。本轮未发现拆除或诊疗所转用的直接记载。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/495625770",
+        "https://www.openstreetmap.org/way/50326343"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 23,
+      "historicalName": "Jinde Junior High School for Girls",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；福建南路人民路附近进德女校位置线索；周边城市街坊；女校原校舍的现使用单位未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：RUE TOURANE对应福建南路。女子教育史资料记载进德与其他学校在1953年合并，机构合并并不证明福建南路旧校舍迁到或延续为现七一中学校舍。OSM人民路775号邮政设施约66米，仅为街坊参照，不标成女校原址用途。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://m.thepaper.cn/baijiahao_23941150",
+        "https://www.openstreetmap.org/way/15419906",
+        "https://www.openstreetmap.org/way/1323097578",
+        "https://www.openstreetmap.org/node/6255824786"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 233,
+      "historicalName": "Jiangsu Women Jailhouse No. 2",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；建国中路司法旧址附近女监位置线索；周边检察机关及医疗设施；女监本体存毁和现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：官方司法旧址资料可确认会审公廨、中央捕房和法院，但不能把一般候审监房等同于第二特区女子监狱。历史点距会审公廨和瑞金医院感染门诊均约51米，二者均非女监延续的证据。同组#232、#234历史记录保留，女监证据不足使整组暂缓回填。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.sh.jcy.gov.cn/hpjcx/pfyd/yasf/25933.jhtml",
+        "https://www.sh.jcy.gov.cn/hpjcy/hjsf/index.jhtml",
+        "https://www.openstreetmap.org/node/5063146321",
+        "https://www.openstreetmap.org/way/745254448"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 235,
+      "historicalName": "Jiangsu Shanghai Judicial Court No. 2",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus",
+      "claim": "verified/review，但原点或旧门牌与现代项目待核",
+      "problem": "历史机构身份已确认；当前文本自己明确原点与现址范围尚未闭合，因此verified名义易被误读为现代对应已经确定。已hold地图是正确的。",
+      "recommendation": "在现代对应标准下用likely/review；保留已确认历史事实与具体候选，不能因历史身份确实而verified。",
+      "sourceUrls": [
+        "https://www.sh.jcy.gov.cn/hpjcx/pfyd/yasf/25933.jhtml",
+        "https://www.sh.jcy.gov.cn/hpjcy/hjsf/index.jhtml",
+        "https://www.openstreetmap.org/way/745254448"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 305,
+      "historicalName": "Jiangsu Province Supreme Court No. 3",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；永嘉路东段街坊；周边办公及沿街商业；法院具体原址用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：ROUTE HERVE DE SIEYES对应永嘉路。OSM附近有上海城投集团楼宇及永嘉路15号餐饮参照，但没有23-8／23-12旧门牌对应和法院迁入迁出材料。本条与建国中路法院记录不是可以直接互换的地点。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1119184639",
+        "https://www.openstreetmap.org/way/1460063236",
+        "https://www.openstreetmap.org/node/2151674718"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 311,
+      "historicalName": "Jiangsu Provincial Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；绍兴公园附近街坊；周边公园及文化街坊；旧校舍地块的用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：AVENUE VICTOR EMMANUEL III对应绍兴路，历史点靠近绍兴公园中心约51米。公园现门牌62号，不等于历史95号；尚无资料证明江苏省立上海中学第二部校园就是现公园。同组#309运动场的范围亦未明确，不作整组回填。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/405467372",
+        "https://www.openstreetmap.org/way/72233381"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 381,
+      "historicalName": "Jihua Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentUse",
+      "claim": "likely；曾作医疗及行业协会办公；当前使用单位未确认",
+      "problem": "现有记录主要确认历史旧址或已迁出的后继机构，notes明确当下原址用途未查明，尚无具体现代对应。",
+      "recommendation": "建议按现代对应口径改unresolved/no，历史已确认事实单列，勿丢失已查沿革。",
+      "sourceUrls": [
+        "https://epaper.file.routeryun.com/jdb/2018-06-26/P8/23c272ec68093e077470c4afddb96abb.pdf",
+        "https://www.6thhosp.com/upload/doc/201505/06094930.pdf",
+        "https://www.shyyxh.cn/Attach/Attaches/month_2104/202104301205555003.pdf",
+        "https://www.shyyxh.cn/Attach/Attaches/month_2504/202504300242098749.pdf",
+        "https://www.openstreetmap.org/node/4356456791"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 490,
+      "historicalName": "Jianwen Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；天平路国际和平妇幼保健院附近；周边医疗院区；健文小学旧校舍是否位于院区及其存毁未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：ROUTE PROSPER PARIS对应天平路。OSM妇幼保健院建筑中心约14米，仅说明旧点靠近现代院区；没有小学旧13号楼与现代院界的地籍及院史证据，不能将医院写作该小学直接后继机构。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/787353308"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 557,
+      "historicalName": "Jaya China Japan",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；四川中路133号附近商办街坊；周边商办、酒店；原轮船公司与现代楼栋的关系未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：原外文Jaya China Japan及中文“插華輪船公司”可能有转录问题，未找到独立材料确认公司标准名。OSM列四川中路133号的仓储行业协会建筑约36米，附近有亚朵酒店和申达大楼；图书馆同门牌候选亦不足以建立该轮船公司沿革，不能仅按门牌继承现单位。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/380339843",
+        "https://www.openstreetmap.org/way/380340012",
+        "https://www.openstreetmap.org/way/380339845"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 589,
+      "historicalName": "Japanese Trading Company",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；南京东路慈昌里大楼附近商业街坊；周边服装、食品零售商业；原商行身份及原址楼栋未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：Japanese Trading Company是泛指名称，原中文名称为空，无法确定是哪家日本商行。OSM慈昌里大楼中心约30米，附近有零售商户；这只支持现代商业环境，不能据此认定商行即慈昌里大楼或已经拆除。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/380339997",
+        "https://www.openstreetmap.org/node/8363347556",
+        "https://www.openstreetmap.org/node/8363347555"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 668,
+      "historicalName": "Jiangzhe Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；六合路南京东路附近商业街坊；周边餐饮及电影院商业；医院旧址的现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：原路名LLYOD疑为LLOYD ROAD转录错误，对应六合路。中文字段只有“医院”，英文Jiangzhe Hospital未取得独立院史证明。OSM餐饮店约18米、大上海电影院约30米，只支持现代商圈线索；同组#669中西医院74号的院址也不能靠近邻门牌直接认定。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/6288362985",
+        "https://www.openstreetmap.org/way/39840341",
+        "https://www.openstreetmap.org/way/490348728"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 824,
+      "historicalName": "Jiangsu Province Supreme Court No. 2",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；储能中学成都北路校区附近；周边中学校园与沿街商业；原法院用址未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：OSM储能中学校区距历史点约32米。未找到明确把成都北路200-22号法院用址连至此校园的材料；不能因为与#777同属江苏高院第二分院，就把浙江北路191号的现状移植到此处。不同年代、不同院址保留独立历史记录。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1330899747",
+        "https://www.openstreetmap.org/node/12999317385"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 851,
+      "historicalName": "Jianghai Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；威海路素凯泰酒店附近街坊；周边酒店与商业；旧小学宗地用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：WEIHAIWEI ROAD对应威海路。OSM素凯泰酒店标址威海路380号，距历史点约31米；318与380并非已证实的新旧门牌对应。没有校史或拆建证据，不将江海小学直接写成酒店前身。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/12119978630",
+        "https://www.openstreetmap.org/way/405382146"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 879,
+      "historicalName": "Jianxing University",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；成都北路长征医院附近街坊；周边医疗院区；健行大学旧址与院区的关系未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：OSM长征医院标址成都北路480号，中心距历史点约55米，不能据460与480近邻即判定大学被医院替代。没有取得健行大学及同组#878上海中学的原址沿革，保留两条教育用途记录，不覆盖成现代医院历史。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/538432095"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1025,
+      "historicalName": "Jianhua Industrial School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；北京西路嘉地中心附近商办街坊；周边商办楼宇；建华工业学校旧校舍关系未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：历史点距嘉地中心约57米，现楼门牌968号，历史学校记970号。暂未找到学校旧宗地到现代楼宇的拆建或产权沿革；同组还有#1026建华职业中学、#1027乐群中学，均保留各自历史用途，不以今天领事馆等租户名覆盖学校记录。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/185832619"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1026,
+      "historicalName": "Jianhua Professional Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；北京西路嘉地中心附近商办街坊；周边商办楼宇；建华职业中学旧校舍关系未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：与#1025同为历史北京西路970号的教育用途，但名称及年代不同应分别保存。OSM嘉地中心约52米，仅为现代位置参照；尚无资料证明970号校舍与现代968号楼宇为同一建筑或同一宗地，也不能连带覆盖同组#1027。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/185832619"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1055,
+      "historicalName": "Jiangcheng Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；武定路西康路附近住宅街坊；周边住宅；江城小学校舍的具体用址未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：历史门牌为??，坐标靠近武定路西康路、静安豪景苑中心约71米。未找到江城小学的校史和宗地变迁材料；图书馆地址检索将WUTING引向武定西路的候选不能替代本点的武定路位置。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/9804252406",
+        "https://www.openstreetmap.org/way/431876173"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1150,
+      "historicalName": "Jianxing Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；昌化路、昌平路附近街坊线索；周边里弄及沿街商业；校址精确位置未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：输入交叉路口为CONNAUGHT／TONQUIN（康定／昌化），但原坐标附近OSM为鸿印里和昌平路320号商业，存在街区对应疑问。未找到能消除路口与点位差异的健行中学校史。同组#1151北新中小学、#1152泛名学校、#1153难童中学不能自动作为同一校舍的连续用途。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/989903064",
+        "https://www.openstreetmap.org/node/12385693903"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1175,
+      "historicalName": "Jinghua Primary and Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；海防路同乐坊附近街坊；周边街坊及园区线索；竞华学校原校舍的现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：OSM同乐坊中心约42米，海防路约14米；未取得竞华中小学旧址或拆建的可靠文献。不能只凭旧527号及邻近园区名称推断学校变成同乐坊，历史学校用途独立保留。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1324706267",
+        "https://www.openstreetmap.org/way/1467619643"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1179,
+      "historicalName": "Jike Primary School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；胶州路余姚路附近原金科学校用地线索；周边住宅街坊；小学具体地块与现楼对应未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：原中文为金科小学，外文Jike与金科中学Jinke存在拼写差异。百科提供金科中学迁至胶州路734号及后改教师公寓的线索，但本条小学门牌缺失、点位在中学记录南侧，不能把中学沿革无条件套入小学。OSM静安南洋家园约55米仅作位置参照，需查原校园边界及附小材料。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://zh.wikipedia.org/wiki/上海市江宁学校",
+        "https://www.openstreetmap.org/way/1131985348",
+        "https://www.openstreetmap.org/way/296375952"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1327,
+      "historicalName": "Jinghu Junior High School",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；溧阳路宝安路附近原京沪中学用地线索；周边商办及城市街坊；历史校园的现代覆盖范围未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：新沪校友回忆录直接记京沪中学校址为溧阳路1177号，前为日本海军俱乐部，后改新沪中学，原校园及外操场范围很大。OSM永融企业中心距点约95米，不能将其直接写成学校原址。同组#1328日本特务机构、#1329月迺屋花园的用址关系也需分别考证，机构史不替代地籍。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.xhstgst.com/static/新沪回忆录.pdf",
+        "https://www.openstreetmap.org/way/24474916",
+        "https://www.openstreetmap.org/way/1081680479",
+        "https://www.openstreetmap.org/way/1434318970"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1342,
+      "historicalName": "Jimin Hospital",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；西藏北路商业街坊位置线索；周边餐饮商业；济民医院旧址的现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：NORTH THIBET ROAD对应西藏北路，近邻OSM为西藏北路及约45米外的咖啡、餐饮店。本条与#780上海急救时疫医院共用旧240号，但未找到足以证明医院沿革及现代宗地的材料；不按邻近商户直接认定旧医院已变成餐饮店。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/49228662",
+        "https://www.openstreetmap.org/node/4395476990",
+        "https://www.openstreetmap.org/node/4395882391"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1408,
+      "historicalName": "Jardine Matheson and Company Cotton Mill",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；长寿路水岸茗苑附近原工业街坊；周边住宅；公益纱厂旧宗地的现代对应范围未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：普陀档案工业史料将公益纱厂、怡和及后续毛纺厂串联，所载厂址为长寿路1118号，而输入是ROBISON ROAD 1020号。历史点靠近水岸茗苑中心约40米，缺少1020与1118门牌沿革及厂界材料，不能直接写成1118号现代写字楼，也不能混同杨树浦怡和纱厂或M50。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://daj.shpt.gov.cn/ptdaj/upload/file/2020/01/06/a64e92765b1349f59694287a5a8e6c83.pdf",
+        "https://www.openstreetmap.org/way/1431405192"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1466,
+      "historicalName": "Jiangnan Arsenal",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus",
+      "claim": "verified/review，但原点或旧门牌与现代项目待核",
+      "problem": "历史机构身份已确认；当前文本自己明确原点与现址范围尚未闭合，因此verified名义易被误读为现代对应已经确定。已hold地图是正确的。",
+      "recommendation": "在现代对应标准下用likely/review；保留已确认历史事实与具体候选，不能因历史身份确实而verified。",
+      "sourceUrls": [
+        "https://www.shjsjtdw.cn/node2/n59/u1ai15377.html",
+        "https://siec.scg.com.cn/scg_az_jtyw/2025-03-06/Detail_237870.htm",
+        "https://sheitc.sh.gov.cn/cmsres/0c/0c09e7ea843c4ab99e40cf5ba5065de2/37a0fcd6a1803bd9582dafaea58b97f1.pdf",
+        "https://www.openstreetmap.org/way/1150102610",
+        "https://www.openstreetmap.org/way/1150102616"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1477,
+      "historicalName": "Jingjiang Guild",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；西藏南路老西门附近京江公所用地线索；周边住宅及沿街商业；公所原宗地现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：档案馆目录保存京江公所历史资料；建筑研究工作论文将公所定位于方浜桥、肇周路交界相关旧地段。OSM附近为老西门及约47米外公寓建筑，但未得到旧547号门牌和公所院界与今宗地对应，不宣布公所已变为某一住宅小区。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.shda.gov.cn/daly/gczn/202509/t20250919_74644.html",
+        "https://iaste.org/wp-content/uploads/2025/08/Volume-355.pdf",
+        "https://www.openstreetmap.org/relation/13251292",
+        "https://www.openstreetmap.org/way/640647899"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1582,
+      "historicalName": "Japanese Youth School of Industry",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；溧阳路长山路附近街坊；周边住宅及公共服务；原学校用址未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：DIXWELL ROAD对应溧阳路，历史门牌为??。OSM四川北路派出所约31米、长春公寓约48米，只是邻近参照；尚无材料证明日本实业青年学校即现派出所或公寓。原始外文与中文名称保留，不改历史坐标。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/40140576",
+        "https://www.openstreetmap.org/way/1434318969",
+        "https://www.openstreetmap.org/node/9907469334",
+        "https://www.openstreetmap.org/way/1080930176"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1635,
+      "historicalName": "Japanese YMCA",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；武进路吴淞路附近街坊；周边沿街商业；日本青年会旧址的现用途未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：WUTSIN对应武进路。现有空间参照为武进路及约58米外的面包店，未找到日本基督青年会的原址沿革。同组#1636日本海军武官府可能反映不同历史用途，均应保留；不能套用附近沪北会堂的建筑史。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/175621779",
+        "https://www.openstreetmap.org/node/12324030459"
+      ]
+    },
+    {
+      "batch": "010",
+      "IDBAT": 1690,
+      "historicalName": "Japanese Telegraph",
+      "reviewLevel": "record-review",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P2",
+      "field": "verificationStatus/currentNameZh/currentUse",
+      "claim": "likely；天潼路、福德路附近街坊；周边为楼宇街坊；电信局原宗地的现使用单位未确认",
+      "problem": "本条notes已明确尚未建立原址现代对应：历史记录为日本电信局，SEWARD ROAD属旧长治路名称体系，但不能将25号直接套到今东长治路25号。历史点距银波大厦约38米、天潼路约27米，仅保留街坊定位线索，未建立电信局到该楼的沿革。 此处仅为附近环境线索，旧likely口径允许空间推测，不是已证伪的事实，但不满足当前项目对具体现代候选的证据要求。",
+      "recommendation": "建议改为unresolved/no，现代地点仅留在notes的空间参照；保留历史身份增量，不把附近用途填作原址用途。",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/144965240",
+        "https://www.openstreetmap.org/way/446937835",
+        "https://www.openstreetmap.org/way/71523154"
+      ]
+    },
+    {
+      "batch": "001",
+      "IDBAT": 538,
+      "historicalName": "Bank of Communications",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P3",
+      "field": "workflow.sourceDataIssue / temporal inference",
+      "claim": "原记录1940、现楼1948，因此二者必定是同地块前后两栋。",
+      "problem": "官方资料支持现交通银行楼1948年竣工，且同址曾有旧德华银行；但仅凭数据库1940起年不能判断该记录一定指前栋，也可能是原记录年代误差。现总工会地址和历史楼主链未被推翻。",
+      "recommendation": "将1940/1948写为原字段与建筑史的年代差异；保留前后建筑解释为待核，需精确VS图像或文献确定输入所指楼代后再作存续/重建分类。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://mzj.sh.gov.cn/lnb-wsws/20200518/MZ_LNB12_9195.html"
+      ]
+    },
+    {
+      "batch": "002",
+      "IDBAT": 210,
+      "historicalName": "Chapsal Primary School",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P3",
+      "field": "source reproducibility",
+      "claim": "上海党史网直接支持淡水路416号原萨坡赛小学现医学生宿舍。",
+      "problem": "本轮党史网初次仅返回页元信息，随后具体正文定位/打开超时，未能重新读取所述段落；另一旧引源本轮未复读。属于复核可重现性缺口，不是发现门牌或宿舍结论错误。",
+      "recommendation": "后续补可读正文、网页归档或校方现址资料；保留已记录的访问失败，不因单次失败自动撤销已有结论。",
+      "sourceUrls": [
+        "https://www.ccphistory.org.cn/shds/shkyws/content/00f17d69-f692-4cbb-aef8-25ab59647234.html"
+      ]
+    },
+    {
+      "batch": "008",
+      "IDBAT": 544,
+      "historicalName": "German Post Office",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": true,
+      "severity": "P3",
+      "field": "temporal/relationship",
+      "claim": "1903原记录与1905现楼same-building-repurposed",
+      "problem": "名录直接确认福州60/70双门牌及现办公楼，但建造年代1905与原startYear1903不同。差两年本身不证伪同址，不宜默认为原年即现楼年代。",
+      "recommendation": "notes明确1903原记录年与1905现楼名录差异；查原年份含义/早期楼代后再确定same-building口径。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ]
+    },
+    {
+      "batch": "004",
+      "IDBAT": 522,
+      "historicalName": "Deutsch-Asiatische Bank",
+      "reviewLevel": "source-recheck",
+      "verdict": "correction-needed",
+      "currentMapHasUse": false,
+      "severity": "P3",
+      "field": "sourceUrls",
+      "claim": "以4月美展综述作为四川中路294号当代展览用途证据",
+      "problem": "原指定官方综述未出现该地点；已经找到直接列地址和展期的上海文旅页面。",
+      "recommendation": "把现用引用替换/补为李悦Soft Fever详情；避免由二楼展览推断整栋全部用途。历史银行对应仍保留其历史来源。",
+      "sourceUrls": [
+        "https://www.shanghai.gov.cn/nw17239/20260409/3e3df4dfe7734bc4befd4fc538812704.html",
+        "https://www.meet-in-shanghai.net/cn/gallery/li-yue-soft-fever-320602/"
+      ]
+    },
+    {
+      "batch": "006",
+      "IDBAT": 1593,
+      "historicalName": "Guangdong Qinxinhui",
+      "reviewLevel": "source-recheck",
+      "verdict": "needs-evidence",
+      "currentMapHasUse": false,
+      "severity": "P3",
+      "field": "evidence / sourceDataIssue",
+      "claim": "广东社团中文全称未定",
+      "problem": "本地原中文已有“廣東侵信會”，官方建筑名单另有“广东浸信会”，并非完全无中文线索；旧表述掩盖了可能的错字/教会身份线索。",
+      "recommendation": "保留原中文及浸信会候选，沿66号门牌核对；继续 location-only，不把同组1594上海日报自动归入该教堂。",
+      "sourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.virtualshanghai.net/data/buildings?ID=1593"
+      ]
+    }
+  ],
+  "structuralFindings": [
+    {
+      "key": "input-pointer-002",
+      "severity": "P2",
+      "batch": "002",
+      "IDBAT": null,
+      "kind": "stale-input-reference",
+      "finding": "工作流input=public/data/unresolved-landmarks/002.json当前只与原研究集合重叠7/50条，不能据同号现导出重建研究输入。",
+      "recommendation": "已有固定input的批次改引用固定路径；002—006按原50个ID追溯提交时源输入并另存有来源说明的快照，不把现public同号文件冒充原输入。"
+    },
+    {
+      "key": "input-pointer-003",
+      "severity": "P2",
+      "batch": "003",
+      "IDBAT": null,
+      "kind": "stale-input-reference",
+      "finding": "工作流input=public/data/unresolved-landmarks/003.json当前只与原研究集合重叠6/50条，不能据同号现导出重建研究输入。",
+      "recommendation": "已有固定input的批次改引用固定路径；002—006按原50个ID追溯提交时源输入并另存有来源说明的快照，不把现public同号文件冒充原输入。"
+    },
+    {
+      "key": "input-pointer-004",
+      "severity": "P2",
+      "batch": "004",
+      "IDBAT": null,
+      "kind": "stale-input-reference",
+      "finding": "工作流input=public/data/unresolved-landmarks/004.json当前只与原研究集合重叠14/50条，不能据同号现导出重建研究输入。",
+      "recommendation": "已有固定input的批次改引用固定路径；002—006按原50个ID追溯提交时源输入并另存有来源说明的快照，不把现public同号文件冒充原输入。"
+    },
+    {
+      "key": "input-pointer-005",
+      "severity": "P2",
+      "batch": "005",
+      "IDBAT": null,
+      "kind": "stale-input-reference",
+      "finding": "工作流input=public/data/unresolved-landmarks/005.json当前只与原研究集合重叠0/50条，不能据同号现导出重建研究输入。",
+      "recommendation": "已有固定input的批次改引用固定路径；002—006按原50个ID追溯提交时源输入并另存有来源说明的快照，不把现public同号文件冒充原输入。"
+    },
+    {
+      "key": "input-pointer-006",
+      "severity": "P2",
+      "batch": "006",
+      "IDBAT": null,
+      "kind": "stale-input-reference",
+      "finding": "工作流input=public/data/unresolved-landmarks/006.json当前只与原研究集合重叠0/50条，不能据同号现导出重建研究输入。",
+      "recommendation": "已有固定input的批次改引用固定路径；002—006按原50个ID追溯提交时源输入并另存有来源说明的快照，不把现public同号文件冒充原输入。"
+    },
+    {
+      "key": "001-1476-override-subset-scope",
+      "batch": "001",
+      "IDBAT": 1476,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-216",
+          "guardedIds": [
+            1476
+          ],
+          "additionalGroupIds": [
+            216
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "006-1614-override-subset-scope",
+      "batch": "006",
+      "IDBAT": 1614,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-1614",
+          "guardedIds": [
+            1614
+          ],
+          "additionalGroupIds": [
+            1615
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "007-556-override-subset-scope",
+      "batch": "007",
+      "IDBAT": 556,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-556",
+          "guardedIds": [
+            556
+          ],
+          "additionalGroupIds": [
+            562
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "007-290-override-subset-scope",
+      "batch": "007",
+      "IDBAT": 290,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-290",
+          "guardedIds": [
+            290
+          ],
+          "additionalGroupIds": [
+            1780
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "007-1334-override-subset-scope",
+      "batch": "007",
+      "IDBAT": 1334,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-649",
+          "guardedIds": [
+            1334
+          ],
+          "additionalGroupIds": [
+            649
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "007-655-override-subset-scope",
+      "batch": "007",
+      "IDBAT": 655,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-653",
+          "guardedIds": [
+            655
+          ],
+          "additionalGroupIds": [
+            653
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "008-480-override-subset-scope",
+      "batch": "008",
+      "IDBAT": 480,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-479",
+          "guardedIds": [
+            480
+          ],
+          "additionalGroupIds": [
+            479
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "008-1692-override-subset-scope",
+      "batch": "008",
+      "IDBAT": 1692,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-728",
+          "guardedIds": [
+            1692
+          ],
+          "additionalGroupIds": [
+            728
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "008-1244-override-subset-scope",
+      "batch": "008",
+      "IDBAT": 1244,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-19",
+          "guardedIds": [
+            1244
+          ],
+          "additionalGroupIds": [
+            19
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    },
+    {
+      "key": "008-1043-override-subset-scope",
+      "batch": "008",
+      "IDBAT": 1043,
+      "kind": "override-subset-scope",
+      "severity": "P2",
+      "details": [
+        {
+          "overrideGroup": "landmark-vs-site-1042",
+          "guardedIds": [
+            1043
+          ],
+          "additionalGroupIds": [
+            1042,
+            1044,
+            1390,
+            1391
+          ]
+        }
+      ],
+      "finding": "当前整组显示使用含子集ID guard的覆盖；guard检查仅确认包含，并不限制显示到被批准实体。",
+      "recommendation": "逐成员核对是否同址同用途；未获独立证据者应分离或单独hold，不凭子集同意扩展。"
+    }
+  ],
+  "note": "结构项的override-subset-scope只是待说明范围的信号，不等于十组都存在事实错误。逐条事实判断以audit.json为准；本轮未修改原结果或地图。"
+}

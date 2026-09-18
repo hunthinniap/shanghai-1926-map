@@ -1,0 +1,430 @@
+{
+  "scope": "002—006输入指针追溯，仅检查Git已提交的同号public文件历史，不声称检查未提交历史或外部存档。",
+  "records": [
+    {
+      "batch": "002",
+      "declaredInput": "public/data/unresolved-landmarks/002.json",
+      "expectedIds": [
+        1464,
+        339,
+        410,
+        373,
+        858,
+        1678,
+        507,
+        1072,
+        1313,
+        1443,
+        1096,
+        1114,
+        202,
+        160,
+        129,
+        221,
+        130,
+        1132,
+        1379,
+        1538,
+        1406,
+        1492,
+        897,
+        877,
+        499,
+        960,
+        1756,
+        293,
+        1411,
+        1546,
+        1771,
+        1600,
+        304,
+        1286,
+        579,
+        634,
+        568,
+        306,
+        303,
+        282,
+        1249,
+        1500,
+        180,
+        210,
+        358,
+        1488,
+        528,
+        555,
+        989,
+        773
+      ],
+      "checkedRevisions": [
+        {
+          "commit": "9dccb79265ff0d12633a475552c9a06692e066e5",
+          "idOverlap": 7,
+          "exactIdSet": false
+        },
+        {
+          "commit": "db89a1ac0626a1598492fe62ba027f89927995d5",
+          "idOverlap": 8,
+          "exactIdSet": false
+        },
+        {
+          "commit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+          "idOverlap": 29,
+          "exactIdSet": false
+        },
+        {
+          "commit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+          "idOverlap": 50,
+          "exactIdSet": true
+        }
+      ],
+      "recoveredExactSnapshot": {
+        "fileName": "002-recovered-input.json",
+        "sourceCommit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+        "sourcePath": "public/data/unresolved-landmarks/002.json",
+        "sha256": "ac93324755619951f1972730c66f22215d6d79ea95e58d6d7089e3ab7e268248",
+        "note": "Git历史中的同号完整50条JSON与工作流ID集合完全相同；保留历史字节与顺序，不改旧工作流input字段。"
+      }
+    },
+    {
+      "batch": "003",
+      "declaredInput": "public/data/unresolved-landmarks/003.json",
+      "expectedIds": [
+        976,
+        165,
+        859,
+        1266,
+        888,
+        1263,
+        881,
+        665,
+        967,
+        1264,
+        1172,
+        689,
+        154,
+        503,
+        1353,
+        42,
+        1669,
+        289,
+        432,
+        1122,
+        409,
+        1134,
+        1196,
+        1643,
+        187,
+        383,
+        842,
+        360,
+        1575,
+        1363,
+        803,
+        6,
+        847,
+        429,
+        440,
+        1684,
+        1686,
+        362,
+        534,
+        804,
+        1551,
+        1198,
+        1095,
+        147,
+        1217,
+        845,
+        1259,
+        72,
+        1564,
+        455
+      ],
+      "checkedRevisions": [
+        {
+          "commit": "9dccb79265ff0d12633a475552c9a06692e066e5",
+          "idOverlap": 6,
+          "exactIdSet": false
+        },
+        {
+          "commit": "db89a1ac0626a1598492fe62ba027f89927995d5",
+          "idOverlap": 13,
+          "exactIdSet": false
+        },
+        {
+          "commit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+          "idOverlap": 38,
+          "exactIdSet": false
+        },
+        {
+          "commit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+          "idOverlap": 29,
+          "exactIdSet": false
+        }
+      ],
+      "recoveredExactSnapshot": null,
+      "remainingGap": "已提交的该public同号文件历史中未找到完全相同的50-ID集合；最新live可作逐ID上下文，不能冒充原始批次快照。"
+    },
+    {
+      "batch": "004",
+      "declaredInput": "public/data/unresolved-landmarks/004.json",
+      "expectedIds": [
+        408,
+        1666,
+        1775,
+        686,
+        682,
+        376,
+        982,
+        966,
+        964,
+        965,
+        1135,
+        698,
+        60,
+        150,
+        1461,
+        418,
+        678,
+        284,
+        1403,
+        865,
+        684,
+        211,
+        1182,
+        1710,
+        522,
+        567,
+        866,
+        1646,
+        93,
+        1367,
+        787,
+        1581,
+        628,
+        1311,
+        1642,
+        143,
+        144,
+        327,
+        882,
+        1221,
+        361,
+        218,
+        1742,
+        44,
+        995,
+        152,
+        1,
+        1663,
+        243,
+        397
+      ],
+      "checkedRevisions": [
+        {
+          "commit": "9dccb79265ff0d12633a475552c9a06692e066e5",
+          "idOverlap": 14,
+          "exactIdSet": false
+        },
+        {
+          "commit": "db89a1ac0626a1598492fe62ba027f89927995d5",
+          "idOverlap": 25,
+          "exactIdSet": false
+        },
+        {
+          "commit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+          "idOverlap": 50,
+          "exactIdSet": true
+        },
+        {
+          "commit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+          "idOverlap": 17,
+          "exactIdSet": false
+        }
+      ],
+      "recoveredExactSnapshot": {
+        "fileName": "004-recovered-input.json",
+        "sourceCommit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+        "sourcePath": "public/data/unresolved-landmarks/004.json",
+        "sha256": "6dc7c8d43c725155de2dfa779ce6b972578aaff460590bf60f6f10b036add727",
+        "note": "Git历史中的同号完整50条JSON与工作流ID集合完全相同；保留历史字节与顺序，不改旧工作流input字段。"
+      }
+    },
+    {
+      "batch": "005",
+      "declaredInput": "public/data/unresolved-landmarks/005.json",
+      "expectedIds": [
+        250,
+        485,
+        1772,
+        354,
+        1394,
+        765,
+        430,
+        413,
+        69,
+        1633,
+        1123,
+        121,
+        1574,
+        718,
+        1754,
+        753,
+        1498,
+        89,
+        1112,
+        237,
+        420,
+        203,
+        458,
+        245,
+        228,
+        244,
+        321,
+        322,
+        318,
+        4108,
+        1770,
+        1515,
+        863,
+        889,
+        164,
+        252,
+        716,
+        341,
+        132,
+        325,
+        317,
+        1512,
+        212,
+        225,
+        402,
+        1514,
+        1482,
+        1056,
+        81,
+        1370
+      ],
+      "checkedRevisions": [
+        {
+          "commit": "4ca4ef0a1cfd27b640683492721d072c4d5fe0f7",
+          "idOverlap": 0,
+          "exactIdSet": false
+        },
+        {
+          "commit": "9dccb79265ff0d12633a475552c9a06692e066e5",
+          "idOverlap": 0,
+          "exactIdSet": false
+        },
+        {
+          "commit": "db89a1ac0626a1598492fe62ba027f89927995d5",
+          "idOverlap": 6,
+          "exactIdSet": false
+        },
+        {
+          "commit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+          "idOverlap": 31,
+          "exactIdSet": false
+        },
+        {
+          "commit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+          "idOverlap": 17,
+          "exactIdSet": false
+        }
+      ],
+      "recoveredExactSnapshot": null,
+      "remainingGap": "已提交的该public同号文件历史中未找到完全相同的50-ID集合；最新live可作逐ID上下文，不能冒充原始批次快照。"
+    },
+    {
+      "batch": "006",
+      "declaredInput": "public/data/unresolved-landmarks/006.json",
+      "expectedIds": [
+        1760,
+        286,
+        1609,
+        1323,
+        1439,
+        30,
+        489,
+        1008,
+        876,
+        706,
+        666,
+        1234,
+        29,
+        392,
+        291,
+        258,
+        1018,
+        1593,
+        792,
+        994,
+        1241,
+        1048,
+        262,
+        820,
+        825,
+        991,
+        896,
+        778,
+        1602,
+        1680,
+        229,
+        1570,
+        1588,
+        1458,
+        1572,
+        374,
+        956,
+        63,
+        1354,
+        1199,
+        860,
+        1490,
+        1731,
+        329,
+        1614,
+        1453,
+        1228,
+        719,
+        215,
+        547
+      ],
+      "checkedRevisions": [
+        {
+          "commit": "30a84f989e537c229871e33d9d28a67498243df0",
+          "idOverlap": 0,
+          "exactIdSet": false
+        },
+        {
+          "commit": "4ca4ef0a1cfd27b640683492721d072c4d5fe0f7",
+          "idOverlap": 0,
+          "exactIdSet": false
+        },
+        {
+          "commit": "9dccb79265ff0d12633a475552c9a06692e066e5",
+          "idOverlap": 0,
+          "exactIdSet": false
+        },
+        {
+          "commit": "db89a1ac0626a1598492fe62ba027f89927995d5",
+          "idOverlap": 8,
+          "exactIdSet": false
+        },
+        {
+          "commit": "ae0cb7235a0d2f5394cd04bd39d626ed1135baaa",
+          "idOverlap": 36,
+          "exactIdSet": false
+        },
+        {
+          "commit": "83f575e5e3df270b21ffa8b267ea5bd53db6b8d7",
+          "idOverlap": 0,
+          "exactIdSet": false
+        }
+      ],
+      "recoveredExactSnapshot": null,
+      "remainingGap": "已提交的该public同号文件历史中未找到完全相同的50-ID集合；最新live可作逐ID上下文，不能冒充原始批次快照。"
+    }
+  ]
+}

@@ -1,0 +1,3717 @@
+{
+  "inputFileName": "research/supplemental/2026-09-18-public-baths/input.json",
+  "inputSha256": "78e16f0f52d1dccdb9690708c6ac21e148007704c7f06c0925d706f3ca5e69b9",
+  "inputIds": [
+    8,
+    17,
+    25,
+    34,
+    35,
+    53,
+    57,
+    68,
+    71,
+    101,
+    104,
+    106
+  ],
+  "inputSelection": {
+    "fullInputRecordCount": 39,
+    "description": "本agent分工12条，按原输入相对顺序保留；root另负责其余记录。"
+  },
+  "researchedAt": "2026-09-18",
+  "recordCount": 12,
+  "previousMaterials": [
+    {
+      "path": "research/supplemental/2026-09-18-public-baths/context.json",
+      "readThisRound": true,
+      "role": "原中文/年代、完整单成员组和坐标上下文"
+    },
+    {
+      "path": "research/supplemental/2026-09-18-public-baths/vs-details.json",
+      "readThisRound": true,
+      "role": "root本轮精确VS抓取，供本agent实际复读，不算独立历史源"
+    }
+  ],
+  "validation": {
+    "executionStatus": "executed",
+    "checks": [
+      "12条ID唯一且按指定原顺序",
+      "input原文件SHA256一致",
+      "8主schema严格8键",
+      "17主schema严格8键",
+      "25主schema严格8键",
+      "34主schema严格8键",
+      "35主schema严格8键",
+      "53主schema严格8键",
+      "57主schema严格8键",
+      "68主schema严格8键",
+      "71主schema严格8键",
+      "101主schema严格8键",
+      "104主schema严格8键",
+      "106主schema严格8键",
+      "originalInput逐项相等",
+      "日志queries/执行信息同步，每条至少2query",
+      "主结论/现代状态/来源完全同步",
+      "来源access枚举和全部引用覆盖",
+      "组员完整原字段/独立点保留",
+      "不捏造距离或点入面",
+      "历史佐证与现代状态分列",
+      "12条原始UTM用项目coordinate-systems函数再次独立转换，与证据WGS84差值均不超过0.000001度"
+    ],
+    "failures": []
+  },
+  "records": [
+    {
+      "IDBAT": 8,
+      "originalInput": {
+        "IDBAT": 8,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "25-2 RUE MONTAUBAN",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 355815.3904,
+        "YC": 3456509.8923
+      },
+      "historicalContext": {
+        "nameZh": "湯山浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=8",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "none",
+        "finding": "本轮未取得可对应上海湯山浴室及25-2旧门牌的独立历史来源。",
+        "sourceUrls": []
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：本轮未取得可对应上海湯山浴室及25-2旧门牌的独立历史来源。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"汤山浴室\" 上海 蒙托邦",
+        "\"湯山浴室\" \"25\"",
+        "\"上海\" \"汤山浴室\"",
+        "\"四川南路\" \"汤山\" 浴室"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"汤山浴室\" 上海 蒙托邦",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 1,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"湯山浴室\" \"25\"",
+            "\"领事馆路\" \"浴室\"",
+            "\"金陵东路183\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"湯山浴室\" \"25\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 1,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"汤山浴室\" 上海 蒙托邦",
+            "\"领事馆路\" \"浴室\"",
+            "\"金陵东路183\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"上海\" \"汤山浴室\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 7,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"四川南路\" \"汤山\" 浴室",
+            "\"上海\" \"法大马路\" \"浴室\"",
+            "\"183\" \"领事路\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"四川南路\" \"汤山\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 7,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"汤山浴室\"",
+            "\"上海\" \"法大马路\" \"浴室\"",
+            "\"183\" \"领事路\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=8",
+          "title": "Virtual Shanghai 建筑 #8：湯山浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=8，本agent重读该缓存",
+          "supports": "核原名湯山浴室、旧址25-2 RUE MONTAUBAN、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:44.636504+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "cae83acd29bd44f4f621621187789617489fdce6589d3b9b8c3c2db057e8d260",
+            "bytes": 15001
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        }
+      ],
+      "identityEvidence": "精确VS仅保留原库中文“湯山浴室”；尚无独立历史来源锁定该具体浴室。",
+      "addressEvidence": "本轮未取得可对应上海湯山浴室及25-2旧门牌的独立历史来源。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "精确VS仅保留原库中文“湯山浴室”；尚无独立历史来源锁定该具体浴室。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=8"
+          ],
+          "gap": "需要租界时期浴室名录或广告同时列湯山与25-2门牌。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "本轮未取得可对应上海湯山浴室及25-2旧门牌的独立历史来源。",
+          "sourceUrls": [],
+          "gap": "需要租界时期浴室名录或广告同时列湯山与25-2门牌。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.486051,
+          "latitude": 31.233878
+        },
+        "sourceCoordinates": {
+          "XC": 355815.3904,
+          "YC": 3456509.8923,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 8,
+          "name": "Public Bath",
+          "nameZh": "湯山浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-8；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 8,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "25-2 RUE MONTAUBAN",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 355815.3904,
+            "YC": 3456509.8923
+          },
+          "liveRecord": {
+            "id": 8,
+            "name": "Public Bath",
+            "nameZh": "湯山浴室",
+            "address": "25-2 RUE MONTAUBAN",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355815.3904,
+            "y": 3456509.8923,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=8",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.486051,
+            "latitude": 31.233878
+          },
+          "providedGcj02": {
+            "longitude": 121.490532,
+            "latitude": 31.231902
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "需要租界时期浴室名录或广告同时列湯山与25-2门牌。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需要租界时期浴室名录或广告同时列湯山与25-2门牌。",
+          "action": "查法租界卫生执照/工商名录中Montauban25-2及湯山浴室条目。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：本轮未取得可对应上海湯山浴室及25-2旧门牌的独立历史来源。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "原库及本轮精确VS页记湯山浴室，旧址25-2 RUE MONTAUBAN，未给年代。已用湯山/汤山及蒙托邦、四川南路组合检索；命中多为南京汤山温泉或现代同名项目，没有可独立佐证上海此浴室的网页。不能把南京温泉或现代同名设施接到原点，历史门牌及原楼存废、现代用途仍无证据。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #8：湯山浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=8"
+        }
+      ]
+    },
+    {
+      "IDBAT": 17,
+      "originalInput": {
+        "IDBAT": 17,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "183-4 RUE DU CONSULAT",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 355587.75,
+        "YC": 3456326.1748
+      },
+      "historicalContext": {
+        "nameZh": "浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=17",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。",
+        "sourceUrls": [
+          "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+          "https://m.thepaper.cn/newsDetail_forward_1600434"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"领事馆路\" \"浴室\"",
+        "\"金陵东路183\" 浴室",
+        "\"上海\" \"法大马路\" \"浴室\"",
+        "\"183\" \"领事路\" 浴室",
+        "\"东风浴室\" \"金陵东路183\"",
+        "\"东风浴室\" \"金陵\" 历史"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"领事馆路\" \"浴室\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 1,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"汤山浴室\" 上海 蒙托邦",
+            "\"湯山浴室\" \"25\"",
+            "\"金陵东路183\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"金陵东路183\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 1,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"汤山浴室\" 上海 蒙托邦",
+            "\"湯山浴室\" \"25\"",
+            "\"领事馆路\" \"浴室\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"上海\" \"法大马路\" \"浴室\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 7,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"汤山浴室\"",
+            "\"四川南路\" \"汤山\" 浴室",
+            "\"183\" \"领事路\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"183\" \"领事路\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 7,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"汤山浴室\"",
+            "\"四川南路\" \"汤山\" 浴室",
+            "\"上海\" \"法大马路\" \"浴室\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"东风浴室\" \"金陵东路183\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 11,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"东风浴室\" \"金陵\" 历史",
+            "\"西湖浴室\" \"荫余里\"",
+            "\"西湖浴室\" \"金钟广场\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"东风浴室\" \"金陵\" 历史",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 11,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"东风浴室\" \"金陵东路183\"",
+            "\"西湖浴室\" \"荫余里\"",
+            "\"西湖浴室\" \"金钟广场\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=17",
+          "title": "Virtual Shanghai 建筑 #17：浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=17，本agent重读该缓存",
+          "supports": "核原名浴室、旧址183-4 RUE DU CONSULAT、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:44.636699+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "96d8b82f55925740f95a38886e0a158e55ec953770b5f2039efb1f566037d0b9",
+            "bytes": 15003
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "publisher": "东方网—文汇报；新浪转载",
+          "publishedAt": "2004-01-20",
+          "accessMethod": "reprint",
+          "locator": "正文各区浴室名录；东风金陵东183弄4、逍遥池浙江南108、平原济南297、新泉安化76条",
+          "supports": "2004年同名或同址营业名录，供历史门牌线索及同名异址排除。",
+          "limitations": "只支持2004时点；不证明租界时期与2004同一浴室或2026继续营业。桌面版解码失败，移动版全文实际成功。",
+          "sourceFamily": "wenhui-20040120-baths",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_1600434",
+          "title": "陶喻之：一个人的上博杂忆：从80年代的搪瓷“饭碗头”到东馆建设",
+          "publisher": "澎湃新闻",
+          "publishedAt": "2017-01-15",
+          "accessMethod": "full-text",
+          "locator": "作者回忆80年代工会组织去金陵东路骑楼弄堂里的东风浴室段（web全文L30）",
+          "supports": "上海博物馆员工的亲历回忆，证明1980年代金陵东路弄堂东风浴室的使用。",
+          "limitations": "没有给183弄4号或建造年代；回忆往事，不是2017或2026的营业实况。",
+          "sourceFamily": "tao-yuzhi-shanghai-museum-memoir",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。",
+      "addressEvidence": "2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=17",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+            "https://m.thepaper.cn/newsDetail_forward_1600434"
+          ],
+          "gap": "须核183-4至183弄4的门牌及东风浴室创设/改名档案，并查原楼后续。"
+        },
+        "address": {
+          "status": "candidate",
+          "finding": "2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+            "https://m.thepaper.cn/newsDetail_forward_1600434"
+          ],
+          "gap": "须核183-4至183弄4的门牌及东风浴室创设/改名档案，并查原楼后续。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+            "https://m.thepaper.cn/newsDetail_forward_1600434"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.483688,
+          "latitude": 31.232193
+        },
+        "sourceCoordinates": {
+          "XC": 355587.75,
+          "YC": 3456326.1748,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 17,
+          "name": "Public Bath",
+          "nameZh": "浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-17；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 17,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "183-4 RUE DU CONSULAT",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 355587.75,
+            "YC": 3456326.1748
+          },
+          "liveRecord": {
+            "id": 17,
+            "name": "Public Bath",
+            "nameZh": "浴室",
+            "address": "183-4 RUE DU CONSULAT",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355587.75,
+            "y": 3456326.1748,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=17",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.483688,
+            "latitude": 31.232193
+          },
+          "providedGcj02": {
+            "longitude": 121.488178,
+            "latitude": 31.230223
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "须核183-4至183弄4的门牌及东风浴室创设/改名档案，并查原楼后续。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "须核183-4至183弄4的门牌及东风浴室创设/改名档案，并查原楼后续。",
+          "action": "定点查黄浦区商业志/浴室业档案东风浴室的前名与金陵东183弄4变迁。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：2004年东风浴室门牌183弄4与原183-4形式相合，1980年代亲历记述提供后期使用佐证，原租界浴室继承关系未证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原名仅浴室、旧址183-4 RUE DU CONSULAT，未给年代。2004年《便民浴室恭候光临》全文列东风浴室金陵东路183弄4；陶喻之2017年亲历回忆又记1980年代去金陵东路骑楼弄堂内东风浴室。二者形成后期同址浴室的历史候选，但同号不能单独证明它与原租界记录连续；创设、改名、原楼及2026用途均未闭合，不将东风名号或旧营业情况直接写为今天用途。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #17：浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=17"
+        },
+        {
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        },
+        {
+          "title": "陶喻之：一个人的上博杂忆：从80年代的搪瓷“饭碗头”到东馆建设",
+          "url": "https://m.thepaper.cn/newsDetail_forward_1600434"
+        }
+      ]
+    },
+    {
+      "IDBAT": 25,
+      "originalInput": {
+        "IDBAT": 25,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "109-8 RUE HUE",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 355072.6733,
+        "YC": 3456162.7481
+      },
+      "historicalContext": {
+        "nameZh": "同慶池浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=25",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。",
+        "sourceUrls": [
+          "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+        ]
+      },
+      "researchProgress": {
+        "status": "partial",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "已发现1940工商名录关键条目，但大文件/403阻碍原页核读；本轮有界停止并保留原页任务。",
+        "delta": "历史补证：1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"同庆池\" \"浙江南路\"",
+        "\"同慶池\" 上海 浴室",
+        "\"同庆池仁记\" \"东新桥\"",
+        "\"同慶池\" \"109\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"同庆池\" \"浙江南路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 2,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"同慶池\" 上海 浴室",
+            "\"安乐池\" \"云南南路\"",
+            "\"安樂池浴室\" 上海"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"同慶池\" 上海 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 2,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"同庆池\" \"浙江南路\"",
+            "\"安乐池\" \"云南南路\"",
+            "\"安樂池浴室\" 上海"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"同庆池仁记\" \"东新桥\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 10,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"济南路313\" \"浴室\"",
+            "\"白尔路\" \"浴室\" \"313\"",
+            "\"同慶池\" \"109\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"同慶池\" \"109\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 10,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"济南路313\" \"浴室\"",
+            "\"白尔路\" \"浴室\" \"313\"",
+            "\"同庆池仁记\" \"东新桥\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=25",
+          "title": "Virtual Shanghai 建筑 #25：同慶池浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=25，本agent重读该缓存",
+          "supports": "核原名同慶池浴室、旧址109-8 RUE HUE、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:44.636858+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "86f0875526ad3a5ad2a76cf19768433ba68cd59cd4d8453d7556688362642ea5",
+            "bytes": 15005
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+          "title": "《上海市工商行名录》（1940）浴室类索引",
+          "publisher": "原出版者本轮未核；Wikimedia托管国家图书馆扫描件",
+          "publishedAt": "1940",
+          "accessMethod": "search-snippet",
+          "locator": "搜索索引“同慶池仁記浴室……359”；未核PDF实际页码",
+          "supports": "有同慶池仁記浴室这一名称的历史索引候选。",
+          "limitations": "web.open因文件39837121字节超限失败；Python urllib正常证书验证尝试返回HTTP403；未读第359页，不能确认浙江南路109-8号。",
+          "sourceFamily": "shanghai-hong-list1940",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。",
+      "addressEvidence": "1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=25",
+            "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+          ],
+          "gap": "需读1940行名录第359页实际影像，确认全称、地址及是否分店。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+          ],
+          "gap": "需读1940行名录第359页实际影像，确认全称、地址及是否分店。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.478305,
+          "latitude": 31.230655
+        },
+        "sourceCoordinates": {
+          "XC": 355072.6733,
+          "YC": 3456162.7481,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 25,
+          "name": "Public Bath",
+          "nameZh": "同慶池浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-25；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 25,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "109-8 RUE HUE",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 355072.6733,
+            "YC": 3456162.7481
+          },
+          "liveRecord": {
+            "id": 25,
+            "name": "Public Bath",
+            "nameZh": "同慶池浴室",
+            "address": "109-8 RUE HUE",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355072.6733,
+            "y": 3456162.7481,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=25",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.478305,
+            "latitude": 31.230655
+          },
+          "providedGcj02": {
+            "longitude": 121.482813,
+            "latitude": 31.2287
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "需读1940行名录第359页实际影像，确认全称、地址及是否分店。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需读1940行名录第359页实际影像，确认全称、地址及是否分店。",
+          "action": "通过国家图书馆数字馆或可用镜像获取同慶池仁記浴室所在页，与109-8原门牌逐项比对。",
+          "targetSource": "1940《上海市工商行名录》原页/国家图书馆扫描件",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：1940工商名录索引有同慶池仁記浴室，尚未读原页核对浙江南路109-8。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "原库及精确VS页记同慶池浴室，旧址109-8 RUE HUE，年代空白。本轮1940年《上海市工商行名录》搜索索引出现同慶池仁記浴室并指向359页，但大PDF正文读取超限、直接请求403，未核原页地址。仁记是否该店或另一分支仍未知；只保留独立历史名称候选，不把该索引当作109-8同址证明，未建立现代对应。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #25：同慶池浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=25"
+        },
+        {
+          "title": "《上海市工商行名录》（1940）浴室类索引",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf"
+        }
+      ]
+    },
+    {
+      "IDBAT": 34,
+      "originalInput": {
+        "IDBAT": 34,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "23/33 RUE PALIKAO",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354788.2989,
+        "YC": 3456162.1382
+      },
+      "historicalContext": {
+        "nameZh": "安樂池浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=34",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。",
+        "sourceUrls": [
+          "https://time.udn.com/udntime/story/122390/8798052"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"安乐池\" \"云南南路\"",
+        "\"安樂池浴室\" 上海"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"安乐池\" \"云南南路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 2,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"同庆池\" \"浙江南路\"",
+            "\"同慶池\" 上海 浴室",
+            "\"安樂池浴室\" 上海"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"安樂池浴室\" 上海",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 2,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"同庆池\" \"浙江南路\"",
+            "\"同慶池\" 上海 浴室",
+            "\"安乐池\" \"云南南路\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=34",
+          "title": "Virtual Shanghai 建筑 #34：安樂池浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=34，本agent重读该缓存",
+          "supports": "核原名安樂池浴室、旧址23/33 RUE PALIKAO、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:46.760728+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "01266defa1bbd9cb5351e2b1d6ccc13e6b1d85e53b737a1706c1acc0b09fbce1",
+            "bytes": 15010
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://time.udn.com/udntime/story/122390/8798052",
+          "title": "老台北政商名流最愛「上海浴室」！師傅搥背捏腳手藝一流",
+          "publisher": "聯合新聞網·報時光",
+          "publishedAt": "2025-06-18",
+          "accessMethod": "full-text",
+          "locator": "转载1977年3月12日聯合報03版梁成傑《安樂池‧滄桑史》正文（web全文L92—104）",
+          "supports": "孫寶發曾开三处上海安樂池，总店在云南南路；1948年离沪并于1949年在台北另设浴室。",
+          "limitations": "历史报道重刊，2025发布日期不代表上海原址当前用途；未写23/33号，也未说明三家分店具体地址。",
+          "sourceFamily": "udn-19770312-liang-chengjie",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。",
+      "addressEvidence": "1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=34",
+            "https://time.udn.com/udntime/story/122390/8798052"
+          ],
+          "gap": "须确认云南南路总店23/33及其他两家分店的名录地址。"
+        },
+        "address": {
+          "status": "candidate",
+          "finding": "1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。",
+          "sourceUrls": [
+            "https://time.udn.com/udntime/story/122390/8798052"
+          ],
+          "gap": "须确认云南南路总店23/33及其他两家分店的名录地址。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://time.udn.com/udntime/story/122390/8798052"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.47532,
+          "latitude": 31.230614
+        },
+        "sourceCoordinates": {
+          "XC": 354788.2989,
+          "YC": 3456162.1382,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 34,
+          "name": "Public Bath",
+          "nameZh": "安樂池浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-34；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 34,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "23/33 RUE PALIKAO",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354788.2989,
+            "YC": 3456162.1382
+          },
+          "liveRecord": {
+            "id": 34,
+            "name": "Public Bath",
+            "nameZh": "安樂池浴室",
+            "address": "23/33 RUE PALIKAO",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354788.2989,
+            "y": 3456162.1382,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=34",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.47532,
+            "latitude": 31.230614
+          },
+          "providedGcj02": {
+            "longitude": 121.479838,
+            "latitude": 31.228667
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "须确认云南南路总店23/33及其他两家分店的名录地址。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "须确认云南南路总店23/33及其他两家分店的名录地址。",
+          "action": "查1940年代上海安乐池广告或营业登记，取得三家地址并排除分店混淆。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：1977年采访重刊明确上海安乐池总店在云南南路、另有分店；未给23/33门牌。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原名安樂池浴室，旧址23/33 RUE PALIKAO，未记年代。聯合報2025年重刊1977年采访，记孙宝发在上海有三家安乐池，总店设云南南路，1948年售店赴台，1949年在台北另开安乐池。正文可佐证上海安乐池及总店道路，却未列23/33号，仍需分清三家店与原记录；台北沿革不能作为上海原址现用。原楼存废和现代地块尚未确认。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #34：安樂池浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=34"
+        },
+        {
+          "title": "老台北政商名流最愛「上海浴室」！師傅搥背捏腳手藝一流",
+          "url": "https://time.udn.com/udntime/story/122390/8798052"
+        }
+      ]
+    },
+    {
+      "IDBAT": 35,
+      "originalInput": {
+        "IDBAT": 35,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "180 RUE HUE",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 355105.2774,
+        "YC": 3455991.5629
+      },
+      "historicalContext": {
+        "nameZh": "逍遥池浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=35",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "direct",
+        "finding": "新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。",
+        "sourceUrls": [
+          "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+          "https://www.shobserver.cn/wx/detail.do?id=10528",
+          "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"逍遥池\" \"浙江南路\"",
+        "\"逍遙池\" 上海 \"180\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"逍遥池\" \"浙江南路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 3,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"逍遙池\" 上海 \"180\"",
+            "\"上海\" \"Hennequin\" 浴室",
+            "\"Hennequin\" \"22\" bath Shanghai"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"逍遙池\" 上海 \"180\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 3,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"逍遥池\" \"浙江南路\"",
+            "\"上海\" \"Hennequin\" 浴室",
+            "\"Hennequin\" \"22\" bath Shanghai"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=35",
+          "title": "Virtual Shanghai 建筑 #35：逍遥池浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=35，本agent重读该缓存",
+          "supports": "核原名逍遥池浴室、旧址180 RUE HUE、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:46.762782+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "082a08e5ec4de9a8f67e2de6eea765aa2338cfc5c03ab7f43c54c4fe178e6a31",
+            "bytes": 15004
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+          "title": "袁念琪：廿六路调头的地方（新民晚报2023年1月29日第10版）",
+          "publisher": "新民晚报",
+          "publishedAt": "2023-01-29",
+          "accessMethod": "full-text",
+          "locator": "第10版；正文荫余里、西湖浴室及浙江南路180号逍遥池段（web全文L63—67）",
+          "supports": "荫余里内有西湖浴室；该里弄1994年拆建金钟广场；逍遥池记为浙江南路180号。",
+          "limitations": "历史随笔，非地籍或建筑存废清单；同作者2022澎湃文章属同源叙述，不能算独立交叉验证。",
+          "sourceFamily": "yuan-nianqi-26-route",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://www.shobserver.cn/wx/detail.do?id=10528",
+          "title": "吴卫群：老上海的“混堂”，也有着“工匠精神”",
+          "publisher": "上观新闻·上海老字号",
+          "publishedAt": "2016-03-10",
+          "accessMethod": "full-text",
+          "locator": "日新池迁址后逍遥池在民国路浙江路转角的段落（web全文L26）",
+          "supports": "逍遥池的历史路口记述，以及日新池存在迁址的沿革线索。",
+          "limitations": "不是门牌对照表；人物轶事不用于推断所有权或地址变更；没有现代用途。",
+          "sourceFamily": "wu-weiqun-baths2016",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "publisher": "东方网—文汇报；新浪转载",
+          "publishedAt": "2004-01-20",
+          "accessMethod": "reprint",
+          "locator": "正文各区浴室名录；东风金陵东183弄4、逍遥池浙江南108、平原济南297、新泉安化76条",
+          "supports": "2004年同名或同址营业名录，供历史门牌线索及同名异址排除。",
+          "limitations": "只支持2004时点；不证明租界时期与2004同一浴室或2026继续营业。桌面版解码失败，移动版全文实际成功。",
+          "sourceFamily": "wenhui-20040120-baths",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。",
+      "addressEvidence": "新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "confirmed",
+          "finding": "新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=35",
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+            "https://www.shobserver.cn/wx/detail.do?id=10528",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需解释180与108的差异，并取得原180地块的建筑沿革及近年现状。"
+        },
+        "address": {
+          "status": "conflicting",
+          "finding": "新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。",
+          "sourceUrls": [
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+            "https://www.shobserver.cn/wx/detail.do?id=10528",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需解释180与108的差异，并取得原180地块的建筑沿革及近年现状。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+            "https://www.shobserver.cn/wx/detail.do?id=10528",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.478672,
+          "latitude": 31.229115
+        },
+        "sourceCoordinates": {
+          "XC": 355105.2774,
+          "YC": 3455991.5629,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 35,
+          "name": "Public Bath",
+          "nameZh": "逍遥池浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-35；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 35,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "180 RUE HUE",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 355105.2774,
+            "YC": 3455991.5629
+          },
+          "liveRecord": {
+            "id": 35,
+            "name": "Public Bath",
+            "nameZh": "逍遥池浴室",
+            "address": "180 RUE HUE",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355105.2774,
+            "y": 3455991.5629,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=35",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.478672,
+            "latitude": 31.229115
+          },
+          "providedGcj02": {
+            "longitude": 121.483178,
+            "latitude": 31.227158
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [
+        "2023历史记述为浙江南路180号，2004营业名录为108号；当前没有资料证明是重编、迁址或笔误。"
+      ],
+      "remainingQuestions": [
+        "需解释180与108的差异，并取得原180地块的建筑沿革及近年现状。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需解释180与108的差异，并取得原180地块的建筑沿革及近年现状。",
+          "action": "查逍遥池营业执照地址变更或同期地址簿，对比180/108门牌与年代，不能先假定数字误植。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：新民2023正文直接列逍遥池与浙江南路180号；2004名录108号构成必须保留的时期间地址差异。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原名逍遥池浴室，旧址180 RUE HUE，年代空白。新民晚报2023年袁念琪文章直接记浙江南路180号逍遥池；上观2016年另述民国路浙江路转角的历史逍遥池，支持历史名称与街区。2004年文汇浴室名录却记浙江南路108号，180/108差异未有门牌重编、迁址或笔误解释，不能静默调换。历史同名180号已有独立佐证，但原楼存废及2026具体使用尚无可靠链条，现代字段保持空。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #35：逍遥池浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=35"
+        },
+        {
+          "title": "袁念琪：廿六路调头的地方（新民晚报2023年1月29日第10版）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+        },
+        {
+          "title": "吴卫群：老上海的“混堂”，也有着“工匠精神”",
+          "url": "https://www.shobserver.cn/wx/detail.do?id=10528"
+        },
+        {
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        }
+      ]
+    },
+    {
+      "IDBAT": 53,
+      "originalInput": {
+        "IDBAT": 53,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "22/28 RUE HENNEQUIN",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354778.3874,
+        "YC": 3455417.1099
+      },
+      "historicalContext": {
+        "nameZh": "浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=53",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "none",
+        "finding": "本轮定向检索未取得安纳金路22/28浴室的独立身份或地址佐证。",
+        "sourceUrls": []
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：本轮定向检索未取得安纳金路22/28浴室的独立身份或地址佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"上海\" \"Hennequin\" 浴室",
+        "\"Hennequin\" \"22\" bath Shanghai",
+        "\"安纳金路\" 浴室 \"22\"",
+        "\"安納金路\" 浴室"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"上海\" \"Hennequin\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 3,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"逍遥池\" \"浙江南路\"",
+            "\"逍遙池\" 上海 \"180\"",
+            "\"Hennequin\" \"22\" bath Shanghai"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"Hennequin\" \"22\" bath Shanghai",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 3,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"逍遥池\" \"浙江南路\"",
+            "\"逍遙池\" 上海 \"180\"",
+            "\"上海\" \"Hennequin\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"安纳金路\" 浴室 \"22\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 8,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"安納金路\" 浴室",
+            "\"桃源路\" \"41\" \"浴室\" 上海",
+            "\"萨坡赛路\" \"浴室\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"安納金路\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 8,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"安纳金路\" 浴室 \"22\"",
+            "\"桃源路\" \"41\" \"浴室\" 上海",
+            "\"萨坡赛路\" \"浴室\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=53",
+          "title": "Virtual Shanghai 建筑 #53：浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=53，本agent重读该缓存",
+          "supports": "核原名浴室、旧址22/28 RUE HENNEQUIN、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:46.874737+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "320e313a20653a311cc89c24a444331fd4da13adbd7b59d769280a5abdc4df6f",
+            "bytes": 15003
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        }
+      ],
+      "identityEvidence": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+      "addressEvidence": "本轮定向检索未取得安纳金路22/28浴室的独立身份或地址佐证。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=53"
+          ],
+          "gap": "无店名，需先取得同时列旧门牌22/28和经营者的行业记录。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "本轮定向检索未取得安纳金路22/28浴室的独立身份或地址佐证。",
+          "sourceUrls": [],
+          "gap": "无店名，需先取得同时列旧门牌22/28和经营者的行业记录。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.475324,
+          "latitude": 31.223893
+        },
+        "sourceCoordinates": {
+          "XC": 354778.3874,
+          "YC": 3455417.1099,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 53,
+          "name": "Public Bath",
+          "nameZh": "浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-53；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 53,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "22/28 RUE HENNEQUIN",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354778.3874,
+            "YC": 3455417.1099
+          },
+          "liveRecord": {
+            "id": 53,
+            "name": "Public Bath",
+            "nameZh": "浴室",
+            "address": "22/28 RUE HENNEQUIN",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354778.3874,
+            "y": 3455417.1099,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=53",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.475324,
+            "latitude": 31.223893
+          },
+          "providedGcj02": {
+            "longitude": 121.479841,
+            "latitude": 31.221943
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "无店名，需先取得同时列旧门牌22/28和经营者的行业记录。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "无店名，需先取得同时列旧门牌22/28和经营者的行业记录。",
+          "action": "查法租界浴室营业/卫生执照及安纳金路门牌户册，优先22、28及跨门牌经营记录。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：本轮定向检索未取得安纳金路22/28浴室的独立身份或地址佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "原库及精确VS页仅记浴室，旧址22/28 RUE HENNEQUIN，无中文店名和年代。已查英文旧路名22号浴室及安纳金路浴室组合，未取得能识别该22/28店铺的独立历史网页。路名可作检索线索，不能以东台路其他浴室或附近现代店铺代替；原历史实体、场地存废及现用途仍未闭合。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #53：浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=53"
+        }
+      ]
+    },
+    {
+      "IDBAT": 57,
+      "originalInput": {
+        "IDBAT": 57,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "41-1A RUE SOEUR ALLEGRE",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354798.969,
+        "YC": 3455687.0149
+      },
+      "historicalContext": {
+        "nameZh": "浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=57",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "none",
+        "finding": "本轮未取得Soeur Allegre41-1A浴室的独立历史佐证。",
+        "sourceUrls": []
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：本轮未取得Soeur Allegre41-1A浴室的独立历史佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"Rue Soeur Allegre\" bath",
+        "\"桃源路41\" 浴室",
+        "\"桃源路\" \"41\" \"浴室\" 上海",
+        "\"萨坡赛路\" \"浴室\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"Rue Soeur Allegre\" bath",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 4,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"桃源路41\" 浴室",
+            "\"日新池\" 上海 浴室",
+            "\"日新池\" \"173\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"桃源路41\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 4,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"Rue Soeur Allegre\" bath",
+            "\"日新池\" 上海 浴室",
+            "\"日新池\" \"173\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"桃源路\" \"41\" \"浴室\" 上海",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 8,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"安纳金路\" 浴室 \"22\"",
+            "\"安納金路\" 浴室",
+            "\"萨坡赛路\" \"浴室\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"萨坡赛路\" \"浴室\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 8,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"安纳金路\" 浴室 \"22\"",
+            "\"安納金路\" 浴室",
+            "\"桃源路\" \"41\" \"浴室\" 上海"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=57",
+          "title": "Virtual Shanghai 建筑 #57：浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=57，本agent重读该缓存",
+          "supports": "核原名浴室、旧址41-1A RUE SOEUR ALLEGRE、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:46.875510+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "b4a0de1d96468a413647ad17bc17b4d224942de3ac3a492c3a233c553ecc94c6",
+            "bytes": 15006
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        }
+      ],
+      "identityEvidence": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+      "addressEvidence": "本轮未取得Soeur Allegre41-1A浴室的独立历史佐证。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=57"
+          ],
+          "gap": "需查41-1A的店名及支号/弄号关系。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "本轮未取得Soeur Allegre41-1A浴室的独立历史佐证。",
+          "sourceUrls": [],
+          "gap": "需查41-1A的店名及支号/弄号关系。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.475501,
+          "latitude": 31.22633
+        },
+        "sourceCoordinates": {
+          "XC": 354798.969,
+          "YC": 3455687.0149,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 57,
+          "name": "Public Bath",
+          "nameZh": "浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-57；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 57,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "41-1A RUE SOEUR ALLEGRE",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354798.969,
+            "YC": 3455687.0149
+          },
+          "liveRecord": {
+            "id": 57,
+            "name": "Public Bath",
+            "nameZh": "浴室",
+            "address": "41-1A RUE SOEUR ALLEGRE",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354798.969,
+            "y": 3455687.0149,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=57",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.475501,
+            "latitude": 31.22633
+          },
+          "providedGcj02": {
+            "longitude": 121.480018,
+            "latitude": 31.224381
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "需查41-1A的店名及支号/弄号关系。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需查41-1A的店名及支号/弄号关系。",
+          "action": "对照法租界地址簿和浴室经营执照中Soeur Allegre41及附号，取得店名后再核现代地块。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：本轮未取得Soeur Allegre41-1A浴室的独立历史佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原记录仅浴室，41-1A RUE SOEUR ALLEGRE，未给年代。已用英文旧址及桃源路41号浴室组合查询，未获得可独立定位该店的历史正文；其他道路或同号商铺不构成原店证据。尚缺店名、41-1A门牌对应及地块变化，不推断旧楼已拆，也不据邻近现代地点填写现用途。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #57：浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=57"
+        }
+      ],
+      "queryCorrections": [
+        "曾试检索萨坡赛路浴室，未证明与Soeur Allegre对应，未采用该道路线索或命中作为结论。"
+      ]
+    },
+    {
+      "IDBAT": 68,
+      "originalInput": {
+        "IDBAT": 68,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "173 ROUTE VOUILLEMONT",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354515.9799,
+        "YC": 3455781.4957
+      },
+      "historicalContext": {
+        "nameZh": "日新池浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=68",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。",
+        "sourceUrls": [
+          "https://www.thepaper.cn/newsDetail_forward_21544180",
+          "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg",
+          "https://m.jfdaily.com/wx/detail.do?id=1073932",
+          "https://www.thepaper.cn/newsDetail_forward_18087369"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"日新池\" 上海 浴室",
+        "\"日新池\" \"173\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"日新池\" 上海 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 4,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"Rue Soeur Allegre\" bath",
+            "\"桃源路41\" 浴室",
+            "\"日新池\" \"173\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"日新池\" \"173\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 4,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"Rue Soeur Allegre\" bath",
+            "\"桃源路41\" 浴室",
+            "\"日新池\" 上海 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=68",
+          "title": "Virtual Shanghai 建筑 #68：日新池浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=68，本agent重读该缓存",
+          "supports": "核原名日新池浴室、旧址173 ROUTE VOUILLEMONT、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:48.418524+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "95f3bb30040d9848fdacf20b9f2e5c1515995ee64cafe89f069169b5d087e1c1",
+            "bytes": 15014
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_21544180",
+          "title": "公共浴室的春秋岁月（中）：浴池中的乐趣及话题",
+          "publisher": "澎湃新闻·澎湃号",
+          "publishedAt": "2023-01-13",
+          "accessMethod": "full-text",
+          "locator": "日新池位于维尔蒙路（今普安路）段及1930上海指南附图（web全文L35、39）",
+          "supports": "历史日新池的旧今路名关系，及1930年浴室指南原页图入口。",
+          "limitations": "未给173号；只支持历史行业与地址线索，不是当前经营资料。",
+          "sourceFamily": "public-bath-spring-autumn2023",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg",
+          "title": "1930年《上海指南》浴堂名录原页图（卷五，第107页）",
+          "publisher": "《上海指南》；澎湃文章附图",
+          "publishedAt": "1930",
+          "accessMethod": "full-text",
+          "locator": "浴堂表中日新池一行；版边页码一〇七。实际view_image读取/private/tmp/public-baths/guide1930.jpg",
+          "supports": "原页日新池地址门牌为一五號，并注八仙橋相近。",
+          "limitations": "单页历史名录未交代迁址或编号变更，小字路名本轮未作确定释读。首次web取图超时，由root urllib取回，本agent实际查看；不能把15号自动换算为173号。此前17页和惺白滩路的初读已撤回，不作结论。",
+          "sourceFamily": "shanghai-guide1930",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true,
+          "acquisition": {
+            "acquiredBy": "root",
+            "accessedAt": "2026-09-18T01:31:27.805304+00:00",
+            "path": "/private/tmp/public-baths/guide1930.jpg",
+            "bytes": 199834,
+            "sha256": "e210e2ee5aa34ea50b12dcca9db5ffe6054bae948555abb4959cfa358c9441b8"
+          }
+        },
+        {
+          "url": "https://m.jfdaily.com/wx/detail.do?id=1073932",
+          "title": "曹晓华：好好洗个澡：上海百年浴室往事",
+          "publisher": "上观新闻·文汇学人",
+          "publishedAt": "2026-03-04",
+          "accessMethod": "full-text",
+          "locator": "日新池维尔蒙路及1937年申报女子浴室广告记述段",
+          "supports": "日新池位于维尔蒙路（普安路）的历史叙述；作者援引1937年申报史料。",
+          "limitations": "2026发表的历史文章，不构成2026营业证据；未列173号。文中明示传言不作为本次事实。",
+          "sourceFamily": "cao-xiaohua-bath-history2026",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_18087369",
+          "title": "袁念琪：26路调头呃地方",
+          "publisher": "澎湃新闻·澎湃号",
+          "publishedAt": "2022-05-15",
+          "accessMethod": "full-text",
+          "locator": "正文金钟广场、荫余里与西湖浴室各段；日新池迁址段（web全文L39、52、66、74—84）",
+          "supports": "金钟广场门牌淮海中路98号，四至与荫余里改建沿革；西湖浴室在荫余里；日新池20年代末迁普安路99号的作者记述。",
+          "limitations": "与2023新民文章为袁念琪同源叙述；日新池99号与原173号未解释；不是2026经营核验。",
+          "sourceFamily": "yuan-nianqi-26-route",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。",
+      "addressEvidence": "日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "confirmed",
+          "finding": "日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=68",
+            "https://www.thepaper.cn/newsDetail_forward_21544180",
+            "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg",
+            "https://m.jfdaily.com/wx/detail.do?id=1073932",
+            "https://www.thepaper.cn/newsDetail_forward_18087369"
+          ],
+          "gap": "需核清1930原页小字路名，再用分年广告/地图解释15、99和维尔蒙173分别所指时期与地块。"
+        },
+        "address": {
+          "status": "conflicting",
+          "finding": "日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_21544180",
+            "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg",
+            "https://m.jfdaily.com/wx/detail.do?id=1073932",
+            "https://www.thepaper.cn/newsDetail_forward_18087369"
+          ],
+          "gap": "需核清1930原页小字路名，再用分年广告/地图解释15、99和维尔蒙173分别所指时期与地块。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_21544180",
+            "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg",
+            "https://m.jfdaily.com/wx/detail.do?id=1073932",
+            "https://www.thepaper.cn/newsDetail_forward_18087369"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.472517,
+          "latitude": 31.227147
+        },
+        "sourceCoordinates": {
+          "XC": 354515.9799,
+          "YC": 3455781.4957,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 68,
+          "name": "Public Bath",
+          "nameZh": "日新池浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-68；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 68,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "173 ROUTE VOUILLEMONT",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354515.9799,
+            "YC": 3455781.4957
+          },
+          "liveRecord": {
+            "id": 68,
+            "name": "Public Bath",
+            "nameZh": "日新池浴室",
+            "address": "173 ROUTE VOUILLEMONT",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354515.9799,
+            "y": 3455781.4957,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=68",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.472517,
+            "latitude": 31.227147
+          },
+          "providedGcj02": {
+            "longitude": 121.477044,
+            "latitude": 31.225206
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [
+        "原VS为维尔蒙路173；1930指南列15号、小字路名待释读；2022回顾记迁普安99。未判定各为不同阶段还是记述差异，不能相互覆盖。"
+      ],
+      "remainingQuestions": [
+        "需核清1930原页小字路名，再用分年广告/地图解释15、99和维尔蒙173分别所指时期与地块。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需核清1930原页小字路名，再用分年广告/地图解释15、99和维尔蒙173分别所指时期与地块。",
+          "action": "查1920年代末至1937日新池广告与迁址启事，按年度排列地址；先取得清晰1930名录页确认路名字形。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：日新池在维尔蒙路的历史道路获独立文章佐证；1930原页列15号，另有迁普安99记述，173未闭合。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "原库记日新池浴室、173 ROUTE VOUILLEMONT，无年代。2023澎湃及2026文汇学人正文均述日新池在维尔蒙路（今普安路），但未给173号。本轮实际查看1930《上海指南》第107页，日新池门牌为15号并注八仙桥相近，小字路名未作确定释读；袁念琪2022年文章另记20年代末迁普安路99号。多来源支持历史实体，并提示时期或迁址差异，却不足把15、99与173直接等同。未据不同旧址的改建史处理原173点，现代对应与原楼存废仍未知。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #68：日新池浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=68"
+        },
+        {
+          "title": "公共浴室的春秋岁月（中）：浴池中的乐趣及话题",
+          "url": "https://www.thepaper.cn/newsDetail_forward_21544180"
+        },
+        {
+          "title": "1930年《上海指南》浴堂名录原页图（卷五，第107页）",
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/233/830/41.jpg"
+        },
+        {
+          "title": "曹晓华：好好洗个澡：上海百年浴室往事",
+          "url": "https://m.jfdaily.com/wx/detail.do?id=1073932"
+        },
+        {
+          "title": "袁念琪：26路调头呃地方",
+          "url": "https://www.thepaper.cn/newsDetail_forward_18087369"
+        }
+      ],
+      "queryCorrections": [
+        "1930图初读页码17及惺白滩路字形均撤回；重读页码107，路名小字保留未定，仅确认15号和八仙桥相近。"
+      ]
+    },
+    {
+      "IDBAT": 71,
+      "originalInput": {
+        "IDBAT": 71,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "RUE KRAETZER",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354672.0078,
+        "YC": 3455848.4121
+      },
+      "historicalContext": {
+        "nameZh": "西湖浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=71",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "作者记述明确荫余里西湖浴室，并将里弄沿革连接金钟广场；原无门牌浴室是否该店仍需核。",
+        "sourceUrls": [
+          "https://www.thepaper.cn/newsDetail_forward_18087369",
+          "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：作者记述明确荫余里西湖浴室，并将里弄沿革连接金钟广场；原无门牌浴室是否该店仍需核。 现代判断：新增金钟广场候选，保留review且不回填。"
+      },
+      "queries": [
+        "\"西湖浴室\" 上海 \"Kraetzer\"",
+        "\"西湖浴室\" \"金陵\"",
+        "\"西湖浴室\" \"荫余里\"",
+        "\"西湖浴室\" \"金钟广场\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"西湖浴室\" 上海 \"Kraetzer\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 5,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西湖浴室\" \"金陵\"",
+            "\"西园浴室\" 上海 吉安路",
+            "\"西園浴室\" \"279\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西湖浴室\" \"金陵\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 5,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西湖浴室\" 上海 \"Kraetzer\"",
+            "\"西园浴室\" 上海 吉安路",
+            "\"西園浴室\" \"279\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西湖浴室\" \"荫余里\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 11,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"东风浴室\" \"金陵东路183\"",
+            "\"东风浴室\" \"金陵\" 历史",
+            "\"西湖浴室\" \"金钟广场\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西湖浴室\" \"金钟广场\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 11,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"东风浴室\" \"金陵东路183\"",
+            "\"东风浴室\" \"金陵\" 历史",
+            "\"西湖浴室\" \"荫余里\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=71",
+          "title": "Virtual Shanghai 建筑 #71：西湖浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=71，本agent重读该缓存",
+          "supports": "核原名西湖浴室、旧址RUE KRAETZER、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:48.426663+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "0061b6cf13d2182951fa219e047581500bac0b544131c4782ea91268042a375a",
+            "bytes": 15002
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_18087369",
+          "title": "袁念琪：26路调头呃地方",
+          "publisher": "澎湃新闻·澎湃号",
+          "publishedAt": "2022-05-15",
+          "accessMethod": "full-text",
+          "locator": "正文金钟广场、荫余里与西湖浴室各段；日新池迁址段（web全文L39、52、66、74—84）",
+          "supports": "金钟广场门牌淮海中路98号，四至与荫余里改建沿革；西湖浴室在荫余里；日新池20年代末迁普安路99号的作者记述。",
+          "limitations": "与2023新民文章为袁念琪同源叙述；日新池99号与原173号未解释；不是2026经营核验。",
+          "sourceFamily": "yuan-nianqi-26-route",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        },
+        {
+          "url": "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html",
+          "title": "袁念琪：廿六路调头的地方（新民晚报2023年1月29日第10版）",
+          "publisher": "新民晚报",
+          "publishedAt": "2023-01-29",
+          "accessMethod": "full-text",
+          "locator": "第10版；正文荫余里、西湖浴室及浙江南路180号逍遥池段（web全文L63—67）",
+          "supports": "荫余里内有西湖浴室；该里弄1994年拆建金钟广场；逍遥池记为浙江南路180号。",
+          "limitations": "历史随笔，非地籍或建筑存废清单；同作者2022澎湃文章属同源叙述，不能算独立交叉验证。",
+          "sourceFamily": "yuan-nianqi-26-route",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "作者记述明确荫余里西湖浴室，并将里弄沿革连接金钟广场；原无门牌浴室是否该店仍需核。",
+      "addressEvidence": "荫余里西湖浴室→金钟广场的文字链支持现代候选；原RUE KRAETZER无门牌，未与原点或浴室单元闭合。",
+      "buildingFateEvidence": "来源记荫余里1994拆建金钟；浴室与原输入身份/范围尚未闭合，不能据里弄整体沿革断言该原点楼体存废。",
+      "currentUseEvidence": "2022来源描述金钟广场商业商务大厦，但未确认原浴室具体范围，currentUse留空。",
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "作者记述明确荫余里西湖浴室，并将里弄沿革连接金钟广场；原无门牌浴室是否该店仍需核。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=71",
+            "https://www.thepaper.cn/newsDetail_forward_18087369",
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+          ],
+          "gap": "需原西湖浴室门牌/平面确认身份与占地，再与金钟广场原点交叉核对。"
+        },
+        "address": {
+          "status": "candidate",
+          "finding": "荫余里西湖浴室→金钟广场的文字链支持现代候选；原RUE KRAETZER无门牌，未与原点或浴室单元闭合。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_18087369",
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+          ],
+          "gap": "需原西湖浴室门牌/平面确认身份与占地，再与金钟广场原点交叉核对。"
+        },
+        "buildingFate": {
+          "status": "candidate",
+          "finding": "来源记荫余里1994拆建金钟；浴室与原输入身份/范围尚未闭合，不能据里弄整体沿革断言该原点楼体存废。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_18087369",
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+          ],
+          "gap": "先核浴室所在单元，再确认该单元处于所述拆建范围。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "2022来源描述金钟广场商业商务大厦，但未确认原浴室具体范围，currentUse留空。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_18087369"
+          ],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://www.thepaper.cn/newsDetail_forward_18087369",
+            "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.474145,
+          "latitude": 31.22777
+        },
+        "sourceCoordinates": {
+          "XC": 354672.0078,
+          "YC": 3455848.4121,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 71,
+          "name": "Public Bath",
+          "nameZh": "西湖浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-71；已读取context完整组员，单成员组",
+          "verificationStatus": "likely",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 71,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "RUE KRAETZER",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354672.0078,
+            "YC": 3455848.4121
+          },
+          "liveRecord": {
+            "id": 71,
+            "name": "Public Bath",
+            "nameZh": "西湖浴室",
+            "address": "RUE KRAETZER",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354672.0078,
+            "y": 3455848.4121,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=71",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.474145,
+            "latitude": 31.22777
+          },
+          "providedGcj02": {
+            "longitude": 121.478666,
+            "latitude": 31.225825
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [
+        "2022与2023文字同为袁念琪，属于同源，不当作两个独立验证；里弄整体拆建不能无条件外推到未核边界的浴室。"
+      ],
+      "remainingQuestions": [
+        "需原西湖浴室门牌/平面确认身份与占地，再与金钟广场原点交叉核对。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需原西湖浴室门牌/平面确认身份与占地，再与金钟广场原点交叉核对。",
+          "action": "查荫余里拆迁房屋清册及西湖浴室营业登记，取得店铺单元或地号，配准原点后再核现用途。",
+          "targetSource": "荫余里拆迁房屋清册、西湖浴室执照及可配准地籍图",
+          "acceptanceCriterion": "同一浴室的单元/地号与原点可核对应，再提供该范围现用途。"
+        }
+      ],
+      "delta": "历史补证：作者记述明确荫余里西湖浴室，并将里弄沿革连接金钟广场；原无门牌浴室是否该店仍需核。 现代判断：新增金钟广场候选，保留review且不回填。",
+      "verificationStatus": "likely",
+      "mapWriteRecommendation": "review",
+      "mapWriteScope": {
+        "level": "site",
+        "description": "仅保留金钟广场原荫余里地块候选，不批准原浴室具体范围的现用途写回。",
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有西湖浴室—荫余里—金钟广场文字链，属于实质现代候选；原输入身份/单元边界与现用未闭合，必须review。",
+      "conclusion": "VS原名西湖浴室，地址仅RUE KRAETZER，无门牌和年代。袁念琪2022年全文明确西湖浴室在荫余里，又述荫余里1994年拆建金钟广场、今门牌淮海中路98号；2023新民文为同作者相关叙述，不算第二份独立证据。这形成具体现代地块候选，超出同名或邻近推测。待核：原记录与荫余里西湖浴室是否同址、浴室占地和原点边界尚无实际空间闭合，也无2026对该范围的用途核验；不把整块改建直接等同每栋浴室存废，relationship及currentUse留空。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #71：西湖浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=71"
+        },
+        {
+          "title": "袁念琪：26路调头呃地方",
+          "url": "https://www.thepaper.cn/newsDetail_forward_18087369"
+        },
+        {
+          "title": "袁念琪：廿六路调头的地方（新民晚报2023年1月29日第10版）",
+          "url": "https://paper.xinmin.cn/html/xmwb/2023-01-29/10/154507.html"
+        }
+      ]
+    },
+    {
+      "IDBAT": 101,
+      "originalInput": {
+        "IDBAT": 101,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "279-1 RUE HENNEQUIN",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 355045.1405,
+        "YC": 3455021.4004
+      },
+      "historicalContext": {
+        "nameZh": "西園浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=101",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "candidate",
+        "finding": "上海募捐报告原页确认西園浴室名称及捐款记录，原279-1门牌仍无交叉佐证。",
+        "sourceUrls": [
+          "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：上海募捐报告原页确认西園浴室名称及捐款记录，原279-1门牌仍无交叉佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。 本轮后续原页补读纠正OCR并解除原页未读的partial。"
+      },
+      "queries": [
+        "\"西园浴室\" 上海 吉安路",
+        "\"西園浴室\" \"279\"",
+        "\"西园浴室\" \"安纳金路\"",
+        "\"西園浴室\" 上海"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"西园浴室\" 上海 吉安路",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 5,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西湖浴室\" 上海 \"Kraetzer\"",
+            "\"西湖浴室\" \"金陵\"",
+            "\"西園浴室\" \"279\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西園浴室\" \"279\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 5,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西湖浴室\" 上海 \"Kraetzer\"",
+            "\"西湖浴室\" \"金陵\"",
+            "\"西园浴室\" 上海 吉安路"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西园浴室\" \"安纳金路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 9,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西園浴室\" 上海",
+            "\"新泉浴室\" 上海 历史",
+            "\"辣斐德路\" \"195\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"西園浴室\" 上海",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 9,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西园浴室\" \"安纳金路\"",
+            "\"新泉浴室\" 上海 历史",
+            "\"辣斐德路\" \"195\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=101",
+          "title": "Virtual Shanghai 建筑 #101：西園浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=101，本agent重读该缓存",
+          "supports": "核原名西園浴室、旧址279-1 RUE HENNEQUIN、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:48.459557+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "8a7dcaa663ac1e19abc4e2e69719ad07af81b7217811f0185873746c8febc253",
+            "bytes": 15016
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf",
+          "title": "《蘇北難民救濟協會上海市籌募委員會總報告》西園浴室捐款条",
+          "publisher": "蘇北難民救濟協會上海市籌募委員會；Wikimedia托管国家图书馆扫描件",
+          "publishedAt": null,
+          "accessMethod": "pdf",
+          "locator": "PDF物理第35页（印刷第29页），西園浴室劳资双方栏；实际view_image /private/tmp/baths-b/relief-35.png及pdftoppm高分辨率局部relief-35-xiyuan-detail.png",
+          "supports": "原页确写西園浴室，并列劳资双方捐款；纠正搜索OCR西園浴池。",
+          "limitations": "该页不提供地址或营业年代，不能单据名称证明安纳金路279-1。最初web.open无文本且两次截图超时，后由B下载PDF并渲染，本agent实际补读；刊年未核。",
+          "sourceFamily": "subei-refugee-shanghai-fund-report",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true,
+          "acquisition": {
+            "acquiredBy": "research_b",
+            "accessedAt": "2026-09-18T01:34:36.257877+00:00",
+            "path": "/private/tmp/baths-b/relief.pdf",
+            "bytes": 7049801,
+            "sha256": "5d2bdacb433f033617778bd03413bf6876b4d250313f380dafed4bed8e8f2191",
+            "pages": 84
+          },
+          "attempts": [
+            {
+              "method": "web.open",
+              "result": "84页PDF，文本层为空"
+            },
+            {
+              "method": "web.screenshot",
+              "pages": [
+                33,
+                37
+              ],
+              "result": "两次超时，未取得图像"
+            },
+            {
+              "method": "view_image",
+              "path": "/private/tmp/baths-b/relief-35.png",
+              "result": "成功实际核读物理35/印刷29"
+            },
+            {
+              "method": "pdftoppm+view_image",
+              "path": "/private/tmp/baths-b/relief-35-xiyuan-detail.png",
+              "result": "成功核清西園浴室四字"
+            }
+          ]
+        }
+      ],
+      "identityEvidence": "实际募捐原页独立记西園浴室，但无地址，尚不能唯一匹配原279-1店。",
+      "addressEvidence": "上海募捐报告原页确认西園浴室名称及捐款记录，原279-1门牌仍无交叉佐证。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "candidate",
+          "finding": "实际募捐原页独立记西園浴室，但无地址，尚不能唯一匹配原279-1店。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=101",
+            "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf"
+          ],
+          "gap": "捐款页无地址，仍须安纳金路279-1的行业地址簿或执照确认同店。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "上海募捐报告原页确认西園浴室名称及捐款记录，原279-1门牌仍无交叉佐证。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf"
+          ],
+          "gap": "捐款页无地址，仍须安纳金路279-1的行业地址簿或执照确认同店。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.478181,
+          "latitude": 31.220357
+        },
+        "sourceCoordinates": {
+          "XC": 355045.1405,
+          "YC": 3455021.4004,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 101,
+          "name": "Public Bath",
+          "nameZh": "西園浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-101；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 101,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "279-1 RUE HENNEQUIN",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 355045.1405,
+            "YC": 3455021.4004
+          },
+          "liveRecord": {
+            "id": 101,
+            "name": "Public Bath",
+            "nameZh": "西園浴室",
+            "address": "279-1 RUE HENNEQUIN",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 355045.1405,
+            "y": 3455021.4004,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=101",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.478181,
+            "latitude": 31.220357
+          },
+          "providedGcj02": {
+            "longitude": 121.482688,
+            "latitude": 31.218398
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "捐款页无地址，仍须安纳金路279-1的行业地址簿或执照确认同店。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "捐款页无地址，仍须安纳金路279-1的行业地址簿或执照确认同店。",
+          "action": "以西園浴室准确原名查安纳金路279-1的工商名录或租界浴室执照，取得同页名称与门牌。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：上海募捐报告原页确认西園浴室名称及捐款记录，原279-1门牌仍无交叉佐证。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。 本轮后续原页补读纠正OCR并解除原页未读的partial。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原名西園浴室，旧址279-1 RUE HENNEQUIN，未给年代。本轮先由《蘇北難民救濟協會上海市籌募委員會總報告》搜索索引发现名称候选，后实际补读PDF物理第35页（印刷29），原字明确为西園浴室、列劳资双方捐款，纠正索引误识为西園浴池。但该页无地址，不能独自证明安纳金路279-1同址，亦无现代对应。历史名称有独立原页增量，原楼、门牌及用途仍待进一步资料。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #101：西園浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=101"
+        },
+        {
+          "title": "《蘇北難民救濟協會上海市籌募委員會總報告》西園浴室捐款条",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/NLC511-027032016013548-50013_%E8%98%87%E5%8C%97%E9%9B%A3%E6%B0%91%E6%95%91%E6%BF%9F%E5%8D%94%E6%9C%83%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%B1%8C%E5%8B%9F%E5%A7%94%E5%93%A1%E6%9C%83%E7%B8%BD%E5%A0%B1%E5%91%8A.pdf"
+        }
+      ],
+      "queryCorrections": [
+        "初次试检索吉安路，随后改查安纳金路；未采用吉安路对应。",
+        "搜索OCR西園浴池，经原页局部核读改为西園浴室。"
+      ]
+    },
+    {
+      "IDBAT": 104,
+      "originalInput": {
+        "IDBAT": 104,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "313 RUE BLUNTSCHLI",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354815.0237,
+        "YC": 3454875.3501
+      },
+      "historicalContext": {
+        "nameZh": "浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=104",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "none",
+        "finding": "未获济南路313浴室独立佐证；2004名录平原浴室297号是不同门牌，仅用于排除误配。",
+        "sourceUrls": [
+          "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：未获济南路313浴室独立佐证；2004名录平原浴室297号是不同门牌，仅用于排除误配。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"313\" \"Rue Bluntschli\" bath",
+        "\"济南路313\" 浴室",
+        "\"上海\" \"济南路313\" \"浴室\"",
+        "\"白尔路\" \"浴室\" \"313\""
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"313\" \"Rue Bluntschli\" bath",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 6,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"济南路313\" 浴室",
+            "\"新泉浴室\" \"复兴中路\"",
+            "\"新泉浴室\" \"辣斐德路\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"济南路313\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 6,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"313\" \"Rue Bluntschli\" bath",
+            "\"新泉浴室\" \"复兴中路\"",
+            "\"新泉浴室\" \"辣斐德路\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"上海\" \"济南路313\" \"浴室\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 10,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"白尔路\" \"浴室\" \"313\"",
+            "\"同庆池仁记\" \"东新桥\"",
+            "\"同慶池\" \"109\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"白尔路\" \"浴室\" \"313\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 10,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"上海\" \"济南路313\" \"浴室\"",
+            "\"同庆池仁记\" \"东新桥\"",
+            "\"同慶池\" \"109\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=104",
+          "title": "Virtual Shanghai 建筑 #104：浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=104，本agent重读该缓存",
+          "supports": "核原名浴室、旧址313 RUE BLUNTSCHLI、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:48.508903+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "921d805b30cf4aa59f6cfbfa3561b6604618011dfbd6c383c4d432588ccce115",
+            "bytes": 15009
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "publisher": "东方网—文汇报；新浪转载",
+          "publishedAt": "2004-01-20",
+          "accessMethod": "reprint",
+          "locator": "正文各区浴室名录；东风金陵东183弄4、逍遥池浙江南108、平原济南297、新泉安化76条",
+          "supports": "2004年同名或同址营业名录，供历史门牌线索及同名异址排除。",
+          "limitations": "只支持2004时点；不证明租界时期与2004同一浴室或2026继续营业。桌面版解码失败，移动版全文实际成功。",
+          "sourceFamily": "wenhui-20040120-baths",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+      "addressEvidence": "未获济南路313浴室独立佐证；2004名录平原浴室297号是不同门牌，仅用于排除误配。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "精确VS仅保留原库中文“浴室”；尚无独立历史来源锁定该具体浴室。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=104",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需313号的浴室名及与297号是否有关的明确地址变更记录。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "未获济南路313浴室独立佐证；2004名录平原浴室297号是不同门牌，仅用于排除误配。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需313号的浴室名及与297号是否有关的明确地址变更记录。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.475787,
+          "latitude": 31.219011
+        },
+        "sourceCoordinates": {
+          "XC": 354815.0237,
+          "YC": 3454875.3501,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 104,
+          "name": "Public Bath",
+          "nameZh": "浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-104；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 104,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "313 RUE BLUNTSCHLI",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354815.0237,
+            "YC": 3454875.3501
+          },
+          "liveRecord": {
+            "id": 104,
+            "name": "Public Bath",
+            "nameZh": "浴室",
+            "address": "313 RUE BLUNTSCHLI",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354815.0237,
+            "y": 3454875.3501,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=104",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.475787,
+            "latitude": 31.219011
+          },
+          "providedGcj02": {
+            "longitude": 121.480302,
+            "latitude": 31.217058
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "需313号的浴室名及与297号是否有关的明确地址变更记录。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需313号的浴室名及与297号是否有关的明确地址变更记录。",
+          "action": "查白尔路313租界时期地址簿和行业执照；无明确变更记录不得复用297号平原浴室。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：未获济南路313浴室独立佐证；2004名录平原浴室297号是不同门牌，仅用于排除误配。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "原库仅浴室，313 RUE BLUNTSCHLI，无店名和年代。本轮以旧英文313、白尔路与济南路313定向检索未取得同址历史浴室资料。已读2004浴室名录的平原浴室是济南路297号，不能仅因同路和行业相同就替代313记录。原店身份、门牌对应、存废及2026用途均缺直接链条，保持未查明。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #104：浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=104"
+        },
+        {
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        }
+      ]
+    },
+    {
+      "IDBAT": 106,
+      "originalInput": {
+        "IDBAT": 106,
+        "NAME": "Public Bath",
+        "F_ADDRESS": "195-199 ROUTE LAFAYETTE",
+        "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+        "XC": 354631.7186,
+        "YC": 3454924.6601
+      },
+      "historicalContext": {
+        "nameZh": "新泉浴室",
+        "startYear": null,
+        "endYear": null,
+        "note": null,
+        "sourceUrl": "https://www.virtualshanghai.net/data/buildings?ID=106",
+        "notes": "保留原库中文和空白年代，不把回顾文章发表年、照片年或店铺迁址年写为建造年代。"
+      },
+      "historicalCorroboration": {
+        "status": "none",
+        "finding": "未取得辣斐德路195-199新泉浴室的独立历史佐证；已排除安化路76号同名即同址的做法。",
+        "sourceUrls": [
+          "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        ]
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "独立历史名称佐证",
+          "历史门牌与分支/迁址辨别",
+          "仅在有实体关联时保留现代候选"
+        ],
+        "stopReason": "本轮实际完成针对查询及已采用来源核读；目前剩余为明确档案/地址缺口，不将检索未命中解释为不存在。",
+        "delta": "历史补证：未取得辣斐德路195-199新泉浴室的独立历史佐证；已排除安化路76号同名即同址的做法。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。"
+      },
+      "queries": [
+        "\"新泉浴室\" \"复兴中路\"",
+        "\"新泉浴室\" \"辣斐德路\"",
+        "\"新泉浴室\" 上海 历史",
+        "\"辣斐德路\" \"195\" 浴室"
+      ],
+      "queryExecutions": [
+        {
+          "query": "\"新泉浴室\" \"复兴中路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 6,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"313\" \"Rue Bluntschli\" bath",
+            "\"济南路313\" 浴室",
+            "\"新泉浴室\" \"辣斐德路\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"新泉浴室\" \"辣斐德路\"",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 6,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"313\" \"Rue Bluntschli\" bath",
+            "\"济南路313\" 浴室",
+            "\"新泉浴室\" \"复兴中路\""
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"新泉浴室\" 上海 历史",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 9,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西园浴室\" \"安纳金路\"",
+            "\"西園浴室\" 上海",
+            "\"辣斐德路\" \"195\" 浴室"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        },
+        {
+          "query": "\"辣斐德路\" \"195\" 浴室",
+          "executedAt": "2026-09-18",
+          "datePrecision": "day",
+          "tool": "web.run search_query",
+          "batchIndex": 9,
+          "executionStatus": "returned",
+          "batchedWith": [
+            "\"西园浴室\" \"安纳金路\"",
+            "\"西園浴室\" 上海",
+            "\"新泉浴室\" 上海 历史"
+          ],
+          "readingNote": "查询返回为同批合并结果；未虚构单query命中数量。具体使用与失败见sourceReviews。"
+        }
+      ],
+      "sourceReviews": [
+        {
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=106",
+          "title": "Virtual Shanghai 建筑 #106：新泉浴室",
+          "publisher": "Virtual Shanghai",
+          "publishedAt": null,
+          "accessMethod": "full-text",
+          "locator": "精确ID页面完整cells；本轮root实抓vs-details.json中IDBAT=106，本agent重读该缓存",
+          "supports": "核原名新泉浴室、旧址195-199 ROUTE LAFAYETTE、原始XY及空白年代；不构成独立历史交叉佐证。",
+          "limitations": "项目原数据来源，同库页不作为独立佐证；未提供现代用途或存废沿革。",
+          "accessedAt": "2026-09-18T01:29:50.015163+00:00",
+          "readThisRound": true,
+          "sourceFamily": "virtual-shanghai-buildings",
+          "acquisition": {
+            "acquiredBy": "root",
+            "httpStatus": 200,
+            "sha256": "6b0bae41de724c076bd71008bf83e472bb96dc4098e559903c1b75a3deb2b7d4",
+            "bytes": 15020
+          },
+          "actualRead": "research_a读取root本轮HTTP200完整页面字段，未宣称自己重新访问VS"
+        },
+        {
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4",
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "publisher": "东方网—文汇报；新浪转载",
+          "publishedAt": "2004-01-20",
+          "accessMethod": "reprint",
+          "locator": "正文各区浴室名录；东风金陵东183弄4、逍遥池浙江南108、平原济南297、新泉安化76条",
+          "supports": "2004年同名或同址营业名录，供历史门牌线索及同名异址排除。",
+          "limitations": "只支持2004时点；不证明租界时期与2004同一浴室或2026继续营业。桌面版解码失败，移动版全文实际成功。",
+          "sourceFamily": "wenhui-20040120-baths",
+          "accessedAt": "2026-09-18",
+          "readThisRound": true
+        }
+      ],
+      "identityEvidence": "精确VS仅保留原库中文“新泉浴室”；尚无独立历史来源锁定该具体浴室。",
+      "addressEvidence": "未取得辣斐德路195-199新泉浴室的独立历史佐证；已排除安化路76号同名即同址的做法。",
+      "buildingFateEvidence": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+      "currentUseEvidence": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+      "fieldFindings": {
+        "identity": {
+          "status": "unknown",
+          "finding": "精确VS仅保留原库中文“新泉浴室”；尚无独立历史来源锁定该具体浴室。",
+          "sourceUrls": [
+            "https://www.virtualshanghai.net/data/buildings?ID=106",
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需新泉原195-199营业记录，与安化76的关系未证。"
+        },
+        "address": {
+          "status": "unknown",
+          "finding": "未取得辣斐德路195-199新泉浴室的独立历史佐证；已排除安化路76号同名即同址的做法。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "需新泉原195-199营业记录，与安化76的关系未证。"
+        },
+        "buildingFate": {
+          "status": "unknown",
+          "finding": "没有资料把原输入所指浴室楼体与明确存废/更新过程连接。",
+          "sourceUrls": [],
+          "gap": "原楼或院地的后续档案未取得。"
+        },
+        "currentUse": {
+          "status": "unknown",
+          "finding": "未建立原点对应的2026具体用途，不把旧名录营业情况或迁走机构用于现用。",
+          "sourceUrls": [],
+          "gap": "缺原址具体范围与近期使用者的连续证据。"
+        },
+        "spatial": {
+          "status": "unknown",
+          "finding": "原XC/YC逐条实际转换至WGS84；本轮未获得适用建筑/地块边界与原点交叉核验，不作距离或包含关系。",
+          "sourceUrls": [],
+          "gap": "坐标换算不等于历史点定位，仍需历史门牌/地籍范围与今地图互证。"
+        },
+        "temporal": {
+          "status": "unknown",
+          "finding": "本轮历史补证不等于2026现用核验；旧报道和旧浴室名录仅支持其记述时点。",
+          "sourceUrls": [
+            "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+          ],
+          "gap": "原址当前使用的独立时效证据未取得。"
+        }
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.473856,
+          "latitude": 31.219433
+        },
+        "sourceCoordinates": {
+          "XC": 354631.7186,
+          "YC": 3454924.6601,
+          "sourceCrs": "EPSG:32651"
+        },
+        "conversionMethod": "本agent已实际用Node scripts/lib/coordinate-systems.mjs::utm51nToWgs84，XC为Easting、YC为Northing；逐记录独立换算EPSG:32651→EPSG:4326，保留6位小数，与context复核一致。",
+        "comparisonSourceUrl": null,
+        "comparisonCrs": null,
+        "distanceMeters": null,
+        "containment": "not-checked",
+        "finding": "未实施建筑边界或现代POI距离比较；没有虚构几何包含。",
+        "assessmentMethod": "not-checked",
+        "compatibility": "not-checked",
+        "measurementTarget": null,
+        "evidenceLocators": [],
+        "uncertainty": "历史输入点本身精度未标注；原点落上海仅是换算合理性检查。"
+      },
+      "relatedRecords": [
+        {
+          "IDBAT": 106,
+          "name": "Public Bath",
+          "nameZh": "新泉浴室",
+          "basis": "项目featureGroupId=landmark-vs-site-106；已读取context完整组员，单成员组",
+          "verificationStatus": "unresolved",
+          "checkedThisRound": true,
+          "originalInput": {
+            "IDBAT": 106,
+            "NAME": "Public Bath",
+            "F_ADDRESS": "195-199 ROUTE LAFAYETTE",
+            "FUNCTION": "Commercial establishment / Retail business / Store / Body care / Public Bath",
+            "XC": 354631.7186,
+            "YC": 3454924.6601
+          },
+          "liveRecord": {
+            "id": 106,
+            "name": "Public Bath",
+            "nameZh": "新泉浴室",
+            "address": "195-199 ROUTE LAFAYETTE",
+            "startYear": null,
+            "endYear": null,
+            "note": null,
+            "types": {
+              "TYP01": "Commercial establishment",
+              "TYP02": "Retail business",
+              "TYP03": "Store",
+              "TYP04": "Body care",
+              "TYP05": "Public Bath",
+              "TYP06": null,
+              "TYP07": null,
+              "TYP08": null,
+              "TYP09": null,
+              "TYP10": null,
+              "TYP11": null
+            },
+            "x": 354631.7186,
+            "y": 3454924.6601,
+            "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=106",
+            "provenance": "shapefile+live-list"
+          },
+          "sourceCrs": "EPSG:32651",
+          "originalWgs84": {
+            "longitude": 121.473856,
+            "latitude": 31.219433
+          },
+          "providedGcj02": {
+            "longitude": 121.478378,
+            "latitude": 31.217485
+          },
+          "conclusion": "未对其他同名浴室自动合并或互用原址结论。"
+        }
+      ],
+      "conflicts": [],
+      "remainingQuestions": [
+        "需新泉原195-199营业记录，与安化76的关系未证。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需新泉原195-199营业记录，与安化76的关系未证。",
+          "action": "查辣斐德路195—199的历史广告/商业登记，核新泉经营者与开闭年月，再追原地块变迁。",
+          "targetSource": "上海市/黄浦区档案、历史工商与浴室营业执照、分年地址簿",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "delta": "历史补证：未取得辣斐德路195-199新泉浴室的独立历史佐证；已排除安化路76号同名即同址的做法。 现代判断：未建立现代对应，保持unresolved/no；历史增量单列。",
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "mapWriteScope": {
+        "level": null,
+        "description": null,
+        "excludedClaims": [
+          "未断言原浴室楼体仍存或已经拆除",
+          "未证明2026继续营业",
+          "未把外区同名浴室或迁走机构现址写回原点"
+        ],
+        "useEvidenceDate": null
+      },
+      "mapWriteReason": "有界历史检索后仍无可用现代对应；历史佐证不触发现用途回填。",
+      "conclusion": "VS原名新泉浴室，旧址195-199 ROUTE LAFAYETTE，无年代。本轮检索新泉、复兴中路和辣斐德路195号等组合，尚无独立历史正文把新泉定位此门牌。2004名录中的新泉浴室在安化路76号，另有外区现代同名项目，均未见迁址继承证据，不能作为原点当前用途。原195-199地块及浴室存废仍未确认。",
+      "sources": [
+        {
+          "title": "Virtual Shanghai 建筑 #106：新泉浴室",
+          "url": "https://www.virtualshanghai.net/data/buildings?ID=106"
+        },
+        {
+          "title": "便民浴室恭候光临（2004年东方网—文汇报名录）",
+          "url": "https://news.sina.cn/sa/2004-01-20/detail-ikkntiak9252871.d.html?vt=4"
+        }
+      ]
+    }
+  ]
+}

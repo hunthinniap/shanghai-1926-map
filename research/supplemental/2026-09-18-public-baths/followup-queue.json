@@ -1,0 +1,108 @@
+{
+  "researchedAt": "2026-09-18",
+  "scope": "只列本轮4条partial；completed记录的未解决历史/现代问题另见evidence，不等于无须后续研究。",
+  "records": [
+    {
+      "IDBAT": 25,
+      "nameZh": "同慶池浴室",
+      "stopReason": "已发现1940工商名录关键条目，但大文件/403阻碍原页核读；本轮有界停止并保留原页任务。",
+      "remainingQuestions": [
+        "需读1940行名录第359页实际影像，确认全称、地址及是否分店。",
+        "原输入所指楼体或地块今天的使用范围、时效及建筑延续状态是什么？"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "需读1940行名录第359页实际影像，确认全称、地址及是否分店。",
+          "action": "通过国家图书馆数字馆或可用镜像获取同慶池仁記浴室所在页，与109-8原门牌逐项比对。",
+          "targetSource": "1940《上海市工商行名录》原页/国家图书馆扫描件",
+          "acceptanceCriterion": "须同条列出可识别的浴室名称、具体旧门牌与年代；现代回填还须原地块沿革及当前用途闭合。"
+        }
+      ],
+      "sourceAccessGaps": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/NLC416-13jh005502-74269_%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B7%A5%E5%95%86%E8%A1%8C%E5%90%8D%E9%8C%84.pdf",
+          "accessMethod": "search-snippet",
+          "limitations": "web.open因文件39837121字节超限失败；Python urllib正常证书验证尝试返回HTTP403；未读第359页，不能确认浙江南路109-8号。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 445,
+      "nameZh": "三友浴室",
+      "stopReason": "已读关键正文；已找到的辅助PDF原页图仍读取失败，保存具体失败，不继续扩搜。",
+      "remainingQuestions": [
+        "金苑候选地块与172原点是否相容",
+        "原历史点的现代场地、具体使用范围及近期用途仍需独立证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "金苑候选地块与172原点是否相容",
+          "action": "查和平浴室拆迁项目的旧今宗地图及金苑竣工总平面；补读2016报纸原页图",
+          "targetSource": "徐汇区档案馆拆迁／建设项目档案、新民晚报2016-06-22 A28",
+          "acceptanceCriterion": "图文直接把三友／和平172号旧地块连接金苑部分范围，并以同一坐标系核原点和近期用途"
+        }
+      ],
+      "sourceAccessGaps": [
+        {
+          "url": "https://xmwb.xinmin.cn/resfile/2016-06-22/A28/A28.pdf",
+          "accessMethod": "pdf",
+          "limitations": "本轮web.open取得PDF提取全文，但两次screenshot失败，Python下载亦SSL EOF，未实际看到该PDF原页图像；数字乱码处不采用。此为辅助历史来源，现代候选仍以2024正文为据。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 613,
+      "nameZh": "又日新浴室",
+      "stopReason": "迁址史及现425监管原页已读；2017报道所附旧图像读取超时，原点范围尚不能复核。",
+      "remainingQuestions": [
+        "迁出前429-21原址现状",
+        "原历史点的现代场地、具体使用范围及近期用途仍需独立证据。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "迁出前429-21原址现状",
+          "action": "重新读取2017报道所附《上海市行号路图录》原图并对照425、429弄子号的地籍图",
+          "targetSource": "上海图书馆行号路图录原本、黄浦区门牌地籍档案",
+          "acceptanceCriterion": "区分迁出和迁入地块，核出429-21原点的现范围与现用途"
+        }
+      ],
+      "sourceAccessGaps": [
+        {
+          "url": "https://image.thepaper.cn/www/image/5/432/503.jpg",
+          "accessMethod": "inaccessible",
+          "limitations": "请求超时，不能视作已经查看历史地图或现状照片。"
+        },
+        {
+          "url": "https://image.thepaper.cn/www/image/5/433/960.jpg",
+          "accessMethod": "inaccessible",
+          "limitations": "请求超时，不能视作已经查看历史地图或现状照片。"
+        }
+      ]
+    },
+    {
+      "IDBAT": 642,
+      "nameZh": "??浴室",
+      "stopReason": "找到的香粉弄具体历史文章只有相关搜索摘录可读，正文访问超时/403；本轮没有强行补读更多材料。",
+      "remainingQuestions": [
+        "原始历史门牌保留；本轮独立史料尚未将该门牌闭合到现代宗地。",
+        "没有足够材料证明本条历史浴室原楼现存、拆除或其后改建的具体对象。",
+        "未建立可属于本条原址的当前用途，不以同号POI或邻近浴室替代。"
+      ],
+      "nextResearchActions": [
+        {
+          "targetGap": "独立历史身份与具体门牌",
+          "action": "查香粉弄89号工商/浴室同业公会名册和原图，确认缺字店名。",
+          "targetSource": "原工商/浴业公会档案、同期广告与行号图、地籍门牌换编；强历史链再查现代官方范围和使用资料",
+          "acceptanceCriterion": "史料同时连接具体浴室名与本条旧门牌/时间，排除同名跨址；现代回填另须存废、现用及原点相容证据。"
+        }
+      ],
+      "sourceAccessGaps": [
+        {
+          "url": "https://www.sohu.com/a/308122629_556717",
+          "accessMethod": "search-snippet",
+          "limitations": "未给89号，也无原“??浴室”释名；未读完整正文或原记载，不能把五龙池填成642名称。"
+        }
+      ]
+    }
+  ]
+}
