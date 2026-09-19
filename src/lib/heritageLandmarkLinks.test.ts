@@ -39,6 +39,23 @@ describe('reviewed heritage and historical landmark identities', () => {
     }
   })
 
+  it.each([
+    { id: 580, officialId: 'sh-fgj-1A025-01', name: 'Trinity Church', chinese: '圣三一基督教堂', oldAddress: '210 HANKOW ROAD', newAddress: '九江路201号', year: 1869 },
+    { id: 679, officialId: 'sh-fgj-1A018-01', name: "Moore's Memorial Church", chinese: '沐恩堂', oldAddress: '316 YUYACHING ROAD', newAddress: '西藏中路316号', year: 1892 },
+  ])('resolves $name through its reviewed history while retaining the original date and address', (entry) => {
+    const links = heritageLandmarkLinks.filter((link) => link.officialId === entry.officialId)
+    const linked = linkHeritageLandmarks(historical, heritage, links)
+    const place = linked.byGroupId.get(`landmark-vs-site-${entry.id}`)!
+    expect(place.heritage.properties.officialId).toBe(entry.officialId)
+    expect(place.landmark.properties.labelYear).toBe(entry.year)
+    expect(place.link.historicalAddresses.map((address) => address.address)).toContain(entry.oldAddress)
+    expect(place.heritage.properties.address).toBe(entry.newAddress)
+    const records = makeSearchRecords(linked.features.features)
+    for (const query of [entry.name, entry.chinese]) {
+      expect(searchRecords(records, query)[0].featureGroupId).toBe(`landmark-vs-site-${entry.id}`)
+    }
+  })
+
   it('keeps the historical map usable before heritage data is loaded', () => {
     const result = linkHeritageLandmarks(historical, undefined, nanjing)
     expect(result.features).toBe(historical)

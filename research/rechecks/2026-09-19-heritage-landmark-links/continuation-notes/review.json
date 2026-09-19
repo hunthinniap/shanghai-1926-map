@@ -1,0 +1,2869 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "status": "complete-for-defined-inputs",
+  "input": {
+    "path": "research/rechecks/2026-09-19-heritage-landmark-links/candidates.json",
+    "sha256": "023bfd179d0a4bb9cfa44e7696271010a31d77e1776def9a197ec1d068c00afc",
+    "recordCount": 498
+  },
+  "baselineReviewSha256": "6af4649512a23e274ba072b982c83a641df51d97d49971042bdd4c7b93607493",
+  "selectionPolicy": "108 previously unreviewed candidate pairs with existing same-building research, no persistent hold, nonempty VS source membership and an available heritage point; plus the two user-named churches and two competing Trinity listings. Existing notes are checked against their cited sources; a same-building flag alone does not authorize a merge.",
+  "methodology": [
+    "Follow-up requested by user; inspect existing documented building histories and their cited sources, not only literal historical-name matches.",
+    "Preserve original years and addresses; where the original record mixes institution history with a later building, explain the distinction explicitly.",
+    "These decisions concern building identity and a shared display card; do not overwrite current-use research or raw coordinates."
+  ],
+  "parts": [
+    {
+      "input": "input-root.json",
+      "inputSha256": "faa302944e34c73e533b1799ee79881b80c6ec11167e9d72c4349fa9ad6be5f6",
+      "review": "review-root.json",
+      "reviewSha256": "3ca143828a9bd50373dbc948e269d79ddc815e2a5053ac17c7b5a2db81aa5a67"
+    },
+    {
+      "input": "input-0.json",
+      "inputSha256": "c4f3578f4fed6fc806ca68bbabb065a8e9bb53a65f1ad901c022c6ac40126877",
+      "review": "review-0.json",
+      "reviewSha256": "b867d03077a83419739824f8d368b1a98c538d232119cd1914f8eb536930280c"
+    },
+    {
+      "input": "input-1.json",
+      "inputSha256": "fe487ed25b52fd2a990060724d25e2c575b35ee0c0cff31ae278179d0b8995c1",
+      "review": "review-1.json",
+      "reviewSha256": "da132bb15b6ff09ce1bfef808fde9d02260f17a8327da29ac7717491fb167553"
+    },
+    {
+      "input": "input-2.json",
+      "inputSha256": "94a00bd9e32ea873aa6ef82b574d364507454d4d8f5f2f89846bfc6214fd7cfc",
+      "review": "review-2.json",
+      "reviewSha256": "42beb29b21fd028a418a45d7c1fd76e47c913d917368228af0a551198e83ff83"
+    }
+  ],
+  "summary": {
+    "reviewed": 112,
+    "accepted": 55,
+    "acceptedBuildings": 48,
+    "acceptedComplexes": 6,
+    "acceptedStructures": 1,
+    "held": 57
+  },
+  "reviews": [
+    {
+      "candidateId": "landmark-vs-site-580__sh-fgj-1A025-01",
+      "sourceRecordIds": [
+        580
+      ],
+      "officialId": "sh-fgj-1A025-01",
+      "officialCode": "1A025",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "对应1869年圣三一教堂本体；不并入相邻原教会学校、同仁医院／百乐饭店办公楼。",
+      "reason": "Trinity Church即圣三一堂，原建筑记录的关联历史照片直接标作Holy Trinity Church／聖三一堂，1869年与现存红礼拜堂相合。旧汉口路210号、名录九江路201号及维基九江路219号分别保留；九江路219号也用于相邻教会办公楼，不能仅按共用门牌合并楼体。",
+      "displayNote": "Trinity Church即圣三一堂，原建筑记录的关联历史照片直接标作Holy Trinity Church／聖三一堂，1869年与现存红礼拜堂相合。旧汉口路210号、名录九江路201号及维基九江路219号分别保留；九江路219号也用于相邻教会办公楼，不能仅按共用门牌合并楼体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=580",
+        "https://zh.wikipedia.org/zh-cn/圣三一堂_(上海)",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://zh.wikipedia.org/wiki/%E5%9C%A3%E4%B8%89%E4%B8%80%E5%A0%82_(%E4%B8%8A%E6%B5%B7)"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=580",
+        "https://www.ccctspm.org/index.php/churchinfo/396",
+        "https://www.shjsjtdw.cn/node2/n59/u1ai15090.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-679__sh-fgj-1A018-01",
+      "sourceRecordIds": [
+        679
+      ],
+      "officialId": "sh-fgj-1A018-01",
+      "officialCode": "1A018",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "对应西藏中路316号现存教堂；保留机构早期沿革和现楼建造年代的区别。",
+      "reason": "Moore’s Memorial Church（慕尔堂）与沐恩堂为同一现址教堂，旧虞洽卿路316号对应今西藏中路316号。教会官方沿革说明现堂于1931年落成，1958年更名沐恩堂；历史记录所列1892年与名录资料的1930年分别保留，1892年不能作为现存楼体建造年。早期云南中路汉口路堂址另处，不在本卡片位置范围内。",
+      "displayNote": "Moore’s Memorial Church（慕尔堂）与沐恩堂为同一现址教堂，旧虞洽卿路316号对应今西藏中路316号。教会官方沿革说明现堂于1931年落成，1958年更名沐恩堂；历史记录所列1892年与名录资料的1930年分别保留，1892年不能作为现存楼体建造年。早期云南中路汉口路堂址另处，不在本卡片位置范围内。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=679",
+        "https://www.ccctspm.org/churchinfo/205",
+        "https://shanghai.cervantes.es/imagenes/File/biblioteca/Guia_de_Shanghai_2024.pdf",
+        "https://www.ccctspm.org/newsinfo/20524",
+        "https://www.openstreetmap.org/way/1197586458",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://zh.wikipedia.org/wiki/%E6%85%95%E5%B0%94%E5%A0%82"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.ccctspm.org/churchinfo/205",
+        "https://www.virtualshanghai.net/Data/Buildings?ID=679"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-580__sh-fgj-4A019-01",
+      "sourceRecordIds": [
+        580
+      ],
+      "officialId": "sh-fgj-4A019-01",
+      "officialCode": "4A019",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "圣三一堂本体为1869年教堂，4A019是邻侧1928年原教会学校、后同仁医院／百乐饭店楼。共享九江路219号文字或近邻不能作为同栋证据；本轮580只对应1A025，581另审4A019。",
+      "displayNote": "圣三一堂本体为1869年教堂，4A019是邻侧1928年原教会学校、后同仁医院／百乐饭店楼。共享九江路219号文字或近邻不能作为同栋证据；本轮580只对应1A025，581另审4A019。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=580",
+        "https://zh.wikipedia.org/zh-cn/圣三一堂_(上海)",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://data.library.sh.cn/entity/architecture/wmzcki131cpf1x7g"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=580",
+        "https://www.ccctspm.org/index.php/churchinfo/396",
+        "https://www.shjsjtdw.cn/node2/n59/u1ai15090.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-580__sh-fgj-4A020-01",
+      "sourceRecordIds": [
+        580
+      ],
+      "officialId": "sh-fgj-4A020-01",
+      "officialCode": "4A020",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "4A020是汉口路200号（维基210号）花园住宅，与具名圣三一教堂不相同；旧门牌210 HANKOW ROAD不宜直接机械接到今日同号住宅。",
+      "displayNote": "4A020是汉口路200号（维基210号）花园住宅，与具名圣三一教堂不相同；旧门牌210 HANKOW ROAD不宜直接机械接到今日同号住宅。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/数据/建筑?ID=580",
+        "https://zh.wikipedia.org/zh-cn/圣三一堂_(上海)",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=580",
+        "https://www.ccctspm.org/index.php/churchinfo/396",
+        "https://www.shjsjtdw.cn/node2/n59/u1ai15090.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-549__sh-fgj-2A032-01",
+      "sourceRecordIds": [
+        549
+      ],
+      "officialId": "sh-fgj-2A032-01",
+      "officialCode": "2A032",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Robert Dollar Building 的具名沿革与大来大楼、广东路51号相合，房管名录2A032列广东路51、59号。旧点距名录参考点12米，指同一楼体；采用名录完整门牌，不采纳此前被排除的图书馆远偏原点。",
+      "displayNote": "Robert Dollar Building 即大来大楼。历史门牌为51 CANTON ROAD；名录地址为广东路51、59号。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=549",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://zh.wikipedia.org/wiki/大来大楼"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "51 CANTON ROAD"
+      ],
+      "listedAddress": "广东路51,59号",
+      "distanceMetres": 12,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-300__sh-fgj-2C007-01",
+      "sourceRecordIds": [
+        300
+      ],
+      "officialId": "sh-fgj-2C007-01",
+      "officialCode": "2C007",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "2C007原名直接为ASTRID公寓、现名南昌大楼；市政府2024修缮资料记南昌路茂名南路街角1933年环龙公寓。名称、1933年与现存楼体闭合，旧250号和今名录143号分列。",
+      "displayNote": "Astrid Apartments 即南昌大楼，又称环龙公寓。历史地址250 ROUTE VALLON；名录以茂名南路143号登记，建筑亦沿南昌路展开。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=300",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.shanghai.gov.cn/nw4411/20240325/64a87967e95640629ca02d07b6c3bcf0.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "250 ROUTE VALLON"
+      ],
+      "listedAddress": "茂名南路143号",
+      "distanceMetres": 17,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-498__sh-fgj-1D001-01",
+      "sourceRecordIds": [
+        498
+      ],
+      "officialId": "sh-fgj-1D001-01",
+      "officialCode": "1D001",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "对应蒲西路158号、1910年落成的现存主教座堂，不包括已拆旧堂及教区其他建筑；原资料1843年单独保留，不作为现存楼体建造年代。",
+      "reason": "徐家汇源官网直接说明徐家汇天主堂又称圣依纳爵堂、蒲西路158号，1910年落成；VS具名主教座堂点与现楼参考点差23米。VS1843仅保留为历史资料年代，不说现存1910年楼体始建于1843或与已经拆除的旧堂同楼。名录原文浦西路158号与景区蒲西路158号区别保留。",
+      "displayNote": "Saint Ignatius Cathedral 即徐家汇天主堂（圣依纳爵堂）。景区地址为蒲西路158号，名录原文写作“徐家汇浦西路158号”。现存主教座堂1910年落成；历史资料中的1843年另行保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=498",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.xujiahuiyuan.com/zouJin/inner?columnId=d4f0f2448e2a0cabbed64fb2d25cbf94&id=fc4bcca5f394e396c3dd7c723422fd88"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2019/08/27/9f8086926cbda259016cd1aa7d45154b.html?tm=1740650443068"
+      ],
+      "historicalAddresses": [
+        "CAOXI BEILU (XUJIAHUI)"
+      ],
+      "listedAddress": "徐家汇浦西路158号",
+      "distanceMetres": 23,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-363__sh-fgj-2D002-01",
+      "sourceRecordIds": [
+        363
+      ],
+      "officialId": "sh-fgj-2D002-01",
+      "officialCode": "2D002",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Hanray Mansions历史专页与既有研究将其明确对应亨雷/亨利公寓；2D002直接列亨利公寓、淮中大楼、淮海中路1160-1164号。VS1939年与名录1939相同、旧1160号含在登记范围且参考点相差25米。",
+      "displayNote": "Hanray Mansions 即亨利公寓（亦译亨雷公寓），后称淮中大楼。旧门牌1160 AVENUE JOFFRE，名录门牌为淮海中路1160—1164号；保留整个名录范围。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=363",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://sites.google.com/view/russianshanghai/buildings/hanray-mansions"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "1160 AVENUE JOFFRE"
+      ],
+      "listedAddress": "淮海中路1160-1164号",
+      "distanceMetres": 25,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-288__sh-fgj-2C006-01",
+      "sourceRecordIds": [
+        288
+      ],
+      "officialId": "sh-fgj-2C006-01",
+      "officialCode": "2C006",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "具名剧场沿革明确1931年在今茂名南路、长乐路街角落成的第三代Lyceum Theatre就是今日兰心大戏院，与VS1931和街道一致，名录2C006茂名南路57号。早期异址剧院不并入本楼；旧101号保留。",
+      "displayNote": "Lyceum Theater 即今日兰心大戏院，这里对应1931年建成的第三代剧场。旧101 ROUTE CARDINAL MERCIER与今茂名南路57号分别展示，早期位于其他道路的剧场另作历史沿革。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=288",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://caiyi.cctv.com/2026/02/06/ARTIBaWwTbBwUmfFuIYnVvyH260206.shtml"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "101 ROUTE CARDINAL MERCIER"
+      ],
+      "listedAddress": "茂名南路57号",
+      "distanceMetres": 33,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-306__sh-fgj-4C021-01",
+      "sourceRecordIds": [
+        306
+      ],
+      "officialId": "sh-fgj-4C021-01",
+      "officialCode": "4C021",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "上观对昆剧演员与原楼的采访明确绍兴路9号原法国警察俱乐部，门口铭牌爱麦虞限路9号宅；房管4C021同名同门牌。旧47/49 VICTOR EMMANUEL III与今9号差异不强作号码相等，依具名沿革同楼和33米点位确认。",
+      "displayNote": "法国警察俱乐部原楼现为绍兴路9号上海昆剧团，名录称“爱麦虞限路9号宅”。历史记录中的47/49 AVENUE VICTOR EMMANUEL III与名录门牌分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=306",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.shobserver.com/wx/detail.do?id=11505"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "47/49 AVENUE VICTOR EMMANUEL III"
+      ],
+      "listedAddress": "绍兴路9号",
+      "distanceMetres": 33,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-402__sh-fgj-1D003-01",
+      "sourceRecordIds": [
+        402
+      ],
+      "officialId": "sh-fgj-1D003-01",
+      "officialCode": "1D003",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "原记录79 ROUTE PICHON与汾阳路79号、现工艺美术博物馆和1D003合为同一处住宅楼；已有沿革指出French Military Residence/法国兵房为原记录称呼，实际原为法公董局总董官邸。历史名称不改写，亦不把旁边太原路4弄归入。",
+      "displayNote": "历史记录称French Military Residence（法国兵房），对应汾阳路79号原住宅，现为上海工艺美术博物馆。旧门牌79 ROUTE PICHON和名录地址汾阳路79号并列保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=402",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://whlyj.sh.gov.cn/wbzx/20220314/b651a8927f9a4b1e868bab2946d48b78.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.shanghai.gov.cn/xuhui/index.html"
+      ],
+      "historicalAddresses": [
+        "79 ROUTE PICHON"
+      ],
+      "listedAddress": "汾阳路79号",
+      "distanceMetres": 33,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-534__sh-fgj-2A041-01",
+      "sourceRecordIds": [
+        534
+      ],
+      "officialId": "sh-fgj-2A041-01",
+      "officialCode": "2A041",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Continental Bank Building历史111/113 KIUKIANG ROAD与既有同楼沿革大陆银行大楼一致；房管2A041直接列大陆银行、九江路111号。35米差异属同楼参考点，保留原双门牌不扩至其他九江路银行。",
+      "displayNote": "Continental Bank Building 即大陆银行大楼。历史记录为111/113 KIUKIANG ROAD，名录登记九江路111号。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=534",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "111/113 KIUKIANG ROAD"
+      ],
+      "listedAddress": "九江路111号",
+      "distanceMetres": 35,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-600__sh-fgj-5A024-01",
+      "sourceRecordIds": [
+        600
+      ],
+      "officialId": "sh-fgj-5A024-01",
+      "officialCode": "5A024",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "市历保中心文章明确南苏州路185号楼1917年建成且电车公司同年迁入，5A024登记英商上海电车公司大楼，与VS公司名、185 SOOCHOW ROAD、1917年相合。采用同楼参考点；原FUNCTION电话公司疑异保留，不并入附近礼和大楼。",
+      "displayNote": "Shanghai Tram Company 对应南苏州路185号的英商上海电车公司大楼，1917年建成后公司迁入。历史门牌185 SOOCHOW ROAD与名录门牌并列；原资料的功能标签差异仍保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=600",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.thepaper.cn/newsDetail_forward_33464022"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "185 SOOCHOW ROAD"
+      ],
+      "listedAddress": "南苏州路185号",
+      "distanceMetres": 38,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-261__sh-fgj-2C013-01",
+      "sourceRecordIds": [
+        261
+      ],
+      "officialId": "sh-fgj-2C013-01",
+      "officialCode": "2C013",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "历保建筑介绍及第二批名录共同指向皋兰路16号圣尼古拉斯东正教堂；原楼改造为思南书局诗歌店的连续沿革明确。VS18 RUE CORNEILLE与现16号差异、1931与资料1932/1934年代差异分别保留，不把对街11-17号花园住宅并入。",
+      "displayNote": "Saint Nicholas Church 对应皋兰路16号原圣尼古拉斯东正教堂，现为思南书局诗歌店。历史18 RUE CORNEILLE与名录16号分别保留；不同来源的建筑年代亦不互相覆盖。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=261",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.shobserver.cn/sgh/detail?id=1494368"
+      ],
+      "supplementalSourceUrls": [
+        "https://sghexport.shobserver.com/html/baijiahao/2025/01/10/1494368.html"
+      ],
+      "historicalAddresses": [
+        "18 RUE CORNEILLE"
+      ],
+      "listedAddress": "皋兰路16号",
+      "distanceMetres": 39,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-291__sh-fgj-1C005-01",
+      "sourceRecordIds": [
+        291
+      ],
+      "officialId": "sh-fgj-1C005-01",
+      "officialCode": "1C005",
+      "decision": "hold",
+      "relation": "component-of-combined-listing",
+      "scopeNote": "",
+      "reason": "Grosvenor House仅对应峻岭公寓，1C005把峻岭公寓、茂名公寓及锦江宾馆中、西楼合列。现有一对一整项卡片不能把一个组成楼等同于两楼，待组件关系支持或全组证据。",
+      "displayNote": "峻岭公寓是锦江饭店建筑群的一部分；这条名录还包括茂名公寓，暂不把整个名录项与单栋峻岭公寓合为同一对象。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=291",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20231124/b15d2cc62acf40e1856f52a7277b28bf.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "219 ROUTE CARDINAL MERCIER"
+      ],
+      "listedAddress": "茂名南路59号",
+      "distanceMetres": 42,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-516__sh-fgj-5A041-01",
+      "sourceRecordIds": [
+        516
+      ],
+      "officialId": "sh-fgj-5A041-01",
+      "officialCode": "5A041",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "既有研究用原始学术案例18将Whiteaway Laidlaw与惠罗、南京路四川路口旧98-114号对上；5A041明确南京东路100号惠罗公司大楼，国资委报道历史楼的保护更新，42米位置相容。1904为公司开业资料年代，不据此否认1906名录旧版建造期；不与独立3A017哈同/慈安里整项相并。",
+      "displayNote": "Whiteaway, Laidlaw & Company 对应惠罗公司大楼，名录地址南京东路100号。旧98 NANKING ROAD仍保留；公司开业与楼体建成的年份分别记录。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=516",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://kanagawa-u.repo.nii.ac.jp/record/6450/files/40-09.pdf",
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260608/63f56cbd7e4f4db98596c464942434d7.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "98 NANKING ROAD"
+      ],
+      "listedAddress": "南京东路100号",
+      "distanceMetres": 42,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1665__sh-fgj-4F008-01",
+      "sourceRecordIds": [
+        1665
+      ],
+      "officialId": "sh-fgj-4F008-01",
+      "officialCode": "4F008",
+      "decision": "hold",
+      "relation": "historical-tenant-within-listed-building",
+      "scopeNote": "",
+      "reason": "虹口政府明确角田公寓曾设万岁馆，并称位于闵行181号；这证明历史租用/局部使用关系，但4F008保护项含闵行171-181、201-211和峨眉70-80多门牌全部楼体，尚不能把旅馆记录等同整个角田公寓。",
+      "displayNote": "万岁馆曾设在角田公寓内，这层关系已确认；名录覆盖更完整的多门牌建筑，待细分旅馆与整栋公寓范围后再合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1665",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "181 MINHONG"
+      ],
+      "listedAddress": "闵行路171-181号，201-211号，峨眉路70-80号",
+      "distanceMetres": 44,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1743__sh-fgj-5B001-01",
+      "sourceRecordIds": [
+        1743
+      ],
+      "officialId": "sh-fgj-5B001-01",
+      "officialCode": "5B001",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "长乐路962弄1—4号的J.K.K.公寓建筑群；旧956/962号仅作为历史门牌，不扩大为周边全部房屋。",
+      "reason": "5B001直接保留J.K.K.公寓和英文名J.K.K.Apartment，并明确长乐路962弄1-4号；已有研究与VS具名公寓旧956/962 ROUTE BOURGEAT相合。仅合并同名公寓的名录整体，完整保留1-4号，不把旧956号所有相邻门面视为保护本体。",
+      "displayNote": "J.k.k. Apartment 对应J.K.K.公寓名录项。旧956/962 ROUTE BOURGEAT与今长乐路962弄1—4号分别展示，卡片以该公寓完整名录范围为准。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1743",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "historicalAddresses": [
+        "956/962 ROUTE BOURGEAT"
+      ],
+      "listedAddress": "长乐路962弄1-4号",
+      "distanceMetres": 45,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-585__sh-fgj-3A008-01",
+      "sourceRecordIds": [
+        585
+      ],
+      "officialId": "sh-fgj-3A008-01",
+      "officialCode": "3A008",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "EDITION运营官网明确原上海电力公司总部历史楼保留作公共区域、与旁边现代客房塔楼分开；3A008列电力大楼南京东路181号。既有原研究确认1931竣工与VS同年、点46米。仅同一总部老楼，旧195号/名录181号/酒店通用199号不混为门牌。",
+      "displayNote": "Shanghai Power Offices 即南京东路181号原上海电力公司总部大楼，后纳入上海艾迪逊酒店。历史195 NANKING ROAD、名录181号与酒店统一地址199号分别保留；本卡片指总部老楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=585",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://edition-hotels.cn/shanghai/",
+        "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/",
+        "https://link.springer.com/article/10.1186/s43238-021-00020-2"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "195 NANKING ROAD"
+      ],
+      "listedAddress": "南京东路181号",
+      "distanceMetres": 46,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-516__sh-fgj-3A017-01",
+      "sourceRecordIds": [
+        516
+      ],
+      "officialId": "sh-fgj-3A017-01",
+      "officialCode": "3A017",
+      "decision": "hold",
+      "relation": "overlapping-address-different-listing",
+      "scopeNote": "",
+      "reason": "VS516具名惠罗公司大楼对应5A041南京东路100号；3A017原名哈同大楼、现慈安里大楼、98-114号另有独立保护项。数字范围重合不足以证明整项同楼，不将两项合并，也不移去已有正确候选。",
+      "displayNote": "惠罗公司已有独立的南京东路100号名录项；哈同大楼／慈安里大楼是另一名录项，不能只凭98—114号范围重合就合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=516",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260608/63f56cbd7e4f4db98596c464942434d7.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "98 NANKING ROAD"
+      ],
+      "listedAddress": "南京东路98-114号",
+      "distanceMetres": 48,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1095__sh-fgj-1B002-01",
+      "sourceRecordIds": [
+        1095
+      ],
+      "officialId": "sh-fgj-1B002-01",
+      "officialCode": "1B002",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "市文旅局旅游网站的英文建筑专文直接给出Hua Ye Apartments (Cosmopolitan Apartments)，并说明原Seymour Road位置、1934现存楼体与三翼相连结构；1B002华业公寓/华业大楼陕西北路175号，与VS175 SEYMOUR及53米同址相容。原VS1932与1934分别保留，网站南京西路1213号作为入口提示不覆盖官方175号。",
+      "displayNote": "Cosmopolitan Apartments 即华业公寓（华业大楼）。历史门牌175 SEYMOUR ROAD，名录地址陕西北路175号；不同来源记载的1932与1934年代分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1095",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://www.meet-in-shanghai.net/en/news/spanishstyle-art-deco-building-still-projects-grandeur-of-old-shanghai-671774/"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "175 SEYMOUR ROAD"
+      ],
+      "listedAddress": "陕西北路175号",
+      "distanceMetres": 53,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1785__sh-fgj-4C002-01",
+      "sourceRecordIds": [
+        1785
+      ],
+      "officialId": "sh-fgj-4C002-01",
+      "officialCode": "4C002",
+      "decision": "hold",
+      "relation": "different-building-opposite-number-range",
+      "scopeNote": "",
+      "reason": "Bearn即培恩/培文公寓已经对应2C002淮海中路449号一侧，旧453/469同处奇号范围；4C002康绥公寓为468-494偶号另一楼，不因60米近邻合并。",
+      "displayNote": "培文公寓与康绥公寓是不同建筑，分处淮海中路奇、偶号地址范围，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1785",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://zh.wikipedia.org/wiki/培恩公寓"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "453/469 AVENUE JOFFRE"
+      ],
+      "listedAddress": "淮海中路468-494号",
+      "distanceMetres": 60,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-261__sh-fgj-4C009-01",
+      "sourceRecordIds": [
+        261
+      ],
+      "officialId": "sh-fgj-4C009-01",
+      "officialCode": "4C009",
+      "decision": "hold",
+      "relation": "different-building-opposite-number-range",
+      "scopeNote": "",
+      "reason": "圣尼古拉斯教堂为皋兰16号，2C013是其保护项；4C009为皋兰11-17号花园住宅，与教堂不是同一建筑，空间近邻不能取代沿革。",
+      "displayNote": "圣尼古拉斯教堂对应皋兰路16号；11—17号花园住宅另列，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=261",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.shobserver.cn/sgh/detail?id=1494368"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "18 RUE CORNEILLE"
+      ],
+      "listedAddress": "皋兰路11-17号",
+      "distanceMetres": 63,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-396__sh-fgj-2D047-01",
+      "sourceRecordIds": [
+        396
+      ],
+      "officialId": "sh-fgj-2D047-01",
+      "officialCode": "2D047",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "市房管局修缮原文直接给出瑞华原名赛华Savoy Apts.、1928年、常熟209弄1-4号，并展示延庆路和常熟路两侧立面。VS1928、独特名称和旧163 ROUTE DE GROUCHY处同一转角闭合；2D047常熟209号同楼参考点相差73米。",
+      "displayNote": "Savoy Apartments 即赛华公寓，后称瑞华公寓。历史地址163 ROUTE DE GROUCHY，名录为常熟路209号；修缮资料记常熟路209弄1—4号，建筑同时沿延庆路展开。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=396",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://m.thepaper.cn/newsDetail_forward_11427915"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "163 ROUTE DE GROUCHY"
+      ],
+      "listedAddress": "常熟路209号",
+      "distanceMetres": 73,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-765__sh-fgj-2F002-01",
+      "sourceRecordIds": [
+        765
+      ],
+      "officialId": "sh-fgj-2F002-01",
+      "officialCode": "2F002",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "虹口政府直接描述北苏州路400号正门河滨大楼以及1935年竣工、横贯江西北路和河南北路的完整楼体，与VS具名Embankment House/河滨大厦1935相符；名录2F002北苏州340号同一具名公寓，79米系大型楼体参考点。名录340、现正门400、旧360-370三组门牌并列保留，不能自动逐号视为同号。",
+      "displayNote": "Embankment House 即河滨大楼（河滨公寓）。历史门牌360—370 NORTH SOOCHOW ROAD，名录登记北苏州路340号；虹口区资料记正门为北苏州路400号，三种门牌分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=765",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/e6bbb4ce-8d6b-4d2f-b525-115b35d40766.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "360-370 NORTH SOOCHOW ROAD"
+      ],
+      "listedAddress": "北苏州路340号",
+      "distanceMetres": 79,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-681__sh-fgj-1A019-01",
+      "sourceRecordIds": [
+        681
+      ],
+      "officialId": "sh-fgj-1A019-01",
+      "officialCode": "1A019",
+      "decision": "hold",
+      "relation": "multiple-landmark-components-compete",
+      "scopeNote": "",
+      "reason": "1A019合列老、新永安公司627-635号，VS681明确为635旧楼，VS631是另一个未归组地标竞争该保护项。现有一对一机制不能只挑较近旧楼代表整个新旧楼保护项。",
+      "displayNote": "永安公司旧楼与新楼同列于一个保护项，但历史图层分别记录两楼；待整理两楼关系后再统一卡片。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=681",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://whlyj.sh.gov.cn/gqfc/20220314/d7e8557a337b4533b6bc048244edcb8d.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "CHEKIANG ROAD / NANKING ROAD"
+      ],
+      "listedAddress": "南京东路627-635号",
+      "distanceMetres": 97,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-306__sh-fgj-4C020-01",
+      "sourceRecordIds": [
+        306
+      ],
+      "officialId": "sh-fgj-4C020-01",
+      "officialCode": "4C020",
+      "decision": "hold",
+      "relation": "different-building-opposite-number-range",
+      "scopeNote": "",
+      "reason": "法国警察俱乐部已沿革确认为绍兴9号的4C021；4C020金谷村含绍兴2-34双号与瑞金二路大范围里弄，名称、奇偶门牌、用途范围均不同。",
+      "displayNote": "绍兴路9号原法国警察俱乐部与金谷村不是同一名录建筑，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=306",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://www.shobserver.com/wx/detail.do?id=11505"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "47/49 AVENUE VICTOR EMMANUEL III"
+      ],
+      "listedAddress": "绍兴路2-34 号（双）、瑞金二路132弄1-48 号，瑞金二路132 弄56-68 号，瑞金二路132 弄78-83 号",
+      "distanceMetres": 156,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1680__sh-fgj-3A013-01",
+      "sourceRecordIds": [
+        1680
+      ],
+      "officialId": "sh-fgj-3A013-01",
+      "officialCode": "3A013",
+      "decision": "hold",
+      "relation": "different-building-opposite-number-range",
+      "scopeNote": "",
+      "reason": "广学大楼官方2A020地址虎丘128号；3A013青年协会大楼/虎丘公寓在虎丘131号，名称、地址和保护项不同。6米仅说明某个参考点偏移，不能据此把两楼相并。",
+      "displayNote": "广学大楼在虎丘路128号，青年协会大楼／虎丘公寓在131号，分别为两个保护项。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1680",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "?? HONGKONG ROAD"
+      ],
+      "listedAddress": "虎丘路131号",
+      "distanceMetres": 6,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1596__sh-fgj-5F027-01",
+      "sourceRecordIds": [
+        1596
+      ],
+      "officialId": "sh-fgj-5F027-01",
+      "officialCode": "5F027",
+      "decision": "hold",
+      "relation": "different-building-nearby-reference-point",
+      "scopeNote": "",
+      "reason": "鸿德堂有2F003多伦路59号专属保护项；5F027为多伦93号赵植初住宅/王造时旧居。11米近点不能覆盖具名建筑差异。",
+      "displayNote": "鸿德堂对应多伦路59号；多伦路93号的赵植初住宅／王造时旧居另列，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1596",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.ccctspm.org/churchinfo/204"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "19 ??"
+      ],
+      "listedAddress": "多伦路93号",
+      "distanceMetres": 11,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-897__sh-fgj-5A033-01",
+      "sourceRecordIds": [
+        897
+      ],
+      "officialId": "sh-fgj-5A033-01",
+      "officialCode": "5A033",
+      "decision": "hold",
+      "relation": "different-building-nearby-reference-point",
+      "scopeNote": "",
+      "reason": "Carlton/长江公寓既有沿革为黄河路65号；5A033为凤阳路338弄应公馆，19米只构成近邻。没有整楼等同依据，不能抹掉别处独立公寓对象。",
+      "displayNote": "长江公寓与凤阳路338弄应公馆是不同的名称和地址，现有资料不足以合为同一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=897",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.kankanews.com/detail/EnwNqkknbQa",
+        "https://m.thepaper.cn/detail/25852983"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "288 BURKILL ROAD"
+      ],
+      "listedAddress": "凤阳路338弄",
+      "distanceMetres": 19,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-402__sh-fgj-b5-D5035-01",
+      "sourceRecordIds": [
+        402
+      ],
+      "officialId": "sh-fgj-b5-D5035-01",
+      "officialCode": null,
+      "decision": "hold",
+      "relation": "different-building-nearby-reference-point",
+      "scopeNote": "",
+      "reason": "79 ROUTE PICHON对应汾阳79号住宅1D003；D5035为太原路4弄住宅群，两项门牌和范围不同，30米仅为相邻点。",
+      "displayNote": "汾阳路79号住宅与太原路4弄住宅群分别列入名录，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=402",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://whlyj.sh.gov.cn/wbzx/20220314/b651a8927f9a4b1e868bab2946d48b78.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "79 ROUTE PICHON"
+      ],
+      "listedAddress": "太原路4弄",
+      "distanceMetres": 30,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-537__sh-fgj-5A028-01",
+      "sourceRecordIds": [
+        537
+      ],
+      "officialId": "sh-fgj-5A028-01",
+      "officialCode": "5A028",
+      "decision": "hold",
+      "relation": "different-building-opposite-number-range",
+      "scopeNote": "",
+      "reason": "Bank of Chosen已在第五批5A039直接以Bank of chosen/上海市直接税局、四川330号列出；5A028中央商场355号属独立对象，31米不能合。",
+      "displayNote": "朝鲜银行大楼对应四川中路330号；中央商场的四川中路355号是另一保护项。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=537",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "330 SZECHUEN ROAD"
+      ],
+      "listedAddress": "四川中路355号",
+      "distanceMetres": 31,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-600__sh-fgj-5A006-01",
+      "sourceRecordIds": [
+        600
+      ],
+      "officialId": "sh-fgj-5A006-01",
+      "officialCode": "5A006",
+      "decision": "hold",
+      "relation": "different-building-nearby-reference-point",
+      "scopeNote": "",
+      "reason": "电车公司在5A024南苏州185号，而5A006礼和大楼在四川670号；同批明列不同名称和地址，有沿革明确排除同楼。",
+      "displayNote": "英商上海电车公司大楼与四川中路670号礼和大楼分别列入名录，继续分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=600",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "https://www.thepaper.cn/newsDetail_forward_33464022"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "185 SOOCHOW ROAD"
+      ],
+      "listedAddress": "四川中路670号",
+      "distanceMetres": 34,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1728__sh-fgj-2B014-01",
+      "sourceRecordIds": [
+        1728
+      ],
+      "officialId": "sh-fgj-2B014-01",
+      "officialCode": "2B014",
+      "decision": "hold",
+      "relation": "same-identity-coordinate-needs-verification",
+      "scopeNote": "",
+      "reason": "Ohel Rachel与西摩会堂/拉结会堂的身份、1920年和陕西北500号沿革可确认；旧520 SEYMOUR保留。当前heritage Wikipedia点距VS506米，且旧研究OSM会堂轮廓支持VS点附近；在默认采用heritage坐标策略下应先核点再接入，不据身份确认搬移到可能错误位置。本轮不修改坐标。",
+      "displayNote": "Ohel Rachel Synagogue 就是西摩会堂（拉结会堂），陕西北路500号。两份地图坐标相差约506米，需先核实参考点，再统一地图位置和卡片。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1728",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=4619",
+        "https://www.jingan.gov.cn/govxxgk/JA0/2024-06-05/b5736290-e20b-4536-86c1-55daa3b042ef.html"
+      ],
+      "supplementalSourceUrls": [],
+      "historicalAddresses": [
+        "520 SEYMOUR ROAD"
+      ],
+      "listedAddress": "陕西北路500号",
+      "distanceMetres": 506,
+      "persistentHolds": []
+    },
+    {
+      "candidateId": "landmark-vs-site-187__sh-fgj-2C008-01",
+      "sourceRecordIds": [
+        187
+      ],
+      "officialId": "sh-fgj-2C008-01",
+      "officialCode": "2C008",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "上海市科委对南昌路47号科学会堂的沿革明确记载前身法国总会、后改法国学堂；第二批名录精确列法国总会（老）／科学会堂一号楼。因此187法童公学对应2C008，不对应57号4C005。",
+      "displayNote": "法童公学（法国学堂）对应今南昌路47号科学会堂1号楼。旧资料门牌11 ROUTE VALLON与今名录门牌分别保留；相邻南昌路57号法国体育总会另列。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=187",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://stcsm.sh.gov.cn/xwzx/kjzl/20210524/b3f0f7464f9347f49b84c81400d2def1.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1756__sh-fgj-4C003-01",
+      "sourceRecordIds": [
+        1756
+      ],
+      "officialId": "sh-fgj-4C003-01",
+      "officialCode": "4C003",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "按国泰公寓建筑群对应，名录范围为淮海中路816弄（1-40号）、818-832号及850-860号（双号）；地图点表示建筑群参考位置。",
+      "reason": "既有沿革备注明确Cathay Flats是国泰公寓建筑群，旧818 AVENUE JOFFRE位于4C003同名保护范围；本轮复读房管局名录确认完整范围，不把818号单个门牌等同全部建筑。",
+      "displayNote": "Cathay Flats即国泰公寓建筑群。旧资料写818 AVENUE JOFFRE；合并卡片保留名录内各门牌，不将旧单一门牌扩大为每栋楼的旧址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1756",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-409__sh-fgj-2D044-01",
+      "sourceRecordIds": [
+        409
+      ],
+      "officialId": "sh-fgj-2D044-01",
+      "officialCode": "2D044",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "按克莱门公寓建筑群对应，范围为复兴中路1363弄；旧资料没有给出具体楼号，地图点不代表其中某一单元。",
+      "reason": "克莱门公寓专名、旧1363 ROUTE LAFAYETTE及现复兴中路1363弄相互对应；市文旅局页面亦将克莱门公寓3号具体单元列在该弄，支持现存具名建筑群。",
+      "displayNote": "Clement’s Apartments即克莱门公寓，旧址1363 ROUTE LAFAYETTE对应今复兴中路1363弄。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=409",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://whlyj.sh.gov.cn/yshd/20240807/ca78581dcc9c41729c6246c9b2a2caf7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-874__sh-fgj-1A015-01",
+      "sourceRecordIds": [
+        874
+      ],
+      "officialId": "sh-fgj-1A015-01",
+      "officialCode": "1A015",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "既有沿革已锁定China United Apartments与华安大楼；第一批名录将华安人寿保险公司与金门大酒店、南京西路104号同列。文旅推广网现用108号应保留，不能当成两楼；同济大学出版社图书目录亦直接对应中英文名。",
+      "displayNote": "China United Apartments对应华安大楼，后为金门大酒店。旧门牌104 BUBBLING WELL ROAD和名录南京西路104号分别显示；酒店资料另写南京西路108号。名录建造年代与历史资料年代按各自来源保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=874",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.meet-in-shanghai.net/cn/star-hotel/golden-gate-hotel-shanghai-813955/",
+        "https://www.yuntaigo.com/book.action?recordid=bmFiYWJsbmM5Nzg3NTYwODk5ODI0"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-508__sh-fgj-1A009-01",
+      "sourceRecordIds": [
+        508
+      ],
+      "officialId": "sh-fgj-1A009-01",
+      "officialCode": "1A009",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "VS508具名Banque de L’indochine且明确29 BUND ROAD；第一批名录东方汇理银行／光大银行位于中山东一路29号。独特银行名与同一外滩门牌、既有楼体沿革支持同栋；1914/1926年份差异保留，不能机械否定身份。",
+      "displayNote": "Banque de L’indochine即东方汇理银行，旧29 BUND ROAD对应名录中山东一路29号。历史资料记1914年，名录补充资料记1926年，两种记载分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=508",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1732__sh-fgj-4D036-01",
+      "sourceRecordIds": [
+        1732
+      ],
+      "officialId": "sh-fgj-4D036-01",
+      "officialCode": "4D036",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "既有英文译名与旧国富门路43号共同锁定金司林公寓；第四批名录4D036明确原名金司林、现名安亭、地址43号。市历保中心供稿的沿革文章将43号安亭公寓与46号别墅分开并叙述原楼修缮。",
+      "displayNote": "King’s Lynn Apartments即金司林公寓，今称安亭公寓。旧43 ROUTE KAUFMANN与今安亭路43号分别保留；它与安亭路46号的安亭别墅为不同建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1732",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jfdaily.com/sgh/detail?id=1739812"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1771__sh-fgj-4D029-01",
+      "sourceRecordIds": [
+        1771
+      ],
+      "officialId": "sh-fgj-4D029-01",
+      "officialCode": "4D029",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "上海政府英文城市导览将Cavendish Court直接定位525 Hengshan Road，第四批名录凯文公寓／衡阳公寓列衡山路525号及建国西路750号，配合旧525 AVENUE PETAIN确认同楼双路门牌。",
+      "displayNote": "Cavendish Apartments对应凯文公寓（衡阳公寓）。旧525 AVENUE PETAIN与今衡山路525号、建国西路750号分别保留，后两者为名录所列同一建筑的门牌。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1771",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://english.shanghai.gov.cn/en-CityTour/20240520/460d295b911d4270b782e575b6bcca94.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1498__sh-fgj-4A038-01",
+      "sourceRecordIds": [
+        1498
+      ],
+      "officialId": "sh-fgj-4A038-01",
+      "officialCode": "4A038",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-structure",
+      "scopeNote": "对应名录中的小南门警钟楼塔体，不将周边救火联合会全部设施并为同一建筑。",
+      "reason": "原Fire Bell Tower门牌581 ZHONGHUA LU及既有中文沿革为小南门警钟楼；第四批名录4A038同名同中华路581号。市政府红色资源名录亦记录火警钟楼旧址；按塔体而非周围救火设施合并。",
+      "displayNote": "Fire Bell Tower对应中华路581号小南门警钟楼。合并范围为警钟楼塔体，保留旧门牌581 ZHONGHUA LU。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1498",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1768__sh-fgj-5D012-01",
+      "sourceRecordIds": [
+        1768
+      ],
+      "officialId": "sh-fgj-5D012-01",
+      "officialCode": "5D012",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "徐汇区房管局修缮实录确认武康路232号国富门公寓为第五批保护建筑且原楼留存；建筑史研究收录1935年Koffman设计图，明确旧福开森路与今230–232号的中英文对应。第五批名录包含230、232号。",
+      "displayNote": "Koffman Apartment即国富门公寓，旧230/232 ROUTE FERGUSSON对应今武康路230、232号。修缮资料确认原楼保存；1935年设计与1936年始建等记载分别保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1768",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250919/563719.html",
+        "https://sites.google.com/view/russianshanghai/architects/l-z/g-b-rabinovich"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-553__sh-fgj-2A046-01",
+      "sourceRecordIds": [
+        553
+      ],
+      "officialId": "sh-fgj-2A046-01",
+      "officialCode": "2A046",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "1936工商名录直接记China Development Bank在33 Szechuen Road；VS同名同址，第二批名录企业大楼位于四川中路33号。既有沿革已确认该银行在企业大楼使用，与现存楼体相接，而非按今日另一同名银行寻址。",
+      "displayNote": "China Development Bank历史记录指向四川中路33号企业大楼。1936年工商名录也列该银行位于33 Szechuen Road；卡片合并的是这栋历史大楼，不表示银行曾独用全楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=553",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-568__sh-fgj-2A030-01",
+      "sourceRecordIds": [
+        568
+      ],
+      "officialId": "sh-fgj-2A030-01",
+      "officialCode": "2A030",
+      "decision": "hold",
+      "relation": "mixed-building-generations",
+      "scopeNote": "",
+      "reason": "VS568不只是历史起年较早：其关联照片1568明记1891–1894旧楼，1569明确1933新楼。解放日报作者考证说明1935年185号新楼落成后，河南路/福州路转角旧楼拆除。此源记录混合两代实体，不能把整条标成与2A030同一现存楼体。",
+      "displayNote": "中央捕房有两代不同建筑：早期老楼已拆，名录保护的是1933—1935年建的福州路185号新楼。历史记录同时关联两代楼的照片，暂分别显示，待区分具体楼体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=568",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.virtualshanghai.net/Photos/Images?ID=1568",
+        "https://www.virtualshanghai.net/Photos/Images?ID=1569",
+        "https://www.chinaqw.com/qx/2021/02-26/287386.shtml"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-388__sh-fgj-5D050-01",
+      "sourceRecordIds": [
+        388
+      ],
+      "officialId": "sh-fgj-5D050-01",
+      "officialCode": "5D050",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "文旅局沿革指向延庆路18弄内格罗疗养院后改剑桥医院，上海发布城市导览进一步精确到18弄10号并说明第五批历史建筑及现存住宅楼体；与5D050名录门牌精确一致。",
+      "displayNote": "Geluo Hospital对应格罗疗养院旧址，后来称剑桥医院，即延庆路18弄10号。旧资料64 ROUTE DE GROUCHY与现代名录门牌分别保留，不推定旧64号未经重编。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=388",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://whlyj.sh.gov.cn/wbzx/20220221/2cee8b88131f44df80ddfe1817990754.html",
+        "https://thirdpage.thepaper.cn/h5/jrtt/26462926"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-217__sh-fgj-4C012-01",
+      "sourceRecordIds": [
+        217
+      ],
+      "officialId": "sh-fgj-4C012-01",
+      "officialCode": "4C012",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "上海住房城乡建设管理政务文章明确花园公寓又名派克公寓、复兴中路455号、1926年，匹配VS217旧455 ROUTE LAFAYETTE与英文名；第四批4C012精确列此楼。4C013为471–477号花园住宅，虽近9米但不是此楼。",
+      "displayNote": "Park Apartments即派克公寓，今称花园公寓，旧455 ROUTE LAFAYETTE对应今复兴中路455号。复兴中路471—477号花园住宅是相邻的另一个名录项目。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=217",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_25248615"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1303__sh-fgj-4F011-01",
+      "sourceRecordIds": [
+        1303
+      ],
+      "officialId": "sh-fgj-4F011-01",
+      "officialCode": "4F011",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "按同一宰牲场建筑群对应，保留名录沙泾路10号、29号完整范围；地图点是场坊参考点，不表示所有空间属于一栋独立楼。",
+      "reason": "市国资委文章直接将1933老场坊与原上海工部局宰牲场、沙泾路10号和29号及1933年竣工沿革相连；VS1303具名SMC Slaughterhouse与1933年、SAWGIN ROAD匹配。接受为同一场坊整体。",
+      "displayNote": "SMC Slaughterhouse即原上海工部局宰牲场，今1933老场坊。旧SAWGIN ROAD与今沙泾路10号、29号共同展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1303",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20240411/046fc42953634b52b84dcac9ef09c986.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1678__sh-fgj-3A010-01",
+      "sourceRecordIds": [
+        1678
+      ],
+      "officialId": "sh-fgj-3A010-01",
+      "officialCode": "3A010",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "既有沿革确认英美颐中烟草办公楼=颐中大楼，第三批官方名录精确列该原使用单位；2019官方页列南苏州路161–175号，现抓取名录写175号。旧161 MUSEUM ROAD保留，不把旧路名直接改写成南苏州路。",
+      "displayNote": "British American Tobacco Company对应颐中大楼。保留旧资料161 MUSEUM ROAD；当前名录门牌为南苏州路175号，较早房管局名录另记161—175号。该楼与185号上海电车公司大楼分别列项。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1678",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-451__sh-fgj-3D009-01",
+      "sourceRecordIds": [
+        451
+      ],
+      "officialId": "sh-fgj-3D009-01",
+      "officialCode": "3D009",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "按林肯公寓（曙光公寓）名录范围对应：淮海中路1554—1568号、1562弄2—5号；地图点是公寓范围参考点。",
+      "reason": "原Lincoln Apartments与1562 AVENUE JOFFRE、既有沿革林肯／曙光公寓一致；第三批官方名录完整覆盖淮海中路1554–1568号及1562弄2–5号，接受具名公寓范围，不仅合并弄口单一楼。",
+      "displayNote": "Lincoln Apartments即林肯公寓，今称曙光公寓。保留旧1562 AVENUE JOFFRE，并完整显示名录所列沿街与弄内门牌。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=451",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1735__sh-fgj-5D006-01",
+      "sourceRecordIds": [
+        1735
+      ],
+      "officialId": "sh-fgj-5D006-01",
+      "officialCode": "5D006",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "建筑史数据库收录仍存的Belmont Apartments，给出240 Xiangyang Lu与旧Rue Tenant de la Tour；Historic Shanghai实地导览报道明确同英文建筑名在254 Xiangyang Road South，吻合第五批襄阳公寓。接受并显式保留240/254门牌差异，不把未考证门牌重编写成事实。",
+      "displayNote": "Belmont Apartment对应襄阳公寓。历史资料及建筑史数据库写240号，实地建筑导览与优秀历史建筑名录写襄阳南路254号；保留两种门牌记载，不据此推断重编号过程。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1735",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/",
+        "https://www.globaltimes.cn/content/903413.shtml"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "采用现有历史建筑图层参考点；不将参考点描述为测绘坐标或精确入口。"
+    },
+    {
+      "candidateId": "landmark-vs-site-631__sh-fgj-1A019-01",
+      "sourceRecordIds": [
+        631
+      ],
+      "officialId": "sh-fgj-1A019-01",
+      "officialCode": "1A019",
+      "decision": "hold",
+      "relation": "multiple-landmarks-one-listed-complex",
+      "scopeNote": "",
+      "reason": "1A019同时列老、新永安公司，范围南京东路627–635号；VS631明确新永安楼627号，另有未归组VS681旧永安楼竞争同一名录项。单独接受631会用一张新楼卡片代表两幢不同年代楼体，因此保留至多地标/多楼组范围能够表达。",
+      "displayNote": "名录同时包含永安新楼和旧楼，而历史地标分别列出。新楼627号与旧楼635号需一并保留各自身份，不能只合并其中一栋来代表整个名录项目。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=631",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-187__sh-fgj-4C005-01",
+      "sourceRecordIds": [
+        187
+      ],
+      "officialId": "sh-fgj-4C005-01",
+      "officialCode": "4C005",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "科学会堂现机构名相同不能证明楼体相同。科委沿革将法国学堂定位南昌路47号，第二批2C008明确一号楼；4C005法国体育总会为南昌路57号、另一个保护项。",
+      "displayNote": "法童公学对应南昌路47号科学会堂1号楼；南昌路57号法国体育总会为另一幢名录建筑，分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=187",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://stcsm.sh.gov.cn/xwzx/kjzl/20210524/b3f0f7464f9347f49b84c81400d2def1.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-217__sh-fgj-4C013-01",
+      "sourceRecordIds": [
+        217
+      ],
+      "officialId": "sh-fgj-4C013-01",
+      "officialCode": "4C013",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "派克公寓由住建政务文章及4C012确定复兴中路455号；4C013明确471–477号花园住宅，源名与门牌不同，仅9米距离不构成同一实体。",
+      "displayNote": "派克公寓是复兴中路455号，471—477号花园住宅是相邻另一项，不按点位距离合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=217",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_25248615",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-550__sh-fgj-2A003-01",
+      "sourceRecordIds": [
+        550
+      ],
+      "officialId": "sh-fgj-2A003-01",
+      "officialCode": "2A003",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "VS550是旧外滩5号日清汽船大楼，已与3A003关联；2A003中国通商银行为中山东一路6号，两名录编号和门牌均不同。",
+      "displayNote": "日清大楼为外滩5号，中国通商银行为外滩6号，是相邻的不同楼体。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=550",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-568__sh-fgj-2A031-01",
+      "sourceRecordIds": [
+        568
+      ],
+      "officialId": "sh-fgj-2A031-01",
+      "officialCode": "2A031",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "总巡捕房名录为福州路185号2A030；2A031为福州路209号另一项，虽官方名称写美国花旗银行，其建筑文章关联花旗总会，均不能与185号巡捕房合并。",
+      "displayNote": "总巡捕房185号与福州路209号的花旗总会相关名录项目是不同建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=568",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-598__sh-fgj-5A005-01",
+      "sourceRecordIds": [
+        598
+      ],
+      "officialId": "sh-fgj-5A005-01",
+      "officialCode": "5A005",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "Algar Building既有沿革指大丰大楼、香港路60号；5A005明确公和洋行／华德大楼在四川中路650号，无同楼沿革连接，仅近邻。",
+      "displayNote": "大丰大楼与四川中路650号公和洋行大楼（华德大楼）名称、沿革不同，暂分别显示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=598",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1678__sh-fgj-5A024-01",
+      "sourceRecordIds": [
+        1678
+      ],
+      "officialId": "sh-fgj-5A024-01",
+      "officialCode": "5A024",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "英美颐中烟草对应3A010颐中大楼南苏州路175号；5A024明确英商上海电车公司185号。两项不同机构楼体，不因近20米合并。",
+      "displayNote": "颐中大楼在南苏州路175号，上海电车公司大楼在185号，分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1678",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-523__sh-fgj-1A026-01",
+      "sourceRecordIds": [
+        523
+      ],
+      "officialId": "sh-fgj-1A026-01",
+      "officialCode": "1A026",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "Metropole Hotel的旧180 KIANGSE ROAD及存续沿革对应2A038新城饭店江西中路180号，已关联；1A026金城银行为200号，另有VS539具名对照。",
+      "displayNote": "都城饭店是江西中路180号，金城银行是200号，是相邻不同建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=523",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-547__sh-fgj-2A039-01",
+      "sourceRecordIds": [
+        547
+      ],
+      "officialId": "sh-fgj-2A039-01",
+      "officialCode": "2A039",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "Hamilton House对应2A037汉弥登／福州大楼江西中路170号，已关联；2A039建设大厦为171–181号单号、另侧建筑，不按21米点距合并。",
+      "displayNote": "汉弥登大楼在江西中路170号，建设大厦在171—181号单号，分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=547",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-559__sh-fgj-3A005-01",
+      "sourceRecordIds": [
+        559
+      ],
+      "officialId": "sh-fgj-3A005-01",
+      "officialCode": "3A005",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "Asiatic Petroleum旧外滩1号已关联1A001亚西亚大楼；3A005是延安东路34号大北电报局，不同保护名、单位与门牌，近邻不合并。",
+      "displayNote": "亚西亚大楼为外滩1号，大北电报局为延安东路34号，是不同的名录建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=559",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-598__sh-fgj-5A006-01",
+      "sourceRecordIds": [
+        598
+      ],
+      "officialId": "sh-fgj-5A006-01",
+      "officialCode": "5A006",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "Algar Building既有沿革锁定大丰大楼，旧香港路60号；5A006为四川中路670号礼和大楼，缺少任何同楼沿革连接，仅近28米。",
+      "displayNote": "大丰大楼与四川中路670号礼和大楼是不同名称和沿革的对象，暂分别显示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=598",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1732__sh-fgj-4D037-01",
+      "sourceRecordIds": [
+        1732
+      ],
+      "officialId": "sh-fgj-4D037-01",
+      "officialCode": "4D037",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "第四批名录与市历保中心供稿明确金司林／安亭公寓43号为公寓楼、46号安亭别墅为花园住宅，两个独立条目且建筑形制不同，不能因安亭二字与距离合并。",
+      "displayNote": "安亭公寓（金司林公寓）在安亭路43号；安亭别墅1号楼在46号，分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=1732",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jfdaily.com/sgh/detail?id=1739812",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-529__sh-fgj-2A008-01",
+      "sourceRecordIds": [
+        529
+      ],
+      "officialId": "sh-fgj-2A008-01",
+      "officialCode": "2A008",
+      "decision": "hold",
+      "relation": "adjacent-different-building",
+      "scopeNote": "",
+      "reason": "VS529字林西报旧17 BUND ROAD已对应2A007；2A008是18号麦加利银行，来源银行名、楼号及已审链接均区分。",
+      "displayNote": "字林西报大楼是外滩17号，麦加利银行大楼是18号，是两栋不同建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=529",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-526__sh-fgj-4A011-01",
+      "sourceRecordIds": [
+        526
+      ],
+      "officialId": "sh-fgj-4A011-01",
+      "officialCode": "4A011",
+      "decision": "hold",
+      "relation": "same-modern-occupant-different-building",
+      "scopeNote": "",
+      "reason": "浦东发展银行总部这一名录现使用单位字符串相同，但VS526旧外滩12号对应1A003汇丰大楼；4A011为宁波路40、50号及江西中路368号上海商业储蓄银行建筑。现机构称谓不能代替楼体身份。",
+      "displayNote": "同被记为浦东发展银行使用的建筑有多处：外滩12号汇丰大楼与宁波路40、50号／江西中路368号上海商业储蓄银行大楼分别展示。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/Data/Buildings?ID=526",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "persistentHolds": [],
+      "coordinatePolicy": "不移动、不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-587__sh-fgj-4A011-01",
+      "sourceRecordIds": [
+        587
+      ],
+      "officialId": "sh-fgj-4A011-01",
+      "officialCode": "4A011",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "同一上海商业储蓄银行大楼。银行自述和浦发供稿确认宁波路50号旧楼，名录同时列宁波路40、50号与江西中路368号；旧368 KIANGSE ROAD对应此楼。1929建造与1931迁入口径分别保留，不与同为浦发使用的外滩汇丰楼合并。",
+      "displayNote": "同一上海商业储蓄银行大楼。银行自述和浦发供稿确认宁波路50号旧楼，名录同时列宁波路40、50号与江西中路368号；旧368 KIANGSE ROAD对应此楼。1929建造与1931迁入口径分别保留，不与同为浦发使用的外滩汇丰楼合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=587",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jfdaily.com/sgh/detail?id=1571006",
+        "https://www1.shacombank.com.hk/sch/personal/75/mrchenkwang-pu.jsp"
+      ],
+      "competitionNote": "全量候选中的VS526因同为浦发现用名命中，但它是外滩汇丰银行旧楼，已配置1A003，不能作为本项上海商业储蓄银行竞争身份。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1112__sh-fgj-5B034-01",
+      "sourceRecordIds": [
+        1112
+      ],
+      "officialId": "sh-fgj-5B034-01",
+      "officialCode": "5B034",
+      "decision": "hold",
+      "relation": "conflicting-building-evidence",
+      "scopeNote": "",
+      "reason": "既有沿革称共济会堂曾供科学派教会使用，但重新核读市府建筑考察，1931年共济会堂与1934年扇形第一科学基督教堂分开描述，建筑师、外形和施工年均不同；尚未直接证明旧1623 AVENUE ROAD记录所指楼体等于整项5B034，保留待核。",
+      "displayNote": "既有沿革称共济会堂曾供科学派教会使用，但重新核读市府建筑考察，1931年共济会堂与1934年扇形第一科学基督教堂分开描述，建筑师、外形和施工年均不同；尚未直接证明旧1623 AVENUE ROAD记录所指楼体等于整项5B034，保留待核。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1112",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=d6d123fb-2b30-4a52-b100-621a47e8ed0b"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-536__sh-fgj-2A026-01",
+      "sourceRecordIds": [
+        536
+      ],
+      "officialId": "sh-fgj-2A026-01",
+      "officialCode": "2A026",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Liza Hardoon Building即嘉陵（迦陵）大楼。市府建筑考察明确南京东路99号与四川中路一面的同一街角楼；旧资料346 SZECHUEN ROAD保留，不套用街对面的慈安里或中央商场。",
+      "displayNote": "Liza Hardoon Building即嘉陵（迦陵）大楼。市府建筑考察明确南京东路99号与四川中路一面的同一街角楼；旧资料346 SZECHUEN ROAD保留，不套用街对面的慈安里或中央商场。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=536",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=9085e4cc-fc63-43f6-b138-f08fe4787179"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1769__sh-fgj-2D037-01",
+      "sourceRecordIds": [
+        1769
+      ],
+      "officialId": "sh-fgj-2D037-01",
+      "officialCode": "2D037",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Midget Apartments对应武康路115号密丹公寓。旧115 ROUTE FERGUSSON与名录门牌相合，房管局修缮记录确认原楼留存；湖南路262号湖南别墅是另一保护项。",
+      "displayNote": "Midget Apartments对应武康路115号密丹公寓。旧115 ROUTE FERGUSSON与名录门牌相合，房管局修缮记录确认原楼留存；湖南路262号湖南别墅是另一保护项。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1769",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20240115/530424.html",
+        "https://whlyj.sh.gov.cn/wbzx/20230215/37aa7acc9a4f4d7c9f5d22672affa0cd.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1037__sh-fgj-2B023-01",
+      "sourceRecordIds": [
+        1037
+      ],
+      "officialId": "sh-fgj-2B023-01",
+      "officialCode": "2B023",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "望徳堂与望德堂为同一北京西路1220弄2号建筑，旧地址为1220-2 AVENUE ROAD。仅对应2号单体，保留其原宗教用途；不将第五批1220弄1—108号整个住宅里弄并为一栋。",
+      "displayNote": "望徳堂与望德堂为同一北京西路1220弄2号建筑，旧地址为1220-2 AVENUE ROAD。仅对应2号单体，保留其原宗教用途；不将第五批1220弄1—108号整个住宅里弄并为一栋。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1037",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-647__sh-fgj-4A026-01",
+      "sourceRecordIds": [
+        647
+      ],
+      "officialId": "sh-fgj-4A026-01",
+      "officialCode": "4A026",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Lyric Theater即金城大戏院，后称黄浦剧场。城建档案直接对应英文名和北京东路780号；旧780 PEKING ROAD及源中文“金域大戯院”照录，后者与档案“金城”异文一并保留。",
+      "displayNote": "Lyric Theater即金城大戏院，后称黄浦剧场。城建档案直接对应英文名和北京东路780号；旧780 PEKING ROAD及源中文“金域大戯院”照录，后者与档案“金城”异文一并保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=647",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.thepaper.cn/newsDetail_forward_8742228"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1748__sh-fgj-4D030-01",
+      "sourceRecordIds": [
+        1748
+      ],
+      "officialId": "sh-fgj-4D030-01",
+      "officialCode": "4D030",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "旧700 AVENUE PETAIN的Petain Apartments即衡山路700号贝当公寓、今衡山公寓，区房管局记录了原楼及保护修缮。另有衡山路283—297号同名公寓，未并入。",
+      "displayNote": "旧700 AVENUE PETAIN的Petain Apartments即衡山路700号贝当公寓、今衡山公寓，区房管局记录了原楼及保护修缮。另有衡山路283—297号同名公寓，未并入。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1748",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250205/551438.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-581__sh-fgj-4A019-01",
+      "sourceRecordIds": [
+        581
+      ],
+      "officialId": "sh-fgj-4A019-01",
+      "officialCode": "4A019",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "旧219 KIUKIANG ROAD的同仁医院对应九江路219号这栋原教会学校。房管局沿革明确1937年同仁医院迁入，战后曾为百乐饭店；它是圣三一堂旁的附属学校楼，不等于九江路201号教堂，也不等于长治路院址。",
+      "displayNote": "旧219 KIUKIANG ROAD的同仁医院对应九江路219号这栋原教会学校。房管局沿革明确1937年同仁医院迁入，战后曾为百乐饭店；它是圣三一堂旁的附属学校楼，不等于九江路201号教堂，也不等于长治路院址。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=581",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_7604398"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1667__sh-fgj-4F004-01",
+      "sourceRecordIds": [
+        1667
+      ],
+      "officialId": "sh-fgj-4F004-01",
+      "officialCode": "4F004",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Pierce Apartment对应名录批亚斯（披亚斯）公寓、今浦西公寓。旧411 BOONE ROAD属于塘沽路411—429号同一公寓，名录还列乍浦路199—215号及蟠龙街26号；保留全部门牌，不并入塘沽路387—401号小浦西公寓。",
+      "displayNote": "Pierce Apartment对应名录批亚斯（披亚斯）公寓、今浦西公寓。旧411 BOONE ROAD属于塘沽路411—429号同一公寓，名录还列乍浦路199—215号及蟠龙街26号；保留全部门牌，不并入塘沽路387—401号小浦西公寓。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1667",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_33367674"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-509__sh-fgj-3A009-01",
+      "sourceRecordIds": [
+        509
+      ],
+      "officialId": "sh-fgj-3A009-01",
+      "officialCode": "3A009",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Museum of the Royal Asiatic Society对应虎丘路20号亚洲文会博物院大楼。民政局与名录确认1932年现存历史楼，旧20 MUSEUM ROAD与博物院路沿革相合；保留早期会所和后期现楼的年代区别。",
+      "displayNote": "Museum of the Royal Asiatic Society对应虎丘路20号亚洲文会博物院大楼。民政局与名录确认1932年现存历史楼，旧20 MUSEUM ROAD与博物院路沿革相合；保留早期会所和后期现楼的年代区别。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=509",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://mzj.sh.gov.cn/MZ_shetuan749_0-2-3-7/20240923/9e0291955d8a41d0ac656016ca471b9d.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-569__sh-fgj-2A031-01",
+      "sourceRecordIds": [
+        569
+      ],
+      "officialId": "sh-fgj-2A031-01",
+      "officialCode": "2A031",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "旧209 FOOCHOW ROAD的American Club为福州路209号美国花旗总会旧楼。法院自身历史文本确认俱乐部后改作高院；名录“美国花旗银行”的名称照录并附此说明，未把银行业务机构或河南中路五洲大楼并入。",
+      "displayNote": "旧209 FOOCHOW ROAD的American Club为福州路209号美国花旗总会旧楼。法院自身历史文本确认俱乐部后改作高院；名录“美国花旗银行”的名称照录并附此说明，未把银行业务机构或河南中路五洲大楼并入。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=569",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.hshfy.sh.cn/shfy/web/zbhzl/xqy.jsp?pa=aaWQ9NDIwNDQ3z"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1103__sh-fgj-1B005-01",
+      "sourceRecordIds": [
+        1103
+      ],
+      "officialId": "sh-fgj-1B005-01",
+      "officialCode": "1B005",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Residence of Elly Kadoorie对应嘉道理爵士住宅、现市少年宫的大理石大厦。旧1783 BUBBLING WELL ROAD与今延安西路64号及南京西路入口分别列出，不声称门牌逐号未变，也不把少年宫所有后建附楼视为原住宅。",
+      "displayNote": "Residence of Elly Kadoorie对应嘉道理爵士住宅、现市少年宫的大理石大厦。旧1783 BUBBLING WELL ROAD与今延安西路64号及南京西路入口分别列出，不声称门牌逐号未变，也不把少年宫所有后建附楼视为原住宅。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1103",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-164__sh-fgj-4C008-01",
+      "sourceRecordIds": [
+        164
+      ],
+      "officialId": "sh-fgj-4C008-01",
+      "officialCode": "4C008",
+      "decision": "hold",
+      "relation": "same-address-different-component",
+      "scopeNote": "",
+      "reason": "重庆南路139号院内存在不同历史楼。论文把方济堂与首善堂分别作为两个集中营，不能由今院门牌推断方济堂即4C008克美产科医院（2号楼）。",
+      "displayNote": "重庆南路139号院内存在不同历史楼。论文把方济堂与首善堂分别作为两个集中营，不能由今院门牌推断方济堂即4C008克美产科医院（2号楼）。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=164",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://yangtze.silkroadinfo.org.cn/2017/6/30/20170630131536.pdf"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-164__sh-fgj-5A071-01",
+      "sourceRecordIds": [
+        164
+      ],
+      "officialId": "sh-fgj-5A071-01",
+      "officialCode": "5A071",
+      "decision": "hold",
+      "relation": "same-address-different-component",
+      "scopeNote": "",
+      "reason": "方济堂属方济会，首善堂属遣使会，论文列为不同集中营，虽然同定位重庆南路139号，尚未确认VS164所指单体等于5A071首善堂，不能只因今门牌相同合并。",
+      "displayNote": "方济堂属方济会，首善堂属遣使会，论文列为不同集中营，虽然同定位重庆南路139号，尚未确认VS164所指单体等于5A071首善堂，不能只因今门牌相同合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=164",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://yangtze.silkroadinfo.org.cn/2017/6/30/20170630131536.pdf"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-293__sh-fgj-2C004-01",
+      "sourceRecordIds": [
+        293
+      ],
+      "officialId": "sh-fgj-2C004-01",
+      "officialCode": "2C004",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Cathay Theater与国泰大戏院、国泰电影院为同一淮海中路870号历史楼。旧870 AVENUE JOFFRE保留；市府修缮报道说明原楼更新后继续使用。",
+      "displayNote": "Cathay Theater与国泰大戏院、国泰电影院为同一淮海中路870号历史楼。旧870 AVENUE JOFFRE保留；市府修缮报道说明原楼更新后继续使用。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=293",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.shanghai.gov.cn/nw4411/20240106/d74cdc9f66c342e3acc35b6bee1a6579.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-542__sh-fgj-3A006-01",
+      "sourceRecordIds": [
+        542
+      ],
+      "officialId": "sh-fgj-3A006-01",
+      "officialCode": "3A006",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "China Southern Bank对应汉口路110号原中南银行、中南大楼。第三批名录直接连结银行旧名与现楼，旧110 HANKOW ROAD与沿革共同确认同一物业。",
+      "displayNote": "China Southern Bank对应汉口路110号原中南银行、中南大楼。第三批名录直接连结银行旧名与现楼，旧110 HANKOW ROAD与沿革共同确认同一物业。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=542",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-575__sh-fgj-2A039-01",
+      "sourceRecordIds": [
+        575,
+        576
+      ],
+      "officialId": "sh-fgj-2A039-01",
+      "officialCode": "2A039",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "江西中路181号建设大楼原为中国通商银行新厦，1936年美国总领事署入驻。旧档案两条记录均为181 KIANGSE ROAD、1936年；修缮单位资料直接覆盖银行与领馆两种身份，保留两条历史记录和名录171—181号单号范围。",
+      "displayNote": "江西中路181号建设大楼原为中国通商银行新厦，1936年美国总领事署入驻。旧档案两条记录均为181 KIANGSE ROAD、1936年；修缮单位资料直接覆盖银行与领馆两种身份，保留两条历史记录和名录171—181号单号范围。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=575",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=576",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_31155355"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-599__sh-fgj-4A007-01",
+      "sourceRecordIds": [
+        599
+      ],
+      "officialId": "sh-fgj-4A007-01",
+      "officialCode": "4A007",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "National Commercial Bank即浙江兴业银行，历史广告研究库列230 Peking Road；对应名录北京东路230号浙兴大楼。旁边北京东路232—240号四明大楼为另一建筑。",
+      "displayNote": "National Commercial Bank即浙江兴业银行，历史广告研究库列230 Peking Road；对应名录北京东路230号浙兴大楼。旁边北京东路232—240号四明大楼为另一建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=599",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://madspace.org/db/Advertisers?ID=977"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-863__sh-fgj-1A014-01",
+      "sourceRecordIds": [
+        863
+      ],
+      "officialId": "sh-fgj-1A014-01",
+      "officialCode": "1A014",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Foreign YMCA Headquarters、西青年会对应南京西路150号西侨青年会（名录写西桥青年会）、体育大厦。体育局沿革确认1928年楼体及后续使用，保留旧150 BUBBLING WELL ROAD。",
+      "displayNote": "Foreign YMCA Headquarters、西青年会对应南京西路150号西侨青年会（名录写西桥青年会）、体育大厦。体育局沿革确认1928年楼体及后续使用，保留旧150 BUBBLING WELL ROAD。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=863",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://tyj.sh.gov.cn/jcxx/20201009/de2d6b603bdf4e6b8584e180612d7a11.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-473__sh-fgj-2D022-01",
+      "sourceRecordIds": [
+        473
+      ],
+      "officialId": "sh-fgj-2D022-01",
+      "officialCode": "2D022",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Picardie Apartments即毕卡迪／毕卡第公寓，后称衡山宾馆。保护修缮资料确认原历史楼延续，旧534 AVENUE PETAIN对应衡山路534号；不扩至酒店其他后建楼。",
+      "displayNote": "Picardie Apartments即毕卡迪／毕卡第公寓，后称衡山宾馆。保护修缮资料确认原历史楼延续，旧534 AVENUE PETAIN对应衡山路534号；不扩至酒店其他后建楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=473",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_23085605"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-449__sh-fgj-2D040-01",
+      "sourceRecordIds": [
+        449
+      ],
+      "officialId": "sh-fgj-2D040-01",
+      "officialCode": "2D040",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Liberty Apartments即五原路258号自由公寓，区房管局直接给出英文名和地址。旧258 ROUTE MONSEIGNEUR MARESCA保留，1933营造许可与1934竣工推断分别记载。",
+      "displayNote": "Liberty Apartments即五原路258号自由公寓，区房管局直接给出英文名和地址。旧258 ROUTE MONSEIGNEUR MARESCA保留，1933营造许可与1934竣工推断分别记载。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=449",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20251222/567476.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1649__sh-fgj-4F006-01",
+      "sourceRecordIds": [
+        1649
+      ],
+      "officialId": "sh-fgj-4F006-01",
+      "officialCode": "4F006",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Public School for Girls (SMC)对应塘沽路390号工部局西童女子学校旧楼。名录名称、旧390 BOONE ROAD与现门牌共同吻合；原1895年与名录1893—1894年口径分别保留，不替换为对面的住宅。",
+      "displayNote": "Public School for Girls (SMC)对应塘沽路390号工部局西童女子学校旧楼。名录名称、旧390 BOONE ROAD与现门牌共同吻合；原1895年与名录1893—1894年口径分别保留，不替换为对面的住宅。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1649",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-536__sh-fgj-3A017-01",
+      "sourceRecordIds": [
+        536
+      ],
+      "officialId": "sh-fgj-3A017-01",
+      "officialCode": "3A017",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "旧Liza Building已由市府建筑考察确认为南京东路99号嘉陵大楼；3A017为南京东路98—114号慈安里／哈同大楼，隔街门牌和具体名称不同。",
+      "displayNote": "旧Liza Building已由市府建筑考察确认为南京东路99号嘉陵大楼；3A017为南京东路98—114号慈安里／哈同大楼，隔街门牌和具体名称不同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=536",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=9085e4cc-fc63-43f6-b138-f08fe4787179"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-776__sh-fgj-4H004-01",
+      "sourceRecordIds": [
+        776,
+        777
+      ],
+      "officialId": "sh-fgj-4H004-01",
+      "officialCode": "4H004",
+      "decision": "accept-same-listed-complex",
+      "relation": "same-listed-complex",
+      "scopeNote": "浙江北路191号法院旧址整体，包括现存中红楼、北大楼；不是一幢单体，也不包括成都北路的同名法院候选。",
+      "reason": "旧191 NORTH CHEKIANG ROAD的上海第一特区地方法院及江苏高等法院第二分院，共同对应浙江北路191号会审公廨旧址。区文旅局完整沿革涵盖两者，现留中红楼、北大楼两幢；以同一名录法院旧址建筑群展示，不断言两机构同一时期同一房间。",
+      "displayNote": "旧191 NORTH CHEKIANG ROAD的上海第一特区地方法院及江苏高等法院第二分院，共同对应浙江北路191号会审公廨旧址。区文旅局完整沿革涵盖两者，现留中红楼、北大楼两幢；以同一名录法院旧址建筑群展示，不断言两机构同一时期同一房间。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=776",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=777",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-07-15/1ac4608e-1a4e-4ce6-b349-e4ad44b8efcf.html"
+      ],
+      "competitionNote": "全量候选另含VS824，但其200-22 CHENGTU ROAD是不同历史地址且有persistent hold；未解除或吸收到本组。本组两个源成员均为191 NORTH CHEKIANG ROAD，官方沿革直接覆盖。"
+    },
+    {
+      "candidateId": "landmark-vs-site-503__sh-fgj-2A025-01",
+      "sourceRecordIds": [
+        503
+      ],
+      "officialId": "sh-fgj-2A025-01",
+      "officialCode": "2A025",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Christian Literature Building沿革对应虎丘路128号广学大楼；圆明园路209号真光大楼是另一个保护项，出版或宗教机构相关性不构成同楼证明。",
+      "displayNote": "Christian Literature Building沿革对应虎丘路128号广学大楼；圆明园路209号真光大楼是另一个保护项，出版或宗教机构相关性不构成同楼证明。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=503",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1649__sh-fgj-4F005-01",
+      "sourceRecordIds": [
+        1649
+      ],
+      "officialId": "sh-fgj-4F005-01",
+      "officialCode": "4F005",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "工部局西童女子学校在塘沽路390号；4F005小浦西公寓为塘沽路387—401号另一侧住宅，近距离不足以合并。",
+      "displayNote": "工部局西童女子学校在塘沽路390号；4F005小浦西公寓为塘沽路387—401号另一侧住宅，近距离不足以合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1649",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_33367674"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-407__sh-fgj-4D004-01",
+      "sourceRecordIds": [
+        407
+      ],
+      "officialId": "sh-fgj-4D004-01",
+      "officialCode": "4D004",
+      "decision": "hold",
+      "relation": "component-not-whole-listed-site",
+      "scopeNote": "",
+      "reason": "Adeodata Hall只对应淮海中路1209号天赐大宅，4D004名录合列1189、1199、1209号三幢花园住宅。不能将一幢地标扩成整项建筑群，保留单体到组件的待核关系。",
+      "displayNote": "Adeodata Hall只对应淮海中路1209号天赐大宅，4D004名录合列1189、1199、1209号三幢花园住宅。不能将一幢地标扩成整项建筑群，保留单体到组件的待核关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=407",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1667__sh-fgj-4F005-01",
+      "sourceRecordIds": [
+        1667
+      ],
+      "officialId": "sh-fgj-4F005-01",
+      "officialCode": "4F005",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Pierce Apartment的旧411 BOONE ROAD属于浦西公寓4F004，市住建委专题明确它和4F005小浦西公寓是相邻的不同建筑。",
+      "displayNote": "Pierce Apartment的旧411 BOONE ROAD属于浦西公寓4F004，市住建委专题明确它和4F005小浦西公寓是相邻的不同建筑。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1667",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_33367674"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-581__sh-fgj-1A025-01",
+      "sourceRecordIds": [
+        581
+      ],
+      "officialId": "sh-fgj-1A025-01",
+      "officialCode": "1A025",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "九江路219号同仁医院临时院址是圣三一堂附属学校办公楼，房管局专文明确在教堂旁；九江路201号圣三一堂1A025单列保护，不能用共有教会背景并成同栋。",
+      "displayNote": "九江路219号同仁医院临时院址是圣三一堂附属学校办公楼，房管局专文明确在教堂旁；九江路201号圣三一堂1A025单列保护，不能用共有教会背景并成同栋。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=581",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_7604398"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1037__sh-fgj-5B020-01",
+      "sourceRecordIds": [
+        1037
+      ],
+      "officialId": "sh-fgj-5B020-01",
+      "officialCode": "5B020",
+      "decision": "hold",
+      "relation": "component-not-whole-listed-site",
+      "scopeNote": "",
+      "reason": "旧1220-2 AVENUE ROAD是北京西路1220弄2号望德堂单体，对应2B023；5B020的1—108号住宅里弄范围更大，不能用宗教原名替代整项范围。",
+      "displayNote": "旧1220-2 AVENUE ROAD是北京西路1220弄2号望德堂单体，对应2B023；5B020的1—108号住宅里弄范围更大，不能用宗教原名替代整项范围。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1037",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-392__sh-fgj-5D096-01",
+      "sourceRecordIds": [
+        392
+      ],
+      "officialId": "sh-fgj-5D096-01",
+      "officialCode": "5D096",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Gresham Apartments沿革地址是淮海中路1222—1238号格莱勋公寓；5D096为1200弄与1176—1182号光明公寓范围，两者门牌和名称不同。",
+      "displayNote": "Gresham Apartments沿革地址是淮海中路1222—1238号格莱勋公寓；5D096为1200弄与1176—1182号光明公寓范围，两者门牌和名称不同。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=392",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-407__sh-fgj-3D003-01",
+      "sourceRecordIds": [
+        407
+      ],
+      "officialId": "sh-fgj-3D003-01",
+      "officialCode": "3D003",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "天赐大宅在淮海中路1209号；盖司康／淮海公寓2号楼在1204—1218号双号一侧，是不同住宅，不因同一路段靠近合并。",
+      "displayNote": "天赐大宅在淮海中路1209号；盖司康／淮海公寓2号楼在1204—1218号双号一侧，是不同住宅，不因同一路段靠近合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=407",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-989__sh-fgj-3B025-01",
+      "sourceRecordIds": [
+        989
+      ],
+      "officialId": "sh-fgj-3B025-01",
+      "officialCode": "3B025",
+      "decision": "accept-same-listed-object",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "Chelsea House对应第三批名录的南京西路962号切尔西住宅，后成为上海少年儿童图书馆南西馆。保留旧830 BUBBLING WELL ROAD与现代962号两种地址，不因旧源参考点相差186米另造一栋。",
+      "displayNote": "Chelsea House对应第三批名录的南京西路962号切尔西住宅，后成为上海少年儿童图书馆南西馆。保留旧830 BUBBLING WELL ROAD与现代962号两种地址，不因旧源参考点相差186米另造一栋。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=989",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.shanghai.gov.cn/nw4411/20240718/4a4141e410ab49d1b2cc8f6199eca223.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-569__sh-fgj-5A019-01",
+      "sourceRecordIds": [
+        569
+      ],
+      "officialId": "sh-fgj-5A019-01",
+      "officialCode": "5A019",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "American Club为福州路209号花旗总会旧楼；5A019是河南中路220号五洲大楼，即使两参考点近至7米，官方地址和沿革不支持同楼。",
+      "displayNote": "American Club为福州路209号花旗总会旧楼；5A019是河南中路220号五洲大楼，即使两参考点近至7米，官方地址和沿革不支持同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=569",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.hshfy.sh.cn/shfy/web/zbhzl/xqy.jsp?pa=aaWQ9NDIwNDQ3z"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-575__sh-fgj-2A030-01",
+      "sourceRecordIds": [
+        575,
+        576
+      ],
+      "officialId": "sh-fgj-2A030-01",
+      "officialCode": "2A030",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "575/576对应江西中路181号建设大楼；修缮单位明确其街角位置及银行、领馆沿革。2A030为福州路185号总巡捕房，不能用同街区行政用途合并。",
+      "displayNote": "575/576对应江西中路181号建设大楼；修缮单位明确其街角位置及银行、领馆沿革。2A030为福州路185号总巡捕房，不能用同街区行政用途合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=575",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=576",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_31155355"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-503__sh-fgj-3A013-01",
+      "sourceRecordIds": [
+        503
+      ],
+      "officialId": "sh-fgj-3A013-01",
+      "officialCode": "3A013",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "虎丘路128号广学大楼和虎丘路131号青年协会大楼分别有名录身份与门牌，是不同楼；机构英文有宗教关联不足以确认同楼。",
+      "displayNote": "虎丘路128号广学大楼和虎丘路131号青年协会大楼分别有名录身份与门牌，是不同楼；机构英文有宗教关联不足以确认同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=503",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-581__sh-fgj-5A031-01",
+      "sourceRecordIds": [
+        581
+      ],
+      "officialId": "sh-fgj-5A031-01",
+      "officialCode": "5A031",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "同仁医院迁入的1928年旧学校楼在九江路219号，大生公司大楼在230号；门牌、使用沿革不同，不能按16米点距合并。",
+      "displayNote": "同仁医院迁入的1928年旧学校楼在九江路219号，大生公司大楼在230号；门牌、使用沿革不同，不能按16米点距合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=581",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_7604398"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-1769__sh-fgj-3D014-01",
+      "sourceRecordIds": [
+        1769
+      ],
+      "officialId": "sh-fgj-3D014-01",
+      "officialCode": "3D014",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Midget Apartments对应武康路115号密丹公寓；湖南路262号湖南别墅为独立保护项，路口相邻不等同物业。",
+      "displayNote": "Midget Apartments对应武康路115号密丹公寓；湖南路262号湖南别墅为独立保护项，路口相邻不等同物业。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1769",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20240115/530424.html"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-536__sh-fgj-5A028-01",
+      "sourceRecordIds": [
+        536
+      ],
+      "officialId": "sh-fgj-5A028-01",
+      "officialCode": "5A028",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Liza Building已明确为南京东路99号、四川中路346号嘉陵大楼；四川中路355号中央商场是另一项，不能只据相近参考点合并。",
+      "displayNote": "Liza Building已明确为南京东路99号、四川中路346号嘉陵大楼；四川中路355号中央商场是另一项，不能只据相近参考点合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=536",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=9085e4cc-fc63-43f6-b138-f08fe4787179"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-290__sh-fgj-2C006-01",
+      "sourceRecordIds": [
+        290,
+        1780
+      ],
+      "officialId": "sh-fgj-2C006-01",
+      "officialCode": "2C006",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Cathay Mansions为长乐路109号华懋公寓、锦江北楼，茂名南路59号为现入口；茂名南路57号兰心大戏院另有独立保护项，不合并。",
+      "displayNote": "Cathay Mansions为长乐路109号华懋公寓、锦江北楼，茂名南路59号为现入口；茂名南路57号兰心大戏院另有独立保护项，不合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=290",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1780",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-599__sh-fgj-3A016-01",
+      "sourceRecordIds": [
+        599
+      ],
+      "officialId": "sh-fgj-3A016-01",
+      "officialCode": "3A016",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "浙江兴业银行旧230 PEKING ROAD对应北京东路230号；232—240号四明大楼为另一银行旧楼，相邻不等于同一银行。",
+      "displayNote": "浙江兴业银行旧230 PEKING ROAD对应北京东路230号；232—240号四明大楼为另一银行旧楼，相邻不等于同一银行。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=599",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://madspace.org/db/Advertisers?ID=977"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-503__sh-fgj-3A010-01",
+      "sourceRecordIds": [
+        503
+      ],
+      "officialId": "sh-fgj-3A010-01",
+      "officialCode": "3A010",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Christian Literature Building对应虎丘路128号广学大楼，南苏州路175号颐中烟草大楼为独立建筑，周边位置不能证明同楼。",
+      "displayNote": "Christian Literature Building对应虎丘路128号广学大楼，南苏州路175号颐中烟草大楼为独立建筑，周边位置不能证明同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=503",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-1637__sh-fgj-5F010-01",
+      "sourceRecordIds": [
+        1637
+      ],
+      "officialId": "sh-fgj-5F010-01",
+      "officialCode": "5F010",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "Hoyo Hotel／丰阳馆已有沿革定位北海宁路64—70弄，武进路225弄3—11号为恩德堂教堂及宿舍，名称、道路和历史用途均不对应。",
+      "displayNote": "Hoyo Hotel／丰阳馆已有沿革定位北海宁路64—70弄，武进路225弄3—11号为恩德堂教堂及宿舍，名称、道路和历史用途均不对应。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1637",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": []
+    },
+    {
+      "candidateId": "landmark-vs-site-587__sh-fgj-5A023-01",
+      "sourceRecordIds": [
+        587
+      ],
+      "officialId": "sh-fgj-5A023-01",
+      "officialCode": "5A023",
+      "decision": "hold",
+      "relation": "different-listed-building",
+      "scopeNote": "",
+      "reason": "上海商业储蓄银行旧楼是名录宁波路40、50号及江西中路368号；宁波路52号广东银行独立列项，不因均为银行且相邻合并。",
+      "displayNote": "上海商业储蓄银行旧楼是名录宁波路40、50号及江西中路368号；宁波路52号广东银行独立列项，不因均为银行且相邻合并。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=587",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.jfdaily.com/sgh/detail?id=1571006"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-575__sh-fgj-2A003-01",
+      "sourceRecordIds": [
+        575,
+        576
+      ],
+      "officialId": "sh-fgj-2A003-01",
+      "officialCode": "2A003",
+      "decision": "hold",
+      "relation": "institution-different-site",
+      "scopeNote": "",
+      "reason": "575/576两条均在江西中路181号建设大楼，其银行兴建和美国领馆使用由修缮资料直接确认；中山东一路6号中国通商银行是另一地址的楼，同机构名称不构成同楼关系。",
+      "displayNote": "575/576两条均在江西中路181号建设大楼，其银行兴建和美国领馆使用由修缮资料直接确认；中山东一路6号中国通商银行是另一地址的楼，同机构名称不构成同楼关系。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=575",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=576",
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_31155355"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-290__sh-fgj-1C004-01",
+      "sourceRecordIds": [
+        290,
+        1780
+      ],
+      "officialId": "sh-fgj-1C004-01",
+      "officialCode": "1C004",
+      "decision": "hold-coordinate-conflict",
+      "relation": "same-listed-building",
+      "scopeNote": "",
+      "reason": "身份已确认：Cathay Mansions即华懋公寓、锦江飯店北楼。但现历史建筑参考点[121.463008,31.223732]与OSM way442103696华懋公寓点[121.45627,31.22247]相差约656米；2019年锦北楼实拍相机位置[121.455497,31.222519]朝东，也支持后者街区。VS原点[121.455818,31.222569]距OSM参考点约44米。撤回此前直接采用名录参考点的建议；需先修正历史建筑坐标来源再显示共用卡片，不修改原始地标点。OSM原始API本次超时，衍生地图与独立实拍用于否定明显错位，不把相机点当作建筑中心。",
+      "displayNote": "Cathay Mansions与华懋公寓、锦江饭店北楼的身份一致。当前历史建筑图层参考点与独立地图、实拍位置相差约650米，需先核正坐标；旧门牌265 ROUTE BOURGEAT和现代长乐路109号、茂名南路59号入口均保留。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=290",
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1780",
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/",
+        "https://mapcarta.com/W442103696",
+        "https://commons.wikimedia.org/wiki/File:Cathay_Mansions,_Jin_Jiang_Hotel_(20191114165651).jpg"
+      ]
+    },
+    {
+      "candidateId": "landmark-vs-site-581__sh-fgj-5F034-01",
+      "sourceRecordIds": [
+        581
+      ],
+      "officialId": "sh-fgj-5F034-01",
+      "officialCode": "5F034",
+      "decision": "hold",
+      "relation": "institution-different-site",
+      "scopeNote": "",
+      "reason": "VS581为1937年同仁医院迁入的九江路219号学校楼，5F034为长治路155—159号及南浔路193号另处同仁医院旧址；医院迁址关系不能当作同楼。",
+      "displayNote": "VS581为1937年同仁医院迁入的九江路219号学校楼，5F034为长治路155—159号及南浔路193号另处同仁医院旧址；医院迁址关系不能当作同楼。",
+      "sourceUrls": [
+        "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=581",
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+      ],
+      "supplementalSourceUrls": [
+        "https://m.thepaper.cn/baijiahao_7604398"
+      ]
+    }
+  ],
+  "supplementalSources": [
+    {
+      "title": "Virtual Shanghai：Trinity Church及关联圣三一堂历史影像",
+      "url": "https://www.virtualshanghai.net/Data/Buildings?ID=580",
+      "finding": "建筑580关联图片明确中英文教堂名称，原门牌与1869年保留。"
+    },
+    {
+      "title": "中国基督教两会：上海圣三一堂",
+      "url": "https://www.ccctspm.org/index.php/churchinfo/396",
+      "finding": "官方列表及索引确认1869年重建现存圣三一堂；正文直接打开超时，沿用可读搜索索引。"
+    },
+    {
+      "title": "上海建设交通党建：漫步九江路的历史建筑",
+      "url": "https://www.shjsjtdw.cn/node2/n59/u1ai15090.html",
+      "finding": "公开索引明确圣三一堂九江路201号和1869年建成；网页直接抓取证书失败，未绕过。"
+    },
+    {
+      "title": "中国基督教两会：上海沐恩堂",
+      "url": "https://www.ccctspm.org/churchinfo/205",
+      "finding": "已取官方HTML，说明西藏中路316号、原慕尔堂、1931年新堂落成及1958年更名；另区分云南中路旧堂址。"
+    },
+    {
+      "title": "徐家汇源官网：徐家汇天主堂",
+      "url": "https://www.xujiahuiyuan.com/zouJin/inner?columnId=d4f0f2448e2a0cabbed64fb2d25cbf94&id=fc4bcca5f394e396c3dd7c723422fd88",
+      "finding": "景区直接说明天主堂亦称圣依纳爵堂，1910年落成，地址蒲西路158号。"
+    },
+    {
+      "title": "徐汇年鉴：徐家汇天主堂修缮",
+      "url": "https://www.xuhui.gov.cn/xhda/xhda/xhbl/xhnj/2019/08/27/9f8086926cbda259016cd1aa7d45154b.html?tm=1740650443068",
+      "finding": "区档案馆资料区分1851年旧堂和在其南侧另建、1910年落成的今主教座堂；旧堂1994年拆除。"
+    },
+    {
+      "title": "上海市人民政府：徐汇区",
+      "url": "https://www.shanghai.gov.cn/xuhui/index.html",
+      "finding": "市政府徐汇区介绍列上海工艺美术博物馆地址汾阳路79号。"
+    },
+    {
+      "title": "城市印象：漫步思南路",
+      "url": "https://sghexport.shobserver.com/html/baijiahao/2025/01/10/1494368.html",
+      "finding": "市历保中心建筑介绍明确皋兰路16号原圣尼古拉斯教堂、第二批优秀历史建筑、今思南书局诗歌店。"
+    },
+    {
+      "title": "第五批优秀历史建筑",
+      "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+      "finding": "国富门公寓230、232号、襄阳公寓254号、延庆路18弄10号住宅分别列项。"
+    },
+    {
+      "title": "上海市房管局：瑞华公寓修缮",
+      "url": "https://m.thepaper.cn/newsDetail_forward_11427915",
+      "finding": "原名赛华Savoy Apts.，1928年，常熟路209弄1—4号，并记录常熟路与延庆路两侧立面。"
+    },
+    {
+      "title": "上海市虹口区人民政府：河滨大楼",
+      "url": "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/e6bbb4ce-8d6b-4d2f-b525-115b35d40766.html",
+      "finding": "河滨大楼1935年竣工，正门北苏州路400号，整体横贯相邻道路，保留与名录340号的门牌区别。"
+    },
+    {
+      "title": "上海市虹口区人民政府：路名背后的点点滴滴",
+      "url": "https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html",
+      "finding": "角田公寓闵行路181号曾设万岁馆旅馆，证明使用沿革，尚不足将旅馆等同全项多门牌公寓。"
+    },
+    {
+      "title": "上海官方旅游网站：Cosmopolitan Apartments",
+      "url": "https://www.meet-in-shanghai.net/en/news/spanishstyle-art-deco-building-still-projects-grandeur-of-old-shanghai-671774/",
+      "finding": "英文专文直接对应Hua Ye Apartments与Cosmopolitan Apartments、原Seymour Road和1934年现存楼体；所列南京西路1213号入口信息不覆盖名录陕西北路175号。"
+    },
+    {
+      "title": "EDITION上海运营官网：原电力公司总部楼",
+      "url": "https://edition-hotels.cn/shanghai/",
+      "finding": "旧电力公司总部历史楼与现代客房塔楼分开，旧楼承担酒店公共区域，不把两楼全范围同指。"
+    },
+    {
+      "title": "静安区图书馆：西摩会堂",
+      "url": "https://www.shjinganlib.net/JaImpressionHistoryContent.aspx?ColumnNameEn=HISTORICBUILDINGS&id=4619",
+      "finding": "陕西北路500号会堂1920年建成；身份对应成立，但未解决本地两点506米差异。"
+    },
+    {
+      "title": "快来打卡百年记忆的科创地标",
+      "url": "https://stcsm.sh.gov.cn/xwzx/kjzl/20210524/b3f0f7464f9347f49b84c81400d2def1.html",
+      "finding": "上海市科委把南昌路47号科学会堂与法国总会、法国学堂沿革相接。"
+    },
+    {
+      "title": "第四批优秀历史建筑",
+      "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+      "finding": "国泰公寓完整建筑群范围；派克455号与471—477花园住宅、安亭公寓43号与别墅46号分别列项。"
+    },
+    {
+      "title": "一键收藏八月艺术大展",
+      "url": "https://whlyj.sh.gov.cn/yshd/20240807/ca78581dcc9c41729c6246c9b2a2caf7.html",
+      "finding": "市文旅局将克莱门公寓3号画廊定位复兴中路1363弄。"
+    },
+    {
+      "title": "上海金门大酒店",
+      "url": "https://www.meet-in-shanghai.net/cn/star-hotel/golden-gate-hotel-shanghai-813955/",
+      "finding": "市文旅推广网使用南京西路108号；保留与名录104号的不同门牌表述。"
+    },
+    {
+      "title": "《风月沉香一条街》图书目录",
+      "url": "https://www.yuntaigo.com/book.action?recordid=bmFiYWJsbmM5Nzg3NTYwODk5ODI0",
+      "finding": "同济大学出版社2021年书目章节直接并列华安大楼与China United Apartments中英文名。仅作名称补证。"
+    },
+    {
+      "title": "第一批优秀历史建筑",
+      "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+      "finding": "名录分别列华安人寿保险／金门大酒店104号、东方汇理29号及老新永安627—635号；各外滩、江西路对象独立列项。"
+    },
+    {
+      "title": "静谧·深藏——安亭路",
+      "url": "https://www.jfdaily.com/sgh/detail?id=1739812",
+      "finding": "市历保中心供稿：43号金司林／安亭公寓经修缮保留，与46号安亭别墅另述。"
+    },
+    {
+      "title": "Discover diverse structures on Hengshan Road",
+      "url": "https://english.shanghai.gov.cn/en-CityTour/20240520/460d295b911d4270b782e575b6bcca94.html",
+      "finding": "上海政府英文页将Cavendish Court定位衡山路525号。"
+    },
+    {
+      "title": "国富门公寓优秀历史建筑工程修缮实录",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250919/563719.html",
+      "finding": "徐汇区房管局确认武康路232号国富门公寓为第五批优秀历史建筑，原四层后加层，按原有建筑修缮。"
+    },
+    {
+      "title": "Building Russian Shanghai — G. B. Rabinovich",
+      "url": "https://sites.google.com/view/russianshanghai/architects/l-z/g-b-rabinovich",
+      "finding": "收录Koffman Apartments设计图，并对应Route Ferguson与今武康路230—232号。"
+    },
+    {
+      "title": "1936年工商名录",
+      "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html",
+      "finding": "历史工商名录直接列China Development Bank在33 Szechuen Road；用于旧机构与门牌核对。"
+    },
+    {
+      "title": "Central Police Station (SMP), image 1568",
+      "url": "https://www.virtualshanghai.net/Photos/Images?ID=1568",
+      "finding": "与VS568相连的历史照片明确标注楼体建于1891—1894。"
+    },
+    {
+      "title": "Central Police Station (SMP), image 1569",
+      "url": "https://www.virtualshanghai.net/Photos/Images?ID=1569",
+      "finding": "与VS568相连的另一照片明确称1933年建的新楼，证实同一源记录跨两代楼体。"
+    },
+    {
+      "title": "“小红楼”，见证上海公卫往事",
+      "url": "https://www.chinaqw.com/qx/2021/02-26/287386.shtml",
+      "finding": "解放日报作者考证指出1935年185号新中央捕房建成后，河南路/福州路转角老楼拆除。"
+    },
+    {
+      "title": "“海派城市考古”的魅力",
+      "url": "https://whlyj.sh.gov.cn/wbzx/20220221/2cee8b88131f44df80ddfe1817990754.html",
+      "finding": "文旅局文章记延庆路18弄深处格罗疗养院后改剑桥医院、现为居民楼。"
+    },
+    {
+      "title": "Citywalk来延庆路",
+      "url": "https://thirdpage.thepaper.cn/h5/jrtt/26462926",
+      "finding": "上海发布政务导览把原剑桥医院精确到延庆路18弄10号，说明曾为格罗疗养院并属第五批名录。"
+    },
+    {
+      "title": "走进公寓建筑，感受海派魅力",
+      "url": "https://m.thepaper.cn/baijiahao_25248615",
+      "finding": "上海住房城乡建设管理政务文明确花园公寓又名派克公寓，复兴中路455号，1926年建。"
+    },
+    {
+      "title": "1933老场坊承载历史与文化记忆",
+      "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20240411/046fc42953634b52b84dcac9ef09c986.html",
+      "finding": "市国资委直接对应1933老场坊、工部局宰牲场、沙泾路10号和29号、1933年竣工及保护性修缮。"
+    },
+    {
+      "title": "第三批优秀历史建筑（2019版页面）",
+      "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/2447d47b3e2947bfba7c64ed04a758a7.html",
+      "finding": "列颐中大楼原英美颐中烟草、南苏州路161—175号；林肯／曙光公寓完整门牌；日清5号、大北电报局延安东路34号各自列项。"
+    },
+    {
+      "title": "Shanghai Art Deco Buildings Database",
+      "url": "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/",
+      "finding": "数据库将Belmont Apartments列在240 Xiangyang Lu，并给出旧路名Tenant de la Tour。"
+    },
+    {
+      "title": "It’s not all highflying in this city of art deco delights",
+      "url": "https://www.globaltimes.cn/content/903413.shtml",
+      "finding": "Historic Shanghai实地建筑导览报道把Belmont Apartments定位254 Xiangyang Road South，补齐与名录襄阳公寓的对应。"
+    },
+    {
+      "title": "第二批优秀历史建筑",
+      "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+      "finding": "独立列科学会堂一号楼47号、克莱门公寓1363弄、企业大楼33号；巡捕房185号与209号、170号与171—181号分别列项。"
+    },
+    {
+      "title": "浦发银行上海分行供稿：宁波路50号原上海商业储蓄银行",
+      "url": "https://www.jfdaily.com/sgh/detail?id=1571006",
+      "finding": "搜索全文索引确认宁波路50号为原上海商业储蓄银行大楼，1929年楼体保存至今。普通打开为空壳，不把空壳当作全文。"
+    },
+    {
+      "title": "上海商业银行：创办人陈光甫及总行旧楼",
+      "url": "https://www1.shacombank.com.hk/sch/personal/75/mrchenkwang-pu.jsp",
+      "finding": "银行自述1931年迁入宁波路50号新建总行；与名录1929年建造口径并列保留。"
+    },
+    {
+      "title": "上海市政府：Liza Hardoon Building与嘉陵大楼",
+      "url": "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=9085e4cc-fc63-43f6-b138-f08fe4787179",
+      "finding": "直接将Liza Hardoon Building、Jialing Building及南京东路99号对应，并说明四川中路一面及办公、商铺、住宅功能。"
+    },
+    {
+      "title": "徐汇区房管局：密丹公寓保护修缮",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20240115/530424.html",
+      "finding": "明确密丹公寓为武康路湖南路路口1931年原楼，2022年列入修缮计划并持续居住。"
+    },
+    {
+      "title": "静安区文物局：补充公布三普不可移动文物名录",
+      "url": "https://www.jingan.gov.cn/govxxgk/JB7/2025-08-19/c29bc57a-6700-42f6-9948-9132d437d547.html",
+      "finding": "官方补录与第二批优秀历史建筑名录共同核对望德堂旧址单体；保留北京西路1220弄2号范围。"
+    },
+    {
+      "title": "上海城建档案：从金城大戏院到黄浦剧场",
+      "url": "https://www.thepaper.cn/newsDetail_forward_8742228",
+      "finding": "档案机构明确Lyric Theatre即金城大戏院，今北京东路780号黄浦剧场；1933建成、1934启用。"
+    },
+    {
+      "title": "徐汇区房管局：贝当公寓",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20250205/551438.html",
+      "finding": "贝当公寓即衡山路700号衡山公寓，1932竣工；同文区分283至297号另一同名公寓。"
+    },
+    {
+      "title": "上海市房屋管理局：九江路219号教会学校修缮沿革",
+      "url": "https://m.thepaper.cn/baijiahao_7604398",
+      "finding": "同一1928年楼先后为英童学校、同仁医院、百乐饭店和办公楼；文章明确它位于圣三一堂旁边。"
+    },
+    {
+      "title": "上海住建委：河畔寓居，滨水公寓群",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33367674",
+      "finding": "官方专题分述浦西公寓、小浦西公寓与蟠龙街住宅，不将近邻视为同楼；浦西公寓有塘沽411至429号等门牌。"
+    },
+    {
+      "title": "上海市民政局：上海外滩美术馆历史楼",
+      "url": "https://mzj.sh.gov.cn/MZ_shetuan749_0-2-3-7/20240923/9e0291955d8a41d0ac656016ca471b9d.html",
+      "finding": "虎丘路20号现馆为1932年亚洲文会北中国支会博物馆历史建筑，与VS记录年代地址相符。"
+    },
+    {
+      "title": "上海法院网：福州路209号高院大楼的旧身份",
+      "url": "https://www.hshfy.sh.cn/shfy/web/zbhzl/xqy.jsp?pa=aaWQ9NDIwNDQ3z",
+      "finding": "法院官方文本明确福州路209号原为美国花旗总会、旅沪美侨俱乐部，1953年转作法院。"
+    },
+    {
+      "title": "上海市政府：国泰归来，焕新升级",
+      "url": "https://www.shanghai.gov.cn/nw4411/20240106/d74cdc9f66c342e3acc35b6bee1a6579.html",
+      "finding": "对原国泰电影院保护修缮和继续运营作沿革说明，与淮海中路870号名录楼对应。"
+    },
+    {
+      "title": "华建集团华东院：建设大楼外立面修缮",
+      "url": "https://m.thepaper.cn/baijiahao_31155355",
+      "finding": "修缮设计单位明确江西中路181号原中国通商银行新厦、现建设大楼，1936年美国总领事署入驻。"
+    },
+    {
+      "title": "MADS历史广告研究库：National Commercial Bank",
+      "url": "https://madspace.org/db/Advertisers?ID=977",
+      "finding": "历史广告研究条目把英文名称与浙江兴业银行、中英文旧门牌230 Peking Road对应。"
+    },
+    {
+      "title": "上海市体育局：体育大厦与西侨青年会沿革",
+      "url": "https://tyj.sh.gov.cn/jcxx/20201009/de2d6b603bdf4e6b8584e180612d7a11.html",
+      "finding": "体育管理机构介绍1928年体育大厦前身西侨青年会及后续由市体委使用。"
+    },
+    {
+      "title": "市住建委与历保中心资料：衡山宾馆修缮",
+      "url": "https://m.thepaper.cn/newsDetail_forward_23085605",
+      "finding": "官方政务号转载修缮资料，将1930年代毕卡第公寓与保存修缮的衡山宾馆对应。"
+    },
+    {
+      "title": "徐汇区房管局：自由公寓",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_fgj_bmdt/20251222/567476.html",
+      "finding": "直接将Liberty Apartments与五原路258号自由公寓对应，依据营造许可和住户名录讨论1933与1934建造口径。"
+    },
+    {
+      "title": "静安区文旅局：公共租界会审公廨旧址建议答复",
+      "url": "https://www.jingan.gov.cn/govxxgk/JB7/2025-07-15/1ac4608e-1a4e-4ce6-b349-e4ad44b8efcf.html",
+      "finding": "浙江北路191号先后为上海特区法院、江苏高等法院第二分院等，现遗存中红楼和北大楼两幢。"
+    },
+    {
+      "title": "上海市政府：上海少年儿童图书馆沿革",
+      "url": "https://www.shanghai.gov.cn/nw4411/20240718/4a4141e410ab49d1b2cc8f6199eca223.html",
+      "finding": "1958年图书馆迁入南京西路962号；结合官方第三批切尔西住宅名录，确认南西馆对应历史住宅。"
+    },
+    {
+      "title": "上海市文旅推广网：华懋公寓",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/chinachem-residences-655037/",
+      "finding": "明确长乐路109号1929年华懋公寓为锦江饭店北楼，并说明改从茂名南路59号进出。"
+    },
+    {
+      "title": "上海市政府：共济会堂与第一科学基督教会建筑考察",
+      "url": "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=d6d123fb-2b30-4a52-b100-621a47e8ed0b",
+      "finding": "正文介绍1623北京西路1931年新共济会堂，另附1934年弧形第一科学基督教堂同期报道；未直接证实两个楼体为一体，故不能只凭混合沿革合并。"
+    },
+    {
+      "title": "李健、苏智良：侵华日军在沪集中营考论",
+      "url": "https://yangtze.silkroadinfo.org.cn/2017/6/30/20170630131536.pdf",
+      "finding": "研究表格把方济堂、首善堂分别记为两个教会人员集中营，现代共用重庆南路139号定位，不能据此断言两个账房或克美医院为同一楼。"
+    },
+    {
+      "title": "上海音乐学院：校园对外开放及历史建筑",
+      "url": "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm",
+      "finding": "支持天赐大宅属于上海音乐学院历史校园建筑；单处1209号不能代替名录1189、1199、1209三栋住宅全部。"
+    },
+    {
+      "title": "市文旅局：衡复风貌区迷你公寓（建筑保护研究者考察）",
+      "url": "https://whlyj.sh.gov.cn/wbzx/20230215/37aa7acc9a4f4d7c9f5d22672affa0cd.html",
+      "finding": "建筑遗产研究者冯立直接解释Midget Apartments即密丹公寓，并区分武康路湖南路对角不同的迷你公寓。"
+    },
+    {
+      "title": "OSM衍生地图：Cathay Mansion／华懋公寓",
+      "url": "https://mapcarta.com/W442103696",
+      "finding": "明确引用OSM way442103696，参考点[121.45627,31.22247]，距现heritage点约650米。"
+    },
+    {
+      "title": "N509FZ：2019年华懋公寓（锦北楼）实拍",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathay_Mansions,_Jin_Jiang_Hotel_(20191114165651).jpg",
+      "finding": "独立实拍定位[121.455497,31.222519]、朝向东侧；这是相机位置而非楼心，旁证OSM所在街区，不能直接替代建筑坐标。"
+    }
+  ]
+}

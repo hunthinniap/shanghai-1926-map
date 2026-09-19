@@ -1,12 +1,14 @@
 # 历史地标与优秀历史建筑共用卡片复核
 
-2026-09-19：已应用 **46 组**明确关联（41 处建筑、4 处建筑群、1 座桥梁）。南京饭店及其他确认项在“显示地标”和“显示历史建筑”中共用详情卡与历史建筑参考点；同时打开两层时只显示一个点。原始历史坐标、记录和现用途判断保留。
+2026-09-19：累计应用 **101 组**明确关联（89 处建筑、10 处建筑群、2 处构筑物）。南京饭店、圣三一堂、沐恩堂及其他确认项在“显示地标”和“显示历史建筑”中共用详情卡与历史建筑参考点；同时打开两层时只显示一个点。原始历史坐标、记录和现用途判断保留。
+
+最新一轮根据用户提出的教堂例子，进一步核读现用途沿革及其引用来源：复核112对，新增55组，57对暂缓。包括圣三一堂、沐恩堂、徐家汇天主堂、兰心大戏院、大来大楼、河滨公寓等；华懋公寓身份虽对应，但名录现有参考点有明显位置冲突，未应用坐标合并。完整新增／暂缓表及证据见[沿革补查](continuation-notes/README.md)。下方46组采用表、28对保留表为第一轮存档，累计结果以applied-links.json为准。
 
 ## 覆盖与结果
 
 - 全量扫描 1803 条 Virtual Shanghai 建筑记录、1676 个运行时地标组、1058 项官方名录（978 项有可用参考点）。
 - 初筛得到 498 对候选：32 对优先一对一、261 对复杂线索、38 对名称相合但距离超过250米、167 对邻近或证据不足。初筛等级不等于同一建筑判定。
-- 独立复核 74 对，包括全部32对优先候选、补充重点和已知反例：46 对采用，26 对保留待核，另2对需继续厘清建筑群范围。其余424对未逐一人工核定，不自动合并。
+- 首轮独立复核74对，46对采用、28对保留；沿革补查新增复核112对，55对采用、57对保留。累计186对已审、101对采用、85对未采用，其余312对未逐一人工核定，不自动合并。
 - 接受项一对一，完整来源ID集合一致，未命中持久化用途待核规则；1803个来源ID无丢失、无重复。参考点来自既有维基／图书馆等资料，不是房管局测绘坐标。
 
 ## 南京饭店
@@ -23,7 +25,7 @@ VS #609 **Nanjing Hotel／南京飯店** 与第4批 **4A016 南京饭店**为同
 - 原始文件不回写；显示位置只在内存副本调整。现用途字段保持原研究结论，不凭名录名称推定今日用途。
 - 本次“显示建筑”按上下文解释为“显示历史建筑”，普通现代建筑轮廓开关行为不变。
 
-## 已采用关联
+## 首轮已采用关联（46组）
 
 | VS ID | 历史名称 | 名录项 | 旧路名与门牌（原文） | 新路名与门牌（名录） | 范围 |
 |---|---|---|---|---|---|
@@ -74,7 +76,7 @@ VS #609 **Nanjing Hotel／南京飯店** 与第4批 **4A016 南京饭店**为同
 | 523 | Metropole Hotel | 2A038 都城饭店 | 180 KIANGSE ROAD | 江西中路180号 | 建筑 |
 | 391 | Gascogne Apartments | 2D003 盖司康公寓 | 1202 AVENUE JOFFRE | 淮海中路1202号 | 建筑 |
 
-## 重点保留项
+## 首轮重点保留项（28对）
 
 以下28对均未接入统一卡片；hold表示证据不足或范围不一致，不表示已证明两个记录必定无关。
 
@@ -114,19 +116,22 @@ VS #609 **Nanjing Hotel／南京飯店** 与第4批 **4A016 南京饭店**为同
 - [candidates.json](candidates.json)：498对候选、完整来源字段和全量覆盖索引，记录7项输入SHA256。
 - [candidate-audit.md](candidate-audit.md)：二审前初筛存档；早期“待二审”措辞以最终决策为准。
 - [second-review.json](second-review.json)：74对逐项独立复核、来源链接、接受/保留决定及范围说明。
-- [applied-links.json](applied-links.json)：46条已采用关联的原坐标／显示坐标、完整旧门牌和28条保留记录。
+- [continuation-notes/review.json](continuation-notes/review.json)：112对沿革补查决定、各分片哈希、来源链接及范围说明。
+- [applied-links.json](applied-links.json)：累计101条已采用关联的原坐标／显示坐标、完整旧门牌和85条保留记录。
 - [supplemental-review-suggestions.json](supplemental-review-suggestions.json)：初筛之后补充重点与边界反例。
-- [src/data/heritageLandmarkLinks.ts](../../../src/data/heritageLandmarkLinks.ts)：46条显示配置，运行时还核对完整来源ID与唯一名录项。
+- [src/data/heritageLandmarkLinks.ts](../../../src/data/heritageLandmarkLinks.ts)：101条显示配置，运行时还核对完整来源ID与唯一名录项。
 
 配置重建／只读核验：
 
 ```sh
+node research/rechecks/2026-09-19-heritage-landmark-links/continuation-notes/assemble-review.mjs
+node research/rechecks/2026-09-19-heritage-landmark-links/continuation-notes/assemble-review.mjs --check
 node research/rechecks/2026-09-19-heritage-landmark-links/build-reviewed-links.mjs
 node research/rechecks/2026-09-19-heritage-landmark-links/build-reviewed-links.mjs --check
 npm test
 npm run build
 ```
 
-重建配置会核对候选文件与二审输入哈希、7项原始输入哈希、来源成员、唯一保护项及坐标／范围要求。更新候选时先运行generate-candidates.mjs，之后需重新审阅并记录新哈希，不能直接沿用旧审批结论。没有运行data:build。
+重建配置会核对候选文件与各轮输入哈希、7项原始输入哈希、来源成员、唯一保护项及坐标／范围要求。补查汇总还核对112对输入与498对冻结候选逐字段一致、分片覆盖及跨轮决定不重复；生成器同时写出配置与应用清单。更新候选时先运行generate-candidates.mjs，之后需重新审阅并记录新哈希，不能直接沿用旧审阅结论。没有运行data:build。
 
-验证：166项测试（79前端＋87脚本）通过，生产构建通过；完整46条真实数据关联、1803来源ID守恒、双层单卡、视野保持、加载取消均有回归验证。浏览器实测南京饭店在单地标层、双层与单历史建筑层间保持同一卡片，以及都城饭店主楼范围和新旧门牌显示。未commit/push。
+首轮验证：166项测试（79前端＋87脚本）、生产构建、46条真实数据关联及1803来源ID守恒通过。浏览器实测南京饭店双层单卡、视野保持及都城主楼范围；该轮已随83e69aa推送。最新补查的验证结果见[补查报告](continuation-notes/README.md)。

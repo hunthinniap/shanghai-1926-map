@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "selection": "Independently inspect the two proposed new associations whose display movement exceeds 100 metres. All remaining proposed associations move less than 80 metres; that distance alone is not treated as identity or precision evidence.",
+  "coordinateSystem": "WGS84",
+  "reviews": [
+    {
+      "candidateId": "landmark-vs-site-290__sh-fgj-1C004-01",
+      "decision": "hold-coordinate-conflict",
+      "identity": "same-listed-building",
+      "sources": [
+        {
+          "url": "https://mapcarta.com/W442103696",
+          "title": "Mapcarta：OSM way442103696 Cathay Mansion",
+          "coordinate": [
+            121.45627,
+            31.22247
+          ],
+          "scope": "building-reference-point",
+          "license": "OSM ODbL; page text CC BY-SA 4.0",
+          "heritageDistanceMetres": 655.9,
+          "originalDistanceMetres": 44.4
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cathay_Mansions,_Jin_Jiang_Hotel_(20191114165651).jpg",
+          "title": "N509FZ：2019年华懋公寓／锦北楼实拍的位置元数据",
+          "coordinate": [
+            121.455497,
+            31.222519
+          ],
+          "scope": "camera-location-not-building-center",
+          "license": "CC BY-SA 4.0",
+          "heritageDistanceMetres": 726.8,
+          "originalDistanceMetres": 31
+        }
+      ],
+      "finding": "两项独立空间线索都靠近VS原点；名录现参考点明显偏东。本轮暂缓共卡，不替换既有名录点；下一步核定OSM原楼体与地址后经坐标数据流程修正。OSM原始API未成功取得，不将衍生页面当作已读原始楼体。",
+      "originalCoordinate": [
+        121.455818,
+        31.222569
+      ],
+      "heritageCoordinate": [
+        121.463008,
+        31.223732
+      ],
+      "originalToHeritageMetres": 695.8
+    },
+    {
+      "candidateId": "landmark-vs-site-989__sh-fgj-3B025-01",
+      "decision": "keep-reference-point",
+      "identity": "same-listed-building",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:少年儿童图书馆·切尔西住宅·上海.jpg",
+          "title": "Legolas1024：2020年少年儿童图书馆／切尔西住宅实拍的位置元数据",
+          "coordinate": [
+            121.453503,
+            31.231469
+          ],
+          "scope": "camera-location-not-building-center",
+          "license": "CC BY-SA 3.0",
+          "heritageDistanceMetres": 38.2,
+          "originalDistanceMetres": 222.7
+        }
+      ],
+      "finding": "独立实拍相机位置距名录参考点约38米，支持同街块而非华懋那样的明显偏移。仅作空间相容性检查，不证明楼心精度，不改源坐标。",
+      "originalCoordinate": [
+        121.455291,
+        31.232763
+      ],
+      "heritageCoordinate": [
+        121.453862,
+        31.231623
+      ],
+      "originalToHeritageMetres": 185.8
+    }
+  ]
+}

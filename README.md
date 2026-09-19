@@ -38,7 +38,7 @@ Public bath 的追加研究见 [2026-09-18 历史佐证补查](research/suppleme
 
 地图顶部的“显示历史建筑”开关展示合计978个参考点，沿用地标开关和详情卡样式；青绿色实心点表示建筑，空心点表示建筑群。按需加载轻量 [map-buildings.geojson](public/data/shanghai-excellent-historical-buildings/map-buildings.geojson)，点选可查看地址、建造年代、结构等资料与来源。
 
-南京饭店等46组确认对应的地点已在“显示地标”和“显示历史建筑”中共用卡片，位置采用历史建筑图层参考点，同时显示完整旧门牌与名录新门牌。两层同时开启只保留一个点，关闭其中一层仍能查看卡片。全量比对1803条历史来源与1058项名录，人工复核74对，28对因年代、范围或坐标问题保留分开；其余候选未自动合并。详见 [关联复核与完整清单](research/rechecks/2026-09-19-heritage-landmark-links/README.md)。
+南京饭店、圣三一堂、沐恩堂等101组确认对应的地点已在“显示地标”和“显示历史建筑”中共用卡片，位置采用历史建筑图层参考点，同时显示完整旧门牌与名录新门牌。两层同时开启只保留一个点，关闭其中一层仍能查看卡片。全量比对1803条历史来源与1058项名录，累计人工复核186对，85对因身份、年代、范围或坐标问题保留分开；其余312对候选未自动合并。此次按已有沿革及所引资料补查112对，新增55组，详见 [沿革补查清单](research/rechecks/2026-09-19-heritage-landmark-links/continuation-notes/README.md)及[关联复核说明](research/rechecks/2026-09-19-heritage-landmark-links/README.md)。
 
 ## 验证
 
