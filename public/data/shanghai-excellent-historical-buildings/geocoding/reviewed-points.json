@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 1,
+  "recordCount": 7,
+  "notes": [
+    "Only reviewed replacement reference points. Original Wikipedia coordinates remain unchanged."
+  ],
+  "records": [
+    {
+      "officialId": "sh-fgj-4N002-01",
+      "reason": "OSM要素标明澳门小区、澳门路660弄及优秀历史建筑编号4N002，与官网建筑群身份一致。图书馆坐标与异地浦江饭店共用且落在OSM小区范围外，因此选该有界小区几何的bbox中心作为现代范围参考点。",
+      "point": {
+        "lon": 121.43142399999999,
+        "lat": 31.24704,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-complex-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/495702591",
+        "sourceAddress": "澳门路660弄",
+        "notes": [
+          "此点为OSM已标明澳门小区范围的包围框中心，不是某栋楼、门牌或入口定位。",
+          "官网4N002保护门牌是小区内的部分建筑；不将整个OSM小区全部视为保护建筑。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/495702591/full.json",
+          "rawPath": "probes/provider/osm-way-495702591.json",
+          "sha256": "1f21fa08876d452548fd7ebd441fb4c7c41ef35aca5412de060c90cc9fe9d10f",
+          "retrievedAt": "2026-09-18T17:06:28.878Z",
+          "sourceVersion": 2,
+          "sourceTimestamp": "2017-06-24T04:47:36Z",
+          "license": "ODbL-1.0"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.430855,
+              31.246934
+            ],
+            [
+              121.4315532,
+              31.2476087
+            ],
+            [
+              121.431993,
+              31.2472555
+            ],
+            [
+              121.4317079,
+              31.2469111
+            ],
+            [
+              121.4318804,
+              31.2468152
+            ],
+            [
+              121.4315746,
+              31.2464713
+            ],
+            [
+              121.431124,
+              31.2467602
+            ],
+            [
+              121.430855,
+              31.246934
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.430855,
+        31.2464713,
+        121.431993,
+        31.2476087
+      ]
+    },
+    {
+      "officialId": "sh-fgj-1A022-01",
+      "reason": "OSM建筑名称上海市第一百货商店、旧名大新公司及heritage:ref=1989年16号，与维基名单同项序号16和官网历史/使用名称共同一致。使用该老楼建筑几何参考点，不采用图书馆错列南京东路330号的坐标。",
+      "point": {
+        "lon": 121.4702701,
+        "lat": 31.2370344,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/490270437",
+        "sourceAddress": null,
+        "notes": [
+          "此点由OSM已标注建筑/住宅群的包围框中心计算，不代表门牌入口或测绘控制点。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/490270437/full.json",
+          "rawPath": "probes/provider/osm-way-490270437.json",
+          "sha256": "05d3723d35ee3bf7e0f9a458fef00cfea81492d7f6e69a1093ae51ca5b698d24",
+          "retrievedAt": "2026-09-18T17:21:02.336Z",
+          "sourceVersion": 10,
+          "sourceTimestamp": "2026-09-14T05:31:55Z",
+          "license": "ODbL-1.0"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.470062,
+              31.2367711
+            ],
+            [
+              121.4699172,
+              31.237207
+            ],
+            [
+              121.4704638,
+              31.2373362
+            ],
+            [
+              121.470623,
+              31.2368863
+            ],
+            [
+              121.4706168,
+              31.2368683
+            ],
+            [
+              121.4706061,
+              31.236854
+            ],
+            [
+              121.4705917,
+              31.236841
+            ],
+            [
+              121.4705741,
+              31.2368314
+            ],
+            [
+              121.4702123,
+              31.2367383
+            ],
+            [
+              121.4701752,
+              31.2367326
+            ],
+            [
+              121.4701397,
+              31.2367336
+            ],
+            [
+              121.4701106,
+              31.236742
+            ],
+            [
+              121.4700849,
+              31.2367527
+            ],
+            [
+              121.470062,
+              31.2367711
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.4699172,
+        31.2367326,
+        121.470623,
+        31.2373362
+      ],
+      "sourceTags": {
+        "building": "retail",
+        "heritage": "yes",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年16号",
+        "name": "上海市第一百货商店",
+        "name:en": "Shanghai No. 1 Department Store",
+        "name:ru": "Шанхайский универмаг № 1",
+        "name:zh": "上海市第一百货商店",
+        "name:zh-Hans": "上海市第一百货商店",
+        "name:zh-Hant": "上海市第一百貨商店",
+        "old_name": "大新公司;The Sun",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "shop": "department_store",
+        "start_date": "1934",
+        "wheelchair": "limited",
+        "wikidata": "Q1874561"
+      }
+    },
+    {
+      "officialId": "sh-fgj-1C003-01",
+      "reason": "OSM尚贤坊列淮海中路350弄及heritage:ref=1989年59号，与维基名单序号59、同名及350弄地址一致；官网50号原文差异保留。位置代表已识别尚贤坊整体范围，不把50号当作350弄。",
+      "point": {
+        "lon": 121.46812245,
+        "lat": 31.224896800000003,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-complex-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/475009251",
+        "sourceAddress": "淮海中路350弄",
+        "notes": [
+          "此点由OSM已标注建筑/住宅群的包围框中心计算，不代表门牌入口或测绘控制点。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/475009251/full.json",
+          "rawPath": "probes/provider/osm-way-475009251.json",
+          "sha256": "8f3135d69ecb93d02d02c6720589a394559cb5426d098b804f60a463d065d8f6",
+          "retrievedAt": "2026-09-18T17:21:02.338Z",
+          "sourceVersion": 4,
+          "sourceTimestamp": "2023-05-06T03:11:03Z",
+          "license": "ODbL-1.0"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.4675793,
+              31.2251147
+            ],
+            [
+              121.468384,
+              31.2254083
+            ],
+            [
+              121.4686656,
+              31.2247546
+            ],
+            [
+              121.46781,
+              31.2243853
+            ],
+            [
+              121.4675793,
+              31.2251147
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.4675793,
+        31.2243853,
+        121.4686656,
+        31.2254083
+      ],
+      "sourceTags": {
+        "addr:housenumber": "350弄",
+        "addr:street": "淮海中路",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年59号",
+        "landuse": "residential",
+        "name": "尚贤坊",
+        "name:zh": "尚贤坊",
+        "name:zh-Hans": "尚贤坊",
+        "name:zh-Hant": "尚賢坊",
+        "start_date": "1924"
+      }
+    },
+    {
+      "officialId": "sh-fgj-1B003-01",
+      "reason": "OSM涌泉坊保护范围标注heritage:ref=1989年55号，与维基名单序号55和官网涌泉坊相符；同一区域独立OSM路段way438769357标注愚园路395弄，辅证完整弄址。",
+      "point": {
+        "lon": 121.43655195,
+        "lat": 31.224281750000003,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-complex-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/488963703",
+        "sourceAddress": null,
+        "notes": [
+          "此点由OSM已标注建筑/住宅群的包围框中心计算，不代表门牌入口或测绘控制点。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/488963703/full.json",
+          "rawPath": "probes/provider/osm-way-488963703.json",
+          "sha256": "507df72b9237e82e6bbdaba4fda45deb426fa9fe9a4156986760442b8bc8929d",
+          "retrievedAt": "2026-09-18T17:21:02.338Z",
+          "sourceVersion": 4,
+          "sourceTimestamp": "2017-05-15T14:56:42Z",
+          "license": "ODbL-1.0"
+        },
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/map.json?bbox=121.4358,31.2228,121.4382,31.2254",
+          "rawPath": "probes/provider/osm-yongquan-neighborhood.json",
+          "sha256": "9db816beda3416ce23d53fd5b49d7aa9c1ea3f2aa9876a0cddfe78aa47587e3d",
+          "retrievedAt": "2026-09-18T17:21:39.342Z",
+          "license": "ODbL-1.0",
+          "role": "corroborating-lane-395-road-way-438769357"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.4361952,
+              31.2243965
+            ],
+            [
+              121.4364264,
+              31.2239238
+            ],
+            [
+              121.4369087,
+              31.2240754
+            ],
+            [
+              121.4366297,
+              31.2246397
+            ],
+            [
+              121.4361952,
+              31.2243965
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.4361952,
+        31.2239238,
+        121.4369087,
+        31.2246397
+      ],
+      "sourceTags": {
+        "boundary": "protected_area",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年55号",
+        "landuse": "residential",
+        "name": "涌泉坊",
+        "name:en": "Bubbling Well Lane",
+        "protect_class": "22",
+        "start_date": "1936"
+      }
+    },
+    {
+      "officialId": "sh-fgj-1B004-01",
+      "reason": "OSM裕华新村保护范围标注heritage:ref=1989年56号，与维基名单序号56、官网/维基裕华新村名称一致；点表示住宅群范围，不分别定位富民路178—186号或弄内楼栋。",
+      "point": {
+        "lon": 121.4466585,
+        "lat": 31.219908949999997,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-complex-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/488963281",
+        "sourceAddress": null,
+        "notes": [
+          "此点由OSM已标注建筑/住宅群的包围框中心计算，不代表门牌入口或测绘控制点。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/488963281/full.json",
+          "rawPath": "probes/provider/osm-way-488963281.json",
+          "sha256": "babc46f306dca9383113ff73466b256a4c69ab6f55c1a7f4a29474248a103b92",
+          "retrievedAt": "2026-09-18T17:21:02.338Z",
+          "sourceVersion": 5,
+          "sourceTimestamp": "2017-05-15T14:56:41Z",
+          "license": "ODbL-1.0"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.4460604,
+              31.2201027
+            ],
+            [
+              121.446865,
+              31.2203642
+            ],
+            [
+              121.4472566,
+              31.2197586
+            ],
+            [
+              121.4463419,
+              31.2194537
+            ],
+            [
+              121.4460735,
+              31.2200736
+            ],
+            [
+              121.4460604,
+              31.2201027
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.4460604,
+        31.2194537,
+        121.4472566,
+        31.2203642
+      ],
+      "sourceTags": {
+        "boundary": "protected_area",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年56号",
+        "landuse": "residential",
+        "name": "裕华新村",
+        "protect_class": "22",
+        "start_date": "1938"
+      }
+    },
+    {
+      "officialId": "sh-fgj-4F004-01",
+      "reason": "OSM建筑名称浦西公寓、旧名披亚斯公寓以及heritage:ref=4F004，与官网代码4F004及维基原名共同对应。未采用附近小浦西公寓的图书馆点。OSM heritage:operator分类文本存在误标，不用来认定保护级别。",
+      "point": {
+        "lon": 121.48260355,
+        "lat": 31.2499694,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/494546990",
+        "sourceAddress": null,
+        "notes": [
+          "此点由OSM已标注建筑/住宅群的包围框中心计算，不代表门牌入口或测绘控制点。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/494546990/full.json",
+          "rawPath": "probes/provider/osm-way-494546990.json",
+          "sha256": "8db071e7fded3d90fc5d7b57bd338cafaaaa948f6ec700adb8ff3a5f484194d7",
+          "retrievedAt": "2026-09-18T17:21:02.339Z",
+          "sourceVersion": 1,
+          "sourceTimestamp": "2017-05-19T01:22:18Z",
+          "license": "ODbL-1.0"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.4824457,
+              31.2497137
+            ],
+            [
+              121.4828447,
+              31.2497747
+            ],
+            [
+              121.4827701,
+              31.2501488
+            ],
+            [
+              121.4827138,
+              31.250197
+            ],
+            [
+              121.482663,
+              31.2502251
+            ],
+            [
+              121.4823624,
+              31.2502016
+            ],
+            [
+              121.4824457,
+              31.2497137
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        121.4823624,
+        31.2497137,
+        121.4828447,
+        31.2502251
+      ],
+      "sourceTags": {
+        "building": "yes",
+        "building:levels": "9",
+        "heritage": "4",
+        "heritage:operator": "上海全国重点文物保护单位列表",
+        "heritage:ref": "4F004",
+        "name": "浦西公寓",
+        "old_name": "披亚斯公寓",
+        "start_date": "1931"
+      }
+    },
+    {
+      "officialId": "sh-fgj-5X002-01",
+      "reason": "OSM点位朱家角天主堂完整门牌为漕河街317弄27号，与官网建筑专名和弄内门牌逐层一致；同名建筑轮廓way1281949305位于同处。避免把图书馆漕河街27号当作弄内27号。",
+      "point": {
+        "lon": 121.0475422,
+        "lat": 31.1115771,
+        "coordinateSystem": "WGS84",
+        "coordinateScope": "building-reference-point",
+        "precision": null,
+        "origin": "openstreetmap",
+        "sourceTitle": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12624958031",
+        "sourceAddress": "漕河街317弄27号",
+        "notes": [
+          "此点为OSM同名同门牌建筑参考点，源未声明测量精度。",
+          "© OpenStreetMap contributors · ODbL-1.0"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/node/12624958031.json",
+          "rawPath": "probes/provider/osm-node-12624958031.json",
+          "sha256": "a1311d8aaa39c4908d32fae4b15244e9f463b2d09065322164308824273a0f97",
+          "retrievedAt": "2026-09-18T17:21:02.339Z",
+          "sourceVersion": 2,
+          "sourceTimestamp": "2026-07-16T15:12:00Z",
+          "license": "ODbL-1.0"
+        },
+        {
+          "provider": "OpenStreetMap",
+          "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/1281949305/full.json",
+          "rawPath": "probes/provider/osm-way-1281949305.json",
+          "sha256": "075061bec6f2956ba12eba97fa77c5826e03a7b953503e1b39e593938307d0f7",
+          "retrievedAt": "2026-09-18T17:21:39.341Z",
+          "sourceVersion": 2,
+          "sourceTimestamp": "2025-03-01T22:48:28Z",
+          "license": "ODbL-1.0",
+          "role": "corroborating-same-name-building-footprint"
+        }
+      ],
+      "sourceGeometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0475422,
+          31.1115771
+        ]
+      },
+      "sourceTags": {
+        "addr:housenumber": "317弄27号",
+        "addr:street": "漕河街",
+        "amenity": "place_of_worship",
+        "name": "朱家角天主堂",
+        "religion": "christian",
+        "wikidata": "Q56272399"
+      }
+    }
+  ],
+  "reviewedAt": "2026-09-18T17:21:02.339Z"
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "sourceFile": "public/data/shanghai-excellent-historical-buildings/geocoding/library/buildings.json",
+  "sourceSha256": "ee407e4fd7d113a32ae2449b913363214e181c6d49717e5d7a924754ac714945",
+  "methodology": [
+    "逐项人工核对完整道路、门牌/弄层级、来源名称及已保存的维基续行。",
+    "匹配建筑群只允许参考点范围，不声称某一门牌能代表所有建筑的精确定位。",
+    "同名而门牌不相交、楼栋范围不明、来源跨道路复制坐标者不加入可用映射。",
+    "图书馆点位仍须由主流程检查BD-09转换、上海范围、坐标冲突；身份映射不证明坐标精度。"
+  ],
+  "overrides": [
+    {
+      "officialId": "sh-fgj-1A019-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/7ptpxdw3x8jz0whl",
+      "reason": "图书馆“华联商厦、华侨商店”与官方两项使用名称一致，南京东路620—635号范围包含官方627—635号；保持来源范围差异，仅作老、新永安公司建筑群参考点。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-1C005-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/eqf1t6f64hu1iakn",
+      "reason": "图书馆锦江饭店贵宾楼、峻岭楼对应官方锦江宾馆及峻岭公寓名称；其茂名南路87号位于维基同一保护项65—125号范围内。官方59号保留冲突，仅作相关建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2A032-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/0z2ce4rg0paqx8wd",
+      "reason": "图书馆锦江集团证券经营部与官方使用单位相符，广东路51号是官方51、59号中的明确门牌。该点作为大来大楼门址参考，不声称分别定位59号。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2C002-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/un7l2fts7gnk0ta5",
+      "reason": "培文公寓名称完全一致，图书馆淮海中路449—479号包含官方449号；范围差异保留，点位表示公寓整体参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2C007-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/7r3nmyume8ciavzo",
+      "reason": "南昌大楼名称一致，图书馆说明明确原称Astrid Apartments；茂名南路143、151号含官方143号，符合该公寓保护项。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2C009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/wyc28hqjou27c33m",
+      "reason": "图书馆凡尔登花园与官方梵尔登花园同音异字，描述及地址明确陕西南路39—45弄花园里弄；与官方39弄及维基39弄1—103号交叉，按建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2C010-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/yw7om0xrfmzi72yk",
+      "reason": "陕南村名称一致，图书馆陕西南路151—187号与维基一致，并覆盖官方157—187号；来源起号差异保留。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2B019-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/z2wknyfhyalqarld",
+      "reason": "图书馆儿童艺术剧院对应官方中福会儿童艺术剧院，华山路639、643号与官方两门牌完全一致，原顺序和分隔符不同。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2B021-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/vsscvyqmdguynm5k",
+      "reason": "景华新村/新邨为名称用字差异，图书馆与官方均明确巨鹿路820弄，沿街804—836号与官方800—818、822—836号大量交叉；按里弄整体参考，不改写范围。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2D004-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/i552u5ohprzmxn4s",
+      "reason": "上方花园名称一致；图书馆淮海中路1285弄4—77号是在官方1285弄内明确的建筑群，描述亦指该弄。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2D005-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ladjctmrc3dbpa0l",
+      "reason": "图书馆淮海大楼与官方使用名称一致，淮海中路1326号位于官方1300—1326号公寓范围末端；点位作为同名公寓门址参考。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2D008-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/3gig4zvbc84l1tky",
+      "reason": "逸村名称一致，图书馆淮海中路1610弄1—8号细化了官方1610弄；建筑群参考点不冒充某一栋。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2D017-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/t5den4dko02lboh5",
+      "reason": "建业里名称一致，图书馆建国西路440、456、496弄包含维基同一保护项440弄；官方列468弄、488弄及424—498号，与其建筑群街段有交叉但弄号不同，保留冲突，仅作建业里整体参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2F001-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/l28p1bjoxus5pu6i",
+      "reason": "图书馆黄浦路106号与官方红楼、灰楼共同门址完全相同；使用名称“海军招待所”不同，点位仅标该门址建筑群，不归为任一楼栋。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2M008-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/0vfbevbnka5yycck",
+      "reason": "市三女中使用名称及江苏路155号一致；图书馆描述包括前身中西女中，与官方身份相符，但未区分东楼/北楼，因此限定同址建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3C004-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/i8w6jjuu1l1qahx6",
+      "reason": "淮海中路538—544号及542弄在两源完全对应，仅“及”与顿号不同；泛称住宅不作为独立证据，完整门牌及弄号组合确定保护项。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3C009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/0oy5bjmloiphscsg",
+      "reason": "上海文史馆使用名称相同，思南路39—41号完整范围一致，差异仅官方两个端点各带“号”。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3B018-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/eodxffabx1hv3z1s",
+      "reason": "大华公寓名称一致，图书馆南京西路868—882号被官方864—884号范围包含；官方奉贤路另有门牌，点位仅作同名建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3B021-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/s7zg0q5yti3lh74o",
+      "reason": "中实新村名称一致，愚园路581—589号和579弄两组成部分全部相同；官方“及”前省略号字属于格式差异。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3B023-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/185xeu0g3e48pqak",
+      "reason": "念吾新村、多福里、汾阳坊三个名称组合一致，延安中路470弄及504弄完全相交；图书馆540弄与官方510弄存在第三弄号冲突，保留差异，仅作这一组建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3B024-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ycw3533fpu0xv6gj",
+      "reason": "图书馆名称明确华山医院5号楼，地址乌鲁木齐中路12号；与官方名称/地址中12号5号楼完整组合相同，未用医院泛点替代楼栋。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3D006-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/t53sbz8chtlroly4",
+      "reason": "华亭路72、74、84、86号与延庆路151—157号完整组合一致；图书馆额外76号对应维基注明2001年拆除的门牌，保留差异并仅作建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3D009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/bdmadadvrz2vaxjq",
+      "reason": "曙光公寓名称一致，淮海中路1554—1568号沿街完整范围一致；图书馆未列1562弄2—5号，点位仅作公寓整体参考。图书馆description误写青岛同名小区，不作为身份或位置证据。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3D013-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/tyu2m0pfymmel187",
+      "reason": "图书馆名称明确上海市房地产科学研究院3号楼，地址复兴西路193号；与官方楼号、单位和门址同时一致。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3D035-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/i5cpds805k7yigiy",
+      "reason": "图书馆7315厂铁柱厂房与官方解放军七三一五工厂厂房身份及龙华路2577号一致；官方另含机房、仓库等，点位仅作为其中厂房所在建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3F003-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/elz08s1ojgyl4xsk",
+      "reason": "两表均为溧阳路1084、1114、1156、1203、1208弄及完整沿街门牌组；图书馆仅数字排序和1203/1208之间少分隔符不同，未跨路或取首号。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3M009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/4pw66qvf812lb2ty",
+      "reason": "愚园路1112弄4、20号两门牌与官网完全对应，仅官网每个数字重复“号”，没有泛称名称匹配推断。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3M015-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/wqx66wi46ubitcht",
+      "reason": "新华路236、248号，272弄2、6号和294弄1号完整街道/弄/门牌组合一致，格式简写不同。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3M021-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/hhgcpl4m8vbii1vf",
+      "reason": "市信息中心1号楼及西侧住宅群名称相符；华山路1076号、1100弄、1120弄三组全部对应。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3M023-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/avf7crt4rjiegu8p",
+      "reason": "市工人疗养院使用单位及延安西路2558号一致，图书馆名称明确1—4号楼，与官方楼号范围一致。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3M031-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/34yufc1e7kak6kxo",
+      "reason": "图书馆上海市城市排水技工学校对应官方使用名称，天山路30号与维基同一保护项地址一致，官方路口描述包含该路段；仅作学校旧建筑群所在门址参考，不声称具体泵房或立面定位。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4A002-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/qar3zi0bqy0pz1kf",
+      "reason": "自来大楼名称及江西中路484号完全一致，图书馆多出的香港路口为辅助描述，不改变门牌。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4A005-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/s0glcunlh8fzt5y3",
+      "reason": "恒丰大楼/上海航道局办公用房名称完全相同，江西中路452—454号为官方450—454号范围子集；保留起号差异，点位限定同名大楼参考。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4C003-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/5alctwjxc36m8puu",
+      "reason": "国泰公寓名称一致，图书馆淮海中路816弄与官方及维基主弄号相同；官方沿街818—832、850—860号组成部分仍保留，点位仅作公寓建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4C006-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ohde1aibkmezy0cn",
+      "reason": "上海别墅名称一致，南昌路110弄完整一致，图书馆沿街112—134号包含官方112—122号；范围不同不覆盖原文。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4C007-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/5yslvyr4ofugrgww",
+      "reason": "官方花园住宅群与图书馆花园别墅类型相符，南昌路136弄、138—146号两组明确交叉；图书馆未涵盖124—134号，仅作已对上的建筑群部分参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4C010-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/dn404ty744wrzcug",
+      "reason": "钟和公寓名称一致，图书馆茂名南路112—124号被官方106—124号包含，维基也列112、124号；未推断南昌路179号的独立位置。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4B016-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/2okut4dcbhe62ckp",
+      "reason": "上海对外经济研究中心/全球经济发展中心使用名称完全一致，胶州路510号一致，图书馆另列康定路770号保留为辅助入口。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4D027-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/4qdh3v8nebcri481",
+      "reason": "图书馆衡山路300弄1—22号范围包含官方丽波花园300弄1—8号，确属同一街道、弄号及目标子范围；名称为泛称，点位只作为此弄建筑群参考，不声称第1—8号某栋。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F003-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/tcx5fdxokj3vsxf4",
+      "reason": "信谊大药厂使用名称一致，图书馆崇明路82号是官方明确列出的第二门址；官方四川北路71号1—6幢另有范围，点位只能作同一厂区建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F007-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ow5thrqeemxzxvuu",
+      "reason": "图书馆乍浦路260号与官方相同，昆山路141—177号覆盖官方141—171号并与维基范围一致；未列254弄22—27号，点位限定这一转角建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F008-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/02bllst46k0gnkxn",
+      "reason": "闵行大楼名称一致，图书馆闵行路181—201号与官方171—181、201—211号两端相交；官方峨眉路另有门牌，范围不同保留，按同名大楼整体参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/s650t5l03r42jkkb",
+      "reason": "海军托儿所使用名称一致，图书馆武进路400—412号包含官方412号，支持英华书馆门址参考。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F012-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/h8wyg1wd7l22ld8e",
+      "reason": "永丰坊名称是官方永丰坊、大德里、恒安坊中的明确成员，图书馆四川北路1515—1545弄包含官方1515及1545两弄；仅作为建筑群成员参考，不能定位每条里弄。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F021-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/t0u68i08edvtzs4f",
+      "reason": "恒丰里名称是官方恒丰里、新恒丰里中的明确成员，图书馆山阴路85弄与官方第二弄完全一致；点位为85弄成员参考，不代替69弄独立位置。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4F027-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/fftb7fapm6u0e4co",
+      "reason": "霍山路119—137号沿街范围完全一致；图书馆未细列125弄3—5号，点位仅作对应建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4G003-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/z603y7ypdg585a7x",
+      "reason": "上海怡达实业公司使用名称一致，均明确平凉路1777弄，100—149与官方100—154双号及101—141单号范围交叉；首栋55号与官方51号有差异但维基支持55号，保留冲突，只作建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4M019-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/vkqjelfaqzgtch4y",
+      "reason": "宏业花园名称一致，愚园路1088弄5—9号完全重合，图书馆104—148号与官方101—147号范围交叉；保留其他沿街号及范围差异，仅作建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4M027-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/h773p6lrkwyfj3ng",
+      "reason": "延安西路949弄25—47号范围完全一致，官方排除37号与图书馆“37号为搭建”说明相容；按该弄建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-4M035-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/mcgbtovkln1un7lz",
+      "reason": "图书馆外国弄堂新华路329弄28号名称及完整门牌与官方组成清单一项完全一致。该点明确仅作这一成员建筑/建筑群参考，不表示全部8栋位置；其余7个对应成员实体保留在复核文件members。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5A038-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/yta72fceoneh1nwh",
+      "reason": "图书馆与官方括号中福州路60、70号双门牌完全一致，主地址四川中路70号与官方200号冲突；凭明确转角双门牌确认门址关联，保留主街号差异。",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5A081-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/fcccyq4cyfqwjswj",
+      "reason": "南苏河创意园区与图书馆“南苏河”创意产业园名称相符，门牌1295—1305号完整一致；图书馆道路写“南苏州河路”较官方“南苏州路”多一河字，保留该来源差异。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5D068-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/h0osgyezpmjwh7c4",
+      "reason": "图书馆延庆路43—49号、51弄与维基一致，与官方39—49号及51弄1—26号范围交叉；点位仅作该建筑群参考，不将少列的39—41号删去。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5F038-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/fohdm4n5blpipvm6",
+      "reason": "四川北路975—987及1297—1311号两段完整一致，图书馆第二段省略重复路名；保持相隔街段的原范围，作为整项建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5W047-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/xlpol87oogi3u34b",
+      "reason": "李元庆民宅、民宅名称一致，高桥镇石家街27弄3号与季景北路608—612号两部分全部对应，差异仅双号注记。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5Y001-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/825464oviuy8tf3c",
+      "reason": "枫泾生产街70号和油车弄2号两个门牌同时一致，图书馆“2油车弄2号”含重复2的格式异常，原值保留，不创造新门牌。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-2B001-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/eykqs8xvl5wmzyma",
+      "reason": "图书馆上海皮革公司商厦、联谊俱乐部与官方列示使用单位逐一对应；南京西路722号及702号两个完整门牌均一致，差异仅分隔符，按双建筑/门址组合参考。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-3A012-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/wa8msrodbsmu6m8e",
+      "reason": "图书馆黄中大楼名称与官方对应，广东路94—102号及四川中路109号两街门牌组合完全一致；中信/懿德使用名差异保留，整体为三菱、美孚两楼保护项参考点，不按换行截取广东路首号。",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "officialId": "sh-fgj-5W037-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/0unnuotm16yiy1zj",
+      "reason": "图书馆西奚家宅名称与维基同一保护项续行明确一致，洪东街122弄及新场大街452弄完整对应维基；新场大街452弄同时与官方一致。官方洪东街118—126号与维基122弄的层级/范围差异保留，仅作奚家厅建筑群参考。",
+      "coordinateScope": "building-complex-reference-point"
+    }
+  ]
+}

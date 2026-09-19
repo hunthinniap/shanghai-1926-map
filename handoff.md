@@ -1,5 +1,55 @@
 # 上海历史地点现用途调查交接
 
+## 最新增量：2026-09-19，历史地标与优秀历史建筑共用卡片
+
+- 按用户要求合并 Nanjing Hotel／南京饭店：VS609 ↔ 第4批4A016，显示位置采用既有历史建筑WGS84点[121.47772,31.2393]；旧200 SHANSE ROAD、新山西南路182-200号及维基天津路门牌分列。原历史点和1931/1929来源年代保留。
+- 全量扫描1803个来源ID、1676个地标组、1058项名录，得到498对候选。独立复核74对，46对接入统一卡片（41建筑、4建筑群、1桥梁）；26对hold及2对范围待核不合并，其他424对未逐一人工核定。详见 [最终报告](research/rechecks/2026-09-19-heritage-landmark-links/README.md)、second-review.json与applied-links.json。
+- `src/data/heritageLandmarkLinks.ts`由已审结论生成，完整ID/唯一保护项守卫，`linkHeritageLandmarks`仅修改显示副本。两层共用同一卡片和参考点，同时打开去重；新旧名与门牌可搜索，现用途仍采用原研究字段。单栋主楼、建筑群和桥梁范围在卡片中明示。
+- App按需缓存历史建筑数据，显示地标或搜索确认关联项时亦加载；支持失败重试及取消加载。切层不重建地图，不重复回中；关闭最后一层清理选择，晚到请求不会恢复卡片。用户“显示建筑”本次按上下文理解为“显示历史建筑”，普通现代建筑轮廓开关未扩展。
+- 和平饭店南/北楼各自关联；都城饭店主楼与东楼、盖司康主楼与辅楼继续分开。548 Union Building有明确楼体/年代证据接外滩3号；551银行机构条目仍待核。汇丰1874/1923、清心堂创立/建堂年代及广学两VS竞争均保留。国际饭店873因无可用名录点未接入。
+- 验证166项测试（79＋87）、生产build及生成器--check通过；7项研究输入哈希不变，完整46关联及1803来源ID守恒通过。未运行data:build、未commit/push；保留既有未提交工作及.DS_Store。候选或输入变化需重新审阅，不可直接复用旧映射。
+
+## 最新增量：2026-09-19，郁氏山庄及类似重复地点修正
+
+- 详见 [复核报告](research/rechecks/2026-09-19-landmark-duplicates/README.md)。原Parks.dbf直接以162→1566关联Yushishanzhuang与Yu Family Tomb，门牌、始年吻合；显示统一为郁氏山庄（昧园），保留来源“郁氏山壯”及园林/墓地语义。春光坊为相关后期地境，不把其范围或华山绿地直接等同山庄。
+- 核对29个原公园面及楼表近邻名称候选，新增13组显示归并：11组公园/建筑跨表记录、2组Kelmsott/Kelmscott和Dahua/Da Wha拼写。另2组此前已归并，3组外键关联但用途不同及7组同名异址/不同设施继续分开。
+- `src/data/landmarkSiteLinks.ts`显式配置带完整来源ID守卫；`mergeLandmarkSites`在既有curated公园替换之后执行，地图和搜索共用。保留来源记录、别名、原代表几何和显式选择的既有currentUse；不凭邻近推定用途。公园替换补传来源公园ID。原GeoJSON等4项主要输入SHA不变。
+- 修复构建时1795条UTM＋8条WGS84混合单位：只投影内存副本再聚类。1803条试算仅新增359/4135与408/4154两组合并，其余1643组及241/242分离保持。未跑data:build，当前页面由显示配置去重；未来重建后，完整来源ID集合一致的已合并组仍应用规范名称与说明；缺失或新增成员时跳过。
+- 页面地标1689→1676，1803建筑来源ID无丢失无重复。149项测试（62＋87）、build和diff检查通过；浏览器已确认三个别名搜索同一卡片、一个地图标签。未commit/push。
+
+## 最新增量：2026-09-19，913项历史建筑坐标补查
+
+- 冻结原913项缺坐标目标；新增878个参考点（上海图书馆871、独立OSM 7），原100个维基点逐个保持不变，“显示历史建筑”图层现共978项。剩35项（25候选待核、10暂无可用点）；原45项维基候选未在本轮替换。
+- 图书馆接口返回1085实体，声明1086；分页集合一致，计数差异保留。发布方地图脚本证明BD-09，已保存原坐标并转换WGS84；不将小数位数视为精度保证。
+- 全913地址查询计划；82项复杂门牌人工审核、43项地址差异复核、55个独立坐标对照。跨街复制点、号/弄层级冲突及小湾区公所迁移保留待核；新乐34弄1—3 vs76—80未硬接。同址共点不借用任一楼名。
+- 数据、来源原件、SHA、35项复核清单及重建步骤见 [geocoding/README.md](public/data/shanghai-excellent-historical-buildings/geocoding/README.md)。npm新增 data:heritage:library、data:heritage:geocode 及对应validate命令；来源更新须重新审查映射SHA。
+- 卡片新增“门牌参考点”、来源门址和定位说明；上海图书馆/OSM来源分别标注。原官网与历史地图24个基线文件哈希未变。
+- 验证：140项测试（55前端＋85脚本）、build、官网/维基/图书馆/补点四项只读校验均通过；913目标、878新增、978唯一地图保护项及原100点完整性检查通过。浏览器已显示978点，并实点祥德路住宅卡片确认来源门址、建筑群范围与图书馆链接。
+
+
+## 最新增量：2026-09-19，新增“显示历史建筑”图层
+
+- 按用户要求仿照“显示地标”添加独立开关与详情卡，默认关闭。接入已筛查的100个建筑/建筑群参考点，青绿色实心/空心区分范围；独立于现代建筑轮廓、“显示地标”及地铁开关。
+- `scripts/enrich-shanghai-heritage-wikipedia.mjs`同步生成轻量 [map-buildings.geojson](public/data/shanghai-excellent-historical-buildings/map-buildings.geojson)，首次开启按需加载并缓存，失败可重试；无需下载完整研究JSON。关闭图层、Escape或选择其他地图要素会清理历史建筑详情。
+- `HeritageDetailsPanel.tsx`沿用原地标详情卡，展示批次编号、双方地址、来源记载名称/用途、建造年代、层数、结构、设计者和资料链接。建筑群范围明确注明。启用时适当扩大平移/缩放范围以访问市中心以外的参考点；未补未知坐标，未变更原历史要素几何。
+- 验证：120项测试（54前端＋66脚本）及build通过，维基数据只读校验通过；100点轻量文件与原参考点几何逐个一致。浏览器验证新图层及详情卡、Escape/开关关闭；320–1201px六种宽度顶部五按钮未横向溢出。另修正MapLibre更新筛选后`isStyleLoaded()`暂时为false导致其他图层选中效果跳过的问题，改用现有map/source判断。
+
+## 最新增量：2026-09-19，优秀历史建筑与维基名单对应
+
+- 按用户要求将房管局1058条与[维基名单](https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑)版本94231361完整一一对应。增强入口为 [buildings-enriched.json](public/data/shanghai-excellent-historical-buildings/buildings-enriched.json)，说明见 [wikipedia/README.md](public/data/shanghai-excellent-historical-buildings/wikipedia/README.md)。五批仍为61／175／162／234／426，官网原件和全部原JSON保持不变。
+- 名单补充556项建造年代、728项层数、334项结构、105项设计者文字；421项有原名称链接，共410个去重标题，全部取得，关联398个Wikidata实体与117个关联实体名称。最终API失败0；HTML/API原响应、重定向、版本、哈希与来源声明完整保存。
+- 地址优先官网，只有5D089空缺由维基“徐汇滨江公共开放空间东段”补入；291项地址写法/范围差异双源并存。第一批有61条人工对应，其余批次采用旧编号及重复/异常编号的显式对照，未把同址建筑合并。
+- 142个词条有坐标候选，筛查后 [locations.geojson](public/data/shanghai-excellent-historical-buildings/wikipedia/locations.geojson)导出100项参考点（82建筑、18建筑群）。45项只有待核候选，913项无来源坐标。机构/校园、章节链接、精度或坐标冲突不强行选点；提篮桥监狱和枕流公寓的现有坐标与名录旧址/地址不符，明确拒用。参考点不是1926年已核定位或建筑轮廓。
+- 脚本为 `collect-shanghai-heritage-wikipedia-list.mjs`、`collect-shanghai-heritage-wikipedia-details.mjs`、`enrich-shanghai-heritage-wikipedia.mjs`；人工对照与范围规则位于 `scripts/data/shanghai-heritage-wikipedia-*.json`。列表变更版本时需重审第一批映射及链接范围，不能只更新哈希跳过审核。
+- `npm run data:heritage:wikipedia`联网刷新列表并补齐缺失API缓存；`npm run data:heritage:wikipedia:offline`完全离线重建；`npm run validate:heritage:wikipedia`逐字和逐哈希只读验证。原官网验证、118项测试（52前端＋66脚本）及build通过；24个原官网/地图保护文件哈希未变。增强数据独立保存，未写入当前地图或旧research进度。
+
+## 最新增量：2026-09-18，收集房管局优秀历史建筑名单
+
+- 按用户要求新增 [public/data/shanghai-excellent-historical-buildings](public/data/shanghai-excellent-historical-buildings/README.md)，来源为房管局优秀历史建筑目录及第一至第五批名单。完整收集1058条（61／175／162／234／426），保存6个原始HTML快照、来源元数据及哈希、分批JSON、合并JSON、索引和异常清单。
+- 四列表格的原名称／原使用单位、现名称／现使用单位、地址均按来源保存；区名继承页面标题，保留原闸北区、崇明县等。现用仅是名录记载，页面更新时间2023-06-01／2023-05-29不等于批准年或今日实况。未地理编码、未修改地图。
+- 第五批重复编号5A012、5F038各两条均保留；D5035／50D80／D50102格式异常不擅改；5D089缺地址、5D095缺现用、两条含控制字符，均有标记。三条灭失脚注及2M006六个子建筑完整保留，合并空行不重复计数。
+- `npm run data:heritage` 联网刷新；加`-- --offline`按已存快照重建；`npm run validate:heritage`核对快照及全部JSON。采集为独立参考数据，未接入当前地图回填或旧research进度统计。
+
 ## 最新增量：2026-09-18，001—010复核问题已修正
 
 - 用户批准修正后，已落实此前19条需纠正、81条需补证的100条处置；详见 [修正报告](research/corrections/2026-09-18-001-010/README.md)。审查导致96条工作流内容变化，另同步2条原有生成差异，总计98条；证据缺口仍逐条记录，不等于所有地点已查明。

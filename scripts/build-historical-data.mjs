@@ -5,6 +5,7 @@ import AdmZip from 'adm-zip'
 import proj4 from 'proj4'
 import * as shapefile from 'shapefile'
 import { clusterBuildingRecords } from './lib/cluster-buildings.mjs'
+import { buildingRecordsInUtm51n } from './lib/building-cluster-coordinates.mjs'
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const cacheRoot = path.join(projectRoot, '.cache', 'historical-source')
@@ -472,7 +473,7 @@ async function loadBuildingSiteSeparations() {
 }
 
 function makeBuildings(rawRecords, sourceMetadata, siteOverrides = [], siteSeparations = []) {
-  const clustered = clusterBuildingRecords(rawRecords, {
+  const clustered = clusterBuildingRecords(buildingRecordsInUtm51n(rawRecords), {
     separateSourceRecordPairs: siteSeparations.map((separation) => separation.sourceRecordIds),
   })
   const preparedById = new Map(clustered.sourceRecords.map((record) => [String(record.recordId), record]))
@@ -617,6 +618,7 @@ function makeBuildings(rawRecords, sourceMetadata, siteOverrides = [], siteSepar
     generatedAt: new Date().toISOString(),
     source: sourceMetadata,
     rules: {
+      clusteringCoordinateSystem: 'EPSG:32651',
       numberedAddressMaximumMetres: 250,
       unnumberedAddressMaximumMetres: 30,
       semanticVariantMaximumMetres: 8,

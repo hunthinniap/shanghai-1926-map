@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-18T17:21:02.339Z",
+  "input": "library-residual-review.json records where status !== accepted-identity (23 original-913 records)",
+  "recordCount": 23,
+  "summary": {
+    "newAcceptedReferencePoints": 6,
+    "previouslyAcceptedMacau": 1,
+    "remainingWithoutAcceptedIndependentPoint": 16
+  },
+  "methodology": "One independent search pass by names and full door/lane addresses; fetch identified OSM primary features and retain raw geometry. Do not use city/road centroids, nearby buildings, campus coordinates or unverified search-only coordinates.",
+  "providerAttempts": [
+    {
+      "provider": "Overpass",
+      "method": "POST then GET for content negotiation",
+      "queryPath": "probes/provider/residual-overpass-query.txt",
+      "status": "unavailable-http-406",
+      "notes": "No bypass, authentication, or further alternate Overpass endpoint attempts."
+    },
+    {
+      "provider": "SmartShanghai",
+      "url": "https://www.smartshanghai.com/venue/20731/bubbling_well_lane",
+      "status": "waf-challenge",
+      "notes": "Stopped; did not solve or bypass challenge."
+    },
+    {
+      "provider": "OpenStreetMap API",
+      "status": "success",
+      "notes": "Read identified ways/nodes and four small bbox selections near already sourced places; no Nominatim calls."
+    }
+  ],
+  "records": [
+    {
+      "officialId": "sh-fgj-1A022-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM建筑名称上海市第一百货商店、旧名大新公司及heritage:ref=1989年16号，与维基名单同项序号16和官网历史/使用名称共同一致。使用该老楼建筑几何参考点，不采用图书馆错列南京东路330号的坐标。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/490270437/full.json",
+        "rawPath": "probes/provider/osm-way-490270437.json",
+        "sha256": "05d3723d35ee3bf7e0f9a458fef00cfea81492d7f6e69a1093ae51ca5b698d24",
+        "retrievedAt": "2026-09-18T17:21:02.336Z",
+        "sourceVersion": 10,
+        "sourceTimestamp": "2026-09-14T05:31:55Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "building": "retail",
+        "heritage": "yes",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年16号",
+        "name": "上海市第一百货商店",
+        "name:en": "Shanghai No. 1 Department Store",
+        "name:ru": "Шанхайский универмаг № 1",
+        "name:zh": "上海市第一百货商店",
+        "name:zh-Hans": "上海市第一百货商店",
+        "name:zh-Hant": "上海市第一百貨商店",
+        "old_name": "大新公司;The Sun",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "shop": "department_store",
+        "start_date": "1934",
+        "wheelchair": "limited",
+        "wikidata": "Q1874561"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/490270437"
+    },
+    {
+      "officialId": "sh-fgj-1C002-01",
+      "name": "瑞金二路住宅",
+      "address": "瑞金二路18号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索到Amap瑞金洲际酒店1号楼118号坐标与酒店整体OSM；官网18号与118号存在差异，本轮未取得同时确认老1号楼与官网保护项的独立几何，不采用酒店整体位置。"
+    },
+    {
+      "officialId": "sh-fgj-1C003-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM尚贤坊列淮海中路350弄及heritage:ref=1989年59号，与维基名单序号59、同名及350弄地址一致；官网50号原文差异保留。位置代表已识别尚贤坊整体范围，不把50号当作350弄。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/475009251/full.json",
+        "rawPath": "probes/provider/osm-way-475009251.json",
+        "sha256": "8f3135d69ecb93d02d02c6720589a394559cb5426d098b804f60a463d065d8f6",
+        "retrievedAt": "2026-09-18T17:21:02.338Z",
+        "sourceVersion": 4,
+        "sourceTimestamp": "2023-05-06T03:11:03Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "addr:housenumber": "350弄",
+        "addr:street": "淮海中路",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年59号",
+        "landuse": "residential",
+        "name": "尚贤坊",
+        "name:zh": "尚贤坊",
+        "name:zh-Hans": "尚贤坊",
+        "name:zh-Hant": "尚賢坊",
+        "start_date": "1924"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/475009251"
+    },
+    {
+      "officialId": "sh-fgj-1B003-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM涌泉坊保护范围标注heritage:ref=1989年55号，与维基名单序号55和官网涌泉坊相符；同一区域独立OSM路段way438769357标注愚园路395弄，辅证完整弄址。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/488963703/full.json",
+        "rawPath": "probes/provider/osm-way-488963703.json",
+        "sha256": "507df72b9237e82e6bbdaba4fda45deb426fa9fe9a4156986760442b8bc8929d",
+        "retrievedAt": "2026-09-18T17:21:02.338Z",
+        "sourceVersion": 4,
+        "sourceTimestamp": "2017-05-15T14:56:42Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "boundary": "protected_area",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年55号",
+        "landuse": "residential",
+        "name": "涌泉坊",
+        "name:en": "Bubbling Well Lane",
+        "protect_class": "22",
+        "start_date": "1936"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/488963703"
+    },
+    {
+      "officialId": "sh-fgj-1B004-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM裕华新村保护范围标注heritage:ref=1989年56号，与维基名单序号56、官网/维基裕华新村名称一致；点表示住宅群范围，不分别定位富民路178—186号或弄内楼栋。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/488963281/full.json",
+        "rawPath": "probes/provider/osm-way-488963281.json",
+        "sha256": "babc46f306dca9383113ff73466b256a4c69ab6f55c1a7f4a29474248a103b92",
+        "retrievedAt": "2026-09-18T17:21:02.338Z",
+        "sourceVersion": 5,
+        "sourceTimestamp": "2017-05-15T14:56:41Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "boundary": "protected_area",
+        "heritage": "4",
+        "heritage:operator": "上海市优秀历史建筑",
+        "heritage:ref": "1989年56号",
+        "landuse": "residential",
+        "name": "裕华新村",
+        "protect_class": "22",
+        "start_date": "1938"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/488963281"
+    },
+    {
+      "officialId": "sh-fgj-1F004-01",
+      "name": "多伦路250号住宅",
+      "address": "多伦路250号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "Amap检索结果给出同名多伦路250号住宅孔公馆的GCJ-02坐标，但原页面无法重新读取，附近OSM小范围未找到同门牌/保护编号要素；不把检索缓存直接升级为已核点。"
+    },
+    {
+      "officialId": "sh-fgj-2D035-01",
+      "name": "国立上海医学院",
+      "address": "东安路131号东1号楼",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索确认枫林校区有东一号楼；未取得带该楼名或楼号的独立点位，校园整体坐标不足。"
+    },
+    {
+      "officialId": "sh-fgj-3D031-01",
+      "name": "住宅",
+      "address": "安亭路130、132号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "未检出能区分安亭路130/132号住宅范围与126/130号宾馆的可信独立坐标。"
+    },
+    {
+      "officialId": "sh-fgj-3F006-01",
+      "name": "公寓",
+      "address": "昆山路227号/昆山路277号/昆山花园路1-10号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索到昆山花园路介绍与住宅照片，未取得227/277号及花园路1—10号建筑群点位；图书馆跨街复制点继续排除。"
+    },
+    {
+      "officialId": "sh-fgj-4C023-01",
+      "name": "花园住宅",
+      "address": "淮海中路796号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "完整门牌检索未提供可复查同址建筑点位。"
+    },
+    {
+      "officialId": "sh-fgj-4B025-01",
+      "name": "花园住宅",
+      "address": "陕西北路457号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "政府资料确认陕西北路457号为何东旧居/辞书出版社，但本轮未取得该建筑独立坐标，不采用其他陕西北路或出版社机构点位。"
+    },
+    {
+      "officialId": "sh-fgj-4H005-01",
+      "name": "梁氏民宅",
+      "address": "山西北路457弄61号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索确认梁氏民宅为山西北路457弄61号；未取得独立坐标以判断library452弄所给点位是否正确。"
+    },
+    {
+      "officialId": "sh-fgj-4F004-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM建筑名称浦西公寓、旧名披亚斯公寓以及heritage:ref=4F004，与官网代码4F004及维基原名共同对应。未采用附近小浦西公寓的图书馆点。OSM heritage:operator分类文本存在误标，不用来认定保护级别。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/way/494546990/full.json",
+        "rawPath": "probes/provider/osm-way-494546990.json",
+        "sha256": "8db071e7fded3d90fc5d7b57bd338cafaaaa948f6ec700adb8ff3a5f484194d7",
+        "retrievedAt": "2026-09-18T17:21:02.339Z",
+        "sourceVersion": 1,
+        "sourceTimestamp": "2017-05-19T01:22:18Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "building": "yes",
+        "building:levels": "9",
+        "heritage": "4",
+        "heritage:operator": "上海全国重点文物保护单位列表",
+        "heritage:ref": "4F004",
+        "name": "浦西公寓",
+        "old_name": "披亚斯公寓",
+        "start_date": "1931"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/494546990"
+    },
+    {
+      "officialId": "sh-fgj-4F026-01",
+      "name": "住宅",
+      "address": "霍山路71-95号，舟山路21-81号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "完整两条道路门牌组合检索没有可接受坐标；不借用附近其他霍山路保护项。"
+    },
+    {
+      "officialId": "sh-fgj-4F028-01",
+      "name": "住宅",
+      "address": "长阳路50弄15-31号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "完整弄内门牌检索没有可接受坐标；不借用62号摩西会堂。"
+    },
+    {
+      "officialId": "sh-fgj-4G001-01",
+      "name": "住宅",
+      "address": "许昌路227弄（特号、1-84号、101-104、197-201号）",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索佐证纺三小区为许昌路227弄，但未取得独立点位验证library230弄坐标。"
+    },
+    {
+      "officialId": "sh-fgj-4M012-01",
+      "name": "花园住宅",
+      "address": "愚园路749弄65号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索佐证愚园路749弄65号周佛海住宅身份，未取得独立坐标确认library745弄点位。"
+    },
+    {
+      "officialId": "sh-fgj-4M047-01",
+      "name": "花园住宅群",
+      "address": "虹桥路1650号，1590号，1648号；1652号，虹桥路1674号4号楼、3号楼",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "检索取得上海国际舞蹈中心现代剧场/园区坐标，但目标包含多个历史花园住宅门牌与楼号，未使用新剧场中心代表旧住宅群。"
+    },
+    {
+      "officialId": "sh-fgj-4N002-01",
+      "status": "previously-accepted-independent-reference",
+      "sourceUrl": "https://www.openstreetmap.org/way/495702591",
+      "reason": "Earlier reviewed OSM protected-area geometry retained."
+    },
+    {
+      "officialId": "sh-fgj-5A049-01",
+      "name": "仓库货栈/章华毛绒纺织公司上海货栈、\n中国垦业银行仓库",
+      "address": "南苏州路991号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "南苏州路991号仓库完整门牌检索未取得可核坐标；不与955号或其他同名仓库合并。"
+    },
+    {
+      "officialId": "sh-fgj-5A050-01",
+      "name": "仓库货栈/章华毛绒纺织公司上海货栈 、中国垦业银行仓库",
+      "address": "南苏州路955号",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "南苏州路955号仓库完整门牌检索未取得可核坐标；不与991号或其他同名仓库合并。"
+    },
+    {
+      "officialId": "sh-fgj-5W035-01",
+      "name": "住宅",
+      "address": "航头镇下沙街西段",
+      "status": "no-accepted-independent-coordinate-in-this-pass",
+      "reason": "下沙街452号/西段检索未取得可接受具体门牌或建筑点位。"
+    },
+    {
+      "officialId": "sh-fgj-5X002-01",
+      "status": "accepted-independent-reference",
+      "reason": "OSM点位朱家角天主堂完整门牌为漕河街317弄27号，与官网建筑专名和弄内门牌逐层一致；同名建筑轮廓way1281949305位于同处。避免把图书馆漕河街27号当作弄内27号。",
+      "sourceRef": {
+        "provider": "OpenStreetMap",
+        "fetchUrl": "https://api.openstreetmap.org/api/0.6/node/12624958031.json",
+        "rawPath": "probes/provider/osm-node-12624958031.json",
+        "sha256": "a1311d8aaa39c4908d32fae4b15244e9f463b2d09065322164308824273a0f97",
+        "retrievedAt": "2026-09-18T17:21:02.339Z",
+        "sourceVersion": 2,
+        "sourceTimestamp": "2026-07-16T15:12:00Z",
+        "license": "ODbL-1.0"
+      },
+      "sourceTags": {
+        "addr:housenumber": "317弄27号",
+        "addr:street": "漕河街",
+        "amenity": "place_of_worship",
+        "name": "朱家角天主堂",
+        "religion": "christian",
+        "wikidata": "Q56272399"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12624958031"
+    }
+  ]
+}

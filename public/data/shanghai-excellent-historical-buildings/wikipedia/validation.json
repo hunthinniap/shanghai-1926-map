@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "coverage": {
+    "officialRecords": 1058,
+    "wikipediaRecords": 1058,
+    "matchedRecords": 1058,
+    "byBatch": {
+      "1": 61,
+      "2": 175,
+      "3": 162,
+      "4": 234,
+      "5": 426
+    },
+    "recordsWithAddress": 1058,
+    "addressesFilledFromWikipedia": 1,
+    "addressDifferences": 291,
+    "recordsWithConstructionDateText": 556,
+    "recordsWithFloorsText": 728,
+    "recordsWithStructureText": 334,
+    "recordsWithDesignerText": 105,
+    "recordsWithOriginalNameArticleLinks": 421,
+    "uniqueArticleTitles": 410,
+    "articlesWithAnySourceCoordinate": 142,
+    "recordsWithReferencePoints": 978,
+    "referencePointFeatures": 978,
+    "wikipediaReferencePointFeatures": 100,
+    "addressReferencePointFeatures": 878,
+    "recordsWithOnlyCoordinateCandidates": 70,
+    "recordsWithoutSourceCoordinates": 10
+  },
+  "inputs": [
+    {
+      "file": "buildings.json",
+      "byteLength": 2130615,
+      "sha256": "03c1ec93609490b558a0c6d60648d57016bd214388c94d2bbdf56214791e62ba"
+    },
+    {
+      "file": "wikipedia/list-source.json",
+      "byteLength": 504,
+      "sha256": "5ebd3d388c17f0ea6a0ad95ecbf8480b5d2316d006d1f76fe29bc5808eebd126"
+    },
+    {
+      "file": "wikipedia/raw/list.html",
+      "byteLength": 1546256,
+      "sha256": "cb99210d8d9ea796fdb495004c3696848a10572bbccc1451b5908c24fed5b901"
+    },
+    {
+      "file": "wikipedia/article-details.json",
+      "byteLength": 871804,
+      "sha256": "f69c00c33855813f7f0dfd7d53829bf53318b5dfba522a18982ddba8bae5b318"
+    },
+    {
+      "file": "wikipedia/linked-entity-labels.json",
+      "byteLength": 64174,
+      "sha256": "79f76c9cd57c655e13598c22c150d08078837a04c31df0bee65442228e146ffe"
+    },
+    {
+      "file": "wikipedia/detail-sources.json",
+      "byteLength": 141933,
+      "sha256": "c80117ca04694ac40a615b8391278574cc6ae613697b6f01be4e696be67292e0"
+    },
+    {
+      "file": "geocoding/results.json",
+      "byteLength": 2173212,
+      "sha256": "d536ead837c7f006ecededb5d689d2cd38cb1443ff9276469d9af3281e965274"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-wikipedia-batch1.json",
+      "byteLength": 26863,
+      "sha256": "53d1b150eafca94441219bea81710b51b3717df2fb5c7f1c1057f228de7da2d9"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-wikipedia-link-scopes.json",
+      "byteLength": 44346,
+      "sha256": "55dfbdaa30b8ba751dce292904825e710aef375926e77eb0ebeb35da0efdadf6"
+    }
+  ],
+  "checks": {
+    "allOfficialRecordsMappedOnce": true,
+    "allWikipediaRecordsMappedOnce": true,
+    "articleTitleCoverageComplete": true,
+    "apiFailures": 0,
+    "sourceListHashVerified": true,
+    "outputMode": "independent-reference-dataset"
+  }
+}

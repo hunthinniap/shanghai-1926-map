@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-18T17:06:28.881Z",
+  "auditRef": "public/data/shanghai-excellent-historical-buildings/geocoding/library-coordinate-audit.json",
+  "methodology": "Only explicit reviewed exceptions. hold excludes library point from promotion; accept retains an independently corroborated address/complex reference. Existing Wikipedia points are not rewritten.",
+  "reviews": [
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/0f0tlc6iiw85yvf4",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.49113,31.270569，存在复制错点；住宅（山阴路30、44、64、112、124、132、144、156、168、180、192、208、210弄，甜爱路40、59号，山阴路2弄1-43号，四川北路2044-2058号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.49113,31.270569"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/7rmm5qrma3k0c1bl",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.49113,31.270569，存在复制错点；住宅（武进路206-296号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.49113,31.270569"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/iamk4k04yofbshk8",
+      "action": "accept",
+      "reason": "安定坊的源门牌与官网/维基同址，BD-09转换后的点距独立维基建筑群参考点20米；与昆山花园路的共享坐标视为对方复制错误，仅接受安定坊作为建筑群参考点。",
+      "evidence": [
+        {
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%AE%89%E5%AE%9A%E5%9D%8A",
+          "officialId": "sh-fgj-4M006-01",
+          "coordinateSystem": "WGS84",
+          "point": [
+            121.42568,
+            31.22202
+          ],
+          "distanceMetres": 20
+        }
+      ],
+      "sharedCoordinateGroup": "121.43692,31.226604"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/rrts5kiskr7s76qj",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.43692,31.226604，存在复制错点；住宅（昆山路227、277号，昆山花园路1-10号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.43692,31.226604"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/t63bakw2m8cjb5gf",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.44398,31.250267，存在复制错点；澳门小区（澳门路660弄1-15号、2-20号、17-25号、22-40号、27-37号、41-51号、66-80号、82-96号、229-239号、251-261号、267-277号、291-301号、307-317号、381-391号、397-407号、451-471号、479-487号、371-375号、417号、413号、449号、447号、507号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.44398,31.250267"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/gy06zcq6i2dlaubv",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.44398,31.250267，存在复制错点；浦江饭店（黄浦路15号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.44398,31.250267"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/f130sp2cgojech7o",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.4879,31.24916，存在复制错点；徐汇中学（徐镇路50号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.4879,31.24916"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/jy4dz1q7r088sew1",
+      "action": "hold",
+      "reason": "与其他道路或建筑身份的记录完全共用源坐标 121.4879,31.24916，存在复制错点；慈修庵（秦岭街15号）缺少支持此library坐标的独立定位，暂不加入新图层。",
+      "evidence": [],
+      "sharedCoordinateGroup": "121.4879,31.24916"
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/2s77usvtlp0h8ogb",
+      "action": "hold",
+      "reason": "外白渡桥的library地址只有道路名，无桥位/门牌；转换后与已收录桥梁参考点相距701米，可能误取道路中心，不新增或覆盖已有桥梁点。",
+      "evidence": [
+        {
+          "officialId": "sh-fgj-2A012-01",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%A4%96%E7%99%BD%E6%B8%A1%E6%A1%A5",
+          "distanceMetres": 701
+        }
+      ]
+    },
+    {
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/r1s3axdy0yiuk28k",
+      "action": "hold",
+      "reason": "乍浦路桥的library地址只有道路名，无桥位/门牌；转换后与已收录桥梁参考点相距488米，可能误取道路中心，不新增或覆盖已有桥梁点。",
+      "evidence": [
+        {
+          "officialId": "sh-fgj-2A013-01",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E4%B9%8D%E6%B5%A6%E8%B7%AF%E6%A1%A5",
+          "distanceMetres": 488
+        }
+      ]
+    }
+  ]
+}

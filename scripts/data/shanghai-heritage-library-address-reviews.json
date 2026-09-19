@@ -1,0 +1,1807 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-18T17:14:32.734Z",
+  "scope": "初次门牌严格匹配的43条needs-review；只接受明确门牌/镇街层级关系或独特名称与补充来源，尚不能解决的冲突保留待核。",
+  "methodology": "人工逐项核对官方、维基列表、图书馆实体门址，必要时引用公开补充资料。接受的是来源门址或建筑群参考点，不是现代建筑轮廓、入口测量或历史建筑身份全部验证。所有坐标仍须通过来源坐标系转换及独立坐标质量审核。",
+  "sourceSnapshots": [
+    {
+      "file": "public/data/shanghai-excellent-historical-buildings/buildings-enriched.json",
+      "sha256": "3e9c0c9132b0622698baa2f100c3ca92de775a384c1726d290524889a1d77e01"
+    },
+    {
+      "file": "public/data/shanghai-excellent-historical-buildings/geocoding/library/buildings.json",
+      "sha256": "ee407e4fd7d113a32ae2449b913363214e181c6d49717e5d7a924754ac714945"
+    }
+  ],
+  "summary": {
+    "reviewed": 43,
+    "accepted": 26,
+    "needsReview": 17
+  },
+  "overrides": [
+    {
+      "officialId": "sh-fgj-2A016-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/puzkweuvzekwee8g",
+      "reason": "官方明确列滇池路120号，图书馆120号实体是该官方门牌的直接参考点。初次候选的100号来自维基不同门牌，不能照抄；本次改选120号实体，仅匹配门址，不把图书馆“住宅”或维基使用单位视为建筑沿革确认。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/puzkweuvzekwee8g",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2A017-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/7swsude04cyayvou",
+      "reason": "官方仁记洋行地址为滇池路100-110号，上海市民政局专文确认仁记大楼两个入口分别为100和110号。改用图书馆滇池路100号实体作为范围内的门址参考；初次维基120号候选与此不符，不采纳。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/7swsude04cyayvou",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://mzj.sh.gov.cn/lnb-wsws/20200518/MZ_LNB12_16751.html",
+          "title": "上海市民政局：仁记洋行仁记大楼",
+          "support": "仁记大楼临塔楼入口挂滇池路100号，西端入口为110号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2C001-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/a60v0ene0uvshpac",
+      "reason": "维基公布使用名称“中环广场”与图书馆“中环广场沿街裙楼”形成独特名称对应，双方均列淮海中路375号。官方381号差异保留，仅采用中环广场沿街建筑群参考点，不据此定位原法公董局具体保留墙体。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/a60v0ene0uvshpac",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2F011-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/3f7aka0jb7s5in02",
+      "reason": "官方原名虹口救火会、公布使用名虹口消防队，与图书馆虹口消防中队具有明确机构及建筑名称关联。虹口区政府2019年建筑修缮报道明确虹口救火会位于吴淞路560号并为第二批优秀历史建筑，支持图书馆门址；官方哈尔滨路2号仍作为另一来源地址保留。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/3f7aka0jb7s5in02",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhk.gov.cn/xwzx/002003/20190322/64d5ddb4-ede9-4ecc-8278-d1f581076498.html",
+          "title": "虹口区政府：百年救火会将重现历史原貌",
+          "support": "明确吴淞路560号为虹口救火会、第二批优秀历史建筑，使用单位是虹口消防中队。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-3A021-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/fvld46tfqxwqedc1",
+      "reason": "图书馆“市八中学”对应官方公布使用名称“上海市第八中学”，维基亦列陆家浜路650号。黄浦区政府活动文件记载市八中学气象站在650号，可作为学校范围参考点；官网550号差异保留，尚不指向校园中特定清心女中旧楼。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/fvld46tfqxwqedc1",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhuangpu.gov.cn/main/f2cb5b37-f636-4f77-acec-53e5d4f33627/c0bf4a00-d6d1-4688-bec2-2c901ea1fae3/2024%E5%B9%B4%E9%BB%84%E6%B5%A6%E5%8C%BA%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E6%9A%91%E6%9C%9F%E6%B4%BB%E5%8A%A8%E9%A1%B9%E7%9B%AE.pdf",
+          "title": "2024年黄浦区未成年人暑期活动项目",
+          "support": "市八中学气象站地址为陆家浜路650号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-3C005-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/xde8xeagdd6wc5uk",
+      "reason": "政府采购文件将编号3C005、法租界霞飞路巡捕房和淮海中路235号列在同一行，直接支持维基与图书馆门址。官方217、233号及嵩山路65、67号仍保留，不覆盖来源差异。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/xde8xeagdd6wc5uk",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/be554855-1e89-466e-9697-66a0352f417a.pdf",
+          "title": "黄浦区优秀历史建筑相关采购文件 SHXM-01-20230412-1040",
+          "support": "编号3C005对应法租界霞飞路巡捕房及淮海中路235号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4A020-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u",
+      "reason": "官方公布使用名称上海外滩花园酒店由黄浦区公共场所监督抽查资料明确对应汉口路210号，与图书馆及维基门址一致。官网200号差异保留；图书馆使用名称不同不用于推定今日用途。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhuangpu.gov.cn/uploadfile/9f1c0d15-7116-416c-8303-6c66cec87af2/2020%E5%B9%B4%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%BB%84%E6%B5%A6%E5%8C%BA%E5%85%AC%E5%85%B1%E5%9C%BA%E6%89%80%E9%9A%8F%E6%9C%BA%E7%9B%91%E7%9D%A3%E6%8A%BD%E6%9F%A5%E7%BB%93%E6%9E%9C.pdf",
+          "title": "2020年上海市黄浦区公共场所随机监督抽查结果",
+          "support": "上海外滩花园酒店列为汉口路210号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5A033-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/575ep4z0r23mf24y",
+      "reason": "应公馆独特名称已有实地叙述资料同时联系338号北楼与288弄底南楼；上海广播电视台看看新闻亦把应公馆定位在凤阳路288弄内。图书馆288弄点只作为同一宅院的建筑群参考，不能混同北楼与南楼的门牌。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/575ep4z0r23mf24y",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.kankanews.com/detail/D1yp40R1Dym",
+          "title": "看看新闻：因热播剧《安家》而闻名的凤阳路应公馆",
+          "support": "报道应公馆位于凤阳路288弄内。"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_6379178",
+          "title": "外滩以西：向公馆成网红，第一个向世界报道应公馆的历史学者是谁",
+          "support": "作者的实地叙述区分338号北楼与288弄底南楼，两者属于应公馆。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D018-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj",
+      "reason": "官方武康路374、376号明确包括376号；图书馆及维基都列376号。采用其中一个门牌参考点，不将该单点解释为同时覆盖374号建筑轮廓。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D110-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/idywyq2aaqcw2j24",
+      "reason": "图书馆延庆路82号是官方80、82、84号门牌列表中的明确子项；采用82号的门址参考点，不推定整组建筑中心。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/idywyq2aaqcw2j24",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5F025-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/p8pygzp7ww7ebk8a",
+      "reason": "官方除三组弄内门牌外，还明确包括四川北路2305-2345单号；图书馆2305、2325、2345号均为该范围内奇数门牌。采用这组沿街建筑的群参考点，不能冒充2299/2319/2339弄内每栋位置。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/p8pygzp7ww7ebk8a",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W006-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/tehpgwapjzqqjvpg",
+      "reason": "官方三林镇长清路2315号与图书馆三林塘古镇长清路2315号的道路及完整门牌一致，差别在镇名描述前缀；作为2315号门址参考，不推断敬老院内单栋建筑。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/tehpgwapjzqqjvpg",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W009-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/wrjlsr1j42g6aeg8",
+      "reason": "去除“新场镇/新场古镇”前缀后，图书馆新场大街171-173号是官方169-173号单号列表中的门牌子集；采用子集门址的参考位置。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/wrjlsr1j42g6aeg8",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W010-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/rew5ukyaaydv3wti",
+      "reason": "图书馆永春西二路66号与官方大团镇永春西二路66-70号双号范围具有明确门牌包含关系，仅镇前缀省略；采用66号参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/rew5ukyaaydv3wti",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W011-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/yvhyqcoewsjtt3j3",
+      "reason": "官方三林镇东林街65弄7号与图书馆三林塘古镇东林街65弄7号的完整弄/号层级相同；张氏宅与张氏家宅亦提供名称佐证。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/yvhyqcoewsjtt3j3",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W012-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/oa0iiqxthotmc7ff",
+      "reason": "官方三林镇中林街131弄5号与图书馆三林塘古镇中林街131弄5号的道路、弄、号完全相同，只有镇描述前缀不同；采用完整门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/oa0iiqxthotmc7ff",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W013-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/7xcff1mmhsck4u01",
+      "reason": "官方连宏生宅与图书馆连宏生民宅为独特名称对应，门牌同为合庆镇华星村67号；浦东政府采购清单明确5W013连宏生宅在华星村七队67号，支持图书馆地址，并保留官方连家宅表述。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/7xcff1mmhsck4u01",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/794a7383-2f8b-426c-91b5-d316e6906fd1.pdf",
+          "title": "浦东优秀历史建筑年度定期调查评估采购文件",
+          "support": "编号5W013、合庆镇、连宏生宅、华星村七队67号在同一行。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W018-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ad8hz5idcf26nmpe",
+      "reason": "官方川沙镇北城壕路64号与图书馆川沙古镇北城壕路64号完全同门牌，仅镇前缀不同；采用64号参考位置。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ad8hz5idcf26nmpe",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W022-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/8nfjiidyjjtfy7p4",
+      "reason": "图书馆中林街66号与官方三林镇中林街66号同门牌，且“松庐（庞宅）”同时对应官方庞松舟住宅与松庐独特名称；采用门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/8nfjiidyjjtfy7p4",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W025-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/6wgs4ul1hwuu7ggh",
+      "reason": "图书馆北城壕路84-86号与官方川沙镇北城壕路84-88号双号范围明确重叠84、86号，镇前缀省略不改变门牌；作为该建筑组的参考点，不代表以道堂、以德堂各自中心。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/6wgs4ul1hwuu7ggh",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W031-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/bwchnwk7z7bc2rgs",
+      "reason": "图书馆下沙街221-223号落在官方航头镇下沙街219-223单号范围内，具有明确221、223门牌子集关系；采用该范围的门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/bwchnwk7z7bc2rgs",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W033-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/pl0fnwp7w87c252m",
+      "reason": "图书馆永春北路141号是官方大团镇永春北路139-143单号范围的明确中间门牌，镇前缀省略；采用141号门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/pl0fnwp7w87c252m",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W036-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/ii510ak8rlmobrij",
+      "reason": "图书馆江东路33弄2号与官方张江镇江东路33弄2号完整弄/号一致；图书馆使用单位名还明确张江镇，补足省略的镇前缀，采用该门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ii510ak8rlmobrij",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5Z002-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/v5uww72kt44vqvhu",
+      "reason": "图书馆青村镇中街18弄2-3号为官方18弄1-4号的子集，10弄9-12号则完全一致；是明确同道路、同弄、同内部门牌组成。采用群参考点，不定位官网额外列出的20-26号每栋建筑。",
+      "coordinateScope": "building-complex-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/v5uww72kt44vqvhu",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X001-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/8o1n4z7x6rc6x2eg",
+      "reason": "官方朱家角镇胜利街239弄7号与图书馆朱家角古镇胜利街239弄7号完整门牌一致，且同名仲宅；只有镇/古镇前缀差异。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/8o1n4z7x6rc6x2eg",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X013-01",
+      "libraryUri": "http://data.library.sh.cn/entity/architecture/hxwrdxbubmwken4e",
+      "reason": "官方重固镇通波塘西街53号与图书馆重固古镇通波塘西街53号道路及完整门牌相同，只有镇/古镇前缀差异；采用53号门址参考点。",
+      "coordinateScope": "address-reference-point",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/hxwrdxbubmwken4e",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "officialId": "sh-fgj-2A016-01",
+      "officialCodeRaw": "2A016",
+      "officialName": "洋 行",
+      "officialAddress": "滇池路120号，四川中路444-464号（双号）",
+      "wikipediaAddress": "滇池路100号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/7swsude04cyayvou"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/puzkweuvzekwee8g",
+      "libraryName": "住宅",
+      "libraryAddress": "滇池路120号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方明确列滇池路120号，图书馆120号实体是该官方门牌的直接参考点。初次候选的100号来自维基不同门牌，不能照抄；本次改选120号实体，仅匹配门址，不把图书馆“住宅”或维基使用单位视为建筑沿革确认。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/puzkweuvzekwee8g",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2A017-01",
+      "officialCodeRaw": "2A017",
+      "officialName": "仁记洋行",
+      "officialAddress": "滇池路100-110号",
+      "wikipediaAddress": "滇池路120号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/puzkweuvzekwee8g"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/7swsude04cyayvou",
+      "libraryName": "上海海运服务有限公司等",
+      "libraryAddress": "滇池路100号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方仁记洋行地址为滇池路100-110号，上海市民政局专文确认仁记大楼两个入口分别为100和110号。改用图书馆滇池路100号实体作为范围内的门址参考；初次维基120号候选与此不符，不采纳。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/7swsude04cyayvou",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://mzj.sh.gov.cn/lnb-wsws/20200518/MZ_LNB12_16751.html",
+          "title": "上海市民政局：仁记洋行仁记大楼",
+          "support": "仁记大楼临塔楼入口挂滇池路100号，西端入口为110号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2C001-01",
+      "officialCodeRaw": "2C001",
+      "officialName": "法公董局",
+      "officialAddress": "淮海中路381号",
+      "wikipediaAddress": "淮海中路375号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/a60v0ene0uvshpac"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/a60v0ene0uvshpac",
+      "libraryName": "中环广场沿街裙楼",
+      "libraryAddress": "淮海中路375号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "维基公布使用名称“中环广场”与图书馆“中环广场沿街裙楼”形成独特名称对应，双方均列淮海中路375号。官方381号差异保留，仅采用中环广场沿街建筑群参考点，不据此定位原法公董局具体保留墙体。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/a60v0ene0uvshpac",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2B008-01",
+      "officialCodeRaw": "2B008",
+      "officialName": "住宅",
+      "officialAddress": "延安中路955弄（1-11号）",
+      "wikipediaAddress": "延安中路931～979号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/mqh6cj8tf7ww30hy"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/mqh6cj8tf7ww30hy",
+      "libraryName": "住宅",
+      "libraryAddress": "延安中路931-979号",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "图书馆沿街931-979号的范围虽然跨过955，但官方保护对象明确是955弄1-11号。两边仅同为“住宅”，不能证明范围点对应该弄内建筑；保留候选，不把同一街段视为同一院落。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/mqh6cj8tf7ww30hy",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2F011-01",
+      "officialCodeRaw": "2F011",
+      "officialName": "虹口救火会",
+      "officialAddress": "哈尔滨路2号",
+      "wikipediaAddress": "吴淞路560号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/3f7aka0jb7s5in02"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/3f7aka0jb7s5in02",
+      "libraryName": "虹口消防中队",
+      "libraryAddress": "吴淞路560号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方原名虹口救火会、公布使用名虹口消防队，与图书馆虹口消防中队具有明确机构及建筑名称关联。虹口区政府2019年建筑修缮报道明确虹口救火会位于吴淞路560号并为第二批优秀历史建筑，支持图书馆门址；官方哈尔滨路2号仍作为另一来源地址保留。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/3f7aka0jb7s5in02",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhk.gov.cn/xwzx/002003/20190322/64d5ddb4-ede9-4ecc-8278-d1f581076498.html",
+          "title": "虹口区政府：百年救火会将重现历史原貌",
+          "support": "明确吴淞路560号为虹口救火会、第二批优秀历史建筑，使用单位是虹口消防中队。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-3A021-01",
+      "officialCodeRaw": "3A021",
+      "officialName": "清心女中",
+      "officialAddress": "陆家浜路550号",
+      "wikipediaAddress": "陆家浜路650号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/fvld46tfqxwqedc1"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/fvld46tfqxwqedc1",
+      "libraryName": "市八中学",
+      "libraryAddress": "陆家浜路650号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "图书馆“市八中学”对应官方公布使用名称“上海市第八中学”，维基亦列陆家浜路650号。黄浦区政府活动文件记载市八中学气象站在650号，可作为学校范围参考点；官网550号差异保留，尚不指向校园中特定清心女中旧楼。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/fvld46tfqxwqedc1",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhuangpu.gov.cn/main/f2cb5b37-f636-4f77-acec-53e5d4f33627/c0bf4a00-d6d1-4688-bec2-2c901ea1fae3/2024%E5%B9%B4%E9%BB%84%E6%B5%A6%E5%8C%BA%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E6%9A%91%E6%9C%9F%E6%B4%BB%E5%8A%A8%E9%A1%B9%E7%9B%AE.pdf",
+          "title": "2024年黄浦区未成年人暑期活动项目",
+          "support": "市八中学气象站地址为陆家浜路650号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-3C005-01",
+      "officialCodeRaw": "3C005",
+      "officialName": "法租界霞飞路巡捕房",
+      "officialAddress": "淮海中路217、233号，嵩山路65、67号",
+      "wikipediaAddress": "淮海中路235号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/xde8xeagdd6wc5uk"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/xde8xeagdd6wc5uk",
+      "libraryName": "卢湾区职业教育中心",
+      "libraryAddress": "淮海中路235号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "政府采购文件将编号3C005、法租界霞飞路巡捕房和淮海中路235号列在同一行，直接支持维基与图书馆门址。官方217、233号及嵩山路65、67号仍保留，不覆盖来源差异。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/xde8xeagdd6wc5uk",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/be554855-1e89-466e-9697-66a0352f417a.pdf",
+          "title": "黄浦区优秀历史建筑相关采购文件 SHXM-01-20230412-1040",
+          "support": "编号3C005对应法租界霞飞路巡捕房及淮海中路235号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4A020-01",
+      "officialCodeRaw": "4A020",
+      "officialName": "花园住宅",
+      "officialAddress": "汉口路200号",
+      "wikipediaAddress": "汉口路210号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u",
+      "libraryName": "上海市公安机关服务中心",
+      "libraryAddress": "汉口路210号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方公布使用名称上海外滩花园酒店由黄浦区公共场所监督抽查资料明确对应汉口路210号，与图书馆及维基门址一致。官网200号差异保留；图书馆使用名称不同不用于推定今日用途。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/mudr4zzek7d1n88u",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.shhuangpu.gov.cn/uploadfile/9f1c0d15-7116-416c-8303-6c66cec87af2/2020%E5%B9%B4%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%BB%84%E6%B5%A6%E5%8C%BA%E5%85%AC%E5%85%B1%E5%9C%BA%E6%89%80%E9%9A%8F%E6%9C%BA%E7%9B%91%E7%9D%A3%E6%8A%BD%E6%9F%A5%E7%BB%93%E6%9E%9C.pdf",
+          "title": "2020年上海市黄浦区公共场所随机监督抽查结果",
+          "support": "上海外滩花园酒店列为汉口路210号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5A033-01",
+      "officialCodeRaw": "5A033",
+      "officialName": "应公馆",
+      "officialAddress": "凤阳路338弄",
+      "wikipediaAddress": "凤阳路288弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/575ep4z0r23mf24y"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/575ep4z0r23mf24y",
+      "libraryName": "住宅",
+      "libraryAddress": "凤阳路288弄",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "应公馆独特名称已有实地叙述资料同时联系338号北楼与288弄底南楼；上海广播电视台看看新闻亦把应公馆定位在凤阳路288弄内。图书馆288弄点只作为同一宅院的建筑群参考，不能混同北楼与南楼的门牌。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/575ep4z0r23mf24y",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.kankanews.com/detail/D1yp40R1Dym",
+          "title": "看看新闻：因热播剧《安家》而闻名的凤阳路应公馆",
+          "support": "报道应公馆位于凤阳路288弄内。"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_6379178",
+          "title": "外滩以西：向公馆成网红，第一个向世界报道应公馆的历史学者是谁",
+          "support": "作者的实地叙述区分338号北楼与288弄底南楼，两者属于应公馆。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D003-01",
+      "officialCodeRaw": "5D003",
+      "officialName": "住宅",
+      "officialAddress": "高安路60号",
+      "wikipediaAddress": "高安路60弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/3w4bclzniogbutdd"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/3w4bclzniogbutdd",
+      "libraryName": "住宅",
+      "libraryAddress": "高安路60弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方高安路60号与图书馆高安路60弄存在独立门牌/弄入口层级冲突，双方仅称住宅；尚无证据证明坐标落在受保护的60号建筑，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/3w4bclzniogbutdd",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D018-01",
+      "officialCodeRaw": "5D018",
+      "officialName": "住宅",
+      "officialAddress": "武康路374、376号",
+      "wikipediaAddress": "武康路376号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj",
+      "libraryName": "住宅",
+      "libraryAddress": "武康路376号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方武康路374、376号明确包括376号；图书馆及维基都列376号。采用其中一个门牌参考点，不将该单点解释为同时覆盖374号建筑轮廓。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D023-01",
+      "officialCodeRaw": "5D023",
+      "officialName": "住宅",
+      "officialAddress": "襄阳南路364号",
+      "wikipediaAddress": "襄阳南路364弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/fbr4heyxtqmcu8c8"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/fbr4heyxtqmcu8c8",
+      "libraryName": "住宅",
+      "libraryAddress": "襄阳南路364弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方襄阳南路364号与图书馆364弄仅数字相同、门牌层级不同，且无独特建筑名称。保留来源差异，需门牌照片或建筑资料进一步确认。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/fbr4heyxtqmcu8c8",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D026-01",
+      "officialCodeRaw": "5D026",
+      "officialName": "住宅",
+      "officialAddress": "东平路1号",
+      "wikipediaAddress": "东平路1弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/3dsq0ukadka1ehwe"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/3dsq0ukadka1ehwe",
+      "libraryName": "住宅",
+      "libraryAddress": "东平路1弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方及房管局修缮新闻均称东平路1号；图书馆1弄仍只有泛称住宅。其他资料支持1号的存在，但不能独立证明1弄实体点就是1号建筑，暂不接受。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/3dsq0ukadka1ehwe",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://fgj.sh.gov.cn/gzdt/20220713/1e4d7072d82d45ce935c51a6c66e2b0c.html",
+          "title": "上海市房管局：2022年上半年白玉兰奖历史建筑工程现场检查",
+          "support": "列有东平路1号优秀历史保护建筑修缮工程，没有确认东平路1弄。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D027-01",
+      "officialCodeRaw": "5D027",
+      "officialName": "住宅",
+      "officialAddress": "建国西路629号",
+      "wikipediaAddress": "建国西路629弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/r77k6ovqqnmnl2bt"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/r77k6ovqqnmnl2bt",
+      "libraryName": "住宅",
+      "libraryAddress": "建国西路629弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方及中国政府采购网均把市立幼儿园列在建国西路629号；图书馆却为629弄且名称仅住宅。园区身份与图书馆实体未得到独特名称佐证，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/r77k6ovqqnmnl2bt",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202604/t20260428_26469545.htm",
+          "title": "中国政府采购网：物业管理服务（建国西路629号）成交公告",
+          "support": "2026年采购人上海市市立幼儿园地址为建国西路629号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D038-01",
+      "officialCodeRaw": "5D038",
+      "officialName": "住宅",
+      "officialAddress": "乌鲁木齐路180、182号",
+      "wikipediaAddress": "乌鲁木齐路180-182弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/bpw5aj586epa7h2f"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/bpw5aj586epa7h2f",
+      "libraryName": "住宅",
+      "libraryAddress": "乌鲁木齐路180-182弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方乌鲁木齐路180、182号与图书馆180-182弄有门牌单位差异；路名还没有中路/南路限定。泛称住宅不足以解决这两层歧义，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/bpw5aj586epa7h2f",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D039-01",
+      "officialCodeRaw": "5D039",
+      "officialName": "住宅",
+      "officialAddress": "高安路77号",
+      "wikipediaAddress": "高安路77弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/aji6t83zrcapc8hz"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/aji6t83zrcapc8hz",
+      "libraryName": "住宅",
+      "libraryAddress": "高安路77弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方高安路77号与图书馆77弄的门牌层级不同；同数字和住宅泛称不足以确认同一建筑，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/aji6t83zrcapc8hz",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D095-01",
+      "officialCodeRaw": "5D095",
+      "officialName": "住宅",
+      "officialAddress": "淮海中路 1222-1238号 （双号）",
+      "wikipediaAddress": "淮海中路1230弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/flu5ojc2ti4g40my"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/flu5ojc2ti4g40my",
+      "libraryName": "住宅",
+      "libraryAddress": "淮海中路1230弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方淮海中路1222-1238双号包含1230这个沿街门牌，但图书馆列1230弄，未明确是沿街建筑还是弄内住宅。无独特名称佐证，不把号码范围重叠当作身份已核实。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/flu5ojc2ti4g40my",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D097-01",
+      "officialCodeRaw": "5D097",
+      "officialName": "住宅",
+      "officialAddress": "永嘉路588-590号（双号）",
+      "wikipediaAddress": "永嘉路590弄、永嘉路588弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/4awj7ojo07e21jmd"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/4awj7ojo07e21jmd",
+      "libraryName": "住宅",
+      "libraryAddress": "永嘉路590弄、永嘉路588弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方明确为永嘉路588-590双号两栋东湖双拥小区建筑，图书馆列588弄与590弄且仅名住宅。2024年徐汇政府采购清单继续使用588-590号；保留层级冲突，不把两个弄入口直接充当两栋受保护建筑。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/4awj7ojo07e21jmd",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/346c78ae-56ba-4639-9bf3-7b31ed61e6f3.pdf",
+          "title": "徐汇区政府采购招标文件 徐采中招2024-190",
+          "support": "5D097东湖双拥小区位于永嘉路588-590号（双号），幢数2。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D100-01",
+      "officialCodeRaw": "5D100",
+      "officialName": "住宅",
+      "officialAddress": "陕西南路214号",
+      "wikipediaAddress": "陕西南路214弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/e7lquokdw3ugsreh"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/e7lquokdw3ugsreh",
+      "libraryName": "住宅",
+      "libraryAddress": "陕西南路214弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方陕西南路214号、长乐坊与图书馆214弄、住宅之间存在门牌层级及名称差异，没有独立资料确认该图书馆弄内点对应官方214号，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/e7lquokdw3ugsreh",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D103-01",
+      "officialCodeRaw": "5D103",
+      "officialName": "住宅",
+      "officialAddress": "襄阳南路313号",
+      "wikipediaAddress": "襄阳南路313弄",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/5xn0cj87hu6703qu"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/5xn0cj87hu6703qu",
+      "libraryName": "住宅",
+      "libraryAddress": "襄阳南路313弄",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方襄阳南路313号、住宅局部办公与图书馆313弄住宅存在门牌层级差异。徐汇2024年采购资料仍列313号一栋建筑，不能直接扩大成313弄，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/5xn0cj87hu6703qu",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/346c78ae-56ba-4639-9bf3-7b31ed61e6f3.pdf",
+          "title": "徐汇区政府采购招标文件 徐采中招2024-190",
+          "support": "5D103为襄阳南路313号一栋住宅、局部办公建筑。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D110-01",
+      "officialCodeRaw": "5D110",
+      "officialName": "住宅",
+      "officialAddress": "延庆路80、82、84号",
+      "wikipediaAddress": "延庆路82号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/idywyq2aaqcw2j24"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/idywyq2aaqcw2j24",
+      "libraryName": "住宅",
+      "libraryAddress": "延庆路82号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆延庆路82号是官方80、82、84号门牌列表中的明确子项；采用82号的门址参考点，不推定整组建筑中心。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/idywyq2aaqcw2j24",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5F025-01",
+      "officialCodeRaw": "5F025",
+      "officialName": "住宅",
+      "officialAddress": "四川北路2299弄（1-3号）、2319弄（1-3号）、2339弄（1-3号）、2305-2345号（单号）",
+      "wikipediaAddress": "四川北路2305号，2325号，2345号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/p8pygzp7ww7ebk8a"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/p8pygzp7ww7ebk8a",
+      "libraryName": "住宅",
+      "libraryAddress": "四川北路2305号，2325号，2345号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "官方除三组弄内门牌外，还明确包括四川北路2305-2345单号；图书馆2305、2325、2345号均为该范围内奇数门牌。采用这组沿街建筑的群参考点，不能冒充2299/2319/2339弄内每栋位置。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/p8pygzp7ww7ebk8a",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W006-01",
+      "officialCodeRaw": "5W006",
+      "officialName": "花园住宅",
+      "officialAddress": "三林镇长清路2315号",
+      "wikipediaAddress": "三林塘古镇长清路2315号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/tehpgwapjzqqjvpg"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/tehpgwapjzqqjvpg",
+      "libraryName": "住宅",
+      "libraryAddress": "三林塘古镇长清路2315号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方三林镇长清路2315号与图书馆三林塘古镇长清路2315号的道路及完整门牌一致，差别在镇名描述前缀；作为2315号门址参考，不推断敬老院内单栋建筑。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/tehpgwapjzqqjvpg",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W009-01",
+      "officialCodeRaw": "5W009",
+      "officialName": "裕大南货店",
+      "officialAddress": "新场镇新场大街169-173号(单号)",
+      "wikipediaAddress": "新场古镇新场大街171-173号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/wrjlsr1j42g6aeg8"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/wrjlsr1j42g6aeg8",
+      "libraryName": "民宅",
+      "libraryAddress": "新场古镇新场大街171-173号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "去除“新场镇/新场古镇”前缀后，图书馆新场大街171-173号是官方169-173号单号列表中的门牌子集；采用子集门址的参考位置。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/wrjlsr1j42g6aeg8",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W010-01",
+      "officialCodeRaw": "5W010",
+      "officialName": "住宅",
+      "officialAddress": "大团镇永春西二路66-70号(双号)",
+      "wikipediaAddress": "永春西二路66号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/rew5ukyaaydv3wti"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/rew5ukyaaydv3wti",
+      "libraryName": "民宅",
+      "libraryAddress": "永春西二路66号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆永春西二路66号与官方大团镇永春西二路66-70号双号范围具有明确门牌包含关系，仅镇前缀省略；采用66号参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/rew5ukyaaydv3wti",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W011-01",
+      "officialCodeRaw": "5W011",
+      "officialName": "张氏宅",
+      "officialAddress": "三林镇东林街65弄7号",
+      "wikipediaAddress": "三林塘古镇东林街65弄7号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/yvhyqcoewsjtt3j3"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/yvhyqcoewsjtt3j3",
+      "libraryName": "张氏家宅",
+      "libraryAddress": "三林塘古镇东林街65弄7号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方三林镇东林街65弄7号与图书馆三林塘古镇东林街65弄7号的完整弄/号层级相同；张氏宅与张氏家宅亦提供名称佐证。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/yvhyqcoewsjtt3j3",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W012-01",
+      "officialCodeRaw": "5W012",
+      "officialName": "住宅",
+      "officialAddress": "三林镇中林街131弄5号",
+      "wikipediaAddress": "三林塘古镇中林街131弄5号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/oa0iiqxthotmc7ff"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/oa0iiqxthotmc7ff",
+      "libraryName": "民宅",
+      "libraryAddress": "三林塘古镇中林街131弄5号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方三林镇中林街131弄5号与图书馆三林塘古镇中林街131弄5号的道路、弄、号完全相同，只有镇描述前缀不同；采用完整门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/oa0iiqxthotmc7ff",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W013-01",
+      "officialCodeRaw": "5W013",
+      "officialName": "连宏生宅",
+      "officialAddress": "合庆镇华星村连家宅67号",
+      "wikipediaAddress": "合庆镇华星村七队67号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/7xcff1mmhsck4u01"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/7xcff1mmhsck4u01",
+      "libraryName": "连宏生民宅",
+      "libraryAddress": "合庆镇华星村七队67号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方连宏生宅与图书馆连宏生民宅为独特名称对应，门牌同为合庆镇华星村67号；浦东政府采购清单明确5W013连宏生宅在华星村七队67号，支持图书馆地址，并保留官方连家宅表述。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/7xcff1mmhsck4u01",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/794a7383-2f8b-426c-91b5-d316e6906fd1.pdf",
+          "title": "浦东优秀历史建筑年度定期调查评估采购文件",
+          "support": "编号5W013、合庆镇、连宏生宅、华星村七队67号在同一行。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W014-01",
+      "officialCodeRaw": "5W014",
+      "officialName": "民宅",
+      "officialAddress": "高桥镇西街173弄（1-3号）、西街175-181号（单号）",
+      "wikipediaAddress": "高桥西街185号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/sqcf0kpesybinlwg"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/sqcf0kpesybinlwg",
+      "libraryName": "民宅",
+      "libraryAddress": "高桥西街185号",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方西街173弄1-3号、175-181单号与图书馆高桥西街185号无门牌交集，图书馆仅为民宅。采购资料仍将5W014钱慧安纪念馆/高桥书画院列于173弄及175-181号，未证明185号为另一入口，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/sqcf0kpesybinlwg",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/794a7383-2f8b-426c-91b5-d316e6906fd1.pdf",
+          "title": "浦东优秀历史建筑年度定期调查评估采购文件",
+          "support": "5W014钱慧安纪念馆、高桥书画院地址为西街173弄1-3号及175-181号。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W018-01",
+      "officialCodeRaw": "5W018",
+      "officialName": "三德堂、崇德堂",
+      "officialAddress": "川沙镇北城壕路64号",
+      "wikipediaAddress": "川沙古镇北城壕路64号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/ad8hz5idcf26nmpe"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/ad8hz5idcf26nmpe",
+      "libraryName": "民宅",
+      "libraryAddress": "川沙古镇北城壕路64号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方川沙镇北城壕路64号与图书馆川沙古镇北城壕路64号完全同门牌，仅镇前缀不同；采用64号参考位置。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ad8hz5idcf26nmpe",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W022-01",
+      "officialCodeRaw": "5W022",
+      "officialName": "庞松舟住宅",
+      "officialAddress": "三林镇中林街66号",
+      "wikipediaAddress": "中林街66号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/8nfjiidyjjtfy7p4"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/8nfjiidyjjtfy7p4",
+      "libraryName": "松庐（庞宅）",
+      "libraryAddress": "中林街66号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆中林街66号与官方三林镇中林街66号同门牌，且“松庐（庞宅）”同时对应官方庞松舟住宅与松庐独特名称；采用门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/8nfjiidyjjtfy7p4",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W025-01",
+      "officialCodeRaw": "5W025",
+      "officialName": "以道堂、以德堂",
+      "officialAddress": "川沙镇北城壕路84-88号（双号）",
+      "wikipediaAddress": "北城壕路84-86号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/6wgs4ul1hwuu7ggh"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/6wgs4ul1hwuu7ggh",
+      "libraryName": "住宅",
+      "libraryAddress": "北城壕路84-86号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "图书馆北城壕路84-86号与官方川沙镇北城壕路84-88号双号范围明确重叠84、86号，镇前缀省略不改变门牌；作为该建筑组的参考点，不代表以道堂、以德堂各自中心。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/6wgs4ul1hwuu7ggh",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W031-01",
+      "officialCodeRaw": "5W031",
+      "officialName": "住宅",
+      "officialAddress": "航头镇下沙街219-223号（单号）",
+      "wikipediaAddress": "下沙街221-223号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/bwchnwk7z7bc2rgs"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/bwchnwk7z7bc2rgs",
+      "libraryName": "住宅",
+      "libraryAddress": "下沙街221-223号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆下沙街221-223号落在官方航头镇下沙街219-223单号范围内，具有明确221、223门牌子集关系；采用该范围的门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/bwchnwk7z7bc2rgs",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W033-01",
+      "officialCodeRaw": "5W033",
+      "officialName": "住宅",
+      "officialAddress": "大团镇永春北路139-143号（单号）",
+      "wikipediaAddress": "永春北路141号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/pl0fnwp7w87c252m"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/pl0fnwp7w87c252m",
+      "libraryName": "住宅",
+      "libraryAddress": "永春北路141号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆永春北路141号是官方大团镇永春北路139-143单号范围的明确中间门牌，镇前缀省略；采用141号门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/pl0fnwp7w87c252m",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W036-01",
+      "officialCodeRaw": "5W036",
+      "officialName": "吴宅",
+      "officialAddress": "张江镇江东路33弄2号",
+      "wikipediaAddress": "江东路33弄2号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/ii510ak8rlmobrij"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/ii510ak8rlmobrij",
+      "libraryName": "张江镇联防大队办公室",
+      "libraryAddress": "江东路33弄2号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "图书馆江东路33弄2号与官方张江镇江东路33弄2号完整弄/号一致；图书馆使用单位名还明确张江镇，补足省略的镇前缀，采用该门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ii510ak8rlmobrij",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W046-01",
+      "officialCodeRaw": "5W046",
+      "officialName": "小湾区公所",
+      "officialAddress": "唐镇镇小湾村东张家宅1号",
+      "wikipediaAddress": "唐镇小湾村区公所",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/4aez3mh45nk24cuf"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/4aez3mh45nk24cuf",
+      "libraryName": "区公所",
+      "libraryAddress": "唐镇小湾村区公所",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "图书馆的唐镇小湾村区公所与官方小湾区公所有名称和村名关联，但未提供门牌。更关键的是浦东2024-10-25官方已公示将小湾区公所迁至唐镇G13-0101-1绿地；本次未找到迁移完成时间与新址坐标，旧图书馆点不应直接作为今日建筑位置。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/4aez3mh45nk24cuf",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        },
+        {
+          "url": "https://www.pudong.gov.cn/zwgk/14483.gkml_zhzw_ghjh/2024/299/333473.html",
+          "title": "浦东新区：关于对小湾区公所、唐镇报恩桥实施迁移保护的公示",
+          "support": "2024年拟将唐镇小湾村北街11号的小湾区公所迁至唐镇G13-0101-1地块绿地内。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5Z002-01",
+      "officialCodeRaw": "5Z002",
+      "officialName": "住宅",
+      "officialAddress": "青村镇中街10弄9-12号、18弄1-4号、20-26号（双号）",
+      "wikipediaAddress": "青村镇中街18弄2-3号、10弄9-12号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/v5uww72kt44vqvhu"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/v5uww72kt44vqvhu",
+      "libraryName": "住宅",
+      "libraryAddress": "青村镇中街18弄2-3号、10弄9-12号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "building-complex-reference-point",
+      "reason": "图书馆青村镇中街18弄2-3号为官方18弄1-4号的子集，10弄9-12号则完全一致；是明确同道路、同弄、同内部门牌组成。采用群参考点，不定位官网额外列出的20-26号每栋建筑。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/v5uww72kt44vqvhu",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X001-01",
+      "officialCodeRaw": "5X001",
+      "officialName": "仲宅",
+      "officialAddress": "朱家角镇胜利街239弄7号",
+      "wikipediaAddress": "朱家角古镇胜利街239弄7号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/8o1n4z7x6rc6x2eg"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/8o1n4z7x6rc6x2eg",
+      "libraryName": "仲宅",
+      "libraryAddress": "朱家角古镇胜利街239弄7号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方朱家角镇胜利街239弄7号与图书馆朱家角古镇胜利街239弄7号完整门牌一致，且同名仲宅；只有镇/古镇前缀差异。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/8o1n4z7x6rc6x2eg",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X003-01",
+      "officialCodeRaw": "5X003",
+      "officialName": "住宅",
+      "officialAddress": "练塘镇东风街109、110号",
+      "wikipediaAddress": "练塘古镇东风街111号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/ng6q01g56k4qiiod"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/ng6q01g56k4qiiod",
+      "libraryName": "住宅",
+      "libraryAddress": "练塘古镇东风街111号",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方练塘镇东风街109、110号与图书馆东风街111号无门牌交集，两边仅为住宅泛称；镇前缀可解释，但号码差异不能解释，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ng6q01g56k4qiiod",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X004-01",
+      "officialCodeRaw": "5X004",
+      "officialName": "住宅",
+      "officialAddress": "练塘镇下塘街44弄19-38号及北侧构筑物",
+      "wikipediaAddress": "练塘古镇陈云故居旁",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/szk01by65dm322yj"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/szk01by65dm322yj",
+      "libraryName": "走廊",
+      "libraryAddress": "练塘古镇陈云故居旁",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方练塘镇下塘街44弄19-38号及北侧构筑物具体到弄内范围，图书馆仅写陈云故居旁走廊，未给可核对门牌或构筑物唯一名称。邻近关系不能证明对象一致，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/szk01by65dm322yj",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X005-01",
+      "officialCodeRaw": "5X005",
+      "officialName": "住宅",
+      "officialAddress": "朱家角镇东湖街209弄",
+      "wikipediaAddress": "朱家角古镇东湖里209号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/3sm3nj1mpnjpju7s"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/3sm3nj1mpnjpju7s",
+      "libraryName": "民宅",
+      "libraryAddress": "朱家角古镇东湖里209号",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方朱家角东湖街209弄与图书馆东湖里209号同时存在街/里路名和号/弄层级差异；不能只凭数字209及民宅泛称接入，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/3sm3nj1mpnjpju7s",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X012-01",
+      "officialCodeRaw": "5X012",
+      "officialName": "住宅",
+      "officialAddress": "白鹤镇鹤江路369号",
+      "wikipediaAddress": "白鹤古镇鹤江路344号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/ku53qjs66d23sr6m"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/ku53qjs66d23sr6m",
+      "libraryName": "住宅",
+      "libraryAddress": "白鹤古镇鹤江路344号",
+      "status": "needs-review",
+      "coordinateScope": null,
+      "reason": "官方白鹤镇鹤江路369号与图书馆白鹤古镇鹤江路344号无门牌交集，且只有住宅泛称。镇前缀同义不能消除369/344冲突，保留待核。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/ku53qjs66d23sr6m",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X013-01",
+      "officialCodeRaw": "5X013",
+      "officialName": "住宅",
+      "officialAddress": "重固镇通波塘西街53号",
+      "wikipediaAddress": "重固古镇通波塘西街53号",
+      "initialCandidateUris": [
+        "http://data.library.sh.cn/entity/architecture/hxwrdxbubmwken4e"
+      ],
+      "reviewedLibraryUri": "http://data.library.sh.cn/entity/architecture/hxwrdxbubmwken4e",
+      "libraryName": "住宅",
+      "libraryAddress": "重固古镇通波塘西街53号",
+      "status": "accepted-reference-point",
+      "coordinateScope": "address-reference-point",
+      "reason": "官方重固镇通波塘西街53号与图书馆重固古镇通波塘西街53号道路及完整门牌相同，只有镇/古镇前缀差异；采用53号门址参考点。",
+      "evidence": [
+        {
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "title": "上海市房屋管理局优秀历史建筑名单",
+          "support": "对应官方编号、原名称、公布使用名称及地址，保留原始来源。"
+        },
+        {
+          "url": "http://data.library.sh.cn/entity/architecture/hxwrdxbubmwken4e",
+          "title": "上海图书馆优秀历史建筑实体",
+          "support": "保留该实体来源名称、门牌及BD-09参考坐标。"
+        }
+      ]
+    }
+  ]
+}

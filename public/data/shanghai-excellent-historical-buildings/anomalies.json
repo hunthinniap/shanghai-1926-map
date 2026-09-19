@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "policy": "保留来源异常；未推测修正编号、填补空值或按同号／同址去重。",
+  "anomalies": [
+    {
+      "batch": 5,
+      "type": "duplicate-code",
+      "code": "5A012",
+      "recordIds": [
+        "sh-fgj-5A012-01",
+        "sh-fgj-5A012-02"
+      ]
+    },
+    {
+      "batch": 5,
+      "type": "duplicate-code",
+      "code": "5F038",
+      "recordIds": [
+        "sh-fgj-5F038-01",
+        "sh-fgj-5F038-02"
+      ]
+    },
+    {
+      "batch": 5,
+      "type": "source-control-character",
+      "recordId": "sh-fgj-5A049-01",
+      "codeRaw": "5A049",
+      "tableIndex": 1,
+      "rowIndex": 51
+    },
+    {
+      "batch": 5,
+      "type": "nonstandard-code",
+      "recordId": "sh-fgj-b5-D5035-01",
+      "codeRaw": "D5035",
+      "tableIndex": 1,
+      "rowIndex": 192
+    },
+    {
+      "batch": 5,
+      "type": "nonstandard-code",
+      "recordId": "sh-fgj-b5-50D80-01",
+      "codeRaw": "50D80",
+      "tableIndex": 1,
+      "rowIndex": 237
+    },
+    {
+      "batch": 5,
+      "type": "missing-addressAsListed",
+      "recordId": "sh-fgj-5D089-01",
+      "codeRaw": "5D089",
+      "tableIndex": 1,
+      "rowIndex": 246
+    },
+    {
+      "batch": 5,
+      "type": "missing-listedNameOrUse",
+      "recordId": "sh-fgj-5D095-01",
+      "codeRaw": "5D095",
+      "tableIndex": 1,
+      "rowIndex": 252
+    },
+    {
+      "batch": 5,
+      "type": "nonstandard-code",
+      "recordId": "sh-fgj-b5-D50102-01",
+      "codeRaw": "D50102",
+      "tableIndex": 1,
+      "rowIndex": 259
+    },
+    {
+      "batch": 5,
+      "type": "source-control-character",
+      "recordId": "sh-fgj-5F040-01",
+      "codeRaw": "5F040",
+      "tableIndex": 1,
+      "rowIndex": 314
+    }
+  ]
+}

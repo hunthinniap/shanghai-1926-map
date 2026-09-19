@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
+import { buildingRecordsInUtm51n } from './building-cluster-coordinates.mjs'
+import { utm51nToWgs84 } from './coordinate-systems.mjs'
 import {
   buildingNamesAreVariants,
   clusterBuildingRecords,
@@ -51,6 +53,29 @@ describe('buildingNamesAreVariants', () => {
 })
 
 describe('clusterBuildingRecords', () => {
+  it('groups mixed-frame duplicate addresses after projection without altering source coordinates', () => {
+    const records = [
+      { id: 359, name: 'Kelmsott Garden', address: '188 AVENUE DU ROI ALBERT', x: 352625.3067, y: 3455110.1024 },
+      { id: 4135, name: 'Kelmscott Garden', address: '188 avenue du Roi Albert', x: 121.452771, y: 31.220854 },
+      { id: 408, name: 'Dahua Hospital', nameZh: '大華醫院', address: '19 ROUTE POTTIER', x: 351901.6844, y: 3454150.4877 },
+      { id: 4154, name: 'Da Wha Hospital', nameZh: '大華醫院', address: '19 ROUTE POTTIER', x: 121.445318, y: 31.212107 },
+      { id: 4136, name: 'Bedford Terrace', address: '190 Avenue du Roi Albert', x: 121.45275, y: 31.2208 },
+    ]
+    const snapshot = structuredClone(records)
+    const projected = buildingRecordsInUtm51n(records)
+    const result = clusterBuildingRecords(projected)
+    assert.equal(result.clusters.length, 3)
+    assert.equal(result.recordToCluster[359], result.recordToCluster[4135])
+    assert.equal(result.recordToCluster[408], result.recordToCluster[4154])
+    assert.notEqual(result.recordToCluster[359], result.recordToCluster[4136])
+    const garden = result.clusters.find((cluster) => cluster.sourceRecordIds.includes(359))
+    assert.deepEqual(utm51nToWgs84(...garden.centroid), { longitude: 121.452771, latitude: 31.220854 })
+    assert.ok(result.mergeReasons.every((reason) => reason.distanceMetres < 0.01))
+    assert.deepEqual(records, snapshot)
+    assert.equal(projected[0], records[0], 'projected source coordinates stay unchanged')
+    assert.notEqual(projected[1], records[1], 'geographic records receive a clustering copy')
+  })
+
   it('clusters Virtual Shanghai 323/324/493 as one site without choosing Temple', () => {
     const records = [
       building({

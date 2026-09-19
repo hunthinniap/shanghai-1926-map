@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "reviewer": "independent-source-review",
+  "question": "VS建筑609 Nanjing Hotel 是否与第4批4A016南京饭店为同一建筑，及统一显示坐标的可接受性。",
+  "verdict": {
+    "identity": "same-building",
+    "identityConfidence": "high",
+    "coordinateRecommendation": "use-current-heritage-reference-point-for-unified-display",
+    "coordinateConfidence": "reference-point-corroborated-not-surveyed",
+    "officialId": "sh-fgj-4A016-01",
+    "sourceRecordId": 609,
+    "recommendedCoordinates": [
+      121.47772,
+      31.2393
+    ],
+    "coordinateSystem": "WGS84",
+    "coordinateScope": "linked-building-reference-point",
+    "summary": "可建立同栋建筑关系并采用现有heritage参考点作为合并显示锚点；原VS点保留为来源坐标，两者约19米。不能把名录官网视为坐标提供方，也不能据此宣称建筑轮廓或入口的测绘精度。"
+  },
+  "records": {
+    "virtualShanghai": {
+      "id": 609,
+      "name": "Nanjing Hotel",
+      "nameZh": "南京飯店",
+      "address": "200 SHANSE ROAD",
+      "startYear": 1931,
+      "endYear": null,
+      "note": null,
+      "types": {
+        "TYP01": "Commercial establishment",
+        "TYP02": "Retail business",
+        "TYP03": "Lodging",
+        "TYP04": "Hotel",
+        "TYP05": null,
+        "TYP06": null,
+        "TYP07": null,
+        "TYP08": null,
+        "TYP09": null,
+        "TYP10": null,
+        "TYP11": null
+      },
+      "x": 355019.1783,
+      "y": 3457137.2895,
+      "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=609",
+      "provenance": "shapefile+live-list"
+    },
+    "official": {
+      "id": "sh-fgj-4A016-01",
+      "code": "4A016",
+      "batch": 4,
+      "name": "南京饭店",
+      "address": "山西南路182-200号",
+      "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+    },
+    "currentHeritageFeature": {
+      "type": "Feature",
+      "id": "sh-fgj-4A016-01-reference-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47772,
+          31.2393
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4A016-01",
+        "wikipediaId": "wiki-heritage-t05-r0017",
+        "batch": 4,
+        "officialCodeRaw": "4A016",
+        "name": "南京饭店",
+        "articleTitle": "南京饭店 (上海市)",
+        "address": "山西南路182-200号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "linked-building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "wikipedia-geodata",
+        "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E9%A5%AD%E5%BA%97_(%E4%B8%8A%E6%B5%B7%E5%B8%82)",
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E9%A5%AD%E5%BA%97_(%E4%B8%8A%E6%B5%B7%E5%B8%82)",
+        "wikidataId": "Q59607456",
+        "historicalGeometryVerified": false,
+        "officialName": "南京饭店",
+        "listedName": "南京饭店",
+        "wikipediaAddress": "山西南路182-200号，天津路191号-211弄",
+        "district": "黄浦区",
+        "constructionDate": "1929年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    "landmarkAtReview": {
+      "id": "landmark-vs-site-609",
+      "featureGroupId": "landmark-vs-site-609",
+      "coordinates": [
+        121.477603,
+        31.239438
+      ],
+      "currentUseSourceUri": "http://data.library.sh.cn/entity/architecture/ftlcreuewhxwfenc",
+      "currentUseMatchDistance": 1217
+    }
+  },
+  "identityEvidence": [
+    {
+      "finding": "名称",
+      "conclusion": "Nanjing Hotel / 南京飯店 与官网南京饭店一致，繁简字差异不改变名称。",
+      "sourceIds": [
+        "vs609",
+        "fgj-batch4"
+      ]
+    },
+    {
+      "finding": "旧路与门牌",
+      "conclusion": "VS记录200 SHANSE ROAD；历史路名资料把SHANSE ROAD列为山西路；上观地方史明确南京饭店仍在山西路（今山西南路）200号。",
+      "sourceIds": [
+        "vs609",
+        "directory1906",
+        "shobserver-history"
+      ]
+    },
+    {
+      "finding": "现门牌与名录范围",
+      "conclusion": "官网4A016为山西南路182-200号；市住建委官方介绍的南京饭店为黄浦区山西南路200号，200包含在名录门牌范围内。",
+      "sourceIds": [
+        "fgj-batch4",
+        "shanghai-construction-2024"
+      ]
+    },
+    {
+      "finding": "同址延续",
+      "conclusion": "上观报道明确原名原址延续，与官网名录及市住建委现址相互支持；未发现迁址到同名新建筑的证据。",
+      "sourceIds": [
+        "shobserver-history",
+        "fgj-batch4",
+        "shanghai-construction-2024"
+      ]
+    }
+  ],
+  "coordinates": {
+    "comparisonSystem": "WGS84",
+    "distanceMethod": "haversine, mean Earth radius 6371008.8 m",
+    "points": [
+      {
+        "id": "current-landmark-vs",
+        "coordinates": [
+          121.477603,
+          31.239438
+        ],
+        "sourceCoordinateSystem": "EPSG:32651",
+        "sourceProjected": [
+          355019.1783,
+          3457137.2895
+        ],
+        "conversion": "scripts/lib/coordinate-systems.mjs:utm51nToWgs84",
+        "sourceId": "vs609"
+      },
+      {
+        "id": "current-heritage-wikipedia",
+        "coordinates": [
+          121.47772,
+          31.2393
+        ],
+        "sourceCoordinateSystem": "WGS84",
+        "sourceId": "wikipedia-geodata",
+        "scope": "building reference point; not an official measured building coordinate"
+      },
+      {
+        "id": "library-comparison-only",
+        "sourceCoordinates": [
+          121.4894,
+          31.243677
+        ],
+        "sourceCoordinateSystem": "BD-09",
+        "coordinates": [
+          121.478315,
+          31.239851
+        ],
+        "conversion": "scripts/lib/coordinate-systems.mjs:bd09ToWgs84; BD09 → GCJ02 → WGS84",
+        "sourceUri": "http://data.library.sh.cn/entity/architecture/ftlcreuewhxwfenc",
+        "coordinateSystemEvidencePath": "public/data/shanghai-excellent-historical-buildings/geocoding/library/sources.json",
+        "selected": false
+      }
+    ],
+    "distancesMetres": {
+      "virtualShanghaiToHeritage": 18.953,
+      "libraryToHeritage": 83.389,
+      "libraryToVirtualShanghai": 81.799
+    },
+    "staleDistanceWarning": "地标currentUseMatchDistance=1217是旧现用途关联的距离，不可作为本次位置差异；经统一坐标系重算，library与VS约81.8米。",
+    "limitations": [
+      "当前heritage点来自维基GeoData，维基数据P625给出同一数值；不能把这两者计为两个独立坐标证据。",
+      "VS和Wiki约19米的吻合支持一般地图参考点选择，不证明入口/建筑中心/墙线位置。",
+      "没有得到独立测量级坐标或稳定可读的OSM建筑几何；一次Overpass查询429，OSM API连接超时，未用失败查询推断定位。",
+      "图书馆点与Wiki约83米，不能因图书馆是公共机构来源就自动替换更一致的Wiki点。"
+    ]
+  },
+  "sourceDiscrepancies": [
+    {
+      "topic": "名录批次",
+      "finding": "维基正文称第二批，但房管局第四批官网明确列4A016。",
+      "resolution": "名录归属采用第四批4A016，保留维基为参考来源而非纠正官网。"
+    },
+    {
+      "topic": "时间",
+      "finding": "VS标1931；维基及官方市住建委文章记1929年始建；市住建委另记1932年开业。",
+      "resolution": "可能分别为始建/建成/开业阶段；本次不覆盖VS年份或推定为同一日期，详情可并列出处。"
+    },
+    {
+      "topic": "天津路扩展地址",
+      "finding": "维基列表与图书馆还列天津路191号-211弄；本次读取的房管局4A016只有山西南路182-200号。",
+      "resolution": "身份确认只需直接核定山西南路200号，不把天津路额外门牌一并升级为官网认定范围。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vs609",
+      "title": "Nanjing Hotel",
+      "publisher": "Virtual Shanghai",
+      "url": "https://www.virtualshanghai.net/Data/Buildings?ID=609",
+      "summary": "原始建筑记录609给出南京飯店、200 SHANSE ROAD、1931和UTM坐标。",
+      "raw": {
+        "path": "research/rechecks/2026-09-19-heritage-landmark-links/raw/nanjing-hotel-vs609.html",
+        "bytes": 15023,
+        "sha256": "0503265ee40dbf2f9671026d9654ae8d0c66b3c378b6a998b11027a6a838db5e"
+      }
+    },
+    {
+      "id": "fgj-batch4",
+      "title": "第四批优秀历史建筑",
+      "publisher": "上海市房屋管理局",
+      "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+      "summary": "4A016，南京饭店，山西南路182-200号。官网不提供经纬度。",
+      "raw": {
+        "path": "public/data/shanghai-excellent-historical-buildings/raw/batch-004.html",
+        "bytes": 144239,
+        "sha256": "201f5906769f0603db1928fd77a6a4de8ba1e017258c7e875233735c01b8954b"
+      }
+    },
+    {
+      "id": "shanghai-construction-2024",
+      "title": "近代中国建筑师及其建筑代表作品：杨锡镠，从古典复兴到现代主义",
+      "publisher": "上海市住房和城乡建设管理委员会官方澎湃号",
+      "publishedAt": "2024-10-14",
+      "url": "https://m.thepaper.cn/newsDetail_forward_29045344",
+      "summary": "南京饭店为杨锡镠作品、上海优秀历史建筑，地址山西南路200号；始建1929年、1932年开业。",
+      "raw": {
+        "path": "research/rechecks/2026-09-19-heritage-landmark-links/raw/nanjing-hotel-urban-construction-20241014.html",
+        "bytes": 70712,
+        "sha256": "db3d768e46a6e6e23e1c94af7b557ee21a33295bf0456a345f13e94f17f763b0"
+      }
+    },
+    {
+      "id": "shobserver-history",
+      "title": "鲁迅巴金曾来用餐，战火中记者曾在此聚会，这家上海饭店的见证",
+      "publisher": "上观新闻",
+      "author": "沈轶伦",
+      "url": "https://export.shobserver.com/baijiahao/html/300570.html",
+      "summary": "明确南京饭店仍为原名原址，山西路（今山西南路）200号，并追述1950年报纸中同门牌。",
+      "raw": {
+        "path": "research/rechecks/2026-09-19-heritage-landmark-links/raw/nanjing-hotel-shobserver.html",
+        "bytes": 13359,
+        "sha256": "3e32646f4d603a971732610a80438e6b6b6a5288328cd828bf61e573736e61a7"
+      }
+    },
+    {
+      "id": "directory1906",
+      "title": "1906 Chronicle and Directory for China, Shanghai section",
+      "publisher": "Historical directory scan hosted by China Families",
+      "url": "https://www.chinafamilies.net/wp-content/uploads/2018/07/1906-Chronicle-and-Directory-for-China-Shanghai-24o3qov.pdf",
+      "access": "search-index table text and PDF resource opened; no page image verification",
+      "summary": "道路华英文对照把Shanse Road对应山西路，另列North Shanse Road，避免与山西北路混淆。",
+      "role": "corroboration of romanized street only, not evidence of this hotel in1906"
+    },
+    {
+      "id": "wikipedia-geodata",
+      "title": "南京饭店 (上海市)",
+      "publisher": "中文维基百科",
+      "url": "https://zh.wikipedia.org/wiki/南京饭店_(上海市)",
+      "suppliedUserUrl": "https://zh.wikipedia.org/wiki/南京饭店_(上海市)#/map/0",
+      "wikipediaArticleRevisionInLocalData": 89855296,
+      "wikidataId": "Q59607456",
+      "summary": "页中点位31.2393N 121.47772E，地址山西南路200号，实体给出相同坐标。",
+      "raw": [
+        {
+          "path": "public/data/shanghai-excellent-historical-buildings/wikipedia/raw/details/wikipedia-query-af583678ffb80c5a-1.json",
+          "bytes": 26666,
+          "sha256": "c881cf121eee9fafcd15e1b166cf55ce4ac3127b97bc8ec80be6cf8baf7ef2e7"
+        },
+        {
+          "path": "public/data/shanghai-excellent-historical-buildings/wikipedia/raw/details/wikidata-entities-5775496587a6aca7-1.json",
+          "bytes": 95855,
+          "sha256": "292378a2aba100add58720041f5f9dc58f000e2a858cda4d4b746a3db7521d01"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,755 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/res/css/building/allBuilding.css">
+<title>上海图书馆开放数据平台——上海年华</title>
+<!-- 引入高德地图JSAPI -->
+<script type="text/javascript" src="https://dhapi.library.sh.cn/amap-config.js" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=19e389bd79da230602cf4a7e7489633b&plugin=AMap.MouseTool"></script>
+<!-- 引入UI组件库（1.0版本） -->
+<script src="//webapi.amap.com/ui/1.0/main.js"></script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+
+<link rel="stylesheet" href="/res/assets/css/amazeui.min.css?t=st"/>
+<link rel="stylesheet" href="/res/css/style.css?t=st">
+<link rel="stylesheet" href="/res/css/animate.css?t=st">
+<!--[if lt IE 9]>
+<script src="/res/html5/html5shiv.js"></script>
+<script src="/res/html5/respond.min.js"></script>
+<![endif]-->
+<script src="/res/plugin/juicer-min.js"></script>
+<script src="/res/js/sysmanager/commonJS.js"></script>
+
+<script>var ctx = "";</script>
+
+</head>
+<body>
+	
+
+
+
+
+<!DOCTYPE html>
+<head>
+<title>上海图书馆开放数据平台</title>		<!-- 上海图书馆开放数据平台 -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/ontology/res/bootstrap/css/bootstrap.css"
+	rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+<script src="/ontology/res/html5/html5shiv.js"></script>
+<script src="/ontology/res/html5/respond.min.js"></script>
+<![endif]-->
+<script src="/ontology/res/jquery/jquery.min.js"></script>
+<script src="/ontology/res/bootstrap/js/bootstrap.min.js"></script>
+<script src="/ontology/res/plugin/juicer-min.js"></script>
+<script src="/res/js/language/language.js"></script>
+<script>
+	var ctx = "";
+	
+	//浏览量统计代码：
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?633adb4e4314330d130f1b660b9ef837";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<style>
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #ccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+	border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+.nav>li {
+	margin-right: 5px;
+}
+</style>
+</head>
+<body>
+	<div class="container" style="max-width: 990px;">
+		<div style="margin: 0px 0px 20px;">
+			<!-- LOGO IMG -->
+			<header class="am-topbar" id="header"
+				onClick="window.open(
+										'/index'
+										
+									)"
+				style="background: rgba(0, 0, 0, 0) url('/ontology/res/images/top.jpg') no-repeat scroll center top; cursor:pointer; 
+				background-size: 100% 100%; height: 140px; margin: 0px 0px 1px;">
+			</header>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span> <span class="icon-bar"></span>
+							<span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<!-- <a class="navbar-brand" href="" target="_blank">开放数据平台</a> -->
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav" id="top-nav-menu">
+							<li class="">
+								<a href=
+											"/index"
+											
+										 target="_blank">
+									首页	<!-- 首页 -->
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									基础知识库<b class="caret"></b>	<!-- 基础知识库 -->
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="http://names.library.sh.cn" target="_blank">
+											人名规范库			<!-- 人名规范库 -->
+										</a>
+									</li>
+									<li>
+										<a href="/familynames" target="_blank">
+											华人姓氏表				<!-- 华人姓氏表 -->
+										</a>
+									</li>
+									<li>
+										<a href="/place/main" target="_blank">
+											地理名词表					<!-- 地理名词表 -->
+										</a>
+									</li>
+									<li>
+										<a href="/dynasty/main" target="_blank">
+											中国历史纪年表		<!-- 中国历史纪年表 -->
+										</a>
+									</li>
+									<li>
+										<a href="/organization/main" target="_blank">
+											机构名录					<!-- 机构名录 -->
+										</a>
+									</li>
+									<li>
+										<a href="/gj/webapi/toSealList" target="_blank">
+											印章知识库				<!-- 印章知识库 -->
+										</a>
+									</li>
+									<li>
+										<a href="/taboo" target="_blank">
+											避讳字知识库				<!-- 避讳字知识库 -->
+										</a>
+									</li>
+									<li>
+										<a href="/kegong" target="_blank">
+											古籍刻工名录					<!-- 古籍刻工名录 -->
+										</a>
+									</li>
+									<!-- <li class="divider"></li> -->
+									<li class="dropdown-submenu">
+										<a tabindex="-1" href="javascript:void(0)">
+											上海年华知识图谱					<!-- 上海年华知识图谱 -->
+										</a>
+										<ul class="dropdown-menu third-menu">
+											
+											
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/road/tolist'">
+												武康路					<!-- 武康路 -->
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/building/toAllBuilding'">
+												上海市优秀历史建筑		<!-- 上海市优秀历史建筑 -->
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/hsly/building/toRelicDirectory'">
+												上海市不可移动文物名录	<!-- 上海市不可移动文物名录 -->
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/dmz/webapi/geonames/tolist'">
+												上海地名志					<!-- 上海地名志 -->
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/event/webapi/tolist'">
+												历史文化事件知识库	<!-- 历史文化事件知识库 -->
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" onclick="location.href='/shnh/whzk/webapi/org/tolist'">
+												机构名录	<!-- 机构名录 -->
+												</a>
+											</li>
+											
+										</ul>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									文献知识库<b class="caret"></b>	<!-- 文献知识库 -->
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="http://jiapu.library.sh.cn" target="_blank">
+											家谱知识服务平台						<!-- 家谱知识服务平台 -->
+										</a>
+									</li>
+									<li>
+										<a href="http://sd.library.sh.cn" target="_blank">
+											盛宣怀档案知识库			<!-- 盛宣怀档案知识库 -->
+										</a>
+									</li>
+									<!--
+									<li>
+										<a href="http://sg.library.sh.cn" target="_blank">
+											名人手稿档案库			名人手稿档案库
+										</a>
+									</li>
+									-->
+									<li>
+										<a href="http://gj.library.sh.cn" target="_blank">
+											中文古籍联合目录及循证平台				<!-- 中文古籍联合目录及循证平台 -->
+										</a>
+									</li>
+									<li>
+										<a href="http://bib.library.sh.cn" target="_blank">
+											上海联编中心书目库				<!-- 上海联编中心书目库 -->
+										</a>
+									</li>
+									<li>
+										<a href="http://wkl.library.sh.cn" target="_blank">
+											上海年华之从武康路出发					<!-- 上海年华之从武康路出发 -->
+										</a>
+									</li>
+									<li>
+										<a href="http://red.library.sh.cn" target="_blank">
+											红色文献库								<!-- 红色文献库（beta版） -->
+										</a>
+									</li>
+									<li>
+										<a href="http://ldy.library.sh.cn" target="_blank">
+											老电影库						<!-- 老电影库（beta版） -->
+										</a>
+									</li>
+									<!--<li>
+										<a href="//gj.library.sh.cn/yutu" target="_blank">
+											上图馆藏舆图目录
+										</a>
+									</li>-->
+									<li>
+										<a href="//cp.library.sh.cn" target="_blank">
+											老唱片知识库			<!-- 老唱片知识库 -->
+										</a>
+									</li>
+									<li>
+										<a href="//beitie.library.sh.cn" target="_blank">
+											碑帖知识库			<!-- 碑帖知识库 -->
+										</a>
+									</li>
+									<li>
+										<a href="//scc.library.sh.cn" target="_blank">
+											上海文化总库			<!-- 上海文化总库库 -->
+										</a>
+									</li>
+										<li>
+										<a href="//jdts.library.sh.cn" target="_blank">
+											近代图书知识库			<!-- 近代图书 -->
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									本体词表<b class="caret"></b>	<!-- 本体词表 -->
+								</a>
+								<ul class="dropdown-menu">
+									<!-- <li><a href="http://names.library.sh.cn/ontology/view"
+										target="_blank">人名规范库本体</a></li>
+									<li><a href="http://gen.library.sh.cn:8080/ontology"
+										target="_blank">家谱本体</a></li>
+									<li><a href="http://sg.library.sh.cn/ontology"
+										target="_blank">名人手稿及档案本体</a></li>
+									<li><a href="http://gj.library.sh.cn/ontology"
+										target="_blank">古籍本体</a></li>
+									<li><a href="http://bib.library.sh.cn/ontology/view"
+										target="_blank">上海联编中心书目本体</a></li>
+									<li><a href="http://ldy.library.sh.cn/ontology"
+										target="_blank">上海年华本体</a></li> -->
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/cbdb" target="_blank">
+											CBDB本体					<!-- CBDB本体 -->
+										</a>
+									</li>
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlancient" target="_blank">
+											古籍本体				<!-- 古籍本体 -->
+										</a>
+									</li>
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlbib" target="_blank">
+											关联书目数据本体词表	<!-- 关联书目数据本体词表 -->
+										</a>
+									</li>
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlgen" target="_blank">
+											家谱本体				<!-- 家谱本体 -->
+										</a>
+									</li>
+									<!--
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlmarc" target="_blank">
+											手稿及档案本体			手稿及档案本体
+										</a>
+									</li>
+									 -->
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlmemo" target="_blank">
+											上海年华本体				<!-- 上海年华本体 -->
+										</a>
+									</li>
+									<li>
+										<a href="/ont/ontology/tree?g=http://ont.library.sh.cn/graph/shlnames" target="_blank">
+											人名规范库本体	<!-- 人名规范库本体 -->
+										</a>
+									</li>
+									<li>
+										<a href="/ont/ontology/search" target="_blank">
+											所有					<!-- 所有 -->
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									开发者指南<b class="caret"></b>	<!-- 开发者指南 -->
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="/key" target="_blank">
+											注册API Key		<!-- 注册API Key -->
+										</a>
+									</li>
+									<li>
+										<a href="/developguide" target="_blank">
+											数据消费接口	<!-- 数据消费接口 -->
+										</a>
+									</li>
+									<li>
+										<a href="http://data.library.sh.cn/sparql" target="_blank">
+											Sparql Endpoint			<!-- Sparql Endpoint -->
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									工具<b class="caret"></b>			<!-- 工具 -->
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a tabindex="-1" href="javascript:void(0)">自建</a>	<!-- 自建 -->
+										<ul class="dropdown-menu third-menu">
+											<li>
+												<a href="http://zb.library.sh.cn" target="_blank">
+													历史文献众包平台	<!-- 历史文献众包平台 -->
+												</a>
+											</li>
+											<li>
+												<a href="http://jplb.library.sh.cn/index" target="_blank">
+													家谱联合编目系统	<!-- 家谱联合编目系统 -->
+												</a>
+											</li>
+											<li>
+												<a href="https://tools.library.sh.cn/" target="_blank">
+													文本分析工具包	<!-- 文本分析工具包 -->
+												</a>
+											</li>
+											<li>
+												<a href="https://sns.library.sh.cn/" target="_blank">
+													SNS可视化组件	<!-- SNS工具包 -->
+												</a>
+											</li>
+											<li>
+												<a href="https://hgis.library.sh.cn/" target="_blank">
+													HGIS支撑平台	<!-- HGIS工具包 -->
+												</a>
+											</li>
+											<li>
+												<a href="https://data.library.sh.cn/apitest" target="_blank">
+													API可视化测试平台	<!-- API可视化测试平台 -->
+												</a>
+											</li>
+												<!-- <li>
+												<a href="/tools/rdb2rdf/" target="_blank">
+													RDB2RDF	RDB2RDF
+												</a>
+											</li>
+											<li>
+												<a href="/tools/etl" target="_blank">
+													ETL(Any2RDF)
+												</a>
+											</li> -->
+										</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a tabindex="-1" href="javascript:void(0)">开源</a>	<!-- 开源 -->
+										<ul class="dropdown-menu third-menu">
+											<li>
+												<a href="https://virtuoso.openlinksw.com/" target="_blank">
+													OpenLink Virtuoso	<!-- OpenLink Virtuoso -->
+												</a>
+											</li>
+											<li>
+												<a href="https://en.wikipedia.org/wiki/OpenRefine" target="_blank">
+													OpenRefine		<!-- OpenRefine -->
+												</a>
+											</li>
+											<li>
+												<a href="http://iiif.io/" target="_blank">
+													IIIF			<!-- IIIF -->
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							
+							<li>
+								<a href="http://dhblog.library.sh.cn/papers" target="_blank">
+									论文/课件	<!-- 论文/课件 -->
+								</a>
+							</li>
+							
+							<!-- 语言切换 -->
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+									
+										中文<b class="caret"></b>	<!-- 中文 -->
+									
+									
+								</a>
+								<ul class="dropdown-menu language">
+									<li>
+										
+										
+											<a href="javascript:void(0);" lang-code="2">
+												English	<!-- English -->
+											</a>
+										
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								
+									
+									
+										<a href="javascript:void(0)" id="login-link">
+											登录
+										</a>
+									
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$(function() {
+				$("#top-nav-menu li").bind({
+					mouseover : function() {
+						$(this).addClass('open');
+					},
+					mouseout : function() {
+						$(this).removeClass('open');
+					}
+				});
+
+				$('ul.third-menu>li>a').hover(function() {//悬浮在三级目录控制二级目录颜色
+					$(this).parent('li').parent('ul').prev('a').css({
+						'background-color' : 'rgb(50,118,163)'
+					});
+					$(this).parent('li').parent('ul').prev('a').css({
+						'color' : '#fff'
+					});
+				}, function() {
+					if (!$(this).parent('li').hasClass('open')) {
+						$(this).parent('li').parent('ul').prev('a').css({
+							'background-color' : '#fff',
+							'color' : 'black'
+						});
+					} else {
+						$(this).parent('li').parent('ul').prev('a').css({
+							'background-color' : 'rgb(50,118,163)',
+							'color' : '#fff'
+						});
+					}
+
+				});
+
+				$('li.dropdown-submenu').hover(function() {//二级目录悬浮与否控制颜色
+					$(this).children('a').css({
+						'background-color' : '#3276b1',
+						'color' : '#fff'
+					});
+				}, function() {
+					$(this).children('a').css({
+						'background-color' : '#fff',
+						'color' : 'black'
+					});
+				});
+				if ($("#float_bar").length > 0) {
+					var searchTop = $("#float_bar").offset().top;
+					$(window).scroll(function() {
+						var position = $("#float_bar").css("position");
+						var scrollTop = $(window).scrollTop();
+						if (position != "fixed" && scrollTop > searchTop) {
+							$("#float_bar").css({
+								position : "fixed",
+								top : 20,
+								"z-index" : 10
+							});
+						}
+						if (position == "fixed" && (scrollTop < searchTop)) {
+							$("#float_bar").css({
+								position : "static",
+								"z-index" : 0
+							});
+						}
+					});
+				}
+				
+				var currentUrl = window.location.href;
+				var loginUrl = ctx + "/unifiedAuth/login?redirect=" + encodeURIComponent(currentUrl);
+				var logoutUrl = ctx + "/unifiedAuth/logout?redirect=" + encodeURIComponent(currentUrl);
+				$("#login-link").click(function() {
+					window.location.href = loginUrl;
+				});
+				$("#logout-link").click(function() {
+					window.location.href = logoutUrl;
+				});
+				
+			})
+		</script>
+	</div>
+</body>
+</html>
+
+	<div id="buildingListContainer" 
+		class="am-g am-g-fixed news-g-fixed am-list-news am-no-layout main"
+		style="margin-top: -20px;">
+		<div
+			style="padding-top: 10px; padding-left: 20px; width: 100%; margin-bottom: 10px;"
+			name="info" id="info">
+
+			<form id="listForm" class="am-form am-form-horizontal">
+				<fieldset name="form_set">
+					<legend>
+						上海年华-<span id="buildingName">武康路建筑</span>(<span id="count">0</span>)
+						<!-- <div style="float: right">
+							<button type="button" id='btnkfz'
+								style="margin-top: 5px; width: 80px;"
+								class="am-btn am-btn-primary">开发者指南</button>
+						</div> -->
+					</legend>
+
+					<div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+						<ul class="am-tabs-nav am-cf">
+							<li>
+								<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/road/tolist'">武康路</a>
+							</li>
+							<li class="am-active">
+								<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/building/toAllBuilding'">上海市优秀历史建筑</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onclick="location.href='/shnh/wkl/webapi/hsly/building/toRelicDirectory'">上海市不可移动文物名录</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onclick="location.href='/shnh/dmz/webapi/geonames/tolist'">上海地名志</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onclick="location.href='/shnh/event/webapi/tolist'">历史文化事件知识库</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onclick="location.href='/shnh/whzk/webapi/org/tolist'">机构名录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="am-form-group am-u-sm-12">
+						<div style="float: right"></div>
+						<div class="am-input-group">
+							<input id="txtSearch" name="freetext" value="" placeholder="在此输入建筑名，建筑结构，建筑风格，所在马路、地址" type="text" class="am-form-field">
+							<span class="am-input-group-btn">
+								<button id="btnSearch" class="am-btn am-btn-default" type="button">查询</button>
+							</span>
+							<!-- 第几页 -->
+							<input type="hidden" id="pageth" name="pageth" value="1" />
+							<!-- 是否限制记录：否-->
+							<input type="hidden" id="iflimit" name="iflimit" value="1" />
+						</div>
+						<div class="am-input-group input-radio">
+							<!-- <div class="radio-inline">
+							  <input type="radio"  name="chooseBuilding" id="wuKangRoad" value="wuKangRoad" />
+							  <label class="hand" for="wuKangRoad">武康路</label>
+							</div> -->
+							<!-- <div class="radio-inline">
+							  <input type="radio"  name="chooseBuilding" id="redTravel" value="redTravel" />
+							  <label class="hand" for="redTravel">红色旅游</label>
+							</div> -->
+							<div class="radio-inline" style="display: none;">
+							  <input type="radio"  name="chooseBuilding" id="excellentHistory" value="excellentHistory" checked/>
+							  <label class="hand" for="excellentHistory">上海市优秀历史建筑</label>
+							</div>
+						</div>
+						<a id="mapButton" class="map-button" type="button">地图展示&nbsp;&nbsp;></a>
+					</div>
+					<div class="am-form-group am-u-sm-12">
+						<table class="am-table am-table-striped am-table-hover">
+							<thead id="buildingThead"></thead>
+							<tbody id="buildingTbody" style="word-wrap:break-word;word-break:break-all"></tbody>
+						</table>
+						<!-- 分页 -->
+						<div id="pager"></div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	
+	<!-- map start -->
+	<div class="contain am-g am-g-fixed news-g-fixed" id="go" style="margin-top: -15px;">
+       <div class="mapContainer">
+           <div class="mapSearchBox">
+           <span id="backToList" class="back-list">&nbsp;&nbsp&nbsp;&nbsp;返回列表&nbsp;&nbsp;&nbsp;&nbsp</span>
+               <!-- 地图 -->
+               <div class="mapSearch" id="mapSearch"></div>
+           </div>
+       </div>
+    </div>
+    <!-- map end -->
+	
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="your-modal" >
+		<div class="am-modal-dialog" >
+			<div class="am-modal-hd">
+				RDF数据 <a href="javascript: void(0)"
+					class="am-close am-close-spin" data-am-modal-close>&times;</a>
+			</div>
+			<div id="RDFid" class="am-modal-bd" style="max-height:500px;overflow:scroll">Modal 内容。</div>
+		</div>
+	</div>
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="your-event" >
+		<div class="am-modal-dialog" >
+			<div class="am-modal-hd">
+				相关事件<a href="javascript: void(0)"
+					class="am-close am-close-spin" data-am-modal-close>&times;</a>
+			</div>
+			<div id="pdiv" class="am-modal-bd"  style="max-height:550px; overflow:scroll;">
+				<!-- Modal 内容。 -->
+				<section id="cd-timeline" class="cd-container">
+				</section>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+ <div class="container">
+        <div  style="text-align:center;font-size:12px" class="row footer-bottom">
+		    <ul class="list-inline text-center">
+            Copyright ?上海图书馆 | 非特别注明，本站遵循cc2.0协议（署名-非商业性使用-相同方式共享）	<!-- Copyright © 上海图书馆 | 非特别注明，本站遵循cc2.0协议（署名-非商业性使用-相同方式共享） -->
+			</ul>
+        </div>
+    </div>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/res/assets/js/polyfill/rem.min.js"></script>
+<script src="/res/assets/js/polyfill/respond.min.js"></script>
+<script src="/res/assets/js/amazeui.legacy.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/res/assets/js/jquery.min.js"></script>
+<script src="/res/assets/js/amazeui.min.js"></script>
+<!--<![endif]-->
+<script src="/res/plugin/page.js"></script>
+<script src="/res/js/common/common.js"></script>
+	<script src="/res/plugin/jquery.pagination.js"></script>
+	<script src="/res/js/building/allBuilding.js"></script>
+	<script>
+		$(function() {
+			$("#btnkfz").click(function() {
+				window.location.href = ctx + "/userlogin/tologin";
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="/res/timeline/css/timeline.css" />
+</body>
+</html>

@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19T04:59:19.675Z",
+  "mode": "read-only-full-snapshot-clustering-comparison",
+  "inputs": [
+    {
+      "path": "scripts/data/virtual-shanghai-buildings-live.json",
+      "sha256": "817f564def3460c1f39e4e68bdeaa4ab4242a576be6ab7f4085031d94d0ac2d2"
+    },
+    {
+      "path": "scripts/data/virtual-shanghai-site-separations.json",
+      "sha256": "a63f71c12993c90cd56d6838872e7fe345fb2e3d6966b5694728216874321e00"
+    }
+  ],
+  "diagnosis": "The live snapshot mixes UTM 51N metre coordinates with eight WGS84 coordinate overrides. distanceMetres uses Cartesian distance when either point is projected, so cross-frame copies were treated as roughly 3473 km apart. Coordinates are now projected on copies before both clustering distances and centroid averaging.",
+  "implementation": {
+    "entrypoint": "scripts/build-historical-data.mjs:makeBuildings",
+    "helper": "scripts/lib/building-cluster-coordinates.mjs:buildingRecordsInUtm51n",
+    "coordinateSystem": "EPSG:32651",
+    "storedSourceRecordsChanged": false,
+    "thresholdsChanged": false,
+    "fullDataBuildRun": false
+  },
+  "thresholds": {
+    "numberedAddressMetres": 250,
+    "unnumberedAddressMetres": 30,
+    "semanticMetres": 8
+  },
+  "summary": {
+    "sourceRecords": 1803,
+    "utmRecords": 1795,
+    "wgs84Records": 8,
+    "beforeClusters": 1647,
+    "afterClusters": 1645,
+    "newMergedClusters": 2,
+    "unchangedClusters": 1643,
+    "unchangedClusterSourceRecords": 1799,
+    "additionalMixedFrameCandidates": 0
+  },
+  "checks": {
+    "onlyExpectedPairsMerge": true,
+    "allOtherMembershipsUnchanged": true,
+    "unchangedClusterNamesAndHistoricalRecords": true,
+    "unchangedClusterDisplayCoordinatesAtSixDecimals": true,
+    "rawRecordsUnmodified": true,
+    "rawSnapshotBytesUnmodified": true,
+    "all1803SourceRecordIdsRetained": true,
+    "separation241And242Retained": true
+  },
+  "newlyMergedClusters": [
+    {
+      "sourceRecordIds": [
+        359,
+        4135
+      ],
+      "names": [
+        "Kelmsott Garden",
+        "Kelmscott Garden"
+      ],
+      "addresses": [
+        "188 AVENUE DU ROI ALBERT",
+        "188 avenue du Roi Albert"
+      ],
+      "normalizedAddress": "AVENUE DU ROI ALBERT|188",
+      "namesAreVariants": true,
+      "previousClusterIds": [
+        "vs-building-site:359",
+        "vs-building-site:4135"
+      ],
+      "clusterId": "vs-building-site:359",
+      "oldMixedUnitDistance": 3473014.4031863664,
+      "distanceMetres": 0.0039911017823742005,
+      "centroidWgs84": {
+        "longitude": 121.452771,
+        "latitude": 31.220854
+      },
+      "reasons": [
+        {
+          "leftRecordId": 359,
+          "rightRecordId": 4135,
+          "code": "same-numbered-address-within-radius",
+          "distanceMetres": 0.004,
+          "thresholdMetres": 250,
+          "normalizedAddress": "AVENUE DU ROI ALBERT|188",
+          "clusterId": "vs-building-site:359"
+        }
+      ]
+    },
+    {
+      "sourceRecordIds": [
+        408,
+        4154
+      ],
+      "names": [
+        "Dahua Hospital",
+        "Da Wha Hospital"
+      ],
+      "addresses": [
+        "19 ROUTE POTTIER",
+        "19 ROUTE POTTIER"
+      ],
+      "normalizedAddress": "ROUTE POTTIER|19",
+      "namesAreVariants": true,
+      "previousClusterIds": [
+        "vs-building-site:408",
+        "vs-building-site:4154"
+      ],
+      "clusterId": "vs-building-site:408",
+      "oldMixedUnitDistance": 3471986.3632554347,
+      "distanceMetres": 0.004007429867712817,
+      "centroidWgs84": {
+        "longitude": 121.445318,
+        "latitude": 31.212107
+      },
+      "reasons": [
+        {
+          "leftRecordId": 408,
+          "rightRecordId": 4154,
+          "code": "same-numbered-address-within-radius",
+          "distanceMetres": 0.004,
+          "thresholdMetres": 250,
+          "normalizedAddress": "ROUTE POTTIER|19",
+          "clusterId": "vs-building-site:408"
+        }
+      ]
+    }
+  ],
+  "convertedCopies": [
+    {
+      "sourceRecordId": 4133,
+      "name": "Embassy Theatre",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.45827,
+        31.233269
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        353168.35395188467,
+        3456478.9591621784
+      ],
+      "sourceCoordinateOverride": {
+        "method": "documented-modern-address-on-current-road-geometry",
+        "sourceUrl": "https://www.shhk.gov.cn/xwzx/002009/002009002/20161026/f08eb002-24c3-4808-9954-56123fbbd347.html",
+        "note": "Embassy Theatre / 夏令配克影戏院 is documented at present-day 742 Nanjing West Road; point placed at that address on the current road network."
+      }
+    },
+    {
+      "sourceRecordId": 4134,
+      "name": "China Funeral Directors",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.433319,
+        31.210861
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        350756.5760552798,
+        3454028.507260727
+      ],
+      "sourceCoordinateOverride": {
+        "method": "historical-address-interpolation",
+        "sourceUrl": "https://www.virtualshanghai.net/數據/建築?ID=4134",
+        "note": "670 Avenue Haig interpolated between georeferenced Virtual Shanghai records 521 and 875 Avenue Haig."
+      }
+    },
+    {
+      "sourceRecordId": 4135,
+      "name": "Kelmscott Garden",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.452771,
+        31.220854
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        352625.3087273703,
+        3455110.1058378285
+      ],
+      "sourceCoordinateOverride": {
+        "method": "duplicate-address-inheritance",
+        "sourceUrl": "https://www.virtualshanghai.net/數據/建築?ID=359",
+        "note": "Kelmscott Garden inherits the georeferenced point of record 359, Kelmsott Garden, at the same 188 Avenue du Roi Albert address."
+      }
+    },
+    {
+      "sourceRecordId": 4136,
+      "name": "Bedford Terrace",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.45275,
+        31.2208
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        352623.2244287798,
+        3455104.148067522
+      ],
+      "sourceCoordinateOverride": {
+        "method": "adjacent-address-interpolation",
+        "sourceUrl": "https://www.virtualshanghai.net/數據/建築?ID=359",
+        "note": "190 Avenue du Roi Albert placed immediately beside the georeferenced 188 Avenue du Roi Albert site."
+      }
+    },
+    {
+      "sourceRecordId": 4137,
+      "name": "Verdun Terrace",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.454008,
+        31.221529
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        352744.19395646185,
+        3455183.278887721
+      ],
+      "sourceCoordinateOverride": {
+        "method": "documented-current-site",
+        "sourceUrl": "https://zh.wikipedia.org/wiki/上海市优秀历史建筑",
+        "note": "Verdun Terrace is the surviving Changlecun compound at Lane 39 Shaanxi South Road."
+      }
+    },
+    {
+      "sourceRecordId": 4138,
+      "name": "Rickshaw Pullers Mutual Aid Association",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.485613,
+        31.258385
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        355810.91645859566,
+        3459226.9773908425
+      ],
+      "sourceCoordinateOverride": {
+        "method": "documented-modern-address",
+        "sourceUrl": "https://map.baidu.com/mobile/webapp/search/search/qt%3Ds%26wd%3D东嘉兴路230号/",
+        "note": "Point geocoded from the source address 230 Dong Jiaxing Road."
+      }
+    },
+    {
+      "sourceRecordId": 4154,
+      "name": "Da Wha Hospital",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.445318,
+        31.212107
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        351901.6853516397,
+        3454150.483807202
+      ],
+      "sourceCoordinateOverride": {
+        "method": "duplicate-address-inheritance",
+        "sourceUrl": "https://www.virtualshanghai.net/數據/建築?ID=408",
+        "note": "Da Wha Hospital inherits the georeferenced point of record 408, Dahua Hospital, at the same 19 Route Pottier address."
+      }
+    },
+    {
+      "sourceRecordId": 4156,
+      "name": "Lowrie Institute",
+      "sourceCoordinateSystem": "WGS84",
+      "sourceCoordinates": [
+        121.491926,
+        31.215481
+      ],
+      "clusteringCoordinateSystem": "EPSG:32651",
+      "clusteringCoordinates": [
+        356347.1309288199,
+        3454462.965053419
+      ],
+      "sourceCoordinateOverride": {
+        "method": "documented-current-site",
+        "sourceUrl": "https://www.shanghai.gov.cn/hpqywjy/20240506/8cc7c4127c0d4de69080f8966613326d.html",
+        "note": "Lowrie Institute is the predecessor site of Shanghai Shinan High School at 597 Lujiabang Road."
+      }
+    }
+  ],
+  "validation": {
+    "command": "node --test scripts/lib/coordinate-systems.test.mjs scripts/lib/cluster-buildings.test.mjs",
+    "passedTests": 16,
+    "failedTests": 0
+  },
+  "notes": [
+    "No fuzzy matching, radius, site separation, current-use hold, raw coordinate override, or raw source file was modified.",
+    "The eight geographic entries are the WGS84 inputs already recognized as such by the existing display conversion. This fix unifies their numeric frame, rather than establishing new coordinate accuracy.",
+    "This audit compares clustering in memory; it does not replace or regenerate historical-features.geojson."
+  ]
+}

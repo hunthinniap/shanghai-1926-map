@@ -56,7 +56,7 @@ a:focus-visible {
   z-index: 20;
   inset: 0 0 auto;
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) minmax(340px, 570px) minmax(180px, 1fr);
+  grid-template-columns: minmax(150px, 1fr) minmax(240px, 500px) auto;
   align-items: center;
   gap: 24px;
   min-height: 84px;
@@ -211,6 +211,7 @@ a:focus-visible {
 .sources-button,
 .building-toggle-button,
 .landmark-toggle-button,
+.heritage-toggle-button,
 .subway-toggle-button {
   display: inline-flex;
   align-items: center;
@@ -226,12 +227,14 @@ a:focus-visible {
 .sources-button:hover,
 .building-toggle-button:hover,
 .landmark-toggle-button:hover,
+.heritage-toggle-button:hover,
 .subway-toggle-button:hover {
   background: #f8f2e1;
 }
 
 .building-toggle-button[aria-pressed="false"],
-.landmark-toggle-button[aria-pressed="false"] {
+.landmark-toggle-button[aria-pressed="false"],
+.heritage-toggle-button[aria-pressed="false"] {
   color: var(--muted);
   background: rgba(226, 214, 188, 0.82);
 }
@@ -241,7 +244,57 @@ a:focus-visible {
   background: rgba(226, 214, 188, 0.82);
 }
 
-@media (max-width: 1050px) and (min-width: 761px) {
+.heritage-toggle-button[aria-pressed="true"] {
+  color: #25594f;
+  border-color: rgba(53, 117, 107, 0.4);
+  background: #dce5d7;
+}
+
+.heritage-caption {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  color: #25594f;
+}
+
+.heritage-caption i {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: #35756b;
+}
+
+.heritage-load-error {
+  position: absolute;
+  top: 95px;
+  left: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  font-size: 12px;
+}
+
+.heritage-load-error button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  background: transparent;
+  color: var(--wine);
+  cursor: pointer;
+}
+
+.heritage-details-panel dd {
+  white-space: pre-line;
+}
+
+@media (max-width: 1200px) and (min-width: 761px) {
   .topbar-actions button {
     width: 40px;
     padding: 0;
@@ -429,6 +482,7 @@ a:focus-visible {
 
 .details-kicker {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   margin-bottom: 9px;
@@ -536,6 +590,9 @@ a:focus-visible {
   gap: 4px;
   padding: 3px 0;
   border-top: 0;
+  color: var(--wine);
+  font-size: 11px;
+  text-decoration: none;
 }
 
 .details-sources h3 {
@@ -789,6 +846,7 @@ a:focus-visible {
   .sources-button,
   .building-toggle-button,
   .landmark-toggle-button,
+  .heritage-toggle-button,
   .subway-toggle-button {
     width: 40px;
     padding: 0;
@@ -807,6 +865,12 @@ a:focus-visible {
   .map-caption {
     left: 12px;
     bottom: 71px;
+  }
+
+  .heritage-load-error {
+    top: 122px;
+    left: 12px;
+    right: 12px;
   }
 
   .map-legend {
@@ -870,6 +934,19 @@ a:focus-visible {
 }
 
 @media (max-width: 420px) {
+  .topbar-actions {
+    gap: 4px;
+  }
+
+  .topbar-actions button {
+    width: 34px;
+    height: 36px;
+  }
+
+  .brand-block p {
+    letter-spacing: 0.08em;
+  }
+
   .map-legend button {
     gap: 3px;
     padding-inline: 3px;

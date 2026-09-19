@@ -54,6 +54,7 @@ export function makeSearchRecords(features: HistoricalFeature[]): SearchRecord[]
       properties.modernNameZh,
       properties.modernNameEn,
       properties.historicalChinese,
+      properties.historicalSiteNote,
       properties.currentNameZh,
       properties.currentUse,
       ...(properties.historicalRecords ?? []).flatMap((record) => [record.name, record.nameZh]),

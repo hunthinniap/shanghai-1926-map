@@ -181,9 +181,28 @@ export function mergeCuratedParkFeatures(
       ...(feature.properties.sourceRecordIds ?? []),
       ...legacyFeatures.flatMap((legacy) => legacy.properties.sourceRecordIds ?? []),
     ])]
+    const sourceParkRecordIds = [...new Set([
+      ...(feature.properties.sourceParkRecordIds ?? []),
+      ...legacyFeatures.flatMap((legacy) => legacy.properties.sourceParkRecordIds ?? []),
+    ])]
     const historicalRecords = mergeRecords([
       ...(feature.properties.historicalRecords ?? []),
-      ...legacyFeatures.flatMap((legacy) => legacy.properties.historicalRecords ?? []),
+      ...legacyFeatures.flatMap((legacy): HistoricalRecord[] => {
+        const p = legacy.properties
+        if (p.historicalRecords?.length) return p.historicalRecords
+        // Preserve the original park row before replacing its display with a
+        // curated park. A curated title must not become the source's wording.
+        if (!p.sourceParkRecordIds?.length) return []
+        return [{
+          name: p.historicalName,
+          nameZh: /^(?:VANISHED|NONE|NO|YES|NULL)$/i.test(p.modernNameZh?.trim() ?? '') ? undefined : p.modernNameZh,
+          sourceRecordIds: p.sourceRecordIds,
+          sourceParkRecordIds: p.sourceParkRecordIds,
+          startYear: p.labelYearIsFallback ? undefined : p.labelYear,
+          category: p.category,
+          sourceUrls: Object.values(p.sourceUrls ?? {}),
+        }]
+      }),
     ])
     const aliases = [...new Set([
       ...(feature.properties.aliases ?? []),
@@ -208,6 +227,7 @@ export function mergeCuratedParkFeatures(
           ...legacyFeatures.flatMap((legacy) => legacy.properties.sourceIds),
         ])],
         sourceRecordIds: sourceRecordIds.length ? sourceRecordIds : undefined,
+        sourceParkRecordIds: sourceParkRecordIds.length ? sourceParkRecordIds : undefined,
         historicalRecords: historicalRecords.length ? historicalRecords : undefined,
         aliases: aliases.length ? aliases : undefined,
         sourceUrls: Object.keys(sourceUrls).length ? sourceUrls : undefined,

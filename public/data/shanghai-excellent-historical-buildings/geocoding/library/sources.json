@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "publisher": "上海图书馆",
+  "sourcePage": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding",
+  "collectionMethod": "使用公开目录客户端调用的优秀历史建筑接口；isRed=3、空检索词，pageSize=2000；另以pageSize=1000分段核对实体URI全集。",
+  "publicClientKeyPolicy": "请求参数中的公开客户端key不写入来源URL；可复现采集时从保存／在线的原始客户端脚本读取。原始脚本完整保留。",
+  "license": {
+    "noticeAsPublished": "非特别注明，本站遵循cc2.0协议（署名-非商业性使用-相同方式共享）",
+    "noticeSourceId": "library-catalogue-page",
+    "noticeSourceUrl": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding"
+  },
+  "sources": [
+    {
+      "id": "library-catalogue-page",
+      "url": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding",
+      "resolvedUrl": "https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding",
+      "localPath": "raw/page.html",
+      "retrievedAt": "2026-09-18T16:59:57.846Z",
+      "contentType": "text/html;charset=UTF-8",
+      "byteLength": 26177,
+      "sha256": "e074ca651b3540defa742157d52103b95ced3ae06895a6f9bea01c3b8a265f73"
+    },
+    {
+      "id": "library-map-client",
+      "url": "https://data.library.sh.cn/res/js/building/allBuilding.js",
+      "resolvedUrl": "https://data.library.sh.cn/res/js/building/allBuilding.js",
+      "localPath": "raw/allBuilding.js",
+      "retrievedAt": "2026-09-18T16:59:57.848Z",
+      "contentType": "application/javascript;charset=UTF-8",
+      "byteLength": 21844,
+      "sha256": "17cf7d61b3c6e04aa20eeb287bd9524eb9c79385e45a15efce5399e877076b91"
+    },
+    {
+      "id": "library-architectures-all",
+      "url": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=1&iflimit=1&pageSize=2000",
+      "resolvedUrl": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=1&iflimit=1&pageSize=2000",
+      "localPath": "raw/architectures-all.json",
+      "retrievedAt": "2026-09-18T16:59:58.393Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "byteLength": 577452,
+      "sha256": "c2c825fbb1be2a8f13d0434277f2bac889293530e91d31d985e5a46666133a51"
+    },
+    {
+      "id": "library-verification-page-1",
+      "url": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=1&iflimit=1&pageSize=1000",
+      "resolvedUrl": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=1&iflimit=1&pageSize=1000",
+      "localPath": "raw/verification-page-1.json",
+      "retrievedAt": "2026-09-18T16:59:58.893Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "byteLength": 533203,
+      "sha256": "c66f8837cc801492f5aab37effe48f07e306b542299fb5b91fc22e5e670827e3"
+    },
+    {
+      "id": "library-verification-page-2",
+      "url": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=2&iflimit=1&pageSize=1000",
+      "resolvedUrl": "https://data.library.sh.cn/shnh/gmwx/webapi/architecture/getArchitectures?freetext=&isRed=3&key=PUBLIC_CLIENT_KEY_REDACTED&pageth=2&iflimit=1&pageSize=1000",
+      "localPath": "raw/verification-page-2.json",
+      "retrievedAt": "2026-09-18T16:59:59.015Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "byteLength": 44425,
+      "sha256": "15acb367f337970c111d9e6144211d676c847d5aa4c85fe171918a87ed48056c"
+    }
+  ]
+}

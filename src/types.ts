@@ -23,6 +23,7 @@ export interface CurrentUseSource {
 
 export interface HistoricalRecord {
   sourceRecordIds?: number[]
+  sourceParkRecordIds?: number[]
   name: string
   nameZh?: string
   startYear?: number
@@ -41,6 +42,9 @@ export interface HistoricalFeatureProperties {
   modernNameEn?: string
   historicalChinese?: string
   historicalRecords?: HistoricalRecord[]
+  historicalSiteNote?: string
+  historicalSiteSources?: CurrentUseSource[]
+  heritageOfficialId?: string
   sourceRecordIds?: number[]
   sourceParkRecordIds?: number[]
   legacyFeatureGroupIds?: string[]

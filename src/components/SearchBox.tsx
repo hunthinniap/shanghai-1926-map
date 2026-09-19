@@ -93,7 +93,7 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
               >
                 <span className="search-result-old">{record.historicalName}</span>
                 <span className="search-result-now">
-                  今名 · {record.modernNameZh}
+                  中文名 · {record.modernNameZh}
                   {record.modernNameEn ? ` / ${record.modernNameEn}` : ''}
                 </span>
               </button>

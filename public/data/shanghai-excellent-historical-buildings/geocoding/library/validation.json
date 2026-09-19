@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "summary": {
+    "advertisedRowCount": 1086,
+    "returnedRecords": 1085,
+    "uniqueArchitectureUris": 1085,
+    "validSourceCoordinates": 1085,
+    "sourceCountDifference": 1,
+    "sourceCountDifferenceNote": "发布方pager.rowCount与返回的唯一实体数量不一致；完整单页和独立分段请求的URI集合完全相同。保留计数差异，不补造缺失实体。",
+    "verificationPageCounts": [
+      999,
+      86
+    ]
+  },
+  "coordinateSystem": {
+    "name": "BD-09",
+    "determination": "publisher-client-code",
+    "sourceId": "library-map-client",
+    "sourceUrl": "https://data.library.sh.cn/res/js/building/allBuilding.js",
+    "evidence": [
+      {
+        "startLine": 438,
+        "endLine": 442,
+        "text": "优秀历史建筑图层将API的long/lat先经bd_to_gd转换，再传给AMap.Marker。源注释为“百度经纬度-转-高德经纬度”。"
+      },
+      {
+        "startLine": 532,
+        "endLine": 543,
+        "text": "bd_to_gd函数注释为“百度坐标转高德”，减去经度0.0065和纬度0.006并执行BD-09到GCJ-02公式。"
+      }
+    ],
+    "coordinatesAreConverted": false,
+    "caveat": "接口本身未声明坐标系；BD-09判定来自发布方实际地图客户端的明确转换流程，不把RDF geo:lat/long单独视为WGS84保证。"
+  },
+  "sourceSnapshots": [
+    {
+      "id": "library-catalogue-page",
+      "localPath": "raw/page.html",
+      "byteLength": 26177,
+      "sha256": "e074ca651b3540defa742157d52103b95ced3ae06895a6f9bea01c3b8a265f73"
+    },
+    {
+      "id": "library-map-client",
+      "localPath": "raw/allBuilding.js",
+      "byteLength": 21844,
+      "sha256": "17cf7d61b3c6e04aa20eeb287bd9524eb9c79385e45a15efce5399e877076b91"
+    },
+    {
+      "id": "library-architectures-all",
+      "localPath": "raw/architectures-all.json",
+      "byteLength": 577452,
+      "sha256": "c2c825fbb1be2a8f13d0434277f2bac889293530e91d31d985e5a46666133a51"
+    },
+    {
+      "id": "library-verification-page-1",
+      "localPath": "raw/verification-page-1.json",
+      "byteLength": 533203,
+      "sha256": "c66f8837cc801492f5aab37effe48f07e306b542299fb5b91fc22e5e670827e3"
+    },
+    {
+      "id": "library-verification-page-2",
+      "localPath": "raw/verification-page-2.json",
+      "byteLength": 44425,
+      "sha256": "15acb367f337970c111d9e6144211d676c847d5aa4c85fe171918a87ed48056c"
+    }
+  ],
+  "checks": [
+    "所有原始快照字节数与SHA-256",
+    "接口数组与分页计数结构",
+    "实体URI唯一且来自architecture命名空间",
+    "单页全集与分段分页URI逐个一致",
+    "经纬度有效且在上海宽边界内（异常只标记）",
+    "发布方坐标转换代码仍符合BD-09到GCJ-02流程"
+  ]
+}

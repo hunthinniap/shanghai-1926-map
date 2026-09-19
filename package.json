@@ -13,6 +13,8 @@
     "data:old-city-roads": "node scripts/add-old-city-roads.mjs",
     "data:remove-proposals": "node scripts/remove-proposed-landmarks.mjs",
     "data:current-use": "node scripts/enrich-landmark-current-uses.mjs",
+    "data:heritage": "node scripts/collect-shanghai-excellent-historical-buildings.mjs",
+    "validate:heritage": "node scripts/collect-shanghai-excellent-historical-buildings.mjs --check",
     "data:unresolved": "node scripts/export-unresolved-landmarks.mjs",
     "research:unresolved:first": "node scripts/compile-unresolved-research.mjs 001",
     "research:unresolved:prepare": "node scripts/prepare-unresolved-research-batch.mjs",
@@ -26,9 +28,16 @@
     "validate:data": "node scripts/validate-data.mjs",
     "build": "npm run validate:data && tsc --noEmit -p tsconfig.app.json && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs",
+    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs scripts/lib/shanghai-heritage.test.mjs scripts/lib/wikipedia-heritage-list.test.mjs scripts/lib/wikipedia-heritage-enrichment.test.mjs scripts/lib/heritage-addresses.test.mjs scripts/lib/heritage-library-matching.test.mjs",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "data:heritage:wikipedia": "node scripts/collect-shanghai-heritage-wikipedia-list.mjs && node scripts/collect-shanghai-heritage-wikipedia-details.mjs && node scripts/enrich-shanghai-heritage-wikipedia.mjs",
+    "data:heritage:wikipedia:offline": "node scripts/collect-shanghai-heritage-wikipedia-details.mjs --offline && node scripts/enrich-shanghai-heritage-wikipedia.mjs --offline",
+    "validate:heritage:wikipedia": "node scripts/collect-shanghai-heritage-wikipedia-details.mjs --check && node scripts/enrich-shanghai-heritage-wikipedia.mjs --check",
+    "data:heritage:library": "node scripts/collect-shanghai-heritage-library.mjs",
+    "validate:heritage:library": "node scripts/collect-shanghai-heritage-library.mjs --check",
+    "data:heritage:geocode": "node scripts/geocode-shanghai-heritage-buildings.mjs --offline && node scripts/enrich-shanghai-heritage-wikipedia.mjs --offline",
+    "validate:heritage:geocode": "node scripts/geocode-shanghai-heritage-buildings.mjs --check && node scripts/enrich-shanghai-heritage-wikipedia.mjs --check"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

@@ -108,6 +108,12 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
             <dd>{historicalUseNames[details.historicalUse]}</dd>
           </div>
         )}
+        {details.historicalSiteNote && (
+          <div className="details-list-wide">
+            <dt>地点与名称说明</dt>
+            <dd>{details.historicalSiteNote}</dd>
+          </div>
+        )}
         {details.kind === 'landmark' && (
           <div>
             <dt>现在用途</dt>
@@ -181,6 +187,9 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
                   {record.sourceRecordIds && record.sourceRecordIds.length > 0 && (
                     <><br /><small>Virtual Shanghai #{record.sourceRecordIds.join(' / #')}</small></>
                   )}
+                  {record.sourceParkRecordIds && record.sourceParkRecordIds.length > 0 && (
+                    <><br /><small>Virtual Shanghai 公园记录 #{record.sourceParkRecordIds.join(' / #')}</small></>
+                  )}
                   {record.sourceUrls && record.sourceUrls.length > 0 && (
                     <span className="details-historical-record-sources">
                       {record.sourceUrls.map((url, sourceIndex) => (
@@ -247,6 +256,12 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
               <ExternalLink size={14} aria-hidden="true" />
             </a>
           ))}
+        {(details.historicalSiteSources ?? []).map((source) => (
+          <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
+            <span>{source.title ?? '地点名称核对来源'}<small>历史地点与名称核对</small></span>
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        ))}
         {roadEponym && (
           <div className="details-person" aria-label="路名人物">
             <h4>路名人物</h4>

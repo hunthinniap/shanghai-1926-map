@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "question": "地图 Yushishanzhuang 与 Yu Family Tomb / 郁氏山壯是否为同一历史地点，以及与用户提供的春光坊词条的关系。",
+  "verdict": {
+    "status": "same-historical-site-confirmed",
+    "confidence": "high",
+    "summary": "可确认本项目的两个来源记录属于同一郁氏山庄历史场所：原 Parks.dbf 的 park 162 直接以 IDBAT=1566 指向 Yu Family Tomb 建筑记录，地址及 1894 起始年一致。园林与墓地是同一庄园的不同语义，并不证明两份点面几何相同。",
+    "basis": "explicit-source-foreign-key-with-address-and-year-corroboration",
+    "recommendedDisplayNameZh": "郁氏山庄（昧园）",
+    "recommendedAliases": [
+      "郁氏山庄",
+      "昧园",
+      "郁家花园",
+      "Yushishanzhuang",
+      "Yu Family Tomb",
+      "郁氏山壯"
+    ],
+    "sourceSpellingNote": "原建筑记录的郁氏山壯原样保留在来源/别名中；官方地方史采用郁氏山庄，显示名可据此规范。"
+  },
+  "subjects": [
+    {
+      "sourceId": "vs-buildings",
+      "recordId": 1566,
+      "localFeatureGroupIdAtReview": "landmark-vs-site-1566",
+      "sourceNameEn": "Yu Family Tomb",
+      "sourceNameZh": "郁氏山壯",
+      "address": "119 TANWEI",
+      "constructionYear": 1894,
+      "sourceClassification": [
+        "Site of memory",
+        "Cemetery",
+        "Tomb"
+      ],
+      "url": "https://www.virtualshanghai.net/Data/Buildings?ID=1566"
+    },
+    {
+      "sourceId": "vs-parks",
+      "recordId": 162,
+      "localFeatureGroupIdAtReview": "landmark-yushishanzhuang-vanished",
+      "sourceName": "YUSHISHANZHUANG",
+      "sourceBuildingRecordId": 1566,
+      "address": "119 TANWEI LU",
+      "startYear": 1894,
+      "endYear": 1932,
+      "sourceCurrentName": "VANISHED",
+      "sourceToday": "NO",
+      "rawRecord": {
+        "IDBAT": 1566,
+        "ID_PARKOBJ": 162,
+        "FULL_ADDRE": "119 TANWEI LU",
+        "START_TERR": "ND",
+        "START": 1894,
+        "END": 1932,
+        "DIGITSOURC": "1946",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "YUSHISHANZHUANG",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "YUSHISHANZHUANG",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Yushishanzhuang (Parks 162)",
+      "to": "Yu Family Tomb (Buildings 1566)",
+      "relation": "same-source-linked-historical-site",
+      "confidence": "high",
+      "sourceIds": [
+        "vs-parks-db",
+        "vs-building-1566"
+      ],
+      "note": "决定性依据是原数据外键 IDBAT；不是凭拼音相似、空间邻近或研究者猜名。"
+    },
+    {
+      "from": "郁氏山庄",
+      "to": "昧园 / 郁家花园",
+      "relation": "estate-and-garden-names",
+      "confidence": "high",
+      "sourceIds": [
+        "changning-government-2021"
+      ],
+      "note": "长宁区政府新闻办文章将郁氏山庄归于郁怀智（字屏翰），叙述宗祠与昧园、郁家花园。"
+    },
+    {
+      "from": "郁氏山庄",
+      "to": "郁氏家族祖先墓地",
+      "relation": "garden-estate-included-ancestral-memorial-and-burial-use",
+      "confidence": "high",
+      "sourceIds": [
+        "vs-building-1566",
+        "local-history-2020",
+        "baidu-chunguangfang"
+      ],
+      "note": "墓地类别与山庄名称并不互斥；地方史补足园林兼祖先祭祀和墓葬场所的背景。"
+    },
+    {
+      "from": "郁氏山庄",
+      "to": "春光路（今华山路1520弄）",
+      "relation": "1918-access-road",
+      "confidence": "high",
+      "sourceIds": [
+        "changning-government-2021"
+      ],
+      "note": "1918年出资修通往山庄的煤渣路，以春辉堂、光裕堂取首字命名。"
+    },
+    {
+      "from": "郁氏山庄",
+      "to": "春光坊",
+      "relation": "historical-estate-related-to-later-neighborhood",
+      "confidence": "high",
+      "sourceIds": [
+        "changning-government-2021",
+        "local-history-2020",
+        "baidu-chunguangfang"
+      ],
+      "note": "春光坊是华山路、幸福路间逐步形成的地境/里弄称呼，与原山庄有关，但其后期区域不能与原园林边界直接等同。地点在法华东镇、幸福路和法华镇路一带；没有证据指向曹家渡。"
+    },
+    {
+      "from": "春光坊地境",
+      "to": "华山绿地",
+      "relation": "later-area-redevelopment-context",
+      "confidence": "medium",
+      "sourceIds": [
+        "local-history-2020",
+        "baidu-chunguangfang"
+      ],
+      "note": "仅作周边后期沿革；现有文字不足以把原山庄整个点面几何准确对应到今天绿地的同一地籍范围。"
+    }
+  ],
+  "correctionScope": {
+    "supported": [
+      "用一个地点分组与一套主名称承接 park 162 和 building 1566，消除同一场所的重复独立标签。",
+      "保留双方来源 ID、历史名字、园林和墓地类别的语义，以及点和面各自的来源几何；可在详情说明花园兼家族祭祀墓葬用途。",
+      "以郁氏山庄（昧园）作为中文显示名，保留郁氏山壯为源拼写及 Yu Family Tomb / Yushishanzhuang 别名。",
+      "1894—1932 可作为来源所记园林阶段，注明来自 Parks.dbf；不得自动解读成墓地在1932年已全部迁清。"
+    ],
+    "notEstablished": [
+      "未核实 TANWEI 的罗马字究竟如何对应中文旧路名，也未验证旧门牌119和现代门牌的逐号换算。",
+      "身份一致不证明点与多边形精确重叠；本次不移动、缩放或重绘历史位置。",
+      "不把春光坊、华山绿地视为在所有历史时期均与郁氏山庄边界一致的同义名称。",
+      "不据这一个案例把其他 IDBAT 直接关联全部自动解释为同时期同一名称；有些是同地先后用途。"
+    ]
+  },
+  "unresolved": [
+    {
+      "topic": "现代门牌范围",
+      "details": "长宁区政府新闻办文章写法华镇路191弄至214号之间；第三方所引园林志写241号与191弄之间。未取得原志页核对，保留214/241冲突，不输出精确现代门牌定位。"
+    },
+    {
+      "topic": "面积",
+      "details": "不同转述的面积不一致，且可能存在单位或抄录错误；本次不采用面积数值，亦不据其改动几何。"
+    },
+    {
+      "topic": "地方志直接版本",
+      "details": "已查官方发表的地方史介绍和注明地方志来源的二手文章，但没有取得上海园林志、上海地名志所涉条目的原版页图。"
+    },
+    {
+      "topic": "几何精度",
+      "details": "本地图原点与园林面有小距离偏差。该偏差并不抵消来源外键身份关联，也不足以判断哪份几何更精确。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vs-parks-db",
+      "title": "Public Parks in Shanghai before and after 1949",
+      "publisher": "Virtual Shanghai",
+      "sourceType": "original-gis-dataset",
+      "url": "https://www.virtualshanghai.net/Data/Tables?ID=206",
+      "downloadUrl": "https://www.virtualshanghai.net/Asset/Source/dbData_ID-206_No-01.zip",
+      "access": "full-original-archive-and-dbf",
+      "license": "CC BY 4.0",
+      "summary": "原目录明确 IDBAT 为建筑数字对象标识。下载的 Parks.dbf 中 ID_PARKOBJ=162、IDBAT=1566、FULL_ADDRE=119 TANWEI LU、START=1894、END=1932；构成直接跨表关联。",
+      "raw": [
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-vs-parks.zip",
+          "bytes": 69034,
+          "sha256": "111bc9f7d8576cda9a7a3c7bc5997317a0efa1415b76730945dc709f2403619b"
+        },
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-Parks.dbf",
+          "bytes": 63143,
+          "sha256": "9d1c0efe3b391e3d674e94a289a907695c098b7fb3baa249f3210e25b2a3b5ba"
+        },
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-Parks.cpg",
+          "bytes": 9,
+          "sha256": "9942747bdb5e6e2bd2cd515323b0d5a56451b317076eec5cfb4472c956209605"
+        },
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-vs-parks-catalogue.html",
+          "bytes": 14595,
+          "sha256": "d4015fa70ebd79334ec8bf8311642a52e36585269962bb87b20c11c9f0ee6046"
+        }
+      ],
+      "crosswalkPath": "research/rechecks/2026-09-19-landmark-duplicates/park-building-source-links.json"
+    },
+    {
+      "id": "vs-building-1566",
+      "title": "Yu Family Tomb",
+      "publisher": "Virtual Shanghai",
+      "sourceType": "original-catalogue-record",
+      "url": "https://www.virtualshanghai.net/Data/Buildings?ID=1566",
+      "access": "full-text",
+      "summary": "建筑1566名称为 Yu Family Tomb / 郁氏山壯，地址119 TANWEI，建造年1894，归类 Cemetery / Tomb。",
+      "raw": [
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-vs-building-1566.html",
+          "bytes": 14903,
+          "sha256": "07395a9420fb08666601f9a672ccf957982e78bcf098362ca2aacb7efb58a6cf"
+        }
+      ]
+    },
+    {
+      "id": "changning-government-2021",
+      "title": "一条名为“幸福”的路，一段上海往事……",
+      "publisher": "上海长宁（上海市长宁区政府新闻办官方澎湃号）",
+      "publishedAt": "2021-07-25",
+      "sourceType": "government-local-history-publication",
+      "url": "https://m.thepaper.cn/newsDetail_forward_13739603",
+      "access": "full-text",
+      "summary": "介绍郁怀智（字屏翰）在法华东镇的郁氏山庄、1894年宗祠及昧园、1918年通往山庄的春光路（今华山路1520弄）；亦解释敦惠路后改幸福路。",
+      "limitations": "本文门牌与二手引志门牌存在214/241差异；面积不采用。",
+      "raw": [
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-shanghai-changning-20210725.html",
+          "bytes": 69030,
+          "sha256": "b1e04446b6b24f3ce68dd9fad4447b6e8436bc9544abaae36e77657668c168bf"
+        }
+      ]
+    },
+    {
+      "id": "local-history-2020",
+      "title": "侬是老长宁吗？三角场、高墩墩、这几个老地名可能就会问倒侬",
+      "publisher": "上海老底子（张渊源；来源标注图溯上海）",
+      "publishedAt": "2020-02-09",
+      "sourceType": "secondary-local-history-citing-gazetteers",
+      "url": "https://www.thepaper.cn/newsDetail_forward_5872351",
+      "access": "full-text",
+      "summary": "春光坊章节列华山路1520弄及幸福路多处里弄，称郁氏山庄为家族祖先神主及坟墓所在，并叙述周边日后形成厂居混合地境。",
+      "limitations": "非政府官方账号；书目来源由文章提供，本次未独立翻阅所列地方志原页。",
+      "raw": [
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-local-history-20200209.html",
+          "bytes": 190102,
+          "sha256": "22b6385bdae787017dbc8425e015e990411bcf4f128bf14cc0d48bfe82cec9b2"
+        }
+      ]
+    },
+    {
+      "id": "baidu-chunguangfang",
+      "title": "春光坊",
+      "publisher": "百度百科",
+      "sourceType": "user-provided-secondary-encyclopedia",
+      "url": "https://baike.baidu.com/item/春光坊/23338576",
+      "access": "full-html-via-direct-http-fetch; web-open-failed",
+      "summary": "用户链接可获取正文：条目把春光坊列为华山路1520弄及幸福路若干里弄，称原地与郁氏山庄坟场有关，并述1918年春光路、后期工业及绿地改建。",
+      "limitations": "开放编辑二手词条；参考文献有上海地名志，但本次未能从百度引用页取得原志正文，故不作为唯一身份依据。",
+      "raw": [
+        {
+          "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-baike-chunguangfang.html",
+          "bytes": 103494,
+          "sha256": "7b5c754a5cbd44305104401a22e9c8da8363a00699130ab354164d2f6c40a00a"
+        }
+      ]
+    },
+    {
+      "id": "secondary-yuanlinzhi-quote",
+      "title": "郁良心号药铺与郁屏翰及上海郁家（搜索索引保留的页面）",
+      "publisher": "中泰插花培训学校（历史页面署名）",
+      "sourceType": "low-priority-secondary-quotation",
+      "url": "https://www.chpx.net/cms/show-344.html",
+      "access": "search-index-and-web-readable-article-content",
+      "summary": "引园林志称昧园即郁氏山庄，故址法华镇路241号与191弄之间，园内分布祖先墓及建筑，1932年建普义坊园废。",
+      "limitations": "没有取得原志核对；目前页面标题显示与正文不相关的体育站名称，来源稳定性较低。仅记录转引线索和门牌冲突，不把它作为身份合并或精确定位的决定证据。"
+    }
+  ]
+}

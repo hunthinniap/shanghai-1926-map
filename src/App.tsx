@@ -1,14 +1,20 @@
-import { BookOpen, Building2, MapPin, MapPinOff, RotateCcw, TrainFront } from 'lucide-react'
+import { BookOpen, Building2, Landmark, MapPin, MapPinOff, RotateCcw, TrainFront } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { DetailsPanel } from './components/DetailsPanel'
 import { MapView } from './components/MapView'
 import { MetroDetailsPanel } from './components/MetroDetailsPanel'
+import { HeritageDetailsPanel } from './components/HeritageDetailsPanel'
 import { SearchBox } from './components/SearchBox'
 import { SourcesPanel } from './components/SourcesPanel'
 import { assetUrl } from './lib/assets'
+import type { HeritageBuildingCollection, HeritageBuildingFeature } from './lib/heritageBuildings'
 import type { MetroStationSelection } from './lib/metroLabels'
 import { makeSearchRecords } from './lib/search'
 import { mergeCuratedParkFeatures } from './lib/parkLabels'
+import { mergeLandmarkSites } from './lib/landmarkSites'
+import { landmarkSiteLinks } from './data/landmarkSiteLinks'
+import { linkHeritageLandmarks } from './lib/heritageLandmarkLinks'
+import { heritageLandmarkLinks } from './data/heritageLandmarkLinks'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
 function App() {
@@ -18,11 +24,21 @@ function App() {
   const [selectedGroupId, setSelectedGroupId] = useState<string>()
   const [sourcesOpen, setSourcesOpen] = useState(false)
   const [landmarksVisible, setLandmarksVisible] = useState(false)
+  const [heritageVisible, setHeritageVisible] = useState(false)
+  const [heritageBuildings, setHeritageBuildings] = useState<HeritageBuildingCollection>()
+  const [heritageLoading, setHeritageLoading] = useState(false)
+  const [heritageError, setHeritageError] = useState<string>()
+  const [heritageRetry, setHeritageRetry] = useState(0)
+  const [selectedHeritage, setSelectedHeritage] = useState<HeritageBuildingFeature>()
   const [buildingsVisible, setBuildingsVisible] = useState(false)
   const [subwayVisible, setSubwayVisible] = useState(false)
   const [highlightedJurisdiction, setHighlightedJurisdiction] = useState<HighlightedJurisdiction>()
   const [selectedMetroStation, setSelectedMetroStation] = useState<MetroStationSelection>()
   const [mapKey, setMapKey] = useState(0)
+  const selectedNeedsHeritage = Boolean(selectedGroupId && data?.features.features.some((feature) =>
+    feature.properties.featureGroupId === selectedGroupId
+    && heritageLandmarkLinks.some((link) => link.landmarkFeatureId === feature.properties.id)))
+  const needsHeritage = heritageVisible || landmarksVisible || selectedNeedsHeritage
 
   useEffect(() => {
     let cancelled = false
@@ -47,7 +63,7 @@ function App() {
       .then(([features, curatedParks, jurisdictions, sources]) => {
         if (!cancelled) {
           setData({
-            features: mergeCuratedParkFeatures(features, curatedParks),
+            features: mergeLandmarkSites(mergeCuratedParkFeatures(features, curatedParks), landmarkSiteLinks),
             jurisdictions,
             sources,
           })
@@ -62,10 +78,39 @@ function App() {
   }, [])
 
   useEffect(() => {
+    if (!needsHeritage || heritageBuildings) return
+    const controller = new AbortController()
+    setHeritageLoading(true)
+    setHeritageError(undefined)
+    fetch(assetUrl('data/shanghai-excellent-historical-buildings/map-buildings.geojson'), { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error('历史建筑数据加载失败')
+        return response.json() as Promise<HeritageBuildingCollection>
+      })
+      .then((collection) => {
+        if (collection.type !== 'FeatureCollection' || !Array.isArray(collection.features)) {
+          throw new Error('历史建筑数据格式有误')
+        }
+        if (!controller.signal.aborted) {
+          setHeritageBuildings(collection)
+          setHeritageLoading(false)
+        }
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) {
+          setHeritageError('历史建筑暂时无法载入')
+          setHeritageLoading(false)
+        }
+      })
+    return () => controller.abort()
+  }, [needsHeritage, heritageBuildings, heritageRetry])
+
+  useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setSelectedGroupId(undefined)
         setSelectedMetroStation(undefined)
+        setSelectedHeritage(undefined)
         setSourcesOpen(false)
         setHighlightedJurisdiction(undefined)
       }
@@ -74,14 +119,29 @@ function App() {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [])
 
+  const linkedBuildings = useMemo(() => data
+    ? linkHeritageLandmarks(data.features, heritageBuildings, heritageLandmarkLinks) : undefined,
+  [data, heritageBuildings])
   const searchRecords = useMemo(
-    () => (data ? makeSearchRecords(data.features.features) : []),
-    [data],
+    () => (linkedBuildings ? makeSearchRecords(linkedBuildings.features.features) : []),
+    [linkedBuildings],
   )
   const selectedFeature = useMemo<HistoricalFeature | undefined>(
     () => data?.features.features.find((feature) => feature.properties.featureGroupId === selectedGroupId),
     [data, selectedGroupId],
   )
+  const selectedLinkedBuilding = selectedHeritage
+    ? linkedBuildings?.byOfficialId.get(selectedHeritage.properties.officialId)
+    : selectedGroupId ? linkedBuildings?.byGroupId.get(selectedGroupId) : undefined
+  const activeHeritage = selectedLinkedBuilding?.heritage ?? selectedHeritage
+  const activeGroupId = selectedLinkedBuilding?.landmark.properties.featureGroupId ?? selectedGroupId
+  // When both layers are enabled, use the heritage marker for shared buildings.
+  const mapFeatures = useMemo(() => {
+    if (!linkedBuildings) return data?.features
+    if (!heritageVisible) return linkedBuildings.features
+    return { ...linkedBuildings.features, features: linkedBuildings.features.features.filter((feature) =>
+      !feature.properties.heritageOfficialId) }
+  }, [data, linkedBuildings, heritageVisible])
   const roadCount = useMemo(
     () =>
       data
@@ -106,11 +166,18 @@ function App() {
   const handleMapError = useCallback((message?: string) => setMapError(message), [])
   const selectHistoricalFeature = useCallback((groupId: string) => {
     setSelectedMetroStation(undefined)
+    setSelectedHeritage(undefined)
     setSelectedGroupId(groupId)
   }, [])
   const selectMetroStation = useCallback((station: MetroStationSelection) => {
     setSelectedGroupId(undefined)
+    setSelectedHeritage(undefined)
     setSelectedMetroStation(station)
+  }, [])
+  const selectHeritageBuilding = useCallback((feature: HeritageBuildingFeature) => {
+    setSelectedGroupId(undefined)
+    setSelectedMetroStation(undefined)
+    setSelectedHeritage(feature)
   }, [])
   const toggleJurisdiction = useCallback((jurisdiction: HighlightedJurisdiction) => {
     setHighlightedJurisdiction((selected) => selected === jurisdiction ? undefined : jurisdiction)
@@ -165,12 +232,37 @@ function App() {
             type="button"
             className="landmark-toggle-button"
             aria-pressed={landmarksVisible}
-            onClick={() => setLandmarksVisible((visible) => !visible)}
+            onClick={() => {
+              if (landmarksVisible && (selectedLinkedBuilding || selectedNeedsHeritage) && !heritageVisible) {
+                setSelectedGroupId(undefined)
+                setSelectedHeritage(undefined)
+              }
+              setLandmarksVisible((visible) => !visible)
+            }}
           >
             {landmarksVisible
               ? <MapPinOff size={16} aria-hidden="true" />
               : <MapPin size={16} aria-hidden="true" />}
             <span>{landmarksVisible ? '隐藏地标' : '显示地标'}</span>
+          </button>
+          <button
+            type="button"
+            className="heritage-toggle-button"
+            aria-pressed={heritageVisible}
+            aria-busy={heritageVisible && heritageLoading}
+            title={heritageVisible ? '隐藏历史建筑' : '显示历史建筑'}
+            onClick={() => {
+              if (heritageVisible) {
+                if (selectedLinkedBuilding && landmarksVisible) {
+                  setSelectedGroupId(selectedLinkedBuilding.landmark.properties.featureGroupId)
+                } else if (selectedLinkedBuilding || (selectedNeedsHeritage && !landmarksVisible)) setSelectedGroupId(undefined)
+                setSelectedHeritage(undefined)
+              }
+              setHeritageVisible((visible) => !visible)
+            }}
+          >
+            <Landmark size={16} aria-hidden="true" />
+            <span>{heritageVisible ? '隐藏历史建筑' : '显示历史建筑'}</span>
           </button>
           <button
             type="button"
@@ -194,16 +286,20 @@ function App() {
       <section className="map-stage">
         <MapView
           key={mapKey}
-          features={data.features}
+          features={mapFeatures ?? data.features}
           jurisdictions={data.jurisdictions}
           buildingsVisible={buildingsVisible}
           landmarksVisible={landmarksVisible}
+          heritageVisible={heritageVisible}
+          heritageBuildings={heritageBuildings}
+          selectedHeritage={heritageVisible ? activeHeritage : undefined}
           subwayVisible={subwayVisible}
           highlightedJurisdiction={highlightedJurisdiction}
-          selectedGroupId={selectedGroupId}
+          selectedGroupId={selectedLinkedBuilding && heritageVisible ? undefined : activeGroupId}
           selectedMetroStation={selectedMetroStation}
           onSelect={selectHistoricalFeature}
           onSelectMetro={selectMetroStation}
+          onSelectHeritage={selectHeritageBuilding}
           onMapError={handleMapError}
         />
 
@@ -215,6 +311,12 @@ function App() {
             {buildingRecordCount ? `（${buildingRecordCount} 条建筑原始记录）` : ''}
             {subwayVisible ? ' · 地铁站名为推定' : ''}
           </small>
+          {heritageVisible && !heritageError && (
+            <small className="heritage-caption" role="status">
+              <i aria-hidden="true" />
+              {heritageBuildings ? `${heritageBuildings.features.length} 处历史建筑参考点` : '正在载入历史建筑……'}
+            </small>
+          )}
         </div>
 
         <div className="map-legend" aria-label="历史辖区图例">
@@ -241,6 +343,15 @@ function App() {
           </button>
         </div>
 
+        {needsHeritage && heritageError && (
+          <div className="heritage-load-error" role="alert">
+            <span>{heritageError}</span>
+            <button type="button" onClick={() => setHeritageRetry((value) => value + 1)}>
+              <RotateCcw size={14} aria-hidden="true" />重试
+            </button>
+          </div>
+        )}
+
         {mapError && (
           <div className="map-error" role="alert">
             <span>现代底图暂时无法载入，历史数据仍可检索。</span>
@@ -257,8 +368,12 @@ function App() {
         )}
       </section>
 
-      <DetailsPanel feature={selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
+      <DetailsPanel feature={selectedLinkedBuilding ? undefined : selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
       <MetroDetailsPanel station={selectedMetroStation} onClose={() => setSelectedMetroStation(undefined)} />
+      <HeritageDetailsPanel feature={activeHeritage} linked={selectedLinkedBuilding} onClose={() => {
+        setSelectedHeritage(undefined)
+        if (selectedLinkedBuilding) setSelectedGroupId(undefined)
+      }} />
       <SourcesPanel open={sourcesOpen} sources={data.sources} onClose={() => setSourcesOpen(false)} />
     </main>
   )

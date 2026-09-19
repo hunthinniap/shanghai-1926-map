@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "sourceRetrievedAt": "2026-09-18T15:15:57.330Z",
+  "method": "从6个原始HTML快照重新解析；核验SHA-256、5批目录链接、所有表格行分类、逐批人工核对条目数及生成ID唯一性。--check还逐文件核对所有JSON。",
+  "sourceSnapshots": [
+    {
+      "localPath": "raw/index.html",
+      "sha256": "4dd2501c7178514818afb0af5f7b8354990f093df76af5e987e1844ca10a2dd2",
+      "byteLength": 12122
+    },
+    {
+      "localPath": "raw/batch-001.html",
+      "sha256": "3facf110292ef10fd15ad59f910ab9d7cf8c30259a478082c2354514fe95d77d",
+      "byteLength": 45452
+    },
+    {
+      "localPath": "raw/batch-002.html",
+      "sha256": "47e63758e5a3704166b6fab1a1f499c35936477b67b30fd75dba3acc8885ceac",
+      "byteLength": 126137
+    },
+    {
+      "localPath": "raw/batch-003.html",
+      "sha256": "94ceeb865b9d227fb65c213ff18faae28530a176dd00a105ca83f14acd558145",
+      "byteLength": 121118
+    },
+    {
+      "localPath": "raw/batch-004.html",
+      "sha256": "201f5906769f0603db1928fd77a6a4de8ba1e017258c7e875233735c01b8954b",
+      "byteLength": 144239
+    },
+    {
+      "localPath": "raw/batch-005.html",
+      "sha256": "d527fa604c659026b29ef2a4316c7dbe92b8a3cc35a84021291701a47736a972",
+      "byteLength": 160192
+    }
+  ],
+  "expectedRecordCounts": [
+    61,
+    175,
+    162,
+    234,
+    426
+  ],
+  "actualRecordCounts": [
+    61,
+    175,
+    162,
+    234,
+    426
+  ],
+  "uniqueRecordIds": 1058,
+  "sourceCodesRequiredUnique": false,
+  "tables": [
+    {
+      "batch": 1,
+      "tables": [
+        {
+          "tableIndex": 1,
+          "physicalRows": 76,
+          "recordRows": 61,
+          "districtRows": 7,
+          "headerRows": 7,
+          "continuationRows": 1,
+          "emptyRows": 0,
+          "noteRows": 0
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "tables": [
+        {
+          "tableIndex": 1,
+          "physicalRows": 198,
+          "recordRows": 175,
+          "districtRows": 7,
+          "headerRows": 7,
+          "continuationRows": 7,
+          "emptyRows": 0,
+          "noteRows": 2
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "tables": [
+        {
+          "tableIndex": 1,
+          "physicalRows": 186,
+          "recordRows": 162,
+          "districtRows": 11,
+          "headerRows": 11,
+          "continuationRows": 1,
+          "emptyRows": 0,
+          "noteRows": 1
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "tables": [
+        {
+          "tableIndex": 1,
+          "physicalRows": 248,
+          "recordRows": 234,
+          "districtRows": 7,
+          "headerRows": 7,
+          "continuationRows": 0,
+          "emptyRows": 0,
+          "noteRows": 0
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "tables": [
+        {
+          "tableIndex": 1,
+          "physicalRows": 447,
+          "recordRows": 426,
+          "districtRows": 16,
+          "headerRows": 2,
+          "continuationRows": 3,
+          "emptyRows": 0,
+          "noteRows": 0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalRecords": 1058,
+    "byBatch": {
+      "1": 61,
+      "2": 175,
+      "3": 162,
+      "4": 234,
+      "5": 426
+    },
+    "byDistrictAsListed": {
+      "黄浦区": 290,
+      "静安区": 154,
+      "徐汇区": 253,
+      "虹口区": 98,
+      "杨浦区": 45,
+      "长宁区": 121,
+      "松江区": 4,
+      "普陀区": 12,
+      "浦东新区": 49,
+      "闵行区": 1,
+      "宝山区": 2,
+      "崇明县": 1,
+      "原闸北区": 5,
+      "崇明区": 1,
+      "金山区": 3,
+      "奉贤区": 2,
+      "嘉定区": 4,
+      "青浦区": 13
+    },
+    "recordsWithQualityFlags": 11,
+    "nonstandardCodes": [
+      "D5035",
+      "50D80",
+      "D50102"
+    ],
+    "duplicateCodes": [
+      "5A012",
+      "5F038"
+    ],
+    "recordsWithSourceNotes": 3,
+    "componentRows": 6
+  }
+}

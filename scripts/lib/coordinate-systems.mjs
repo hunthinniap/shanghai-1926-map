@@ -35,6 +35,15 @@ export function utm51nToWgs84(x, y) {
   return { longitude: rounded(longitude), latitude: rounded(latitude) }
 }
 
+export function wgs84ToUtm51n(longitude, latitude) {
+  if (!Number.isFinite(longitude) || !Number.isFinite(latitude) ||
+    Math.abs(longitude) > 180 || Math.abs(latitude) > 90) {
+    throw new Error('Invalid WGS84 coordinate')
+  }
+  const [x, y] = proj4('EPSG:4326', 'EPSG:32651', [longitude, latitude])
+  return { x, y }
+}
+
 export function wgs84ToGcj02(longitude, latitude) {
   if (outsideChina(longitude, latitude)) {
     return { longitude: rounded(longitude), latitude: rounded(latitude) }
@@ -50,4 +59,34 @@ export function wgs84ToGcj02(longitude, latitude) {
     longitude: rounded(longitude + longitudeDelta),
     latitude: rounded(latitude + latitudeDelta),
   }
+}
+
+// Shanghai Library's map converts its BD-09 coordinates with the same inverse
+// before displaying them on AMap. Retain source coordinates alongside results:
+// these numerical conversions do not certify the accuracy of a source point.
+export function bd09ToGcj02(longitude, latitude) {
+  if (!Number.isFinite(longitude) || !Number.isFinite(latitude)) throw new Error('Invalid BD-09 coordinate')
+  const x = longitude - 0.0065
+  const y = latitude - 0.006
+  const frequency = pi * 3000 / 180
+  const radius = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * frequency)
+  const angle = Math.atan2(y, x) - 0.000003 * Math.cos(x * frequency)
+  return { longitude: rounded(radius * Math.cos(angle)), latitude: rounded(radius * Math.sin(angle)) }
+}
+
+export function gcj02ToWgs84(longitude, latitude) {
+  if (!Number.isFinite(longitude) || !Number.isFinite(latitude)) throw new Error('Invalid GCJ-02 coordinate')
+  let result = { longitude, latitude }
+  for (let iteration = 0; iteration < 12; iteration += 1) {
+    const forward = wgs84ToGcj02(result.longitude, result.latitude)
+    const dx = forward.longitude - longitude, dy = forward.latitude - latitude
+    result = { longitude: result.longitude - dx, latitude: result.latitude - dy }
+    if (Math.max(Math.abs(dx), Math.abs(dy)) <= 0.000001) break
+  }
+  return { longitude: rounded(result.longitude), latitude: rounded(result.latitude) }
+}
+
+export function bd09ToWgs84(longitude, latitude) {
+  const gcj = bd09ToGcj02(longitude, latitude)
+  return gcj02ToWgs84(gcj.longitude, gcj.latitude)
 }

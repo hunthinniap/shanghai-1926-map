@@ -1,0 +1,1285 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19",
+  "description": "Original Virtual Shanghai park-to-building source links for park records used by this map. IDBAT is retained as supplied by the source, without inferring display merges.",
+  "source": {
+    "title": "Virtual Shanghai Parks (Data table 206)",
+    "catalogueUrl": "https://www.virtualshanghai.net/Data/Tables?ID=206",
+    "downloadUrl": "https://www.virtualshanghai.net/Asset/Source/dbData_ID-206_No-01.zip",
+    "license": "CC BY 4.0",
+    "creators": [
+      "Christian Henriot",
+      "Isabelle Durand"
+    ],
+    "downloadedAt": "2026-09-19",
+    "archive": {
+      "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-vs-parks.zip",
+      "bytes": 69034,
+      "sha256": "111bc9f7d8576cda9a7a3c7bc5997317a0efa1415b76730945dc709f2403619b"
+    },
+    "dbf": {
+      "archiveEntry": "Parks.dbf",
+      "path": "research/rechecks/2026-09-19-landmark-duplicates/raw/yushi-Parks.dbf",
+      "bytes": 63143,
+      "sha256": "9d1c0efe3b391e3d674e94a289a907695c098b7fb3baa249f3210e25b2a3b5ba",
+      "cpgValue": "ANSI 1252",
+      "decodedAs": "windows-1252"
+    },
+    "fieldSemantics": {
+      "IDBAT": "Identifier of the digital building object",
+      "ID_PARKOBJ": "Identifier of the park (Virtual Shanghai)",
+      "START": "Opening date",
+      "END": "Destruction date",
+      "TODAY": "Existence today, as recorded by source; not newly verified in 2026"
+    }
+  },
+  "selection": {
+    "localDataset": "public/data/historical-features.geojson",
+    "localDatasetSha256": "ef1a7c09b911c2fdc87353bcf4af34be8bb93e8b9c909901fd3e856a8dc65596",
+    "localParkFeatureCount": 29,
+    "uniqueParkRecordIdCount": 29,
+    "sourceDbfRecordCount": 161,
+    "selectedDbfRecordCount": 29,
+    "unmatchedParkRecordIds": [],
+    "selectedParkRecordsWithLocalBuilding": 16
+  },
+  "links": [
+    {
+      "parkRecordId": 65,
+      "buildingRecordId": 196,
+      "fullAddress": "?? ROUTE VOYRON",
+      "startYear": 1909,
+      "endYear": 1943,
+      "name": "KOUKAZA PARK",
+      "nameGuide": "FUXING GONGYUAN",
+      "currentName": "FUXING GONGYUAN",
+      "today": "YES",
+      "digitSource": "GE",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-french-park"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-french-park"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-french-park",
+          "featureGroupId": "landmark-french-park",
+          "historicalName": "Parc français",
+          "modernNameZh": "复兴公园",
+          "sourceRecordIds": [
+            196
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 196,
+        "ID_PARKOBJ": 65,
+        "FULL_ADDRE": "?? ROUTE VOYRON",
+        "START_TERR": "C",
+        "START": 1909,
+        "END": 1943,
+        "DIGITSOURC": "GE",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 550,
+        "NAMEGUIDEJ": "FUXING GONGYUAN",
+        "CURRENT_NA": "FUXING GONGYUAN",
+        "S_NAME": "KOUKAZA PARK",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 113,
+      "buildingRecordId": 1485,
+      "fullAddress": "BANSONGYUAN LU / WANGDA LU",
+      "startYear": 1917,
+      "endYear": 0,
+      "name": "BANSONG YUAN",
+      "nameGuide": "BANSONG YUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_212_1929",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-bansong-yuan-vanished-8"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-bansong-yuan-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1485",
+          "featureGroupId": "landmark-vs-site-1485",
+          "historicalName": "Bansong Garden",
+          "modernNameZh": "半淞園",
+          "sourceRecordIds": [
+            1485
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1485,
+        "ID_PARKOBJ": 113,
+        "FULL_ADDRE": "BANSONGYUAN LU / WANGDA LU",
+        "START_TERR": "C",
+        "START": 1917,
+        "END": 0,
+        "DIGITSOURC": "ID_212_1929",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "BANSONG YUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "BANSONG YUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 62,
+      "buildingRecordId": 91,
+      "fullAddress": "156 ROUTE VOUILLEMONT",
+      "startYear": 1865,
+      "endYear": 1958,
+      "name": "PAHSIENJAO CEMETERY",
+      "nameGuide": "BAXIANQIAO GONGMU / HUAIHAI GONGYUAN",
+      "currentName": "HUAIHAI GONGYUAN",
+      "today": "YES",
+      "digitSource": "ID_335_1901",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-pahsienjao-cemetery-huaihai-gongyuan-9"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-pahsienjao-cemetery-huaihai-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-91",
+          "featureGroupId": "landmark-vs-site-91",
+          "historicalName": "Pahsienjao Cemetery (Baxianqiao)",
+          "modernNameZh": "外國坟山",
+          "sourceRecordIds": [
+            91
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 91,
+        "ID_PARKOBJ": 62,
+        "FULL_ADDRE": "156 ROUTE VOUILLEMONT",
+        "START_TERR": "C",
+        "START": 1865,
+        "END": 1958,
+        "DIGITSOURC": "ID_335_1901",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "BAXIANQIAO GONGMU / HUAIHAI GONGYUAN",
+        "CURRENT_NA": "HUAIHAI GONGYUAN",
+        "S_NAME": "PAHSIENJAO CEMETERY",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 161,
+      "buildingRecordId": 1276,
+      "fullAddress": "230 XIJIANGWAN LU",
+      "startYear": 1900,
+      "endYear": 0,
+      "name": "LIUSAN YUAN",
+      "nameGuide": "LIUSAN YUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ALT",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-liusan-yuan-vanished-14"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-liusan-yuan-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1275",
+          "featureGroupId": "landmark-vs-site-1275",
+          "historicalName": "Shinto Shrine",
+          "modernNameZh": "滬上神社",
+          "sourceRecordIds": [
+            1275,
+            1276
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1276,
+        "ID_PARKOBJ": 161,
+        "FULL_ADDRE": "230 XIJIANGWAN LU",
+        "START_TERR": "ND",
+        "START": 1900,
+        "END": 0,
+        "DIGITSOURC": "ALT",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "LIUSAN YUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "LIUSAN YUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 111,
+      "buildingRecordId": 200000,
+      "fullAddress": "THORBURN ROAD / WAYSIDE ROAD",
+      "startYear": 1911,
+      "endYear": 0,
+      "name": "WAYSIDE PARK",
+      "nameGuide": "HUISHAN GONGYUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_28_1919",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-wayside-park-vanished-15"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-wayside-park-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 111,
+        "FULL_ADDRE": "THORBURN ROAD / WAYSIDE ROAD",
+        "START_TERR": "C",
+        "START": 1911,
+        "END": 0,
+        "DIGITSOURC": "ID_28_1919",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "HUISHAN GONGYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "WAYSIDE PARK",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 75,
+      "buildingRecordId": 1525,
+      "fullAddress": "1290 HUNGJAO ROAD",
+      "startYear": 1909,
+      "endYear": 0,
+      "name": "SONGQINGLING LINGYUAN",
+      "nameGuide": "SONGQINGLING LINGYUAN",
+      "currentName": "SONGQINGLING LINGYUAN",
+      "today": "YES",
+      "digitSource": "GE",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-songqingling-lingyuan-songqingling-lingyuan-18"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-songqingling-lingyuan-songqingling-lingyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1525",
+          "featureGroupId": "landmark-vs-site-1525",
+          "historicalName": "Xielu Park",
+          "modernNameZh": "薤露園",
+          "sourceRecordIds": [
+            1525
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1525,
+        "ID_PARKOBJ": 75,
+        "FULL_ADDRE": "1290 HUNGJAO ROAD",
+        "START_TERR": "C",
+        "START": 1909,
+        "END": 0,
+        "DIGITSOURC": "GE",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 572,
+        "NAMEGUIDEJ": "SONGQINGLING LINGYUAN",
+        "CURRENT_NA": "SONGQINGLING LINGYUAN",
+        "S_NAME": "SONGQINGLING LINGYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 74,
+      "buildingRecordId": 1404,
+      "fullAddress": "780 CHANGNING LU",
+      "startYear": 1914,
+      "endYear": 1944,
+      "name": "JESSFIELD PARK",
+      "nameGuide": "GUIDE JAP / ZHONGSHAN GONGYUAN",
+      "currentName": "ZHONGSHAN GONGYUAN",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-jessfield-park-zhongshan-gongyuan-20"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-jessfield-park-zhongshan-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1404",
+          "featureGroupId": "landmark-vs-site-1404",
+          "historicalName": "Jessfield Park",
+          "modernNameZh": "兆豊公園",
+          "sourceRecordIds": [
+            1404
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1404,
+        "ID_PARKOBJ": 74,
+        "FULL_ADDRE": "780 CHANGNING LU",
+        "START_TERR": "CM",
+        "START": 1914,
+        "END": 1944,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 552,
+        "NAMEGUIDEJ": "GUIDE JAP / ZHONGSHAN GONGYUAN",
+        "CURRENT_NA": "ZHONGSHAN GONGYUAN",
+        "S_NAME": "JESSFIELD PARK",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 104,
+      "buildingRecordId": 200000,
+      "fullAddress": "SOOCHOW ROAD",
+      "startYear": 1910,
+      "endYear": 0,
+      "name": "RESERVE GARDEN",
+      "nameGuide": "NONE",
+      "currentName": "NONE",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-reserve-garden-none-22"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-reserve-garden-none"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 104,
+        "FULL_ADDRE": "SOOCHOW ROAD",
+        "START_TERR": "C",
+        "START": 1910,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NONE",
+        "CURRENT_NA": "NONE",
+        "S_NAME": "RESERVE GARDEN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 68,
+      "buildingRecordId": 485,
+      "fullAddress": "ROUTE JEROME WINLING / ROUTE PICARD DESTELAN",
+      "startYear": 1926,
+      "endYear": 1935,
+      "name": "EDAN / PETAIN PARK",
+      "nameGuide": "BEIDANG GONGYUAN / HENGSHAN GONGYUAN",
+      "currentName": "HENGSHAN GONGYUAN",
+      "today": "YES",
+      "digitSource": "1939",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-edan-petain-park-hengshan-gongyuan-24"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-edan-petain-park-hengshan-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-485",
+          "featureGroupId": "landmark-vs-site-485",
+          "historicalName": "Edan Park / Pétain Park",
+          "modernNameZh": "貝當公園 / 衡山公園",
+          "sourceRecordIds": [
+            485
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 485,
+        "ID_PARKOBJ": 68,
+        "FULL_ADDRE": "ROUTE JEROME WINLING / ROUTE PICARD DESTELAN",
+        "START_TERR": "C",
+        "START": 1926,
+        "END": 1935,
+        "DIGITSOURC": "1939",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 581,
+        "NAMEGUIDEJ": "BEIDANG GONGYUAN / HENGSHAN GONGYUAN",
+        "CURRENT_NA": "HENGSHAN GONGYUAN",
+        "S_NAME": "EDAN / PETAIN PARK",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 67,
+      "buildingRecordId": 1096,
+      "fullAddress": "1649 BUBBLING WELL ROAD",
+      "startYear": 1898,
+      "endYear": 1955,
+      "name": "BUBBLING WELL ROAD CEMETERY",
+      "nameGuide": "JING'AN GONGYUAN",
+      "currentName": "JING'AN GONGYUAN",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-bubbling-well-road-cemetery-jing-an-gongyuan-29"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-bubbling-well-road-cemetery-jing-an-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1096",
+          "featureGroupId": "landmark-vs-site-1096",
+          "historicalName": "Bubbling Well Road Cemetery",
+          "modernNameZh": "靜安寺路外國公墓",
+          "sourceRecordIds": [
+            1096
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1096,
+        "ID_PARKOBJ": 67,
+        "FULL_ADDRE": "1649 BUBBLING WELL ROAD",
+        "START_TERR": "C",
+        "START": 1898,
+        "END": 1955,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 556,
+        "NAMEGUIDEJ": "JING'AN GONGYUAN",
+        "CURRENT_NA": "JING'AN GONGYUAN",
+        "S_NAME": "BUBBLING WELL ROAD CEMETERY",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 135,
+      "buildingRecordId": 200000,
+      "fullAddress": "41 YUYUEN ROAD",
+      "startYear": 1918,
+      "endYear": 1932,
+      "name": "YUYUEN ROAD CHILDREN'S PLAYGROUND",
+      "nameGuide": "NONE",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_28_1919",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-yuyuen-road-children-s-playground-vanished-30"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-yuyuen-road-children-s-playground-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 135,
+        "FULL_ADDRE": "41 YUYUEN ROAD",
+        "START_TERR": "C",
+        "START": 1918,
+        "END": 1932,
+        "DIGITSOURC": "ID_28_1919",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NONE",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "YUYUEN ROAD CHILDREN'S PLAYGROUND",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 115,
+      "buildingRecordId": 1092,
+      "fullAddress": "1273 BUBBLING WELL ROAD",
+      "startYear": 1909,
+      "endYear": 0,
+      "name": "HARDOON GARDEN",
+      "nameGuide": "AILIANG YUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "1939",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-hardoon-garden-vanished-32"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-hardoon-garden-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1092",
+          "featureGroupId": "landmark-vs-site-1092",
+          "historicalName": "Hardoon Garden",
+          "modernNameZh": "Hardoon Garden",
+          "sourceRecordIds": [
+            1092
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1092,
+        "ID_PARKOBJ": 115,
+        "FULL_ADDRE": "1273 BUBBLING WELL ROAD",
+        "START_TERR": "C",
+        "START": 1909,
+        "END": 0,
+        "DIGITSOURC": "1939",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "AILIANG YUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "HARDOON GARDEN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 117,
+      "buildingRecordId": 200000,
+      "fullAddress": "1400 AVENUE ROAD",
+      "startYear": 1920,
+      "endYear": 0,
+      "name": "JUE YUAN",
+      "nameGuide": "JUE YUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_210_1929",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-jue-yuan-vanished-33"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-jue-yuan-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 117,
+        "FULL_ADDRE": "1400 AVENUE ROAD",
+        "START_TERR": "C",
+        "START": 1920,
+        "END": 0,
+        "DIGITSOURC": "ID_210_1929",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "JUE YUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "JUE YUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 58,
+      "buildingRecordId": 200000,
+      "fullAddress": "ROUTE GUSTAVE DE BOISSEZON / AVENUE JOFFRE / ROUTE LAFAYETTE",
+      "startYear": 1920,
+      "endYear": 1943,
+      "name": "PAUL BRUNAT SQUARE",
+      "nameGuide": "?CHANG GONGYUAN",
+      "currentName": "WUZHONG GONGYUAN",
+      "today": "YES",
+      "digitSource": "LUTULU 1939",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-paul-brunat-square-wuzhong-gongyuan-36"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-paul-brunat-square-wuzhong-gongyuan"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 58,
+        "FULL_ADDRE": "ROUTE GUSTAVE DE BOISSEZON / AVENUE JOFFRE / ROUTE LAFAYETTE",
+        "START_TERR": "C",
+        "START": 1920,
+        "END": 1943,
+        "DIGITSOURC": "LUTULU 1939",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "?CHANG GONGYUAN",
+        "CURRENT_NA": "WUZHONG GONGYUAN",
+        "S_NAME": "PAUL BRUNAT SQUARE",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 92,
+      "buildingRecordId": 200000,
+      "fullAddress": "2887 LUNGHWA ROAD",
+      "startYear": 1928,
+      "endYear": 0,
+      "name": "LONGHUA LIESHI LINGYAN",
+      "nameGuide": "LONGHUA LIESHI LINGYAN",
+      "currentName": "LONGHUA LIESHI LINGYAN",
+      "today": "YES",
+      "digitSource": "GE",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-longhua-lieshi-lingyan-longhua-lieshi-lingyan-52"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-longhua-lieshi-lingyan-longhua-lieshi-lingyan"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 92,
+        "FULL_ADDRE": "2887 LUNGHWA ROAD",
+        "START_TERR": "C",
+        "START": 1928,
+        "END": 0,
+        "DIGITSOURC": "GE",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 558,
+        "NAMEGUIDEJ": "LONGHUA LIESHI LINGYAN",
+        "CURRENT_NA": "LONGHUA LIESHI LINGYAN",
+        "S_NAME": "LONGHUA LIESHI LINGYAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 160,
+      "buildingRecordId": 200000,
+      "fullAddress": "1141 GUANGFU XILU",
+      "startYear": 1875,
+      "endYear": 1930,
+      "name": "XIAOYANGTING",
+      "nameGuide": "XUHUI HUA YUAN / XIAOYANGTING",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-xiaoyangting-vanished-55"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-xiaoyangting-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 160,
+        "FULL_ADDRE": "1141 GUANGFU XILU",
+        "START_TERR": "C",
+        "START": 1875,
+        "END": 1930,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "XUHUI HUA YUAN / XIAOYANGTING",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "XIAOYANGTING",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 164,
+      "buildingRecordId": 200000,
+      "fullAddress": "1301 GUANGFU XILU",
+      "startYear": 1875,
+      "endYear": 0,
+      "name": "JIUGUO YUAN",
+      "nameGuide": "JIUGUO YUAN / WUJIA HUAYUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-jiuguo-yuan-vanished-56"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-jiuguo-yuan-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 164,
+        "FULL_ADDRE": "1301 GUANGFU XILU",
+        "START_TERR": "C",
+        "START": 1875,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "JIUGUO YUAN / WUJIA HUAYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "JIUGUO YUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 120,
+      "buildingRecordId": 200000,
+      "fullAddress": "543 AVENUE HAIG",
+      "startYear": 1900,
+      "endYear": 0,
+      "name": "DINGXIANG HUAYUAN",
+      "nameGuide": "DINGXIANG HUAYUAN",
+      "currentName": "DINGXIANG HUAYUAN",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-dingxiang-huayuan-dingxiang-huayuan-66"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-dingxiang-huayuan-dingxiang-huayuan"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 120,
+        "FULL_ADDRE": "543 AVENUE HAIG",
+        "START_TERR": "C",
+        "START": 1900,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "DINGXIANG HUAYUAN",
+        "CURRENT_NA": "DINGXIANG HUAYUAN",
+        "S_NAME": "DINGXIANG HUAYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 110,
+      "buildingRecordId": 1314,
+      "fullAddress": "102 WAYSIDE ROAD",
+      "startYear": 1917,
+      "endYear": 1944,
+      "name": "STUDLEY PARK",
+      "nameGuide": "HUOSHAN GONGYUAN",
+      "currentName": "HUOSHAN GONGYUAN",
+      "today": "NO",
+      "digitSource": "ID_255 1944",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-studley-park-huoshan-gongyuan-68"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-studley-park-huoshan-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1314",
+          "featureGroupId": "landmark-vs-site-1314",
+          "historicalName": "Studley Park",
+          "modernNameZh": "Studley Park",
+          "sourceRecordIds": [
+            1314
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1314,
+        "ID_PARKOBJ": 110,
+        "FULL_ADDRE": "102 WAYSIDE ROAD",
+        "START_TERR": "C",
+        "START": 1917,
+        "END": 1944,
+        "DIGITSOURC": "ID_255 1944",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "HUOSHAN GONGYUAN",
+        "CURRENT_NA": "HUOSHAN GONGYUAN",
+        "S_NAME": "STUDLEY PARK",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 116,
+      "buildingRecordId": 1071,
+      "fullAddress": "169 NANYANG ROAD",
+      "startYear": 1922,
+      "endYear": 0,
+      "name": "NANYANG GONGYUAN",
+      "nameGuide": "NANYANG GONGYUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "LUTULU 1939",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-nanyang-gongyuan-vanished-71"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-nanyang-gongyuan-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1071",
+          "featureGroupId": "landmark-vs-site-1071",
+          "historicalName": "Children's Playground (SMC)",
+          "modernNameZh": "Children's Playground (SMC)",
+          "sourceRecordIds": [
+            1071
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1071,
+        "ID_PARKOBJ": 116,
+        "FULL_ADDRE": "169 NANYANG ROAD",
+        "START_TERR": "C",
+        "START": 1922,
+        "END": 0,
+        "DIGITSOURC": "LUTULU 1939",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NANYANG GONGYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "NANYANG GONGYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 103,
+      "buildingRecordId": 1677,
+      "fullAddress": "SOOCHOW ROAD",
+      "startYear": 1890,
+      "endYear": 1943,
+      "name": "CHINESE PUBLIC GARDEN",
+      "nameGuide": "HEBANG GONGYUAN / HUAREN GONGYUAN",
+      "currentName": "VANISHED",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-chinese-public-garden-vanished-73"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-chinese-public-garden-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1677",
+          "featureGroupId": "landmark-vs-site-1677",
+          "historicalName": "Hebang Park",
+          "modernNameZh": "河浜公園",
+          "sourceRecordIds": [
+            1677
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1677,
+        "ID_PARKOBJ": 103,
+        "FULL_ADDRE": "SOOCHOW ROAD",
+        "START_TERR": "C",
+        "START": 1890,
+        "END": 1943,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "HEBANG GONGYUAN / HUAREN GONGYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "CHINESE PUBLIC GARDEN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 162,
+      "buildingRecordId": 1566,
+      "fullAddress": "119 TANWEI LU",
+      "startYear": 1894,
+      "endYear": 1932,
+      "name": "YUSHISHANZHUANG",
+      "nameGuide": "YUSHISHANZHUANG",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "1946",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-yushishanzhuang-vanished-74"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-yushishanzhuang-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1566",
+          "featureGroupId": "landmark-vs-site-1566",
+          "historicalName": "Yu Family Tomb",
+          "modernNameZh": "郁氏山壯",
+          "sourceRecordIds": [
+            1566
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1566,
+        "ID_PARKOBJ": 162,
+        "FULL_ADDRE": "119 TANWEI LU",
+        "START_TERR": "ND",
+        "START": 1894,
+        "END": 1932,
+        "DIGITSOURC": "1946",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "YUSHISHANZHUANG",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "YUSHISHANZHUANG",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 140,
+      "buildingRecordId": 1727,
+      "fullAddress": "MOULMEIN ROAD / WEIHAWEI ROAD",
+      "startYear": 1885,
+      "endYear": 0,
+      "name": "CHANG SU HOS GARDEN",
+      "nameGuide": "ZHANG YUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_326_1919",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-chang-su-hos-garden-vanished-78"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-chang-su-hos-garden-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1727",
+          "featureGroupId": "landmark-vs-site-1727",
+          "historicalName": "Zhang Garden",
+          "modernNameZh": "張園",
+          "sourceRecordIds": [
+            1727
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1727,
+        "ID_PARKOBJ": 140,
+        "FULL_ADDRE": "MOULMEIN ROAD / WEIHAWEI ROAD",
+        "START_TERR": "C",
+        "START": 1885,
+        "END": 0,
+        "DIGITSOURC": "ID_326_1919",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "ZHANG YUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "CHANG SU HOS GARDEN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 108,
+      "buildingRecordId": 1266,
+      "fullAddress": "289 OUYANG ROAD",
+      "startYear": 1909,
+      "endYear": 0,
+      "name": "CHINESE YMCA RECREATION GROUND",
+      "nameGuide": "NONE",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-chinese-ymca-recreation-ground-vanished-81"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-chinese-ymca-recreation-ground-vanished"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-1266",
+          "featureGroupId": "landmark-vs-site-1266",
+          "historicalName": "Japanese Commercial School for Girls",
+          "modernNameZh": "日本女子商業學校",
+          "sourceRecordIds": [
+            1266,
+            1267,
+            1720,
+            1721
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 1266,
+        "ID_PARKOBJ": 108,
+        "FULL_ADDRE": "289 OUYANG ROAD",
+        "START_TERR": "C",
+        "START": 1909,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NONE",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "CHINESE YMCA RECREATION GROUND",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 35,
+      "buildingRecordId": 500,
+      "fullAddress": "BUND ROAD",
+      "startYear": 1868,
+      "endYear": 1945,
+      "name": "HUANGPU GONGYUAN",
+      "nameGuide": "GUIDE JAP",
+      "currentName": "HUANGPU GONGYUAN",
+      "today": "YES",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-huangpu-gongyuan-huangpu-gongyuan-87"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-huangpu-gongyuan-huangpu-gongyuan"
+      ],
+      "localBuildingFeatures": [
+        {
+          "id": "landmark-vs-site-500",
+          "featureGroupId": "landmark-vs-site-500",
+          "historicalName": "Public Gardens",
+          "modernNameZh": "外灘公園",
+          "sourceRecordIds": [
+            500
+          ]
+        }
+      ],
+      "rawRecord": {
+        "IDBAT": 500,
+        "ID_PARKOBJ": 35,
+        "FULL_ADDRE": "BUND ROAD",
+        "START_TERR": "C",
+        "START": 1868,
+        "END": 1945,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "YES",
+        "ID_ENTITY": 540,
+        "NAMEGUIDEJ": "GUIDE JAP",
+        "CURRENT_NA": "HUANGPU GONGYUAN",
+        "S_NAME": "HUANGPU GONGYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 155,
+      "buildingRecordId": 200000,
+      "fullAddress": "LIPING ROAD / YANGTSZEPOO ROAD",
+      "startYear": 1916,
+      "endYear": 0,
+      "name": "POINT GARDEN",
+      "nameGuide": "NONE",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ID_28_1919",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-point-garden-vanished-90"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-point-garden-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 155,
+        "FULL_ADDRE": "LIPING ROAD / YANGTSZEPOO ROAD",
+        "START_TERR": "C",
+        "START": 1916,
+        "END": 0,
+        "DIGITSOURC": "ID_28_1919",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NONE",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "POINT GARDEN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 139,
+      "buildingRecordId": 200000,
+      "fullAddress": "814 TIENDONG ROAD",
+      "startYear": 1887,
+      "endYear": 0,
+      "name": "SHUANGQINGBIESHU",
+      "nameGuide": "XUYUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-shuangqingbieshu-vanished-120"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-shuangqingbieshu-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 139,
+        "FULL_ADDRE": "814 TIENDONG ROAD",
+        "START_TERR": "C",
+        "START": 1887,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "XUYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "SHUANGQINGBIESHU",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 163,
+      "buildingRecordId": 200000,
+      "fullAddress": "235 YUYUEN LU",
+      "startYear": 1882,
+      "endYear": 0,
+      "name": "SHENYUAN",
+      "nameGuide": "NONE",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "ALT",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-shenyuan-vanished-130"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-shenyuan-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 163,
+        "FULL_ADDRE": "235 YUYUEN LU",
+        "START_TERR": "ND",
+        "START": 1882,
+        "END": 0,
+        "DIGITSOURC": "ALT",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "NONE",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "SHENYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "parkRecordId": 167,
+      "buildingRecordId": 200000,
+      "fullAddress": "a verifier",
+      "startYear": 1888,
+      "endYear": 0,
+      "name": "DA HUAYUAN",
+      "nameGuide": "DA HUAYUAN",
+      "currentName": "VANISHED",
+      "today": "NO",
+      "digitSource": "GUIDE JAP",
+      "geometryType": "REGION",
+      "localFeatureIds": [
+        "landmark-da-huayuan-vanished-149"
+      ],
+      "localFeatureGroupIds": [
+        "landmark-da-huayuan-vanished"
+      ],
+      "localBuildingFeatures": [],
+      "rawRecord": {
+        "IDBAT": 200000,
+        "ID_PARKOBJ": 167,
+        "FULL_ADDRE": "a verifier",
+        "START_TERR": "ND",
+        "START": 1888,
+        "END": 0,
+        "DIGITSOURC": "GUIDE JAP",
+        "GEOMETRY": "REGION",
+        "TODAY": "NO",
+        "ID_ENTITY": 0,
+        "NAMEGUIDEJ": "DA HUAYUAN",
+        "CURRENT_NA": "VANISHED",
+        "S_NAME": "DA HUAYUAN",
+        "CREATOR": "Isabelle_Durand",
+        "DATE_CREAT": "2011-12-31T16:00:00.000Z"
+      }
+    }
+  ]
+}

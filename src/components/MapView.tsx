@@ -13,6 +13,7 @@ import type {
   HistoricalFeatureCollection,
 } from '../types'
 import { assetUrl } from '../lib/assets'
+import type { HeritageBuildingCollection, HeritageBuildingFeature } from '../lib/heritageBuildings'
 import {
   buildMetroStationLabelIndex,
   type MetroStationLabelEntry,
@@ -30,12 +31,16 @@ interface MapViewProps {
   jurisdictions: FeatureCollection
   buildingsVisible: boolean
   landmarksVisible: boolean
+  heritageVisible: boolean
+  heritageBuildings?: HeritageBuildingCollection
+  selectedHeritage?: HeritageBuildingFeature
   subwayVisible: boolean
   highlightedJurisdiction?: HighlightedJurisdiction
   selectedGroupId?: string
   selectedMetroStation?: MetroStationSelection
   onSelect: (groupId: string) => void
   onSelectMetro: (station: MetroStationSelection) => void
+  onSelectHeritage: (feature: HeritageBuildingFeature) => void
   onMapError: (message?: string) => void
 }
 
@@ -53,7 +58,63 @@ const interactiveLayers = [
   'historical-subway-station-hit',
   'historical-subway-station',
   'historical-subway-station-label',
+  'heritage-building-hit',
+  'heritage-building-point',
+  'heritage-building-label',
 ]
+
+const heritageLayers = ['heritage-building-hit', 'heritage-building-point', 'heritage-building-label', 'selected-heritage-building']
+const emptyHeritage: HeritageBuildingCollection = { type: 'FeatureCollection', features: [] }
+const heritageAttribution = '<a href="https://fgj.sh.gov.cn/yxlsjz/index.html">上海市房屋管理局</a> · <a href="https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding">上海图书馆</a> (署名·非商业·相同方式共享) · <a href="https://zh.wikipedia.org/wiki/上海市优秀历史建筑">Wikipedia</a> (CC BY-SA 4.0) · Wikidata (CC0) · © OpenStreetMap contributors (ODbL)'
+
+function setHeritageVisibility(map: Map, visible: boolean) {
+  for (const layerId of heritageLayers) {
+    if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visible ? 'visible' : 'none')
+  }
+  // The heritage list includes sites beyond the historical city centre.
+  map.setMinZoom(visible ? 9 : 10.5)
+  map.setMaxBounds(visible ? [[120.7, 30.6], [122.3, 32]] : [[121.34, 31.11], [121.61, 31.35]])
+}
+
+function setSelectedHeritage(map: Map, feature?: HeritageBuildingFeature) {
+  if (map.getLayer('selected-heritage-building')) {
+    map.setFilter('selected-heritage-building', ['==', ['get', 'officialId'], feature?.properties.officialId ?? '__none__'])
+  }
+}
+
+function addHeritageLayers(map: Map, collection: HeritageBuildingCollection) {
+  map.addSource('heritage-buildings', {
+    type: 'geojson', data: collection,
+    attribution: heritageAttribution,
+  })
+  map.addLayer({
+    id: 'heritage-building-hit', type: 'circle', source: 'heritage-buildings',
+    paint: { 'circle-radius': 13, 'circle-opacity': 0, 'circle-color': '#35756b' },
+  })
+  map.addLayer({
+    id: 'heritage-building-point', type: 'circle', source: 'heritage-buildings',
+    paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 9, 3, 13, 4.5, 17, 6],
+      'circle-color': ['case', ['==', ['get', 'coordinateScope'], 'building-complex-reference-point'], '#eee6d2', '#35756b'],
+      'circle-stroke-color': '#35756b', 'circle-stroke-width': 2,
+    },
+  })
+  map.addLayer({
+    id: 'heritage-building-label', type: 'symbol', source: 'heritage-buildings', minzoom: 12.1,
+    layout: {
+      'text-field': ['get', 'articleTitle'], 'text-font': ['Noto Sans Regular'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 12, 11, 16, 13],
+      'text-offset': [0, 1.05], 'text-anchor': 'top', 'text-padding': 8,
+      'text-max-width': 11,
+    },
+    paint: { 'text-color': '#25594f', 'text-halo-color': '#f2ead6', 'text-halo-width': 1.7 },
+  })
+  map.addLayer({
+    id: 'selected-heritage-building', type: 'circle', source: 'heritage-buildings',
+    filter: ['==', ['get', 'officialId'], '__none__'],
+    paint: { 'circle-radius': 9, 'circle-color': '#35756b', 'circle-stroke-color': '#f8f2e1', 'circle-stroke-width': 3 },
+  })
+}
 
 const landmarkLayers = [
   'historical-landmark-area',
@@ -378,7 +439,7 @@ function addHistoricalLayers(
       'line-opacity': 0.95,
     },
   })
-  map.addSource('historical-features', { type: 'geojson', data: features, promoteId: 'id' })
+  map.addSource('historical-features', { type: 'geojson', data: features, promoteId: 'id', attribution: heritageAttribution })
   map.addSource('metro-lines', { type: 'geojson', data: assetUrl('data/metro-lines.geojson') })
   map.addSource('metro-stations', { type: 'geojson', data: assetUrl('data/metro-stations.geojson') })
   map.addSource('selected-feature', {
@@ -748,18 +809,28 @@ export function MapView({
   jurisdictions,
   buildingsVisible,
   landmarksVisible,
+  heritageVisible,
+  heritageBuildings,
+  selectedHeritage,
   subwayVisible,
   highlightedJurisdiction,
   selectedGroupId,
   selectedMetroStation,
   onSelect,
   onSelectMetro,
+  onSelectHeritage,
   onMapError,
 }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
   const onSelectRef = useRef(onSelect)
   const onSelectMetroRef = useRef(onSelectMetro)
+  const onSelectHeritageRef = useRef(onSelectHeritage)
+  const featuresRef = useRef(features)
+  const fittedSelectionKeyRef = useRef<string | undefined>(undefined)
+  const heritageBuildingsRef = useRef(heritageBuildings)
+  const heritageVisibleRef = useRef(heritageVisible)
+  const selectedHeritageRef = useRef(selectedHeritage)
   const buildingsVisibleRef = useRef(buildingsVisible)
   const landmarksVisibleRef = useRef(landmarksVisible)
   const subwayVisibleRef = useRef(subwayVisible)
@@ -767,6 +838,11 @@ export function MapView({
   const selectedGroupIdRef = useRef(selectedGroupId)
   onSelectRef.current = onSelect
   onSelectMetroRef.current = onSelectMetro
+  onSelectHeritageRef.current = onSelectHeritage
+  featuresRef.current = features
+  heritageBuildingsRef.current = heritageBuildings
+  heritageVisibleRef.current = heritageVisible
+  selectedHeritageRef.current = selectedHeritage
   buildingsVisibleRef.current = buildingsVisible
   landmarksVisibleRef.current = landmarksVisible
   subwayVisibleRef.current = subwayVisible
@@ -805,6 +881,14 @@ export function MapView({
 
     const handleClick = (event: MapLayerMouseEvent) => {
       const hits = map.queryRenderedFeatures(event.point, { layers: interactiveLayers })
+      const heritageHit = hits.find((feature) => feature.layer.id.startsWith('heritage-building'))
+      if (heritageHit && heritageVisibleRef.current) {
+        const heritage = heritageBuildingsRef.current?.features.find((feature) =>
+          feature.id === heritageHit.id || feature.properties.officialId === heritageHit.properties?.officialId,
+        )
+        if (heritage) onSelectHeritageRef.current(heritage)
+        return
+      }
       const metroHit = hits.find((feature) => feature.layer.id.startsWith('historical-subway-station'))
       if (metroHit) {
         const modernName = matchingMetroStationName(metroHit.properties, metroStationLabels)
@@ -846,12 +930,17 @@ export function MapView({
     }
 
     map.on('style.load', () => {
-      addHistoricalLayers(map, features, jurisdictions, roadLabels, metroStationLabels, parkLabels)
+      addHistoricalLayers(map, featuresRef.current, jurisdictions, roadLabels, metroStationLabels, parkLabels)
+      addHeritageLayers(map, heritageBuildingsRef.current ?? emptyHeritage)
       setBuildingVisibility(map, buildingsVisibleRef.current)
       setLandmarkVisibility(map, landmarksVisibleRef.current)
+      setHeritageVisibility(map, heritageVisibleRef.current)
+      setSelectedHeritage(map, selectedHeritageRef.current)
       setSubwayVisibility(map, subwayVisibleRef.current)
       setHighlightedJurisdiction(map, highlightedJurisdictionRef.current)
-      setSelectedRoad(map, roadModernNameForGroup(features, selectedGroupIdRef.current))
+      const selectedSource = map.getSource('selected-feature') as maplibregl.GeoJSONSource | undefined
+      selectedSource?.setData(selectedCollection(featuresRef.current, selectedGroupIdRef.current))
+      setSelectedRoad(map, roadModernNameForGroup(featuresRef.current, selectedGroupIdRef.current))
       map.on('click', interactiveLayers, handleClick)
       map.on('mouseenter', interactiveLayers, () => {
         map.getCanvas().style.cursor = 'pointer'
@@ -875,7 +964,12 @@ export function MapView({
       map.remove()
       mapRef.current = null
     }
-  }, [features, jurisdictions, onMapError])
+  }, [jurisdictions, onMapError])
+
+  useEffect(() => {
+    const source = mapRef.current?.getSource('historical-features') as maplibregl.GeoJSONSource | undefined
+    source?.setData(features)
+  }, [features])
 
   useEffect(() => {
     const map = mapRef.current
@@ -892,6 +986,33 @@ export function MapView({
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
+    setHeritageVisibility(map, heritageVisible)
+  }, [heritageVisible])
+
+  useEffect(() => {
+    const map = mapRef.current
+    const source = map?.getSource('heritage-buildings') as maplibregl.GeoJSONSource | undefined
+    source?.setData(heritageBuildings ?? emptyHeritage)
+  }, [heritageBuildings])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    setSelectedHeritage(map, selectedHeritage)
+    if (!selectedHeritage) return
+    const selectionKey = `heritage:${selectedHeritage.properties.officialId}:${JSON.stringify(selectedHeritage.geometry)}`
+    if (fittedSelectionKeyRef.current === selectionKey) return
+    fittedSelectionKeyRef.current = selectionKey
+    const coordinates = selectedHeritage.geometry.coordinates
+    map.fitBounds([[coordinates[0], coordinates[1]], [coordinates[0], coordinates[1]]], {
+      padding: { top: 120, right: window.innerWidth > 760 ? 410 : 40, bottom: window.innerWidth > 760 ? 80 : 330, left: 40 },
+      maxZoom: 15.5, duration: 750,
+    })
+  }, [selectedHeritage])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
     setSubwayVisibility(map, subwayVisible)
   }, [subwayVisible])
 
@@ -903,12 +1024,19 @@ export function MapView({
 
   useEffect(() => {
     const map = mapRef.current
-    if (!map?.isStyleLoaded()) return
+    if (!map) return
     const selected = selectedCollection(features, selectedGroupId)
     const source = map.getSource('selected-feature') as maplibregl.GeoJSONSource | undefined
     source?.setData(selected)
     setSelectedRoad(map, roadModernNameForGroup(features, selectedGroupId))
     if (!selected.features.length) return
+
+    const linkedId = selected.features[0].properties?.heritageOfficialId
+    const selectionKey = linkedId
+      ? `heritage:${linkedId}:${JSON.stringify(selected.features[0].geometry)}`
+      : `historical:${selectedGroupId}:${JSON.stringify(selected.features.map((feature) => feature.geometry))}`
+    if (fittedSelectionKeyRef.current === selectionKey) return
+    fittedSelectionKeyRef.current = selectionKey
 
     const bounds = new LngLatBounds()
     selected.features.forEach((feature) => {
@@ -924,8 +1052,12 @@ export function MapView({
   }, [features, selectedGroupId])
 
   useEffect(() => {
+    if (!selectedGroupId && !selectedHeritage) fittedSelectionKeyRef.current = undefined
+  }, [selectedGroupId, selectedHeritage])
+
+  useEffect(() => {
     const map = mapRef.current
-    if (!map?.isStyleLoaded()) return
+    if (!map) return
     const source = map.getSource('selected-metro-station') as maplibregl.GeoJSONSource | undefined
     source?.setData({
       type: 'FeatureCollection',
@@ -945,6 +1077,7 @@ export function MapView({
       className="map-canvas"
       aria-label="上海历史路名交互地图"
       data-highlighted-jurisdiction={highlightedJurisdiction ?? 'none'}
+      data-heritage-visible={heritageVisible}
     />
   )
 }

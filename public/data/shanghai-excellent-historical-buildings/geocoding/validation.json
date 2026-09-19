@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "coverage": {
+    "targetRecords": 913,
+    "acceptedReferencePoints": 878,
+    "needsReview": 25,
+    "unmatched": 10,
+    "byOrigin": {
+      "openstreetmap": 7,
+      "shanghai-library": 871
+    },
+    "byScope": {
+      "address-reference-point": 405,
+      "building-reference-point": 3,
+      "building-complex-reference-point": 470
+    }
+  },
+  "inputs": [
+    {
+      "file": "geocoding/targets.json",
+      "byteLength": 1571580,
+      "sha256": "4f96038bce87d55c798efb7cf82a8def562c447348d6338e8d4bd45e07fae24e"
+    },
+    {
+      "file": "buildings.json",
+      "byteLength": 2130615,
+      "sha256": "03c1ec93609490b558a0c6d60648d57016bd214388c94d2bbdf56214791e62ba"
+    },
+    {
+      "file": "geocoding/library/buildings.json",
+      "byteLength": 1298283,
+      "sha256": "ee407e4fd7d113a32ae2449b913363214e181c6d49717e5d7a924754ac714945"
+    },
+    {
+      "file": "geocoding/library/sources.json",
+      "byteLength": 3734,
+      "sha256": "f63ce661630e9568e47f6188c9a46611238ded0a2420dbaed365f4ba5b294a6c"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-library-matches.json",
+      "byteLength": 23731,
+      "sha256": "7ee66a8a953229156447e7cf713cf2ca286a097daea17ed2848ffc8794358b75"
+    },
+    {
+      "file": "geocoding/library-residual-review.json",
+      "byteLength": 77443,
+      "sha256": "2424a36728e67c1135507aab47e6f0b9a91421e635131f866018eb932b8b963f"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-library-address-reviews.json",
+      "byteLength": 94623,
+      "sha256": "00d9f1643cd8d8f885e1a9aaff071312474381ab57dd431f06f8942ba48efe2e"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-library-coordinate-review.json",
+      "byteLength": 5600,
+      "sha256": "24134204960401cb06fa6c2a8a7c8daf7b6af4eaef6e8dc6975575af13aca0d5"
+    },
+    {
+      "file": "geocoding/reviewed-points.json",
+      "byteLength": 18583,
+      "sha256": "a0518ad2b4968376869c5e8fb8ca69de7a95ac53140ea0e339ab2b42ec2fffef"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-495702591.json",
+      "byteLength": 1915,
+      "sha256": "1f21fa08876d452548fd7ebd441fb4c7c41ef35aca5412de060c90cc9fe9d10f"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-490270437.json",
+      "byteLength": 3360,
+      "sha256": "05d3723d35ee3bf7e0f9a458fef00cfea81492d7f6e69a1093ae51ca5b698d24"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-475009251.json",
+      "byteLength": 1432,
+      "sha256": "8f3135d69ecb93d02d02c6720589a394559cb5426d098b804f60a463d065d8f6"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-488963703.json",
+      "byteLength": 1381,
+      "sha256": "507df72b9237e82e6bbdaba4fda45deb426fa9fe9a4156986760442b8bc8929d"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-yongquan-neighborhood.json",
+      "byteLength": 298923,
+      "sha256": "9db816beda3416ce23d53fd5b49d7aa9c1ea3f2aa9876a0cddfe78aa47587e3d"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-488963281.json",
+      "byteLength": 1532,
+      "sha256": "babc46f306dca9383113ff73466b256a4c69ab6f55c1a7f4a29474248a103b92"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-494546990.json",
+      "byteLength": 1714,
+      "sha256": "8db071e7fded3d90fc5d7b57bd338cafaaaa948f6ec700adb8ff3a5f484194d7"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-node-12624958031.json",
+      "byteLength": 606,
+      "sha256": "a1311d8aaa39c4908d32fae4b15244e9f463b2d09065322164308824273a0f97"
+    },
+    {
+      "file": "geocoding/probes/provider/osm-way-1281949305.json",
+      "byteLength": 1343,
+      "sha256": "075061bec6f2956ba12eba97fa77c5826e03a7b953503e1b39e593938307d0f7"
+    }
+  ],
+  "checks": {
+    "immutableTargetCount": 913,
+    "originalOfficialFieldsUnchanged": true,
+    "allTargetsInvestigated": true,
+    "acceptedAllHaveSourceAndCoordinateSystem": true,
+    "existingWikipediaPointsNotOverwritten": true
+  }
+}
