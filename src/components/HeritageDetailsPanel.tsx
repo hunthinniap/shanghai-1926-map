@@ -34,6 +34,7 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
 
   const details = feature.properties
   const historical = linked?.landmark.properties
+  const aliases = [...new Set([...(historical?.aliases ?? []), ...(linked?.link.aliases ?? [])])]
   const name = getHeritageBuildingName(details)
   const hasDifferentAddress = details.wikipediaAddress
     && details.wikipediaAddress !== details.address
@@ -82,6 +83,13 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       title: source.title || '建筑沿革资料',
       note: '名称与地址沿革',
     })),
+    ...(linked?.link.modernAddress ? [{
+      url: linked.link.modernAddress.sourceUrl,
+      title: linked.link.modernAddress.title,
+      note: '新地点地址核对来源',
+    }] : []),
+    ...(linked?.landmarks ?? []).flatMap((landmark) => Object.values(landmark.properties.sourceUrls ?? {})
+      .map((url) => ({ url, title: 'Virtual Shanghai · 历史地点记录', note: landmark.properties.historicalName }))),
     ...(historical?.currentUseSourceUri ? [{
       url: historical.currentUseSourceUri,
       title: historical.currentUseSourceId === 'sh-library-excellent-historical-buildings'
@@ -93,6 +101,14 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       title: source.title || '用途资料来源',
       note: '用途与沿革记载',
     })),
+    ...(linked?.landmarks ?? []).slice(1).flatMap(({ properties }) => [
+      ...(properties.currentUseSources ?? []).map((source) => ({
+        url: source.url, title: source.title || '用途资料来源', note: properties.historicalName,
+      })),
+      ...(properties.currentUseSourceUri ? [{
+        url: properties.currentUseSourceUri, title: '用途资料来源', note: properties.historicalName,
+      }] : []),
+    ]),
   ].filter((source, index, sources) => source.url
     && sources.findIndex((item) => item.url === source.url) === index)
 
@@ -125,6 +141,8 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
             <dt>对应范围</dt>
             <dd>{linked.link.relation === 'same-listed-complex'
               ? '同一名录建筑群／园区'
+              : linked.link.relation === 'component-of-listed-complex' ? '名录建筑群中的一栋／局部使用'
+              : linked.link.relation === 'same-historical-site' ? '同一地点的不同历史阶段'
               : linked.link.relation === 'same-listed-structure' ? '同一名录构筑物' : '同一名录建筑'}
               {linked.link.scopeNote && <><br /><small>{linked.link.scopeNote}</small></>}
             </dd>
@@ -138,7 +156,7 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
         )}
         {linked?.link.historicalAddresses.map((address) => (
           <div className="details-list-wide" key={`${address.sourceRecordId}-${address.address}`}>
-            <dt>旧路名与门牌</dt>
+            <dt>旧地点地址</dt>
             <dd>
               {address.address}
               <span className="details-historical-record-sources">
@@ -151,9 +169,12 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
           </div>
         ))}
         <div className="details-list-wide">
-          <dt>{historical ? '新路名与门牌（名录）' : hasDifferentAddress ? '官网记载地址' : '名录地址'}</dt>
-          <dd>{details.address || '未记载'}</dd>
+          <dt>{historical ? '新地点地址' : hasDifferentAddress ? '官网记载地址' : '名录地址'}</dt>
+          <dd><strong>{linked?.link.modernAddress?.address || details.address || '未记载'}</strong></dd>
         </div>
+        {linked?.link.modernAddress && linked.link.modernAddress.address !== details.address && (
+          <div className="details-list-wide"><dt>名录登记地址范围</dt><dd>{details.address}</dd></div>
+        )}
         {hasDifferentAddress && (
           <div className="details-list-wide">
             <dt>维基列表记载地址</dt>
@@ -256,8 +277,8 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
               </div>
             ))}
           </dl>
-          {!!historical.aliases?.length && (
-            <div className="details-aliases"><span>亦见</span><p>{historical.aliases.join(' · ')}</p></div>
+          {!!aliases.length && (
+            <div className="details-aliases"><span>亦见</span><p>{aliases.join(' · ')}</p></div>
           )}
         </section>
       )}
@@ -265,9 +286,13 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       {historical && (
         <section className="details-sources" aria-labelledby="heritage-current-use-title">
           <h3 id="heritage-current-use-title">用途与沿革资料</h3>
+          {(linked?.link.relation === 'same-historical-site' || linked?.link.relation === 'component-of-listed-complex') && (
+            <p className="details-aliases">{linked.link.scopeNote || '旧地点与现存历史建筑共用位置；各时期的建筑、机构与用途分别记载。'}</p>
+          )}
           <dl className="details-list">
             <div className="details-list-wide">
-              <dt>现用资料记载</dt>
+              <dt>{(linked?.landmarks?.length ?? 0) > 1 || linked?.link.relation === 'component-of-listed-complex'
+                ? `${historical.historicalName} · 现用资料记载` : '现用资料记载'}</dt>
               <dd>{historical.currentUse || '暂未查到可靠对应'}</dd>
             </div>
             {historical.currentNameZh && (
@@ -282,7 +307,7 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
                 <dd>{historical.currentAddress}</dd>
               </div>
             )}
-            {historical.currentUseRelationship && (
+            {historical.currentUseRelationship && linked?.link.relation !== 'same-historical-site' && (
               <div className="details-list-wide">
                 <dt>与历史地点的关系</dt>
                 <dd>{currentUseRelationships[historical.currentUseRelationship]}</dd>
@@ -292,14 +317,26 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
               <div className="details-list-wide"><dt>沿革备注</dt><dd>{historical.currentUseNote}</dd></div>
             )}
           </dl>
+          {(linked?.landmarks ?? []).slice(1).map((landmark) => (
+            <div className="details-aliases" key={landmark.properties.id}>
+              <span>{landmark.properties.historicalName}</span>
+              <p>{landmark.properties.currentUse || '此历史记录的现用途尚待核实。'}
+                {landmark.properties.currentNameZh && <><br />{landmark.properties.currentNameZh}</>}
+                {landmark.properties.currentAddress && <><br />{landmark.properties.currentAddress}</>}
+                {landmark.properties.currentUseNote && <><br />{landmark.properties.currentUseNote}</>}
+              </p>
+            </div>
+          ))}
           {linked?.link.note && <div className="details-aliases"><span>名称与地址沿革</span><p>{linked.link.note}</p></div>}
         </section>
       )}
 
-      <div className="details-aliases">
-        <span>{historical ? '地图位置 · 优秀历史建筑参考点' : locationLabel}</span>
-        <p>{locationNote}</p>
-      </div>
+      {details.coordinateScope !== 'building-complex-reference-point' && (
+        <div className="details-aliases">
+          <span>{historical ? '地图位置 · 优秀历史建筑参考点' : locationLabel}</span>
+          <p>{locationNote}</p>
+        </div>
+      )}
 
       <div className="details-sources">
         <h3>资料来源</h3>

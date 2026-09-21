@@ -23,6 +23,7 @@ vi.mock('./components/MapView', () => ({
         <button
           key={feature.properties.id}
           data-testid="historical-point"
+          data-geometry={JSON.stringify(feature.geometry)}
           onClick={() => props.onSelect(feature.properties.featureGroupId)}
         >
           {feature.properties.historicalName}
@@ -216,6 +217,33 @@ describe('historical-building layer interactions', () => {
     expect(heritageRequests).toBe(1)
     expect(element('[data-testid="heritage-point"]').textContent).toBe(heritageFeature.properties.name)
     expect(container.querySelector('.heritage-details-panel')).toBeNull()
+  })
+
+  it.each([
+    { ids: [526], officialId: 'sh-fgj-1A003-01', texts: ['12 BUND ROAD', '中山东一路12号', '中山东一路10-12号', '1874 年资料', '1923年'] },
+    { ids: [681, 631], officialId: 'sh-fgj-1A019-01', texts: ['CHEKIANG ROAD / NANKING ROAD', '627 NANKING ROAD', '1918 年', '1935 年', '南京东路635号', '南京东路627号', '七重天'] },
+  ])('keeps the complete shared card for $officialId across both layers', async ({ ids, officialId, texts }) => {
+    const originals: HistoricalFeature[] = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')).features
+    const listed: HeritageBuildingFeature[] = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')).features
+    loadedHistoricalFeatures = originals.filter((feature) => feature.properties.sourceRecordIds?.some((id) => ids.includes(id)))
+    loadedHeritageCollection = { type: 'FeatureCollection', features: listed.filter((feature) => feature.properties.officialId === officialId) }
+    await act(async () => root.render(<App />))
+    await click('.landmark-toggle-button')
+    expect(container.querySelectorAll('[data-testid="historical-point"]')).toHaveLength(1)
+    expect(JSON.parse(element('[data-testid="historical-point"]').dataset.geometry!)).toEqual(loadedHeritageCollection.features[0].geometry)
+    await click('[data-testid="historical-point"]')
+    const card = element('.heritage-details-panel').textContent
+    for (const text of texts) expect(card).toContain(text)
+    for (const id of ids) expect(card).toContain(`#${id}`)
+    await click('.heritage-toggle-button')
+    expect(container.querySelectorAll('[data-testid="historical-point"]')).toHaveLength(0)
+    expect(container.querySelectorAll('[data-testid="heritage-point"]')).toHaveLength(1)
+    await click('[data-testid="heritage-point"]')
+    expect(container.querySelectorAll('.details-panel')).toHaveLength(1)
+    expect(element('.heritage-details-panel').textContent).toBe(card)
+    await click('.heritage-toggle-button')
+    expect(element('.heritage-details-panel').textContent).toBe(card)
+    expect(container.querySelectorAll('[data-testid="historical-point"]')).toHaveLength(1)
   })
 
   it('keeps the historical map usable when the layer fails and loads reference points on retry', async () => {

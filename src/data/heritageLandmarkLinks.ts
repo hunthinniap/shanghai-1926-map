@@ -24,6 +24,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://japanese.shanghai.gov.cn/ja-CityWalk/20251120/e20bfddfbe1e40d4bb148f6640d70c88.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E4%B8%96%E7%95%8C"
       }
     ]
   },
@@ -51,7 +55,15 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%86%E9%9B%85%E5%85%AC%E5%AF%93"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/2tp3c0ieswi51fnc"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/集雅公寓"
       }
     ]
   },
@@ -76,6 +88,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/5xfzxukdpbdast1a"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B9%96%E5%85%AC%E5%AF%93"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -132,6 +148,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/ftlcreuewhxwfenc"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E9%A5%AD%E5%BA%97_(%E4%B8%8A%E6%B5%B7%E5%B8%82)"
       }
     ]
   },
@@ -156,6 +176,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/oanew610xsj8jcgu"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%99%AF%E6%9E%97%E5%A0%82"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -208,6 +232,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/g4lq6ilngth58zf3"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%96%B9%E9%A5%AD%E5%BA%97"
       }
     ]
   },
@@ -232,6 +260,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/mfni46661m75t0h6"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E9%87%91%E5%9F%8E%E9%93%B6%E8%A1%8C%E5%A4%A7%E6%A5%BC"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -260,6 +292,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/dongjiadu-catholic-church-616977/"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E8%91%A3%E5%AE%B6%E6%B8%A1%E5%9C%A3%E6%96%B9%E6%B5%8E%E5%90%84%E6%B2%99%E5%8B%BF%E7%95%A5%E5%A0%82"
       }
     ]
   },
@@ -281,6 +317,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     "scopeNote": "对应同一具名名录建筑；各来源门牌、年代及参考点精度分别保留。",
     "note": "善道堂专名、旧巨籁达路709与现巨鹿路709同街段门牌，以及24米位置相合支持同一名录建筑；不采用笼统Daoist Temple作单独匹配依据。",
     "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%96%84%E5%AF%BC%E5%A0%82"
+      },
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/ijrlafxof0rjtfo3"
@@ -308,6 +348,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/l3pozcxhe5yaqhv6"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E9%96%8B%E7%B4%8D%E5%85%AC%E5%AF%93"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -339,6 +383,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%88%E6%96%BD"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/q6r0k0sw2s7wp4ws"
       }
     ]
@@ -364,6 +412,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/2s77usvtlp0h8ogb"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E7%99%BD%E6%B8%A1%E6%A1%A5"
       }
     ]
   },
@@ -419,6 +471,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%9A%E5%B9%BF%E5%9C%B0%E4%BA%A7%E5%85%AC%E5%8F%B8%E5%A4%A7%E6%A5%BC"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/7swsude04cyayvou"
       }
     ]
@@ -447,6 +503,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%A4%A7%E6%96%B0%E5%85%AC%E5%8F%B8"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://www.openstreetmap.org/way/490270437"
       }
     ]
@@ -472,6 +532,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/5oye4n5fzh2k0ncu"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E9%82%AE%E6%94%BF%E6%80%BB%E5%B1%80"
       }
     ]
   },
@@ -619,6 +683,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B8%BF%E5%BE%B7%E5%A0%82"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/hftnzhlqq0is5kbr"
       }
     ]
@@ -644,6 +712,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/1febywhgbsnytgr1"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E8%A1%8C%E4%BB%93%E5%BA%93"
       }
     ]
   },
@@ -668,6 +740,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.shobserver.com/wx/detail.do?id=890526"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A5%B3%E9%9D%92%E5%B9%B4%E4%BC%9A%E5%A4%A7%E6%A5%BC"
       }
     ]
   },
@@ -700,6 +776,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.openstreetmap.org/way/177998987"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E9%80%8A%E5%A4%A7%E5%8E%A6"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -744,6 +824,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.openstreetmap.org/way/177998982"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%87%E4%B8%AD%E9%A5%AD%E5%BA%97%E5%A4%A7%E6%A5%BC"
       }
     ]
   },
@@ -768,6 +852,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.jingan.gov.cn/govxxgk/JB7/2025-07-16/13309cd8-fc60-4046-a370-903bda5b65f3.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BE%E4%B9%90%E9%97%A8%E8%88%9E%E5%8E%85"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -800,6 +888,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.shanghai.gov.cn/nw4411/20240909/676e24094de741e088e4e7dac38f9259.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%85%89%E6%98%8E%E7%94%B5%E5%BD%B1%E9%99%A2_(%E4%B8%8A%E6%B5%B7)"
       }
     ]
   },
@@ -828,6 +920,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.shhk.gov.cn/qyfwy/030002/030002002/030002002005/20230702/ec4abcc1-56f5-4855-9869-14c2bb7204df.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B5%A6%E6%B1%9F%E9%A5%AD%E5%BA%97"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -860,6 +956,34 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/fuywthpr6bp32aba"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%89%E4%BD%9B%E5%AF%BA_(%E4%B8%8A%E6%B5%B7)"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1488__sh-fgj-5A032-01",
+    "officialId": "sh-fgj-5A032-01",
+    "landmarkFeatureId": "landmark-vs-site-1488",
+    "expectedSourceRecordIds": [
+      1488
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1488,
+        "address": "?? PUYUTUNG / ?? PUYUSI",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1488"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "民政局明确公益新天地园为新普育堂旧址；关联名录所列历史建筑群。原机构1911年记录不等于园内每幢建筑建造年，参考点代表园区，保留各建筑分期。",
+    "note": "民政局明确公益新天地园为新普育堂旧址；关联名录所列历史建筑群。原机构1911年记录不等于园内每幢建筑建造年，参考点代表园区，保留各建筑分期。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://mzj.sh.gov.cn/2023bsmz/20231101/a9cfb7ad9ea4488ead99cd4fb872933f.html"
       }
     ]
   },
@@ -884,6 +1008,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/kb8izgkqw1rl1zzh"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E6%B9%BE%E4%BD%93%E8%82%B2%E4%B8%AD%E5%BF%83"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -916,6 +1044,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "http://data.library.sh.cn/entity/architecture/42payb63hzg7avg8"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%85%AC%E5%85%B1%E7%A7%9F%E7%95%8C%E5%B7%A5%E9%83%A8%E5%B1%80%E5%A4%A7%E6%A5%BC"
       }
     ]
   },
@@ -943,6 +1075,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AD%A5%E9%AB%98%E9%87%8C"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/e0mwwr7pw00snlxp"
       },
       {
@@ -950,6 +1086,73 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
         "url": "https://m.thepaper.cn/baijiahao_6268864"
       }
     ]
+  },
+  {
+    "id": "landmark-vs-site-515__sh-fgj-1A008-01",
+    "officialId": "sh-fgj-1A008-01",
+    "landmarkFeatureId": "landmark-vs-site-515",
+    "expectedSourceRecordIds": [
+      515
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 515,
+        "address": "27 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=515"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "怡和的旧27 BUND ROAD与中山东一路27号对应同一用址。1851年历史记录、名录1853年记载及1920年代重建大楼的阶段分开，使用现名录点展示原址沿革。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://m.thepaper.cn/newsDetail_forward_25948319"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-538__sh-fgj-3A002-01",
+    "officialId": "sh-fgj-3A002-01",
+    "landmarkFeatureId": "landmark-vs-site-538",
+    "expectedSourceRecordIds": [
+      538
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 538,
+        "address": "14 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=538"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "交通银行旧14 BUND ROAD与名录中山东一路14号对应。VS的1940年与名录1946—1948年新楼不混写，共卡表示银行原址后续重建。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://mzj.sh.gov.cn/lnb-wsws/20200518/MZ_LNB12_9195.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-544__sh-fgj-5A038-01",
+    "officialId": "sh-fgj-5A038-01",
+    "landmarkFeatureId": "landmark-vs-site-544",
+    "expectedSourceRecordIds": [
+      544
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 544,
+        "address": "70 FOOCHOW ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=544"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "德国邮局旧70 FOOCHOW ROAD与福州路70号保护项对应；1903机构记录与1905楼史分别保留，仅按同址沿革关联。",
+    "sources": []
   },
   {
     "id": "landmark-vs-site-547__sh-fgj-2A037-01",
@@ -972,6 +1175,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E5%BC%A5%E5%B0%94%E7%99%BB%E5%A4%A7%E6%A5%BC"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -1019,6 +1226,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E6%B1%87%E4%B8%B0%E5%A4%A7%E6%A5%BC"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/2amsd6lsc6xsu17z"
       }
     ]
@@ -1044,6 +1255,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.shanghai.gov.cn/cmsres/7a/7acdfcf1e97340eaa51d11e205b44482/04a890ed80dc86d0eae372da5bf0b6bf.pdf"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%9A%E7%BB%86%E4%BA%9A%E5%A4%A7%E6%A5%BC"
       }
     ]
   },
@@ -1076,6 +1291,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.jfdaily.com/sgh/detail?id=1721654"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%97%A5%E6%B8%85%E5%A4%A7%E6%A5%BC_(%E4%B8%8A%E6%B5%B7)"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -1112,6 +1331,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.aia.com.cn/zh-cn/gongkaixinxipilou/jibenxinxi/gongsigaikuang.jibenxinxi"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%97%E6%9E%97%E5%A4%A7%E6%A5%BC"
       }
     ]
   },
@@ -1140,6 +1363,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://fgj.sh.gov.cn/zfkf/20250827/a5cafdb7ca784fb3a304765e259e5b32.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BA%A6%E5%8A%A0%E5%88%A9%E9%93%B6%E8%A1%8C%E5%A4%A7%E6%A5%BC_(%E4%B8%8A%E6%B5%B7)"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -1183,6 +1410,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%91%A9%E8%A5%BF%E4%BC%9A%E5%A0%82"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://www.wikidata.org/wiki/Q11078482"
       }
     ]
@@ -1206,8 +1437,16 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     "note": "Bearn/培恩/培文的专名沿革与旧霞飞453/469、今淮海中路449—479同一沿街公寓支持对应2C002；排除对街4C002康绥及未独立核定的小培文辅楼。",
     "sources": [
       {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/培恩公寓"
+      },
+      {
         "title": "Shanghai Art Deco Buildings Database",
         "url": "https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%B9%E6%81%A9%E5%85%AC%E5%AF%93"
       },
       {
         "title": "建筑名称与地址沿革资料",
@@ -1255,6 +1494,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AD%A6%E5%BA%B7%E5%A4%A7%E6%A5%BC"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://www.wikidata.org/wiki/Q11124219"
       }
     ]
@@ -1271,11 +1514,16 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
         "sourceRecordId": 548,
         "address": "17 CANTON ROAD",
         "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=548"
+      },
+      {
+        "sourceRecordId": 551,
+        "address": "4 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=551"
       }
     ],
     "relation": "same-listed-building",
-    "scopeNote": "对应1916年有利大楼（Union Building）；广东路17号、旧外滩4号与现外滩3号为此楼不同门牌。",
-    "note": "上海黄浦发布史料明确Union Building=有利大楼、广东17号、现外滩3号/旧4号，且1916重建对应原VS548年份和门牌；足以选择明确楼体条目548关联名录，551机构记录暂待独立归组。",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Union Building与有利银行记录共同纳入有利大楼卡片。沿革文章明确广东路正门17号、外滩旧石刻4号与今3号属于同楼；1916年楼体记录和年代待考的银行使用记录分开保存。",
     "sources": [
       {
         "title": "建筑名称与地址沿革资料",
@@ -1283,19 +1531,15 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
-        "url": "https://www.threeonthebund.com/en/home"
-      },
+        "url": "https://fgj.sh.gov.cn/yxlsjzcs/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+      }
+    ],
+    "additionalLandmarks": [
       {
-        "title": "建筑名称与地址沿革资料",
-        "url": "https://www.thepaper.cn/newsDetail_forward_32610155"
-      },
-      {
-        "title": "建筑名称与地址沿革资料",
-        "url": "https://www.openstreetmap.org/way/178408816"
-      },
-      {
-        "title": "建筑名称与地址沿革资料",
-        "url": "https://www.openstreetmap.org/way/178408821"
+        "landmarkFeatureId": "landmark-vs-site-551",
+        "expectedSourceRecordIds": [
+          551
+        ]
       }
     ]
   },
@@ -1335,6 +1579,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%BD%E5%9F%8E%E9%A5%AD%E5%BA%97"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/okshmxl6ki5hiyg4"
       }
     ]
@@ -1363,7 +1611,76 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       },
       {
         "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B7%AE%E6%B5%B7%E5%85%AC%E5%AF%93"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
         "url": "https://data.library.sh.cn/entity/architecture/mfvq76tle2v0o17p"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-526__sh-fgj-1A003-01",
+    "officialId": "sh-fgj-1A003-01",
+    "landmarkFeatureId": "landmark-vs-site-526",
+    "expectedSourceRecordIds": [
+      526
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 526,
+        "address": "12 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=526"
+      }
+    ],
+    "modernAddress": {
+      "address": "中山东一路12号",
+      "sourceUrl": "https://www.spdb.com.cn/ebank_2403/personal_online_banking/kpx/202503/t20250329_1130803.shtml",
+      "title": "浦发银行官网 · 注册地址"
+    },
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "旧12 BUND ROAD与今中山东一路12号为汇丰银行同址沿革。VS的1874年为早期用址记录；汇丰档案确认现大楼1923年6月23日启用，两个年代分别保留。新地址取浦发官网，名录10—12号范围另列。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://history.hsbc.com/collections/snapshots/housing-the-bank/a-shanghai-landmark"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/滙豐銀行大樓_(上海)"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.spdb.com.cn/ebank_2403/personal_online_banking/kpx/202503/t20250329_1130803.shtml"
+      }
+    ]
+  },
+  {
+    "id": "landmark-hardoon-garden-vanished__sh-fgj-4B001-01",
+    "officialId": "sh-fgj-4B001-01",
+    "landmarkFeatureId": "landmark-hardoon-garden-vanished-32",
+    "expectedSourceRecordIds": [
+      1092
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1092,
+        "address": "1273 BUBBLING WELL ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1092"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "哈同花园／爱俪园旧址后来建设中苏友好大厦，今上海展览中心。共卡按园址消失后再开发的地点沿革，花园与1954年起建的新建筑不是同一建筑；名录参考点仅代表后期建筑，不代表旧园全境或原园建筑位置。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://expo.sww.sh.gov.cn/browser/detail.jspx?code=402881e144722a710144727790b70000"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.aisixiang.com/data/122073.html"
       }
     ]
   },
@@ -1385,6 +1702,14 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     "scopeNote": "对应1869年圣三一教堂本体；不并入相邻原教会学校、同仁医院／百乐饭店办公楼。",
     "note": "Trinity Church即圣三一堂，原建筑记录的关联历史照片直接标作Holy Trinity Church／聖三一堂，1869年与现存红礼拜堂相合。旧汉口路210号、名录九江路201号及维基九江路219号分别保留；九江路219号也用于相邻教会办公楼，不能仅按共用门牌合并楼体。",
     "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/zh-cn/圣三一堂_(上海)"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9C%A3%E4%B8%89%E4%B8%80%E5%A0%82_(%E4%B8%8A%E6%B5%B7)"
+      },
       {
         "title": "中国基督教两会：上海圣三一堂",
         "url": "https://www.ccctspm.org/index.php/churchinfo/396"
@@ -1428,6 +1753,10 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.openstreetmap.org/way/1197586458"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%95%E5%B0%94%E5%A0%82"
       }
     ]
   },
@@ -1447,7 +1776,12 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     ],
     "relation": "same-listed-building",
     "note": "Robert Dollar Building 即大来大楼。历史门牌为51 CANTON ROAD；名录地址为广东路51、59号。",
-    "sources": []
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/大来大楼"
+      }
+    ]
   },
   {
     "id": "landmark-vs-site-300__sh-fgj-2C007-01",
@@ -1665,6 +1999,30 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     ]
   },
   {
+    "id": "landmark-vs-site-291__sh-fgj-1C005-01",
+    "officialId": "sh-fgj-1C005-01",
+    "landmarkFeatureId": "landmark-vs-site-291",
+    "expectedSourceRecordIds": [
+      291
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 291,
+        "address": "219 ROUTE CARDINAL MERCIER",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=291"
+      }
+    ],
+    "relation": "component-of-listed-complex",
+    "scopeNote": "Grosvenor House仅对应名录1C005内的峻岭公寓／今锦江饭店贵宾楼。共卡采用名录建筑群参考点，历史名称、1935年与酒店用途只作用于该栋，不扩展至名录另列的楼体，也不包含独立1C004华懋公寓。",
+    "note": "Grosvenor House仅对应名录1C005内的峻岭公寓／今锦江饭店贵宾楼。共卡采用名录建筑群参考点，历史名称、1935年与酒店用途只作用于该栋，不扩展至名录另列的楼体，也不包含独立1C004华懋公寓。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20231124/b15d2cc62acf40e1856f52a7277b28bf.html"
+      }
+    ]
+  },
+  {
     "id": "landmark-vs-site-516__sh-fgj-5A041-01",
     "officialId": "sh-fgj-5A041-01",
     "landmarkFeatureId": "landmark-vs-site-516",
@@ -1688,6 +2046,30 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "建筑名称与地址沿革资料",
         "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260608/63f56cbd7e4f4db98596c464942434d7.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1665__sh-fgj-4F008-01",
+    "officialId": "sh-fgj-4F008-01",
+    "landmarkFeatureId": "landmark-vs-site-1665",
+    "expectedSourceRecordIds": [
+      1665
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1665,
+        "address": "181 MINHONG",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1665"
+      }
+    ],
+    "relation": "component-of-listed-complex",
+    "scopeNote": "虹口政府明确闵行路181号角田公寓内曾开设万岁馆。旅馆旧181 MINHONG作为公寓的局部历史使用纳入同一卡片；名录闵行171—181、201—211与峨眉70—80号范围全部保留，不将整项公寓都称为旅馆。",
+    "note": "虹口政府明确闵行路181号角田公寓内曾开设万岁馆。旅馆旧181 MINHONG作为公寓的局部历史使用纳入同一卡片；名录闵行171—181、201—211与峨眉70—80号范围全部保留，不将整项公寓都称为旅馆。",
+    "sources": [
+      {
+        "title": "上海市虹口区人民政府：路名背后的点点滴滴",
+        "url": "https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html"
       }
     ]
   },
@@ -1812,6 +2194,47 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "上海市虹口区人民政府：河滨大楼",
         "url": "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/e6bbb4ce-8d6b-4d2f-b525-115b35d40766.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-681__sh-fgj-1A019-01",
+    "officialId": "sh-fgj-1A019-01",
+    "landmarkFeatureId": "landmark-vs-site-681",
+    "expectedSourceRecordIds": [
+      681
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 681,
+        "address": "CHEKIANG ROAD / NANKING ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=681"
+      },
+      {
+        "sourceRecordId": 631,
+        "address": "627 NANKING ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=631"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "名录1A019合列老、新永安公司：老楼原记录为CHEKIANG ROAD / NANKING ROAD路口，今门牌南京东路635号；新楼旧门牌为627 NANKING ROAD。共用名录建筑群卡片，分别保留1918年老楼和1930年代新楼记录，不宣称两栋是同一楼体。",
+    "note": "名录1A019合列老、新永安公司：老楼原记录为CHEKIANG ROAD / NANKING ROAD路口，今门牌南京东路635号；新楼旧门牌为627 NANKING ROAD。共用名录建筑群卡片，分别保留1918年老楼和1930年代新楼记录，不宣称两栋是同一楼体。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/上海永安公司大楼"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/新永安大楼"
+      }
+    ],
+    "additionalLandmarks": [
+      {
+        "landmarkFeatureId": "landmark-vs-site-631",
+        "expectedSourceRecordIds": [
+          631
+        ]
       }
     ]
   },
@@ -2038,6 +2461,30 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "1936年工商名录",
         "url": "https://www.histsyn.com/1980/01/directoryandchronicle1936part010.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-568__sh-fgj-2A030-01",
+    "officialId": "sh-fgj-2A030-01",
+    "landmarkFeatureId": "landmark-vs-site-568",
+    "expectedSourceRecordIds": [
+      568
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 568,
+        "address": "185 FOOCHOW ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=568"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "185 FOOCHOW ROAD对应福州路185号总巡捕房用址。原条目的1891年及旧楼照片、1933—1935年新楼照片属于两代实体，旧楼后来拆除；按警署原址沿革共卡，不把1891年楼体写成现存建筑，也不把街角旧楼范围等同新楼占地。",
+    "sources": [
+      {
+        "title": "“小红楼”，见证上海公卫往事",
+        "url": "https://www.chinaqw.com/qx/2021/02-26/287386.shtml"
       }
     ]
   },
@@ -2656,6 +3103,30 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     ]
   },
   {
+    "id": "landmark-vs-site-407__sh-fgj-4D004-01",
+    "officialId": "sh-fgj-4D004-01",
+    "landmarkFeatureId": "landmark-vs-site-407",
+    "expectedSourceRecordIds": [
+      407
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 407,
+        "address": "1209 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=407"
+      }
+    ],
+    "relation": "component-of-listed-complex",
+    "scopeNote": "Adeodata Hall对应淮海中路1209号天赐大宅，现上音音乐会客厅，是4D004所列1189、1199、1209号三栋住宅之一。共卡不把1209号的楼史与用途赋给另外两栋，位置为名录建筑群参考点。",
+    "note": "Adeodata Hall对应淮海中路1209号天赐大宅，现上音音乐会客厅，是4D004所列1189、1199、1209号三栋住宅之一。共卡不把1209号的楼史与用途赋给另外两栋，位置为名录建筑群参考点。",
+    "sources": [
+      {
+        "title": "上海音乐学院：校园对外开放及历史建筑",
+        "url": "https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm"
+      }
+    ]
+  },
+  {
     "id": "landmark-vs-site-989__sh-fgj-3B025-01",
     "officialId": "sh-fgj-3B025-01",
     "landmarkFeatureId": "landmark-vs-site-989",
@@ -2675,6 +3146,1126 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
       {
         "title": "上海市政府：上海少年儿童图书馆沿革",
         "url": "https://www.shanghai.gov.cn/nw4411/20240718/4a4141e410ab49d1b2cc8f6199eca223.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1763__sh-fgj-2C010-01",
+    "officialId": "sh-fgj-2C010-01",
+    "landmarkFeatureId": "landmark-vs-site-1763",
+    "expectedSourceRecordIds": [
+      1763
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1763,
+        "address": "377 AVENUE DU ROI ALBERT",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1763"
+      }
+    ],
+    "aliases": [
+      "King Albert Apartments",
+      "King's Albert Apartments",
+      "陕南村",
+      "陕南邨",
+      "亚尔培公寓",
+      "金亚尔培公寓"
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "维基百科陕南村正文明确列出King Albert Apartments、亚尔培公寓、金亚尔培公寓及陕南邨别名；对应陕西南路公寓里弄。旧377 AVENUE DU ROI ALBERT原样保留，名录157—187号与维基151—187号分列，不声称377与某一现代门牌已逐号核定。原记录年代未知，维基1930年为建筑群沿革资料，不回写成VS记录年份。",
+    "note": "维基百科陕南村正文明确列出King Albert Apartments、亚尔培公寓、金亚尔培公寓及陕南邨别名；对应陕西南路公寓里弄。旧377 AVENUE DU ROI ALBERT原样保留，名录157—187号与维基151—187号分列，不声称377与某一现代门牌已逐号核定。原记录年代未知，维基1930年为建筑群沿革资料，不回写成VS记录年份。",
+    "sources": [
+      {
+        "title": "维基百科 · 陕南村（King Albert Apartments别名）",
+        "url": "https://zh.wikipedia.org/wiki/陕南村"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-218__sh-fgj-3C013-01",
+    "officialId": "sh-fgj-3C013-01",
+    "landmarkFeatureId": "landmark-vs-site-218",
+    "expectedSourceRecordIds": [
+      218
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 218,
+        "address": "181 AVENUE DUBAIL",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=218"
+      }
+    ],
+    "aliases": [
+      "Dubail Apartments",
+      "吕班公寓",
+      "重庆公寓"
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Dubail Apartments即吕班公寓、今重庆公寓。交大设计学院论文确认中英文楼名；建筑史文章引用行号录181 Av. Dubail和1947年电话簿181号，并明确现址重庆南路185号。旧181、新185分别展示，建造年代争议保持来源原文。",
+    "sources": [
+      {
+        "title": "上海交通大学设计学院 · 高密度多元化的街区：一种上海模式",
+        "url": "https://designschool.sjtu.edu.cn/dynamic/news/detail/690af4765c316a926b5f67c4"
+      },
+      {
+        "title": "外滩以西 · 吕班公寓旧181号与今重庆南路185号（澎湃号）",
+        "url": "https://www.thepaper.cn/newsDetail_forward_7768016"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1438__sh-fgj-4M007-01",
+    "officialId": "sh-fgj-4M007-01",
+    "landmarkFeatureId": "landmark-vs-site-1438",
+    "expectedSourceRecordIds": [
+      1438
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1438,
+        "address": "472 EDINBURGH ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1438"
+      }
+    ],
+    "aliases": [
+      "Yue Apartments",
+      "月邨",
+      "月村"
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "VS中文月邨与名录月村为同一江苏路住宅群，1921年记录与楼史相合；旧472 EDINBURGH ROAD保留，现保护范围为江苏路480弄名录列明楼号。资料记原22幢已有部分拆除，不将整处历史住宅群视为全部原物存续，也不将472直接换算为某栋现门牌。",
+    "note": "VS中文月邨与名录月村为同一江苏路住宅群，1921年记录与楼史相合；旧472 EDINBURGH ROAD保留，现保护范围为江苏路480弄名录列明楼号。资料记原22幢已有部分拆除，不将整处历史住宅群视为全部原物存续，也不将472直接换算为某栋现门牌。",
+    "sources": [
+      {
+        "title": "维基百科 · 月村（1921年与部分拆除记录）",
+        "url": "https://zh.wikipedia.org/wiki/月村"
+      },
+      {
+        "title": "上海长宁 · 江苏路的故事（搜狐转载）",
+        "url": "https://www.sohu.com/a/451154896_120209938"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-357__sh-fgj-2D041-01",
+    "officialId": "sh-fgj-2D041-01",
+    "landmarkFeatureId": "landmark-vs-site-357",
+    "expectedSourceRecordIds": [
+      357
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 357,
+        "address": "55 ROUTE PAUL HENRY",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=357"
+      }
+    ],
+    "aliases": [
+      "Orthodox Church",
+      "新乐路东正教堂",
+      "圣母大堂"
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Orthodox Church旧55 ROUTE PAUL HENRY与新乐路55号圣母大堂对应，正教会资料、名录和高德门址一致。原中文天主救堂存在宗派/字词误标，1938年原记录与1932年始建等楼史分列；不并入相邻57—61号住宅。高德仅用于核对名称门址，展示仍用历史建筑WGS84参考点，未读取或替换为高德坐标。",
+    "sources": [
+      {
+        "title": "中华正教会资料 · 上海圣母大堂旧址",
+        "url": "https://www.orthodox.cn/contemporary/shanghai/cathedral_cn.htm"
+      },
+      {
+        "title": "维基百科 · 圣母大堂",
+        "url": "https://zh.wikipedia.org/wiki/圣母大堂"
+      },
+      {
+        "title": "高德地图 · 新乐路东正教堂（仅核门址）",
+        "url": "https://ditu.amap.com/place/B00155LALJ"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-671__sh-fgj-1A023-01",
+    "officialId": "sh-fgj-1A023-01",
+    "landmarkFeatureId": "landmark-vs-site-671",
+    "expectedSourceRecordIds": [
+      671
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 671,
+        "address": "500 YUYACHING ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=671"
+      }
+    ],
+    "modernAddress": {
+      "address": "西藏中路500号",
+      "sourceUrl": "https://zh.wikipedia.org/wiki/大上海电影院",
+      "title": "维基百科 · 大上海电影院门址与重建说明"
+    },
+    "aliases": [
+      "Metropole Theater",
+      "Metropol Cinema",
+      "大上海大戏院",
+      "大上海电影院"
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "Metropole Theater／大上海戯院与名录大上海大戏院对应；维基正文列Metropol Cinema和今西藏中路500号，并明确原楼已重建。按同一地点历史阶段共卡，名录520号与资料500号分别保留；沿用既有原址重建用途研究，不因列入名录就认定1933年原建筑仍在。",
+    "sources": [
+      {
+        "title": "维基百科 · 大上海电影院（原楼重建）",
+        "url": "https://zh.wikipedia.org/wiki/大上海电影院"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1424__sh-fgj-3M001-01",
+    "officialId": "sh-fgj-3M001-01",
+    "landmarkFeatureId": "landmark-vs-site-1424",
+    "expectedSourceRecordIds": [
+      1424
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1424,
+        "address": "716 CHANGNING ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1424"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "兆豊別墅／兆丰别墅与Jessfield Villa为同一具名住宅群，旧716 CHANGNING ROAD门牌原样保留；长宁政府确认现址长宁路712弄及1929年始建，名录范围按整处别墅群展示。",
+    "note": "兆豊別墅／兆丰别墅与Jessfield Villa为同一具名住宅群，旧716 CHANGNING ROAD门牌原样保留；长宁政府确认现址长宁路712弄及1929年始建，名录范围按整处别墅群展示。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shcn.gov.cn/col3991/20240220/1254757.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-657__sh-fgj-4A028-01",
+    "officialId": "sh-fgj-4A028-01",
+    "landmarkFeatureId": "landmark-vs-site-657",
+    "expectedSourceRecordIds": [
+      657
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 657,
+        "address": "586 NINGPO ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=657"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Strand Theater原中文新光大戏院、旧586 NINGPO ROAD与名录新光大戏院宁波路586号精确相合，1930年沿革一致；不并入隔壁588号中国大饭店。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://commons.wikimedia.org/wiki/File:Strand_Theatre_Shanghai.JPG"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1215__sh-fgj-3N002-01",
+    "officialId": "sh-fgj-3N002-01",
+    "landmarkFeatureId": "landmark-vs-site-1215",
+    "expectedSourceRecordIds": [
+      1215
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1215,
+        "address": "130 ICHANG ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1215"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "普陀区官方明确上海联合啤酒厂、上海啤酒有限公司与宜昌路130号、今梦清园的沿革；共卡展示名录保存的工业建筑群，注明厂区部分建筑保留，1934与1935年来源差异分列。",
+    "note": "普陀区官方明确上海联合啤酒厂、上海啤酒有限公司与宜昌路130号、今梦清园的沿革；共卡展示名录保存的工业建筑群，注明厂区部分建筑保留，1934与1935年来源差异分列。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shanghai.gov.cn/nw15343/20250305/a5350a8588714dde92d4cba908b5a248.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-426__sh-fgj-2D017-01",
+    "officialId": "sh-fgj-2D017-01",
+    "landmarkFeatureId": "landmark-vs-site-426",
+    "expectedSourceRecordIds": [
+      426
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 426,
+        "address": "440 ROUTE JOSEPH FRELUPT",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=426"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "原中文建業里、旧440 ROUTE JOSEPH FRELUPT与1930年记录对应建业里。产权经营方记建国西路440—496弄为同一里弄群，保留官网468／488弄地址范围及修缮复建说明，不声称所有楼栋原物保存。",
+    "note": "原中文建業里、旧440 ROUTE JOSEPH FRELUPT与1930年记录对应建业里。产权经营方记建国西路440—496弄为同一里弄群，保留官网468／488弄地址范围及修缮复建说明，不声称所有楼栋原物保存。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.xufang.cn/product/38.html"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/建业里_(上海)"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-456__sh-fgj-3D008-01",
+    "officialId": "sh-fgj-3D008-01",
+    "landmarkFeatureId": "landmark-vs-site-456",
+    "expectedSourceRecordIds": [
+      456
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 456,
+        "address": "1479 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=456"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "原中文上海新村与1939年均与上海新邨建筑群吻合，旧1479 AVENUE JOFFRE和名录淮海中路1487弄分别展示。关联整处历史里弄，不逐号推定某一栋住宅。",
+    "note": "原中文上海新村与1939年均与上海新邨建筑群吻合，旧1479 AVENUE JOFFRE和名录淮海中路1487弄分别展示。关联整处历史里弄，不逐号推定某一栋住宅。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/上海新邨"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://news.sina.cn/sa/2007-04-26/detail-ikknscsk2148778.d.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1603__sh-fgj-4F010-01",
+    "officialId": "sh-fgj-4F010-01",
+    "landmarkFeatureId": "landmark-vs-site-1603",
+    "expectedSourceRecordIds": [
+      1603
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1603,
+        "address": "102 HASKELL ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1603"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "汉壁礼男校旧102 HASKELL ROAD对应名录中州路102号学校旧址；官方原名明确含汉壁礼男校、华童公学及后继学校。共卡按校址沿革，1940年历史记录与约1925年名录校舍分开，不外推校内每栋建筑。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/中州路102号"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1770__sh-fgj-4D040-01",
+    "officialId": "sh-fgj-4D040-01",
+    "landmarkFeatureId": "landmark-vs-site-1770",
+    "expectedSourceRecordIds": [
+      1770
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1770,
+        "address": "643 ROUTE JOSEPH FRELUPT",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1770"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "Foncim Apts的中英文楼名对照明确为方建公寓／建成公寓，原643 ROUTE JOSEPH FRELUPT位于名录建国西路641—645号范围；高安路78弄为同一公寓两幢楼的另一门址。",
+    "note": "Foncim Apts的中英文楼名对照明确为方建公寓／建成公寓，原643 ROUTE JOSEPH FRELUPT位于名录建国西路641—645号范围；高安路78弄为同一公寓两幢楼的另一门址。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.sohu.com/a/335554742_754316"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.kankanews.com/detail/DgwMkPAnnyW"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1502__sh-fgj-5A002-01",
+    "officialId": "sh-fgj-5A002-01",
+    "landmarkFeatureId": "landmark-vs-site-1502",
+    "expectedSourceRecordIds": [
+      1502
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1502,
+        "address": "348 WAIMA",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1502"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "江海南关旧348 WAIMA与外马路348号相合。原1901设关记录与1922年现楼重建史分别展示；保护项仅为办公楼，不外推整个码头。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://m.thepaper.cn/baijiahao_6306630"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-32__sh-fgj-1A011-01",
+    "officialId": "sh-fgj-1A011-01",
+    "landmarkFeatureId": "landmark-vs-site-32",
+    "expectedSourceRecordIds": [
+      32
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 32,
+        "address": "123 BOULEVARD DE MONTIGNY",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=32"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "旧123 BOULEVARD DE MONTIGNY对应西藏南路123号八仙桥青年会；青年会专文及文旅资料确认该楼身份。VS1932与1931年落成记载分列。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.ccctspm.org/cppccinfo/14555"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/eight-immortals-bridge-ymca-256985/"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-520__sh-fgj-1A004-01",
+    "officialId": "sh-fgj-1A004-01",
+    "landmarkFeatureId": "landmark-vs-site-520",
+    "expectedSourceRecordIds": [
+      520
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 520,
+        "address": "13 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=520"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "江海关13 BUND ROAD与中山东一路13号对应同一海关用址；1857年机构记录与1927年现楼分期保留。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shanghai.gov.cn/nw17239/20251016/c76cc55e5b0345779b3461d653936c82.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-514__sh-fgj-2A009-01",
+    "officialId": "sh-fgj-2A009-01",
+    "landmarkFeatureId": "landmark-vs-site-514",
+    "expectedSourceRecordIds": [
+      514
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 514,
+        "address": "24 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=514"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Yokohama Specie Bank即横滨正金银行，中山东一路24号与旧24 BUND ROAD及1924年相合；区别于15号华俄道胜银行旧址。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/横滨正金银行大楼_(上海)"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-519__sh-fgj-3A001-01",
+    "officialId": "sh-fgj-3A001-01",
+    "landmarkFeatureId": "landmark-vs-site-519",
+    "expectedSourceRecordIds": [
+      519
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 519,
+        "address": "26 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=519"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "扬子保险公司26 BUND ROAD与名录扬子水火保险公司26号对应；VS1916年与现楼1918—1920年建造分列，按同址沿革共卡。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://m.thepaper.cn/newsDetail_forward_25948319"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-501__sh-fgj-2A010-01",
+    "officialId": "sh-fgj-2A010-01",
+    "landmarkFeatureId": "landmark-vs-site-501",
+    "expectedSourceRecordIds": [
+      501
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 501,
+        "address": "32/35 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=501"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "英国领事馆旧32/35 BUND ROAD对应名录中山东一路33号1、2号楼领事馆院落；1872年领事馆沿革保留，点位代表名录建筑群。",
+    "note": "英国领事馆旧32/35 BUND ROAD对应名录中山东一路33号1、2号楼领事馆院落；1872年领事馆沿革保留，点位代表名录建筑群。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/英国驻上海总领事馆"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-521__sh-fgj-2A005-01",
+    "officialId": "sh-fgj-2A005-01",
+    "landmarkFeatureId": "landmark-vs-site-521",
+    "expectedSourceRecordIds": [
+      521
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 521,
+        "address": "15 BUND ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=521"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "中央银行曾使用外滩15号华俄道胜银行大楼；旧15 BUND ROAD与名录中山东一路15号相合。保留华俄道胜与中央银行不同使用时期。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/上海华俄道胜银行大楼"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1647__sh-fgj-3F009-01",
+    "officialId": "sh-fgj-3F009-01",
+    "landmarkFeatureId": "landmark-vs-site-1647",
+    "expectedSourceRecordIds": [
+      1647
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1647,
+        "address": "449 HAINING ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1647"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "虹口大楼／虹口大旅社均明确位于海宁路449号，1927年记录与楼史相容。同盟通讯社为该楼历史使用记录，不套用对街四川北路894号中国银行大楼。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/虹口大楼"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-602__sh-fgj-2A022-01",
+    "officialId": "sh-fgj-2A022-01",
+    "landmarkFeatureId": "landmark-vs-site-602",
+    "expectedSourceRecordIds": [
+      602,
+      1682
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 602,
+        "address": "59 HONGKONG ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=602"
+      },
+      {
+        "sourceRecordId": 1682,
+        "address": "59 HONGKONG ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1682"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "VS602上海银行公会与1682银行俱乐部均列香港路59号、1920年；名录同址为银行公会大楼。共卡保留两条机构记录及1925年楼史，按地点沿革而非断言1920楼仍存。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/银行公会大楼"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-169__sh-fgj-2C001-01",
+    "officialId": "sh-fgj-2C001-01",
+    "landmarkFeatureId": "landmark-vs-site-169",
+    "expectedSourceRecordIds": [
+      169
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 169,
+        "address": "375 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=169"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "法公董局在霞飞路375号的第二代办公楼与淮海中路381号名录对象相合；保留375／381门牌记载差异，区别于VS85原白尔部路旧局址。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.sohu.com/a/164480948_159867"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-11__sh-fgj-2A001-01",
+    "officialId": "sh-fgj-2A001-01",
+    "landmarkFeatureId": "landmark-vs-site-11",
+    "expectedSourceRecordIds": [
+      11,
+      1236
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 11,
+        "address": "9 QUAI DE FRANCE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=11"
+      },
+      {
+        "sourceRecordId": 1236,
+        "address": "9 QUAI DE FRANCE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1236"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "VS11与1236同名邮船公司、同9 QUAI DE FRANCE、同1937年，名录同址法国邮船大楼为中山东二路9号。保留两条航运/贸易记录及名录1939年楼史。",
+    "sources": []
+  },
+  {
+    "id": "landmark-vs-site-596__sh-fgj-4A002-01",
+    "officialId": "sh-fgj-4A002-01",
+    "landmarkFeatureId": "landmark-vs-site-596",
+    "expectedSourceRecordIds": [
+      596
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 596,
+        "address": "484 KIANGSE ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=596"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "自来水公司旧484 KIANGSE ROAD对应江西中路484号总管理处、自来大楼。1880年机构记录与约1921年现楼分开；不混入464—466号自力大楼或原水塔。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.kankanews.com/detail/ZGwkDBrLj2x"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-592__sh-fgj-4A003-01",
+    "officialId": "sh-fgj-4A003-01",
+    "landmarkFeatureId": "landmark-vs-site-592",
+    "expectedSourceRecordIds": [
+      592
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 592,
+        "address": "466 KIANGSE ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=592"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "英商自来水公司办公楼旧466 KIANGSE ROAD对应名录江西中路464—466号自力大楼；采用该项参考点，区别于484号水务总管理处。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.kankanews.com/detail/ZGwkDBrLj2x"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1581__sh-fgj-4F014-01",
+    "officialId": "sh-fgj-4F014-01",
+    "landmarkFeatureId": "landmark-vs-site-1581",
+    "expectedSourceRecordIds": [
+      1581
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1581,
+        "address": "1926 NORTH SZECHUEN ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1581"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Dixwell Apartments即狄思威公寓，旧四川北路1926号在名录1914—1932号范围内，虹口官方楼史的1929年与VS一致。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/5c4ed168-4e04-4b5d-a25e-ea6d048d317e.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-502__sh-fgj-2A021-01",
+    "officialId": "sh-fgj-2A021-01",
+    "landmarkFeatureId": "landmark-vs-site-502",
+    "expectedSourceRecordIds": [
+      502
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 502,
+        "address": "142 MUSEUM ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=502"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "光陆大戏院与光陆大楼由市民政局刊载的楼史明确关联，1928年相符，旧博物院路142号对应虎丘路142—146号。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://mzj.sh.gov.cn/lnb-xw/20231225/215afc5a11864ab0bbd765e379951b5b.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-533__sh-fgj-3A018-01",
+    "officialId": "sh-fgj-3A018-01",
+    "landmarkFeatureId": "landmark-vs-site-533",
+    "expectedSourceRecordIds": [
+      533
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 533,
+        "address": "299 SZECHUEN ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=533"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "东亚银行与东亚大楼为四川中路299号同一具名银行楼；旧299 SZECHUEN ROAD门址相合。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://wiki.histoire-chine.fr/index.php/Former_East_Asia_Bank_/_东亚大楼"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1689__sh-fgj-1F001-01",
+    "officialId": "sh-fgj-1F001-01",
+    "landmarkFeatureId": "landmark-vs-site-1689",
+    "expectedSourceRecordIds": [
+      1689
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1689,
+        "address": "20 NORTH SOOCHOW ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1689"
+      }
+    ],
+    "modernAddress": {
+      "address": "北苏州路20号",
+      "sourceUrl": "https://www.shanghai.gov.cn/nw17239/20260821/437444e8364445a1a88082f9fbca30b3.html",
+      "title": "上海市政府 · 上海大厦门址"
+    },
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Broadway Mansions即上海大厦／百老汇大厦，1934年相合。旧20 NORTH SOOCHOW ROAD与今北苏州路20号并列；第一批名录北苏州河路2号作为来源差异保留。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/上海大厦"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shanghai.gov.cn/nw17239/20260821/437444e8364445a1a88082f9fbca30b3.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1758__sh-fgj-3C001-01",
+    "officialId": "sh-fgj-3C001-01",
+    "landmarkFeatureId": "landmark-vs-site-1758",
+    "expectedSourceRecordIds": [
+      1758
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1758,
+        "address": "150 ROUTE DES SOEURS",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1758"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "上海房管2025年修缮报道直接确认Estrella apartment、爱司公寓、瑞金公寓为同一楼；旧150 ROUTE DES SOEURS与名录瑞金一路150号相符。本证据补足此前027的英文楼名缺口。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://m.thepaper.cn/newsDetail_forward_31931889"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://commons.wikimedia.org/wiki/File:Estrella_Apartments.jpg"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1436__sh-fgj-3M010-01",
+    "officialId": "sh-fgj-3M010-01",
+    "landmarkFeatureId": "landmark-vs-site-1436",
+    "expectedSourceRecordIds": [
+      1436
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1436,
+        "address": "934 GREAT WESTERN ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1436"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "上海私立妇孺医院旧934 GREAT WESTERN ROAD与延安西路934号同址；长宁规划资源局明确1935年建成，与原记录一致。仅关联旧医院保护建筑。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shcn.gov.cn/col7698/20240319/1256510.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1749__sh-fgj-2D005-01",
+    "officialId": "sh-fgj-2D005-01",
+    "landmarkFeatureId": "landmark-vs-site-1749",
+    "expectedSourceRecordIds": [
+      1749
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1749,
+        "address": "1326 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1749"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Empire Mansions为皇家／恩派亚公寓、淮海大楼；旧1326 AVENUE JOFFRE在名录1300—1326号范围。沿用2026-09-17复核中的已确认建筑身份，采用历史建筑参考点，不重新赋予整楼现用途。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069a97abda019d3dcaa9bc19f1"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://m.thepaper.cn/newsDetail_forward_11946340"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-563__sh-fgj-2A033-01",
+    "officialId": "sh-fgj-2A033-01",
+    "landmarkFeatureId": "landmark-vs-site-563",
+    "expectedSourceRecordIds": [
+      563
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 563,
+        "address": "93 CANTON ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=563"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "永年人寿保险公司与广东路93号永年大楼由华安保险楼史直接相连，1910年相符。采用名录点展示原93 CANTON ROAD，银行支行租户不等于整幢楼用途。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://magazine.sinosafe.com.cn/?p=8292"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-292__sh-fgj-2C005-01",
+    "officialId": "sh-fgj-2C005-01",
+    "landmarkFeatureId": "landmark-vs-site-292",
+    "expectedSourceRecordIds": [
+      292
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 292,
+        "address": "290 ROUTE CARDINAL MERCIER",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=292"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Cercle Sportif Français即法国总会，1926年旧290 ROUTE CARDINAL MERCIER对应今茂名南路58号保留建筑；共卡限法国总会旧楼，不包括后来花园饭店高层。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/法国总会"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-588__sh-fgj-5A023-01",
+    "officialId": "sh-fgj-5A023-01",
+    "landmarkFeatureId": "landmark-vs-site-588",
+    "expectedSourceRecordIds": [
+      588
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 588,
+        "address": "52 NINGPO ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=588"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Bank of Canton即广东银行，旧52 NINGPO ROAD与名录宁波路52号广东银行大楼吻合。天津路2号、江西中路349号另一广东银行保护项继续独立。",
+    "sources": []
+  },
+  {
+    "id": "landmark-vs-site-601__sh-fgj-3A013-01",
+    "officialId": "sh-fgj-3A013-01",
+    "landmarkFeatureId": "landmark-vs-site-601",
+    "expectedSourceRecordIds": [
+      601
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 601,
+        "address": "131 MUSEUM ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=601"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "黄浦档案馆明确青年协会大楼从博物院路131号至今虎丘路131号、后名虎丘公寓的沿革；采用历史建筑点。区别于虎丘路128号广学大楼及西藏南路123号青年会。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://web.chinamcloud.com/shhpdst/tzypc/dacl/27020558.shtml"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shobserver.cn/wx/detail.do?id=16690"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1742__sh-fgj-4D033-01",
+    "officialId": "sh-fgj-4D033-01",
+    "landmarkFeatureId": "landmark-vs-site-1742",
+    "expectedSourceRecordIds": [
+      1742
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1742,
+        "address": "176 ROUTE LOUIS DUFOUR",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1742"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Dufour Apartments即巨福公寓，后名安康公寓；旧176 ROUTE LOUIS DUFOUR与今乌鲁木齐南路176号对应。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/安康公寓"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1076__sh-fgj-5B033-01",
+    "officialId": "sh-fgj-5B033-01",
+    "landmarkFeatureId": "landmark-vs-site-1076",
+    "expectedSourceRecordIds": [
+      1076
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1076,
+        "address": "1550 BUBBLING WELL ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1076"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+    "note": "协进学校旧1550 BUBBLING WELL ROAD与名录南京西路1550号相合，官方原名同时列程氏旧居和协进初级中学。按宅邸与学校不同使用阶段共卡，保留幼儿园、小学、中学历史记录。",
+    "sources": []
+  },
+  {
+    "id": "landmark-vs-site-21__sh-fgj-2A052-01",
+    "officialId": "sh-fgj-2A052-01",
+    "landmarkFeatureId": "landmark-vs-site-21",
+    "expectedSourceRecordIds": [
+      21
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 21,
+        "address": "143 EDWARD VII",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=21"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "中汇银行旧143 EDWARD VII对应延安东路143号中汇大厦，1934年相合；河南南路16号为同楼另一临街门牌。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/上海中汇大厦"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-418__sh-fgj-2D016-01",
+    "officialId": "sh-fgj-2D016-01",
+    "landmarkFeatureId": "landmark-vs-site-418",
+    "expectedSourceRecordIds": [
+      418
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 418,
+        "address": "394 ROUTE JOSEPH FRELUPT",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=418"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Dauphiné Apartments即道斐南／法国太子公寓，今建国公寓；1935年旧394 ROUTE JOSEPH FRELUPT与名录建国西路394号相合。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/建国公寓"
+      },
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.sohu.com/a/554546322_121124747"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1430__sh-fgj-4M018-01",
+    "officialId": "sh-fgj-4M018-01",
+    "landmarkFeatureId": "landmark-vs-site-1430",
+    "expectedSourceRecordIds": [
+      1430
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1430,
+        "address": "1032 YUYUAN ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1430"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "长宁区资料明确岐山邨／岐山村为愚园路1032弄住宅群，1925—1931年建设与VS1925年相容。共卡按建筑群范围，不将门牌参考点当每栋楼中心。",
+    "note": "长宁区资料明确岐山邨／岐山村为愚园路1032弄住宅群，1925—1931年建设与VS1925年相容。共卡按建筑群范围，不将门牌参考点当每栋楼中心。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shcn.gov.cn/col6991/20231009/1245614.html"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-1531__sh-fgj-1M002-01",
+    "officialId": "sh-fgj-1M002-01",
+    "landmarkFeatureId": "landmark-vs-site-1531",
+    "expectedSourceRecordIds": [
+      1531
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 1531,
+        "address": "2409 HUNGJAO ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1531"
+      }
+    ],
+    "relation": "same-listed-building",
+    "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+    "note": "Sassoon Villa、沙孙／沙逊别墅、1932年及虹桥路2409号相符；区分同路2419号虹桥俱乐部与其他别墅，采用本项历史建筑参考点。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://zh.wikipedia.org/wiki/沙逊别墅"
+      }
+    ]
+  },
+  {
+    "id": "landmark-vs-site-4107__sh-fgj-1G003-01",
+    "officialId": "sh-fgj-1G003-01",
+    "landmarkFeatureId": "landmark-vs-site-4107",
+    "expectedSourceRecordIds": [
+      4107
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 4107,
+        "address": "830 YANGTSZEPOO ROAD",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4107"
+      }
+    ],
+    "relation": "same-listed-complex",
+    "scopeNote": "杨浦区官方沿革确认830 YANGTSZEPOO ROAD对应杨树浦路830号水厂。共卡代表水厂历史建筑群与持续扩建的厂址，点位不表示所有设施建于同年。",
+    "note": "杨浦区官方沿革确认830 YANGTSZEPOO ROAD对应杨树浦路830号水厂。共卡代表水厂历史建筑群与持续扩建的厂址，点位不表示所有设施建于同年。",
+    "sources": [
+      {
+        "title": "建筑名称与地址沿革资料",
+        "url": "https://www.shyp.gov.cn/shypq/myyp/20250307/475623.html"
       }
     ]
   }

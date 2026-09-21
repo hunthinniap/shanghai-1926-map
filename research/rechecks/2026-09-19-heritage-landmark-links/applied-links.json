@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "reviewedAt": "2026-09-19",
+  "reviewedAt": "2026-09-21",
   "input": {
     "path": "research/rechecks/2026-09-19-heritage-landmark-links/candidates.json",
     "generatedAt": "2026-09-19T07:20:32.413Z",
@@ -15,15 +15,22 @@
     {
       "path": "research/rechecks/2026-09-19-heritage-landmark-links/continuation-notes/review.json",
       "sha256": "7d44ceb7a045fee3f3593079c9b01c4a8c80cef4115fe48037c4e3307a8b76fe"
+    },
+    {
+      "path": "research/rechecks/2026-09-19-heritage-landmark-links/../2026-09-20-heritage-card-review/review.json",
+      "sha256": "f6ffc700987dc59a6b29f2c16b18babfec94313a085322c3ee0e5abd8aea6ee4"
     }
   ],
   "summary": {
-    "reviewed": 186,
-    "accepted": 101,
-    "acceptedBuildings": 89,
-    "acceptedComplexes": 10,
+    "reviewed": 236,
+    "accepted": 157,
+    "acceptedBuildings": 114,
+    "acceptedComplexes": 23,
     "acceptedStructures": 2,
-    "notApplied": 85
+    "acceptedHistoricalSites": 15,
+    "acceptedComponents": 3,
+    "sharedCards": 155,
+    "notApplied": 79
   },
   "applied": [
     {
@@ -1034,6 +1041,37 @@
       "coordinateScope": "building-complex-reference-point"
     },
     {
+      "candidateId": "landmark-vs-site-1488__sh-fgj-5A032-01",
+      "sourceRecordIds": [
+        1488
+      ],
+      "officialId": "sh-fgj-5A032-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "民政局明确公益新天地园为新普育堂旧址；关联名录所列历史建筑群。原机构1911年记录不等于园内每幢建筑建造年，参考点代表园区，保留各建筑分期。",
+      "oldAddresses": [
+        {
+          "address": "?? PUYUTUNG / ?? PUYUSI",
+          "sourceRecordId": 1488,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1488",
+          "oldStreetNumber": null,
+          "historicalStreet": "PUYUTUNG PUYUSI",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "普育西路105号",
+      "originalCoordinate": [
+        121.490215,
+        31.212612
+      ],
+      "displayCoordinate": [
+        121.489584,
+        31.212432
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
       "candidateId": "landmark-vs-site-1709__sh-fgj-1G002-01",
       "sourceRecordIds": [
         1709
@@ -1126,6 +1164,138 @@
       "displayCoordinate": [
         121.457406,
         31.20926
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-551__sh-fgj-2A002-01",
+      "sourceRecordIds": [
+        551
+      ],
+      "officialId": "sh-fgj-2A002-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "4 BUND ROAD",
+          "sourceRecordId": 551,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=551",
+          "oldStreetNumber": "4",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路3号，广东路17号",
+      "originalCoordinate": [
+        121.486317,
+        31.236175
+      ],
+      "displayCoordinate": [
+        121.48638889,
+        31.23611111
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-515__sh-fgj-1A008-01",
+      "sourceRecordIds": [
+        515
+      ],
+      "officialId": "sh-fgj-1A008-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "27 BUND ROAD",
+          "sourceRecordId": 515,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=515",
+          "oldStreetNumber": "27",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路27号",
+      "originalCoordinate": [
+        121.485154,
+        31.242434
+      ],
+      "displayCoordinate": [
+        121.48541666666667,
+        31.2425
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-538__sh-fgj-3A002-01",
+      "sourceRecordIds": [
+        538
+      ],
+      "officialId": "sh-fgj-3A002-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "14 BUND ROAD",
+          "sourceRecordId": 538,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=538",
+          "oldStreetNumber": "14",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路14号",
+      "originalCoordinate": [
+        121.485184,
+        31.239163
+      ],
+      "displayCoordinate": [
+        121.48544444,
+        31.23905556
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-544__sh-fgj-5A038-01",
+      "sourceRecordIds": [
+        544
+      ],
+      "officialId": "sh-fgj-5A038-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "70 FOOCHOW ROAD",
+          "sourceRecordId": 544,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=544",
+          "oldStreetNumber": "70",
+          "historicalStreet": "FOOCHOW ROAD",
+          "modernRoadNameHints": [
+            "福州路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "四川中路200号（另有路牌：福州路60、70号）",
+      "originalCoordinate": [
+        121.484348,
+        31.237589
+      ],
+      "displayCoordinate": [
+        121.484746,
+        31.237435
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
@@ -1432,7 +1602,7 @@
       ],
       "officialId": "sh-fgj-2A002-01",
       "relation": "same-listed-building",
-      "scopeNote": "对应1916年有利大楼（Union Building）；广东路17号、旧外滩4号与现外滩3号为此楼不同门牌。",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
       "oldAddresses": [
         {
           "address": "17 CANTON ROAD",
@@ -1523,6 +1693,78 @@
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-526__sh-fgj-1A003-01",
+      "sourceRecordIds": [
+        526
+      ],
+      "officialId": "sh-fgj-1A003-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "12 BUND ROAD",
+          "sourceRecordId": 526,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=526",
+          "oldStreetNumber": "12",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路12号",
+      "listedAddress": "中山东一路10-12号",
+      "modernAddressSource": {
+        "address": "中山东一路12号",
+        "sourceUrl": "https://www.spdb.com.cn/ebank_2403/personal_online_banking/kpx/202503/t20250329_1130803.shtml",
+        "title": "浦发银行官网 · 注册地址"
+      },
+      "originalCoordinate": [
+        121.485221,
+        31.237981
+      ],
+      "displayCoordinate": [
+        121.48555555555555,
+        31.238055555555555
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-hardoon-garden-vanished__sh-fgj-4B001-01",
+      "sourceRecordIds": [
+        1092
+      ],
+      "officialId": "sh-fgj-4B001-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "1273 BUBBLING WELL ROAD",
+          "sourceRecordId": 1092,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1092",
+          "oldStreetNumber": "1273",
+          "historicalStreet": "BUBBLING WELL ROAD",
+          "modernRoadNameHints": [
+            "南京西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "延安中路1000号",
+      "originalCoordinate": [
+        121.44883526923078,
+        31.22707292307693
+      ],
+      "displayCoordinate": [
+        121.44805556,
+        31.22666667
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
     },
     {
       "candidateId": "landmark-vs-site-580__sh-fgj-1A025-01",
@@ -1917,6 +2159,39 @@
       "coordinateScope": "linked-building-reference-point"
     },
     {
+      "candidateId": "landmark-vs-site-291__sh-fgj-1C005-01",
+      "sourceRecordIds": [
+        291
+      ],
+      "officialId": "sh-fgj-1C005-01",
+      "relation": "component-of-listed-complex",
+      "scopeNote": "Grosvenor House仅对应名录1C005内的峻岭公寓／今锦江饭店贵宾楼。共卡采用名录建筑群参考点，历史名称、1935年与酒店用途只作用于该栋，不扩展至名录另列的楼体，也不包含独立1C004华懋公寓。",
+      "oldAddresses": [
+        {
+          "address": "219 ROUTE CARDINAL MERCIER",
+          "sourceRecordId": 291,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=291",
+          "oldStreetNumber": "219",
+          "historicalStreet": "ROUTE CARDINAL MERCIER",
+          "modernRoadNameHints": [
+            "茂名南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "茂名南路59号",
+      "originalCoordinate": [
+        121.456986,
+        31.221377
+      ],
+      "displayCoordinate": [
+        121.456542,
+        31.221365
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
       "candidateId": "landmark-vs-site-516__sh-fgj-5A041-01",
       "sourceRecordIds": [
         516
@@ -1948,6 +2223,37 @@
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1665__sh-fgj-4F008-01",
+      "sourceRecordIds": [
+        1665
+      ],
+      "officialId": "sh-fgj-4F008-01",
+      "relation": "component-of-listed-complex",
+      "scopeNote": "虹口政府明确闵行路181号角田公寓内曾开设万岁馆。旅馆旧181 MINHONG作为公寓的局部历史使用纳入同一卡片；名录闵行171—181、201—211与峨眉70—80号范围全部保留，不将整项公寓都称为旅馆。",
+      "oldAddresses": [
+        {
+          "address": "181 MINHONG",
+          "sourceRecordId": 1665,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1665",
+          "oldStreetNumber": "181",
+          "historicalStreet": "MINHONG",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "闵行路171-181号，201-211号，峨眉路70-80号",
+      "originalCoordinate": [
+        121.486607,
+        31.248764
+      ],
+      "displayCoordinate": [
+        121.487063,
+        31.248721
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
     },
     {
       "candidateId": "landmark-vs-site-1743__sh-fgj-5B001-01",
@@ -2111,6 +2417,37 @@
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-681__sh-fgj-1A019-01",
+      "sourceRecordIds": [
+        681
+      ],
+      "officialId": "sh-fgj-1A019-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "名录1A019合列老、新永安公司：老楼原记录为CHEKIANG ROAD / NANKING ROAD路口，今门牌南京东路635号；新楼旧门牌为627 NANKING ROAD。共用名录建筑群卡片，分别保留1918年老楼和1930年代新楼记录，不宣称两栋是同一楼体。",
+      "oldAddresses": [
+        {
+          "address": "CHEKIANG ROAD / NANKING ROAD",
+          "sourceRecordId": 681,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=681",
+          "oldStreetNumber": null,
+          "historicalStreet": "CHEKIANG ROAD NANKING ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "南京东路627-635号",
+      "originalCoordinate": [
+        121.473444,
+        31.236993
+      ],
+      "displayCoordinate": [
+        121.474118,
+        31.237645
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
     },
     {
       "candidateId": "landmark-vs-site-187__sh-fgj-2C008-01",
@@ -2439,6 +2776,39 @@
       "coordinateScope": "address-reference-point"
     },
     {
+      "candidateId": "landmark-vs-site-568__sh-fgj-2A030-01",
+      "sourceRecordIds": [
+        568
+      ],
+      "officialId": "sh-fgj-2A030-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "185 FOOCHOW ROAD",
+          "sourceRecordId": 568,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=568",
+          "oldStreetNumber": "185",
+          "historicalStreet": "FOOCHOW ROAD",
+          "modernRoadNameHints": [
+            "福州路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "福州路185号",
+      "originalCoordinate": [
+        121.482022,
+        31.236614
+      ],
+      "displayCoordinate": [
+        121.482299,
+        31.236822
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
       "candidateId": "landmark-vs-site-388__sh-fgj-5D050-01",
       "sourceRecordIds": [
         388
@@ -2635,6 +3005,39 @@
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-631__sh-fgj-1A019-01",
+      "sourceRecordIds": [
+        631
+      ],
+      "officialId": "sh-fgj-1A019-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "新永安公司627号作为同一名录项的第二栋纳入共同卡片；原始记录、旧门牌、独立年代和用途仍分别保留。",
+      "oldAddresses": [
+        {
+          "address": "627 NANKING ROAD",
+          "sourceRecordId": 631,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=631",
+          "oldStreetNumber": "627",
+          "historicalStreet": "NANKING ROAD",
+          "modernRoadNameHints": [
+            "南京东路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "南京东路627-635号",
+      "originalCoordinate": [
+        121.474108,
+        31.237025
+      ],
+      "displayCoordinate": [
+        121.474118,
+        31.237645
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
     },
     {
       "candidateId": "landmark-vs-site-587__sh-fgj-4A011-01",
@@ -3323,6 +3726,39 @@
       "coordinateScope": "building-complex-reference-point"
     },
     {
+      "candidateId": "landmark-vs-site-407__sh-fgj-4D004-01",
+      "sourceRecordIds": [
+        407
+      ],
+      "officialId": "sh-fgj-4D004-01",
+      "relation": "component-of-listed-complex",
+      "scopeNote": "Adeodata Hall对应淮海中路1209号天赐大宅，现上音音乐会客厅，是4D004所列1189、1199、1209号三栋住宅之一。共卡不把1209号的楼史与用途赋给另外两栋，位置为名录建筑群参考点。",
+      "oldAddresses": [
+        {
+          "address": "1209 AVENUE JOFFRE",
+          "sourceRecordId": 407,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=407",
+          "oldStreetNumber": "1209",
+          "historicalStreet": "AVENUE JOFFRE",
+          "modernRoadNameHints": [
+            "淮海中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "淮海中路1189号、1199号、1209号",
+      "originalCoordinate": [
+        121.447822,
+        31.215355
+      ],
+      "displayCoordinate": [
+        121.448426,
+        31.215887
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
       "candidateId": "landmark-vs-site-989__sh-fgj-3B025-01",
       "sourceRecordIds": [
         989
@@ -3354,6 +3790,1482 @@
       ],
       "coordinateSystem": "WGS84",
       "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1763__sh-fgj-2C010-01",
+      "sourceRecordIds": [
+        1763
+      ],
+      "officialId": "sh-fgj-2C010-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "维基百科陕南村正文明确列出King Albert Apartments、亚尔培公寓、金亚尔培公寓及陕南邨别名；对应陕西南路公寓里弄。旧377 AVENUE DU ROI ALBERT原样保留，名录157—187号与维基151—187号分列，不声称377与某一现代门牌已逐号核定。原记录年代未知，维基1930年为建筑群沿革资料，不回写成VS记录年份。",
+      "aliases": [
+        "King Albert Apartments",
+        "King's Albert Apartments",
+        "陕南村",
+        "陕南邨",
+        "亚尔培公寓",
+        "金亚尔培公寓"
+      ],
+      "oldAddresses": [
+        {
+          "address": "377 AVENUE DU ROI ALBERT",
+          "sourceRecordId": 1763,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1763",
+          "oldStreetNumber": "377",
+          "historicalStreet": "AVENUE DU ROI ALBERT",
+          "modernRoadNameHints": [
+            "陕西南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "陕西南路157-187号",
+      "originalCoordinate": [
+        121.456595,
+        31.21587
+      ],
+      "displayCoordinate": [
+        121.456306,
+        31.215696
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-218__sh-fgj-3C013-01",
+      "sourceRecordIds": [
+        218
+      ],
+      "officialId": "sh-fgj-3C013-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "aliases": [
+        "Dubail Apartments",
+        "吕班公寓",
+        "重庆公寓"
+      ],
+      "oldAddresses": [
+        {
+          "address": "181 AVENUE DUBAIL",
+          "sourceRecordId": 218,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=218",
+          "oldStreetNumber": "181",
+          "historicalStreet": "AVENUE DUBAIL",
+          "modernRoadNameHints": [
+            "重庆南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "重庆南路185号",
+      "originalCoordinate": [
+        121.466296,
+        31.217293
+      ],
+      "displayCoordinate": [
+        121.466516,
+        31.217353
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1438__sh-fgj-4M007-01",
+      "sourceRecordIds": [
+        1438
+      ],
+      "officialId": "sh-fgj-4M007-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "VS中文月邨与名录月村为同一江苏路住宅群，1921年记录与楼史相合；旧472 EDINBURGH ROAD保留，现保护范围为江苏路480弄名录列明楼号。资料记原22幢已有部分拆除，不将整处历史住宅群视为全部原物存续，也不将472直接换算为某栋现门牌。",
+      "aliases": [
+        "Yue Apartments",
+        "月邨",
+        "月村"
+      ],
+      "oldAddresses": [
+        {
+          "address": "472 EDINBURGH ROAD",
+          "sourceRecordId": 1438,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1438",
+          "oldStreetNumber": "472",
+          "historicalStreet": "EDINBURGH ROAD",
+          "modernRoadNameHints": [
+            "江苏路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "江苏路480弄54、56、58、60、62、66、68、72号，除去90号新公房",
+      "originalCoordinate": [
+        121.426277,
+        31.219045
+      ],
+      "displayCoordinate": [
+        121.42636,
+        31.21907
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-357__sh-fgj-2D041-01",
+      "sourceRecordIds": [
+        357
+      ],
+      "officialId": "sh-fgj-2D041-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "aliases": [
+        "Orthodox Church",
+        "新乐路东正教堂",
+        "圣母大堂"
+      ],
+      "oldAddresses": [
+        {
+          "address": "55 ROUTE PAUL HENRY",
+          "sourceRecordId": 357,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=357",
+          "oldStreetNumber": "55",
+          "historicalStreet": "ROUTE PAUL HENRY",
+          "modernRoadNameHints": [
+            "新乐路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "新乐路55号",
+      "originalCoordinate": [
+        121.450568,
+        31.219438
+      ],
+      "displayCoordinate": [
+        121.450948,
+        31.219417
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-671__sh-fgj-1A023-01",
+      "sourceRecordIds": [
+        671
+      ],
+      "officialId": "sh-fgj-1A023-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "aliases": [
+        "Metropole Theater",
+        "Metropol Cinema",
+        "大上海大戏院",
+        "大上海电影院"
+      ],
+      "oldAddresses": [
+        {
+          "address": "500 YUYACHING ROAD",
+          "sourceRecordId": 671,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=671",
+          "oldStreetNumber": "500",
+          "historicalStreet": "YUYACHING ROAD",
+          "modernRoadNameHints": [
+            "西藏中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "西藏中路500号",
+      "listedAddress": "西藏中路520号",
+      "modernAddressSource": {
+        "address": "西藏中路500号",
+        "sourceUrl": "https://zh.wikipedia.org/wiki/大上海电影院",
+        "title": "维基百科 · 大上海电影院门址与重建说明"
+      },
+      "originalCoordinate": [
+        121.469467,
+        31.23804
+      ],
+      "displayCoordinate": [
+        121.4697,
+        31.23792
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1424__sh-fgj-3M001-01",
+      "sourceRecordIds": [
+        1424
+      ],
+      "officialId": "sh-fgj-3M001-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "兆豊別墅／兆丰别墅与Jessfield Villa为同一具名住宅群，旧716 CHANGNING ROAD门牌原样保留；长宁政府确认现址长宁路712弄及1929年始建，名录范围按整处别墅群展示。",
+      "oldAddresses": [
+        {
+          "address": "716 CHANGNING ROAD",
+          "sourceRecordId": 1424,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1424",
+          "oldStreetNumber": "716",
+          "historicalStreet": "CHANGNING ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "长宁路712弄",
+      "originalCoordinate": [
+        121.417795,
+        31.222518
+      ],
+      "displayCoordinate": [
+        121.417789,
+        31.222542
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-657__sh-fgj-4A028-01",
+      "sourceRecordIds": [
+        657
+      ],
+      "officialId": "sh-fgj-4A028-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "586 NINGPO ROAD",
+          "sourceRecordId": 657,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=657",
+          "oldStreetNumber": "586",
+          "historicalStreet": "NINGPO ROAD",
+          "modernRoadNameHints": [
+            "宁波路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "宁波路586号",
+      "originalCoordinate": [
+        121.471567,
+        31.238904
+      ],
+      "displayCoordinate": [
+        121.472021,
+        31.238715
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1215__sh-fgj-3N002-01",
+      "sourceRecordIds": [
+        1215
+      ],
+      "officialId": "sh-fgj-3N002-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "普陀区官方明确上海联合啤酒厂、上海啤酒有限公司与宜昌路130号、今梦清园的沿革；共卡展示名录保存的工业建筑群，注明厂区部分建筑保留，1934与1935年来源差异分列。",
+      "oldAddresses": [
+        {
+          "address": "130 ICHANG ROAD",
+          "sourceRecordId": 1215,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1215",
+          "oldStreetNumber": "130",
+          "historicalStreet": "ICHANG ROAD",
+          "modernRoadNameHints": [
+            "宜昌路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "宜昌路130号",
+      "originalCoordinate": [
+        121.434788,
+        31.251504
+      ],
+      "displayCoordinate": [
+        121.43519,
+        31.25123
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-426__sh-fgj-2D017-01",
+      "sourceRecordIds": [
+        426
+      ],
+      "officialId": "sh-fgj-2D017-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "原中文建業里、旧440 ROUTE JOSEPH FRELUPT与1930年记录对应建业里。产权经营方记建国西路440—496弄为同一里弄群，保留官网468／488弄地址范围及修缮复建说明，不声称所有楼栋原物保存。",
+      "oldAddresses": [
+        {
+          "address": "440 ROUTE JOSEPH FRELUPT",
+          "sourceRecordId": 426,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=426",
+          "oldStreetNumber": "440",
+          "historicalStreet": "ROUTE JOSEPH FRELUPT",
+          "modernRoadNameHints": [
+            "建国西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "建国西路468弄、488弄、424-498号（双号）",
+      "originalCoordinate": [
+        121.447092,
+        31.205834
+      ],
+      "displayCoordinate": [
+        121.447417,
+        31.205276
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-456__sh-fgj-3D008-01",
+      "sourceRecordIds": [
+        456
+      ],
+      "officialId": "sh-fgj-3D008-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "原中文上海新村与1939年均与上海新邨建筑群吻合，旧1479 AVENUE JOFFRE和名录淮海中路1487弄分别展示。关联整处历史里弄，不逐号推定某一栋住宅。",
+      "oldAddresses": [
+        {
+          "address": "1479 AVENUE JOFFRE",
+          "sourceRecordId": 456,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=456",
+          "oldStreetNumber": "1479",
+          "historicalStreet": "AVENUE JOFFRE",
+          "modernRoadNameHints": [
+            "淮海中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "淮海中路1487弄1-56号",
+      "originalCoordinate": [
+        121.441627,
+        31.210315
+      ],
+      "displayCoordinate": [
+        121.441776,
+        31.21106
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1603__sh-fgj-4F010-01",
+      "sourceRecordIds": [
+        1603
+      ],
+      "officialId": "sh-fgj-4F010-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "102 HASKELL ROAD",
+          "sourceRecordId": 1603,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1603",
+          "oldStreetNumber": "102",
+          "historicalStreet": "HASKELL ROAD",
+          "modernRoadNameHints": [
+            "中州路（南段）",
+            "中州路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中州路102号",
+      "originalCoordinate": [
+        121.476829,
+        31.254731
+      ],
+      "displayCoordinate": [
+        121.477964,
+        31.254804
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1770__sh-fgj-4D040-01",
+      "sourceRecordIds": [
+        1770
+      ],
+      "officialId": "sh-fgj-4D040-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "Foncim Apts的中英文楼名对照明确为方建公寓／建成公寓，原643 ROUTE JOSEPH FRELUPT位于名录建国西路641—645号范围；高安路78弄为同一公寓两幢楼的另一门址。",
+      "oldAddresses": [
+        {
+          "address": "643 ROUTE JOSEPH FRELUPT",
+          "sourceRecordId": 1770,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1770",
+          "oldStreetNumber": "643",
+          "historicalStreet": "ROUTE JOSEPH FRELUPT",
+          "modernRoadNameHints": [
+            "建国西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "高安路78弄1-3号，建国西路641-645号",
+      "originalCoordinate": [
+        121.441383,
+        31.202629
+      ],
+      "displayCoordinate": [
+        121.44204,
+        31.202503
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1502__sh-fgj-5A002-01",
+      "sourceRecordIds": [
+        1502
+      ],
+      "officialId": "sh-fgj-5A002-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "348 WAIMA",
+          "sourceRecordId": 1502,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1502",
+          "oldStreetNumber": "348",
+          "historicalStreet": "WAIMA",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "外马路348号",
+      "originalCoordinate": [
+        121.500272,
+        31.223547
+      ],
+      "displayCoordinate": [
+        121.500208,
+        31.223448
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-32__sh-fgj-1A011-01",
+      "sourceRecordIds": [
+        32
+      ],
+      "officialId": "sh-fgj-1A011-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "123 BOULEVARD DE MONTIGNY",
+          "sourceRecordId": 32,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=32",
+          "oldStreetNumber": "123",
+          "historicalStreet": "BOULEVARD DE MONTIGNY",
+          "modernRoadNameHints": [
+            "西藏南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "西藏南路123号",
+      "originalCoordinate": [
+        121.4749,
+        31.22934
+      ],
+      "displayCoordinate": [
+        121.47497222,
+        31.22930556
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-520__sh-fgj-1A004-01",
+      "sourceRecordIds": [
+        520
+      ],
+      "officialId": "sh-fgj-1A004-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "13 BUND ROAD",
+          "sourceRecordId": 520,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=520",
+          "oldStreetNumber": "13",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路13号",
+      "originalCoordinate": [
+        121.485148,
+        31.238622
+      ],
+      "displayCoordinate": [
+        121.48513611,
+        31.23869167
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-514__sh-fgj-2A009-01",
+      "sourceRecordIds": [
+        514
+      ],
+      "officialId": "sh-fgj-2A009-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "24 BUND ROAD",
+          "sourceRecordId": 514,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=514",
+          "oldStreetNumber": "24",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路24号",
+      "originalCoordinate": [
+        121.484875,
+        31.24194
+      ],
+      "displayCoordinate": [
+        121.485,
+        31.241944444444446
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-519__sh-fgj-3A001-01",
+      "sourceRecordIds": [
+        519
+      ],
+      "officialId": "sh-fgj-3A001-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "26 BUND ROAD",
+          "sourceRecordId": 519,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=519",
+          "oldStreetNumber": "26",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路26号",
+      "originalCoordinate": [
+        121.485112,
+        31.242101
+      ],
+      "displayCoordinate": [
+        121.48527778,
+        31.242
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-501__sh-fgj-2A010-01",
+      "sourceRecordIds": [
+        501
+      ],
+      "officialId": "sh-fgj-2A010-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "英国领事馆旧32/35 BUND ROAD对应名录中山东一路33号1、2号楼领事馆院落；1872年领事馆沿革保留，点位代表名录建筑群。",
+      "oldAddresses": [
+        {
+          "address": "32/35 BUND ROAD",
+          "sourceRecordId": 501,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=501",
+          "oldStreetNumber": "32",
+          "historicalStreet": "35 BUND ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "中山东一路33号1号楼2号楼",
+      "originalCoordinate": [
+        121.483968,
+        31.244367
+      ],
+      "displayCoordinate": [
+        121.48416667,
+        31.24430556
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-521__sh-fgj-2A005-01",
+      "sourceRecordIds": [
+        521
+      ],
+      "officialId": "sh-fgj-2A005-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "15 BUND ROAD",
+          "sourceRecordId": 521,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=521",
+          "oldStreetNumber": "15",
+          "historicalStreet": "BUND ROAD",
+          "modernRoadNameHints": [
+            "中山东一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东一路15号",
+      "originalCoordinate": [
+        121.485084,
+        31.239636
+      ],
+      "displayCoordinate": [
+        121.4853,
+        31.2396
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1647__sh-fgj-3F009-01",
+      "sourceRecordIds": [
+        1647
+      ],
+      "officialId": "sh-fgj-3F009-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "449 HAINING ROAD",
+          "sourceRecordId": 1647,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1647",
+          "oldStreetNumber": "449",
+          "historicalStreet": "HAINING ROAD",
+          "modernRoadNameHints": [
+            "新疆路",
+            "海宁路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "海宁路449号",
+      "originalCoordinate": [
+        121.479852,
+        31.251441
+      ],
+      "displayCoordinate": [
+        121.480041,
+        31.251321
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-602__sh-fgj-2A022-01",
+      "sourceRecordIds": [
+        602,
+        1682
+      ],
+      "officialId": "sh-fgj-2A022-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "59 HONGKONG ROAD",
+          "sourceRecordId": 602,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=602",
+          "oldStreetNumber": "59",
+          "historicalStreet": "HONGKONG ROAD",
+          "modernRoadNameHints": [
+            "香港路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        },
+        {
+          "address": "59 HONGKONG ROAD",
+          "sourceRecordId": 1682,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1682",
+          "oldStreetNumber": "59",
+          "historicalStreet": "HONGKONG ROAD",
+          "modernRoadNameHints": [
+            "香港路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "香港路59号",
+      "originalCoordinate": [
+        121.482052,
+        31.244493
+      ],
+      "displayCoordinate": [
+        121.482302,
+        31.244533
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-169__sh-fgj-2C001-01",
+      "sourceRecordIds": [
+        169
+      ],
+      "officialId": "sh-fgj-2C001-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "375 AVENUE JOFFRE",
+          "sourceRecordId": 169,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=169",
+          "oldStreetNumber": "375",
+          "historicalStreet": "AVENUE JOFFRE",
+          "modernRoadNameHints": [
+            "淮海中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "淮海中路381号",
+      "originalCoordinate": [
+        121.468093,
+        31.224158
+      ],
+      "displayCoordinate": [
+        121.468344,
+        31.224229
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-11__sh-fgj-2A001-01",
+      "sourceRecordIds": [
+        11,
+        1236
+      ],
+      "officialId": "sh-fgj-2A001-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "9 QUAI DE FRANCE",
+          "sourceRecordId": 11,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=11",
+          "oldStreetNumber": "9",
+          "historicalStreet": "QUAI DE FRANCE",
+          "modernRoadNameHints": [
+            "中山东二路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        },
+        {
+          "address": "9 QUAI DE FRANCE",
+          "sourceRecordId": 1236,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1236",
+          "oldStreetNumber": "9",
+          "historicalStreet": "QUAI DE FRANCE",
+          "modernRoadNameHints": [
+            "中山东二路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "中山东二路9号",
+      "originalCoordinate": [
+        121.487601,
+        31.234369
+      ],
+      "displayCoordinate": [
+        121.487869,
+        31.234422
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-596__sh-fgj-4A002-01",
+      "sourceRecordIds": [
+        596
+      ],
+      "officialId": "sh-fgj-4A002-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "484 KIANGSE ROAD",
+          "sourceRecordId": 596,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=596",
+          "oldStreetNumber": "484",
+          "historicalStreet": "KIANGSE ROAD",
+          "modernRoadNameHints": [
+            "江西中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "江西中路484号",
+      "originalCoordinate": [
+        121.48016,
+        31.244607
+      ],
+      "displayCoordinate": [
+        121.480416,
+        31.2445
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-592__sh-fgj-4A003-01",
+      "sourceRecordIds": [
+        592
+      ],
+      "officialId": "sh-fgj-4A003-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "466 KIANGSE ROAD",
+          "sourceRecordId": 592,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=592",
+          "oldStreetNumber": "466",
+          "historicalStreet": "KIANGSE ROAD",
+          "modernRoadNameHints": [
+            "江西中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "江西中路464-466号",
+      "originalCoordinate": [
+        121.480371,
+        31.244177
+      ],
+      "displayCoordinate": [
+        121.480586,
+        31.243979
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1581__sh-fgj-4F014-01",
+      "sourceRecordIds": [
+        1581
+      ],
+      "officialId": "sh-fgj-4F014-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "1926 NORTH SZECHUEN ROAD",
+          "sourceRecordId": 1581,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1581",
+          "oldStreetNumber": "1926",
+          "historicalStreet": "NORTH SZECHUEN ROAD",
+          "modernRoadNameHints": [
+            "四川北路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "四川北路1914-1932号",
+      "originalCoordinate": [
+        121.479299,
+        31.264476
+      ],
+      "displayCoordinate": [
+        121.479593,
+        31.264544
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-502__sh-fgj-2A021-01",
+      "sourceRecordIds": [
+        502
+      ],
+      "officialId": "sh-fgj-2A021-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "142 MUSEUM ROAD",
+          "sourceRecordId": 502,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=502",
+          "oldStreetNumber": "142",
+          "historicalStreet": "MUSEUM ROAD",
+          "modernRoadNameHints": [
+            "虎丘路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "虎丘路142-146号",
+      "originalCoordinate": [
+        121.4828,
+        31.245446
+      ],
+      "displayCoordinate": [
+        121.483117,
+        31.24544
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-533__sh-fgj-3A018-01",
+      "sourceRecordIds": [
+        533
+      ],
+      "officialId": "sh-fgj-3A018-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "299 SZECHUEN ROAD",
+          "sourceRecordId": 533,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=533",
+          "oldStreetNumber": "299",
+          "historicalStreet": "SZECHUEN ROAD",
+          "modernRoadNameHints": [
+            "四川中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "四川中路299号",
+      "originalCoordinate": [
+        121.483329,
+        31.239156
+      ],
+      "displayCoordinate": [
+        121.483635,
+        31.239229
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1689__sh-fgj-1F001-01",
+      "sourceRecordIds": [
+        1689
+      ],
+      "officialId": "sh-fgj-1F001-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "20 NORTH SOOCHOW ROAD",
+          "sourceRecordId": 1689,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1689",
+          "oldStreetNumber": "20",
+          "historicalStreet": "NORTH SOOCHOW ROAD",
+          "modernRoadNameHints": [
+            "北苏州路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "北苏州路20号",
+      "listedAddress": "北苏州河路2号",
+      "modernAddressSource": {
+        "address": "北苏州路20号",
+        "sourceUrl": "https://www.shanghai.gov.cn/nw17239/20260821/437444e8364445a1a88082f9fbca30b3.html",
+        "title": "上海市政府 · 上海大厦门址"
+      },
+      "originalCoordinate": [
+        121.485144,
+        31.24637
+      ],
+      "displayCoordinate": [
+        121.48548306,
+        31.24633806
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1758__sh-fgj-3C001-01",
+      "sourceRecordIds": [
+        1758
+      ],
+      "officialId": "sh-fgj-3C001-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "150 ROUTE DES SOEURS",
+          "sourceRecordId": 1758,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1758",
+          "oldStreetNumber": "150",
+          "historicalStreet": "ROUTE DES SOEURS",
+          "modernRoadNameHints": [
+            "瑞金一路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "瑞金一路150号",
+      "originalCoordinate": [
+        121.458917,
+        31.221037
+      ],
+      "displayCoordinate": [
+        121.459224,
+        31.220919
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1436__sh-fgj-3M010-01",
+      "sourceRecordIds": [
+        1436
+      ],
+      "officialId": "sh-fgj-3M010-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "934 GREAT WESTERN ROAD",
+          "sourceRecordId": 1436,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1436",
+          "oldStreetNumber": "934",
+          "historicalStreet": "GREAT WESTERN ROAD",
+          "modernRoadNameHints": [
+            "延安西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "延安西路934号",
+      "originalCoordinate": [
+        121.427128,
+        31.215399
+      ],
+      "displayCoordinate": [
+        121.427139,
+        31.215094
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1749__sh-fgj-2D005-01",
+      "sourceRecordIds": [
+        1749
+      ],
+      "officialId": "sh-fgj-2D005-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "1326 AVENUE JOFFRE",
+          "sourceRecordId": 1749,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1749",
+          "oldStreetNumber": "1326",
+          "historicalStreet": "AVENUE JOFFRE",
+          "modernRoadNameHints": [
+            "淮海中路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "淮海中路1300-1326号",
+      "originalCoordinate": [
+        121.444974,
+        31.21508
+      ],
+      "displayCoordinate": [
+        121.445318,
+        31.214983
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-563__sh-fgj-2A033-01",
+      "sourceRecordIds": [
+        563
+      ],
+      "officialId": "sh-fgj-2A033-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "93 CANTON ROAD",
+          "sourceRecordId": 563,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=563",
+          "oldStreetNumber": "93",
+          "historicalStreet": "CANTON ROAD",
+          "modernRoadNameHints": [
+            "广东路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "广东路93号",
+      "originalCoordinate": [
+        121.484329,
+        31.235569
+      ],
+      "displayCoordinate": [
+        121.48472222,
+        31.23555556
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-292__sh-fgj-2C005-01",
+      "sourceRecordIds": [
+        292
+      ],
+      "officialId": "sh-fgj-2C005-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "290 ROUTE CARDINAL MERCIER",
+          "sourceRecordId": 292,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=292",
+          "oldStreetNumber": "290",
+          "historicalStreet": "ROUTE CARDINAL MERCIER",
+          "modernRoadNameHints": [
+            "茂名南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "茂名南路58号",
+      "originalCoordinate": [
+        121.454947,
+        31.221769
+      ],
+      "displayCoordinate": [
+        121.455413,
+        31.22171
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-588__sh-fgj-5A023-01",
+      "sourceRecordIds": [
+        588
+      ],
+      "officialId": "sh-fgj-5A023-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "52 NINGPO ROAD",
+          "sourceRecordId": 588,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=588",
+          "oldStreetNumber": "52",
+          "historicalStreet": "NINGPO ROAD",
+          "modernRoadNameHints": [
+            "宁波路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "宁波路52号",
+      "originalCoordinate": [
+        121.480849,
+        31.241738
+      ],
+      "displayCoordinate": [
+        121.481346,
+        31.241607
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-601__sh-fgj-3A013-01",
+      "sourceRecordIds": [
+        601
+      ],
+      "officialId": "sh-fgj-3A013-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "131 MUSEUM ROAD",
+          "sourceRecordId": 601,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=601",
+          "oldStreetNumber": "131",
+          "historicalStreet": "MUSEUM ROAD",
+          "modernRoadNameHints": [
+            "虎丘路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "虎丘路131号",
+      "originalCoordinate": [
+        121.482284,
+        31.245055
+      ],
+      "displayCoordinate": [
+        121.482817,
+        31.244986
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1742__sh-fgj-4D033-01",
+      "sourceRecordIds": [
+        1742
+      ],
+      "officialId": "sh-fgj-4D033-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "176 ROUTE LOUIS DUFOUR",
+          "sourceRecordId": 1742,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1742",
+          "oldStreetNumber": "176",
+          "historicalStreet": "ROUTE LOUIS DUFOUR",
+          "modernRoadNameHints": [
+            "乌鲁木齐南路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "乌鲁木齐南路176号",
+      "originalCoordinate": [
+        121.443963,
+        31.205434
+      ],
+      "displayCoordinate": [
+        121.444547,
+        31.205345
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1076__sh-fgj-5B033-01",
+      "sourceRecordIds": [
+        1076
+      ],
+      "officialId": "sh-fgj-5B033-01",
+      "relation": "same-historical-site",
+      "scopeNote": "按同一地点的历史沿革合并展示；早期机构、原址建筑与现存楼体的年代分别保留。",
+      "oldAddresses": [
+        {
+          "address": "1550 BUBBLING WELL ROAD",
+          "sourceRecordId": 1076,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1076",
+          "oldStreetNumber": "1550",
+          "historicalStreet": "BUBBLING WELL ROAD",
+          "modernRoadNameHints": [
+            "南京西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "南京西路1550号",
+      "originalCoordinate": [
+        121.443417,
+        31.226856
+      ],
+      "displayCoordinate": [
+        121.443917,
+        31.226546
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-21__sh-fgj-2A052-01",
+      "sourceRecordIds": [
+        21
+      ],
+      "officialId": "sh-fgj-2A052-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "143 EDWARD VII",
+          "sourceRecordId": 21,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=21",
+          "oldStreetNumber": "143",
+          "historicalStreet": "EDWARD VII",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "延安东路143号",
+      "originalCoordinate": [
+        121.48165,
+        31.232722
+      ],
+      "displayCoordinate": [
+        121.48194444,
+        31.23222222
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-418__sh-fgj-2D016-01",
+      "sourceRecordIds": [
+        418
+      ],
+      "officialId": "sh-fgj-2D016-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "394 ROUTE JOSEPH FRELUPT",
+          "sourceRecordId": 418,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=418",
+          "oldStreetNumber": "394",
+          "historicalStreet": "ROUTE JOSEPH FRELUPT",
+          "modernRoadNameHints": [
+            "建国西路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "建国西路394号",
+      "originalCoordinate": [
+        121.44916,
+        31.206244
+      ],
+      "displayCoordinate": [
+        121.449605,
+        31.205822
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "address-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1430__sh-fgj-4M018-01",
+      "sourceRecordIds": [
+        1430
+      ],
+      "officialId": "sh-fgj-4M018-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "长宁区资料明确岐山邨／岐山村为愚园路1032弄住宅群，1925—1931年建设与VS1925年相容。共卡按建筑群范围，不将门牌参考点当每栋楼中心。",
+      "oldAddresses": [
+        {
+          "address": "1032 YUYUAN ROAD",
+          "sourceRecordId": 1430,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1430",
+          "oldStreetNumber": "1032",
+          "historicalStreet": "YUYUAN ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "newAddress": "愚园路1032弄（1018-1028号，1034-1046号）",
+      "originalCoordinate": [
+        121.42455,
+        31.221211
+      ],
+      "displayCoordinate": [
+        121.424157,
+        31.222574
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-1531__sh-fgj-1M002-01",
+      "sourceRecordIds": [
+        1531
+      ],
+      "officialId": "sh-fgj-1M002-01",
+      "relation": "same-listed-building",
+      "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
+      "oldAddresses": [
+        {
+          "address": "2409 HUNGJAO ROAD",
+          "sourceRecordId": 1531,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1531",
+          "oldStreetNumber": "2409",
+          "historicalStreet": "HUNGJAO ROAD",
+          "modernRoadNameHints": [
+            "虹桥路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "虹桥路2409号",
+      "originalCoordinate": [
+        121.356663,
+        31.190561
+      ],
+      "displayCoordinate": [
+        121.35768889,
+        31.19173056
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "linked-building-reference-point"
+    },
+    {
+      "candidateId": "landmark-vs-site-4107__sh-fgj-1G003-01",
+      "sourceRecordIds": [
+        4107
+      ],
+      "officialId": "sh-fgj-1G003-01",
+      "relation": "same-listed-complex",
+      "scopeNote": "杨浦区官方沿革确认830 YANGTSZEPOO ROAD对应杨树浦路830号水厂。共卡代表水厂历史建筑群与持续扩建的厂址，点位不表示所有设施建于同年。",
+      "oldAddresses": [
+        {
+          "address": "830 YANGTSZEPOO ROAD",
+          "sourceRecordId": 4107,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4107",
+          "oldStreetNumber": "830",
+          "historicalStreet": "YANGTSZEPOO ROAD",
+          "modernRoadNameHints": [
+            "杨树浦路"
+          ],
+          "warning": "项目道路名对照仅作线索；没有推断门牌号未变。"
+        }
+      ],
+      "newAddress": "杨树浦路830号（许昌路口）",
+      "originalCoordinate": [
+        121.522387,
+        31.253459
+      ],
+      "displayCoordinate": [
+        121.5236,
+        31.2539
+      ],
+      "coordinateSystem": "WGS84",
+      "coordinateScope": "building-complex-reference-point"
     }
   ],
   "notApplied": [
@@ -3376,15 +5288,6 @@
       "reason": "大佛厂30号与名录大昌街30号相合，但VS起年1860是清心堂机构创立期；史料明确1919—1923从学校迁出另建现堂。未确定VS条目表达机构全史还是现存楼体，故不将其直接标成同一存续建筑；并非已证明两个点异址。"
     },
     {
-      "candidateId": "landmark-vs-site-1488__sh-fgj-5A032-01",
-      "sourceRecordIds": [
-        1488
-      ],
-      "officialId": "sh-fgj-5A032-01",
-      "decision": "needs-explicit-complex-scope",
-      "reason": "民政局明确公益新天地园原址为新普育堂；VS机构点与名录历史园区有关，但原1911与后来保留楼群年代/范围未逐栋核定，不能用一座馆舍或入口代表历史机构全部建筑。"
-    },
-    {
       "candidateId": "landmark-vs-site-1168__sh-fgj-4B013-01",
       "sourceRecordIds": [
         1168
@@ -3394,33 +5297,6 @@
       "reason": "戈登路捕房独特名称与今江宁路511同源支持名录对象，但compound内另有锡克教堂，VS557与现511尚未逐号核清；不要在单体卡片中把整个捕房范围无差别压成学校/教堂。"
     },
     {
-      "candidateId": "landmark-vs-site-551__sh-fgj-2A002-01",
-      "sourceRecordIds": [
-        551
-      ],
-      "officialId": "sh-fgj-2A002-01",
-      "decision": "hold",
-      "reason": "新查史料已说明旧外滩4号就是现外滩3号，不能再以4/3数字差直接否定身份。但VS551为银行机构条目、未给建设时期，而VS548以Union Building、广东17号、1916明确锁定现楼；两记录尚未按历史阶段归组，本轮仅通过548，不把551重复接入同一官方项。"
-    },
-    {
-      "candidateId": "landmark-vs-site-515__sh-fgj-1A008-01",
-      "sourceRecordIds": [
-        515
-      ],
-      "officialId": "sh-fgj-1A008-01",
-      "decision": "hold",
-      "reason": "既有研究已明确VS起始1851年的怡和用址与现1920年代楼为原址重建；保留同址沿革，不能升级为同一原构建筑。"
-    },
-    {
-      "candidateId": "landmark-vs-site-538__sh-fgj-3A002-01",
-      "sourceRecordIds": [
-        538
-      ],
-      "officialId": "sh-fgj-3A002-01",
-      "decision": "hold",
-      "reason": "既有研究仅确认同址，VS1940与现交通银行楼1948建成阶段不明；不能把same-site-continuing-use自动提升同栋。"
-    },
-    {
       "candidateId": "landmark-vs-site-598__sh-fgj-5A075-01",
       "sourceRecordIds": [
         598
@@ -3428,15 +5304,6 @@
       "officialId": "sh-fgj-5A075-01",
       "decision": "hold",
       "reason": "旧研究将Algar/60 Hongkong接到今香港路60大丰大楼；维基5批却列Algar/香港路85，官网5A075又写美国陆海军青年会/海青85。这些标签与另5A007海青四川中路630冲突，需原门牌、碑牌或原志纠错，不能仅距40米接合。"
-    },
-    {
-      "candidateId": "landmark-vs-site-544__sh-fgj-5A038-01",
-      "sourceRecordIds": [
-        544
-      ],
-      "officialId": "sh-fgj-5A038-01",
-      "decision": "hold",
-      "reason": "既有研究明确德国邮局源1903和现1905楼不能视为相同原物，本次不得绕过same-site-repurposed限制。"
     },
     {
       "candidateId": "landmark-vs-site-1563__sh-fgj-3M027-01",
@@ -3545,15 +5412,6 @@
       "reason": "持久hold明确武进路225弄3—11号宿舍/教堂与乍浦路480、490主教堂是两条名录。VS225-9 WUTSIN不能接5F019主堂，近46米不能解除构件边界。"
     },
     {
-      "candidateId": "landmark-vs-site-526__sh-fgj-1A003-01",
-      "sourceRecordIds": [
-        526
-      ],
-      "officialId": "sh-fgj-1A003-01",
-      "decision": "hold",
-      "reason": "VS起年1874早于现汇丰楼，汇丰官方说明1923年启用全新外滩大楼；旧12 BUND虽与现址相合，仍不能用既有same-building标签跳过重建时期核定。保留同址银行沿革，暂不认定VS1874条目为现存1923楼体。"
-    },
-    {
       "candidateId": "landmark-vs-site-503__sh-fgj-2A020-01",
       "sourceRecordIds": [
         503
@@ -3608,15 +5466,6 @@
       "reason": "Park Hotel/国际饭店的建筑身份有支持，但本次名录数据没有可用坐标，不符合采用名录参考点的共卡配置要求；保留地标显示并单列名录坐标缺项。"
     },
     {
-      "candidateId": "landmark-hardoon-garden-vanished__sh-fgj-4B001-01",
-      "sourceRecordIds": [
-        1092
-      ],
-      "officialId": "sh-fgj-4B001-01",
-      "decision": "hold",
-      "reason": "哈同花园／爱俪园与中苏友好大厦位于同址但后者1954年重建。已有site-redeveloped证据，不是同一历史保护建筑。"
-    },
-    {
       "candidateId": "landmark-vs-site-580__sh-fgj-4A019-01",
       "sourceRecordIds": [
         580
@@ -3633,24 +5482,6 @@
       "officialId": "sh-fgj-4A020-01",
       "decision": "hold",
       "reason": "4A020是汉口路200号（维基210号）花园住宅，与具名圣三一教堂不相同；旧门牌210 HANKOW ROAD不宜直接机械接到今日同号住宅。"
-    },
-    {
-      "candidateId": "landmark-vs-site-291__sh-fgj-1C005-01",
-      "sourceRecordIds": [
-        291
-      ],
-      "officialId": "sh-fgj-1C005-01",
-      "decision": "hold",
-      "reason": "Grosvenor House仅对应峻岭公寓，1C005把峻岭公寓、茂名公寓及锦江宾馆中、西楼合列。现有一对一整项卡片不能把一个组成楼等同于两楼，待组件关系支持或全组证据。"
-    },
-    {
-      "candidateId": "landmark-vs-site-1665__sh-fgj-4F008-01",
-      "sourceRecordIds": [
-        1665
-      ],
-      "officialId": "sh-fgj-4F008-01",
-      "decision": "hold",
-      "reason": "虹口政府明确角田公寓曾设万岁馆，并称位于闵行181号；这证明历史租用/局部使用关系，但4F008保护项含闵行171-181、201-211和峨眉70-80多门牌全部楼体，尚不能把旅馆记录等同整个角田公寓。"
     },
     {
       "candidateId": "landmark-vs-site-516__sh-fgj-3A017-01",
@@ -3678,15 +5509,6 @@
       "officialId": "sh-fgj-4C009-01",
       "decision": "hold",
       "reason": "圣尼古拉斯教堂为皋兰16号，2C013是其保护项；4C009为皋兰11-17号花园住宅，与教堂不是同一建筑，空间近邻不能取代沿革。"
-    },
-    {
-      "candidateId": "landmark-vs-site-681__sh-fgj-1A019-01",
-      "sourceRecordIds": [
-        681
-      ],
-      "officialId": "sh-fgj-1A019-01",
-      "decision": "hold",
-      "reason": "1A019合列老、新永安公司627-635号，VS681明确为635旧楼，VS631是另一个未归组地标竞争该保护项。现有一对一机制不能只挑较近旧楼代表整个新旧楼保护项。"
     },
     {
       "candidateId": "landmark-vs-site-306__sh-fgj-4C020-01",
@@ -3759,24 +5581,6 @@
       "officialId": "sh-fgj-2B014-01",
       "decision": "hold",
       "reason": "Ohel Rachel与西摩会堂/拉结会堂的身份、1920年和陕西北500号沿革可确认；旧520 SEYMOUR保留。当前heritage Wikipedia点距VS506米，且旧研究OSM会堂轮廓支持VS点附近；在默认采用heritage坐标策略下应先核点再接入，不据身份确认搬移到可能错误位置。本轮不修改坐标。"
-    },
-    {
-      "candidateId": "landmark-vs-site-568__sh-fgj-2A030-01",
-      "sourceRecordIds": [
-        568
-      ],
-      "officialId": "sh-fgj-2A030-01",
-      "decision": "hold",
-      "reason": "VS568不只是历史起年较早：其关联照片1568明记1891–1894旧楼，1569明确1933新楼。解放日报作者考证说明1935年185号新楼落成后，河南路/福州路转角旧楼拆除。此源记录混合两代实体，不能把整条标成与2A030同一现存楼体。"
-    },
-    {
-      "candidateId": "landmark-vs-site-631__sh-fgj-1A019-01",
-      "sourceRecordIds": [
-        631
-      ],
-      "officialId": "sh-fgj-1A019-01",
-      "decision": "hold",
-      "reason": "1A019同时列老、新永安公司，范围南京东路627–635号；VS631明确新永安楼627号，另有未归组VS681旧永安楼竞争同一名录项。单独接受631会用一张新楼卡片代表两幢不同年代楼体，因此保留至多地标/多楼组范围能够表达。"
     },
     {
       "candidateId": "landmark-vs-site-187__sh-fgj-4C005-01",
@@ -3948,15 +5752,6 @@
       "officialId": "sh-fgj-4F005-01",
       "decision": "hold",
       "reason": "工部局西童女子学校在塘沽路390号；4F005小浦西公寓为塘沽路387—401号另一侧住宅，近距离不足以合并。"
-    },
-    {
-      "candidateId": "landmark-vs-site-407__sh-fgj-4D004-01",
-      "sourceRecordIds": [
-        407
-      ],
-      "officialId": "sh-fgj-4D004-01",
-      "decision": "hold",
-      "reason": "Adeodata Hall只对应淮海中路1209号天赐大宅，4D004名录合列1189、1199、1209号三幢花园住宅。不能将一幢地标扩成整项建筑群，保留单体到组件的待核关系。"
     },
     {
       "candidateId": "landmark-vs-site-1667__sh-fgj-4F005-01",
@@ -4132,7 +5927,70 @@
       "officialId": "sh-fgj-5F034-01",
       "decision": "hold",
       "reason": "VS581为1937年同仁医院迁入的九江路219号学校楼，5F034为长治路155—159号及南浔路193号另处同仁医院旧址；医院迁址关系不能当作同楼。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1737__sh-fgj-2B018-01",
+      "sourceRecordIds": [
+        1737
+      ],
+      "officialId": "sh-fgj-2B018-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "Lock Apartments有幸福公寓的中英文名线索，但现候选是华山路400号海格大楼；旧245 AVENUE HAIG至400号及两楼身份没有可靠桥接。约20米近邻不足以合并，下一步查幸福公寓和大胜胡同的范围。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1733__sh-fgj-3C006-01",
+      "sourceRecordIds": [
+        1733
+      ],
+      "officialId": "sh-fgj-3C006-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "白尔登公寓文章中的INTERSAVIN被解释为万国储蓄会电报地址，不能仅凭此认定Intersavin Apartments为该楼唯一旧名。旧421 AVENUE DU ROI ALBERT至今陕西南路213号仍缺门址/楼体桥接，保持独立。"
+    },
+    {
+      "candidateId": "landmark-vs-site-1744__sh-fgj-4A024-01",
+      "sourceRecordIds": [
+        1744
+      ],
+      "officialId": "sh-fgj-4A024-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "York House与约克大楼具有很强楼名线索，但VS1744为25 RUE MONTAUBAN，名录为四川南路27—29号；同名VS1745的29号又在含报社记录的另一历史组。需核25号范围及另一组全部成员，暂不仅凭音译与26米近邻作显示归并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-4136__sh-fgj-5D060-01",
+      "sourceRecordIds": [
+        4136
+      ],
+      "officialId": "sh-fgj-5D060-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "培福里具名相合，但原190 Avenue du Roi Albert不能直接等同陕西南路186弄；186弄大培福里与188弄纪家花园／小培福里需分清。原始点又是按188号附近推估，未证具体建筑群范围前暂不合并。"
+    },
+    {
+      "candidateId": "landmark-vs-site-540__sh-fgj-2A044-01",
+      "sourceRecordIds": [
+        540
+      ],
+      "officialId": "sh-fgj-2A044-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "VS540英文Mitsui Bank、中文三菱銀行互相矛盾，旧36 KIUKIANG ROAD与九江路36号只是门牌候选；需确认到底是哪家银行及建筑使用史，不按号码自动并入中华邮政储金汇业局。"
+    },
+    {
+      "candidateId": "landmark-vs-site-541__sh-fgj-2A043-01",
+      "sourceRecordIds": [
+        541
+      ],
+      "officialId": "sh-fgj-2A043-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "VS541英文Mitsubishi Bank、中文三井銀行互相矛盾，且与VS540的中英文名称交叉；旧50 KIUKIANG ROAD暂不足以证明上海公库楼的机构沿革，先核原银行身份。"
+    },
+    {
+      "candidateId": "landmark-vs-site-560__sh-fgj-2A003-01",
+      "sourceRecordIds": [
+        560
+      ],
+      "officialId": "sh-fgj-2A003-01",
+      "decision": "hold-identity-address-or-scope",
+      "reason": "原记录为7 BUND ROAD，而名录中国通商银行保护项为中山东一路6号；银行曾使用邻楼的可能性尚未排除，不能把7→6当作已证门牌重编。"
     }
   ],
-  "remainingUnreviewedPairs": 312
+  "remainingUnreviewedPairs": 262
 }

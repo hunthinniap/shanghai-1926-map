@@ -13,7 +13,7 @@ import { makeSearchRecords } from './lib/search'
 import { mergeCuratedParkFeatures } from './lib/parkLabels'
 import { mergeLandmarkSites } from './lib/landmarkSites'
 import { landmarkSiteLinks } from './data/landmarkSiteLinks'
-import { linkHeritageLandmarks } from './lib/heritageLandmarkLinks'
+import { linkHeritageLandmarks, withReviewedHeritageAliases } from './lib/heritageLandmarkLinks'
 import { heritageLandmarkLinks } from './data/heritageLandmarkLinks'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
@@ -37,7 +37,8 @@ function App() {
   const [mapKey, setMapKey] = useState(0)
   const selectedNeedsHeritage = Boolean(selectedGroupId && data?.features.features.some((feature) =>
     feature.properties.featureGroupId === selectedGroupId
-    && heritageLandmarkLinks.some((link) => link.landmarkFeatureId === feature.properties.id)))
+    && heritageLandmarkLinks.some((link) => [link, ...(link.additionalLandmarks ?? [])]
+      .some((member) => member.landmarkFeatureId === feature.properties.id))))
   const needsHeritage = heritageVisible || landmarksVisible || selectedNeedsHeritage
 
   useEffect(() => {
@@ -123,7 +124,7 @@ function App() {
     ? linkHeritageLandmarks(data.features, heritageBuildings, heritageLandmarkLinks) : undefined,
   [data, heritageBuildings])
   const searchRecords = useMemo(
-    () => (linkedBuildings ? makeSearchRecords(linkedBuildings.features.features) : []),
+    () => (linkedBuildings ? makeSearchRecords(withReviewedHeritageAliases(linkedBuildings.features.features, heritageLandmarkLinks)) : []),
     [linkedBuildings],
   )
   const selectedFeature = useMemo<HistoricalFeature | undefined>(
@@ -153,7 +154,7 @@ function App() {
         : 0,
     [data],
   )
-  const landmarkCount = data?.features.features.filter((feature) => feature.properties.kind === 'landmark').length ?? 0
+  const landmarkCount = linkedBuildings?.features.features.filter((feature) => feature.properties.kind === 'landmark').length ?? 0
   const buildingRecordCount = useMemo(
     () => data
       ? new Set(data.features.features.flatMap(

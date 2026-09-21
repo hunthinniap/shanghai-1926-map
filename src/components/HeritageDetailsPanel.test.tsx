@@ -55,10 +55,10 @@ const linked: LinkedHeritageBuilding = {
   },
 }
 
-function renderCard(value?: LinkedHeritageBuilding) {
+function renderCard(value?: LinkedHeritageBuilding, selectedFeature = heritage) {
   const container = document.createElement('div')
   container.innerHTML = renderToStaticMarkup(
-    <HeritageDetailsPanel feature={heritage} linked={value} onClose={() => undefined} />,
+    <HeritageDetailsPanel feature={selectedFeature} linked={value} onClose={() => undefined} />,
   )
   return container
 }
@@ -87,9 +87,9 @@ describe('HeritageDetailsPanel linked historical site', () => {
     expect(card.querySelector('.details-historical-chinese')?.textContent).toBe('Nanjing Hotel')
     expect(card.querySelector('.details-kicker')?.textContent).toContain('饭店')
     expect(card.querySelector('.details-kicker')?.textContent).toContain('第 4 批')
-    expect(field(card, '旧路名与门牌')).toContain('200 SHANSI ROAD')
-    expect(field(card, '旧路名与门牌')).toContain('Virtual Shanghai #609')
-    expect(field(card, '新路名与门牌（名录）')).toBe(heritage.properties.address)
+    expect(field(card, '旧地点地址')).toContain('200 SHANSI ROAD')
+    expect(field(card, '旧地点地址')).toContain('Virtual Shanghai #609')
+    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
     expect(field(card, '维基列表记载地址')).toBe('山西南路200号')
     expect(field(card, '名录建造年代')).toBe('1929年')
     expect(field(card, '历史资料年代')).toBe('1931 年资料')
@@ -135,7 +135,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     relocated.landmark.properties.currentNameZh = '后继机构'
     relocated.landmark.properties.currentAddress = '另一条路100号'
     const card = renderCard(relocated)
-    expect(field(card, '新路名与门牌（名录）')).toBe(heritage.properties.address)
+    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
     expect(field(card, '机构现址（非历史原址）')).toBe('另一条路100号')
     expect(field(card, '与历史地点的关系')).toBe('机构延续，但已迁离历史原址')
   })
@@ -147,7 +147,50 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard(complex)
     expect(field(card, '对应范围')).toContain('同一名录建筑群／园区')
     expect(field(card, '对应范围')).toContain(complex.link.scopeNote)
-    expect(field(card, '旧路名与门牌')).toContain(complex.link.historicalAddresses[0].address)
-    expect(field(card, '新路名与门牌（名录）')).toBe(heritage.properties.address)
+    expect(field(card, '旧地点地址')).toContain(complex.link.historicalAddresses[0].address)
+    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
+  })
+
+  it('distinguishes a checked modern address, listing range and earlier building phases', () => {
+    const site = structuredClone(linked)
+    site.link.relation = 'same-historical-site'
+    site.link.scopeNote = '1874年旧址记录；1923年现楼启用。'
+    site.link.modernAddress = { address: '中山东一路12号', sourceUrl: 'https://example.org/checked-address', title: '地址来源' }
+    const card = renderCard(site)
+    expect(field(card, '新地点地址')).toBe('中山东一路12号')
+    expect(field(card, '名录登记地址范围')).toBe(heritage.properties.address)
+    expect(field(card, '对应范围')).toContain('同一地点的不同历史阶段')
+    expect(card.textContent).toContain('1874年旧址记录；1923年现楼启用。')
+    expect(card.textContent).not.toContain('原建筑延续使用')
+    expect(card.querySelector('a[href="https://example.org/checked-address"]')).not.toBeNull()
+  })
+
+  it('shows explicitly reviewed aliases without overwriting the historical heading', () => {
+    const value = structuredClone(linked)
+    value.link.aliases = ['King Albert Apartments', '金亚尔培公寓']
+    const card = renderCard(value)
+    expect(card.querySelector('.details-historical-chinese')?.textContent).toBe('Nanjing Hotel')
+    expect(card.querySelector('.details-aliases')?.textContent).toContain('King Albert Apartments')
+    expect(card.querySelector('.details-aliases')?.textContent).toContain('金亚尔培公寓')
+  })
+
+  it('scopes current-use claims to a component instead of the whole listed complex', () => {
+    const value = structuredClone(linked)
+    value.link.relation = 'component-of-listed-complex'
+    value.link.scopeNote = '仅代表名录建筑群的一栋。'
+    const card = renderCard(value)
+    expect(field(card, '对应范围')).toContain('名录建筑群中的一栋／局部使用')
+    expect(field(card, 'Nanjing Hotel · 现用资料记载')).toBe('酒店 / 住宿')
+    expect(field(card, '现用资料记载')).toBeUndefined()
+  })
+
+  it('does not show the generic complex-reference-position row', () => {
+    const complex = structuredClone(heritage)
+    complex.properties.coordinateScope = 'building-complex-reference-point'
+    complex.properties.locationNote = '此为门址所在里弄、院落或建筑群参考点，未逐栋核定位置。'
+    const card = renderCard(undefined, complex)
+    expect(card.textContent).not.toContain('建筑群参考位置')
+    expect(card.textContent).not.toContain(complex.properties.locationNote)
+    expect(card.textContent).toContain('官网记载地址')
   })
 })
