@@ -5,11 +5,36 @@ const building = 'same-listed-building'
 const site = 'same-historical-site'
 const complex = 'same-listed-complex'
 const component = 'component-of-listed-complex'
+const nearbyResidential = 'nearby-residential-context'
+const nearbyCampus = 'nearby-campus-context'
 export const decisions = [
   ...aliasDecisions,
+  [1489, '2A058', site, '清心堂的VS记录、旧门牌30 DAFOCHANG与今大昌街30号指向同一教会地点。VS所1860年是教会创立沿革，现存堂建于1919—1923年；共卡按同址不同阶段展示，不把1860年写成现楼建造年。', ['https://zh.wikipedia.org/wiki/清心堂']],
+  [1563, '3M027', building, '官方名录原名直接列“弗兰克林住宅、中央银行俱乐部”，与Central Bank Club／中央銀行俱樂部及338 LINSEN XILU相合。采用淮海西路338号名录参考点，俱乐部使用阶段与1931年建筑资料分开。', []],
+  [1243, '2A053', building, '華商紗布交易所与名录华商纱布交易所同名，两来源记录#566与#1243又共用260 EDWARD VII门牌。官方项为今延安东路260号、原上海自然博物馆楼；共卡保留两条交易所记录，不把#566的年代待考回填为1923年。', ['https://zh.wikipedia.org/wiki/上海华商纱布交易所']],
+  [1441, '4M023', complex, '圣玛利亚女中于1923年迁入长宁路1187号校园，与VS旧1187 BRENAN ROAD及名录“圣玛利亚女中”相合。VS标注1851年为学校创办史，不代表长宁路每栋校舍建于当年；按校园建筑群范围共卡。', ['https://static.shcn.gov.cn/cncms/2024/04/18/25079207-627b-42c2-b907-37c7f0eb1261.pdf']],
+  [145, '3C014', complex, '诸圣堂与All Saints Church是同一圣公会教堂，旧门牌425 ROUTE LAFAYETTE与今复兴中路425号相合。同地组还含#140圣德小学；共卡将它作为同院历史记录保留，不声称小学就是教堂主体建筑。', ['https://www.ccctspm.org/churchinfo/207']],
+  [1427, '2M008', complex, '中西女中与名录中西女中同名，旧91 EDINBURGH ROAD对应今江苏路155号校园。共卡保留#1427女中和同地#1428中西第一小学两条史料；名录保护范围为东楼／北楼，不扩大成全校每栋建筑。', ['https://www.shcn.gov.cn/col5820/20240715/1263004.html']],
+  [1487, '3A021', complex, '清心女中学与名录清心女中为同一校史与校址。VS旧门牌490 LUCHIAPANG ROAD、官方名录陆家浜路550号、图书馆与学校资料所记今650号分列保留；按校园建筑群共卡，不擅自解释为确定的门牌重编。', ['https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-former-site-of-qingxin-girls-high-school-006329/', 'https://zh.wikipedia.org/wiki/上海市第八中学']],
+  [1711, '4G010', site, 'Yejia Garden／葉家花園即今上海市肺科医院院内的叶家花园；1933年捐作澄衷肺病疗养院。名录4G010仅保护园内小白楼／后期澄衷医院相关楼体，不代表整座园林均为该单体建筑。VS原址597 GUODING与名录政民路507号分别照录，不推断门牌重编；原始园林点与名录门址参考点相距约403米，不能据此认定小白楼的精确坐标。另有Deng’ai Hospital／澄哀醫院记录按同一院址归入，原始拼写及1932年标签未获独立证实。共卡采用名录参考点，保留历史点及园林／楼体范围差别。', ['https://csm.sse.com.cn/news/list/c/5735631.shtml', 'https://www.shhk.gov.cn/xwzx/002008/002008040/20240411/13a9a125-dad5-4764-9ad9-28e55a1b14b7.html', 'https://www.shyp.gov.cn/zhengwu/fgj-yxlsjzbhgl/2025/219/fc9f23e7df5d6a11162f5a36b8ebbaec/1bafe656abb041a2b42ea51e0bc566b7.pdf'], { scopeNote: 'Yejia Garden是整座叶家花园；名录4G010只对应园内小白楼／澄衷医院。Deng’ai Hospital／澄哀醫院很可能是同院址误标，其名称与1932年标签仍待原始史料核定，不视作1932年已开院。共卡采用名录门址参考点，非园林边界、小白楼实测点或医院全院位置；两条VS来源点及原门址均保留。' }],
+  [1710, '4G010', site, 'Deng’ai Hospital／澄哀醫院的VS记录位于政民路附近、类型为医院，原点距名录4G010门址参考点约156米；医院自刊资料与杨浦史料确认1933年在叶家花园创办澄衷医院。近似中文名、道路、类型和近邻位置共同支持同一院址的展示归并，但VS的英文Deng’ai、中文澄哀及1932年标签均与权威史料不合，原样保留为未核定异文／来源年代，不宣称1932年已开院，更不认定VS点是小白楼实测位置。', ['https://www.shsfkyy.com/upload/files/2023/11/720127be61e34a8c.pdf', 'https://yptimes.shyp.gov.cn/html/2017-12/14/content_4_3.htm'], { scopeNote: '医院记录按同一院址归入叶家花园卡；“Deng’ai／澄哀”和1932年仅为VS原始记载，医院自刊资料记澄衷医院1933年成立。名录4G010只保护园内小白楼，不能将医院全院或原始点视作这栋楼。' }],
+  [1432, '5M011', complex, 'Litian Textile Mill Dormitories的原中文“豊田紡織廠職員宿舍”对应丰田纱厂职工／干部住宅群。旧1000 YUYUAN ROAD与今愚园路1249弄的逐号重编未核定；名录分列的2号楼与1号两项按同一历史住宅群共卡，不声称VS点精确对应其中某栋。', ['https://dzb.whb.cn/images/2017-11/05/7/71105.pdf', 'https://www.thepaper.cn/newsDetail_forward_15152847']],
+  [1432, '5M022', complex, 'Litian Textile Mill Dormitories对应的丰田纱厂历史住宅群还包含名录5M022愚园路1249弄1号。与5M011作为同一共享卡的第二项官方记录，两个编号和门址均保留。', ['https://dzb.whb.cn/images/2017-11/05/7/71105.pdf', 'https://www.thepaper.cn/newsDetail_forward_15152847']],
+  [1552, '4D047', site, 'Siccawei Observatory即徐家汇观象台。上海天文台记载1872年初台在蒲西路221号，1901年在原址西侧约100米建蒲西路166号新楼；名录4D047保护的是后者。VS投影转换点与名录楼相距约510米，超过文献所载迁移量，因此判为原始点位异常而非GCJ-02问题。共卡使用现存观象楼WGS84参考点，保留1872年机构记录和原点以便追溯。', ['https://www.shao.ac.cn/2020Ver/gkjj/lsyg/', 'https://www.meet-in-shanghai.net/cn/museums/shanghai-meteorological-museum-845473/', 'https://zh.wikipedia.org/wiki/徐家汇观象台']],
+  [1466, '2C014', complex, 'Jiangnan Arsenal即江南制造总局／江南制造局，1867年迁入高昌庙后形成后来的江南造船厂旧厂区。名录2C014只列总办公楼、2号船坞、指挥楼、飞机车间等保留构筑物；按旧厂区建筑群共卡，旧“?? ROUTE DE L’ARSENAL”照录，不把VS点指定为某栋楼。原有现代用途hold继续有效，本次只确认历史身份与名录建筑群关联。', ['https://www.shjsjtdw.cn/node2/n59/u1ai15377.html', 'https://zh.wikipedia.org/wiki/江南機器製造總局', 'https://www.wikidata.org/wiki/Q10377974'], { allowCurrentUseHoldForHistoricalIdentity: true }],
+  [1661, '5F002', complex, 'Hongkou Police Station即公共租界虹口捕房。1943年院产与警务移交上海市警察局虹口分局；名录5F002塘沽路219号公安大楼为同一警务院落的附属警察公寓。共卡保留旧260 MINGHONG、今闵行路260号与名录塘沽路219号，并明确旧捕房主楼已拆，不能把公安大楼写成同一栋主楼。', ['https://www.shhk.gov.cn/xwzx/002008/002008040/20240321/a9e9a2b2-08e9-464f-a468-808d4ed223a5.html', 'https://www.shhk.gov.cn/xwzx/002009/002009002/20180410/590e3e68-11be-4e22-b2a6-5a8060287232.html', 'https://zh.wikipedia.org/wiki/上海公共租界虹口捕房']],
+  [1168, '4B013', building, '戈登路巡捕房与4B013为同一具名保护建筑：官方名录同时列原名戈登路巡捕房、现用上海商业会计学校静安分校及江宁路511号；建筑沿革资料也明确捕房设于戈登路511号并延续为该校使用。VS旧门牌557 GORDON ROAD作为来源差异原样保留，不推断557必然重编为511。院内曾有锡克教堂不否定捕房本体身份，也不把教堂另行并入本卡。', ['https://zh.wikipedia.org/wiki/上海公共租界戈登路捕房']],
   [1424, '3M001', complex, '兆豊別墅／兆丰别墅与Jessfield Villa为同一具名住宅群，旧716 CHANGNING ROAD门牌原样保留；长宁政府确认现址长宁路712弄及1929年始建，名录范围按整处别墅群展示。', ['https://www.shcn.gov.cn/col3991/20240220/1254757.html']],
+  [1437, '4M008', complex, 'Yiding Apartments原中文憶定邨即名录忆定村。旧495 EDINBURGH ROAD所在忆定盘路为今江苏路，名录今址江苏路495弄，1934年一致；按整处里弄住宅群共卡，保留新旧门址及原始点，不把住宅群参考点断言为某一栋。区别于邻近江苏路480弄的月邨。', ['https://www.ccphistory.org.cn/shds/shhm/content/d254f2b6-ddcb-43e7-a32e-002d8d4798c8.html', 'https://www.shcn.gov.cn/col6991/20260224/1305931.html']],
   [657, '4A028', building, 'Strand Theater原中文新光大戏院、旧586 NINGPO ROAD与名录新光大戏院宁波路586号精确相合，1930年沿革一致；不并入隔壁588号中国大饭店。', ['https://commons.wikimedia.org/wiki/File:Strand_Theatre_Shanghai.JPG']],
   [1215, '3N002', complex, '普陀区官方明确上海联合啤酒厂、上海啤酒有限公司与宜昌路130号、今梦清园的沿革；共卡展示名录保存的工业建筑群，注明厂区部分建筑保留，1934与1935年来源差异分列。', ['https://www.shanghai.gov.cn/nw15343/20250305/a5350a8588714dde92d4cba908b5a248.html']],
+  [1174, '5B050', nearbyCampus, '仅将旧966 CHANGDE ROAD的1933年SMC Primary School／工部局小學记录归入今上海市第一中学余姚路139号校区卡片，属于相邻门址的校园地点关联，不是小学与工部局华人女子中学为同一学校的证明。2007年市一中学曾在报纸刊常德路964号校址，今名录保护项余姚路139号、1935年女中楼；旧966、后见964及今139号各按来源保留，不推断966号重编为964号，也不把1933年小学点核定为1935年主楼。另一处375 SEYMOUR ROAD的SMC Primary School／Girls记录#1016、#1017与此校区相距约1.4公里，不并入本卡。', ['https://xmwb.xinmin.cn/history/xmwb/page/1/2007-04-28/A106/19781177735152562.pdf', 'https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html', 'https://ih.sass.org.cn/_upload/article/files/cc/35/338d41e54fea98f4aa52270690a4/4d78441b-013b-4d00-b639-d4b83a10c2ce.pdf']],
+  [1062, '5B044', complex, 'China Inland Mission／内地會的旧1531 SINZA ROAD对应今新闸路1531号，落在房管名录5B044“基督教内地会／上海市第六人民医院”所列1515—1533号及北京西路1400弄24号院区范围。共卡按旧总部院落，不将原始点核定为名录内5、7、9、10号楼的某一栋。后期先由上海市第六人民医院使用，再为上海市儿童医院北京西路院区；市六医院已迁离，不写成今院区现用单位。另一条同名#1650点位远离本院区且无门牌，可能涉及内地会早期用址，暂不并入这处保护建筑。', ['https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html', 'https://zh.wikipedia.org/wiki/中国内地会总部大楼', 'https://www.shchildren.com.cn/contents/641/9241.html']],
+  [248, '5A072', site, 'Institut Pasteur #249的旧207 ROUTE PERE ROBERT与今瑞金二路207号精确对应。上海市政府刊载的建筑沿革明确：1936年此处为公董局法租界医学化验所，1938年改为上海巴斯德研究所；名录5A072现列中国疾控中心寄生虫病预防控制所。VS的1937年标签照录，不把它当作1938年机构改组或建筑落成年份。同一原始地点组还含Nurse School #248（旧址同号），只按同址资料共卡，不认定护士学校就是化验所建筑。2004年另设的上海巴斯德研究所位于合肥路，不与本旧址的现用途混同。', ['https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=7456ca5b-2dbd-4d72-a12c-0b2d2af3f4d1', 'https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html', 'https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/be554855-1e89-466e-9697-66a0352f417a.pdf'], { scopeNote: '同一门址的化验所、巴斯德研究所与现存保护建筑按不同阶段展示；Nurse School #248仅为同址资料，不认定护士学校就是化验所建筑。' }],
+  [1370, '3N005', complex, 'Fufeng Flour Mill／阜豐麵粉厰即阜丰面粉厂，Fuxin Flour Mill／福新麵粉廠为其西侧的福新厂。房管名录3N005将两厂列为莫干山路120号同一保护建筑群；1956年两厂合并经营。两条泛名Flour Mill记录#1213／#1214（1898／1913年）也按旧厂区归入，但不能分别核定为某栋或某厂。旧“?? WEST SOOCHOW ROAD”、226及126 MOKANSHAN ROAD均照录，不推断旧门牌与名录120号的重编关系；原始点分别保留在审计记录。天安千树项目600号一带与名录120号是不同口径，现仅部分旧建筑修缮保留。#1371自动匹配的“上海面粉有限公司／办公”是旧用途资料，不作为现时整处厂区的用途结论。', ['https://fgj.sh.gov.cn/yxlsjz1/20200331/2447d47b3e2947bfba7c64ed04a758a7.html', 'https://www.shpt.gov.cn/csjd-jiedaozhen/sydb-scjd/20220211/832194.html']],
+  [1371, '3N005', complex, 'Fuxin Flour Mill／福新麵粉廠是同一旧厂区西侧的福新面粉厂，不是阜丰同一栋楼。保留旧226 MOKANSHAN ROAD及1913年记录，与名录莫干山路120号并列，不推定旧226号重编为120号。原自动匹配的“上海面粉有限公司／办公”只反映旧资料中的名称和用途，不能作为现时整处厂区用途的核实结论。', ['https://fgj.sh.gov.cn/yxlsjz1/20200331/2447d47b3e2947bfba7c64ed04a758a7.html', 'https://www.shpt.gov.cn/csjd-jiedaozhen/sydb-scjd/20220211/832194.html']],
+  [1213, '3N005', complex, '两条Flour Mill／麵粉廠泛名记录#1213、#1214旧址同记126 MOKANSHAN ROAD，分别标1898与1913年，落在阜丰／福新厂区段；与官方3N005及普陀区两厂沿革按旧厂区范围共卡。尚无法将每条泛名记录精确指认为某一栋或某一厂，不把旧126号直接改写成名录120号，原始记录与年代照录。', ['https://fgj.sh.gov.cn/yxlsjz1/20200331/2447d47b3e2947bfba7c64ed04a758a7.html', 'https://www.shpt.gov.cn/csjd-jiedaozhen/sydb-scjd/20220211/832194.html']],
+  [1229, '4N002', complex, '上海内外綿會社住宅／Naigai Wata职工住宅与今澳门路660弄澳门小区为同一住宅区。上观新闻明确宜昌路小沙渡路口的内外棉会社职工住宅后来为华纺第二宿舍、现澳门路660弄；房管局4N002仅保护所列门牌住宅。共卡采用名录住宅区参考点，保留旧425 ICHANG ROAD与今澳门路660弄两套门址，不推定原点对应名录中的某一栋，也不将全小区31幢一律标为4N002保护建筑。', ['https://www.shobserver.cn/wx/detail.do?id=83601']],
   [426, '2D017', complex, '原中文建業里、旧440 ROUTE JOSEPH FRELUPT与1930年记录对应建业里。产权经营方记建国西路440—496弄为同一里弄群，保留官网468／488弄地址范围及修缮复建说明，不声称所有楼栋原物保存。', ['https://www.xufang.cn/product/38.html', 'https://zh.wikipedia.org/wiki/建业里_(上海)']],
   [456, '3D008', complex, '原中文上海新村与1939年均与上海新邨建筑群吻合，旧1479 AVENUE JOFFRE和名录淮海中路1487弄分别展示。关联整处历史里弄，不逐号推定某一栋住宅。', ['https://zh.wikipedia.org/wiki/上海新邨', 'https://news.sina.cn/sa/2007-04-26/detail-ikknscsk2148778.d.html']],
   [1603, '4F010', site, '汉壁礼男校旧102 HASKELL ROAD对应名录中州路102号学校旧址；官方原名明确含汉壁礼男校、华童公学及后继学校。共卡按校址沿革，1940年历史记录与约1925年名录校舍分开，不外推校内每栋建筑。', ['https://zh.wikipedia.org/wiki/中州路102号']],
@@ -44,6 +69,7 @@ export const decisions = [
   [563, '2A033', building, '永年人寿保险公司与广东路93号永年大楼由华安保险楼史直接相连，1910年相符。采用名录点展示原93 CANTON ROAD，银行支行租户不等于整幢楼用途。', ['https://magazine.sinosafe.com.cn/?p=8292']],
   [292, '2C005', building, 'Cercle Sportif Français即法国总会，1926年旧290 ROUTE CARDINAL MERCIER对应今茂名南路58号保留建筑；共卡限法国总会旧楼，不包括后来花园饭店高层。', ['https://zh.wikipedia.org/wiki/法国总会']],
   [588, '5A023', building, 'Bank of Canton即广东银行，旧52 NINGPO ROAD与名录宁波路52号广东银行大楼吻合。天津路2号、江西中路349号另一广东银行保护项继续独立。', []],
+  [608, '2A019', building, 'VS608英文泛称Bank但原中文明确为国華銀行，旧342 PEKING ROAD与名录国华银行大楼北京东路342号同号，1933年银行入驻／大楼落成资料相合。按同一具名建筑共卡，原始英文泛名、旧址及年代分别保留；名录“黄浦税务局”为该名录编制时的使用单位，2025年修缮报道记载上海市口腔医院使用，不把两者混写成同一时期。', ['https://sghexport.shobserver.com/html/baijiahao/2025/02/21/1517216.html']],
   [601, '3A013', building, '黄浦档案馆明确青年协会大楼从博物院路131号至今虎丘路131号、后名虎丘公寓的沿革；采用历史建筑点。区别于虎丘路128号广学大楼及西藏南路123号青年会。', ['https://web.chinamcloud.com/shhpdst/tzypc/dacl/27020558.shtml', 'https://www.shobserver.cn/wx/detail.do?id=16690']],
   [1742, '4D033', building, 'Dufour Apartments即巨福公寓，后名安康公寓；旧176 ROUTE LOUIS DUFOUR与今乌鲁木齐南路176号对应。', ['https://zh.wikipedia.org/wiki/安康公寓']],
   [1076, '5B033', site, '协进学校旧1550 BUBBLING WELL ROAD与名录南京西路1550号相合，官方原名同时列程氏旧居和协进初级中学。按宅邸与学校不同使用阶段共卡，保留幼儿园、小学、中学历史记录。', []],
@@ -59,6 +85,22 @@ export const decisions = [
   [407, '4D004', component, 'Adeodata Hall对应淮海中路1209号天赐大宅，现上音音乐会客厅，是4D004所列1189、1199、1209号三栋住宅之一。共卡不把1209号的楼史与用途赋给另外两栋，位置为名录建筑群参考点。', ['https://wmzx.shcmusic.edu.cn/2024/0117/c1160a50160/pagem.htm']],
   [1665, '4F008', component, '虹口政府明确闵行路181号角田公寓内曾开设万岁馆。旅馆旧181 MINHONG作为公寓的局部历史使用纳入同一卡片；名录闵行171—181、201—211与峨眉70—80号范围全部保留，不将整项公寓都称为旅馆。', ['https://www.shhk.gov.cn/zjhk/001007/001007002/20220916/d5dda7dc-c3c6-44ff-86ef-ee3184a20061.html']],
   [1092, '4B001', site, '哈同花园／爱俪园旧址后来建设中苏友好大厦，今上海展览中心。共卡按园址消失后再开发的地点沿革，花园与1954年起建的新建筑不是同一建筑；名录参考点仅代表后期建筑，不代表旧园全境或原园建筑位置。', ['https://expo.sww.sh.gov.cn/browser/detail.jspx?code=402881e144722a710144727790b70000', 'https://www.aisixiang.com/data/122073.html']],
+  [219, '4C017', nearbyResidential, '无专名Residential Complex位于AVENUE DUBAIL／重庆南路，距万宜坊名录参考点约26米。按同路段住宅语境共卡，不核定为万宜坊成员或同一栋。', []],
+  [294, '2C009', nearbyResidential, '无专名Residential Complex位于ROUTE BOURGEAT／长乐路，距梵尔登花园名录参考点约83米。原273号与名录197—247号范围不相接，仅作同路段展示归并。', []],
+  [348, '2C010', nearbyResidential, '无专名Residential Complex位于AVENUE DU ROI ALBERT／陕西南路，距陕南村名录参考点约101米。与已核定的King Albert Apartments记录共卡，但本条不核定为陕南村成员。', []],
+  [369, '2B007', nearbyResidential, '无专名Residential Complex的AVENUE FOCH 877号与名录延安中路877号同路同号，参考点相距约42米。仍按邻近住宅语境归并，不因门牌相同自动认定为模范村具体楼栋。', []],
+  [377, '5B026', nearbyResidential, '无专名Residential Complex位于ROUTE BOURGEAT／长乐路，旧698号距履安邨／留园今672弄参考点约93米。仅作同路段住宅语境。', []],
+  [378, '5B037', nearbyResidential, '无专名Residential Complex位于ROUTE RATARD／巨鹿路，旧741号距名录今735号参考点约99米。仅作同路段住宅语境，不核定同一栋。', []],
+  [382, '3B017', nearbyResidential, '无专名Residential Complex的210 ROUTE AMIRAL COURBET与名录富民路210弄同路同号段，参考点相距约58米。仅归入住宅语境，不核定具体楼栋。', []],
+  [390, '5D067', nearbyResidential, '无专名Residential Complex的4/44 ROUTE DE GROUCHY与名录延庆路4弄（2—44号）同路且号段高度相近，参考点相距约55米。仍只按邻近住宅语境归并。', []],
+  [1009, '2B004', nearbyResidential, '无专名Residential Complex记在BUBBLING WELL ROAD／MEDHURST ROAD路口，距MEDHURST大楼名录参考点约71米。按同路口住宅语境归并，不核定为泰兴大楼本体。', []],
+  [1735, '5D006', building, 'Belmont Apartment对应襄阳公寓。历史资料及建筑史数据库写240号，实地建筑导览与优秀历史建筑名录写襄阳南路254号；保留两种门牌记载，不据此推断重编号过程。', ['https://www.shanghaiartdeco.net/shanghai-art-deco-buildings-database/', 'https://www.globaltimes.cn/content/903413.shtml']],
+  [1759, '5D006', nearbyResidential, '无专名Apartments记在275 ROUTE RAYMOND TENANT DE LA TOUR；同路段已有Belmont Apartment／襄阳公寓核定锚点，本点距名录参考点约111米。与具名记录共卡，但不核定为襄阳公寓本体。', []],
+  [1761, '5D063', nearbyResidential, '无专名Apartments位于AVENUE DU ROI ALBERT／陕西南路，旧257号距名录今222弄20号参考点约124米。仅作同路段住宅语境归并。', []],
+  [1766, '5D016', nearbyResidential, '无专名Apartments的266 ROUTE CHARLES CULTY对应湖南路路段，距名录湖南路276号住宅参考点约8米。按同路段就近归入住宅卡，不核定为同一栋。', []],
+  [1767, '5D016', nearbyResidential, '无专名Apartments的273 ROUTE CHARLES CULTY对应湖南路路段，距名录湖南路276号住宅参考点约53米。与#1766共卡，两条旧门牌分别保留，不核定具体楼栋。', []],
+  [1781, '5D045', nearbyResidential, '无专名Apartments位于ROUTE PAUL HENRY／新乐路，旧7号距名录今22—32号参考点约59米。仅作同路段住宅语境归并。', []],
+  [1782, '5D106', nearbyResidential, '无专名Apartments位于ROUTE PAUL HENRY／新乐路，旧27号距慎成里名录参考点约26米。仅作同路段住宅语境归并，不核定为慎成里成员。', []],
 ]
 
 export const holds = [
@@ -71,8 +113,22 @@ export const holds = [
 
 export const modernAddresses = {
   ...aliasModernAddresses,
+  1487: { address: '陆家浜路650号', sourceUrl: 'https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-former-site-of-qingxin-girls-high-school-006329/', title: '上海市文旅推广网 · 清心女中旧址现址' },
   526: { address: '中山东一路12号', sourceUrl: 'https://www.spdb.com.cn/ebank_2403/personal_online_banking/kpx/202503/t20250329_1130803.shtml', title: '浦发银行官网 · 注册地址' },
   1689: { address: '北苏州路20号', sourceUrl: 'https://www.shanghai.gov.cn/nw17239/20260821/437444e8364445a1a88082f9fbca30b3.html', title: '上海市政府 · 上海大厦门址' },
 }
 
-export const grouping = { '1A019': [681, 631], '2A002': [548, 551] }
+export const grouping = {
+  '1A019': [681, 631],
+  '2A002': [548, 551],
+  '2C010': [1763, 348],
+  '4G010': [1711, 1710],
+  '3N005': [1370, 1371, 1213],
+  '5D006': [1735, 1759],
+  '5D016': [1766, 1767],
+}
+
+// A single historical compound can contain multiple separately numbered
+// heritage entries. They share one details card while every official code and
+// door address remains visible.
+export const heritageGrouping = { 1432: ['5M011', '5M022'] }

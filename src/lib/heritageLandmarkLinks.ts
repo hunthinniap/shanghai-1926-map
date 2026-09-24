@@ -10,13 +10,16 @@ export interface HistoricalBuildingAddress {
 export interface HeritageLandmarkLink {
   id: string
   officialId: string
+  additionalHeritageOfficialIds?: string[]
   landmarkFeatureId: string
   expectedSourceRecordIds: number[]
   historicalAddresses: HistoricalBuildingAddress[]
   additionalLandmarks?: { landmarkFeatureId: string; expectedSourceRecordIds: number[] }[]
   modernAddress?: { address: string; sourceUrl: string; title: string }
   aliases?: string[]
-  relation?: 'same-listed-building' | 'same-listed-complex' | 'same-listed-structure' | 'same-historical-site' | 'component-of-listed-complex'
+  currentUseHoldRetained?: boolean
+  nearbyResidentialContext?: boolean
+  relation?: 'same-listed-building' | 'same-listed-complex' | 'same-listed-structure' | 'same-historical-site' | 'component-of-listed-complex' | 'nearby-residential-context' | 'nearby-campus-context'
   scopeNote?: string
   note: string
   sources: CurrentUseSource[]
@@ -24,6 +27,7 @@ export interface HeritageLandmarkLink {
 
 export interface LinkedHeritageBuilding {
   heritage: HeritageBuildingFeature
+  heritages?: HeritageBuildingFeature[]
   landmark: HistoricalFeature
   landmarks?: HistoricalFeature[]
   link: HeritageLandmarkLink
@@ -40,8 +44,14 @@ export function withReviewedHeritageAliases(features: HistoricalFeature[], links
         && sortedIds(member.expectedSourceRecordIds) === sortedIds(feature.properties.sourceRecordIds ?? [])))
     if (feature.properties.kind !== 'landmark' || matches.length !== 1
       || features.filter((other) => other.properties.featureGroupId === feature.properties.featureGroupId).length !== 1) return feature
+    const addressOwners = new Map(matches[0].historicalAddresses.map(({ address, sourceRecordId }) =>
+      [address, sourceRecordId]))
+    const matchingAliases = matches[0].aliases!.filter((alias) => {
+      const owner = addressOwners.get(alias)
+      return owner === undefined || feature.properties.sourceRecordIds?.includes(owner)
+    })
     return { ...feature, properties: { ...feature.properties,
-      aliases: [...new Set([...(feature.properties.aliases ?? []), ...matches[0].aliases!])],
+      aliases: [...new Set([...(feature.properties.aliases ?? []), ...matchingAliases])],
     } }
   })
 }
@@ -62,7 +72,7 @@ function recordsFor(feature: HistoricalFeature): HistoricalRecord[] {
   }]
 }
 
-/** Reviewed identities only. Coordinate proximity never establishes a link. */
+/** Explicit reviewed links only. Proximity groupings must be separately labelled and never imply identity. */
 export function linkHeritageLandmarks(
   historical: HistoricalFeatureCollection,
   heritage: HeritageBuildingCollection | undefined,
@@ -73,10 +83,11 @@ export function linkHeritageLandmarks(
   if (!heritage) return { features: historical, byOfficialId, byGroupId }
   const sortedIds = (ids: number[]) => [...new Set(ids)].sort((a, b) => a - b).join(',')
   const members = (link: HeritageLandmarkLink) => [link, ...(link.additionalLandmarks ?? [])]
+  const officialIds = (link: HeritageLandmarkLink) => [link.officialId, ...(link.additionalHeritageOfficialIds ?? [])]
   const unique = <T,>(items: T[]) => [...new Set(items)]
   for (const link of links) {
     // Conflicting one-to-many candidates remain independent until reviewed.
-    if (links.filter((item) => item.officialId === link.officialId).length !== 1
+    if (officialIds(link).some((officialId) => links.filter((item) => officialIds(item).includes(officialId)).length !== 1)
       || members(link).some((member) => links.flatMap(members)
         .filter((item) => item.landmarkFeatureId === member.landmarkFeatureId).length !== 1)) continue
     const candidates = members(link).map((member) => {
@@ -88,8 +99,11 @@ export function linkHeritageLandmarks(
         && historical.features.filter((other) => other.properties.featureGroupId === feature.properties.featureGroupId).length === 1
         ? feature : undefined
     })
-    const places = heritage.features.filter((feature) => feature.properties.officialId === link.officialId)
-    if (candidates.some((feature) => !feature) || places.length !== 1) continue
+    const places = officialIds(link).map((officialId) => {
+      const matches = heritage.features.filter((feature) => feature.properties.officialId === officialId)
+      return matches.length === 1 ? matches[0] : undefined
+    })
+    if (candidates.some((feature) => !feature) || places.some((feature) => !feature)) continue
     const landmarks = candidates as HistoricalFeature[]
     const primary = landmarks[0]
     const landmark = landmarks.length === 1 ? primary : {
@@ -105,12 +119,14 @@ export function linkHeritageLandmarks(
           feature.properties.currentAddress, ...(feature.properties.aliases ?? [])]).filter((name): name is string => Boolean(name))),
       },
     }
-    const building = places[0]
-    if (building.geometry.type !== 'Point' || building.properties.coordinateSystem !== 'WGS84'
+    const buildings = places as HeritageBuildingFeature[]
+    if (buildings.some((building) => building.geometry.type !== 'Point'
+      || building.properties.coordinateSystem !== 'WGS84'
       || building.geometry.coordinates.length < 2 || !building.geometry.coordinates.every(Number.isFinite)
-      || Math.abs(building.geometry.coordinates[0]) > 180 || Math.abs(building.geometry.coordinates[1]) > 90) continue
-    const linked = { heritage: building, landmark, landmarks, link }
-    byOfficialId.set(link.officialId, linked)
+      || Math.abs(building.geometry.coordinates[0]) > 180 || Math.abs(building.geometry.coordinates[1]) > 90)) continue
+    const building = buildings[0]
+    const linked = { heritage: building, heritages: buildings, landmark, landmarks, link }
+    for (const officialId of officialIds(link)) byOfficialId.set(officialId, linked)
     for (const member of landmarks) byGroupId.set(member.properties.featureGroupId, linked)
   }
   return {
@@ -137,6 +153,14 @@ export function linkHeritageLandmarks(
               linked.heritage.properties.listedName,
               linked.heritage.properties.address,
               linked.heritage.properties.wikipediaAddress,
+              ...(linked.heritages ?? [linked.heritage]).slice(1).flatMap((additional) => [
+                additional.properties.name,
+                additional.properties.articleTitle,
+                additional.properties.officialName,
+                additional.properties.listedName,
+                additional.properties.address,
+                additional.properties.wikipediaAddress,
+              ]),
               ...linked.link.historicalAddresses.map((address) => address.address),
             ].filter((name): name is string => Boolean(name)))],
           },

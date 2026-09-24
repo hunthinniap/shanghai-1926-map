@@ -369,6 +369,48 @@ a:focus-visible {
   font-size: 10px;
 }
 
+.heritage-use-legend {
+  grid-column: 1 / -1;
+  max-width: min(390px, calc(100vw - 48px));
+  margin-top: 9px;
+  pointer-events: auto;
+  font-size: 11px;
+}
+
+.heritage-use-legend summary {
+  width: fit-content;
+  cursor: pointer;
+  color: #514c40;
+}
+
+.heritage-use-legend > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px 12px;
+  margin: 8px 0;
+  padding: 10px;
+  background: rgba(248, 242, 225, 0.96);
+  border: 1px solid var(--line);
+}
+
+.heritage-use-legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.heritage-use-legend i {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: #fffaf0;
+  font-style: normal;
+}
+
 .map-legend {
   position: absolute;
   z-index: 4;

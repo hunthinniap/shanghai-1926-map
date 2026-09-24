@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-09-21",
+  "reviewedAt": "2026-09-22",
   "input": {
     "path": "research/rechecks/2026-09-19-heritage-landmark-links/candidates.json",
     "sha256": "023bfd179d0a4bb9cfa44e7696271010a31d77e1776def9a197ec1d068c00afc"
@@ -19,29 +19,31 @@
       "insufficient-evidence": 167,
       "name-match-location-conflict": 38,
       "strong-one-to-one": 32
-    }
+    },
+    "supplementalCandidates": 19,
+    "totalCandidatesReviewedByThisAudit": 517
   },
   "summary": {
-    "screenedPairs": 498,
-    "explicitDecisionsThisRound": 64,
-    "newlyAcceptedPairs": 56,
+    "screenedPairs": 517,
+    "explicitDecisionsThisRound": 104,
+    "newlyAcceptedPairs": 95,
     "explicitlyHeldThisRound": 7,
-    "refreshedAcceptedPairs": 1,
-    "reexaminedPreviousHolds": 13,
-    "linkedPairs": 157,
-    "sharedCards": 155,
+    "refreshedAcceptedPairs": 2,
+    "reexaminedPreviousHolds": 18,
+    "linkedPairs": 196,
+    "sharedCards": 187,
     "statuses": {
-      "linked": 157,
-      "needs-address-or-scope-evidence": 52,
-      "held-after-review": 79,
+      "linked": 196,
+      "needs-address-or-scope-evidence": 43,
+      "held-after-review": 74,
       "alternative-not-proven": 25,
       "held-current-use-or-member-scope": 12,
-      "needs-location-or-branch-review": 31,
+      "needs-location-or-branch-review": 30,
       "needs-location-and-identity-review": 26,
-      "proximity-only": 116
+      "proximity-only": 111
     }
   },
-  "limitation": "498对为全量候选筛查，并非498对均重新网上考证。未匹配记录按当前名称、别名、完整地址、已有来源和近邻检索范围登记，不等于已证明没有对应建筑。",
+  "limitation": "498对为冻结的全量自动候选筛查，另有19对跨语言、建筑群范围、大偏移、邻近校址或无名住宅语境补充候选；并非所有候选均重新网上考证。邻近住宅或校址共卡是展示归纳，不构成同一实体、同栋、同宗地或现用途证据。未匹配记录按当前名称、别名、完整地址、已有来源和近邻检索范围登记，不等于已证明没有对应建筑。",
   "rows": [
     {
       "candidateId": "landmark-vs-site-1424__sh-fgj-3M001-01",
@@ -66,7 +68,7 @@
       "distanceMetres": 3,
       "status": "linked",
       "reason": "兆豊別墅／兆丰别墅与Jessfield Villa为同一具名住宅群，旧716 CHANGNING ROAD门牌原样保留；长宁政府确认现址长宁路712弄及1929年始建，名录范围按整处别墅群展示。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -302,7 +304,7 @@
       "distanceMetres": 8,
       "status": "linked",
       "reason": "旧123 BOULEVARD DE MONTIGNY对应西藏南路123号八仙桥青年会；青年会专文及文旅资料确认该楼身份。VS1932与1931年落成记载分列。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -344,7 +346,7 @@
       "distanceMetres": 8,
       "status": "linked",
       "reason": "江海关13 BUND ROAD与中山东一路13号对应同一海关用址；1857年机构记录与1927年现楼分期保留。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -531,7 +533,7 @@
       "distanceMetres": 10,
       "status": "linked",
       "reason": "Mercantile Bank of India, London and China为有利银行，旧4 BUND ROAD与今中山东一路3号的门牌变化有明确文献，与Union Building旧17 CANTON ROAD共卡；本条未提供可靠起年，仍标年代待考，不借用1916年作银行入驻年。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -715,7 +717,7 @@
       "distanceMetres": 12,
       "status": "linked",
       "reason": "Yokohama Specie Bank即横滨正金银行，中山东一路24号与旧24 BUND ROAD及1924年相合；区别于15号华俄道胜银行旧址。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -847,7 +849,7 @@
       "distanceMetres": 13,
       "status": "linked",
       "reason": "江海南关旧348 WAIMA与外马路348号相合。原1901设关记录与1922年现楼重建史分别展示；保护项仅为办公楼，不外推整个码头。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -925,9 +927,9 @@
       ],
       "listedAddress": "瑞金二路207号",
       "distanceMetres": 14,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Institut Pasteur”与“公董局公共卫生救济处医学化验所”尚缺完整门牌/使用沿革/建筑群成员对应。同址组每个历史成员均需解释。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Institut Pasteur #249的旧207 ROUTE PERE ROBERT与今瑞金二路207号精确对应。上海市政府刊载的建筑沿革明确：1936年此处为公董局法租界医学化验所，1938年改为上海巴斯德研究所；名录5A072现列中国疾控中心寄生虫病预防控制所。VS的1937年标签照录，不把它当作1938年机构改组或建筑落成年份。同一原始地点组还含Nurse School #248（旧址同号），只按同址资料共卡，不认定护士学校就是化验所建筑。2004年另设的上海巴斯德研究所位于合肥路，不与本旧址的现用途混同。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -944,7 +946,7 @@
       "hazards": [
         "multi-source-landmark-site"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-409__sh-fgj-2D044-01",
@@ -1606,7 +1608,7 @@
       "distanceMetres": 19,
       "status": "linked",
       "reason": "扬子保险公司26 BUND ROAD与名录扬子水火保险公司26号对应；VS1916年与现楼1918—1920年建造分列，按同址沿革共卡。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -1911,7 +1913,7 @@
       "distanceMetres": 20,
       "status": "linked",
       "reason": "英国领事馆旧32/35 BUND ROAD对应名录中山东一路33号1、2号楼领事馆院落；1872年领事馆沿革保留，点位代表名录建筑群。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -2008,7 +2010,7 @@
       "distanceMetres": 21,
       "status": "linked",
       "reason": "中央银行曾使用外滩15号华俄道胜银行大楼；旧15 BUND ROAD与名录中山东一路15号相合。保留华俄道胜与中央银行不同使用时期。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -2053,7 +2055,7 @@
       "distanceMetres": 22,
       "status": "linked",
       "reason": "虹口大楼／虹口大旅社均明确位于海宁路449号，1927年记录与楼史相容。同盟通讯社为该楼历史使用记录，不套用对街四川北路894号中国银行大楼。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -2849,7 +2851,7 @@
       "distanceMetres": 24,
       "status": "linked",
       "reason": "VS602上海银行公会与1682银行俱乐部均列香港路59号、1920年；名录同址为银行公会大楼。共卡保留两条机构记录及1925年楼史，按地点沿革而非断言1920楼仍存。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -3076,7 +3078,7 @@
       "distanceMetres": 25,
       "status": "linked",
       "reason": "法公董局在霞飞路375号的第二代办公楼与淮海中路381号名录对象相合；保留375／381门牌记载差异，区别于VS85原白尔部路旧局址。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -3683,7 +3685,7 @@
       "distanceMetres": 26,
       "status": "linked",
       "reason": "VS11与1236同名邮船公司、同9 QUAI DE FRANCE、同1937年，名录同址法国邮船大楼为中山东二路9号。保留两条航运/贸易记录及名录1939年楼史。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -3800,9 +3802,9 @@
       ],
       "listedAddress": "复兴中路425号",
       "distanceMetres": 26,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“All Saints Church”与“诸圣堂”尚缺完整门牌/使用沿革/建筑群成员对应。同址组每个历史成员均需解释。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "诸圣堂与All Saints Church是同一圣公会教堂，旧门牌425 ROUTE LAFAYETTE与今复兴中路425号相合。同地组还含#140圣德小学；共卡将它作为同院历史记录保留，不声称小学就是教堂主体建筑。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -3875,7 +3877,7 @@
         "existing-current-name-only-not-identity-proof",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-515__sh-fgj-1A008-01",
@@ -3902,7 +3904,7 @@
       "distanceMetres": 26,
       "status": "linked",
       "reason": "怡和的旧27 BUND ROAD与中山东一路27号对应同一用址。1851年历史记录、名录1853年记载及1920年代重建大楼的阶段分开，使用现名录点展示原址沿革。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -4563,7 +4565,7 @@
       "distanceMetres": 27,
       "status": "linked",
       "reason": "交通银行旧14 BUND ROAD与名录中山东一路14号对应。VS的1940年与名录1946—1948年新楼不混写，共卡表示银行原址后续重建。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -4821,7 +4823,7 @@
       "distanceMetres": 27,
       "status": "linked",
       "reason": "自来水公司旧484 KIANGSE ROAD对应江西中路484号总管理处、自来大楼。1880年机构记录与约1921年现楼分开；不混入464—466号自力大楼或原水塔。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -5052,7 +5054,7 @@
       "distanceMetres": 29,
       "status": "linked",
       "reason": "Dixwell Apartments即狄思威公寓，旧四川北路1926号在名录1914—1932号范围内，虹口官方楼史的1929年与VS一致。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -5366,9 +5368,9 @@
       ],
       "listedAddress": "新闸路1515-1533号（单号）、北京西路1400弄24号",
       "distanceMetres": 30,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“China Inland Mission”与“基督教内地会/上海市第六人民医院”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "China Inland Mission／内地會的旧1531 SINZA ROAD对应今新闸路1531号，落在房管名录5B044“基督教内地会／上海市第六人民医院”所列1515—1533号及北京西路1400弄24号院区范围。共卡按旧总部院落，不将原始点核定为名录内5、7、9、10号楼的某一栋。后期先由上海市第六人民医院使用，再为上海市儿童医院北京西路院区；市六医院已迁离，不写成今院区现用单位。另一条同名#1650点位远离本院区且无门牌，可能涉及内地会早期用址，暂不并入这处保护建筑。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -5385,7 +5387,7 @@
       "hazards": [
         "campus-complex-or-component-scope"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1732__sh-fgj-4D036-01",
@@ -5853,7 +5855,7 @@
       "distanceMetres": 30,
       "status": "linked",
       "reason": "光陆大戏院与光陆大楼由市民政局刊载的楼史明确关联，1928年相符，旧博物院路142号对应虎丘路142—146号。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -6045,7 +6047,7 @@
       "distanceMetres": 30,
       "status": "linked",
       "reason": "东亚银行与东亚大楼为四川中路299号同一具名银行楼；旧299 SZECHUEN ROAD门址相合。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -6145,7 +6147,7 @@
       "distanceMetres": 30,
       "status": "held-after-review",
       "reason": "VS540英文Mitsui Bank、中文三菱銀行互相矛盾，旧36 KIUKIANG ROAD与九江路36号只是门牌候选；需确认到底是哪家银行及建筑使用史，不按号码自动并入中华邮政储金汇业局。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -6187,7 +6189,7 @@
       "distanceMetres": 30,
       "status": "linked",
       "reason": "英商自来水公司办公楼旧466 KIANGSE ROAD对应名录江西中路464—466号自力大楼；采用该项参考点，区别于484号水务总管理处。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -6629,7 +6631,7 @@
       "distanceMetres": 32,
       "status": "linked",
       "reason": "Broadway Mansions即上海大厦／百老汇大厦，1934年相合。旧20 NORTH SOOCHOW ROAD与今北苏州路20号并列；第一批名录北苏州河路2号作为来源差异保留。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -6671,7 +6673,7 @@
       "distanceMetres": 32,
       "status": "linked",
       "reason": "上海房管2025年修缮报道直接确认Estrella apartment、爱司公寓、瑞金公寓为同一楼；旧150 ROUTE DES SOEURS与名录瑞金一路150号相符。本证据补足此前027的英文楼名缺口。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -7206,7 +7208,7 @@
       "distanceMetres": 33,
       "status": "linked",
       "reason": "旧12 BUND ROAD与今中山东一路12号为汇丰银行同址沿革。VS的1874年为早期用址记录；汇丰档案确认现大楼1923年6月23日启用，两个年代分别保留。新地址取浦发官网，名录10—12号范围另列。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -7378,7 +7380,7 @@
       "distanceMetres": 34,
       "status": "linked",
       "reason": "上海私立妇孺医院旧934 GREAT WESTERN ROAD与延安西路934号同址；长宁规划资源局明确1935年建成，与原记录一致。仅关联旧医院保护建筑。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -7513,7 +7515,7 @@
       "distanceMetres": 34,
       "status": "linked",
       "reason": "Empire Mansions为皇家／恩派亚公寓、淮海大楼；旧1326 AVENUE JOFFRE在名录1300—1326号范围。沿用2026-09-17复核中的已确认建筑身份，采用历史建筑参考点，不重新赋予整楼现用途。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -7863,7 +7865,7 @@
       "distanceMetres": 35,
       "status": "linked",
       "reason": "185 FOOCHOW ROAD对应福州路185号总巡捕房用址。原条目的1891年及旧楼照片、1933—1935年新楼照片属于两代实体，旧楼后来拆除；按警署原址沿革共卡，不把1891年楼体写成现存建筑，也不把街角旧楼范围等同新楼占地。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -8007,9 +8009,9 @@
       ],
       "listedAddress": "澳门路660弄1-15号，17-25号，27-37号，41-51号，229-239号，251-261号，267-277号，291-301号，307-317号，381-391号，397-407号",
       "distanceMetres": 36,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Japanese Living Quarters - Naigai Wata Textile Company”与“住宅”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "上海内外綿會社住宅／Naigai Wata职工住宅与今澳门路660弄澳门小区为同一住宅区。上观新闻明确宜昌路小沙渡路口的内外棉会社职工住宅后来为华纺第二宿舍、现澳门路660弄；房管局4N002仅保护所列门牌住宅。共卡采用名录住宅区参考点，保留旧425 ICHANG ROAD与今澳门路660弄两套门址，不推定原点对应名录中的某一栋，也不将全小区31幢一律标为4N002保护建筑。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -8050,7 +8052,7 @@
         "campus-complex-or-component-scope",
         "existing-current-name-only-not-identity-proof"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1294__sh-fgj-2F005-01",
@@ -8159,7 +8161,7 @@
       "distanceMetres": 36,
       "status": "linked",
       "reason": "Orthodox Church旧55 ROUTE PAUL HENRY与新乐路55号圣母大堂对应，正教会资料、名录和高德门址一致。原中文天主救堂存在宗派/字词误标，1938年原记录与1932年始建等楼史分列；不并入相邻57—61号住宅。高德仅用于核对名称门址，展示仍用历史建筑WGS84参考点，未读取或替换为高德坐标。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -8201,7 +8203,7 @@
       "distanceMetres": 36,
       "status": "held-after-review",
       "reason": "VS541英文Mitsubishi Bank、中文三井銀行互相矛盾，且与VS540的中英文名称交叉；旧50 KIUKIANG ROAD暂不足以证明上海公库楼的机构沿革，先核原银行身份。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -8355,7 +8357,7 @@
       "distanceMetres": 37,
       "status": "linked",
       "reason": "永年人寿保险公司与广东路93号永年大楼由华安保险楼史直接相连，1910年相符。采用名录点展示原93 CANTON ROAD，银行支行租户不等于整幢楼用途。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -9736,7 +9738,7 @@
       "distanceMetres": 42,
       "status": "linked",
       "reason": "Grosvenor House仅对应名录1C005内的峻岭公寓／今锦江饭店贵宾楼。共卡采用名录建筑群参考点，历史名称、1935年与酒店用途只作用于该栋，不扩展至名录另列的楼体，也不包含独立1C004华懋公寓。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -9910,7 +9912,7 @@
       "distanceMetres": 42,
       "status": "linked",
       "reason": "德国邮局旧70 FOOCHOW ROAD与福州路70号保护项对应；1903机构记录与1905楼史分别保留，仅按同址沿革关联。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -9999,9 +10001,9 @@
       ],
       "listedAddress": "北京东路342号",
       "distanceMetres": 42,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Bank”与“国华银行大楼”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "VS608英文泛称Bank但原中文明确为国華銀行，旧342 PEKING ROAD与名录国华银行大楼北京东路342号同号，1933年银行入驻／大楼落成资料相合。按同一具名建筑共卡，原始英文泛名、旧址及年代分别保留；名录“黄浦税务局”为该名录编制时的使用单位，2025年修缮报道记载上海市口腔医院使用，不把两者混写成同一时期。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -10081,7 +10083,7 @@
         "sharedSourceUrls": []
       },
       "hazards": [],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1427__sh-fgj-2M008-01",
@@ -10118,9 +10120,9 @@
       ],
       "listedAddress": "江苏路155号东楼/北楼",
       "distanceMetres": 44,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Zhongxi Middle School for Girls”与“中西女中”尚缺完整门牌/使用沿革/建筑群成员对应。同址组每个历史成员均需解释。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "中西女中与名录中西女中同名，旧91 EDINBURGH ROAD对应今江苏路155号校园。共卡保留#1427女中和同地#1428中西第一小学两条史料；名录保护范围为东楼／北楼，不扩大成全校每栋建筑。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -10228,7 +10230,7 @@
         "campus-complex-or-component-scope",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1665__sh-fgj-4F008-01",
@@ -10253,7 +10255,7 @@
       "distanceMetres": 44,
       "status": "linked",
       "reason": "虹口政府明确闵行路181号角田公寓内曾开设万岁馆。旅馆旧181 MINHONG作为公寓的局部历史使用纳入同一卡片；名录闵行171—181、201—211与峨眉70—80号范围全部保留，不将整项公寓都称为旅馆。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -10376,7 +10378,7 @@
       "distanceMetres": 44,
       "status": "linked",
       "reason": "Union Building与有利银行记录共同纳入有利大楼卡片。沿革文章明确广东路正门17号、外滩旧石刻4号与今3号属于同楼；1916年楼体记录和年代待考的银行使用记录分开保存。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -10568,7 +10570,7 @@
       "distanceMetres": 45,
       "status": "linked",
       "reason": "Cercle Sportif Français即法国总会，1926年旧290 ROUTE CARDINAL MERCIER对应今茂名南路58号保留建筑；共卡限法国总会旧楼，不包括后来花园饭店高层。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -10909,7 +10911,7 @@
       "distanceMetres": 48,
       "status": "linked",
       "reason": "Strand Theater原中文新光大戏院、旧586 NINGPO ROAD与名录新光大戏院宁波路586号精确相合，1930年沿革一致；不并入隔壁588号中国大饭店。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -10951,7 +10953,7 @@
       "distanceMetres": 49,
       "status": "linked",
       "reason": "普陀区官方明确上海联合啤酒厂、上海啤酒有限公司与宜昌路130号、今梦清园的沿革；共卡展示名录保存的工业建筑群，注明厂区部分建筑保留，1934与1935年来源差异分列。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -11051,7 +11053,7 @@
       "distanceMetres": 49,
       "status": "linked",
       "reason": "Bank of Canton即广东银行，旧52 NINGPO ROAD与名录宁波路52号广东银行大楼吻合。天津路2号、江西中路349号另一广东银行保护项继续独立。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -11333,7 +11335,7 @@
       "distanceMetres": 51,
       "status": "linked",
       "reason": "黄浦档案馆明确青年协会大楼从博物院路131号至今虎丘路131号、后名虎丘公寓的沿革；采用历史建筑点。区别于虎丘路128号广学大楼及西藏南路123号青年会。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -11854,9 +11856,9 @@
       ],
       "listedAddress": "延安东路260号",
       "distanceMetres": 55,
-      "status": "held-after-review",
-      "reason": "原组含纱布交易所及另一同址来源；名录华商纱布交易所只能证明主条候选，不足将整个多成员组同楼化。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "status": "linked",
+      "reason": "華商紗布交易所与名录华商纱布交易所同名，两来源记录#566与#1243又共用260 EDWARD VII门牌。官方项为今延安东路260号、原上海自然博物馆楼；共卡保留两条交易所记录，不把#566的年代待考回填为1923年。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -11963,7 +11965,7 @@
         "multi-source-landmark-site",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1742__sh-fgj-4D033-01",
@@ -11990,7 +11992,7 @@
       "distanceMetres": 56,
       "status": "linked",
       "reason": "Dufour Apartments即巨福公寓，后名安康公寓；旧176 ROUTE LOUIS DUFOUR与今乌鲁木齐南路176号对应。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -12507,7 +12509,7 @@
       "distanceMetres": 59,
       "status": "linked",
       "reason": "协进学校旧1550 BUBBLING WELL ROAD与名录南京西路1550号相合，官方原名同时列程氏旧居和协进初级中学。按宅邸与学校不同使用阶段共卡，保留幼儿园、小学、中学历史记录。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -12733,7 +12735,7 @@
       "distanceMetres": 60,
       "status": "held-after-review",
       "reason": "原记录为7 BUND ROAD，而名录中国通商银行保护项为中山东一路6号；银行曾使用邻楼的可能性尚未排除，不能把7→6当作已证门牌重编。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -13033,7 +13035,7 @@
       "distanceMetres": 62,
       "status": "linked",
       "reason": "中汇银行旧143 EDWARD VII对应延安东路143号中汇大厦，1934年相合；河南南路16号为同楼另一临街门牌。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -13194,7 +13196,7 @@
       "distanceMetres": 63,
       "status": "linked",
       "reason": "Dauphiné Apartments即道斐南／法国太子公寓，今建国公寓；1935年旧394 ROUTE JOSEPH FRELUPT与名录建国西路394号相合。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -13467,8 +13469,8 @@
       "listedAddress": "襄阳南路254号",
       "distanceMetres": 64,
       "status": "linked",
-      "reason": "建筑史数据库收录仍存的Belmont Apartments，给出240 Xiangyang Lu与旧Rue Tenant de la Tour；Historic Shanghai实地导览报道明确同英文建筑名在254 Xiangyang Road South，吻合第五批襄阳公寓。接受并显式保留240/254门牌差异，不把未考证门牌重编写成事实。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "reason": "Belmont Apartment对应襄阳公寓。历史资料及建筑史数据库写240号，实地建筑导览与优秀历史建筑名录写襄阳南路254号；保留两种门牌记载，不据此推断重编号过程。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -13516,7 +13518,7 @@
       "hazards": [
         "existing-current-name-only-not-identity-proof"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1770__sh-fgj-4D040-01",
@@ -13543,7 +13545,7 @@
       "distanceMetres": 64,
       "status": "linked",
       "reason": "Foncim Apts的中英文楼名对照明确为方建公寓／建成公寓，原643 ROUTE JOSEPH FRELUPT位于名录建国西路641—645号范围；高安路78弄为同一公寓两幢楼的另一门址。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -13632,7 +13634,7 @@
       "distanceMetres": 69,
       "status": "linked",
       "reason": "原中文建業里、旧440 ROUTE JOSEPH FRELUPT与1930年记录对应建业里。产权经营方记建国西路440—496弄为同一里弄群，保留官网468／488弄地址范围及修缮复建说明，不声称所有楼栋原物保存。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -13792,7 +13794,7 @@
       "distanceMetres": 69,
       "status": "linked",
       "reason": "新永安公司627号作为同一名录项的第二栋纳入共同卡片；原始记录、旧门牌、独立年代和用途仍分别保留。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -14760,7 +14762,7 @@
       "distanceMetres": 82,
       "status": "linked",
       "reason": "Adeodata Hall对应淮海中路1209号天赐大宅，现上音音乐会客厅，是4D004所列1189、1199、1209号三栋住宅之一。共卡不把1209号的楼史与用途赋给另外两栋，位置为名录建筑群参考点。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -14943,7 +14945,7 @@
       "distanceMetres": 84,
       "status": "linked",
       "reason": "原中文上海新村与1939年均与上海新邨建筑群吻合，旧1479 AVENUE JOFFRE和名录淮海中路1487弄分别展示。关联整处历史里弄，不逐号推定某一栋住宅。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -15189,7 +15191,7 @@
       "distanceMetres": 87,
       "status": "linked",
       "reason": "哈同花园／爱俪园旧址后来建设中苏友好大厦，今上海展览中心。共卡按园址消失后再开发的地点沿革，花园与1954年起建的新建筑不是同一建筑；名录参考点仅代表后期建筑，不代表旧园全境或原园建筑位置。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -15767,7 +15769,7 @@
       "distanceMetres": 96,
       "status": "held-after-review",
       "reason": "培福里具名相合，但原190 Avenue du Roi Albert不能直接等同陕西南路186弄；186弄大培福里与188弄纪家花园／小培福里需分清。原始点又是按188号附近推估，未证具体建筑群范围前暂不合并。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -15907,7 +15909,7 @@
       "distanceMetres": 97,
       "status": "linked",
       "reason": "名录1A019合列老、新永安公司：老楼原记录为CHEKIANG ROAD / NANKING ROAD路口，今门牌南京东路635号；新楼旧门牌为627 NANKING ROAD。共用名录建筑群卡片，分别保留1918年老楼和1930年代新楼记录，不宣称两栋是同一楼体。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -16069,9 +16071,9 @@
       ],
       "listedAddress": "陆家浜路550号",
       "distanceMetres": 105,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Qingxin Middle School for Girls”与“清心女中”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "清心女中学与名录清心女中为同一校史与校址。VS旧门牌490 LUCHIAPANG ROAD、官方名录陆家浜路550号、图书馆与学校资料所记今650号分列保留；按校园建筑群共卡，不擅自解释为确定的门牌重编。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -16152,7 +16154,7 @@
         "campus-complex-or-component-scope",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-338__sh-fgj-3D001-01",
@@ -16320,7 +16322,7 @@
       "distanceMetres": 108,
       "status": "linked",
       "reason": "汉壁礼男校旧102 HASKELL ROAD对应名录中州路102号学校旧址；官方原名明确含汉壁礼男校、华童公学及后继学校。共卡按校址沿革，1940年历史记录与约1925年名录校舍分开，不外推校内每栋建筑。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -16531,9 +16533,9 @@
       ],
       "listedAddress": "长宁路1187号",
       "distanceMetres": 117,
-      "status": "held-after-review",
-      "reason": "圣玛利亚女中为校园对象，VS1851源年早于长宁路校舍期；需核迁校、保留钟楼/校舍及新建部分，不能以学校延续等同所有现名录建筑。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "status": "linked",
+      "reason": "圣玛利亚女中于1923年迁入长宁路1187号校园，与VS旧1187 BRENAN ROAD及名录“圣玛利亚女中”相合。VS标注1851年为学校创办史，不代表长宁路每栋校舍建于当年；按校园建筑群范围共卡。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -16623,7 +16625,7 @@
         "campus-complex-or-component-scope",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-760__sh-fgj-3H001-01",
@@ -16942,7 +16944,7 @@
       "distanceMetres": 125,
       "status": "linked",
       "reason": "杨浦区官方沿革确认830 YANGTSZEPOO ROAD对应杨树浦路830号水厂。共卡代表水厂历史建筑群与持续扩建的厂址，点位不表示所有设施建于同年。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -17091,9 +17093,9 @@
       ],
       "listedAddress": "莫干山路120号",
       "distanceMetres": 132,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Fuxin Flour Mill”与“福新面粉厂、阜丰面粉厂”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Fuxin Flour Mill／福新麵粉廠是同一旧厂区西侧的福新面粉厂，不是阜丰同一栋楼。保留旧226 MOKANSHAN ROAD及1913年记录，与名录莫干山路120号并列，不推定旧226号重编为120号。原自动匹配的“上海面粉有限公司／办公”只反映旧资料中的名称和用途，不能作为现时整处厂区用途的核实结论。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -17208,7 +17210,7 @@
         "campus-complex-or-component-scope",
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-263__sh-fgj-3C002-01",
@@ -17547,7 +17549,7 @@
       "distanceMetres": 156,
       "status": "linked",
       "reason": "长宁区资料明确岐山邨／岐山村为愚园路1032弄住宅群，1925—1931年建设与VS1925年相容。共卡按建筑群范围，不将门牌参考点当每栋楼中心。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -17677,7 +17679,7 @@
       "distanceMetres": 163,
       "status": "linked",
       "reason": "Sassoon Villa、沙孙／沙逊别墅、1932年及虹桥路2409号相符；区分同路2419号虹桥俱乐部与其他别墅，采用本项历史建筑参考点。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [
@@ -18116,9 +18118,9 @@
       ],
       "listedAddress": "莫干山路120号",
       "distanceMetres": 212,
-      "status": "needs-address-or-scope-evidence",
-      "reason": "候选“Fufeng Flour Mill”与“福新面粉厂、阜丰面粉厂”尚缺完整门牌/使用沿革/建筑群成员对应。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Fufeng Flour Mill／阜豐麵粉厰即阜丰面粉厂，Fuxin Flour Mill／福新麵粉廠为其西侧的福新厂。房管名录3N005将两厂列为莫干山路120号同一保护建筑群；1956年两厂合并经营。两条泛名Flour Mill记录#1213／#1214（1898／1913年）也按旧厂区归入，但不能分别核定为某栋或某厂。旧“?? WEST SOOCHOW ROAD”、226及126 MOKANSHAN ROAD均照录，不推断旧门牌与名录120号的重编关系；原始点分别保留在审计记录。天安千树项目600号一带与名录120号是不同口径，现仅部分旧建筑修缮保留。#1371自动匹配的“上海面粉有限公司／办公”是旧用途资料，不作为现时整处厂区的用途结论。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -18154,7 +18156,7 @@
         "campus-complex-or-component-scope",
         "existing-current-name-only-not-identity-proof"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-521__sh-fgj-2A009-01",
@@ -21298,7 +21300,7 @@
       "distanceMetres": 8,
       "status": "linked",
       "reason": "VS中文月邨与名录月村为同一江苏路住宅群，1921年记录与楼史相合；旧472 EDINBURGH ROAD保留，现保护范围为江苏路480弄名录列明楼号。资料记原22幢已有部分拆除，不将整处历史住宅群视为全部原物存续，也不将472直接换算为某栋现门牌。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -21333,9 +21335,9 @@
       ],
       "listedAddress": "湖南路276号",
       "distanceMetres": 8,
-      "status": "proximity-only",
-      "reason": "仅点位接近，缺少名称、地址沿革或独立来源支持同一地点。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "无专名Apartments的266 ROUTE CHARLES CULTY对应湖南路路段，距名录湖南路276号住宅参考点约8米。按同路段就近归入住宅卡，不核定为同一栋。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -21344,7 +21346,7 @@
       "hazards": [
         "distance-only-do-not-merge"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-502__sh-fgj-3A010-01",
@@ -22115,7 +22117,7 @@
       "distanceMetres": 15,
       "status": "held-after-review",
       "reason": "白尔登公寓文章中的INTERSAVIN被解释为万国储蓄会电报地址，不能仅凭此认定Intersavin Apartments为该楼唯一旧名。旧421 AVENUE DU ROI ALBERT至今陕西南路213号仍缺门址/楼体桥接，保持独立。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -23172,7 +23174,7 @@
       "distanceMetres": 20,
       "status": "held-after-review",
       "reason": "Lock Apartments有幸福公寓的中英文名线索，但现候选是华山路400号海格大楼；旧245 AVENUE HAIG至400号及两楼身份没有可靠桥接。约20米近邻不足以合并，下一步查幸福公寓和大胜胡同的范围。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -23563,9 +23565,9 @@
       ],
       "listedAddress": "愚园路1249弄2号楼",
       "distanceMetres": 22,
-      "status": "proximity-only",
-      "reason": "仅点位接近，缺少名称、地址沿革或独立来源支持同一地点。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Litian Textile Mill Dormitories的原中文“豊田紡織廠職員宿舍”对应丰田纱厂职工／干部住宅群。旧1000 YUYUAN ROAD与今愚园路1249弄的逐号重编未核定；名录分列的2号楼与1号两项按同一历史住宅群共卡，不声称VS点精确对应其中某栋。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -23575,7 +23577,7 @@
         "campus-complex-or-component-scope",
         "distance-only-do-not-merge"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-218__sh-fgj-3C013-01",
@@ -23602,7 +23604,7 @@
       "distanceMetres": 22,
       "status": "linked",
       "reason": "Dubail Apartments即吕班公寓、今重庆公寓。交大设计学院论文确认中英文楼名；建筑史文章引用行号录181 Av. Dubail和1947年电话簿181号，并明确现址重庆南路185号。旧181、新185分别展示，建造年代争议保持来源原文。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -24478,7 +24480,7 @@
       "distanceMetres": 26,
       "status": "held-after-review",
       "reason": "York House与约克大楼具有很强楼名线索，但VS1744为25 RUE MONTAUBAN，名录为四川南路27—29号；同名VS1745的29号又在含报社记录的另一历史组。需核25号范围及另一组全部成员，暂不仅凭音译与26米近邻作显示归并。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -24512,9 +24514,9 @@
       ],
       "listedAddress": "新乐路44弄（1-15号）、新乐路38-50号（双号）",
       "distanceMetres": 26,
-      "status": "proximity-only",
-      "reason": "仅点位接近，缺少名称、地址沿革或独立来源支持同一地点。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "无专名Apartments位于ROUTE PAUL HENRY／新乐路，旧27号距慎成里名录参考点约26米。仅作同路段住宅语境归并，不核定为慎成里成员。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -24524,7 +24526,7 @@
         "campus-complex-or-component-scope",
         "distance-only-do-not-merge"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-219__sh-fgj-4C017-01",
@@ -24549,9 +24551,9 @@
       ],
       "listedAddress": "重庆南路205弄5-94号",
       "distanceMetres": 26,
-      "status": "proximity-only",
-      "reason": "仅点位接近，缺少名称、地址沿革或独立来源支持同一地点。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "无专名Residential Complex位于AVENUE DUBAIL／重庆南路，距万宜坊名录参考点约26米。按同路段住宅语境共卡，不核定为万宜坊成员或同一栋。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -24561,7 +24563,7 @@
         "campus-complex-or-component-scope",
         "distance-only-do-not-merge"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-567__sh-fgj-2A030-01",
@@ -24694,7 +24696,7 @@
       "distanceMetres": 26,
       "status": "linked",
       "reason": "Metropole Theater／大上海戯院与名录大上海大戏院对应；维基正文列Metropol Cinema和今西藏中路500号，并明确原楼已重建。按同一地点历史阶段共卡，名录520号与资料500号分别保留；沿用既有原址重建用途研究，不因列入名录就认定1933年原建筑仍在。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -26126,9 +26128,9 @@
       ],
       "listedAddress": "愚园路1249弄1号",
       "distanceMetres": 33,
-      "status": "proximity-only",
-      "reason": "仅点位接近，缺少名称、地址沿革或独立来源支持同一地点。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Litian Textile Mill Dormitories对应的丰田纱厂历史住宅群还包含名录5M022愚园路1249弄1号。与5M011作为同一共享卡的第二项官方记录，两个编号和门址均保留。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -26138,7 +26140,7 @@
         "campus-complex-or-component-scope",
         "distance-only-do-not-merge"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1608__sh-fgj-4F010-01",
@@ -26347,7 +26349,7 @@
       "distanceMetres": 34,
       "status": "linked",
       "reason": "维基百科陕南村正文明确列出King Albert Apartments、亚尔培公寓、金亚尔培公寓及陕南邨别名；对应陕西南路公寓里弄。旧377 AVENUE DU ROI ALBERT原样保留，名录157—187号与维基151—187号分列，不声称377与某一现代门牌已逐号核定。原记录年代未知，维基1930年为建筑群沿革资料，不回写成VS记录年份。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [],
         "addressMatches": [],
@@ -27652,9 +27654,9 @@
       ],
       "listedAddress": "政民路507号",
       "distanceMetres": 403,
-      "status": "needs-location-or-branch-review",
-      "reason": "两参考点相距403米；需区分异址分支、迁址与来源点错误。名称相同不足以改变位置。",
-      "method": "full-dataset-screening-not-a-new-web-investigation",
+      "status": "linked",
+      "reason": "Yejia Garden／葉家花園即今上海市肺科医院院内的叶家花园；1933年捐作澄衷肺病疗养院。名录4G010仅保护园内小白楼／后期澄衷医院相关楼体，不代表整座园林均为该单体建筑。VS原址597 GUODING与名录政民路507号分别照录，不推断门牌重编；原始园林点与名录门址参考点相距约403米，不能据此认定小白楼的精确坐标。另有Deng’ai Hospital／澄哀醫院记录按同一院址归入，原始拼写及1932年标签未获独立证实。共卡采用名录参考点，保留历史点及园林／楼体范围差别。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -27834,7 +27836,7 @@
         "legacy-automatic-current-use-does-not-prove-identity",
         "coordinate-separation-over-250m"
       ],
-      "reviewFile": null
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-604__sh-fgj-1F003-01",
@@ -32853,9 +32855,9 @@
       ],
       "listedAddress": "大昌街30号",
       "distanceMetres": 33,
-      "status": "held-after-review",
-      "reason": "大佛厂30号与名录大昌街30号相合，但VS起年1860是清心堂机构创立期；史料明确1919—1923从学校迁出另建现堂。未确定VS条目表达机构全史还是现存楼体，故不将其直接标成同一存续建筑；并非已证明两个点异址。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "status": "linked",
+      "reason": "清心堂的VS记录、旧门牌30 DAFOCHANG与今大昌街30号指向同一教会地点。VS所1860年是教会创立沿革，现存堂建于1919—1923年；共卡按同址不同阶段展示，不把1860年写成现楼建造年。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -33017,7 +33019,7 @@
       "hazards": [
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-677__sh-fgj-1A021-01",
@@ -34283,7 +34285,7 @@
       "distanceMetres": 63,
       "status": "linked",
       "reason": "民政局明确公益新天地园为新普育堂旧址；关联名录所列历史建筑群。原机构1911年记录不等于园内每幢建筑建造年，参考点代表园区，保留各建筑分期。",
-      "method": "explicit-2026-09-20-to-21-review",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -34774,9 +34776,9 @@
       ],
       "listedAddress": "江宁路511号",
       "distanceMetres": 78,
-      "status": "held-after-review",
-      "reason": "戈登路捕房独特名称与今江宁路511同源支持名录对象，但compound内另有锡克教堂，VS557与现511尚未逐号核清；不要在单体卡片中把整个捕房范围无差别压成学校/教堂。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "status": "linked",
+      "reason": "戈登路巡捕房与4B013为同一具名保护建筑：官方名录同时列原名戈登路巡捕房、现用上海商业会计学校静安分校及江宁路511号；建筑沿革资料也明确捕房设于戈登路511号并延续为该校使用。VS旧门牌557 GORDON ROAD作为来源差异原样保留，不推断557必然重编为511。院内曾有锡克教堂不否定捕房本体身份，也不把教堂另行并入本卡。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -34858,7 +34860,7 @@
       "hazards": [
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     },
     {
       "candidateId": "landmark-vs-site-1563__sh-fgj-3M027-01",
@@ -34881,9 +34883,9 @@
       ],
       "listedAddress": "淮海西路338号",
       "distanceMetres": 138,
-      "status": "held-after-review",
-      "reason": "官网同项含弗兰克林住宅和中央银行俱乐部，位于医院内部；仅有俱乐部专名及338号总门牌，尚未厘清VS点是其中哪栋和library门址点所指。",
-      "method": "earlier-reviewed-decision-inputs-revalidated",
+      "status": "linked",
+      "reason": "官方名录原名直接列“弗兰克林住宅、中央银行俱乐部”，与Central Bank Club／中央銀行俱樂部及338 LINSEN XILU相合。采用淮海西路338号名录参考点，俱乐部使用阶段与1931年建筑资料分开。",
+      "method": "explicit-2026-09-20-to-22-review",
       "evidenceSignals": {
         "nameMatches": [
           {
@@ -35013,7 +35015,881 @@
       "hazards": [
         "legacy-automatic-current-use-does-not-prove-identity"
       ],
-      "reviewFile": "research/rechecks/2026-09-19-heritage-landmark-links"
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1552__sh-fgj-4D047-01",
+      "sourceRecordIds": [
+        1552
+      ],
+      "historicalName": "Siccawei Observatory",
+      "officialId": "sh-fgj-4D047-01",
+      "heritageName": "徐家汇观象（天文）台",
+      "historicalAddresses": [
+        {
+          "address": "CAOXI BEILU (XUJIAHUI)",
+          "sourceRecordId": 1552,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1552",
+          "oldStreetNumber": null,
+          "historicalStreet": "CAOXI BEILU XUJIAHUI",
+          "modernRoadNameHints": [
+            "漕溪北路"
+          ],
+          "warning": "原记录未载门牌；道路名对照不证明原点就是现存楼位置。"
+        }
+      ],
+      "listedAddress": "蒲西路166号",
+      "distanceMetres": 510,
+      "status": "linked",
+      "reason": "Siccawei Observatory即徐家汇观象台。上海天文台记载1872年初台在蒲西路221号，1901年在原址西侧约100米建蒲西路166号新楼；名录4D047保护的是后者。VS投影转换点与名录楼相距约510米，超过文献所载迁移量，因此判为原始点位异常而非GCJ-02问题。共卡使用现存观象楼WGS84参考点，保留1872年机构记录和原点以便追溯。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "Siccawei Observatory",
+            "heritage": "徐家汇观象台",
+            "match": "reviewed-historical-translation",
+            "sources": [
+              "https://www.shao.ac.cn/2020Ver/gkjj/lsyg/",
+              "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%AE%B6%E6%B1%87%E8%A7%82%E8%B1%A1%E5%8F%B0"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "coordinate-separation-over-250m",
+        "1872-institution-record-precedes-1901-listed-building",
+        "source-point-conflicts-with-documented-100m-relocation"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1710__sh-fgj-4G010-01",
+      "sourceRecordIds": [
+        1710
+      ],
+      "historicalName": "Deng'ai Hospital",
+      "officialId": "sh-fgj-4G010-01",
+      "heritageName": "叶家花园（小白楼）/澄衷医院",
+      "historicalAddresses": [
+        {
+          "address": "?? ZHENGMIN LU",
+          "sourceRecordId": 1710,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1710",
+          "oldStreetNumber": null,
+          "historicalStreet": "?? ZHENGMIN LU",
+          "modernRoadNameHints": [],
+          "warning": "来源未载确切旧门牌；关联只适用于历史建筑群范围。"
+        }
+      ],
+      "listedAddress": "政民路507号",
+      "distanceMetres": 143,
+      "status": "linked",
+      "reason": "Deng’ai Hospital／澄哀醫院的VS记录位于政民路附近、类型为医院，原点距名录4G010门址参考点约156米；医院自刊资料与杨浦史料确认1933年在叶家花园创办澄衷医院。近似中文名、道路、类型和近邻位置共同支持同一院址的展示归并，但VS的英文Deng’ai、中文澄哀及1932年标签均与权威史料不合，原样保留为未核定异文／来源年代，不宣称1932年已开院，更不认定VS点是小白楼实测位置。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "Deng'ai Hospital／澄哀醫院；1932年；?? ZHENGMIN LU",
+            "heritage": "叶家花园（小白楼）／澄衷医院；政民路507号",
+            "match": "probable-same-hospital-site-with-source-name-and-date-conflicts",
+            "sources": [
+              "https://www.virtualshanghai.net/data/buildings?ID=1710",
+              "https://www.shsfkyy.com/upload/files/2023/11/720127be61e34a8c.pdf",
+              "https://yptimes.shyp.gov.cn/html/2017-12/14/content_4_3.htm"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "source-chinese-and-english-names-conflict-with-verified-hospital-name",
+        "source-1932-precedes-verified-1933-hospital-opening",
+        "hospital-site-not-identical-to-listed-white-hall-building"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1174__sh-fgj-5B050-01",
+      "sourceRecordIds": [
+        1174
+      ],
+      "historicalName": "SMC Primary School",
+      "officialId": "sh-fgj-5B050-01",
+      "heritageName": "工部局华人女子中学/上海市第一女子中学",
+      "historicalAddresses": [
+        {
+          "address": "966 CHANGDE ROAD",
+          "sourceRecordId": 1174,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1174",
+          "oldStreetNumber": "966",
+          "historicalStreet": "CHANGDE ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "余姚路139号",
+      "distanceMetres": 57,
+      "status": "linked",
+      "reason": "仅将旧966 CHANGDE ROAD的1933年SMC Primary School／工部局小學记录归入今上海市第一中学余姚路139号校区卡片，属于相邻门址的校园地点关联，不是小学与工部局华人女子中学为同一学校的证明。2007年市一中学曾在报纸刊常德路964号校址，今名录保护项余姚路139号、1935年女中楼；旧966、后见964及今139号各按来源保留，不推断966号重编为964号，也不把1933年小学点核定为1935年主楼。另一处375 SEYMOUR ROAD的SMC Primary School／Girls记录#1016、#1017与此校区相距约1.4公里，不并入本卡。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "SMC Primary School／工部局小學；1933年；966 CHANGDE ROAD",
+            "heritage": "工部局华人女子中学／上海市第一女子中学；余姚路139号",
+            "match": "reviewed-same-campus-vicinity-not-school-institution-identity",
+            "sources": [
+              "https://www.virtualshanghai.net/data/buildings?rp=1200",
+              "https://fgj.sh.gov.cn/yxlsjz1/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+              "https://xmwb.xinmin.cn/history/xmwb/page/1/2007-04-28/A106/19781177735152562.pdf"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "primary-school-versus-girls-middle-school-not-same-institution",
+        "old-966-versus-later-964-door-number-unresolved",
+        "listed-1935-building-postdates-1933-record"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1213__sh-fgj-3N005-01",
+      "sourceRecordIds": [
+        1213,
+        1214
+      ],
+      "historicalName": "Flour Mill",
+      "officialId": "sh-fgj-3N005-01",
+      "heritageName": "福新面粉厂、阜丰面粉厂",
+      "historicalAddresses": [
+        {
+          "address": "126 MOKANSHAN ROAD",
+          "sourceRecordId": 1213,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1213",
+          "oldStreetNumber": "126",
+          "historicalStreet": "MOKANSHAN ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        },
+        {
+          "address": "126 MOKANSHAN ROAD",
+          "sourceRecordId": 1214,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1214",
+          "oldStreetNumber": "126",
+          "historicalStreet": "MOKANSHAN ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "莫干山路120号",
+      "distanceMetres": 139,
+      "status": "linked",
+      "reason": "两条Flour Mill／麵粉廠泛名记录#1213、#1214旧址同记126 MOKANSHAN ROAD，分别标1898与1913年，落在阜丰／福新厂区段；与官方3N005及普陀区两厂沿革按旧厂区范围共卡。尚无法将每条泛名记录精确指认为某一栋或某一厂，不把旧126号直接改写成名录120号，原始记录与年代照录。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "Flour Mill／麵粉廠（#1213、#1214；126 MOKANSHAN ROAD；1898、1913年）",
+            "heritage": "福新面粉厂、阜丰面粉厂／莫干山路120号",
+            "match": "reviewed-former-flour-mill-complex-context-not-individual-building",
+            "sources": [
+              "https://fgj.sh.gov.cn/yxlsjz1/20200331/2447d47b3e2947bfba7c64ed04a758a7.html",
+              "https://www.shpt.gov.cn/csjd-jiedaozhen/sydb-scjd/20220211/832194.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "generic-historical-name",
+        "factory-complex-not-individual-building",
+        "old-126-versus-listed-120-unresolved"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1437__sh-fgj-4M008-01",
+      "sourceRecordIds": [
+        1437
+      ],
+      "historicalName": "Yiding Apartments",
+      "officialId": "sh-fgj-4M008-01",
+      "heritageName": "忆定村",
+      "historicalAddresses": [
+        {
+          "address": "495 EDINBURGH ROAD",
+          "sourceRecordId": 1437,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1437",
+          "oldStreetNumber": "495",
+          "historicalStreet": "EDINBURGH ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "江苏路495弄",
+      "distanceMetres": 50,
+      "status": "linked",
+      "reason": "Yiding Apartments原中文憶定邨即名录忆定村。旧495 EDINBURGH ROAD所在忆定盘路为今江苏路，名录今址江苏路495弄，1934年一致；按整处里弄住宅群共卡，保留新旧门址及原始点，不把住宅群参考点断言为某一栋。区别于邻近江苏路480弄的月邨。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "憶定邨／495 EDINBURGH ROAD",
+            "heritage": "忆定村／江苏路495弄",
+            "match": "traditional-simplified-name-and-renamed-road-same-door",
+            "sources": [
+              "https://www.ccphistory.org.cn/shds/shhm/content/d254f2b6-ddcb-43e7-a32e-002d8d4798c8.html",
+              "https://www.shcn.gov.cn/col6991/20260224/1305931.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "estate-reference-point-not-individual-building"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1466__sh-fgj-2C014-01",
+      "sourceRecordIds": [
+        1466
+      ],
+      "historicalName": "Jiangnan Arsenal",
+      "officialId": "sh-fgj-2C014-01",
+      "heritageName": "江南制造局",
+      "historicalAddresses": [
+        {
+          "address": "?? ROUTE DE L'ARSENAL",
+          "sourceRecordId": 1466,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1466",
+          "oldStreetNumber": null,
+          "historicalStreet": "?? ROUTE DE L'ARSENAL",
+          "modernRoadNameHints": [],
+          "warning": "来源未载确切旧门牌；关联只适用于历史建筑群范围。"
+        }
+      ],
+      "listedAddress": "高雄路2号（总办公楼）/2号船坞/指挥楼/飞机车间",
+      "distanceMetres": 149,
+      "status": "linked",
+      "reason": "Jiangnan Arsenal即江南制造总局／江南制造局，1867年迁入高昌庙后形成后来的江南造船厂旧厂区。名录2C014只列总办公楼、2号船坞、指挥楼、飞机车间等保留构筑物；按旧厂区建筑群共卡，旧“?? ROUTE DE L’ARSENAL”照录，不把VS点指定为某栋楼。原有现代用途hold继续有效，本次只确认历史身份与名录建筑群关联。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "Jiangnan Arsenal",
+            "heritage": "江南制造局",
+            "match": "reviewed-historical-translation",
+            "sources": [
+              "https://www.wikidata.org/wiki/Q10377974",
+              "https://zh.wikipedia.org/wiki/江南機器製造總局"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "large-industrial-complex",
+        "listed-entry-protects-selected-components",
+        "unknown-historical-door-number"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1661__sh-fgj-5F002-01",
+      "sourceRecordIds": [
+        1661
+      ],
+      "historicalName": "Hongkou Police Station",
+      "officialId": "sh-fgj-5F002-01",
+      "heritageName": "上海市警察局虹口分局",
+      "historicalAddresses": [
+        {
+          "address": "260 MINGHONG",
+          "sourceRecordId": 1661,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1661",
+          "oldStreetNumber": "260",
+          "historicalStreet": "MINGHONG",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "塘沽路219号",
+      "distanceMetres": 45,
+      "status": "linked",
+      "reason": "Hongkou Police Station即公共租界虹口捕房。1943年院产与警务移交上海市警察局虹口分局；名录5F002塘沽路219号公安大楼为同一警务院落的附属警察公寓。共卡保留旧260 MINGHONG、今闵行路260号与名录塘沽路219号，并明确旧捕房主楼已拆，不能把公安大楼写成同一栋主楼。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "Hongkou Police Station",
+            "heritage": "上海市警察局虹口分局",
+            "match": "reviewed-institutional-site-succession",
+            "sources": [
+              "https://www.shhk.gov.cn/xwzx/002008/002008040/20240321/a9e9a2b2-08e9-464f-a468-808d4ed223a5.html",
+              "https://www.shhk.gov.cn/xwzx/002009/002009002/20180410/590e3e68-11be-4e22-b2a6-5a8060287232.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "same-police-compound-not-same-building",
+        "original-station-building-demolished",
+        "listed-building-is-police-apartment"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-294__sh-fgj-2C009-01",
+      "sourceRecordIds": [
+        294
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-2C009-01",
+      "heritageName": "梵尔登花园",
+      "historicalAddresses": [
+        {
+          "address": "273 ROUTE BOURGEAT",
+          "sourceRecordId": 294,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=294",
+          "oldStreetNumber": "273",
+          "historicalStreet": "ROUTE BOURGEAT",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "陕西南路39弄（1-103号），长乐路197-247（单号）",
+      "distanceMetres": 83,
+      "status": "linked",
+      "reason": "无专名Residential Complex位于ROUTE BOURGEAT／长乐路，距梵尔登花园名录参考点约83米。原273号与名录197—247号范围不相接，仅作同路段展示归并。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "273 ROUTE BOURGEAT",
+            "heritage": "陕西南路39弄（1-103号），长乐路197-247（单号）",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=294",
+              "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-348__sh-fgj-2C010-01",
+      "sourceRecordIds": [
+        348
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-2C010-01",
+      "heritageName": "陕南村",
+      "historicalAddresses": [
+        {
+          "address": "341/371 AVENUE DU ROI ALBERT",
+          "sourceRecordId": 348,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=348",
+          "oldStreetNumber": "341",
+          "historicalStreet": "/371 AVENUE DU ROI ALBERT",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "陕西南路157-187号",
+      "distanceMetres": 101,
+      "status": "linked",
+      "reason": "无专名Residential Complex位于AVENUE DU ROI ALBERT／陕西南路，距陕南村名录参考点约101米。与已核定的King Albert Apartments记录共卡，但本条不核定为陕南村成员。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "341/371 AVENUE DU ROI ALBERT",
+            "heritage": "陕西南路157-187号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=348",
+              "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-369__sh-fgj-2B007-01",
+      "sourceRecordIds": [
+        369
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-2B007-01",
+      "heritageName": "模范村",
+      "historicalAddresses": [
+        {
+          "address": "877 AVENUE FOCH",
+          "sourceRecordId": 369,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=369",
+          "oldStreetNumber": "877",
+          "historicalStreet": "AVENUE FOCH",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "延安中路877号",
+      "distanceMetres": 42,
+      "status": "linked",
+      "reason": "无专名Residential Complex的AVENUE FOCH 877号与名录延安中路877号同路同号，参考点相距约42米。仍按邻近住宅语境归并，不因门牌相同自动认定为模范村具体楼栋。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "877 AVENUE FOCH",
+            "heritage": "延安中路877号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=369",
+              "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-377__sh-fgj-5B026-01",
+      "sourceRecordIds": [
+        377
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-5B026-01",
+      "heritageName": "留园，履安邨",
+      "historicalAddresses": [
+        {
+          "address": "698 ROUTE BOURGEAT",
+          "sourceRecordId": 377,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=377",
+          "oldStreetNumber": "698",
+          "historicalStreet": "ROUTE BOURGEAT",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "长乐路672弄（1-30 号）",
+      "distanceMetres": 93,
+      "status": "linked",
+      "reason": "无专名Residential Complex位于ROUTE BOURGEAT／长乐路，旧698号距履安邨／留园今672弄参考点约93米。仅作同路段住宅语境。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "698 ROUTE BOURGEAT",
+            "heritage": "长乐路672弄（1-30 号）",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=377",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-378__sh-fgj-5B037-01",
+      "sourceRecordIds": [
+        378
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-5B037-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "741 ROUTE RATARD",
+          "sourceRecordId": 378,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=378",
+          "oldStreetNumber": "741",
+          "historicalStreet": "ROUTE RATARD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "巨鹿路735号",
+      "distanceMetres": 99,
+      "status": "linked",
+      "reason": "无专名Residential Complex位于ROUTE RATARD／巨鹿路，旧741号距名录今735号参考点约99米。仅作同路段住宅语境，不核定同一栋。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "741 ROUTE RATARD",
+            "heritage": "巨鹿路735号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=378",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-382__sh-fgj-3B017-01",
+      "sourceRecordIds": [
+        382
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-3B017-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "210 ROUTE AMIRAL COURBET",
+          "sourceRecordId": 382,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=382",
+          "oldStreetNumber": "210",
+          "historicalStreet": "ROUTE AMIRAL COURBET",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "富民路210弄2-14号、长乐路752-762号",
+      "distanceMetres": 58,
+      "status": "linked",
+      "reason": "无专名Residential Complex的210 ROUTE AMIRAL COURBET与名录富民路210弄同路同号段，参考点相距约58米。仅归入住宅语境，不核定具体楼栋。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "210 ROUTE AMIRAL COURBET",
+            "heritage": "富民路210弄2-14号、长乐路752-762号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=382",
+              "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-390__sh-fgj-5D067-01",
+      "sourceRecordIds": [
+        390
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-5D067-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "4/44 ROUTE DE GROUCHY",
+          "sourceRecordId": 390,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=390",
+          "oldStreetNumber": "4",
+          "historicalStreet": "/44 ROUTE DE GROUCHY",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "延庆路4弄（2- 44号）、延庆路2-6号（双号）",
+      "distanceMetres": 55,
+      "status": "linked",
+      "reason": "无专名Residential Complex的4/44 ROUTE DE GROUCHY与名录延庆路4弄（2—44号）同路且号段高度相近，参考点相距约55米。仍只按邻近住宅语境归并。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "4/44 ROUTE DE GROUCHY",
+            "heritage": "延庆路4弄（2- 44号）、延庆路2-6号（双号）",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=390",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1009__sh-fgj-2B004-01",
+      "sourceRecordIds": [
+        1009
+      ],
+      "historicalName": "Residential Complex",
+      "officialId": "sh-fgj-2B004-01",
+      "heritageName": "MEDHURST大楼",
+      "historicalAddresses": [
+        {
+          "address": "BUBBLING WELL ROAD / MEDHURST ROAD",
+          "sourceRecordId": 1009,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1009",
+          "oldStreetNumber": null,
+          "historicalStreet": "BUBBLING WELL ROAD / MEDHURST ROAD",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "南京西路934号",
+      "distanceMetres": 71,
+      "status": "linked",
+      "reason": "无专名Residential Complex记在BUBBLING WELL ROAD／MEDHURST ROAD路口，距MEDHURST大楼名录参考点约71米。按同路口住宅语境归并，不核定为泰兴大楼本体。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "BUBBLING WELL ROAD / MEDHURST ROAD",
+            "heritage": "南京西路934号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1009",
+              "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1759__sh-fgj-5D006-01",
+      "sourceRecordIds": [
+        1759
+      ],
+      "historicalName": "Apartments",
+      "officialId": "sh-fgj-5D006-01",
+      "heritageName": "襄阳公寓",
+      "historicalAddresses": [
+        {
+          "address": "275 ROUTE RAYMOND TENANT DE LA TOUR",
+          "sourceRecordId": 1759,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1759",
+          "oldStreetNumber": "275",
+          "historicalStreet": "ROUTE RAYMOND TENANT DE LA TOUR",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "襄阳南路254号",
+      "distanceMetres": 111,
+      "status": "linked",
+      "reason": "无专名Apartments记在275 ROUTE RAYMOND TENANT DE LA TOUR；同路段已有Belmont Apartment／襄阳公寓核定锚点，本点距名录参考点约111米。与具名记录共卡，但不核定为襄阳公寓本体。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "275 ROUTE RAYMOND TENANT DE LA TOUR",
+            "heritage": "襄阳南路254号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1759",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1761__sh-fgj-5D063-01",
+      "sourceRecordIds": [
+        1761
+      ],
+      "historicalName": "Apartments",
+      "officialId": "sh-fgj-5D063-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "257 AVENUE DU ROI ALBERT",
+          "sourceRecordId": 1761,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1761",
+          "oldStreetNumber": "257",
+          "historicalStreet": "AVENUE DU ROI ALBERT",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "陕西南路222弄20号",
+      "distanceMetres": 124,
+      "status": "linked",
+      "reason": "无专名Apartments位于AVENUE DU ROI ALBERT／陕西南路，旧257号距名录今222弄20号参考点约124米。仅作同路段住宅语境归并。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "257 AVENUE DU ROI ALBERT",
+            "heritage": "陕西南路222弄20号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1761",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1767__sh-fgj-5D016-01",
+      "sourceRecordIds": [
+        1767
+      ],
+      "historicalName": "Apartments",
+      "officialId": "sh-fgj-5D016-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "273 ROUTE CHARLES CULTY",
+          "sourceRecordId": 1767,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1767",
+          "oldStreetNumber": "273",
+          "historicalStreet": "ROUTE CHARLES CULTY",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "湖南路276号",
+      "distanceMetres": 53,
+      "status": "linked",
+      "reason": "无专名Apartments的273 ROUTE CHARLES CULTY对应湖南路路段，距名录湖南路276号住宅参考点约53米。与#1766共卡，两条旧门牌分别保留，不核定具体楼栋。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "273 ROUTE CHARLES CULTY",
+            "heritage": "湖南路276号",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1767",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
+    },
+    {
+      "candidateId": "landmark-vs-site-1781__sh-fgj-5D045-01",
+      "sourceRecordIds": [
+        1781
+      ],
+      "historicalName": "Apartments",
+      "officialId": "sh-fgj-5D045-01",
+      "heritageName": "住宅",
+      "historicalAddresses": [
+        {
+          "address": "7 ROUTE PAUL HENRY",
+          "sourceRecordId": 1781,
+          "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1781",
+          "oldStreetNumber": "7",
+          "historicalStreet": "ROUTE PAUL HENRY",
+          "modernRoadNameHints": [],
+          "warning": null
+        }
+      ],
+      "listedAddress": "新乐路22-32号（双号）",
+      "distanceMetres": 59,
+      "status": "linked",
+      "reason": "无专名Apartments位于ROUTE PAUL HENRY／新乐路，旧7号距名录今22—32号参考点约59米。仅作同路段住宅语境归并。",
+      "method": "explicit-2026-09-20-to-22-review",
+      "evidenceSignals": {
+        "nameMatches": [
+          {
+            "landmark": "7 ROUTE PAUL HENRY",
+            "heritage": "新乐路22-32号（双号）",
+            "match": "reviewed-same-road-nearby-residential-context",
+            "sources": [
+              "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1781",
+              "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html"
+            ]
+          }
+        ],
+        "addressMatches": [],
+        "sharedSourceUrls": []
+      },
+      "hazards": [
+        "proximity-grouping-not-identity",
+        "do-not-infer-same-building-or-current-use"
+      ],
+      "reviewFile": "research/rechecks/2026-09-20-heritage-card-review/review.json"
     }
   ],
   "landmarkCoverage": [

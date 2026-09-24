@@ -46,7 +46,7 @@
     "addresses": "优先保留官网地址，只有官网空缺时由维基补充；差异均并存，different-as-listed只是差异标记，不自动裁定哪一方正确。",
     "dates": "constructionDateText直接保留维基表中建造年代；Wikidata P571仅作为entityInceptionClaims保存，未当作建成年份。",
     "currentUse": "双方listedNameOrUse及第五批混合列均为页面记载，不视为独立核定的今日用途。",
-    "locations": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json。",
+    "locations": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json与scripts/data/shanghai-heritage-coordinate-overrides.json。",
     "precision": "Wikidata precision单位为角度，是来源数值精度，不是测绘误差保证；Wikipedia未提供precision时为null。候选与选点均不代表建筑轮廓或1926年历史位置。",
     "media": "只保存图片来源链接，未下载图片；图片有各自版权许可，须查看文件说明页。",
     "attribution": {
@@ -19867,7 +19867,7 @@
             "method": "title-or-entity-type"
           },
           "location": {
-            "status": "reference-point",
+            "status": "reviewed-reference-point",
             "scope": {
               "scope": "building-reference",
               "reason": "链接条目标题或实体类型明确指向建筑；点位仅为该条目参考位置。",
@@ -19927,20 +19927,41 @@
               }
             ],
             "point": {
-              "lat": 31.22194444,
-              "lon": 121.47888889,
+              "lat": 31.23863187,
+              "lon": 121.47917629,
               "precision": null,
-              "origin": "wikipedia-geodata",
-              "sourceUrl": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%B5%B7%E5%A4%A7%E6%A5%BC",
+              "origin": "reviewed-openstreetmap-building-footprint",
+              "sourceUrl": "https://www.openstreetmap.org/way/494086374",
               "sourceRefs": [
-                "wikipedia-query-fca45294a084afe6-1",
-                "wikidata-entities-dc8c687bd2c6d5fe-1"
+                "https://fgj.sh.gov.cn/yxlsjz1/20200331/30c648cb811f401192bb61dd1dd487c9.html",
+                "http://data.library.sh.cn/entity/architecture/seewyw2zvczrfp7u",
+                "https://www.openstreetmap.org/way/494086374"
               ],
               "coordinateScope": "linked-building-reference-point"
             },
             "notes": [
-              "坐标为关联条目/实体的参考点，不是官网测绘点、历史建筑轮廓或已核定的1926年位置。"
-            ]
+              "坐标为关联条目/实体的参考点，不是官网测绘点、历史建筑轮廓或已核定的1926年位置。",
+              "人工坐标复核：房管局与上海图书馆均以南京东路353号对应慈淑大楼／东海大楼；原维基点纬度31.22194444比建筑轮廓偏南约1.86公里，疑将31°14′19″误录为31°13′19″。上海图书馆转换后的WGS84地址点与本轮建筑轮廓参考点相距约32米。"
+            ],
+            "reviewedOverride": {
+              "reviewedAt": "2026-09-24",
+              "reason": "房管局与上海图书馆均以南京东路353号对应慈淑大楼／东海大楼；原维基点纬度31.22194444比建筑轮廓偏南约1.86公里，疑将31°14′19″误录为31°13′19″。上海图书馆转换后的WGS84地址点与本轮建筑轮廓参考点相距约32米。",
+              "sourceTitle": "OpenStreetMap：353广场建筑轮廓（way 494086374）",
+              "evidence": [
+                {
+                  "title": "上海市房屋管理局第二批优秀历史建筑：2A027",
+                  "url": "https://fgj.sh.gov.cn/yxlsjz1/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+                },
+                {
+                  "title": "上海图书馆：东海大楼、友谊欧洲商城",
+                  "url": "http://data.library.sh.cn/entity/architecture/seewyw2zvczrfp7u"
+                },
+                {
+                  "title": "OpenStreetMap：353广场建筑轮廓",
+                  "url": "https://www.openstreetmap.org/way/494086374"
+                }
+              ]
+            }
           },
           "architects": [],
           "architecturalStyles": [],

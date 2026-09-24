@@ -16,6 +16,19 @@ export const aliasHolds = [
 ]
 
 export const reviewedAliases = {
+  248: ['Institut Pasteur', '上海巴斯德研究所旧址', '巴斯德生物研究所旧址', '巴斯特生物研究所旧址', '公董局公共卫生救济处医学化验所'],
+  1168: ['Gordon Road Police Station', 'Gordon Road Station', '戈登路巡捕房', '戈登路捕房', '上海公共租界戈登路捕房'],
+  1489: ['Qingxin Temple', '清心堂'],
+  1563: ['Central Bank Club', '中央銀行俱樂部', '中央银行俱乐部'],
+  1243: ["Chinese Merchants' Silk Stock Exchange", 'Chinese Cotton Goods Exchange', '華商紗布交易所', '华商纱布交易所'],
+  1441: ['Saint Mary Middle School for Girls', '聖瑪利亞女中', '圣玛利亚女中'],
+  145: ['All Saints Church', '中華聖公會諸聖堂', '诸圣堂'],
+  1427: ['Zhongxi Middle School for Girls', 'Zhongxi Primary School No. 1', '中西女中', '中西第一小学', '市三女中'],
+  1487: ['Qingxin Middle School for Girls', '清心女中學', '清心女中', '上海市第八中学'],
+  1432: ['Litian Textile Mill Dormitories', '豊田紡織廠職員宿舍', '丰田纺织厂职员宿舍', '丰田纱厂职工住宅', '丰田纱厂干部住宅'],
+  1552: ['Siccawei Observatory', 'Zi-Ka-Wei Observatory', '氣象台', '徐家汇观象台', '徐家汇天文台', '上海气象博物馆'],
+  1466: ['Jiangnan Arsenal', 'Kiangnan Arsenal', '江南製造總局', '江南制造总局', '江南制造局', '江南机器制造总局', '江南造船厂'],
+  1661: ['Hongkou Police Station', 'Hongkew Police Station', '虹口巡捕房', '上海公共租界虹口捕房', '上海市警察局虹口分局', '公安大楼', '上海市公安局虹口分局'],
   1763: ['King Albert Apartments', "King's Albert Apartments", '陕南村', '陕南邨', '亚尔培公寓', '金亚尔培公寓'],
   218: ['Dubail Apartments', '吕班公寓', '重庆公寓'],
   1438: ['Yue Apartments', '月邨', '月村'],
@@ -28,6 +41,7 @@ export const aliasModernAddresses = {
 }
 
 export const supplementalSources = [
+  { url: 'https://zh.wikipedia.org/wiki/上海公共租界戈登路捕房', title: '维基百科 · 上海公共租界戈登路捕房（沿革与现址）' },
   { url: 'https://zh.wikipedia.org/wiki/陕南村', title: '维基百科 · 陕南村（King Albert Apartments别名）' },
   { url: 'https://designschool.sjtu.edu.cn/dynamic/news/detail/690af4765c316a926b5f67c4', title: '上海交通大学设计学院 · 高密度多元化的街区：一种上海模式' },
   { url: 'https://www.thepaper.cn/newsDetail_forward_7768016', title: '外滩以西 · 吕班公寓旧181号与今重庆南路185号（澎湃号）' },
@@ -37,5 +51,23 @@ export const supplementalSources = [
   { url: 'https://zh.wikipedia.org/wiki/圣母大堂', title: '维基百科 · 圣母大堂' },
   { url: 'https://ditu.amap.com/place/B00155LALJ', title: '高德地图 · 新乐路东正教堂（仅核门址）' },
   { url: 'https://zh.wikipedia.org/wiki/大上海电影院', title: '维基百科 · 大上海电影院（原楼重建）' },
+  { url: 'https://zh.wikipedia.org/wiki/清心堂', title: '维基百科 · 清心堂（机构创办与现堂分期）' },
+  { url: 'https://zh.wikipedia.org/wiki/上海华商纱布交易所', title: '维基百科 · 上海华商纱布交易所' },
+  { url: 'https://static.shcn.gov.cn/cncms/2024/04/18/25079207-627b-42c2-b907-37c7f0eb1261.pdf', title: '上海长宁 · 圣玛利亚女中校园史资料' },
+  { url: 'https://www.ccctspm.org/churchinfo/207', title: '中国基督教两会 · 上海诸圣堂' },
+  { url: 'https://www.shcn.gov.cn/col5820/20240715/1263004.html', title: '上海长宁 · 中西女中与市三女中校史' },
+  { url: 'https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-former-site-of-qingxin-girls-high-school-006329/', title: '上海市文旅推广网 · 清心女中旧址' },
+  { url: 'https://zh.wikipedia.org/wiki/上海市第八中学', title: '维基百科 · 上海市第八中学（清心女中沿革）' },
+  { url: 'https://dzb.whb.cn/images/2017-11/05/7/71105.pdf', title: '文汇报 · 愚园路丰田纱厂住宅' },
+  { url: 'https://www.thepaper.cn/newsDetail_forward_15152847', title: '申城记忆 · 愚园路1249弄丰田纱厂干部住宅' },
+  { url: 'https://www.shao.ac.cn/2020Ver/gkjj/lsyg/', title: '中国科学院上海天文台 · 徐家汇天文台历史沿革' },
+  { url: 'https://www.meet-in-shanghai.net/cn/museums/shanghai-meteorological-museum-845473/', title: '上海市文旅推广网 · 上海气象博物馆' },
+  { url: 'https://zh.wikipedia.org/wiki/徐家汇观象台', title: '维基百科 · 徐家汇观象台' },
+  { url: 'https://www.shjsjtdw.cn/node2/n59/u1ai15377.html', title: '上海建设交通党建 · 江南制造总局旧址及保留建筑' },
+  { url: 'https://zh.wikipedia.org/wiki/江南機器製造總局', title: '维基百科 · 江南机器制造总局' },
+  { url: 'https://www.wikidata.org/wiki/Q10377974', title: 'Wikidata · Jiangnan Arsenal名称对照' },
+  { url: 'https://www.shhk.gov.cn/xwzx/002008/002008040/20240321/a9e9a2b2-08e9-464f-a468-808d4ed223a5.html', title: '上海虹口 · 虹口捕房与闵行路260号沿革' },
+  { url: 'https://www.shhk.gov.cn/xwzx/002009/002009002/20180410/590e3e68-11be-4e22-b2a6-5a8060287232.html', title: '上海虹口 · 塘沽路公安大楼与虹口捕房院落' },
+  { url: 'https://zh.wikipedia.org/wiki/上海公共租界虹口捕房', title: '维基百科 · 上海公共租界虹口捕房' },
 ].map((source) => ({ ...source, accessedAt: '2026-09-21',
   access: source.url.includes('ditu.amap.com') ? 'search-result-address-only' : 'article-body-read' }))

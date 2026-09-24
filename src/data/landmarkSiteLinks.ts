@@ -67,7 +67,7 @@ export const landmarkSiteLinks: LandmarkSiteLink[] = [
     ],
     "category": "历史墓园",
     "historicalUse": "cemetery",
-    "note": "Pahsienjao Cemetery与附注Baxianqiao的记录均指八仙桥公墓，历史门牌同为156 ROUTE VOUILLEMONT。两份资料分别记1865与1860年，不能据此把年代差异消除。",
+    "note": "Pahsienjao Cemetery与附注Baxianqiao的记录均指八仙桥公墓，历史门牌同为156 ROUTE VOUILLEMONT。两份资料分别记1865与1860年，不能据此把年代差异消除。地图所绘约3.55万平方米是历史墓园范围，并非现淮海公园边界；1958年原墓园约2.67万平方米改为公园，另约8600平方米改作体育场，因此历史范围向现绿地西侧延伸并非整幅坐标偏移。建筑表原点位于现公园西界附近，具体墓园分区和现址仍待地籍核对。",
     "sources": [
       {
         "title": "Virtual Shanghai：公园原表（公园62关联建筑91）",
@@ -76,6 +76,14 @@ export const landmarkSiteLinks: LandmarkSiteLink[] = [
       {
         "title": "Virtual Shanghai：Pahsienjao Cemetery (Baxianqiao)",
         "url": "https://www.virtualshanghai.net/Data/Buildings?ID=91"
+      },
+      {
+        "title": "新民晚报：淮海路上的淮海公园（原墓园分为公园与体育场）",
+        "url": "https://paper.xinmin.cn/html/xmwb/2023-03-24/14/158080.html"
+      },
+      {
+        "title": "OpenStreetMap：淮海公园现绿地边界（仅作空间参照）",
+        "url": "https://www.openstreetmap.org/way/499566575"
       }
     ]
   },

@@ -69,6 +69,22 @@ function field(container: HTMLElement, label: string) {
 }
 
 describe('HeritageDetailsPanel linked historical site', () => {
+  it('shows historical use independently of a modern arts-centre name and keeps its evidence link', () => {
+    const feature = structuredClone(heritage)
+    feature.properties.name = '西岸艺术中心'
+    feature.properties.historicalUse = {
+      category: 'industrial', categories: ['industrial'], status: 'reviewed',
+      historicalName: '上海飞机制造厂冲压车间',
+      note: '原厂房改作艺术中心；分类不表示1928年已存在。',
+      sources: ['https://www.westbund.com/cn/index/KEY-PROJECTS/detail_41bE6.html'],
+    }
+    const card = renderCard(undefined, feature)
+    expect(field(card, '历史用途')).toContain('工业')
+    expect(field(card, '历史用途')).toContain('上海飞机制造厂冲压车间')
+    expect(field(card, '历史用途')).toContain('资料已复核')
+    expect(card.querySelector('a[href="https://www.westbund.com/cn/index/KEY-PROJECTS/detail_41bE6.html"]')).not.toBeNull()
+  })
+
   it('retains the original heritage card when no historical landmark is linked', () => {
     const card = renderCard()
     expect(card.querySelectorAll('aside')).toHaveLength(1)
@@ -149,6 +165,25 @@ describe('HeritageDetailsPanel linked historical site', () => {
     expect(field(card, '对应范围')).toContain(complex.link.scopeNote)
     expect(field(card, '旧地点地址')).toContain(complex.link.historicalAddresses[0].address)
     expect(field(card, '新地点地址')).toBe(heritage.properties.address)
+  })
+
+  it('labels anonymous residential proximity as display grouping, not a verified building match', () => {
+    const nearby = structuredClone(linked)
+    nearby.link.relation = 'nearby-residential-context'
+    nearby.link.nearbyResidentialContext = true
+    nearby.link.scopeNote = '同路名且相距8米；未核定同一栋。'
+    const card = renderCard(nearby)
+    expect(field(card, '对应范围')).toContain('同路段邻近住宅归并（非同栋核定）')
+    expect(field(card, '对应范围')).toContain(nearby.link.scopeNote)
+  })
+
+  it('labels an adjacent school record without claiming institutional or building identity', () => {
+    const campus = structuredClone(linked)
+    campus.link.relation = 'nearby-campus-context'
+    campus.link.scopeNote = '旧小学与女中位于相邻门址；不核定为同一学校或同一栋。'
+    const card = renderCard(campus)
+    expect(field(card, '对应范围')).toContain('相邻校址归并（非同校、同楼核定）')
+    expect(field(card, '对应范围')).toContain(campus.link.scopeNote)
   })
 
   it('distinguishes a checked modern address, listing range and earlier building phases', () => {

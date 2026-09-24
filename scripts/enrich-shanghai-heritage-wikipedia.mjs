@@ -3,7 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import { parseWikipediaHeritageList } from './lib/wikipedia-heritage-list.mjs'
-import { matchListings, articleScope, articleLocation } from './lib/wikipedia-heritage-enrichment.mjs'
+import { matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride, isShanghaiCoordinate } from './lib/wikipedia-heritage-enrichment.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const directory = path.join(root, 'public/data/shanghai-excellent-historical-buildings')
@@ -29,6 +29,14 @@ const labelsDocument = await datasetJson('wikipedia/linked-entity-labels.json')
 const labelIndex = Object.fromEntries(labelsDocument.records.map((r) => [r.requestedId, r]))
 const firstBatch = await json('scripts/data/shanghai-heritage-wikipedia-batch1.json')
 const scopes = await json('scripts/data/shanghai-heritage-wikipedia-link-scopes.json')
+const coordinateOverridesDocument = await json('scripts/data/shanghai-heritage-coordinate-overrides.json')
+const coordinateOverrides = coordinateOverridesDocument.overrides
+const coordinateOverrideById = new Map(coordinateOverrides.map((override) => [override.officialId, override]))
+if (coordinateOverrideById.size !== coordinateOverrides.length || coordinateOverridesDocument.schemaVersion !== 1 ||
+    coordinateOverrides.some((override) => !override.articleTitle || !override.expectedOfficialName || !override.expectedAddress ||
+      !isShanghaiCoordinate(override.point) || !override.evidence?.length)) {
+  throw new Error('Duplicate or invalid heritage coordinate overrides')
+}
 if (new Set(scopes.overrides.map((r) => r.title)).size !== scopes.overrides.length ||
     scopes.overrides.some((r) => !['organization', 'campus', 'complex', 'person', 'uncertain', 'building-reference'].includes(r.scope) || !r.reason)) {
   throw new Error('Duplicate or invalid article scope overrides')
@@ -47,6 +55,7 @@ if (allTitles.size !== details.records.length || [...allTitles].some((title) => 
 for (const scope of scopes.overrides) {
   if (!details.records.some((r) => r.requestedTitle === scope.title || r.resolvedTitle === scope.title)) throw new Error(`Stale article scope override: ${scope.title}`)
 }
+const usedCoordinateOverrides = new Set()
 const detailFields = ['originalNameOrUse', 'listedNameOrUse', 'addressAsListed', 'districtAsListed',
   'constructionDateText', 'floorsText', 'structureText', 'designerText', 'protectionCategoryText', 'useTypeText']
 const labelFor = (id) => {
@@ -62,7 +71,15 @@ const records = official.records.map((record) => {
     let scope = articleScope(article, scopes.overrides, labelIndex)
     // GeoData/P625 describes the page entity, not a building in a section anchor.
     if (new URL(link.url).hash) scope = { scope: 'uncertain', method: 'section-link', reason: '来源链接指向条目中的章节；整篇条目坐标不能代表该章节所述楼栋。' }
-    const location = articleLocation(article, scope)
+    let location = articleLocation(article, scope)
+    const coordinateOverride = coordinateOverrideById.get(record.id)
+    if (coordinateOverride && [link.title, article.resolvedTitle].includes(coordinateOverride.articleTitle)) {
+      if (record.originalNameOrUse !== coordinateOverride.expectedOfficialName || record.addressAsListed !== coordinateOverride.expectedAddress) {
+        throw new Error(`Reviewed coordinate override source changed: ${record.id}`)
+      }
+      location = applyReviewedCoordinateOverride(location, coordinateOverride)
+      usedCoordinateOverrides.add(record.id)
+    }
     return { requestedTitle: link.title, resolvedTitle: article.resolvedTitle, listLinkUrl: link.url,
       url: article.url, revisionId: article.revisionId, wikidataId: article.wikidataId,
       entityRevisionId: article.entity?.lastrevid ?? null, sourceRefs: article.sourceRefs,
@@ -92,6 +109,9 @@ const records = official.records.map((record) => {
       : articleReferences.some((r) => r.location.candidates.length) ? 'candidates-need-review' : 'no-source-coordinate',
   }
 })
+if (usedCoordinateOverrides.size !== coordinateOverrides.length) {
+  throw new Error(`Unused heritage coordinate overrides: ${coordinateOverrides.filter((r) => !usedCoordinateOverrides.has(r.officialId)).map((r) => r.officialId).join(', ')}`)
+}
 
 for (const record of records) {
   const result = geocodingById.get(record.id)
@@ -178,7 +198,7 @@ const methodology = {
   addresses: '优先保留官网地址，只有官网空缺时由维基补充；差异均并存，different-as-listed只是差异标记，不自动裁定哪一方正确。',
   dates: 'constructionDateText直接保留维基表中建造年代；Wikidata P571仅作为entityInceptionClaims保存，未当作建成年份。',
   currentUse: '双方listedNameOrUse及第五批混合列均为页面记载，不视为独立核定的今日用途。',
-  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json。',
+  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json与scripts/data/shanghai-heritage-coordinate-overrides.json。',
   precision: 'Wikidata precision单位为角度，是来源数值精度，不是测绘误差保证；Wikipedia未提供precision时为null。候选与选点均不代表建筑轮廓或1926年历史位置。',
   media: '只保存图片来源链接，未下载图片；图片有各自版权许可，须查看文件说明页。',
   attribution: { wikipediaUrl: listSource.requestedUrl, wikipediaRevisionId: listSource.revisionId,
@@ -204,7 +224,8 @@ for (const file of inputs) {
   const bytes = await fs.readFile(path.join(directory, file))
   inputHashes.push({ file, byteLength: bytes.length, sha256: hash(bytes) })
 }
-for (const file of ['scripts/data/shanghai-heritage-wikipedia-batch1.json', 'scripts/data/shanghai-heritage-wikipedia-link-scopes.json']) {
+for (const file of ['scripts/data/shanghai-heritage-wikipedia-batch1.json', 'scripts/data/shanghai-heritage-wikipedia-link-scopes.json',
+  'scripts/data/shanghai-heritage-coordinate-overrides.json']) {
   const bytes = await fs.readFile(path.join(root, file))
   inputHashes.push({ repositoryFile: file, byteLength: bytes.length, sha256: hash(bytes) })
 }

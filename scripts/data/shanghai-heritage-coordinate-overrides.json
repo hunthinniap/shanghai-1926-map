@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "purpose": "经门址与独立建筑轮廓复核后，替换错误的维基/Wikidata建筑参考点；原候选仍保留在研究记录中。",
+  "overrides": [
+    {
+      "officialId": "sh-fgj-2A027-01",
+      "articleTitle": "东海大楼",
+      "expectedOfficialName": "慈淑大楼",
+      "expectedAddress": "南京东路353号",
+      "point": {
+        "lon": 121.47917629,
+        "lat": 31.23863187
+      },
+      "origin": "reviewed-openstreetmap-building-footprint",
+      "coordinateScope": "linked-building-reference-point",
+      "sourceTitle": "OpenStreetMap：353广场建筑轮廓（way 494086374）",
+      "sourceUrl": "https://www.openstreetmap.org/way/494086374",
+      "reviewedAt": "2026-09-24",
+      "reason": "房管局与上海图书馆均以南京东路353号对应慈淑大楼／东海大楼；原维基点纬度31.22194444比建筑轮廓偏南约1.86公里，疑将31°14′19″误录为31°13′19″。上海图书馆转换后的WGS84地址点与本轮建筑轮廓参考点相距约32米。",
+      "evidence": [
+        {
+          "title": "上海市房屋管理局第二批优秀历史建筑：2A027",
+          "url": "https://fgj.sh.gov.cn/yxlsjz1/20200331/30c648cb811f401192bb61dd1dd487c9.html"
+        },
+        {
+          "title": "上海图书馆：东海大楼、友谊欧洲商城",
+          "url": "http://data.library.sh.cn/entity/architecture/seewyw2zvczrfp7u"
+        },
+        {
+          "title": "OpenStreetMap：353广场建筑轮廓",
+          "url": "https://www.openstreetmap.org/way/494086374"
+        }
+      ]
+    }
+  ]
+}

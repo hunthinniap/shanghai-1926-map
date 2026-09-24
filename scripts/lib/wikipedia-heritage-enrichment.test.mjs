@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { codeTarget, compareRecords, matchListings, articleScope, articleLocation } from './wikipedia-heritage-enrichment.mjs'
+import { codeTarget, compareRecords, matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride } from './wikipedia-heritage-enrichment.mjs'
 
 test('legacy III is not the batch number, and the second-batch E aliases are preserved', () => {
   assert.equal(codeTarget({ batch: 2, codeRaw: 'A-Ⅲ-050' }).code, '2A050')
@@ -92,4 +92,20 @@ test('primary Wikipedia position and source precision remain explicit', () => {
   assert.equal(result.point.precision, null)
   assert.equal(result.candidates[1].precision, 0.0001)
   assert.equal(articleLocation(a, { scope: 'complex' }).point.coordinateScope, 'building-complex-reference-point')
+})
+
+test('a reviewed building point replaces the selected point without deleting source candidates', () => {
+  const location = articleLocation(article({ wikipediaCoordinates: [{ lat: 31.1, lon: 121.4, primary: true }] }), scope)
+  const corrected = applyReviewedCoordinateOverride(location, {
+    officialId: 'fixture', point: { lon: 121.5, lat: 31.2 }, origin: 'reviewed-building-footprint',
+    coordinateScope: 'linked-building-reference-point', sourceTitle: 'Building footprint',
+    sourceUrl: 'https://www.openstreetmap.org/way/1', reviewedAt: '2026-09-24', reason: 'address checked',
+    evidence: [{ url: 'https://example.com/address' }],
+  })
+  assert.equal(corrected.status, 'reviewed-reference-point')
+  assert.deepEqual(corrected.point, { lon: 121.5, lat: 31.2, precision: null,
+    origin: 'reviewed-building-footprint', sourceUrl: 'https://www.openstreetmap.org/way/1',
+    sourceRefs: ['https://example.com/address'], coordinateScope: 'linked-building-reference-point' })
+  assert.equal(corrected.candidates.length, 1)
+  assert.match(corrected.notes.at(-1), /address checked/u)
 })

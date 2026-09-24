@@ -8,13 +8,16 @@ import { SearchBox } from './components/SearchBox'
 import { SourcesPanel } from './components/SourcesPanel'
 import { assetUrl } from './lib/assets'
 import type { HeritageBuildingCollection, HeritageBuildingFeature } from './lib/heritageBuildings'
+import { applyHeritageUses, heritageUseCategories, type HeritageUseIndex } from './lib/heritageUses'
 import type { MetroStationSelection } from './lib/metroLabels'
 import { makeSearchRecords } from './lib/search'
 import { mergeCuratedParkFeatures } from './lib/parkLabels'
 import { mergeLandmarkSites } from './lib/landmarkSites'
-import { landmarkSiteLinks } from './data/landmarkSiteLinks'
+import { landmarkSiteLinksWithSources } from './data/landmarkSiteSourceAdditions'
 import { linkHeritageLandmarks, withReviewedHeritageAliases } from './lib/heritageLandmarkLinks'
 import { heritageLandmarkLinks } from './data/heritageLandmarkLinks'
+import { reviewedLandmarkIdentities } from './data/reviewedLandmarkIdentities'
+import { applyReviewedLandmarkIdentities } from './lib/reviewedLandmarkIdentities'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
 function App() {
@@ -64,7 +67,10 @@ function App() {
       .then(([features, curatedParks, jurisdictions, sources]) => {
         if (!cancelled) {
           setData({
-            features: mergeLandmarkSites(mergeCuratedParkFeatures(features, curatedParks), landmarkSiteLinks),
+            features: applyReviewedLandmarkIdentities(
+              mergeLandmarkSites(mergeCuratedParkFeatures(features, curatedParks), landmarkSiteLinksWithSources),
+              reviewedLandmarkIdentities,
+            ),
             jurisdictions,
             sources,
           })
@@ -83,17 +89,24 @@ function App() {
     const controller = new AbortController()
     setHeritageLoading(true)
     setHeritageError(undefined)
-    fetch(assetUrl('data/shanghai-excellent-historical-buildings/map-buildings.geojson'), { signal: controller.signal })
+    Promise.all([
+      fetch(assetUrl('data/shanghai-excellent-historical-buildings/map-buildings.geojson'), { signal: controller.signal })
       .then((response) => {
         if (!response.ok) throw new Error('历史建筑数据加载失败')
         return response.json() as Promise<HeritageBuildingCollection>
-      })
-      .then((collection) => {
+      }),
+      fetch(assetUrl('data/shanghai-excellent-historical-buildings/historical-use-categories.json'), { signal: controller.signal })
+        .then((response) => {
+          if (!response.ok) throw new Error('历史用途数据加载失败')
+          return response.json() as Promise<HeritageUseIndex>
+        }),
+    ])
+      .then(([collection, uses]) => {
         if (collection.type !== 'FeatureCollection' || !Array.isArray(collection.features)) {
           throw new Error('历史建筑数据格式有误')
         }
         if (!controller.signal.aborted) {
-          setHeritageBuildings(collection)
+          setHeritageBuildings(applyHeritageUses(collection, uses))
           setHeritageLoading(false)
         }
       })
@@ -317,6 +330,15 @@ function App() {
               <i aria-hidden="true" />
               {heritageBuildings ? `${heritageBuildings.features.length} 处历史建筑参考点` : '正在载入历史建筑……'}
             </small>
+          )}
+          {heritageVisible && heritageBuildings && (
+            <details className="heritage-use-legend">
+              <summary>历史用途图例</summary>
+              <div>{heritageUseCategories.map(category => (
+                <span key={category.id}><i style={{ backgroundColor: category.color }}>{category.symbol}</i>{category.label}</span>
+              ))}<span><i style={{ backgroundColor: '#817c70' }}>?</i>用途待核</span></div>
+              <small>按历史原用途初分；后建建筑以卡片年代为准。</small>
+            </details>
           )}
         </div>
 

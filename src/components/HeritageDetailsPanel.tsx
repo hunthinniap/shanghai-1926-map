@@ -2,6 +2,7 @@ import { ExternalLink, Landmark, X } from 'lucide-react'
 import { getHeritageBuildingName, type HeritageBuildingFeature } from '../lib/heritageBuildings'
 import type { LinkedHeritageBuilding } from '../lib/heritageLandmarkLinks'
 import type { HistoricalRecord } from '../types'
+import { heritageUseLabel, heritageUseStatusLabels } from '../lib/heritageUses'
 
 interface HeritageDetailsPanelProps {
   feature?: HeritageBuildingFeature
@@ -33,15 +34,15 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
   if (!feature) return null
 
   const details = feature.properties
+  const heritageEntries = linked?.heritages?.length ? linked.heritages : [feature]
+  const heritageDetails = heritageEntries.map((entry) => entry.properties)
   const historical = linked?.landmark.properties
   const aliases = [...new Set([...(historical?.aliases ?? []), ...(linked?.link.aliases ?? [])])]
   const name = getHeritageBuildingName(details)
   const hasDifferentAddress = details.wikipediaAddress
     && details.wikipediaAddress !== details.address
     && details.addressComparison !== 'exact'
-  const isLibraryCoordinate = details.origin === 'shanghai-library'
   const isAddressReference = details.coordinateScope === 'address-reference-point'
-  const articleHasCoordinates = !isLibraryCoordinate && details.sourceUrl === details.wikipediaUrl
   const locationLabel = isAddressReference
     ? '门牌参考点'
     : details.coordinateScope === 'building-complex-reference-point' ? '建筑群参考位置' : '建筑参考位置'
@@ -49,30 +50,34 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
     ? '点位根据来源记载的门牌匹配，供查找位置参考，不代表建筑边界。'
     : '点位来自建筑条目资料，供查找位置参考，不代表建筑边界。')
   const sourceLinks = [
-    {
-      url: details.officialSourceUrl,
-      title: '上海市优秀历史建筑名录',
-      note: '上海市房屋管理局 · 公布时名称与地址',
-    },
-    {
-      url: details.wikipediaListUrl,
-      title: '维基百科 · 优秀历史建筑列表',
-      note: '地址与建筑资料 · CC BY-SA 4.0',
-    },
-    {
-      url: details.wikipediaUrl,
-      title: details.articleTitle,
-      note: `${articleHasCoordinates ? '建筑条目与坐标来源' : '建筑条目'} · CC BY-SA 4.0`,
-    },
-    ...(!articleHasCoordinates ? [{
-      url: details.sourceUrl,
-      title: details.coordinateSourceTitle || (isLibraryCoordinate
-        ? '上海图书馆 · 坐标来源'
-        : details.origin === 'wikidata-P625' ? 'Wikidata · 坐标来源' : '坐标来源'),
-      note: isLibraryCoordinate
-        ? '门址与参考坐标 · 上海图书馆开放数据'
-        : details.origin === 'wikidata-P625' ? `${details.wikidataId ?? ''} · CC0` : locationLabel,
-    }] : []),
+    ...heritageDetails.flatMap((entry) => {
+      const entryIsLibrary = entry.origin === 'shanghai-library'
+      const entryArticleHasCoordinates = !entryIsLibrary && entry.sourceUrl === entry.wikipediaUrl
+      return [{
+        url: entry.officialSourceUrl,
+        title: `上海市优秀历史建筑名录 · ${entry.officialCodeRaw}`,
+        note: '上海市房屋管理局 · 公布时名称与地址',
+      }, {
+        url: entry.wikipediaListUrl,
+        title: '维基百科 · 优秀历史建筑列表',
+        note: '地址与建筑资料 · CC BY-SA 4.0',
+      }, {
+        url: entry.wikipediaUrl,
+        title: entry.articleTitle,
+        note: `${entryArticleHasCoordinates ? '建筑条目与坐标来源' : '建筑条目'} · CC BY-SA 4.0`,
+      }, ...(!entryArticleHasCoordinates ? [{
+        url: entry.sourceUrl,
+        title: entry.coordinateSourceTitle || (entryIsLibrary
+          ? '上海图书馆 · 坐标来源'
+          : entry.origin === 'wikidata-P625' ? 'Wikidata · 坐标来源' : '坐标来源'),
+        note: entryIsLibrary
+          ? '门址与参考坐标 · 上海图书馆开放数据'
+          : entry.origin === 'wikidata-P625' ? `${entry.wikidataId ?? ''} · CC0` : locationLabel,
+      }] : [])]
+    }),
+    ...heritageDetails.flatMap((entry) => (entry.historicalUse?.sources ?? []).map((url) => ({
+      url, title: `${entry.officialCodeRaw} · 历史用途依据`, note: '原用途与改用阶段的分类依据',
+    }))),
     ...Object.entries(historical?.sourceUrls ?? {}).map(([sourceId, url]) => ({
       url,
       title: sourceId === 'vs-buildings' ? 'Virtual Shanghai · 历史建筑' : '历史资料',
@@ -112,6 +117,8 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
   ].filter((source, index, sources) => source.url
     && sources.findIndex((item) => item.url === source.url) === index)
 
+  const hasNearbyResidentialContext = linked?.link.nearbyResidentialContext
+    || linked?.link.relation === 'nearby-residential-context'
   return (
     <aside className="details-panel heritage-details-panel" aria-label={`${name}历史建筑详情`}>
       <div className="details-grip" aria-hidden="true" />
@@ -132,14 +139,32 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       )}
 
       <dl className="details-list">
+        {heritageDetails.filter(entry => entry.historicalUse).map(entry => {
+          const use = entry.historicalUse!
+          return <div className="details-list-wide" key={`historical-use-${entry.officialId}`}>
+            <dt>{heritageDetails.length > 1 ? `${entry.officialCodeRaw} 历史用途` : '历史用途'}</dt>
+            <dd>
+              <strong>{use.category ? heritageUseLabel(use.category) : '待核'}</strong>
+              {use.historicalName && <><br />{use.historicalName}</>}
+              {use.categories.length > 1 && <><br /><small>其他历史功能：{use.categories.filter(c => c !== use.category).map(heritageUseLabel).join('、')}</small></>}
+              <br /><small>{heritageUseStatusLabels[use.status]} · {use.note}</small>
+            </dd>
+          </div>
+        })}
         <div>
           <dt>名录编号</dt>
-          <dd>{details.officialCodeRaw}</dd>
+          <dd>{heritageDetails.map((entry) => entry.officialCodeRaw).join(' / ')}</dd>
         </div>
         {linked?.link.relation && (linked.link.scopeNote || linked.link.relation !== 'same-listed-building') && (
           <div className="details-list-wide">
             <dt>对应范围</dt>
-            <dd>{linked.link.relation === 'same-listed-complex'
+            <dd>{hasNearbyResidentialContext
+              ? linked.link.relation === 'nearby-residential-context'
+                ? '同路段邻近住宅归并（非同栋核定）'
+                : '已核定对象及同路段邻近住宅记录'
+              : linked.link.relation === 'nearby-campus-context'
+              ? '相邻校址归并（非同校、同楼核定）'
+              : linked.link.relation === 'same-listed-complex'
               ? '同一名录建筑群／园区'
               : linked.link.relation === 'component-of-listed-complex' ? '名录建筑群中的一栋／局部使用'
               : linked.link.relation === 'same-historical-site' ? '同一地点的不同历史阶段'
@@ -170,7 +195,9 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
         ))}
         <div className="details-list-wide">
           <dt>{historical ? '新地点地址' : hasDifferentAddress ? '官网记载地址' : '名录地址'}</dt>
-          <dd><strong>{linked?.link.modernAddress?.address || details.address || '未记载'}</strong></dd>
+          <dd><strong>{linked?.link.modernAddress?.address
+            || [...new Set(heritageDetails.map((entry) => entry.address).filter(Boolean))].join('；')
+            || '未记载'}</strong></dd>
         </div>
         {linked?.link.modernAddress && linked.link.modernAddress.address !== details.address && (
           <div className="details-list-wide"><dt>名录登记地址范围</dt><dd>{details.address}</dd></div>
@@ -286,7 +313,9 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       {historical && (
         <section className="details-sources" aria-labelledby="heritage-current-use-title">
           <h3 id="heritage-current-use-title">用途与沿革资料</h3>
-          {(linked?.link.relation === 'same-historical-site' || linked?.link.relation === 'component-of-listed-complex') && (
+          {(linked?.link.relation === 'same-historical-site' || linked?.link.relation === 'component-of-listed-complex'
+            || linked?.link.relation === 'nearby-campus-context'
+            || hasNearbyResidentialContext) && (
             <p className="details-aliases">{linked.link.scopeNote || '旧地点与现存历史建筑共用位置；各时期的建筑、机构与用途分别记载。'}</p>
           )}
           <dl className="details-list">

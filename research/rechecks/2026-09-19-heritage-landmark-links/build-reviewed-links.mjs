@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import crypto from 'node:crypto'
 
 const directory = 'research/rechecks/2026-09-19-heritage-landmark-links'
-const candidates = JSON.parse(fs.readFileSync(`${directory}/candidates.json`, 'utf8'))
+const candidateDocument = JSON.parse(fs.readFileSync(`${directory}/candidates.json`, 'utf8'))
 const reviewFiles = ['second-review.json', 'continuation-notes/review.json', '../2026-09-20-heritage-card-review/review.json']
 const reviewDocuments = reviewFiles.map((file) => JSON.parse(fs.readFileSync(`${directory}/${file}`, 'utf8')))
 const candidateHash = crypto.createHash('sha256').update(fs.readFileSync(`${directory}/candidates.json`)).digest('hex')
@@ -14,10 +14,23 @@ for (const review of reviewDocuments) {
     }
   }
 }
-for (const { path, sha256 } of Object.values(candidates.methodology.inputs)) {
+for (const { path, sha256 } of Object.values(candidateDocument.methodology.inputs)) {
   if (crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex') !== sha256) {
     throw new Error(`Reviewed input changed; recheck its identities before rebuilding: ${path}`)
   }
+}
+const supplementalCandidateDocuments = new Map()
+for (const review of reviewDocuments) for (const input of review.supplementalCandidateInputs ?? []) {
+  const actualHash = crypto.createHash('sha256').update(fs.readFileSync(input.path)).digest('hex')
+  if (actualHash !== input.sha256) throw new Error(`Supplemental candidate audit changed after review: ${input.path}`)
+  if (!supplementalCandidateDocuments.has(input.path)) {
+    supplementalCandidateDocuments.set(input.path, JSON.parse(fs.readFileSync(input.path, 'utf8')))
+  }
+}
+const allCandidates = [candidateDocument, ...supplementalCandidateDocuments.values()]
+  .flatMap((document) => document.candidates)
+if (new Set(allCandidates.map((candidate) => candidate.candidateId)).size !== allCandidates.length) {
+  throw new Error('Duplicate candidate across automatic and supplemental audits')
 }
 const decisionsById = new Map()
 for (const document of reviewDocuments) for (const item of document.reviews) {
@@ -33,10 +46,10 @@ const reviews = [...decisionsById.values()]
 const accepted = reviews.filter((item) => item.decision.startsWith('accept-'))
 const usedOfficialIds = new Set()
 const usedLandmarkIds = new Set()
-const relations = new Set(['same-listed-building', 'same-listed-complex', 'same-listed-structure', 'same-historical-site', 'component-of-listed-complex'])
+const relations = new Set(['same-listed-building', 'same-listed-complex', 'same-listed-structure', 'same-historical-site', 'component-of-listed-complex', 'nearby-residential-context', 'nearby-campus-context'])
 const sourceTitles = new Map(reviewDocuments.flatMap((review) => review.supplementalSources ?? []).map((source) => [source.url, source.title]))
 const individualLinks = accepted.map((item) => {
-  const candidate = candidates.candidates.find((entry) => entry.candidateId === item.candidateId)
+  const candidate = allCandidates.find((entry) => entry.candidateId === item.candidateId)
   if (!candidate) throw new Error(`Accepted identity is missing from full audit: ${item.candidateId}`)
   const sortedIds = (ids) => [...new Set(ids)].sort((a, b) => a - b).join(',')
   if (candidate.heritage.officialId !== item.officialId
@@ -47,9 +60,17 @@ const individualLinks = accepted.map((item) => {
   const siblings = accepted.filter((review) => review.officialId === item.officialId)
   const sharedCard = siblings.length > 1 && siblings.every((review) => review.cardGroup === item.officialId)
     && siblings.filter((review) => review.cardPrimary).length === 1
-    && new Set(siblings.map((review) => review.relation)).size === 1
   if (item.cardGroup && !sharedCard) throw new Error(`Incomplete shared card: ${item.candidateId}`)
-  if ((usedOfficialIds.has(item.officialId) && !sharedCard) || usedLandmarkIds.has(candidate.landmark.featureId)) {
+  const heritageSiblings = item.heritageGroup
+    ? accepted.filter((review) => review.heritageGroup === item.heritageGroup) : []
+  const sharedHeritageCard = heritageSiblings.length > 1
+    && heritageSiblings.every((review) => review.heritageGroup === candidate.landmark.featureId)
+    && heritageSiblings.filter((review) => review.heritagePrimary).length === 1
+    && new Set(heritageSiblings.map((review) => review.officialId)).size === heritageSiblings.length
+    && new Set(heritageSiblings.map((review) => review.relation)).size === 1
+  if (item.heritageGroup && !sharedHeritageCard) throw new Error(`Incomplete multi-listing card: ${item.candidateId}`)
+  if ((usedOfficialIds.has(item.officialId) && !sharedCard)
+    || (usedLandmarkIds.has(candidate.landmark.featureId) && !sharedHeritageCard)) {
     throw new Error(`Competing identity: ${item.candidateId}`)
   }
   usedOfficialIds.add(item.officialId)
@@ -62,7 +83,15 @@ const individualLinks = accepted.map((item) => {
     expectedSourceRecordIds: candidate.landmark.sourceRecordIds,
     historicalAddresses: candidate.landmark.historicalAddresses.map(({ sourceRecordId, address, sourceUrl }) => ({ sourceRecordId, address, sourceUrl })),
     ...(item.modernAddress ? { modernAddress: item.modernAddress } : {}),
-    ...(item.aliases?.length ? { aliases: [...new Set(item.aliases)] } : {}),
+    ...((item.aliases?.length || item.relation === 'nearby-residential-context') ? {
+      aliases: [...new Set([
+        ...(item.aliases ?? []),
+        ...(item.relation === 'nearby-residential-context'
+          ? candidate.landmark.historicalAddresses.map((address) => address.address) : []),
+      ])],
+    } : {}),
+    ...(item.currentUseHoldRetained ? { currentUseHoldRetained: true } : {}),
+    ...(item.relation === 'nearby-residential-context' ? { nearbyResidentialContext: true } : {}),
     relation: item.relation,
     ...(item.scopeNote ? { scopeNote: item.scopeNote } : {}),
     note: item.displayNote || item.reason,
@@ -72,18 +101,46 @@ const individualLinks = accepted.map((item) => {
       .map((url) => ({ title: sourceTitles.get(url) || '建筑名称与地址沿革资料', url })),
   }
 })
-const links = individualLinks.filter((link) => {
+const landmarkCollapsedLinks = individualLinks.filter((link) => {
   const review = decisionsById.get(link.id)
   return !review.cardGroup || review.cardPrimary
 }).map((link) => {
   const extra = individualLinks.filter((other) => other.officialId === link.officialId && other.id !== link.id)
   if (!extra.length) return link
+  const hasNearbyResidentialContext = [link, ...extra].some((other) => other.nearbyResidentialContext)
+  const mixedReviewedIdentity = hasNearbyResidentialContext && [link, ...extra]
+    .some((other) => !other.nearbyResidentialContext)
   return { ...link,
     additionalLandmarks: extra.map((other) => ({ landmarkFeatureId: other.landmarkFeatureId, expectedSourceRecordIds: other.expectedSourceRecordIds })),
     historicalAddresses: [link, ...extra].flatMap((other) => other.historicalAddresses),
     ...([link, ...extra].some((other) => other.aliases?.length)
       ? { aliases: [...new Set([link, ...extra].flatMap((other) => other.aliases ?? []))] } : {}),
     sources: [...new Map([link, ...extra].flatMap((other) => other.sources).map((source) => [source.url, source])).values()],
+    ...(hasNearbyResidentialContext ? {
+      nearbyResidentialContext: true,
+      scopeNote: mixedReviewedIdentity
+        ? '其中具名记录与名录项按原核定关系保留；无名 Apartment／Residential Complex 仅按同一新旧路名对应及125米内邻近位置归入本卡，不表示已核定为同一栋建筑。'
+        : '无名 Apartment／Residential Complex 仅按同一新旧路名对应及125米内邻近位置归入本卡；各条原始门牌与年代分别保留，不表示已核定为同一栋建筑。',
+    } : {}),
+  }
+})
+const links = landmarkCollapsedLinks.filter((link) => {
+  const review = decisionsById.get(link.id)
+  return !review.heritageGroup || review.heritagePrimary
+}).map((link) => {
+  const review = decisionsById.get(link.id)
+  if (!review.heritageGroup) return link
+  const extra = landmarkCollapsedLinks.filter((other) => other.id !== link.id
+    && decisionsById.get(other.id).heritageGroup === review.heritageGroup)
+  return {
+    ...link,
+    additionalHeritageOfficialIds: extra.map((other) => other.officialId),
+    historicalAddresses: [...new Map([link, ...extra].flatMap((other) => other.historicalAddresses)
+      .map((address) => [`${address.sourceRecordId}|${address.address}`, address])).values()],
+    ...([link, ...extra].some((other) => other.aliases?.length)
+      ? { aliases: [...new Set([link, ...extra].flatMap((other) => other.aliases ?? []))] } : {}),
+    sources: [...new Map([link, ...extra].flatMap((other) => other.sources)
+      .map((source) => [source.url, source])).values()],
   }
 })
 
@@ -105,11 +162,13 @@ const manifest = {
     acceptedStructures: accepted.filter((item) => item.relation === 'same-listed-structure').length,
     acceptedHistoricalSites: accepted.filter((item) => item.relation === 'same-historical-site').length,
     acceptedComponents: accepted.filter((item) => item.relation === 'component-of-listed-complex').length,
+    acceptedNearbyResidentialContexts: accepted.filter((item) => item.relation === 'nearby-residential-context').length,
+    acceptedNearbyCampusContexts: accepted.filter((item) => item.relation === 'nearby-campus-context').length,
     sharedCards: links.length,
     notApplied: reviews.length - accepted.length,
   },
   applied: accepted.map((item) => {
-    const candidate = candidates.candidates.find((entry) => entry.candidateId === item.candidateId)
+    const candidate = allCandidates.find((entry) => entry.candidateId === item.candidateId)
     return {
       candidateId: item.candidateId, sourceRecordIds: item.sourceRecordIds, officialId: item.officialId,
       relation: item.relation, scopeNote: item.scopeNote,
@@ -124,7 +183,7 @@ const manifest = {
     candidateId: item.candidateId, sourceRecordIds: item.sourceRecordIds, officialId: item.officialId,
     decision: item.decision, reason: item.reason,
   })),
-  remainingUnreviewedPairs: candidates.candidates.length - reviews.length,
+  remainingUnreviewedPairs: allCandidates.length - reviews.length,
 }
 for (const [path, content] of [[file, output], [`${directory}/applied-links.json`, JSON.stringify(manifest, null, 2) + '\n']]) {
   if (process.argv.includes('--check')) {

@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "metadata": {
     "coordinateSystem": "WGS84",
-    "meaning": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json。",
+    "meaning": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json与scripts/data/shanghai-heritage-coordinate-overrides.json。",
     "coverage": {
       "officialRecords": 1058,
       "wikipediaRecords": 1058,
@@ -1950,8 +1950,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.47888889,
-          31.22194444
+          121.47917629,
+          31.23863187
         ]
       },
       "properties": {
@@ -1966,8 +1966,8 @@
         "coordinateScope": "linked-building-reference-point",
         "coordinateSystem": "WGS84",
         "precisionDegrees": null,
-        "origin": "wikipedia-geodata",
-        "sourceUrl": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%B5%B7%E5%A4%A7%E6%A5%BC",
+        "origin": "reviewed-openstreetmap-building-footprint",
+        "sourceUrl": "https://www.openstreetmap.org/way/494086374",
         "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%B5%B7%E5%A4%A7%E6%A5%BC",
         "wikidataId": "Q10870657",
         "historicalGeometryVerified": false,

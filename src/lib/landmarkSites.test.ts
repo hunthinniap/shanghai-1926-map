@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { landmarkSiteLinks } from '../data/landmarkSiteLinks'
+import { landmarkSiteLinksWithSources } from '../data/landmarkSiteSourceAdditions'
 import type { HistoricalFeatureCollection } from '../types'
 import { mergeLandmarkSites } from './landmarkSites'
 import { mergeCuratedParkFeatures } from './parkLabels'
@@ -66,6 +67,20 @@ describe('reviewed landmark site display associations', () => {
         }
       }
     }
+  })
+
+  it('retains the dated Swire source and historical phases for Zhang Garden', () => {
+    const link = landmarkSiteLinksWithSources.find((item) => item.id === 'park-140-building-1727')!
+    const after = mergeLandmarkSites(before, [link])
+    const garden = after.features.find((feature) => feature.properties.id === link.canonicalFeatureId)!
+    expect(garden.properties.historicalSiteNote).toContain('1918年闭园后转为住宅区')
+    expect(garden.properties.historicalSiteNote).toContain('2022年西区16幢历史建筑率先开放')
+    expect(garden.properties.historicalSiteNote).toContain('不表示东区当时的未来计划已经实现')
+    expect(garden.properties.historicalSiteSources).toContainEqual({
+      title: '太古地产：张园焕新揭幕（2022年11月28日）',
+      url: 'https://www.swireproperties.com/zh-cn/media/press-releases/2022/20221128_zhangyuan/',
+    })
+    expect(garden.geometry).toEqual(before.features.find((feature) => feature.properties.id === link.canonicalFeatureId)?.geometry)
   })
 
   it('does not merge a changed, unreviewed source group or a missing member', () => {

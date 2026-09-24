@@ -109,6 +109,22 @@ export function isShanghaiCoordinate(point) {
   return Number.isFinite(point.lat) && Number.isFinite(point.lon) && point.lat >= 30.5 && point.lat <= 32 && point.lon >= 120.7 && point.lon <= 122.4
 }
 
+export function applyReviewedCoordinateOverride(location, override) {
+  if (!override) return location
+  if (!isShanghaiCoordinate(override.point) || !override.sourceUrl || !override.sourceTitle || !override.reason ||
+      !['linked-building-reference-point', 'building-complex-reference-point'].includes(override.coordinateScope)) {
+    throw new Error(`Invalid reviewed coordinate override: ${override.officialId ?? 'unknown'}`)
+  }
+  return { ...location, status: 'reviewed-reference-point',
+    point: { lat: override.point.lat, lon: override.point.lon, precision: null,
+      origin: override.origin ?? 'reviewed-coordinate-override', sourceUrl: override.sourceUrl,
+      sourceRefs: override.evidence?.map((item) => item.url) ?? [override.sourceUrl],
+      coordinateScope: override.coordinateScope },
+    reviewedOverride: { reviewedAt: override.reviewedAt, reason: override.reason,
+      sourceTitle: override.sourceTitle, evidence: override.evidence ?? [] },
+    notes: [...(location.notes ?? []), `人工坐标复核：${override.reason}`] }
+}
+
 const physicalTitle = /(?:大楼|楼旧址|公寓|住宅|别墅|旧居|故居|公馆|礼拜堂|教堂|清真寺|会堂|教会堂|天主堂|礼堂|会馆|新村|里弄|小区|广场|仓库|书店|戏院|剧院|影剧院|电影院|饭店|旅馆|大酒店|宾馆|邮局|捕房|监狱|桥|塔|墓|祠|庙|堂)$/u
 const organizationTitle = /(?:大学|学院|中学|小学|幼儿园|学校|银行|报社|公司|事务所|研究所|研究院|医院|总局|分局|教会|俱乐部)$/u
 

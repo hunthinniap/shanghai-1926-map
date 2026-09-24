@@ -1,4 +1,5 @@
 import type { Feature, FeatureCollection, Point } from 'geojson'
+import type { HeritageUseCategory, HeritageUseRecord } from './heritageUses'
 
 export interface HeritageBuildingProperties {
   officialId: string
@@ -30,6 +31,11 @@ export interface HeritageBuildingProperties {
   designer: string | null
   officialSourceUrl: string
   wikipediaListUrl: string
+  historicalUse?: HeritageUseRecord
+  historicalUseCategory?: HeritageUseCategory | null
+  historicalUseSymbol?: string
+  historicalUseColor?: string
+  historicalDisplayName?: string
 }
 
 export type HeritageBuildingFeature = Feature<Point, HeritageBuildingProperties>

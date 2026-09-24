@@ -61,9 +61,10 @@ const interactiveLayers = [
   'heritage-building-hit',
   'heritage-building-point',
   'heritage-building-label',
+  'heritage-building-use-symbol',
 ]
 
-const heritageLayers = ['heritage-building-hit', 'heritage-building-point', 'heritage-building-label', 'selected-heritage-building']
+const heritageLayers = ['heritage-building-hit', 'heritage-building-point', 'heritage-building-label', 'selected-heritage-building', 'heritage-building-use-symbol']
 const emptyHeritage: HeritageBuildingCollection = { type: 'FeatureCollection', features: [] }
 const heritageAttribution = '<a href="https://fgj.sh.gov.cn/yxlsjz/index.html">上海市房屋管理局</a> · <a href="https://data.library.sh.cn/shnh/wkl/webapi/building/toAllBuilding">上海图书馆</a> (署名·非商业·相同方式共享) · <a href="https://zh.wikipedia.org/wiki/上海市优秀历史建筑">Wikipedia</a> (CC BY-SA 4.0) · Wikidata (CC0) · © OpenStreetMap contributors (ODbL)'
 
@@ -94,17 +95,17 @@ function addHeritageLayers(map: Map, collection: HeritageBuildingCollection) {
   map.addLayer({
     id: 'heritage-building-point', type: 'circle', source: 'heritage-buildings',
     paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 9, 3, 13, 4.5, 17, 6],
-      'circle-color': ['case', ['==', ['get', 'coordinateScope'], 'building-complex-reference-point'], '#eee6d2', '#35756b'],
-      'circle-stroke-color': '#35756b', 'circle-stroke-width': 2,
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 9, 3, 12, 5, 13, 9, 17, 10],
+      'circle-color': ['coalesce', ['get', 'historicalUseColor'], '#817c70'],
+      'circle-stroke-color': '#f2ead6', 'circle-stroke-width': 1.5,
     },
   })
   map.addLayer({
     id: 'heritage-building-label', type: 'symbol', source: 'heritage-buildings', minzoom: 12.1,
     layout: {
-      'text-field': ['get', 'articleTitle'], 'text-font': ['Noto Sans Regular'],
+      'text-field': ['coalesce', ['get', 'historicalDisplayName'], ['get', 'articleTitle']], 'text-font': ['Noto Sans Regular'],
       'text-size': ['interpolate', ['linear'], ['zoom'], 12, 11, 16, 13],
-      'text-offset': [0, 1.05], 'text-anchor': 'top', 'text-padding': 8,
+      'text-offset': [0, 1.2], 'text-anchor': 'top', 'text-padding': 8,
       'text-max-width': 11,
     },
     paint: { 'text-color': '#25594f', 'text-halo-color': '#f2ead6', 'text-halo-width': 1.7 },
@@ -112,7 +113,16 @@ function addHeritageLayers(map: Map, collection: HeritageBuildingCollection) {
   map.addLayer({
     id: 'selected-heritage-building', type: 'circle', source: 'heritage-buildings',
     filter: ['==', ['get', 'officialId'], '__none__'],
-    paint: { 'circle-radius': 9, 'circle-color': '#35756b', 'circle-stroke-color': '#f8f2e1', 'circle-stroke-width': 3 },
+    paint: { 'circle-radius': 12, 'circle-color': ['coalesce', ['get', 'historicalUseColor'], '#817c70'], 'circle-stroke-color': '#f8f2e1', 'circle-stroke-width': 3 },
+  })
+  map.addLayer({
+    id: 'heritage-building-use-symbol', type: 'symbol', source: 'heritage-buildings', minzoom: 12.6,
+    layout: {
+      'text-field': ['coalesce', ['get', 'historicalUseSymbol'], '?'],
+      'text-font': ['Noto Sans Regular'], 'text-size': 11,
+      'text-allow-overlap': true, 'text-ignore-placement': true,
+    },
+    paint: { 'text-color': '#fffaf0' },
   })
 }
 
