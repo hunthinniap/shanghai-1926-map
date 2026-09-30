@@ -16,11 +16,14 @@ import { mergeLandmarkSites } from './lib/landmarkSites'
 import { landmarkSiteLinksWithSources } from './data/landmarkSiteSourceAdditions'
 import { linkHeritageLandmarks, withReviewedHeritageAliases } from './lib/heritageLandmarkLinks'
 import { heritageLandmarkLinks } from './data/heritageLandmarkLinks'
+import { userApprovedHeritageSiteLinks } from './data/userApprovedHeritageSites'
 import { reviewedLandmarkIdentities } from './data/reviewedLandmarkIdentities'
 import { applyReviewedLandmarkIdentities } from './lib/reviewedLandmarkIdentities'
 import { applyReviewedAddressUses } from './lib/reviewedAddressUses'
 import { reviewedAddressUses } from './data/reviewedAddressUses'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
+
+const reviewedHeritageLinks = [...heritageLandmarkLinks, ...userApprovedHeritageSiteLinks]
 
 function App() {
   const [data, setData] = useState<AppData>()
@@ -42,7 +45,7 @@ function App() {
   const [mapKey, setMapKey] = useState(0)
   const selectedNeedsHeritage = Boolean(selectedGroupId && data?.features.features.some((feature) =>
     feature.properties.featureGroupId === selectedGroupId
-    && heritageLandmarkLinks.some((link) => [link, ...(link.additionalLandmarks ?? [])]
+    && reviewedHeritageLinks.some((link) => [link, ...(link.additionalLandmarks ?? [])]
       .some((member) => member.landmarkFeatureId === feature.properties.id))))
   const needsHeritage = heritageVisible || landmarksVisible || selectedNeedsHeritage
 
@@ -138,10 +141,10 @@ function App() {
   }, [])
 
   const linkedBuildings = useMemo(() => data
-    ? linkHeritageLandmarks(data.features, heritageBuildings, heritageLandmarkLinks) : undefined,
+    ? linkHeritageLandmarks(data.features, heritageBuildings, reviewedHeritageLinks) : undefined,
   [data, heritageBuildings])
   const searchRecords = useMemo(
-    () => (linkedBuildings ? makeSearchRecords(withReviewedHeritageAliases(linkedBuildings.features.features, heritageLandmarkLinks)) : []),
+    () => (linkedBuildings ? makeSearchRecords(withReviewedHeritageAliases(linkedBuildings.features.features, reviewedHeritageLinks)) : []),
     [linkedBuildings],
   )
   const selectedFeature = useMemo<HistoricalFeature | undefined>(

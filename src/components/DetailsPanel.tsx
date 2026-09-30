@@ -1,5 +1,6 @@
 import { ExternalLink, MapPin, X } from 'lucide-react'
 import { getRoadEponym } from '../data/roadEponyms'
+import { approvedUnlocatedHeritageSites } from '../data/userApprovedHeritageSites'
 import type { HistoricalFeature, HistoricalRecord, SourceRecord } from '../types'
 import { AddressUseEvidencePanel } from './AddressUseEvidencePanel'
 
@@ -67,6 +68,14 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
   const roadEponym = details.kind === 'road'
     ? getRoadEponym(details.historicalName)
     : undefined
+  const historicalAddresses = [...new Set(
+    details.historicalAddresses?.map((item) => item.address).filter(Boolean) ?? [],
+  )]
+  const sourceRecordIds = [...(details.sourceRecordIds ?? [])].sort((a, b) => a - b).join(',')
+  const unlocatedHeritageSites = details.kind === 'landmark'
+    ? approvedUnlocatedHeritageSites.filter((site) => site.landmarkFeatureId === details.id
+      && [...site.expectedSourceRecordIds].sort((a, b) => a - b).join(',') === sourceRecordIds)
+    : []
 
   return (
     <aside className="details-panel" aria-label={`${details.historicalName}详情`}>
@@ -85,6 +94,22 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
       {details.historicalChinese && <p className="details-historical-chinese">{details.historicalChinese}</p>}
 
       <dl className="details-list">
+        {details.kind === 'landmark' && historicalAddresses.length > 0 && (
+          <div className="details-list-wide">
+            <dt>历史地址（原资料）</dt>
+            <dd>{historicalAddresses.join('；')}</dd>
+          </div>
+        )}
+        {unlocatedHeritageSites.map((site) => (
+          <div className="details-list-wide" key={site.officialId}>
+            <dt>同址优秀历史建筑（名录点待核）</dt>
+            <dd>
+              <strong>{site.name} · {site.officialCode}</strong><br />
+              {site.address}<br />
+              <small>人工审定同址；地图仍使用历史地标参考点，不表示已核定为同一栋建筑。{site.scopeNote ? ` ${site.scopeNote}` : ''}</small>
+            </dd>
+          </div>
+        ))}
         <div>
           <dt>{details.kind === 'landmark' && !details.category.startsWith('现存')
             ? '历史中文标注'
@@ -262,6 +287,18 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
         {(details.historicalSiteSources ?? []).map((source) => (
           <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
             <span>{source.title ?? '地点名称核对来源'}<small>历史地点与名称核对</small></span>
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        ))}
+        {unlocatedHeritageSites.map((site) => (
+          <a key={site.officialId} href={site.sourceUrl} target="_blank" rel="noreferrer">
+            <span>上海市优秀历史建筑名录 · {site.officialCode}<small>同址记录；名录点待核</small></span>
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        ))}
+        {unlocatedHeritageSites.filter((site) => site.scopeSourceUrl).map((site) => (
+          <a key={`${site.officialId}-scope`} href={site.scopeSourceUrl} target="_blank" rel="noreferrer">
+            <span>上海市房屋管理局 · 门牌复核<small>{site.scopeNote}</small></span>
             <ExternalLink size={14} aria-hidden="true" />
           </a>
         ))}

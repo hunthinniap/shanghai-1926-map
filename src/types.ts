@@ -53,6 +53,7 @@ export interface HistoricalFeatureProperties {
   modernNameZh: string
   modernNameEn?: string
   historicalChinese?: string
+  historicalAddresses?: { sourceRecordId: number; address: string }[]
   historicalRecords?: HistoricalRecord[]
   historicalSiteNote?: string
   historicalSiteSources?: CurrentUseSource[]

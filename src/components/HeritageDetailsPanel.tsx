@@ -138,6 +138,14 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
       {historical && historical.historicalName !== name && (
         <p className="details-historical-chinese">{historical.historicalName}</p>
       )}
+      <dl className="details-list heritage-address-summary">
+        <div className="details-list-wide">
+          <dt>所在地址</dt>
+          <dd><strong>{linked?.link.modernAddress?.address
+            || [...new Set(heritageDetails.map((entry) => entry.address).filter(Boolean))].join('；')
+            || '未记载'}</strong></dd>
+        </div>
+      </dl>
 
       <dl className="details-list">
         {heritageDetails.filter(entry => entry.historicalUse).map(entry => {
@@ -194,12 +202,6 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
             </dd>
           </div>
         ))}
-        <div className="details-list-wide">
-          <dt>{historical ? '新地点地址' : hasDifferentAddress ? '官网记载地址' : '名录地址'}</dt>
-          <dd><strong>{linked?.link.modernAddress?.address
-            || [...new Set(heritageDetails.map((entry) => entry.address).filter(Boolean))].join('；')
-            || '未记载'}</strong></dd>
-        </div>
         {linked?.link.modernAddress && linked.link.modernAddress.address !== details.address && (
           <div className="details-list-wide"><dt>名录登记地址范围</dt><dd>{details.address}</dd></div>
         )}

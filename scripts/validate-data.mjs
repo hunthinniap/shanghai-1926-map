@@ -329,7 +329,7 @@ const currentUseAcceptanceCases = [
   ['Saint Mary Hospital (Hôpital Sainte Marie)', '瑞金医院8号楼', '医疗 / 康养'],
   ['Yufosi Temple (Jade Buddha)', '玉佛寺', '宗教场所'],
   ['St. Joseph Church', '洋泾浜圣若瑟堂', '宗教场所'],
-  ['Great Northern Cable Office', '盘谷银行上海分行', '金融办公'],
+  ['Great Northern Cable Office', '上海电信博物馆', '电信博物馆'],
   ['Yokohama Specie Bank', '中国工商银行上海分行营业部', '金融办公'],
   ['All Saints Church', '诸圣堂', '宗教场所'],
 ]

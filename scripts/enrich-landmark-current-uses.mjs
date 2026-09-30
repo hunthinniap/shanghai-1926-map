@@ -75,10 +75,10 @@ const wikipediaMatches = new Map([
     currentUseSourceUri: 'https://zh.wikipedia.org/zh-cn/诸圣堂_(上海)',
   }],
   ['landmark-great-northern-cable-office-大北電報局', {
-    currentUse: '金融办公',
-    currentNameZh: '盘谷银行上海分行',
-    currentAddress: '中山东一路7号',
-    currentUseSourceUri: 'https://zh.wikipedia.org/zh-cn/大北电报公司大楼',
+    currentUse: '电信博物馆',
+    currentNameZh: '上海电信博物馆',
+    currentAddress: '延安东路34号',
+    currentUseSourceUri: 'https://english.shanghai.gov.cn/en-CultureHeritage/20251028/ed891dffdfb14193ad6368aad5aaf5ad.html',
   }],
   ['landmark-capitol-theater-光陸大戯院', {
     currentUse: '历史建筑 / 功能调整中',

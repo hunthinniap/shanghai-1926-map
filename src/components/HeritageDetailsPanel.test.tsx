@@ -107,7 +107,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard()
     expect(card.querySelectorAll('aside')).toHaveLength(1)
     expect(card.querySelector('h2')?.textContent).toBe('南京饭店')
-    expect(field(card, '官网记载地址')).toBe(heritage.properties.address)
+    expect(field(card, '所在地址')).toBe(heritage.properties.address)
     expect(field(card, '建造年代')).toBe('1929年')
     expect(card.textContent).not.toContain('历史资料年代')
     expect(card.textContent).not.toContain('现用资料记载')
@@ -123,7 +123,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     expect(card.querySelector('.details-kicker')?.textContent).toContain('第 4 批')
     expect(field(card, '旧地点地址')).toContain('200 SHANSI ROAD')
     expect(field(card, '旧地点地址')).toContain('Virtual Shanghai #609')
-    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
+    expect(field(card, '所在地址')).toBe(heritage.properties.address)
     expect(field(card, '维基列表记载地址')).toBe('山西南路200号')
     expect(field(card, '名录建造年代')).toBe('1929年')
     expect(field(card, '历史资料年代')).toBe('1931 年资料')
@@ -169,7 +169,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     relocated.landmark.properties.currentNameZh = '后继机构'
     relocated.landmark.properties.currentAddress = '另一条路100号'
     const card = renderCard(relocated)
-    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
+    expect(field(card, '所在地址')).toBe(heritage.properties.address)
     expect(field(card, '机构现址（非历史原址）')).toBe('另一条路100号')
     expect(field(card, '与历史地点的关系')).toBe('机构延续，但已迁离历史原址')
   })
@@ -182,7 +182,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     expect(field(card, '对应范围')).toContain('同一名录建筑群／园区')
     expect(field(card, '对应范围')).toContain(complex.link.scopeNote)
     expect(field(card, '旧地点地址')).toContain(complex.link.historicalAddresses[0].address)
-    expect(field(card, '新地点地址')).toBe(heritage.properties.address)
+    expect(field(card, '所在地址')).toBe(heritage.properties.address)
   })
 
   it('labels anonymous residential proximity as display grouping, not a verified building match', () => {
@@ -210,7 +210,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     site.link.scopeNote = '1874年旧址记录；1923年现楼启用。'
     site.link.modernAddress = { address: '中山东一路12号', sourceUrl: 'https://example.org/checked-address', title: '地址来源' }
     const card = renderCard(site)
-    expect(field(card, '新地点地址')).toBe('中山东一路12号')
+    expect(field(card, '所在地址')).toBe('中山东一路12号')
     expect(field(card, '名录登记地址范围')).toBe(heritage.properties.address)
     expect(field(card, '对应范围')).toContain('同一地点的不同历史阶段')
     expect(card.textContent).toContain('1874年旧址记录；1923年现楼启用。')
@@ -244,6 +244,6 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard(undefined, complex)
     expect(card.textContent).not.toContain('建筑群参考位置')
     expect(card.textContent).not.toContain(complex.properties.locationNote)
-    expect(card.textContent).toContain('官网记载地址')
+    expect(card.textContent).toContain('所在地址')
   })
 })

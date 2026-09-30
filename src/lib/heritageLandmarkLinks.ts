@@ -13,8 +13,9 @@ export interface HeritageLandmarkLink {
   additionalHeritageOfficialIds?: string[]
   landmarkFeatureId: string
   expectedSourceRecordIds: number[]
+  expectedSourceParkRecordIds?: number[]
   historicalAddresses: HistoricalBuildingAddress[]
-  additionalLandmarks?: { landmarkFeatureId: string; expectedSourceRecordIds: number[] }[]
+  additionalLandmarks?: { landmarkFeatureId: string; expectedSourceRecordIds: number[]; expectedSourceParkRecordIds?: number[] }[]
   modernAddress?: { address: string; sourceUrl: string; title: string }
   aliases?: string[]
   currentUseHoldRetained?: boolean
@@ -40,8 +41,10 @@ export function withReviewedHeritageAliases(features: HistoricalFeature[], links
     const matches = links.filter((link) => link.aliases?.length
       && [link, ...(link.additionalLandmarks ?? [])].some((member) =>
         member.landmarkFeatureId === feature.properties.id
-        && member.expectedSourceRecordIds.length > 0
-        && sortedIds(member.expectedSourceRecordIds) === sortedIds(feature.properties.sourceRecordIds ?? [])))
+        && (member.expectedSourceRecordIds.length > 0 || Boolean(member.expectedSourceParkRecordIds?.length))
+        && sortedIds(member.expectedSourceRecordIds) === sortedIds(feature.properties.sourceRecordIds ?? [])
+        && (member.expectedSourceParkRecordIds === undefined
+          || sortedIds(member.expectedSourceParkRecordIds) === sortedIds(feature.properties.sourceParkRecordIds ?? []))))
     if (feature.properties.kind !== 'landmark' || matches.length !== 1
       || features.filter((other) => other.properties.featureGroupId === feature.properties.featureGroupId).length !== 1) return feature
     const addressOwners = new Map(matches[0].historicalAddresses.map(({ address, sourceRecordId }) =>
@@ -94,8 +97,10 @@ export function linkHeritageLandmarks(
       const matches = historical.features.filter((feature) => feature.properties.id === member.landmarkFeatureId)
       const feature = matches[0]
       return matches.length === 1 && feature.properties.kind === 'landmark'
-        && member.expectedSourceRecordIds.length > 0
+        && (member.expectedSourceRecordIds.length > 0 || Boolean(member.expectedSourceParkRecordIds?.length))
         && sortedIds(feature.properties.sourceRecordIds ?? []) === sortedIds(member.expectedSourceRecordIds)
+        && (member.expectedSourceParkRecordIds === undefined
+          || sortedIds(feature.properties.sourceParkRecordIds ?? []) === sortedIds(member.expectedSourceParkRecordIds))
         && historical.features.filter((other) => other.properties.featureGroupId === feature.properties.featureGroupId).length === 1
         ? feature : undefined
     })
