@@ -62,6 +62,9 @@ export function mergeLandmarkSites(collection: HistoricalFeatureCollection, link
       properties: {
         ...p,
         ...currentUseProperties,
+        ...(present.some(f => f.properties.addressUseEvidence?.length) ? {
+          addressUseEvidence: present.flatMap(f => f.properties.addressUseEvidence ?? []),
+        } : {}),
         historicalName: link.historicalName ?? p.historicalName,
         modernNameZh: link.nameZh ?? p.modernNameZh,
         historicalChinese: link.nameZh ?? p.historicalChinese,

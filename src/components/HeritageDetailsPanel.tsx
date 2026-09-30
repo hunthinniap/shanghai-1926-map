@@ -3,6 +3,7 @@ import { getHeritageBuildingName, type HeritageBuildingFeature } from '../lib/he
 import type { LinkedHeritageBuilding } from '../lib/heritageLandmarkLinks'
 import type { HistoricalRecord } from '../types'
 import { heritageUseLabel, heritageUseStatusLabels } from '../lib/heritageUses'
+import { AddressUseEvidencePanel } from './AddressUseEvidencePanel'
 
 interface HeritageDetailsPanelProps {
   feature?: HeritageBuildingFeature
@@ -319,11 +320,11 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
             <p className="details-aliases">{linked.link.scopeNote || '旧地点与现存历史建筑共用位置；各时期的建筑、机构与用途分别记载。'}</p>
           )}
           <dl className="details-list">
-            <div className="details-list-wide">
+            {!historical.addressUseEvidence?.length && <div className="details-list-wide">
               <dt>{(linked?.landmarks?.length ?? 0) > 1 || linked?.link.relation === 'component-of-listed-complex'
                 ? `${historical.historicalName} · 现用资料记载` : '现用资料记载'}</dt>
               <dd>{historical.currentUse || '暂未查到可靠对应'}</dd>
-            </div>
+            </div>}
             {historical.currentNameZh && (
               <div className="details-list-wide">
                 <dt>{historical.currentUseRelationship === 'institutional-successor-relocated' ? '后继机构' : '用途资料中的名称'}</dt>
@@ -346,14 +347,16 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
               <div className="details-list-wide"><dt>沿革备注</dt><dd>{historical.currentUseNote}</dd></div>
             )}
           </dl>
+          <AddressUseEvidencePanel evidence={historical.addressUseEvidence} />
           {(linked?.landmarks ?? []).slice(1).map((landmark) => (
             <div className="details-aliases" key={landmark.properties.id}>
               <span>{landmark.properties.historicalName}</span>
-              <p>{landmark.properties.currentUse || '此历史记录的现用途尚待核实。'}
+              <p>{landmark.properties.currentUse || (!landmark.properties.addressUseEvidence?.length && '此历史记录的现用途尚待核实。')}
                 {landmark.properties.currentNameZh && <><br />{landmark.properties.currentNameZh}</>}
                 {landmark.properties.currentAddress && <><br />{landmark.properties.currentAddress}</>}
                 {landmark.properties.currentUseNote && <><br />{landmark.properties.currentUseNote}</>}
               </p>
+              <AddressUseEvidencePanel evidence={landmark.properties.addressUseEvidence} />
             </div>
           ))}
           {linked?.link.note && <div className="details-aliases"><span>名称与地址沿革</span><p>{linked.link.note}</p></div>}

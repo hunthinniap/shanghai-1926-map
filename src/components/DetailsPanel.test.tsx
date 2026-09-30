@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import type { HistoricalFeature } from '../types'
 import { DetailsPanel } from './DetailsPanel'
+import { reviewedAddressUses } from '../data/reviewedAddressUses'
 
 const baseFeature = {
   type: 'Feature',
@@ -23,6 +24,16 @@ const baseFeature = {
 } satisfies HistoricalFeature
 
 describe('DetailsPanel historical records', () => {
+  it('replaces the unknown-use placeholder with a qualified address reference, not a confirmed use', () => {
+    const entry = reviewedAddressUses.find(e => e.expectedSourceRecordIds.includes(440))!
+    const feature = { ...baseFeature, properties: { ...baseFeature.properties, addressUseEvidence: entry.evidence } }
+    const markup = renderToStaticMarkup(<DetailsPanel feature={feature} sources={[]} onClose={() => undefined} />)
+    expect(markup).toContain('<dt>今址用途参考</dt>')
+    expect(markup).not.toContain('<dt>现在用途</dt>')
+    expect(markup).not.toContain('暂未查到可靠对应')
+    expect(markup).toContain('上海歌剧院')
+    expect(markup).toContain('历史原址／原建筑对应待核')
+  })
   it('keeps the existing single-name card unchanged when no records are provided', () => {
     const markup = renderToStaticMarkup(
       <DetailsPanel feature={baseFeature} sources={[]} onClose={() => undefined} />,

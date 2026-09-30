@@ -57,6 +57,7 @@ export function makeSearchRecords(features: HistoricalFeature[]): SearchRecord[]
       properties.historicalSiteNote,
       properties.currentNameZh,
       properties.currentUse,
+      ...(properties.addressUseEvidence ?? []).flatMap(evidence => [evidence.use, evidence.address]),
       ...(properties.historicalRecords ?? []).flatMap((record) => [record.name, record.nameZh]),
       ...(properties.aliases ?? []),
     ].filter((term): term is string => Boolean(term))

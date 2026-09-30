@@ -229,6 +229,12 @@ export function mergeCuratedParkFeatures(
         sourceRecordIds: sourceRecordIds.length ? sourceRecordIds : undefined,
         sourceParkRecordIds: sourceParkRecordIds.length ? sourceParkRecordIds : undefined,
         historicalRecords: historicalRecords.length ? historicalRecords : undefined,
+        ...(legacyFeatures.some(f => f.properties.addressUseEvidence?.length) ? {
+          addressUseEvidence: [
+            ...(feature.properties.addressUseEvidence ?? []),
+            ...legacyFeatures.flatMap(f => f.properties.addressUseEvidence ?? []),
+          ],
+        } : {}),
         aliases: aliases.length ? aliases : undefined,
         sourceUrls: Object.keys(sourceUrls).length ? sourceUrls : undefined,
         legacyFeatureGroupIds: [...new Set([

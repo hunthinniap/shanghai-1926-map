@@ -21,6 +21,18 @@ export interface CurrentUseSource {
   url: string
 }
 
+export interface AddressUseEvidence {
+  sourceRecordIds: number[]
+  mode: 'current-use' | 'address-reference'
+  use: string
+  address: string
+  note: string
+  identityBasis?: string
+  retainedHold?: { reason: string; reviewRef: string }
+  reviewedOn: string
+  sources: { id: string; title: string; url: string; informationAsOf: string | null; accessedOn: string; supports: string }[]
+}
+
 export interface HistoricalRecord {
   sourceRecordIds?: number[]
   sourceParkRecordIds?: number[]
@@ -61,6 +73,7 @@ export interface HistoricalFeatureProperties {
   historicalUse?: 'park' | 'garden' | 'cemetery' | 'racecourse' | 'industrial' | 'military' | 'recreation' | 'school' | 'aerodrome'
   namingBasis?: 'translated' | 'proposed-road' | 'proposed-district' | 'proposed-site'
   currentUse?: string
+  addressUseEvidence?: AddressUseEvidence[]
   currentNameZh?: string
   currentAddress?: string
   currentUseNote?: string

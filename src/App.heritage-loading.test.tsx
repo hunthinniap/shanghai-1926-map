@@ -28,6 +28,11 @@ it('clears a pending shared-building selection when its last visible layer is cl
   const fixtures: Record<string, unknown> = {
     '/data/historical-features.geojson': { type: 'FeatureCollection', features: [historical] },
     '/data/curated-parks.geojson': empty, '/data/jurisdictions.geojson': empty, '/data/sources.json': [],
+    '/data/shanghai-excellent-historical-buildings/historical-use-categories.json': {
+      schemaVersion: 1, records: { [heritage.properties.officialId]: {
+        category: null, categories: [], status: 'unresolved', historicalName: null, note: 'Test fixture', sources: [],
+      } },
+    },
   }
   vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
   vi.stubGlobal('fetch', vi.fn(async (path: string) => path.includes('map-buildings.geojson')

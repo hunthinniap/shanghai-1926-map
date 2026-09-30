@@ -1,6 +1,7 @@
 import { ExternalLink, MapPin, X } from 'lucide-react'
 import { getRoadEponym } from '../data/roadEponyms'
 import type { HistoricalFeature, HistoricalRecord, SourceRecord } from '../types'
+import { AddressUseEvidencePanel } from './AddressUseEvidencePanel'
 
 const jurisdictionNames = {
   'french-concession': 'French Quarter',
@@ -114,7 +115,7 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
             <dd>{details.historicalSiteNote}</dd>
           </div>
         )}
-        {details.kind === 'landmark' && (
+        {details.kind === 'landmark' && !details.addressUseEvidence?.length && (
           <div>
             <dt>现在用途</dt>
             <dd>{details.currentUse ?? '暂未查到可靠对应'}</dd>
@@ -169,6 +170,8 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
                     : '当时中文名'}</dd>
         </div>
       </dl>
+
+      <AddressUseEvidencePanel evidence={details.addressUseEvidence} />
 
       {details.historicalRecords && details.historicalRecords.length > 0 && (
         <section className="details-sources details-historical-records" aria-labelledby="historical-records-title">

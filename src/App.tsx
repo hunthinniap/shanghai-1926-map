@@ -18,6 +18,8 @@ import { linkHeritageLandmarks, withReviewedHeritageAliases } from './lib/herita
 import { heritageLandmarkLinks } from './data/heritageLandmarkLinks'
 import { reviewedLandmarkIdentities } from './data/reviewedLandmarkIdentities'
 import { applyReviewedLandmarkIdentities } from './lib/reviewedLandmarkIdentities'
+import { applyReviewedAddressUses } from './lib/reviewedAddressUses'
+import { reviewedAddressUses } from './data/reviewedAddressUses'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
 function App() {
@@ -68,7 +70,9 @@ function App() {
         if (!cancelled) {
           setData({
             features: applyReviewedLandmarkIdentities(
-              mergeLandmarkSites(mergeCuratedParkFeatures(features, curatedParks), landmarkSiteLinksWithSources),
+              mergeLandmarkSites(mergeCuratedParkFeatures(
+                applyReviewedAddressUses(features, reviewedAddressUses), curatedParks,
+              ), landmarkSiteLinksWithSources),
               reviewedLandmarkIdentities,
             ),
             jurisdictions,

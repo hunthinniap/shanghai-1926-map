@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import type { HeritageBuildingFeature } from '../lib/heritageBuildings'
 import type { LinkedHeritageBuilding } from '../lib/heritageLandmarkLinks'
 import { HeritageDetailsPanel } from './HeritageDetailsPanel'
+import { reviewedAddressUses } from '../data/reviewedAddressUses'
 
 const heritage: HeritageBuildingFeature = {
   type: 'Feature',
@@ -69,6 +70,23 @@ function field(container: HTMLElement, label: string) {
 }
 
 describe('HeritageDetailsPanel linked historical site', () => {
+  it('shows approved evidence on both primary and secondary historical records in a shared card', () => {
+    const value = structuredClone(linked)
+    const primary = value.landmark.properties
+    for (const key of Object.keys(primary)) if (key.startsWith('current')) delete (primary as unknown as Record<string, unknown>)[key]
+    primary.addressUseEvidence = reviewedAddressUses.find(e => e.expectedSourceRecordIds.includes(1742))!.evidence
+    const secondary = structuredClone(value.landmark)
+    secondary.properties.id = 'secondary'
+    secondary.properties.addressUseEvidence = reviewedAddressUses.find(e => e.expectedSourceRecordIds.includes(381))!.evidence
+    value.landmarks = [value.landmark, secondary]
+    const card = renderCard(value)
+    expect(field(card, '现在用途')).toContain('安康公寓')
+    expect(field(card, '今址用途参考')).toContain('医院协会')
+    expect(card.textContent).toContain('历史原址／原建筑对应待核')
+    expect(card.textContent).not.toContain('暂未查到可靠对应')
+    expect(card.textContent).not.toContain('此历史记录的现用途尚待核实')
+    expect(card.querySelector(`a[href="${primary.addressUseEvidence[0].sources[0].url}"]`)).not.toBeNull()
+  })
   it('shows historical use independently of a modern arts-centre name and keeps its evidence link', () => {
     const feature = structuredClone(heritage)
     feature.properties.name = '西岸艺术中心'

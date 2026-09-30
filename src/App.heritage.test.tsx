@@ -129,6 +129,12 @@ describe('historical-building layer interactions', () => {
         '/data/curated-parks.geojson': emptyCollection,
         '/data/jurisdictions.geojson': emptyCollection,
         '/data/sources.json': [],
+        '/data/shanghai-excellent-historical-buildings/historical-use-categories.json': {
+          schemaVersion: 1,
+          records: Object.fromEntries(loadedHeritageCollection.features.map(feature => [feature.properties.officialId, {
+            category: null, categories: [], status: 'unresolved', historicalName: null, note: 'Test fixture', sources: [],
+          }])),
+        },
       }
       if (!(input in fixtures)) throw new Error(`Unexpected request: ${input}`)
       return { ok: true, json: async () => fixtures[input] }
