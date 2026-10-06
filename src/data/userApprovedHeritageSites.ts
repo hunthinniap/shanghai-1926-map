@@ -327,6 +327,66 @@ export const userApprovedHeritageSiteLinks: HeritageLandmarkLink[] = [
         "url": "https://www.sbc.usst.edu.cn/2023/0908/c14877a305011/page.htm"
       }
     ]
+  },
+  {
+    "id": "user-same-site-c060",
+    "officialId": "sh-fgj-3B024-01",
+    "landmarkFeatureId": "landmark-vs-site-442",
+    "expectedSourceRecordIds": [
+      442,
+      443
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 442,
+        "address": "363 AVENUE HAIG",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=442"
+      },
+      {
+        "sourceRecordId": 443,
+        "address": "363 AVENUE HAIG",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=443"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "中国红十字会第一医院与华山医院院址沿革相合；旧363 AVENUE HAIG与今乌鲁木齐中路12号分别保留，不认定医院历史记录即名录5号楼单体。",
+    "note": "用户分批审定候选C060为同址；原始门牌、历史用途和名录范围分别保留。",
+    "sources": [
+      {
+        "title": "华山医院 · 医院沿革",
+        "url": "https://www.huashan.org.cn/about/1022/index.html"
+      }
+    ]
+  },
+  {
+    "id": "user-same-site-d037",
+    "officialId": "sh-fgj-3C005-01",
+    "landmarkFeatureId": "landmark-vs-site-88",
+    "expectedSourceRecordIds": [
+      88,
+      4112
+    ],
+    "historicalAddresses": [
+      {
+        "sourceRecordId": 88,
+        "address": "211 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=88"
+      },
+      {
+        "sourceRecordId": 4112,
+        "address": "211 AVENUE JOFFRE",
+        "sourceUrl": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4112"
+      }
+    ],
+    "relation": "same-historical-site",
+    "scopeNote": "旧211 AVENUE JOFFRE的霞飞路巡捕房与名录3C005相合；今淮海中路217/233号门牌范围保留，不推定逐门牌一一对应。",
+    "note": "用户分批审定候选D037为同址；原始门牌、历史用途和名录范围分别保留。",
+    "sources": [
+      {
+        "title": "Virtual Shanghai · 霞飞路巡捕房",
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=88"
+      }
+    ]
   }
 ]
 
@@ -491,5 +551,98 @@ export const approvedUnlocatedHeritageSites: ApprovedUnlocatedHeritageSite[] = [
     "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
     "scopeNote": "建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；因该名录项暂缺独立地图点，仍使用VS历史地标参考点。",
     "scopeSourceUrl": "https://brs.russianshanghai.city/architects/m-z/g-b-rabinovich"
+  },
+  {
+    "candidateId": "landmark-vs-site-242__sh-fgj-2C012-01",
+    "row": "C072",
+    "landmarkFeatureId": "landmark-vs-site-242",
+    "expectedSourceRecordIds": [
+      242
+    ],
+    "officialId": "sh-fgj-2C012-01",
+    "officialCode": "2C012",
+    "name": "震旦大学图书馆教学大楼/震旦大学博物馆",
+    "address": "重庆南路280号/重庆南路225号",
+    "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+    "scopeNote": "震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；名录项暂缺独立地图点，运动场坐标保持不变。",
+    "scopeSourceUrl": "https://news.sjtu.edu.cn/cxyj/20230906/187742.html"
+  }
+]
+
+export interface ReviewedContextualHeritageSite {
+  candidateId: string
+  row: string
+  landmarkFeatureId: string
+  expectedSourceRecordIds: number[]
+  officialId: string
+  officialCode: string
+  name: string
+  address: string
+  sourceUrl: string
+  note: string
+  evidenceUrl: string
+}
+
+export const reviewedContextualHeritageSites: ReviewedContextualHeritageSite[] = [
+  {
+    "candidateId": "landmark-vs-site-301__sh-fgj-3C007-01",
+    "row": "C064",
+    "landmarkFeatureId": "landmark-vs-site-301",
+    "expectedSourceRecordIds": [
+      301
+    ],
+    "officialId": "sh-fgj-3C007-01",
+    "officialCode": "3C007",
+    "name": "住宅",
+    "address": "瑞金二路118号",
+    "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+    "note": "淡井庙旧址在永嘉路12号、瑞金二路和永嘉路口，原与瑞金宾馆围墙相邻；宾馆园内留有淡井庙界碑等遗存。3C007为瑞金宾馆3号楼住宅，不能认作淡井庙建筑，也不移动寺庙点位。",
+    "evidenceUrl": "https://www.shobserver.com/wx/detail.do?id=88885"
+  },
+  {
+    "candidateId": "landmark-vs-site-301__sh-fgj-3C008-01",
+    "row": "C065",
+    "landmarkFeatureId": "landmark-vs-site-301",
+    "expectedSourceRecordIds": [
+      301
+    ],
+    "officialId": "sh-fgj-3C008-01",
+    "officialCode": "3C008",
+    "name": "住宅",
+    "address": "瑞金二路118号",
+    "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+    "note": "淡井庙与瑞金宾馆的邻址及园内遗存关系可以记录；3C008为宾馆4号楼住宅，不能把寺庙历史并入该单栋，也不移动寺庙点位。",
+    "evidenceUrl": "https://www.shobserver.com/wx/detail.do?id=88885"
+  },
+  {
+    "candidateId": "landmark-vs-site-13__sh-fgj-2A045-01",
+    "row": "N001",
+    "landmarkFeatureId": "landmark-vs-site-13",
+    "expectedSourceRecordIds": [
+      13,
+      14
+    ],
+    "officialId": "sh-fgj-2A045-01",
+    "officialCode": "2A045",
+    "name": "若瑟堂",
+    "address": "四川南路36号",
+    "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+    "note": "类思小学于1916年设在若瑟堂前北侧，今四川南路小学与教堂同院、同四川南路36号；学校和教堂是不同建筑，VS原点与教堂点相差约513米，暂不把小学点吸附为教堂本体。",
+    "evidenceUrl": "https://zh.wikipedia.org/wiki/洋泾浜圣若瑟堂"
+  },
+  {
+    "candidateId": "landmark-vs-site-1776__sh-fgj-5D051-01",
+    "row": "D051",
+    "landmarkFeatureId": "landmark-vs-site-1776",
+    "expectedSourceRecordIds": [
+      1776
+    ],
+    "officialId": "sh-fgj-5D051-01",
+    "officialCode": "5D051",
+    "name": "住宅",
+    "address": "华山路823、825、827号",
+    "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+    "note": "旧521 AVENUE HAIG的15 Apartments与华山路823—827号海格公寓相距约24米，同为住宅；但旧今门牌及楼名尚无直接桥接。记为用户认可的邻近住宅候选，不强制同址共卡或移动VS点。",
+    "evidenceUrl": "https://www.virtualshanghai.net/data/buildings?ID=1776"
   }
 ]

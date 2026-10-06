@@ -70,6 +70,17 @@ function field(container: HTMLElement, label: string) {
 }
 
 describe('HeritageDetailsPanel linked historical site', () => {
+  it('shows reviewed neighboring-site context without presenting it as a merged building', () => {
+    const hotel = structuredClone(heritage)
+    hotel.properties.officialId = 'sh-fgj-3C007-01'
+    hotel.properties.officialCodeRaw = '3C007'
+    const card = renderCard(undefined, hotel)
+    expect(field(card, '地理／沿革关联（不合并建筑）')).toContain('Virtual Shanghai #301')
+    expect(card.textContent).toContain('淡井庙')
+    expect(card.textContent).not.toContain('同一地点的不同历史阶段')
+    expect(card.querySelector('a[href="https://www.shobserver.com/wx/detail.do?id=88885"]')).not.toBeNull()
+  })
+
   it('shows approved evidence on both primary and secondary historical records in a shared card', () => {
     const value = structuredClone(linked)
     const primary = value.landmark.properties

@@ -14,6 +14,7 @@ const candidatesById = new Map(candidates.map((candidate) => [candidate.candidat
 const mappedOfficialIds = new Set(read('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson')
   .features.map((feature) => feature.properties.officialId))
 const additionalApprovals = frenchReview.decisions.filter((item) => item.decision === 'approve-same-site')
+const contextualDecisions = frenchReview.decisions.filter((item) => item.decision === 'record-context-only')
 const approvals = [...review.candidates, ...additionalApprovals]
 const approved = approvals.map((item) => {
   const originalCandidate = candidatesById.get(item.candidateId)
@@ -31,9 +32,11 @@ const approved = approvals.map((item) => {
       : originalCandidate,
   }
 })
-if (review.candidates.length !== 20 || additionalApprovals.length !== 7
-  || approved.length !== 27 || new Set(approved.map((item) => item.row)).size !== 27
-  || approved.some(({ candidate }) => !candidate)) throw new Error('Approval list does not resolve to 27 unique candidates')
+if (review.candidates.length !== 20 || new Set(approved.map((item) => item.row)).size !== approved.length
+  || approved.some(({ candidate }) => !candidate)
+  || contextualDecisions.some((item) => !candidatesById.has(item.candidateId))) {
+  throw new Error('Reviewed candidates do not resolve to unique source candidates')
+}
 for (let index = 0; index < 20; index += 1) {
   if (approved[index].row !== `C${String(index + 1).padStart(3, '0')}`) {
     throw new Error(`Approval row order changed at ${index + 1}`)
@@ -41,7 +44,7 @@ for (let index = 0; index < 20; index += 1) {
 }
 const located = approved.filter(({ candidate }) => mappedOfficialIds.has(candidate.heritage.officialId))
 const unlocated = approved.filter(({ candidate }) => !mappedOfficialIds.has(candidate.heritage.officialId))
-if (located.length !== 16 || unlocated.length !== 11) throw new Error('Heritage coordinate coverage changed; re-review display policy')
+if (located.length + unlocated.length !== approved.length) throw new Error('Heritage coordinate coverage is incomplete')
 
 const directSources = new Map([
   ['C001', { title: 'Building Russian Shanghai · 修德堂旧址', url: 'https://brs.russianshanghai.city/architects/m-z/a-j-yaron' }],
@@ -52,6 +55,8 @@ const directSources = new Map([
   ['C026', { title: '丽波花园 · 两类住宅沿革', url: 'https://zh.wikipedia.org/wiki/丽波花园' }],
   ['C053', { title: '看看新闻 · 淮海中路1131号门牌沿革', url: 'https://www.kankanews.com/detail/80299RV8n26' }],
   ['C056', { title: '上海理工大学 · 复兴路校区沿革', url: 'https://www.sbc.usst.edu.cn/2023/0908/c14877a305011/page.htm' }],
+  ['C060', { title: '华山医院 · 医院沿革', url: 'https://www.huashan.org.cn/about/1022/index.html' }],
+  ['D037', { title: 'Virtual Shanghai · 霞飞路巡捕房', url: 'https://www.virtualshanghai.net/data/buildings?ID=88' }],
 ])
 const scopeNotes = new Map([
   ['C002', '丽波花园含吴兴路87号东主楼（2D038）及衡山路300弄里弄（4D027），同属住宅群但非同一栋；旧址177 PERSHING保留原文，不推定门牌未变。'],
@@ -65,14 +70,18 @@ const scopeNotes = new Map([
   ['C048', '球场旧址72 ROUTE PAUL LEGENDRE与兴国路72号院落同址；球场属历史场地，不等同名录1M006的宾馆1号楼。现用途待核继续保留。'],
   ['C053', '网球场旧址1131 AVENUE JOFFRE与淮海中路1131号同址；场地用途不等同名录花园住宅本体。'],
   ['C056', '中法工学院与名录3D001属于复兴中路1195号旧校园沿革；406 AVENUE DU ROI ALBERT保留为旧门址线索，不推定单栋相同。'],
+  ['C060', '中国红十字会第一医院与华山医院院址沿革相合；旧363 AVENUE HAIG与今乌鲁木齐中路12号分别保留，不认定医院历史记录即名录5号楼单体。'],
+  ['D037', '旧211 AVENUE JOFFRE的霞飞路巡捕房与名录3C005相合；今淮海中路217/233号门牌范围保留，不推定逐门牌一一对应。'],
 ])
 const unlocatedScopeNotes = new Map([
   ['C010', '名录旧表写秦岭街15号；市房管局2023年慈修庵修缮批复写榛岭街15号。两种原文并存，不擅改官方名录。'],
   ['C036', '建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；因该名录项暂缺独立地图点，仍使用VS历史地标参考点。'],
+  ['C072', '震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；名录项暂缺独立地图点，运动场坐标保持不变。'],
 ])
 const unlocatedScopeSources = new Map([
   ['C010', 'https://fgj.sh.gov.cn/yxlsjzjk/20240201/680e399bdfd8406a8c3fc734071bf847.html'],
   ['C036', 'https://brs.russianshanghai.city/architects/m-z/g-b-rabinovich'],
+  ['C072', 'https://news.sjtu.edu.cn/cxyj/20230906/187742.html'],
 ])
 const groups = new Map()
 for (const item of located) {
@@ -118,6 +127,25 @@ const unlocatedSites = unlocated.map(({ row, candidate }) => ({
   ...(unlocatedScopeSources.has(row) ? { scopeSourceUrl: unlocatedScopeSources.get(row) } : {}),
 }))
 if (unlocatedSites.some((site) => !site.sourceUrl)) throw new Error('Unlocated site is missing official source')
+const contextualSites = contextualDecisions.map((item) => {
+  const candidate = candidatesById.get(item.candidateId)
+  return {
+    candidateId: item.candidateId,
+    row: item.row,
+    landmarkFeatureId: candidate.landmark.featureId,
+    expectedSourceRecordIds: candidate.landmark.sourceRecordIds,
+    officialId: candidate.heritage.officialId,
+    officialCode: candidate.heritage.code,
+    name: candidate.heritage.originalName,
+    address: candidate.heritage.address,
+    sourceUrl: candidate.heritage.sourceReferences.find((url) => url.includes('fgj.sh.gov.cn')),
+    note: item.reason,
+    evidenceUrl: item.sources.find((url) => !url.includes('fgj.sh.gov.cn')),
+  }
+})
+if (contextualSites.some((site) => !site.sourceUrl || !site.evidenceUrl)) {
+  throw new Error('Contextual site is missing official or explanatory source')
+}
 const destination = path.join(root, 'src/data/userApprovedHeritageSites.ts')
 const source = `// Generated from the 2026-09-30 same-site approvals and 2026-10-01 French-concession review.\n`
   + `// These are same-site decisions, not assertions that each VS point is the listed surviving building.\n`
@@ -128,9 +156,14 @@ const source = `// Generated from the 2026-09-30 same-site approvals and 2026-10
   + `  expectedSourceRecordIds: number[]\n  officialId: string\n  officialCode: string\n`
   + `  name: string\n  address: string\n  sourceUrl: string\n  scopeNote?: string\n  scopeSourceUrl?: string\n}\n\n`
   + `export const approvedUnlocatedHeritageSites: ApprovedUnlocatedHeritageSite[] = ${JSON.stringify(unlocatedSites, null, 2)}\n`
+  + `\nexport interface ReviewedContextualHeritageSite {\n`
+  + `  candidateId: string\n  row: string\n  landmarkFeatureId: string\n`
+  + `  expectedSourceRecordIds: number[]\n  officialId: string\n  officialCode: string\n`
+  + `  name: string\n  address: string\n  sourceUrl: string\n  note: string\n  evidenceUrl: string\n}\n\n`
+  + `export const reviewedContextualHeritageSites: ReviewedContextualHeritageSite[] = ${JSON.stringify(contextualSites, null, 2)}\n`
 if (process.argv.includes('--check')) {
   if (fs.readFileSync(destination, 'utf8') !== source) throw new Error('Approved site configuration is stale')
 } else {
   fs.writeFileSync(destination, source)
 }
-console.log(`${process.argv.includes('--check') ? 'Checked' : 'Wrote'} ${links.length} map links (${located.length} approvals) and ${unlocatedSites.length} no-coordinate site annotations.`)
+console.log(`${process.argv.includes('--check') ? 'Checked' : 'Wrote'} ${links.length} map links (${located.length} approvals), ${unlocatedSites.length} no-coordinate site annotations, and ${contextualSites.length} non-merged context records.`)

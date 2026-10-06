@@ -56,12 +56,6 @@ const wikipediaMatches = new Map([
     currentAddress: '四川南路36号',
     currentUseSourceUri: 'https://zh.wikipedia.org/zh-cn/洋泾浜圣若瑟堂',
   }],
-  ['landmark-french-municipal-council-法工部局', {
-    currentUse: '商业 / 办公',
-    currentNameZh: '中环广场（原法公董局）',
-    currentAddress: '淮海中路375号',
-    currentUseSourceUri: wikipediaListPage,
-  }],
   ['landmark-french-municipal-council-conseil-municipal-francais-法工部局', {
     currentUse: '商业 / 办公',
     currentNameZh: '中环广场（原法公董局）',

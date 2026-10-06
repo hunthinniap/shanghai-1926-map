@@ -1,6 +1,6 @@
 import { ExternalLink, MapPin, X } from 'lucide-react'
 import { getRoadEponym } from '../data/roadEponyms'
-import { approvedUnlocatedHeritageSites } from '../data/userApprovedHeritageSites'
+import { approvedUnlocatedHeritageSites, reviewedContextualHeritageSites } from '../data/userApprovedHeritageSites'
 import type { HistoricalFeature, HistoricalRecord, SourceRecord } from '../types'
 import { AddressUseEvidencePanel } from './AddressUseEvidencePanel'
 
@@ -76,6 +76,10 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
     ? approvedUnlocatedHeritageSites.filter((site) => site.landmarkFeatureId === details.id
       && [...site.expectedSourceRecordIds].sort((a, b) => a - b).join(',') === sourceRecordIds)
     : []
+  const contextualHeritageSites = details.kind === 'landmark'
+    ? reviewedContextualHeritageSites.filter((site) => site.landmarkFeatureId === details.id
+      && [...site.expectedSourceRecordIds].sort((a, b) => a - b).join(',') === sourceRecordIds)
+    : []
 
   return (
     <aside className="details-panel" aria-label={`${details.historicalName}详情`}>
@@ -107,6 +111,16 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
               <strong>{site.name} · {site.officialCode}</strong><br />
               {site.address}<br />
               <small>人工审定同址；地图仍使用历史地标参考点，不表示已核定为同一栋建筑。{site.scopeNote ? ` ${site.scopeNote}` : ''}</small>
+            </dd>
+          </div>
+        ))}
+        {contextualHeritageSites.map((site) => (
+          <div className="details-list-wide" key={site.officialId}>
+            <dt>地理／沿革关联（不合并建筑）</dt>
+            <dd>
+              <strong>{site.name} · {site.officialCode}</strong><br />
+              {site.address}<br />
+              <small>{site.note} 历史地标与名录建筑各保留原地图位置。</small>
             </dd>
           </div>
         ))}
@@ -299,6 +313,18 @@ export function DetailsPanel({ feature, sources, onClose }: DetailsPanelProps) {
         {unlocatedHeritageSites.filter((site) => site.scopeSourceUrl).map((site) => (
           <a key={`${site.officialId}-scope`} href={site.scopeSourceUrl} target="_blank" rel="noreferrer">
             <span>上海市房屋管理局 · 门牌复核<small>{site.scopeNote}</small></span>
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        ))}
+        {contextualHeritageSites.map((site) => (
+          <a key={site.officialId} href={site.sourceUrl} target="_blank" rel="noreferrer">
+            <span>上海市优秀历史建筑名录 · {site.officialCode}<small>关联线索；非建筑合并</small></span>
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        ))}
+        {contextualHeritageSites.map((site) => (
+          <a key={`${site.officialId}-evidence`} href={site.evidenceUrl} target="_blank" rel="noreferrer">
+            <span>关联依据 · {site.row}<small>核对邻址、沿革或候选位置</small></span>
             <ExternalLink size={14} aria-hidden="true" />
           </a>
         ))}

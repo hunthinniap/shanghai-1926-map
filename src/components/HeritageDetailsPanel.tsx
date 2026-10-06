@@ -4,6 +4,7 @@ import type { LinkedHeritageBuilding } from '../lib/heritageLandmarkLinks'
 import type { HistoricalRecord } from '../types'
 import { heritageUseLabel, heritageUseStatusLabels } from '../lib/heritageUses'
 import { AddressUseEvidencePanel } from './AddressUseEvidencePanel'
+import { reviewedContextualHeritageSites } from '../data/userApprovedHeritageSites'
 
 interface HeritageDetailsPanelProps {
   feature?: HeritageBuildingFeature
@@ -37,6 +38,8 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
   const details = feature.properties
   const heritageEntries = linked?.heritages?.length ? linked.heritages : [feature]
   const heritageDetails = heritageEntries.map((entry) => entry.properties)
+  const contextualLandmarks = reviewedContextualHeritageSites.filter((site) =>
+    heritageDetails.some((entry) => entry.officialId === site.officialId))
   const historical = linked?.landmark.properties
   const aliases = [...new Set([...(historical?.aliases ?? []), ...(linked?.link.aliases ?? [])])]
   const name = getHeritageBuildingName(details)
@@ -115,6 +118,11 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
         url: properties.currentUseSourceUri, title: '用途资料来源', note: properties.historicalName,
       }] : []),
     ]),
+    ...contextualLandmarks.map((site) => ({
+      url: site.evidenceUrl,
+      title: `关联依据 · ${site.row}`,
+      note: '地理／沿革关联；非建筑合并',
+    })),
   ].filter((source, index, sources) => source.url
     && sources.findIndex((item) => item.url === source.url) === index)
 
@@ -164,6 +172,15 @@ export function HeritageDetailsPanel({ feature, linked, onClose }: HeritageDetai
           <dt>名录编号</dt>
           <dd>{heritageDetails.map((entry) => entry.officialCodeRaw).join(' / ')}</dd>
         </div>
+        {contextualLandmarks.map((site) => (
+          <div className="details-list-wide" key={site.candidateId}>
+            <dt>地理／沿革关联（不合并建筑）</dt>
+            <dd>
+              <strong>Virtual Shanghai #{site.expectedSourceRecordIds.join(' / #')}</strong><br />
+              <small>{site.note} 两处地图位置分别保留。</small>
+            </dd>
+          </div>
+        ))}
         {linked?.link.relation && (linked.link.scopeNote || linked.link.relation !== 'same-listed-building') && (
           <div className="details-list-wide">
             <dt>对应范围</dt>

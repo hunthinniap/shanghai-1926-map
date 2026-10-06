@@ -2,18 +2,14 @@
 
 按本项目采用的 [1920 年法租界卫生区界](../../public/data/jurisdictions.geojson) 对 Virtual Shanghai 地标**参考点**作点在面内筛选；并非逐栋地籍核定。候选地标的旧地址与名录地址仍须分别核查，界线上或坐标有偏移的记录可能遗漏。原编号沿用[总清单](2026-09-30-heritage-match-queue.md)，因此编号不连续。
 
-共 **56 对待判断**：复杂线索 9、同名但点位冲突 7、仅近邻／证据不足 40。另列本轮排除 6 对、此前暂缓 21 对供复核；原已采用 64 对、本轮同址确认／改配 13 对，均不重复列出。
+共 **45 对待判断**：复杂线索 5、同名但点位冲突 2、仅近邻／证据不足 38。另列不合并 10 对、非共卡关联 4 对、此前暂缓 21 对；原已采用 64 对、近两轮同址确认／改配 16 对，均不重复列出。
 
 ## A. 待判断：复杂线索
 
 | 编号 | Virtual Shanghai 地标 | 历史地址 | 优秀历史建筑名录 | 名录地址 | 点距（米） | 线索／疑点 | 你的结论 |
 |---|---|---|---|---|---:|---|---|
-| C060 | [VS 442/443: Chinese Red Cross Hospital No. 1 / 中國紅十字會第一醫院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=442) | #442 363 AVENUE HAIG；#443 363 AVENUE HAIG | [3B024: 中国红十字会医院 / 华山医院](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 乌鲁木齐中路12号5号楼 | 129 | 门牌范围交叠待核；地标含多条源记录；建筑群／楼栋范围待核 | 待你判断 |
 | C062 | [VS 479/480: Ball Game Playground / 球場](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=479) | #479 72 ROUTE PAUL LEGENDRE；#480 72 ROUTE PAUL LEGENDRE | [3M016: 住宅 / 兴国宾馆2号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 兴国路72号 | 136 | 旧路名映射＋门牌相同（未独立验证门牌沿用）；地标含多条源记录；现用途持久待核；同一VS另有2候选 | 待你判断 |
 | C063 | [VS 479/480: Ball Game Playground / 球場](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=479) | #479 72 ROUTE PAUL LEGENDRE；#480 72 ROUTE PAUL LEGENDRE | [3M017: 住宅 / 兴国宾馆6号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 兴国路72号 | 136 | 旧路名映射＋门牌相同（未独立验证门牌沿用）；地标含多条源记录；现用途持久待核；同一VS另有2候选 | 待你判断 |
-| C064 | [VS 301: Danjing Temple / 淡井廟](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=301) | #301 12-A ROUTE HERVE DE SIEYES | [3C007: 住宅 / 瑞金宾馆3号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 瑞金二路118号 | 176 | 门牌范围交叠待核；旧研究仅证同址；同一VS另有1候选 | 待你判断 |
-| C065 | [VS 301: Danjing Temple / 淡井廟](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=301) | #301 12-A ROUTE HERVE DE SIEYES | [3C008: 住宅 / 瑞金宾馆4号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 瑞金二路118号 | 176 | 门牌范围交叠待核；旧研究仅证同址；同一VS另有1候选 | 待你判断 |
-| C072 | [VS 242: Aurora University - Sports Field / 震旦大學運動場](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=242) | #242 280 AVENUE DUBAIL | [2C012: 震旦大学图书馆教学大楼/震旦大学博物馆 / 第二医科大学十二号大楼/昆虫研究所](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 重庆南路280号/重庆南路225号 | 无坐标 | 门牌范围交叠待核；名录暂无可用坐标；旧研究仅证同址；建筑群／楼栋范围待核 | 待你判断 |
 | C073 | [VS 392: Gresham Apartments](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=392) | #392 1228 AVENUE JOFFRE | [5D095: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 淮海中路 1222-1238号 （双号） | 无坐标 | 已有今址文字相合；名录暂无可用坐标；同一VS另有1候选 | 待你判断 |
 | C086 | [VS 4108: Foch Police Station (Poste Foch) / 巡捕房](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4108) | #4108 1307 AVENUE JOFFRE | [2D005: 皇家公寓 / 淮海大楼、美美百货](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海中路1300-1326号 | 57 | 旧路名映射＋门牌相同（未独立验证门牌沿用）；该名录项已有其他采用关联；同一VS另有1候选；同一名录另有1候选 | 待你判断 |
 | C088 | [VS 455: Culty Dairy Company](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=455) | #455 1567/1569 AVENUE JOFFRE | [3D009: 林肯公寓 / 曙光公寓](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 淮海中路1554-1568号、1562弄2-5号 | 163 | 门牌范围交叠待核；旧研究仅证同址；建筑群／楼栋范围待核；该名录项已有其他采用关联；同一名录另有1候选 | 待你判断 |
@@ -24,13 +20,8 @@
 
 | 编号 | Virtual Shanghai 地标 | 历史地址 | 优秀历史建筑名录 | 名录地址 | 点距（米） | 线索／疑点 | 你的结论 |
 |---|---|---|---|---|---:|---|---|
-| N001 | [VS 13/14: Leisi Primary School / 私立類思小學](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=13) | #13 36 RUE MONTAUBAN；#14 36 RUE MONTAUBAN | [2A045: 若瑟堂](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 四川南路36号 | 513 | 仅旧研究今名相合（不能单独证身份）；已有今址文字相合；地标含多条源记录；今名不能单独证同栋；旧自动匹配不能当证据；点位相距超过250米；同一VS另有2候选 | 待你判断 |
-| N007 | [VS 70: Bank of China / 中國銀行](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=70) | #70 107/117 RUE MARCO POLO | [2B003: 中国银行 / 中国工商银行](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 南京西路801号 | 1252 | 历史名规范化相合；点位相距超过250米；同一VS另有1候选；同一名录另有3候选 | 待你判断 |
-| N008 | [VS 70: Bank of China / 中國銀行](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=70) | #70 107/117 RUE MARCO POLO | [1A007: 中国银行 / 中国银行上海分行](https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html) | 中山东一路23号 | 1864 | 历史名规范化相合；点位相距超过250米；同一VS另有1候选；同一名录另有3候选 | 待你判断 |
-| N014 | [VS 355: Hongqiao Nursing Home / 虹橋療養院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=355) | #355 992 AVENUE JOFFRE | [4M036: 虹桥疗养院 / 上海血液中心](https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html) | 伊犁路2号 | 5291 | 历史名规范化相合；旧研究仅证同址；点位相距超过250米；同一VS另有1候选 | 待你判断 |
 | N017 | [VS 13/14: Leisi Primary School / 私立類思小學](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=13) | #13 36 RUE MONTAUBAN；#14 36 RUE MONTAUBAN | [3J001: 天主堂 / 南张安老院](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 闵行区七莘路9号桥 | 16122 | 历史名规范化相合；地标含多条源记录；旧自动匹配不能当证据；点位相距超过250米；同一VS另有2候选；同一名录另有1候选 | 待你判断 |
 | N020 | [VS 13/14: Leisi Primary School / 私立類思小學](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=13) | #13 36 RUE MONTAUBAN；#14 36 RUE MONTAUBAN | [5S002: 耶稣圣心堂、宫保桥天主堂 / 天主堂](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 嘉定镇中下塘街99号 | 28563 | 历史名规范化相合；地标含多条源记录；旧自动匹配不能当证据；点位相距超过250米；同一VS另有2候选；同一名录另有1候选 | 待你判断 |
-| N025 | [VS 85: French Municipal Council / 法工部局](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=85) | #85 2 RUE BLUNTSCHLI | [2C001: 法公董局 / 综合办公楼](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海中路381号 | 450 | 仅旧研究今名相合（不能单独证身份）；已有今址文字相合；今名不能单独证同栋；旧自动匹配不能当证据；点位相距超过250米；该名录项已有其他采用关联；同一名录另有1候选 | 待你判断 |
 
 ## C. 待判断：仅近邻／证据不足
 
@@ -55,11 +46,9 @@
 | D026 | [VS 401: Shanghai Telephone Company / 上海電話公司](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=401) | #401 57 ROUTE PICHON | [5D081: 南区电话局汾阳路分局 / 办公](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 汾阳路63号 | 16 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并 | 待你判断 |
 | D027 | [VS 430: Embassy of France - Commercial Attaché / 法大使館商務参賛](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=430) | #430 1449 AVENUE JOFFRE | [2D006: 花园住宅 / 法国领事馆](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海中路1431号 | 16 | 无名称、地址或来源交叉证据；现用途持久待核；仅距离近，不能据此合并 | 待你判断 |
 | D034 | [VS 259: Shanghai Office of the International Relief Committee / 國際救済委員會上海事務所](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=259) | #259 31 RUE CORNEILLE | [5A027: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 皋兰路28号 | 19 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并 | 待你判断 |
-| D037 | [VS 88/4112: Lafayette Police Station (Poste Lafayette) / 公董局巡捕房](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=88) | #88 211 AVENUE JOFFRE；#4112 211 AVENUE JOFFRE | [3C005: 法租界霞飞路巡捕房 / 商场](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 淮海中路217、233号，嵩山路65、67号 | 19 | 无名称、地址或来源交叉证据；地标含多条源记录；仅距离近，不能据此合并 | 待你判断 |
 | D038 | [VS 41: Fuzi Hospital Dispensary / 父子醫院門診部](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=41) | #41 64 RUE DE NINGPO | [2A054: 中法学堂 / 光明中学](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海东路70号 | 20 | 无名称、地址或来源交叉证据；建筑群／楼栋范围待核；仅距离近，不能据此合并；同一名录另有2候选 | 待你判断 |
 | D039 | [VS 42: Chunzai Hospital / 春在醫院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=42) | #42 66 RUE DE NINGPO | [2A054: 中法学堂 / 光明中学](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海东路70号 | 20 | 无名称、地址或来源交叉证据；建筑群／楼栋范围待核；仅距离近，不能据此合并；同一名录另有2候选 | 待你判断 |
 | D042 | [VS 309/311: Jiangsu Provincial Junior High School / 江蘇省立上海中學第二部](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=309) | #309 95 AVENUE VICTOR EMMANUEL III；#311 95 AVENUE VICTOR EMMANUEL III | [3C016: 住宅 / 上海文艺出版社等](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 绍兴路74号 | 22 | 无名称、地址或来源交叉证据；地标含多条源记录；现用途持久待核；仅距离近，不能据此合并 | 待你判断 |
-| D051 | [VS 1776: 15 Apartments](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1776) | #1776 521 AVENUE HAIG | [5D051: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 华山路823、825、827号 | 24 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并 | 待你判断 |
 | D052 | [VS 4: Customs Examination Shed](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4) | #4 24 QUAI DE FRANCE | [4A025: 太古洋行 / 丰华大楼/上海工业发展基金会](https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html) | 中山东二路22号 | 24 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并；同一名录另有2候选 | 待你判断 |
 | D053 | [VS 452: Peter Pan School](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=452) | #452 133 ROUTE GUSTAVE BOISSEZON | [5D021: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 复兴西路147号 | 24 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并 | 待你判断 |
 | D059 | [VS 4108: Foch Police Station (Poste Foch) / 巡捕房](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4108) | #4108 1307 AVENUE JOFFRE | [5D004: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 淮海中路1323号 | 27 | 无名称、地址或来源交叉证据；仅距离近，不能据此合并；同一VS另有1候选 | 待你判断 |
@@ -81,7 +70,7 @@
 
 ## D. 本轮不合并
 
-C023、C031、C035 与 C061 有独立反证；C037、C057 为用户明确排除。
+包括旧址门牌指向不同道路、机构曾迁址和保护建筑为相邻独立楼栋等情况；C037、C057 为用户明确排除。
 
 | 编号 | Virtual Shanghai 地标 | 历史地址 | 优秀历史建筑名录 | 名录地址 | 点距（米） | 线索／疑点 | 你的结论 |
 |---|---|---|---|---|---:|---|---|
@@ -92,7 +81,24 @@ C023、C031、C035 与 C061 有独立反证；C037、C057 为用户明确排除�
 | C057 | [VS 381: Jihua Hospital / 濟華醫院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=381) | #381 807 ROUTE RATARD | [2B021: 景华新邨](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 巨鹿路820弄（1-51号），巨鹿路800-818号、822-836号（双号） | 112 | 用户明确判定济华医院与景华新邨不可合并。 | 不合并 |
 | C061 | [VS 263: Aurora College for Women / 震旦女子文理學院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=263) | #263 181 ROUTE BOURGEAT | [3C002: 泰山公寓 / 泰山大楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 淮海中路622弄 | 132 | 蒲石路181号是震旦女校早期门址；档案研究另指出1939年落成的女子学院教学楼在今长乐路181号西首隔壁，原校区后来涉及向明中学与淮海中路622弄7号上海社科院。3C002泰山公寓在622弄弄口，是不同楼体，不可由同一弄址推断为女校。旧181号不应机械等同今长乐路181号。 | 不合并 |
 
-## E. 曾审阅暂缓（可复核）
+| N007 | [VS 70: Bank of China / 中國銀行](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=70) | #70 107/117 RUE MARCO POLO | [2B003: 中国银行 / 中国工商银行](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 南京西路801号 | 1252 | VS70旧址107/117 RUE MARCO POLO在今龙门路一带；2B003中国银行旧楼在南京西路801号。仅机构名称相同，非同一地块。 | 不合并 |
+| N008 | [VS 70: Bank of China / 中國銀行](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=70) | #70 107/117 RUE MARCO POLO | [1A007: 中国银行 / 中国银行上海分行](https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html) | 中山东一路23号 | 1864 | VS70旧址107/117 RUE MARCO POLO在今龙门路一带；1A007中国银行大楼在中山东一路23号。银行分支可同名，但不能跨街区合并成同一建筑。 | 不合并 |
+| N014 | [VS 355: Hongqiao Nursing Home / 虹橋療養院](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=355) | #355 992 AVENUE JOFFRE | [4M036: 虹桥疗养院 / 上海血液中心](https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html) | 伊犁路2号 | 5291 | VS355为旧992 AVENUE JOFFRE，即今淮海中路966号院区；4M036为伊犁路2号虹桥疗养院另一院址，相距约5.3公里。同名机构沿革不能当同址。 | 不合并 |
+| N025 | [VS 85: French Municipal Council / 法工部局](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=85) | #85 2 RUE BLUNTSCHLI | [2C001: 法公董局 / 综合办公楼](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 淮海中路381号 | 450 | VS85旧2 RUE BLUNTSCHLI属今济南路，不能配到淮海中路381号2C001；后者已有旧375 AVENUE JOFFRE的VS169同址链接。VS85原自动现用途错误引用了后者，须撤回。 | 不合并 |
+
+
+## E. 地理／沿革关联或邻近候选（不共卡）
+
+这些线索会出现在历史地标卡片中，但不会移动原始点位或把两个建筑写成同一栋。
+
+| 编号 | Virtual Shanghai 地标 | 历史地址 | 优秀历史建筑名录 | 名录地址 | 点距（米） | 线索／疑点 | 你的结论 |
+|---|---|---|---|---|---:|---|---|
+| C064 | [VS 301: Danjing Temple / 淡井廟](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=301) | #301 12-A ROUTE HERVE DE SIEYES | [3C007: 住宅 / 瑞金宾馆3号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 瑞金二路118号 | 176 | 淡井庙旧址在永嘉路12号、瑞金二路和永嘉路口，原与瑞金宾馆围墙相邻；宾馆园内留有淡井庙界碑等遗存。3C007为瑞金宾馆3号楼住宅，不能认作淡井庙建筑，也不移动寺庙点位。 | 已记关联／候选（不共卡） |
+| C065 | [VS 301: Danjing Temple / 淡井廟](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=301) | #301 12-A ROUTE HERVE DE SIEYES | [3C008: 住宅 / 瑞金宾馆4号楼](https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html) | 瑞金二路118号 | 176 | 淡井庙与瑞金宾馆的邻址及园内遗存关系可以记录；3C008为宾馆4号楼住宅，不能把寺庙历史并入该单栋，也不移动寺庙点位。 | 已记关联／候选（不共卡） |
+| N001 | [VS 13/14: Leisi Primary School / 私立類思小學](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=13) | #13 36 RUE MONTAUBAN；#14 36 RUE MONTAUBAN | [2A045: 若瑟堂](https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html) | 四川南路36号 | 513 | 类思小学于1916年设在若瑟堂前北侧，今四川南路小学与教堂同院、同四川南路36号；学校和教堂是不同建筑，VS原点与教堂点相差约513米，暂不把小学点吸附为教堂本体。 | 已记关联／候选（不共卡） |
+| D051 | [VS 1776: 15 Apartments](https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1776) | #1776 521 AVENUE HAIG | [5D051: 住宅](https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html) | 华山路823、825、827号 | 24 | 旧521 AVENUE HAIG的15 Apartments与华山路823—827号海格公寓相距约24米，同为住宅；但旧今门牌及楼名尚无直接桥接。记为用户认可的邻近住宅候选，不强制同址共卡或移动VS点。 | 已记关联／候选（不共卡） |
+
+## F. 曾审阅暂缓（可复核）
 
 | 编号 | Virtual Shanghai 地标 | 历史地址 | 优秀历史建筑名录 | 名录地址 | 点距（米） | 线索／疑点 | 你的结论 |
 |---|---|---|---|---|---:|---|---|

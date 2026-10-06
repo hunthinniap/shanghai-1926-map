@@ -4462,7 +4462,7 @@ export const heritageLandmarkLinks: HeritageLandmarkLink[] = [
     ],
     "relation": "same-listed-building",
     "scopeNote": "对应名录所列建筑；原始门牌、各来源年代与历史用途分别保留。",
-    "note": "法公董局在霞飞路375号的第二代办公楼与淮海中路381号名录对象相合；保留375／381门牌记载差异，区别于VS85原白尔部路旧局址。",
+    "note": "法公董局在霞飞路375号的第二代办公楼与淮海中路381号名录对象相合；保留375／381门牌记载差异，区别于VS85旧2 RUE BLUNTSCHLI（今济南路）办公门址。",
     "sources": [
       {
         "title": "建筑名称与地址沿革资料",

@@ -20,8 +20,11 @@ const candidates = [...base, ...supplemental]
 const firstApprovals = read(path.join(root, 'research/rechecks/2026-09-30-heritage-same-site/approvals.json')).candidates
 const frenchReview = read(path.join(root, 'research/rechecks/2026-10-01-french-concession-review.json')).decisions
 const approvals = [...firstApprovals, ...frenchReview.filter((item) => item.decision === 'approve-same-site')]
-const approvedSameSite = new Map(approvals.map(({ row, candidateId, correctedHeritage }) => [candidateId, { row, correctedHeritage }]))
+const approvedSameSite = new Map(approvals.map(({ row, candidateId, correctedHeritage, reason }) =>
+  [candidateId, { row, correctedHeritage, reason }]))
 const frenchExcluded = new Map(frenchReview.filter((item) => item.decision.startsWith('reject-'))
+  .map((item) => [item.candidateId, item]))
+const frenchContextOnly = new Map(frenchReview.filter((item) => item.decision === 'record-context-only')
   .map((item) => [item.candidateId, item]))
 if (new Set(candidates.map((candidate) => candidate.candidateId)).size !== candidates.length) {
   throw new Error('Duplicate candidate ID')
@@ -31,7 +34,7 @@ const held = candidates.filter((candidate) => decisions.has(candidate.candidateI
   && !decisions.get(candidate.candidateId).decision.startsWith('accept-'))
 const pending = candidates.filter((candidate) => !decisions.has(candidate.candidateId))
 const outstanding = pending.filter((candidate) => !approvedSameSite.has(candidate.candidateId)
-  && !frenchExcluded.has(candidate.candidateId))
+  && !frenchExcluded.has(candidate.candidateId) && !frenchContextOnly.has(candidate.candidateId))
 const acceptedLandmarks = new Set(accepted.map((candidate) => candidate.landmark.featureId))
 const acceptedHeritage = new Set(accepted.map((candidate) => candidate.heritage.officialId))
 const frenchBoundary = read(path.join(root, 'public/data/jurisdictions.geojson')).features
@@ -142,13 +145,16 @@ function rows(list, prefix, includeHoldReason = false, predicate = () => true) {
     const official = link(`${candidate.heritage.code}: ${officialName(candidate)}`, officialUrl(candidate))
     const approval = approvedSameSite.get(candidate.candidateId)
     const exclusion = frenchExcluded.get(candidate.candidateId)
+    const context = frenchContextOnly.get(candidate.candidateId)
     if (approval && approval.row !== id) throw new Error(`Approved row moved: ${approval.row} became ${id}`)
     if (exclusion && exclusion.row !== id) throw new Error(`Excluded row moved: ${exclusion.row} became ${id}`)
-    const note = exclusion ? exclusion.reason : approval?.correctedHeritage
+    if (context && context.row !== id) throw new Error(`Context row moved: ${context.row} became ${id}`)
+    const note = exclusion ? exclusion.reason : context ? context.reason : approval?.correctedHeritage
       ? `原候选与34 EDWARD VII ROAD不同址；实际对应${approval.correctedHeritage.code} ${approval.correctedHeritage.address}`
+      : approval?.reason ? approval.reason
       : includeHoldReason ? decision.reason
         : [clues(candidate), warnings(candidate)].filter((part) => part !== '—').join('；')
-    const status = exclusion ? '不合并' : approval?.correctedHeritage
+    const status = exclusion ? '不合并' : context ? '已记关联／候选（不共卡）' : approval?.correctedHeritage
       ? `原候选不合并；改配 ${approval.correctedHeritage.code}`
       : approval
         ? candidate.heritage.coordinate ? '已确认同址（共卡）' : '已确认同址（名录点待核）'
@@ -166,7 +172,7 @@ const output = [
   '',
   '初稿日期：2026-09-30；2026-10-01 更新法租界审定。根据 2026-09-19 的 498 对初筛、2026-09-20 的 19 对补充及分轮人工审阅生成；这是**判定工作单，不是已确认对应表**。数据冻结后新增的证据未自动改变其他候选的结论。',
   '',
-  `总候选 **${candidates.length} 对**：此前已采用 ${accepted.length}、曾审阅暂缓 ${held.length}、2026-09-30 同址确认 19 对并将 C020 改配、2026-10-01 法租界同址确认 7 对／排除 6 对、仍待判断 ${outstanding.length}。复杂线索组 ${complex.length} 对，同名但点位冲突 ${locationConflict.length}、仅近邻／证据不足 ${distanceOnly.length}。`,
+  `总候选 **${candidates.length} 对**：此前已采用 ${accepted.length}、曾审阅暂缓 ${held.length}、2026-09-30 同址确认 19 对并将 C020 改配、法租界续审新增同址确认 ${frenchReview.filter((item) => item.decision === 'approve-same-site').length} 对／关联线索 ${frenchContextOnly.size} 对／不合并 ${frenchExcluded.size} 对、仍待判断 ${outstanding.length}。复杂线索组 ${complex.length} 对，同名但点位冲突 ${locationConflict.length}、仅近邻／证据不足 ${distanceOnly.length}。`,
   '',
   '回复时可写“C001 同栋／同址／不合并／待查”这样的编号；“同址”表示可放在同一卡片并分别记录历史时期，但**不宣称现存楼体就是原建筑**。旧路名映射加同号只是线索，不自动证明门牌始终未变。点距是两个来源参考点距离，不是两栋楼的测绘误差。若行内提示已有其他采用关联，须先审查竞争关系。',
   '',
@@ -179,14 +185,14 @@ const output = [
   header,
   ...rows(complex, 'C'),
   '',
-  `## B. 尚未审阅：名称相近但位置冲突（${locationConflict.length} 对）`,
+  `## B. 名称相近但位置冲突（原候选 ${locationConflict.length} 对）`,
   '',
   '此组**不建议仅凭名称批准**，应先查迁址、同名异楼或错误坐标。',
   '',
   header,
   ...rows(locationConflict, 'N'),
   '',
-  `## C. 尚未审阅：仅近邻／证据不足（${distanceOnly.length} 对）`,
+  `## C. 仅近邻／证据不足（原候选 ${distanceOnly.length} 对）`,
   '',
   '此组大多由空间距离进入候选池，**默认不合并**；列出是为了完整性，除非另有独立历史来源。',
   '',
@@ -205,7 +211,7 @@ const output = [
   '- 候选全集：[初筛 candidates.json](2026-09-19-heritage-landmark-links/candidates.json)、[补充 supplemental-candidates.json](2026-09-20-heritage-card-review/supplemental-candidates.json)。',
   '- 人工结论：[第一轮](2026-09-19-heritage-landmark-links/second-review.json)、[第二轮](2026-09-19-heritage-landmark-links/continuation-notes/review.json)、[第三轮](2026-09-20-heritage-card-review/review.json)。后轮对同一候选有明确覆核时，以后轮为准。',
   '- 本次同址确认及用户补充资料：[approvals.json](2026-09-30-heritage-same-site/approvals.json)。原候选 C001–C019 中 9 对有名录地图点，10 对仅有名录文字记录；后者不得凭历史地标点伪造名录楼栋坐标。C020 经核对改配有名录地图点的 3A005。',
-  '- 法租界本轮结论与纠错：[review.json](2026-10-01-french-concession-review.json)。C023、C031、C035 与 C061 存在独立地址或楼栋反证，未按概括同意强行合并；C037、C057 按用户明确意见排除。',
+  '- 法租界分轮结论与纠错：[review.json](2026-10-01-french-concession-review.json)。有地址／楼栋反证的候选不因概括同意而强行合并；同院不同栋及仅近邻线索作为非几何关联保留，避免移动历史地标点。',
   '- **C020 纠错**：VS #545 原址 34 EDWARD VII ROAD 对应延安东路34号的大北电报新楼（3A005），不是中山东一路7号的大北电报旧楼（2A004）。同一公司曾使用两栋不同楼；参见 [Virtual Shanghai #545](https://www.virtualshanghai.net/data/buildings?ID=545)、[市房管局第三批名录](https://fgj.sh.gov.cn/yxlsjz1/20200331/2447d47b3e2947bfba7c64ed04a758a7.html)、[上海市政府文旅介绍](https://english.shanghai.gov.cn/en-CultureHeritage/20251028/ed891dffdfb14193ad6368aad5aaf5ad.html)。',
   '- 每个名称链接指向 VS 原条目或市房管局名录页。表格中的线索是**原自动筛选的理由**；人工审定行以状态与审定理由为准。未重新逐一检索其余候选。',
   '',
@@ -219,41 +225,57 @@ const frenchHeld = held.filter(inFrenchConcession)
 const frenchAccepted = accepted.filter(inFrenchConcession)
 const frenchApproved = pending.filter((candidate) => approvedSameSite.has(candidate.candidateId) && inFrenchConcession(candidate))
 const frenchNewExcluded = pending.filter((candidate) => frenchExcluded.has(candidate.candidateId) && inFrenchConcession(candidate))
+const frenchContext = pending.filter((candidate) => frenchContextOnly.has(candidate.candidateId) && inFrenchConcession(candidate))
+const isPendingFrench = (candidate) => inFrenchConcession(candidate)
+  && !approvedSameSite.has(candidate.candidateId) && !frenchExcluded.has(candidate.candidateId)
+  && !frenchContextOnly.has(candidate.candidateId)
 const frenchOutput = [
   '# 法租界内：地标 × 优秀历史建筑候选',
   '',
   '按本项目采用的 [1920 年法租界卫生区界](../../public/data/jurisdictions.geojson) 对 Virtual Shanghai 地标**参考点**作点在面内筛选；并非逐栋地籍核定。候选地标的旧地址与名录地址仍须分别核查，界线上或坐标有偏移的记录可能遗漏。原编号沿用[总清单](2026-09-30-heritage-match-queue.md)，因此编号不连续。',
   '',
-  `共 **${frenchOutstanding.length} 对待判断**：复杂线索 ${frenchOutstanding.filter((candidate) => candidate.classification === 'complex-site-review').length}、同名但点位冲突 ${frenchOutstanding.filter((candidate) => candidate.classification === 'name-match-location-conflict').length}、仅近邻／证据不足 ${frenchOutstanding.filter((candidate) => candidate.classification === 'insufficient-evidence').length}。另列本轮排除 ${frenchNewExcluded.length} 对、此前暂缓 ${frenchHeld.length} 对供复核；原已采用 ${frenchAccepted.length} 对、本轮同址确认／改配 ${frenchApproved.length} 对，均不重复列出。`,
+  `共 **${frenchOutstanding.length} 对待判断**：复杂线索 ${frenchOutstanding.filter((candidate) => candidate.classification === 'complex-site-review').length}、同名但点位冲突 ${frenchOutstanding.filter((candidate) => candidate.classification === 'name-match-location-conflict').length}、仅近邻／证据不足 ${frenchOutstanding.filter((candidate) => candidate.classification === 'insufficient-evidence').length}。另列不合并 ${frenchNewExcluded.length} 对、非共卡关联 ${frenchContext.length} 对、此前暂缓 ${frenchHeld.length} 对；原已采用 ${frenchAccepted.length} 对、近两轮同址确认／改配 ${frenchApproved.length} 对，均不重复列出。`,
   '',
   '## A. 待判断：复杂线索',
   '',
   header,
-  ...rows(complex, 'C', false, (candidate) => inFrenchConcession(candidate)
-    && !approvedSameSite.has(candidate.candidateId) && !frenchExcluded.has(candidate.candidateId)),
+  ...rows(complex, 'C', false, isPendingFrench),
   '',
   '## B. 待判断：同名但点位冲突',
   '',
   '这一组不能仅凭同名合并，应先确认是否迁址或坐标错配。',
   '',
   header,
-  ...rows(locationConflict, 'N', false, inFrenchConcession),
+  ...rows(locationConflict, 'N', false, isPendingFrench),
   '',
   '## C. 待判断：仅近邻／证据不足',
   '',
   '默认不合并；需要独立历史来源才能升级。',
   '',
   header,
-  ...rows(distanceOnly, 'D', false, inFrenchConcession),
+  ...rows(distanceOnly, 'D', false, isPendingFrench),
   '',
   '## D. 本轮不合并',
   '',
-  'C023、C031、C035 与 C061 有独立反证；C037、C057 为用户明确排除。',
+  '包括旧址门牌指向不同道路、机构曾迁址和保护建筑为相邻独立楼栋等情况；C037、C057 为用户明确排除。',
   '',
   header,
   ...rows(complex, 'C', false, (candidate) => inFrenchConcession(candidate) && frenchExcluded.has(candidate.candidateId)),
   '',
-  '## E. 曾审阅暂缓（可复核）',
+  ...rows(locationConflict, 'N', false, (candidate) => inFrenchConcession(candidate) && frenchExcluded.has(candidate.candidateId)),
+  '',
+  ...rows(distanceOnly, 'D', false, (candidate) => inFrenchConcession(candidate) && frenchExcluded.has(candidate.candidateId)),
+  '',
+  '## E. 地理／沿革关联或邻近候选（不共卡）',
+  '',
+  '这些线索会出现在历史地标卡片中，但不会移动原始点位或把两个建筑写成同一栋。',
+  '',
+  header,
+  ...rows(complex, 'C', false, (candidate) => inFrenchConcession(candidate) && frenchContextOnly.has(candidate.candidateId)),
+  ...rows(locationConflict, 'N', false, (candidate) => inFrenchConcession(candidate) && frenchContextOnly.has(candidate.candidateId)),
+  ...rows(distanceOnly, 'D', false, (candidate) => inFrenchConcession(candidate) && frenchContextOnly.has(candidate.candidateId)),
+  '',
+  '## F. 曾审阅暂缓（可复核）',
   '',
   header,
   ...rows(held, 'H', true, inFrenchConcession),

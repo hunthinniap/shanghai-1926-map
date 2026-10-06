@@ -1,6 +1,7 @@
+import { readFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
-import type { HistoricalFeature } from '../types'
+import type { HistoricalFeature, HistoricalFeatureCollection } from '../types'
 import { DetailsPanel } from './DetailsPanel'
 import { reviewedAddressUses } from '../data/reviewedAddressUses'
 
@@ -24,6 +25,16 @@ const baseFeature = {
 } satisfies HistoricalFeature
 
 describe('DetailsPanel historical records', () => {
+  it('shows nearby or same-courtyard evidence without claiming a shared building', () => {
+    const historical = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    const school = historical.features.find((feature) => feature.properties.id === 'landmark-vs-site-13')!
+    const markup = renderToStaticMarkup(<DetailsPanel feature={school} sources={[]} onClose={() => undefined} />)
+    expect(markup).toContain('地理／沿革关联（不合并建筑）')
+    expect(markup).toContain('若瑟堂 · 2A045')
+    expect(markup).toContain('学校和教堂是不同建筑')
+    expect(markup).not.toContain('同址优秀历史建筑（名录点待核）')
+  })
+
   it('replaces the unknown-use placeholder with a qualified address reference, not a confirmed use', () => {
     const entry = reviewedAddressUses.find(e => e.expectedSourceRecordIds.includes(440))!
     const feature = { ...baseFeature, properties: { ...baseFeature.properties, addressUseEvidence: entry.evidence } }
