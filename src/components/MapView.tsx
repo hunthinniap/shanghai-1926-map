@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { metroEnabled } from '../config'
 import maplibregl, {
   AttributionControl,
   LngLatBounds,
@@ -55,9 +56,11 @@ const interactiveLayers = [
   'historical-park-label',
   'historical-park-curated-hit',
   'historical-park-curated-label',
-  'historical-subway-station-hit',
-  'historical-subway-station',
-  'historical-subway-station-label',
+  ...(metroEnabled ? [
+    'historical-subway-station-hit',
+    'historical-subway-station',
+    'historical-subway-station-label',
+  ] : []),
   'heritage-building-hit',
   'heritage-building-point',
   'heritage-building-label',
@@ -172,7 +175,7 @@ function setLandmarkVisibility(map: Map, visible: boolean) {
 }
 
 function setSubwayVisibility(map: Map, visible: boolean) {
-  const visibility = visible ? 'visible' : 'none'
+  const visibility = metroEnabled && visible ? 'visible' : 'none'
   subwayLayers.forEach((layerId) => {
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visibility)
   })
@@ -450,55 +453,59 @@ function addHistoricalLayers(
     },
   })
   map.addSource('historical-features', { type: 'geojson', data: features, promoteId: 'id', attribution: heritageAttribution })
-  map.addSource('metro-lines', { type: 'geojson', data: assetUrl('data/metro-lines.geojson') })
-  map.addSource('metro-stations', { type: 'geojson', data: assetUrl('data/metro-stations.geojson') })
+  if (metroEnabled) {
+    map.addSource('metro-lines', { type: 'geojson', data: assetUrl('data/metro-lines.geojson') })
+    map.addSource('metro-stations', { type: 'geojson', data: assetUrl('data/metro-stations.geojson') })
+  }
   map.addSource('selected-feature', {
     type: 'geojson',
     data: { type: 'FeatureCollection', features: [] },
   })
-  map.addSource('selected-metro-station', {
-    type: 'geojson',
-    data: { type: 'FeatureCollection', features: [] },
-  })
+  if (metroEnabled) {
+    map.addSource('selected-metro-station', {
+      type: 'geojson',
+      data: { type: 'FeatureCollection', features: [] },
+    })
 
-  map.addLayer({
-    id: 'historical-subway-track',
-    type: 'line',
-    source: 'openmaptiles',
-    'source-layer': 'transportation',
-    minzoom: 10.5,
-    filter: subwayTrackFilter,
-    layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: {
-      'line-color': '#716b62',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 1.1, 16, 2.6],
-      'line-opacity': 0.45,
-    },
-  })
-  map.addLayer({
-    id: 'historical-subway-casing',
-    type: 'line',
-    source: 'metro-lines',
-    minzoom: 10.5,
-    layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: {
-      'line-color': '#f7efdc',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 3.8, 16, 8],
-      'line-opacity': 0.98,
-    },
-  })
-  map.addLayer({
-    id: 'historical-subway-line',
-    type: 'line',
-    source: 'metro-lines',
-    minzoom: 10.5,
-    layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: {
-      'line-color': ['get', 'colour'],
-      'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 1.8, 16, 4],
-      'line-opacity': 0.96,
-    },
-  })
+    map.addLayer({
+      id: 'historical-subway-track',
+      type: 'line',
+      source: 'openmaptiles',
+      'source-layer': 'transportation',
+      minzoom: 10.5,
+      filter: subwayTrackFilter,
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': '#716b62',
+        'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 1.1, 16, 2.6],
+        'line-opacity': 0.45,
+      },
+    })
+    map.addLayer({
+      id: 'historical-subway-casing',
+      type: 'line',
+      source: 'metro-lines',
+      minzoom: 10.5,
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': '#f7efdc',
+        'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 3.8, 16, 8],
+        'line-opacity': 0.98,
+      },
+    })
+    map.addLayer({
+      id: 'historical-subway-line',
+      type: 'line',
+      source: 'metro-lines',
+      minzoom: 10.5,
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': ['get', 'colour'],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 1.8, 16, 4],
+        'line-opacity': 0.96,
+      },
+    })
+  }
 
   map.addLayer({
     id: 'historical-road-hit',
@@ -600,64 +607,66 @@ function addHistoricalLayers(
       'text-halo-blur': 0.6,
     },
   })
-  map.addLayer({
-    id: 'historical-subway-station-hit',
-    type: 'circle',
-    source: 'metro-stations',
-    minzoom: 11.5,
-    filter: metroStationFilter,
-    paint: {
-      'circle-radius': 12,
-      'circle-color': '#000000',
-      'circle-opacity': 0.01,
-    },
-  })
-  map.addLayer({
-    id: 'historical-subway-station',
-    type: 'circle',
-    source: 'metro-stations',
-    minzoom: 11.5,
-    filter: metroStationFilter,
-    paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 11.5, 2.8, 16, 4.8],
-      'circle-color': '#f7efdc',
-      'circle-stroke-color': '#453d35',
-      'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 11.5, 1.2, 16, 2],
-    },
-  })
-  map.addLayer({
-    id: 'selected-subway-station',
-    type: 'circle',
-    source: 'selected-metro-station',
-    paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 11.5, 8, 16, 11],
-      'circle-color': 'rgba(0,0,0,0)',
-      'circle-stroke-color': '#d07d35',
-      'circle-stroke-width': 3,
-    },
-  })
-  map.addLayer({
-    id: 'historical-subway-station-label',
-    type: 'symbol',
-    source: 'metro-stations',
-    minzoom: 12,
-    filter: metroStationFilter,
-    layout: {
-      'text-field': historicalMetroStationName,
-      'text-font': ['Noto Sans Regular'],
-      'text-size': ['interpolate', ['linear'], ['zoom'], 12, 10, 16, 12.5],
-      'text-offset': [0, 0.85],
-      'text-anchor': 'top',
-      'text-padding': 5,
-      'text-max-width': 10,
-    },
-    paint: {
-      'text-color': '#6d3f50',
-      'text-halo-color': '#f2ead6',
-      'text-halo-width': 1.5,
-      'text-halo-blur': 0.5,
-    },
-  })
+  if (metroEnabled) {
+    map.addLayer({
+      id: 'historical-subway-station-hit',
+      type: 'circle',
+      source: 'metro-stations',
+      minzoom: 11.5,
+      filter: metroStationFilter,
+      paint: {
+        'circle-radius': 12,
+        'circle-color': '#000000',
+        'circle-opacity': 0.01,
+      },
+    })
+    map.addLayer({
+      id: 'historical-subway-station',
+      type: 'circle',
+      source: 'metro-stations',
+      minzoom: 11.5,
+      filter: metroStationFilter,
+      paint: {
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 11.5, 2.8, 16, 4.8],
+        'circle-color': '#f7efdc',
+        'circle-stroke-color': '#453d35',
+        'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 11.5, 1.2, 16, 2],
+      },
+    })
+    map.addLayer({
+      id: 'selected-subway-station',
+      type: 'circle',
+      source: 'selected-metro-station',
+      paint: {
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 11.5, 8, 16, 11],
+        'circle-color': 'rgba(0,0,0,0)',
+        'circle-stroke-color': '#d07d35',
+        'circle-stroke-width': 3,
+      },
+    })
+    map.addLayer({
+      id: 'historical-subway-station-label',
+      type: 'symbol',
+      source: 'metro-stations',
+      minzoom: 12,
+      filter: metroStationFilter,
+      layout: {
+        'text-field': historicalMetroStationName,
+        'text-font': ['Noto Sans Regular'],
+        'text-size': ['interpolate', ['linear'], ['zoom'], 12, 10, 16, 12.5],
+        'text-offset': [0, 0.85],
+        'text-anchor': 'top',
+        'text-padding': 5,
+        'text-max-width': 10,
+      },
+      paint: {
+        'text-color': '#6d3f50',
+        'text-halo-color': '#f2ead6',
+        'text-halo-width': 1.5,
+        'text-halo-blur': 0.5,
+      },
+    })
+  }
 
   map.addLayer({
     id: 'historical-park-hit',
@@ -859,7 +868,9 @@ export function MapView({
   highlightedJurisdictionRef.current = highlightedJurisdiction
   selectedGroupIdRef.current = selectedGroupId
   const roadLabels = buildRoadLabelIndex(features)
-  const metroStationLabels = buildMetroStationLabelIndex(features)
+  const metroStationLabels = metroEnabled
+    ? buildMetroStationLabelIndex(features)
+    : new globalThis.Map<string, MetroStationLabelEntry>()
   const parkLabels = buildParkLabelIndex()
 
   useEffect(() => {
@@ -900,7 +911,7 @@ export function MapView({
         return
       }
       const metroHit = hits.find((feature) => feature.layer.id.startsWith('historical-subway-station'))
-      if (metroHit) {
+      if (metroEnabled && metroHit) {
         const modernName = matchingMetroStationName(metroHit.properties, metroStationLabels)
         const station = modernName ? metroStationLabels.get(modernName) : undefined
         const coordinates = metroHit.geometry.type === 'Point'

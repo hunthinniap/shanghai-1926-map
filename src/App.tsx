@@ -1,5 +1,6 @@
 import { BookOpen, Building2, Landmark, MapPin, MapPinOff, RotateCcw, TrainFront } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { metroEnabled } from './config'
 import { DetailsPanel } from './components/DetailsPanel'
 import { MapView } from './components/MapView'
 import { MetroDetailsPanel } from './components/MetroDetailsPanel'
@@ -285,18 +286,20 @@ function App() {
             <Landmark size={16} aria-hidden="true" />
             <span>{heritageVisible ? '隐藏历史建筑' : '显示历史建筑'}</span>
           </button>
-          <button
-            type="button"
-            className="subway-toggle-button"
-            aria-pressed={subwayVisible}
-            onClick={() => {
-              if (subwayVisible) setSelectedMetroStation(undefined)
-              setSubwayVisible((visible) => !visible)
-            }}
-          >
-            <TrainFront size={16} aria-hidden="true" />
-            <span>{subwayVisible ? '隐藏地铁' : '显示地铁'}</span>
-          </button>
+          {metroEnabled && (
+            <button
+              type="button"
+              className="subway-toggle-button"
+              aria-pressed={subwayVisible}
+              onClick={() => {
+                if (subwayVisible) setSelectedMetroStation(undefined)
+                setSubwayVisible((visible) => !visible)
+              }}
+            >
+              <TrainFront size={16} aria-hidden="true" />
+              <span>{subwayVisible ? '隐藏地铁' : '显示地铁'}</span>
+            </button>
+          )}
           <button type="button" className="sources-button" onClick={() => setSourcesOpen(true)}>
             <BookOpen size={16} aria-hidden="true" />
             <span>资料来源</span>
@@ -314,10 +317,10 @@ function App() {
           heritageVisible={heritageVisible}
           heritageBuildings={heritageBuildings}
           selectedHeritage={heritageVisible ? activeHeritage : undefined}
-          subwayVisible={subwayVisible}
+          subwayVisible={metroEnabled && subwayVisible}
           highlightedJurisdiction={highlightedJurisdiction}
           selectedGroupId={selectedLinkedBuilding && heritageVisible ? undefined : activeGroupId}
-          selectedMetroStation={selectedMetroStation}
+          selectedMetroStation={metroEnabled ? selectedMetroStation : undefined}
           onSelect={selectHistoricalFeature}
           onSelectMetro={selectMetroStation}
           onSelectHeritage={selectHeritageBuilding}
@@ -330,7 +333,7 @@ function App() {
           <small>
             {roadCount} 条历史道路 · {landmarkCount} 处地标
             {buildingRecordCount ? `（${buildingRecordCount} 条建筑原始记录）` : ''}
-            {subwayVisible ? ' · 地铁站名为推定' : ''}
+            {metroEnabled && subwayVisible ? ' · 地铁站名为推定' : ''}
           </small>
           {heritageVisible && !heritageError && (
             <small className="heritage-caption" role="status">
@@ -399,7 +402,7 @@ function App() {
       </section>
 
       <DetailsPanel feature={selectedLinkedBuilding ? undefined : selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
-      <MetroDetailsPanel station={selectedMetroStation} onClose={() => setSelectedMetroStation(undefined)} />
+      {metroEnabled && <MetroDetailsPanel station={selectedMetroStation} onClose={() => setSelectedMetroStation(undefined)} />}
       <HeritageDetailsPanel feature={activeHeritage} linked={selectedLinkedBuilding} onClose={() => {
         setSelectedHeritage(undefined)
         if (selectedLinkedBuilding) setSelectedGroupId(undefined)

@@ -183,36 +183,23 @@ test('toggles modern building footprints', async ({ page }) => {
   await expect(page.getByRole('button', { name: '显示建筑' })).toHaveAttribute('aria-pressed', 'false')
 })
 
-test('toggles the inferred metro layer', async ({ page }) => {
+test('hides metro controls, labels and data requests in the no_subway edition', async ({ page }) => {
+  const metroRequests: string[] = []
+  page.on('request', (request) => {
+    if (/\/metro-(lines|stations)\.geojson(?:\?|$)/.test(request.url())) metroRequests.push(request.url())
+  })
   await page.goto('/')
-  const showSubway = page.getByRole('button', { name: '显示地铁' })
-  await expect(showSubway).toHaveAttribute('aria-pressed', 'false')
-  await expect(page.getByLabel('地图说明')).not.toContainText('地铁站名为推定')
-  await showSubway.click()
-  const hideSubway = page.getByRole('button', { name: '隐藏地铁' })
-  await expect(hideSubway).toHaveAttribute('aria-pressed', 'true')
-  await expect(page.getByLabel('地图说明')).toContainText('地铁站名为推定')
-})
+  await expect(page.getByRole('heading', { name: '上海 1928' })).toBeVisible()
+  await expect(page.getByRole('button', { name: /地铁/ })).toHaveCount(0)
+  await expect(page.getByLabel('地图说明')).not.toContainText('地铁')
+  await expect(page.getByRole('complementary', { name: /地铁站详情/ })).toHaveCount(0)
 
-test('opens an inferred metro station detail from the map', async ({ page }) => {
-  await page.goto('/')
-  await page.getByRole('button', { name: '显示地铁' }).click()
-  const canvas = page.locator('.maplibregl-canvas')
-  await expect(canvas).toBeVisible()
-  await page.waitForTimeout(2_000)
-  const box = await canvas.boundingBox()
-  expect(box).not.toBeNull()
-  const detail = page.getByRole('complementary', { name: 'Race Course地铁站详情' })
-  await expect(async () => {
-    await page.mouse.click(box!.x + box!.width / 2, box!.y + box!.height / 2)
-    await expect(detail).toBeVisible({ timeout: 1_000 })
-  }).toPass({ timeout: 10_000, intervals: [500, 1_000] })
-  await expect(detail).toContainText('人民广场')
-  await expect(detail).toContainText('民国地名推定')
-  await expect(detail).not.toContainText('该名称不是历史上真实运营过的站名')
-
-  await page.getByRole('button', { name: '隐藏地铁' }).click()
-  await expect(detail).not.toBeVisible()
+  await page.getByRole('button', { name: '显示地标', exact: true }).click()
+  await page.getByRole('button', { name: '显示建筑', exact: true }).click()
+  await expect(page.getByRole('button', { name: '隐藏地标', exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: '隐藏建筑', exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: /地铁/ })).toHaveCount(0)
+  expect(metroRequests).toEqual([])
 })
 
 test('base style contains no modern symbol labels', async ({ request }) => {

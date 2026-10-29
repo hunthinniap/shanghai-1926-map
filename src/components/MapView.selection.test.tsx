@@ -7,6 +7,7 @@ import { MapView } from './MapView'
 
 const mapCalls = vi.hoisted(() => ({
   created: vi.fn(), fitBounds: vi.fn(), remove: vi.fn(), setData: vi.fn(),
+  addSource: vi.fn(), addLayer: vi.fn(), styleLoad: undefined as (() => void) | undefined,
 }))
 
 vi.mock('maplibre-gl', () => ({
@@ -14,7 +15,11 @@ vi.mock('maplibre-gl', () => ({
   Map: class {
     constructor() { mapCalls.created() }
     addControl() {}
-    on() {}
+    on(event: string, callback: () => void) {
+      if (event === 'style.load') mapCalls.styleLoad = callback
+    }
+    addSource(...args: unknown[]) { mapCalls.addSource(...args) }
+    addLayer(...args: unknown[]) { mapCalls.addLayer(...args) }
     getLayer() { return undefined }
     getSource() { return { setData: mapCalls.setData } }
     setMinZoom() {}
@@ -57,6 +62,7 @@ describe('MapView selected building camera', () => {
 
   beforeEach(() => {
     vi.clearAllMocks()
+    mapCalls.styleLoad = undefined
     vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
     vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} })
     container = document.createElement('div')
@@ -80,6 +86,20 @@ describe('MapView selected building camera', () => {
     props = { ...props, ...update }
     await act(async () => root.render(<MapView {...props} />))
   }
+
+  it('omits metro sources and layers even when the overlay is requested', async () => {
+    await render({ subwayVisible: true })
+    expect(mapCalls.styleLoad).toBeDefined()
+    await act(async () => mapCalls.styleLoad!())
+
+    const sourceIds = mapCalls.addSource.mock.calls.map(([id]) => id)
+    expect(sourceIds).toContain('historical-features')
+    expect(sourceIds).toContain('heritage-buildings')
+    expect(sourceIds).not.toContain('metro-lines')
+    expect(sourceIds).not.toContain('metro-stations')
+    expect(sourceIds).not.toContain('selected-metro-station')
+    expect(mapCalls.addLayer.mock.calls.some(([layer]) => /subway/.test(layer.id))).toBe(false)
+  })
 
   it('updates loaded feature data without recreating the map or recentering an unchanged selection', async () => {
     await render()
