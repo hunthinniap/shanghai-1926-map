@@ -1,4 +1,12 @@
 import type { HistoricalFeature, SearchRecord } from '../types'
+import { getHeritageBuildingName, type HeritageBuildingFeature } from './heritageBuildings'
+import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
+import { reviewedResidentsForHeritage } from '../data/notableResidents'
+
+export interface PlaceSearchRecord extends SearchRecord {
+  heritageOfficialId?: string
+  subtitle?: string
+}
 
 const traditionalToSimplified: Record<string, string> = {
   復: '复',
@@ -58,8 +66,9 @@ export function makeSearchRecords(features: HistoricalFeature[]): SearchRecord[]
       properties.currentNameZh,
       properties.currentUse,
       ...(properties.addressUseEvidence ?? []).flatMap(evidence => [evidence.use, evidence.address]),
-      ...(properties.historicalRecords ?? []).flatMap((record) => [record.name, record.nameZh]),
+      ...(properties.historicalRecords ?? []).flatMap((record) => [record.name, record.nameZh, record.displayNameZh]),
       ...(properties.aliases ?? []),
+      ...(properties.notableResidents ?? []).map(resident => resident.name),
     ].filter((term): term is string => Boolean(term))
 
     return [
@@ -75,7 +84,44 @@ export function makeSearchRecords(features: HistoricalFeature[]): SearchRecord[]
   })
 }
 
-export function searchRecords(records: SearchRecord[], rawQuery: string): SearchRecord[] {
+/** Include the heritage directory even when a building has no historical landmark link. */
+export function makePlaceSearchRecords(
+  features: HistoricalFeature[],
+  heritage: HeritageBuildingFeature[],
+  heritageGroupIds: ReadonlyMap<string, string> = new Map(),
+): PlaceSearchRecord[] {
+  const records: PlaceSearchRecord[] = makeSearchRecords(features)
+  const byGroup = new Map(records.map(record => [record.featureGroupId, record]))
+  for (const { properties } of heritage) {
+    const terms = [properties.officialId, properties.officialCodeRaw, properties.name,
+      getHeritageBuildingName(properties), ...(reviewedHeritageSiteHistoryFor(properties)?.aliases ?? []),
+      properties.articleTitle, properties.officialName, properties.listedName,
+      properties.address, properties.wikipediaAddress, properties.sourceAddress,
+      ...[...(properties.notableResidents ?? []), ...reviewedResidentsForHeritage(properties),
+        ...(reviewedHeritageSiteHistoryFor(properties)?.residents ?? [])].map(resident => resident.name),
+    ].filter((term): term is string => Boolean(term))
+    const groupId = heritageGroupIds.get(properties.officialId)
+    const existing = groupId ? byGroup.get(groupId) : undefined
+    const subtitle = `${properties.officialCodeRaw} · ${properties.address}`
+    if (existing) {
+      existing.heritageOfficialId ??= properties.officialId
+      existing.subtitle = existing.subtitle ? `${existing.subtitle}；${subtitle}` : subtitle
+      existing.normalizedTerms = [...new Set([...existing.normalizedTerms, ...terms.map(normalizeSearchTerm)])]
+    } else {
+      const name = getHeritageBuildingName(properties)
+      const record: PlaceSearchRecord = {
+        featureId: properties.officialId, featureGroupId: groupId ?? `heritage:${properties.officialId}`,
+        heritageOfficialId: properties.officialId, historicalName: name, modernNameZh: name,
+        normalizedTerms: [...new Set(terms.map(normalizeSearchTerm))], subtitle,
+      }
+      records.push(record)
+      byGroup.set(record.featureGroupId, record)
+    }
+  }
+  return records
+}
+
+export function searchRecords<T extends SearchRecord>(records: T[], rawQuery: string): T[] {
   const query = normalizeSearchTerm(rawQuery)
   if (!query) return []
 

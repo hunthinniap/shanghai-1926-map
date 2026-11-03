@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-10-30",
+  "objective": "历史建筑／场地沿革调查；1928年不再是纳入门槛",
+  "inputFileName": "input.json",
+  "inputSha256": "7617286ca089b68f2d90edac984a65b46bc01917552c6eb32e779ece446a9bf8",
+  "inputIds": [
+    114,
+    134,
+    345
+  ],
+  "recordCount": 3,
+  "localSnapshot": {
+    "path": "scripts/data/virtual-shanghai-buildings-live.json",
+    "sha256": "817f564def3460c1f39e4e68bdeaa4ab4242a576be6ab7f4085031d94d0ac2d2",
+    "readThisRound": true,
+    "limitation": "旧快照不能冒充本轮全部VS详情页已成功读取"
+  },
+  "sourceReviews": [
+    {
+      "id": "sohu-2016",
+      "title": "【话说上海】解放前的上海公厕",
+      "url": "https://www.sohu.com/a/118103909_534720",
+      "publisher": "方志上海／搜狐号",
+      "publishedAt": "2016-11-04",
+      "accessedAt": "2026-10-30",
+      "accessMethod": "full-text",
+      "readThisRound": true,
+      "sourceFamily": "上海环境卫生志节录",
+      "locator": "PowerShell Invoke-WebRequest HTTP200，提取article正文；网页元数据日期与作者",
+      "supports": "全市公厕建设、设施改良及经营管理背景；配图可作历史建筑识别线索",
+      "limitations": "正文未列原三条门牌；所称原书未调阅；“目前唯一／现存最老”为2016年刊文说法，不是2026普查结论"
+    },
+    {
+      "id": "morning-2015-protection",
+      "title": "上海七旬公厕申请历史保护未获批 被称有价值",
+      "url": "https://www.whb.cn/zhuzhan/kandian/20150225/25109.html",
+      "publisher": "新闻晨报／文汇网转载",
+      "publishedAt": "2015-02-25",
+      "accessedAt": "2026-10-30",
+      "accessMethod": "full-text",
+      "readThisRound": true,
+      "sourceFamily": "郁文艳新闻晨报追踪",
+      "locator": "web正文、海宁路514弄照片和图注；照片本轮实际看图",
+      "supports": "海宁路老公厕在2015年使用、结构特征、保护申请与年代推测",
+      "limitations": "1942—1943年系协会综合推测，函件与该公厕尚不能百分之百对应；未获批保护不代表已经拆除"
+    },
+    {
+      "id": "morning-2015-address",
+      "title": "上海：“古董”厕所要被拆 市民找到其年龄证据",
+      "url": "https://news.sohu.com/20150326/n410344027.shtml",
+      "publisher": "新闻晨报／解放网／搜狐转载",
+      "publishedAt": "2015-03-26",
+      "accessedAt": "2026-10-30",
+      "accessMethod": "full-text",
+      "readThisRound": true,
+      "sourceFamily": "郁文艳新闻晨报追踪",
+      "locator": "HTTP200，提取div#contentText全文",
+      "supports": "1947年图录第二十七图“厕所98”；两个里弄入口关系；报道核对管理部门登记地址为四川北路961弄",
+      "limitations": "本轮未调取管理登记原表；961弄98号的细门牌出自李冬青对图录的判断，管理部门登记在报道中只确认到961弄"
+    },
+    {
+      "id": "jiefang-2017",
+      "title": "上海最老公厕，保持70年不臭....这条微信没有味道，但有文化",
+      "url": "https://news.sina.cn/2017-11-09/detail-ifynsait6812325.d.html?vt=4",
+      "publisher": "解放日报／上观新闻，经新浪转载",
+      "publishedAt": "2017-11-09",
+      "accessedAt": "2026-10-30",
+      "accessMethod": "full-text",
+      "readThisRound": true,
+      "sourceFamily": "陈玺撼2017年公厕探访",
+      "locator": "web正文海宁路段；本轮另下载并实际看图录局部与函件局部",
+      "supports": "2017年记者实访仍服务居民，结构和改造记述；附旧图与函件照片；另述东长治路690弄公厕",
+      "limitations": "2017在用不是2026在用；转载页不视作多套独立证据，未见完整旧图与完整档案"
+    }
+  ],
+  "imageReads": [
+    {
+      "url": "https://img.mp.sohu.com/upload/20161104/29992d9d351f46b394c5f2f2faed6046_th.jpeg",
+      "locator": "2016文章首图，实际view_image原图",
+      "sha256": "454f0b28657dd27b5d528db5b3cfaec6e003ac80b2d36232a05e8103de870d66",
+      "cachePath": ".cache/public-toilets-2026-10-30/sohu-photo.jpeg",
+      "readThisRound": true
+    },
+    {
+      "url": "https://www.whb.cn/u/cms/www/201502/250933110r50.jpg",
+      "locator": "2015新闻晨报报道配图，文汇页图注明海宁路514弄，实际view_image原图",
+      "sha256": "9da1c2f5c9d2c3ee7a5734ecb9f988bd49cb8786618742e637f12f0abc4d74e2",
+      "cachePath": ".cache/public-toilets-2026-10-30/whb-photo.jpg",
+      "readThisRound": true
+    },
+    {
+      "url": "https://k.sinaimg.cn/n/translate/20171109/_I1S-fynship1675528.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+      "locator": "2017报道所称1947年图录局部，实际view_image原图见红框廁所98；未见完整第27图或出版页",
+      "sha256": "09af9c9d5b2748baddb32cba5697b7aed74747edac7e04354ffc7f9bfc691bd3",
+      "cachePath": ".cache/public-toilets-2026-10-30/guide1947-detail.jpg",
+      "readThisRound": true
+    },
+    {
+      "url": "https://k.sinaimg.cn/n/translate/20171109/mc9S-fynstfh3015984.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+      "locator": "2017报道所附往来函局部，实际view_image；未完整转录或据此认定函件与现存建筑为同一实体",
+      "sha256": "f8c3de843b072e48be95f11274eb70b9a7071ad9ab739997f3a62ce3c5eaf9d8",
+      "cachePath": ".cache/public-toilets-2026-10-30/correspondence-detail.jpg",
+      "readThisRound": true
+    }
+  ],
+  "records": [
+    {
+      "IDBAT": 114,
+      "originalInput": {
+        "IDBAT": 114,
+        "NAME": "Public Toilets",
+        "F_ADDRESS": "84 ROUTE CONTY",
+        "FUNCTION": "Transportation features / Roadway / Public toilet",
+        "XC": 354697.2153,
+        "YC": 3454554.4555
+      },
+      "historicalContext": {
+        "nameZh": "厠所",
+        "startYear": null,
+        "endYear": null,
+        "source": "项目原VS快照",
+        "independentSiteHistoryFoundThisRound": false
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "对照指定文章",
+          "旧今道路与具体门牌定向检索",
+          "排除海宁路另址及同号异路误配"
+        ],
+        "stopReason": "本轮有限检索完成；公开检索暂无具体名址或沿革命中，下一步需旧图／公厕设施档案",
+        "delta": "纳入历史沿革研究；确认该文章不能直接为本条补具体沿革，海宁路候选另列"
+      },
+      "queries": [
+        {
+          "query": "\"Conty\" \"厕所\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"84\" \"康悌路\" 厕所",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"建国东路\" \"84\" \"厕所\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"建国东路84号\" 厕所",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"建国东路\" \"84号\" \"公厕\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        }
+      ],
+      "detailPageAccess": {
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=114",
+        "fullDetailFieldsIndependentlyReread": false,
+        "note": "web超时、HTTPS连接失败、HTTP502；完整字段采用已有本地快照"
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.47459703986097,
+          "latitude": 31.21610200162647
+        },
+        "conversionMethod": "本轮实际使用proj4，EPSG:32651→EPSG:4326，always XY，X=Easting、Y=Northing",
+        "comparisonSourceUrl": null,
+        "containment": "not-checked",
+        "distanceMeters": null,
+        "compatibility": "not-checked",
+        "finding": "本轮未读取该公厕的历史或现代完整边界，没有计算包含或距离"
+      },
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "conclusion": "原库仅记Public Toilets／厠所，旧址84 ROUTE CONTY。康悌路对应今建国东路，仅作为检索道路；旧84号与今门牌关系未证明。已读用户文章并定向检索旧今路名、门牌和公厕组合，未找到能独立佐证此门牌公厕名称、建造、改建或原址后续使用的材料。文章提供全市建设背景，不直接对应本条；海宁路老公厕为另址。",
+      "nextResearchActions": [
+        {
+          "targetGap": "具体公厕的独立名址及建造／改建／迁址经历",
+          "action": "核对相应街段的历史行号图、法租界公董局公厕建造与维修资料、后期环卫设施登记；查明旧号与图上设施范围",
+          "acceptanceCriterion": "取得能将输入道路门牌与一个具体公厕直接相连的图或记录，分别记年代和建筑变迁，不能以相邻现代POI替代"
+        }
+      ]
+    },
+    {
+      "IDBAT": 134,
+      "originalInput": {
+        "IDBAT": 134,
+        "NAME": "Public Toilets",
+        "F_ADDRESS": "531 RUE BRENIER DE MONTMORAND",
+        "FUNCTION": "Transportation features / Roadway / Public toilet",
+        "XC": 354337.7291,
+        "YC": 3454390.3309
+      },
+      "historicalContext": {
+        "nameZh": "厠所",
+        "startYear": null,
+        "endYear": null,
+        "source": "项目原VS快照",
+        "independentSiteHistoryFoundThisRound": false
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "对照指定文章",
+          "旧今道路与具体门牌定向检索",
+          "排除海宁路另址及同号异路误配"
+        ],
+        "stopReason": "本轮有限检索完成；公开检索暂无具体名址或沿革命中，下一步需旧图／公厕设施档案",
+        "delta": "纳入历史沿革研究；确认该文章不能直接为本条补具体沿革，海宁路候选另列"
+      },
+      "queries": [
+        {
+          "query": "\"马当路531\" 公厕",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"马当路\" \"531\" \"公厕\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"马当路531号\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"531\" \"马浪路\" \"厕所\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"马当路\" \"公厕\" 历史",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        }
+      ],
+      "detailPageAccess": {
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=134",
+        "fullDetailFieldsIndependentlyReread": false,
+        "note": "web超时、HTTPS连接失败、HTTP502；完整字段采用已有本地快照"
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.4708480871517,
+          "latitude": 31.21457684173976
+        },
+        "conversionMethod": "本轮实际使用proj4，EPSG:32651→EPSG:4326，always XY，X=Easting、Y=Northing",
+        "comparisonSourceUrl": null,
+        "containment": "not-checked",
+        "distanceMeters": null,
+        "compatibility": "not-checked",
+        "finding": "本轮未读取该公厕的历史或现代完整边界，没有计算包含或距离"
+      },
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "conclusion": "原库仅记Public Toilets／厠所，旧址531 RUE BRENIER DE MONTMORAND。白来尼蒙马浪路／马浪路对应今马当路，仅作为检索道路；旧531号与今门牌关系未证明。已定向检索马当路531、马浪路及公厕组合，未找到本条具体沿革的独立佐证。文章未给该门牌，海宁路老公厕为另址；不把复兴中路531号等同号异路结果接到本条。",
+      "nextResearchActions": [
+        {
+          "targetGap": "具体公厕的独立名址及建造／改建／迁址经历",
+          "action": "核对相应街段的历史行号图、法租界公董局公厕建造与维修资料、后期环卫设施登记；查明旧号与图上设施范围",
+          "acceptanceCriterion": "取得能将输入道路门牌与一个具体公厕直接相连的图或记录，分别记年代和建筑变迁，不能以相邻现代POI替代"
+        }
+      ]
+    },
+    {
+      "IDBAT": 345,
+      "originalInput": {
+        "IDBAT": 345,
+        "NAME": "Public Toilets",
+        "F_ADDRESS": "941 AVENUE JOFFRE",
+        "FUNCTION": "Transportation features / Roadway / Public toilet",
+        "XC": 352814.6726,
+        "YC": 3454874.4103
+      },
+      "historicalContext": {
+        "nameZh": "厠所",
+        "startYear": null,
+        "endYear": null,
+        "source": "项目原VS快照",
+        "independentSiteHistoryFoundThisRound": false
+      },
+      "researchProgress": {
+        "status": "completed",
+        "focus": [
+          "对照指定文章",
+          "旧今道路与具体门牌定向检索",
+          "排除海宁路另址及同号异路误配"
+        ],
+        "stopReason": "本轮有限检索完成；公开检索暂无具体名址或沿革命中，下一步需旧图／公厕设施档案",
+        "delta": "纳入历史沿革研究；确认该文章不能直接为本条补具体沿革，海宁路候选另列"
+      },
+      "queries": [
+        {
+          "query": "上海 厕所 \"941\" \"霞飞路\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"淮海中路941\" 厕所",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "上海 \"淮海中路\" \"941\" \"公厕\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"霞飞路941号\" 厕所",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"941\" \"霞飛路\" \"廁所\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        },
+        {
+          "query": "\"淮海中路941号\"",
+          "method": "web search",
+          "outcome": "未取得能独立佐证此条具体门牌及沿革的材料；不将无命中解释为不存在"
+        }
+      ],
+      "detailPageAccess": {
+        "url": "https://www.virtualshanghai.net/data/buildings?ID=345",
+        "fullDetailFieldsIndependentlyReread": false,
+        "note": "web一次返回页结构，后续复取超时；完整字段仍采用已有本地快照"
+      },
+      "spatialReview": {
+        "originalWgs84": {
+          "longitude": 121.45479303084282,
+          "latitude": 31.218752012629466
+        },
+        "conversionMethod": "本轮实际使用proj4，EPSG:32651→EPSG:4326，always XY，X=Easting、Y=Northing",
+        "comparisonSourceUrl": null,
+        "containment": "not-checked",
+        "distanceMeters": null,
+        "compatibility": "not-checked",
+        "finding": "本轮未读取该公厕的历史或现代完整边界，没有计算包含或距离"
+      },
+      "verificationStatus": "unresolved",
+      "mapWriteRecommendation": "no",
+      "conclusion": "原库仅记Public Toilets／厠所，旧址941 AVENUE JOFFRE。霞飞路对应今淮海中路，仅作为检索道路；旧941号与今门牌关系未证明。已定向检索霞飞路941、淮海中路941及厕所／公厕组合，未找到本条具体沿革的独立佐证。用户文章未给该门牌，海宁路老公厕为另址；附近公厕、商店或同号门址不直接替代历史对象。",
+      "nextResearchActions": [
+        {
+          "targetGap": "具体公厕的独立名址及建造／改建／迁址经历",
+          "action": "核对相应街段的历史行号图、法租界公董局公厕建造与维修资料、后期环卫设施登记；查明旧号与图上设施范围",
+          "acceptanceCriterion": "取得能将输入道路门牌与一个具体公厕直接相连的图或记录，分别记年代和建筑变迁，不能以相邻现代POI替代"
+        }
+      ]
+    }
+  ],
+  "independentCandidates": [
+    {
+      "candidateId": "haining-sichuan-public-toilet",
+      "linkedInputIds": [],
+      "IDBAT": null,
+      "nameZh": "海宁路老公厕（四川北路961弄）",
+      "historicalAddress": "报道惯称海宁路514弄内；2015后续报道核管理部门登记地址为四川北路961弄；图录细号98",
+      "identityFinding": "本轮目视对照2016首图与2015报道不同角度照片：高位连续百叶窗、双坡红瓦、灰砖下墙、红砖横带、入口和折线无障碍坡道布局相合；2015配图图注提供具体地址，支持为同一建筑",
+      "identityMethod": "manual-photo-cross-check",
+      "constructionYear": null,
+      "latestDatedUseEvidence": "2017-11-09",
+      "currentFate": null,
+      "chronology": [
+        {
+          "period": "1942—1943年",
+          "status": "hypothesis",
+          "finding": "建造往来函及协会推测，函与现存建筑未完全对应，不能定为确切竣工年",
+          "sourceIds": [
+            "morning-2015-protection",
+            "jiefang-2017"
+          ]
+        },
+        {
+          "period": "1947年图录",
+          "status": "supported-with-source-limitation",
+          "finding": "报道所称1947图录附图局部本轮亲见廁所98及周边里弄格局；未核完整图27和出版页",
+          "sourceIds": [
+            "morning-2015-address",
+            "jiefang-2017"
+          ]
+        },
+        {
+          "period": "2014—2015年",
+          "status": "reported",
+          "finding": "待拆迁街区中仍在使用，有保护申请与专家讨论；计划不代表已经拆除或获得保护身份",
+          "sourceIds": [
+            "morning-2015-protection",
+            "morning-2015-address"
+          ]
+        },
+        {
+          "period": "2017年",
+          "status": "reported-site-visit",
+          "finding": "记者实访仍服务居民，内部地面和挡板有后期更新，通风结构值得借鉴",
+          "sourceIds": [
+            "jiefang-2017"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sohu-2016",
+        "morning-2015-protection",
+        "morning-2015-address",
+        "jiefang-2017"
+      ],
+      "geometry": null,
+      "mapWriteRecommendation": "review",
+      "remainingQuestions": [
+        "完整旧图／图例及98号的具体门牌归属",
+        "精确点位与历史建筑占地",
+        "最终保护或拆除经过及原址后续使用"
+      ]
+    }
+  ],
+  "relatedLeads": [
+    {
+      "nameZh": "南京路虹庙后首座公有公厕",
+      "finding": "用户文章记1864年；全市公厕起源背景，不对应原三条；盆汤弄今天的公厕不自动等同1864年原楼",
+      "sourceIds": [
+        "sohu-2016",
+        "jiefang-2017"
+      ]
+    },
+    {
+      "nameZh": "东长治路690弄公厕",
+      "finding": "2017报道记1920年建成、后历经多次改造；仅另列线索，本轮未独立复核完整沿革和具体点位",
+      "sourceIds": [
+        "jiefang-2017"
+      ]
+    }
+  ],
+  "mapChanged": false,
+  "oldExcludedUtilitySnapshotChanged": false
+}

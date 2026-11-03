@@ -1,14 +1,15 @@
 import { Search, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { SearchRecord } from '../types'
-import { searchRecords } from '../lib/search'
+import { searchRecords, type PlaceSearchRecord } from '../lib/search'
 
 interface SearchBoxProps {
-  records: SearchRecord[]
-  onSelect: (record: SearchRecord) => void
+  records: PlaceSearchRecord[]
+  onSelect: (record: PlaceSearchRecord) => void
+  onQueryChange?: (query: string) => void
+  loading?: boolean
 }
 
-export function SearchBox({ records, onSelect }: SearchBoxProps) {
+export function SearchBox({ records, onSelect, onQueryChange, loading }: SearchBoxProps) {
   const [query, setQuery] = useState('')
   const [focused, setFocused] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
@@ -18,8 +19,12 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
 
   useEffect(() => setActiveIndex(0), [query])
 
-  const choose = (record: SearchRecord) => {
-    setQuery(record.historicalName)
+  const updateQuery = (value: string) => {
+    setQuery(value)
+    onQueryChange?.(value)
+  }
+  const choose = (record: PlaceSearchRecord) => {
+    updateQuery(record.historicalName)
     setFocused(false)
     onSelect(record)
     inputRef.current?.blur()
@@ -32,7 +37,7 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
         <input
           ref={inputRef}
           value={query}
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) => updateQuery(event.target.value)}
           onFocus={() => setFocused(true)}
           onBlur={() => window.setTimeout(() => setFocused(false), 120)}
           onKeyDown={(event) => {
@@ -49,11 +54,11 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
               choose(results[activeIndex])
             }
             if (event.key === 'Escape') {
-              setQuery('')
+              updateQuery('')
               inputRef.current?.blur()
             }
           }}
-          placeholder="搜索今名或旧名，如：南昌路 / Vallon"
+          placeholder="搜索地名、建筑编号或地址"
           aria-label="搜索现代或历史地名"
           aria-expanded={showResults}
           aria-controls="search-results"
@@ -67,7 +72,7 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
             aria-label="清空搜索"
             onMouseDown={(event) => event.preventDefault()}
             onClick={() => {
-              setQuery('')
+              updateQuery('')
               inputRef.current?.focus()
             }}
           >
@@ -93,13 +98,12 @@ export function SearchBox({ records, onSelect }: SearchBoxProps) {
               >
                 <span className="search-result-old">{record.historicalName}</span>
                 <span className="search-result-now">
-                  中文名 · {record.modernNameZh}
-                  {record.modernNameEn ? ` / ${record.modernNameEn}` : ''}
+                  {record.subtitle ?? `中文名 · ${record.modernNameZh}${record.modernNameEn ? ` / ${record.modernNameEn}` : ''}`}
                 </span>
               </button>
             ))
           ) : (
-            <div className="search-empty">没有找到对应的历史地名</div>
+            <div className="search-empty" role="status">{loading ? '正在载入历史建筑……' : '没有找到对应的地名或建筑'}</div>
           )}
         </div>
       )}

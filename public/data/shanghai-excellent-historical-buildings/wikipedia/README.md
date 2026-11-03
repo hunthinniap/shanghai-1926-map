@@ -24,7 +24,7 @@
 
 - [../buildings-enriched.json](../buildings-enriched.json)：1058 条合并参考记录，含双方地址、匹配依据、维基建筑详情、建筑条目链接、坐标候选及参考点。
 - [locations.geojson](locations.geojson)：可导入 GIS 的 WGS84 参考点。`coordinateScope` 区分建筑和建筑群；不是官方测绘、建筑轮廓或1926年定位成果。
-- [../map-buildings.geojson](../map-buildings.geojson)：地图“显示历史建筑”图层的轻量数据，与上述100个参考点一一对应，额外携带详情卡所需的地址、年代、层数、结构、设计者和来源。开启图层时加载，不需要把研究原始档案全部下载到前端。
+- [../map-buildings.geojson](../map-buildings.geojson)：地图“显示历史建筑”图层的轻量数据，现含原维基100点、门址补查878点及获准复核66点，共1044项；额外携带详情卡所需的地址、年代、层数、结构、设计者和来源。开启图层时加载，不需要把研究原始档案全部下载到前端。
 - [list-records.json](list-records.json)：维基列表的完整结构化记录；保存子建筑、原始表格行号、图片链接及空字段。
 - [matches.json](matches.json)：1058 条对应关系及编号转换、名称/地址比较、复核提示。
 - [review-queue.json](review-queue.json)：地址差异、名称缺少独特交集、坐标范围/精度/冲突等后续核对项。差异不自动等于错误。
@@ -59,7 +59,7 @@
 
 公司、学校/大学整体、医院机构、人物、道路、公园等大范围实体及不明实体仅保留候选。章节链接（例如上海中学条目中的大礼堂）不能继承整篇页面坐标。建筑群坐标即使可导出也明确标为 `building-complex-reference-point`，可能被同一片区域内多个保护项引用，不代表各楼位置已核实。
 
-这里的100个维基参考点保持不变。后续[门址补查](../geocoding/README.md)已为913项中的878项补入上海图书馆或独立OSM来源点，合并图层共978点；35项本轮待核与原45项维基候选保留。增强文件的geocoding字段和coverage为合并统计，articleReferences仍只记录原维基资料。原历史地图的坐标、分组或现用途资料不变。
+这里的100个维基参考点保持不变。后续[门址补查](../geocoding/README.md)先为913项中的878项补入来源点，再经用户批准为剩余80项中的66项补点，合并图层现1044项。16项部分定位保留组成物和限制；14项未上图。增强文件的geocoding、coordinateReview字段和coverage反映合并结果，articleReferences仍只记录原维基资料。原历史地图的坐标、分组或现用途资料不变。
 
 ## 重建与验证
 

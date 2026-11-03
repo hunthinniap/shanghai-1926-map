@@ -44,7 +44,7 @@ const rows = audit.distribution.map(c => `| ${c.label} | ${audit.records.filter(
 const reviewed = audit.records.filter(r => r.review)
 const report = `# 优秀历史建筑历史用途全表复核及地图接入
 
-日期：${audit.auditedAt}。覆盖官方名录全部1058条，地图现有978个参考点；80条未定位记录仍保留在审查表。
+日期：${audit.auditedAt}。覆盖官方名录全部1058条，地图现有${mapped.length}个名录参考点；${1058 - mapped.length}条尚无地图点的记录仍保留在审查表。部分定位条目的组成物范围另在位置详情中说明。
 
 ## 口径
 

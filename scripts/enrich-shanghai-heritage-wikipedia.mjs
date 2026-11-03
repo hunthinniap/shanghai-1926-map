@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import { parseWikipediaHeritageList } from './lib/wikipedia-heritage-list.mjs'
 import { matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride, isShanghaiCoordinate } from './lib/wikipedia-heritage-enrichment.mjs'
+import { loadApprovedCoordinateReview, applyApprovedHeritageCoordinates } from './lib/reviewed-heritage-coordinates.mjs'
+import { verifiedTextSnapshot } from './lib/verified-snapshot.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const directory = path.join(root, 'public/data/shanghai-excellent-historical-buildings')
@@ -15,10 +17,10 @@ const datasetJson = async (relative) => JSON.parse(await fs.readFile(path.join(d
 const serialize = (value) => `${JSON.stringify(value, null, 2)}\n`
 const hash = (bytes) => createHash('sha256').update(bytes).digest('hex')
 const listSource = await datasetJson('wikipedia/list-source.json')
-const listBytes = await fs.readFile(path.join(directory, 'wikipedia', listSource.localPath))
-if (listBytes.length !== listSource.byteLength || hash(listBytes) !== listSource.sha256) throw new Error('Wikipedia list source checksum mismatch')
+const listBytes = verifiedTextSnapshot(await fs.readFile(path.join(directory, 'wikipedia', listSource.localPath)),listSource)
 const list = parseWikipediaHeritageList(listBytes.toString('utf8'), listSource)
 const official = await datasetJson('buildings.json')
+const coordinateBackfill = await loadApprovedCoordinateReview(root)
 const details = await datasetJson('wikipedia/article-details.json')
 let geocoding = null
 try { geocoding = await datasetJson('geocoding/results.json') } catch (error) {
@@ -158,7 +160,7 @@ const addressFeatures = records.filter((record) => record.geocoding?.point).map(
 })
 // A compact map payload avoids downloading the research archive to open a card.
 const enrichedById = new Map(records.map((record) => [record.id, record]))
-const mapFeatures = [...features, ...addressFeatures].map((feature) => {
+let mapFeatures = [...features, ...addressFeatures].map((feature) => {
   const record = enrichedById.get(feature.properties.officialId)
   return { ...feature, properties: { ...feature.properties,
     officialName: record.official.originalNameOrUse,
@@ -173,6 +175,9 @@ const mapFeatures = [...features, ...addressFeatures].map((feature) => {
     wikipediaListUrl: listSource.requestedUrl,
   } }
 })
+const reviewedCoordinateBackfill = coordinateBackfill
+  ? applyApprovedHeritageCoordinates({ records, mapFeatures, ...coordinateBackfill }) : null
+if (reviewedCoordinateBackfill) mapFeatures = reviewedCoordinateBackfill.mapFeatures
 const byBatch = Object.fromEntries([1, 2, 3, 4, 5].map((batch) => [batch, records.filter((r) => r.batch === batch).length]))
 const coverage = {
   officialRecords: official.records.length, wikipediaRecords: list.recordCount, matchedRecords: matches.length, byBatch,
@@ -190,6 +195,11 @@ const coverage = {
   referencePointFeatures: mapFeatures.length,
   wikipediaReferencePointFeatures: features.length,
   addressReferencePointFeatures: addressFeatures.length,
+  ...(reviewedCoordinateBackfill ? {
+    reviewedCoordinateReferenceFeatures: reviewedCoordinateBackfill.coverage.approvedRecords,
+    partialCoordinateRecords: reviewedCoordinateBackfill.coverage.partialReferenceRecords,
+    documentedReviewedSourcePoints: reviewedCoordinateBackfill.coverage.documentedSourcePoints,
+  } : {}),
   recordsWithOnlyCoordinateCandidates: records.filter((r) => r.locationStatus === 'candidates-need-review').length,
   recordsWithoutSourceCoordinates: records.filter((r) => r.locationStatus === 'no-source-coordinate').length,
 }
@@ -198,7 +208,7 @@ const methodology = {
   addresses: '优先保留官网地址，只有官网空缺时由维基补充；差异均并存，different-as-listed只是差异标记，不自动裁定哪一方正确。',
   dates: 'constructionDateText直接保留维基表中建造年代；Wikidata P571仅作为entityInceptionClaims保存，未当作建成年份。',
   currentUse: '双方listedNameOrUse及第五批混合列均为页面记载，不视为独立核定的今日用途。',
-  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json与scripts/data/shanghai-heritage-coordinate-overrides.json。',
+  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。用户另批准66项坐标复查结果（50项有来源、16项部分定位），每名录项保留一个主地图点，全部76个来源位置在coordinateReview中分别保留；部分定位不代表整项建筑已全部定位。360坐标系判定保留独立控制点支持的推断标记。原978项主点不变。来源与限制见geocoding/results.json、geocoding/reviewed-coordinate-backfill.json及scripts/data/shanghai-heritage-coordinate-overrides.json。',
   precision: 'Wikidata precision单位为角度，是来源数值精度，不是测绘误差保证；Wikipedia未提供precision时为null。候选与选点均不代表建筑轮廓或1926年历史位置。',
   media: '只保存图片来源链接，未下载图片；图片有各自版权许可，须查看文件说明页。',
   attribution: { wikipediaUrl: listSource.requestedUrl, wikipediaRevisionId: listSource.revisionId,
@@ -208,10 +218,12 @@ const methodology = {
 }
 const enriched = { schemaVersion: 1, recordCount: records.length, sourceIndexUrl: official.sourceIndexUrl,
   wikipediaSource: listSource, coverage, methodology, geocodingCoverage: geocoding?.coverage ?? null, records }
-const reviews = records.filter((r) => r.match.reviewFlags.length || r.locationStatus === 'candidates-need-review').map((r) => ({
+const reviews = records.filter((r) => r.match.reviewFlags.length || r.locationStatus === 'candidates-need-review' || r.coordinateReview?.status === 'partial-reference').map((r) => ({
   officialId: r.id, wikipediaId: r.wikipedia.id, officialName: r.official.originalNameOrUse,
   wikipediaName: r.wikipedia.originalNameOrUse, flags: r.match.reviewFlags,
   address: r.match.comparisons.address, locationStatus: r.locationStatus,
+  ...(r.coordinateReview ? { coordinateReview: { status: r.coordinateReview.status, reason: r.coordinateReview.reason,
+    locatedComponents: r.coordinateReview.points.map(point => point.name) } } : {}),
   coordinateReviews: r.articleReferences.filter((a) => a.location.candidates.length && !a.location.point).map((a) => ({
     title: a.resolvedTitle, status: a.location.status, scope: a.scope, sourceUrl: a.url,
   })),
@@ -229,6 +241,7 @@ for (const file of ['scripts/data/shanghai-heritage-wikipedia-batch1.json', 'scr
   const bytes = await fs.readFile(path.join(root, file))
   inputHashes.push({ repositoryFile: file, byteLength: bytes.length, sha256: hash(bytes) })
 }
+if (coordinateBackfill) inputHashes.push(...coordinateBackfill.inputHashes)
 const outputs = {
   'wikipedia/list-records.json': { schemaVersion: 1, ...list },
   'wikipedia/matches.json': { schemaVersion: 1, recordCount: matches.length, methodology: methodology.identity, records: matches },
@@ -237,6 +250,16 @@ const outputs = {
   'map-buildings.geojson': { type: 'FeatureCollection', metadata: { coordinateSystem: 'WGS84', meaning: methodology.locations, coverage }, features: mapFeatures },
   ...(geocoding ? { 'geocoding/locations.geojson': { type: 'FeatureCollection', metadata: {
     coordinateSystem: 'WGS84', meaning: geocoding.methodology, coverage: geocoding.coverage }, features: addressFeatures } } : {}),
+  ...(coordinateBackfill ? { 'geocoding/reviewed-coordinate-backfill.json': {
+    schemaVersion: 1, approvedOn: coordinateBackfill.approval.approvedOn,
+    coverage: reviewedCoordinateBackfill.coverage, sourcesVerified: coordinateBackfill.verifiedSourceSnapshots,
+    originalMapRecords: coordinateBackfill.approval.expectedCounts.existingMapRecords,
+    currentMapRecords: mapFeatures.length, remainingWithoutMapReference: records.length - mapFeatures.length,
+    records: records.filter(record => record.coordinateReview).map(record => ({
+      officialId: record.id, name: record.official.originalNameOrUse, address: record.official.addressAsListed,
+      ...record.coordinateReview,
+    })),
+  } } : {}),
   'wikipedia/review-queue.json': { schemaVersion: 1, recordCount: reviews.length,
     meaning: '地址差异/名称泛化/坐标范围待核的独立清单；差异不自动推翻名录对应，也不代表均为错误。', records: reviews },
   'wikipedia/validation.json': { schemaVersion: 1, coverage, inputs: inputHashes,

@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "scope": "4H005与浦东/青浦七项；只作研究提案，不改地图",
+  "coverage": {
+    "total": 8,
+    "referencePointRecords": 1,
+    "partialReferenceRecords": 1,
+    "needsReview": 5,
+    "noCoordinate": 1
+  },
+  "coordinateSystemPolicy": "360原字段未声明；按urban的两个独立具名控制点对照推断GCJ-02，保留推断标记，不声称发布方明示。OSM和Commons GPS各保留原声明。",
+  "records": [
+    {
+      "code": "4H005",
+      "status": "reference-point",
+      "reason": "OSM独立建筑轮廓的保护编号为4H005，虽然门牌仍错写山西北路452弄61号，独立Commons原拍摄者照片题名明确457弄61号梁氏大宅，WGS84摄影位置距轮廓中心约16m，支持同一楼体。采用带保护编号的楼体范围参考；保留457/452的源地址差异，不改官方地址。",
+      "points": [
+        {
+          "lon": 121.4743661,
+          "lat": 31.2496599,
+          "coordinateSystem": "WGS84",
+          "coordinateScope": "building-reference-point",
+          "origin": "openstreetmap",
+          "sourceName": "梁氏民宅（4H005保护编号轮廓）",
+          "sourceAddress": "山西北路452弄61",
+          "sourceUrl": "https://www.openstreetmap.org/way/495669844",
+          "sourceSnapshot": "outer/sources/liang-neighborhood.json",
+          "sourceVersion": 1,
+          "sourceCoordinates": {
+            "coordinateSystem": "WGS84",
+            "bbox": [
+              121.4742694,
+              31.2495921,
+              121.4744627,
+              31.2497276
+            ]
+          },
+          "derivation": "OSM完整建筑轮廓的包围框中心。旁证摄影点只用于邻近核对，不作为楼心。",
+          "measuredAccuracyMetres": null,
+          "historicalGeometryVerified": false
+        }
+      ],
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/495669844",
+        "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%B5%B7%E9%97%B8%E5%8C%97%E5%8C%BA%E5%B1%B1%E8%A5%BF%E5%8C%97%E8%B7%AF457%E8%B7%AF61%E5%8F%B7%E6%A2%81%E6%B0%8F%E5%A4%A7%E5%AE%85%E5%B1%B1%E5%A2%99%20-%20panoramio.jpg"
+      ],
+      "evidenceFiles": [
+        "outer/sources/liang-neighborhood.json",
+        "outer/sources/liang-neighborhood.source.json",
+        "outer/sources/commons-metadata.json",
+        "outer/sources/commons-metadata.source.json"
+      ],
+      "candidates": [
+        {
+          "lon": 121.474221,
+          "lat": 31.249589,
+          "coordinateSystem": "WGS84",
+          "sourceName": "梁氏大宅山墙独立照片的摄影位置",
+          "sourceSnapshot": "outer/sources/commons-metadata.json",
+          "adopted": false,
+          "reason": "距所选建筑轮廓中心约16m；摄影者站位不是建筑中心。"
+        }
+      ]
+    },
+    {
+      "code": "5W014",
+      "status": "partial-reference",
+      "reason": "新增360具名钱慧安纪念馆POI，完整地址为高桥西街173弄3号；浦东官方2023年高桥报道将馆址列173弄1—3号，采购保护清单亦将5W014列为钱慧安纪念馆/高桥书画院、173弄1—3及175—181号。该点可定位173弄3号这一组成物；175—181号其他保护建筑尚未逐栋核定。采用经两个控制点推断GCJ-02后转换的门址参考，不用旧图书馆185号点。",
+      "points": [
+        {
+          "lon": 121.576414,
+          "lat": 31.3445,
+          "coordinateSystem": "WGS84",
+          "coordinateScope": "address-reference-point",
+          "origin": "360-public-map",
+          "sourceName": "钱慧安纪念馆",
+          "sourceAddress": "上海市浦东新区高桥西街173弄3号",
+          "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%AB%98%E6%A1%A5%E9%92%B1%E6%85%A7%E5%AE%89%E7%BA%AA%E5%BF%B5%E9%A6%86&src=bendibao&t=map",
+          "sourceSnapshot": "outer/sources/qianhuian-map360.json",
+          "sourceCoordinates": {
+            "lon": 121.580641,
+            "lat": 31.342354,
+            "coordinateSystem": "GCJ-02-inferred"
+          },
+          "sourceCoordinateSystemEvidence": "empirical-control-comparison",
+          "publisherDeclarationAvailable": false,
+          "coordinateSystemAudit": "urban/coordinate-system-audit.json",
+          "derivation": "360公开页STATE的x/y；同一服务的两个具名控制点支持GCJ-02解释，经现有迭代逆转换为WGS84。该坐标系为实测对照推断，页面未明示。",
+          "limitation": "仅173弄3号组成物门址参考，不代表该名录项其余175—181号建筑全部定位。",
+          "measuredAccuracyMetres": null,
+          "historicalGeometryVerified": false
+        }
+      ],
+      "sourceUrls": [
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%AB%98%E6%A1%A5%E9%92%B1%E6%85%A7%E5%AE%89%E7%BA%AA%E5%BF%B5%E9%A6%86&src=bendibao&t=map",
+        "https://www.pudong.gov.cn/016019007/20231220/771993/e63bced4da304d9a845893e47adbb9a3.pdf",
+        "https://sh-gov-open-doc.oss-cn-shanghai.aliyuncs.com/1108QZ/794a7383-2f8b-426c-91b5-d316e6906fd1.pdf"
+      ],
+      "evidenceFiles": [
+        "outer/search-01.txt",
+        "outer/sources/qianhuian-map360.json",
+        "outer/sources/qianhuian-map360.source.json",
+        "urban/coordinate-system-audit.json",
+        "urban/sources/360-hamilton.raw",
+        "urban/sources/control-hamilton.raw",
+        "urban/sources/richemont-correct.raw"
+      ],
+      "candidates": []
+    },
+    {
+      "code": "5W035",
+      "status": "no-coordinate",
+      "reason": "上海规划资源局航头镇规划资料明确保护住宅门牌为下沙街西段452号，补齐了官网缺失门牌。本轮分别查询“航头镇下沙街452号”和“上海市浦东新区下沙街452号”，360两次只退回“下沙”地区点，未返回452号门址或住宅实体；已有OSM及图书馆也未提供该住宅有据点位，未将地区中心冒作住宅位置。",
+      "points": [],
+      "sourceUrls": [
+        "https://ghzyj.sh.gov.cn/cmsres/a6/a688f7e8f2ac41e8a1c8d0efa459f245/befef57ef16f07bbd51e96fe3f5447ce.pdf",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E8%88%AA%E5%A4%B4%E9%95%87%E4%B8%8B%E6%B2%99%E8%A1%97452%E5%8F%B7&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E4%B8%8B%E6%B2%99%E8%A1%97452%E5%8F%B7&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-05.txt",
+        "outer/sources/xiasha452-map360.json",
+        "outer/sources/xiasha452-full-map360.json"
+      ],
+      "candidates": [],
+      "rejectedSearchResults": [
+        {
+          "sourceName": "上海市航头镇下沙",
+          "lon": 121.589233,
+          "lat": 31.0519489,
+          "coordinateSystem": "GCJ-02-inferred",
+          "reason": "地区级回退，未命中452号，不能采用。"
+        }
+      ]
+    },
+    {
+      "code": "5W046",
+      "status": "needs-review",
+      "reason": "2024年浦东官方公示为拟将小湾区公所由小湾村北街11号迁至唐镇G13-0101-1地块绿地，不等于迁移已完成。本轮继续检索未取得迁移完成及具体新建筑坐标；360同名检索只匹配到重庆的区公所，明确排除。图书馆旧址点继续只能作旧来源候选，不能标成现址。",
+      "points": [],
+      "sourceUrls": [
+        "https://www.pudong.gov.cn/zwgk/14483.gkml_zhzw_ghjh/2024/299/333473.html",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E5%B0%8F%E6%B9%BE%E5%8C%BA%E5%85%AC%E6%89%80&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-01.txt",
+        "outer/sources/xiaowan-map360.json"
+      ],
+      "candidates": [],
+      "rejectedSearchResults": [
+        {
+          "reason": "360只返回重庆市江津区、开州区同名区公所，超出上海并且身份不同，不记录为有效候选。"
+        }
+      ]
+    },
+    {
+      "code": "5X003",
+      "status": "needs-review",
+      "reason": "本轮用练塘镇东风街109号/110号及完整青浦区地址补检；109号仅退回练塘镇中心，110号匹配到盘锦同号门牌，均排除。旧图书馆111号与官方109、110号的身份关系仍未解决，不能拿相邻门号补保护楼位置。",
+      "points": [],
+      "sourceUrls": [
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97109%E5%8F%B7&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97110%E5%8F%B7&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97109%E5%8F%B7&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/dongfeng109-map360.json",
+        "outer/sources/dongfeng110-map360.json",
+        "outer/sources/dongfeng109-full-map360.json"
+      ],
+      "candidates": [],
+      "rejectedSearchResults": [
+        {
+          "reason": "练塘镇地区中心和盘锦市东风街110号均非受保护住宅，未转换成可上图点。"
+        }
+      ]
+    },
+    {
+      "code": "5X004",
+      "status": "needs-review",
+      "reason": "新取得青浦文旅官方身份桥接：练塘下塘街街廊的地址为下塘街44弄19—33号，与本名录19—38号及北侧构筑物范围相交。Commons有具名街廊现场照片及WGS84摄影位置，可作为位置线索；OSM本轮未发现明确廊棚轮廓。完整44弄19号检索仍退回镇中心，因此不把摄影者站位或陈云故居中心充作受保护住宅/廊棚楼体点。",
+      "points": [],
+      "sourceUrls": [
+        "https://www.shqp.gov.cn/tv/wlzwgk/ml/qt/20190829/556356.html",
+        "https://www.shqp.gov.cn/tv/tv/upload/202407/0712_083619_917.pdf",
+        "https://commons.wikimedia.org/wiki/File:Riverside_Veranda_at_Xiatang_Street,_Liantang_Town.jpg",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%8B%E5%A1%98%E8%A1%9744%E5%BC%8419%E5%8F%B7&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/commons-metadata.json",
+        "outer/sources/liantang-corridor.json",
+        "outer/sources/xiatang19-full-map360.json"
+      ],
+      "candidates": [
+        {
+          "lon": 121.041472,
+          "lat": 31.009628,
+          "coordinateSystem": "WGS84",
+          "coordinateScope": "photographer-location-only",
+          "sourceName": "练塘下塘街街廊2020年照片的摄影位置",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riverside_Veranda_at_Xiatang_Street,_Liantang_Town.jpg",
+          "sourceSnapshot": "outer/sources/commons-metadata.json",
+          "adopted": false,
+          "reason": "已由官方地址桥接具名街廊，但该GPS是摄影站位，未作为建筑或完整保护范围点。"
+        }
+      ]
+    },
+    {
+      "code": "5X005",
+      "status": "needs-review",
+      "reason": "新增官方地址清单和Commons照片仍支持东湖街209弄，图书馆却记东湖里209号。360本轮回显完整“朱家角镇东湖街209弄”及原坐标，但没有POI实体ID或定位精度/层级声明，且转换后与图书馆点相距约600m。双源冲突未解决，不能只按数字209就自动采用其中一点。",
+      "points": [],
+      "sourceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Donghujie_209_Long_Minzhai.JPG",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%E4%B8%9C%E6%B9%96%E8%A1%97209%E5%BC%84&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/commons-metadata.json",
+        "outer/sources/donghu209-map360.json",
+        "outer/sources/donghu209-neighborhood.json",
+        "urban/coordinate-system-audit.json"
+      ],
+      "candidates": [
+        {
+          "lon": 121.047124,
+          "lat": 31.107636,
+          "coordinateSystem": "WGS84",
+          "coordinateScope": "address-reference-point",
+          "origin": "360-public-map",
+          "sourceName": "上海市朱家角镇东湖街209弄",
+          "sourceAddress": null,
+          "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%E4%B8%9C%E6%B9%96%E8%A1%97209%E5%BC%84&src=bendibao&t=map",
+          "sourceSnapshot": "outer/sources/donghu209-map360.json",
+          "sourceCoordinates": {
+            "lon": 121.051655,
+            "lat": 31.1056761,
+            "coordinateSystem": "GCJ-02-inferred"
+          },
+          "sourceCoordinateSystemEvidence": "empirical-control-comparison",
+          "publisherDeclarationAvailable": false,
+          "coordinateSystemAudit": "urban/coordinate-system-audit.json",
+          "derivation": "360公开页STATE的x/y；同一服务的两个具名控制点支持GCJ-02解释，经现有迭代逆转换为WGS84。该坐标系为实测对照推断，页面未明示。",
+          "limitation": "无POI实体ID，定位层级未声明，与旧目录点显著不一致，未采用。",
+          "measuredAccuracyMetres": null,
+          "historicalGeometryVerified": false,
+          "adopted": false,
+          "providerEntityId": null,
+          "sourceIdentityLevelUnspecified": true
+        }
+      ]
+    },
+    {
+      "code": "5X012",
+      "status": "needs-review",
+      "reason": "青浦文旅2024年官方名录把鹤江路369号明确命名为薛家宅（310118-0159），2026年修缮招标线索亦同址。按薛家宅搜索返回多个外区同名村，完整369号检索只给鹤江路/路口和444号商店，不返回369号住宅；旧图书馆344号仍无换号/同院桥接，故不拿道路或邻楼坐标晋级。",
+      "points": [],
+      "sourceUrls": [
+        "https://www.shqp.gov.cn/tv/tv/upload/202407/0712_083619_917.pdf",
+        "https://www.qianlima.com/bid-638347320.html",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%99%BD%E9%B9%A4%E9%95%87%E8%96%9B%E5%AE%B6%E5%AE%85&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E9%B9%A4%E6%B1%9F%E8%B7%AF369%E5%8F%B7&src=bendibao&t=map"
+      ],
+      "evidenceFiles": [
+        "outer/search-04.txt",
+        "outer/search-05.txt",
+        "outer/sources/xuejia-map360.json",
+        "outer/sources/xuejia369-map360.json",
+        "outer/sources/xuejia-neighborhood.json"
+      ],
+      "candidates": [],
+      "rejectedSearchResults": [
+        {
+          "reason": "嘉定、浦东、金山同名薛家宅均非白鹤镇对象；鹤江路、路口和444号商店亦不是369号住宅。"
+        }
+      ]
+    }
+  ],
+  "manifest": [
+    {
+      "file": "outer/sources/liang-neighborhood.json",
+      "bytes": 500800,
+      "sha256": "ac7204b91fbc126e60c1b6cad9b53a9f372bd3f7696be17db6924f3ebb455588"
+    },
+    {
+      "file": "outer/sources/liang-neighborhood.source.json",
+      "bytes": 345,
+      "sha256": "a827383d955f2fa00fbd941f2adc3855543b9f3bd82ac01f76d45288a68d8b08"
+    },
+    {
+      "file": "outer/sources/commons-metadata.json",
+      "bytes": 29075,
+      "sha256": "88d0c77e6e02324f833494ad8500ada40573f2127fd4b535489eb568003e50ce"
+    },
+    {
+      "file": "outer/sources/commons-metadata.source.json",
+      "bytes": 775,
+      "sha256": "6811754967e12509003657a4ee187340451db1e6a15970f40d2f982fbf453963"
+    },
+    {
+      "file": "outer/search-01.txt",
+      "bytes": 25891,
+      "sha256": "e1a1fca26363fde11b115df84dcd8adec5ab15154f2d7389a9d6a89b6f7f7be3"
+    },
+    {
+      "file": "outer/sources/qianhuian-map360.json",
+      "bytes": 105201,
+      "sha256": "d692e1efe2231b76fe71db60a70bdb31cecfad3e34e9700f2b78957895e507e3"
+    },
+    {
+      "file": "outer/sources/qianhuian-map360.source.json",
+      "bytes": 408,
+      "sha256": "97c35aaabaab5cdb42ff43274f8695d2e1cb7471371d1d984fb5ae02641046a2"
+    },
+    {
+      "file": "urban/coordinate-system-audit.json",
+      "bytes": 1953,
+      "sha256": "f0d81742aa4b1e66de182dfadac804e47ff97a1c6875d478162eeb322f7c1d16"
+    },
+    {
+      "file": "urban/sources/360-hamilton.raw",
+      "bytes": 105069,
+      "sha256": "2df970b3cc9ac0ecb0abf5b25f583726f9cf6729467dcb1233c763836e75919a"
+    },
+    {
+      "file": "urban/sources/control-hamilton.raw",
+      "bytes": 936355,
+      "sha256": "0293eb873dd2d0832c179c21c0cd535752b152549595f462504ab08b5b10ae11"
+    },
+    {
+      "file": "urban/sources/richemont-correct.raw",
+      "bytes": 886964,
+      "sha256": "a67c51d6654835e5be2bf1c26cb111ef7d5533b49963fbeb48e75b9870b2a29d"
+    },
+    {
+      "file": "outer/search-05.txt",
+      "bytes": 23459,
+      "sha256": "caf0ab3cf8f8069ba6b082e265dc27a26d6cc03cdb1c5fa54b7c33286c0d0936"
+    },
+    {
+      "file": "outer/sources/xiasha452-map360.json",
+      "bytes": 102831,
+      "sha256": "50558b3474badd9f941c80b10a1bd978b48378d6cfeabd803732cea40aa4fa5d"
+    },
+    {
+      "file": "outer/sources/xiasha452-full-map360.json",
+      "bytes": 103003,
+      "sha256": "cac2b54b332b65f325cd4a12ac73f3edcc22b97e62b8d96d78d31aa107f835ca"
+    },
+    {
+      "file": "outer/sources/xiaowan-map360.json",
+      "bytes": 102225,
+      "sha256": "4e161644f1c8ab5dfbcb1bc1b50ec6437fb682a7a6820207ab73a575f08334c8"
+    },
+    {
+      "file": "outer/search-02.txt",
+      "bytes": 24794,
+      "sha256": "1b03a52f86c286fe7a317446cb64ec9076f25ade2f0891620d03d1f27a9072ba"
+    },
+    {
+      "file": "outer/sources/dongfeng109-map360.json",
+      "bytes": 102823,
+      "sha256": "30b40fb56987b23581f5e3bd3487b8cf4fe44a4f1169f6c9067556cdecc7fac6"
+    },
+    {
+      "file": "outer/sources/dongfeng110-map360.json",
+      "bytes": 101941,
+      "sha256": "7b5d7c7a2c4c2435532db2751dfc5d712aff36de1fb41684648669a5939e4e5b"
+    },
+    {
+      "file": "outer/sources/dongfeng109-full-map360.json",
+      "bytes": 103084,
+      "sha256": "71100aaa0d824724125399983f9b842f826b252c8b4850ab32ed3cc233a64227"
+    },
+    {
+      "file": "outer/sources/liantang-corridor.json",
+      "bytes": 1319842,
+      "sha256": "8d9f1964c782976d63cbff93dce47eec71f517419ec9220d76a5d81335f385b4"
+    },
+    {
+      "file": "outer/sources/xiatang19-full-map360.json",
+      "bytes": 103132,
+      "sha256": "129bfff4b520229fd6f1b0eb366e44abed25c02c2d251fa9098457ba48c60796"
+    },
+    {
+      "file": "outer/sources/donghu209-map360.json",
+      "bytes": 102882,
+      "sha256": "a27b18665a61bd1531b797699a12f842220aa8b200ba2f18d1af540a1ecc1bc5"
+    },
+    {
+      "file": "outer/sources/donghu209-neighborhood.json",
+      "bytes": 416100,
+      "sha256": "36fbe13486e7dbc6adf7ca90d778bb91def5e8f550f10f2e05d6da3b23cdc852"
+    },
+    {
+      "file": "outer/search-04.txt",
+      "bytes": 23784,
+      "sha256": "82267a5d23b72669b4a0e212136783db239c4e20db5c55feae65adb51acbe982"
+    },
+    {
+      "file": "outer/sources/xuejia-map360.json",
+      "bytes": 130332,
+      "sha256": "92b768b513c47e9f7a52472324e5103279c0153d8b4396dd071a498aeaae4c00"
+    },
+    {
+      "file": "outer/sources/xuejia369-map360.json",
+      "bytes": 116213,
+      "sha256": "c7a72cd1d30c1004744035b1b1f87b65f5eebe149a926a544bef47699af294f6"
+    },
+    {
+      "file": "outer/sources/xuejia-neighborhood.json",
+      "bytes": 305944,
+      "sha256": "7522eb176140cc7974c105fa7e294056fe933a75bc39d3e803af839efb2c0cea"
+    }
+  ]
+}

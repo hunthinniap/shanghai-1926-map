@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { metroEnabled } from '../config'
 import maplibregl, {
   AttributionControl,
@@ -26,6 +26,7 @@ import {
   type RoadLabelEntry,
 } from '../lib/roadLabels'
 import { buildParkLabelIndex, type ParkLabelEntry } from '../lib/parkLabels'
+import { withLandmarkMapNames } from '../lib/landmarkLabels'
 
 interface MapViewProps {
   features: HistoricalFeatureCollection
@@ -172,6 +173,29 @@ function setLandmarkVisibility(map: Map, visible: boolean) {
   landmarkLayers.forEach((layerId) => {
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visibility)
   })
+}
+
+function setParkPeriodFilter(map: Map, features: HistoricalFeatureCollection) {
+  const groups = new Set(features.features.map(feature => feature.properties.featureGroupId))
+  const names = [...buildParkLabelIndex()].filter(([, entry]) => groups.has(entry.featureGroupId)).map(([name]) => name)
+  const filter: maplibregl.FilterSpecification = names.length ? [
+    'all', ['match', ['get', 'class'], ['park', 'garden'], true, false],
+    ['!=', roadNameExpression(names), ''],
+  ] : ['==', ['get', 'name'], '__no_dated_parks__']
+  for (const id of ['historical-park-hit', 'historical-park-label']) {
+    if (map.getLayer(id)) map.setFilter(id, filter)
+  }
+  if (names.length && map.getLayer('historical-park-label')) {
+    const byGroup = new globalThis.Map(features.features.map(feature => [feature.properties.featureGroupId, feature]))
+    const entries = new globalThis.Map([...buildParkLabelIndex()].filter(([name]) => names.includes(name)).map(([name, entry]) =>
+      [name, { ...entry, historicalName: byGroup.get(entry.featureGroupId)?.properties.mapDisplayName ?? entry.historicalName }]))
+    map.setLayoutProperty('historical-park-label', 'text-field', parkValueExpression(entries, roadNameExpression(names), entry => entry.historicalName))
+  }
+}
+
+function selectionPadding() {
+  return { top: 120, right: window.innerWidth > 760 ? 410 : 40,
+    bottom: Math.min(window.innerWidth >= 600 ? 130 : 510, Math.max(140, window.innerHeight - 240)), left: 40 }
 }
 
 function setSubwayVisibility(map: Map, visible: boolean) {
@@ -724,7 +748,7 @@ function addHistoricalLayers(
     minzoom: 11.2,
     filter: ['==', ['get', 'labelFromFeature'], true],
     layout: {
-      'text-field': ['get', 'historicalName'],
+      'text-field': ['coalesce', ['get', 'mapDisplayName'], ['get', 'historicalName']],
       'text-font': ['Noto Sans Regular'],
       'text-size': ['interpolate', ['linear'], ['zoom'], 11.2, 11.5, 16, 14],
       'text-letter-spacing': 0.03,
@@ -783,7 +807,7 @@ function addHistoricalLayers(
       ['!=', ['get', 'labelOnMap'], false],
     ],
     layout: {
-      'text-field': ['get', 'historicalName'],
+      'text-field': ['coalesce', ['get', 'mapDisplayName'], ['get', 'historicalName']],
       'text-font': ['Noto Sans Regular'],
       'text-size': ['interpolate', ['linear'], ['zoom'], 12, 10.5, 16, 13],
       'text-offset': [0, 1.05],
@@ -840,12 +864,13 @@ export function MapView({
   onSelectHeritage,
   onMapError,
 }: MapViewProps) {
+  const labeledFeatures = useMemo(() => withLandmarkMapNames(features), [features])
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
   const onSelectRef = useRef(onSelect)
   const onSelectMetroRef = useRef(onSelectMetro)
   const onSelectHeritageRef = useRef(onSelectHeritage)
-  const featuresRef = useRef(features)
+  const featuresRef = useRef(labeledFeatures)
   const fittedSelectionKeyRef = useRef<string | undefined>(undefined)
   const heritageBuildingsRef = useRef(heritageBuildings)
   const heritageVisibleRef = useRef(heritageVisible)
@@ -858,7 +883,7 @@ export function MapView({
   onSelectRef.current = onSelect
   onSelectMetroRef.current = onSelectMetro
   onSelectHeritageRef.current = onSelectHeritage
-  featuresRef.current = features
+  featuresRef.current = labeledFeatures
   heritageBuildingsRef.current = heritageBuildings
   heritageVisibleRef.current = heritageVisible
   selectedHeritageRef.current = selectedHeritage
@@ -952,6 +977,7 @@ export function MapView({
 
     map.on('style.load', () => {
       addHistoricalLayers(map, featuresRef.current, jurisdictions, roadLabels, metroStationLabels, parkLabels)
+      setParkPeriodFilter(map, featuresRef.current)
       addHeritageLayers(map, heritageBuildingsRef.current ?? emptyHeritage)
       setBuildingVisibility(map, buildingsVisibleRef.current)
       setLandmarkVisibility(map, landmarksVisibleRef.current)
@@ -988,9 +1014,11 @@ export function MapView({
   }, [jurisdictions, onMapError])
 
   useEffect(() => {
-    const source = mapRef.current?.getSource('historical-features') as maplibregl.GeoJSONSource | undefined
-    source?.setData(features)
-  }, [features])
+    const map = mapRef.current
+    const source = map?.getSource('historical-features') as maplibregl.GeoJSONSource | undefined
+    source?.setData(labeledFeatures)
+    if (map) setParkPeriodFilter(map, labeledFeatures)
+  }, [labeledFeatures])
 
   useEffect(() => {
     const map = mapRef.current
@@ -1026,7 +1054,7 @@ export function MapView({
     fittedSelectionKeyRef.current = selectionKey
     const coordinates = selectedHeritage.geometry.coordinates
     map.fitBounds([[coordinates[0], coordinates[1]], [coordinates[0], coordinates[1]]], {
-      padding: { top: 120, right: window.innerWidth > 760 ? 410 : 40, bottom: window.innerWidth > 760 ? 80 : 330, left: 40 },
+      padding: selectionPadding(),
       maxZoom: 15.5, duration: 750,
     })
   }, [selectedHeritage])
@@ -1065,7 +1093,7 @@ export function MapView({
     })
     if (!bounds.isEmpty()) {
       map.fitBounds(bounds, {
-        padding: { top: 120, right: window.innerWidth > 760 ? 410 : 40, bottom: window.innerWidth > 760 ? 80 : 330, left: 40 },
+        padding: selectionPadding(),
         maxZoom: selected.features[0]?.properties?.kind === 'landmark' ? 16.4 : 15.5,
         duration: 850,
       })

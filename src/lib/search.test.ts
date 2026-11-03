@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
+import { readFileSync } from 'node:fs'
 import type { HistoricalFeature } from '../types'
-import { makeSearchRecords, normalizeSearchTerm, searchRecords } from './search'
+import type { HeritageBuildingFeature } from './heritageBuildings'
+import { makePlaceSearchRecords, makeSearchRecords, normalizeSearchTerm, searchRecords } from './search'
 
 const road = {
   type: 'Feature',
@@ -90,5 +92,25 @@ describe('historical name search', () => {
       .toBe('landmark-rihui-port-mosque')
     expect(searchRecords(clusteredRecords, '清真公塋')[0]?.historicalName)
       .toBe('Rihui Port Mosque')
+  })
+
+  it('finds unlinked heritage entries by official code, Chinese names and addresses', () => {
+    const buildings: HeritageBuildingFeature[] = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')).features
+      .filter((feature: HeritageBuildingFeature) => ['sh-fgj-2B019-01', 'sh-fgj-2D008-01'].includes(feature.properties.officialId))
+    const index = makePlaceSearchRecords([], buildings)
+    for (const query of ['2b019', '美国学校', '儿童艺术剧院', '华山路643号']) {
+      expect(searchRecords(index, query)[0]?.heritageOfficialId).toBe('sh-fgj-2B019-01')
+    }
+    for (const query of ['2D008', '逸村', '淮海中路1610弄']) {
+      expect(searchRecords(index, query)[0]?.heritageOfficialId).toBe('sh-fgj-2D008-01')
+    }
+  })
+
+  it('adds directory terms to a linked landmark without duplicating its search result', () => {
+    const building: HeritageBuildingFeature = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')).features[0]
+    const index = makePlaceSearchRecords([road], [building], new Map([[building.properties.officialId, road.properties.featureGroupId]]))
+    expect(index).toHaveLength(1)
+    expect(searchRecords(index, building.properties.officialCodeRaw)[0]?.heritageOfficialId).toBe(building.properties.officialId)
+    expect(searchRecords(index, 'Vallon')[0]?.featureGroupId).toBe(road.properties.featureGroupId)
   })
 })

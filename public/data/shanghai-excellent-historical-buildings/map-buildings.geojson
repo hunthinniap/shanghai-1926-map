@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "metadata": {
     "coordinateSystem": "WGS84",
-    "meaning": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。完整选择、暂停及坐标转换理由见geocoding/results.json与scripts/data/shanghai-heritage-coordinate-overrides.json。",
+    "meaning": "原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。用户另批准66项坐标复查结果（50项有来源、16项部分定位），每名录项保留一个主地图点，全部76个来源位置在coordinateReview中分别保留；部分定位不代表整项建筑已全部定位。360坐标系判定保留独立控制点支持的推断标记。原978项主点不变。来源与限制见geocoding/results.json、geocoding/reviewed-coordinate-backfill.json及scripts/data/shanghai-heritage-coordinate-overrides.json。",
     "coverage": {
       "officialRecords": 1058,
       "wikipediaRecords": 1058,
@@ -24,12 +24,15 @@
       "recordsWithOriginalNameArticleLinks": 421,
       "uniqueArticleTitles": 410,
       "articlesWithAnySourceCoordinate": 142,
-      "recordsWithReferencePoints": 978,
-      "referencePointFeatures": 978,
+      "recordsWithReferencePoints": 1044,
+      "referencePointFeatures": 1044,
       "wikipediaReferencePointFeatures": 100,
       "addressReferencePointFeatures": 878,
-      "recordsWithOnlyCoordinateCandidates": 70,
-      "recordsWithoutSourceCoordinates": 10
+      "reviewedCoordinateReferenceFeatures": 66,
+      "partialCoordinateRecords": 16,
+      "documentedReviewedSourcePoints": 76,
+      "recordsWithOnlyCoordinateCandidates": 12,
+      "recordsWithoutSourceCoordinates": 2
     }
   },
   "features": [
@@ -40803,6 +40806,3934 @@
         "district": "青浦区",
         "constructionDate": null,
         "floors": "1层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1A002-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4868862,
+          31.2358621
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1A002-01",
+        "wikipediaId": "wiki-heritage-t02-r0007",
+        "batch": 1,
+        "officialCodeRaw": "1A002",
+        "name": "上海总会",
+        "articleTitle": "上海总会",
+        "address": "中山东一路2号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/node/476151413",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM独立点明确标上海总会大楼，且与图书馆中山东一路2号点相互接近；解决原维基两坐标冲突。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM独立点明确标上海总会大楼，且与图书馆中山东一路2号点相互接近；解决原维基两坐标冲突。",
+          "points": [
+            {
+              "name": "上海总会大楼",
+              "lon": 121.4868862,
+              "lat": 31.2358621,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/node/476151413",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E6%80%BB%E4%BC%9A%E5%A4%A7%E6%A5%BC",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "上海总会",
+        "listedName": "东风饭店",
+        "wikipediaAddress": "中山东一路2号",
+        "district": "黄浦区",
+        "constructionDate": "1911年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1A013-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4669946,
+          31.2355961
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1A013-01",
+        "wikipediaId": "wiki-heritage-t02-r0010",
+        "batch": 1,
+        "officialCodeRaw": "1A013",
+        "name": "四行储蓄会大楼",
+        "articleTitle": "四行储蓄会大楼",
+        "address": "南京西路170号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/369342509",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "南京西路170",
+        "locationNote": "OSM建筑轮廓明确标国际饭店、南京西路170号，另有馆内点可对照；采用建筑轮廓包围框中心。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM建筑轮廓明确标国际饭店、南京西路170号，另有馆内点可对照；采用建筑轮廓包围框中心。",
+          "points": [
+            {
+              "name": "国际饭店",
+              "lon": 121.4669946,
+              "lat": 31.2355961,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/369342509",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "南京西路170",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E9%A5%AD%E5%BA%97",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "四行储蓄会大楼",
+        "listedName": "国际饭店",
+        "wikipediaAddress": "南京西路170号",
+        "district": "黄浦区",
+        "constructionDate": "1934年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1A017-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4666208,
+          31.2326221
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1A017-01",
+        "wikipediaId": "wiki-heritage-t02-r0011",
+        "batch": 1,
+        "officialCodeRaw": "1A017",
+        "name": "跑马总会",
+        "articleTitle": "跑马总会",
+        "address": "南京西路325号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/39764333",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM建筑标旧名跑马总会及1989年第10号保护序号；采用南京西路325号会所建筑参考，排除跑马场整体范围。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM建筑标旧名跑马总会及1989年第10号保护序号；采用南京西路325号会所建筑参考，排除跑马场整体范围。",
+          "points": [
+            {
+              "name": "ROOF 325",
+              "lon": 121.4666208,
+              "lat": 31.2326221,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/39764333",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E8%B7%91%E9%A9%AC%E6%80%BB%E4%BC%9A",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "跑马总会",
+        "listedName": "上海美术馆",
+        "wikipediaAddress": "南京西路325号",
+        "district": "黄浦区",
+        "constructionDate": "1933年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1C002-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.460098,
+          31.214534
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1C002-01",
+        "wikipediaId": "wiki-heritage-t02-r0060",
+        "batch": 1,
+        "officialCodeRaw": "1C002",
+        "name": "瑞金二路住宅",
+        "articleTitle": "瑞金二路住宅",
+        "address": "瑞金二路18号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://www.amap.com/place/B0FFFE4GIS",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "找到独立的酒店1号楼POI；与瑞金宾馆1号楼这一保护项身份相符。官网18号与酒店118号的来源差异保留，不把酒店总体中心作为1号楼。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "找到独立的酒店1号楼POI；与瑞金宾馆1号楼这一保护项身份相符。官网18号与酒店118号的来源差异保留，不把酒店总体中心作为1号楼。",
+          "points": [
+            {
+              "name": "上海瑞金洲际酒店1号楼",
+              "lon": 121.460098,
+              "lat": 31.214534,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.amap.com/place/B0FFFE4GIS",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E7%91%9E%E9%87%91%E5%AE%BE%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "瑞金二路住宅",
+        "listedName": "瑞金宾馆1号楼",
+        "wikipediaAddress": "瑞金二路18号",
+        "district": "黄浦区",
+        "constructionDate": "1917年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1B006-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4367558,
+          31.219993
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1B006-01",
+        "wikipediaId": "wiki-heritage-t02-r0026",
+        "batch": 1,
+        "officialCodeRaw": "1B006",
+        "name": "宏恩医院",
+        "articleTitle": "宏恩医院",
+        "address": "延安西路221号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10738298237",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM另有具名宏恩医院历史点；配合官方延安西路221号和旧病房楼身份，采用历史点参考，不用医院整个院区中心。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM另有具名宏恩医院历史点；配合官方延安西路221号和旧病房楼身份，采用历史点参考，不用医院整个院区中心。",
+          "points": [
+            {
+              "name": "宏恩医院",
+              "lon": 121.4367558,
+              "lat": 31.219993,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/node/10738298237",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8D%8E%E4%B8%9C%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "宏恩医院",
+        "listedName": "华东医院南楼",
+        "wikipediaAddress": "延安西路221号",
+        "district": "静安区",
+        "constructionDate": "1926年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1F002-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.486621,
+          31.245872
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1F002-01",
+        "wikipediaId": "wiki-heritage-t02-r0009",
+        "batch": 1,
+        "officialCodeRaw": "1F002",
+        "name": "俄罗斯领事馆/苏联领事馆",
+        "articleTitle": "俄罗斯领事馆/苏联领事馆",
+        "address": "黄浦路20号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/41shqjvwgo1ugamf",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "虹口区黄浦路20号",
+        "locationNote": "图书馆以俄罗斯领事馆、黄浦路20号对应该名录项；维基及外事办门址亦一致，采用门址参考点。机构整体坐标不再作为唯一依据。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆以俄罗斯领事馆、黄浦路20号对应该名录项；维基及外事办门址亦一致，采用门址参考点。机构整体坐标不再作为唯一依据。",
+          "points": [
+            {
+              "name": "俄罗斯领事馆",
+              "lon": 121.486621,
+              "lat": 31.245872,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/41shqjvwgo1ugamf",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "虹口区黄浦路20号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%BF%84%E7%BD%97%E6%96%AF%E9%A9%BB%E4%B8%8A%E6%B5%B7%E6%80%BB%E9%A2%86%E4%BA%8B%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "俄罗斯领事馆/苏联领事馆",
+        "listedName": "俄罗斯领事馆",
+        "wikipediaAddress": "黄浦路20号",
+        "district": "虹口区",
+        "constructionDate": "1917年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1F004-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.477342,
+          31.266472
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1F004-01",
+        "wikipediaId": "wiki-heritage-t02-r0056",
+        "batch": 1,
+        "officialCodeRaw": "1F004",
+        "name": "多伦路250号住宅",
+        "articleTitle": "多伦路250号住宅",
+        "address": "多伦路250号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://www.amap.com/place/B00155KD3Q",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "高德POI名称明确为多伦路250号住宅孔公馆，位置说明在四川北路2099—2101号附近；与名录住宅及北端转角位置一致，采用具名建筑参考点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "高德POI名称明确为多伦路250号住宅孔公馆，位置说明在四川北路2099—2101号附近；与名录住宅及北端转角位置一致，采用具名建筑参考点。",
+          "points": [
+            {
+              "name": "多伦路250号住宅孔公馆",
+              "lon": 121.477342,
+              "lat": 31.266472,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.amap.com/place/B00155KD3Q",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%AD%94%E7%A5%A5%E7%86%99%E5%85%AC%E9%A6%86_(%E8%99%B9%E5%8F%A3)",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "多伦路250号住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "多伦路250号",
+        "district": "虹口区",
+        "constructionDate": "1924年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1M004-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3667,
+          31.1919
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1M004-01",
+        "wikipediaId": "wiki-heritage-t02-r0050",
+        "batch": 1,
+        "officialCodeRaw": "1M004",
+        "name": "虹桥路2310号住宅",
+        "articleTitle": "虹桥路2310号住宅",
+        "address": "虹桥路2310号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "wikipedia",
+        "sourceUrl": "https://zh.wikipedia.org/wiki/罗别根花园",
+        "coordinateSourceTitle": "维基百科",
+        "sourceAddress": null,
+        "locationNote": "维基具体词条给出31.1919,121.3667；Commons同址建筑照片另有拍摄位置。该位置可作具名别墅参考，摄影位置只用于邻近交叉核对，不当作楼心。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "维基具体词条给出31.1919,121.3667；Commons同址建筑照片另有拍摄位置。该位置可作具名别墅参考，摄影位置只用于邻近交叉核对，不当作楼心。",
+          "points": [
+            {
+              "name": "罗别根花园（虹桥路2310号住宅）",
+              "lon": 121.3667,
+              "lat": 31.1919,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://zh.wikipedia.org/wiki/罗别根花园",
+              "sourceTitle": "维基百科",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E7%BD%97%E5%88%AB%E6%A0%B9%E8%8A%B1%E5%9B%AD",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "虹桥路2310号住宅",
+        "listedName": "海南置地上海公司",
+        "wikipediaAddress": "虹桥路2310号",
+        "district": "长宁区",
+        "constructionDate": "20世纪40年代初",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-1P001-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.187946,
+          31.0963123
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-1P001-01",
+        "wikipediaId": "wiki-heritage-t02-r0029",
+        "batch": 1,
+        "officialCodeRaw": "1P001",
+        "name": "佘山天主教堂",
+        "articleTitle": "佘山天主教堂",
+        "address": "松江县佘山",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/164102861",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "环山路",
+        "locationNote": "OSM教堂轮廓具名佘山进教之佑圣母大殿，保护标记1989年第27号对应本项；原图书馆点偏离山顶教堂，弃用该候选。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM教堂轮廓具名佘山进教之佑圣母大殿，保护标记1989年第27号对应本项；原图书馆点偏离山顶教堂，弃用该候选。",
+          "points": [
+            {
+              "name": "佘山进教之佑圣母大殿",
+              "lon": 121.187946,
+              "lat": 31.0963123,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/164102861",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "环山路",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%BD%98%E5%B1%B1%E8%BF%9B%E6%95%99%E4%B9%8B%E4%BD%91%E5%9C%A3%E6%AF%8D%E5%A4%A7%E6%AE%BF",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "佘山天主教堂",
+        "listedName": "佘山天主教堂",
+        "wikipediaAddress": "西佘山",
+        "district": "松江区",
+        "constructionDate": "1935年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/fe7b4d6f35774b708a2c5122849065bd.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2A004-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.486017,
+          31.237123
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2A004-01",
+        "wikipediaId": "wiki-heritage-t03-r0049",
+        "batch": 2,
+        "officialCodeRaw": "2A004",
+        "name": "大北电报局",
+        "articleTitle": "大北电报局",
+        "address": "中山东一路7号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/wt0g6bzjo67j6dtz",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "中山东一路7号",
+        "locationNote": "图书馆以盘谷银行上海分行、中山东一路7号给出门址点；大北电报公司旧址的高德同址点可独立对照。采用门址参考，不沿用精度粗糙的维基坐标。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆以盘谷银行上海分行、中山东一路7号给出门址点；大北电报公司旧址的高德同址点可独立对照。采用门址参考，不沿用精度粗糙的维基坐标。",
+          "points": [
+            {
+              "name": "盘谷银行上海分行",
+              "lon": 121.486017,
+              "lat": 31.237123,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/wt0g6bzjo67j6dtz",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "中山东一路7号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%8C%97%E7%94%B5%E6%8A%A5%E5%85%AC%E5%8F%B8%E5%A4%A7%E6%A5%BC",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "大北电报局",
+        "listedName": "盘谷银行上海分行",
+        "wikipediaAddress": "中山东一路7号",
+        "district": "黄浦区",
+        "constructionDate": "1907",
+        "floors": "4",
+        "structure": "钢筋混凝土",
+        "designer": "通和洋行",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2A006-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.485367,
+          31.239988
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2A006-01",
+        "wikipediaId": "wiki-heritage-t03-r0053",
+        "batch": 2,
+        "officialCodeRaw": "2A006",
+        "name": "台湾银行",
+        "articleTitle": "台湾银行",
+        "address": "中山东一路16号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/ub6egckebzrynttw",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "中山东一路16号",
+        "locationNote": "图书馆以招商银行上海分行、中山东一路16号对应旧台湾银行大楼，采用完整门址参考；维基冲突值保留在候选中。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆以招商银行上海分行、中山东一路16号对应旧台湾银行大楼，采用完整门址参考；维基冲突值保留在候选中。",
+          "points": [
+            {
+              "name": "招商银行上海分行",
+              "lon": 121.485367,
+              "lat": 31.239988,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/ub6egckebzrynttw",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "中山东一路16号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8F%B0%E6%B9%BE%E9%93%B6%E8%A1%8C%E5%A4%A7%E6%A5%BC_(%E4%B8%8A%E6%B5%B7)",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "台湾银行",
+        "listedName": "工艺品进出口公司",
+        "wikipediaAddress": "中山东一路16号",
+        "district": "黄浦区",
+        "constructionDate": "1926",
+        "floors": "4",
+        "structure": "钢筋混凝土",
+        "designer": "德和洋行",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2A028-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.480024,
+          31.235579
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2A028-01",
+        "wikipediaId": "wiki-heritage-t03-r0017",
+        "batch": 2,
+        "officialCodeRaw": "2A028",
+        "name": "麦家圈医院",
+        "articleTitle": "麦家圈医院",
+        "address": "山东中路145号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/ahou6me8wajmivx2",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "山东中路145号",
+        "locationNote": "图书馆明确列仁济医院、山东中路145号，定位到该旧址门址；不引用仁济医院其他院区坐标，未逐栋核定院内旧楼轮廓。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆明确列仁济医院、山东中路145号，定位到该旧址门址；不引用仁济医院其他院区坐标，未逐栋核定院内旧楼轮廓。",
+          "points": [
+            {
+              "name": "仁济医院",
+              "lon": 121.480024,
+              "lat": 31.235579,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/ahou6me8wajmivx2",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "山东中路145号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E4%BB%81%E6%B5%8E%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "麦家圈医院",
+        "listedName": "仁济医院",
+        "wikipediaAddress": "山东中路145号",
+        "district": "黄浦区",
+        "constructionDate": "1937",
+        "floors": "7",
+        "structure": "钢筋混凝土",
+        "designer": "德和洋行",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2A056-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.481899,
+          31.226278
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2A056-01",
+        "wikipediaId": "wiki-heritage-t03-r0086",
+        "batch": 2,
+        "officialCodeRaw": "2A056 (2E001)",
+        "name": "慈修庵",
+        "articleTitle": "慈修庵",
+        "address": "秦岭街15号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "360-public-map",
+        "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E6%85%88%E4%BF%AE%E5%BA%B5&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": "上海市黄浦区豫园街道榛岭街15号方浜中路593号",
+        "locationNote": "找到独立公开具名慈修庵POI，完整地址写榛岭街15号、方浜中路593号；保护名录秦岭街15号的原文差异保留。采用具名寺院门址参考，原图书馆复制异常点和偏离的维基候选均不沿用。360坐标系系经独立控制点推断为GCJ-02，原值及判定依据已保存；尚未测定寺院保护建筑轮廓。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "找到独立公开具名慈修庵POI，完整地址写榛岭街15号、方浜中路593号；保护名录秦岭街15号的原文差异保留。采用具名寺院门址参考，原图书馆复制异常点和偏离的维基候选均不沿用。360坐标系系经独立控制点推断为GCJ-02，原值及判定依据已保存；尚未测定寺院保护建筑轮廓。",
+          "points": [
+            {
+              "name": "慈修庵",
+              "lon": 121.481899,
+              "lat": 31.226278,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E6%85%88%E4%BF%AE%E5%BA%B5&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": "上海市黄浦区豫园街道榛岭街15号方浜中路593号",
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%85%88%E4%BF%AE%E5%BA%B5",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "慈修庵",
+        "listedName": "慈修庵",
+        "wikipediaAddress": "榛岭街15号",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "2",
+        "structure": "砖木",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2A057-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.484986,
+          31.222743
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2A057-01",
+        "wikipediaId": "wiki-heritage-t03-r0084",
+        "batch": 2,
+        "officialCodeRaw": "2A057 (2E002)",
+        "name": "小桃园清真寺",
+        "articleTitle": "小桃园清真寺",
+        "address": "小桃园街52号（主楼）",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://ditu.amap.com/place/B00155IML1",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "高德具名清真寺点列小桃园街24、52号，图书馆另列52号，地址身份可交叉对应。只作52号寺院门址参考，未划定受保护主楼轮廓，也不把24号女寺另计为本项。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "高德具名清真寺点列小桃园街24、52号，图书馆另列52号，地址身份可交叉对应。只作52号寺院门址参考，未划定受保护主楼轮廓，也不把24号女寺另计为本项。",
+          "points": [
+            {
+              "name": "小桃园清真寺",
+              "lon": 121.484986,
+              "lat": 31.222743,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://ditu.amap.com/place/B00155IML1",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E6%A1%83%E5%9B%AD%E6%B8%85%E7%9C%9F%E5%AF%BA",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "小桃园清真寺",
+        "listedName": "小桃园清真寺",
+        "wikipediaAddress": "小桃园街52号（主楼）",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "2",
+        "structure": "钢筋混凝土",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2C011-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4643721,
+          31.2160431
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2C011-01",
+        "wikipediaId": "wiki-heritage-t03-r0106",
+        "batch": 2,
+        "officialCodeRaw": "2C011",
+        "name": "花园住宅",
+        "articleTitle": "思南路51-95号(单) 花园住宅",
+        "address": "思南路51-95号(单)",
+        "addressComparison": "formatting-only",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/494309300",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "思南路51-95",
+        "locationNote": "OSM范围明确列思南路51—95号及保护旧编号C-Ⅲ-011，采用这组住宅范围的参考点；不把思南公馆其余区域合并进本项。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM范围明确列思南路51—95号及保护旧编号C-Ⅲ-011，采用这组住宅范围的参考点；不把思南公馆其余区域合并进本项。",
+          "points": [
+            {
+              "name": "思南公馆",
+              "lon": 121.4643721,
+              "lat": 31.2160431,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494309300",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "思南路51-95",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%80%9D%E5%8D%97%E5%85%AC%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "花园住宅",
+        "wikipediaAddress": "思南路51～95号(单)",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "3",
+        "structure": "砖木",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2C012-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46592,
+          31.2139096
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2C012-01",
+        "wikipediaId": "wiki-heritage-t03-r0076",
+        "batch": 2,
+        "officialCodeRaw": "2C012",
+        "name": "震旦大学图书馆教学大楼/震旦大学博物馆",
+        "articleTitle": "震旦大学图书馆教学大楼/震旦大学博物馆",
+        "address": "重庆南路280号/重庆南路225号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/496383038",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "重庆南路280",
+        "locationNote": "部分定位：已定位重庆南路280号图书馆教学大楼，OSM明确列保护编号2C012及旧楼名；同项重庆南路225号博物馆尚无独立可核楼体点，两处不能共用校园中心。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "已定位重庆南路280号图书馆教学大楼，OSM明确列保护编号2C012及旧楼名；同项重庆南路225号博物馆尚无独立可核楼体点，两处不能共用校园中心。",
+          "points": [
+            {
+              "name": "第二医科大学十二号大楼",
+              "lon": 121.46592,
+              "lat": 31.2139096,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/496383038",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "重庆南路280",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E9%9C%87%E6%97%A6%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "震旦大学图书馆教学大楼/震旦大学博物馆",
+        "listedName": "第二医科大学十二号大楼/昆虫研究所",
+        "wikipediaAddress": "重庆南路280号/重庆南路225号",
+        "district": "黄浦区",
+        "constructionDate": "1936/1930",
+        "floors": "4",
+        "structure": "钢筋混凝土/混合",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2B020-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.435228,
+          31.217507
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2B020-01",
+        "wikipediaId": "wiki-heritage-t03-r0144",
+        "batch": 2,
+        "officialCodeRaw": "2B020",
+        "name": "枕流公寓",
+        "articleTitle": "枕流公寓",
+        "address": "华山路731号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/ulupnnew0ta6jpri",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "华山路731号",
+        "locationNote": "图书馆以枕流公寓、华山路731号给出独立门址点；拒绝原维基落在外滩附近的坐标。只作门址参考，699号/731号差异继续保留。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆以枕流公寓、华山路731号给出独立门址点；拒绝原维基落在外滩附近的坐标。只作门址参考，699号/731号差异继续保留。",
+          "points": [
+            {
+              "name": "枕流公寓",
+              "lon": 121.435228,
+              "lat": 31.217507,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/ulupnnew0ta6jpri",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "华山路731号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%9E%95%E6%B5%81%E5%85%AC%E5%AF%93",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "枕流公寓",
+        "listedName": "枕流公寓",
+        "wikipediaAddress": "华山路731号",
+        "district": "静安区",
+        "constructionDate": "1931",
+        "floors": "7",
+        "structure": "混合",
+        "designer": "哈沙德洋行",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2D007-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.442431,
+          31.21147
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2D007-01",
+        "wikipediaId": "wiki-heritage-t03-r0110",
+        "batch": 2,
+        "officialCodeRaw": "2D007",
+        "name": "花园住宅",
+        "articleTitle": "淮海中路1469号 花园住宅",
+        "address": "淮海中路1469号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/xkmy5bolmdgvu503",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "淮海中路1469号",
+        "locationNote": "图书馆明确列淮海中路1469号美国领事馆，门牌与保护项相同。采用这一住宅院址参考，不据机构其他办事处选点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆明确列淮海中路1469号美国领事馆，门牌与保护项相同。采用这一住宅院址参考，不据机构其他办事处选点。",
+          "points": [
+            {
+              "name": "美国领事馆",
+              "lon": 121.442431,
+              "lat": 31.21147,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/xkmy5bolmdgvu503",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "淮海中路1469号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD%E9%A9%BB%E4%B8%8A%E6%B5%B7%E6%80%BB%E9%A2%86%E4%BA%8B%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "美国领事馆",
+        "wikipediaAddress": "淮海中路1469号",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "2",
+        "structure": "砖混",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2D031-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4317358,
+          31.1948421
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2D031-01",
+        "wikipediaId": "wiki-heritage-t03-r0061",
+        "batch": 2,
+        "officialCodeRaw": "2D031",
+        "name": "徐汇公学",
+        "articleTitle": "徐汇公学",
+        "address": "虹桥路68号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/293862167",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "交大建筑遗产保护中心的修复资料确认崇思楼为徐汇中学保存的早期历史建筑；OSM有独立崇思楼轮廓，采用该楼参考。虹桥路68号/50号差异原样保留。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "交大建筑遗产保护中心的修复资料确认崇思楼为徐汇中学保存的早期历史建筑；OSM有独立崇思楼轮廓，采用该楼参考。虹桥路68号/50号差异原样保留。",
+          "points": [
+            {
+              "name": "崇思楼",
+              "lon": 121.4317358,
+              "lat": 31.1948421,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/293862167",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E4%B8%AD%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "徐汇公学",
+        "listedName": "徐汇中学",
+        "wikipediaAddress": "虹桥路50号",
+        "district": "徐汇区",
+        "constructionDate": "1917",
+        "floors": "3",
+        "structure": "砖木",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2D033-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4329509,
+          31.1939599
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2D033-01",
+        "wikipediaId": "wiki-heritage-t03-r0016",
+        "batch": 2,
+        "officialCodeRaw": "2D033",
+        "name": "藏书楼",
+        "articleTitle": "藏书楼",
+        "address": "漕溪北路80号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/293862126",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "漕溪北路80",
+        "locationNote": "OSM具名徐家汇藏书楼，完整门址漕溪北路80号；采用此历史藏书楼轮廓参考，区别于其他同名藏书楼。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM具名徐家汇藏书楼，完整门址漕溪北路80号；采用此历史藏书楼轮廓参考，区别于其他同名藏书楼。",
+          "points": [
+            {
+              "name": "徐家汇藏书楼",
+              "lon": 121.4329509,
+              "lat": 31.1939599,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/293862126",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "漕溪北路80",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%AE%B6%E6%B1%87%E8%97%8F%E4%B9%A6%E6%A5%BC",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "藏书楼",
+        "listedName": "上海市图书馆",
+        "wikipediaAddress": "漕溪北路80号",
+        "district": "徐汇区",
+        "constructionDate": "1848",
+        "floors": "东2,西4",
+        "structure": "钢筋混凝土",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2D034-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4489598,
+          31.2000909
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2D034-01",
+        "wikipediaId": "wiki-heritage-t03-r0018",
+        "batch": 2,
+        "officialCodeRaw": "2D034",
+        "name": "中山医院",
+        "articleTitle": "中山医院",
+        "address": "医学院路136号（主楼）",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/298235024",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "复旦大学官方介绍确认1937年老中山医院建筑为现3号楼，1994年列优秀历史建筑；OSM院内有独立3号楼轮廓。1号楼为后建，未误套。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "复旦大学官方介绍确认1937年老中山医院建筑为现3号楼，1994年列优秀历史建筑；OSM院内有独立3号楼轮廓。1号楼为后建，未误套。",
+          "points": [
+            {
+              "name": "3号楼",
+              "lon": 121.4489598,
+              "lat": 31.2000909,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/298235024",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E4%B8%AD%E5%B1%B1%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "中山医院",
+        "listedName": "中山医院",
+        "wikipediaAddress": "医学院路136号（主楼）",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "5",
+        "structure": "钢筋混凝土",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2D035-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.447367,
+          31.1996411
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2D035-01",
+        "wikipediaId": "wiki-heritage-t03-r0069",
+        "batch": 2,
+        "officialCodeRaw": "2D035",
+        "name": "国立上海医学院",
+        "articleTitle": "国立上海医学院",
+        "address": "东安路131号东1号楼",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/294625597",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "复旦官方资料确认东一号楼是1937年国立上海医学院主体旧楼；OSM在相应校园有独立东1号楼轮廓，采用楼体参考而非医学院整体点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "复旦官方资料确认东一号楼是1937年国立上海医学院主体旧楼；OSM在相应校园有独立东1号楼轮廓，采用楼体参考而非医学院整体点。",
+          "points": [
+            {
+              "name": "东1号楼",
+              "lon": 121.447367,
+              "lat": 31.1996411,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/294625597",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E7%AB%8B%E4%B8%8A%E6%B5%B7%E5%8C%BB%E5%AD%A6%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "国立上海医学院",
+        "listedName": "第一医科大学",
+        "wikipediaAddress": "医学院路138号（主楼）",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "4",
+        "structure": "钢筋混凝土",
+        "designer": "基泰",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2F012-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5050495,
+          31.2580161
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2F012-01",
+        "wikipediaId": "wiki-heritage-t03-r0019",
+        "batch": 2,
+        "officialCodeRaw": "2F012",
+        "name": "上海监狱",
+        "articleTitle": "上海监狱",
+        "address": "长阳路147号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/442989170",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM明确标提篮桥监狱历史建筑群及保护标记，位置在长阳路旧址；采用建筑群参考，拒绝原维基落在异地的监狱机构坐标。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM明确标提篮桥监狱历史建筑群及保护标记，位置在长阳路旧址；采用建筑群参考，拒绝原维基落在异地的监狱机构坐标。",
+          "points": [
+            {
+              "name": "上海市提篮桥监狱",
+              "lon": 121.5050495,
+              "lat": 31.2580161,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/442989170",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%8F%90%E7%AF%AE%E6%A1%A5%E7%9B%91%E7%8B%B1",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "上海监狱",
+        "listedName": "提蓝桥监狱",
+        "wikipediaAddress": "长阳路147号",
+        "district": "虹口区",
+        "constructionDate": "1901-1935",
+        "floors": "5-7",
+        "structure": "砖混、钢混",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2G002-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5518087,
+          31.2949394
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2G002-01",
+        "wikipediaId": "wiki-heritage-t03-r0077",
+        "batch": 2,
+        "officialCodeRaw": "2G002",
+        "name": "沪江大学",
+        "articleTitle": "沪江大学",
+        "address": "军工路516号礼堂/实验楼",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/180126200",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "部分定位：新取得上理工图书馆2024年通讯及杨浦政务建筑史，均明确图书馆、大礼堂与思魏堂于1994年列第二批优秀历史建筑。已定位OSM具名大礼堂；官方名录另写实验楼，与校史组成物称法仍有差异，其他组成物未完成，不据维基1906—1917年代将该礼堂排除。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "新取得上理工图书馆2024年通讯及杨浦政务建筑史，均明确图书馆、大礼堂与思魏堂于1994年列第二批优秀历史建筑。已定位OSM具名大礼堂；官方名录另写实验楼，与校史组成物称法仍有差异，其他组成物未完成，不据维基1906—1917年代将该礼堂排除。",
+          "points": [
+            {
+              "name": "大礼堂",
+              "lon": 121.5518087,
+              "lat": 31.2949394,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/180126200",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%B2%AA%E6%B1%9F%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "沪江大学",
+        "listedName": "华东工业大学，上海理工大学",
+        "wikipediaAddress": "军工路516号礼堂/实验楼",
+        "district": "杨浦区",
+        "constructionDate": "1906-1917",
+        "floors": "2",
+        "structure": "砖混",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-2M006-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4135944,
+          31.2277338
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-2M006-01",
+        "wikipediaId": "wiki-heritage-t03-r0062",
+        "batch": 2,
+        "officialCodeRaw": "2M006",
+        "name": "圣约翰大学:校政厅/怀施堂/思颜堂/思孟堂/科学馆/西门堂",
+        "articleTitle": "圣约翰大学:校政厅/怀施堂/思颜堂/思孟堂/科学馆/西门堂",
+        "address": "万航渡路1175号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://www.openstreetmap.org/way/494666670",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "六栋分别取得位置：科学馆、西门堂、思颜堂、校政厅、思孟堂均有旧保护编号M-Ⅲ-006的OSM独立轮廓；怀施堂通过华政官方资料确认1951年改名韬奋楼，另取具名韬奋楼公开地图点，转换后落入同校园OSM大楼轮廓范围。六点各自保留，不共用校园中心；官方1175号与现校园1575号差异不改写。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "六栋分别取得位置：科学馆、西门堂、思颜堂、校政厅、思孟堂均有旧保护编号M-Ⅲ-006的OSM独立轮廓；怀施堂通过华政官方资料确认1951年改名韬奋楼，另取具名韬奋楼公开地图点，转换后落入同校园OSM大楼轮廓范围。六点各自保留，不共用校园中心；官方1175号与现校园1575号差异不改写。",
+          "points": [
+            {
+              "name": "科学馆",
+              "lon": 121.4135944,
+              "lat": 31.2277338,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494666670",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "西门堂",
+              "lon": 121.4116781,
+              "lat": 31.2289359,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494666671",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "思颜堂",
+              "lon": 121.4125763,
+              "lat": 31.2278644,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494666672",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "校政厅",
+              "lon": 121.4131922,
+              "lat": 31.2266157,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494666673",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "思孟堂",
+              "lon": 121.4139976,
+              "lat": 31.2274173,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494666675",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "怀施堂／韬奋楼",
+              "lon": 121.413231,
+              "lat": 31.227669,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E5%8D%8E%E4%B8%9C%E6%94%BF%E6%B3%95%E5%A4%A7%E5%AD%A6%E9%9F%AC%E5%A5%8B%E6%A5%BC&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%9C%A3%E7%BA%A6%E7%BF%B0%E5%A4%A7%E5%AD%A6_(%E4%B8%8A%E6%B5%B7%E5%B8%82)",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "圣约翰大学:校政厅/怀施堂/思颜堂/思孟堂/科学馆/西门堂",
+        "listedName": "华东政法学院:校长办公楼4号楼/韬奋楼41号楼/学生宿舍40号楼/学生宿舍43号楼/办公楼42号楼/东风楼22号楼",
+        "wikipediaAddress": "万航渡路1575号",
+        "district": "长宁区",
+        "constructionDate": "未知/1894/1904/1909/1899/1924",
+        "floors": "2/2/3/3/3/2",
+        "structure": "校长办公楼4号楼:砖木/韬奋楼41号楼:砖木",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3A022-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.487034,
+          31.217706
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3A022-01",
+        "wikipediaId": "wiki-heritage-t04-r0135",
+        "batch": 3,
+        "officialCodeRaw": "3A022",
+        "name": "龙门村",
+        "articleTitle": "龙门村",
+        "address": "尚文路",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "http://data.library.sh.cn/entity/architecture/fka64yglop6vpzxg",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "尚文路133弄1-105号",
+        "locationNote": "图书馆具名龙门村、尚文路133弄1—105号，与维基名单完整门址及本轮龙门村资料相符；采用具名住宅群范围参考，不用原链接龙门书院的机构坐标。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆具名龙门村、尚文路133弄1—105号，与维基名单完整门址及本轮龙门村资料相符；采用具名住宅群范围参考，不用原链接龙门书院的机构坐标。",
+          "points": [
+            {
+              "name": "龙门村",
+              "lon": 121.487034,
+              "lat": 31.217706,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "http://data.library.sh.cn/entity/architecture/fka64yglop6vpzxg",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "尚文路133弄1-105号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "龙门村",
+        "listedName": "龙门村",
+        "wikipediaAddress": "尚文路133弄",
+        "district": "黄浦区",
+        "constructionDate": "1910",
+        "floors": "3",
+        "structure": "砖混结构",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3D031-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.443317,
+          31.203726
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3D031-01",
+        "wikipediaId": "wiki-heritage-t04-r0098",
+        "batch": 3,
+        "officialCodeRaw": "3D031",
+        "name": "住宅",
+        "articleTitle": "安亭路130、132号 住宅",
+        "address": "安亭路130、132号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?city=上海市&k=安亭路130号&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "新增明确的安亭路130号地址解析点与安亭路132号棉花酒吧门址点，分别记录两个官方门址位置；不再沿用只覆盖126、130号的西子缘宾馆范围。两点均作现代门址参考，未测绘老住宅轮廓。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "新增明确的安亭路130号地址解析点与安亭路132号棉花酒吧门址点，分别记录两个官方门址位置；不再沿用只覆盖126、130号的西子缘宾馆范围。两点均作现代门址参考，未测绘老住宅轮廓。",
+          "points": [
+            {
+              "name": "安亭路130号门址解析点",
+              "lon": 121.443317,
+              "lat": 31.203726,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=安亭路130号&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            },
+            {
+              "name": "安亭路132号门址（棉花酒吧）",
+              "lon": 121.443322,
+              "lat": 31.203515,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?pid=8a9e12e67c8b0dfa",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅、小旋枫酒店",
+        "wikipediaAddress": "安亭路130、132号",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3",
+        "structure": "砖木结构",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3D034-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.432169,
+          31.190176
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3D034-01",
+        "wikipediaId": "wiki-heritage-t04-r0101",
+        "batch": 3,
+        "officialCodeRaw": "3D034",
+        "name": "大修道院",
+        "articleTitle": "大修道院",
+        "address": "漕溪北路336号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/xfm4lf63nbp3l0do",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "漕溪北路336号",
+        "locationNote": "图书馆明确列漕溪北路336号徐汇区检察院，与大修道院名录同址；采用目录门址参考，未测定建筑轮廓。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆明确列漕溪北路336号徐汇区检察院，与大修道院名录同址；采用目录门址参考，未测定建筑轮廓。",
+          "points": [
+            {
+              "name": "徐汇区检察院",
+              "lon": 121.432169,
+              "lat": 31.190176,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/xfm4lf63nbp3l0do",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "漕溪北路336号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%AE%B6%E6%B1%87%E5%A4%A7%E4%BF%AE%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "大修道院",
+        "listedName": "徐汇区人民政府2号楼",
+        "wikipediaAddress": "漕溪北路336号",
+        "district": "徐汇区",
+        "constructionDate": "1928~1929",
+        "floors": "4",
+        "structure": "砖混结构",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3F004-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.482058,
+          31.254669
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3F004-01",
+        "wikipediaId": "wiki-heritage-t04-r0143",
+        "batch": 3,
+        "officialCodeRaw": "3F004",
+        "name": "住宅",
+        "articleTitle": "武进路206-296号 住宅",
+        "address": "武进路206-296号",
+        "addressComparison": "formatting-only",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%AD%A6%E8%BF%9B%E8%B7%AF206%E5%8F%B7&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "部分定位：精确查询分别返回武进路206号及296号的门牌解析点，两端均位于官方保护号段。记录两个现代门址参考，未取得中间各住宅的独立轮廓，不把两端坐标当作整排保护边界。图书馆跨道路复制点继续拒用。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "精确查询分别返回武进路206号及296号的门牌解析点，两端均位于官方保护号段。记录两个现代门址参考，未取得中间各住宅的独立轮廓，不把两端坐标当作整排保护边界。图书馆跨道路复制点继续拒用。",
+          "points": [
+            {
+              "name": "武进路206号门址解析点",
+              "lon": 121.482058,
+              "lat": 31.254669,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%AD%A6%E8%BF%9B%E8%B7%AF206%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            },
+            {
+              "name": "武进路296号门址解析点",
+              "lon": 121.480468,
+              "lat": 31.254051,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%AD%A6%E8%BF%9B%E8%B7%AF296%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "武进路206~296号",
+        "district": "虹口区",
+        "constructionDate": "1920年代",
+        "floors": "4",
+        "structure": "砖木结构",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3F006-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.481683,
+          31.251217
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3F006-01",
+        "wikipediaId": "wiki-heritage-t04-r0145",
+        "batch": 3,
+        "officialCodeRaw": "3F006",
+        "name": "公寓",
+        "articleTitle": "昆山路227号/昆山路277号/昆山花园路1-10号 公寓",
+        "address": "昆山路227号/昆山路277号/昆山花园路1-10号",
+        "addressComparison": "formatting-only",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%98%86%E5%B1%B1%E8%B7%AF227%E5%8F%B7&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "部分定位：精确查询取得昆山路227号、277号两栋对应门址解析点，分别记录；昆山花园路1—10号其余组成物未完成定位。两点不是实测楼心，图书馆误复制到江苏路的原点不采用。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "精确查询取得昆山路227号、277号两栋对应门址解析点，分别记录；昆山花园路1—10号其余组成物未完成定位。两点不是实测楼心，图书馆误复制到江苏路的原点不采用。",
+          "points": [
+            {
+              "name": "昆山路227号门址解析点",
+              "lon": 121.481683,
+              "lat": 31.251217,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%98%86%E5%B1%B1%E8%B7%AF227%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            },
+            {
+              "name": "昆山路277号门址解析点",
+              "lon": 121.480651,
+              "lat": 31.2511,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=上海市&k=%E6%98%86%E5%B1%B1%E8%B7%AF277%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "公寓",
+        "listedName": "公寓",
+        "wikipediaAddress": "昆山路227号/昆山路277号/昆山花园路1~10号",
+        "district": "虹口区",
+        "constructionDate": null,
+        "floors": "5\\4\\4",
+        "structure": "砖木结构",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3M025-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4229707,
+          31.2103785
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3M025-01",
+        "wikipediaId": "wiki-heritage-t04-r0127",
+        "batch": 3,
+        "officialCodeRaw": "3M025",
+        "name": "哥伦比亚总会",
+        "articleTitle": "哥伦比亚总会",
+        "address": "延安西路1262号7号楼",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/864847881",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM具体建筑具名哥伦比亚乡村俱乐部，与官方延安西路1262号7号楼会所身份相符；采用会所建筑轮廓参考，原图书馆研究所点保留而不采用。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM具体建筑具名哥伦比亚乡村俱乐部，与官方延安西路1262号7号楼会所身份相符；采用会所建筑轮廓参考，原图书馆研究所点保留而不采用。",
+          "points": [
+            {
+              "name": "哥伦比亚乡村俱乐部",
+              "lon": 121.4229707,
+              "lat": 31.2103785,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/864847881",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD%E4%B9%A1%E6%9D%91%E6%80%BB%E4%BC%9A",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "哥伦比亚总会",
+        "listedName": "上海生物制品研究所",
+        "wikipediaAddress": "延安西路1262号",
+        "district": "长宁区",
+        "constructionDate": "1929~1931",
+        "floors": "2",
+        "structure": "砖混结构",
+        "designer": "邬达克设计",
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-3M026-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.415882,
+          31.224305
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-3M026-01",
+        "wikipediaId": "wiki-heritage-t04-r0128",
+        "batch": 3,
+        "officialCodeRaw": "3M026",
+        "name": "大理石亭",
+        "articleTitle": "大理石亭",
+        "address": "长宁路780号中山公园内",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://www.amap.com/place/B0FFG72E3Y",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "高德有独立大理石亭POI，位于中山公园北部；采用此具名亭点，区别于公园整体点及图书馆旧候选。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "高德有独立大理石亭POI，位于中山公园北部；采用此具名亭点，区别于公园整体点及图书馆旧候选。",
+          "points": [
+            {
+              "name": "中山公园-大理石亭",
+              "lon": 121.415882,
+              "lat": 31.224305,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.amap.com/place/B0FFG72E3Y",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "大理石亭",
+        "listedName": "大理石亭",
+        "wikipediaAddress": "长宁路780号中山公园内",
+        "district": "长宁区",
+        "constructionDate": "1935",
+        "floors": "1",
+        "structure": "大理石",
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/bc5957926d80432b8bea0157eb16bb94.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4A039-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4883742,
+          31.2305181
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4A039-01",
+        "wikipediaId": "wiki-heritage-t05-r0040",
+        "batch": 4,
+        "officialCodeRaw": "4A039",
+        "name": "沪南钱业公所",
+        "articleTitle": "沪南钱业公所",
+        "address": "人民路安仁街古城公园内\n（原址：北施家弄133号）",
+        "addressComparison": "formatting-only",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/389702055",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM独立建筑具名沪南钱业公所，保护编号4A039，处在古城公园内；采用迁建后的具体建筑参考，原址北施家弄133号继续单列。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM独立建筑具名沪南钱业公所，保护编号4A039，处在古城公园内；采用迁建后的具体建筑参考，原址北施家弄133号继续单列。",
+          "points": [
+            {
+              "name": "沪南钱业公所",
+              "lon": 121.4883742,
+              "lat": 31.2305181,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/389702055",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%9F%8E%E5%85%AC%E5%9B%AD",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "沪南钱业公所",
+        "listedName": "沪南钱业公所",
+        "wikipediaAddress": "人民路安仁街古城公园内（原址：北施家弄133号）",
+        "district": "黄浦区",
+        "constructionDate": "1883年近年移地重建",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4C014-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.464569,
+          31.217239
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4C014-01",
+        "wikipediaId": "wiki-heritage-t05-r0079",
+        "batch": 4,
+        "officialCodeRaw": "4C014",
+        "name": "花园住宅",
+        "articleTitle": "复兴中路517号，531号，533-537号，539号，541号 花园住宅",
+        "address": "复兴中路517号，531号，533-537号，539号，541号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/wue08auv6zi3lfgl",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "复兴中路517号，531号，533-537号，541号",
+        "locationNote": "来源范围对应复兴中路517、531、533—537、541号这组住宅，保留539号未在该来源地址中列出的差异。点只代表这一组门址，未逐栋定位。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "来源范围对应复兴中路517、531、533—537、541号这组住宅，保留539号未在该来源地址中列出的差异。点只代表这一组门址，未逐栋定位。",
+          "points": [
+            {
+              "name": "花园住宅",
+              "lon": 121.464569,
+              "lat": 31.217239,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/wue08auv6zi3lfgl",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "复兴中路517号，531号，533-537号，541号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%80%9D%E5%8D%97%E5%85%AC%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "花园住宅",
+        "wikipediaAddress": "复兴中路517号，531号，533-537号，541号",
+        "district": "黄浦区",
+        "constructionDate": "不详",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4C016-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4631405,
+          31.2163581
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4C016-01",
+        "wikipediaId": "wiki-heritage-t05-r0081",
+        "batch": 4,
+        "officialCodeRaw": "4C016",
+        "name": "花园住宅",
+        "articleTitle": "思南路50-70号 花园住宅",
+        "address": "思南路50-70号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/405473878",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "思南路50-70",
+        "locationNote": "OSM明确标思南路50—70号花园住宅、保护编号4C016，采用该组住宅范围参考。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM明确标思南路50—70号花园住宅、保护编号4C016，采用该组住宅范围参考。",
+          "points": [
+            {
+              "name": "花园住宅",
+              "lon": 121.4631405,
+              "lat": 31.2163581,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/405473878",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "思南路50-70",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%80%9D%E5%8D%97%E5%85%AC%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "花园住宅",
+        "wikipediaAddress": "思南路50-70号",
+        "district": "黄浦区",
+        "constructionDate": "约1920年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4C018-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.461549,
+          31.213545
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4C018-01",
+        "wikipediaId": "wiki-heritage-t05-r0083",
+        "batch": 4,
+        "officialCodeRaw": "4C018",
+        "name": "广慈医院",
+        "articleTitle": "广慈医院",
+        "address": "瑞金二路197号（8号楼、9号楼）",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/e0tsspn8k1lo41nu",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "瑞金二路197号",
+        "locationNote": "部分定位：图书馆实体具体为瑞金医院8号楼，可保留8号楼来源参考；官方列8、9号楼，另一版官方资料列8、3号楼，其他组成楼的号码与位置均需核实，不宣称整项完成。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "图书馆实体具体为瑞金医院8号楼，可保留8号楼来源参考；官方列8、9号楼，另一版官方资料列8、3号楼，其他组成楼的号码与位置均需核实，不宣称整项完成。",
+          "points": [
+            {
+              "name": "瑞金医院8号楼",
+              "lon": 121.461549,
+              "lat": 31.213545,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/e0tsspn8k1lo41nu",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "瑞金二路197号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2%E9%99%84%E5%B1%9E%E7%91%9E%E9%87%91%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "广慈医院",
+        "listedName": "瑞金医院8号楼、3号楼",
+        "wikipediaAddress": "瑞金二路197号",
+        "district": "黄浦区",
+        "constructionDate": "1921年左右",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4C023-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4579943,
+          31.2208269
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4C023-01",
+        "wikipediaId": "wiki-heritage-t05-r0088",
+        "batch": 4,
+        "officialCodeRaw": "4C023",
+        "name": "花园住宅",
+        "articleTitle": "淮海中路796号 花园住宅",
+        "address": "淮海中路796号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/494405859",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM way494405859完整建筑轮廓同时标淮海中路796号、优秀历史建筑编号4C023，与历峰双墅保护项一致。直接采用WGS84轮廓包围框中心；公开360导航点仅作为独立交叉核对，不再依赖未知坐标系假设定位本楼。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM way494405859完整建筑轮廓同时标淮海中路796号、优秀历史建筑编号4C023，与历峰双墅保护项一致。直接采用WGS84轮廓包围框中心；公开360导航点仅作为独立交叉核对，不再依赖未知坐标系假设定位本楼。",
+          "points": [
+            {
+              "name": "淮海中路796号花园住宅/历峰双墅",
+              "lon": 121.4579943,
+              "lat": 31.2208269,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494405859",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "花园住宅",
+        "wikipediaAddress": "淮海中路796号",
+        "district": "黄浦区",
+        "constructionDate": "东幢1921年，西幢1927年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4B025-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4478887,
+          31.232264
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4B025-01",
+        "wikipediaId": "wiki-heritage-t05-r0065",
+        "batch": 4,
+        "officialCodeRaw": "4B025",
+        "name": "花园住宅",
+        "articleTitle": "陕西北路457号 花园住宅",
+        "address": "陕西北路457号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/490280319",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM建筑明确标辞书出版社及4B025保护编号；高德何东旧居同址点另可交叉对照，采用建筑轮廓参考。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM建筑明确标辞书出版社及4B025保护编号；高德何东旧居同址点另可交叉对照，采用建筑轮廓参考。",
+          "points": [
+            {
+              "name": "辞书出版社",
+              "lon": 121.4478887,
+              "lat": 31.232264,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/490280319",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%BD%95%E4%B8%9C%E4%B8%8A%E6%B5%B7%E5%85%AC%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅",
+        "listedName": "辞书出版社",
+        "wikipediaAddress": "陕西北路457号",
+        "district": "静安区",
+        "constructionDate": "1920年代",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4H005-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4743661,
+          31.2496599
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4H005-01",
+        "wikipediaId": "wiki-heritage-t05-r0286",
+        "batch": 4,
+        "officialCodeRaw": "4H005",
+        "name": "梁氏民宅",
+        "articleTitle": "梁氏民宅",
+        "address": "山西北路457弄61号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/495669844",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "山西北路452弄61",
+        "locationNote": "OSM独立建筑轮廓的保护编号为4H005，虽然门牌仍错写山西北路452弄61号，独立Commons原拍摄者照片题名明确457弄61号梁氏大宅，WGS84摄影位置距轮廓中心约16m，支持同一楼体。采用带保护编号的楼体范围参考；保留457/452的源地址差异，不改官方地址。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM独立建筑轮廓的保护编号为4H005，虽然门牌仍错写山西北路452弄61号，独立Commons原拍摄者照片题名明确457弄61号梁氏大宅，WGS84摄影位置距轮廓中心约16m，支持同一楼体。采用带保护编号的楼体范围参考；保留457/452的源地址差异，不改官方地址。",
+          "points": [
+            {
+              "name": "梁氏民宅（4H005保护编号轮廓）",
+              "lon": 121.4743661,
+              "lat": 31.2496599,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/495669844",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "山西北路452弄61",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%A2%81%E6%B0%8F%E6%B0%91%E5%AE%85",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "梁氏民宅",
+        "listedName": "梁氏民宅",
+        "wikipediaAddress": "山西北路457弄61号",
+        "district": "静安区",
+        "constructionDate": "民末清初",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4D008-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.450226,
+          31.214823
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4D008-01",
+        "wikipediaId": "wiki-heritage-t05-r0098",
+        "batch": 4,
+        "officialCodeRaw": "4D008",
+        "name": "a犹太俱乐部，b花园住宅/比利时领馆",
+        "articleTitle": "a犹太俱乐部，b花园住宅/比利时领馆",
+        "address": "汾阳路20号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/mgarhy5zq8a7zhqt",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "汾阳路20号",
+        "locationNote": "图书馆同址两实体为上海音乐学院礼堂办公楼及专家楼，均列汾阳路20号且共用一点；只采用共用院址参考，未区分犹太俱乐部、住宅和领馆各楼。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆同址两实体为上海音乐学院礼堂办公楼及专家楼，均列汾阳路20号且共用一点；只采用共用院址参考，未区分犹太俱乐部、住宅和领馆各楼。",
+          "points": [
+            {
+              "name": "上海音乐学院专家楼",
+              "lon": 121.450226,
+              "lat": 31.214823,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/mgarhy5zq8a7zhqt",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "汾阳路20号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E9%9F%B3%E4%B9%90%E5%AD%A6%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "a犹太俱乐部，b花园住宅/比利时领馆",
+        "listedName": "上海音乐学院院部办公楼，上海音乐学院专家楼",
+        "wikipediaAddress": "汾阳路20号",
+        "district": "徐汇区",
+        "constructionDate": "1905 -1911年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4D009-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.448951,
+          31.210471
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4D009-01",
+        "wikipediaId": "wiki-heritage-t05-r0100",
+        "batch": 4,
+        "officialCodeRaw": "4D009",
+        "name": "犹太医院，水塔",
+        "articleTitle": "犹太医院，水塔",
+        "address": "汾阳路83号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/rxpfdcd5674aqzzj",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "汾阳路83号10号楼",
+        "locationNote": "部分定位：图书馆实体具体列汾阳路83号10号楼，已取得该楼的来源参考；同项水塔尚未取得独立点位，不用医院中心推代水塔。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "图书馆实体具体列汾阳路83号10号楼，已取得该楼的来源参考；同项水塔尚未取得独立点位，不用医院中心推代水塔。",
+          "points": [
+            {
+              "name": "上海眼耳鼻喉科医院",
+              "lon": 121.448951,
+              "lat": 31.210471,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/rxpfdcd5674aqzzj",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "汾阳路83号10号楼",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%9C%BC%E8%80%B3%E9%BC%BB%E5%96%89%E7%A7%91%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "犹太医院，水塔",
+        "listedName": "上海眼耳鼻喉科医院10号楼，水塔",
+        "wikipediaAddress": "汾阳路83号10号楼",
+        "district": "徐汇区",
+        "constructionDate": "1930年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4D012-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.447825,
+          31.212967
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4D012-01",
+        "wikipediaId": "wiki-heritage-t05-r0104",
+        "batch": 4,
+        "officialCodeRaw": "4D012",
+        "name": "黑石公寓",
+        "articleTitle": "黑石公寓",
+        "address": "复兴中路1331号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://www.amap.com/place/B0FFF9LVS2",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "高德具名黑石公寓旧址、复兴中路1331号，转换后与图书馆同址点相近；采用具名建筑参考，替代精度不足的维基候选。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "高德具名黑石公寓旧址、复兴中路1331号，转换后与图书馆同址点相近；采用具名建筑参考，替代精度不足的维基候选。",
+          "points": [
+            {
+              "name": "黑石公寓旧址",
+              "lon": 121.447825,
+              "lat": 31.212967,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.amap.com/place/B0FFF9LVS2",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E9%BB%91%E7%9F%B3%E5%85%AC%E5%AF%93",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "黑石公寓",
+        "listedName": "复兴公寓",
+        "wikipediaAddress": "复兴中路1331号",
+        "district": "徐汇区",
+        "constructionDate": "1924年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4D024-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.429676,
+          31.2016962
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4D024-01",
+        "wikipediaId": "wiki-heritage-t05-r0117",
+        "batch": 4,
+        "officialCodeRaw": "4D024",
+        "name": "交通大学恭绰馆（工程馆），新上院",
+        "articleTitle": "交通大学恭绰馆（工程馆），新上院",
+        "address": "华山路1954号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/173581801",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "部分定位：已找到独立新上院轮廓；工程馆/恭绰馆虽有交大官方沿革和方位资料，本轮未取得具名可核轮廓。两楼不共享图书馆的校园点。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "已找到独立新上院轮廓；工程馆/恭绰馆虽有交大官方沿革和方位资料，本轮未取得具名可核轮廓。两楼不共享图书馆的校园点。",
+          "points": [
+            {
+              "name": "新上院",
+              "lon": 121.429676,
+              "lat": 31.2016962,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/173581801",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "交通大学恭绰馆（工程馆），新上院",
+        "listedName": "交通大学工程馆，新上院",
+        "wikipediaAddress": "华山路1954号",
+        "district": "徐汇区",
+        "constructionDate": "1932年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4D048-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4498461,
+          31.1712779
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4D048-01",
+        "wikipediaId": "wiki-heritage-t05-r0143",
+        "batch": 4,
+        "officialCodeRaw": "4D048",
+        "name": "龙华机场候机楼",
+        "articleTitle": "龙华机场候机楼",
+        "address": "龙华西路1号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/279318456",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "龙华西路1",
+        "locationNote": "OSM明确标旧龙华机场候机楼、龙华西路1号及4D048保护编号；采用具体候机楼轮廓，不用机场总体坐标。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM明确标旧龙华机场候机楼、龙华西路1号及4D048保护编号；采用具体候机楼轮廓，不用机场总体坐标。",
+          "points": [
+            {
+              "name": "龙华机场航站楼（已废弃）",
+              "lon": 121.4498461,
+              "lat": 31.1712779,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/279318456",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "龙华西路1",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E9%BE%99%E5%8D%8E%E6%9C%BA%E5%9C%BA",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "龙华机场候机楼",
+        "listedName": "中国民用航空华东管理局龙华航空站",
+        "wikipediaAddress": "龙华西路1号",
+        "district": "徐汇区",
+        "constructionDate": "1946年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4F026-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.505922,
+          31.255652
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4F026-01",
+        "wikipediaId": "wiki-heritage-t05-r0172",
+        "batch": 4,
+        "officialCodeRaw": "4F026",
+        "name": "住宅",
+        "articleTitle": "霍山路71-95号，舟山路21-81号 住宅",
+        "address": "霍山路71-95号，舟山路21-81号",
+        "addressComparison": "formatting-only",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "360-public-map",
+        "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%20%E9%9C%8D%E5%B1%B1%E8%B7%AF85%E5%8F%B7&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": "上海市虹口区霍山路85号",
+        "locationNote": "部分定位：公开地图独立具名远东反战大会旧址的完整门址为霍山路85号，位于官方71—95号保护号段内，取得该号门址参考。只确认这一处门址；舟山路21—81号及霍山路整排各楼的范围仍未逐一测定，不以85号点覆盖整组住宅。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "公开地图独立具名远东反战大会旧址的完整门址为霍山路85号，位于官方71—95号保护号段内，取得该号门址参考。只确认这一处门址；舟山路21—81号及霍山路整排各楼的范围仍未逐一测定，不以85号点覆盖整组住宅。",
+          "points": [
+            {
+              "name": "远东反战大会旧址",
+              "lon": 121.505922,
+              "lat": 31.255652,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%20%E9%9C%8D%E5%B1%B1%E8%B7%AF85%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": "上海市虹口区霍山路85号",
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "霍山路71-95号，舟山路21—81号",
+        "district": "虹口区",
+        "constructionDate": "约1910年代",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4G005-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5498289,
+          31.293106
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4G005-01",
+        "wikipediaId": "wiki-heritage-t05-r0183",
+        "batch": 4,
+        "officialCodeRaw": "4G005",
+        "name": "沪江大学历史建筑建筑群：馥赉堂，中学礼堂，思孟堂，思雷堂，科学馆，思晏堂，健身房，思裴堂，怀德堂，思伊堂，体育馆，思福堂，教职工公寓，职工住宅群",
+        "articleTitle": "沪江大学历史建筑建筑群：馥赉堂，中学礼堂，思孟堂，思雷堂，科学馆，思晏堂，健身房，思裴堂，怀德堂，思伊堂，体育馆，思福堂，教职工公寓，职工住宅群",
+        "address": "军工路516号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/180007512",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "部分定位：已找到具名思雷堂、思孟堂轮廓。两来源对第一/第二办公楼的编号写法有交叉差异，本轮按历史楼名记录，不按办公楼序号自动匹配；其余保护建筑继续待核。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "已找到具名思雷堂、思孟堂轮廓。两来源对第一/第二办公楼的编号写法有交叉差异，本轮按历史楼名记录，不按办公楼序号自动匹配；其余保护建筑继续待核。",
+          "points": [
+            {
+              "name": "第一办公楼 (思雷堂)",
+              "lon": 121.5498289,
+              "lat": 31.293106,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/180007512",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "第二办公楼 (思孟堂)",
+              "lon": 121.5502884,
+              "lat": 31.2934021,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/180007513",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "沪江大学历史建筑建筑群：馥赉堂，中学礼堂，思孟堂，思雷堂，科学馆，思晏堂，健身房，思裴堂，怀德堂，思伊堂，体育馆，思福堂，教职工公寓，职工住宅群",
+        "listedName": "上海理工大学建筑群:第二教师公寓，学校办公楼，第二办公楼，第一办公楼，理学院楼，现代化教学中心，南体育馆，第三宿舍，第五宿舍，第四宿舍，学生活动中心，国际交流中心（卫生科），210号家属住宅，103、104、108-114、201-209、211号家属住宅",
+        "wikipediaAddress": "军工路516号",
+        "district": "杨浦区",
+        "constructionDate": "1948年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4G006-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50183,
+          31.284548
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4G006-01",
+        "wikipediaId": "wiki-heritage-t05-r0196",
+        "batch": 4,
+        "officialCodeRaw": "4G006",
+        "name": "同济大学历史建筑建筑群:文远楼，大礼堂，南北楼，图书馆，校门，西南一楼，电工馆，工程试验馆，日本某中学礼堂，日本某中学教学楼，日本某中学教学楼",
+        "articleTitle": "同济大学历史建筑建筑群:文远楼，大礼堂，南北楼，图书馆，校门，西南一楼，电工馆，工程试验馆，日本某中学礼堂，日本某中学教学楼，日本某中学教学楼",
+        "address": "四平路1239号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/y1prqcfyge5s2fg7",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "四平路1239号（同济大学内）",
+        "locationNote": "部分定位：图书馆具体实体为文远楼/土木工程学院、四平路1239号，取得该楼来源参考；名录同项还有礼堂、图书馆、校门等十余处组成物，未逐一完成定位。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "图书馆具体实体为文远楼/土木工程学院、四平路1239号，取得该楼来源参考；名录同项还有礼堂、图书馆、校门等十余处组成物，未逐一完成定位。",
+          "points": [
+            {
+              "name": "同济大学文远楼/土木工程学院",
+              "lon": 121.50183,
+              "lat": 31.284548,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/y1prqcfyge5s2fg7",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "四平路1239号（同济大学内）",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "同济大学历史建筑建筑群:文远楼，大礼堂，南北楼，图书馆，校门，西南一楼，电工馆，工程试验馆，日本某中学礼堂，日本某中学教学楼，日本某中学教学楼",
+        "listedName": "同济大学:文远楼(土木工程学院)，大礼堂，南北楼，图书馆裙房，校门(老)，西南一楼，机电厂，工程试验馆，羽毛球馆，“一·二九”大楼，测量馆",
+        "wikipediaAddress": "四平路1239号（同济大学内）",
+        "district": "杨浦区",
+        "constructionDate": "1953年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4M047-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3897835,
+          31.2003901
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4M047-01",
+        "wikipediaId": "wiki-heritage-t05-r0275",
+        "batch": 4,
+        "officialCodeRaw": "4M047",
+        "name": "花园住宅群",
+        "articleTitle": "花园住宅群",
+        "address": "虹桥路1650号，1590号，1648号；1652号，虹桥路1674号4号楼、3号楼",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4933513840",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "部分定位：OSM node4933513840明确标虹桥路1590号住宅，ref:zh=4M047，取得该保护项一处组成物的WGS84参考点。官方同项还列1648、1650、1652、1674号及若干楼号，未逐栋完成；本点不代表新建舞蹈中心剧场或整项住宅群已定位。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "OSM node4933513840明确标虹桥路1590号住宅，ref:zh=4M047，取得该保护项一处组成物的WGS84参考点。官方同项还列1648、1650、1652、1674号及若干楼号，未逐栋完成；本点不代表新建舞蹈中心剧场或整项住宅群已定位。",
+          "points": [
+            {
+              "name": "虹桥路1590号住宅（4M047组成物）",
+              "lon": 121.3897835,
+              "lat": 31.2003901,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/node/4933513840",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "花园住宅群",
+        "listedName": "市舞蹈学校芭蕾舞团行政楼，上海歌舞团行政楼，上海歌舞团3号楼；市舞蹈学校5号楼，4号楼，3号楼",
+        "wikipediaAddress": "虹桥路1590号9号楼",
+        "district": "长宁区",
+        "constructionDate": "不详",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-4N001-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4034262,
+          31.2429344
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-4N001-01",
+        "wikipediaId": "wiki-heritage-t05-r0290",
+        "batch": 4,
+        "officialCodeRaw": "4N001",
+        "name": "曹杨一村",
+        "articleTitle": "曹杨一村",
+        "address": "曹杨一村（枫桥路、梅岭北路、棠浦路、花溪路、兰溪路）",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/494311441",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM两块范围均明确标曹杨一村及4N001，分别保留两个范围参考点；不借用更大的曹杨新村街道点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM两块范围均明确标曹杨一村及4N001，分别保留两个范围参考点；不借用更大的曹杨新村街道点。",
+          "points": [
+            {
+              "name": "曹杨一村",
+              "lon": 121.4034262,
+              "lat": 31.2429344,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494311441",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            },
+            {
+              "name": "曹杨一村",
+              "lon": 121.4019377,
+              "lat": 31.2414233,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/494311442",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%9B%B9%E6%9D%A8%E6%96%B0%E6%9D%91",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "曹杨一村",
+        "listedName": "曹杨一村",
+        "wikipediaAddress": "曹杨一村（枫桥路、梅岭北路、棠浦路、花溪路、兰溪路）",
+        "district": "普陀区",
+        "constructionDate": "1952年",
+        "floors": null,
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5A049-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.468744,
+          31.242306
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5A049-01",
+        "wikipediaId": "wiki-heritage-t06-r0050",
+        "batch": 5,
+        "officialCodeRaw": "5A049",
+        "name": "仓库货栈/章华毛绒纺织公司上海货栈、\n中国垦业银行仓库",
+        "articleTitle": "仓库货栈/章华毛绒纺织公司上海货栈、\n中国垦业银行仓库",
+        "address": "南苏州路991号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "360-public-map",
+        "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E5%8D%97%E8%8B%8F%E5%B7%9E%E8%B7%AF979%E5%8F%B7&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "官方同一条目现名称明确为南苏州路979号仓库，而地址栏列991号。本轮获得979号公开门址地理编码参考；以官方现名称建立对应，991/979差异原样保留，不能宣称已单独核定991号楼体。精确检索991号时来源未返回991，故未借用另一个999号结果。该点只作“979号仓库”门址参考，非仓库轮廓或保护范围。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "官方同一条目现名称明确为南苏州路979号仓库，而地址栏列991号。本轮获得979号公开门址地理编码参考；以官方现名称建立对应，991/979差异原样保留，不能宣称已单独核定991号楼体。精确检索991号时来源未返回991，故未借用另一个999号结果。该点只作“979号仓库”门址参考，非仓库轮廓或保护范围。",
+          "points": [
+            {
+              "name": "上海市南苏州路979号",
+              "lon": 121.468744,
+              "lat": 31.242306,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E5%8D%97%E8%8B%8F%E5%B7%9E%E8%B7%AF979%E5%8F%B7&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "仓库货栈/章华毛绒纺织公司上海货栈、\n中国垦业银行仓库",
+        "listedName": "南苏州路979号仓库",
+        "wikipediaAddress": "南苏州路991号",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5A050-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.469026,
+          31.242361
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5A050-01",
+        "wikipediaId": "wiki-heritage-t06-r0051",
+        "batch": 5,
+        "officialCodeRaw": "5A050",
+        "name": "仓库货栈/章华毛绒纺织公司上海货栈 、中国垦业银行仓库",
+        "articleTitle": "仓库货栈/章华毛绒纺织公司上海货栈 、中国垦业银行仓库",
+        "address": "南苏州路955号",
+        "addressComparison": "exact",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "360-public-map",
+        "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E8%A1%8D%E5%BA%86%E9%87%8C&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": "上海市黄浦区南京东路街道南苏州路955号",
+        "locationNote": "公开具名百联集团时尚产业（衍庆里）POI完整地址为南苏州路955号，与保护条目现名称及地址一致，可作955号旧货栈改造园区门址参考。区别于厦门路230弄另一个衍庆里住宅POI，亦未采用Artguide页面可能沿用旧址的Geo字段；未测定该仓库单体保护轮廓。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "公开具名百联集团时尚产业（衍庆里）POI完整地址为南苏州路955号，与保护条目现名称及地址一致，可作955号旧货栈改造园区门址参考。区别于厦门路230弄另一个衍庆里住宅POI，亦未采用Artguide页面可能沿用旧址的Geo字段；未测定该仓库单体保护轮廓。",
+          "points": [
+            {
+              "name": "百联集团时尚产业(衍庆里)",
+              "lon": 121.469026,
+              "lat": 31.242361,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E8%A1%8D%E5%BA%86%E9%87%8C&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": "上海市黄浦区南京东路街道南苏州路955号",
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "仓库货栈/章华毛绒纺织公司上海货栈 、中国垦业银行仓库",
+        "listedName": "南苏州路955号仓库",
+        "wikipediaAddress": "南苏州路955号",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5A070-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4536607,
+          31.2246607
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5A070-01",
+        "wikipediaId": "wiki-heritage-t06-r0072",
+        "batch": 5,
+        "officialCodeRaw": "5A070",
+        "name": "上海儿科疗养院",
+        "articleTitle": "上海儿科疗养院",
+        "address": "巨鹿路334号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1199737544",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "补查官方另一版名录确认使用单位为向明初级中学；OSM具名向明初级中学位置与巨鹿路334号图书馆门址点接近。采用该院址范围参考，未逐栋核定原儿科疗养院楼体。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "补查官方另一版名录确认使用单位为向明初级中学；OSM具名向明初级中学位置与巨鹿路334号图书馆门址点接近。采用该院址范围参考，未逐栋核定原儿科疗养院楼体。",
+          "points": [
+            {
+              "name": "向明初级中学",
+              "lon": 121.4536607,
+              "lat": 31.2246607,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/1199737544",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%90%91%E6%98%8E%E4%B8%AD%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "上海儿科疗养院",
+        "listedName": "向明初级中学",
+        "wikipediaAddress": "巨鹿路334号",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "2-3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5A082-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.494412,
+          31.202886
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5A082-01",
+        "wikipediaId": "wiki-heritage-t06-r0084",
+        "batch": 5,
+        "officialCodeRaw": "5A082",
+        "name": "南市发电厂",
+        "articleTitle": "南市发电厂",
+        "address": "花园港路200号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/lkqwlpk643ldicf6",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "花园港路200号",
+        "locationNote": "图书馆明确以南市发电厂、花园港路200号给出位置，官方保护项与改建博物馆的旧厂房关系已有资料支持；采用旧厂房门址参考，未定位烟囱等单体。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆明确以南市发电厂、花园港路200号给出位置，官方保护项与改建博物馆的旧厂房关系已有资料支持；采用旧厂房门址参考，未定位烟囱等单体。",
+          "points": [
+            {
+              "name": "南市发电厂",
+              "lon": 121.494412,
+              "lat": 31.202886,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/lkqwlpk643ldicf6",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "花园港路200号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%BD%93%E4%BB%A3%E8%89%BA%E6%9C%AF%E5%8D%9A%E7%89%A9%E9%A6%86",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "南市发电厂",
+        "listedName": "上海当代艺术博物馆",
+        "wikipediaAddress": "花园港路200号",
+        "district": "黄浦区",
+        "constructionDate": null,
+        "floors": "1层（约30米）",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5B016-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.436205,
+          31.224639
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5B016-01",
+        "wikipediaId": "wiki-heritage-t09-r0017",
+        "batch": 5,
+        "officialCodeRaw": "5B016",
+        "name": "汉璧礼蒙童养学堂、汉璧礼西童公学",
+        "articleTitle": "汉璧礼蒙童养学堂、汉璧礼西童公学",
+        "address": "愚园路404号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/zp0hz0qpxlh0pe05",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "愚园路404号",
+        "locationNote": "图书馆实体明确写市西中学（2号楼）、愚园路404号，较学校整体坐标具体；采用该具名来源参考点，未独立测绘楼体。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆实体明确写市西中学（2号楼）、愚园路404号，较学校整体坐标具体；采用该具名来源参考点，未独立测绘楼体。",
+          "points": [
+            {
+              "name": "市西中学（2号楼）",
+              "lon": 121.436205,
+              "lat": 31.224639,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/zp0hz0qpxlh0pe05",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "愚园路404号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%B8%82%E8%A5%BF%E4%B8%AD%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "汉璧礼蒙童养学堂、汉璧礼西童公学",
+        "listedName": "上海市市西中学（2 号楼）",
+        "wikipediaAddress": "愚园路404号",
+        "district": "静安区",
+        "constructionDate": null,
+        "floors": "4层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D003-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.441528,
+          31.203634
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D003-01",
+        "wikipediaId": "wiki-heritage-t07-r0004",
+        "batch": 5,
+        "officialCodeRaw": "5D003",
+        "name": "住宅",
+        "articleTitle": "高安路60号 住宅",
+        "address": "高安路60号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://sh.dushiquan.net/xiaoqu/41022/",
+        "coordinateSourceTitle": "独立门址资料",
+        "sourceAddress": null,
+        "locationNote": "独立住宅资料页明确首长公寓为高安路60、62号，BMapGL点与图书馆原60弄点接近；采用60/62号共用院址范围参考，未单独核定60号楼体中心。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "独立住宅资料页明确首长公寓为高安路60、62号，BMapGL点与图书馆原60弄点接近；采用60/62号共用院址范围参考，未单独核定60号楼体中心。",
+          "points": [
+            {
+              "name": "首长公寓（60、62号共用范围）",
+              "lon": 121.441528,
+              "lat": 31.203634,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://sh.dushiquan.net/xiaoqu/41022/",
+              "sourceTitle": "独立门址资料",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "高安路60弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "5层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D023-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.453202,
+          31.209608
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D023-01",
+        "wikipediaId": "wiki-heritage-t07-r0024",
+        "batch": 5,
+        "officialCodeRaw": "5D023",
+        "name": "住宅",
+        "articleTitle": "襄阳南路364号 住宅",
+        "address": "襄阳南路364号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?pid=9947a663a9975d39",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "新增公开地图明确店铺荧动电脑诊所位于襄阳南路364号，点位与图书馆364弄附近相合；采用364号门址参考，未核定住宅内部或店铺持续经营状态。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "新增公开地图明确店铺荧动电脑诊所位于襄阳南路364号，点位与图书馆364弄附近相合；采用364号门址参考，未核定住宅内部或店铺持续经营状态。",
+          "points": [
+            {
+              "name": "襄阳南路364号（荧动电脑诊所门址）",
+              "lon": 121.453202,
+              "lat": 31.209608,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?pid=9947a663a9975d39",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "襄阳南路364弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D026-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4469403,
+          31.2101816
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D026-01",
+        "wikipediaId": "wiki-heritage-t07-r0027",
+        "batch": 5,
+        "officialCodeRaw": "5D026",
+        "name": "住宅",
+        "articleTitle": "东平路1号 住宅",
+        "address": "东平路1号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/674362969",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": "东平路1",
+        "locationNote": "OSM建筑完整门址为东平路1号，建筑资料亦列该址；采用这一楼体参考，原图书馆1弄点不再用于定位1号。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM建筑完整门址为东平路1号，建筑资料亦列该址；采用这一楼体参考，原图书馆1弄点不再用于定位1号。",
+          "points": [
+            {
+              "name": "住宅",
+              "lon": 121.4469403,
+              "lat": 31.2101816,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/674362969",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": "东平路1",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "东平路1弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D027-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.442795,
+          31.202956
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D027-01",
+        "wikipediaId": "wiki-heritage-t07-r0028",
+        "batch": 5,
+        "officialCodeRaw": "5D027",
+        "name": "住宅",
+        "articleTitle": "建国西路629号 住宅",
+        "address": "建国西路629号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "amap",
+        "sourceUrl": "https://www.amap.com/place/B001530DC7",
+        "coordinateSourceTitle": "高德地图",
+        "sourceAddress": null,
+        "locationNote": "高德列市立幼儿园完整门址建国西路629号，与采购资料的保护项门址相同；采用629号院址参考，不借用图书馆629弄的点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "高德列市立幼儿园完整门址建国西路629号，与采购资料的保护项门址相同；采用629号院址参考，不借用图书馆629弄的点。",
+          "points": [
+            {
+              "name": "上海市市立幼儿园",
+              "lon": 121.442795,
+              "lat": 31.202956,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://www.amap.com/place/B001530DC7",
+              "sourceTitle": "高德地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "上海市市立幼儿园",
+        "wikipediaAddress": "建国西路629弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D038-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.444643,
+          31.205451
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D038-01",
+        "wikipediaId": "wiki-heritage-t07-r0039",
+        "batch": 5,
+        "officialCodeRaw": "5D038",
+        "name": "住宅",
+        "articleTitle": "乌鲁木齐路180、182号 住宅",
+        "address": "乌鲁木齐路180、182号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?pid=95d613db17e22951",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "部分定位：新增历史街区资料确认相关对象为乌鲁木齐南路180、182号；公开地图取得180号的具体门址参考，邻近178号衡复艺术中心可作位置背景。182号未取得独立点，不把178号艺术中心直接代替两栋。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "新增历史街区资料确认相关对象为乌鲁木齐南路180、182号；公开地图取得180号的具体门址参考，邻近178号衡复艺术中心可作位置背景。182号未取得独立点，不把178号艺术中心直接代替两栋。",
+          "points": [
+            {
+              "name": "乌鲁木齐南路180号门址",
+              "lon": 121.444643,
+              "lat": 31.205451,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?pid=95d613db17e22951",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "乌鲁木齐路180-182弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "2层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D061-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.452154,
+          31.220346
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D061-01",
+        "wikipediaId": "wiki-heritage-t07-r0062",
+        "batch": 5,
+        "officialCodeRaw": "5D061",
+        "name": "住宅",
+        "articleTitle": "新乐路34弄（1-3号），新乐路36号 住宅",
+        "address": "新乐路34弄（1-3号），新乐路36号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?pid=b6f6aaebfc14719e",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "部分定位：新增公开地图多个具名房源明确写新乐路34弄2号，其中另有长乐路339弄28号的门址桥接；可记录保护范围内2号门址参考。1、3号及新乐路36号未逐一定位，拒用原34弄76—80号来源点。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "新增公开地图多个具名房源明确写新乐路34弄2号，其中另有长乐路339弄28号的门址桥接；可记录保护范围内2号门址参考。1、3号及新乐路36号未逐一定位，拒用原34弄76—80号来源点。",
+          "points": [
+            {
+              "name": "新乐路34弄2号门址",
+              "lon": 121.452154,
+              "lat": 31.220346,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?pid=b6f6aaebfc14719e",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "新乐路34弄76-80号",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D087-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4331992,
+          31.1419214
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D087-01",
+        "wikipediaId": "wiki-heritage-t07-r0089",
+        "batch": 5,
+        "officialCodeRaw": "5D087",
+        "name": "上海中学大礼堂",
+        "articleTitle": "上海中学大礼堂",
+        "address": "上中路400号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/960668929",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "OSM在上海中学校园内有独立大礼堂轮廓，校园的百色路989号与官方上中路400号另门地址保留；采用礼堂参考，图书馆旧点偏北不采用。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "OSM在上海中学校园内有独立大礼堂轮廓，校园的百色路989号与官方上中路400号另门地址保留；采用礼堂参考，图书馆旧点偏北不采用。",
+          "points": [
+            {
+              "name": "大礼堂",
+              "lon": 121.4331992,
+              "lat": 31.1419214,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/960668929",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "上海中学大礼堂",
+        "listedName": "上海中学大礼堂",
+        "wikipediaAddress": "上中路400号(门牌遗失)另：百色路989号（北门，学生出入门）",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "1层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D095-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.448097,
+          31.21623
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D095-01",
+        "wikipediaId": "wiki-heritage-t07-r0097",
+        "batch": 5,
+        "officialCodeRaw": "5D095",
+        "name": "住宅",
+        "articleTitle": "淮海中路 1222-1238号 （双号） 住宅",
+        "address": "淮海中路 1222-1238号 （双号）",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://m.map.360.cn/?pid=fa25447ec092ae3a",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": null,
+        "locationNote": "部分定位：徐汇官方信息变更公告确认本项为格莱勋公寓/光明公寓；新公开地图具名光明公寓并列1224—1230双号，记录这部分沿街门址参考。官方1222—1238号的其余组成范围未逐栋核定。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "徐汇官方信息变更公告确认本项为格莱勋公寓/光明公寓；新公开地图具名光明公寓并列1224—1230双号，记录这部分沿街门址参考。官方1222—1238号的其余组成范围未逐栋核定。",
+          "points": [
+            {
+              "name": "光明公寓1224—1230号范围",
+              "lon": 121.448097,
+              "lat": 31.21623,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?pid=fa25447ec092ae3a",
+              "sourceTitle": "360地图",
+              "sourceAddress": null,
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": null,
+        "wikipediaAddress": "淮海中路1230弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "4层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5D097-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.444541,
+          31.206218
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5D097-01",
+        "wikipediaId": "wiki-heritage-t07-r0099",
+        "batch": 5,
+        "officialCodeRaw": "5D097",
+        "name": "住宅",
+        "articleTitle": "永嘉路588-590号（双号） 住宅",
+        "address": "永嘉路588-590号（双号）",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "reviewed-public-source",
+        "sourceUrl": "https://www.taiwu.com/zufang/TWZ2026062900210-1.html",
+        "coordinateSourceTitle": "独立门址资料",
+        "sourceAddress": null,
+        "locationNote": "部分定位：太平洋房屋独栋住宅页面明确estateAddress=永嘉路588号，且用longitudeBd/latitudeBd保存百度坐标，得到588号门址来源点。590号仅有地址解析点，尚未完成两栋楼的独立核验，保留为候选。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "太平洋房屋独栋住宅页面明确estateAddress=永嘉路588号，且用longitudeBd/latitudeBd保存百度坐标，得到588号门址来源点。590号仅有地址解析点，尚未完成两栋楼的独立核验，保留为候选。",
+          "points": [
+            {
+              "name": "永嘉路588号住宅门址",
+              "lon": 121.444541,
+              "lat": 31.206218,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://www.taiwu.com/zufang/TWZ2026062900210-1.html",
+              "sourceTitle": "独立门址资料",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "住宅",
+        "listedName": "东湖双拥小区",
+        "wikipediaAddress": "永嘉路590弄、永嘉路588弄",
+        "district": "徐汇区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5F030-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.482418,
+          31.24675
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5F030-01",
+        "wikipediaId": "wiki-heritage-t12-r0034",
+        "batch": 5,
+        "officialCodeRaw": "5F030",
+        "name": "公济医院",
+        "articleTitle": "公济医院",
+        "address": "北苏州路190号、天潼路365号",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "building-complex-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "shanghai-library",
+        "sourceUrl": "https://data.library.sh.cn/entity/architecture/tmcxcmxd5yabjotd",
+        "coordinateSourceTitle": "上海图书馆历史建筑开放数据",
+        "sourceAddress": "北苏州路190号",
+        "locationNote": "图书馆实体具体列公济医院旧楼东部、北苏州路190号，与名录北苏州路190号/天潼路365号旧楼对应；采用旧楼门址参考，不引用现第一人民医院其他院区位置。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "图书馆实体具体列公济医院旧楼东部、北苏州路190号，与名录北苏州路190号/天潼路365号旧楼对应；采用旧楼门址参考，不引用现第一人民医院其他院区位置。",
+          "points": [
+            {
+              "name": "公济医院旧楼东部",
+              "lon": 121.482418,
+              "lat": 31.24675,
+              "coordinateScope": "building-complex-reference-point",
+              "sourceUrl": "https://data.library.sh.cn/entity/architecture/tmcxcmxd5yabjotd",
+              "sourceTitle": "上海图书馆历史建筑开放数据",
+              "sourceAddress": "北苏州路190号",
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%AC%AC%E4%B8%80%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "公济医院",
+        "listedName": "北外滩苏宁广场（苏宁宝丽嘉酒店）",
+        "wikipediaAddress": "北苏州路190号",
+        "district": "虹口区",
+        "constructionDate": null,
+        "floors": "5层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5N002-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4022095,
+          31.2295284
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5N002-01",
+        "wikipediaId": "wiki-heritage-t10-r0003",
+        "batch": 5,
+        "officialCodeRaw": "5N002",
+        "name": "华东师范大学办公楼",
+        "articleTitle": "华东师范大学办公楼",
+        "address": "中山北路3663号",
+        "addressComparison": "exact",
+        "coordinateScope": "building-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "openstreetmap",
+        "sourceUrl": "https://www.openstreetmap.org/way/116940064",
+        "coordinateSourceTitle": "OpenStreetMap",
+        "sourceAddress": null,
+        "locationNote": "华东师大官方建筑介绍区分办公楼与思群堂，OSM两者有独立轮廓；采用办公楼，拒绝图书馆与思群堂共用且偏东的点。",
+        "coordinateReview": {
+          "status": "reference-point",
+          "reason": "华东师大官方建筑介绍区分办公楼与思群堂，OSM两者有独立轮廓；采用办公楼，拒绝图书馆与思群堂共用且偏东的点。",
+          "points": [
+            {
+              "name": "办公楼",
+              "lon": 121.4022095,
+              "lat": 31.2295284,
+              "coordinateScope": "building-reference-point",
+              "sourceUrl": "https://www.openstreetmap.org/way/116940064",
+              "sourceTitle": "OpenStreetMap",
+              "sourceAddress": null,
+              "coordinateSystemInferred": false
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8D%8E%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "华东师范大学办公楼",
+        "listedName": "办公楼（中楼、东楼、西楼）",
+        "wikipediaAddress": "中山北路3663号",
+        "district": "普陀区",
+        "constructionDate": null,
+        "floors": "3层",
+        "structure": null,
+        "designer": null,
+        "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "wikipediaListUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sh-fgj-5W014-01-reviewed-coordinate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.576414,
+          31.3445
+        ]
+      },
+      "properties": {
+        "officialId": "sh-fgj-5W014-01",
+        "wikipediaId": "wiki-heritage-t16-r0015",
+        "batch": 5,
+        "officialCodeRaw": "5W014",
+        "name": "民宅",
+        "articleTitle": "高桥镇西街173弄（1-3号）、西街175-181号（单号） 民宅",
+        "address": "高桥镇西街173弄（1-3号）、西街175-181号（单号）",
+        "addressComparison": "different-as-listed",
+        "coordinateScope": "address-reference-point",
+        "coordinateSystem": "WGS84",
+        "precisionDegrees": null,
+        "origin": "360-public-map",
+        "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%AB%98%E6%A1%A5%E9%92%B1%E6%85%A7%E5%AE%89%E7%BA%AA%E5%BF%B5%E9%A6%86&src=bendibao&t=map",
+        "coordinateSourceTitle": "360地图",
+        "sourceAddress": "上海市浦东新区高桥西街173弄3号",
+        "locationNote": "部分定位：新增360具名钱慧安纪念馆POI，完整地址为高桥西街173弄3号；浦东官方2023年高桥报道将馆址列173弄1—3号，采购保护清单亦将5W014列为钱慧安纪念馆/高桥书画院、173弄1—3及175—181号。该点可定位173弄3号这一组成物；175—181号其他保护建筑尚未逐栋核定。采用经两个控制点推断GCJ-02后转换的门址参考，不用旧图书馆185号点。",
+        "coordinateReview": {
+          "status": "partial-reference",
+          "reason": "新增360具名钱慧安纪念馆POI，完整地址为高桥西街173弄3号；浦东官方2023年高桥报道将馆址列173弄1—3号，采购保护清单亦将5W014列为钱慧安纪念馆/高桥书画院、173弄1—3及175—181号。该点可定位173弄3号这一组成物；175—181号其他保护建筑尚未逐栋核定。采用经两个控制点推断GCJ-02后转换的门址参考，不用旧图书馆185号点。",
+          "points": [
+            {
+              "name": "钱慧安纪念馆",
+              "lon": 121.576414,
+              "lat": 31.3445,
+              "coordinateScope": "address-reference-point",
+              "sourceUrl": "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%AB%98%E6%A1%A5%E9%92%B1%E6%85%A7%E5%AE%89%E7%BA%AA%E5%BF%B5%E9%A6%86&src=bendibao&t=map",
+              "sourceTitle": "360地图",
+              "sourceAddress": "上海市浦东新区高桥西街173弄3号",
+              "coordinateSystemInferred": true
+            }
+          ]
+        },
+        "wikipediaUrl": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+        "wikidataId": null,
+        "historicalGeometryVerified": false,
+        "officialName": "民宅",
+        "listedName": "住宅",
+        "wikipediaAddress": "高桥西街185号",
+        "district": "浦东新区",
+        "constructionDate": null,
+        "floors": "2层",
         "structure": null,
         "designer": null,
         "officialSourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",

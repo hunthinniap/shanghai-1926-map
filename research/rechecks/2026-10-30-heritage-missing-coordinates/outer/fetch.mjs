@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import https from 'node:https';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {HttpsProxyAgent} from 'https-proxy-agent';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const [label,urlText]=process.argv.slice(2);const url=new URL(urlText);
+if(!/^[a-z0-9-]+$/.test(label)||url.protocol!=='https:')throw Error('Invalid read-only source');
+const allowed=['commons.wikimedia.org','api.openstreetmap.org','www.amap.com','ditu.amap.com','www.shqp.gov.cn','www.pudong.gov.cn','www.shanghai.gov.cn','ghzyj.sh.gov.cn','m.map.360.cn'];
+if(!allowed.includes(url.hostname))throw Error('Host not allowed');
+const response=await new Promise((resolve,reject)=>{const req=https.get(url,{agent:new HttpsProxyAgent('http://127.0.0.1:7897'),headers:{'User-Agent':'ShanghaiHistoricBuildingCoordinateResearch/1.0'},timeout:45000},res=>{const chunks=[];res.on('data',c=>chunks.push(c));res.on('end',()=>resolve({status:res.statusCode,bytes:Buffer.concat(chunks),type:res.headers['content-type']}))});req.on('error',reject);req.on('timeout',()=>req.destroy(Error('Timeout')));setTimeout(()=>req.destroy(Error('Total timeout')),50000).unref()});
+await fs.mkdir(path.join(dir,'sources'),{recursive:true});
+const file=`sources/${label}.json`;await fs.writeFile(path.join(dir,file),response.bytes);
+const entry={label,url:url.href,httpStatus:response.status,retrievedAt:new Date().toISOString(),file,byteLength:response.bytes.length,sha256:createHash('sha256').update(response.bytes).digest('hex')};
+await fs.writeFile(path.join(dir,`sources/${label}.source.json`),JSON.stringify(entry,null,2)+'\n');
+console.log(JSON.stringify(entry));

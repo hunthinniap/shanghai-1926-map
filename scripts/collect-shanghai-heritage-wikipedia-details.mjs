@@ -5,6 +5,7 @@ import { execFile, execFileSync } from 'node:child_process'
 import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 import { parseWikipediaHeritageList } from './lib/wikipedia-heritage-list.mjs'
+import { verifiedTextSnapshot } from './lib/verified-snapshot.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const directory = path.join(root, 'public/data/shanghai-excellent-historical-buildings/wikipedia')
@@ -40,8 +41,7 @@ function configuredProxy() {
 }
 
 const listSource = await readJson('list-source.json')
-const listBytes = await fs.readFile(path.join(directory, listSource.localPath))
-if (listBytes.length !== listSource.byteLength || sha256(listBytes) !== listSource.sha256) throw new Error('Wikipedia list snapshot checksum mismatch')
+const listBytes = verifiedTextSnapshot(await fs.readFile(path.join(directory, listSource.localPath)),listSource)
 const list = parseWikipediaHeritageList(listBytes.toString('utf8'), listSource)
 const titleSet = new Set()
 function collectTitles(node) {
@@ -92,8 +92,7 @@ function saveManifest() {
 }
 
 async function cachedResponse(source) {
-  const bytes = await fs.readFile(path.join(directory, source.localPath))
-  if (bytes.length !== source.byteLength || sha256(bytes) !== source.sha256) throw new Error(`API snapshot checksum mismatch: ${source.localPath}`)
+  const bytes = verifiedTextSnapshot(await fs.readFile(path.join(directory, source.localPath)),source)
   let data = null
   try { data = JSON.parse(bytes.toString('utf8')) } catch { /* Report the stored non-JSON response. */ }
   return { source, data }
@@ -350,9 +349,10 @@ for (const source of cachedSources.values()) await cachedResponse(source)
 if (new Set(articles.map((article) => article.requestedTitle)).size !== titles.length || articles.length !== titles.length) throw new Error('Article title accounting failed')
 for (const article of articles) for (const id of article.sourceRefs) if (!cachedSources.has(id)) throw new Error(`Unknown source reference: ${id}`)
 if (check) {
-  if (await fs.readFile(path.join(directory, 'article-details.json'), 'utf8') !== stringify(output)) throw new Error('Generated output drift: article-details.json')
-  if (await fs.readFile(path.join(directory, 'detail-sources.json'), 'utf8') !== stringify(manifest())) throw new Error('Generated output drift: detail-sources.json')
-  if (await fs.readFile(path.join(directory, 'linked-entity-labels.json'), 'utf8') !== stringify(linkedOutput)) throw new Error('Generated output drift: linked-entity-labels.json')
+  for (const [name, value] of [['article-details.json', output], ['detail-sources.json', manifest()], ['linked-entity-labels.json', linkedOutput]]) {
+    const saved = await fs.readFile(path.join(directory, name), 'utf8')
+    if (saved.replaceAll('\r\n', '\n') !== stringify(value)) throw new Error(`Generated output drift: ${name}`)
+  }
 } else {
   await fs.writeFile(path.join(directory, 'article-details.json'), stringify(output))
   await fs.writeFile(path.join(directory, 'linked-entity-labels.json'), stringify(linkedOutput))

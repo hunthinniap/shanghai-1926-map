@@ -549,7 +549,7 @@ export const approvedUnlocatedHeritageSites: ApprovedUnlocatedHeritageSite[] = [
     "name": "枕流公寓",
     "address": "华山路731号",
     "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
-    "scopeNote": "建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；因该名录项暂缺独立地图点，仍使用VS历史地标参考点。",
+    "scopeNote": "建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；名录已有独立门址参考点，旧今楼体与历史地标点的精确对应未新增审定，两侧仍保留独立点。",
     "scopeSourceUrl": "https://brs.russianshanghai.city/architects/m-z/g-b-rabinovich"
   },
   {
@@ -564,7 +564,7 @@ export const approvedUnlocatedHeritageSites: ApprovedUnlocatedHeritageSite[] = [
     "name": "震旦大学图书馆教学大楼/震旦大学博物馆",
     "address": "重庆南路280号/重庆南路225号",
     "sourceUrl": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
-    "scopeNote": "震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；名录项暂缺独立地图点，运动场坐标保持不变。",
+    "scopeNote": "震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；图书馆教学大楼已有独立参考点，运动场坐标保持不变，两侧仍保持分卡。",
     "scopeSourceUrl": "https://news.sjtu.edu.cn/cxyj/20230906/187742.html"
   }
 ]

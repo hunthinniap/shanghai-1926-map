@@ -51,6 +51,15 @@ a:focus-visible {
   background: #e8dfc8;
 }
 
+.timeline-stage-details { padding: 10px; background: rgba(113, 70, 63, 0.06); border-left: 2px solid var(--wine); }
+.timeline-stage-records { margin: 8px 0; padding-left: 18px; font-size: 11px; }
+.site-phase-list { margin-top: 10px; }
+.site-phase-list summary { cursor: pointer; color: var(--wine); }
+.site-phase-list ol { padding-left: 18px; }
+.site-phase-list li { padding: 6px 0; }
+.site-phase-list li[aria-current="true"] { color: var(--wine-dark); background: rgba(113, 70, 63, 0.07); }
+.site-phase-list a { display: block; font-size: 10px; }
+
 .topbar {
   position: absolute;
   z-index: 20;
@@ -467,7 +476,7 @@ a:focus-visible {
   position: absolute;
   z-index: 8;
   left: 50%;
-  bottom: 26px;
+  bottom: 110px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -497,7 +506,7 @@ a:focus-visible {
   top: 96px;
   right: 18px;
   width: min(360px, calc(100% - 36px));
-  max-height: calc(100% - 120px);
+  max-height: calc(100% - 210px);
   overflow: auto;
   padding: 27px 25px 24px;
   background: rgba(244, 237, 220, 0.98);
@@ -839,7 +848,7 @@ a:focus-visible {
 
 .maplibregl-ctrl-bottom-right {
   right: 12px;
-  bottom: 42px;
+  bottom: calc(min(64px, 10vh) + 42px);
 }
 
 .maplibregl-ctrl-group {
@@ -906,7 +915,7 @@ a:focus-visible {
 
   .map-caption {
     left: 12px;
-    bottom: 71px;
+    bottom: 235px;
   }
 
   .heritage-load-error {
@@ -917,16 +926,16 @@ a:focus-visible {
 
   .map-legend {
     left: 12px;
-    bottom: 27px;
+    bottom: 191px;
     gap: 10px;
   }
 
   .details-panel {
     top: auto;
     right: 0;
-    bottom: 0;
+    bottom: 202px;
     width: 100%;
-    max-height: 44%;
+    max-height: min(44%, calc(100% - 330px));
     padding: 25px 20px 21px;
     border-width: 1px 0 0;
     animation-name: panel-up;
@@ -959,7 +968,7 @@ a:focus-visible {
 
   .maplibregl-ctrl-bottom-right {
     right: 8px;
-    bottom: 50px;
+    bottom: 240px;
   }
 
   .maplibregl-ctrl-bottom-left {
@@ -973,6 +982,21 @@ a:focus-visible {
   .sources-list a {
     grid-template-columns: 40px 1fr auto;
   }
+}
+
+@media (min-width: 600px) and (max-width: 760px) {
+  .map-caption { bottom: 70px; }
+  .map-legend { bottom: 22px; }
+  .maplibregl-ctrl-bottom-right { bottom: calc(min(64px, 10vh) + 42px); }
+  .details-panel { bottom: 106px; }
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .map-caption { max-width: calc(50vw - 40px); grid-template-columns: 24px minmax(0, 1fr); }
+  .map-caption small { font-size: 9px; overflow-wrap: anywhere; }
+  .caption-rule { width: 24px; }
+  .map-legend { max-width: calc(50vw - 40px); gap: 2px; padding: 5px; font-size: 9px; }
+  .map-legend button { padding-inline: 3px; }
 }
 
 @media (max-width: 420px) {
@@ -1003,7 +1027,7 @@ a:focus-visible {
   }
 
   .map-error {
-    bottom: 86px;
+    bottom: 265px;
   }
 }
 

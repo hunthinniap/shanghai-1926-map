@@ -25,6 +25,20 @@ const baseFeature = {
 } satisfies HistoricalFeature
 
 describe('DetailsPanel historical records', () => {
+  it('places sourced residents after the timeline and only shows a period when recorded', () => {
+    const feature: HistoricalFeature = { ...baseFeature, properties: { ...baseFeature.properties, notableResidents: [
+      { name: '甲', period: '1948年', address: '某路2号', sources: [{ url: 'https://example.org/resident-a' }] },
+      { name: '乙', sources: [{ url: 'https://example.org/resident-b' }] },
+    ] } }
+    const container = document.createElement('div')
+    container.innerHTML = renderToStaticMarkup(<DetailsPanel feature={feature} sources={[]} onClose={() => undefined} />)
+    const timeline = container.querySelector('section[aria-label="时间线"]')!
+    const residents = timeline.nextElementSibling!
+    expect(residents.getAttribute('aria-label')).toBe('居住过的名人')
+    expect(residents.textContent).toContain('甲（1948年）某路2号')
+    expect(residents.querySelector('a[href="https://example.org/resident-b"]')?.parentElement?.textContent).toBe('乙')
+    expect(residents.textContent).not.toContain('年份未知')
+  })
   it('shows nearby or same-courtyard evidence without claiming a shared building', () => {
     const historical = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
     const school = historical.features.find((feature) => feature.properties.id === 'landmark-vs-site-13')!
@@ -33,6 +47,23 @@ describe('DetailsPanel historical records', () => {
     expect(markup).toContain('若瑟堂 · 2A045')
     expect(markup).toContain('学校和教堂是不同建筑')
     expect(markup).not.toContain('同址优秀历史建筑（名录点待核）')
+  })
+
+  it('keeps the sports field separate after the library listing receives a reference position', () => {
+    const historical = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    const sportsField = historical.features.find(feature => feature.properties.id === 'landmark-vs-site-242')!
+    const before = structuredClone(sportsField)
+    const container = document.createElement('div')
+    container.innerHTML = renderToStaticMarkup(<DetailsPanel feature={sportsField} sources={[]} onClose={() => undefined} />)
+    const questions = container.querySelector('[aria-label="待核查"]')!
+    expect(questions.textContent).toContain('同址名录参考（保持分卡）')
+    expect(questions.textContent).toContain('名录已有独立参考点')
+    expect(questions.textContent).toContain('震旦大学运动场与图书馆教学大楼、博物馆')
+    expect(questions.textContent).toContain('非同一楼体')
+    expect(questions.textContent).toContain('两侧仍保持分卡')
+    expect(container.textContent).not.toContain('名录点待核')
+    expect(container.querySelector('[aria-label="位置与来源"]')).toBeNull()
+    expect(sportsField).toEqual(before)
   })
 
   it('replaces the unknown-use placeholder with a qualified address reference, not a confirmed use', () => {
@@ -45,12 +76,12 @@ describe('DetailsPanel historical records', () => {
     expect(markup).toContain('上海歌剧院')
     expect(markup).toContain('历史原址／原建筑对应待核')
   })
-  it('keeps the existing single-name card unchanged when no records are provided', () => {
+  it('shows Chinese first and retains the original name in a single-record timeline', () => {
     const markup = renderToStaticMarkup(
       <DetailsPanel feature={baseFeature} sources={[]} onClose={() => undefined} />,
     )
 
-    expect(markup).toContain('<h2>Chinese Red Cross Hospital No. 1</h2>')
+    expect(markup).toContain('<h2>中國紅十字會第一醫院</h2>')
     expect(markup).not.toContain('同址历史记录')
   })
 
@@ -83,14 +114,14 @@ describe('DetailsPanel historical records', () => {
       <DetailsPanel feature={feature} sources={[]} onClose={() => undefined} />,
     )
 
-    expect(markup).toContain('<h2>Chinese Red Cross Hospital No. 1</h2>')
-    expect(markup).toContain('同址历史记录')
+    expect(markup).toContain('<h2>中國紅十字會第一醫院</h2>')
+    expect(markup).toContain('时间线')
     expect(markup).toContain('Chinese Red Cross General Hospital')
     expect(markup).toContain('中國紅十字會總醫院')
     expect(markup).toContain('1907–1928 年')
     expect(markup).toContain('1929 年起')
     expect(markup).toContain('href="https://example.com/general-hospital"')
-    expect(markup).toContain('aria-label="Chinese Red Cross Hospital No. 1史料来源 1"')
+    expect(markup).toContain('href="https://example.com/hospital-no-1"')
   })
 
   it('distinguishes a relocated successor from the historical map point', () => {

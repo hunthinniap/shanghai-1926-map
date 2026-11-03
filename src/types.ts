@@ -21,6 +21,15 @@ export interface CurrentUseSource {
   url: string
 }
 
+/** A sourced residence claim; ownership or employment alone is not residence. */
+export interface NotableResident {
+  name: string
+  period?: string
+  address?: string
+  note?: string
+  sources: CurrentUseSource[]
+}
+
 export interface AddressUseEvidence {
   sourceRecordIds: number[]
   mode: 'current-use' | 'address-reference'
@@ -34,10 +43,13 @@ export interface AddressUseEvidence {
 }
 
 export interface HistoricalRecord {
+  dateEvidence?: { sourceUrl: string; sourceTitle: string; note: string }
   sourceRecordIds?: number[]
   sourceParkRecordIds?: number[]
   name: string
   nameZh?: string
+  /** Reviewed display label; original source names remain unchanged. */
+  displayNameZh?: string
   startYear?: number
   endYear?: number
   sourceUrls?: string[]
@@ -45,7 +57,44 @@ export interface HistoricalRecord {
   generic?: boolean
 }
 
+/** Reviewed site phases use [startYear, endYear); record spans remain documentary. */
+export interface HistoricalSitePhase {
+  id: string
+  name: string
+  nameZh?: string
+  address?: string
+  use?: string
+  startYear: number
+  endYear?: number
+  relationship: 'same-building' | 'site-use' | 'replacement-building' | 'vacant-site'
+  buildingId?: string
+  note?: string
+  sources: CurrentUseSource[]
+}
+
+export interface TimelineStage {
+  year: number
+  name: string
+  nameZh?: string
+  use?: string
+  status: 'reviewed-phase' | 'record-span' | 'latest-record' | 'unknown'
+  records: HistoricalRecord[]
+  phase?: HistoricalSitePhase
+  scope?: string
+}
+
+/** Physical building dates only. A record/name's end date is not demolition. */
+export interface BuildingLifeDates {
+  built?: { year: number; sourceUrl: string; note?: string }
+  demolished?: { year: number; sourceUrl: string; note?: string }
+}
+
 export interface HistoricalFeatureProperties {
+  notableResidents?: NotableResident[]
+  mapDisplayName?: string
+  historicalPhases?: HistoricalSitePhase[]
+  timelineStage?: TimelineStage
+  buildingLifeDates?: BuildingLifeDates
   id: string
   featureGroupId: string
   kind: FeatureKind

@@ -33,7 +33,7 @@
     "data:heritage:uses": "node scripts/build-heritage-historical-uses.mjs --write",
     "validate:heritage:uses": "node scripts/build-heritage-historical-uses.mjs --check",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs scripts/lib/shanghai-heritage.test.mjs scripts/lib/wikipedia-heritage-list.test.mjs scripts/lib/wikipedia-heritage-enrichment.test.mjs scripts/lib/heritage-addresses.test.mjs scripts/lib/heritage-library-matching.test.mjs",
+    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs scripts/lib/shanghai-heritage.test.mjs scripts/lib/wikipedia-heritage-list.test.mjs scripts/lib/wikipedia-heritage-enrichment.test.mjs scripts/lib/heritage-addresses.test.mjs scripts/lib/heritage-library-matching.test.mjs scripts/lib/reviewed-heritage-coordinates.test.mjs",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "data:heritage:wikipedia": "node scripts/collect-shanghai-heritage-wikipedia-list.mjs && node scripts/collect-shanghai-heritage-wikipedia-details.mjs && node scripts/enrich-shanghai-heritage-wikipedia.mjs",

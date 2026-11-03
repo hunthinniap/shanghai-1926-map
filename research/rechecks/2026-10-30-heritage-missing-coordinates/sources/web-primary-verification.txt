@@ -1,0 +1,554 @@
+常见问题 | 高德地图API (https://lbs.amap.com/faq/advisory/others/39838)
+citeturn52search0 [wordlim: 200] Crawled: today; 高德开放平台服务用的是国测局规定的GCJ-02坐标系。
+
+高德开放平台服务使用什么坐标体系？
+
+高德开放平台服务用的是国测局规定的GCJ-02坐标系。为国内的标准坐标体系。区别于GPS坐标（WGS-84坐标系），是在其基础上进行了加密。
+
+您可以点击使用高德坐标拾取器，查看高德坐标。--------------------------------------------------------------------------------
+其他坐标转高德坐标-坐标变换-进阶教程-地图 JS API 2.0 | 高德地图API (https://lbs.amap.com/api/javascript-api-v2/guide/transform/convertfrom)
+citeturn52search1 [wordlim: 200] Crawled: today; 火星坐标系 - GCJ-02  | 中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系
+
+开发 地图 JS API 2.0 进阶教程 坐标变换 其他坐标转高德坐标
+
+# 其他坐标转高德坐标 最后更新时间: 2024年07月29日
+
+地球上同一个地理位置的经纬度，在不同的坐标系中，会存在少许偏移，国内目前常见的坐标系主要分为三种：
+
+名称  | 说明
+火星坐标系 - GCJ-02  | 中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系
+地球坐标系 - WGS84  | 常见于 GPS 设备，Google 地图等国际标准的坐标体系
+百度坐标系 - BD-09  | 百度地图所使用的坐标体系，是在火星坐标系的基础上又进行了一次加密处理
+
+为了确保位置信息的准确性，当使用非高德坐标系时，我们需要使用 AMap.convertFrom()方法将这些非高德坐标系进行转换。以确保与高德地图的坐标体系相匹配。   
+
+## 其他坐标转高德坐标示例
+
+## 1、使用说明
+    
+    `var gps = [116.3, 39.9]; //需要转换的gps类型的坐标
+    //参数说明：需要转换的坐标或者坐标组，需要转换的坐标类型，转换成功后的回调函数
+    AMap.convertFrom(gps, "gps", function (status, result) {
+      //status：complete 表示查询成功，no_data 为查询无结果，error 代表查询错误
+      //查询成功时，result.locations 即为转换后的高德坐标系
+      if (status === "complete" && result.info === "ok") {
+        var lnglats = result.locations; //转换后的高德坐标 Array.<LngLat>
+        console.log(lnglats);
+      }
+    });`
+
+提示
+
+支持最多一次转换40对坐标组
+
+## 2、本章涉及的属性及方法说明
+
+### 2.1 AMap.convertFrom
+
+方法  | 说明
+AMap.convertFrom(lnglat,type,cbk)  | lnglat：转换的坐标或者坐标组。 type：坐标类型，支持"gps"：GPS 原始坐标、"baidu"：百度经纬度坐标、"mapbar"：图吧经纬度坐标。cbk：回调函数，转换成功后被调用。
+
+查看AMap.convertFrom参数说明--------------------------------------------------------------------------------
+基础类-入门-教程-地图 JS API 1.4 | 高德地图API (https://lbs.amap.com/api/javascript-api/guide/abc/basetype?from=api-js_api-guide-abc-prepare)
+citeturn52search2 [wordlim: 200] Crawled: 4 weeks ago; 高德地图采用 GCJ-02 坐标系，即火星坐标系。与 GPS 坐标系，即 WGS-84 坐标系存在一定的偏移量，如果您采集到的坐标数据为GPS坐标，可以先通过`AMap.ConvertFrom`进行坐标偏移后进行制图或者使用，才能够和高德的底图完全匹配。
+    
+    var lnglat3 = lnglat1.offset(100,50)//lnglat1向东100m，向北50m的位置的经纬度
+    `
+
+查看详细接口说明
+
+特别说明：
+
+高德地图采用 GCJ-02 坐标系，即火星坐标系。与 GPS 坐标系，即 WGS-84 坐标系存在一定的偏移量，如果您采集到的坐标数据为GPS坐标，可以先通过`AMap.ConvertFrom`进行坐标偏移后进行制图或者使用，才能够和高德的底图完全匹配。
+
+## 像素点 AMap.Pixel
+
+像素点由`x`和`y`两个分量组成，通常用来描述地图的容器坐标、地理像素坐标 (平面像素坐标)、点标记和信息窗体的的锚点等。使用方式如下：
+
+JavaScript
+    
+    `  var offset  = new AMap.Pixel(-16,-30);
+      var marker = new AMap.Marker({
+          offset:offset,
+          icon:'xxx.png',
+      });
+      map.add(marker);`
+
+查看详细接口说明
+
+## 像素尺寸 AMap.Size
+
+像素尺寸由`width`和`height`两个分量构成，通常用来描述具有一定大小的对象，比如地图的尺寸，图标的尺寸等
+--------------------------------------------------------------------------------
+设备位置上报-设备-开发指南-地图小程序OPENAPI | 高德地图API (https://lbs.amap.com/api/wia-openapi/guide/device/location-upload)
+citeturn52search3 [wordlim: 200] Published: 1.8 years ago; Crawled: yesterday; lon  | String  | 精度  | GCJ-02坐标系  | 必填 ...             param1.put("key", "在高德开放平台申请的key");
+lon  | String  | 精度  | GCJ-02坐标系  | 必填
+lat  | String  | 维度  | GCJ-02坐标系  | 必填
+
+
+## 示例代码（以java为例）
+    
+    `import com.amap.wia.openapi.test.lib.MyHttpUtils;//见 https://lbs.amap.com/api/wia-openapi/guide/tools/demo-lib
+    import com.amap.wia.openapi.test.lib.SignatureHelper;//见 https://lbs.amap.com/api/wia-openapi/guide/tools/biz-token-sign
+    /*
+     * 通用 import 内容等暂略
+     */
+    public static void main(String[] args) {
+            String requestUrl = "https://restwia.amap.com/api/v1/wia/map/location/device/upload";
+            //url param
+            HashMap<String, Object> param1 = Maps.newHashMap();
+            param1.put("key", "在高德开放平台申请的key");
+            param1.put("deviceId", "设备id");
+            param1.put("bizToken", "在高德开放平台申请的bizToken");
+            param1.put("bizSign", SignatureHelper.calcSign("在高德开放平台申请的bizSecret",new String[]{"deviceId"}));
+            //body
+            HashMap<String, Object> param2 = Maps.newHashMap();
+            param2.put("deviceId","testtesttest");
+            param2.put("lon","116.417621");
+            param2.put("lat","39.904583");
+            param2.put("reportTime", System.currentTimeMillis());
+    
+    
+            requestUrl = MyHttpUtils.attachParamsToUrl(requestUrl,param1);
+            String s = MyHttpUtils.postApplicationJson(requestUrl, JSONObject.toJSONString(param2));
+            System.out.println("s = " + s);
+    }`
+
+## 返回参数
+
+名称  | 类型  | 描述  | 规则说明
+code  | Number  | 返回结果状态  | 
+data  | Object  | 返回结果数据  | 成功true失败false
+message  | String  | 返回状态说明  | 成功时返回Successful，否则返回错误原因
+result  | Boolean  | 返回结果状态  | true或false
+version  | String  | 版本  | 
+timestamp  | Long  | 时间戳  | 
+requestId  | String  | 请求id  | --------------------------------------------------------------------------------
+基础类-基础-进阶教程-地图 JS API 2.0 | 高德地图API (https://lbs.amap.com/api/javascript-api-v2/guide/abc/basetype)
+citeturn52search4 [wordlim: 200] Published: 3.6 years ago; Crawled: today; 高德地图采用 GCJ-02 坐标系，即火星坐标系。与 GPS 坐标系，即 WGS-84 坐标系存在一定的偏移量，如果您采集到的坐标数据为 GPS 坐标，可以先通过AMap.convertFrom()进行坐标偏移后进行制图或者使用，才能够和高德的底图完全匹配。
+
+查看详细接口说明
+
+特别说明
+
+高德地图采用 GCJ-02 坐标系，即火星坐标系。与 GPS 坐标系，即 WGS-84 坐标系存在一定的偏移量，如果您采集到的坐标数据为 GPS 坐标，可以先通过AMap.convertFrom()进行坐标偏移后进行制图或者使用，才能够和高德的底图完全匹配。
+
+## 像素点 AMap.Pixel
+
+像素点由 x 和 y 两个分量组成，通常用来描述地图的容器坐标、地理像素坐标 (平面像素坐标)、点标记和信息窗体的的锚点等。使用方式如下：
+    
+    `var offset  = new AMap.Pixel(-16,-30);
+    var marker = new AMap.Marker({
+      offset:offset,
+      icon:'xxx.png',
+    });
+    map.add(marker);`
+
+查看详细接口说明
+
+## 像素尺寸 AMap.Size
+
+像素尺寸由width和height两个分量构成，通常用来描述具有一定大小的对象，比如地图的尺寸，图标的尺寸等
+    
+    `var mapSize = map.getSize();//获取地图大小，返回的是地图容器的像素大小
+--------------------------------------------------------------------------------
+常见问题 | 高德地图API (https://lbs.amap.com/faq/basis/location/1060046657)
+citeturn52search5 [wordlim: 200] Crawled: 2 days ago; 国家测绘局规定，中国互联网地图必须使用至少加密一次的GCJ-02坐标。故高德不提供任何坐标系转换为GPS坐标的接口，请知晓。
+
+如何将其他坐标转换为GPS坐标？
+
+国家测绘局规定，中国互联网地图必须使用至少加密一次的GCJ-02坐标。故高德不提供任何坐标系转换为GPS坐标的接口，请知晓。--------------------------------------------------------------------------------
+高级IP定位-高级 API 文档-开发指南-Web服务 API | 高德地图API (https://lbs.amap.com/api/webservice/guide/api-advanced/ip)
+citeturn52search6 [wordlim: 200] Published: 8 months ago; Crawled: today; IP 定位是一套简单的 HTTP 接口，根据用户输入的 IP 地址，能够快速的帮用户定位 IP 的所在位置。 ... 返回结果：country=中国时，接口将把提供的经纬度数据转换为高德坐标系（GCJ-02）；若country≠中国时，则将直接输出原始的经纬度数据（即WGS-84坐标系）。
+parameters  | GET
+
+parameters 代表的参数包括必填参数和可选参数。所有参数均使用和号字符(&)进行分隔。下面的列表枚举了这些参数及其使用规则。
+
+#### 请求参数
+
+参数名  | 含义  | 规则说明  | 是否必须  | 缺省值
+key  | 请求服务权限标识  | 用户在高德地图官网 申请 Web 服务 API 类型 KEY  | 必填  | 无
+type  | ip 类型  | 可选值：4：ipv4 6：ipv6  | 必填  | 4
+ip  | ip 地址  | 需要搜索的 IP 地址（支持国内、国外地址解析）  | 必填  | 无
+sig  | 签名  | 请参考 数字签名获取和使用方法，选择数字签名认证的付费用户必填  | 可选  | 无
+
+#### 服务示例
+    
+    `https://restapi.amap.com/v5/ip/location?key=<用户的key>&ip=114.247.50.2&type=4`
+
+#### 返回结果参数说明
+
+名称  | 含义  | 规则说明
+status  | 返回结果状态值  | 值为0或1,0表示失败；1表示成功
+info  | 返回状态说明  | 返回状态说明，status 为0时，info 返回错误原因，否则返回“OK”。
+infocode  | 状态码  | 返回状态说明,10000代表正确,详情参阅 info 状态表
+country  | 国家名称  | 例：中国
+province  | 省份名称  | 若为直辖市则显示直辖市名称；如果在局域网 IP 网段内，则返回“局域网”；非法 IP 则返回空
+city  | 城市名称  | 若为直辖市则显示直辖市名称；如果为局域网网段内 IP 或者非法 IP，则返回空
+district  | 区县  | 区（四级）
+adcode  | 区县 adcode 编码  | adcode 信息可参考 城市编码表 获取
+location  | 经纬度  | 经度在前，纬度在后
+isp  | 运营商  | 
+ip  | ip 地址  | 查询的 ip
+
+提示
+
+返回结果：country=中国时，接口将把提供的经纬度数据转换为高德坐标系（GCJ-02）；若country≠中国时，则将直接输出原始的经纬度数据（即WGS-84坐标系）。--------------------------------------------------------------------------------
+其他坐标转高德坐标-坐标变换-教程-地图 JS API 1.4 | 高德地图API (https://lbs.amap.com/api/javascript-api/guide/transform/convertfrom)
+citeturn52search7 [wordlim: 200] Crawled: 2 days ago; 火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。
+
+开发 地图 JS API 1.4 教程 坐标变换 其他坐标转高德坐标
+
+# 其他坐标转高德坐标 最后更新时间: 2021年01月22日
+
+地球上同一个地理位置的经纬度，在不同的坐标系中，会有少许偏移，国内目前常见的坐标系主要分为三种：
+
+  1. 地球坐标系——WGS84：常见于 GPS 设备，Google 地图等国际标准的坐标体系。
+  2. 火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。
+  3. 百度坐标系——BD-09：百度地图所使用的坐标体系，是在火星坐标系的基础上又进行了一次加密处理。
+
+因此在使用不同坐标系前，我们需要使用 `AMap.convertFrom()` 方法将这些非高德坐标系进行转换。
+
+JavaScript
+    
+    `var gps = [116.3, 39.9];
+    AMap.convertFrom(gps, 'gps', function (status, result) {
+      if (result.info === 'ok') {
+        var lnglats = result.locations; // Array.<LngLat>
+      }
+    });`--------------------------------------------------------------------------------
+搜索 | 高德开放平台 | 高德地图API (https://lbs.amap.com/search?s=%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%99%A8)
+citeturn52search8 [wordlim: 200] Crawled: 2 days ago; 火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。 ... ... ，高德坐标就属于该种坐标体系地球坐标系-WGS84常见于GPS设备，Google地图等国际标准的坐标体系百度坐标系-BD- ... type：坐标类型，支持"gps"：GPS原始坐标、"baidu"：百度经纬度坐标、"mapbar"：图吧经纬度坐标。
+
+经纬度 <-> 地图容器像素坐标
+
+坐标变换（经纬度屏幕坐标）html,body,#container{height:100%;width:100%;}.btn ... ：(x,y)容器坐标容器像素坐标"/>经纬度"/>varmap=newAMap.Map("container",{resizeEnable
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 1.4>示例中心>坐标系转换
+
+其他坐标 -> 高德坐标
+
+其他坐标变换成高德坐标html,body,#container{height:100%;width:100%;}.btn-box ... GPS坐标转为高德坐标图吧坐标转为高德坐标百度坐标转为高德坐标varmap=newAMap.Map("container"
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 2.0>示例中心>其他坐标转高德坐标
+
+其他坐标 -> 高德坐标
+
+其他坐标变换成高德坐标html,body,#container{height:100%;width:100%;}.btn-box ... GPS坐标转为高德坐标图吧坐标转为高德坐标百度坐标转为高德坐标varmap=newAMap.Map("container"
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 1.4>示例中心>其他坐标转高德坐标
+
+其他坐标转高德坐标
+
+火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。 ... 百度坐标系——BD-09：百度地图所使用的坐标体系，是在火星坐标系的基础上又进行了一次加密处理。
+
+平台： Web端 (JS)
+
+来源： 文档>地图 JS API 1.4>教程>坐标变换
+
+其他坐标转高德坐标
+
+，高德坐标就属于该种坐标体系地球坐标系-WGS84常见于GPS设备，Google地图等国际标准的坐标体系百度坐标系-BD- ... type：坐标类型，支持"gps"：GPS原始坐标、"baidu"：百度经纬度坐标、"mapbar"：图吧经纬度坐标。
+
+平台： Web端 (JS)
+
+来源： 文档>地图 JS API 2.0>进阶教程>坐标变换
+--------------------------------------------------------------------------------
+数据集格式要求-MAP STUDIO | 高德地图API (https://lbs.amap.com/api/map-studio/data-format)
+citeturn52search9 [wordlim: 200] Published: 5.1 years ago; Crawled: 5 days ago; 支持国测局规定的GCJ-02坐标系。 ... shapefile 格式应存储在同一项目工作空间且使用特定文件扩展名的三个或更多文件中定义地理配准要素的几何和属性，一般情况下可以由ArcGIS、QGIS等软件导出，这些文件需要打包成一个zip包上传。
+
+  * Shapefile：是一种用于存储地理要素的几何位置和属性信息的非拓扑简单格式。Shapefile 文件指的是一种文件存储的方法，实际上该种文件格式是由多个文件组成的，通常包含.shp、.shx、.dbf等。
+
+### 坐标系
+
+支持国测局规定的GCJ-02坐标系。
+
+### 编码格式
+
+UTF-8
+
+### GeoJSON
+
+  * 仅支持 FeatureCollection 类型的标准GeoJSON对象
+
+  * features 不可为空数组
+
+  * 各feature的properties定义中，同名属性的值的数据类型必须一致
+
+  * 属性值仅支持数字、布尔值、字符串（最长200）
+
+### CSV
+
+  * 第一行指定每列的名称，不可为空、不可重名。必须包含geometry列，用来存放每条feature的几何对象。
+
+  * 第二行指定每列的数据类型，仅支持字符串(string)、数字(number)和布尔(boolean)类型。以此约定来解析下面的数据，比如property2的类型为number，那么该列下的值会被解析成数字23，而非字符串“23”。
+
+  * 第三行开始每行对应一个feature，geometry列的数据必填且为WKT格式。其余均会被解析成属性，值的类型必须与此列声明的数据类型一致。
+
+### Shapefile
+
+shapefile 格式应存储在同一项目工作空间且使用特定文件扩展名的三个或更多文件中定义地理配准要素的几何和属性，一般情况下可以由ArcGIS、QGIS等软件导出，这些文件需要打包成一个zip包上传。必需文件有：
+
+  * .shp - 用于存储要素几何的主文件；
+
+  * .shx - 用于存储要素几何索引的索引文件；
+
+  * .dbf - 用于存储要素属性信息的 dBASE 表；--------------------------------------------------------------------------------
+上传格式说明-数据上传和编辑-数据中心-geohub | 高德地图API (https://lbs.amap.com/api/geohub/geohub-datacenter/upload_edit/upload)
+citeturn52search10 [wordlim: 200] Published: 3.7 years ago; Crawled: yesterday; 支持国测局规定的GCJ-02坐标系。 ... shapefile 格式应存储在同一项目工作空间且使用特定文件扩展名的三个或更多文件中定义地理配准要素的几何和属性，一般情况下可以由ArcGIS、QGIS等软件导出，这些文件需要打包成一个zip包上传。
+
+开发 geohub 数据中心 数据上传和编辑 上传格式说明
+
+# 上传格式说明 最后更新时间: 2023年02月15日
+
+你可以在创建数据集以及数据编辑页上传已有的地理数据至平台，但是上传的文件需要遵循一定的格式要求才能顺利转换成可以在平台存储和编辑的数据格式。支持上传 CSV 和 GeoJSON 文件、此外专业版用户也可以使用 Shapefile 格式上传。
+
+坐标系
+
+支持国测局规定的GCJ-02坐标系。
+
+编码格式
+
+UTF-8
+
+# GeoJSON
+
+  * 仅支持 FeatureCollection 类型的标准GeoJSON对象
+
+  * features 不可为空数组
+
+  * 各feature的properties定义中，同名属性的值的数据类型必须一致
+
+  * 属性值仅支持数字、布尔值、字符串（最长200）
+    
+    `{
+        "type":"FeatureCollection",
+        "name":"示例数据",
+        "features":[
+            {
+                "type":"Feature",
+                "properties":{
+                    "property1":"餐厅",
+--------------------------------------------------------------------------------
+搜索 | 高德开放平台 | 高德地图API (https://lbs.amap.com/search?s=%E5%9D%90%E6%A0%87%E6%9F%A5%E8%AF%A2)
+citeturn52search11 [wordlim: 200] Crawled: today; 地理编码该功能实现地理编码服务，即地址匹配，从已知的地址描述到对应的经纬度坐标的转换，即根据地址信息，查询该地址所对应的点坐标等 ... ... 火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。 ...
+
+  * 全部内容(2066)
+  * 产品介绍(18)
+  * 开发文档(401)
+  * 参考手册(1365)
+  * 常见问题(72)
+  * 示例中心(205)
+  * 公告(5)
+
+坐标/地址查询
+
+地理编码该功能实现地理编码服务，即地址匹配，从已知的地址描述到对应的经纬度坐标的转换，即根据地址信息，查询该地址所对应的点坐标等 ... SearchGeoCode.xaml.cs）如下：privateasyncTaskAddressToGeoCode(){//请求查询
+
+平台： 其他
+
+来源： 文档>WinPhone SDK>开发指南
+
+其他坐标 -> 高德坐标
+
+其他坐标变换成高德坐标html,body,#container{height:100%;width:100%;}.btn-box ... GPS坐标转为高德坐标图吧坐标转为高德坐标百度坐标转为高德坐标varmap=newAMap.Map("container"
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 2.0>示例中心>其他坐标转高德坐标
+
+其他坐标 -> 高德坐标
+
+其他坐标变换成高德坐标html,body,#container{height:100%;width:100%;}.btn-box ... GPS坐标转为高德坐标图吧坐标转为高德坐标百度坐标转为高德坐标varmap=newAMap.Map("container"
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 1.4>示例中心>其他坐标转高德坐标
+
+地点查询
+
+V3.0.0版本起city查询城市，citycode或者adcode。 ... V3.0.0版本起onPOISearchDone:response:POI查询回调函数。
+
+平台： iOS 平台
+
+来源： 示例>示例中心>地点查询
+
+地点查询
+
+V2.1.0版本起addToMap()将POI查询结果添加到地图上。 ... V2.1.0版本起requestInputtipsAsyn()查询输入提示的异步接口。
+
+平台： Android 平台
+
+来源： 示例>示例中心>地点查询
+
+公交查询
+
+公交站关键字查询该查询是根据站点关键字查询公交站点，keywords为必选项,同时可以设置城市，详细的参数说明参见参考手册 ... UriKind.Relative),});}MessageBox.Show(busLine[0].Name);}}公交线路关键字查询该查询是根据公交线路关键字查询公交线路
+
+平台： 其他
+
+来源： 文档>WinPhone SDK>开发指南
+
+详情查询
+
+详情查询varlnglat=newAMap.LngLat(116.397,39.918);varmap=newAMap.Map ... //不展示子节点数据pageIndex:1,//页码extensions:'base'//返回基本地址信息});//详情查询
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 2.0>示例中心>POI搜索
+
+详情查询
+
+详情查询varmap=newAMap.Map("container",{resizeEnable:true});varplaceSearch ... //不展示子节点数据pageIndex:1,//页码extensions:'base'//返回基本地址信息});//详情查询
+
+平台： Web端 (JS)
+
+来源： 示例中心>地图 JS API 1.4>示例中心>POI搜索
+
+搜索查询
+
+适用于需要根据用户指定的关键词和搜索中心点，来进行搜索。服务地址http://uri.amap.com/search适用终端移动端和PC端参数说明参数名称值(点击可编辑)参数说明是否必选备注keyword美食搜索关键词是center121.515601,31.233456搜索范围中心点的经纬度格式为 ...
+
+平台： Web端 (JS)
+
+来源： 文档>URI API >开发指南>搜索相关
+
+其他坐标转高德坐标
+
+火星坐标系——GCJ-02：中国国内使用的被强制加密后的坐标体系，高德坐标就属于该种坐标体系。 ... 百度坐标系——BD-09：百度地图所使用的坐标体系，是在火星坐标系的基础上又进行了一次加密处理。
+
+平台： Web端 (JS)
+
+来源： 文档>地图 JS API 1.4>教程>坐标变换--------------------------------------------------------------------------------
+中山医院3号楼 (https://www.fudan.edu.cn/2019/0424/c426a96006/page.htm)
+citeturn52view0 [wordlim: 200] Crawled: 3 days ago; Content type: text/html; Source: open({"ref_id":"https://www.fudan.edu.cn/2019/0424/c426a96006/page.htm","lineno":null}); Total lines: 404
+L0:   * 【0†复旦新闻†news.fudan.edu.cn】
+L1:   * 【1†通知公告†news.fudan.edu.cn】
+L2:   * 【2†未来学生】
+L3:   * 【3†在校学生】
+L4:   * 【4†教职员工】
+L5:   * 【5†复旦校友†alumni.fudan.edu.cn】
+L6:   * 【6†公共访客】
+L7: 
+L8: 【7†复旦大学】
+L9: 
+L10:   * 【8†EN】
+--------------------------------------------------------------------------------
+东一号楼：上医人踏上为人群服务的起点站 (https://news.fudan.edu.cn/2023/0125/c31a133786/page.htm)
+citeturn52view1 [wordlim: 200] Crawled: 3 weeks ago; Content type: text/html; Source: open({"ref_id":"https://news.fudan.edu.cn/2023/0125/c31a133786/page.htm","lineno":null}); Total lines: 267
+L0:   * 【0†复旦主页†www.fudan.edu.cn】
+L1:   * 【1†复旦邮箱†mail.fudan.edu.cn】
+L2:   * 【2†OA系统†www.oa.fudan.edu.cn】
+L3:   * 【3†eHall网上办事大厅†ehall.fudan.edu.cn】
+L4: 
+L5: [Input: 请输入关键词...]
+L6: 
+L7: [Input]
+L8: 
+L9:   * 【4†我要投稿†xwtg.fudan.edu.cn】
+L10: 
+L11: 【5†新闻文化网】
+--------------------------------------------------------------------------------
+上海热线丨太美啦！上海人齐点赞！封闭期的华东师大绿意盎然美如画-华东师范大学 (https://www.ecnu.edu.cn/info/1095/2130.htm)
+citeturn52view2 [wordlim: 200] Crawled: 6 days ago; Content type: text/html; Source: open({"ref_id":"https://www.ecnu.edu.cn/info/1095/2130.htm","lineno":null}); Total lines: 250
+L0: 【0†Image】
+L1: 
+L2: 中文
+L3: 
+L4: 【1†English†english.ecnu.edu.cn】 【2†Français†french.ecnu.edu.cn】 【3†Русский†russian.ecnu.edu.cn】
+L5: 
+L6:   * 【4†首页】
+L7:   * 【5†学校概况】
+L8: 
+L9: 【6†学校章程】
+L10: 
+L11: 【7†校情简介】
+L12: 
+L13: 【8†学校领导】
+L14: 
+L15: 【9†机构设置】
+L16: 
+L17: 【10†院系设置】
+L18: 
+L19: 【11†校史沿革】
+L20: 
+L21: 【12†学校标识】
+L22: 
+L23: 【13†党务公开†dwgk.ecnu.edu.cn】
+L24: 
+L25: 【14†信息公开†xxgk.ecnu.edu.cn】
+L26: 
+L27:   * 【15†招生就业】
+L28: 
+L29: 【16†学生就业†career.ecnu.edu.cn】
+L30: 
+L31: 【17†本科生招生†zsb.ecnu.edu.cn】
+L32: 
+L33: 【18†研究生招生†yjszs.ecnu.edu.cn】
+L34: 
+L35: 【19†继续教育†www.sole.ecnu.edu.cn】
+L36: 
+L37: 【20†International Students†lxs.ecnu.edu.cn】
+L38: 
+L39:   * 【15†学术研究】
+L40: 
+L41: 【21†学术组织】
+L42: 
+L43: 【22†研究机构】
+L44: 
+L45: 【23†学科建设†fzghb.ecnu.edu.cn】
+--------------------------------------------------------------------------------
+上海瑞金洲际酒店1号楼 - 上海市黄浦区 - 住宿服务;宾馆酒店;宾馆酒店 | 地址营业时间 | Amap (https://www.amap.com/place/B0FFFE4GIS)
+citeturn52view3 [wordlim: 200] Crawled: last month; Content type: text/html; Source: open({"ref_id":"https://www.amap.com/place/B0FFFE4GIS","lineno":null}); Total lines: 45
+L0: [Input]
+L1: 
+L2: 返回
+L3: 
+L4: 上海市黄浦区
+L5: 
+L6: 上海瑞金洲际酒店1号楼
+L7: 
+L8: # 上海瑞金洲际酒店1号楼
+L9: 
+L10: 上海市黄浦区
+L11: 
+L12: ★收藏
+L13: 
+L14: ⌖搜周边
+L15: 
+L16: 📱去手机查看
+L17: 
+L18: 【0†查看完整信息】 地址: 上海市黄浦区瑞金二路118号上海瑞金洲际酒店 类型: 住宿服务;宾馆酒店;宾馆酒店
+L19: 
+L20: 上海瑞金洲际酒店1号楼是一家宾馆酒店，地址为上海市黄浦区瑞金二路118号上海瑞金洲际酒店。电话：021-64725222。地理坐标：31.212619,121.464661。您可以通过Amap查看上海瑞金洲际酒店1号楼的精确地图位置、规划到达路线，以及查找周边设施。
+L21: 
+L22: ### 用户评价
+L23: 
+L24: 匿名用户
+L25: 
+L26: 上海瑞金洲际酒店1号楼上海市黄浦区
+L27: 
+L28: 卫星
+L29: 
+L30: 路况
+L31: 
+L32: 测距
+L33: 
+L34: 地铁
+L35: 
+L36: 全屏
+L37: 
+L38: 下载APP
+L39: 
+L40: [Button: +][Button: −]
+L41: 
+L42: 10 km
+L43: 
+L44: © 2026 高德地图 · 为您提供准确的地图服务
+

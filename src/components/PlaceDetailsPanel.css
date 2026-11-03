@@ -1,0 +1,59 @@
+.place-details-panel { padding-top: 31px; }
+.place-heading { padding-right: 18px; }
+.place-details-panel h2 { font-family: "Songti SC", SimSun, Georgia, serif; font-size: 29px; line-height: 1.35; overflow-wrap: anywhere; }
+.place-foreign-name { margin: 6px 0 0; font-family: Georgia, serif; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.place-selected-year { margin: 10px 0 0; color: var(--wine); font-size: 11px; }
+.place-address { margin: 22px 0 0; padding: 15px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.place-address dt { color: var(--muted); font-size: 11px; margin-bottom: 6px; }
+.place-address dd { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.65; }
+.place-section { margin-top: 24px; }
+.place-section h3 { margin: 0 0 13px; color: var(--wine); font-size: 12px; letter-spacing: .1em; }
+.place-section h3 > span { color: var(--muted); font-size: 10px; letter-spacing: 0; }
+.place-details-panel a { color: var(--wine-dark); text-decoration-color: rgba(113,70,63,.35); text-underline-offset: 3px; overflow-wrap: anywhere; }
+.place-details-panel a:hover { color: var(--wine); text-decoration-color: currentColor; }
+.place-timeline { list-style: none; padding: 0; margin: 0; }
+.place-timeline > li { display: grid; grid-template-columns: 70px minmax(0,1fr); gap: 10px; padding-bottom: 18px; }
+.place-event-year { padding-top: 2px; font-size: 11px; line-height: 1.6; color: var(--muted); font-variant-numeric: tabular-nums; }
+.place-event-body { position: relative; padding-left: 14px; border-left: 1px solid var(--line); font-size: 12px; line-height: 1.7; }
+.place-event-body::before { content: ""; position: absolute; left: -3px; top: 7px; width: 5px; height: 5px; border-radius: 50%; background: var(--wine); }
+.place-event-body strong { display: block; font-weight: 600; font-size: 13px; }
+.place-event-kind { display: block; color: var(--muted); font-size: 10px; }
+.place-event-original { display: block; color: var(--muted); font-family: Georgia, serif; font-size: 11px; }
+.place-event-body p { margin: 5px 0 0; font-weight: 400; }
+.place-event-address { color: var(--ink); }
+.place-timeline .is-active .place-event-body { border-left-color: var(--wine); }
+.place-timeline .is-active .place-event-year { color: var(--wine); font-weight: 600; }
+.place-timeline-note { font-size: 10px; color: var(--muted); line-height: 1.6; margin: 0; }
+.place-residents { list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.75; }
+.place-residents > li { margin-bottom: 12px; }
+.place-residents span { color: var(--muted); font-size: 11px; }
+.place-residents p { margin: 3px 0 0; font-size: 11px; color: var(--muted); }
+.place-facts { margin: 0; font-size: 12px; line-height: 1.8; }
+.place-facts > div { margin-bottom: 12px; }
+.place-facts dt { color: var(--muted); font-size: 10px; margin-bottom: 2px; }
+.place-facts dd { margin: 0; font-weight: 400; overflow-wrap: anywhere; white-space: pre-line; }
+.place-catalogue { list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 1.8; }
+.place-catalogue > li { margin-bottom: 8px; }
+.place-catalogue small, .place-sources small { display: block; color: var(--muted); font-size: 10px; line-height: 1.75; margin-top: 3px; }
+.place-sources { padding-left: 18px; margin: 0; font-size: 11px; line-height: 1.7; }
+.place-sources > li { padding: 0 0 12px 3px; }
+.place-questions { border-top: 1px solid var(--line); padding-top: 18px; }
+.place-location-review + .place-location-review { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 16px; }
+.place-location-label { margin: 0 0 8px; font-size: 12px; font-weight: 600; }
+.place-location-status { display: inline-block; margin: 0 0 8px; color: var(--muted); font-size: 11px; }
+.place-location-status.is-partial { color: var(--wine-dark); font-weight: 600; border: 1px solid var(--line); border-radius: 3px; padding: 3px 7px; }
+.place-location-reason { margin: 0 0 10px; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.place-location-details { font-size: 12px; line-height: 1.75; }
+.place-location-details summary { color: var(--wine-dark); cursor: pointer; padding: 4px 0; }
+.place-location-details[open] summary { margin-bottom: 10px; }
+.place-reference-points { list-style: none; padding: 0; margin: 0; }
+.place-reference-points > li { border-left: 1px solid var(--line); padding-left: 12px; margin: 0 0 14px; }
+.place-reference-points strong, .place-location-kind, .place-reference-points small { display: block; }
+.place-location-kind, .place-reference-points small { color: var(--muted); font-size: 10px; line-height: 1.75; }
+.place-reference-points p { margin: 3px 0; font-size: 11px; overflow-wrap: anywhere; }
+.place-location-coordinates { font-variant-numeric: tabular-nums; }
+.place-location-caveat { color: var(--muted); font-size: 10px; margin: 0; line-height: 1.75; }
+@media (max-width: 599px) {
+  .place-details-panel h2 { font-size: 25px; }
+  .place-timeline > li { grid-template-columns: 66px minmax(0,1fr); gap: 7px; }
+}

@@ -11,7 +11,7 @@ describe('heritage historical use display', () => {
     const before = structuredClone(collection)
     const result = applyHeritageUses(collection, index)
     expect(Object.keys(index.records)).toHaveLength(1058)
-    expect(result.features).toHaveLength(978)
+    expect(result.features).toHaveLength(1044)
     result.features.forEach((feature, i) => {
       expect(feature.geometry).toEqual(before.features[i].geometry)
       expect(feature.properties).toMatchObject(before.features[i].properties)

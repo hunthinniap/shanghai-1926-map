@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createHash } from 'node:crypto'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..')
 const read = (filename) => JSON.parse(fs.readFileSync(path.join(root, filename), 'utf8'))
@@ -11,8 +12,19 @@ const candidates = [
   ...read('research/rechecks/2026-09-20-heritage-card-review/supplemental-candidates.json').candidates,
 ]
 const candidatesById = new Map(candidates.map((candidate) => [candidate.candidateId, candidate]))
-const mappedOfficialIds = new Set(read('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson')
-  .features.map((feature) => feature.properties.officialId))
+// These identity decisions were reviewed against the original coordinate set.
+// Later coordinate-only approval must not activate previously textual links.
+let linkReviewMap = read('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson')
+const backfillApprovalPath = path.join(root, 'scripts/data/shanghai-heritage-coordinate-approvals.json')
+if (fs.existsSync(backfillApprovalPath)) {
+  const backfillApproval = JSON.parse(fs.readFileSync(backfillApprovalPath, 'utf8'))
+  const bytes = fs.readFileSync(path.join(root, backfillApproval.originalMapSnapshot))
+  if (createHash('sha256').update(bytes).digest('hex') !== backfillApproval.originalMapSha256) {
+    throw new Error('Legacy same-site coordinate baseline changed; re-review links separately')
+  }
+  linkReviewMap = JSON.parse(bytes)
+}
+const mappedOfficialIds = new Set(linkReviewMap.features.map((feature) => feature.properties.officialId))
 const additionalApprovals = frenchReview.decisions.filter((item) => item.decision === 'approve-same-site')
 const contextualDecisions = frenchReview.decisions.filter((item) => item.decision === 'record-context-only')
 const approvals = [...review.candidates, ...additionalApprovals]
@@ -75,8 +87,8 @@ const scopeNotes = new Map([
 ])
 const unlocatedScopeNotes = new Map([
   ['C010', '名录旧表写秦岭街15号；市房管局2023年慈修庵修缮批复写榛岭街15号。两种原文并存，不擅改官方名录。'],
-  ['C036', '建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；因该名录项暂缺独立地图点，仍使用VS历史地标参考点。'],
-  ['C072', '震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；名录项暂缺独立地图点，运动场坐标保持不变。'],
+  ['C036', '建筑史资料将433 AVENUE HAIG明确对应华山路699—731号枕流公寓；名录已有独立门址参考点，旧今楼体与历史地标点的精确对应未新增审定，两侧仍保留独立点。'],
+  ['C072', '震旦大学运动场与图书馆教学大楼、博物馆属于重庆南路280/225号旧校园，非同一楼体；图书馆教学大楼已有独立参考点，运动场坐标保持不变，两侧仍保持分卡。'],
 ])
 const unlocatedScopeSources = new Map([
   ['C010', 'https://fgj.sh.gov.cn/yxlsjzjk/20240201/680e399bdfd8406a8c3fc734071bf847.html'],
@@ -166,4 +178,4 @@ if (process.argv.includes('--check')) {
 } else {
   fs.writeFileSync(destination, source)
 }
-console.log(`${process.argv.includes('--check') ? 'Checked' : 'Wrote'} ${links.length} map links (${located.length} approvals), ${unlocatedSites.length} no-coordinate site annotations, and ${contextualSites.length} non-merged context records.`)
+console.log(`${process.argv.includes('--check') ? 'Checked' : 'Wrote'} ${links.length} map links (${located.length} approvals), ${unlocatedSites.length} separate-card site annotations, and ${contextualSites.length} non-merged context records.`)

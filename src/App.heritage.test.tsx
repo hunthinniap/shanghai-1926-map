@@ -208,7 +208,7 @@ describe('historical-building layer interactions', () => {
 
     await click('[data-testid="historical-point"]')
     expect(container.querySelector('.heritage-details-panel')).toBeNull()
-    expect(element('.details-panel h2').textContent).toBe(historicalFeature.properties.historicalName)
+    expect(element('.details-panel h2').textContent).toBe(historicalFeature.properties.modernNameZh)
     expect(element('[data-testid="map"]').dataset.selectedHeritage).toBe('')
 
     await click('[data-testid="heritage-point"]')
@@ -226,7 +226,7 @@ describe('historical-building layer interactions', () => {
   })
 
   it.each([
-    { ids: [526], officialId: 'sh-fgj-1A003-01', texts: ['12 BUND ROAD', '中山东一路12号', '中山东一路10-12号', '1874 年资料', '1923年'] },
+    { ids: [526], officialId: 'sh-fgj-1A003-01', texts: ['12 BUND ROAD', '中山东一路12号', '中山东一路10-12号', '1874 年起', '1923年'] },
     { ids: [681, 631], officialId: 'sh-fgj-1A019-01', texts: ['CHEKIANG ROAD / NANKING ROAD', '627 NANKING ROAD', '1918 年', '1935 年', '南京东路635号', '南京东路627号', '七重天'] },
   ])('keeps the complete shared card for $officialId across both layers', async ({ ids, officialId, texts }) => {
     const originals: HistoricalFeature[] = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')).features
@@ -265,7 +265,7 @@ describe('historical-building layer interactions', () => {
     expect(container.querySelector('[data-testid="heritage-point"]')).toBeNull()
 
     await click('[data-testid="historical-point"]')
-    expect(element('.details-panel h2').textContent).toBe(historicalFeature.properties.historicalName)
+    expect(element('.details-panel h2').textContent).toBe(historicalFeature.properties.modernNameZh)
     failHeritageRequest = false
     await click('.heritage-load-error button')
 
@@ -304,10 +304,10 @@ describe('historical-building layer interactions', () => {
     expect(details.textContent).toContain('黄浦区测试路12号')
     expect(details.textContent).toContain('院内具体建筑位置尚未核定')
     expect(details.querySelector(`a[href="${librarySource}"]`)?.textContent).toContain('上海图书馆 · 上海年华')
-    expect(details.querySelector(`a[href="${librarySource}"]`)?.textContent).toContain('门址与参考坐标')
+    expect(details.querySelector(`a[href="${librarySource}"]`)?.parentElement?.textContent).toContain('门址与参考坐标')
     expect(details.querySelector(`a[href="${heritageFeature.properties.officialSourceUrl}"]`)).not.toBeNull()
     expect(details.querySelector(`a[href="${heritageFeature.properties.wikipediaListUrl}"]`)).not.toBeNull()
-    expect(details.querySelector(`a[href="${heritageFeature.properties.wikipediaUrl}"]`)?.textContent).toContain('建筑条目 · CC BY-SA 4.0')
+    expect(details.querySelector(`a[href="${heritageFeature.properties.wikipediaUrl}"]`)?.parentElement?.textContent).toContain('建筑条目 · CC BY-SA 4.0')
     expect(details.textContent).not.toContain('建筑条目与坐标来源')
     expect(details.textContent).not.toContain('Wikidata · 坐标来源')
   })

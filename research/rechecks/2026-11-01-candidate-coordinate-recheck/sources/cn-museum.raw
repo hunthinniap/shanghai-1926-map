@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <script>
+var baseUrl = 'http://changning.museum.chaoxing.com'
+var templateUrl = 'pc'
+var baseApi = 'http://shunde.museum.chaoxing.com'
+var museumCode = 'cnqszbwg'
+var indexUrl = 'http://changning.museum.chaoxing.com/'
+</script>
+<meta charset="UTF-8">
+<title>长宁区数字博物馆</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="">
+<meta name="Keywords" content="长宁区数字博物馆">
+<link rel="stylesheet" href="http://changning.museum.chaoxing.com/static/common/css/base.css">
+<link rel="stylesheet" href="http://changning.museum.chaoxing.com/static/common/css/common.css">
+<link rel="stylesheet" href="http://changning.museum.chaoxing.com/static/common/css/mediacommon.css">
+<link rel="stylesheet" href="http://changning.museum.chaoxing.com/static/common/css/animate.css">
+<link rel="stylesheet" type="text/css" href="http://changning.museum.chaoxing.com/static/common/css/swiper.min.4.5.css">
+<link rel="stylesheet" href="http://changning.museum.chaoxing.com/static/css/style.css">
+<script src="http://changning.museum.chaoxing.com/static/common/js/jquery-3.2.1.min.js"></script>
+<script src="http://changning.museum.chaoxing.com/static/common/js/jquery.cookie.js"></script>
+<script src="http://changning.museum.chaoxing.com/static/common/js/swiper.min.4.5.js"></script>
+<script src="http://changning.museum.chaoxing.com/static/common/js/wow.min.js"></script>
+<script type="text/javascript">
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 100,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+}
+</script>
+<script type="text/javascript">
+var fileUrl = 'http://data.museum.chaoxing.com/micro-upload/'
+</script>
+</head>
+<body>
+
+<div class="header wow fadeInDown">
+    
+    <div class="headertopmodel1">
+        <div class="container clearfix">
+            <div class="logo fl">
+                <img src="http://data.museum.chaoxing.com/micro-upload/app/微信图片_20200720170014.png" alt="">
+            </div>
+            <div class="box fr">
+
+
+                <div class="ydshow ydnav" style="display: none">
+                    <i class="close">&times;</i>
+                    <a href="http://changning.museum.chaoxing.com/">首页</a>
+                    <a href="javascript:void(0);">
+资讯</a>
+                    <div class="twonav">
+                        <a href="http://changning.museum.chaoxing.com/257/258/index.html">
+                            新闻动态</a>
+                        <a href="http://changning.museum.chaoxing.com/257/259/index.html">
+                            馆内公告</a>
+                    </div> 
+                    <a href="http://changning.museum.chaoxing.com/260/index.html">
+                    导览</a>
+                    <a href="http://changning.museum.chaoxing.com/261/index.html">
+                    展览</a>
+                    <a href="http://changning.museum.chaoxing.com/262/index.html">
+                    藏品</a>
+                    <a href="http://lib-changning.museum.chaoxing.com/">
+编委库</a>
+                    <a href="http://periodical.museum.chaoxing.com">
+刊物库</a>
+                    <a href="http://changning.museum.chaoxing.com/265/index.html">
+                    社教</a>
+                </div>
+
+
+                <ul class="pcshow nav fl">
+                    <li><a href="http://changning.museum.chaoxing.com/">首页</a></li>
+                    <li>
+                        <a href="javascript:void(0);">
+资讯</a>
+                        <div class="twonav">
+                            <a href="http://changning.museum.chaoxing.com/257/258/index.html">
+                                新闻动态</a>
+                            <a href="http://changning.museum.chaoxing.com/257/259/index.html">
+                                馆内公告</a>
+                        </div> 
+                    </li>
+                    <li>
+                        <a href="http://changning.museum.chaoxing.com/260/index.html">
+                        导览</a>
+                    </li>
+                    <li>
+                        <a href="http://changning.museum.chaoxing.com/261/index.html">
+                        展览</a>
+                    </li>
+                    <li>
+                        <a href="http://changning.museum.chaoxing.com/262/index.html">
+                        藏品</a>
+                    </li>
+                    <li>
+                        <a href="http://lib-changning.museum.chaoxing.com/">
+编委库</a>
+                    </li>
+                    <li>
+                        <a href="http://periodical.museum.chaoxing.com">
+刊物库</a>
+                    </li>
+                    <li>
+                        <a href="http://changning.museum.chaoxing.com/265/index.html">
+                        社教</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="login fr pcshow">
+                    <a id="login" class="pclogin" data-href="http://changning.museum.chaoxing.com/login.html"><img src="http://changning.museum.chaoxing.com/static/common/icon/icon-user1.png" alt=""><p>登录</p></a>
+                    <a class="pcpeoplecenter"><p class="people">个人中心</p><p id="out" class="out">退出</p></a>
+                </div> -->
+            </div>
+            <div class="menubox yshow fr">
+                <a class="a2" href="http://changning.museum.chaoxing.com/search.html?flag=1"></a>
+                <a class="a3" href="#"></a>
+            </div>
+        </div>
+    </div>
+<div class="innerbanner1 fadeInUp wow">
+      <img src="http://data.museum.chaoxing.com/micro-upload/portal/ad-slot/undefined/innerbanner1593510492937.jpg" onerror="javascript:this.src='http://changning.museum.chaoxing.com/static/common/icon/default.png';">
+</div>
+</div>
+
+<div class="crumbmodel1 fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="container">
+        <a href="http://changning.museum.chaoxing.com/">首页</a> &gt; <a href="http://changning.museum.chaoxing.com/265/index.html"  target="_blank">社教</a>
+    </div>
+</div>
+<div class="detailcontent container fadeInUp wow">
+    <h2 class="title">上海市“我身边的历史建筑”摄影大展 （长宁）分组名单</h2>
+    <ul class="clearfix info">
+        <li>作者：长宁区革命文物陈列馆</li>
+        
+        <li>时间：2016-01-29</li>
+    </ul>
+    <div class="content">
+            <table>
+<tbody>
+<tr>
+<td colspan="3" width="678">
+<p><strong>上海市&ldquo;我身边的历史建筑&rdquo;摄影大展</strong></p>
+<p><strong>（长宁）</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第一组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>◇&nbsp;《布尔什维克》编辑部旧址</p>
+</td>
+<td width="418">
+<p>愚园路1376弄34号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>◇&nbsp;中共中央上海局机关旧址</p>
+</td>
+<td width="418">
+<p>江苏路389弄21号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>◇&nbsp;王伯群住宅</p>
+</td>
+<td width="418">
+<p>愚园路1136弄31号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华村</p>
+</td>
+<td width="418">
+<p>愚园路1320号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;英商汇丰洋行大班住宅</p>
+</td>
+<td width="418">
+<p>华山路1076号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;董竹君旧居</p>
+</td>
+<td width="418">
+<p>愚园路1294号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;基督教上海卫生疗养院旧址</p>
+</td>
+<td width="418">
+<p>哈密路1713号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;利西路郭氏住宅</p>
+</td>
+<td width="418">
+<p>延安西路949弄25-45号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;沈钧儒旧居&nbsp;</p>
+</td>
+<td width="418">
+<p>愚园路1292弄51、53号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;傅雷旧居</p>
+</td>
+<td width="418">
+<p>江苏路284弄5号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;史良旧居</p>
+</td>
+<td width="418">
+<p>武定西路1357-1359号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;西区污水处理厂泵房</p>
+</td>
+<td width="418">
+<p>天山路88弄内</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹古路碉堡</p>
+</td>
+<td width="418">
+<p>虹古路377弄内</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兆丰别墅</p>
+</td>
+<td width="418">
+<p>长宁路712弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;月村</p>
+</td>
+<td width="418">
+<p>江苏路480弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>16</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;美国乡村总会</p>
+</td>
+<td width="418">
+<p>延安西路1262号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第二组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;唐云旧居</p>
+</td>
+<td width="418">
+<p>江苏路46弄5号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;严庆祥旧居</p>
+</td>
+<td width="418">
+<p>愚园路699号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>◇&nbsp;中西女塾旧址</p>
+</td>
+<td width="418">
+<p>江苏路155号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>◇&nbsp;海涵堂</p>
+</td>
+<td width="418">
+<p>江苏路155号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>◇&nbsp;景莲堂</p>
+</td>
+<td width="418">
+<p>江苏路155号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;周佛海旧居</p>
+</td>
+<td width="418">
+<p>愚园路749弄65号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路1112弄4、20号住宅</p>
+</td>
+<td width="418">
+<p>愚园路1112弄4、20号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;西园公寓</p>
+</td>
+<td width="418">
+<p>愚园路1396号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路754号住宅</p>
+</td>
+<td width="418">
+<p>愚园路754号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;华园</p>
+</td>
+<td width="418">
+<p>华山路1006弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;周作民旧居</p>
+</td>
+<td width="418">
+<p>愚园路1015号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;开纳公寓</p>
+</td>
+<td width="418">
+<p>武定西路1375号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;英国海关总税务司官员住宅旧址</p>
+</td>
+<td width="418">
+<p>江苏路162弄8号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;安定坊</p>
+</td>
+<td width="418">
+<p>江苏路284弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路865弄花园住宅</p>
+</td>
+<td width="418">
+<p>愚园路865弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第三组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;忆定村</p>
+</td>
+<td width="418">
+<p>江苏路495弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;渔光村</p>
+</td>
+<td width="418">
+<p>镇宁路255、265、275、285弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;利西路30、32号住宅</p>
+</td>
+<td width="418">
+<p>利西路30、32号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;岐山村</p>
+</td>
+<td width="418">
+<p>愚园路1032弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;沪西别墅</p>
+</td>
+<td width="418">
+<p>愚园路1210弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;福世花园</p>
+</td>
+<td width="418">
+<p>安化路200弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>◇&nbsp;沙逊别墅</p>
+</td>
+<td width="418">
+<p>虹桥路2409号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>◇&nbsp;虹桥路2310号住宅</p>
+</td>
+<td width="418">
+<p>虹桥路2310号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;麦加利银行襄理住宅</p>
+</td>
+<td width="418">
+<p>江苏路796号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;华山路1100弄、1120弄住宅</p>
+</td>
+<td width="418">
+<p>华山路1100、1120弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路864号花园住宅</p>
+</td>
+<td width="418">
+<p>愚园路864号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;利西路24弄5号住宅</p>
+</td>
+<td width="418">
+<p>利西路24弄5号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园新村</p>
+</td>
+<td width="418">
+<p>愚园路750弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;李鸿章母住宅</p>
+</td>
+<td width="418">
+<p>利西路44号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;李士群旧居</p>
+</td>
+<td width="418">
+<p>愚园路749弄63号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>16</p>
+</td>
+<td width="411">
+<p>△&nbsp;新华路294弄5号</p>
+</td>
+<td width="418">
+<p>新华路294弄5号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第四组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;吴四宝旧居</p>
+</td>
+<td width="418">
+<p>愚园路749弄67号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;宏业花园</p>
+</td>
+<td width="418">
+<p>愚园路1088弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;云寿坊</p>
+</td>
+<td width="418">
+<p>愚园路718弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;桃源坊</p>
+</td>
+<td width="418">
+<p>愚园路1292弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;江苏路中一村</p>
+</td>
+<td width="418">
+<p>江苏路46、54、62、70、78弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>◇&nbsp;圣约翰大学旧址</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>◇&nbsp;罗氏图书馆</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>◇&nbsp;怀施堂</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>◇&nbsp;格致楼</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;陈鹤琴旧居</p>
+</td>
+<td width="418">
+<p>愚园路851号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;唐晔如花园住宅</p>
+</td>
+<td width="418">
+<p>愚园路838弄20-22、30-32号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;上海丰田纱厂铁工部旧址</p>
+</td>
+<td width="418">
+<p>中山西路178号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路684号花园住宅</p>
+</td>
+<td width="418">
+<p>愚园路684号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;中央银行俱乐部旧址(中秋游园会举办地)</p>
+</td>
+<td width="418">
+<p>淮海西路338号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;曾仲鸣住宅</p>
+</td>
+<td width="418">
+<p>新华路336号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第五组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>◇&nbsp;思颜堂</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>◇&nbsp;思孟堂&nbsp;</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>◇&nbsp;西门堂</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>◇&nbsp;行政楼</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>◇&nbsp;路易&middot;艾黎故居</p>
+</td>
+<td width="418">
+<p>愚园路1315弄4号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;大理石亭</p>
+</td>
+<td width="418">
+<p>长宁路780号中山公园内</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;湖丝栈</p>
+</td>
+<td width="418">
+<p>万航渡路1384弄12号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;大西别墅</p>
+</td>
+<td width="418">
+<p>延安西路1453弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;包玉刚旧居</p>
+</td>
+<td width="418">
+<p>武夷路466弄2号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;汤山村</p>
+</td>
+<td width="418">
+<p>武夷路466弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;万航渡路540号住宅</p>
+</td>
+<td width="418">
+<p>万航渡路540号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路315号住宅</p>
+</td>
+<td width="418">
+<p>新华路315号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兆丰花园</p>
+</td>
+<td width="418">
+<p>长宁路780号&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;愚园路1136弄住宅</p>
+</td>
+<td width="418">
+<p>愚园路1136弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;丁香别墅</p>
+</td>
+<td width="418">
+<p>华山路922号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>16</p>
+</td>
+<td width="411">
+<p>△&nbsp;中国民主同盟一届二中全会旧址、农工民主党第四次全国干部会议会址</p>
+</td>
+<td width="418">
+<p>愚园路1320弄5号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第六组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路179号住宅</p>
+</td>
+<td width="418">
+<p>新华路179号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;瑞典国驻华公使馆旧址</p>
+</td>
+<td width="418">
+<p>新华路329弄32号乙</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路294弄1号住宅</p>
+</td>
+<td width="418">
+<p>新华路294弄1号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路248号住宅</p>
+</td>
+<td width="418">
+<p>新华路248号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路236号住宅</p>
+</td>
+<td width="418">
+<p>新华路236号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>◇&nbsp;孙科住宅</p>
+</td>
+<td width="418">
+<p>延安西路1262号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>◇&nbsp;淮阴路姚氏住宅</p>
+</td>
+<td width="418">
+<p>淮阴路200号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路211弄10号住宅</p>
+</td>
+<td width="418">
+<p>新华路211弄10号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路211弄12号住宅</p>
+</td>
+<td width="418">
+<p>新华路211弄12号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路211弄14号住宅</p>
+</td>
+<td width="418">
+<p>新华路211弄14号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路211弄16号住宅</p>
+</td>
+<td width="418">
+<p>新华路211弄16号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路272弄2号住宅</p>
+</td>
+<td width="418">
+<p>新华路272弄2号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路272弄6号住宅</p>
+</td>
+<td width="418">
+<p>新华路272弄6号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;番禺路504号花园住宅</p>
+</td>
+<td width="418">
+<p>番禺路504号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;开滦煤矿大班别墅</p>
+</td>
+<td width="418">
+<p>番禺路215号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第七组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兴国宾馆三号楼</p>
+</td>
+<td width="418">
+<p>兴国路72号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兴国宾馆六号楼</p>
+</td>
+<td width="418">
+<p>兴国路72号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兴国宾馆七号楼</p>
+</td>
+<td width="418">
+<p>兴国路72号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>◇&nbsp;兴国路住宅（兴国宾馆一号楼）</p>
+</td>
+<td width="418">
+<p>兴国路72号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;兴国宾馆二号楼</p>
+</td>
+<td width="418">
+<p>兴国路72号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;达华公寓</p>
+</td>
+<td width="418">
+<p>延安西路918-928号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;私立妇孺医院旧址</p>
+</td>
+<td width="418">
+<p>延安西路934号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;范园</p>
+</td>
+<td width="418">
+<p>华山路1220弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;孙伯群宅</p>
+</td>
+<td width="418">
+<p>华山路1220弄6号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>◇&nbsp;李鸿章祠堂</p>
+</td>
+<td width="418">
+<p>华山路1626号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;泰利洋行大班住宅</p>
+</td>
+<td width="418">
+<p>华山路1164号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;怀本堂</p>
+</td>
+<td width="418">
+<p>法华镇路681弄19号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>◇&nbsp;六三楼</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>◇&nbsp;交谊楼</p>
+</td>
+<td width="418">
+<p>万航渡路1575号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;钱学森旧居</p>
+</td>
+<td width="418">
+<p>愚园路1032弄111号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>16</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;英国兵营长官住宅</p>
+</td>
+<td width="418">
+<p>延安西路601号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第八组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>△&nbsp;邬达克旧居</p>
+</td>
+<td width="418">
+<p>番禺路129号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;番禺路外国弄堂</p>
+</td>
+<td width="418">
+<p>番禺路55、75、95弄、平武路2-18号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;卫乐园</p>
+</td>
+<td width="418">
+<p>泰安路120弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;亦村</p>
+</td>
+<td width="418">
+<p>泰安路76弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;贺绿汀旧居</p>
+</td>
+<td width="418">
+<p>泰安路76弄4号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路329弄36号住宅</p>
+</td>
+<td width="418">
+<p>新华路329弄36号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;又斯登公寓</p>
+</td>
+<td width="418">
+<p>淮海中路2068号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;施蛰存旧居</p>
+</td>
+<td width="418">
+<p>愚园路1018号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>◇&nbsp;泰安路115弄花园里弄住宅</p>
+</td>
+<td width="418">
+<p>泰安路115弄1-8号（周谷城旧居为6号）</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;梅泉别墅</p>
+</td>
+<td width="418">
+<p>新华路593弄</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路185弄1号住宅</p>
+</td>
+<td width="418">
+<p>新华路185弄1号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路329弄28号住宅</p>
+</td>
+<td width="418">
+<p>新华路329弄28号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路329弄30号住宅</p>
+</td>
+<td width="418">
+<p>新华路329弄30号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;美华村1号楼</p>
+</td>
+<td width="418">
+<p>中山西路1350号1号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;陈纳德旧居</p>
+</td>
+<td width="418">
+<p>中山西路1350号9号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第九组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;白崇禧旧居</p>
+</td>
+<td width="418">
+<p>虹桥路1518号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1590号9号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1590号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1648号8号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1648号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1650号7号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1650号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1652号3号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1652号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1674号4号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1674号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1674号5号楼</p>
+</td>
+<td width="418">
+<p>虹桥路1674号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;上海市盲童学校</p>
+</td>
+<td width="418">
+<p>虹桥路1850号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>☆&nbsp;宋庆龄墓</p>
+</td>
+<td width="418">
+<p>宋园路21号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>◇&nbsp;万国公墓</p>
+</td>
+<td width="418">
+<p>宋园路21号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;舒昭贤宅</p>
+</td>
+<td width="418">
+<p>延安西路2558号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;肺结核疗养院旧址</p>
+</td>
+<td width="418">
+<p>伊犁路2号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;美华村</p>
+</td>
+<td width="418">
+<p>中山西路1350号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>△&nbsp;复旦公学旧址</p>
+</td>
+<td width="418">
+<p>华山路1626号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>△&nbsp;力学堂</p>
+</td>
+<td width="418">
+<p>华山路1626号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>16</p>
+</td>
+<td width="411">
+<p>◇&nbsp;上钢十厂冷轧带钢车间旧址</p>
+</td>
+<td width="418">
+<p>淮海西路570号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p><strong>第十组</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>序号</p>
+</td>
+<td width="411">
+<p>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</p>
+</td>
+<td width="418">
+<p>地&nbsp;&nbsp;&nbsp;址</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>1</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路2310号住宅</p>
+</td>
+<td width="418">
+<p>虹桥路2310号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>2</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;孔祥熙旧居</p>
+</td>
+<td width="418">
+<p>虹桥路2260、2258号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>3</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;《上海泰晤士报》社旧址</p>
+</td>
+<td width="418">
+<p>虹桥路2419号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>4</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;美丰银行别墅旧址</p>
+</td>
+<td width="418">
+<p>虹桥路2419号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>5</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥机场办公房</p>
+</td>
+<td width="418">
+<p>迎宾三路298号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>6</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;阎锡山旧居</p>
+</td>
+<td width="418">
+<p>虹桥路885弄4号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>7</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1390号花园住宅</p>
+</td>
+<td width="418">
+<p>虹桥路1390号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>8</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路碉堡</p>
+</td>
+<td width="418">
+<p>虹桥路996弄内</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>9</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;宋子文旧居</p>
+</td>
+<td width="418">
+<p>虹桥路1430号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>10</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;虹桥路1440号花园住宅</p>
+</td>
+<td width="418">
+<p>虹桥路1440号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>11</p>
+</td>
+<td width="411">
+<p>◇&nbsp;安息堂</p>
+</td>
+<td width="418">
+<p>可乐路1号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>12</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;淮海中路1984弄37号（淮海别墅）</p>
+</td>
+<td width="418">
+<p>淮海西路1984弄37号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>13</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;香花桥</p>
+</td>
+<td width="418">
+<p>长宁路780号中山公园内</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>14</p>
+</td>
+<td width="411">
+<p>△&nbsp;青霉素实验所旧址</p>
+</td>
+<td width="418">
+<p>延安西路1146号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>15</p>
+</td>
+<td width="411">
+<p>&nbsp;&nbsp;&nbsp;新华路200号住宅</p>
+</td>
+<td width="418">
+<p>新华路200号</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>&nbsp;</p>
+</td>
+<td width="411">
+<p>&nbsp;</p>
+</td>
+<td width="418">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p>备注：☆代表全国重点文物保护单位</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◇代表市级文物保护单位</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="678">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;△代表区级文物保护单位</p>
+</td>
+</tr>
+</tbody>
+</table>
+    </div>
+</div>
+
+<div class="footermodel1">
+<p>长宁区数字博物馆</p>
+<p>访问人数： <span id="peoplesum"></span></p>
+</div>
+<a href="javascript:;" class="moveTop" id="movetop"></a>
+
+</body>
+<script src="http://changning.museum.chaoxing.com/static/common/js/common.js"></script>
+
+<script>
+openclosenav('.headertopmodel1 .menubox .a3', '.headertopmodel1 .ydnav .close', '.headertopmodel1 .ydnav', '.headertopmodel1') 
+
+// 访问量
+peoplevisit('#peoplesum');
+
+</script>
+</html>

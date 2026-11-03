@@ -25,9 +25,14 @@ describe('user-reviewed same-site candidates', () => {
     expect(link?.additionalHeritageOfficialIds).toContain('sh-fgj-4D027-01')
   })
 
-  it('does not create a protected-building map point for Brookside Apartments', () => {
+  it('keeps Brookside Apartments and the Aurora playing field separate after coordinate backfill', () => {
     expect(approvedUnlocatedHeritageSites.find((item) => item.row === 'C036')?.officialCode).toBe('2B020')
     expect(approvedUnlocatedHeritageSites.find((item) => item.row === 'C072')?.officialCode).toBe('2C012')
+    const mapped = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')) as HeritageBuildingCollection
+    for (const site of approvedUnlocatedHeritageSites) {
+      expect(mapped.features.some(feature => feature.properties.officialId === site.officialId)).toBe(true)
+      expect(userApprovedHeritageSiteLinks.some(link => [link.officialId, ...(link.additionalHeritageOfficialIds ?? [])].includes(site.officialId))).toBe(false)
+    }
   })
 
   it('does not merge the Aurora women’s college with Taishan Apartments or the Julu Road school', () => {

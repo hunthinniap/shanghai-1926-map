@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-01",
+  "previousReport": "research/rechecks/2026-10-30-heritage-missing-coordinates/coordinate-review.json",
+  "previousReportSha256": "5fbd33bb50933d6410c09f86ac7dae80d2bd425602eb4ef7f3b343f7fabc6134",
+  "coverage": {
+    "targetCandidates": 13,
+    "rechecked": 13,
+    "newlyAccepted": 0,
+    "stillNeedsReview": 13,
+    "sourceSnapshots": 32,
+    "productionMapRecords": 1044,
+    "productionMapChangedByThisRecheck": false
+  },
+  "method": "逐条复读原候选、保护门牌与范围；新检索官方／机构资料和独立公开地图。地址聚合与其复用的POI不计两个独立来源，分店编号不当门牌，规划迁移不当迁移完成，同号水桥不当住宅。",
+  "productionMapSha256": "880d4649e28a935ccab6c2da7e935485e18a3104a39fac7d58007cd841c5019e",
+  "records": [
+    {
+      "officialId": "sh-fgj-2B008-01",
+      "code": "2B008",
+      "name": "住宅",
+      "address": "延安中路955弄（1-11号）",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "精确查955弄1号，返回“延安中路1号分店”，但地址只写955弄小区；另一个机构在55-1号。分店编号不能作为1号门牌证据，均不足以确认保护的1—11号。",
+      "evidenceNeeded": "保护号段内明确门牌的楼栋图或独立POI。",
+      "newEvidenceFiles": [
+        "sources/search-01.json",
+        "sources/yanan955-1.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-17-20.txt"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "http://data.library.sh.cn/entity/architecture/mqh6cj8tf7ww30hy",
+        "https://ditu.amap.com/place/B00155LW7S"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-2G001-01",
+      "code": "2G001",
+      "name": "杨树浦电厂",
+      "address": "杨树浦路2800号（铁皮车间）",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "杨浦官方清单继续限定2800号铁皮车间；文物部门出品的口述史说明铁皮车间就是汽机房，且厂内尚有办公楼、水滤房等多幢遗存。身份别名得到支持，未获汽机房单体坐标，整厂点仍不能替代。",
+      "evidenceNeeded": "标明汽机房的厂区平面图及可配准控制点，或具名楼体几何。",
+      "newEvidenceFiles": [
+        "sources/search-06.json"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-25-28.txt"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+        "https://zh.wikipedia.org/wiki/%E6%9D%A8%E6%A0%91%E6%B5%A6%E5%8F%91%E7%94%B5%E5%8E%82",
+        "https://www.wikidata.org/wiki/Q15709505"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4F028-01",
+      "code": "4F028",
+      "name": "住宅",
+      "address": "长阳路50弄15-31号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "再次精确查50弄15号，公开地图无POI结果，只回退至长阳路50弄（type=3、无实体ID）；修缮检索仍指15—31号范围。没有缩小到保护子范围。",
+      "evidenceNeeded": "15—31号楼栋分布、门牌点或保护范围附图。",
+      "newEvidenceFiles": [
+        "sources/search-01.json",
+        "sources/changyang15.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-45-48.txt",
+        "urban/sources/360-changyang.raw",
+        "urban/sources/360-changyang15.raw",
+        "urban/sources/360-changyang31.raw",
+        "urban/coordinate-system-audit.json",
+        "urban/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%95%BF%E9%98%B3%E8%B7%AF50%E5%BC%84&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E9%95%BF%E9%98%B3%E8%B7%AF50%E5%BC%8431%E5%8F%B7&src=bendibao&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4G001-01",
+      "code": "4G001",
+      "name": "住宅",
+      "address": "许昌路227弄（特号、1-84号、101-104、197-201号）",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 1,
+      "acceptedPoints": [],
+      "finding": "官方清单确认纺三小区在227弄；精确查227弄特号仍无POI，只回退至整弄。环保报告另列纺三小区经纬度，但对象是环境敏感目标，坐标系和保护楼栋未声明；不能用来裁决旧图书馆230弄差异。",
+      "evidenceNeeded": "227弄特号或保护号段内楼栋的独立位置，及227／230弄关系说明。",
+      "newEvidenceFiles": [
+        "sources/search-06.json",
+        "sources/fangsan-special.raw",
+        "sources/fangsan-fang.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-49-52.txt"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "http://data.library.sh.cn/entity/architecture/6uxiecew473nialm"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4M012-01",
+      "code": "4M012",
+      "name": "花园住宅",
+      "address": "愚园路749弄65号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "长宁区革命文物陈列馆的分组名单直接将周佛海旧居列为749弄65号，支持官方门牌；公开地图按别名搜索却回传其他旧居，未取得65号实体。旧目录745弄65号与749弄入口两候选仍未闭合。",
+      "evidenceNeeded": "65号住宅独立门牌点／轮廓，或旧目录地址勘误。",
+      "newEvidenceFiles": [
+        "sources/search-05.json",
+        "sources/cn-museum.raw",
+        "sources/zhou-fohai.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-49-52.txt",
+        "residential/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+        "http://data.library.sh.cn/entity/architecture/baq18jmbk8psux65",
+        "https://m.map.360.cn/?city=上海市&k=愚园路749弄65号&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D039-01",
+      "code": "5D039",
+      "name": "住宅",
+      "address": "高安路77号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "地图重复取得同一个短租POI，地址写77号（77弄），精确地址聚合也复用这一坐标；这不是两个独立来源。仍缺把此点与1924年保护住宅对应的建筑／院落证据。",
+      "evidenceNeeded": "77号与77弄的权威桥接及具体保护住宅位置。",
+      "newEvidenceFiles": [
+        "sources/search-07.json",
+        "sources/gaoan77.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-65-68.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "residential/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/aji6t83zrcapc8hz",
+        "https://m.map.360.cn/?pid=d012f6d81d473b64"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D100-01",
+      "code": "5D100",
+      "name": "住宅",
+      "address": "陕西南路214号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 3,
+      "acceptedPoints": [],
+      "finding": "纪实人文频道原发图文明确214号是一幢带小花园的独栋洋房，但没有坐标。公开地图同号两个民宿点仍相差约190米；地址聚合复用其中一个民宿点，不能用作独立裁决。",
+      "evidenceNeeded": "带门牌的建筑位置或第二个独立位置来源，以排除同号房源误标。",
+      "newEvidenceFiles": [
+        "sources/search-06.json",
+        "sources/open-02.json",
+        "sources/shaanxi214.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-69-72.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "residential/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/e7lquokdw3ugsreh",
+        "https://m.map.360.cn/?pid=62730963b3a89ebf",
+        "https://m.map.360.cn/?pid=aae2d92bc7415004"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D103-01",
+      "code": "5D103",
+      "name": "住宅",
+      "address": "襄阳南路313号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 4,
+      "acceptedPoints": [],
+      "finding": "官方监测采购清单列313号一处住宅；地图仍有“南院”“慎成里”“乔家栅楼上”等不同房源点，最远相隔约400米。房产介绍可以确认地址存在，未给足以裁决的独立坐标。",
+      "evidenceNeeded": "313号被保护的单体楼栋位置，不能只按住宿房源选点。",
+      "newEvidenceFiles": [
+        "sources/search-02.json",
+        "sources/xiangyang313.raw",
+        "sources/xiangyang-lianjia.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-69-72.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "residential/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/5xn0cj87hu6703qu",
+        "https://m.map.360.cn/?pid=d78a871d117fe417",
+        "https://m.map.360.cn/?pid=e5bd837056e2feee",
+        "https://m.map.360.cn/?pid=d54bc1113f54083d"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W046-01",
+      "code": "5W046",
+      "name": "小湾区公所",
+      "address": "唐镇镇小湾村东张家宅1号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 1,
+      "acceptedPoints": [],
+      "finding": "重新读取浦东2024年10月25日原公示，措辞仍为拟迁至唐镇G13-0101-1地块绿地。追加完成／验收检索未取得可核实的竣工迁移证据；不能把规划目标地块当作已迁现址。",
+      "evidenceNeeded": "迁移实施完成或验收记录、新址门牌／平面图及源坐标。",
+      "newEvidenceFiles": [
+        "sources/search-03.json",
+        "sources/open-02.json"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-73-76.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "outer/search-01.txt",
+        "outer/sources/xiaowan-map360.json",
+        "outer/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/4aez3mh45nk24cuf",
+        "https://www.pudong.gov.cn/zwgk/14483.gkml_zhzw_ghjh/2024/299/333473.html",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E5%B0%8F%E6%B9%BE%E5%8C%BA%E5%85%AC%E6%89%80&src=bendibao&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X003-01",
+      "code": "5X003",
+      "name": "住宅",
+      "address": "练塘镇东风街109、110号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 1,
+      "acceptedPoints": [],
+      "finding": "用练塘、109、110号及完整保护门牌再次检索，取得的仍是官方名录，未发现将图书馆111号与109、110号解释为同一保护住宅的独立证据，也未取得新门址点。",
+      "evidenceNeeded": "109／110号门牌位置或111号换号、同院关系证据。",
+      "newEvidenceFiles": [
+        "sources/search-01.json",
+        "sources/search-03.json",
+        "sources/search-04.json"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-77-80.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/dongfeng109-map360.json",
+        "outer/sources/dongfeng110-map360.json",
+        "outer/sources/dongfeng109-full-map360.json",
+        "outer/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/ng6q01g56k4qiiod",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97109%E5%8F%B7&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97110%E5%8F%B7&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%9C%E9%A3%8E%E8%A1%97109%E5%8F%B7&src=bendibao&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X004-01",
+      "code": "5X004",
+      "name": "住宅",
+      "address": "练塘镇下塘街44弄19-38号及北侧构筑物",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "青浦原公布名录再次明确练塘下塘街街廊在44弄19—33号，与保护项范围相交。身份关系成立，但未取得该街廊单体几何；原Commons摄影站位仍不能升级成保护住宅／廊棚点。",
+      "evidenceNeeded": "街廊楼体或至少一个受保护门牌的位置，而非摄影者站位。",
+      "newEvidenceFiles": [
+        "sources/search-03.json",
+        "sources/open-03.json"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-77-80.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/commons-metadata.json",
+        "outer/sources/liantang-corridor.json",
+        "outer/sources/xiatang19-full-map360.json",
+        "outer/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/szk01by65dm322yj",
+        "https://www.shqp.gov.cn/tv/wlzwgk/ml/qt/20190829/556356.html",
+        "https://www.shqp.gov.cn/tv/tv/upload/202407/0712_083619_917.pdf",
+        "https://commons.wikimedia.org/wiki/File:Riverside_Veranda_at_Xiatang_Street,_Liantang_Town.jpg",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E7%BB%83%E5%A1%98%E9%95%87%E4%B8%8B%E5%A1%98%E8%A1%9744%E5%BC%8419%E5%8F%B7&src=bendibao&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X005-01",
+      "code": "5X005",
+      "name": "住宅",
+      "address": "朱家角镇东湖街209弄",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 2,
+      "acceptedPoints": [],
+      "finding": "朱家角景区官网同号另列“东湖街209弄水桥”，对象为水桥而非本项住宅；不能因同门牌名称就合并。两处相差约600米的旧候选仍缺独立住宅几何裁决。",
+      "evidenceNeeded": "209弄保护住宅的明确楼栋／门牌位置；区分同号水桥。",
+      "newEvidenceFiles": [
+        "sources/search-01.json",
+        "sources/search-03.json"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-77-80.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "outer/search-02.txt",
+        "outer/search-05.txt",
+        "outer/sources/commons-metadata.json",
+        "outer/sources/donghu209-map360.json",
+        "outer/sources/donghu209-neighborhood.json",
+        "urban/coordinate-system-audit.json",
+        "outer/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/3sm3nj1mpnjpju7s",
+        "https://commons.wikimedia.org/wiki/File:Donghujie_209_Long_Minzhai.JPG",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%E4%B8%9C%E6%B9%96%E8%A1%97209%E5%BC%84&src=bendibao&t=map"
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5X012-01",
+      "code": "5X012",
+      "name": "住宅",
+      "address": "白鹤镇鹤江路369号",
+      "previousStatus": "needs-review",
+      "status": "needs-review",
+      "previousCandidateCount": 1,
+      "acceptedPoints": [],
+      "finding": "青浦官方名录将369号命名为薛家宅，修缮采购线索也指此址；精确按白鹤镇薛家宅搜索仍回传嘉定、浦东等同名村点，均排除。图书馆344号与369号尚无换号桥接。",
+      "evidenceNeeded": "修缮工程附图／现场门牌定位，或344／369号关系证据。",
+      "newEvidenceFiles": [
+        "sources/search-04.json",
+        "sources/xuejia.raw"
+      ],
+      "previousEvidence": [
+        "sources/web-targets-77-80.txt",
+        "sources/web-focus-02.txt",
+        "sources/web-focus-06.txt",
+        "sources/web-focus-17.txt",
+        "sources/web-focus-19.txt",
+        "outer/search-04.txt",
+        "outer/search-05.txt",
+        "outer/sources/xuejia-map360.json",
+        "outer/sources/xuejia369-map360.json",
+        "outer/sources/xuejia-neighborhood.json",
+        "outer/proposals.json"
+      ],
+      "previousSourceUrls": [
+        "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+        "http://data.library.sh.cn/entity/architecture/ku53qjs66d23sr6m",
+        "https://www.shqp.gov.cn/tv/tv/upload/202407/0712_083619_917.pdf",
+        "https://www.qianlima.com/bid-638347320.html",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E7%99%BD%E9%B9%A4%E9%95%87%E8%96%9B%E5%AE%B6%E5%AE%85&src=bendibao&t=map",
+        "https://m.map.360.cn/?city=%E4%B8%8A%E6%B5%B7%E5%B8%82&k=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E9%B9%A4%E6%B1%9F%E8%B7%AF369%E5%8F%B7&src=bendibao&t=map"
+      ]
+    }
+  ],
+  "additionalNoCoordinateRecord": {
+    "code": "5W035",
+    "status": "no-coordinate",
+    "finding": "额外复查下沙街西段452号，仍仅获规划地址，无该住宅坐标。",
+    "evidence": [
+      "sources/search-04.json"
+    ]
+  }
+}

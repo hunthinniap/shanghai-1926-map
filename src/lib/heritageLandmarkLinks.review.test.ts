@@ -4,8 +4,20 @@ import { heritageLandmarkLinks } from '../data/heritageLandmarkLinks'
 import type { HistoricalFeatureCollection } from '../types'
 import type { HeritageBuildingCollection } from './heritageBuildings'
 import { linkHeritageLandmarks } from './heritageLandmarkLinks'
+import { userApprovedHeritageSiteLinks } from '../data/userApprovedHeritageSites'
 
 describe('heritage identity guard across map features', () => {
+  it('keeps every existing shared card and historical landmark unchanged after coordinate-only backfill', () => {
+    const historical = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    const before = JSON.parse(readFileSync('research/rechecks/2026-10-30-heritage-missing-coordinates/map-integration/map-before.geojson', 'utf8')) as HeritageBuildingCollection
+    const after = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')) as HeritageBuildingCollection
+    const links = [...heritageLandmarkLinks, ...userApprovedHeritageSiteLinks]
+    const old = linkHeritageLandmarks(historical, before, links)
+    const updated = linkHeritageLandmarks(historical, after, links)
+    expect(updated.features).toEqual(old.features)
+    expect(updated.byOfficialId).toEqual(old.byOfficialId)
+    expect(updated.byGroupId).toEqual(old.byGroupId)
+  })
   it('rejects an otherwise matching feature when its group also contains an unreviewed member', () => {
     const historical = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
     const heritage = JSON.parse(readFileSync('public/data/shanghai-excellent-historical-buildings/map-buildings.geojson', 'utf8')) as HeritageBuildingCollection

@@ -1,4 +1,5 @@
 import type { HeritageBuildingCollection } from './heritageBuildings'
+import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
 
 export const heritageUseCategories = [
   { id: 'residential', label: '住宅', symbol: '住', color: '#926941' },
@@ -52,7 +53,8 @@ export function applyHeritageUses(collection: HeritageBuildingCollection, index:
       historicalUseCategory: use.category,
       historicalUseSymbol: category?.symbol ?? '?',
       historicalUseColor: category?.color ?? '#817c70',
-      historicalDisplayName: use.historicalName || feature.properties.articleTitle || feature.properties.name,
+      historicalDisplayName: reviewedHeritageSiteHistoryFor(feature.properties)?.buildingName
+        || use.historicalName || feature.properties.articleTitle || feature.properties.name,
     } }
   }) }
 }

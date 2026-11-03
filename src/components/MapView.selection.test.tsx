@@ -110,7 +110,9 @@ describe('MapView selected building camera', () => {
     await render({ features: loadedFeatures })
     expect(mapCalls.created).toHaveBeenCalledTimes(1)
     expect(mapCalls.remove).not.toHaveBeenCalled()
-    expect(mapCalls.setData).toHaveBeenCalledWith(loadedFeatures)
+    expect(mapCalls.setData).toHaveBeenCalledWith({ ...loadedFeatures, features: loadedFeatures.features.map(feature => ({
+      ...feature, properties: { ...feature.properties, mapDisplayName: '南京飯店' },
+    })) })
     expect(mapCalls.fitBounds).not.toHaveBeenCalled()
   })
 

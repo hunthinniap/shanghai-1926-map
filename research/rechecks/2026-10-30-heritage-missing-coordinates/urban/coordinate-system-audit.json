@@ -1,0 +1,59 @@
+{
+  "reviewDate": "2026-10-31",
+  "publisherDeclarationAvailable": false,
+  "determination": "GCJ-02 inferred from independent controls",
+  "conclusion": "360公开网页window.__STATE__的x/y没有在页面明示坐标系；两处具名、同址的独立OSM建筑控制点均与GCJ-02逆转换吻合（约7米/21米），与原值直接当WGS84或按BD-09转换明显不合。故本轮按经控制点检验的GCJ-02推断处理，明确保留推断性质和原值。",
+  "limitations": [
+    "控制点检验支持坐标系判定，不等于所查全部POI位置都正确。",
+    "POI可能表示门址、庭院或范围参考；不由小数位推断测量精度。",
+    "本轮仅用于坐标研究提案，未写入生产地图。"
+  ],
+  "controls": [
+    {
+      "name": "汉弥尔登大楼/福州大楼",
+      "sourceCoordinates": [
+        121.487655,
+        31.23484
+      ],
+      "sourceSnapshot": "urban/sources/360-hamilton.raw",
+      "osmSnapshot": "urban/sources/control-hamilton.raw",
+      "osmId": "way/380340010",
+      "independentWgs84": [
+        121.48312,
+        31.2368616
+      ],
+      "gcjInverseWgs84": [
+        121.483163,
+        31.236806
+      ],
+      "residualMetres": {
+        "rawAsWgs84": 486.2499140775006,
+        "gcj02Inverse": 7.411893350814713,
+        "bd09Inverse": 902.5965982840356
+      }
+    },
+    {
+      "name": "淮海中路796号历峰双墅",
+      "sourceCoordinates": [
+        121.462556,
+        31.218735
+      ],
+      "sourceSnapshot": "sources/map360-richemont.json",
+      "osmSnapshot": "urban/sources/richemont-correct.raw",
+      "osmId": "way/494405859",
+      "independentWgs84": [
+        121.4579943,
+        31.2208269
+      ],
+      "gcjInverseWgs84": [
+        121.457986,
+        31.220642
+      ],
+      "residualMetres": {
+        "rawAsWgs84": 492.2133527519291,
+        "gcj02Inverse": 20.575085430501552,
+        "bd09Inverse": 944.534160345187
+      }
+    }
+  ]
+}

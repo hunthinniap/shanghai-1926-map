@@ -1,0 +1,4193 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "shanghai-unknown-dates-2026-11-02",
+  "prepared_on": "2026-11-02",
+  "scope": "Remaining undated events in current all-years map cards; event counts are not building counts. Only research and report. No direct map edits.",
+  "inventory_source": "research/rechecks/2026-11-01-shtong-unknown-dates/inventory-for-agent-handoff.json",
+  "inventory_sha256": "b4a41be00c6cfc9343af0f30f33b3be3cdbd05ee8c9fd1fbfcbd85d46c73c24a",
+  "total_events": 2227,
+  "total_dispatch_groups": 1878,
+  "database_entry": "https://szfz.shtong.gov.cn/difangzhi-front/book/index?oneId=1",
+  "batch_id": "date-agent-043",
+  "batch_event_count": 50,
+  "batch_group_count": 48,
+  "result_schema": "result-schema.json",
+  "groups": [
+    {
+      "group_id": "date-group-7b41e08d002a",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B020-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "北京西路1220弄1-108号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B020-01",
+                "code": "5B020",
+                "original_name": "望德堂",
+                "listed_name": "住宅",
+                "address": "北京西路1220弄1-108号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/jmp5zj8d0vnl1oug"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B020-01",
+                "code": "5B020",
+                "title": "望德堂",
+                "address": "北京西路1220弄1-108号"
+              }
+            ]
+          },
+          "task_fingerprint": "4e14ad8022c5255469484f372f4432164b03aeaffbf0ba1f22912f4e7046dd13",
+          "dispatch_group_id": "date-group-7b41e08d002a",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "北京西路1220弄1-108号",
+            "北京西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "e53a99b7b065caf97b36",
+                "keyword": "北京西路1220弄1-108号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "北京西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-e67f24bbd528",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B021-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "常德路310号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B021-01",
+                "code": "5B021",
+                "original_name": "信义会",
+                "listed_name": "住宅",
+                "address": "常德路310号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/eoimzmjmeygoa6h1"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B021-01",
+                "code": "5B021",
+                "title": "信义会",
+                "address": "常德路310号"
+              }
+            ]
+          },
+          "task_fingerprint": "cb795943cdf99c3ed05cd4630d913c8194ba8a72bcddfb63fd19125813f671d0",
+          "dispatch_group_id": "date-group-e67f24bbd528",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "常德路310号",
+            "常德路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "4eccfa8cadc99281fde4",
+                "keyword": "常德路310号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "常德路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-cb7ac724a501",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B023-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "威海路590弄41号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B023-01",
+                "code": "5B023",
+                "original_name": "修德里",
+                "listed_name": "住宅",
+                "address": "威海路590弄41号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E5%91%B3%E8%8E%BC%E5%9B%AD",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/c1boz6qwx1feyewt"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B023-01",
+                "code": "5B023",
+                "title": "修德里",
+                "address": "威海路590弄41号"
+              }
+            ]
+          },
+          "task_fingerprint": "04638198ec810e9741d267770d4a4872dcf4ebff972cdfb29cede9c0726be509",
+          "dispatch_group_id": "date-group-cb7ac724a501",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "威海路590弄41号",
+            "威海路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "60ab7dd48b6c17552ec6",
+                "keyword": "威海路590弄41号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "威海路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-ed93fdb8c5b5",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B024-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "北京西路1220 弄(50-108 号)",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B024-01",
+                "code": "5B024",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "北京西路1220 弄(50-108 号)",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/q8s5izebk5c5ungj"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B024-01",
+                "code": "5B024",
+                "title": "北京西路1220弄50号 住宅",
+                "address": "北京西路1220 弄(50-108 号)"
+              }
+            ]
+          },
+          "task_fingerprint": "50bc5fc42111c1400a2b175279a6f892232fcc73f78d24298340f1468ad70cee",
+          "dispatch_group_id": "date-group-ed93fdb8c5b5",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "北京西路1220 弄",
+            "北京西路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "560cb8163832f0022a54",
+                "keyword": "北京西路1220 弄",
+                "total_hits": 61,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "北京西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "217903-358646",
+              "title": "北京西路1220弄望德堂",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=217903&parentNodeId=217903&nodeId=217921&type=147",
+              "book": "海上遗韵-老上海纪事（上）",
+              "excerpt": "爱文义路(今北京西路)1220弄弄底的公寓式建筑 这座建筑原本不是居民住宅，弄内还有两栋欧式花园洋房，原来是供教会领袖居住的住宅。如今居住的居民将厨房搭在门厅、走廊，还存在使用马桶的情况。 北京西路1220弄占地面积数万平方米，弄内空间环境良好，梧桐树枝叶茂盛，树阴下凉风习习，绿叶在和风中摇曳。",
+              "from_query": "北京西路1220 弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=217903&parentNodeId=217903&nodeId=217921&type=147"
+            },
+            {
+              "id": "190111-362294",
+              "title": "【建成兴海城、北京新村2个优美小区】",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=190111&nodeId=362294&parentNodeId=219411&type=jie",
+              "book": "静安年鉴",
+              "excerpt": "为进一步提升文明小区创建水平，2000年，街道选择昌平路428弄兴海城和北京西路1220弄北京新柯2个小区为试点，创建优美小区。在创建过程中，区委副书记丁志坚，区委常委、宣传部部长汪兰洁先后召开现场办公会议，协调物业等有关部门共同参与。经1年努力，取得显着成效。",
+              "from_query": "北京西路1220 弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=190111&nodeId=362294&parentNodeId=219411&type=jie"
+            },
+            {
+              "id": "219183-362294",
+              "title": "【建成兴海城、北京新村2个优美小区】",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=219183&parentNodeId=219412&nodeId=362294&type=-1",
+              "book": "静安年鉴2001",
+              "excerpt": "为进一步提升文明小区创建水平，2000年，街道选择昌平路428弄兴海城和北京西路1220弄北京新柯2个小区为试点，创建优美小区。在创建过程中，区委副书记丁志坚，区委常委、宣传部部长汪兰洁先后召开现场办公会议，协调物业等有关部门共同参与。经1年努力，取得显着成效。",
+              "from_query": "北京西路1220 弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=219183&parentNodeId=219412&nodeId=362294&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6cae19d5cf03",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B047-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "胶州路125弄",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B047-01",
+                "code": "5B047",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "胶州路125弄",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/w3zagb83xdn606h2"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B047-01",
+                "code": "5B047",
+                "title": "胶州路125弄 里弄",
+                "address": "胶州路125弄"
+              }
+            ]
+          },
+          "task_fingerprint": "70606b1c1a4eb745190f436a2e48236c1e3fe7fdd80a687acfcc01d03810d83e",
+          "dispatch_group_id": "date-group-6cae19d5cf03",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "胶州路125弄",
+            "胶州路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "6b2b3fd8a9c5947f45d9",
+                "keyword": "胶州路125弄",
+                "total_hits": 71,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "胶州路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "4412-7811",
+              "title": "1992学年度静安区小学简况表",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4412&parentNodeId=62341&nodeId=7811&type=-1",
+              "book": "静安区志",
+              "excerpt": "923 80 58 6302 4630 延平路小学 延平路301号 12 366 36 30 2432 1762 胶州路第二小学 胶州路397号 13",
+              "from_query": "胶州路125弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4412&parentNodeId=62341&nodeId=7811&type=-1"
+            },
+            {
+              "id": "4412-7797",
+              "title": "1992学年度静安区公办幼儿园简况表",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4412&parentNodeId=62340&nodeId=7797&type=-1",
+              "book": "静安区志",
+              "excerpt": "278 余姚路幼儿园 余姚路170号 10 302 40 23 1068 1062 胶州路幼儿园 胶州路260号 10 303 34 24",
+              "from_query": "胶州路125弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4412&parentNodeId=62340&nodeId=7797&type=-1"
+            },
+            {
+              "id": "190111-227211",
+              "title": "（八）社会组织管理",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=190111&parentNodeId=167987&nodeId=227211&type=-1",
+              "book": "静安年鉴",
+              "excerpt": "125弄6号 2004.1.20 上海市致立学前教育职业技能培训中心 石门二路199弄1号404室 2004.1.20 （续表三） 单位名称 地址 登记日期 上海静安区巾帼妇女儿童服务中心 万春街63弄33支弄3号 2004.2.3 上海静安圆桌教育培训中心 南京西路993号11楼 2004.4.16 上海市静安置业进修学校",
+              "from_query": "胶州路125弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=190111&parentNodeId=167987&nodeId=227211&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-20468927ffcd",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B048-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "襄阳北路22弄",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B048-01",
+                "code": "5B048",
+                "original_name": "青云里",
+                "listed_name": "住宅",
+                "address": "襄阳北路22弄",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/u6ot2i0aa1bt1ozd"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B048-01",
+                "code": "5B048",
+                "title": "青云里",
+                "address": "襄阳北路22弄"
+              }
+            ]
+          },
+          "task_fingerprint": "64a90cbd702a420830d16ad268ce8062a17d70e1236666ce05b24120e9fdc210",
+          "dispatch_group_id": "date-group-20468927ffcd",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "襄阳北路22弄",
+            "襄阳北路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "c008c123baf739434014",
+                "keyword": "襄阳北路22弄",
+                "total_hits": 117,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "襄阳北路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "4417-53112",
+              "title": "1990年区内幼儿园简况表",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4417&parentNodeId=63526&nodeId=53112&type=-1",
+              "book": "徐汇区志",
+              "excerpt": "零陵北路1号甲 7 257 24 枫林幼儿园 1986 小木桥路440弄20号 7 244 23 龙二幼儿园 1986 龙华西路31弄15号 6 192",
+              "from_query": "襄阳北路22弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4417&parentNodeId=63526&nodeId=53112&type=-1"
+            },
+            {
+              "id": "75091-90083",
+              "title": "徐汇区",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=75091&parentNodeId=75190&nodeId=90083&type=-1",
+              "book": "上海住宅建设志",
+              "excerpt": "1938 砖木二层 10 534 徐镇路278弄 福安里 旧式里弄 1933 砖木三层 14 656 襄阳北路101弄 福兴里 旧式里弄 1929",
+              "from_query": "襄阳北路22弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=75091&parentNodeId=75190&nodeId=90083&type=-1"
+            },
+            {
+              "id": "239446-394209",
+              "title": "4．村",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239472&nodeId=394209&type=-1",
+              "book": "徐汇区地名志",
+              "excerpt": "共有楼房3幢，其中22弄1～2号是2幢砖木结构三层楼房，建筑面积446平方米；沿街18号及20号房屋是1幢砖木结构三层公寓，原名虹公寓，建国后与22弄内1～2号统称绿村，建筑面积660平方米，每幢都有小型绿化园地；弄内3～6号是附屋，建筑面积85平方米。交通有96路公交车辆经过。 敬一村 在漕溪北路街道南部，即斜土路3036弄1～8号。占地753.37平方米。",
+              "from_query": "襄阳北路22弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239472&nodeId=394209&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c2bef84ccb57",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5B058-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "升平街45、65号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B058-01",
+                "code": "5B058",
+                "original_name": "花园住宅",
+                "listed_name": "住宅",
+                "address": "升平街45、65号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/wuks7k0uopuj56rf"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B058-01",
+                "code": "5B058",
+                "title": "升平街45、65号 住宅",
+                "address": "升平街45、65号"
+              }
+            ]
+          },
+          "task_fingerprint": "572891fd16f4998f193904b9b532f2e223a372d6f0626157ca6c099facded799",
+          "dispatch_group_id": "date-group-c2bef84ccb57",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "升平街45、65号",
+            "升平街"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "5eef3730c14bc667a7aa",
+                "keyword": "升平街45、65号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "升平街",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        },
+        {
+          "task_id": "original-sh-fgj-5B058-01",
+          "event_kind": "名录原名称",
+          "target_name": "花园住宅",
+          "record_address": "升平街45、65号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B058-01",
+                "code": "5B058",
+                "original_name": "花园住宅",
+                "listed_name": "住宅",
+                "address": "升平街45、65号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/wuks7k0uopuj56rf"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B058-01",
+                "code": "5B058",
+                "title": "升平街45、65号 住宅",
+                "address": "升平街45、65号"
+              }
+            ]
+          },
+          "task_fingerprint": "1ca3190bff0026ae5570c10d9a1223de231f442bcb4a26e2dcf09b834897107b",
+          "dispatch_group_id": "date-group-c2bef84ccb57",
+          "priority": 3,
+          "research_question": "核实这个原名称在该门址的有据使用年代；名录所谓原名称也可能是后期用途，不必然是建造时名称。",
+          "date_types_to_check": [
+            "historical_name",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "花园住宅",
+            "升平街45、65号",
+            "升平街"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "5eef3730c14bc667a7aa",
+                "keyword": "升平街45、65号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "升平街",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-45fc22398603",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D001-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "华山路913号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D001-01",
+                "code": "5D001",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "华山路913号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/m4bacbndq7f8crqu"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D001-01",
+                "code": "5D001",
+                "title": "华山路913号 住宅",
+                "address": "华山路913号"
+              }
+            ]
+          },
+          "task_fingerprint": "5dfd6f7dbd0beeeae723591dcd4ee11ded87a34f144e464886e59c6e373e00c1",
+          "dispatch_group_id": "date-group-45fc22398603",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "华山路913号",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "3fb7c0d4aeaf6ac22eb4",
+                "keyword": "华山路913号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6b29ea7f8b61",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D002-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "东平路14-16号(双号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D002-01",
+                "code": "5D002",
+                "original_name": "和平官邸",
+                "listed_name": "住宅",
+                "address": "东平路14-16号(双号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/hi5cns85ouvgz64k"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D002-01",
+                "code": "5D002",
+                "title": "和平官邸",
+                "address": "东平路14-16号(双号）"
+              }
+            ]
+          },
+          "task_fingerprint": "e8c380cfca49610b54a47634d43ba2563a83a62e8bad7aa42a6628e54158ca00",
+          "dispatch_group_id": "date-group-6b29ea7f8b61",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "东平路14-16号",
+            "东平路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "accdde0e53709bdee8ac",
+                "keyword": "东平路14-16号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "东平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-49df80a869c5",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D004-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "淮海中路1323号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D004-01",
+                "code": "5D004",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "淮海中路1323号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/s7xcsyh5za3ujbhg"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D004-01",
+                "code": "5D004",
+                "title": "淮海中路1323号 住宅",
+                "address": "淮海中路1323号"
+              }
+            ]
+          },
+          "task_fingerprint": "7855288a06c8d34b730cd4f60008adc5b7e3117eba8b6a6503281c70871b25f9",
+          "dispatch_group_id": "date-group-49df80a869c5",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "淮海中路1323号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "fcdfaa2528ae77567789",
+                "keyword": "淮海中路1323号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-4a95c4a0e30f",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D005-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "太原路238号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D005-01",
+                "code": "5D005",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "太原路238号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/yejohkmtp7bqmas1"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D005-01",
+                "code": "5D005",
+                "title": "太原路238号 住宅",
+                "address": "太原路238号"
+              }
+            ]
+          },
+          "task_fingerprint": "09d72b71411287bf4c6672f417545a25909e76dff75f97c69f9fb777831f0ea7",
+          "dispatch_group_id": "date-group-4a95c4a0e30f",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "太原路238号",
+            "太原路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "be6e9fe2574988d50e3d",
+                "keyword": "太原路238号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "太原路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b26f5e2537c4",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D014-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "武康路210号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D014-01",
+                "code": "5D014",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "武康路210号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E6%AD%A6%E5%BA%B7%E8%B7%AF210%E5%8F%B7%E4%BD%8F%E5%AE%85",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/5cga1cuxin4rph8d"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D014-01",
+                "code": "5D014",
+                "title": "武康路210号 住宅",
+                "address": "武康路210号"
+              }
+            ]
+          },
+          "task_fingerprint": "40160ffe2781693e0f0bda3c029c6f642f76d9bf82ae561d437e339582714245",
+          "dispatch_group_id": "date-group-b26f5e2537c4",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "武康路210号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b34273f7d38cc42d6d0c",
+                "keyword": "武康路210号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-808631859302",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D015-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "高邮路5弄32号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D015-01",
+                "code": "5D015",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "高邮路5弄32号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/b6vkwwc5sdj23x7i"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D015-01",
+                "code": "5D015",
+                "title": "高邮路5弄32号 住宅",
+                "address": "高邮路5弄32号"
+              }
+            ]
+          },
+          "task_fingerprint": "e32818a831020be6d68b51b1fd29d6b573b1c8fabd5a9a6a08bd6257ccba05cb",
+          "dispatch_group_id": "date-group-808631859302",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "高邮路5弄32号",
+            "高邮路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "e3148b358f48f8e7f0cc",
+                "keyword": "高邮路5弄32号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "高邮路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-4073349a143e",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D017-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "武康路392号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D017-01",
+                "code": "5D017",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "武康路392号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/22pelt6uuh6ocbwn"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D017-01",
+                "code": "5D017",
+                "title": "武康路392号 住宅",
+                "address": "武康路392号"
+              }
+            ]
+          },
+          "task_fingerprint": "6991347c3fd3abed0325fa24a9ac936ef59c24254e52a61e089f27e6fc088f98",
+          "dispatch_group_id": "date-group-4073349a143e",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "武康路392号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "09e0075cba724cba7292",
+                "keyword": "武康路392号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6d8b0c662c8e",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D018-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "武康路374、376号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D018-01",
+                "code": "5D018",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "武康路374、376号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/d4qas15iyvawp4bj"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D018-01",
+                "code": "5D018",
+                "title": "武康路376号 住宅",
+                "address": "武康路374、376号"
+              }
+            ]
+          },
+          "task_fingerprint": "4bad4bb68660a22b18317be2a9350f37d9583441b30210206ba6b21fc3b64cf5",
+          "dispatch_group_id": "date-group-6d8b0c662c8e",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "武康路374、376号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "c4a074ea5f613189beca",
+                "keyword": "武康路374、376号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-fe3bb876a3c2",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D019-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "五原路289弄1-2、3-4号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D019-01",
+                "code": "5D019",
+                "original_name": "花园住宅",
+                "listed_name": "住宅",
+                "address": "五原路289弄1-2、3-4号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/w3l5prknm282is3d"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D019-01",
+                "code": "5D019",
+                "title": "五原路289弄1-2、3-4号 花园住宅",
+                "address": "五原路289弄1-2、3-4号"
+              }
+            ]
+          },
+          "task_fingerprint": "e7aba67a3a4b401f32b3f4d6f1d0dba7c4b2f4e77463e519486ed681f17cf8e8",
+          "dispatch_group_id": "date-group-fe3bb876a3c2",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "五原路289弄1-2、3-4号",
+            "五原路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "69bf526ee31425a9171f",
+                "keyword": "五原路289弄1-2、3-4号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "五原路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        },
+        {
+          "task_id": "original-sh-fgj-5D019-01",
+          "event_kind": "名录原名称",
+          "target_name": "花园住宅",
+          "record_address": "五原路289弄1-2、3-4号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D019-01",
+                "code": "5D019",
+                "original_name": "花园住宅",
+                "listed_name": "住宅",
+                "address": "五原路289弄1-2、3-4号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/w3l5prknm282is3d"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D019-01",
+                "code": "5D019",
+                "title": "五原路289弄1-2、3-4号 花园住宅",
+                "address": "五原路289弄1-2、3-4号"
+              }
+            ]
+          },
+          "task_fingerprint": "07fbb478a97672396a978da06114adc18ea3cfe222a05d2e7439f720ca45df0e",
+          "dispatch_group_id": "date-group-fe3bb876a3c2",
+          "priority": 3,
+          "research_question": "核实这个原名称在该门址的有据使用年代；名录所谓原名称也可能是后期用途，不必然是建造时名称。",
+          "date_types_to_check": [
+            "historical_name",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "花园住宅",
+            "五原路289弄1-2、3-4号",
+            "五原路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "69bf526ee31425a9171f",
+                "keyword": "五原路289弄1-2、3-4号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "五原路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-9ee39531d2cd",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D020-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "淮海中路1380号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D020-01",
+                "code": "5D020",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "淮海中路1380号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/n3vwo7sb47ek7gan"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D020-01",
+                "code": "5D020",
+                "title": "淮海中路1380号 住宅",
+                "address": "淮海中路1380号"
+              }
+            ]
+          },
+          "task_fingerprint": "b83fe462b98e179474735be8c149acc652f3e15c0432f4af5d921ae7b2306e24",
+          "dispatch_group_id": "date-group-9ee39531d2cd",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "淮海中路1380号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "302d6b4ecfd5eac41f00",
+                "keyword": "淮海中路1380号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-2f9b7b695c25",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D021-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "复兴西路147号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D021-01",
+                "code": "5D021",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "复兴西路147号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E6%9F%AF%E7%81%B5%E6%95%85%E5%B1%85",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/5df1o5mdn655gkhq"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D021-01",
+                "code": "5D021",
+                "title": "复兴西路147号 住宅",
+                "address": "复兴西路147号"
+              }
+            ]
+          },
+          "task_fingerprint": "ac1ab0efca6f6902ddb2735ddcccc8a87bc7d7bafccb1db54b20ca7a90119cdb",
+          "dispatch_group_id": "date-group-2f9b7b695c25",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "复兴西路147号",
+            "复兴西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "1ae6b381d4ab6c8b152e",
+                "keyword": "复兴西路147号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "复兴西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b9689317005d",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D024-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "桃江路7、15、21、25号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D024-01",
+                "code": "5D024",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "桃江路7、15、21、25号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/5qiv6rseklqo6lw2"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D024-01",
+                "code": "5D024",
+                "title": "桃江路7号-21号 住宅",
+                "address": "桃江路7、15、21、25号"
+              }
+            ]
+          },
+          "task_fingerprint": "2a20ebe7574f5425eee09a2f96be1acf3f7f7de09ebeb1916d840508c6a6e3d4",
+          "dispatch_group_id": "date-group-b9689317005d",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "桃江路7、15、21、25号",
+            "桃江路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "1a50bd62e9eebf3b68e6",
+                "keyword": "桃江路7、15、21、25号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "桃江路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-4b56c97e4196",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D025-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "东平路2-10号（双号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D025-01",
+                "code": "5D025",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "东平路2-10号（双号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/d7bcuw5ydzcnwo7v"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D025-01",
+                "code": "5D025",
+                "title": "东平路2号-10号 住宅",
+                "address": "东平路2-10号（双号）"
+              }
+            ]
+          },
+          "task_fingerprint": "1553abd35480c8cc24ff21afc4e7a9a252c05abf9f6b37926c85069f6d4c310d",
+          "dispatch_group_id": "date-group-4b56c97e4196",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "东平路2-10号",
+            "东平路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "9ca572ec707041fd88af",
+                "keyword": "东平路2-10号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "东平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c681d46f989b",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D028-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "康平路101弄1-4号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D028-01",
+                "code": "5D028",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "康平路101弄1-4号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/ou1egn4d2ymfv5ge"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D028-01",
+                "code": "5D028",
+                "title": "康平路101弄1-4号 住宅",
+                "address": "康平路101弄1-4号"
+              }
+            ]
+          },
+          "task_fingerprint": "778b42d41bd409e5a6b5aaded870dbf0d20b65ab477cee2276ab63e7c17ebb71",
+          "dispatch_group_id": "date-group-c681d46f989b",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "康平路101弄1-4号",
+            "康平路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "22cf0cbe294333b72186",
+                "keyword": "康平路101弄1-4号",
+                "total_hits": 6,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "康平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "81772-108896",
+              "title": "五、上海市第四批（公示）优秀历史建筑一览表",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108896&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "花园住宅 99 太原路50弄1-2号，56弄1-4号，64弄1-4号 并立式住宅 花园住宅 100 东平路5号 上海音乐学院附小图书馆 花园住宅",
+              "from_query": "康平路101弄1-4号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108896&type=-1"
+            },
+            {
+              "id": "81772-108895",
+              "title": "四、上海市人民政府1994、1999年公布的337处上海市优秀历史建筑一览表（第二批、第三批）",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "157 武康路113号 住宅 苏联商务代表处 158 武康路117弄1号 住宅 住宅 159 武康路117弄2号 住宅",
+              "from_query": "康平路101弄1-4号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1"
+            },
+            {
+              "id": "82996-120163",
+              "title": "第一节 专业批发市场、标准化菜场",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=82996&parentNodeId=83629&nodeId=120163&type=-1",
+              "book": "上海市虹口区志1994-2007",
+              "excerpt": "64号101-105室 上海延风副食品市场经营管理有限公司 虹镇老街272号甲 上海沪陵副食品市场经营管理有限公司 运光路27号2楼 上海新高阳百货农贸综合市场经营管理有限公司 高阳路331号",
+              "from_query": "康平路101弄1-4号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=82996&parentNodeId=83629&nodeId=120163&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b4e75a8efdc0",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D029-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "宛平路15号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D029-01",
+                "code": "5D029",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "宛平路15号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/p4oawgqequ1e3peg"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D029-01",
+                "code": "5D029",
+                "title": "宛平路15号 住宅",
+                "address": "宛平路15号"
+              }
+            ]
+          },
+          "task_fingerprint": "b283fd00c663aaa590b6779feb582da5cadb21496872fe77559ed9a884440c7a",
+          "dispatch_group_id": "date-group-b4e75a8efdc0",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "宛平路15号",
+            "宛平路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "1bb0066be4ee319b32b1",
+                "keyword": "宛平路15号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "宛平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-182c9b17f0ae",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D030-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "淮海中路1857弄67号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D030-01",
+                "code": "5D030",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "淮海中路1857弄67号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/jne56obtssmkkw6w"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D030-01",
+                "code": "5D030",
+                "title": "淮海中路1857弄67号 住宅",
+                "address": "淮海中路1857弄67号"
+              }
+            ]
+          },
+          "task_fingerprint": "f2267bca9f8e621e834b9f421c354e49e6d0d36bb72aa5009492c1fa16a3a700",
+          "dispatch_group_id": "date-group-182c9b17f0ae",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "淮海中路1857弄67号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "c39289db85342972b762",
+                "keyword": "淮海中路1857弄67号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-af5d4e353844",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D031-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "康平路196号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D031-01",
+                "code": "5D031",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "康平路196号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/bt0588zat1laa1y8"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D031-01",
+                "code": "5D031",
+                "title": "康平路196号 住宅",
+                "address": "康平路196号"
+              }
+            ]
+          },
+          "task_fingerprint": "c70a639194356ef60d67c3173e1626124216cf7da1cac18d416748b6aef9d76b",
+          "dispatch_group_id": "date-group-af5d4e353844",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "康平路196号",
+            "康平路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "cbd86fe9a8a76000bd5a",
+                "keyword": "康平路196号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "康平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-0853a27c4973",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D032-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "淮海中路1893号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D032-01",
+                "code": "5D032",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "淮海中路1893号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/1m2p7lgu3hfu6wx3"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D032-01",
+                "code": "5D032",
+                "title": "淮海中路1893号 住宅",
+                "address": "淮海中路1893号"
+              }
+            ]
+          },
+          "task_fingerprint": "b552a1ae71aa4751e86effb559c60d2906a44738d58d9bcd27e96e5c973f02e8",
+          "dispatch_group_id": "date-group-0853a27c4973",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "淮海中路1893号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "591955c5cf4fd8effa93",
+                "keyword": "淮海中路1893号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6494f334f341",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D033-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "建国西路395弄1-15号、17号，建国西路397号、399号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D033-01",
+                "code": "5D033",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "建国西路395弄1-15号、17号，建国西路397号、399号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/ti31qyf8eb7kbvi7"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D033-01",
+                "code": "5D033",
+                "title": "建国西路395弄 住宅",
+                "address": "建国西路395弄1-15号、17号，建国西路397号、399号"
+              }
+            ]
+          },
+          "task_fingerprint": "d8c53d1e38e020426561b229fdd4c691d073106483e99b72c456a873d0b6fc9c",
+          "dispatch_group_id": "date-group-6494f334f341",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "建国西路395弄1-15号、17号，建国西路397号、399号",
+            "建国西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "a5c63fe3601de7dbff28",
+                "keyword": "建国西路395弄1-15号、17号，建国西路397号、399号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "建国西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-7895afca5bac",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D034-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "襄阳南路525号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D034-01",
+                "code": "5D034",
+                "original_name": "住宅&上海尚朵文化传播有限公司",
+                "listed_name": "住宅",
+                "address": "襄阳南路525号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/nec7lwka45m2sil7"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D034-01",
+                "code": "5D034",
+                "title": "住宅&上海尚朵文化传播有限公司",
+                "address": "襄阳南路525号"
+              }
+            ]
+          },
+          "task_fingerprint": "d9024d6dfcd74f87c756b8ae57f95edac27b38be5374aaeee95dd0c2cf9963ee",
+          "dispatch_group_id": "date-group-7895afca5bac",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "襄阳南路525号",
+            "襄阳南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "88ed17a6a842d24e831d",
+                "keyword": "襄阳南路525号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "襄阳南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-7889085cb9b0",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-b5-D5035-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "太原路4弄",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-b5-D5035-01",
+                "code": "D5035",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "太原路4弄",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/ja61upa28nw0k60q"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-b5-D5035-01",
+                "code": "D5035",
+                "title": "太原路4弄 住宅",
+                "address": "太原路4弄"
+              }
+            ]
+          },
+          "task_fingerprint": "33e19c13d6bf488223d1295005eb5c0ba77d10fa9c7ed48c52d64dceaed09a0f",
+          "dispatch_group_id": "date-group-7889085cb9b0",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "太原路4弄",
+            "太原路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "346d3ee958806088b189",
+                "keyword": "太原路4弄",
+                "total_hits": 66,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "太原路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "239446-394176",
+              "title": "5．永嘉路街道概况",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239456&nodeId=394176&type=-1",
+              "book": "徐汇区地名志",
+              "excerpt": "以太原路名命名。1985年2月太原居委会又划分成太原、福禄村、岳永三个居委会。本居委会管辖范围：太原路97～219号、110—228号。面积4万平方米。下设11个居民小组，有居民536户，1943人。居委会设在太原路215弄14号。 东平居委会 在街道西北部。以东平路名命名。原是永复居委会的一部分，1984年划出建立。",
+              "from_query": "太原路4弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239456&nodeId=394176&type=-1"
+            },
+            {
+              "id": "239446-394188",
+              "title": "4．街道办事处",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239459&nodeId=394188&type=-1",
+              "book": "徐汇区地名志",
+              "excerpt": "原名常熟区人民政府第八办事处（又称太原路办事处）。始建于1955年4月。当时管辖范围：东临襄阳南路，西靠太原路，南至徐家汇路（今肇嘉浜路），北及永康路。办事处设在襄阳南路388弄绿村4号。设有太原路第一、第二、第三、襄阳南路第四、第五、第六、南丁家弄、徐家汇路1060弄等8个居委会。共有居民3196户，16575人。",
+              "from_query": "太原路4弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=239446&parentNodeId=239459&nodeId=394188&type=-1"
+            },
+            {
+              "id": "4417-53287",
+              "title": "二、国民政府要员寓居表",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4417&parentNodeId=63655&nodeId=53287&type=-1",
+              "book": "徐汇区志",
+              "excerpt": "浙江杭州 财政部江苏直接税局局长 太原路165弄6号 朱鹤翔 凤千 － 上海宝山 外交部顾问 太原路188弄3号 张嘉璈 公权 1889～1979 上海宝山 中央银行总裁",
+              "from_query": "太原路4弄",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4417&parentNodeId=63655&nodeId=53287&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-1131c74d8ebd",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D036-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "复兴中路1365-1377号（单号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D036-01",
+                "code": "5D036",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "复兴中路1365-1377号（单号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/xvigedgfri5mkihb"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D036-01",
+                "code": "5D036",
+                "title": "复兴中路1365-1373号 住宅",
+                "address": "复兴中路1365-1377号（单号）"
+              }
+            ]
+          },
+          "task_fingerprint": "17c9a4356cbe58df995d0da6e161b793ee92d3769b7d3b73833abfd31bdc63ac",
+          "dispatch_group_id": "date-group-1131c74d8ebd",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "复兴中路1365-1377号",
+            "复兴中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "96b6d88e5cf4fa6efd0a",
+                "keyword": "复兴中路1365-1377号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "复兴中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-7d418d49a9cc",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D037-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "肇嘉浜路604号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D037-01",
+                "code": "5D037",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "肇嘉浜路604号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/dmunonpds1lfbdzi"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D037-01",
+                "code": "5D037",
+                "title": "肇嘉浜路604号 住宅",
+                "address": "肇嘉浜路604号"
+              }
+            ]
+          },
+          "task_fingerprint": "0439b65c9c24aac6b614eb03b2fa7a9636c3d3a244aec3815bb006adc739c129",
+          "dispatch_group_id": "date-group-7d418d49a9cc",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "肇嘉浜路604号",
+            "肇嘉浜路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "08dbaf776d3f62e9e0b9",
+                "keyword": "肇嘉浜路604号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "肇嘉浜路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-fe1e8967a72e",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D043-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "延庆路121号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D043-01",
+                "code": "5D043",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "延庆路121号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/azh7bgtnubwur3ug"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D043-01",
+                "code": "5D043",
+                "title": "延庆路121号 住宅",
+                "address": "延庆路121号"
+              }
+            ]
+          },
+          "task_fingerprint": "8ebbf58f246faa68ff2129da58ac8930ce804373d56d9f54a07dbcdc93688ce3",
+          "dispatch_group_id": "date-group-fe1e8967a72e",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "延庆路121号",
+            "延庆路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "2f6cca25b49d67ffa46a",
+                "keyword": "延庆路121号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "延庆路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-83361352c395",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D044-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "新乐路54号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D044-01",
+                "code": "5D044",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "新乐路54号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/yjihxgztjcq6f42j"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D044-01",
+                "code": "5D044",
+                "title": "新乐路54号 住宅",
+                "address": "新乐路54号"
+              }
+            ]
+          },
+          "task_fingerprint": "fc5e7277d4b0a6edf2f2fe6a57aa277cf55e7def952cfad3a6c1828c99a65a07",
+          "dispatch_group_id": "date-group-83361352c395",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "新乐路54号",
+            "新乐路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "2dcb7e14b3b0d66f6e08",
+                "keyword": "新乐路54号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "新乐路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-bd4704080dda",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D046-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "华亭路30、32、42、44、58号,延庆路132号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D046-01",
+                "code": "5D046",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "华亭路30、32、42、44、58号,延庆路132号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/dtm2iwlsbtca1y4i"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D046-01",
+                "code": "5D046",
+                "title": "华亭路40,42,44,58号,延庆路132号 住宅",
+                "address": "华亭路30、32、42、44、58号,延庆路132号"
+              }
+            ]
+          },
+          "task_fingerprint": "f10d4a1f5c36accaf4f7838fefd43543d2e4c4200aa87196537aa0db8fe5a087",
+          "dispatch_group_id": "date-group-bd4704080dda",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "华亭路30、32、42、44、58号,延庆路132号",
+            "华亭路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "4dac39826d98df80fff6",
+                "keyword": "华亭路30、32、42、44、58号,延庆路132号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华亭路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-8fa8e7a15114",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D047-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "延庆路159号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D047-01",
+                "code": "5D047",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "延庆路159号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/t6s23inxxj300g5p"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D047-01",
+                "code": "5D047",
+                "title": "延庆路159号 住宅",
+                "address": "延庆路159号"
+              }
+            ]
+          },
+          "task_fingerprint": "8d4376c02f8b376dee728bef2c97a3fa23cfbdefb160e7ac77ab67847734d67e",
+          "dispatch_group_id": "date-group-8fa8e7a15114",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "延庆路159号",
+            "延庆路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "43d570f0c2eb56d3e8e5",
+                "keyword": "延庆路159号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "延庆路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-fa341ce6d6c5",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D048-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "东湖路51号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D048-01",
+                "code": "5D048",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "东湖路51号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/mox3h20uup56h55m"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D048-01",
+                "code": "5D048",
+                "title": "东湖路51号 住宅",
+                "address": "东湖路51号"
+              }
+            ]
+          },
+          "task_fingerprint": "47c52b81e1936102a7c56740c9d6ae518dfd70e74723132a6c14295e9442053e",
+          "dispatch_group_id": "date-group-fa341ce6d6c5",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "东湖路51号",
+            "东湖路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "4433fb1d56ddb57d8980",
+                "keyword": "东湖路51号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "东湖路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-90a7e15fd531",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D049-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "华亭路93弄1-9号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D049-01",
+                "code": "5D049",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "华亭路93弄1-9号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/gn7uh1ts8zq2yp05"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D049-01",
+                "code": "5D049",
+                "title": "华亭路93弄3号 住宅",
+                "address": "华亭路93弄1-9号"
+              }
+            ]
+          },
+          "task_fingerprint": "868bc53f7a39753cd31dd590ffa156c5c8a8a59bd9d550b927f1671feb5ea8e5",
+          "dispatch_group_id": "date-group-90a7e15fd531",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "华亭路93弄1-9号",
+            "华亭路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "a7bcd4da3663556659b3",
+                "keyword": "华亭路93弄1-9号",
+                "total_hits": 2,
+                "retained_results": 2,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华亭路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 2,
+            "candidates_included": 2
+          },
+          "leads": [
+            {
+              "id": "74728-89600",
+              "title": "第一卷 总述",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=74728&parentNodeId=74728&nodeId=74731&type=147",
+              "book": "上海对外经济贸易志",
+              "excerpt": "上海港兴起 南宋绍兴二年（1132年），两浙路市舶司从临安移驻华亭，“提举市舶司掌蕃华海舶、征榷、贸易之事，以来远人，通远物”。期间与青龙镇通商的国家有50多个，东至朝鲜、日本，西至波斯、阿拉伯等国。输出商品有瓷器、绢帛、大黄、铁器等；输入有香料、珊瑚、象牙、玛瑙等。",
+              "from_query": "华亭路93弄1-9号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=74728&parentNodeId=74728&nodeId=74731&type=147"
+            },
+            {
+              "id": "190317-272864",
+              "title": "卷首",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=5&bookId=190317&parentNodeId=190317&nodeId=190318&type=147",
+              "book": "《21世纪纪事》2007—2009",
+              "excerpt": "5日 上海市文管委、虹口区委、区政府和市委党史研究室在多伦路215号中共四大史料陈列馆前，举行四川北路1593弄（永安里）44号“周恩来同志在沪早期革命活动旧址”挂牌仪式。周恩来侄子、北京大学原副校长周尔鎏先生和家人及有关部门领导出席挂牌仪式。 由国家邮政局主办的“中国2009世界邮展全国60城市巡邮”和“上海集邮节获奖邮集汇报展”在上海邮政博物馆中庭举行。",
+              "from_query": "华亭路93弄1-9号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=5&bookId=190317&parentNodeId=190317&nodeId=190318&type=147"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-117dbc8347ec",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D051-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "华山路823、825、827号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D051-01",
+                "code": "5D051",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "华山路823、825、827号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/77lgdcvbcbqnyokf"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D051-01",
+                "code": "5D051",
+                "title": "华山路823、825、827号 住宅",
+                "address": "华山路823、825、827号"
+              }
+            ]
+          },
+          "task_fingerprint": "f9107739ca04317728361e5aaa53b26a745b712bfba48af2f4bfcb8c6bc6c57f",
+          "dispatch_group_id": "date-group-117dbc8347ec",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "华山路823、825、827号",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "f3d0163881d9069d5fec",
+                "keyword": "华山路823、825、827号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6e8f168f6842",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D052-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "武康路40弄5号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D052-01",
+                "code": "5D052",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "武康路40弄5号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/wvwj3nctqxgtyoc5"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D052-01",
+                "code": "5D052",
+                "title": "武康路40弄5号 住宅",
+                "address": "武康路40弄5号"
+              }
+            ]
+          },
+          "task_fingerprint": "cd5673f937335d32a7f7525f37fc3a3fd5529ad3f2f333bfb7a75d30f391eb69",
+          "dispatch_group_id": "date-group-6e8f168f6842",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "武康路40弄5号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "51ca775a85e1a956b5d2",
+                "keyword": "武康路40弄5号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-599a5f6a4805",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D053-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "安福路255号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D053-01",
+                "code": "5D053",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "安福路255号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/5611olinjytmpobx"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D053-01",
+                "code": "5D053",
+                "title": "安福路255号 住宅",
+                "address": "安福路255号"
+              }
+            ]
+          },
+          "task_fingerprint": "a31346ed89bd19db3f2c43e462079c75e3d3f6a61544f356814385c75dfbbb75",
+          "dispatch_group_id": "date-group-599a5f6a4805",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "安福路255号",
+            "安福路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "42f397a12c4f3584bdb6",
+                "keyword": "安福路255号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "安福路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-f402c0ebe41a",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D054-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "襄阳南路349-355号（单号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D054-01",
+                "code": "5D054",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "襄阳南路349-355号（单号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/h6180tayn1ztccg7"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D054-01",
+                "code": "5D054",
+                "title": "襄阳南路355号 住宅",
+                "address": "襄阳南路349-355号（单号）"
+              }
+            ]
+          },
+          "task_fingerprint": "56cdfdcd68f0827537ee1d346fa4bf500f8b9d51aea96baa3d2e71629f40ff69",
+          "dispatch_group_id": "date-group-f402c0ebe41a",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "襄阳南路349-355号",
+            "襄阳南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "ac05768ffc94ce7fc54d",
+                "keyword": "襄阳南路349-355号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "襄阳南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b56a0a930c25",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D055-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "宛平路42号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D055-01",
+                "code": "5D055",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "宛平路42号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/ik0oss7d0ssp3sbz"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D055-01",
+                "code": "5D055",
+                "title": "宛平路42号 住宅",
+                "address": "宛平路42号"
+              }
+            ]
+          },
+          "task_fingerprint": "09d5c7adbad003251e707f5051c29678db3f6737ae33942e5e074a7481555c34",
+          "dispatch_group_id": "date-group-b56a0a930c25",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "宛平路42号",
+            "宛平路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "fe860ae3a837d0a5532e",
+                "keyword": "宛平路42号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "宛平路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-2bc734c3bddd",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D064-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "新乐路57-61号（单号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D064-01",
+                "code": "5D064",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "新乐路57-61号（单号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/toph61sgdfk2b4rm"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D064-01",
+                "code": "5D064",
+                "title": "新乐路59号 住宅",
+                "address": "新乐路57-61号（单号）"
+              }
+            ]
+          },
+          "task_fingerprint": "21492f052973eb3ef16258d766381cf23e0967abbc12335a05863f246779454e",
+          "dispatch_group_id": "date-group-2bc734c3bddd",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "新乐路57-61号",
+            "新乐路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "15df806aa2adf12e908a",
+                "keyword": "新乐路57-61号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "新乐路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-2702f1755b3f",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D065-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "东湖路56弄51-55号（单号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D065-01",
+                "code": "5D065",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "东湖路56弄51-55号（单号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/5pkaka72lzqontfd"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D065-01",
+                "code": "5D065",
+                "title": "东湖路56弄51,53,55号 住宅",
+                "address": "东湖路56弄51-55号（单号）"
+              }
+            ]
+          },
+          "task_fingerprint": "3e5e95274d0e6ae0b06b5db9dee9e44441a221f14767f1c83cec09164c94a31a",
+          "dispatch_group_id": "date-group-2702f1755b3f",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "东湖路56弄51-55号",
+            "东湖路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b823025577ab8c0936a7",
+                "keyword": "东湖路56弄51-55号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "东湖路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-13ef5d6e51c8",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D066-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "宝庆路9弄1-6号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D066-01",
+                "code": "5D066",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "宝庆路9弄1-6号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/01imcnbcue0mits7"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D066-01",
+                "code": "5D066",
+                "title": "宝庆路9弄 住宅",
+                "address": "宝庆路9弄1-6号"
+              }
+            ]
+          },
+          "task_fingerprint": "601a4214f8d78b158d9af537820eba2a6d7536ce540696ed09340392e1fbce7f",
+          "dispatch_group_id": "date-group-13ef5d6e51c8",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "宝庆路9弄1-6号",
+            "宝庆路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "5245e0cfa4033f76cadd",
+                "keyword": "宝庆路9弄1-6号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "宝庆路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-63b74ea1b8b7",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D067-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "延庆路4弄（2- 44号）、延庆路2-6号（双号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D067-01",
+                "code": "5D067",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "延庆路4弄（2- 44号）、延庆路2-6号（双号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/dfwl1bzqry6n43n0"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D067-01",
+                "code": "5D067",
+                "title": "延庆路4弄，2号 住宅",
+                "address": "延庆路4弄（2- 44号）、延庆路2-6号（双号）"
+              },
+              {
+                "featureId": "landmark-vs-site-390",
+                "title": "延庆路4弄，2号 住宅",
+                "address": "延庆路4弄（2- 44号）、延庆路2-6号（双号）"
+              }
+            ]
+          },
+          "task_fingerprint": "0cfead963450b3a1f55afe69b19ad7cc770fad71b86982215e5451a43ff304b9",
+          "dispatch_group_id": "date-group-63b74ea1b8b7",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "延庆路4弄、延庆路2-6号",
+            "延庆路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "cae00996af2b6fa58508",
+                "keyword": "延庆路4弄、延庆路2-6号",
+                "total_hits": 1,
+                "retained_results": 1,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "延庆路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 1,
+            "candidates_included": 1
+          },
+          "leads": [
+            {
+              "id": "81772-108895",
+              "title": "四、上海市人民政府1994、1999年公布的337处上海市优秀历史建筑一览表（第二批、第三批）",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "-1292号 住宅 住宅 147 华亭路71弄1-7号，延庆路135-149号 住宅 住宅 148 华亭路72、74、76、84、86号，延庆路151-157号 住宅",
+              "from_query": "延庆路4弄、延庆路2-6号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-e16ac2375e39",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D068-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "延庆路51弄（1-26号）、延庆路39-49号（单号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D068-01",
+                "code": "5D068",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "延庆路51弄（1-26号）、延庆路39-49号（单号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/h0osgyezpmjwh7c4"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D068-01",
+                "code": "5D068",
+                "title": "延庆路43-49号、51弄 住宅",
+                "address": "延庆路51弄（1-26号）、延庆路39-49号（单号）"
+              }
+            ]
+          },
+          "task_fingerprint": "9910eb34f58827e4a676f5443f59abdfd8f85b5620a7f323523e6270a216aa68",
+          "dispatch_group_id": "date-group-e16ac2375e39",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "延庆路51弄、延庆路39-49号",
+            "延庆路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "3ec39bc7dbbc4116c1bf",
+                "keyword": "延庆路51弄、延庆路39-49号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "延庆路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-a7564d4f50dc",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D069-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "五原路84弄 （1-34号）， 五原路80-88 号（双号）",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D069-01",
+                "code": "5D069",
+                "original_name": "住宅",
+                "listed_name": "住宅",
+                "address": "五原路84弄 （1-34号）， 五原路80-88 号（双号）",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/ymyngnmlxckevgnf"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D069-01",
+                "code": "5D069",
+                "title": "五原路84弄 住宅",
+                "address": "五原路84弄 （1-34号）， 五原路80-88 号（双号）"
+              }
+            ]
+          },
+          "task_fingerprint": "b0342f06a9eb916d4cee2055b1e10d58ecce4e0b0bc2ee3ed84eef5f8b7b9676",
+          "dispatch_group_id": "date-group-a7564d4f50dc",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "五原路84弄 ， 五原路80-88 号",
+            "五原路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "1eac740268b2196bf25b",
+                "keyword": "五原路84弄 ， 五原路80-88 号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "五原路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c1c54f4e0959",
+      "priority": 3,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "listed-sh-fgj-5D091-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "住宅",
+          "record_address": "武康路129号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D091-01",
+                "code": "5D091",
+                "original_name": "德利那齐宅",
+                "listed_name": "住宅",
+                "address": "武康路129号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/45ob5f3b5swdj5yc"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D091-01",
+                "code": "5D091",
+                "title": "德利那齐宅",
+                "address": "武康路129号"
+              }
+            ]
+          },
+          "task_fingerprint": "03a00a05f8b10016f8944038f6163962494ef39c1231b7659d5f59f1a07a0652",
+          "dispatch_group_id": "date-group-c1c54f4e0959",
+          "priority": 3,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "住宅",
+            "武康路129号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "7aa16707c5d921b58e34",
+                "keyword": "武康路129号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。",
+            "名称泛化或缺失；先核身份，只有路名／邻近位置命中时应保留不足，不能选一家同类机构代替。"
+          ]
+        }
+      ]
+    }
+  ]
+}

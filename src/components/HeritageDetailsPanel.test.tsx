@@ -45,7 +45,7 @@ const linked: LinkedHeritageBuilding = {
     },
   },
   link: {
-    id: 'nanjing-hotel', officialId: 'sh-fgj-4A016-01', landmarkFeatureId: 'landmark-vs-site-609',
+    relation: 'same-listed-building', id: 'nanjing-hotel', officialId: 'sh-fgj-4A016-01', landmarkFeatureId: 'landmark-vs-site-609',
     expectedSourceRecordIds: [609],
     historicalAddresses: [{
       sourceRecordId: 609, address: '200 SHANSI ROAD',
@@ -118,8 +118,8 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard()
     expect(card.querySelectorAll('aside')).toHaveLength(1)
     expect(card.querySelector('h2')?.textContent).toBe('南京饭店')
-    expect(field(card, '所在地址')).toBe(heritage.properties.address)
-    expect(field(card, '建造年代')).toBe('1929年')
+    expect(field(card, '当前地址')).toBe(heritage.properties.address)
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('1929年')
     expect(card.textContent).not.toContain('历史资料年代')
     expect(card.textContent).not.toContain('现用资料记载')
   })
@@ -129,18 +129,18 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard(linked)
     expect(card.querySelectorAll('aside')).toHaveLength(1)
     expect(card.querySelector('h2')?.textContent).toBe('南京饭店')
-    expect(card.querySelector('.details-historical-chinese')?.textContent).toBe('Nanjing Hotel')
-    expect(card.querySelector('.details-kicker')?.textContent).toContain('饭店')
-    expect(card.querySelector('.details-kicker')?.textContent).toContain('第 4 批')
-    expect(field(card, '旧地点地址')).toContain('200 SHANSI ROAD')
-    expect(field(card, '旧地点地址')).toContain('Virtual Shanghai #609')
-    expect(field(card, '所在地址')).toBe(heritage.properties.address)
-    expect(field(card, '维基列表记载地址')).toBe('山西南路200号')
-    expect(field(card, '名录建造年代')).toBe('1929年')
-    expect(field(card, '历史资料年代')).toBe('1931 年资料')
-    expect(field(card, '1931–1949 年')).toContain('Nanjing Hotel')
+    expect(card.querySelector('.place-foreign-name')?.textContent).toBe('Nanjing Hotel')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('南京飯店')
+    expect(card.querySelector('.place-catalogue')?.textContent).toContain('第 4 批')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('200 SHANSI ROAD')
+    expect(card.querySelector('.place-catalogue')?.textContent).toContain('#609')
+    expect(field(card, '当前地址')).toBe('山西南路200号')
+    expect(card.querySelector('.place-questions')?.textContent).toContain('维基列表记载地址：山西南路200号')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('1929年')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('1931–1949 年')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('Nanjing Hotel')
     expect(card.textContent).toContain('Nanking Hotel')
-    expect(card.textContent).toContain('地图位置 · 优秀历史建筑参考点')
+    expect(card.querySelector('.place-catalogue')?.textContent).toContain('上海优秀历史建筑')
     expect(card.textContent).not.toContain('1217')
     expect(linked).toEqual(before)
   })
@@ -153,9 +153,9 @@ describe('HeritageDetailsPanel linked historical site', () => {
       linked.link.historicalAddresses[0].sourceUrl, 'https://example.org/historical-record',
       'https://example.org/identity-history', 'https://example.org/library-use', 'https://example.org/hotel-history',
     ]) expect(urls).toContain(url)
-    expect(field(card, '历史建筑记录')).toBe('Virtual Shanghai #609')
-    expect(field(card, '公布时名称／使用单位')).toBe('南京饭店')
-    expect(field(card, '现用资料记载')).toBe('酒店 / 住宿')
+    expect(card.querySelector('.place-catalogue')?.textContent).toContain('Virtual Shanghai · 建筑记录 #609')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('南京飯店')
+    expect(field(card, '现在用途')).toBe('酒店 / 住宿')
     expect(card.textContent).toContain('上海图书馆 · 用途资料')
     expect(card.textContent).toContain('原建筑延续使用')
   })
@@ -168,8 +168,8 @@ describe('HeritageDetailsPanel linked historical site', () => {
       }
     }
     const card = renderCard(withoutCurrentUse)
-    expect(field(card, '公布时名称／使用单位')).toBe('南京饭店')
-    expect(field(card, '现用资料记载')).toBe('暂未查到可靠对应')
+    expect(card.querySelector('.place-timeline')?.textContent).toContain('南京飯店')
+    expect(card.querySelector('.place-questions')?.textContent).toContain('现址用途与历史地点的对应关系尚未核定')
     expect(card.textContent).not.toContain('酒店 / 住宿')
     expect(card.textContent).not.toContain('上海图书馆 · 用途资料')
   })
@@ -180,8 +180,8 @@ describe('HeritageDetailsPanel linked historical site', () => {
     relocated.landmark.properties.currentNameZh = '后继机构'
     relocated.landmark.properties.currentAddress = '另一条路100号'
     const card = renderCard(relocated)
-    expect(field(card, '所在地址')).toBe(heritage.properties.address)
-    expect(field(card, '机构现址（非历史原址）')).toBe('另一条路100号')
+    expect(field(card, '当前地址')).toBe(heritage.properties.address)
+    expect(field(card, '机构现址（非地图点）')).toBe('另一条路100号')
     expect(field(card, '与历史地点的关系')).toBe('机构延续，但已迁离历史原址')
   })
 
@@ -192,8 +192,8 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard(complex)
     expect(field(card, '对应范围')).toContain('同一名录建筑群／园区')
     expect(field(card, '对应范围')).toContain(complex.link.scopeNote)
-    expect(field(card, '旧地点地址')).toContain(complex.link.historicalAddresses[0].address)
-    expect(field(card, '所在地址')).toBe(heritage.properties.address)
+    expect(card.querySelector('.place-timeline')?.textContent).toContain(complex.link.historicalAddresses[0].address)
+    expect(field(card, '当前地址')).toBe(heritage.properties.address)
   })
 
   it('labels anonymous residential proximity as display grouping, not a verified building match', () => {
@@ -203,7 +203,8 @@ describe('HeritageDetailsPanel linked historical site', () => {
     nearby.link.scopeNote = '同路名且相距8米；未核定同一栋。'
     const card = renderCard(nearby)
     expect(field(card, '对应范围')).toContain('同路段邻近住宅归并（非同栋核定）')
-    expect(field(card, '对应范围')).toContain(nearby.link.scopeNote)
+    expect(field(card, '对应范围')).toContain('同路名且相距8米')
+    expect(card.querySelector('.place-questions')?.textContent).toContain('未核定同一栋')
   })
 
   it('labels an adjacent school record without claiming institutional or building identity', () => {
@@ -221,7 +222,7 @@ describe('HeritageDetailsPanel linked historical site', () => {
     site.link.scopeNote = '1874年旧址记录；1923年现楼启用。'
     site.link.modernAddress = { address: '中山东一路12号', sourceUrl: 'https://example.org/checked-address', title: '地址来源' }
     const card = renderCard(site)
-    expect(field(card, '所在地址')).toBe('中山东一路12号')
+    expect(field(card, '当前地址')).toBe('中山东一路12号')
     expect(field(card, '名录登记地址范围')).toBe(heritage.properties.address)
     expect(field(card, '对应范围')).toContain('同一地点的不同历史阶段')
     expect(card.textContent).toContain('1874年旧址记录；1923年现楼启用。')
@@ -233,9 +234,9 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const value = structuredClone(linked)
     value.link.aliases = ['King Albert Apartments', '金亚尔培公寓']
     const card = renderCard(value)
-    expect(card.querySelector('.details-historical-chinese')?.textContent).toBe('Nanjing Hotel')
-    expect(card.querySelector('.details-aliases')?.textContent).toContain('King Albert Apartments')
-    expect(card.querySelector('.details-aliases')?.textContent).toContain('金亚尔培公寓')
+    expect(card.querySelector('.place-foreign-name')?.textContent).toBe('Nanjing Hotel')
+    expect(field(card, '其他名称')).toContain('King Albert Apartments')
+    expect(field(card, '其他名称')).toContain('金亚尔培公寓')
   })
 
   it('scopes current-use claims to a component instead of the whole listed complex', () => {
@@ -255,6 +256,6 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const card = renderCard(undefined, complex)
     expect(card.textContent).not.toContain('建筑群参考位置')
     expect(card.textContent).not.toContain(complex.properties.locationNote)
-    expect(card.textContent).toContain('所在地址')
+    expect(card.textContent).toContain('当前地址')
   })
 })

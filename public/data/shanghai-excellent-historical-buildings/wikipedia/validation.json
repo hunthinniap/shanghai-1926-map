@@ -21,12 +21,15 @@
     "recordsWithOriginalNameArticleLinks": 421,
     "uniqueArticleTitles": 410,
     "articlesWithAnySourceCoordinate": 142,
-    "recordsWithReferencePoints": 978,
-    "referencePointFeatures": 978,
+    "recordsWithReferencePoints": 1044,
+    "referencePointFeatures": 1044,
     "wikipediaReferencePointFeatures": 100,
     "addressReferencePointFeatures": 878,
-    "recordsWithOnlyCoordinateCandidates": 70,
-    "recordsWithoutSourceCoordinates": 10
+    "reviewedCoordinateReferenceFeatures": 66,
+    "partialCoordinateRecords": 16,
+    "documentedReviewedSourcePoints": 76,
+    "recordsWithOnlyCoordinateCandidates": 12,
+    "recordsWithoutSourceCoordinates": 2
   },
   "inputs": [
     {
@@ -36,13 +39,13 @@
     },
     {
       "file": "wikipedia/list-source.json",
-      "byteLength": 504,
-      "sha256": "5ebd3d388c17f0ea6a0ad95ecbf8480b5d2316d006d1f76fe29bc5808eebd126"
+      "byteLength": 515,
+      "sha256": "2b835f04b94389e24ad46f54a8df02be45768186838f12bdd8b2be7eee5ec8ed"
     },
     {
       "file": "wikipedia/raw/list.html",
-      "byteLength": 1546256,
-      "sha256": "cb99210d8d9ea796fdb495004c3696848a10572bbccc1451b5908c24fed5b901"
+      "byteLength": 1550104,
+      "sha256": "cb064537c1367b4e8ac26ec2ba89016269ddf6a6f727fd5614b558b1c71134ae"
     },
     {
       "file": "wikipedia/article-details.json",
@@ -61,23 +64,38 @@
     },
     {
       "file": "geocoding/results.json",
-      "byteLength": 2173212,
-      "sha256": "d536ead837c7f006ecededb5d689d2cd38cb1443ff9276469d9af3281e965274"
+      "byteLength": 2225461,
+      "sha256": "196a0a5ae0a82bad940f73e47e8c048b9039589f887a2db56835cbd2c06c37d4"
     },
     {
       "repositoryFile": "scripts/data/shanghai-heritage-wikipedia-batch1.json",
-      "byteLength": 26863,
-      "sha256": "53d1b150eafca94441219bea81710b51b3717df2fb5c7f1c1057f228de7da2d9"
+      "byteLength": 27403,
+      "sha256": "b82e135f5d4068df1d0ff52df0d45ff03b928387a2c6cdb45a6393d7f1dd0e35"
     },
     {
       "repositoryFile": "scripts/data/shanghai-heritage-wikipedia-link-scopes.json",
-      "byteLength": 44346,
-      "sha256": "55dfbdaa30b8ba751dce292904825e710aef375926e77eb0ebeb35da0efdadf6"
+      "byteLength": 45261,
+      "sha256": "405a6a22960fac553f0d4f7dbf2ad8b11680f5efd523035b12cabd5f1bb12243"
     },
     {
       "repositoryFile": "scripts/data/shanghai-heritage-coordinate-overrides.json",
-      "byteLength": 1613,
-      "sha256": "8c64998c1261a524efd202e67fe756d0898f086a096dbf85d7955a331e41f2b9"
+      "byteLength": 1649,
+      "sha256": "4e1e70034d3caada9f823c1e687705c1b79b653899fa3945a96322f5834a25df"
+    },
+    {
+      "repositoryFile": "scripts/data/shanghai-heritage-coordinate-approvals.json",
+      "byteLength": 15833,
+      "sha256": "c6f27e1e6b9cfcb9ae3375654411de0a650874ce1c145fac1f10d55a461849e2"
+    },
+    {
+      "repositoryFile": "research/rechecks/2026-10-30-heritage-missing-coordinates/coordinate-review.json",
+      "byteLength": 387925,
+      "sha256": "5fbd33bb50933d6410c09f86ac7dae80d2bd425602eb4ef7f3b343f7fabc6134"
+    },
+    {
+      "repositoryFile": "research/rechecks/2026-10-30-heritage-missing-coordinates/source-manifest.json",
+      "byteLength": 48520,
+      "sha256": "8ee8a0d4e1c3ee2fd00b491f1a2400bd5232b315e4703f292678e9a0ee22dcb0"
     }
   ],
   "checks": {

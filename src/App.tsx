@@ -7,11 +7,15 @@ import { MetroDetailsPanel } from './components/MetroDetailsPanel'
 import { HeritageDetailsPanel } from './components/HeritageDetailsPanel'
 import { SearchBox } from './components/SearchBox'
 import { SourcesPanel } from './components/SourcesPanel'
+import { TimelineControl } from './components/TimelineControl'
+import { historicalFeatureAtYear, heritageFeatureAtYear, historicalSiteVisibleAtYear } from './lib/siteTimeline'
+import { linkedHeritageBuildingPeriod, historicalBuildingPeriod, timelineMinYear, timelineMaxYear, visibleAtYear } from './lib/buildingTimeline'
 import { assetUrl } from './lib/assets'
 import type { HeritageBuildingCollection, HeritageBuildingFeature } from './lib/heritageBuildings'
 import { applyHeritageUses, heritageUseCategories, type HeritageUseIndex } from './lib/heritageUses'
+import { applyReviewedHeritageConstructionDates } from './lib/heritageConstructionDates'
 import type { MetroStationSelection } from './lib/metroLabels'
-import { makeSearchRecords } from './lib/search'
+import { makePlaceSearchRecords } from './lib/search'
 import { mergeCuratedParkFeatures } from './lib/parkLabels'
 import { mergeLandmarkSites } from './lib/landmarkSites'
 import { landmarkSiteLinksWithSources } from './data/landmarkSiteSourceAdditions'
@@ -44,11 +48,14 @@ function App() {
   const [highlightedJurisdiction, setHighlightedJurisdiction] = useState<HighlightedJurisdiction>()
   const [selectedMetroStation, setSelectedMetroStation] = useState<MetroStationSelection>()
   const [mapKey, setMapKey] = useState(0)
+  const [timelineYear, setTimelineYear] = useState<number | null>(null)
+  const [includeUnknownDates, setIncludeUnknownDates] = useState(false)
+  const [searchHasQuery, setSearchHasQuery] = useState(false)
   const selectedNeedsHeritage = Boolean(selectedGroupId && data?.features.features.some((feature) =>
     feature.properties.featureGroupId === selectedGroupId
     && reviewedHeritageLinks.some((link) => [link, ...(link.additionalLandmarks ?? [])]
       .some((member) => member.landmarkFeatureId === feature.properties.id))))
-  const needsHeritage = heritageVisible || landmarksVisible || selectedNeedsHeritage
+  const needsHeritage = heritageVisible || landmarksVisible || selectedNeedsHeritage || searchHasQuery
 
   useEffect(() => {
     let cancelled = false
@@ -114,7 +121,7 @@ function App() {
           throw new Error('历史建筑数据格式有误')
         }
         if (!controller.signal.aborted) {
-          setHeritageBuildings(applyHeritageUses(collection, uses))
+          setHeritageBuildings(applyHeritageUses(applyReviewedHeritageConstructionDates(collection), uses))
           setHeritageLoading(false)
         }
       })
@@ -144,26 +151,75 @@ function App() {
   const linkedBuildings = useMemo(() => data
     ? linkHeritageLandmarks(data.features, heritageBuildings, reviewedHeritageLinks) : undefined,
   [data, heritageBuildings])
+  const historicalPeriods = useMemo(() => new Map(
+    (linkedBuildings?.features.features ?? []).map(feature => [feature.properties.featureGroupId,
+      historicalBuildingPeriod(feature, linkedBuildings?.byGroupId.get(feature.properties.featureGroupId))]),
+  ), [linkedBuildings])
+  const heritagePeriods = useMemo(() => new Map(
+    (heritageBuildings?.features ?? []).map(feature => [feature.properties.officialId,
+      linkedHeritageBuildingPeriod(feature, linkedBuildings?.byOfficialId.get(feature.properties.officialId))]),
+  ), [heritageBuildings, linkedBuildings])
+  const datedFeatures = useMemo(() => linkedBuildings && ({ ...linkedBuildings.features,
+    features: linkedBuildings.features.features.filter(feature => feature.properties.kind === 'road'
+      || historicalSiteVisibleAtYear(feature, historicalPeriods.get(feature.properties.featureGroupId)!, timelineYear, includeUnknownDates))
+      .map(feature => historicalFeatureAtYear(feature, timelineYear)),
+  }), [linkedBuildings, historicalPeriods, timelineYear, includeUnknownDates])
+  const datedHeritage = useMemo(() => heritageBuildings && ({ ...heritageBuildings,
+    features: heritageBuildings.features.filter(feature =>
+      visibleAtYear(heritagePeriods.get(feature.properties.officialId)!, timelineYear, includeUnknownDates))
+      .map(feature => heritageFeatureAtYear(feature, timelineYear, linkedBuildings?.byOfficialId.get(feature.properties.officialId))),
+  }), [heritageBuildings, heritagePeriods, linkedBuildings, timelineYear, includeUnknownDates])
   const searchRecords = useMemo(
-    () => (linkedBuildings ? makeSearchRecords(withReviewedHeritageAliases(linkedBuildings.features.features, reviewedHeritageLinks)) : []),
-    [linkedBuildings],
+    () => makePlaceSearchRecords(
+      datedFeatures ? withReviewedHeritageAliases(datedFeatures.features, reviewedHeritageLinks) : [],
+      heritageBuildings?.features ?? [],
+      new Map([...(linkedBuildings?.byOfficialId ?? [])].map(([id, linked]) => [id, linked.landmark.properties.featureGroupId])),
+    ),
+    [datedFeatures, heritageBuildings, linkedBuildings],
   )
   const selectedFeature = useMemo<HistoricalFeature | undefined>(
-    () => data?.features.features.find((feature) => feature.properties.featureGroupId === selectedGroupId),
-    [data, selectedGroupId],
+    () => datedFeatures?.features.find((feature) => feature.properties.featureGroupId === selectedGroupId),
+    [datedFeatures, selectedGroupId],
   )
-  const selectedLinkedBuilding = selectedHeritage
+  const rawSelectedLinkedBuilding = selectedHeritage
     ? linkedBuildings?.byOfficialId.get(selectedHeritage.properties.officialId)
     : selectedGroupId ? linkedBuildings?.byGroupId.get(selectedGroupId) : undefined
-  const activeHeritage = selectedLinkedBuilding?.heritage ?? selectedHeritage
+  const selectedLinkedBuilding = rawSelectedLinkedBuilding && { ...rawSelectedLinkedBuilding,
+    landmark: historicalFeatureAtYear(rawSelectedLinkedBuilding.landmark, timelineYear) }
+  const activeOfficialId = (selectedLinkedBuilding?.heritage ?? selectedHeritage)?.properties.officialId
+  const activeHeritage = datedHeritage?.features.find(feature => feature.properties.officialId === activeOfficialId)
   const activeGroupId = selectedLinkedBuilding?.landmark.properties.featureGroupId ?? selectedGroupId
   // When both layers are enabled, use the heritage marker for shared buildings.
   const mapFeatures = useMemo(() => {
-    if (!linkedBuildings) return data?.features
-    if (!heritageVisible) return linkedBuildings.features
-    return { ...linkedBuildings.features, features: linkedBuildings.features.features.filter((feature) =>
-      !feature.properties.heritageOfficialId) }
-  }, [data, linkedBuildings, heritageVisible])
+    if (!datedFeatures) return data?.features
+    if (!heritageVisible) return datedFeatures
+    const visibleIds = new Set(datedHeritage?.features.map(feature => feature.properties.officialId))
+    return { ...datedFeatures, features: datedFeatures.features.filter(feature =>
+      !feature.properties.heritageOfficialId || !visibleIds.has(feature.properties.heritageOfficialId)) }
+  }, [data, datedFeatures, datedHeritage, heritageVisible])
+  const visibleBuildingCount = (landmarksVisible
+    ? mapFeatures?.features.filter(feature => feature.properties.kind === 'landmark').length ?? 0 : 0)
+    + (heritageVisible ? datedHeritage?.features.length ?? 0 : 0)
+  const unknownBuildingCount = useMemo(() => {
+    const heritageIds = new Set(heritageVisible ? heritageBuildings?.features.map(feature => feature.properties.officialId) : [])
+    const landmarks = landmarksVisible ? (linkedBuildings?.features.features ?? []).filter(feature =>
+      feature.properties.kind === 'landmark'
+      && !heritageIds.has(feature.properties.heritageOfficialId ?? '')
+      && historicalPeriods.get(feature.properties.featureGroupId)?.startYear === undefined).length : 0
+    return landmarks + (heritageVisible ? [...heritagePeriods.values()].filter(period => period.startYear === undefined).length : 0)
+  }, [heritageVisible, landmarksVisible, heritageBuildings, linkedBuildings, historicalPeriods, heritagePeriods])
+
+  useEffect(() => {
+    if (timelineYear === null) return
+    if (selectedGroupId && historicalPeriods.has(selectedGroupId)
+      && data?.features.features.some(feature => feature.properties.featureGroupId === selectedGroupId && feature.properties.kind === 'landmark')
+      && !datedFeatures?.features.some(feature => feature.properties.featureGroupId === selectedGroupId)) {
+      setSelectedGroupId(undefined)
+    }
+    if (selectedHeritage && !visibleAtYear(heritagePeriods.get(selectedHeritage.properties.officialId)!, timelineYear, includeUnknownDates)) {
+      setSelectedHeritage(undefined)
+    }
+  }, [timelineYear, includeUnknownDates, historicalPeriods, heritagePeriods, datedFeatures, data, selectedGroupId, selectedHeritage])
   const roadCount = useMemo(
     () =>
       data
@@ -186,6 +242,13 @@ function App() {
   )
 
   const handleMapError = useCallback((message?: string) => setMapError(message), [])
+  const changeTimelineYear = useCallback((year: number | null) => {
+    setTimelineYear(year)
+    if (year !== null && !heritageVisible && !landmarksVisible) {
+      setHeritageVisible(true)
+      setLandmarksVisible(true)
+    }
+  }, [heritageVisible, landmarksVisible])
   const selectHistoricalFeature = useCallback((groupId: string) => {
     setSelectedMetroStation(undefined)
     setSelectedHeritage(undefined)
@@ -237,7 +300,18 @@ function App() {
 
         <SearchBox
           records={searchRecords}
-          onSelect={(record) => selectHistoricalFeature(record.featureGroupId)}
+          onQueryChange={(query) => setSearchHasQuery(Boolean(query.trim()))}
+          loading={heritageLoading}
+          onSelect={(record) => {
+            if (record.heritageOfficialId) {
+              const building = heritageBuildings?.features.find(feature => feature.properties.officialId === record.heritageOfficialId)
+              if (!building) return
+              // Keep the selected point and card visible under the same date filter.
+              if (!datedHeritage?.features.some(feature => feature.properties.officialId === record.heritageOfficialId)) setTimelineYear(null)
+              setHeritageVisible(true)
+              selectHeritageBuilding(building)
+            } else selectHistoricalFeature(record.featureGroupId)
+          }}
         />
 
         <div className="topbar-actions">
@@ -315,11 +389,12 @@ function App() {
           buildingsVisible={buildingsVisible}
           landmarksVisible={landmarksVisible}
           heritageVisible={heritageVisible}
-          heritageBuildings={heritageBuildings}
-          selectedHeritage={heritageVisible ? activeHeritage : undefined}
+          heritageBuildings={datedHeritage}
+          selectedHeritage={heritageVisible && activeHeritage
+            && visibleAtYear(heritagePeriods.get(activeHeritage.properties.officialId)!, timelineYear, includeUnknownDates) ? activeHeritage : undefined}
           subwayVisible={metroEnabled && subwayVisible}
           highlightedJurisdiction={highlightedJurisdiction}
-          selectedGroupId={selectedLinkedBuilding && heritageVisible ? undefined : activeGroupId}
+          selectedGroupId={selectedLinkedBuilding && activeHeritage && heritageVisible ? undefined : activeGroupId}
           selectedMetroStation={metroEnabled ? selectedMetroStation : undefined}
           onSelect={selectHistoricalFeature}
           onSelectMetro={selectMetroStation}
@@ -338,7 +413,7 @@ function App() {
           {heritageVisible && !heritageError && (
             <small className="heritage-caption" role="status">
               <i aria-hidden="true" />
-              {heritageBuildings ? `${heritageBuildings.features.length} 处历史建筑参考点` : '正在载入历史建筑……'}
+              {datedHeritage ? `${datedHeritage.features.length} 处历史建筑参考点` : '正在载入历史建筑……'}
             </small>
           )}
           {heritageVisible && heritageBuildings && (
@@ -376,6 +451,11 @@ function App() {
           </button>
         </div>
 
+        <TimelineControl year={timelineYear} minYear={timelineMinYear} maxYear={timelineMaxYear}
+          visibleCount={visibleBuildingCount} unknownCount={unknownBuildingCount}
+          includeUnknown={includeUnknownDates} loading={needsHeritage && heritageLoading}
+          onYearChange={changeTimelineYear} onIncludeUnknownChange={setIncludeUnknownDates} />
+
         {needsHeritage && heritageError && (
           <div className="heritage-load-error" role="alert">
             <span>{heritageError}</span>
@@ -401,7 +481,7 @@ function App() {
         )}
       </section>
 
-      <DetailsPanel feature={selectedLinkedBuilding ? undefined : selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
+      <DetailsPanel feature={selectedLinkedBuilding && activeHeritage ? undefined : selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
       {metroEnabled && <MetroDetailsPanel station={selectedMetroStation} onClose={() => setSelectedMetroStation(undefined)} />}
       <HeritageDetailsPanel feature={activeHeritage} linked={selectedLinkedBuilding} onClose={() => {
         setSelectedHeritage(undefined)

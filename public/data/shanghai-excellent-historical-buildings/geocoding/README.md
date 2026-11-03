@@ -1,5 +1,7 @@
 # 优秀历史建筑门址及坐标补查
 
+最新增量：剩余80项经逐项研究和用户批准，新增66项（50项有来源、16项部分定位），地图现为**1044／1058项**。完整76个来源位置见[回填来源档案](reviewed-coordinate-backfill.json)，一项仍只对应一个主标记。原978项不变；13条候选经再次核查仍待核、另1条无可用坐标。研究、批准及核验见仓库 `research/rechecks/2026-10-30-heritage-missing-coordinates/map-integration/README.md`。以下913项／878点统计保留为前一轮调查范围。
+
 本轮固定调查原来 `no-source-coordinate` 的 **913 项**。已补入 **878 个来源参考点**：上海图书馆 871 项，OpenStreetMap 独立复核 7 项。其余 **35 项**保留待核：25 项有候选但存在门牌、对象范围、迁移或坐标异常，10 项未找到有据可用点位。加上原有 100 个维基参考点，地图现展示 **978 项／1058 项**；原有另外 45 项维基候选仍待核，未在本轮自动替换。
 
 ## 定位含义
@@ -15,7 +17,7 @@
 - [targets.json](targets.json)：本轮开始时913项的不可变输入快照、原名、完整地址、源文件 SHA-256。
 - [address-plan.json](address-plan.json)：逐条查询地址、范围及楼栋限制、同址保护项和原始地址差异。
 - [results.json](results.json)：913项完整结果，含选择／暂缓理由、候选、源坐标、转换结果及来源链接。
-- [locations.geojson](locations.geojson)：878个新增参考点；与原维基100点合并到 [../map-buildings.geojson](../map-buildings.geojson)。
+- [locations.geojson](locations.geojson)：前一轮878个新增参考点；与原维基100点及本次66点合并到 [../map-buildings.geojson](../map-buildings.geojson)。
 - [review-queue.json](review-queue.json)：剩余35项，保留可继续检索的门牌查询。
 - [library-residual-review.json](library-residual-review.json)：82项复杂名称及门牌的逐项人工对照。
 - [library-coordinate-audit.json](library-coordinate-audit.json)：55个独立位置对照、共用坐标异常、来源计数及坐标系复核。

@@ -22,7 +22,7 @@
 - [anomalies.json](anomalies.json)：原网页的重复／异常编号、缺项和控制字符。
 - [validation.json](validation.json)：快照哈希、逐批计数、全部 HTML 表格行分类核对。
 - [buildings-enriched.json](buildings-enriched.json)：官网1058条与维基名单逐项对应后的独立增强版，包含双方地址、建造年代、层数、结构、设计者、条目链接及有来源的坐标候选。
-- [wikipedia/README.md](wikipedia/README.md)：维基采集、对应规则、来源许可、覆盖统计与复核队列；[locations.geojson](wikipedia/locations.geojson)保留原100个建筑/建筑群参考点。新增[门址坐标补查](geocoding/README.md)为原913项补入878点；合并地图共978点，其余35项本轮待核及原45项维基候选继续保留。
+- [wikipedia/README.md](wikipedia/README.md)：维基采集、对应规则、来源许可、覆盖统计与复核队列；[locations.geojson](wikipedia/locations.geojson)保留原100个建筑/建筑群参考点。[门址坐标补查](geocoding/README.md)先为原913项补入878点，随后剩余80项中66项经用户批准回填，合并地图现1044项。16项为部分定位，另14项仍未上图。
 
 ## 记录字段
 

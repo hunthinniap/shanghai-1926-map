@@ -49,7 +49,7 @@ it('clears a pending shared-building selection when its last visible layer is cl
     await act(async () => root.render(<App />))
     await click('.landmark-toggle-button')
     await click('[data-testid="landmark"]')
-    expect(container.querySelector('.details-panel h2')?.textContent).toBe('Nanjing Hotel')
+    expect(container.querySelector('.details-panel h2')?.textContent).toBe('南京饭店')
     await click('.landmark-toggle-button')
     expect(container.querySelector('.details-panel')).toBeNull()
     await act(async () => resolveHeritage({ ok: true, json: async () => ({ type: 'FeatureCollection', features: [heritage] }) }))

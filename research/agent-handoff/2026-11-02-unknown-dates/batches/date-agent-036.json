@@ -1,0 +1,4959 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "shanghai-unknown-dates-2026-11-02",
+  "prepared_on": "2026-11-02",
+  "scope": "Remaining undated events in current all-years map cards; event counts are not building counts. Only research and report. No direct map edits.",
+  "inventory_source": "research/rechecks/2026-11-01-shtong-unknown-dates/inventory-for-agent-handoff.json",
+  "inventory_sha256": "b4a41be00c6cfc9343af0f30f33b3be3cdbd05ee8c9fd1fbfcbd85d46c73c24a",
+  "total_events": 2227,
+  "total_dispatch_groups": 1878,
+  "database_entry": "https://szfz.shtong.gov.cn/difangzhi-front/book/index?oneId=1",
+  "batch_id": "date-agent-036",
+  "batch_event_count": 50,
+  "batch_group_count": 46,
+  "result_schema": "result-schema.json",
+  "groups": [
+    {
+      "group_id": "date-group-f18ff001eece",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1754-Felix Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Felix Apartments",
+          "record_address": "1317 ROUTE LAFAYETTE",
+          "identity": {
+            "source_record_id": 1754,
+            "original_record": {
+              "id": 1754,
+              "name": "FELIX APARTMENTS",
+              "name_zh": null,
+              "address": "1317 ROUTE LAFAYETTE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1754",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1754",
+                "title": "Felix Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "b8e1c96a283b5504226293cf6faed284f1ee79bfe130522102d17f4f39025f82",
+          "dispatch_group_id": "date-group-f18ff001eece",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1754",
+          "suggested_queries": [
+            "Felix Apartments",
+            "复兴中路 Felix Apartments",
+            "复兴中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "198d319e42563708742f",
+                "keyword": "Felix Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "9b82f363bd65a3315475",
+                "keyword": "复兴中路 Felix Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "复兴中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c6f618973959",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1112-First Church of Christ Scientist-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "First Church of Christ Scientist",
+          "record_address": "1623 AVENUE ROAD",
+          "identity": {
+            "source_record_id": 1112,
+            "original_record": {
+              "id": 1112,
+              "name": "First Church of Christ Scientist",
+              "name_zh": null,
+              "address": "1623 AVENUE ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1112",
+              "types": {
+                "TYP01": "Religious facility",
+                "TYP02": "Church",
+                "TYP03": null,
+                "TYP04": "Religious",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": "Protestant",
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1112",
+                "title": "上海市医学会办公楼",
+                "address": "静安区北京西路1623—1647号"
+              }
+            ]
+          },
+          "task_fingerprint": "e95a650b033dabd1ac21927b353f3aa4f51a7a130b0150a2b90ca49619f7cb38",
+          "dispatch_group_id": "date-group-c6f618973959",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1112",
+          "suggested_queries": [
+            "First Church of Christ Scientist",
+            "静安区北京西路1623—1647号",
+            "北京西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "3e1b0ddd26daf4a5537b",
+                "keyword": "First Church of Christ Scientist",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "9a59d82562dbd45318fe",
+                "keyword": "静安区北京西路1623—1647号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "北京西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-69fd432f7d52",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1770-Foncim Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Foncim Apartments",
+          "record_address": "643 ROUTE JOSEPH FRELUPT",
+          "identity": {
+            "source_record_id": 1770,
+            "original_record": {
+              "id": 1770,
+              "name": "FONCIM APARTMENTS",
+              "name_zh": null,
+              "address": "643 ROUTE JOSEPH FRELUPT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1770",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-4D040-01",
+                "code": "4D040",
+                "original_name": "方建公寓/建成公寓",
+                "listed_name": "建安公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号",
+                "original_construction_text": "1932年",
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E5%AE%89%E8%B7%AF",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/szkx5fmhqt3htpok"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-4D040-01",
+                "code": "4D040",
+                "title": "方建公寓/建成公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号"
+              },
+              {
+                "featureId": "landmark-vs-site-1770",
+                "title": "方建公寓/建成公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号"
+              }
+            ]
+          },
+          "task_fingerprint": "c0bfa8984fada7ddb3eaa78d74925e2d8f679444c72e9de8e4aeb16a69b944bf",
+          "dispatch_group_id": "date-group-69fd432f7d52",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1770",
+          "suggested_queries": [
+            "Foncim Apartments",
+            "高安路78弄1-3号，建国西路641-645号",
+            "高安路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "7562d03b105865185b17",
+                "keyword": "Foncim Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "30a233d9e7106d28b022",
+                "keyword": "高安路78弄1-3号，建国西路641-645号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "高安路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        },
+        {
+          "task_id": "listed-sh-fgj-4D040-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "建安公寓",
+          "record_address": "高安路78弄1-3号，建国西路641-645号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-4D040-01",
+                "code": "4D040",
+                "original_name": "方建公寓/建成公寓",
+                "listed_name": "建安公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号",
+                "original_construction_text": "1932年",
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E5%AE%89%E8%B7%AF",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/szkx5fmhqt3htpok"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-4D040-01",
+                "code": "4D040",
+                "title": "方建公寓/建成公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号"
+              },
+              {
+                "featureId": "landmark-vs-site-1770",
+                "title": "方建公寓/建成公寓",
+                "address": "高安路78弄1-3号，建国西路641-645号"
+              }
+            ]
+          },
+          "task_fingerprint": "06df033cc78b9f160768fa92a260e586a5486d367b41d87d56ea561dd59bd63b",
+          "dispatch_group_id": "date-group-69fd432f7d52",
+          "priority": 2,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "suggested_queries": [
+            "建安公寓",
+            "高安路78弄1-3号，建国西路641-645号",
+            "高安路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "cb249f5a4ec564c3d735",
+                "keyword": "建安公寓",
+                "total_hits": 136,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              },
+              {
+                "id": "30a233d9e7106d28b022",
+                "keyword": "高安路78弄1-3号，建国西路641-645号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "高安路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "355736-658752",
+              "title": "第五节社区稳定、治安防范",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=355736&parentNodeId=356485&nodeId=658752&type=-1",
+              "book": "上海市长宁区志1993-2005",
+              "excerpt": "四、高级公寓别墅管理 从1995年开始，街道主动介入公寓别墅群社区管理工作。1996～1999年，进行治安防范工作专题调查，开展创建安全公寓别墅竞赛活动，制订程家桥地区安全公寓别墅标准，每年评选1次。在20家公寓别墅着力推进“人防、物防、技防”设施建设。推动和促进各公寓别墅“三防”工作上新台阶，确保一方平安。2003年，成立公寓别墅管理科，探索做好辖区公寓别墅的公共管理方法。",
+              "from_query": "建安公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=355736&parentNodeId=356485&nodeId=658752&type=-1"
+            },
+            {
+              "id": "197301-299807",
+              "title": "卢湾区文明行业",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=197301&parentNodeId=197375&nodeId=299807&type=-1",
+              "book": "卢湾年鉴2002",
+              "excerpt": "怡绿小区 蒙自小区 开源小区 斜土小区 铁一小区 龙新小区 裕兴小区 恭达小区 中一小区 局二小区 蒙新小区 新世纪小区 中辉小区 明德坊小区 打浦桥街道（38个） 蒙西小区 瑞金小区 建国小区 新苑小区 思南小区 祥安小区 原水小区 华电小区 园景苑小区 晴苑小区 丽文小区 局后小区 顺风小区 育苑小区 城申小区 玉兰小区 建安小区",
+              "from_query": "建安公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=197301&parentNodeId=197375&nodeId=299807&type=-1"
+            },
+            {
+              "id": "206153-325589",
+              "title": "【社区管理】",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=206153&parentNodeId=206404&nodeId=325589&type=-1",
+              "book": "宝山年鉴1999",
+              "excerpt": "在创建安全小区工作中，不断完善看家网，创建社区、物业保安队伍，至年底已有社区、物业保安队12个，队员652人，创建市级安全小区50个，区级安全小区118个，街道(镇)级安全小区72个。",
+              "from_query": "建安公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=206153&parentNodeId=206404&nodeId=325589&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-57931cc57ce1",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-889-Fourth Marine Club-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Fourth Marine Club",
+          "record_address": "722 BURKILL ROAD",
+          "identity": {
+            "source_record_id": 889,
+            "original_record": {
+              "id": 889,
+              "name": "Fourth Marine Club",
+              "name_zh": null,
+              "address": "722 BURKILL ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=889",
+              "types": {
+                "TYP01": "Recreational facility",
+                "TYP02": "Indoor facility",
+                "TYP03": "Club",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-889",
+                "title": "Fourth Marine Club"
+              }
+            ]
+          },
+          "task_fingerprint": "62c5c59c1fc856f4139bdb6562a0272d2996c763d75a004529b498100da260bf",
+          "dispatch_group_id": "date-group-57931cc57ce1",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=889",
+          "suggested_queries": [
+            "Fourth Marine Club",
+            "凤阳路 Fourth Marine Club",
+            "凤阳路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "02da838a4076c46be86e",
+                "keyword": "Fourth Marine Club",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "efaab73aa4fff62901fa",
+                "keyword": "凤阳路 Fourth Marine Club",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "凤阳路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6e10a9296b57",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-164-Franciscan Procuration-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Franciscan Procuration",
+          "record_address": "141 AVENUE DUBAIL",
+          "identity": {
+            "source_record_id": 164,
+            "original_record": {
+              "id": 164,
+              "name": "Franciscan Procuration",
+              "name_zh": null,
+              "address": "141 AVENUE DUBAIL",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=164",
+              "types": {
+                "TYP01": "Religious facility",
+                "TYP02": "Mission headquarter",
+                "TYP03": null,
+                "TYP04": "Religious",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": "Catholic",
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-164",
+                "title": "方济堂旧址",
+                "address": "黄浦区重庆南路139号"
+              }
+            ]
+          },
+          "task_fingerprint": "4974640141128f18bd3d234c3565435988cfbb346584459490bc7f894cfdce50",
+          "dispatch_group_id": "date-group-6e10a9296b57",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=164",
+          "suggested_queries": [
+            "Franciscan Procuration",
+            "黄浦区重庆南路139号",
+            "重庆南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "ac5ade7fa0191e7aa426",
+                "keyword": "Franciscan Procuration",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "c9282262f5abd7c3b73a",
+                "keyword": "黄浦区重庆南路139号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "重庆南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-22a0e8b3bb5d",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-132-French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)",
+          "record_address": "361 RUE CHAPSAL",
+          "identity": {
+            "source_record_id": 132,
+            "original_record": {
+              "id": 132,
+              "name": "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)",
+              "name_zh": null,
+              "address": "361 RUE CHAPSAL",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=132",
+              "types": {
+                "TYP01": "Community facility",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-132",
+                "title": "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)"
+              }
+            ]
+          },
+          "task_fingerprint": "3bce745ab579bcb157ab904b0b0fbb581c755607719b275d9e61d8025c8a1887",
+          "dispatch_group_id": "date-group-22a0e8b3bb5d",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=132",
+          "suggested_queries": [
+            "French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Familles Russes)",
+            "French Association of Assistance to Russian Families",
+            "淡水路 French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Famill",
+            "淡水路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "e68e1c8b887b9c0b1d25",
+                "keyword": "French Association of Assistance to Russian Families",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "72dfa2ff3aa6e32c1ba1",
+                "keyword": "淡水路 French Association of Assistance to Russian Families (Oeuvres Françaises d'assistance aux Famill",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淡水路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-ae9b253ed907",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-343-French China Field Second Battalion (2ème Bataillon de Marche de Chine)-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "French China Field Second Battalion (2ème Bataillon de Marche de Chine)",
+          "record_address": "412 AVENUE DU ROI ALBERT",
+          "identity": {
+            "source_record_id": 343,
+            "original_record": {
+              "id": 343,
+              "name": "French China Field Second Battalion (2ème Bataillon de Marche de Chine)",
+              "name_zh": null,
+              "address": "412 AVENUE DU ROI ALBERT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=343",
+              "types": {
+                "TYP01": "Military facility",
+                "TYP02": "Camp",
+                "TYP03": "Barracks",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-340",
+                "title": "French China Field Second Battalion (2ème Bataillon de Marche de Chine)"
+              }
+            ]
+          },
+          "task_fingerprint": "89af6adc3d0515703541e2829bd9a74a26ab7b846a00159f2dd398bf6b172ca0",
+          "dispatch_group_id": "date-group-ae9b253ed907",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=343",
+          "suggested_queries": [
+            "French China Field Second Battalion (2ème Bataillon de Marche de Chine)",
+            "French China Field Second Battalion",
+            "陕西南路 French China Field Second Battalion (2ème Bataillon de Marche de Chine)",
+            "陕西南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "dc9c025fa4a082580361",
+                "keyword": "French China Field Second Battalion",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "d549a1babfa6e0ac9839",
+                "keyword": "陕西南路 French China Field Second Battalion (2ème Bataillon de Marche de Chine)",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "陕西南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        },
+        {
+          "task_id": "record-340-Basket Ball Playground-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Basket Ball Playground",
+          "record_address": "412 AVENUE DU ROI ALBERT",
+          "identity": {
+            "source_record_id": 340,
+            "original_record": {
+              "id": 340,
+              "name": "Basket Ball Playground",
+              "name_zh": null,
+              "address": "412 AVENUE DU ROI ALBERT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=340",
+              "types": {
+                "TYP01": "Recreational facility",
+                "TYP02": "Sport facility",
+                "TYP03": "Ball game field",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-340",
+                "title": "French China Field Second Battalion (2ème Bataillon de Marche de Chine)"
+              }
+            ]
+          },
+          "task_fingerprint": "3f5f3bec3ec516808ff94ec5bd5be161bfbecad2ad2756f0b310a015f3b0ec18",
+          "dispatch_group_id": "date-group-ae9b253ed907",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=340",
+          "suggested_queries": [
+            "Basket Ball Playground",
+            "陕西南路 Basket Ball Playground",
+            "陕西南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "e96b9931c383d5de5555",
+                "keyword": "Basket Ball Playground",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "f397f0df6360725a0154",
+                "keyword": "陕西南路 Basket Ball Playground",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "陕西南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-8fde6b8a8e03",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-212-French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices",
+          "record_address": "249 AVENUE DUBAIL",
+          "identity": {
+            "source_record_id": 212,
+            "original_record": {
+              "id": 212,
+              "name": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices",
+              "name_zh": null,
+              "address": "249 AVENUE DUBAIL",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=212",
+              "types": {
+                "TYP01": "Industrial site",
+                "TYP02": "Public utility",
+                "TYP03": "Power generation site",
+                "TYP04": "power plant",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-212",
+                "title": "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices"
+              }
+            ]
+          },
+          "task_fingerprint": "d45512124e1a73e3542dd4b0b6ef59bc57964d9f8808a09339c0f38da6d98b30",
+          "dispatch_group_id": "date-group-8fde6b8a8e03",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=212",
+          "suggested_queries": [
+            "French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Electriques de Shanghai) - Offices",
+            "French Company of Tramways and Electricity - Offices",
+            "重庆南路 French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Elec",
+            "重庆南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "01680b958a7d80961700",
+                "keyword": "French Company of Tramways and Electricity - Offices",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "4a9d54cc655d7bf6ca71",
+                "keyword": "重庆南路 French Company of Tramways and Electricity (Compagnie Française de Tramways et D'éclairage Elec",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "重庆南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-728df2da9aee",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1514-French Rifle Range-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "French Rifle Range",
+          "record_address": "?? ROUTE JOSEPH FRELUPT",
+          "identity": {
+            "source_record_id": 1514,
+            "original_record": {
+              "id": 1514,
+              "name": "French Rifle Range",
+              "name_zh": null,
+              "address": "?? ROUTE JOSEPH FRELUPT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1514",
+              "types": {
+                "TYP01": "Site of memory",
+                "TYP02": "Cemetery",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1514",
+                "title": "French Rifle Range"
+              }
+            ]
+          },
+          "task_fingerprint": "4f370f5ebd233484c799555f143100bf0d855935e6d50b8ae93bf4b97e68987c",
+          "dispatch_group_id": "date-group-728df2da9aee",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1514",
+          "suggested_queries": [
+            "French Rifle Range",
+            "建国西路 French Rifle Range",
+            "建国西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "86360ad4c0caad3ad718",
+                "keyword": "French Rifle Range",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "4765cc6acc3d64f532a6",
+                "keyword": "建国西路 French Rifle Range",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "建国西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-6890691427b7",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-597-Gallia Building-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Gallia Building",
+          "record_address": "660 SZECHUEN ROAD",
+          "identity": {
+            "source_record_id": 597,
+            "original_record": {
+              "id": 597,
+              "name": "Gallia Building",
+              "name_zh": null,
+              "address": "660 SZECHUEN ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=597",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": "Apartment building",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-597",
+                "title": "Gallia Building"
+              }
+            ]
+          },
+          "task_fingerprint": "4077b3d36a414a9bfb9cc08650accceb7cac53f31e08b889ecdccde94b2a3120",
+          "dispatch_group_id": "date-group-6890691427b7",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=597",
+          "suggested_queries": [
+            "Gallia Building",
+            "四川中路 Gallia Building",
+            "四川中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "5386682a7a18fbba345f",
+                "keyword": "Gallia Building",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "cb54fa1683ce9cabae42",
+                "keyword": "四川中路 Gallia Building",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "四川中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-8023e0c5fc8c",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-652-Gas Tower-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Gas Tower",
+          "record_address": "656 YUYACHING ROAD",
+          "identity": {
+            "source_record_id": 652,
+            "original_record": {
+              "id": 652,
+              "name": "Gas Tower",
+              "name_zh": null,
+              "address": "656 YUYACHING ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=652",
+              "types": {
+                "TYP01": "Industrial site",
+                "TYP02": "Public utility",
+                "TYP03": "Power generation site",
+                "TYP04": "Gas tower",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-652",
+                "title": "苏河美欣公寓",
+                "address": "上海市黄浦区西藏中路728号"
+              }
+            ]
+          },
+          "task_fingerprint": "c7e7e2f6d073a4afaa57c4a15de7c1ec7a5be228ac418d8bf573ac3f7f2b189c",
+          "dispatch_group_id": "date-group-8023e0c5fc8c",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=652",
+          "suggested_queries": [
+            "Gas Tower",
+            "上海市黄浦区西藏中路728号",
+            "西藏中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "99de14acaa06b72547ea",
+                "keyword": "Gas Tower",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "492c6783eeb5a11d9f02",
+                "keyword": "上海市黄浦区西藏中路728号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "西藏中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-bf2bc2a1b81d",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-653-Gas Tower-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Gas Tower",
+          "record_address": "706 YUYACHING ROAD",
+          "identity": {
+            "source_record_id": 653,
+            "original_record": {
+              "id": 653,
+              "name": "Gas Tower",
+              "name_zh": null,
+              "address": "706 YUYACHING ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=653",
+              "types": {
+                "TYP01": "Industrial site",
+                "TYP02": "Public utility",
+                "TYP03": "Power generation site",
+                "TYP04": "Gas tower",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-653",
+                "title": "Gas Works Company"
+              }
+            ]
+          },
+          "task_fingerprint": "7ce818d552b2fba2d397683a275cad9f6639cb7f69f36d45752301de8b294a2a",
+          "dispatch_group_id": "date-group-bf2bc2a1b81d",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=653",
+          "suggested_queries": [
+            "Gas Tower",
+            "西藏中路 Gas Tower",
+            "西藏中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "99de14acaa06b72547ea",
+                "keyword": "Gas Tower",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "9232e53165b9dea9c6bd",
+                "keyword": "西藏中路 Gas Tower",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "西藏中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-afae8c2dea6a",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-554-General Electric Company of China-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "General Electric Company of China",
+          "record_address": "49 SZECHUEN ROAD",
+          "identity": {
+            "source_record_id": 554,
+            "original_record": {
+              "id": 554,
+              "name": "General Electric Company of China",
+              "name_zh": null,
+              "address": "49 SZECHUEN ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=554",
+              "types": {
+                "TYP01": "Commercial establishment",
+                "TYP02": "Service",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-554",
+                "title": "General Electric Company of China"
+              }
+            ]
+          },
+          "task_fingerprint": "55d40aa554d0d4e69b24a2abd02b6828d3fc3f39ad13b98c45aba112b8ecb2f5",
+          "dispatch_group_id": "date-group-afae8c2dea6a",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=554",
+          "suggested_queries": [
+            "General Electric Company of China",
+            "四川中路 General Electric Company of China",
+            "四川中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "0f9a502706369ed7e4de",
+                "keyword": "General Electric Company of China",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "5cedf31bc5dc0f1ff6af",
+                "keyword": "四川中路 General Electric Company of China",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "四川中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-2478ee536921",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1760-Gold Dragon Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Gold Dragon Apartments",
+          "record_address": "437 ROUTE RATARD",
+          "identity": {
+            "source_record_id": 1760,
+            "original_record": {
+              "id": 1760,
+              "name": "GOLD DRAGON APARTMENTS",
+              "name_zh": null,
+              "address": "437 ROUTE RATARD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1760",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1760",
+                "title": "Gold Dragon Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "b41330d36e87d01c9855c793368ad8e11eeaaa0a85f890e68ba89e0e2832835e",
+          "dispatch_group_id": "date-group-2478ee536921",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1760",
+          "suggested_queries": [
+            "Gold Dragon Apartments",
+            "巨鹿路 Gold Dragon Apartments",
+            "巨鹿路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "66cc082392bad77c808b",
+                "keyword": "Gold Dragon Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "ceda81b2b48c59fe8d2c",
+                "keyword": "巨鹿路 Gold Dragon Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "巨鹿路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-922ee975ed2a",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1008-Grand Danois-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Grand Danois",
+          "record_address": "990/992 BUBBLING WELL ROAD",
+          "identity": {
+            "source_record_id": 1008,
+            "original_record": {
+              "id": 1008,
+              "name": "Grand Danois",
+              "name_zh": null,
+              "address": "990/992 BUBBLING WELL ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1008",
+              "types": {
+                "TYP01": "Undefined",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1008",
+                "title": "Grand Danois"
+              }
+            ]
+          },
+          "task_fingerprint": "e039ae55e1880cea4c9c9f43ff9ac3889e3ae7aa91280581baa6fcb358ec7bfd",
+          "dispatch_group_id": "date-group-922ee975ed2a",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1008",
+          "suggested_queries": [
+            "Grand Danois",
+            "南京西路 Grand Danois",
+            "南京西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "ae72937a7a98420f1811",
+                "keyword": "Grand Danois",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "ef7b901c53638f4aab70",
+                "keyword": "南京西路 Grand Danois",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "南京西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c900a978b37b",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1234-Great Eastern Dispensary Factory-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Great Eastern Dispensary Factory",
+          "record_address": "?? GREAT WESTERN ROAD",
+          "identity": {
+            "source_record_id": 1234,
+            "original_record": {
+              "id": 1234,
+              "name": "Great Eastern Dispensary Factory",
+              "name_zh": null,
+              "address": "?? GREAT WESTERN ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1234",
+              "types": {
+                "TYP01": "Industrial site",
+                "TYP02": "Factory",
+                "TYP03": "Pharmaceutical industry",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1234",
+                "title": "Great Eastern Dispensary Factory"
+              }
+            ]
+          },
+          "task_fingerprint": "5ca8064b4a532c094719e08acca29ed43d5f1fa41c8b3d78192e316896984fc9",
+          "dispatch_group_id": "date-group-c900a978b37b",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1234",
+          "suggested_queries": [
+            "Great Eastern Dispensary Factory",
+            "延安西路 Great Eastern Dispensary Factory",
+            "延安西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "4e9e1b9487151872c460",
+                "keyword": "Great Eastern Dispensary Factory",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "adb56070d19970f84322",
+                "keyword": "延安西路 Great Eastern Dispensary Factory",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "延安西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-96b9fd8aa53d",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-392-Gresham Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Gresham Apartments",
+          "record_address": "1228 AVENUE JOFFRE",
+          "identity": {
+            "source_record_id": 392,
+            "original_record": {
+              "id": 392,
+              "name": "Gresham Apartments",
+              "name_zh": null,
+              "address": "1228 AVENUE JOFFRE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=392",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": "Apartment building",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-392",
+                "title": "格莱勋公寓（光明公寓）",
+                "address": "徐汇区淮海中路1222—1238号"
+              }
+            ]
+          },
+          "task_fingerprint": "f3d61f76fb8f02dcd79f031c9510717d709f3f543a8daff77a9e6b1da99cd82a",
+          "dispatch_group_id": "date-group-96b9fd8aa53d",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=392",
+          "suggested_queries": [
+            "Gresham Apartments",
+            "徐汇区淮海中路1222—1238号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "c111643fbaa791955877",
+                "keyword": "Gresham Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "849f3d8d5e5e74520a5a",
+                "keyword": "徐汇区淮海中路1222—1238号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-1c2f31d3ee83",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1203-Ground-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Ground",
+          "record_address": "21 ROBISON ROAD",
+          "identity": {
+            "source_record_id": 1203,
+            "original_record": {
+              "id": 1203,
+              "name": "Ground",
+              "name_zh": null,
+              "address": "21 ROBISON ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1203",
+              "types": {
+                "TYP01": "Recreational facility",
+                "TYP02": "Outdoor facility",
+                "TYP03": "Park",
+                "TYP04": "Playground",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1203",
+                "title": "Ground"
+              }
+            ]
+          },
+          "task_fingerprint": "78f97bd724c1c3f8e5707ff8c9aa9ddd6a89cb741b6dc9ce1235722026894bd3",
+          "dispatch_group_id": "date-group-1c2f31d3ee83",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1203",
+          "suggested_queries": [
+            "Ground",
+            "长寿路 Ground",
+            "长寿路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "151bf493947164c723a9",
+                "keyword": "Ground",
+                "total_hits": 12,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              },
+              {
+                "id": "afed8f682698bc24291a",
+                "keyword": "长寿路 Ground",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "长寿路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "218681-359827",
+              "title": "鸣鸾集",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=218681&parentNodeId=218687&nodeId=359827&type=-1",
+              "book": "陈乃文诗文集",
+              "excerpt": "Decades before when their instinct of imitation was still alive, they used to justify their love of the western civilization on the ground that Chinese civilization needed some materialistic elements to",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=218681&parentNodeId=218687&nodeId=359827&type=-1"
+            },
+            {
+              "id": "4418-11340",
+              "title": "第三十二编 体育",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4418&parentNodeId=20227&nodeId=20310&type=0",
+              "book": "虹口区志",
+              "excerpt": "光绪三十一年，公共租界当局在金家厍新靶场附近开辟占地21万平方米的虹口娱乐场(Howgkew Recreation Ground，后改名虹口公园)，内有高尔夫球、网球、曲棍球、足球、篮球和田径等设施，为当时上海设备较完善的大型体育场地，曾于民国4年(1915年)和民国10年举行过两次(第二、五届)远东运动会。民国11年，租界工部局又于该场西北建成工部局游泳池。",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4418&parentNodeId=20227&nodeId=20310&type=0"
+            },
+            {
+              "id": "191100-274007",
+              "title": "编纂说明",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=191100&parentNodeId=191100&nodeId=191104&type=147",
+              "book": "上海市志·工业分志·航天业卷（1978-2010）",
+              "excerpt": "test…………………………………………………………………………95 Chapter 5 LM-4C Launch Vehicle………………………………………………………………96 2.5.1 Technical Improvement…………………………………………………………96 2.5.2 Ground test………………………………………………………………………",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=191100&parentNodeId=191100&nodeId=191104&type=147"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-74f162c38238",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1205-Ground-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Ground",
+          "record_address": "?? MAPAI ROAD",
+          "identity": {
+            "source_record_id": 1205,
+            "original_record": {
+              "id": 1205,
+              "name": "Ground",
+              "name_zh": null,
+              "address": "?? MAPAI ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1205",
+              "types": {
+                "TYP01": "Recreational facility",
+                "TYP02": "Outdoor facility",
+                "TYP03": "Park",
+                "TYP04": "Playground",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1205",
+                "title": "Ground"
+              }
+            ]
+          },
+          "task_fingerprint": "cb1fdbb83d9c732b8ec6a26013ec33c39325724ad134c0c5515da40a2ba934a5",
+          "dispatch_group_id": "date-group-74f162c38238",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1205",
+          "suggested_queries": [
+            "Ground",
+            "新会路 Ground",
+            "新会路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "151bf493947164c723a9",
+                "keyword": "Ground",
+                "total_hits": 12,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              },
+              {
+                "id": "7f099f856906cc96979e",
+                "keyword": "新会路 Ground",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "新会路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "218681-359827",
+              "title": "鸣鸾集",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=218681&parentNodeId=218687&nodeId=359827&type=-1",
+              "book": "陈乃文诗文集",
+              "excerpt": "Decades before when their instinct of imitation was still alive, they used to justify their love of the western civilization on the ground that Chinese civilization needed some materialistic elements to",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=3&bookId=218681&parentNodeId=218687&nodeId=359827&type=-1"
+            },
+            {
+              "id": "4418-11340",
+              "title": "第三十二编 体育",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4418&parentNodeId=20227&nodeId=20310&type=0",
+              "book": "虹口区志",
+              "excerpt": "光绪三十一年，公共租界当局在金家厍新靶场附近开辟占地21万平方米的虹口娱乐场(Howgkew Recreation Ground，后改名虹口公园)，内有高尔夫球、网球、曲棍球、足球、篮球和田径等设施，为当时上海设备较完善的大型体育场地，曾于民国4年(1915年)和民国10年举行过两次(第二、五届)远东运动会。民国11年，租界工部局又于该场西北建成工部局游泳池。",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=4418&parentNodeId=20227&nodeId=20310&type=0"
+            },
+            {
+              "id": "191100-274007",
+              "title": "编纂说明",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=191100&parentNodeId=191100&nodeId=191104&type=147",
+              "book": "上海市志·工业分志·航天业卷（1978-2010）",
+              "excerpt": "test…………………………………………………………………………95 Chapter 5 LM-4C Launch Vehicle………………………………………………………………96 2.5.1 Technical Improvement…………………………………………………………96 2.5.2 Ground test………………………………………………………………………",
+              "from_query": "Ground",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=191100&parentNodeId=191100&nodeId=191104&type=147"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-a29368364446",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1731-Haig Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Haig Apartments",
+          "record_address": "343 AVENUE HAIG",
+          "identity": {
+            "source_record_id": 1731,
+            "original_record": {
+              "id": 1731,
+              "name": "HAIG APARTMENTS",
+              "name_zh": null,
+              "address": "343 AVENUE HAIG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1731",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1731",
+                "title": "Haig Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "4de72d50b2abaafd746891cdd6438dc2c953c7e103859a5bd3d49ec705075ff1",
+          "dispatch_group_id": "date-group-a29368364446",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1731",
+          "suggested_queries": [
+            "Haig Apartments",
+            "华山路 Haig Apartments",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "131d39fd32f0e23e358d",
+                "keyword": "Haig Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "99e476d10f842be535bd",
+                "keyword": "华山路 Haig Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-925662c014ee",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1094-Hardoon House-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Hardoon House",
+          "record_address": "888 WEIHAIWEI ROAD",
+          "identity": {
+            "source_record_id": 1094,
+            "original_record": {
+              "id": 1094,
+              "name": "Hardoon House",
+              "name_zh": null,
+              "address": "888 WEIHAIWEI ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1094",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": "Villa",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1094",
+                "title": "Hardoon House"
+              }
+            ]
+          },
+          "task_fingerprint": "62b62807b8ae9eeaf425fceae124d7fbcda2d61a7189d770f088965546ea7b7e",
+          "dispatch_group_id": "date-group-925662c014ee",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1094",
+          "suggested_queries": [
+            "Hardoon House",
+            "威海路 Hardoon House",
+            "威海路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "dc0fb1f43a96ea97fb2d",
+                "keyword": "Hardoon House",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "be55d92d091671f066c4",
+                "keyword": "威海路 Hardoon House",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "威海路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-20997ac81e39",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-356-Hongqiao (Hung Jao) Sanatorium-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Hongqiao (Hung Jao) Sanatorium",
+          "record_address": "988 AVENUE JOFFRE",
+          "identity": {
+            "source_record_id": 356,
+            "original_record": {
+              "id": 356,
+              "name": "Hongqiao (Hung Jao) Sanatorium",
+              "name_zh": null,
+              "address": "988 AVENUE JOFFRE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=356",
+              "types": {
+                "TYP01": "Institutional site",
+                "TYP02": "Medical facility",
+                "TYP03": "Hospital",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-356",
+                "title": "上海市徐汇区大华医院／湖南街道社区卫生服务中心（淮海中路院区）",
+                "address": "上海市徐汇区淮海中路966号"
+              }
+            ]
+          },
+          "task_fingerprint": "2c9fc1a587fbeecfa8151aaf05f539a2ee07eb989c8ce9696111c48b7908b67b",
+          "dispatch_group_id": "date-group-20997ac81e39",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=356",
+          "suggested_queries": [
+            "Hongqiao (Hung Jao) Sanatorium",
+            "Hongqiao Sanatorium",
+            "上海市徐汇区淮海中路966号",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "8d614f0cbf1f911fc524",
+                "keyword": "Hongqiao Sanatorium",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "f1933f8ebc8ead45842e",
+                "keyword": "上海市徐汇区淮海中路966号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-4330894e62e6",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1061-Hospital and School for Midwives-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Hospital and School for Midwives",
+          "record_address": "370 HART ROAD",
+          "identity": {
+            "source_record_id": 1061,
+            "original_record": {
+              "id": 1061,
+              "name": "Hospital and School for Midwives",
+              "name_zh": null,
+              "address": "370 HART ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1061",
+              "types": {
+                "TYP01": "Institutional site",
+                "TYP02": "Medical facility",
+                "TYP03": "Hospital",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1061",
+                "title": "Hospital and School for Midwives"
+              }
+            ]
+          },
+          "task_fingerprint": "4d6e31659a621c45eed3f436453023f950c8e8c7d36b0083b9eaef466b127c49",
+          "dispatch_group_id": "date-group-4330894e62e6",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1061",
+          "suggested_queries": [
+            "Hospital and School for Midwives",
+            "常德路 Hospital and School for Midwives",
+            "常德路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "9ae05a52ee531e3efff8",
+                "keyword": "Hospital and School for Midwives",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "7ed9bd3022bb4bbeac71",
+                "keyword": "常德路 Hospital and School for Midwives",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "常德路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-3d4d345b5812",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-436-Hospital of the Russian Orthodox Confraternity-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Hospital of the Russian Orthodox Confraternity",
+          "record_address": "230 ROUTE DE SAY-ZOONG",
+          "identity": {
+            "source_record_id": 436,
+            "original_record": {
+              "id": 436,
+              "name": "Hospital of the Russian Orthodox Confraternity",
+              "name_zh": null,
+              "address": "230 ROUTE DE SAY-ZOONG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=436",
+              "types": {
+                "TYP01": "Institutional site",
+                "TYP02": "Medical facility",
+                "TYP03": "Hospital",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-436",
+                "title": "Hospital of the Russian Orthodox Confraternity"
+              }
+            ]
+          },
+          "task_fingerprint": "7c3b098ff9a257cea83e2a45cf3c4c15515fe7882799c3a84a1e8522f4dedd3c",
+          "dispatch_group_id": "date-group-3d4d345b5812",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=436",
+          "suggested_queries": [
+            "Hospital of the Russian Orthodox Confraternity",
+            "常熟路 Hospital of the Russian Orthodox Confraternity",
+            "常熟路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "8d1e6ef9c895d3690ed4",
+                "keyword": "Hospital of the Russian Orthodox Confraternity",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "381fe21854d8558cbf9f",
+                "keyword": "常熟路 Hospital of the Russian Orthodox Confraternity",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "常熟路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-53aeed49a5c7",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1751-Houston Court-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Houston Court",
+          "record_address": "2032 AVENUE JOFFRE",
+          "identity": {
+            "source_record_id": 1751,
+            "original_record": {
+              "id": 1751,
+              "name": "HOUSTON COURT",
+              "name_zh": null,
+              "address": "2032 AVENUE JOFFRE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1751",
+              "types": {
+                "TYP01": null,
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1751",
+                "title": "Houston Court"
+              }
+            ]
+          },
+          "task_fingerprint": "44310270e9a9749fbca52a485f69b4df71a89be3b9d14b772968bc34463e7803",
+          "dispatch_group_id": "date-group-53aeed49a5c7",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1751",
+          "suggested_queries": [
+            "Houston Court",
+            "淮海中路 Houston Court",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "1447e820399eb69fd2fd",
+                "keyword": "Houston Court",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "831f98ffd3e4a397614c",
+                "keyword": "淮海中路 Houston Court",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-d2d6dc6d0c6b",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-7-International Saving Society-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "International Saving Society",
+          "record_address": "7 EDWARD VII",
+          "identity": {
+            "source_record_id": 7,
+            "original_record": {
+              "id": 7,
+              "name": "International Saving Society",
+              "name_zh": null,
+              "address": "7 EDWARD VII",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=7",
+              "types": {
+                "TYP01": "Commercial establishment",
+                "TYP02": "Finance",
+                "TYP03": "Bank",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-7",
+                "title": "International Saving Society"
+              }
+            ]
+          },
+          "task_fingerprint": "0e8a3ca09f3e73f32d1724546354ddae68478ffa9c28782fd0193a56a1403fc8",
+          "dispatch_group_id": "date-group-d2d6dc6d0c6b",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=7",
+          "suggested_queries": [
+            "International Saving Society",
+            "7 EDWARD VII"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "8aa2d423562a5825a1fe",
+                "keyword": "International Saving Society",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "5c71377c4ab7e04902ac",
+                "keyword": "7 EDWARD VII",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b5a8000ee83c",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1733-Intersavin Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Intersavin Apartments",
+          "record_address": "421 AVENUE DU ROI ALBERT",
+          "identity": {
+            "source_record_id": 1733,
+            "original_record": {
+              "id": 1733,
+              "name": "INTERSAVIN APARTMENTS",
+              "name_zh": null,
+              "address": "421 AVENUE DU ROI ALBERT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1733",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1733",
+                "title": "Intersavin Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "f43b044ebe2b1b9b4e13cd37cc10afcaf6408fa23b1d751438adb7be2293e64e",
+          "dispatch_group_id": "date-group-b5a8000ee83c",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1733",
+          "suggested_queries": [
+            "Intersavin Apartments",
+            "陕西南路 Intersavin Apartments",
+            "陕西南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "7bbf365cfecf0e928176",
+                "keyword": "Intersavin Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "805bbd6ec0f6c1f6447f",
+                "keyword": "陕西南路 Intersavin Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "陕西南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-116b031522ad",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1743-J.k.k. Apartment-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "J.k.k. Apartment",
+          "record_address": "956/962 ROUTE BOURGEAT",
+          "identity": {
+            "source_record_id": 1743,
+            "original_record": {
+              "id": 1743,
+              "name": "J.K.K. APARTMENT",
+              "name_zh": null,
+              "address": "956/962 ROUTE BOURGEAT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1743",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B001-01",
+                "code": "5B001",
+                "original_name": "J.K.K. 公寓",
+                "listed_name": "公寓（J.K.K.Apartment）",
+                "address": "长乐路962弄1-4号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/fptqg6cxu0jbbtui"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B001-01",
+                "code": "5B001",
+                "title": "J.K.K. 公寓",
+                "address": "长乐路962弄1-4号"
+              },
+              {
+                "featureId": "landmark-vs-site-1743",
+                "title": "J.K.K. 公寓",
+                "address": "长乐路962弄1-4号"
+              }
+            ]
+          },
+          "task_fingerprint": "b0c4810a02625f9f05de682aca62e45232b4c8ca91f5771a85605626becbfee6",
+          "dispatch_group_id": "date-group-116b031522ad",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1743",
+          "suggested_queries": [
+            "J.k.k. Apartment",
+            "长乐路962弄1-4号",
+            "长乐路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "f6f9610bf11810efafab",
+                "keyword": "J.k.k. Apartment",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "b0604ead3118bd74f538",
+                "keyword": "长乐路962弄1-4号",
+                "total_hits": 1,
+                "retained_results": 1,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "长乐路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 1,
+            "candidates_included": 1
+          },
+          "leads": [
+            {
+              "id": "81772-108895",
+              "title": "四、上海市人民政府1994、1999年公布的337处上海市优秀历史建筑一览表（第二批、第三批）",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "长乐路764弄 长乐新村 杜美新村 64 富民路210弄2-14号，长乐路752-762号 住宅 住宅 65 南京西路868-882号 大华公寓",
+              "from_query": "长乐路962弄1-4号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        },
+        {
+          "task_id": "listed-sh-fgj-5B001-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "公寓（J.K.K.Apartment）",
+          "record_address": "长乐路962弄1-4号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5B001-01",
+                "code": "5B001",
+                "original_name": "J.K.K. 公寓",
+                "listed_name": "公寓（J.K.K.Apartment）",
+                "address": "长乐路962弄1-4号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/fptqg6cxu0jbbtui"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5B001-01",
+                "code": "5B001",
+                "title": "J.K.K. 公寓",
+                "address": "长乐路962弄1-4号"
+              },
+              {
+                "featureId": "landmark-vs-site-1743",
+                "title": "J.K.K. 公寓",
+                "address": "长乐路962弄1-4号"
+              }
+            ]
+          },
+          "task_fingerprint": "a151c130d57f13807776e6ff0fba66f37b061c283ccc90b4680707cc23e3b5e6",
+          "dispatch_group_id": "date-group-116b031522ad",
+          "priority": 2,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+          "suggested_queries": [
+            "公寓（J.K.K.Apartment）",
+            "长乐路962弄1-4号",
+            "长乐路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "b0604ead3118bd74f538",
+                "keyword": "长乐路962弄1-4号",
+                "total_hits": 1,
+                "retained_results": 1,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "长乐路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 1,
+            "candidates_included": 1
+          },
+          "leads": [
+            {
+              "id": "81772-108895",
+              "title": "四、上海市人民政府1994、1999年公布的337处上海市优秀历史建筑一览表（第二批、第三批）",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "长乐路764弄 长乐新村 杜美新村 64 富民路210弄2-14号，长乐路752-762号 住宅 住宅 65 南京西路868-882号 大华公寓",
+              "from_query": "长乐路962弄1-4号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108895&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-1ff346b523fd",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-412-Joseph Tennis Club-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Joseph Tennis Club",
+          "record_address": "400 ROUTE HERVE DE SIEYES",
+          "identity": {
+            "source_record_id": 412,
+            "original_record": {
+              "id": 412,
+              "name": "Joseph Tennis Club",
+              "name_zh": null,
+              "address": "400 ROUTE HERVE DE SIEYES",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=412",
+              "types": {
+                "TYP01": "Recreational facility",
+                "TYP02": "Sport facility",
+                "TYP03": "Sports field",
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-412",
+                "title": "Joseph Tennis Club"
+              }
+            ]
+          },
+          "task_fingerprint": "cd574407b31e4f4274d70ab1527c939455b8996a432ff56c4577a8cd441b1a15",
+          "dispatch_group_id": "date-group-1ff346b523fd",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=412",
+          "suggested_queries": [
+            "Joseph Tennis Club",
+            "永嘉路 Joseph Tennis Club",
+            "永嘉路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "ca1712b3a3f173795125",
+                "keyword": "Joseph Tennis Club",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "8493f59b50b77e1d50c2",
+                "keyword": "永嘉路 Joseph Tennis Club",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "永嘉路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-5f658291c04d",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1774-Jubilee Court-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Jubilee Court",
+          "record_address": "1360/1366 ROUTE LAFAYETTE",
+          "identity": {
+            "source_record_id": 1774,
+            "original_record": {
+              "id": 1774,
+              "name": "JUBILEE COURT",
+              "name_zh": null,
+              "address": "1360/1366 ROUTE LAFAYETTE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1774",
+              "types": {
+                "TYP01": null,
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1774",
+                "title": "Jubilee Court"
+              }
+            ]
+          },
+          "task_fingerprint": "cdf08b88453f5a3236b85b707211148d27880a5242df3713a85ec76b2f242822",
+          "dispatch_group_id": "date-group-5f658291c04d",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1774",
+          "suggested_queries": [
+            "Jubilee Court",
+            "复兴中路 Jubilee Court",
+            "复兴中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "c259999cc7c2924eab6f",
+                "keyword": "Jubilee Court",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "3f9d7f66ef401734f709",
+                "keyword": "复兴中路 Jubilee Court",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "复兴中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-1f8be5cc2eb9",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-4135-Kelmscott Garden-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Kelmscott Garden",
+          "record_address": null,
+          "identity": {
+            "source_record_id": 4135,
+            "original_record": {
+              "id": 4135,
+              "name": "Kelmscott Garden",
+              "name_zh": null,
+              "address": "188 avenue du Roi Albert",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=4135",
+              "types": {
+                "TYP01": null,
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-359",
+                "title": "Kelmscott Garden"
+              }
+            ]
+          },
+          "task_fingerprint": "62a5070ec334530d40b1c7e85d6b93e50bede610b49c618a341fab1e618454d1",
+          "dispatch_group_id": "date-group-1f8be5cc2eb9",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=4135",
+          "suggested_queries": [
+            "Kelmscott Garden"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "a4d35da9b2a7432beff6",
+                "keyword": "Kelmscott Garden",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-59b45de1bfd5",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1763-King'S Albert Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "King'S Albert Apartments",
+          "record_address": "377 AVENUE DU ROI ALBERT",
+          "identity": {
+            "source_record_id": 1763,
+            "original_record": {
+              "id": 1763,
+              "name": "KING'S ALBERT APARTMENTS",
+              "name_zh": null,
+              "address": "377 AVENUE DU ROI ALBERT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1763",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-2C010-01",
+                "code": "2C010",
+                "original_name": "陕南村",
+                "listed_name": "陕南村",
+                "address": "陕西南路157-187号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E9%99%95%E5%8D%97%E6%9D%91",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/yw7om0xrfmzi72yk"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-2C010-01",
+                "code": "2C010",
+                "title": "陕南村",
+                "address": "陕西南路157-187号"
+              },
+              {
+                "featureId": "landmark-vs-site-1763",
+                "title": "陕南村",
+                "address": "陕西南路157-187号"
+              }
+            ]
+          },
+          "task_fingerprint": "cca5653b1ab38b5eda08b837331022955a7213c46be046efc4b35456c5cc950c",
+          "dispatch_group_id": "date-group-59b45de1bfd5",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1763",
+          "suggested_queries": [
+            "King'S Albert Apartments",
+            "陕西南路157-187号",
+            "陕西南路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "123e8924ebaf53bf9980",
+                "keyword": "King'S Albert Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "9b7bd0c410824818ba93",
+                "keyword": "陕西南路157-187号",
+                "total_hits": 1,
+                "retained_results": 1,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "陕西南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 1,
+            "candidates_included": 1
+          },
+          "leads": [
+            {
+              "id": "81772-108899",
+              "title": "六、上海市第一批登记不可移动文物一览表（3）",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108899&type=-1",
+              "book": "上海名建筑志",
+              "excerpt": "陕西南路39弄1-103号 陕南村/陕南村（近代建筑） 1930年 陕西南路157-187号 震旦大学图书馆教学大楼",
+              "from_query": "陕西南路157-187号",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=81772&parentNodeId=81794&nodeId=108899&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c7c5c08b4801",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1732-King'S Lynn Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "King'S Lynn Apartments",
+          "record_address": "43 ROUTE KAUFMANN",
+          "identity": {
+            "source_record_id": 1732,
+            "original_record": {
+              "id": 1732,
+              "name": "KING'S LYNN APARTMENTS",
+              "name_zh": null,
+              "address": "43 ROUTE KAUFMANN",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1732",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-4D036-01",
+                "code": "4D036",
+                "original_name": "金司林公寓",
+                "listed_name": "安亭公寓",
+                "address": "安亭路43号",
+                "original_construction_text": "1935年",
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/3qtpitznyv07amk1"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-4D036-01",
+                "code": "4D036",
+                "title": "安亭公寓（金司林公寓）",
+                "address": "上海市徐汇区安亭路43号"
+              },
+              {
+                "featureId": "landmark-vs-site-1732",
+                "title": "安亭公寓（金司林公寓）",
+                "address": "上海市徐汇区安亭路43号"
+              }
+            ]
+          },
+          "task_fingerprint": "e4aa0059d4bcf4b28c5e433504c35372d56edc06837a20f15b7cc74fb817c474",
+          "dispatch_group_id": "date-group-c7c5c08b4801",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1732",
+          "suggested_queries": [
+            "King'S Lynn Apartments",
+            "上海市徐汇区安亭路43号",
+            "安亭路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "9621a00d2448fbba9bb1",
+                "keyword": "King'S Lynn Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "1a00970748608ed948a4",
+                "keyword": "上海市徐汇区安亭路43号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "安亭路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        },
+        {
+          "task_id": "listed-sh-fgj-4D036-01",
+          "event_kind": "名录公布时名称",
+          "target_name": "安亭公寓",
+          "record_address": "安亭路43号",
+          "identity": {
+            "source_record_id": null,
+            "original_record": null,
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-4D036-01",
+                "code": "4D036",
+                "original_name": "金司林公寓",
+                "listed_name": "安亭公寓",
+                "address": "安亭路43号",
+                "original_construction_text": "1935年",
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+                "wikipedia_url": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/3qtpitznyv07amk1"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-4D036-01",
+                "code": "4D036",
+                "title": "安亭公寓（金司林公寓）",
+                "address": "上海市徐汇区安亭路43号"
+              },
+              {
+                "featureId": "landmark-vs-site-1732",
+                "title": "安亭公寓（金司林公寓）",
+                "address": "上海市徐汇区安亭路43号"
+              }
+            ]
+          },
+          "task_fingerprint": "82e077e542d73d223bcf0e7b1c78e0ed0a1819e7c0c332cf3df839c3be4061c7",
+          "dispatch_group_id": "date-group-c7c5c08b4801",
+          "priority": 2,
+          "research_question": "核实所列单位或名称何时开始用于这个具体门址；可找迁入、改名或该年在此使用的记录，不能用单位成立年或名录公布年替代。",
+          "date_types_to_check": [
+            "move_in",
+            "rename",
+            "documented_use"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html",
+          "suggested_queries": [
+            "安亭公寓",
+            "安亭路43号",
+            "安亭路"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "c8d1e9a6d2d46611eb8a",
+                "keyword": "安亭公寓",
+                "total_hits": 563,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              },
+              {
+                "id": "ff873d7744d57a416fe5",
+                "keyword": "安亭路43号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "安亭路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "296540-566981",
+              "title": "【汽车城首家品质养老公寓落成】",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=296540&parentNodeId=296701&nodeId=566981&type=-1",
+              "book": "嘉定年鉴-2019",
+              "excerpt": "4月28日，申养·安亭澜悦长者公寓落成。项目位于安礼路258弄18号，设长者公寓66套，主要面向自理型老人，是集日间照料、养老公寓、为老助餐、社区卫生服务站为一体的连续性照护综合体，为入住者提供一站式养老服务。",
+              "from_query": "安亭公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=2&bookId=296540&parentNodeId=296701&nodeId=566981&type=-1"
+            },
+            {
+              "id": "237436-391444",
+              "title": "第六节商品房开发经营",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=237436&parentNodeId=237482&nodeId=391444&type=-1",
+              "book": "安亭方泰合志",
+              "excerpt": "1993年2月，安亭建设开发公司（后更名为上海新申房产建设发展有限公司）诞生，标志着安亭的商品房开发的开始。至2000年，形成玉兰一村、二村、三村，金桂新村，紫荆二村、三村，芙蓉新村，迎春公寓及宫宵公寓等居住小区。 一、商品房开发商和经营商 1993--2000年，注册安亭的房产开发商和经营商共有16家。",
+              "from_query": "安亭公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=237436&parentNodeId=237482&nodeId=391444&type=-1"
+            },
+            {
+              "id": "190116-391444",
+              "title": "第六节商品房开发经营",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=190116&nodeId=391444&parentNodeId=237480&type=jie",
+              "book": "镇街道村志",
+              "excerpt": "1993年2月，安亭建设开发公司（后更名为上海新申房产建设发展有限公司）诞生，标志着安亭的商品房开发的开始。至2000年，形成玉兰一村、二村、三村，金桂新村，紫荆二村、三村，芙蓉新村，迎春公寓及宫宵公寓等居住小区。 一、商品房开发商和经营商 1993--2000年，注册安亭的房产开发商和经营商共有16家。",
+              "from_query": "安亭公寓",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=190116&nodeId=391444&parentNodeId=237480&type=jie"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-a42755f82938",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1768-Koffman Apartment-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Koffman Apartment",
+          "record_address": "230/232 ROUTE FERGUSSON",
+          "identity": {
+            "source_record_id": 1768,
+            "original_record": {
+              "id": 1768,
+              "name": "KOFFMAN APARTMENT",
+              "name_zh": null,
+              "address": "230/232 ROUTE FERGUSSON",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1768",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-5D012-01",
+                "code": "5D012",
+                "original_name": "国富门公寓",
+                "listed_name": "国富门公寓",
+                "address": "武康路230、232号",
+                "original_construction_text": null,
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E5%AF%8C%E9%97%A8%E5%85%AC%E5%AF%93",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/lyanieycjat0wfkq"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-5D012-01",
+                "code": "5D012",
+                "title": "国富门公寓",
+                "address": "上海市徐汇区武康路230、232号"
+              },
+              {
+                "featureId": "landmark-vs-site-1768",
+                "title": "国富门公寓",
+                "address": "上海市徐汇区武康路230、232号"
+              }
+            ]
+          },
+          "task_fingerprint": "9d681e78b4a7d9103cd705c7b071ebc491d6989e8dcb4f02fc47c030157fcc61",
+          "dispatch_group_id": "date-group-a42755f82938",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1768",
+          "suggested_queries": [
+            "Koffman Apartment",
+            "上海市徐汇区武康路230、232号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "62845a58d8c725bb63bc",
+                "keyword": "Koffman Apartment",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "ab98cc902558c235cd87",
+                "keyword": "上海市徐汇区武康路230、232号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-eecf58c332ab",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1604-Korean Protestant Church-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Korean Protestant Church",
+          "record_address": "212 QIUJIANG ZHILU",
+          "identity": {
+            "source_record_id": 1604,
+            "original_record": {
+              "id": 1604,
+              "name": "Korean Protestant Church",
+              "name_zh": null,
+              "address": "212 QIUJIANG ZHILU",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1604",
+              "types": {
+                "TYP01": "Religious facility",
+                "TYP02": "Church",
+                "TYP03": null,
+                "TYP04": "Religious",
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": "Protestant",
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1604",
+                "title": "Korean Protestant Church"
+              }
+            ]
+          },
+          "task_fingerprint": "1547f53c17931157ec8f69556b8b54dc70f9637b45ca6c60333213d26bb54c94",
+          "dispatch_group_id": "date-group-eecf58c332ab",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1604",
+          "suggested_queries": [
+            "Korean Protestant Church",
+            "虬江支路 Korean Protestant Church",
+            "虬江支路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "8f17a7c8624b4e9cfb77",
+                "keyword": "Korean Protestant Church",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "42f02cdc9b22e10fcc81",
+                "keyword": "虬江支路 Korean Protestant Church",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "虬江支路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-782f06cc0688",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1736-Lee Apartment-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lee Apartment",
+          "record_address": "847 AVENUE JOFFRE",
+          "identity": {
+            "source_record_id": 1736,
+            "original_record": {
+              "id": 1736,
+              "name": "LEE APARTMENT",
+              "name_zh": null,
+              "address": "847 AVENUE JOFFRE",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1736",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1736",
+                "title": "Lee Apartment"
+              }
+            ]
+          },
+          "task_fingerprint": "9643f2ab1039a59ae96e595b9cd44fe195e958320eea95d6166fd4eb87cb1fc0",
+          "dispatch_group_id": "date-group-782f06cc0688",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1736",
+          "suggested_queries": [
+            "Lee Apartment",
+            "淮海中路 Lee Apartment",
+            "淮海中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "835cbaeaaf4dbeb7315f",
+                "keyword": "Lee Apartment",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "dfb61afe2ace3f3c0558",
+                "keyword": "淮海中路 Lee Apartment",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "淮海中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-f63b12197e27",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1402-Liolita Apartment-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Liolita Apartment",
+          "record_address": "?? ZHONGSHAN LU",
+          "identity": {
+            "source_record_id": 1402,
+            "original_record": {
+              "id": 1402,
+              "name": "Liolita Apartment",
+              "name_zh": null,
+              "address": "?? ZHONGSHAN LU",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1402",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": "Apartment building",
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1402",
+                "title": "Liolita Apartment"
+              }
+            ]
+          },
+          "task_fingerprint": "71fd1c7a9e8706bbf2a81e4613b9d373f5f44b8a79265ed05cdd94b3178e07ff",
+          "dispatch_group_id": "date-group-f63b12197e27",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1402",
+          "suggested_queries": [
+            "Liolita Apartment",
+            "?? ZHONGSHAN LU"
+          ],
+          "previous_search": {
+            "status": "search-hit-awaits-full-source-and-address-review",
+            "queries": [
+              {
+                "id": "c7f47cbe62b6b6fc76ab",
+                "keyword": "Liolita Apartment",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "4d1f053feb54ef22a9f0",
+                "keyword": "?? ZHONGSHAN LU",
+                "total_hits": 6,
+                "retained_results": 5,
+                "additional_results_not_reviewed": true
+              }
+            ],
+            "street_context_queries": [],
+            "candidate_count_retained_in_archive": 5,
+            "candidates_included": 3
+          },
+          "leads": [
+            {
+              "id": "70862-73727",
+              "title": "第一节 纪念型",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=70862&parentNodeId=70927&nodeId=73727&type=-1",
+              "book": "上海地名志",
+              "excerpt": "o:p&gt;/o:p&gt;/P&gt; p&gt;中山北二路(Zhongshan Bei 2 Lu) 在市区东北部。跨虹口、杨浦两区。西连中山北一路，东至黄兴路。1992年改筑。长2993米，宽20.0～36.0米，车行道宽12.0～32.0米。中山北一路至密云路一段，曾名原林路。沿路为住宅，有上海市商务中心。",
+              "from_query": "?? ZHONGSHAN LU",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=70862&parentNodeId=70927&nodeId=73727&type=-1"
+            },
+            {
+              "id": "241017-396353",
+              "title": "现行地名",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=241017&parentNodeId=241030&nodeId=396353&type=-1",
+              "book": "普陀区地名志",
+              "excerpt": "三民路 Sanmin Lu 即今三原路。 马白路 Mabai Lu 即今新会路。 小沙渡路 Xiaoshadu Lu 即今西康路。 中山路 Zhongshan Lu 位于市中心区西部。是通过沪西外围联络沪南与沪北的交通干道。",
+              "from_query": "?? ZHONGSHAN LU",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=241017&parentNodeId=241030&nodeId=396353&type=-1"
+            },
+            {
+              "id": "70862-73737",
+              "title": "第三节 城镇道路",
+              "url": "https://www.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=70862&parentNodeId=70937&nodeId=73737&type=-1",
+              "book": "上海地名志",
+              "excerpt": "Lu) 位于亭林镇南部。",
+              "from_query": "?? ZHONGSHAN LU",
+              "verified": false,
+              "alternate_url": "https://szfz.shtong.gov.cn/difangzhi-front/book/detailNew?oneId=1&bookId=70862&parentNodeId=70937&nodeId=73737&type=-1"
+            }
+          ],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-c97eb0ed097a",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-393-Little Floks Garden School-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Little Floks Garden School",
+          "record_address": "675 ROUTE BOURGEAT",
+          "identity": {
+            "source_record_id": 393,
+            "original_record": {
+              "id": 393,
+              "name": "Little Floks Garden School",
+              "name_zh": null,
+              "address": "675 ROUTE BOURGEAT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=393",
+              "types": {
+                "TYP01": "Educational facility",
+                "TYP02": "School",
+                "TYP03": "Private",
+                "TYP04": "Secular",
+                "TYP05": "Kindergarten",
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-393",
+                "title": "Little Floks Garden School"
+              }
+            ]
+          },
+          "task_fingerprint": "f269baf5b2f744b64c8cc45065ca2b44a4acf58e39a28cfa771b5b132caee351",
+          "dispatch_group_id": "date-group-c97eb0ed097a",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=393",
+          "suggested_queries": [
+            "Little Floks Garden School",
+            "长乐路 Little Floks Garden School",
+            "长乐路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "56607e05dce4553e8ac0",
+                "keyword": "Little Floks Garden School",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "21059f8f2de22e886a99",
+                "keyword": "长乐路 Little Floks Garden School",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "长乐路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-b57072a11eee",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1737-Lock Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lock Apartments",
+          "record_address": "245 AVENUE HAIG",
+          "identity": {
+            "source_record_id": 1737,
+            "original_record": {
+              "id": 1737,
+              "name": "LOCK APARTMENTS",
+              "name_zh": null,
+              "address": "245 AVENUE HAIG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1737",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1737",
+                "title": "Lock Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "95e7fca37c8b7b59192c6f9241163f81d76ef53ccc0d8549ea7ce549a0888bad",
+          "dispatch_group_id": "date-group-b57072a11eee",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1737",
+          "suggested_queries": [
+            "Lock Apartments",
+            "华山路 Lock Apartments",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b9464414f50f0f48e1ed",
+                "keyword": "Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "d36b8f516a124ff23f40",
+                "keyword": "华山路 Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-02bdad54a86e",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1738-Lock Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lock Apartments",
+          "record_address": "255 AVENUE HAIG",
+          "identity": {
+            "source_record_id": 1738,
+            "original_record": {
+              "id": 1738,
+              "name": "LOCK APARTMENTS",
+              "name_zh": null,
+              "address": "255 AVENUE HAIG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1738",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1738",
+                "title": "Lock Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "0d01a1b628e9b3cf74a006aa9ed25495de80e8eb9e06529944934a203407a74d",
+          "dispatch_group_id": "date-group-02bdad54a86e",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1738",
+          "suggested_queries": [
+            "Lock Apartments",
+            "华山路 Lock Apartments",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b9464414f50f0f48e1ed",
+                "keyword": "Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "d36b8f516a124ff23f40",
+                "keyword": "华山路 Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-1a835b9e76be",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1739-Lock Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lock Apartments",
+          "record_address": "265 AVENUE HAIG",
+          "identity": {
+            "source_record_id": 1739,
+            "original_record": {
+              "id": 1739,
+              "name": "LOCK APARTMENTS",
+              "name_zh": null,
+              "address": "265 AVENUE HAIG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1739",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1739",
+                "title": "Lock Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "738a9f641ac24b91bd9129f43a192dedd0266875e6dc7d2075121e3379dad2e5",
+          "dispatch_group_id": "date-group-1a835b9e76be",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1739",
+          "suggested_queries": [
+            "Lock Apartments",
+            "华山路 Lock Apartments",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b9464414f50f0f48e1ed",
+                "keyword": "Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "d36b8f516a124ff23f40",
+                "keyword": "华山路 Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-fcd8b640137a",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1740-Lock Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lock Apartments",
+          "record_address": "275 AVENUE HAIG",
+          "identity": {
+            "source_record_id": 1740,
+            "original_record": {
+              "id": 1740,
+              "name": "LOCK APARTMENTS",
+              "name_zh": null,
+              "address": "275 AVENUE HAIG",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1740",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1740",
+                "title": "Lock Apartments"
+              }
+            ]
+          },
+          "task_fingerprint": "ecad6078944c4d0ee1d4c420ea80b381076a871a5c1616345b9dfd092b91cc08",
+          "dispatch_group_id": "date-group-fcd8b640137a",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1740",
+          "suggested_queries": [
+            "Lock Apartments",
+            "华山路 Lock Apartments",
+            "华山路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "b9464414f50f0f48e1ed",
+                "keyword": "Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "d36b8f516a124ff23f40",
+                "keyword": "华山路 Lock Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "华山路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-19d854f53abe",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1764-Lydia Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Lydia Apartments",
+          "record_address": "492 AVENUE DU ROI ALBERT",
+          "identity": {
+            "source_record_id": 1764,
+            "original_record": {
+              "id": 1764,
+              "name": "LYDIA APARTMENTS",
+              "name_zh": null,
+              "address": "492 AVENUE DU ROI ALBERT",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1764",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1764",
+                "title": "立地公寓（合记公寓／陕南公寓）",
+                "address": "上海市徐汇区陕西南路490、492号（永嘉路口西北侧）"
+              }
+            ]
+          },
+          "task_fingerprint": "ccfb6895c80fd35ad63e6400c00c3964abbc1710d9e0bb21ef9605d72386a843",
+          "dispatch_group_id": "date-group-19d854f53abe",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1764",
+          "suggested_queries": [
+            "Lydia Apartments",
+            "上海市徐汇区陕西南路490、492号",
+            "陕西南路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "8a2312ba49d254a1a9fb",
+                "keyword": "Lydia Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "ee623b4a556722319e85",
+                "keyword": "上海市徐汇区陕西南路490、492号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "陕西南路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-2bf6f2a02bfd",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-532-Mataichi Company-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Mataichi Company",
+          "record_address": "223 SZECHUEN ROAD",
+          "identity": {
+            "source_record_id": 532,
+            "original_record": {
+              "id": 532,
+              "name": "Mataichi Company",
+              "name_zh": null,
+              "address": "223 SZECHUEN ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=532",
+              "types": {
+                "TYP01": "Commercial establishment",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-532",
+                "title": "Mataichi Company"
+              }
+            ]
+          },
+          "task_fingerprint": "7bf0b55b2c911d73756128da54b738052deb184750afa054928467f0cfa71a52",
+          "dispatch_group_id": "date-group-2bf6f2a02bfd",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=532",
+          "suggested_queries": [
+            "Mataichi Company",
+            "四川中路 Mataichi Company",
+            "四川中路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "4f3897351c394184ab54",
+                "keyword": "Mataichi Company",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "8d0ca15dccec30dc7aa1",
+                "keyword": "四川中路 Mataichi Company",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "四川中路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-09f0f66ca42a",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1769-Midget Apartments-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Midget Apartments",
+          "record_address": "115 ROUTE FERGUSSON",
+          "identity": {
+            "source_record_id": 1769,
+            "original_record": {
+              "id": 1769,
+              "name": "Midget Apartments",
+              "name_zh": null,
+              "address": "115 ROUTE FERGUSSON",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1769",
+              "types": {
+                "TYP01": "Residential site",
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [
+              {
+                "official_id": "sh-fgj-2D037-01",
+                "code": "2D037",
+                "original_name": "密丹公寓",
+                "listed_name": "密丹公寓",
+                "address": "武康路115号",
+                "original_construction_text": "1931",
+                "official_source_url": "https://fgj.sh.gov.cn/yxlsjz/20210922/8f72fa07617c4828a25ef948cd1c5da7.html",
+                "wikipedia_url": "https://zh.wikipedia.org/wiki/%E5%AF%86%E4%B8%B9%E5%85%AC%E5%AF%93",
+                "location_source_url": "https://data.library.sh.cn/entity/architecture/v1o7edukux2mikix"
+              }
+            ],
+            "display_cards": [
+              {
+                "officialId": "sh-fgj-2D037-01",
+                "code": "2D037",
+                "title": "密丹公寓",
+                "address": "上海市徐汇区武康路115号"
+              },
+              {
+                "featureId": "landmark-vs-site-1769",
+                "title": "密丹公寓",
+                "address": "上海市徐汇区武康路115号"
+              }
+            ]
+          },
+          "task_fingerprint": "10f76bcc369412fe03c0a92ef1d9fae0b7db4ba88b13f1a5290447ab52688f95",
+          "dispatch_group_id": "date-group-09f0f66ca42a",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1769",
+          "suggested_queries": [
+            "Midget Apartments",
+            "上海市徐汇区武康路115号",
+            "武康路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "02f94060ed7db866ca0e",
+                "keyword": "Midget Apartments",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "434e9eead36b365314ac",
+                "keyword": "上海市徐汇区武康路115号",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "武康路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "date-group-a964bdf1cced",
+      "priority": 2,
+      "scope": "dispatch-only-not-a-building-identity-conclusion",
+      "tasks": [
+        {
+          "task_id": "record-1793-Mme Green House-年份未知",
+          "event_kind": "史料记录",
+          "target_name": "Mme Green House",
+          "record_address": "792 BUBBLING WELL ROAD",
+          "identity": {
+            "source_record_id": 1793,
+            "original_record": {
+              "id": 1793,
+              "name": "Mme Green House",
+              "name_zh": null,
+              "address": "792 BUBBLING WELL ROAD",
+              "start_year": null,
+              "end_year": null,
+              "url": "https://www.virtualshanghai.net/%E6%95%B8%E6%93%9A/%E5%BB%BA%E7%AF%89?ID=1793",
+              "types": {
+                "TYP01": null,
+                "TYP02": null,
+                "TYP03": null,
+                "TYP04": null,
+                "TYP05": null,
+                "TYP06": null,
+                "TYP07": null,
+                "TYP08": null,
+                "TYP09": null,
+                "TYP10": null,
+                "TYP11": null
+              }
+            },
+            "catalogue_records": [],
+            "display_cards": [
+              {
+                "featureId": "landmark-vs-site-1793",
+                "title": "Mme Green House"
+              }
+            ]
+          },
+          "task_fingerprint": "a3eca25349ee99bfb1d2f46040f57fe66cddc701138e16b079b0d442a36f00cc",
+          "dispatch_group_id": "date-group-a964bdf1cced",
+          "priority": 2,
+          "research_question": "为这个原始史料条目寻找独立的有据用址年代；区分机构前身、同名异址及新旧楼栋，说明是启用、迁入、改名还是某年观察记录。",
+          "date_types_to_check": [
+            "documented_use",
+            "move_in",
+            "rename",
+            "opening"
+          ],
+          "original_event_note": null,
+          "original_event_url": "https://www.virtualshanghai.net/数据/建筑?ID=1793",
+          "suggested_queries": [
+            "Mme Green House",
+            "南京西路 Mme Green House",
+            "南京西路"
+          ],
+          "previous_search": {
+            "status": "no-first-pass-hit-alternative-terms-or-sources-needed",
+            "queries": [
+              {
+                "id": "0864fbf58458ec2afcd1",
+                "keyword": "Mme Green House",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              },
+              {
+                "id": "2d0dc4053a15193877be",
+                "keyword": "南京西路 Mme Green House",
+                "total_hits": 0,
+                "retained_results": 0,
+                "additional_results_not_reviewed": false
+              }
+            ],
+            "street_context_queries": [
+              {
+                "keyword": "南京西路",
+                "scope": "street-context-only"
+              }
+            ],
+            "candidate_count_retained_in_archive": 0,
+            "candidates_included": 0
+          },
+          "leads": [],
+          "cautions": [
+            "现有卡片关联仅用于分派和查资料，不是同栋、同址沿用或新旧门牌转换的新增证据。",
+            "现有查询命中和摘要均未逐条核实；须阅读完整来源并核对该条目门牌。"
+          ]
+        }
+      ]
+    }
+  ]
+}

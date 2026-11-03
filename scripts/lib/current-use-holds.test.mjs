@@ -4,7 +4,7 @@ import fs from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import { promisify } from 'node:util'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import test from 'node:test'
 import { applyCurrentUseHold, clearCurrentUse, findCurrentUseHold } from './current-use-holds.mjs'
 
@@ -171,7 +171,7 @@ for (const networkAvailable of [true, false]) {
         throw new Error('Unexpected network URL: ' + value)
       }
     `)
-    const run = () => execFileAsync(process.execPath, ['--import', path.join(root, 'mock-network.mjs'), path.join(root, 'scripts/enrich-landmark-current-uses.mjs')])
+    const run = () => execFileAsync(process.execPath, ['--import', pathToFileURL(path.join(root, 'mock-network.mjs')).href, path.join(root, 'scripts/enrich-landmark-current-uses.mjs')])
     await run()
     const heldIds = new Set([wikiIds[0], research.properties.featureGroupId, fresh.properties.featureGroupId,
       cached.properties.featureGroupId, park.properties.featureGroupId])

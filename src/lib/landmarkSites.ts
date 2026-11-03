@@ -1,6 +1,10 @@
 import type { CurrentUseSource, HistoricalFeature, HistoricalFeatureCollection, HistoricalRecord } from '../types'
 
 export interface LandmarkSiteLink {
+  recordDisplayNames?: { sourceRecordId: number; expectedName: string; expectedAddress: string; nameZh: string }[]
+  recordDates?: { sourceRecordId: number; expectedName: string; expectedAddress: string; year: number; onlyIfUndated?: boolean; evidence: NonNullable<HistoricalRecord['dateEvidence']> }[]
+  historicalPhases?: HistoricalFeature['properties']['historicalPhases']
+  buildingLifeDates?: HistoricalFeature['properties']['buildingLifeDates']
   id: string
   canonicalFeatureId: string
   memberFeatureIds: string[]
@@ -56,7 +60,26 @@ export function mergeLandmarkSites(collection: HistoricalFeatureCollection, link
     const currentUseSource = present.find((feature) => feature.properties.id === link.currentUseFromFeatureId)
     const currentUseProperties = Object.fromEntries(Object.entries(currentUseSource?.properties ?? {})
       .filter(([key]) => key.startsWith('current')))
-    const records = present.flatMap(sourceRecords)
+    const records = present.flatMap(sourceRecords).map(record => {
+      const displayName = link.recordDisplayNames?.find(item => sameIds(record.sourceRecordIds ?? [], [item.sourceRecordId])
+        && item.expectedName === record.name && isName(item.nameZh)
+        && present.some(feature => feature.properties.historicalAddresses?.some(address =>
+          address.sourceRecordId === item.sourceRecordId && address.address === item.expectedAddress)))
+      const review = link.recordDates?.find(item => sameIds(record.sourceRecordIds ?? [], [item.sourceRecordId])
+        && item.expectedName === record.name && Number.isInteger(item.year) && item.year >= 1000
+        && (!item.onlyIfUndated || record.startYear === undefined && record.endYear === undefined
+          || record.startYear === item.year && record.endYear === item.year && record.dateEvidence?.sourceUrl === item.evidence.sourceUrl)
+        && /^https?:\/\//.test(item.evidence.sourceUrl)
+        && present.some(feature => feature.properties.historicalAddresses?.some(address =>
+          address.sourceRecordId === item.sourceRecordId && address.address === item.expectedAddress)))
+      // A documented year is an observation, not a claim that the use continued indefinitely.
+      return { ...record,
+        ...(displayName ? { displayNameZh: displayName.nameZh } : {}),
+        ...(review ? { startYear: review.year, endYear: review.year, dateEvidence: review.evidence } : {}),
+      }
+    })
+    const supersededNames = new Set(records.filter(record => record.displayNameZh && record.nameZh !== record.displayNameZh)
+      .map(record => record.nameZh))
     const merged: HistoricalFeature = {
       ...canonical,
       properties: {
@@ -80,8 +103,10 @@ export function mergeLandmarkSites(collection: HistoricalFeatureCollection, link
           ...(link.aliases ?? []),
           ...present.flatMap((feature) => [feature.properties.historicalName, feature.properties.modernNameZh,
             feature.properties.historicalChinese, ...(feature.properties.aliases ?? [])]),
-        ].filter(isName)),
+        ].filter(isName).filter(name => !supersededNames.has(name))),
         historicalRecords: [...new Map(records.map((record) => [JSON.stringify(record), record])).values()],
+        ...(link.historicalPhases ? { historicalPhases: link.historicalPhases } : {}),
+        ...(link.buildingLifeDates ? { buildingLifeDates: { ...p.buildingLifeDates, ...link.buildingLifeDates } } : {}),
         legacyFeatureGroupIds: unique(present.flatMap((feature) => [feature.properties.featureGroupId,
           ...(feature.properties.legacyFeatureGroupIds ?? [])])).filter((id) => id !== p.featureGroupId),
         historicalSiteNote: link.note,
