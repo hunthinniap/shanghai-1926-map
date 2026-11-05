@@ -1,4 +1,5 @@
 import type { HistoricalFeatureCollection } from '../types'
+import { roadDisplayName } from './roadDisplayNames'
 
 export interface RoadLabelEntry {
   modernName: string
@@ -34,11 +35,11 @@ const inferredRoadLabels: RoadLabelEntry[] = [
 const labelOverrides = new Map<string, { historicalName: string; featureGroupId?: string }>([
   ['南昌路', { historicalName: 'Route Vallon / Route Dolfus' }],
   ['嘉善路', { historicalName: 'Route Gaston Kahn' }],
-  ['人民路', { historicalName: 'Min Kueq Lu', featureGroupId: 'road-old-city-人民路' }],
-  ['中华路', { historicalName: 'Tzon Wa Lu', featureGroupId: 'road-old-city-中华路' }],
-  ['复兴东路', { historicalName: 'Dzo Ka Lu', featureGroupId: 'road-old-city-复兴东路' }],
-  ['方浜中路', { historicalName: 'Faon Pan Lu', featureGroupId: 'road-old-city-方浜中路' }],
-  ['河南南路', { historicalName: 'Ae He Lu', featureGroupId: 'road-old-city-河南南路' }],
+  ['人民路', { historicalName: '民國路', featureGroupId: 'road-old-city-人民路' }],
+  ['中华路', { historicalName: '中華路', featureGroupId: 'road-old-city-中华路' }],
+  ['复兴东路', { historicalName: '肇嘉路', featureGroupId: 'road-old-city-复兴东路' }],
+  ['方浜中路', { historicalName: '方浜路', featureGroupId: 'road-old-city-方浜中路' }],
+  ['河南南路', { historicalName: '晏海路', featureGroupId: 'road-old-city-河南南路' }],
 ])
 
 export function buildRoadLabelIndex(collection: HistoricalFeatureCollection) {
@@ -56,7 +57,7 @@ export function buildRoadLabelIndex(collection: HistoricalFeatureCollection) {
     const groupId = feature.properties.featureGroupId
     const current = groups.get(groupId)
     groups.set(groupId, {
-      historicalName: feature.properties.historicalName,
+      historicalName: roadDisplayName(feature.properties),
       priority: Math.min(current?.priority ?? 4, feature.properties.priority),
       featureCount: (current?.featureCount ?? 0) + 1,
       modernNameEn: feature.properties.modernNameEn ?? current?.modernNameEn,

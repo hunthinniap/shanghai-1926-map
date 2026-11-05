@@ -2,6 +2,7 @@ import type { HistoricalFeature, SearchRecord } from '../types'
 import { getHeritageBuildingName, type HeritageBuildingFeature } from './heritageBuildings'
 import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
 import { reviewedResidentsForHeritage } from '../data/notableResidents'
+import { roadDisplayName } from './roadDisplayNames'
 
 export interface PlaceSearchRecord extends SearchRecord {
   heritageOfficialId?: string
@@ -75,7 +76,7 @@ export function makeSearchRecords(features: HistoricalFeature[]): SearchRecord[]
       {
         featureId: properties.id,
         featureGroupId: key,
-        historicalName: properties.historicalName,
+        historicalName: properties.kind === 'road' ? roadDisplayName(properties) : properties.historicalName,
         modernNameZh: properties.modernNameZh,
         modernNameEn: properties.modernNameEn,
         normalizedTerms: [...new Set(terms.map(normalizeSearchTerm))],

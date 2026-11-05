@@ -18,16 +18,27 @@ test('searches by modern name and opens the historical detail', async ({ page })
   await expect(page.getByText('南昌路', { exact: true }).last()).toBeVisible()
 })
 
-test('finds a Chinese historical road name but displays its Shanghainese spelling', async ({ page }) => {
+test('shows a Chinese road title with its Shanghainese spelling below it', async ({ page }) => {
   await page.goto('/')
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
   await search.fill('和平路')
-  await page.getByRole('option', { name: /Wu Bin Lu/ }).click()
+  await page.getByRole('option', { name: /和平路/ }).first().click()
 
-  const detail = page.getByRole('complementary', { name: 'Wu Bin Lu详情' })
-  await expect(detail).toContainText('和平路')
+  const detail = page.getByRole('complementary', { name: '和平路详情' })
+  await expect(detail.getByRole('heading', { name: '和平路', exact: true })).toBeVisible()
+  await expect(detail.locator('h2 + p')).toHaveText('Wu Bin Lu')
   await expect(detail).toContainText('老派沪语拼音（无声调）')
   await expect(detail).toContainText('Rime Wugniu')
+})
+
+test('finds a public-settlement Chinese name by its old English transcription', async ({ page }) => {
+  await page.goto('/')
+  const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
+  await search.fill('Haining Road')
+  await page.getByRole('option', { name: /海宁路/ }).first().click()
+  const detail = page.getByRole('complementary', { name: '海宁路详情' })
+  await expect(detail.getByRole('heading', { name: '海宁路', exact: true })).toBeVisible()
+  await expect(detail.locator('h2 + p')).toHaveText('Haining Road')
 })
 
 test('finds Parc français and exposes sources', async ({ page }) => {
@@ -153,9 +164,9 @@ test('shows a linked person profile for an eponymous road', async ({ page }) => 
   await page.getByRole('option', { name: /Avenue Joffre/ }).first().click()
 
   const detail = page.getByRole('complementary', { name: 'Avenue Joffre详情' })
-  await expect(detail.getByRole('heading', { name: '路名人物' })).toBeVisible()
+  await expect(detail.getByRole('heading', { name: '名字来源' })).toBeVisible()
   await expect(detail).toContainText('Joseph Joffre')
-  await expect(detail.getByRole('link', { name: /Joseph Joffre/ })).toHaveAttribute(
+  await expect(detail.getByRole('region', { name: '名字来源' }).getByRole('link', { name: 'Joseph Joffre' })).toHaveAttribute(
     'href',
     'https://en.wikipedia.org/wiki/Joseph_Joffre',
   )

@@ -1,41 +1,72 @@
-import { ExternalLink, MapPin, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import { getRoadEponym } from '../data/roadEponyms'
+import { reviewedRoadHistory, type RoadHistoryEvent, type RoadNameOrigin } from '../data/roadHistories'
+import referenceData from '../data/roadHistoryReferences.json'
+import { roadDisplayName } from '../lib/roadDisplayNames'
 import type { HistoricalFeature, SourceRecord } from '../types'
+import './PlaceDetailsPanel.css'
 
-const jurisdictions = { 'french-concession': 'French Quarter', 'international-settlement': 'Commerce District',
-  'old-city': 'Old City', 'chinese-administered': 'Chinese-administered Area' }
-const naming = { translated: '历史中文名的英文转写 / 翻译', 'proposed-road': '借相邻民国道路名拟定',
-  'proposed-district': '借民国时期片区名拟定', 'proposed-site': '借原址历史名称拟定' }
+interface Reference { id: string; title: string; events: {period: string; kind: string; name: string; note?: string}[]; sources: {title: string; url: string}[] }
+const references = referenceData as Record<string, Reference[]>
+
+function Timeline({ events }: { events: RoadHistoryEvent[] }) {
+  return <ol className="place-timeline">{events.map((event, index) => <li key={`${event.year}-${index}`}>
+    <span className="place-event-year">{event.period || (event.year !== undefined ? `${event.year}年` : '年代待考')}</span>
+    <div className="place-event-body"><span className="place-event-kind">{event.kind}</span>
+      <strong>{event.url ? <a href={event.url} target="_blank" rel="noreferrer">{event.name}</a> : event.name}</strong>
+      {event.note && <p>{event.note}</p>}
+    </div>
+  </li>)}</ol>
+}
 
 export function RoadDetailsPanel({ feature, sources, onClose }: { feature: HistoricalFeature; sources: SourceRecord[]; onClose: () => void }) {
   const p = feature.properties
+  const title = roadDisplayName(p)
+  const chineseFirst = title !== p.historicalName
+  const secondaryName = chineseFirst ? p.historicalName : p.historicalChinese
+  const history = reviewedRoadHistory(p)
   const person = getRoadEponym(p.historicalName)
-  const featureSources = [...new Set(p.sourceIds)].map(id => sources.find(source => source.id === id))
-    .filter((source): source is SourceRecord => Boolean(source))
-  return <aside className="details-panel" aria-label={`${p.historicalName}详情`}>
+  const origins: RoadNameOrigin[] = history?.origins || (person ? [{ name: person.name, url: person.url, description: person.summary }] : [])
+  const pending = references[p.featureGroupId] || []
+  const events: RoadHistoryEvent[] = history?.events || [
+    { kind: '历史名称', name: p.historicalChinese ? `${p.historicalName} · ${p.historicalChinese}` : p.historicalName,
+      note: '辟筑及更名年份尚未核定。' },
+    { period: '今日', kind: '现名', name: p.modernNameZh },
+  ]
+  const sourceList = [...new Map([
+    ...p.sourceIds.flatMap(id => { const s = sources.find(s => s.id === id); return s ? [{ title: s.title, url: (p.sourceUrls?.[id] || s.url).replace(/^http:/, 'https:') }] : [] }),
+    ...(history?.events.flatMap(e => e.url ? [{ title: `维基百科 · ${p.modernNameZh}`, url: e.url }] : []) || []),
+    ...origins.map(origin => ({ title: origin.name, url: origin.url })),
+  ].map(source => [source.url, source])).values()]
+  return <aside className="details-panel place-details-panel road-details-panel" aria-label={`${title}详情`}>
     <div className="details-grip" aria-hidden="true" />
     <button type="button" className="icon-button details-close" onClick={onClose} aria-label="关闭详情"><X size={18} aria-hidden="true" /></button>
-    <div className="details-kicker"><MapPin size={14} aria-hidden="true" /><span>{p.category}</span><span>·</span><span>{jurisdictions[p.jurisdiction]}</span></div>
-    <h2>{p.historicalName}</h2>
-    {p.historicalChinese && <p className="details-historical-chinese">{p.historicalChinese}</p>}
-    <dl className="details-list">
-      <div><dt>今日名称</dt><dd>{p.modernNameZh}</dd></div>
-      {p.modernNameEn && <div><dt>现代转写</dt><dd>{p.modernNameEn}</dd></div>}
-      <div><dt>名称年代</dt><dd>{p.labelYearIsFallback ? `年代待考（资料截止 ${p.labelYear} 年）` : p.labelYear === 1928 ? '1928 年' : `${p.labelYear} 年资料`}</dd></div>
-      {p.namingBasis && <div><dt>命名依据</dt><dd>{naming[p.namingBasis]}</dd></div>}
-      <div><dt>地图语言</dt><dd>{p.namingBasis?.startsWith('proposed-') ? p.language === 'fr' ? '法语拟名' : '英文拟名'
-        : p.namingBasis === 'translated' ? '英文转写' : p.language === 'fr' ? '法语原名' : p.language === 'en' ? '英文原名'
-          : p.language === 'wuu' ? '老派沪语拼音（无声调）' : '当时中文名'}</dd></div>
-    </dl>
-    {!!p.aliases?.length && <div className="details-aliases"><span>亦见</span><p>{p.aliases.join(' · ')}</p></div>}
-    <div className="details-sources"><h3>资料来源</h3>
-      {featureSources.map(source => <a key={source.id} href={(p.sourceUrls?.[source.id] || source.url).replace(/^http:/, 'https:')} target="_blank" rel="noreferrer">
-        <span>{source.title}<small>{source.year} · {source.license}</small></span><ExternalLink size={14} aria-hidden="true" />
-      </a>)}
-      {person && <div className="details-person" aria-label="路名人物"><h4>路名人物</h4>
-        <a href={person.url} target="_blank" rel="noreferrer"><span><strong>{person.name}</strong>
-          <span className="details-person-summary">{person.summary}</span><small>{person.sourceLabel}</small></span><ExternalLink size={14} aria-hidden="true" /></a>
-      </div>}
-    </div>
+    <header className="place-heading"><h2>{title}</h2>
+      {secondaryName && secondaryName !== title && <p className={chineseFirst ? 'details-road-transcription' : 'details-historical-chinese'}>{secondaryName}</p>}
+    </header>
+    <dl className="place-address"><div><dt>今日名称</dt><dd>{p.modernNameZh}</dd></div></dl>
+    <section className="place-section" aria-label="时间线"><h3>时间线</h3><Timeline events={events} /></section>
+    {origins.length > 0 && <section className="place-section" aria-label="名字来源"><h3>名字来源</h3>
+      <ul className="place-residents">{origins.map(origin => <li key={origin.url}>
+        <a href={origin.url} target="_blank" rel="noreferrer">{origin.name}</a>
+        <p>{origin.description}{origin.links?.map(link => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.text}</a>)}{origin.suffix}</p>
+      </li>)}</ul>
+    </section>}
+    {history?.note && <section className="place-section" aria-label="沿革说明"><h3>沿革说明</h3><p className="road-history-note">{history.note}</p></section>}
+    {pending.length > 0 && <section className="place-section road-reference-section" aria-label="参考资料待核">
+      <details><summary>参考资料待核（{pending.length}份）</summary>
+        <p className="road-history-note">下列为提供资料中的原始时间线，尚未逐条核实。与已核实时间线不同的年份，以各自来源和具体路段继续核对。</p>
+        {pending.map(reference => <div key={reference.id}><Timeline events={reference.events} />
+          <ul className="place-sources">{reference.sources.map((source, index) => <li key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></li>)}</ul>
+        </div>)}
+      </details>
+    </section>}
+    <section className="place-section" aria-label="名称资料"><h3>名称资料</h3>
+      <dl className="place-facts"><div><dt>原文／转写</dt><dd>{chineseFirst ? p.language === 'wuu' ? '老派沪语拼音（无声调）' : '旧式英文转写' : p.language === 'fr' ? '法语原名' : p.language === 'en' ? '英文原名' : '中文旧名'}</dd></div>
+        <div><dt>原数据资料年</dt><dd>{p.labelYearIsFallback ? '年代待考' : `${p.labelYear}年`}（不作为建成年份）</dd></div>
+        {!!p.aliases?.length && <div><dt>其他写法</dt><dd>{p.aliases.join(' · ')}</dd></div>}
+      </dl>
+    </section>
+    {sourceList.length > 0 && <section className="place-section" aria-label="来源"><h3>来源</h3><ol className="place-sources">{sourceList.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></li>)}</ol></section>}
   </aside>
 }
