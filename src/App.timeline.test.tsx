@@ -8,7 +8,8 @@ import type { HistoricalFeature } from './types'
 import type { HeritageBuildingFeature } from './lib/heritageBuildings'
 
 vi.mock('./components/MapView', () => ({ MapView: (props: ComponentProps<typeof MapView>) => (
-  <div data-testid="map">
+  <div data-testid="map" data-buildings-visible={props.buildingsVisible}
+    data-landmarks-visible={props.landmarksVisible} data-heritage-visible={props.heritageVisible}>
     {props.features.features.map(feature => <button key={feature.properties.id} data-testid="historical"
       onClick={() => props.onSelect(feature.properties.featureGroupId)}>{feature.properties.historicalName}</button>)}
     {props.heritageBuildings?.features.map(feature => <span data-testid="heritage" key={feature.properties.officialId}>{feature.properties.name}</span>)}
@@ -54,10 +55,40 @@ it('filters both building layers and search, preserves roads, restores all dates
     await act(async () => target!.click())
   }
   const names = () => [...container.querySelectorAll('[data-testid="historical"]')].map(el => el.textContent)
+  const expectVisibility = (buildings: boolean, landmarks: boolean, heritage: boolean) => {
+    for (const [layer, value] of [['building', buildings], ['landmark', landmarks], ['heritage', heritage]] as const) {
+      expect(container.querySelector(`.${layer}-toggle-button`)?.getAttribute('aria-pressed')).toBe(String(value))
+    }
+    const map = container.querySelector('[data-testid="map"]')!
+    expect(map.getAttribute('data-buildings-visible')).toBe(String(buildings))
+    expect(map.getAttribute('data-landmarks-visible')).toBe(String(landmarks))
+    expect(map.getAttribute('data-heritage-visible')).toBe(String(heritage))
+  }
   try {
     await act(async () => root.render(<App />))
     expect(container.querySelector('.timeline-year')?.textContent).toBe('全部年代')
     await click('[aria-label="查看 1928 年"]')
+    expectVisibility(false, false, false)
+    expect(vi.mocked(fetch).mock.calls.some(([path]) => String(path).includes('shanghai-excellent-historical-buildings'))).toBe(false)
+    await click('.timeline-all')
+    expectVisibility(false, false, false)
+    await click('.building-toggle-button')
+    await click('[aria-label="下一年"]')
+    expectVisibility(true, false, false)
+    await click('.landmark-toggle-button')
+    await click('[aria-label="查看 1949 年"]')
+    expectVisibility(true, true, false)
+    await click('.landmark-toggle-button')
+    await click('.heritage-toggle-button')
+    await click('[aria-label="查看 1900 年"]')
+    expectVisibility(true, false, true)
+    await click('.heritage-toggle-button')
+    await click('[aria-label="查看 1928 年"]')
+    expectVisibility(true, false, false)
+    await click('.building-toggle-button')
+    await click('.landmark-toggle-button')
+    await click('.heritage-toggle-button')
+    expectVisibility(false, true, true)
     expect(names()).toEqual(['Road', 'Early School'])
     expect(container.querySelectorAll('[data-testid="heritage"]')).toHaveLength(1)
     expect(container.querySelector('.landmark-toggle-button')?.getAttribute('aria-pressed')).toBe('true')
@@ -110,6 +141,8 @@ it('keeps the early garden card usable before the later heritage building exists
   }
   try {
     await act(async () => root.render(<App />))
+    await click('.landmark-toggle-button')
+    await click('.heritage-toggle-button')
     await click('[aria-label="回到 1928 年"]')
     expect(container.querySelectorAll('[data-testid="heritage"]')).toHaveLength(0)
     await click('[data-testid="historical"]')

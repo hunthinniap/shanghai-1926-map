@@ -1,8 +1,9 @@
 import type { HistoricalFeatureProperties } from '../types'
+import importedHistories from './importedRoadHistories.json'
 
-export interface RoadHistoryEvent { year?: number; period?: string; kind: string; name: string; note?: string; url?: string }
-export interface RoadNameOrigin { name: string; url: string; description: string; links?: { text: string; url: string }[]; suffix?: string }
-interface RoadHistory { modernName: string; historicalNames: string[]; events: RoadHistoryEvent[]; origins?: RoadNameOrigin[]; note?: string }
+export interface RoadHistoryEvent { year?: number; displayYear?: number; period?: string; originalPeriod?: string; kind: string; name: string; note?: string; segment?: string; url?: string; sourceTitle?: string }
+export interface RoadNameOrigin { name: string; url: string; description: string; sourceTitle?: string; links?: { text: string; url: string }[]; suffix?: string }
+export interface RoadHistory { featureGroupId?: string; modernName: string; historicalNames: string[]; events: RoadHistoryEvent[]; origins?: RoadNameOrigin[]; note?: string; sources?: { title: string; url: string }[] }
 const wiki = (title: string) => `https://zh.wikipedia.org/wiki/${encodeURIComponent(title)}`
 const event = (year: number, kind: string, name: string, title: string, note?: string): RoadHistoryEvent =>
   ({ year, kind, name, url: wiki(title), note })
@@ -66,5 +67,9 @@ export const roadHistories: RoadHistory[] = [
 ]
 
 export function reviewedRoadHistory(p: HistoricalFeatureProperties) {
-  return roadHistories.find(h => h.modernName === p.modernNameZh && h.historicalNames.includes(p.historicalName))
+  if (p.kind !== 'road') return undefined
+  const matches = (h: RoadHistory) => h.modernName === p.modernNameZh
+    && h.historicalNames.includes(p.historicalName)
+    && (!h.featureGroupId || h.featureGroupId === p.featureGroupId)
+  return roadHistories.find(matches) || (importedHistories as RoadHistory[]).find(matches)
 }

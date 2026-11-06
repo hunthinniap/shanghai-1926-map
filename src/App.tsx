@@ -242,13 +242,6 @@ function App() {
   )
 
   const handleMapError = useCallback((message?: string) => setMapError(message), [])
-  const changeTimelineYear = useCallback((year: number | null) => {
-    setTimelineYear(year)
-    if (year !== null && !heritageVisible && !landmarksVisible) {
-      setHeritageVisible(true)
-      setLandmarksVisible(true)
-    }
-  }, [heritageVisible, landmarksVisible])
   const selectHistoricalFeature = useCallback((groupId: string) => {
     setSelectedMetroStation(undefined)
     setSelectedHeritage(undefined)
@@ -454,7 +447,7 @@ function App() {
         <TimelineControl year={timelineYear} minYear={timelineMinYear} maxYear={timelineMaxYear}
           visibleCount={visibleBuildingCount} unknownCount={unknownBuildingCount}
           includeUnknown={includeUnknownDates} loading={needsHeritage && heritageLoading}
-          onYearChange={changeTimelineYear} onIncludeUnknownChange={setIncludeUnknownDates} />
+          onYearChange={setTimelineYear} onIncludeUnknownChange={setIncludeUnknownDates} />
 
         {needsHeritage && heritageError && (
           <div className="heritage-load-error" role="alert">
