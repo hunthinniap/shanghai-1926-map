@@ -1,5 +1,6 @@
 import { X } from 'lucide-react'
 import type { PlaceDetails, PlaceFact } from '../lib/placeDetails'
+import { FeedbackButton } from './FeedbackButton'
 import './PlaceDetailsPanel.css'
 
 function Facts({ items }: { items: PlaceFact[] }) {
@@ -19,6 +20,7 @@ export function PlaceDetailsPanel({ details, onClose }: { details: PlaceDetails;
   return <aside className={`details-panel place-details-panel${details.heritage ? ' heritage-details-panel' : ''}`} aria-label={`${details.name}详情`}>
     <div className="details-grip" aria-hidden="true" />
     <button type="button" className="icon-button details-close" onClick={onClose} aria-label="关闭详情"><X size={18} aria-hidden="true" /></button>
+    <FeedbackButton key={details.feedbackId} context={{ id: details.feedbackId, type: 'building', name: details.name, address: details.address, year: details.year }} />
     <header className="place-heading">
       <h2>{details.name}</h2>
       {details.foreignName && <p className="place-foreign-name">{details.foreignName}</p>}

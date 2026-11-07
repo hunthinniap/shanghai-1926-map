@@ -7,6 +7,8 @@ import Pbf from 'pbf'
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(projectRoot, 'public', 'data', 'historical-features.geojson')
 const sourcesPath = path.join(projectRoot, 'public', 'data', 'sources.json')
+const apiBackfillPath = path.join(projectRoot, 'scripts', 'data', 'old-city-road-api-backfill.geojson')
+const backfillOnly = process.argv.includes('--backfill-only')
 const oldCityBounds = [121.4767, 31.2148, 121.4963, 31.2332]
 const tileZoom = 14
 
@@ -24,6 +26,19 @@ const oldCitySources = [
     url: 'https://www.thepaper.cn/newsDetail_forward_15247094',
     license: 'Research citation; rights retained by source',
     year: 2021,
+  },
+  {
+    id: 'shanghai-place-names-1910',
+    title: '商务印书馆《上海地名表》（1910）',
+    url: 'https://www.shidianguji.com/zh/book/LG2SHDMB/chapter/1lxtn5qaklyyb',
+    license: 'Public domain',
+    year: 1910,
+  },
+  {
+    id: 'openstreetmap-current-roads',
+    title: 'OpenStreetMap contributors · 现存道路线位',
+    url: 'https://openfreemap.org/',
+    license: 'ODbL',
   },
 ]
 
@@ -92,12 +107,19 @@ const oldCityRoads = [
   ['刘家弄', 'Liujia Lane', '劉家弄', 'Lioe Ka Lon', 4],
   ['净土街', 'Jingtu Street', '淨土街', 'Dzin Thu Ka', 4],
   ['狮子街', 'Shizi Street', '獅子街', 'Sy Tzy Ka', 4],
-].map(([modernNameZh, modernNameEn, historicalChinese, historicalName, priority]) => ({
+  ['会馆弄', undefined, '会馆弄', 'Hue Koe Lon', 4, {
+    language: 'zh',
+    labelYear: 1910,
+    sourceIds: ['shanghai-place-names-1910', 'openstreetmap-current-roads'],
+    aliases: ['會館弄', '中山南路76弄'],
+  }],
+].map(([modernNameZh, modernNameEn, historicalChinese, historicalName, priority, properties]) => ({
   modernNameZh,
   modernNameEn,
   historicalChinese,
   historicalName,
   priority,
+  properties,
 }))
 
 function namesForRoad(properties = {}) {
@@ -173,10 +195,11 @@ async function fetchRoadLines() {
   return roads
 }
 
-const [collection, sources, roadLines] = await Promise.all([
+const [collection, sources, apiBackfill, roadLines] = await Promise.all([
   fs.readFile(dataPath, 'utf8').then(JSON.parse),
   fs.readFile(sourcesPath, 'utf8').then(JSON.parse),
-  fetchRoadLines(),
+  fs.readFile(apiBackfillPath, 'utf8').then(JSON.parse),
+  backfillOnly ? [] : fetchRoadLines(),
 ])
 
 const linesByName = new Map()
@@ -190,7 +213,10 @@ roadLines.forEach((roadLine) => {
 
 const curatedFeatures = []
 const missingNames = []
-oldCityRoads.forEach((road) => {
+const backfillNames = new Set(apiBackfill.features.map((feature) => feature.properties.modernNameZh))
+const roadsToRefresh = backfillOnly ? [] : oldCityRoads
+roadsToRefresh.forEach((road) => {
+  if (backfillNames.has(road.modernNameZh)) return
   const matchingLines = linesByName.get(road.modernNameZh) ?? []
   if (!matchingLines.length) {
     missingNames.push(road.modernNameZh)
@@ -219,24 +245,29 @@ oldCityRoads.forEach((road) => {
         category: '道路',
         priority: road.priority,
         curatedOldCity: true,
+        ...road.properties,
       },
     })
   })
 })
 
-const retainedFeatures = collection.features.filter((feature) => !feature.properties?.curatedOldCity)
+const retainedFeatures = collection.features.filter((feature) => {
+  if (!feature.properties?.curatedOldCity) return true
+  return backfillOnly && !backfillNames.has(feature.properties.modernNameZh)
+})
+curatedFeatures.push(...apiBackfill.features)
 const mergedSources = [
   ...sources.filter((source) => !oldCitySources.some((addition) => addition.id === source.id)),
   ...oldCitySources,
 ]
 
-await Promise.all([
-  fs.writeFile(dataPath, `${JSON.stringify({ ...collection, features: [...retainedFeatures, ...curatedFeatures] })}\n`, 'utf8'),
-  fs.writeFile(sourcesPath, `${JSON.stringify(mergedSources, null, 2)}\n`, 'utf8'),
-])
+await fs.writeFile(dataPath, `${JSON.stringify({ ...collection, features: [...retainedFeatures, ...curatedFeatures] })}\n`, 'utf8')
+if (!backfillOnly) {
+  await fs.writeFile(sourcesPath, `${JSON.stringify(mergedSources, null, 2)}\n`, 'utf8')
+}
 
 console.log(
   `Added ${new Set(curatedFeatures.map((feature) => feature.properties.featureGroupId)).size} Old City road groups ` +
-    `from ${curatedFeatures.length} current OSM line segments.`,
+    `from ${curatedFeatures.reduce((count, feature) => count + lineStrings(feature.geometry).length, 0)} current OSM line paths.`,
 )
 if (missingNames.length) console.log(`No current named OSM way found for: ${missingNames.join('、')}`)

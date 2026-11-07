@@ -22,6 +22,7 @@ import {
 } from '../lib/metroLabels'
 import {
   buildRoadLabelIndex,
+  datedRoadSegments,
   roadModernNameForGroup,
   type RoadLabelEntry,
 } from '../lib/roadLabels'
@@ -30,6 +31,7 @@ import { withLandmarkMapNames } from '../lib/landmarkLabels'
 
 interface MapViewProps {
   features: HistoricalFeatureCollection
+  timelineYear?: number | null
   jurisdictions: FeatureCollection
   buildingsVisible: boolean
   landmarksVisible: boolean
@@ -50,6 +52,9 @@ const interactiveLayers = [
   'historical-road-hit',
   'historical-road-label-major',
   'historical-road-label-minor',
+  'historical-road-segment-hit',
+  'historical-road-segment-label',
+  'historical-road-segment-label-minor',
   'historical-landmark-point',
   'historical-landmark-area',
   'historical-landmark-label',
@@ -254,6 +259,7 @@ function selectedCollection(collection: HistoricalFeatureCollection, groupId?: s
 }
 
 function roadNameExpression(names: string[]): maplibregl.ExpressionSpecification {
+  if (!names.length) return ['literal', '']
   const matches = (property: string): maplibregl.ExpressionSpecification => [
     'match',
     ['get', property],
@@ -283,6 +289,7 @@ function roadValueExpression<T extends string | number>(
   value: (entry: RoadLabelEntry) => T,
   fallback: T,
 ): maplibregl.ExpressionSpecification {
+  if (!entries.length) return ['literal', fallback]
   return [
     'match',
     roadName,
@@ -352,14 +359,7 @@ function matchingParkName(
   return undefined
 }
 
-function addHistoricalLayers(
-  map: Map,
-  features: HistoricalFeatureCollection,
-  jurisdictions: FeatureCollection,
-  roadLabels: ReadonlyMap<string, RoadLabelEntry>,
-  metroStationLabels: ReadonlyMap<string, MetroStationLabelEntry>,
-  parkLabels: ReadonlyMap<string, ParkLabelEntry>,
-) {
+function roadLayerExpressions(roadLabels: ReadonlyMap<string, RoadLabelEntry>) {
   const allEntries = [...roadLabels.values()]
   const labelEntries = allEntries.filter((entry) => !entry.inferred)
   const inferredEntries = allEntries.filter((entry) => entry.inferred)
@@ -381,6 +381,39 @@ function addHistoricalLayers(
   )
   const interactiveRoadNames = labelEntries.filter((entry) => entry.featureGroupId).map((entry) => entry.modernName)
   const interactiveRoadName = roadNameExpression(interactiveRoadNames)
+  return {
+    historicalRoadName, inferredHistoricalName,
+    hitFilter: ['!=', interactiveRoadName, ''] as maplibregl.FilterSpecification,
+    majorFilter: ['all', labelledRoadFilter, ['<=', roadPriority, 2]] as maplibregl.FilterSpecification,
+    minorFilter: ['all', labelledRoadFilter, ['>', roadPriority, 2]] as maplibregl.FilterSpecification,
+    inferredFilter: ['!=', inferredRoadName, ''] as maplibregl.FilterSpecification,
+  }
+}
+
+function updateRoadLabels(map: Map, labels: ReadonlyMap<string, RoadLabelEntry>) {
+  if (!map.getLayer('historical-road-hit')) return
+  const road = roadLayerExpressions(labels)
+  map.setFilter('historical-road-hit', road.hitFilter)
+  for (const [layer, filter, name] of [
+    ['historical-road-label-major', road.majorFilter, road.historicalRoadName],
+    ['historical-road-label-minor', road.minorFilter, road.historicalRoadName],
+    ['historical-expressway-label', road.inferredFilter, road.inferredHistoricalName],
+  ] as const) {
+    map.setFilter(layer, filter)
+    map.setLayoutProperty(layer, 'text-field', name)
+  }
+}
+
+function addHistoricalLayers(
+  map: Map,
+  features: HistoricalFeatureCollection,
+  jurisdictions: FeatureCollection,
+  roadLabels: ReadonlyMap<string, RoadLabelEntry>,
+  roadSegments: FeatureCollection<Geometry>,
+  metroStationLabels: ReadonlyMap<string, MetroStationLabelEntry>,
+  parkLabels: ReadonlyMap<string, ParkLabelEntry>,
+) {
+  const road = roadLayerExpressions(roadLabels)
   const metroEntries = [...metroStationLabels.values()]
   const currentMetroStationName = roadNameExpression(metroEntries.map((entry) => entry.modernName))
   const historicalMetroStationName = metroValueExpression(metroEntries, currentMetroStationName)
@@ -477,6 +510,7 @@ function addHistoricalLayers(
     },
   })
   map.addSource('historical-features', { type: 'geojson', data: features, promoteId: 'id', attribution: heritageAttribution })
+  map.addSource('dated-road-segments', { type: 'geojson', data: roadSegments })
   if (metroEnabled) {
     map.addSource('metro-lines', { type: 'geojson', data: assetUrl('data/metro-lines.geojson') })
     map.addSource('metro-stations', { type: 'geojson', data: assetUrl('data/metro-stations.geojson') })
@@ -536,7 +570,7 @@ function addHistoricalLayers(
     type: 'line',
     source: 'openmaptiles',
     'source-layer': 'transportation_name',
-    filter: ['!=', interactiveRoadName, ''],
+    filter: road.hitFilter,
     paint: { 'line-color': '#000000', 'line-width': 16, 'line-opacity': 0.01 },
   })
 
@@ -567,6 +601,19 @@ function addHistoricalLayers(
     },
   })
 
+  map.addLayer({
+    id: 'selected-reviewed-road-segment',
+    type: 'line',
+    source: 'selected-feature',
+    filter: ['==', ['get', 'roadLabelFromGeometry'], true],
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: {
+      'line-color': '#d07d35',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 10.5, 2.5, 16, 6],
+      'line-opacity': 0.98,
+    },
+  })
+
   const labelLayout = {
     'symbol-placement': 'line' as const,
     'symbol-spacing': 430,
@@ -584,8 +631,8 @@ function addHistoricalLayers(
     source: 'openmaptiles',
     'source-layer': 'transportation_name',
     minzoom: 10.8,
-    filter: ['all', labelledRoadFilter, ['<=', roadPriority, 2]],
-    layout: { ...labelLayout, 'text-field': historicalRoadName },
+    filter: road.majorFilter,
+    layout: { ...labelLayout, 'text-field': road.historicalRoadName },
     paint: {
       'text-color': '#3f332b',
       'text-halo-color': '#f2ead6',
@@ -599,8 +646,8 @@ function addHistoricalLayers(
     source: 'openmaptiles',
     'source-layer': 'transportation_name',
     minzoom: 13.6,
-    filter: ['all', labelledRoadFilter, ['>', roadPriority, 2]],
-    layout: { ...labelLayout, 'text-field': historicalRoadName, 'symbol-spacing': 520 },
+    filter: road.minorFilter,
+    layout: { ...labelLayout, 'text-field': road.historicalRoadName, 'symbol-spacing': 520 },
     paint: {
       'text-color': '#57483c',
       'text-halo-color': '#f2ead6',
@@ -609,16 +656,32 @@ function addHistoricalLayers(
     },
   })
   map.addLayer({
+    id: 'historical-road-segment-hit', type: 'line', source: 'dated-road-segments',
+    paint: { 'line-width': 16, 'line-opacity': 0.01 },
+  })
+  map.addLayer({
+    id: 'historical-road-segment-label', type: 'symbol', source: 'dated-road-segments', minzoom: 10.8,
+    filter: ['<=', ['get', 'priority'], 2],
+    layout: labelLayout,
+    paint: { 'text-color': '#3f332b', 'text-halo-color': '#f2ead6', 'text-halo-width': 1.5, 'text-halo-blur': 0.6 },
+  })
+  map.addLayer({
+    id: 'historical-road-segment-label-minor', type: 'symbol', source: 'dated-road-segments', minzoom: 13.6,
+    filter: ['>', ['get', 'priority'], 2],
+    layout: { ...labelLayout, 'symbol-spacing': 520 },
+    paint: { 'text-color': '#57483c', 'text-halo-color': '#f2ead6', 'text-halo-width': 1.4, 'text-halo-blur': 0.5 },
+  })
+  map.addLayer({
     id: 'historical-expressway-label',
     type: 'symbol',
     source: 'openmaptiles',
     'source-layer': 'transportation_name',
     minzoom: 10.5,
-    filter: ['!=', inferredRoadName, ''],
+    filter: road.inferredFilter,
     layout: {
       ...labelLayout,
       'symbol-spacing': 650,
-      'text-field': inferredHistoricalName,
+      'text-field': road.inferredHistoricalName,
       'text-size': ['interpolate', ['linear'], ['zoom'], 11, 11.5, 16, 15],
       'text-offset': [0, -1.05],
       'text-allow-overlap': true,
@@ -849,6 +912,7 @@ function addHistoricalLayers(
 
 export function MapView({
   features,
+  timelineYear = null,
   jurisdictions,
   buildingsVisible,
   landmarksVisible,
@@ -892,7 +956,12 @@ export function MapView({
   subwayVisibleRef.current = subwayVisible
   highlightedJurisdictionRef.current = highlightedJurisdiction
   selectedGroupIdRef.current = selectedGroupId
-  const roadLabels = buildRoadLabelIndex(features)
+  const roadLabels = useMemo(() => buildRoadLabelIndex(features, timelineYear), [features, timelineYear])
+  const roadSegments = useMemo(() => datedRoadSegments(features, timelineYear), [features, timelineYear])
+  const roadLabelsRef = useRef(roadLabels)
+  const roadSegmentsRef = useRef(roadSegments)
+  roadLabelsRef.current = roadLabels
+  roadSegmentsRef.current = roadSegments
   const metroStationLabels = metroEnabled
     ? buildMetroStationLabelIndex(features)
     : new globalThis.Map<string, MetroStationLabelEntry>()
@@ -966,8 +1035,14 @@ export function MapView({
 
       const hit = hits[0]
       if (hit?.layer.id.startsWith('historical-road')) {
-        const modernName = matchingRoadName(hit.properties, roadLabels)
-        const groupId = modernName ? roadLabels.get(modernName)?.featureGroupId : undefined
+        if (hit.layer.id.startsWith('historical-road-segment')) {
+          const groupId = hit.properties?.featureGroupId
+          if (groupId) onSelectRef.current(String(groupId))
+          return
+        }
+        const labels = roadLabelsRef.current
+        const modernName = matchingRoadName(hit.properties, labels)
+        const groupId = modernName ? labels.get(modernName)?.featureGroupId : undefined
         if (groupId) onSelectRef.current(groupId)
         return
       }
@@ -976,7 +1051,7 @@ export function MapView({
     }
 
     map.on('style.load', () => {
-      addHistoricalLayers(map, featuresRef.current, jurisdictions, roadLabels, metroStationLabels, parkLabels)
+      addHistoricalLayers(map, featuresRef.current, jurisdictions, roadLabelsRef.current, roadSegmentsRef.current, metroStationLabels, parkLabels)
       setParkPeriodFilter(map, featuresRef.current)
       addHeritageLayers(map, heritageBuildingsRef.current ?? emptyHeritage)
       setBuildingVisibility(map, buildingsVisibleRef.current)
@@ -1012,6 +1087,19 @@ export function MapView({
       mapRef.current = null
     }
   }, [jurisdictions, onMapError])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    updateRoadLabels(map, roadLabels)
+  }, [roadLabels])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    const source = map.getSource('dated-road-segments') as maplibregl.GeoJSONSource | undefined
+    source?.setData(roadSegments)
+  }, [roadSegments])
 
   useEffect(() => {
     const map = mapRef.current

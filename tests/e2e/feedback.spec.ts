@@ -1,0 +1,62 @@
+import { expect, test } from '@playwright/test'
+
+test('road feedback carries context, preserves failed submissions and sits below close', async ({ page }) => {
+  await page.goto('/')
+  await page.getByRole('textbox', { name: '搜索现代或历史地名' }).fill('民國路')
+  await page.getByRole('option', { name: /民國路/ }).first().click()
+  const card = page.locator('.road-details-panel')
+  const closeBox = await card.getByRole('button', { name: '关闭详情' }).boundingBox()
+  const feedbackBox = await card.getByRole('button', { name: '反馈问题' }).boundingBox()
+  expect(feedbackBox!.y).toBeGreaterThanOrEqual(closeBox!.y + closeBox!.height)
+  let attempts = 0
+  let submitted: URLSearchParams
+  await page.route('http://127.0.0.1:4173/', async route => {
+    if (route.request().method() !== 'POST') return route.continue()
+    submitted = new URLSearchParams(route.request().postData() || '')
+    attempts++
+    return route.fulfill({ status: attempts === 1 ? 503 : 201, headers: { 'X-Map-Feedback': 'local' }, body: '{}' })
+  })
+  await card.getByRole('button', { name: '反馈问题' }).click()
+  const dialog = page.getByRole('dialog', { name: '反馈问题' })
+  await expect(dialog.getByLabel('问题说明')).toBeFocused()
+  await dialog.getByLabel('问题类型').selectOption('年代有误')
+  await dialog.getByLabel('问题说明').fill('请核对1912年的道路名称，并参考相关县志。')
+  await dialog.getByRole('button', { name: '提交反馈' }).click()
+  await expect(dialog.getByRole('alert')).toContainText('提交失败')
+  await dialog.getByRole('button', { name: '关闭反馈' }).click()
+  await card.getByRole('button', { name: '反馈问题' }).click()
+  await expect(dialog.getByLabel('问题说明')).toHaveValue('请核对1912年的道路名称，并参考相关县志。')
+  await page.screenshot({ path: `artifacts/card-feedback-${test.info().project.name}.png`, fullPage: true })
+  await dialog.getByRole('button', { name: '提交反馈' }).click()
+  await expect(dialog.getByRole('status')).toContainText('反馈已保存到本机')
+  expect(submitted!.get('place-id')).toBe('road-old-city-人民路')
+  expect(submitted!.get('place-type')).toBe('road')
+  expect(submitted!.get('category')).toBe('年代有误')
+  await dialog.getByRole('button', { name: '完成' }).click()
+  await expect(card.getByRole('button', { name: '反馈问题' })).toBeFocused()
+})
+
+test('heritage building feedback identifies the building and closes with Escape', async ({ page }) => {
+  await page.goto('/')
+  await page.getByRole('textbox', { name: '搜索现代或历史地名' }).fill('2B019')
+  await page.getByRole('option').first().click()
+  const card = page.locator('.heritage-details-panel')
+  await card.getByRole('button', { name: '反馈问题' }).click()
+  const dialog = page.getByRole('dialog', { name: '反馈问题' })
+  await expect(dialog).toContainText('华山路')
+  await dialog.getByLabel('问题说明').fill('建筑定位请再核对。')
+  let body: URLSearchParams
+  await page.route('http://127.0.0.1:4173/', route => {
+    if (route.request().method() !== 'POST') return route.continue()
+    body = new URLSearchParams(route.request().postData() || '')
+    return route.fulfill({ status: 200, body: 'received' })
+  })
+  await dialog.getByRole('button', { name: '提交反馈' }).click()
+  await expect(dialog.getByRole('status')).toContainText('反馈已提交')
+  expect(body!.get('place-id')).toBe('sh-fgj-2B019-01')
+  expect(body!.get('place-type')).toBe('building')
+  expect(body!.get('address')).toContain('华山路')
+  await page.keyboard.press('Escape')
+  await expect(dialog).not.toBeVisible()
+  await expect(card).toBeVisible()
+})

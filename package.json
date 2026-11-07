@@ -12,6 +12,8 @@
     "data:1865-originals": "node scripts/apply-1865-original-road-names.mjs",
     "data:old-city": "node scripts/build-old-city-boundary.mjs",
     "data:old-city-roads": "node scripts/add-old-city-roads.mjs",
+    "data:old-city-history": "node scripts/apply-old-city-investigation.mjs --write",
+    "validate:old-city-history": "node scripts/apply-old-city-investigation.mjs --check",
     "data:remove-proposals": "node scripts/remove-proposed-landmarks.mjs",
     "data:current-use": "node scripts/enrich-landmark-current-uses.mjs",
     "data:heritage": "node scripts/collect-shanghai-excellent-historical-buildings.mjs",

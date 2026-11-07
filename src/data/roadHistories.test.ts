@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { reviewedRoadHistory, roadHistories } from './roadHistories'
+import acceptedHistories from './acceptedRoadHistoryEvents.json'
 import importedHistories from './importedRoadHistories.json'
 import { roadHistorySupplementIdentity } from './roadHistorySupplements'
 import type { HistoricalFeatureCollection } from '../types'
@@ -14,7 +15,8 @@ describe('reviewed road history identity and event types', () => {
       expect(reviewedRoadHistory(feature.properties)).toBe(history)
       expect(reviewedRoadHistory({ ...feature.properties, modernNameZh: '异路' })).toBeUndefined()
       expect(history.events.every(e => e.url?.startsWith('https://zh.wikipedia.org/'))).toBe(true)
-      expect(history.events.map(e => e.year)).toEqual(history.events.map(e => e.year).sort((a, b) => a! - b!))
+      const years = history.events.map(e => e.displayYear ?? e.year)
+      expect(years).toEqual([...years].sort((a, b) => a! - b!))
     }
   })
   it('keeps the eastern and western Nanchang Road construction histories separate', () => {
@@ -28,11 +30,24 @@ describe('reviewed road history identity and event types', () => {
   it('requires the group, original name and modern name for every imported history', () => {
     for (const history of importedHistories) {
       const feature = features.find(f => f.properties.featureGroupId === history.featureGroupId)!
-      expect(reviewedRoadHistory(feature.properties)).toMatchObject(history)
+      const override = roadHistories.find(road => road.featureGroupId === history.featureGroupId)
+      const { events, ...identity } = history
+      expect(reviewedRoadHistory(feature.properties)).toMatchObject(override ?? (Object.hasOwn(acceptedHistories, history.featureGroupId) ? identity : { ...identity, events }))
       expect(roadHistorySupplementIdentity(feature.properties)).toBeDefined()
       expect(reviewedRoadHistory({ ...feature.properties, featureGroupId: 'another-road' })).toBeUndefined()
       expect(reviewedRoadHistory({ ...feature.properties, modernNameZh: '另一条路' })).toBeUndefined()
       expect(reviewedRoadHistory({ ...feature.properties, historicalName: 'Other Road' })).toBeUndefined()
+    }
+  })
+
+  it('attaches each accepted event to its exact road record and preserves its source', () => {
+    for (const [id, history] of Object.entries(acceptedHistories)) {
+      const feature = features.find(f => f.properties.featureGroupId === id)!
+      expect(feature, id).toBeDefined()
+      const reviewed = reviewedRoadHistory(feature.properties)
+      expect(reviewed).toMatchObject({ featureGroupId: id, modernName: history.modernName, historicalNames: history.historicalNames })
+      for (const event of history.events) expect(reviewed?.events).toContainEqual(event)
+      expect(reviewedRoadHistory({ ...feature.properties, featureGroupId: 'different-segment' })).toBeUndefined()
     }
   })
 
@@ -54,7 +69,9 @@ describe('reviewed road history identity and event types', () => {
     const weihai = importedHistories.find(h => h.modernName === '威海路')!
     expect(weihai.events.map(e => e.year)).toEqual([1901, 1966])
     const wuting = features.find(f => f.properties.featureGroupId === 'road-wuting-road-武定西路')!
-    expect(reviewedRoadHistory(wuting.properties)).toBeUndefined()
+    expect(reviewedRoadHistory(wuting.properties)?.events.map(event => [event.year, event.name])).toEqual([
+      [1911, 'Kinnear Road · 开纳路'], [1943, '开源路'], [1950, '武定路'], [1954, '武定西路'],
+    ])
     expect(roadHistorySupplementIdentity({ ...gaoan.properties, modernNameZh: '另一条路' })).toBeUndefined()
   })
 

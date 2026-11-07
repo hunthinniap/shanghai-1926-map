@@ -6,7 +6,7 @@
 .road-history-citation { font-size: 10px; color: var(--muted); }
 .road-reference-section summary { cursor: pointer; color: var(--wine); font-size: 12px; line-height: 1.7; }
 .road-reference-section details[open] > summary { margin-bottom: 12px; }
-.place-heading { padding-right: 18px; }
+.place-heading { padding-right: 38px; }
 .place-details-panel h2 { font-family: "Songti SC", SimSun, Georgia, serif; font-size: 29px; line-height: 1.35; overflow-wrap: anywhere; }
 .place-foreign-name { margin: 6px 0 0; font-family: Georgia, serif; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .place-selected-year { margin: 10px 0 0; color: var(--wine); font-size: 11px; }
@@ -27,6 +27,17 @@
 .place-event-kind { display: block; color: var(--muted); font-size: 10px; }
 .place-event-original { display: block; color: var(--muted); font-family: Georgia, serif; font-size: 11px; }
 .place-event-body p { margin: 5px 0 0; font-weight: 400; }
+.road-modern-name { font-size: 14px; line-height: 1.65; }
+.road-timeline-predecessor { margin: 0 0 10px; font-size: 13px; }
+.road-timeline > li { grid-template-columns: fit-content(40%) minmax(0,1fr); align-items: baseline; padding-bottom: 12px; }
+.road-timeline .place-event-year { padding-top: 0; }
+.road-timeline .place-event-body { padding-left: 0; border-left: 0; }
+.road-timeline .place-event-body::before { content: none; }
+.road-timeline .road-event-row { display: flex; align-items: baseline; gap: 8px; }
+.road-timeline .place-event-kind { flex: none; }
+.road-timeline .road-event-name { margin-inline-start: auto; min-width: 0; text-align: end; overflow-wrap: anywhere; }
+.road-timeline .road-event-name strong { display: inline; }
+.road-timeline .road-event-name small { font-size: 11px; color: var(--muted); }
 .place-event-address { color: var(--ink); }
 .place-timeline .is-active .place-event-body { border-left-color: var(--wine); }
 .place-timeline .is-active .place-event-year { color: var(--wine); font-weight: 600; }
@@ -62,5 +73,6 @@
 .place-location-caveat { color: var(--muted); font-size: 10px; margin: 0; line-height: 1.75; }
 @media (max-width: 599px) {
   .place-details-panel h2 { font-size: 25px; }
-  .place-timeline > li { grid-template-columns: 66px minmax(0,1fr); gap: 7px; }
+  .place-timeline > li { gap: 7px; }
+  .place-timeline:not(.road-timeline) > li { grid-template-columns: 66px minmax(0,1fr); }
 }

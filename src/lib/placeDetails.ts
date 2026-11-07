@@ -22,6 +22,7 @@ export interface PlaceCoordinateReview extends HeritageCoordinateReview {
   label: string
 }
 export interface PlaceDetails {
+  feedbackId: string
   name: string; foreignName?: string; address?: string; year?: number; heritage: boolean
   events: PlaceEvent[]; buildings: PlaceFact[]; catalogue: PlaceSource[]
   residents: NotableResident[]
@@ -84,6 +85,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     )
   const verifiedAddress = sharesChronology && !relocated ? p?.currentAddress : undefined
   const result: PlaceDetails = {
+    feedbackId: h?.officialId || p?.featureGroupId || p?.id || 'unknown-place',
     name: chinese || original || knownName || p?.historicalName || '未命名地点',
     foreignName: chinese ? original : undefined,
     address: linked?.link.modernAddress?.address || headingStage?.phase?.address || verifiedAddress || (places.length ? distinct(places.map(item => item.properties.address).filter(Boolean)).join('；') : undefined),

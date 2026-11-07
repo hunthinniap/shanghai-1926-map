@@ -1,12 +1,22 @@
 import type { HistoricalFeatureProperties } from '../types'
+import acceptedRoadHistoryEvents from './acceptedRoadHistoryEvents.json'
 import importedHistories from './importedRoadHistories.json'
 
-export interface RoadHistoryEvent { year?: number; displayYear?: number; period?: string; originalPeriod?: string; kind: string; name: string; note?: string; segment?: string; url?: string; sourceTitle?: string }
+export interface RoadHistoryEvent { year?: number; displayYear?: number; period?: string; originalPeriod?: string; kind: string; name: string; mapName?: string; note?: string; segment?: string; url?: string; sourceTitle?: string; linkOnAction?: boolean }
 export interface RoadNameOrigin { name: string; url: string; description: string; sourceTitle?: string; links?: { text: string; url: string }[]; suffix?: string }
-export interface RoadHistory { featureGroupId?: string; modernName: string; historicalNames: string[]; events: RoadHistoryEvent[]; origins?: RoadNameOrigin[]; note?: string; sources?: { title: string; url: string }[] }
+export interface RoadHistory { featureGroupId?: string; modernName: string; historicalNames: string[]; predecessor?: string; events: RoadHistoryEvent[]; origins?: RoadNameOrigin[]; note?: string; sources?: { title: string; url: string }[] }
 const wiki = (title: string) => `https://zh.wikipedia.org/wiki/${encodeURIComponent(title)}`
 const event = (year: number, kind: string, name: string, title: string, note?: string): RoadHistoryEvent =>
   ({ year, kind, name, url: wiki(title), note })
+const renminRoadHistory = {
+  modernName: '人民路',
+  events: [
+    { ...event(1912, '拆城填濠', '民国路', '人民路_(上海)'), linkOnAction: true, mapName: '' },
+    event(1913, '筑成、命名', '法华民国路', '人民路_(上海)', '1913年6月筑成并正式命名为民国路。因路权分属华界和法租界，亦称法华民国路。'),
+    event(1951, '更名', '人民路', '人民路_(上海)', '采用条目历史正文的1951年。上海市民政局另有文章记为1952年。'),
+  ],
+  sources: [{ title: '上海市民政局 · 人民路', url: 'https://mzj.sh.gov.cn/lnb-wsws/20230511/6be6bda5b5d74c9e9e40bafc811d8505.html' }],
+}
 
 // Individually read road articles. Match both the modern road and source name:
 // the upstream geocoder sometimes attaches one old name to unrelated streets.
@@ -32,8 +42,8 @@ export const roadHistories: RoadHistory[] = [
     { ...event(1946, '更名', '思南路', '思南路'), period: '1946年1月1日' },
   ], origins: [{ name: 'Jules Massenet（儒勒·马斯内）', url: 'https://en.wikipedia.org/wiki/Jules_Massenet', description: '法国作曲家，马斯南路为纪念他而命名。' },
     { name: '思南县', url: wiki('思南县'), description: '现名采用贵州思南县名，也与原名读音相近。' }], note: '参考文件写作1943年直接改名思南路；据道路条目纠正为1943年蓝田路、1946年思南路。' },
-  { modernName: '复兴中路', historicalNames: ['Route Lafayette'], events: [
-    event(1914, '辟筑', '法华路', '复兴中路', '填南长浜辟路；不是当时已命名辣斐德路。'),
+  { modernName: '复兴中路', historicalNames: ['Route Lafayette'], predecessor: '南长浜', events: [
+    event(1914, '辟筑', '法华路', '复兴中路'),
     event(1918, '更名、东延', 'Route Lafayette · 辣斐德路', '复兴中路'),
     event(1943, '更名', '大兴路', '复兴中路'), event(1945, '更名', '复兴中路', '复兴中路'),
   ], note: '采用条目“开辟”正文区分筑路与命名；条目资料框的简略年份不作为整条道路建成年份。' },
@@ -48,7 +58,7 @@ export const roadHistories: RoadHistory[] = [
     event(1915, '更名', 'Avenue du Roi Albert · 亚尔培路', '陕西南路'),
     event(1943, '更名', '咸阳路', '陕西南路'), event(1946, '更名', '陕西南路', '陕西南路'),
   ], origins: [{ name: 'Albert I（阿尔贝一世）', url: 'https://en.wikipedia.org/wiki/Albert_I_of_Belgium', description: '比利时国王，1915年道路采用其名字命名。' }] },
-  { modernName: '南昌路', historicalNames: ['Route Vallon'], events: [
+  { modernName: '南昌路', historicalNames: ['Route Vallon'], predecessor: '马义浜', events: [
     event(1912, '辟筑', 'Route Vallon · 环龙路', '南昌路_(上海)', '雁荡路以西路段，填马义浜修路。'),
     event(1943, '合并、更名', '南昌路', '南昌路_(上海)', '与陶而斐司路统一命名。'),
   ] },
@@ -61,15 +71,47 @@ export const roadHistories: RoadHistory[] = [
     event(1862, '辟筑', '新闸路', '新闸路'), event(1868, '铺筑', '新闸路', '新闸路', '西藏路至卡德路段改铺碎石。'),
     event(1908, '西延', '新闸路', '新闸路', '延至胶州路。'),
   ] },
+  { modernName: '重庆北路', historicalNames: ['Chungking Road'], events: [
+    { displayYear: 1890, period: '1890年代', kind: '辟筑', name: '重庆路（Chungking Road）', url: wiki('重慶北路_(上海市)') },
+    event(1946, '更名', '重庆北路', '重慶北路_(上海市)'),
+  ], sources: [{ title: '上海图书馆 · 重庆北路（据《上海地名志》）', url: 'https://data.library.sh.cn/entity/road/fpchkxwvxpby50et' }] },
+  { ...renminRoadHistory, featureGroupId: 'road-boulevard-des-deux-republiques-人民路', historicalNames: ['Boulevard des Deux Republiques'] },
+  { ...renminRoadHistory, featureGroupId: 'road-old-city-人民路', historicalNames: ['Min Kueq Lu'] },
   { modernName: '圆明园路', historicalNames: ['Yuenmingyuen Road'], events: [
     event(1862, '辟筑', '圆明园路', '圆明园路'), event(1865, '命名', '圆明园路', '圆明园路'),
   ], origins: [{ name: '圆明园', url: wiki('圆明园'), description: '道路采用北京圆明园之名。' }] },
 ]
 
-export function reviewedRoadHistory(p: HistoricalFeatureProperties) {
+export function isRoadNameEvent(event: RoadHistoryEvent): boolean {
+  return event.kind !== '辖区调整' && !/^(?:拆城填濠|填浜筑路|划入上海法租界)$/.test(event.name)
+}
+
+export function roadHistoryEventYear(event: RoadHistoryEvent): number | undefined {
+  if (event.displayYear !== undefined) return event.displayYear
+  if (event.year !== undefined) return event.year
+  const period = event.period ?? ''
+  const years = [...period.matchAll(/(?<!\d)([12]\d{3})(?!\d)/g)].map(match => Number(match[1]))
+  if (!years.length) return undefined
+  const year = Math.min(...years)
+  if (years.length === 1 && /年(?:以后|之后|后)/.test(period)) return year + 1
+  return year
+}
+
+const accepted = acceptedRoadHistoryEvents as Record<string, RoadHistory & { replaceYears?: number[]; replaceAllEvents?: boolean }>
+const importedByGroup = new Map((importedHistories as RoadHistory[]).map(history => [history.featureGroupId, history]))
+for (const [featureGroupId, addition] of Object.entries(accepted)) {
+  const previous = importedByGroup.get(featureGroupId)
+  const replaced = new Set([...addition.events.map(roadHistoryEventYear), ...(addition.replaceYears ?? [])])
+  const events = [...(addition.replaceAllEvents ? [] : previous?.events.filter(event => !replaced.has(roadHistoryEventYear(event))) ?? []), ...addition.events]
+    .sort((a, b) => (roadHistoryEventYear(a) ?? Infinity) - (roadHistoryEventYear(b) ?? Infinity))
+  importedByGroup.set(featureGroupId, { ...previous, ...addition, featureGroupId, events })
+}
+
+export function reviewedRoadHistory(p: HistoricalFeatureProperties): RoadHistory | undefined {
   if (p.kind !== 'road') return undefined
   const matches = (h: RoadHistory) => h.modernName === p.modernNameZh
     && h.historicalNames.includes(p.historicalName)
     && (!h.featureGroupId || h.featureGroupId === p.featureGroupId)
-  return roadHistories.find(matches) || (importedHistories as RoadHistory[]).find(matches)
+  const imported = importedByGroup.get(p.featureGroupId)
+  return roadHistories.find(matches) ?? (imported && matches(imported) ? imported : undefined)
 }

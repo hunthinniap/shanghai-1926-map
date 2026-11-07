@@ -6,8 +6,10 @@ import * as OpenCC from 'opencc-js'
 import { providedRoadHistory, roadRangeStart } from './lib/road-history-import.mjs'
 
 const root = 'research/road-histories/2026-11-05-results'
-const read = file => JSON.parse(fs.readFileSync(file, 'utf8'))
-const hash = file => createHash('sha256').update(fs.readFileSync(file)).digest('hex')
+// Canonical batch inputs and generated JSON use LF, including on Git autocrlf checkouts.
+const readText = file => fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n')
+const read = file => JSON.parse(readText(file))
+const hash = value => createHash('sha256').update(value).digest('hex')
 const simplify = OpenCC.Converter({ from: 'tw', to: 'cn' })
 const sourceText = text => simplify(text)
   .replace(/<ref\b[^>]*?\/>/gs, '')
@@ -17,7 +19,7 @@ const write = process.argv.includes('--write')
 assert(write !== process.argv.includes('--check'), 'Use either --write or --check')
 
 for (const input of read(`${root}/input-manifest.json`).files) {
-  assert.equal(hash(`${root}/${input.file}`), input.sha256, `Changed input: ${input.file}`)
+  assert.equal(hash(readText(`${root}/${input.file}`)), input.sha256, `Changed input: ${input.file}`)
 }
 const combined = read(`${root}/input/all-road-histories-results.json`)
 const decisions = read(`${root}/review-decisions.json`).reviews
@@ -92,7 +94,7 @@ for (const decision of decisions) {
   assert(original, `Review has no input: ${decision.featureGroupId}`)
   assert.equal(original.modernNameZh, decision.modernName)
   assert.deepEqual(decision.historicalNames, [original.historicalName])
-  assert.equal(hash(decision.source.file), decision.source.sha256)
+  assert.equal(hash(fs.readFileSync(decision.source.file)), decision.source.sha256)
   const page = read(decision.source.file).query.pages.find(p => p.title === decision.source.title && p.revisions?.[0].revid === decision.source.revid)
   assert(page && !page.missing, `Missing reviewed revision: ${decision.modernName}`)
   assert(sourceText(page.revisions[0].slots.main.content).includes(decision.source.evidence), `Reviewed evidence differs: ${decision.modernName}`)
@@ -129,6 +131,6 @@ outputs.set('src/data/roadHistorySupplementIndex.json', encode(index))
 outputs.set(`${root}/integration-audit.json`, encode({ summary, rows: auditRows }))
 for (const [file, content] of outputs) {
   if (write) { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, content) }
-  else assert.equal(fs.readFileSync(file, 'utf8'), content, `Outdated output: ${file}`)
+  else assert.equal(readText(file), content, `Outdated output: ${file}`)
 }
 console.log(JSON.stringify(summary))

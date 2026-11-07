@@ -1,0 +1,18 @@
+.details-feedback { position: absolute; top: 48px; right: 12px; color: var(--wine); }
+.feedback-dialog { width: min(420px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow: auto; margin: auto; padding: 28px; color: var(--ink); background: #f4eddc; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.feedback-dialog::backdrop { background: rgba(43, 35, 28, .35); }
+.feedback-dialog .feedback-close { position: absolute; top: 10px; right: 10px; }
+.feedback-dialog h2 { margin: 0; padding-right: 20px; color: var(--wine-dark); font-family: "Songti SC", SimSun, serif; font-size: 23px; }
+.feedback-context { margin: 8px 0 22px; color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.feedback-address { margin: -12px 0 20px; color: var(--muted); font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.feedback-dialog form { display: grid; gap: 16px; }
+.feedback-dialog label { display: grid; gap: 7px; font-size: 13px; }
+.feedback-dialog input, .feedback-dialog textarea, .feedback-dialog select { box-sizing: border-box; width: 100%; min-width: 0; padding: 9px 10px; color: var(--ink); background: #fbf7ed; border: 1px solid var(--line); border-radius: 2px; font: inherit; line-height: 1.6; }
+.feedback-dialog textarea { resize: vertical; min-height: 110px; }
+.feedback-dialog :is(input, textarea, select):focus-visible { outline: 2px solid #a66137; outline-offset: 2px; }
+.feedback-hint { margin: -3px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.feedback-error { margin: 0; color: #943c32; font-size: 12px; line-height: 1.6; }
+.feedback-submit { justify-self: end; padding: 9px 18px; color: #fff9ed; background: var(--wine); border: 1px solid var(--wine); border-radius: 2px; cursor: pointer; font: inherit; font-size: 13px; }
+.feedback-submit:disabled { cursor: wait; opacity: .65; }
+.feedback-result { display: grid; gap: 14px; font-size: 14px; }
+@media (max-width: 600px) { .feedback-dialog { padding: 24px 20px; } }

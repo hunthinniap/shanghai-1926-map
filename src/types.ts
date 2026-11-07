@@ -138,6 +138,9 @@ export interface HistoricalFeatureProperties {
     | 'verified-online-research'
   currentUseMatchDistance?: number
   labelFromFeature?: boolean
+  roadLabelFromGeometry?: boolean
+  roadLabelEndYear?: number
+  roadHistoryParentGroupId?: string
   labelOnMap?: boolean
 }
 

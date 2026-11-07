@@ -3,11 +3,11 @@ import { buildPlaceDetails } from '../lib/placeDetails'
 import { PlaceDetailsPanel } from './PlaceDetailsPanel'
 import { RoadDetailsPanel } from './RoadDetailsPanel'
 
-export function DetailsPanel({ feature, sources, onClose }: {
-  feature?: HistoricalFeature; sources: SourceRecord[]; onClose: () => void
+export function DetailsPanel({ feature, sources, timelineYear, onClose }: {
+  feature?: HistoricalFeature; sources: SourceRecord[]; timelineYear?: number | null; onClose: () => void
 }) {
   if (!feature) return null
   return feature.properties.kind === 'road'
-    ? <RoadDetailsPanel feature={feature} sources={sources} onClose={onClose} />
+    ? <RoadDetailsPanel feature={feature} sources={sources} timelineYear={timelineYear} onClose={onClose} />
     : <PlaceDetailsPanel details={buildPlaceDetails({ feature, sources })} onClose={onClose} />
 }

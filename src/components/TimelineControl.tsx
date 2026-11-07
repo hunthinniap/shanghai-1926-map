@@ -19,9 +19,9 @@ export function TimelineControl({ year, minYear, maxYear, visibleCount, unknownC
   const ticks = [...new Set([minYear, 1900, 1928, 1949, 2000, maxYear])]
     .filter(value => value >= minYear && value <= maxYear).sort((a, b) => a - b)
   return (
-    <section className="building-timeline" aria-label="建筑时间轴">
+    <section className="building-timeline" aria-label="地图时间轴">
       <div className="timeline-heading">
-        <div className="timeline-title"><History size={16} aria-hidden="true" /><span>建筑时间轴</span></div>
+        <div className="timeline-title"><History size={16} aria-hidden="true" /><span>地图时间轴</span></div>
         <output className="timeline-year" htmlFor="map-year">{year === null ? '全部年代' : `${year} 年`}</output>
         <button type="button" className="timeline-anchor" aria-label="回到 1928 年"
           onClick={() => onYearChange(1928)}>1928</button>
@@ -46,11 +46,11 @@ export function TimelineControl({ year, minYear, maxYear, visibleCount, unknownC
       </div>
       <div className="timeline-status">
         <span>{loading ? '正在载入建筑年代…' : year === null && visibleCount === 0
-          ? '拖动年份，查看建筑与地标变化' : `显示 ${visibleCount} 处 · 年代不明 ${unknownCount} 处`}</span>
+          ? '拖动年份，查看路名、建筑与地标变化' : `显示 ${visibleCount} 处 · 年代不明 ${unknownCount} 处`}</span>
         <label><input type="checkbox" checked={includeUnknown} disabled={year === null}
           onChange={event => onIncludeUnknownChange(event.target.checked)} />包含年代不明</label>
       </div>
-      <p className="timeline-note" id="timeline-note">名称按已核实沿革变化，没有更名记录时沿用原名。建造区间取末年，消失年仅用核实资料。底图与道路不随年份变化。</p>
+      <p className="timeline-note" id="timeline-note">路名按沿革切换，年代区间取最早年。更早时显示有记载的水名，或留空。建筑建造区间取末年，地图以现代街廓定位。</p>
     </section>
   )
 }

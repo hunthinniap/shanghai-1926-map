@@ -137,6 +137,7 @@ function App() {
   useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
+        if (document.querySelector('dialog[open]')) return
         setSelectedGroupId(undefined)
         setSelectedMetroStation(undefined)
         setSelectedHeritage(undefined)
@@ -378,6 +379,7 @@ function App() {
         <MapView
           key={mapKey}
           features={mapFeatures ?? data.features}
+          timelineYear={timelineYear}
           jurisdictions={data.jurisdictions}
           buildingsVisible={buildingsVisible}
           landmarksVisible={landmarksVisible}
@@ -397,7 +399,7 @@ function App() {
 
         <div className="map-caption" aria-label="地图说明">
           <span className="caption-rule" aria-hidden="true" />
-          <p>现代街廓 · 民国旧名</p>
+          <p>现代街廓 · {timelineYear === null ? '民国旧名' : `${timelineYear} 年路名`}</p>
           <small>
             {roadCount} 条历史道路 · {landmarkCount} 处地标
             {buildingRecordCount ? `（${buildingRecordCount} 条建筑原始记录）` : ''}
@@ -474,7 +476,8 @@ function App() {
         )}
       </section>
 
-      <DetailsPanel feature={selectedLinkedBuilding && activeHeritage ? undefined : selectedFeature} sources={data.sources} onClose={() => setSelectedGroupId(undefined)} />
+      <DetailsPanel feature={selectedLinkedBuilding && activeHeritage ? undefined : selectedFeature} sources={data.sources}
+        timelineYear={timelineYear} onClose={() => setSelectedGroupId(undefined)} />
       {metroEnabled && <MetroDetailsPanel station={selectedMetroStation} onClose={() => setSelectedMetroStation(undefined)} />}
       <HeritageDetailsPanel feature={activeHeritage} linked={selectedLinkedBuilding} onClose={() => {
         setSelectedHeritage(undefined)

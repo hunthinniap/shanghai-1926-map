@@ -11,6 +11,13 @@
     <title>上海 1928｜历史路名地图</title>
   </head>
   <body>
+    <form name="map-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="form-name" value="map-feedback" type="hidden" />
+      <input name="bot-field" />
+      <input name="place-id" /><input name="place-type" /><input name="place-name" />
+      <input name="modern-name" /><input name="address" /><input name="year" /><input name="page-url" />
+      <input name="category" /><textarea name="message"></textarea><input name="email" type="email" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

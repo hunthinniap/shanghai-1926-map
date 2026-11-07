@@ -119,8 +119,10 @@ for (const feature of collection.features ?? []) {
   }
   if (!feature.geometry) errors.push(`${properties.id ?? 'unknown'} is missing geometry`)
   if (/[�?]/.test(properties.historicalName)) errors.push(`${properties.id} contains a damaged historical name`)
-  if (properties.labelYear >= 1945 && !properties.sourceIds?.includes('vs-buildings')) {
-    errors.push(`${properties.id} uses a post-1944 label year outside the complete Virtual Shanghai building catalogue`)
+  const hasReviewedCurrentLine = properties.kind === 'road' && properties.roadLabelFromGeometry === true
+    && properties.sourceIds?.includes('openstreetmap-current-roads')
+  if (properties.labelYear >= 1945 && !properties.sourceIds?.includes('vs-buildings') && !hasReviewedCurrentLine) {
+    errors.push(`${properties.id} uses a post-1944 label year without a current road or Virtual Shanghai building source`)
   }
   for (const sourceId of properties.sourceIds ?? []) {
     if (!sourceIds.has(sourceId)) errors.push(`${properties.id} references missing source ${sourceId}`)
