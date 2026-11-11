@@ -125,6 +125,35 @@ export function applyReviewedCoordinateOverride(location, override) {
     notes: [...(location.notes ?? []), `人工坐标复核：${override.reason}`] }
 }
 
+// Later corrections run after the frozen 2026-10 backfill has validated its
+// original baseline. Each correction guards the exact old point and identity;
+// the frozen approval and source snapshots remain unchanged.
+export function applyPostBackfillCoordinateOverrides({ records, featureArrays, overrides }) {
+  for (const override of overrides) {
+    const record = records.find(item => item.id === override.officialId)
+    const articles = record?.articleReferences.filter(article =>
+      [article.requestedTitle, article.resolvedTitle].includes(override.articleTitle)) ?? []
+    const expected = override.expectedPreviousPoint
+    const samePoint = point => expected && point?.lon === expected.lon && point?.lat === expected.lat
+    const groups = featureArrays.map(features => features.filter(feature => feature.properties.officialId === override.officialId))
+    if (!record || record.official.originalNameOrUse !== override.expectedOfficialName
+      || record.official.addressAsListed !== override.expectedAddress || articles.length !== 1
+      || !samePoint(articles[0].location.point) || groups.some(features => features.length !== 1
+        || !samePoint({ lon: features[0].geometry.coordinates[0], lat: features[0].geometry.coordinates[1] }))) {
+      throw new Error(`Post-backfill coordinate correction source changed: ${override.officialId}`)
+    }
+    const location = applyReviewedCoordinateOverride(articles[0].location, override)
+    articles[0].location = location
+    for (const features of groups) {
+      const feature = features[0], point = location.point
+      feature.geometry = { type: 'Point', coordinates: [point.lon, point.lat] }
+      Object.assign(feature.properties, { coordinateSystem: 'WGS84', precisionDegrees: point.precision,
+        coordinateScope: point.coordinateScope, origin: point.origin, sourceUrl: point.sourceUrl,
+        coordinateSourceTitle: override.sourceTitle, locationNote: override.displayNote ?? override.reason })
+    }
+  }
+}
+
 const physicalTitle = /(?:大楼|楼旧址|公寓|住宅|别墅|旧居|故居|公馆|礼拜堂|教堂|清真寺|会堂|教会堂|天主堂|礼堂|会馆|新村|里弄|小区|广场|仓库|书店|戏院|剧院|影剧院|电影院|饭店|旅馆|大酒店|宾馆|邮局|捕房|监狱|桥|塔|墓|祠|庙|堂)$/u
 const organizationTitle = /(?:大学|学院|中学|小学|幼儿园|学校|银行|报社|公司|事务所|研究所|研究院|医院|总局|分局|教会|俱乐部)$/u
 

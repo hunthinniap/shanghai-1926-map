@@ -13,6 +13,32 @@
 .place-address { margin: 22px 0 0; padding: 15px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .place-address dt { color: var(--muted); font-size: 11px; margin-bottom: 6px; }
 .place-address dd { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.65; }
+.place-map-links { list-style: none; margin: 12px 0 0; padding: 0; }
+.place-map-links li + li { margin-top: 8px; }
+.place-map-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 12px; }
+.place-map-links small { display: block; font-size: 10px; color: var(--muted); }
+.place-map-links .place-map-location { margin-bottom: 4px; font-size: 11px; line-height: 1.65; overflow-wrap: anywhere; }
+.place-map-links a:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; border-radius: 2px; }
+.place-amap-candidates { margin-top: 12px; }
+.poi-candidates-entry { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 8px 11px; border: 1px solid var(--line); background: transparent; color: var(--wine-dark); font: inherit; font-size: 12px; cursor: pointer; }
+.poi-candidates-entry .is-open { transform: rotate(180deg); }
+.poi-candidates-content { padding-top: 10px; font-size: 12px; line-height: 1.7; }
+.poi-candidates-hint { margin: 0 0 12px; color: var(--muted); font-size: 11px; }
+.poi-candidates-list { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow-y: auto; overscroll-behavior: contain; }
+.poi-candidates-list li { padding: 12px 10px; margin: 0 0 8px; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.poi-candidates-list .is-selected { border-color: var(--wine); background: rgba(113,70,63,.05); }
+.poi-candidates-list strong { font-size: 13px; }
+.poi-candidates-list p { margin: 4px 0; color: var(--muted); font-size: 11px; }
+.poi-candidate-flags { display: block; color: var(--wine-dark); font-size: 10px; }
+.poi-candidate-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 9px 0 5px; }
+.poi-candidate-actions a { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; }
+.poi-candidate-actions button { min-height: 36px; padding: 6px 10px; border: 1px solid var(--wine); color: var(--wine-dark); background: transparent; font: inherit; cursor: pointer; }
+.poi-candidate-actions button:disabled { opacity: .55; cursor: wait; }
+.poi-candidate-count { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.poi-candidates-error { color: #943c32; font-size: 11px; }
+.poi-candidates-content > p button { margin-left: 8px; color: var(--wine-dark); background: transparent; border: 0; text-decoration: underline; cursor: pointer; }
+.poi-candidate-notice { margin: 0; color: var(--wine-dark); font-size: 11px; }
+.place-amap-candidates :is(a,button):focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
 .place-section { margin-top: 24px; }
 .place-section h3 { margin: 0 0 13px; color: var(--wine); font-size: 12px; letter-spacing: .1em; }
 .place-section h3 > span { color: var(--muted); font-size: 10px; letter-spacing: 0; }

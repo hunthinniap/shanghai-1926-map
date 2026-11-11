@@ -1,6 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { codeTarget, compareRecords, matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride } from './wikipedia-heritage-enrichment.mjs'
+import { codeTarget, compareRecords, matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride, applyPostBackfillCoordinateOverrides } from './wikipedia-heritage-enrichment.mjs'
+import fs from 'node:fs'
+import { wgs84ToGcj02 } from './coordinate-systems.mjs'
 
 test('legacy III is not the batch number, and the second-batch E aliases are preserved', () => {
   assert.equal(codeTarget({ batch: 2, codeRaw: 'A-Ⅲ-050' }).code, '2A050')
@@ -108,4 +110,26 @@ test('a reviewed building point replaces the selected point without deleting sou
     sourceRefs: ['https://example.com/address'], coordinateScope: 'linked-building-reference-point' })
   assert.equal(corrected.candidates.length, 1)
   assert.match(corrected.notes.at(-1), /address checked/u)
+})
+
+test('Mingfu correction updates only its reference point and converts to AMap exactly once', () => {
+  const read = file => JSON.parse(fs.readFileSync(new URL('../../' + file, import.meta.url)))
+  const override = read('scripts/data/shanghai-heritage-coordinate-overrides.json').overrides.find(item => item.officialId === 'sh-fgj-4C022-01')
+  const oldMap = read('research/rechecks/2026-10-30-heritage-missing-coordinates/map-integration/map-before.geojson')
+  const before = structuredClone(oldMap.features)
+  const records = [{ id: override.officialId, official: { originalNameOrUse: '明复图书馆', addressAsListed: '陕西南路235号' },
+    articleReferences: [{ resolvedTitle: override.articleTitle, location: { point: override.expectedPreviousPoint, candidates: [{ source: 'retained' }] } }] }]
+  const run = (items = records) => applyPostBackfillCoordinateOverrides({ records: items, featureArrays: [oldMap.features], overrides: [override] })
+  const wrong = structuredClone(records)
+  wrong[0].official.addressAsListed = '别处235号'
+  assert.throws(() => run(wrong), /source changed/)
+  run()
+  const changed = oldMap.features.filter((feature, i) => JSON.stringify(feature) !== JSON.stringify(before[i]))
+  assert.equal(changed.length, 1)
+  assert.equal(changed[0].properties.officialId, override.officialId)
+  const gcj = wgs84ToGcj02(...changed[0].geometry.coordinates)
+  assert(Math.abs(gcj.longitude - override.sourceCoordinate.lon) <= 0.000001)
+  assert(Math.abs(gcj.latitude - override.sourceCoordinate.lat) <= 0.000001)
+  assert.deepEqual(records[0].articleReferences[0].location.candidates, [{ source: 'retained' }])
+  assert.throws(() => run(), /source changed/)
 })

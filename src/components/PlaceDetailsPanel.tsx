@@ -1,6 +1,7 @@
-import { X } from 'lucide-react'
+import { ExternalLink, MapPin, X } from 'lucide-react'
 import type { PlaceDetails, PlaceFact } from '../lib/placeDetails'
 import { FeedbackButton } from './FeedbackButton'
+import { AmapCandidatePicker } from './AmapCandidatePicker'
 import './PlaceDetailsPanel.css'
 
 function Facts({ items }: { items: PlaceFact[] }) {
@@ -27,6 +28,17 @@ export function PlaceDetailsPanel({ details, onClose }: { details: PlaceDetails;
       {details.year !== undefined && <p className="place-selected-year">{details.year} 年</p>}
     </header>
     <dl className="place-address"><div><dt>当前地址</dt><dd>{details.address || '尚未核定'}</dd></div></dl>
+    {details.mapLinks.length > 0 && <ul className="place-map-links" aria-label="外部地图">
+      {details.mapLinks.map(link => <li key={link.url}>
+        <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.note}>
+          <MapPin size={14} aria-hidden="true" /><span>在高德地图查看</span><ExternalLink size={12} aria-hidden="true" />
+        </a>
+        {details.mapLinks.length > 1 && <small>{link.title}</small>}
+        {link.note && <small className="place-map-location">高德：{link.note}</small>}
+        {link.referenceNote && <small>{link.referenceNote}</small>}
+      </li>)}
+    </ul>}
+    {details.amapCandidatePlaces.map(place => <AmapCandidatePicker key={place.officialId} place={place} />)}
 
     {details.coordinateReviews.length > 0 && <section className="place-section place-locations" aria-label="位置与来源">
       <h3>位置与来源</h3>

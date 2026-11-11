@@ -68,6 +68,14 @@ Public toilet 的追加研究见 [2026-10-30 公厕沿革补查](research/supple
 
 ## 地点详情卡
 
+历史建筑卡片的地址下方提供“在高德地图查看”，使用 `markers=POIID` 新开地图。2026-11-09 首次对四批 632 项静态匹配筛出 109 项，随后按全部 1058 项名录逐项查询高德，按用户要求跳过已有记录。实时查询保存旧名／别名、门牌、区县、坐标和父子 POI 的候选依据；明确区分名称与门址吻合、门址参考、名称与位置吻合但门址有差异。后两类在卡片保留提示，不将来源参考点当作保护范围测绘结果。共用同一 POI 的不同名录项和冲突项暂缓自动接入。
+
+最新统计、逐项结果与候选见 [全量查找记录](research/rechecks/2026-11-09-heritage-amap-pois/SEARCH.md)，初次静态检查见 [高德 POI 核对](research/rechecks/2026-11-09-heritage-amap-pois/README.md)。运行 `python3 -u scripts/search-all-heritage-amap.py` 可从断点续查，再用 `node scripts/compile-heritage-amap-search.mjs` 汇总；Key 通过隐藏输入或环境变量传递，不写入文件。静态索引 `src/data/heritageAmapPois.json` 与实时索引 `src/data/heritageAmapLivePois.json` 分开保存，常规地图数据重建不会丢失已查结果。
+
+后续逐项复核另存 [资料核对决定](research/rechecks/2026-11-09-heritage-amap-pois/reviewed-decisions.json)，每项保留所选 POI、差异说明和来源；汇总时校验候选确实由高德查询返回，并检查区县、距离、商铺和楼栋范围冲突。2026-11-10 市场 MCP 补查及资料核对后共有 536 项链接（含位置参考），其余 522 项保留 [复核原因及候选](research/rechecks/2026-11-09-heritage-amap-pois/review-queue.json)。市场 MCP 阶段在原有 500 项基础上净增36项。本轮追加最多2000积分，实际预算占用915积分（确认906、待确认预留9），补查／细化364项，新增11项链接、撤回5项楼栋范围尚未证明的旧候选；[楼栋范围纠正](research/rechecks/2026-11-09-heritage-amap-pois/scope-corrections.json)保留原候选和官方依据。门牌或建筑群范围有差异的项目保留具体说明。此前已将浚浦局俱乐部的公园门址参考细化为园内白庐 POI。
+
+卡片直接显示缓存中的高德地点名称与门址；59 项资料交叉核对记录的来源也接入卡片“来源”。这些信息和地图链接均由本地索引生成，不调用高德搜索接口。Web Service 门牌文本补查曾因日额度耗尽停止，随后按用户指定服务 `market-cmgjmcp00074909` 继续。市场 MCP 初始预算500积分、追加100积分后，再按最新授权追加最多2000积分，累计上限2600积分（中途未使用的1000积分请求由2000积分请求替代，不叠加），包含试查及失败调用的可能扣费；[断点与费用记录](research/rechecks/2026-11-09-heritage-amap-pois/market-progress.json)保留已确认费用和待确认预留。运行 `python3 -u scripts/search-heritage-market-mcp.py` 可复用缓存和断点，在已保存的预算内续查；凭据从本机 MCP 配置读取，不写入结果。使用 `--supplement` 可补查尚未核定项目的具体楼号、范围起止门牌和未用别名；每项最多3个新关键词，并保留既有查询证据。`--dry-run` 可离线查看待查批次及剩余预算，不调用服务。本轮已完成当前两种查询计划，剩余1085积分未调用；预算用尽后脚本会停止付费查询。汇总脚本只读取本地数据，可离线回填。
+
 地标与优秀历史建筑共用卡片，优先展示中文标题，其次展示原文、当前地址、时间线、人物、建筑资料和来源。道路卡片采用相同的纵向时间线布局，展示今日名称、已核实的辟筑与更名、带链接的名字来源。待核参考另行折叠展示，详见[道路沿革资料](research/road-histories/2026-11-04/README.md)。
 
 时间线逐条保留 Virtual Shanghai 建筑记录的链接及对应旧门牌，明确建造、改名／改用、同址新建与毁损的依据；缺年记录置末。史料记录年份不当作建成年份，相邻地块不借用同栋沿革。当前门牌未核定时保留空缺，迁走机构的现址仅在备注交代。
@@ -75,6 +83,14 @@ Public toilet 的追加研究见 [2026-10-30 公厕沿革补查](research/supple
 “居住过的名人”只收录有来源的实际居住记录，姓名链接到依据，有时间则括注，并保留具体楼栋门牌；产权、设计或工作关系不会自动当作居住。2026-11-02检查现有关联的408篇中文维基及历史地标另10篇引用，新增68个地点、179条居住记录，连同原有逸村与岳阳路44号共70处、182条；[完整核查与回填表](research/supplemental/2026-11-02-wikipedia-residents/README.md)保留固定版本、门牌范围、年份冲突和未采用问题。没有独立词条链接的地点尚未逐项检索住户。名录现可按编号、名称、地址和已录住户姓名搜索；选择当前年份筛选外的记录会切回全部年代并打开名录图层。
 
 ## 验证
+
+本地 POI 人工复核页：`http://127.0.0.1:4173/poi-review.html`。列出待复核建筑及已有高德候选，支持多选、确认、均不匹配、暂缓、备注、筛选、JSON 导入／导出。进度保存在当前浏览器的 localStorage；导出的结果用于后续回填，不自动改写正式卡片索引，也不调用付费查询。
+
+未确定高德地点的建筑卡片带有“高德候选名单”入口。展开后可查看各候选的高德链接、门牌与差异提示；点击“选择此地点 +1”才增加选择次数，打开高德链接不计数。每次点击独立累计，按建筑 ID 和 POI ID 分开保存，暂不自动改写已确认链接。
+
+`npm run dev` / `npm run preview` 通过 `/api/poi-candidate-votes` 提供读取与计数服务，记录保存在 `.local/poi-candidate-votes.json`，同一服务的浏览器共享累计数，刷新或重启服务后仍保留。该目录不提交 Git。Netlify 部署使用同路径的 Function 和站点级 Blobs 存储，每次选择保存为独立事件，再按建筑／POI 汇总，避免并发覆盖；重新部署不清空线上累计数。本地计数与线上计数分开。接口不可用时页面会提示失败，不会伪造成功次数。参考：[Netlify Functions 路由](https://docs.netlify.com/build/functions/configuration/)、[Blobs 持久化存储](https://docs.netlify.com/build/data-and-storage/netlify-blobs/)。
+
+`npm run data:poi-review` 从研究目录的最新结果生成候选快照；生产构建也会自动更新。复核页面与地图分别构建，输出同在 `dist/`。
 
 ```bash
 npm test

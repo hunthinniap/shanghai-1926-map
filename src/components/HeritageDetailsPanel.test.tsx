@@ -70,6 +70,31 @@ function field(container: HTMLElement, label: string) {
 }
 
 describe('HeritageDetailsPanel linked historical site', () => {
+  it('offers candidate selection for an unresolved building and hides it for a confirmed AMap place', () => {
+    const unresolved = structuredClone(heritage)
+    Object.assign(unresolved.properties, { officialId: 'sh-fgj-unresolved', name: '待选住宅', officialName: '待选住宅' })
+    const pending = renderCard(undefined, unresolved)
+    expect(pending.querySelector('.poi-candidates-entry')?.textContent).toBe('高德候选名单')
+    expect(pending.querySelector('.poi-candidates-entry')?.getAttribute('aria-expanded')).toBe('false')
+    const confirmed = structuredClone(heritage)
+    confirmed.properties.officialId = 'sh-fgj-1M003-01'
+    expect(renderCard(undefined, confirmed).querySelector('.poi-candidates-entry')).toBeNull()
+  })
+
+  it('backfills the reviewed AMap place and evidence without overwriting the listed address', () => {
+    const value = structuredClone(heritage)
+    Object.assign(value.properties, { officialId: 'sh-fgj-2A019-01', officialCodeRaw: '2A019',
+      name: '国华银行大楼', officialName: '国华银行大楼', address: '北京东路342号' })
+    const card = renderCard(undefined, value)
+    expect(field(card, '当前地址')).toBe('北京东路342号')
+    const mapLink = card.querySelector('.place-map-links a')!
+    expect(new URL(mapLink.getAttribute('href')!).searchParams.get('markers')).toBe('B00155HZSU')
+    expect(mapLink.textContent).toBe('在高德地图查看')
+    expect(card.querySelector('.place-map-location')?.textContent).toContain('国华大楼')
+    expect(card.querySelector('.place-map-location')?.textContent).toContain('北京东路356号')
+    expect(card.querySelector('.place-map-links')?.textContent).toContain('同楼双门牌')
+    expect(card.querySelector('.place-sources a[href="https://www.thepaper.cn/newsDetail_forward_16915127"]')).not.toBeNull()
+  })
   it('shows reviewed neighboring-site context without presenting it as a merged building', () => {
     const hotel = structuredClone(heritage)
     hotel.properties.officialId = 'sh-fgj-3C007-01'

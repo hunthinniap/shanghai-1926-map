@@ -10,8 +10,11 @@ import { approvedUnlocatedHeritageSites, reviewedContextualHeritageSites } from 
 import { reviewedResidentsForHeritage } from '../data/notableResidents'
 import { reviewedUseHistoryForHeritage } from '../data/heritageUseHistories'
 import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
+import heritageAmapPois from '../data/heritageAmapPois.json'
+import heritageAmapLivePois from '../data/heritageAmapLivePois.json'
 
 export interface PlaceSource { title: string; url: string; note?: string }
+export interface PlaceMapLink extends PlaceSource { referenceNote?: string }
 export interface PlaceFact { label: string; value: string }
 export interface PlaceEvent {
   key: string; year?: number; period: string; name: string; originalName?: string; url?: string
@@ -28,9 +31,12 @@ export interface PlaceDetails {
   residents: NotableResident[]
   coordinateReviews: PlaceCoordinateReview[]
   notes: PlaceFact[]; sources: PlaceSource[]; questions: PlaceFact[]
+  mapLinks: PlaceMapLink[]
+  amapCandidatePlaces: { officialId: string; name: string; address: string }[]
 }
 
 const distinct = <T,>(values: T[]) => [...new Set(values)]
+const amapPois: Record<string, { poiid: string; name: string; address: string; referenceNote?: string; sources?: PlaceSource[] }> = { ...heritageAmapPois, ...heritageAmapLivePois }
 const foreign = (value?: string) => value && !/\p{Script=Han}/u.test(value) && /\p{Script=Latin}/u.test(value) ? value.trim() : undefined
 const url = (value?: string | null) => value && /^https?:\/\//.test(value) ? value.replace(/^http:/, 'https:') : undefined
 const sourceKey = (value: string) => {
@@ -89,7 +95,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     name: chinese || original || knownName || p?.historicalName || '未命名地点',
     foreignName: chinese ? original : undefined,
     address: linked?.link.modernAddress?.address || headingStage?.phase?.address || verifiedAddress || (places.length ? distinct(places.map(item => item.properties.address).filter(Boolean)).join('；') : undefined),
-    year: stage?.year, heritage: Boolean(heritage), events: [], buildings: [], catalogue: [], residents: [], coordinateReviews: [], notes: [], sources: [], questions: [],
+    year: stage?.year, heritage: Boolean(heritage), events: [], buildings: [], catalogue: [], residents: [], coordinateReviews: [], notes: [], sources: [], questions: [], mapLinks: [], amapCandidatePlaces: [],
   }
   const addSource = (title: string, sourceUrl?: string | null, note?: string) => {
     const normalized = url(sourceUrl)
@@ -228,6 +234,16 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     for (const resident of [...(q.notableResidents ?? []), ...reviewedResidentsForHeritage(q), ...(siteHistory?.residents ?? [])]) addResident(resident)
     const prefix = places.length > 1 ? `${q.officialCodeRaw} · ` : ''
     const name = getHeritageBuildingName({ ...q, timelineStage: undefined })
+    const amapPoi = amapPois[q.officialId]
+    if (amapPoi) {
+      const amapUrl = `https://uri.amap.com/marker?markers=${encodeURIComponent(amapPoi.poiid)}&src=shanghai_heritage&callnative=1`
+      if (!result.mapLinks.some(link => link.url === amapUrl)) result.mapLinks.push({
+        title: name, url: amapUrl, note: [amapPoi.name, amapPoi.address].filter(Boolean).join(' · '), referenceNote: amapPoi.referenceNote,
+      })
+      for (const source of amapPoi.sources ?? []) addSource(source.title, source.url, '高德地点对应关系核对资料。')
+    } else if (!result.amapCandidatePlaces.some(place => place.officialId === q.officialId)) {
+      result.amapCandidatePlaces.push({ officialId: q.officialId, name, address: q.address })
+    }
     if (q.coordinateReview) {
       const review = q.coordinateReview
       const points = review.points.filter(point => Number.isFinite(point.lon) && Number.isFinite(point.lat)

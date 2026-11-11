@@ -3,7 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import { parseWikipediaHeritageList } from './lib/wikipedia-heritage-list.mjs'
-import { matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride, isShanghaiCoordinate } from './lib/wikipedia-heritage-enrichment.mjs'
+import { matchListings, articleScope, articleLocation, applyReviewedCoordinateOverride, applyPostBackfillCoordinateOverrides, isShanghaiCoordinate } from './lib/wikipedia-heritage-enrichment.mjs'
 import { loadApprovedCoordinateReview, applyApprovedHeritageCoordinates } from './lib/reviewed-heritage-coordinates.mjs'
 import { verifiedTextSnapshot } from './lib/verified-snapshot.mjs'
 
@@ -75,7 +75,7 @@ const records = official.records.map((record) => {
     if (new URL(link.url).hash) scope = { scope: 'uncertain', method: 'section-link', reason: '来源链接指向条目中的章节；整篇条目坐标不能代表该章节所述楼栋。' }
     let location = articleLocation(article, scope)
     const coordinateOverride = coordinateOverrideById.get(record.id)
-    if (coordinateOverride && [link.title, article.resolvedTitle].includes(coordinateOverride.articleTitle)) {
+    if (coordinateOverride && coordinateOverride.stage !== 'after-backfill' && [link.title, article.resolvedTitle].includes(coordinateOverride.articleTitle)) {
       if (record.originalNameOrUse !== coordinateOverride.expectedOfficialName || record.addressAsListed !== coordinateOverride.expectedAddress) {
         throw new Error(`Reviewed coordinate override source changed: ${record.id}`)
       }
@@ -111,7 +111,7 @@ const records = official.records.map((record) => {
       : articleReferences.some((r) => r.location.candidates.length) ? 'candidates-need-review' : 'no-source-coordinate',
   }
 })
-if (usedCoordinateOverrides.size !== coordinateOverrides.length) {
+if (usedCoordinateOverrides.size !== coordinateOverrides.filter(item => item.stage !== 'after-backfill').length) {
   throw new Error(`Unused heritage coordinate overrides: ${coordinateOverrides.filter((r) => !usedCoordinateOverrides.has(r.officialId)).map((r) => r.officialId).join(', ')}`)
 }
 
@@ -178,6 +178,8 @@ let mapFeatures = [...features, ...addressFeatures].map((feature) => {
 const reviewedCoordinateBackfill = coordinateBackfill
   ? applyApprovedHeritageCoordinates({ records, mapFeatures, ...coordinateBackfill }) : null
 if (reviewedCoordinateBackfill) mapFeatures = reviewedCoordinateBackfill.mapFeatures
+applyPostBackfillCoordinateOverrides({ records, featureArrays: [features, mapFeatures],
+  overrides: coordinateOverrides.filter(item => item.stage === 'after-backfill') })
 const byBatch = Object.fromEntries([1, 2, 3, 4, 5].map((batch) => [batch, records.filter((r) => r.batch === batch).length]))
 const coverage = {
   officialRecords: official.records.length, wikipediaRecords: list.recordCount, matchedRecords: matches.length, byBatch,
@@ -208,7 +210,7 @@ const methodology = {
   addresses: '优先保留官网地址，只有官网空缺时由维基补充；差异均并存，different-as-listed只是差异标记，不自动裁定哪一方正确。',
   dates: 'constructionDateText直接保留维基表中建造年代；Wikidata P571仅作为entityInceptionClaims保存，未当作建成年份。',
   currentUse: '双方listedNameOrUse及第五批混合列均为页面记载，不视为独立核定的今日用途。',
-  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。用户另批准66项坐标复查结果（50项有来源、16项部分定位），每名录项保留一个主地图点，全部76个来源位置在coordinateReview中分别保留；部分定位不代表整项建筑已全部定位。360坐标系判定保留独立控制点支持的推断标记。原978项主点不变。来源与限制见geocoding/results.json、geocoding/reviewed-coordinate-backfill.json及scripts/data/shanghai-heritage-coordinate-overrides.json。',
+  locations: '原维基点使用建筑名称链接的GeoData/P625，保留原筛查规则；已发现的错误点可由逐条审核的坐标覆盖表替换，原候选及替换理由继续保留。地址补点来自上海图书馆公开目录或独立复核来源；门牌、里弄、校园及建筑群参考点分别标注来源和范围。用户另批准66项坐标复查结果（50项有来源、16项部分定位），每名录项保留一个主地图点，全部76个来源位置在coordinateReview中分别保留；部分定位不代表整项建筑已全部定位。360坐标系判定保留独立控制点支持的推断标记。原978项主点先校验冻结基线，再逐项应用有旧点与名址保护检查的坐标纠正。高德坐标转为WGS84后用于地图，不将同源距离作为独立位置证据。来源与限制见geocoding/results.json、geocoding/reviewed-coordinate-backfill.json及scripts/data/shanghai-heritage-coordinate-overrides.json。',
   precision: 'Wikidata precision单位为角度，是来源数值精度，不是测绘误差保证；Wikipedia未提供precision时为null。候选与选点均不代表建筑轮廓或1926年历史位置。',
   media: '只保存图片来源链接，未下载图片；图片有各自版权许可，须查看文件说明页。',
   attribution: { wikipediaUrl: listSource.requestedUrl, wikipediaRevisionId: listSource.revisionId,

@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-09T15:00:10.079077+00:00",
+  "service": "amap-maps-streamableHTTP",
+  "connection": "initialized",
+  "tool": "maps_text_search",
+  "arguments": {
+    "keywords": "岳阳路110号",
+    "city": "上海",
+    "citylimit": true
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "API 调用失败：USER_DAILY_QUERY_OVER_LIMIT"
+      }
+    ],
+    "isError": true
+  },
+  "status": "blocked-by-daily-quota",
+  "newAcceptedPois": 0,
+  "note": "MCP 已连接，但关键词搜索返回 USER_DAILY_QUERY_OVER_LIMIT；未启动批量查询，已有500项链接保持。"
+}

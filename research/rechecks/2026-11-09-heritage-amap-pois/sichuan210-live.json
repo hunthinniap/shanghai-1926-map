@@ -1,0 +1,127 @@
+[
+  {
+    "endpoint": "https://restapi.amap.com/v5/place/detail",
+    "params": {
+      "id": "B0FFFWV5A6",
+      "show_fields": "children,business,navi,indoor"
+    },
+    "response": {
+      "count": "1",
+      "infocode": "10000",
+      "pois": [
+        {
+          "parent": "B0FFG7HY0E",
+          "address": "滇池路63号万国建筑博览群内(南侧)",
+          "business": {
+            "keytag": "写字楼",
+            "business_area": "北京路",
+            "alias": "小汇丰大楼",
+            "rectag": "写字楼"
+          },
+          "distance": "",
+          "pcode": "310000",
+          "adcode": "310101",
+          "pname": "上海市",
+          "cityname": "上海市",
+          "type": "商务住宅;楼宇;商务写字楼",
+          "typecode": "120201",
+          "updateflag": "0",
+          "adname": "黄浦区",
+          "citycode": "021",
+          "atag": "写字楼",
+          "navi": {
+            "navi_poiid": "H51F010012_543208",
+            "entr_location": "121.488682,31.236022",
+            "gridcode": "4621638900"
+          },
+          "name": "新汇丰大楼",
+          "indoor": {
+            "indoor_map": "0"
+          },
+          "location": "121.488977,31.235928",
+          "id": "B0FFFWV5A6"
+        }
+      ],
+      "status": "1",
+      "info": "OK"
+    }
+  },
+  {
+    "endpoint": "https://restapi.amap.com/v5/place/text",
+    "params": {
+      "keywords": "小汇丰大楼",
+      "region": "310101",
+      "city_limit": "true",
+      "page_size": "25",
+      "show_fields": "children,business,navi,indoor"
+    },
+    "response": {
+      "count": "2",
+      "infocode": "10000",
+      "pois": [
+        {
+          "parent": "B0FFG7HY0E",
+          "address": "滇池路63号万国建筑博览群内(南侧)",
+          "business": {
+            "keytag": "写字楼",
+            "business_area": "北京路",
+            "alias": "小汇丰大楼",
+            "rectag": "写字楼"
+          },
+          "distance": "",
+          "pcode": "310000",
+          "adcode": "310101",
+          "pname": "上海市",
+          "cityname": "上海市",
+          "type": "商务住宅;楼宇;商务写字楼",
+          "typecode": "120201",
+          "adname": "黄浦区",
+          "citycode": "021",
+          "navi": {
+            "navi_poiid": "H51F010012_543208",
+            "entr_location": "121.488682,31.236022",
+            "gridcode": "4621638900"
+          },
+          "name": "新汇丰大楼",
+          "indoor": {
+            "indoor_map": "0"
+          },
+          "location": "121.488977,31.235928",
+          "id": "B0FFFWV5A6"
+        },
+        {
+          "parent": "B0FFFWV5A6",
+          "address": "四川中路220号小汇丰大楼二楼",
+          "business": {
+            "opentime_today": "10:00-22:00",
+            "keytag": "留学咨询",
+            "rating": "4.6",
+            "business_area": "北京路",
+            "rectag": "留学咨询",
+            "opentime_week": "周一至周日 10:00-22:00"
+          },
+          "distance": "",
+          "pcode": "310000",
+          "adcode": "310101",
+          "pname": "上海市",
+          "cityname": "上海市",
+          "type": "生活服务;生活服务场所;生活服务场所",
+          "typecode": "070000",
+          "adname": "黄浦区",
+          "citycode": "021",
+          "navi": {
+            "gridcode": "4621638900"
+          },
+          "name": "上海市留学人员之家",
+          "indoor": {
+            "indoor_map": "0"
+          },
+          "location": "121.488841,31.236072",
+          "id": "B0H0OAYBR9"
+        }
+      ],
+      "status": "1",
+      "info": "OK"
+    }
+  }
+]

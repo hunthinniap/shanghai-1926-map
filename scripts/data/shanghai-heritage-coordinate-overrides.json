@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "purpose": "经门址与独立建筑轮廓复核后，替换错误的维基/Wikidata建筑参考点；原候选仍保留在研究记录中。",
+  "purpose": "逐项复核后替换错误建筑参考点，保留原候选、来源坐标系、转换方法和替换理由。",
   "overrides": [
     {
       "officialId": "sh-fgj-2A027-01",
@@ -31,6 +31,45 @@
           "url": "https://www.openstreetmap.org/way/494086374"
         }
       ]
+    },
+    {
+      "officialId": "sh-fgj-4C022-01",
+      "stage": "after-backfill",
+      "articleTitle": "中国科学社暨明复图书馆旧址",
+      "expectedOfficialName": "明复图书馆",
+      "expectedAddress": "陕西南路235号",
+      "expectedPreviousPoint": {
+        "lon": 121.461923,
+        "lat": 31.20904
+      },
+      "point": {
+        "lon": 121.457356,
+        "lat": 31.210957
+      },
+      "sourceCoordinate": {
+        "lon": 121.461927,
+        "lat": 31.209047,
+        "coordinateSystem": "GCJ-02",
+        "poiid": "B00156NSI9"
+      },
+      "conversion": "gcj02ToWgs84; source GCJ-02 retained above; map output WGS84",
+      "origin": "reviewed-amap-coordinate-correction",
+      "coordinateScope": "linked-building-reference-point",
+      "sourceTitle": "高德地图：上海市黄浦区明复图书馆",
+      "sourceUrl": "https://uri.amap.com/marker?markers=B00156NSI9&src=shanghai_heritage&callnative=1",
+      "reviewedAt": "2026-11-10",
+      "reason": "用户指出旧参考坐标错误；房管局名录的明复图书馆及陕西南路235号与已缓存高德图书馆POI一致。旧维基点虽标记WGS84，数值几乎等于高德GCJ-02点，按WGS84再次转换导致约483米偏差；不把该现象推广为全部维基点的坐标系结论。采用具名图书馆POI的GCJ-02点反算WGS84作地图参考，保留原始候选；纠正后的同源距离不作为独立匹配证据，亦不代表建筑轮廓测绘。",
+      "evidence": [
+        {
+          "title": "上海市房屋管理局第四批优秀历史建筑：4C022 明复图书馆，陕西南路235号",
+          "url": "https://fgj.sh.gov.cn/yxlsjz/20200331/e3b99cf457ae48cab87ad5c02aa0fee3.html"
+        },
+        {
+          "title": "高德：上海市黄浦区明复图书馆，陕西南路235号",
+          "url": "https://uri.amap.com/marker?markers=B00156NSI9&src=shanghai_heritage&callnative=1"
+        }
+      ],
+      "displayNote": "位置参考：已按陕西南路235号明复图书馆更新高德位置；非建筑轮廓测绘。"
     }
   ]
 }

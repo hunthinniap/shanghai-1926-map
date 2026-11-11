@@ -31,13 +31,13 @@
     "validate:data": "node scripts/validate-data.mjs",
     "data:road-histories": "node scripts/import-road-history-results.mjs --write",
     "validate:road-histories": "node scripts/import-road-history-results.mjs --check",
-    "build": "npm run validate:data && npm run validate:heritage:uses && npm run validate:address-uses && npm run validate:road-histories && tsc --noEmit -p tsconfig.app.json && vite build",
+    "build": "npm run data:poi-review && npm run validate:data && npm run validate:heritage:uses && npm run validate:address-uses && npm run validate:road-histories && tsc --noEmit -p tsconfig.app.json && vite build",
     "data:address-uses": "node scripts/build-reviewed-address-uses.mjs --write",
     "validate:address-uses": "node scripts/build-reviewed-address-uses.mjs --check",
     "data:heritage:uses": "node scripts/build-heritage-historical-uses.mjs --write",
     "validate:heritage:uses": "node scripts/build-heritage-historical-uses.mjs --check",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs scripts/lib/shanghai-heritage.test.mjs scripts/lib/wikipedia-heritage-list.test.mjs scripts/lib/wikipedia-heritage-enrichment.test.mjs scripts/lib/heritage-addresses.test.mjs scripts/lib/heritage-library-matching.test.mjs scripts/lib/reviewed-heritage-coordinates.test.mjs scripts/lib/road-history-import.test.mjs",
+    "test": "vitest run && node --test scripts/lib/cluster-buildings.test.mjs scripts/lib/coordinate-systems.test.mjs scripts/lib/external-research.test.mjs scripts/lib/current-use-holds.test.mjs scripts/lib/shanghai-heritage.test.mjs scripts/lib/wikipedia-heritage-list.test.mjs scripts/lib/wikipedia-heritage-enrichment.test.mjs scripts/lib/heritage-addresses.test.mjs scripts/lib/heritage-library-matching.test.mjs scripts/lib/reviewed-heritage-coordinates.test.mjs scripts/lib/road-history-import.test.mjs scripts/lib/poi-votes.test.mjs scripts/lib/netlify-poi-votes.test.mjs scripts/lib/amap-candidate-review.test.mjs",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "data:heritage:wikipedia": "node scripts/collect-shanghai-heritage-wikipedia-list.mjs && node scripts/collect-shanghai-heritage-wikipedia-details.mjs && node scripts/enrich-shanghai-heritage-wikipedia.mjs",
@@ -46,9 +46,11 @@
     "data:heritage:library": "node scripts/collect-shanghai-heritage-library.mjs",
     "validate:heritage:library": "node scripts/collect-shanghai-heritage-library.mjs --check",
     "data:heritage:geocode": "node scripts/geocode-shanghai-heritage-buildings.mjs --offline && node scripts/enrich-shanghai-heritage-wikipedia.mjs --offline",
-    "validate:heritage:geocode": "node scripts/geocode-shanghai-heritage-buildings.mjs --check && node scripts/enrich-shanghai-heritage-wikipedia.mjs --check"
+    "validate:heritage:geocode": "node scripts/geocode-shanghai-heritage-buildings.mjs --check && node scripts/enrich-shanghai-heritage-wikipedia.mjs --check",
+    "data:poi-review": "node scripts/build-heritage-poi-review.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.9",
     "lucide-react": "^0.468.0",
     "maplibre-gl": "^5.12.0",
     "react": "^19.0.0",

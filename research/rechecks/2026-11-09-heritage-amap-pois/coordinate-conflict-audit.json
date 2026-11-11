@@ -1,0 +1,107 @@
+{
+  "reviewedOn": "2026-11-10",
+  "method": "仅检查本地缓存：原始坐标数值接近高德而转换后偏移时标记待核，不能据此批量改坐标；未产生付费调用。",
+  "corrected": {
+    "officialId": "sh-fgj-4C022-01",
+    "poiid": "B00156NSI9"
+  },
+  "remaining": [
+    {
+      "officialId": "sh-fgj-2F007-01",
+      "name": "新亚酒楼",
+      "address": "天潼路422号",
+      "candidates": [
+        {
+          "poiid": "B00155N17I",
+          "name": "上海外滩郁锦香新亚大酒店",
+          "address": "天潼路422号(天潼路地铁站3号口步行250米)",
+          "distanceAfterDeclaredWgsConversion": 484,
+          "rawNumbersDistanceMetres": 10,
+          "coordinateSystemReviewFlag": true
+        },
+        {
+          "poiid": "B0FFF4D7QZ",
+          "name": "新亚酒楼旧址",
+          "address": "四川北路街道四川北路街道天潼路422号",
+          "distanceAfterDeclaredWgsConversion": 476,
+          "rawNumbersDistanceMetres": 6,
+          "coordinateSystemReviewFlag": true
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-3B023-01",
+      "name": "念吾新村/多福里/汾阳坊",
+      "address": "延安中路470弄/504弄/510弄",
+      "candidates": [
+        {
+          "poiid": "B00155KJCK",
+          "name": "念吾新村",
+          "address": "延安中路470弄15-39号",
+          "distanceAfterDeclaredWgsConversion": 497,
+          "rawNumbersDistanceMetres": 409,
+          "coordinateSystemReviewFlag": false
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-4G005-01",
+      "name": "沪江大学历史建筑建筑群：馥赉堂，中学礼堂，思孟堂，思雷堂，科学馆，思晏堂，健身房，思裴堂，怀德堂，思伊堂，体育馆，思福堂，教职工公寓，职工住宅群",
+      "address": "军工路516号",
+      "candidates": [
+        {
+          "poiid": "B00155IKSB",
+          "name": "上海理工大学(军工路校区)",
+          "address": "军工路516号",
+          "distanceAfterDeclaredWgsConversion": 162,
+          "rawNumbersDistanceMetres": 602,
+          "coordinateSystemReviewFlag": false
+        },
+        {
+          "poiid": "B0J6G7R3I9",
+          "name": "上海理工大学(北区)",
+          "address": "军工路516号上海理工大学(军工路校区)",
+          "distanceAfterDeclaredWgsConversion": 215,
+          "rawNumbersDistanceMetres": 504,
+          "coordinateSystemReviewFlag": false
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5D113-01",
+      "name": "上海应用技术学院",
+      "address": "漕宝路120号",
+      "candidates": [
+        {
+          "poiid": "B0FFHBTBRG",
+          "name": "上海应用技术学院培训公寓",
+          "address": "漕宝路120号",
+          "distanceAfterDeclaredWgsConversion": 253,
+          "rawNumbersDistanceMetres": 732,
+          "coordinateSystemReviewFlag": false
+        }
+      ]
+    },
+    {
+      "officialId": "sh-fgj-5W038-01",
+      "name": "五星天主堂",
+      "address": "宣桥镇三灶村五星支弄704号",
+      "candidates": [
+        {
+          "poiid": "B0FFI20JBS",
+          "name": "施家天主堂",
+          "address": "宣桥镇三灶村五星支弄704号",
+          "distanceAfterDeclaredWgsConversion": 351,
+          "rawNumbersDistanceMetres": 141,
+          "coordinateSystemReviewFlag": false
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "coordinateAndCandidateTests": "40 passed",
+    "productionBuild": "passed",
+    "staticCardChecks": "1044 cards passed; 537 links",
+    "fullOfflineSourceRebuild": "Blocked by pre-existing approved source snapshot checksum mismatch (library/buildings.json; residential/sources/shouzhang.html). Checks were not bypassed; current generated data corrected with exact old-point/identity guards."
+  }
+}
