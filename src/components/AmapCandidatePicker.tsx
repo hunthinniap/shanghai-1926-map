@@ -73,7 +73,7 @@ export function AmapCandidatePicker({ place }: { place: { officialId: string; na
                 <a href={amapUrl(candidate.id)} target="_blank" rel="noopener noreferrer">在高德查看<ExternalLink size={11} aria-hidden="true" /></a>
                 <RouteAddButton choices={[{ officialId: place.officialId, name: place.name, address: candidate.address,
                   poiid: candidate.id, poiName: candidate.name, location: candidate.location || undefined,
-                  referenceNote: '用户为本次路线选择的候选地点，具体建筑对应关系尚待复核。' }]} />
+                  referenceNote: '用户为本次清单选择的候选地点，具体建筑对应关系尚待复核。' }]} />
                 <button type="button" disabled={Boolean(busy)} aria-pressed={selected === candidate.id} aria-label={`选择${candidate.name}，次数加一`} onClick={() => void select(candidate.id)}>
                   {busy === candidate.id ? '保存中…' : '选择此地点 +1'}
                 </button>

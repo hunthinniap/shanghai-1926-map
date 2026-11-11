@@ -12,7 +12,6 @@ import { reviewedUseHistoryForHeritage } from '../data/heritageUseHistories'
 import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
 import heritageAmapPois from '../data/heritageAmapPois.json'
 import heritageAmapLivePois from '../data/heritageAmapLivePois.json'
-import heritageAmapLocations from '../data/heritageAmapLocations.json'
 import type { RouteStop } from './heritageRoute'
 
 export interface PlaceSource { title: string; url: string; note?: string }
@@ -240,7 +239,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     const amapPoi = amapPois[q.officialId]
     if (amapPoi) {
       result.routeChoices.push({ officialId: q.officialId, name, address: amapPoi.address || q.address || '', poiid: amapPoi.poiid,
-        poiName: amapPoi.name, location: (heritageAmapLocations as Record<string, string>)[amapPoi.poiid], referenceNote: amapPoi.referenceNote })
+        poiName: amapPoi.name, referenceNote: amapPoi.referenceNote })
       const amapUrl = `https://uri.amap.com/marker?markers=${encodeURIComponent(amapPoi.poiid)}&src=shanghai_heritage&callnative=1`
       if (!result.mapLinks.some(link => link.url === amapUrl)) result.mapLinks.push({
         title: name, url: amapUrl, note: [amapPoi.name, amapPoi.address].filter(Boolean).join(' · '), referenceNote: amapPoi.referenceNote,

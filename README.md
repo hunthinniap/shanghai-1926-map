@@ -88,7 +88,7 @@ Public toilet 的追加研究见 [2026-10-30 公厕沿革补查](research/supple
 
 未确定高德地点的建筑卡片带有“高德候选名单”入口。展开后可查看各候选的高德链接、门牌与差异提示；点击“选择此地点 +1”才增加选择次数，打开高德链接不计数。每次点击独立累计，按建筑 ID 和 POI ID 分开保存，暂不自动改写已确认链接。
 
-建筑卡片的高德链接旁有“添加到路线”；多个已匹配地点可展开选择，待复核候选也可单独加入。顶部“选中建筑”列出按游览顺序排列的地点，支持上移、下移、移除及清空；同一建筑更换候选时更新原站点，列表自动保存在当前浏览器。使用匹配 POI 的 GCJ-02 坐标生成 iPhone／Android 高德多途经点路线和网页逐段步行／驾车路线，不调用付费算路 API。网页路线遵循高德接口限制，不静默省略中间建筑。坐标索引 `src/data/heritageAmapLocations.json` 来自已有高德查询缓存及原始导入中 POI ID 一致的记录，不使用历史地图参考坐标。[手机路线参数](https://lbs.amap.com/api/amap-mobile/guide/android/route)、[网页路线参数](https://developer.amap.com/api/uri-api/guide/travel/route)。
+建筑卡片的高德链接旁有“添加到清单”；多个已匹配地点可展开选择，待复核候选也可单独加入。顶部“选中建筑”支持调整顺序、移除及清空，清单自动保存在当前浏览器，兼容原来保存的选中记录。同一建筑更换候选时更新原条目。“在高德查看全部地点”使用所选 POI ID 生成高德多点标注链接，不计算路线、不调用付费 API、不要求坐标。每个链接最多10个不同POI，超过时分组保留全部地点；多个建筑共用POI时只合并地图标注，不删减建筑清单。这不会自动写入高德账号收藏夹。[高德多点标注文档](https://developer.amap.com/api/uri-api/guide/mobile-web/points)。
 
 `npm run dev` / `npm run preview` 通过 `/api/poi-candidate-votes` 提供读取与计数服务，记录保存在 `.local/poi-candidate-votes.json`，同一服务的浏览器共享累计数，刷新或重启服务后仍保留。该目录不提交 Git。Netlify 部署使用同路径的 Function 和站点级 Blobs 存储，每次选择保存为独立事件，再按建筑／POI 汇总，避免并发覆盖；重新部署不清空线上累计数。本地计数与线上计数分开。接口不可用时页面会提示失败，不会伪造成功次数。参考：[Netlify Functions 路由](https://docs.netlify.com/build/functions/configuration/)、[Blobs 持久化存储](https://docs.netlify.com/build/data-and-storage/netlify-blobs/)。
 

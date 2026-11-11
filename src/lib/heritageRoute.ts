@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react'
 
 export interface RouteStop { officialId: string; name: string; address: string; poiid: string; poiName: string; location?: string; referenceNote?: string }
+// Preserve the original key so previously selected buildings remain available.
 export const routeStorageKey = 'shanghai-heritage-route-v1'
 export function parseRoute(raw: string | null): RouteStop[] {
   try {
@@ -28,7 +29,7 @@ function read() {
 }
 function save(items: RouteStop[]) {
   let error = ''
-  try { localStorage.setItem(routeStorageKey, JSON.stringify(items)) } catch { error = '路线暂未保存到浏览器，关闭页面前请保留地点信息。' }
+  try { localStorage.setItem(routeStorageKey, JSON.stringify(items)) } catch { error = '清单暂未保存到浏览器，关闭页面前请保留地点信息。' }
   state = { items, error }; listeners.forEach(listener => listener())
 }
 function storageChange(event: StorageEvent) {
@@ -53,27 +54,13 @@ export function moveRouteStop(id: string, offset: number) {
   ;[items[index], items[next]] = [items[next], items[index]]; save(items)
 }
 export function clearHeritageRoute() { save([]) }
-export function routeCoordinates(stop: RouteStop) {
-  const values = stop.location?.split(',').map(Number)
-  return values?.length === 2 && values.every(Number.isFinite) && Math.abs(values[0]) <= 180 && Math.abs(values[1]) <= 90 ? values : null
-}
-const cleanName = (name: string) => name.replace(/[,|]/gu, ' ')
-export function webRouteLink(stops: RouteStop[], mode: 'walk' | 'car') {
-  if (stops.length < 2 || stops.length > (mode === 'car' ? 3 : 2) || stops.some(stop => !routeCoordinates(stop))) return null
-  const point = (stop: RouteStop) => `${routeCoordinates(stop)!.join(',')},${cleanName(stop.poiName)}`
-  const params = new URLSearchParams({ from: point(stops[0]), to: point(stops.at(-1)!), mode, src: 'shanghai_heritage', callnative: '1' })
-  if (stops.length === 3) params.set('via', point(stops[1]))
-  return `https://uri.amap.com/navigation?${params}`
-}
-export function appRouteLink(stops: RouteStop[], mode: 'walk' | 'car', platform: 'ios' | 'android') {
-  if (stops.length < 2 || stops.some(stop => !routeCoordinates(stop))) return null
-  const start = stops[0], end = stops.at(-1)!, via = stops.slice(1, -1)
-  const params = new URLSearchParams({ sourceApplication: 'ShanghaiHeritage', sid: start.poiid, did: end.poiid,
-    slon: String(routeCoordinates(start)![0]), slat: String(routeCoordinates(start)![1]), sname: cleanName(start.poiName),
-    dlon: String(routeCoordinates(end)![0]), dlat: String(routeCoordinates(end)![1]), dname: cleanName(end.poiName), dev: '0', t: mode === 'car' ? '0' : '2', m: '0' })
-  if (via.length) {
-    params.set('vian', String(via.length)); params.set('vialons', via.map(stop => routeCoordinates(stop)![0]).join('|'))
-    params.set('vialats', via.map(stop => routeCoordinates(stop)![1]).join('|')); params.set('vianames', via.map(stop => cleanName(stop.poiName)).join('|'))
+export function amapListGroups(items: RouteStop[]) {
+  const unique = [...new Map(items.map(item => [item.poiid, item])).values()]
+  const groups: { ids: string[]; url: string }[] = []
+  for (let index = 0; index < unique.length; index += 10) {
+    const ids = unique.slice(index, index + 10).map(item => item.poiid)
+    const params = new URLSearchParams({ markers: ids.join('|'), src: 'shanghai_heritage', callnative: '1' })
+    groups.push({ ids, url: `https://uri.amap.com/marker?${params}` })
   }
-  return `${platform === 'ios' ? 'iosamap://path' : 'amapuri://route/plan/'}?${params}`
+  return groups
 }
