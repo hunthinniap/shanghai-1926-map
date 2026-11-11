@@ -12,6 +12,8 @@ import { reviewedUseHistoryForHeritage } from '../data/heritageUseHistories'
 import { reviewedHeritageSiteHistoryFor } from '../data/heritageSiteHistories'
 import heritageAmapPois from '../data/heritageAmapPois.json'
 import heritageAmapLivePois from '../data/heritageAmapLivePois.json'
+import heritageAmapLocations from '../data/heritageAmapLocations.json'
+import type { RouteStop } from './heritageRoute'
 
 export interface PlaceSource { title: string; url: string; note?: string }
 export interface PlaceMapLink extends PlaceSource { referenceNote?: string }
@@ -32,6 +34,7 @@ export interface PlaceDetails {
   coordinateReviews: PlaceCoordinateReview[]
   notes: PlaceFact[]; sources: PlaceSource[]; questions: PlaceFact[]
   mapLinks: PlaceMapLink[]
+  routeChoices: RouteStop[]
   amapCandidatePlaces: { officialId: string; name: string; address: string }[]
 }
 
@@ -95,7 +98,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     name: chinese || original || knownName || p?.historicalName || '未命名地点',
     foreignName: chinese ? original : undefined,
     address: linked?.link.modernAddress?.address || headingStage?.phase?.address || verifiedAddress || (places.length ? distinct(places.map(item => item.properties.address).filter(Boolean)).join('；') : undefined),
-    year: stage?.year, heritage: Boolean(heritage), events: [], buildings: [], catalogue: [], residents: [], coordinateReviews: [], notes: [], sources: [], questions: [], mapLinks: [], amapCandidatePlaces: [],
+    year: stage?.year, heritage: Boolean(heritage), events: [], buildings: [], catalogue: [], residents: [], coordinateReviews: [], notes: [], sources: [], questions: [], mapLinks: [], routeChoices: [], amapCandidatePlaces: [],
   }
   const addSource = (title: string, sourceUrl?: string | null, note?: string) => {
     const normalized = url(sourceUrl)
@@ -236,6 +239,8 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     const name = getHeritageBuildingName({ ...q, timelineStage: undefined })
     const amapPoi = amapPois[q.officialId]
     if (amapPoi) {
+      result.routeChoices.push({ officialId: q.officialId, name, address: amapPoi.address || q.address || '', poiid: amapPoi.poiid,
+        poiName: amapPoi.name, location: (heritageAmapLocations as Record<string, string>)[amapPoi.poiid], referenceNote: amapPoi.referenceNote })
       const amapUrl = `https://uri.amap.com/marker?markers=${encodeURIComponent(amapPoi.poiid)}&src=shanghai_heritage&callnative=1`
       if (!result.mapLinks.some(link => link.url === amapUrl)) result.mapLinks.push({
         title: name, url: amapUrl, note: [amapPoi.name, amapPoi.address].filter(Boolean).join(' · '), referenceNote: amapPoi.referenceNote,

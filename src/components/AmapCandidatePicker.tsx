@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { ChevronDown, ExternalLink, MapPin } from 'lucide-react'
 import { assetUrl } from '../lib/assets'
 import { amapUrl, type Dataset, type ReviewRecord } from '../poi-review/model'
+import { RouteAddButton } from './HeritageRoute'
 
 let cachedDataset: Promise<Dataset> | undefined
 function loadDataset() {
@@ -70,6 +71,9 @@ export function AmapCandidatePicker({ place }: { place: { officialId: string; na
               {candidate.flags.length > 0 && <small className="poi-candidate-flags">{candidate.flags.join(' · ')}</small>}
               <div className="poi-candidate-actions">
                 <a href={amapUrl(candidate.id)} target="_blank" rel="noopener noreferrer">在高德查看<ExternalLink size={11} aria-hidden="true" /></a>
+                <RouteAddButton choices={[{ officialId: place.officialId, name: place.name, address: candidate.address,
+                  poiid: candidate.id, poiName: candidate.name, location: candidate.location || undefined,
+                  referenceNote: '用户为本次路线选择的候选地点，具体建筑对应关系尚待复核。' }]} />
                 <button type="button" disabled={Boolean(busy)} aria-pressed={selected === candidate.id} aria-label={`选择${candidate.name}，次数加一`} onClick={() => void select(candidate.id)}>
                   {busy === candidate.id ? '保存中…' : '选择此地点 +1'}
                 </button>

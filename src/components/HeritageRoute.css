@@ -1,0 +1,30 @@
+.route-add-control { display: inline-block; position: relative; margin-left: 8px; vertical-align: middle; }
+.route-add-control button { display: inline-flex; align-items: center; gap: 5px; min-height: 34px; border: 1px solid var(--line); background: transparent; color: var(--wine-dark); padding: 5px 8px; font: inherit; font-size: 11px; cursor: pointer; }
+.route-add-options { position: absolute; top: 100%; right: 0; z-index: 3; width: min(270px,70vw); padding: 5px; background: #fbf7ed; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.route-add-options button { display: flex; flex-direction: column; align-items: start; text-align: left; width: 100%; margin: 3px 0; }
+.route-add-options span { font-size: 10px; color: var(--muted); }
+.heritage-route-dialog { width: min(600px,calc(100vw - 28px)); max-height: calc(100dvh - 40px); box-sizing: border-box; overflow: auto; padding: 28px 22px; border: 1px solid var(--line); background: #f4eddc; color: var(--ink); box-shadow: var(--shadow); }
+.heritage-route-dialog::backdrop { background: rgba(43,35,28,.4); }
+.route-dialog-close { position: absolute; top: 10px; right: 10px; }
+.heritage-route-dialog h2 { margin: 0 24px 16px 0; font-family: "Songti SC",serif; font-size: 24px; }
+.heritage-route-dialog h2 small { color: var(--muted); font-size: 14px; }
+.heritage-route-dialog p { font-size: 12px; line-height: 1.8; color: var(--muted); }
+.heritage-route-dialog a { color: var(--wine-dark); font-size: 12px; overflow-wrap: anywhere; }
+.heritage-route-stops { list-style: none; margin: 20px 0; padding: 0; }
+.heritage-route-stops > li { display: flex; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.route-stop-number { color: var(--wine); font-size: 12px; min-width: 18px; }
+.route-stop-info { flex: 1; min-width: 0; font-size: 13px; overflow-wrap: anywhere; }
+.route-stop-info a,.route-stop-info small { display: block; margin-top: 5px; }
+.route-stop-info small { color: var(--muted); font-size: 10px; line-height: 1.6; }
+.route-stop-actions { display: flex; gap: 3px; align-items: start; }
+.heritage-route-dialog button:not(.icon-button),.heritage-route-dialog select { border: 1px solid var(--line); background: transparent; color: var(--wine-dark); padding: 7px 8px; min-height: 34px; cursor: pointer; font: inherit; font-size: 11px; }
+.heritage-route-dialog button:disabled { opacity: .35; cursor: default; }
+.route-planning { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12px; }
+.route-generated { margin-top: 22px; }
+.route-generated h3 { color: var(--wine); font-size: 14px; }
+.route-primary { display: inline-block; padding: 10px 12px; border: 1px solid var(--wine); }
+.route-app-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0; }
+.route-generated li { padding: 7px 0; }
+.route-top-button span { display: inline !important; }
+.topbar-actions { flex-wrap: wrap; }
+.heritage-route-dialog :is(button,a,select):focus-visible,.route-add-control button:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }

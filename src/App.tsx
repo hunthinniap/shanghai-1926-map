@@ -5,6 +5,7 @@ import { DetailsPanel } from './components/DetailsPanel'
 import { MapView } from './components/MapView'
 import { MetroDetailsPanel } from './components/MetroDetailsPanel'
 import { HeritageDetailsPanel } from './components/HeritageDetailsPanel'
+import { HeritageRouteButton } from './components/HeritageRoute'
 import { SearchBox } from './components/SearchBox'
 import { SourcesPanel } from './components/SourcesPanel'
 import { TimelineControl } from './components/TimelineControl'
@@ -309,6 +310,7 @@ function App() {
         />
 
         <div className="topbar-actions">
+          <HeritageRouteButton />
           <button
             type="button"
             className="building-toggle-button"
