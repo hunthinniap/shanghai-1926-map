@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react'
+import amapLocations from '../data/heritageAmapLocations.json'
 
 export interface RouteStop { officialId: string; name: string; address: string; poiid: string; poiName: string; location?: string; referenceNote?: string }
 // Preserve the original key so previously selected buildings remain available.
@@ -54,6 +55,19 @@ export function moveRouteStop(id: string, offset: number) {
   ;[items[index], items[next]] = [items[next], items[index]]; save(items)
 }
 export function clearHeritageRoute() { save([]) }
+export function selectedPlacesText(items: RouteStop[]) {
+  const coordinates = (value?: string) => {
+    const parts = value?.split(',').map(part => part.trim())
+    if (!parts || parts.length !== 2 || parts.some(part => !part)) return null
+    const [lon, lat] = parts.map(Number)
+    return Number.isFinite(lon) && Number.isFinite(lat) && Math.abs(lon) <= 180 && Math.abs(lat) <= 90
+      ? [lon, lat].map(value => Number(value.toFixed(6))) : null
+  }
+  return ['名称\t经度（GCJ-02）\t纬度（GCJ-02）', ...items.map(item => {
+    const point = coordinates((amapLocations as Record<string, string>)[item.poiid]) ?? coordinates(item.location)
+    return [item.name.replace(/\s+/gu, ' ').trim(), ...(point ?? ['坐标缺失', '坐标缺失'])].join('\t')
+  })].join('\n')
+}
 export function amapListGroups(items: RouteStop[]) {
   const unique = [...new Map(items.map(item => [item.poiid, item])).values()]
   const groups: { ids: string[]; url: string }[] = []

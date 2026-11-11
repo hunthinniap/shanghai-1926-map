@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { ListPlus, X } from 'lucide-react'
-import { addRouteStop, amapListGroups, clearHeritageRoute, moveRouteStop, removeRouteStop, useHeritageRoute, type RouteStop } from '../lib/heritageRoute'
+import { addRouteStop, amapListGroups, clearHeritageRoute, moveRouteStop, removeRouteStop, selectedPlacesText, useHeritageRoute, type RouteStop } from '../lib/heritageRoute'
 import { amapUrl } from '../poi-review/model'
 import './HeritageRoute.css'
 
@@ -24,6 +24,18 @@ export function HeritageRouteButton() {
   const { items, error } = useHeritageRoute()
   const [open, setOpen] = useState(false)
   const dialog = useRef<HTMLDialogElement>(null)
+  const [copyStatus, setCopyStatus] = useState(''), [manualCopy, setManualCopy] = useState(false)
+  const [copying, setCopying] = useState(false)
+  useEffect(() => { setCopyStatus(''); setManualCopy(false) }, [items])
+  async function copyPlaces() {
+    setCopying(true)
+    try {
+      if (!navigator.clipboard?.writeText) throw Error('Clipboard unavailable')
+      await navigator.clipboard.writeText(selectedPlacesText(items))
+      setCopyStatus(`已复制 ${items.length} 个地点的名称和经纬度。`); setManualCopy(false)
+    } catch { setCopyStatus('浏览器未允许自动复制，请选中下方文本手动复制。'); setManualCopy(true) }
+    finally { setCopying(false) }
+  }
   useEffect(() => { if (open) { dialog.current?.showModal(); return () => { if (dialog.current?.open) dialog.current.close() } } }, [open])
   const groups = amapListGroups(items)
   const pointCount = groups.reduce((count, group) => count + group.ids.length, 0)
@@ -33,6 +45,12 @@ export function HeritageRouteButton() {
       <button type="button" className="icon-button route-dialog-close" aria-label="关闭选中建筑" onClick={() => setOpen(false)}><X size={18} /></button>
       <h2 id="heritage-route-title">选中建筑 <small>{items.length}</small></h2>
       <p>把想看的建筑放进清单，再一起在高德地图上查看。清单自动保存在当前浏览器。</p>
+      <div className="collection-actions">
+        <button type="button" disabled={!items.length || copying} onClick={() => void copyPlaces()}>{copying ? '正在复制…' : '复制全部地点'}</button>
+        <button type="button" disabled={!items.length} onClick={clearHeritageRoute}>清空清单</button>
+      </div>
+      {copyStatus && <p role="status">{copyStatus}</p>}
+      {manualCopy && <textarea className="collection-copy-text" aria-label="待复制的全部地点" value={selectedPlacesText(items)} readOnly rows={6} autoFocus onFocus={event => event.currentTarget.select()} />}
       {error && <p role="alert">{error}</p>}
       {!items.length ? <p className="route-empty">尚未添加建筑。在建筑卡片的高德链接旁点击“添加到清单”。有多个地点时，先展开选项再添加。</p> : <>
         <ol className="heritage-route-stops">{items.map((stop, index) => <li key={stop.officialId}>
@@ -43,8 +61,7 @@ export function HeritageRouteButton() {
             <button type="button" disabled={index === items.length - 1} aria-label={`下移${stop.name}`} onClick={() => moveRouteStop(stop.officialId, 1)}>↓</button>
             <button type="button" aria-label={`移除${stop.name}`} onClick={() => removeRouteStop(stop.officialId)}>移除</button></div>
         </li>)}</ol>
-        <div className="route-planning"><span>已选 {items.length} 栋建筑 · {pointCount} 个高德地点</span>
-          <button type="button" onClick={clearHeritageRoute}>清空清单</button></div>
+        <div className="route-planning"><span>已选 {items.length} 栋建筑 · {pointCount} 个高德地点</span></div>
         <div className="collection-map-links">
           {groups.length === 1 ? <a className="route-primary" href={groups[0].url} target="_blank" rel="noopener noreferrer">在高德查看全部地点 ↗</a> : <>
             <h3>在高德查看全部地点</h3>

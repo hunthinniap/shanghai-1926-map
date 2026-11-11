@@ -1,9 +1,22 @@
 import { describe, expect, it } from 'vitest'
-import { amapListGroups, parseRoute, type RouteStop } from './heritageRoute'
+import { amapListGroups, parseRoute, selectedPlacesText, type RouteStop } from './heritageRoute'
 
 const stops: RouteStop[] = Array.from({ length: 4 }, (_, i) => ({ officialId: `building-${i}`, name: `建筑${i}`,
   address: `测试路${i}号`, poiid: `B000${i}`, poiName: `高德地点${i}`, location: `${121.4 + i / 100},31.2` }))
 describe('heritage place lists', () => {
+  it('copies all names and coordinates in order and resolves known POIs for older saved selections', () => {
+    const text = selectedPlacesText([
+      { ...stops[0], name: '中国银行', poiid: 'B00155KIMU', location: undefined },
+      { ...stops[1], name: '第二处\n建筑' },
+      { ...stops[2], name: '未知坐标', location: 'not,a-point' },
+    ])
+    expect(text.split('\n')).toEqual([
+      '名称\t经度（GCJ-02）\t纬度（GCJ-02）',
+      '中国银行\t121.489809\t31.23954',
+      '第二处 建筑\t121.41\t31.2',
+      '未知坐标\t坐标缺失\t坐标缺失',
+    ])
+  })
   it('uses only POI IDs to display all places without coordinates or navigation parameters', () => {
     const groups = amapListGroups(stops.map(stop => ({ ...stop, location: undefined })))
     expect(groups).toHaveLength(1)
