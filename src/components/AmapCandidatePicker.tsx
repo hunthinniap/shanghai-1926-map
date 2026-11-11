@@ -66,19 +66,23 @@ export function AmapCandidatePicker({ place }: { place: { officialId: string; na
         : !loaded ? <p role="status">正在加载候选……</p>
           : !record?.candidates.length ? <p>暂时没有可用候选。</p>
             : <ol className="poi-candidates-list">{record.candidates.map(candidate => <li key={candidate.id} className={selected === candidate.id ? 'is-selected' : ''}>
-              <strong>{candidate.name}</strong>
-              <p>{[candidate.district, candidate.address].filter(Boolean).join(' · ') || '门牌未提供'}</p>
-              {candidate.flags.length > 0 && <small className="poi-candidate-flags">{candidate.flags.join(' · ')}</small>}
-              <div className="poi-candidate-actions">
+              <div className="poi-candidate-heading">
+                <strong title={candidate.name}>{candidate.name}</strong>
                 <a href={amapUrl(candidate.id)} target="_blank" rel="noopener noreferrer">在高德查看<ExternalLink size={11} aria-hidden="true" /></a>
                 <RouteAddButton choices={[{ officialId: place.officialId, name: place.name, address: candidate.address,
                   poiid: candidate.id, poiName: candidate.name, location: candidate.location || undefined,
                   referenceNote: '用户为本次清单选择的候选地点，具体建筑对应关系尚待复核。' }]} />
+              </div>
+              <p className="poi-candidate-address" title={[candidate.district, candidate.address, ...candidate.flags].filter(Boolean).join(' · ')}>
+                {[candidate.district, candidate.address].filter(Boolean).join(' · ') || '门牌未提供'}
+                {candidate.flags.length > 0 && <small className="poi-candidate-flags"> · {candidate.flags.join(' · ')}</small>}
+              </p>
+              <div className="poi-candidate-actions">
                 <button type="button" disabled={Boolean(busy)} aria-pressed={selected === candidate.id} aria-label={`选择${candidate.name}，次数加一`} onClick={() => void select(candidate.id)}>
                   {busy === candidate.id ? '保存中…' : '选择此地点 +1'}
                 </button>
+                <span className="poi-candidate-count" aria-label={`选择次数：${counts[candidate.id] ?? '加载中'}`}>（{counts[candidate.id] ?? '—'}）</span>
               </div>
-              <span className="poi-candidate-count">选择次数：{counts[candidate.id] ?? '—'}</span>
             </li>)}</ol>}
       {countError && <p className="poi-candidates-error" role="alert">{countError}<button type="button" onClick={() => setAttempt(value => value + 1)}>重试</button></p>}
       <p className="poi-candidate-notice" role="status">{notice}</p>

@@ -34,8 +34,8 @@ it('loads on opening, shows candidate warnings and links, and does not count map
   await render(); expect(fetch).not.toHaveBeenCalled()
   await click(container.querySelector('button')!)
   expect(container.textContent).toContain('具体楼栋待核')
-  expect(container.textContent).toContain('选择次数：4')
-  const links = [...container.querySelectorAll<HTMLAnchorElement>('.poi-candidate-actions a')]
+  expect(container.querySelector('.poi-candidate-count')?.textContent).toBe('（4）')
+  const links = [...container.querySelectorAll<HTMLAnchorElement>('.poi-candidate-heading a')]
   expect(links.map(a => new URL(a.href).searchParams.get('markers'))).toEqual(['B0001', 'B0002'])
   expect(links.every(a => a.target === '_blank' && a.rel.includes('noopener'))).toBe(true)
   links[0].addEventListener('click', event => event.preventDefault())
@@ -46,18 +46,18 @@ it('records every explicit selection and reloads the persisted count after remou
   await render(); await click(container.querySelector('button')!)
   await click(choose()); await click(choose())
   expect(counts.B0001).toBe(6); expect(counts.B0002).toBe(0)
-  expect(container.textContent).toContain('选择次数：6')
+  expect(container.querySelector('.poi-candidate-count')?.textContent).toBe('（6）')
   expect(choose().getAttribute('aria-pressed')).toBe('true')
   await act(async () => root.unmount()); root = createRoot(container)
   await render(); await click(container.querySelector('button')!)
-  expect(container.textContent).toContain('选择次数：6')
+  expect(container.querySelector('.poi-candidate-count')?.textContent).toBe('（6）')
 })
 
 it('does not claim a count increase when saving fails and allows retry', async () => {
   await render(); await click(container.querySelector('button')!)
   fail = true; await click(choose())
   expect(container.textContent).toContain('选择未能确认保存')
-  expect(container.textContent).toContain('选择次数：4')
+  expect(container.querySelector('.poi-candidate-count')?.textContent).toBe('（4）')
   expect(choose().disabled).toBe(false)
-  fail = false; await click(choose()); expect(container.textContent).toContain('选择次数：5')
+  fail = false; await click(choose()); expect(container.querySelector('.poi-candidate-count')?.textContent).toBe('（5）')
 })

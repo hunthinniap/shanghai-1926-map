@@ -25,14 +25,20 @@
 .poi-candidates-content { padding-top: 10px; font-size: 12px; line-height: 1.7; }
 .poi-candidates-hint { margin: 0 0 12px; color: var(--muted); font-size: 11px; }
 .poi-candidates-list { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow-y: auto; overscroll-behavior: contain; }
-.poi-candidates-list li { padding: 12px 10px; margin: 0 0 8px; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.poi-candidates-list li { padding: 8px; margin: 0 0 6px; border: 1px solid var(--line); overflow-wrap: anywhere; }
 .poi-candidates-list .is-selected { border-color: var(--wine); background: rgba(113,70,63,.05); }
 .poi-candidates-list strong { font-size: 13px; }
 .poi-candidates-list p { margin: 4px 0; color: var(--muted); font-size: 11px; }
-.poi-candidate-flags { display: block; color: var(--wine-dark); font-size: 10px; }
-.poi-candidate-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 9px 0 5px; }
-.poi-candidate-actions a { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; }
-.poi-candidate-actions button { min-height: 36px; padding: 6px 10px; border: 1px solid var(--wine); color: var(--wine-dark); background: transparent; font: inherit; cursor: pointer; }
+.poi-candidate-heading { display: flex; align-items: center; gap: 7px; min-width: 0; }
+.poi-candidate-heading > strong { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.poi-candidate-heading > a { display: inline-flex; align-items: center; flex: none; gap: 2px; white-space: nowrap; font-size: 10px; min-height: 30px; }
+.poi-candidate-heading .route-add-control { flex: none; margin-left: 0; }
+.poi-candidate-heading .route-add-control > button { font-size: 10px; min-height: 30px; padding: 4px 5px; white-space: nowrap; }
+.poi-candidate-heading .route-add-control > button svg { display: none; }
+.poi-candidates-list .poi-candidate-address { margin: 2px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.poi-candidate-flags { display: inline; color: var(--wine-dark); font-size: 10px; }
+.poi-candidate-actions { display: flex; align-items: center; justify-content: flex-start; gap: 5px; margin: 3px 0 0; }
+.poi-candidate-actions button { min-height: 30px; padding: 4px 8px; border: 1px solid var(--wine); color: var(--wine-dark); background: transparent; font: inherit; font-size: 11px; cursor: pointer; }
 .poi-candidate-actions button:disabled { opacity: .55; cursor: wait; }
 .poi-candidate-count { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .poi-candidates-error { color: #943c32; font-size: 11px; }
