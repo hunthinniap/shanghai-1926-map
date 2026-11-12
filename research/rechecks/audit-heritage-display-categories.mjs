@@ -14,6 +14,7 @@ const paths = {
   mapped: 'public/data/shanghai-excellent-historical-buildings/map-buildings.geojson',
   vs: 'scripts/data/virtual-shanghai-buildings-live.json',
   links: 'src/data/heritageLandmarkLinks.ts',
+  userDecisions: 'scripts/data/heritage-use-user-decisions.json',
 }
 const texts = Object.fromEntries(Object.entries(paths).map(([key, p]) => [key, fs.readFileSync(path.join(root, p), 'utf8')]))
 const official = JSON.parse(texts.official).records
@@ -187,6 +188,25 @@ for (const [code, decision] of followup) reviewed.set(`sh-fgj-${code}-01`, {
   basis: 'reviewed-historical-use-followup', historicalUseVerified: true, ...decision,
 })
 
+const userDecisions = JSON.parse(texts.userDecisions)
+assert.equal(userDecisions.schemaVersion, 1)
+const userIds = new Set()
+for (const decision of userDecisions.records) {
+  const row = official.find(item => item.id === decision.officialId)
+  assert(row && row.originalNameOrUse === decision.expectedOriginalName && row.addressAsListed === decision.expectedAddress, `User classification identity changed: ${decision.officialId}`)
+  assert(decision.category in labels && !userIds.has(decision.officialId))
+  userIds.add(decision.officialId)
+  const previous = reviewed.get(decision.officialId)
+  reviewed.set(decision.officialId, {
+    ...previous, categories: [decision.category], displayCategory: decision.category,
+    basis: 'user-assigned-display-category', historicalUseVerified: false,
+    userDecision: { assignedOn: userDecisions.assignedOn, category: decision.category, previousNote: decision.previousNote,
+      previousHistoricalName: decision.previousHistoricalName },
+    note: `${userDecisions.assignedOn}用户指定地图主图标为“${labels[decision.category]}”。具体历史用途年代另行记录。此前资料备注：${decision.previousNote}`,
+    evidence: [...new Set([...(previous?.evidence ?? []), paths.userDecisions])],
+  })
+}
+
 const records = official.map(r => {
   const e = enriched.get(r.id)
   assert(e, `Missing enrichment row: ${r.id}`)
@@ -304,7 +324,7 @@ assert.equal(byCode('2F008').displayCategory, 'residential') // bank-owned apart
 assert.equal(byCode('3N002').displayCategory, 'industrial') // brewery != modern museum or generic company
 assert.equal(byCode('5D041').displayCategory, 'residential') // later hotel tenant
 assert.equal(byCode('5M010').displayCategory, 'residential') // protected villas, not whole factory
-assert.equal(byCode('4A005').displayCategory, null) // building name alone does not prove use
+assert.equal(byCode('4A005').displayCategory, 'commerce') // explicit user display choice
 assert.equal(textCategories('公园坊')[0], 'residential')
 assert.deepEqual(textCategories('工厂宿舍'), ['residential'])
 assert.deepEqual(textCategories('政府官邸'), ['residential'])
@@ -316,7 +336,7 @@ const distribution = categories.map(c => ({ ...c,
   multiFunctionMentions: records.filter(r => r.status === 'multiple-functions' && r.proposedCategories.includes(c.id)).length,
 }))
 export const audit = {
-  auditedAt: '2026-09-24', scope: 'All 1,058 official directory rows, not just map-visible or VS-linked buildings. Codes are not unique; officialId is the key.',
+  auditedAt: '2026-11-12', scope: 'All 1,058 official directory rows, not just map-visible or VS-linked buildings. Codes are not unique; officialId is the key.',
   purpose: 'Historical-use classification for 10 map icon groups. Modern tenants are excluded when a former building/site use is documented.',
   policy: ['Prefer the protected building\'s documented former/original use over its current name or tenant.', 'For a reviewed shared site card, a documented earlier site predecessor may supply the display category; the card must distinguish different buildings and dates.', 'A historical-use category does not claim the building existed in 1928. Construction/use dates remain separate.', 'Name-based categories remain candidates unless independently reviewed; fifth-batch mixed fields require special care.', 'Museum→education; guild hall→commerce; military→public; cemetery→parks as display groups only.', 'Nearby display links do not prove site identity and never supply inherited use.', 'Multiple historical functions remain in the card; displayCategory selects one primary map icon without erasing the others.', 'Unknown remains a research state, not an eleventh icon category.'],
   inputs: Object.fromEntries(Object.entries(paths).map(([k, p]) => [k, { path: p, sha256: crypto.createHash('sha256').update(texts[k]).digest('hex') }])),

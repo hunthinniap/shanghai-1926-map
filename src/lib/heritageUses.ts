@@ -18,7 +18,7 @@ export type HeritageUseCategory = typeof heritageUseCategories[number]['id']
 export interface HeritageUseRecord {
   category: HeritageUseCategory | null
   categories: HeritageUseCategory[]
-  status: 'reviewed' | 'candidate' | 'review-needed' | 'unresolved'
+  status: 'reviewed' | 'candidate' | 'review-needed' | 'unresolved' | 'user-assigned'
   historicalName: string | null
   note: string
   sources: string[]
@@ -31,6 +31,7 @@ export interface HeritageUseIndex {
 export const heritageUseStatusLabels = {
   reviewed: '资料已复核', candidate: '名录与历史记录初分',
   'review-needed': '仍需复核', unresolved: '历史用途待核',
+  'user-assigned': '用户指定分类',
 } as const
 
 export function heritageUseLabel(id: HeritageUseCategory) {

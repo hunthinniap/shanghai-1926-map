@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-09-24",
+  "auditedAt": "2026-11-12",
   "scope": "All 1,058 official directory rows, not just map-visible or VS-linked buildings. Codes are not unique; officialId is the key.",
   "purpose": "Historical-use classification for 10 map icon groups. Modern tenants are excluded when a former building/site use is documented.",
   "policy": [
@@ -32,25 +32,28 @@
     "links": {
       "path": "src/data/heritageLandmarkLinks.ts",
       "sha256": "87cd7f83a775d2d2a72baf660bf91f31f453fd7fe1c7c2d8dcad72f074066cae"
+    },
+    "userDecisions": {
+      "path": "scripts/data/heritage-use-user-decisions.json",
+      "sha256": "94128b22392c8c68c4ed828fad74243dcb29185c09f76c997ad6e82a71526f41"
     }
   },
   "counts": {
     "records": 1058,
     "mapVisibleRecords": 1044,
-    "withAnyProposedCategory": 1045,
+    "withAnyProposedCategory": 1058,
     "withReviewedLink": 188,
     "statuses": {
-      "single-category-candidate": 949,
+      "single-category-candidate": 962,
       "review-needed": 63,
-      "multiple-functions": 33,
-      "unclassified": 13
+      "multiple-functions": 33
     }
   },
   "distribution": [
     {
       "id": "residential",
       "label": "住宅",
-      "singleCategoryCandidates": 617,
+      "singleCategoryCandidates": 619,
       "reviewNeededSingleCategory": 23,
       "multiFunctionMentions": 17
     },
@@ -64,14 +67,14 @@
     {
       "id": "medical",
       "label": "医疗",
-      "singleCategoryCandidates": 11,
+      "singleCategoryCandidates": 12,
       "reviewNeededSingleCategory": 6,
       "multiFunctionMentions": 3
     },
     {
       "id": "commerce",
       "label": "商业与会馆",
-      "singleCategoryCandidates": 123,
+      "singleCategoryCandidates": 133,
       "reviewNeededSingleCategory": 16,
       "multiFunctionMentions": 15
     },
@@ -10834,10 +10837,14 @@
       "address": "南京东路161号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-use-type-may-mix-periods-not-used-for-classification",
         "mixed-component-dates"
@@ -10846,9 +10853,9 @@
       "constructionDates": [
         "1916~1921，1994加建两层"
       ],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "美伦大楼",
@@ -10861,12 +10868,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -11272,10 +11290,14 @@
       "address": "北京东路232-240号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-use-type-may-mix-periods-not-used-for-classification"
       ],
@@ -11283,9 +11305,9 @@
       "constructionDates": [
         "1921"
       ],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "四明大楼",
@@ -11298,12 +11320,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -11412,10 +11445,14 @@
       "address": "江西中路138号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-use-type-may-mix-periods-not-used-for-classification"
       ],
@@ -11423,9 +11460,9 @@
       "constructionDates": [
         "1907"
       ],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "谦信大楼",
@@ -11438,12 +11475,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -18066,18 +18114,22 @@
       "address": "江西中路450号-454号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [
         "1931年"
       ],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "恒丰大楼",
@@ -18090,12 +18142,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -18905,18 +18968,22 @@
       "address": "四川南路27-29号（单号），金陵东路14号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "residential"
+      ],
+      "proposedCategoryLabels": [
+        "住宅"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [
         "1937年"
       ],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "residential",
+      "displayCategoryLabel": "住宅",
+      "displayCategorySymbol": "住",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "约克大楼",
@@ -18929,12 +18996,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "residential"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“住宅”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "residential",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "residential",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -28290,16 +28368,20 @@
       "address": "江西中路260号，九江路151号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "新康大楼",
@@ -28312,12 +28394,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -29024,16 +29117,20 @@
       "address": "河南中路220号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "五洲大楼",
@@ -29046,12 +29143,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -29436,16 +29544,20 @@
       "address": "南京东路151号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "美伦大楼东楼",
@@ -29458,12 +29570,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -29476,16 +29599,20 @@
       "address": "南京东路161号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "美伦大楼西楼",
@@ -29498,12 +29625,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -29640,18 +29778,22 @@
       "address": "九江路120号",
       "district": "黄浦区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "historical-use-unresolved",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-original-name-matches-listed-current-use"
       ],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "华侨大楼（空置）",
@@ -29664,12 +29806,23 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "categories": [],
-        "basis": "historical-use-unresolved",
-        "note": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+        "categories": [
+          "commerce"
+        ],
+        "basis": "user-assigned-display-category",
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "commerce",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "原名仅为大楼名称，尚缺可核实的原用途资料。历史用途待核。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -37910,16 +38063,20 @@
       "address": "建国西路336弄1号",
       "district": "徐汇区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "official-original-name",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "residential"
+      ],
+      "proposedCategoryLabels": [
+        "住宅"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "residential",
+      "displayCategoryLabel": "住宅",
+      "displayCategorySymbol": "住",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "办公",
@@ -37930,6 +38087,24 @@
       "sources": {
         "official": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      },
+      "review": {
+        "categories": [
+          "residential"
+        ],
+        "displayCategory": "residential",
+        "basis": "user-assigned-display-category",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "residential",
+          "previousNote": "现有资料不足以确定建筑原用途。",
+          "previousHistoricalName": "办公"
+        },
+        "note": "2026-11-12用户指定地图主图标为“住宅”。具体历史用途年代另行记录。此前资料备注：现有资料不足以确定建筑原用途。",
+        "evidence": [
+          "scripts/data/heritage-use-user-decisions.json"
+        ]
       },
       "linkedRecordIds": []
     },
@@ -40212,18 +40387,22 @@
       "address": "东体育会支路41号",
       "district": "虹口区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "reviewed-historical-use-followup",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "medical"
+      ],
+      "proposedCategoryLabels": [
+        "医疗"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-original-name-matches-listed-current-use"
       ],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "medical",
+      "displayCategoryLabel": "医疗",
+      "displayCategorySymbol": "医",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [
         "medical"
@@ -40240,14 +40419,24 @@
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
       },
       "review": {
-        "basis": "reviewed-historical-use-followup",
+        "basis": "user-assigned-display-category",
         "historicalUseVerified": false,
-        "categories": [],
+        "categories": [
+          "medical"
+        ],
         "historicalSiteName": null,
-        "note": "名录所列矽肺治疗所等为后期医疗机构，尚缺1930年代建筑原用途的证据。",
+        "note": "2026-11-12用户指定地图主图标为“医疗”。具体历史用途年代另行记录。此前资料备注：名录所列矽肺治疗所等为后期医疗机构，尚缺1930年代建筑原用途的证据。",
         "evidence": [
-          "public/data/shanghai-excellent-historical-buildings/buildings.json"
-        ]
+          "public/data/shanghai-excellent-historical-buildings/buildings.json",
+          "scripts/data/heritage-use-user-decisions.json"
+        ],
+        "displayCategory": "medical",
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "medical",
+          "previousNote": "名录所列矽肺治疗所等为后期医疗机构，尚缺1930年代建筑原用途的证据。",
+          "previousHistoricalName": null
+        }
       },
       "linkedRecordIds": []
     },
@@ -45443,18 +45632,22 @@
       "address": "南翔镇解放街218、222号、237号，人民街44、46、58、65、67、69、71、73、75号",
       "district": "嘉定区",
       "onCurrentHeritageMap": true,
-      "status": "unclassified",
-      "proposedCategories": [],
-      "proposedCategoryLabels": [],
-      "basis": "official-original-name",
+      "status": "single-category-candidate",
+      "proposedCategories": [
+        "commerce"
+      ],
+      "proposedCategoryLabels": [
+        "商业与会馆"
+      ],
+      "basis": "user-assigned-display-category",
       "flags": [
         "wiki-original-name-matches-listed-current-use"
       ],
       "historicalSiteName": null,
       "constructionDates": [],
-      "displayCategory": null,
-      "displayCategoryLabel": null,
-      "displayCategorySymbol": "·",
+      "displayCategory": "commerce",
+      "displayCategoryLabel": "商业与会馆",
+      "displayCategorySymbol": "商",
       "historicalUseEvidence": "name-or-linked-source-candidate",
       "officialNameCategories": [],
       "wikiOriginalName": "南翔双塔周边",
@@ -45465,6 +45658,24 @@
       "sources": {
         "official": "https://fgj.sh.gov.cn/yxlsjz/20200414/b9946bf8508e4b9689671fcd4146bb86.html",
         "wikipedia": "https://zh.wikipedia.org/zh-hans/上海市优秀历史建筑"
+      },
+      "review": {
+        "categories": [
+          "commerce"
+        ],
+        "displayCategory": "commerce",
+        "basis": "user-assigned-display-category",
+        "historicalUseVerified": false,
+        "userDecision": {
+          "assignedOn": "2026-11-12",
+          "category": "commerce",
+          "previousNote": "现有资料不足以确定建筑原用途。",
+          "previousHistoricalName": "待考"
+        },
+        "note": "2026-11-12用户指定地图主图标为“商业与会馆”。具体历史用途年代另行记录。此前资料备注：现有资料不足以确定建筑原用途。",
+        "evidence": [
+          "scripts/data/heritage-use-user-decisions.json"
+        ]
       },
       "linkedRecordIds": []
     },

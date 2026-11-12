@@ -18,8 +18,9 @@ const records = Object.fromEntries(audit.records.map(r => {
   // classification must not rewrite names or discard merged-site aliases.
   const meaningfulOriginalName = r.basis === 'official-original-name' && r.originalNameOrUse.length <= 40
     && !/^(住宅|花园住宅|里弄住宅|公寓|办公楼|学校|医院|厂房|其他)$/.test(r.originalNameOrUse)
-  const historicalName = r.historicalSiteName || (meaningfulOriginalName ? r.originalNameOrUse : null)
-  const status = !category ? 'unresolved' : r.status === 'review-needed' ? 'review-needed'
+  const historicalName = r.review?.userDecision ? r.review.userDecision.previousHistoricalName
+    : r.historicalSiteName || (meaningfulOriginalName ? r.originalNameOrUse : null)
+  const status = r.review?.userDecision ? 'user-assigned' : !category ? 'unresolved' : r.status === 'review-needed' ? 'review-needed'
     : r.historicalUseEvidence === 'reviewed-historical-use-see-scope' ? 'reviewed' : 'candidate'
   return [r.officialId, {
     category, categories: r.proposedCategories, status, historicalName,
@@ -59,7 +60,7 @@ const report = `# 优秀历史建筑历史用途全表复核及地图接入
 - 有类别候选：${audit.counts.withAnyProposedCategory}条；缺乏原用途证据：${unresolved.length}条。
 - 地图有分类：${mapped.filter(r => r.displayCategory).length}点；中性待核标记：${mapped.filter(r => !r.displayCategory).length}点。
 - 审查状态：${JSON.stringify(audit.counts.statuses)}。
-- 地图数据中的状态：${JSON.stringify(Object.fromEntries(['reviewed', 'candidate', 'review-needed', 'unresolved'].map(s => [s, Object.values(records).filter(r => r.status === s).length])))}。
+- 地图数据中的状态：${JSON.stringify(Object.fromEntries(['reviewed', 'candidate', 'review-needed', 'unresolved', 'user-assigned'].map(s => [s, Object.values(records).filter(r => r.status === s).length])))}。
 
 | 主图标类别 | 名录记录 | 地图点 |
 | --- | ---: | ---: |
@@ -71,7 +72,7 @@ ${rows}
 | --- | --- | --- | --- | --- |
 ${reviewed.map(r => `| ${r.codeRaw} | ${escape(r.originalNameOrUse)} | ${r.displayCategoryLabel || '待核'} | ${escape(r.review.note)} | ${(r.review.evidence ?? []).filter(s => /^https?:/.test(s)).map((s, i) => `[${i + 1}](${s})`).join(' ')} |`).join('\n')}
 
-## 原用途待核
+## 用途待核（未指定显示类别）
 
 | officialId | 名称 | 地址 |
 | --- | --- | --- |
@@ -84,7 +85,7 @@ ${unresolved.map(r => `| ${r.officialId} | ${escape(r.originalNameOrUse)} | ${es
 
 地图通过officialId合入分类，只改显示副本；原官方JSON、地图坐标和已有合并关系不变。旧 republican-use 报告保留为上一轮研究快照，本文件为当前实施口径。
 
-下一步优先补${unresolved.length}条原用途待核，以及其余冲突、多功能、构件和用途年代说明；数量以本文件统计为准。不要把候选状态改为已核实，也不要用现在的机构行业推定原楼用途。
+未指定显示类别${unresolved.length}条。2026-11-12用户为13项指定显示类别（10商、2住、1医），单独标记为“用户指定分类”；既有历史备注保留，具体用途年代、早期租户及保护范围继续作为研究问题，不将显示决定标为独立史料核实。
 `
 const snapshot = { ...audit, records: audit.records.map(({ linkEvidence, ...r }) => ({ ...r, linkedRecordIds: linkEvidence.map(l => l.sourceRecordId) })) }
 const files = new Map([
