@@ -92,8 +92,8 @@ function FeedbackDialog({ context, onClose }: { context: FeedbackContext; onClos
 export function FeedbackButton({ context }: { context: FeedbackContext }) {
   const [open, setOpen] = useState(false)
   return <>
-    <button type="button" className="icon-button details-feedback" aria-label="反馈问题" title="反馈问题" aria-haspopup="dialog" onClick={() => setOpen(true)}>
-      <MessageSquareWarning size={16} aria-hidden="true" />
+    <button type="button" className="details-feedback" aria-label="反馈问题" title="反馈问题" aria-haspopup="dialog" onClick={() => setOpen(true)}>
+      <MessageSquareWarning size={14} aria-hidden="true" /><span>反馈问题</span>
     </button>
     {open && <FeedbackDialog context={context} onClose={() => setOpen(false)} />}
   </>

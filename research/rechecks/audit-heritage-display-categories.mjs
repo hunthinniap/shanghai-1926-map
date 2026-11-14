@@ -16,7 +16,7 @@ const paths = {
   links: 'src/data/heritageLandmarkLinks.ts',
   userDecisions: 'scripts/data/heritage-use-user-decisions.json',
 }
-const texts = Object.fromEntries(Object.entries(paths).map(([key, p]) => [key, fs.readFileSync(path.join(root, p), 'utf8')]))
+const texts = Object.fromEntries(Object.entries(paths).map(([key, p]) => [key, fs.readFileSync(path.join(root, p), 'utf8').replace(/\r\n/g, '\n')]))
 const official = JSON.parse(texts.official).records
 const enriched = new Map(JSON.parse(texts.enriched).records.map(r => [r.id, r]))
 const mappedIds = new Set(JSON.parse(texts.mapped).features.map(f => f.properties.officialId))

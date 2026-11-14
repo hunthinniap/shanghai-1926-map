@@ -1,4 +1,6 @@
 import type { HistoricalFeature, HistoricalFeatureCollection, HistoricalRecord } from '../types'
+import { reviewedParkHistories } from '../data/parkHistories'
+import { modernParks, modernParkEntries } from '../data/modernParks'
 
 export interface ParkLabelEntry {
   modernNames: string[]
@@ -149,6 +151,11 @@ export function buildParkLabelIndex() {
   currentParkLabels.forEach((entry) => {
     entry.modernNames.forEach((name) => index.set(name, entry))
   })
+  modernParkEntries.forEach(park => {
+    const entry = { modernNames: [park.name, ...park.aliases], historicalName: park.name,
+      featureGroupId: `park-modern-${park.id}` }
+    entry.modernNames.forEach(name => index.set(name, entry))
+  })
   return index
 }
 
@@ -252,7 +259,17 @@ export function mergeCuratedParkFeatures(
       ...historical.features.filter(
         (feature) => !replacedGroups.has(feature.properties.featureGroupId),
       ),
-      ...curated.features.map(mergeLegacyProperties),
+      ...curated.features.map(mergeLegacyProperties).map(feature => {
+        const phases = reviewedParkHistories[feature.properties.featureGroupId]
+        if (!phases) return feature
+        return { ...feature, properties: { ...feature.properties, historicalPhases: phases,
+          aliases: [...new Set([...(feature.properties.aliases ?? []), ...phases.flatMap(phase =>
+            [phase.name, phase.nameZh].filter((name): name is string => Boolean(name)))])],
+        } }
+      }),
+      ...modernParks.features.filter(park => !historical.features.some(feature =>
+        feature.properties.featureGroupId === park.properties.featureGroupId)
+        && !curated.features.some(feature => feature.properties.featureGroupId === park.properties.featureGroupId)),
     ],
   }
 }

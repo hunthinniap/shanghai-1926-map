@@ -254,6 +254,36 @@ describe('labels on the modern road network', () => {
     expect(labels(1964, '金坛路')).toEqual(['金坛路'])
   })
 
+  it('keeps Hengshan Road named after 1943 instead of using nightlife prose', () => {
+    const collection = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    const road = collection.features.find(f => f.properties.featureGroupId === 'road-avenue-petain-衡山路')!
+    expect(roadNameAtYear(road.properties, 1921)).toBeUndefined()
+    expect(roadNameAtYear(road.properties, 1922)).toBe('Avenue Petain')
+    expect(roadNameAtYear(road.properties, 1942)).toBe('Avenue Petain')
+    expect(roadNameAtYear(road.properties, 1943)).toBe('衡山路')
+    expect(roadNameAtYear(road.properties, 2004)).toBe('衡山路')
+  })
+  it('uses the requested Chinese labels for Xinhui and Yichang after 1943', () => {
+    const collection = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    for (const [id, name] of [['road-mapai-road-新会路', '新会路'], ['road-ichang-road-宜昌路', '宜昌路']]) {
+      const road = collection.features.find(feature => feature.properties.featureGroupId === id)!
+      expect(roadNameAtYear(road.properties, 1943)).toBe(name)
+      expect(roadNameAtYear(road.properties, 1996)).toBe(name)
+    }
+  })
+
+  it('uses Tianjin Road before the dataset year and keeps construction prose out of Beihai labels', () => {
+    const collection = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
+    const tianjin = collection.features.find(f => f.properties.featureGroupId === 'road-original-1865-fives-court-lane')!
+    expect(roadNameAtYear(tianjin.properties, 1900)).toBe('天津路')
+    expect(roadNameAtYear(tianjin.properties, 1864)).toBe('球场弄')
+    for (const id of ['road-pakhoi-road-北海路', 'road-hoikow-road-北海路']) {
+      const road = collection.features.find(f => f.properties.featureGroupId === id)!
+      expect(roadNameAtYear(road.properties, 1883)).toBe('北海路')
+      expect(roadNameAtYear(road.properties, 2003)).toBe('北海路')
+    }
+  })
+
   it('keeps the independently sourced Huiguan Lane bends and does not inherit the hall construction date', () => {
     const collection = JSON.parse(readFileSync('public/data/historical-features.geojson', 'utf8')) as HistoricalFeatureCollection
     const lane = collection.features.find(f => f.properties.featureGroupId === 'road-old-city-会馆弄')!

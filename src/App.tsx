@@ -27,6 +27,7 @@ import { reviewedLandmarkIdentities } from './data/reviewedLandmarkIdentities'
 import { applyReviewedLandmarkIdentities } from './lib/reviewedLandmarkIdentities'
 import { applyReviewedAddressUses } from './lib/reviewedAddressUses'
 import { reviewedAddressUses } from './data/reviewedAddressUses'
+import { applyReviewedBridgeHistories } from './data/bridgeHistories'
 import type { AppData, HighlightedJurisdiction, HistoricalFeature } from './types'
 
 const reviewedHeritageLinks = [...heritageLandmarkLinks, ...userApprovedHeritageSiteLinks]
@@ -81,12 +82,12 @@ function App() {
       .then(([features, curatedParks, jurisdictions, sources]) => {
         if (!cancelled) {
           setData({
-            features: applyReviewedLandmarkIdentities(
+            features: applyReviewedBridgeHistories(applyReviewedLandmarkIdentities(
               mergeLandmarkSites(mergeCuratedParkFeatures(
                 applyReviewedAddressUses(features, reviewedAddressUses), curatedParks,
               ), landmarkSiteLinksWithSources),
               reviewedLandmarkIdentities,
-            ),
+            )),
             jurisdictions,
             sources,
           })
@@ -289,8 +290,8 @@ function App() {
     <main className="app-shell">
       <header className="topbar">
         <div className="brand-block">
-          <p>SHANGHAI · MCMXXVIII</p>
-          <h1>上海 1928</h1>
+          <p>SHANGHAI</p>
+          <h1>上海</h1>
         </div>
 
         <SearchBox

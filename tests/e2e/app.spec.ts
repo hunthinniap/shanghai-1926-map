@@ -7,7 +7,7 @@ async function expectSearchMiss(page: Page, search: Locator, query: string) {
 
 test('searches by modern name and opens the historical detail', async ({ page }) => {
   await page.goto('/')
-  await expect(page.getByRole('heading', { name: '上海 1928' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: '上海', exact: true })).toBeVisible()
 
   const search = page.getByRole('textbox', { name: '搜索现代或历史地名' })
   await search.fill('南昌路')
@@ -200,7 +200,7 @@ test('hides metro controls, labels and data requests in the no_subway edition', 
     if (/\/metro-(lines|stations)\.geojson(?:\?|$)/.test(request.url())) metroRequests.push(request.url())
   })
   await page.goto('/')
-  await expect(page.getByRole('heading', { name: '上海 1928' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: '上海', exact: true })).toBeVisible()
   await expect(page.getByRole('button', { name: /地铁/ })).toHaveCount(0)
   await expect(page.getByLabel('地图说明')).not.toContainText('地铁')
   await expect(page.getByRole('complementary', { name: /地铁站详情/ })).toHaveCount(0)

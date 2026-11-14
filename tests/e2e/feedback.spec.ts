@@ -5,9 +5,11 @@ test('road feedback carries context, preserves failed submissions and sits below
   await page.getByRole('textbox', { name: '搜索现代或历史地名' }).fill('民國路')
   await page.getByRole('option', { name: /民國路/ }).first().click()
   const card = page.locator('.road-details-panel')
+  await expect(card.getByRole('button', { name: '反馈问题' })).toHaveText('反馈问题')
   const closeBox = await card.getByRole('button', { name: '关闭详情' }).boundingBox()
   const feedbackBox = await card.getByRole('button', { name: '反馈问题' }).boundingBox()
   expect(feedbackBox!.y).toBeGreaterThanOrEqual(closeBox!.y + closeBox!.height)
+  await page.screenshot({ path: `artifacts/feedback-button-${test.info().project.name}.png`, fullPage: true })
   let attempts = 0
   let submitted: URLSearchParams
   await page.route('http://127.0.0.1:4173/', async route => {
@@ -41,6 +43,7 @@ test('heritage building feedback identifies the building and closes with Escape'
   await page.getByRole('textbox', { name: '搜索现代或历史地名' }).fill('2B019')
   await page.getByRole('option').first().click()
   const card = page.locator('.heritage-details-panel')
+  await expect(card.getByRole('button', { name: '反馈问题' })).toHaveText('反馈问题')
   await card.getByRole('button', { name: '反馈问题' }).click()
   const dialog = page.getByRole('dialog', { name: '反馈问题' })
   await expect(dialog).toContainText('华山路')

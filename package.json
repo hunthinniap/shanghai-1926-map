@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run validate:data",
     "dev": "vite",
     "data:build": "node scripts/build-historical-data.mjs && npm run data:romanize && npm run data:align && npm run data:verified-roads && npm run data:1865-originals && npm run data:remove-proposals && npm run data:old-city-roads && npm run data:old-city && npm run data:building-links && npm run data:current-use && npm run data:addresses && npm run data:unresolved",
     "data:addresses": "node scripts/add-virtual-shanghai-addresses.mjs",

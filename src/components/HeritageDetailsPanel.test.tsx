@@ -70,6 +70,25 @@ function field(container: HTMLElement, label: string) {
 }
 
 describe('HeritageDetailsPanel linked historical site', () => {
+  it('shows the Garden Bridge construction once with the bridge name instead of its catalogue address', () => {
+    const bridge = structuredClone(linked)
+    Object.assign(bridge.heritage.properties, { officialId: 'sh-fgj-2A012-01', officialCodeRaw: '2A012', wikipediaId: '2A012', listedName: '外白渡桥', name: '外白渡桥',
+      officialName: '外白渡桥', articleTitle: '外白渡桥', address: '外滩', constructionDate: '1907' })
+    Object.assign(bridge.landmark.properties, { historicalName: 'Garden Bridge', modernNameZh: '外白渡桥',
+      currentNameZh: '外白渡桥', currentAddress: '外滩', sourceRecordIds: [510],
+      historicalAddresses: [{ sourceRecordId: 510, address: 'GARDEN BRIDGE' }],
+      historicalRecords: [{ name: 'Garden Bridge', nameZh: '外白渡橋', startYear: 1907,
+        sourceRecordIds: [510], sourceUrls: ['https://www.virtualshanghai.net/Data/Buildings?ID=510'] }] })
+    bridge.link.relation = 'same-listed-structure'
+    bridge.link.historicalAddresses = []
+    const card = renderCard(bridge, bridge.heritage)
+    const timeline = card.querySelector('.place-timeline')!
+    expect(timeline.querySelectorAll('li'), timeline.textContent || '').toHaveLength(1)
+    expect(timeline.textContent).toContain('1907 年建成外白渡桥')
+    expect(timeline.textContent).not.toContain('外滩建筑')
+    expect(timeline.querySelector('.place-event-address')).toBeNull()
+    expect(timeline.textContent).toContain('Garden Bridge')
+  })
   it('offers candidate selection for an unresolved building and hides it for a confirmed AMap place', () => {
     const unresolved = structuredClone(heritage)
     Object.assign(unresolved.properties, { officialId: 'sh-fgj-unresolved', name: '待选住宅', officialName: '待选住宅' })
@@ -90,9 +109,9 @@ describe('HeritageDetailsPanel linked historical site', () => {
     const mapLink = card.querySelector('.place-map-links a')!
     expect(new URL(mapLink.getAttribute('href')!).searchParams.get('markers')).toBe('B00155HZSU')
     expect(mapLink.textContent).toBe('在高德地图查看')
-    expect(card.querySelector('.place-map-location')?.textContent).toContain('国华大楼')
-    expect(card.querySelector('.place-map-location')?.textContent).toContain('北京东路356号')
-    expect(card.querySelector('.place-map-links')?.textContent).toContain('同楼双门牌')
+    expect(card.querySelector('.place-map-location')).toBeNull()
+    expect(mapLink.hasAttribute('title')).toBe(false)
+    expect(card.querySelector('.place-map-links')?.textContent).not.toContain('同楼双门牌')
     expect(card.querySelector('.place-sources a[href="https://www.thepaper.cn/newsDetail_forward_16915127"]')).not.toBeNull()
   })
   it('shows reviewed neighboring-site context without presenting it as a merged building', () => {

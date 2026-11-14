@@ -97,6 +97,6 @@ assert(process.argv.includes('--write') || process.argv.includes('--check'), 'Pa
 for (const [name, content] of files) {
   const file = path.join(root, name)
   if (process.argv.includes('--write')) fs.writeFileSync(file, content)
-  else assert.equal(fs.readFileSync(file, 'utf8'), content, `Stale generated file: ${name}`)
+  else assert.equal(fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n'), content.replace(/\r\n/g, '\n'), `Stale generated file: ${name}`)
 }
 console.log(JSON.stringify({ mode: process.argv.includes('--write') ? 'write' : 'check', records: 1058, mapped: mapped.length, classified: mapped.filter(r => r.displayCategory).length, unresolved: unresolved.length }))

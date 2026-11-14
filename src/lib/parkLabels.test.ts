@@ -61,14 +61,8 @@ describe('current park historical labels', () => {
   it.each([
     '静安公园',
     '淮海公园',
-    '徐家汇公园',
     '绍兴公园',
-    '延中公园',
-    '延中广场公园',
     '辅德里公园',
-    '九子公园',
-    '古城公园',
-    '太平桥公园',
     '丽园公园',
     '徐汇跑道公园',
     '华山儿童公园',
@@ -82,9 +76,10 @@ describe('current park historical labels', () => {
     expect(buildParkLabelIndex().has(modernName)).toBe(false)
   })
 
-  it('keeps map-facing park labels in Latin script', () => {
+  it('keeps foreign historical labels while using Chinese names for modern parks', () => {
     for (const entry of buildParkLabelIndex().values()) {
-      expect(entry.historicalName).not.toMatch(/[\u3400-\u9fff]/)
+      if (entry.featureGroupId.startsWith('park-modern-')) expect(entry.historicalName).toMatch(/[\u3400-\u9fff]/)
+      else expect(entry.historicalName).not.toMatch(/[\u3400-\u9fff]/)
     }
   })
 
@@ -109,7 +104,7 @@ describe('current park historical labels', () => {
       features: [point('park-french-park', 'park-french-park')],
     }
     const merged = mergeCuratedParkFeatures(historical, curated)
-    expect(merged.features.map((feature) => feature.properties.id)).toEqual([
+    expect(merged.features.filter(feature => !feature.properties.id.startsWith('park-modern-')).map((feature) => feature.properties.id)).toEqual([
       'road',
       'park-french-park',
     ])

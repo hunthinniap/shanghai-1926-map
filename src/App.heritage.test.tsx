@@ -312,3 +312,4 @@ describe('historical-building layer interactions', () => {
     expect(details.textContent).not.toContain('Wikidata · 坐标来源')
   })
 })
+vi.mock('./data/modernParks', () => ({ modernParks: { type: 'FeatureCollection', features: [] }, modernParkEntries: [] }))

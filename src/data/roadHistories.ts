@@ -21,6 +21,20 @@ const renminRoadHistory = {
 // Individually read road articles. Match both the modern road and source name:
 // the upstream geocoder sometimes attaches one old name to unrelated streets.
 export const roadHistories: RoadHistory[] = [
+  { featureGroupId: 'road-avenue-petain-衡山路', modernName: '衡山路', historicalNames: ['Avenue Petain'], events: [
+    { ...event(1922, '辟筑、命名', 'Avenue Petain · 贝当路', '衡山路'), mapName: 'Avenue Petain' },
+    { ...event(1943, '更名', '衡山路', '衡山路'), mapName: '衡山路' },
+  ], sources: [{ title: '上海图书馆 · 衡山路（1922年筑，1943年改今名）', url: 'https://data.library.sh.cn/entity/road/5usd0gq8j62kwpv8' }] },
+  { featureGroupId: 'road-original-1865-fives-court-lane', modernName: '天津路', historicalNames: ['Fives Court Lane'], events: [
+    { ...event(1851, '辟筑、命名', '球场弄（Fives Court Lane）', '天津路_(上海)'), mapName: '球场弄' },
+    { ...event(1865, '命名', '天津路', '天津路_(上海)'), mapName: '天津路' },
+  ] },
+  { featureGroupId: 'road-pakhoi-road-北海路', modernName: '北海路', historicalNames: ['Pakhoi Road'], events: [
+    { ...event(1883, '改筑、命名', '北海路', '北海路', '原为第二跑马场圈外土路，1883年改造为现代马路，并以北海口岸命名。'), mapName: '北海路' },
+  ] },
+  { featureGroupId: 'road-hoikow-road-北海路', modernName: '北海路', historicalNames: ['Hoikow Road'], events: [
+    { ...event(1883, '改筑、命名', '北海路', '北海路', '原为第二跑马场圈外土路，1883年改造为现代马路，并以北海口岸命名。'), mapName: '北海路' },
+  ] },
   { modernName: '进贤路', historicalNames: ['Route John Prentice'], events: [
     event(1926, '辟筑', 'Route John Prentice · 普恩济世路', '进贤路'),
     event(1943, '更名', '进贤路', '进贤路'),
@@ -83,7 +97,7 @@ export const roadHistories: RoadHistory[] = [
 ]
 
 export function isRoadNameEvent(event: RoadHistoryEvent): boolean {
-  return event.kind !== '辖区调整' && !/^(?:拆城填濠|填浜筑路|划入上海法租界)$/.test(event.name)
+  return event.kind !== '辖区调整' && !/^(?:拆城填濠|填浜筑路|划入上海法租界|造为现代马路|的酒吧街)$/.test(event.name)
 }
 
 export function roadHistoryEventYear(event: RoadHistoryEvent): number | undefined {

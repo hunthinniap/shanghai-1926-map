@@ -5,6 +5,7 @@ import type { LinkedHeritageBuilding } from './heritageLandmarkLinks'
 import { chineseName } from './landmarkLabels'
 import { parseConstructionDate } from './buildingTimeline'
 import { siteStageAtYear } from './siteTimeline'
+import { reviewedParkHistories } from '../data/parkHistories'
 import { heritageUseLabel, heritageUseStatusLabels } from './heritageUses'
 import { approvedUnlocatedHeritageSites, reviewedContextualHeritageSites } from '../data/userApprovedHeritageSites'
 import { reviewedResidentsForHeritage } from '../data/notableResidents'
@@ -163,7 +164,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
         const period = record.startYear !== undefined ? record.endYear !== undefined && record.endYear !== record.startYear
           ? `${record.startYear}–${record.endYear} 年` : `${record.startYear} 年${record.endYear === undefined ? '起' : ''}`
           : record.endYear !== undefined ? `截至 ${record.endYear} 年` : '年份未知'
-        result.events.push({ key: `record-${id ?? q.id}-${record.name}-${period}`, sourceRecordId: id, year: record.startYear ?? record.endYear,
+        if (!reviewedParkHistories[q.featureGroupId] && !q.historicalPhases?.some(phase => phase.id.startsWith('bridge-history-'))) result.events.push({ key: `record-${id ?? q.id}-${record.name}-${period}`, sourceRecordId: id, year: record.startYear ?? record.endYear,
           period, name: title, originalName: title !== record.name ? record.name : undefined,
           url: url(record.dateEvidence?.sourceUrl) || recordUrl, kind: '史料记录', description: record.dateEvidence?.note,
           address: distinct(allAddresses.filter(item => id !== undefined && item.sourceRecordId === id).map(item => item.address)).join('；') || undefined,
@@ -226,7 +227,7 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     if (result.events.some(event => event.sourceRecordId === id)) continue
     const href = Object.values(history.properties.sourceUrls ?? {}).find(value => sourceId(value) === String(id))
       || `https://www.virtualshanghai.net/Data/Buildings?ID=${id}`
-    result.events.push({ key: `unmatched-record-${id}`, sourceRecordId: id, period: '年份未知', name: `Virtual Shanghai 记录 #${id}`,
+    if (!reviewedParkHistories[history.properties.featureGroupId] && !history.properties.historicalPhases?.some(phase => phase.id.startsWith('bridge-history-'))) result.events.push({ key: `unmatched-record-${id}`, sourceRecordId: id, period: '年份未知', name: `Virtual Shanghai 记录 #${id}`,
       kind: '史料记录', url: url(href), address: distinct(allAddresses.filter(item => item.sourceRecordId === id).map(item => item.address)).join('；') || undefined })
     addSource(`Virtual Shanghai · 建筑记录 #${id}`, href)
   }
@@ -267,10 +268,19 @@ export function buildPlaceDetails({ feature, heritage, linked, sources = [] }: {
     const parsed = parseConstructionDate(q.constructionDate)
     if (q.constructionDate) {
       const begins = q.constructionDate.match(/^\d{4}/)?.[0]
-      result.events.push({ key: `construction-${q.officialId}`, year: parsed.startYear !== undefined && begins ? Number(begins) : undefined,
+      const bridgeRecord = q.officialId === 'sh-fgj-2A012-01' && linked?.link.relation === 'same-listed-structure'
+        && parsed.basis === 'construction' ? result.events.find(event => event.kind === '史料记录'
+          && event.year === parsed.startYear && event.sourceRecordId === 510) : undefined
+      if (bridgeRecord) {
+        bridgeRecord.kind = '建成'
+        bridgeRecord.period = `${parsed.startYear} 年`
+        bridgeRecord.name = '外白渡桥'
+        if (/^garden\s+bridge$/i.test(bridgeRecord.address?.trim() ?? '')) bridgeRecord.address = undefined
+      } else result.events.push({ key: `construction-${q.officialId}`, year: parsed.startYear !== undefined && begins ? Number(begins) : undefined,
         period: parsed.startYear !== undefined ? q.constructionDate : '年份未知', name: siteHistory?.buildingName || `${q.address}建筑`, kind: '建造年代',
         url: url(q.constructionDateEvidence?.sourceUrl || q.wikipediaListUrl), address: q.address,
-        description: parsed.startYear === undefined ? `建造年代原文：${q.constructionDate}` : parsed.basis === 'construction-range' ? '来源给出的建造区间，末年不等于已核定的精确竣工年。' : undefined })
+        description: parsed.startYear === undefined ? `建造年代原文：${q.constructionDate}` : undefined })
+      if (bridgeRecord) addSource('外白渡桥 · 建成年代依据', q.constructionDateEvidence?.sourceUrl || q.wikipediaListUrl)
     } else fact(result.questions, `${prefix}建造年代`, '建造年代尚未核定。')
     if (q.constructionDate && parsed.startYear === undefined) fact(result.questions, `${prefix}建造年代`, `原资料记“${q.constructionDate}”，精确建成年份待核。`)
     const useHistory = reviewedUseHistoryForHeritage(q)

@@ -158,3 +158,4 @@ it('keeps the early garden card usable before the later heritage building exists
     vi.unstubAllGlobals()
   }
 })
+vi.mock('./data/modernParks', () => ({ modernParks: { type: 'FeatureCollection', features: [] }, modernParkEntries: [] }))
